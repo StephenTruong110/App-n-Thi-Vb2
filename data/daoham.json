@@ -1,0 +1,451 @@
+[
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{2}\\) là gì?",
+    "options": ["\\(2x\\)","\\(x\\)","\\(x^{2}\\)","\\(2\\)"],
+    "correct": "\\(2x\\)",
+    "solution": "\\(\\left(x^{n}\\right)' = n x^{n-1} \\Rightarrow \\left(x^{2 \\right)'=2x\\)",
+    "quick": "bậc 2 → \\(2x\\)",
+    "casio": "d/dx(x^2)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{3}\\) là gì?",
+    "options": ["\\(3x^{2}\\)","\\(x^{2}\\)","\\(3x\\)","\\(x^{3}\\)"],
+    "correct": "\\(3x^{2}\\)",
+    "solution": "\\((x^{3})'=3x^{2}\\)",
+    "quick": "\\(3x^{2}\\)",
+    "casio": "d/dx(x^3)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{5}\\) là gì?",
+    "options": ["\\(5x^{4}\\)","\\(4x^{5}\\)","\\(x^{4}\\)","\\(5x^{5}\\)"],
+    "correct": "\\(5x^{4}\\)",
+    "solution": "\\((x^{5})'=5x^{4}\\)",
+    "quick": "\\(5x^{4}\\)",
+    "casio": "d/dx(x^5)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{10}\\) là gì?",
+    "options": ["\\(10x^{9}\\)","\\(9x^{10}\\)","\\(10x^{10}\\)","\\(x^{9}\\)"],
+    "correct": "\\(10x^{9}\\)",
+    "solution": "\\((x^{10})'=10x^{9}\\)",
+    "quick": "\\(10x^{9}\\)",
+    "casio": "d/dx(x^10)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{-3}\\) là gì?",
+    "options": ["\\(-3x^{-4}\\)","\\(3x^{-4}\\)","\\(-3x^{-2}\\)","\\(x^{-4}\\)"],
+    "correct": "\\(-3x^{-4}\\)",
+    "solution": "\\((x^{-3})'=-3x^{-4}\\)",
+    "quick": "\\(-3x^{-4}\\)",
+    "casio": "d/dx(x^-3)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sqrt{x}\\) là gì?",
+    "options": ["\\(\\frac{1}{2\\sqrt{x}}\\)","\\(\\sqrt{x}\\)","\\(\\frac{1}{x}\\)","\\(2\\sqrt{x}\\)"],
+    "correct": "\\(\\frac{1}{2\\sqrt{x}}\\)",
+    "solution": "\\(\\left(x^{1/2}\\right)' = \\frac{1}{2}x^{-1/2} = \\frac{1}{2\\sqrt{x}}\\)",
+    "quick": "\\(\\frac{1}{2\\sqrt{x}}\\)",
+    "casio": "d/dx(sqrt(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sqrt[3]{x}\\) là gì?",
+    "options": ["\\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\)","\\(\\frac{1}{3\\sqrt[3]{x}}\\)","\\(\\frac{1}{\\sqrt[3]{x^{2}}}\\)","\\(3\\sqrt[3]{x^{2}}\\)"],
+    "correct": "\\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\)",
+    "solution": "\\(x^{1/3}' = \\frac{1}{3}x^{-2/3}\\)",
+    "quick": "\\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\)",
+    "casio": "d/dx(x^(1/3))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\frac{1}{x}\\) là gì?",
+    "options": ["\\(-\\frac{1}{x^{2}}\\)","\\(\\frac{1}{x^{2}}\\)","\\(-x\\)","\\(x^{-1}\\)"],
+    "correct": "\\(-\\frac{1}{x^{2}}\\)",
+    "solution": "\\((x^{-1})'=-x^{-2}\\)",
+    "quick": "\\(-\\frac{1}{x^{2}}\\)",
+    "casio": "d/dx(1/x)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\frac{1}{x^{4}}\\) là gì?",
+    "options": ["\\(-\\frac{4}{x^{5}}\\)","\\(\\frac{4}{x^{5}}\\)","\\(-\\frac{1}{x^{5}}\\)","\\(-\\frac{4}{x^{3}}\\)"],
+    "correct": "\\(-\\frac{4}{x^{5}}\\)",
+    "solution": "\\((x^{-4})'=-4x^{-5}\\)",
+    "quick": "\\(-4/x^{5}\\)",
+    "casio": "d/dx(1/x^4)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{2}+x\\) là gì?",
+    "options": ["\\(2x+1\\)","\\(2x\\)","\\(x+1\\)","\\(2x+x\\)"],
+    "correct": "\\(2x+1\\)",
+    "solution": "\\((x^{2})'+(x)'=2x+1\\)",
+    "quick": "tổng đạo hàm",
+    "casio": "d/dx(x^2+x)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=3x^{2}-2x+5\\) là gì?",
+    "options": ["\\(6x-2\\)","\\(3x-2\\)","\\(6x+2\\)","\\(6x-5\\)"],
+    "correct": "\\(6x-2\\)",
+    "solution": "\\(3\\cdot2x-2=6x-2\\)",
+    "quick": "\\(6x-2\\)",
+    "casio": "d/dx(3x^2-2x+5)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sin x\\) là gì?",
+    "options": ["\\(\\cos x\\)","\\(-\\sin x\\)","\\(-\\cos x\\)","\\(\\sin x\\)"],
+    "correct": "\\(\\cos x\\)",
+    "solution": "\\((\\sin x)'=\\cos x\\)",
+    "quick": "\\(\\sin \\to \\cos\\)",
+    "casio": "d/dx(sin(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\cos x\\) là gì?",
+    "options": ["\\(-\\sin x\\)","\\(\\sin x\\)","\\(-\\cos x\\)","\\(\\cos x\\)"],
+    "correct": "\\(-\\sin x\\)",
+    "solution": "\\((\\cos x)'=-\\sin x\\)",
+    "quick": "\\(\\cos \\to -\\sin\\)",
+    "casio": "d/dx(cos(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\tan x\\) là gì?",
+    "options": ["\\(\\frac{1}{\\cos^{2} x}\\)","\\(\\cos x\\)","\\(\\sin x\\)","\\(\\tan x\\)"],
+    "correct": "\\(\\frac{1}{\\cos^{2} x}\\)",
+    "solution": "\\((\\tan x)'=\\frac{1}{\\cos^{2} x}\\)",
+    "quick": "\\(\\sec^{2}x\\)",
+    "casio": "d/dx(tan(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\cot x\\) là gì?",
+    "options": ["\\(-\\frac{1}{\\sin^{2} x}\\)","\\(\\frac{1}{\\sin^{2} x}\\)","\\(-\\cot x\\)","\\(\\tan x\\)"],
+    "correct": "\\(-\\frac{1}{\\sin^{2} x}\\)",
+    "solution": "\\((\\cot x)'=-\\csc^{2}x\\)",
+    "quick": "\\(-\\csc^{2}x\\)",
+    "casio": "d/dx(cot(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sin(2x)\\) là gì?",
+    "options": ["\\(2\\cos(2x)\\)","\\(\\cos(2x)\\)","\\(2\\sin(2x)\\)","\\(\\cos x\\)"],
+    "correct": "\\(2\\cos(2x)\\)",
+    "solution": "\\((\\sin(2x))'=2\\cos(2x)\\)",
+    "quick": "nhân đạo hàm trong",
+    "casio": "d/dx(sin(2x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\cos(3x)\\) là gì?",
+    "options": ["\\(-3\\sin(3x)\\)","\\(3\\sin(3x)\\)","\\(-\\sin(3x)\\)","\\(-3\\cos(3x)\\)"],
+    "correct": "\\(-3\\sin(3x)\\)",
+    "solution": "\\((\\cos(3x))'=-3\\sin(3x)\\)",
+    "quick": "\\(-3\\sin(3x)\\)",
+    "casio": "d/dx(cos(3x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\tan(2x)\\) là gì?",
+    "options": ["\\(\\frac{2}{\\cos^{2}(2x)}\\)","\\(\\frac{1}{\\cos^{2}(2x)}\\)","\\(2\\tan(2x)\\)","\\(\\frac{2}{\\sin^{2}(2x)}\\)"],
+    "correct": "\\(\\frac{2}{\\cos^{2}(2x)}\\)",
+    "solution": "\\((\\tan(2x))'=\\frac{2}{\\cos^{2}(2x)}\\)",
+    "quick": "đạo hàm trong * sec^2",
+    "casio": "d/dx(tan(2x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sin^{2}x\\) là gì?",
+    "options": ["\\(2\\sin x\\cos x\\)","\\(\\sin x\\cos x\\)","\\(2\\sin x\\)","\\(\\cos^{2}x\\)"],
+    "correct": "\\(2\\sin x\\cos x\\)",
+    "solution": "\\((\\sin^{2}x)'=2\\sin x\\cos x\\)",
+    "quick": "đạo hàm hợp",
+    "casio": "d/dx((sin(x))^2)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\cos^{2}x\\) là gì?",
+    "options": ["\\(-2\\cos x\\sin x\\)","\\(2\\cos x\\sin x\\)","\\(-\\sin^{2}x\\)","\\(-2\\cos x\\)"],
+    "correct": "\\(-2\\cos x\\sin x\\)",
+    "solution": "\\((\\cos^{2}x)'=2\\cos x(-\\sin x)=-2\\cos x\\sin x\\)",
+    "quick": "\\(-2\\cos x\\sin x\\)",
+    "casio": "d/dx((cos(x))^2)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=e^{x}\\) là gì?",
+    "options": ["\\(e^{x}\\)","\\(x e^{x}\\)","\\(\\ln x\\)","\\(1\\)"],
+    "correct": "\\(e^{x}\\)",
+    "solution": "\\((e^{x})'=e^{x}\\)",
+    "quick": "giữ nguyên",
+    "casio": "d/dx(exp(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=e^{2x}\\) là gì?",
+    "options": ["\\(2e^{2x}\\)","\\(e^{2x}\\)","\\(2e^{x}\\)","\\(e^{2}\\)"],
+    "correct": "\\(2e^{2x}\\)",
+    "solution": "\\((e^{2x})'=2e^{2x}\\)",
+    "quick": "nhân đạo hàm trong",
+    "casio": "d/dx(exp(2x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=e^{-x}\\) là gì?",
+    "options": ["\\(-e^{-x}\\)","\\(e^{-x}\\)","\\(-e^{x}\\)","\\(e^{x}\\)"],
+    "correct": "\\(-e^{-x}\\)",
+    "solution": "\\((e^{-x})'=-e^{-x}\\)",
+    "quick": "\\(-e^{-x}\\)",
+    "casio": "d/dx(exp(-x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\ln x\\) là gì?",
+    "options": ["\\(\\frac{1}{x}\\)","\\(\\ln x\\)","\\(x\\)","\\(1\\)"],
+    "correct": "\\(\\frac{1}{x}\\)",
+    "solution": "\\((\\ln x)'=\\frac{1}{x}\\)",
+    "quick": "\\(\\frac{1}{x}\\)",
+    "casio": "d/dx(ln(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\ln(2x)\\) là gì?",
+    "options": ["\\(\\frac{1}{x}\\)","\\(\\frac{1}{2x}\\)","\\(\\frac{2}{x}\\)","\\(\\ln2\\)"],
+    "correct": "\\(\\frac{1}{x}\\)",
+    "solution": "\\((\\ln(2x))'=\\frac{1}{2x}\\cdot2=\\frac{1}{x}\\)",
+    "quick": "\\(1/x\\)",
+    "casio": "d/dx(ln(2x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\ln(x^{2}+1)\\) là gì?",
+    "options": ["\\(\\frac{2x}{x^{2}+1}\\)","\\(\\frac{1}{x^{2}+1}\\)","\\(2x\\)","\\(\\frac{x}{x^{2}+1}\\)"],
+    "correct": "\\(\\frac{2x}{x^{2}+1}\\)",
+    "solution": "\\(\\left(\\ln u\\right)' = \\frac{u'}{u},\\ u=x^{2}+1\\)",
+    "quick": "\\(\\frac{2x}{x^{2}+1}\\)",
+    "casio": "d/dx(ln(x^2+1))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\log_{2}x\\) là gì?",
+    "options": ["\\(\\frac{1}{x\\ln2}\\)","\\(\\frac{1}{x}\\)","\\(\\frac{\\ln2}{x}\\)","\\(\\frac{1}{x\\log2}\\)"],
+    "correct": "\\(\\frac{1}{x\\ln2}\\)",
+    "solution": "\\((\\log_{a}x)'=\\frac{1}{x\\ln a}\\)",
+    "quick": "\\(1/(x\\ln2)\\)",
+    "casio": "d/dx(log(2,x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x\\ln x\\) là gì?",
+    "options": ["\\(\\ln x+1\\)","\\(\\ln x\\)","\\(1+\\frac{1}{x}\\)","\\(\\ln x -1\\)"],
+    "correct": "\\(\\ln x+1\\)",
+    "solution": "\\((x)'\\ln x + x(\\ln x)' = \\ln x + 1\\)",
+    "quick": "tích → \\(\\ln x+1\\)",
+    "casio": "d/dx(x*ln(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\frac{\\sin x}{x}\\) là gì?",
+    "options": ["\\(\\frac{x\\cos x-\\sin x}{x^{2}}\\)","\\(\\frac{\\cos x}{x}\\)","\\(\\frac{x\\sin x-\\cos x}{x^{2}}\\)","\\(\\frac{\\cos x-\\sin x}{x^{2}}\\)"],
+    "correct": "\\(\\frac{x\\cos x-\\sin x}{x^{2}}\\)",
+    "solution": "\\(\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^{2}},\\ u=\\sin x, v=x\\)",
+    "quick": "quy tắc thương",
+    "casio": "d/dx(sin(x)/x)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{2}e^{x}\\) là gì?",
+    "options": ["\\(e^{x}(x^{2}+2x)\\)","\\(2xe^{x}\\)","\\(x^{2}e^{x}\\)","\\(e^{x}(2x)\\)"],
+    "correct": "\\(e^{x}(x^{2}+2x)\\)",
+    "solution": "\\((x^{2})'e^{x}+x^{2}(e^{x})'=2xe^{x}+x^{2}e^{x}\\)",
+    "quick": "đạo hàm tích",
+    "casio": "d/dx(x^2*exp(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm cấp 2 của \\(f(x)=x^{3}\\) là gì?",
+    "options": ["\\(6x\\)","\\(3x\\)","\\(6\\)","\\(0\\)"],
+    "correct": "\\(6x\\)",
+    "solution": "\\(f'(x)=3x^{2}, f''(x)=6x\\)",
+    "quick": "\\(6x\\)",
+    "casio": "d/dx(d/dx(x^3))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\arcsin x\\) là gì?",
+    "options": ["\\(\\frac{1}{\\sqrt{1-x^{2}}}\\)","\\(\\frac{1}{1+x^{2}}\\)","\\(-\\frac{1}{\\sqrt{1-x^{2}}}\\)","\\(\\frac{1}{x}\\)"],
+    "correct": "\\(\\frac{1}{\\sqrt{1-x^{2}}}\\)",
+    "solution": "\\((\\arcsin x)'=\\frac{1}{\\sqrt{1-x^{2}}}\\)",
+    "quick": "hàm lượng giác ngược",
+    "casio": "d/dx(asin(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\arctan x\\) là gì?",
+    "options": ["\\(\\frac{1}{1+x^{2}}\\)","\\(\\frac{1}{1-x^{2}}\\)","\\(\\frac{1}{\\sqrt{1-x^{2}}}\\)","\\(\\frac{1}{x^{2}+1}\\)"],
+    "correct": "\\(\\frac{1}{1+x^{2}}\\)",
+    "solution": "\\((\\arctan x)'=\\frac{1}{1+x^{2}}\\)",
+    "quick": "\\(1/(1+x^{2})\\)",
+    "casio": "d/dx(atan(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=2^{x}\\) là gì?",
+    "options": ["\\(2^{x}\\ln2\\)","\\(2^{x}\\)","\\(x2^{x-1}\\)","\\(\\ln2\\cdot2^{x}\\)"],
+    "correct": "\\(2^{x}\\ln2\\)",
+    "solution": "\\((a^{x})'=a^{x}\\ln a\\)",
+    "quick": "\\(2^{x}\\ln2\\)",
+    "casio": "d/dx(2^x)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{x}\\) là gì?",
+    "options": ["\\(x^{x}(\\ln x+1)\\)","\\(x^{x}\\ln x\\)","\\(x^{x}\\)","\\(x^{x-1}\\)"],
+    "correct": "\\(x^{x}(\\ln x+1)\\)",
+    "solution": "\\(\\ln f = x\\ln x \\Rightarrow \\frac{f'}{f} = \\ln x + 1\\)",
+    "quick": "logarit hóa",
+    "casio": "d/dx(x^x)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sqrt{\\sin x}\\) là gì?",
+    "options": ["\\(\\frac{\\cos x}{2\\sqrt{\\sin x}}\\)","\\(\\frac{\\sin x}{2\\sqrt{\\cos x}}\\)","\\(\\frac{\\cos x}{\\sqrt{\\sin x}}\\)","\\(\\frac{-\\cos x}{2\\sqrt{\\sin x}}\\)"],
+    "correct": "\\(\\frac{\\cos x}{2\\sqrt{\\sin x}}\\)",
+    "solution": "\\((\\sin x)^{1/2}'=\\frac{1}{2}(\\sin x)^{-1/2}\\cos x\\)",
+    "quick": "đạo hàm căn hợp",
+    "casio": "d/dx(sqrt(sin(x)))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\cos(\\ln x)\\) là gì?",
+    "options": ["\\(-\\frac{\\sin(\\ln x)}{x}\\)","\\(\\frac{\\sin(\\ln x)}{x}\\)","\\(-\\sin(\\ln x)\\)","\\(\\frac{\\cos(\\ln x)}{x}\\)"],
+    "correct": "\\(-\\frac{\\sin(\\ln x)}{x}\\)",
+    "solution": "\\(\\left(\\cos(\\ln x)\\right)' = -\\sin(\\ln x) \\cdot \\frac{1}{x}\\)",
+    "quick": "hợp hàm",
+    "casio": "d/dx(cos(ln(x)))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\ln(\\cos x)\\) là gì?",
+    "options": ["\\(-\\tan x\\)","\\(\\tan x\\)","\\(-\\cot x\\)","\\(\\frac{1}{\\cos x}\\)"],
+    "correct": "\\(-\\tan x\\)",
+    "solution": "\\(\\left(\\ln(\\cos x)\\right)' = \\frac{-\\sin x}{\\cos x} = -\\tan x\\)",
+    "quick": "\\(-\\tan x\\)",
+    "casio": "d/dx(ln(cos(x)))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\frac{1}{\\ln x}\\) là gì?",
+    "options": ["\\(-\\frac{1}{x(\\ln x)^{2}}\\)","\\(\\frac{1}{x\\ln x}\\)","\\(-\\frac{1}{x\\ln x}\\)","\\(\\frac{1}{(\\ln x)^{2}}\\)"],
+    "correct": "\\(-\\frac{1}{x(\\ln x)^{2}}\\)",
+    "solution": "\\((\\ln x)^{-1}'=-1\\cdot(\\ln x)^{-2}\\cdot\\frac{1}{x}\\)",
+    "quick": "đạo hàm hàm hợp",
+    "casio": "d/dx(1/ln(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{2}\\sin x\\) là gì?",
+    "options": ["\\(2x\\sin x+x^{2}\\cos x\\)","\\(2x\\sin x-x^{2}\\cos x\\)","\\(x^{2}\\cos x\\)","\\(2x\\cos x\\)"],
+    "correct": "\\(2x\\sin x+x^{2}\\cos x\\)",
+    "solution": "Tích: \\((x^{2})'\\sin x+x^{2}(\\sin x)'\\)",
+    "quick": "tích",
+    "casio": "d/dx(x^2*sin(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\frac{\\ln x}{x}\\) là gì?",
+    "options": ["\\(\\frac{1-\\ln x}{x^{2}}\\)","\\(\\frac{\\ln x-1}{x^{2}}\\)","\\(\\frac{1}{x^{2}}\\)","\\(\\frac{1-\\ln x}{x}\\)"],
+    "correct": "\\(\\frac{1-\\ln x}{x^{2}}\\)",
+    "solution": "\\(\\frac{(\\ln x)'\\cdot x - \\ln x \\cdot (x)'}{x^{2}} = \\frac{1-\\ln x}{x^{2}}\\)",
+    "quick": "quy tắc thương",
+    "casio": "d/dx(ln(x)/x)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\tan^{2}x\\) là gì?",
+    "options": ["\\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\)","\\(2\\tan x\\)","\\(2\\tan x\\cdot\\frac{1}{\\sin^{2}x}\\)","\\(\\frac{2\\tan x}{\\cos^{2}x}\\)"],
+    "correct": "\\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\)",
+    "solution": "\\((\\tan^{2}x)'=2\\tan x\\cdot(\\tan x)'\\)",
+    "quick": "hợp hàm",
+    "casio": "d/dx((tan(x))^2)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sin(\\cos x)\\) là gì?",
+    "options": ["\\(-\\cos(\\cos x)\\sin x\\)","\\(\\cos(\\cos x)\\sin x\\)","\\(-\\sin(\\cos x)\\sin x\\)","\\(\\sin(\\cos x)\\cos x\\)"],
+    "correct": "\\(-\\cos(\\cos x)\\sin x\\)",
+    "solution": "\\(\\cos(\\cos x)\\cdot(-\\sin x)\\)",
+    "quick": "hợp 2 hàm lượng giác",
+    "casio": "d/dx(sin(cos(x)))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\sqrt{x^{2}+1}\\) là gì?",
+    "options": ["\\(\\frac{x}{\\sqrt{x^{2}+1}}\\)","\\(\\frac{2x}{\\sqrt{x^{2}+1}}\\)","\\(\\frac{1}{\\sqrt{x^{2}+1}}\\)","\\(\\frac{x^{2}}{\\sqrt{x^{2}+1}}\\)"],
+    "correct": "\\(\\frac{x}{\\sqrt{x^{2}+1}}\\)",
+    "solution": "\\((x^{2}+1)^{1/2}'=\\frac{1}{2}(x^{2}+1)^{-1/2}\\cdot2x\\)",
+    "quick": "căn của u → u'/2√u",
+    "casio": "d/dx(sqrt(x^2+1))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=e^{\\sin x}\\) là gì?",
+    "options": ["\\(e^{\\sin x}\\cos x\\)","\\(e^{\\sin x}\\)","\\(e^{\\sin x}\\sin x\\)","\\(\\cos x\\cdot e^{x}\\)"],
+    "correct": "\\(e^{\\sin x}\\cos x\\)",
+    "solution": "\\((e^{u})'=e^{u}u'\\)",
+    "quick": "mũ hợp",
+    "casio": "d/dx(exp(sin(x)))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\ln(\\sin x)\\) là gì?",
+    "options": ["\\(\\cot x\\)","\\(-\\cot x\\)","\\(\\tan x\\)","\\(-\\tan x\\)"],
+    "correct": "\\(\\cot x\\)",
+    "solution": "\\((\\ln(\\sin x))'=\\frac{\\cos x}{\\sin x}=\\cot x\\)",
+    "quick": "cot x",
+    "casio": "d/dx(ln(sin(x)))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=x^{2}\\ln x\\) là gì?",
+    "options": ["\\(2x\\ln x+x\\)","\\(2x\\ln x\\)","\\(x\\ln x+x\\)","\\(2x\\ln x+2x\\)"],
+    "correct": "\\(2x\\ln x+x\\)",
+    "solution": "\\((x^{2})'\\ln x+x^{2}\\cdot\\frac{1}{x}=2x\\ln x+x\\)",
+    "quick": "tích",
+    "casio": "d/dx(x^2*ln(x))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\frac{x+1}{x-1}\\) là gì?",
+    "options": ["\\(-\\frac{2}{(x-1)^{2}}\\)","\\(\\frac{2}{(x-1)^{2}}\\)","\\(-\\frac{1}{(x-1)^{2}}\\)","\\(\\frac{1}{(x-1)^{2}}\\)"],
+    "correct": "\\(-\\frac{2}{(x-1)^{2}}\\)",
+    "solution": "\\(((x+1)'(x-1)-(x+1)(x-1)')/(x-1)^{2}=(-2)/(x-1)^{2}\\)",
+    "quick": "thương",
+    "casio": "d/dx((x+1)/(x-1))"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\cos^{2}(2x)\\) là gì?",
+    "options": ["\\(-4\\cos(2x)\\sin(2x)\\)","\\(-2\\cos(2x)\\sin(2x)\\)","\\(2\\cos(2x)\\sin(2x)\\)","\\(-4\\sin(4x)\\)"],
+    "correct": "\\(-4\\cos(2x)\\sin(2x)\\)",
+    "solution": "\\(2\\cos(2x) \\cdot \\left(-\\sin(2x) \\cdot 2\\right)\\)",
+    "quick": "hợp 2 lớp",
+    "casio": "d/dx((cos(2x))^2)"
+  },
+  {
+    "type": "derivative",
+    "question": "Đạo hàm của \\(f(x)=\\ln(\\ln x)\\) là gì?",
+    "options": ["\\(\\frac{1}{x\\ln x}\\)","\\(\\frac{1}{\\ln x}\\)","\\(\\frac{1}{x}\\)","\\(\\frac{\\ln x}{x}\\)"],
+    "correct": "\\(\\frac{1}{x\\ln x}\\)",
+    "solution": "\\((\\ln(\\ln x))'=\\frac{1}{\\ln x}\\cdot\\frac{1}{x}\\)",
+    "quick": "logarit của logarit"
+  }
+]
