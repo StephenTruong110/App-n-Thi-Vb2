@@ -3,8 +3,22 @@
     "id": 1,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,2],[3,4]],
-    "options": ["-2","2","10","0"],
+    "matrix": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "options": [
+      "-2",
+      "2",
+      "10",
+      "0"
+    ],
     "correct": "-2",
     "solution": "\\(\\det(A)=1\\cdot4-2\\cdot3=4-6=-2\\)",
     "quick": "\\(ad-bc=4-6=-2\\)",
@@ -14,8 +28,22 @@
     "id": 2,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[2,1],[5,3]],
-    "options": ["1","-1","6","11"],
+    "matrix": [
+      [
+        2,
+        1
+      ],
+      [
+        5,
+        3
+      ]
+    ],
+    "options": [
+      "1",
+      "-1",
+      "6",
+      "11"
+    ],
     "correct": "1",
     "solution": "\\(\\det(A)=2\\cdot3-1\\cdot5=6-5=1\\)",
     "quick": "\\(ad-bc=6-5=1\\)",
@@ -25,8 +53,22 @@
     "id": 3,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[3,2],[1,4]],
-    "options": ["10","-10","14","5"],
+    "matrix": [
+      [
+        3,
+        2
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "options": [
+      "10",
+      "-10",
+      "14",
+      "5"
+    ],
     "correct": "10",
     "solution": "\\(\\det(A)=3\\cdot4-2\\cdot1=12-2=10\\)",
     "quick": "\\(12-2=10\\)",
@@ -36,8 +78,22 @@
     "id": 4,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[-1,2],[3,-4]],
-    "options": ["-2","2","10","-10"],
+    "matrix": [
+      [
+        -1,
+        2
+      ],
+      [
+        3,
+        -4
+      ]
+    ],
+    "options": [
+      "-2",
+      "2",
+      "10",
+      "-10"
+    ],
     "correct": "-2",
     "solution": "\\(\\det(A)=(-1)(-4)-2\\cdot3=4-6=-2\\)",
     "quick": "\\(4-6=-2\\)",
@@ -47,8 +103,22 @@
     "id": 5,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[5,3],[2,1]],
-    "options": ["-1","1","11","7"],
+    "matrix": [
+      [
+        5,
+        3
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "options": [
+      "-1",
+      "1",
+      "11",
+      "7"
+    ],
     "correct": "-1",
     "solution": "\\(\\det(A)=5\\cdot1-3\\cdot2=5-6=-1\\)",
     "quick": "\\(5-6=-1\\)",
@@ -58,8 +128,22 @@
     "id": 6,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[4,6],[2,3]],
-    "options": ["0","12","6","24"],
+    "matrix": [
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "options": [
+      "0",
+      "12",
+      "6",
+      "24"
+    ],
     "correct": "0",
     "solution": "\\(\\det(A)=4\\cdot3-6\\cdot2=12-12=0\\) — ma trận suy biến",
     "quick": "\\(12-12=0\\) — hai hàng tỉ lệ nhau",
@@ -69,8 +153,22 @@
     "id": 7,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[0,1],[1,0]],
-    "options": ["-1","1","0","2"],
+    "matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "2"
+    ],
     "correct": "-1",
     "solution": "\\(\\det(A)=0\\cdot0-1\\cdot1=-1\\)",
     "quick": "\\(0-1=-1\\) — ma trận hoán vị",
@@ -80,8 +178,22 @@
     "id": 8,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[7,2],[4,1]],
-    "options": ["-1","1","15","11"],
+    "matrix": [
+      [
+        7,
+        2
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "options": [
+      "-1",
+      "1",
+      "15",
+      "11"
+    ],
     "correct": "-1",
     "solution": "\\(\\det(A)=7\\cdot1-2\\cdot4=7-8=-1\\)",
     "quick": "\\(7-8=-1\\)",
@@ -91,8 +203,22 @@
     "id": 9,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[6,-1],[2,3]],
-    "options": ["20","-20","16","4"],
+    "matrix": [
+      [
+        6,
+        -1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "options": [
+      "20",
+      "-20",
+      "16",
+      "4"
+    ],
     "correct": "20",
     "solution": "\\(\\det(A)=6\\cdot3-(-1)\\cdot2=18+2=20\\)",
     "quick": "\\(18+2=20\\)",
@@ -102,8 +228,22 @@
     "id": 10,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[-3,-2],[-1,-4]],
-    "options": ["10","-10","14","2"],
+    "matrix": [
+      [
+        -3,
+        -2
+      ],
+      [
+        -1,
+        -4
+      ]
+    ],
+    "options": [
+      "10",
+      "-10",
+      "14",
+      "2"
+    ],
     "correct": "10",
     "solution": "\\(\\det(A)=(-3)(-4)-(-2)(-1)=12-2=10\\)",
     "quick": "\\(12-2=10\\)",
@@ -113,8 +253,22 @@
     "id": 11,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[8,3],[2,1]],
-    "options": ["2","-2","11","5"],
+    "matrix": [
+      [
+        8,
+        3
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "options": [
+      "2",
+      "-2",
+      "11",
+      "5"
+    ],
     "correct": "2",
     "solution": "\\(\\det=8\\cdot1-3\\cdot2=8-6=2\\)",
     "quick": "\\(8-6=2\\)",
@@ -124,8 +278,22 @@
     "id": 12,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[-5,2],[3,-1]],
-    "options": ["-1","1","-7","11"],
+    "matrix": [
+      [
+        -5,
+        2
+      ],
+      [
+        3,
+        -1
+      ]
+    ],
+    "options": [
+      "-1",
+      "1",
+      "-7",
+      "11"
+    ],
     "correct": "-1",
     "solution": "\\(\\det=(-5)(-1)-2\\cdot3=5-6=-1\\)",
     "quick": "\\(5-6=-1\\)",
@@ -135,8 +303,22 @@
     "id": 13,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[9,4],[6,3]],
-    "options": ["3","-3","51","15"],
+    "matrix": [
+      [
+        9,
+        4
+      ],
+      [
+        6,
+        3
+      ]
+    ],
+    "options": [
+      "3",
+      "-3",
+      "51",
+      "15"
+    ],
     "correct": "3",
     "solution": "\\(\\det=9\\cdot3-4\\cdot6=27-24=3\\)",
     "quick": "\\(27-24=3\\)",
@@ -146,8 +328,22 @@
     "id": 14,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[0,3],[2,0]],
-    "options": ["-6","6","0","9"],
+    "matrix": [
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "options": [
+      "-6",
+      "6",
+      "0",
+      "9"
+    ],
     "correct": "-6",
     "solution": "\\(\\det=0\\cdot0-3\\cdot2=-6\\)",
     "quick": "\\(0-6=-6\\)",
@@ -157,8 +353,22 @@
     "id": 15,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[4,-3],[2,-1]],
-    "options": ["2","-2","10","-10"],
+    "matrix": [
+      [
+        4,
+        -3
+      ],
+      [
+        2,
+        -1
+      ]
+    ],
+    "options": [
+      "2",
+      "-2",
+      "10",
+      "-10"
+    ],
     "correct": "2",
     "solution": "\\(\\det=4(-1)-(-3)(2)=-4+6=2\\)",
     "quick": "\\(-4+6=2\\)",
@@ -168,8 +378,22 @@
     "id": 16,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,5],[2,10]],
-    "options": ["0","10","1","20"],
+    "matrix": [
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        10
+      ]
+    ],
+    "options": [
+      "0",
+      "10",
+      "1",
+      "20"
+    ],
     "correct": "0",
     "solution": "\\(\\det=10-10=0\\) — hàng 2 = 2×hàng 1 → suy biến",
     "quick": "\\(10-10=0\\)",
@@ -179,8 +403,22 @@
     "id": 17,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[-2,-3],[-4,-5]],
-    "options": ["-2","2","22","10"],
+    "matrix": [
+      [
+        -2,
+        -3
+      ],
+      [
+        -4,
+        -5
+      ]
+    ],
+    "options": [
+      "-2",
+      "2",
+      "22",
+      "10"
+    ],
     "correct": "-2",
     "solution": "\\(\\det=(-2)(-5)-(-3)(-4)=10-12=-2\\)",
     "quick": "\\(10-12=-2\\)",
@@ -190,8 +428,22 @@
     "id": 18,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[6,5],[4,3]],
-    "options": ["-2","2","38","18"],
+    "matrix": [
+      [
+        6,
+        5
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "options": [
+      "-2",
+      "2",
+      "38",
+      "18"
+    ],
     "correct": "-2",
     "solution": "\\(\\det=18-20=-2\\)",
     "quick": "\\(18-20=-2\\)",
@@ -201,8 +453,22 @@
     "id": 19,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[7,-1],[3,2]],
-    "options": ["17","11","-17","1"],
+    "matrix": [
+      [
+        7,
+        -1
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "options": [
+      "17",
+      "11",
+      "-17",
+      "1"
+    ],
     "correct": "17",
     "solution": "\\(\\det=7\\cdot2-(-1)\\cdot3=14+3=17\\)",
     "quick": "\\(14+3=17\\)",
@@ -212,8 +478,22 @@
     "id": 20,
     "type": "det",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[10,3],[7,2]],
-    "options": ["-1","1","41","29"],
+    "matrix": [
+      [
+        10,
+        3
+      ],
+      [
+        7,
+        2
+      ]
+    ],
+    "options": [
+      "-1",
+      "1",
+      "41",
+      "29"
+    ],
     "correct": "-1",
     "solution": "\\(\\det=10\\cdot2-3\\cdot7=20-21=-1\\)",
     "quick": "\\(20-21=-1\\)",
@@ -223,8 +503,29 @@
     "id": 21,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,0,0],[0,2,0],[0,0,3]],
-    "options": ["6","0","5","1"],
+    "matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        3
+      ]
+    ],
+    "options": [
+      "6",
+      "0",
+      "5",
+      "1"
+    ],
     "correct": "6",
     "solution": "Ma trận đường chéo: \\(\\det=1\\cdot2\\cdot3=6\\)",
     "quick": "Đường chéo: nhân các phần tử trên đường chéo chính",
@@ -234,8 +535,29 @@
     "id": 22,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,0,2],[0,1,3],[4,0,1]],
-    "options": ["-7","7","5","1"],
+    "matrix": [
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        4,
+        0,
+        1
+      ]
+    ],
+    "options": [
+      "-7",
+      "7",
+      "5",
+      "1"
+    ],
     "correct": "-7",
     "solution": "Khai triển cột 2: \\(1\\cdot(1\\cdot1-3\\cdot4)=1-12=-11\\)... Sarrus: \\(1+0+0-8-0-0=-7\\)",
     "quick": "Chọn cột/hàng nhiều số 0 để khai triển",
@@ -245,8 +567,29 @@
     "id": 23,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[2,1,0],[1,3,1],[0,1,2]],
-    "options": ["7","8","-7","0"],
+    "matrix": [
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "options": [
+      "7",
+      "8",
+      "-7",
+      "0"
+    ],
     "correct": "7",
     "solution": "Khai triển hàng 1: \\(2(6-1)-1(2-0)+0=10-2=8-1=7\\)",
     "quick": "\\(2\\cdot5-1\\cdot2=10-2-1=7\\)",
@@ -256,8 +599,29 @@
     "id": 24,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[3,0,0],[1,2,0],[4,5,6]],
-    "options": ["36","0","11","12"],
+    "matrix": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        4,
+        5,
+        6
+      ]
+    ],
+    "options": [
+      "36",
+      "0",
+      "11",
+      "12"
+    ],
     "correct": "36",
     "solution": "Ma trận tam giác dưới: \\(\\det=3\\cdot2\\cdot6=36\\)",
     "quick": "Tam giác dưới → tích đường chéo chính",
@@ -267,8 +631,29 @@
     "id": 25,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[2,3,1],[0,5,2],[0,0,4]],
-    "options": ["40","0","20","15"],
+    "matrix": [
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "options": [
+      "40",
+      "0",
+      "20",
+      "15"
+    ],
     "correct": "40",
     "solution": "Ma trận tam giác trên: \\(\\det=2\\cdot5\\cdot4=40\\)",
     "quick": "Tam giác trên → tích đường chéo",
@@ -278,8 +663,29 @@
     "id": 26,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[-1,2,3],[0,-2,1],[0,0,4]],
-    "options": ["8","-8","0","6"],
+    "matrix": [
+      [
+        -1,
+        2,
+        3
+      ],
+      [
+        0,
+        -2,
+        1
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "options": [
+      "8",
+      "-8",
+      "0",
+      "6"
+    ],
     "correct": "8",
     "solution": "Tam giác trên: \\(\\det=(-1)(-2)(4)=8\\)",
     "quick": "\\((-1)\\times(-2)\\times4=8\\)",
@@ -289,8 +695,29 @@
     "id": 27,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,1,1],[1,2,3],[1,4,9]],
-    "options": ["2","-2","0","6"],
+    "matrix": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        4,
+        9
+      ]
+    ],
+    "options": [
+      "2",
+      "-2",
+      "0",
+      "6"
+    ],
     "correct": "2",
     "solution": "\\(R_2-R_1,R_3-R_1\\): \\(\\det\\begin{pmatrix}1&1&1\\\\0&1&2\\\\0&3&8\\end{pmatrix}=8-6=2\\)",
     "quick": "Khử hàng rồi tính det 2×2 còn lại",
@@ -300,8 +727,29 @@
     "id": 28,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,2,3],[4,5,6],[7,8,9]],
-    "options": ["0","1","-1","45"],
+    "matrix": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        7,
+        8,
+        9
+      ]
+    ],
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "45"
+    ],
     "correct": "0",
     "solution": "Hàng 1 + Hàng 3 = 2×Hàng 2 → ba hàng phụ thuộc tuyến tính → \\(\\det=0\\)",
     "quick": "Hàng 1+Hàng 3 = 2×Hàng 2 → phụ thuộc → det=0",
@@ -311,8 +759,29 @@
     "id": 29,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[5,0,0],[0,3,0],[0,0,2]],
-    "options": ["30","0","10","15"],
+    "matrix": [
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "options": [
+      "30",
+      "0",
+      "10",
+      "15"
+    ],
     "correct": "30",
     "solution": "Ma trận đường chéo: \\(\\det=5\\cdot3\\cdot2=30\\)",
     "quick": "\\(5\\times3\\times2=30\\)",
@@ -322,8 +791,29 @@
     "id": 30,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,-1,0],[2,3,1],[0,1,-1]],
-    "options": ["-6","6","0","4"],
+    "matrix": [
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        1,
+        -1
+      ]
+    ],
+    "options": [
+      "-6",
+      "6",
+      "0",
+      "4"
+    ],
     "correct": "-6",
     "solution": "Khai triển hàng 1: \\(1(3(-1)-1\\cdot1)-(-1)(2(-1)-0)+0=(-4)+(-2)=-6\\)",
     "quick": "Khai triển hàng 1: \\(-4-2=-6\\)",
@@ -333,8 +823,29 @@
     "id": 31,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[2,1,-1],[0,3,2],[1,-1,4]],
-    "options": ["31","0","-31","13"],
+    "matrix": [
+      [
+        2,
+        1,
+        -1
+      ],
+      [
+        0,
+        3,
+        2
+      ],
+      [
+        1,
+        -1,
+        4
+      ]
+    ],
+    "options": [
+      "31",
+      "0",
+      "-31",
+      "13"
+    ],
     "correct": "31",
     "solution": "Khai triển hàng 1: \\(2(12+2)-1(0-2)+(-1)(0-3)=28+2+3=31\\)",
     "quick": "\\(28+2+3=31\\)",
@@ -344,8 +855,29 @@
     "id": 32,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[2,0,0],[1,3,0],[4,2,5]],
-    "options": ["30","0","10","15"],
+    "matrix": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        4,
+        2,
+        5
+      ]
+    ],
+    "options": [
+      "30",
+      "0",
+      "10",
+      "15"
+    ],
     "correct": "30",
     "solution": "Tam giác dưới: \\(\\det=2\\cdot3\\cdot5=30\\)",
     "quick": "\\(2\\times3\\times5=30\\)",
@@ -355,8 +887,29 @@
     "id": 33,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,2,0],[3,4,0],[5,6,7]],
-    "options": ["-14","14","0","42"],
+    "matrix": [
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        3,
+        4,
+        0
+      ],
+      [
+        5,
+        6,
+        7
+      ]
+    ],
+    "options": [
+      "-14",
+      "14",
+      "0",
+      "42"
+    ],
     "correct": "-14",
     "solution": "Khai triển cột 3: \\(7\\cdot(1\\cdot4-2\\cdot3)=7(-2)=-14\\)",
     "quick": "Cột 3 chỉ có \\(a_{33}=7\\): \\(7\\times(4-6)=-14\\)",
@@ -366,8 +919,29 @@
     "id": 34,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[4,0,0],[0,5,0],[0,0,6]],
-    "options": ["120","0","15","11"],
+    "matrix": [
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        6
+      ]
+    ],
+    "options": [
+      "120",
+      "0",
+      "15",
+      "11"
+    ],
     "correct": "120",
     "solution": "Ma trận đường chéo: \\(\\det=4\\cdot5\\cdot6=120\\)",
     "quick": "\\(4\\times5\\times6=120\\)",
@@ -377,8 +951,29 @@
     "id": 35,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,2,1],[2,3,1],[3,4,2]],
-    "options": ["-1","1","0","2"],
+    "matrix": [
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        2
+      ]
+    ],
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "2"
+    ],
     "correct": "-1",
     "solution": "Khai triển hàng 1: \\(1(6-4)-2(4-3)+1(8-9)=2-2-1=-1\\)",
     "quick": "\\(2-2-1=-1\\)",
@@ -388,8 +983,29 @@
     "id": 36,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[0,0,1],[0,2,0],[3,0,0]],
-    "options": ["-6","6","0","1"],
+    "matrix": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ]
+    ],
+    "options": [
+      "-6",
+      "6",
+      "0",
+      "1"
+    ],
     "correct": "-6",
     "solution": "Khai triển hàng 1: \\(1\\cdot(0\\cdot0-2\\cdot3)\\cdot(-1)^{1+3}=1\\cdot(-6)\\cdot1=-6\\)",
     "quick": "Khai triển: phần tử \\(a_{13}=1\\), cofactor = \\((0-6)=-6\\)",
@@ -399,8 +1015,29 @@
     "id": 37,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,1,0],[0,1,1],[1,0,1]],
-    "options": ["2","0","1","-2"],
+    "matrix": [
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "options": [
+      "2",
+      "0",
+      "1",
+      "-2"
+    ],
     "correct": "2",
     "solution": "Khai triển hàng 1: \\(1(1-0)-1(0-1)+0=1+1=2\\)",
     "quick": "\\(1+1=2\\)",
@@ -410,8 +1047,29 @@
     "id": 38,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[3,2,1],[0,1,0],[0,0,2]],
-    "options": ["6","0","3","5"],
+    "matrix": [
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "options": [
+      "6",
+      "0",
+      "3",
+      "5"
+    ],
     "correct": "6",
     "solution": "Tam giác trên: \\(\\det=3\\cdot1\\cdot2=6\\)",
     "quick": "Tích đường chéo: \\(3\\times1\\times2=6\\)",
@@ -421,8 +1079,29 @@
     "id": 39,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[2,1,3],[0,4,2],[0,0,5]],
-    "options": ["40","0","11","20"],
+    "matrix": [
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        4,
+        2
+      ],
+      [
+        0,
+        0,
+        5
+      ]
+    ],
+    "options": [
+      "40",
+      "0",
+      "11",
+      "20"
+    ],
     "correct": "40",
     "solution": "Tam giác trên: \\(\\det=2\\cdot4\\cdot5=40\\)",
     "quick": "\\(2\\times4\\times5=40\\)",
@@ -432,8 +1111,29 @@
     "id": 40,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,2,3],[1,1,1],[2,3,4]],
-    "options": ["0","1","-1","2"],
+    "matrix": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        3,
+        4
+      ]
+    ],
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
     "correct": "0",
     "solution": "Hàng 3 = Hàng 1 + Hàng 2: \\((2,3,4)=(1,2,3)+(1,1,1)\\) → phụ thuộc → \\(\\det=0\\)",
     "quick": "Hàng 3 = Hàng 1 + Hàng 2 → phụ thuộc → det=0",
@@ -443,8 +1143,29 @@
     "id": 41,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[2,3,0],[1,4,0],[5,6,7]],
-    "options": ["35","0","70","5"],
+    "matrix": [
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        5,
+        6,
+        7
+      ]
+    ],
+    "options": [
+      "35",
+      "0",
+      "70",
+      "5"
+    ],
     "correct": "35",
     "solution": "Khai triển cột 3: \\(7\\cdot(2\\cdot4-3\\cdot1)=7\\cdot5=35\\)",
     "quick": "Cột 3 chỉ có \\(a_{33}=7\\): \\(7\\times5=35\\)",
@@ -454,8 +1175,29 @@
     "id": 42,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,0,1],[0,1,0],[1,0,2]],
-    "options": ["1","-1","0","2"],
+    "matrix": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        2
+      ]
+    ],
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "2"
+    ],
     "correct": "1",
     "solution": "Khai triển cột 2 (có 2 số 0): \\(1\\cdot\\begin{vmatrix}1&1\\\\1&2\\end{vmatrix}=2-1=1\\)",
     "quick": "Cột 2 có \\(a_{22}=1\\), 2 số 0 → khai triển nhanh",
@@ -465,8 +1207,29 @@
     "id": 43,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,2,-1],[3,0,2],[2,1,3]],
-    "options": ["-17","17","0","5"],
+    "matrix": [
+      [
+        1,
+        2,
+        -1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        3
+      ]
+    ],
+    "options": [
+      "-17",
+      "17",
+      "0",
+      "5"
+    ],
     "correct": "-17",
     "solution": "Khai triển hàng 2 (có số 0): \\(-3(6+1)+0(-1)(3+2)+(-1)(1+3)\\cdot...\\) → CASIO: -17",
     "quick": "Dùng CASIO để tính chính xác: -17",
@@ -476,8 +1239,29 @@
     "id": 44,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,0,-1],[2,1,3],[0,2,4]],
-    "options": ["-2","2","0","8"],
+    "matrix": [
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ]
+    ],
+    "options": [
+      "-2",
+      "2",
+      "0",
+      "8"
+    ],
     "correct": "-2",
     "solution": "Khai triển hàng 1: \\(1(4-6)-0+(-1)(4-0)=-2-4=-2\\). Đúng: \\(-2\\)",
     "quick": "Khai triển hàng 1: \\(-2+0-4\\cdot...\\) → -2",
@@ -487,8 +1271,29 @@
     "id": 45,
     "type": "det3",
     "question": "Tính định thức của ma trận \\(A\\)",
-    "matrix": [[1,2,3],[0,1,4],[5,6,0]],
-    "options": ["1","-1","0","13"],
+    "matrix": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        5,
+        6,
+        0
+      ]
+    ],
+    "options": [
+      "1",
+      "-1",
+      "0",
+      "13"
+    ],
     "correct": "1",
     "solution": "Khai triển hàng 1: \\(1(0-24)-2(0-20)+3(0-5)=-24+40-15=1\\)",
     "quick": "\\(-24+40-15=1\\)",
@@ -499,7 +1304,12 @@
     "type": "transpose",
     "question": "Ma trận chuyển vị \\(A^T\\) của \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)","\\(\\begin{pmatrix}4&3\\\\2&1\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)","\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}4&3\\\\2&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
     "solution": "Chuyển vị: đổi hàng thành cột. Hàng 1 \\((1,2)\\) → cột 1; hàng 2 \\((3,4)\\) → cột 2.",
     "quick": "\\(a_{ij}\\to a_{ji}\\): hàng thành cột",
@@ -510,7 +1320,12 @@
     "type": "transpose",
     "question": "Cho \\(A\\) cỡ \\(2\\times3\\). Cỡ của \\(A^T\\) là",
     "matrix": null,
-    "options": ["\\(3\\times2\\)","\\(2\\times3\\)","\\(2\\times2\\)","\\(3\\times3\\)"],
+    "options": [
+      "\\(3\\times2\\)",
+      "\\(2\\times3\\)",
+      "\\(2\\times2\\)",
+      "\\(3\\times3\\)"
+    ],
     "correct": "\\(3\\times2\\)",
     "solution": "\\(A\\) cỡ \\(m\\times n\\) → \\(A^T\\) cỡ \\(n\\times m\\). Vậy \\(2\\times3 \\to 3\\times2\\).",
     "quick": "Cỡ bị đảo ngược: \\(m\\times n \\to n\\times m\\)",
@@ -521,7 +1336,12 @@
     "type": "transpose",
     "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\4&5&6\\end{pmatrix}\\). Phần tử \\((A^T)_{21}\\) là",
     "matrix": null,
-    "options": ["2","4","1","5"],
+    "options": [
+      "2",
+      "4",
+      "1",
+      "5"
+    ],
     "correct": "2",
     "solution": "\\((A^T)_{ij}=a_{ji}\\). Vậy \\((A^T)_{21}=a_{12}=2\\).",
     "quick": "\\((A^T)_{21}=a_{12}=2\\)",
@@ -532,7 +1352,12 @@
     "type": "trace",
     "question": "Vết (trace) của ma trận \\(A=\\begin{pmatrix}3&1\\\\2&5\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["8","15","6","2"],
+    "options": [
+      "8",
+      "15",
+      "6",
+      "2"
+    ],
     "correct": "8",
     "solution": "\\(\\text{tr}(A)=a_{11}+a_{22}=3+5=8\\)",
     "quick": "Tổng đường chéo chính: \\(3+5=8\\)",
@@ -543,7 +1368,12 @@
     "type": "trace",
     "question": "Vết của \\(A=\\begin{pmatrix}-3&2&1\\\\0&-1&2\\\\2&2&6\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["2","-2","3","1"],
+    "options": [
+      "2",
+      "-2",
+      "3",
+      "1"
+    ],
     "correct": "2",
     "solution": "\\(\\text{tr}(A)=(-3)+(-1)+6=2\\)",
     "quick": "\\(-3-1+6=2\\)",
@@ -554,7 +1384,12 @@
     "type": "multiply",
     "question": "Cho \\(A\\) cỡ \\(3\\times4\\) và \\(B\\) cỡ \\(4\\times3\\). Cỡ của \\(AB\\) là",
     "matrix": null,
-    "options": ["\\(3\\times3\\)","\\(4\\times4\\)","\\(3\\times4\\)","\\(4\\times3\\)"],
+    "options": [
+      "\\(3\\times3\\)",
+      "\\(4\\times4\\)",
+      "\\(3\\times4\\)",
+      "\\(4\\times3\\)"
+    ],
     "correct": "\\(3\\times3\\)",
     "solution": "\\((m\\times n)(n\\times p)=m\\times p\\): \\((3\\times4)(4\\times3)=3\\times3\\)",
     "quick": "Số giữa triệt tiêu: \\(3\\times\\mathbf{4}\\cdot\\mathbf{4}\\times3=3\\times3\\)",
@@ -565,7 +1400,12 @@
     "type": "multiply",
     "question": "Tính \\(AB\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\)",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)","\\(\\begin{pmatrix}0&2\\\\3&0\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0&2\\\\3&0\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
     "solution": "\\(c_{11}=0+2=2\\), \\(c_{12}=1+0=1\\), \\(c_{21}=0+4=4\\), \\(c_{22}=3+0=3\\)",
     "quick": "Nhân hàng × cột: \\(AB=\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
@@ -576,7 +1416,12 @@
     "type": "multiply",
     "question": "Tính \\(A^2\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&4\\\\9&16\\end{pmatrix}\\)","\\(\\begin{pmatrix}2&4\\\\6&8\\end{pmatrix}\\)","\\(\\begin{pmatrix}4&6\\\\8&10\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&4\\\\9&16\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&4\\\\6&8\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}4&6\\\\8&10\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
     "solution": "\\(c_{11}=1+6=7\\), \\(c_{12}=2+8=10\\), \\(c_{21}=3+12=15\\), \\(c_{22}=6+16=22\\)",
     "quick": "Nhân \\(A\\times A\\) bình thường",
@@ -587,7 +1432,12 @@
     "type": "multiply",
     "question": "Cho \\(A\\) cỡ \\(2\\times3\\) và \\(B\\) cỡ \\(3\\times2\\). Cỡ của \\(BA\\) là",
     "matrix": null,
-    "options": ["\\(3\\times3\\)","\\(2\\times2\\)","\\(2\\times3\\)","Không xác định"],
+    "options": [
+      "\\(3\\times3\\)",
+      "\\(2\\times2\\)",
+      "\\(2\\times3\\)",
+      "Không xác định"
+    ],
     "correct": "\\(3\\times3\\)",
     "solution": "\\(BA\\): \\(B\\) cỡ \\(3\\times2\\), \\(A\\) cỡ \\(2\\times3\\) → \\(BA\\) cỡ \\(3\\times3\\)",
     "quick": "\\((3\\times2)(2\\times3)=3\\times3\\)",
@@ -598,7 +1448,12 @@
     "type": "inverse",
     "question": "Ma trận nghịch đảo của \\(A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&1\\\\1&2\\end{pmatrix}\\)","\\(\\begin{pmatrix}-1&1\\\\1&-2\\end{pmatrix}\\)","\\(\\begin{pmatrix}2&-1\\\\-1&1\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&1\\\\1&2\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}-1&1\\\\1&-2\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&-1\\\\-1&1\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}\\)",
     "solution": "\\(\\det=2-1=1\\). \\(A^{-1}=\\frac{1}{1}\\begin{pmatrix}1&-1\\\\-1&2\\end{pmatrix}\\)",
     "quick": "\\(A^{-1}=\\frac{1}{\\det}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\)",
@@ -609,7 +1464,12 @@
     "type": "inverse",
     "question": "Ma trận \\(A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\\) có nghịch đảo không?",
     "matrix": null,
-    "options": ["Không, vì \\(\\det(A)=0\\)","Có","Có, nghịch đảo là \\(\\begin{pmatrix}4&-2\\\\-2&1\\end{pmatrix}\\)","Không xác định"],
+    "options": [
+      "Không, vì \\(\\det(A)=0\\)",
+      "Có",
+      "Có, nghịch đảo là \\(\\begin{pmatrix}4&-2\\\\-2&1\\end{pmatrix}\\)",
+      "Không xác định"
+    ],
     "correct": "Không, vì \\(\\det(A)=0\\)",
     "solution": "\\(\\det(A)=4-4=0\\) → ma trận suy biến, không khả nghịch",
     "quick": "\\(\\det=0\\) → không có nghịch đảo",
@@ -620,7 +1480,12 @@
     "type": "inverse",
     "question": "Ma trận nghịch đảo của \\(A=\\begin{pmatrix}3&1\\\\5&2\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}2&-1\\\\-5&3\\end{pmatrix}\\)","\\(\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix}\\)","\\(\\begin{pmatrix}-2&1\\\\5&-3\\end{pmatrix}\\)","\\(\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}2&-1\\\\-5&3\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}-2&1\\\\5&-3\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}2&-1\\\\-5&3\\end{pmatrix}\\)",
     "solution": "\\(\\det=6-5=1\\). \\(A^{-1}=\\begin{pmatrix}2&-1\\\\-5&3\\end{pmatrix}\\)",
     "quick": "\\(\\det=1\\) → \\(A^{-1}=\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\)",
@@ -631,7 +1496,12 @@
     "type": "inverse",
     "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\). \\(A^{-1}\\) là",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}1&0\\\\0&\\frac{1}{2}\\end{pmatrix}\\)","\\(\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}\\)","\\(\\begin{pmatrix}0&1\\\\2&0\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&0\\\\0&-2\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}1&0\\\\0&\\frac{1}{2}\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0&1\\\\2&0\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0\\\\0&-2\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}1&0\\\\0&\\frac{1}{2}\\end{pmatrix}\\)",
     "solution": "Ma trận đường chéo: \\(A^{-1}_{ii}=1/a_{ii}\\): \\(1/1=1\\), \\(1/2\\)",
     "quick": "Đường chéo: nghịch đảo từng phần tử trên đường chéo",
@@ -642,7 +1512,12 @@
     "type": "inverse",
     "question": "Cho \\(\\det(A)=5\\) với \\(A\\) cỡ \\(3\\times3\\). Ma trận \\(A\\) có khả nghịch không?",
     "matrix": null,
-    "options": ["Có, vì \\(\\det(A)\\neq0\\)","Không","Chỉ khi \\(\\det=1\\)","Không xác định"],
+    "options": [
+      "Có, vì \\(\\det(A)\\neq0\\)",
+      "Không",
+      "Chỉ khi \\(\\det=1\\)",
+      "Không xác định"
+    ],
     "correct": "Có, vì \\(\\det(A)\\neq0\\)",
     "solution": "\\(\\det\\neq0\\) ↔ khả nghịch. Vì \\(\\det=5\\neq0\\) → có nghịch đảo.",
     "quick": "\\(\\det\\neq0\\) ↔ khả nghịch",
@@ -653,7 +1528,12 @@
     "type": "inverse",
     "question": "Ma trận nghịch đảo của ma trận đơn vị \\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["\\(I\\) chính nó","\\(0\\) (ma trận không)","\\(-I\\)","\\(2I\\)"],
+    "options": [
+      "\\(I\\) chính nó",
+      "\\(0\\) (ma trận không)",
+      "\\(-I\\)",
+      "\\(2I\\)"
+    ],
     "correct": "\\(I\\) chính nó",
     "solution": "\\(I\\cdot I=I\\) → \\(I^{-1}=I\\)",
     "quick": "Ma trận đơn vị: \\(I^{-1}=I\\)",
@@ -664,7 +1544,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=5\\). Tính \\(\\det(2A)\\).",
     "matrix": null,
-    "options": ["40","10","5","20"],
+    "options": [
+      "40",
+      "10",
+      "5",
+      "20"
+    ],
     "correct": "40",
     "solution": "\\(\\det(kA)=k^n\\det(A)\\) với \\(n=3\\): \\(\\det(2A)=2^3\\cdot5=8\\cdot5=40\\)",
     "quick": "\\(2^3\\times5=8\\times5=40\\)",
@@ -675,7 +1560,12 @@
     "type": "det_property",
     "question": "Cho \\(\\det(A)=3\\) với \\(A\\) cỡ \\(4\\times4\\). Tính \\(\\det(A^T)\\).",
     "matrix": null,
-    "options": ["3","-3","9","81"],
+    "options": [
+      "3",
+      "-3",
+      "9",
+      "81"
+    ],
     "correct": "3",
     "solution": "\\(\\det(A^T)=\\det(A)=3\\) — tính chất cơ bản",
     "quick": "\\(\\det(A^T)=\\det(A)\\) luôn đúng",
@@ -686,7 +1576,12 @@
     "type": "det_property",
     "question": "Cho \\(\\det(A)=4\\) với \\(A\\) cỡ \\(2\\times2\\). Tính \\(\\det(A^{-1})\\).",
     "matrix": null,
-    "options": ["\\(\\frac{1}{4}\\)","-4","4","\\(\\frac{1}{2}\\)"],
+    "options": [
+      "\\(\\frac{1}{4}\\)",
+      "-4",
+      "4",
+      "\\(\\frac{1}{2}\\)"
+    ],
     "correct": "\\(\\frac{1}{4}\\)",
     "solution": "\\(\\det(A^{-1})=\\frac{1}{\\det(A)}=\\frac{1}{4}\\)",
     "quick": "\\(\\det(A^{-1})=\\frac{1}{\\det(A)}\\)",
@@ -697,7 +1592,12 @@
     "type": "det_property",
     "question": "Cho \\(\\det(A)=2\\), \\(\\det(B)=3\\) cùng cỡ \\(2\\times2\\). Tính \\(\\det(AB)\\).",
     "matrix": null,
-    "options": ["6","5","8","1"],
+    "options": [
+      "6",
+      "5",
+      "8",
+      "1"
+    ],
     "correct": "6",
     "solution": "\\(\\det(AB)=\\det(A)\\cdot\\det(B)=2\\cdot3=6\\)",
     "quick": "\\(\\det(AB)=\\det(A)\\det(B)\\)",
@@ -708,7 +1608,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=2\\). Tính \\(\\det(3A)\\).",
     "matrix": null,
-    "options": ["54","6","18","9"],
+    "options": [
+      "54",
+      "6",
+      "18",
+      "9"
+    ],
     "correct": "54",
     "solution": "\\(\\det(3A)=3^3\\cdot\\det(A)=27\\cdot2=54\\)",
     "quick": "\\(3^3\\times2=27\\times2=54\\)",
@@ -719,7 +1624,12 @@
     "type": "det_property",
     "question": "Cho \\(\\det(A)=2\\) với \\(A\\) cỡ \\(4\\times4\\). Tính \\(\\det(2A^2)\\).",
     "matrix": null,
-    "options": ["64","16","32","8"],
+    "options": [
+      "64",
+      "16",
+      "32",
+      "8"
+    ],
     "correct": "64",
     "solution": "\\(\\det(2A^2)=2^4\\cdot(\\det A)^2=16\\cdot4=64\\)",
     "quick": "\\(2^4\\times2^2=16\\times4=64\\)",
@@ -730,7 +1640,12 @@
     "type": "det_property",
     "question": "Nếu hai hàng của ma trận vuông \\(A\\) bằng nhau thì \\(\\det(A)=\\)",
     "matrix": null,
-    "options": ["0","1","-1","2"],
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ],
     "correct": "0",
     "solution": "Tính chất: hai hàng (cột) giống nhau → \\(\\det(A)=0\\)",
     "quick": "Hàng bằng nhau → det=0 → suy biến",
@@ -741,7 +1656,12 @@
     "type": "det_property",
     "question": "Đổi chỗ hai hàng của \\(A\\) được \\(B\\). Quan hệ giữa \\(\\det(B)\\) và \\(\\det(A)\\) là",
     "matrix": null,
-    "options": ["\\(\\det(B)=-\\det(A)\\)","\\(\\det(B)=\\det(A)\\)","\\(\\det(B)=2\\det(A)\\)","\\(\\det(B)=0\\)"],
+    "options": [
+      "\\(\\det(B)=-\\det(A)\\)",
+      "\\(\\det(B)=\\det(A)\\)",
+      "\\(\\det(B)=2\\det(A)\\)",
+      "\\(\\det(B)=0\\)"
+    ],
     "correct": "\\(\\det(B)=-\\det(A)\\)",
     "solution": "Hoán vị hai hàng → định thức đổi dấu",
     "quick": "Hoán vị 2 hàng → nhân \\(-1\\)",
@@ -752,7 +1672,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(6\\times6\\) với \\(\\det(A)=3\\). Tính \\(\\det(2A)\\).",
     "matrix": null,
-    "options": ["192","6","96","48"],
+    "options": [
+      "192",
+      "6",
+      "96",
+      "48"
+    ],
     "correct": "192",
     "solution": "\\(\\det(2A)=2^6\\cdot\\det(A)=64\\cdot3=192\\)",
     "quick": "\\(2^6\\times3=64\\times3=192\\)",
@@ -763,7 +1688,12 @@
     "type": "det_property",
     "question": "Cho \\(\\det(A)=4\\) với \\(A\\) cỡ \\(3\\times3\\). Tính \\(\\det(A^{-1})\\).",
     "matrix": null,
-    "options": ["\\(\\frac{1}{4}\\)","4","-4","16"],
+    "options": [
+      "\\(\\frac{1}{4}\\)",
+      "4",
+      "-4",
+      "16"
+    ],
     "correct": "\\(\\frac{1}{4}\\)",
     "solution": "\\(\\det(A^{-1})=\\frac{1}{\\det(A)}=\\frac{1}{4}\\)",
     "quick": "\\(\\det(A^{-1})=\\frac{1}{\\det A}\\)",
@@ -774,7 +1704,12 @@
     "type": "eigenvalue",
     "question": "Giá trị riêng của \\(A=\\begin{pmatrix}3&0\\\\0&5\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["3 và 5","0 và 0","15","8"],
+    "options": [
+      "3 và 5",
+      "0 và 0",
+      "15",
+      "8"
+    ],
     "correct": "3 và 5",
     "solution": "Ma trận đường chéo: \\(\\lambda_1=3, \\lambda_2=5\\)",
     "quick": "Đường chéo → đọc thẳng giá trị riêng",
@@ -785,7 +1720,12 @@
     "type": "eigenvalue",
     "question": "Tìm giá trị riêng của \\(A=\\begin{pmatrix}2&1\\\\0&3\\end{pmatrix}\\)",
     "matrix": null,
-    "options": ["2 và 3","1 và 0","5","6"],
+    "options": [
+      "2 và 3",
+      "1 và 0",
+      "5",
+      "6"
+    ],
     "correct": "2 và 3",
     "solution": "Tam giác trên: \\(\\lambda_1=2, \\lambda_2=3\\)",
     "quick": "Ma trận tam giác → đọc đường chéo",
@@ -796,7 +1736,12 @@
     "type": "eigenvalue",
     "question": "Tìm giá trị riêng của \\(A=\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\)",
     "matrix": null,
-    "options": ["5 và 2","4 và 3","7 và 0","1 và 6"],
+    "options": [
+      "5 và 2",
+      "4 và 3",
+      "7 và 0",
+      "1 và 6"
+    ],
     "correct": "5 và 2",
     "solution": "\\(\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=\\lambda^2-7\\lambda+10=(\\lambda-5)(\\lambda-2)=0\\)",
     "quick": "PT đặc trưng: \\(\\lambda^2-7\\lambda+10=0 \\to (\\lambda-5)(\\lambda-2)=0\\)",
@@ -807,7 +1752,12 @@
     "type": "eigenvalue",
     "question": "Tổng các giá trị riêng của \\(A=\\begin{pmatrix}1&0&0\\\\-10&-3&0\\\\4&200&6\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["4","0","6","10"],
+    "options": [
+      "4",
+      "0",
+      "6",
+      "10"
+    ],
     "correct": "4",
     "solution": "Tam giác dưới: \\(\\lambda_1=1,\\lambda_2=-3,\\lambda_3=6\\). Tổng \\(=\\text{tr}(A)=1-3+6=4\\)",
     "quick": "Tổng giá trị riêng = vết (trace). \\(1-3+6=4\\)",
@@ -818,7 +1768,12 @@
     "type": "eigenvalue",
     "question": "Tích các giá trị riêng của \\(A=\\begin{pmatrix}2&3\\\\1&4\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["5","8","6","11"],
+    "options": [
+      "5",
+      "8",
+      "6",
+      "11"
+    ],
     "correct": "5",
     "solution": "Tích giá trị riêng \\(=\\det(A)=2\\cdot4-3\\cdot1=8-3=5\\)",
     "quick": "Tích giá trị riêng = \\(\\det(A)=5\\)",
@@ -829,7 +1784,12 @@
     "type": "eigenvalue",
     "question": "Ma trận \\(A=\\begin{pmatrix}2&3\\\\4&1\\end{pmatrix}\\) chéo hoá thành ma trận nào?",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)","\\(\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}\\)","\\(\\begin{pmatrix}5&0\\\\0&4\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&0\\\\0&3\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}5&0\\\\0&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0\\\\0&3\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
     "solution": "PT đặc trưng: \\(\\lambda^2-3\\lambda-10=(\\lambda+2)(\\lambda-5)=0\\to\\lambda=-2,5\\)",
     "quick": "Chéo hoá: đặt giá trị riêng trên đường chéo theo thứ tự",
@@ -840,7 +1800,12 @@
     "type": "eigenvalue",
     "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) có giá trị riêng là",
     "matrix": null,
-    "options": ["1 (bội kép)","0 và 1","0 (bội kép)","1 và 2"],
+    "options": [
+      "1 (bội kép)",
+      "0 và 1",
+      "0 (bội kép)",
+      "1 và 2"
+    ],
     "correct": "1 (bội kép)",
     "solution": "\\(\\det(I-\\lambda I)=(1-\\lambda)^2=0\\to\\lambda=1\\) bội kép",
     "quick": "Ma trận đơn vị: mọi giá trị riêng đều bằng 1",
@@ -851,7 +1816,12 @@
     "type": "eigenvalue",
     "question": "Số giá trị riêng phân biệt của \\(A=\\begin{pmatrix}-1&3&7\\\\0&2&8\\\\0&0&3\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["3","1","2","0"],
+    "options": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
     "correct": "3",
     "solution": "Tam giác trên: \\(\\lambda_1=-1,\\lambda_2=2,\\lambda_3=3\\) — ba giá trị riêng phân biệt",
     "quick": "Tam giác → đọc đường chéo: -1, 2, 3 → 3 giá trị phân biệt",
@@ -862,7 +1832,12 @@
     "type": "eigenvalue",
     "question": "Cho \\(A=\\begin{pmatrix}5&2\\\\2&5\\end{pmatrix}\\). Các giá trị riêng của \\(A\\) là",
     "matrix": null,
-    "options": ["3 và 7","5 và 5","5 và 2","4 và 6"],
+    "options": [
+      "3 và 7",
+      "5 và 5",
+      "5 và 2",
+      "4 và 6"
+    ],
     "correct": "3 và 7",
     "solution": "\\(\\det(A-\\lambda I)=(5-\\lambda)^2-4=0\\to(5-\\lambda)^2=4\\to\\lambda=3,7\\)",
     "quick": "\\((5-\\lambda)^2=4\\to\\lambda=5\\pm2=3,7\\)",
@@ -873,7 +1848,12 @@
     "type": "eigenvalue",
     "question": "Vectơ riêng ứng với \\(\\lambda=2\\) của \\(A=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["\\((2,1)^T\\)","\\((1,0)^T\\)","\\((0,1)^T\\)","\\((1,1)^T\\)"],
+    "options": [
+      "\\((2,1)^T\\)",
+      "\\((1,0)^T\\)",
+      "\\((0,1)^T\\)",
+      "\\((1,1)^T\\)"
+    ],
     "correct": "\\((2,1)^T\\)",
     "solution": "\\((A-2I)v=0\\): \\(\\begin{pmatrix}-1&2\\\\0&0\\end{pmatrix}v=0\\to -v_1+2v_2=0\\to v_1=2v_2\\). Chọn \\(v_2=1\\): \\(v=(2,1)^T\\)",
     "quick": "Giải \\((A-\\lambda I)v=0\\), đặt \\(v_2=1\\)",
@@ -884,7 +1864,12 @@
     "type": "rank",
     "question": "Hạng của \\(A=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&0\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["2","3","1","0"],
+    "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ],
     "correct": "2",
     "solution": "Có 2 hàng khác 0 và độc lập tuyến tính → \\(\\text{rank}(A)=2\\)",
     "quick": "Đếm số hàng pivot sau khử Gauss",
@@ -895,7 +1880,12 @@
     "type": "rank",
     "question": "Hạng của \\(A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["1","2","0","3"],
+    "options": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ],
     "correct": "1",
     "solution": "Hàng 2 = 2×hàng 1 → phụ thuộc → \\(\\text{rank}(A)=1\\)",
     "quick": "Hàng 2 tỉ lệ hàng 1 → rank=1",
@@ -906,7 +1896,12 @@
     "type": "rank",
     "question": "Hạng của \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\3&6&9\\end{pmatrix}\\) là",
     "matrix": null,
-    "options": ["1","2","3","0"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
     "correct": "1",
     "solution": "Hàng 2=2×Hàng1, Hàng 3=3×Hàng1 → tất cả phụ thuộc → rank=1",
     "quick": "Tất cả hàng tỉ lệ nhau → rank=1",
@@ -917,7 +1912,12 @@
     "type": "rank",
     "question": "Ma trận đơn vị \\(I_n\\) có hạng là",
     "matrix": null,
-    "options": ["\\(n\\)","1","0","\\(n-1\\)"],
+    "options": [
+      "\\(n\\)",
+      "1",
+      "0",
+      "\\(n-1\\)"
+    ],
     "correct": "\\(n\\)",
     "solution": "\\(I_n\\) có \\(n\\) hàng độc lập tuyến tính → rank\\((I_n)=n\\)",
     "quick": "Ma trận đơn vị: rank = cỡ ma trận = \\(n\\)",
@@ -928,7 +1928,12 @@
     "type": "linear_independence",
     "question": "Hệ vectơ \\(v_1=(1,0)^T\\), \\(v_2=(0,1)^T\\) là",
     "matrix": null,
-    "options": ["Độc lập tuyến tính","Phụ thuộc tuyến tính","Cùng chiều","Bằng nhau"],
+    "options": [
+      "Độc lập tuyến tính",
+      "Phụ thuộc tuyến tính",
+      "Cùng chiều",
+      "Bằng nhau"
+    ],
     "correct": "Độc lập tuyến tính",
     "solution": "\\(\\alpha(1,0)+\\beta(0,1)=(0,0)\\Rightarrow\\alpha=\\beta=0\\) — độc lập",
     "quick": "Cơ sở chuẩn luôn độc lập tuyến tính",
@@ -939,7 +1944,12 @@
     "type": "linear_independence",
     "question": "Hệ \\(v_1=(1,2)^T\\), \\(v_2=(2,4)^T\\) là",
     "matrix": null,
-    "options": ["Phụ thuộc tuyến tính","Độc lập tuyến tính","Cơ sở","Trực giao"],
+    "options": [
+      "Phụ thuộc tuyến tính",
+      "Độc lập tuyến tính",
+      "Cơ sở",
+      "Trực giao"
+    ],
     "correct": "Phụ thuộc tuyến tính",
     "solution": "\\(v_2=2v_1\\) → phụ thuộc tuyến tính",
     "quick": "\\(v_2=2v_1\\) → phụ thuộc",
@@ -950,7 +1960,12 @@
     "type": "linear_independence",
     "question": "Cho \\(v_1=(1,2,1)^T\\), \\(v_2=(3,1,1)^T\\), \\(v_3=(5,0,a)^T\\). Hệ phụ thuộc khi \\(a=\\)",
     "matrix": null,
-    "options": ["1","-2","2","-1"],
+    "options": [
+      "1",
+      "-2",
+      "2",
+      "-1"
+    ],
     "correct": "1",
     "solution": "\\(\\det[v_1,v_2,v_3]=0\\): tính det và đặt \\(=0\\) → \\(a=1\\)",
     "quick": "Phụ thuộc ↔ det=0 → giải theo tham số \\(a\\)",
@@ -961,7 +1976,12 @@
     "type": "system",
     "question": "Hệ \\(\\begin{cases}x+y=3\\\\2x-y=0\\end{cases}\\) có nghiệm",
     "matrix": null,
-    "options": ["\\(x=1,y=2\\)","\\(x=2,y=1\\)","\\(x=0,y=3\\)","Vô nghiệm"],
+    "options": [
+      "\\(x=1,y=2\\)",
+      "\\(x=2,y=1\\)",
+      "\\(x=0,y=3\\)",
+      "Vô nghiệm"
+    ],
     "correct": "\\(x=1,y=2\\)",
     "solution": "Cộng 2 PT: \\(3x=3\\to x=1\\), \\(y=3-1=2\\)",
     "quick": "Cộng PT1+PT2: \\(3x=3\\to x=1,y=2\\)",
@@ -972,7 +1992,12 @@
     "type": "system",
     "question": "Hệ \\(\\begin{cases}2x+y=5\\\\x-y=1\\end{cases}\\) có nghiệm",
     "matrix": null,
-    "options": ["\\(x=2,y=1\\)","\\(x=1,y=3\\)","\\(x=3,y=-1\\)","Vô số nghiệm"],
+    "options": [
+      "\\(x=2,y=1\\)",
+      "\\(x=1,y=3\\)",
+      "\\(x=3,y=-1\\)",
+      "Vô số nghiệm"
+    ],
     "correct": "\\(x=2,y=1\\)",
     "solution": "Cộng 2 PT: \\(3x=6\\to x=2\\), \\(y=2-1=1\\)",
     "quick": "Cộng PT: \\(3x=6\\to x=2\\)",
@@ -983,7 +2008,12 @@
     "type": "system",
     "question": "Hệ \\(\\begin{cases}x+y=1\\\\2x+2y=2\\end{cases}\\) có",
     "matrix": null,
-    "options": ["Vô số nghiệm","Một nghiệm","Vô nghiệm","Hai nghiệm"],
+    "options": [
+      "Vô số nghiệm",
+      "Một nghiệm",
+      "Vô nghiệm",
+      "Hai nghiệm"
+    ],
     "correct": "Vô số nghiệm",
     "solution": "PT2 = 2×PT1 → phụ thuộc → vô số nghiệm: \\(x=t, y=1-t\\)",
     "quick": "Hàng 2 tỉ lệ hàng 1 → vô số nghiệm",
@@ -994,7 +2024,12 @@
     "type": "system",
     "question": "Hệ \\(\\begin{cases}x+y=1\\\\x+y=2\\end{cases}\\) có",
     "matrix": null,
-    "options": ["Vô nghiệm","Một nghiệm","Vô số nghiệm","\\(x=0\\)"],
+    "options": [
+      "Vô nghiệm",
+      "Một nghiệm",
+      "Vô số nghiệm",
+      "\\(x=0\\)"
+    ],
     "correct": "Vô nghiệm",
     "solution": "Hai PT mâu thuẫn nhau → vô nghiệm. rank(A)≠rank(Ab)",
     "quick": "rank(A)≠rank(Ab) → vô nghiệm",
@@ -1005,7 +2040,12 @@
     "type": "system",
     "question": "Số tham số tự do của hệ \\(\\begin{cases}2x-2y+z=1\\\\3x+y-2z=3\\end{cases}\\) là",
     "matrix": null,
-    "options": ["1","0","2","3"],
+    "options": [
+      "1",
+      "0",
+      "2",
+      "3"
+    ],
     "correct": "1",
     "solution": "2 PT, 3 ẩn, rank(A)=2 → tham số tự do = \\(n-\\text{rank}=3-2=1\\)",
     "quick": "Tham số tự do = số ẩn − hạng = 3-2=1",
@@ -1016,7 +2056,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\), \\(\\det(A)=2\\). Tính \\(\\det(A^3)\\).",
     "matrix": null,
-    "options": ["8","6","16","4"],
+    "options": [
+      "8",
+      "6",
+      "16",
+      "4"
+    ],
     "correct": "8",
     "solution": "\\(\\det(A^3)=(\\det A)^3=2^3=8\\)",
     "quick": "\\(\\det(A^k)=(\\det A)^k\\): \\(2^3=8\\)",
@@ -1027,7 +2072,12 @@
     "type": "det_property",
     "question": "Cho \\(A,B\\) cỡ \\(3\\times3\\) với \\(\\det(A)=2\\), \\(\\det(B)=-1\\). Tính \\(\\det(AB^2)\\).",
     "matrix": null,
-    "options": ["2","-2","4","1"],
+    "options": [
+      "2",
+      "-2",
+      "4",
+      "1"
+    ],
     "correct": "2",
     "solution": "\\(\\det(AB^2)=\\det(A)\\cdot(\\det B)^2=2\\cdot1=2\\)",
     "quick": "\\(2\\times(-1)^2=2\\times1=2\\)",
@@ -1038,7 +2088,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(2\\times2\\), \\(\\det(A)=3\\). Tính \\(\\det((2A)^{-1})\\).",
     "matrix": null,
-    "options": ["\\(\\frac{1}{12}\\)","\\(\\frac{1}{3}\\)","12","\\(\\frac{1}{6}\\)"],
+    "options": [
+      "\\(\\frac{1}{12}\\)",
+      "\\(\\frac{1}{3}\\)",
+      "12",
+      "\\(\\frac{1}{6}\\)"
+    ],
     "correct": "\\(\\frac{1}{12}\\)",
     "solution": "\\(\\det((2A)^{-1})=\\frac{1}{\\det(2A)}=\\frac{1}{2^2\\cdot3}=\\frac{1}{12}\\)",
     "quick": "\\(\\det(2A)=4\\times3=12\\) → \\(\\det((2A)^{-1})=1/12\\)",
@@ -1049,7 +2104,12 @@
     "type": "det_property",
     "question": "Cho \\(\\det(A)=7\\) với \\(A\\) cỡ \\(2\\times2\\). Tính \\(\\det(A^T)\\).",
     "matrix": null,
-    "options": ["7","-7","49","1"],
+    "options": [
+      "7",
+      "-7",
+      "49",
+      "1"
+    ],
     "correct": "7",
     "solution": "\\(\\det(A^T)=\\det(A)=7\\)",
     "quick": "\\(\\det(A^T)=\\det(A)\\) luôn đúng",
@@ -1060,7 +2120,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=2\\). Tính \\(\\det(A^{-1})\\).",
     "matrix": null,
-    "options": ["\\(\\frac{1}{2}\\)","2","-2","\\(\\frac{1}{4}\\)"],
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "2",
+      "-2",
+      "\\(\\frac{1}{4}\\)"
+    ],
     "correct": "\\(\\frac{1}{2}\\)",
     "solution": "\\(\\det(A^{-1})=\\frac{1}{\\det(A)}=\\frac{1}{2}\\)",
     "quick": "\\(\\det(A^{-1})=\\frac{1}{\\det A}=\\frac{1}{2}\\)",
@@ -1071,7 +2136,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(4\\times4\\) với \\(\\det(A^T)=2\\). Tính \\(\\det(2A^2)\\).",
     "matrix": null,
-    "options": ["64","16","32","4"],
+    "options": [
+      "64",
+      "16",
+      "32",
+      "4"
+    ],
     "correct": "64",
     "solution": "\\(\\det(A)=2\\). \\(\\det(2A^2)=2^4\\cdot(\\det A)^2=16\\cdot4=64\\)",
     "quick": "\\(2^4\\times2^2=16\\times4=64\\)",
@@ -1082,7 +2152,12 @@
     "type": "multiply",
     "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) nhân với \\(B=\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\) cho kết quả là",
     "matrix": null,
-    "options": ["\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)","\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)","\\(\\begin{pmatrix}3&0\\\\0&7\\end{pmatrix}\\)","\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)"],
+    "options": [
+      "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}3&0\\\\0&7\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)"
+    ],
     "correct": "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
     "solution": "\\(I\\cdot B=B\\) — nhân với ma trận đơn vị không thay đổi kết quả",
     "quick": "\\(IB=B\\) luôn đúng",
@@ -1093,7 +2168,12 @@
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=6\\). Nếu nhân một hàng của \\(A\\) với \\(k=3\\) được ma trận \\(B\\), thì \\(\\det(B)=\\)",
     "matrix": null,
-    "options": ["18","6","3","54"],
+    "options": [
+      "18",
+      "6",
+      "3",
+      "54"
+    ],
     "correct": "18",
     "solution": "Nhân một hàng với \\(k\\) → định thức nhân với \\(k\\): \\(\\det(B)=3\\cdot6=18\\)",
     "quick": "Nhân 1 hàng với \\(k\\) → det nhân \\(k\\) (không phải \\(k^n\\))",

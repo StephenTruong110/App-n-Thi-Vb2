@@ -1,7 +1,6 @@
 # 🎯 VB2 Math Practice Web
 
-Web luyện thi Toán Cao Cấp VB2 — hỗ trợ trắc nghiệm, lời giải chi tiết, MathJax hiển thị công thức, và lưu tiến trình bằng LocalStorage.
-
+Web luyện thi Toán Cao Cấp VB2 — hỗ trợ trắc nghiệm, lời giải chi tiết, MathJax hiển thị công thức
 ---
 
 ## 🚀 Tính năng chính
@@ -18,7 +17,7 @@ Web luyện thi Toán Cao Cấp VB2 — hỗ trợ trắc nghiệm, lời giải
   - Giải chi tiết
   - Mẹo
   - CASIO
-- 🧮 Render công thức bằng MathJax 
+- 🧮 Render công thức bằng MathJax
 - ⏳ Countdown ngày thi
   ....
 ---
