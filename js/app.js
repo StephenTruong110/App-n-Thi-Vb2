@@ -12,6 +12,7 @@ let solTab      = 'giai';
 let totalDone   = 0;
 let totalRight  = 0;
 let totalWrong  = 0;
+let grades      = []; // null = chưa chấm, true/false = đúng/sai
 
 const LETTERS = ['A','B','C','D','E','F'];
 
@@ -21,6 +22,7 @@ function saveProgress() {
     questions,
     current,
     userAnswers,
+    grades,
     totalDone,
     totalRight,
     totalWrong
@@ -39,13 +41,52 @@ function loadProgress() {
     questions   = parsed.questions || [];
     current     = parsed.current || 0;
     userAnswers = parsed.userAnswers || [];
+    grades      = parsed.grades || [];
     totalDone   = parsed.totalDone || 0;
     totalRight  = parsed.totalRight || 0;
     totalWrong  = parsed.totalWrong || 0;
 
+    normalizeProgressArrays();
+    recomputeTotals();
     return true;
   } catch {
     return false;
+  }
+}
+
+function normalizeProgressArrays() {
+  if (!Array.isArray(userAnswers)) userAnswers = [];
+  if (!Array.isArray(grades)) grades = [];
+
+  if (questions.length) {
+    if (userAnswers.length !== questions.length) {
+      const nextAnswers = Array(questions.length).fill(-1);
+      for (let i = 0; i < Math.min(userAnswers.length, nextAnswers.length); i++) {
+        nextAnswers[i] = userAnswers[i] ?? -1;
+      }
+      userAnswers = nextAnswers;
+    }
+
+    if (grades.length !== questions.length) {
+      const nextGrades = Array(questions.length).fill(null);
+      for (let i = 0; i < Math.min(grades.length, nextGrades.length); i++) {
+        nextGrades[i] = grades[i] ?? null;
+      }
+      grades = nextGrades;
+    }
+  }
+}
+
+function recomputeTotals() {
+  totalDone = 0;
+  totalRight = 0;
+  totalWrong = 0;
+
+  for (const g of grades) {
+    if (g !== true && g !== false) continue;
+    totalDone++;
+    if (g === true) totalRight++;
+    else totalWrong++;
   }
 }
 /* ================================================================
@@ -64,6 +105,11 @@ async function loadData() {
     answered  = false;
     selectedIdx = -1;
     solTab    = 'giai';
+    userAnswers = Array(questions.length).fill(-1);
+    grades = Array(questions.length).fill(null);
+    normalizeProgressArrays();
+    recomputeTotals();
+    saveProgress();
     renderQ();
   } catch(e) {
     showError('Không tải được file <b>' + type + '.json</b>.<br>Hãy chắc chắn các file JSON nằm cùng thư mục với HTML và mở qua web server (Live Server, Python http.server…).');
@@ -76,15 +122,13 @@ async function loadData() {
 function renderQ() {
   if (!questions.length) { showError('Không có câu hỏi.'); return; }
 
+  normalizeProgressArrays();
+  recomputeTotals();
+
   const q       = questions[current];
-  answered      = false;
-  selectedIdx   = -1;
   solTab        = 'giai';
-  selectedIdx = userAnswers[current] ?? -1;
-  if (selectedIdx !== -1) {
-  const btn = document.getElementById('opt-' + selectedIdx);
-  if (btn) btn.classList.add('selected');
-}
+  selectedIdx   = userAnswers[current] ?? -1;
+  answered      = grades[current] === true || grades[current] === false;
   updateStats();
 
   /* ── build options HTML ── */
@@ -128,6 +172,12 @@ function renderQ() {
       </div>
     </div>`;
 
+  if (selectedIdx !== -1) {
+    const btn = document.getElementById('opt-' + selectedIdx);
+    if (btn) btn.classList.add('selected');
+  }
+
+  if (answered) showAnswer(true);
   typeset();
 }
 
@@ -143,7 +193,7 @@ function renderMatrix(matrix) {
    PICK ANSWER
 ================================================================ */
 function pick(idx) {
-  if (answered) return;
+  if (grades[current] === true || grades[current] === false) return;
   selectedIdx = idx;
   userAnswers[current] = idx; // ✅ lưu
 
@@ -158,10 +208,8 @@ function pick(idx) {
 /* ================================================================
    SHOW ANSWER
 ================================================================ */
-function showAnswer() {
-  if (answered) return;
+function showAnswer(renderOnly = false) {
   answered = true;
-  totalDone++;
 
   const q       = questions[current];
   const correct = q.correct;

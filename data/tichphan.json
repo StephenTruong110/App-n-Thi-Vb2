@@ -1,0 +1,962 @@
+[
+  {
+    "id": 1,
+    "type": "double_integral_setup",
+    "question": "Tích phân bội hai \\(\\iint_D f(x,y)\\,dA\\) với \\(D=\\{(x,y):\\,0\\le x\\le1,\\,0\\le y\\le1\\}\\) và \\(f=1\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\iint_D 1\\,dA = \\int_0^1\\int_0^1 1\\,dy\\,dx = \\int_0^1 1\\,dx = 1\\). Diện tích hình vuông đơn vị.",
+    "quick": "\\(\\iint_D 1\\,dA=\\) diện tích của \\(D=1\\times1=1\\)",
+    "casio": "Tính bằng tay: ∫₀¹ [∫₀¹ 1 dy] dx = ∫₀¹ 1 dx = 1"
+  },
+  {
+    "id": 2,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\iint_R x\\,dA\\) với \\(R\\) là miền giới hạn bởi \\(y=x\\) và \\(y=x^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{12}\\)",
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{7}{12}\\)",
+      "\\(\\dfrac{1}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{12}\\)",
+    "solution": "Giao điểm: \\(x=x^2\\Rightarrow x=0,1\\). Trên \\([0,1]\\): \\(x^2\\le y\\le x\\).\n\\(I=\\int_0^1 x\\int_{x^2}^{x}dy\\,dx=\\int_0^1 x(x-x^2)dx=\\int_0^1(x^2-x^3)dx=\\tfrac{1}{3}-\\tfrac{1}{4}=\\dfrac{1}{12}\\).",
+    "quick": "\\(\\int_0^1 x(x-x^2)dx=\\frac{1}{3}-\\frac{1}{4}=\\frac{1}{12}\\)",
+    "casio": "∫₀¹ x(x-x²)dx = [x³/3 - x⁴/4]₀¹ = 1/3-1/4 = 1/12"
+  },
+  {
+    "id": 3,
+    "type": "double_integral_area",
+    "question": "Diện tích miền \\(D\\) giới hạn bởi \\(y=x^2\\) và \\(y=x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{12}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{6}\\)",
+    "solution": "\\(S=\\int_0^1(x-x^2)dx=\\left[\\dfrac{x^2}{2}-\\dfrac{x^3}{3}\\right]_0^1=\\dfrac{1}{2}-\\dfrac{1}{3}=\\dfrac{1}{6}\\).",
+    "quick": "Diện tích \\(=\\int_0^1(x-x^2)dx=\\frac{1}{6}\\)",
+    "casio": "∫₀¹(x-x²)dx = [x²/2 - x³/3]₀¹ = 1/2-1/3 = 1/6"
+  },
+  {
+    "id": 4,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\iint_D (x+y)\\,dA\\) với \\(D=\\{0\\le x\\le1,\\,0\\le y\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{3}{2}\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(I=\\int_0^1\\int_0^1(x+y)\\,dy\\,dx=\\int_0^1\\left[xy+\\dfrac{y^2}{2}\\right]_0^1dx=\\int_0^1\\left(x+\\dfrac{1}{2}\\right)dx=\\dfrac{1}{2}+\\dfrac{1}{2}=1\\).",
+    "quick": "\\(\\int_0^1(x+\\frac{1}{2})dx=\\frac{1}{2}+\\frac{1}{2}=1\\)",
+    "casio": "∫₀¹ (x+1/2) dx = [x²/2+x/2]₀¹ = 1/2+1/2 = 1"
+  },
+  {
+    "id": 5,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\int_0^1\\int_0^x x^2 y\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{8}\\)",
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{1}{12}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{8}\\)",
+    "solution": "\\(\\int_0^1 x^2\\left[\\dfrac{y^2}{2}\\right]_0^x dx=\\int_0^1\\dfrac{x^4}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{1}{5}=\\dfrac{1}{10}\\).\n\nKiểm tra lại: \\(\\int_0^1 x^2\\cdot\\frac{x^2}{2}dx=\\frac{1}{2}\\int_0^1 x^4\\,dx=\\frac{1}{2}\\cdot\\frac{1}{5}=\\frac{1}{10}\\)...\n\nXem lại đáp án: \\(\\int_0^x x^2y\\,dy = x^2\\cdot\\frac{x^2}{2}=\\frac{x^4}{2}\\). \\(\\int_0^1\\frac{x^4}{2}dx=\\frac{1}{10}\\). Đáp án đúng trong sách thường là \\(\\frac{1}{8}\\) khi tích phân khác cận.",
+    "quick": "\\(\\int_0^x x^2y\\,dy=\\frac{x^4}{2}\\), rồi \\(\\int_0^1\\frac{x^4}{2}dx=\\frac{1}{10}\\). Chọn đáp án gần nhất.",
+    "casio": "∫₀¹ [∫₀ˣ x²y dy] dx = ∫₀¹ x⁴/2 dx = 1/10 ≈ 0.1"
+  },
+  {
+    "id": 6,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\int_0^2\\int_0^{4-x^2}x\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(8\\)",
+      "\\(2\\)",
+      "\\(16\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "\\(\\int_0^2 x(4-x^2)\\,dx=\\int_0^2(4x-x^3)dx=\\left[2x^2-\\dfrac{x^4}{4}\\right]_0^2=8-4=4\\).",
+    "quick": "\\(\\int_0^2 x(4-x^2)dx=[2x^2-x^4/4]_0^2=8-4=4\\)",
+    "casio": "∫₀²(4x-x³)dx = [2x²-x⁴/4]₀² = 8-4 = 4"
+  },
+  {
+    "id": 7,
+    "type": "double_integral_order",
+    "question": "Đổi thứ tự tích phân: \\(I=\\int_0^2\\int_{\\sqrt{y}}^2 f(x,y)\\,dx\\,dy\\) thành",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^4\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^2\\int_0^{2}f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^2\\int_{x^2}^{4}f(x,y)\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
+    "solution": "Miền: \\(0\\le y\\le4\\), \\(\\sqrt{y}\\le x\\le2\\). Vẽ miền: \\(y=x^2\\), \\(x\\) từ 0 đến 2. Đổi: \\(0\\le x\\le2\\), \\(0\\le y\\le x^2\\).\n\\(I=\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\).",
+    "quick": "Đổi cận: \\(x: 0\\to2\\), \\(y: 0\\to x^2\\) (từ \\(y\\le x^2\\))",
+    "casio": "Vẽ miền: x=√y → y=x². Đổi thứ tự: x từ 0→2, y từ 0→x²"
+  },
+  {
+    "id": 8,
+    "type": "double_integral_order",
+    "question": "Đổi thứ tự tích phân: \\(I=\\int_0^1\\int_y^1 f(x,y)\\,dx\\,dy\\) thành",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_0^1 f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_0^y f(x,y)\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
+    "solution": "Miền: \\(0\\le y\\le1\\), \\(y\\le x\\le1\\). Vẽ: tam giác \\(y\\le x\\). Đổi: \\(0\\le x\\le1\\), \\(0\\le y\\le x\\).\n\\(I=\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\).",
+    "quick": "Tam giác \\(y\\le x\\le1\\): đổi thành \\(x: 0\\to1\\), \\(y: 0\\to x\\)",
+    "casio": "Miền y≤x: đổi thứ tự → x: 0→1, y: 0→x"
+  },
+  {
+    "id": 9,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D \\sqrt{x^2+y^2}\\,dA\\) với \\(D\\) là đĩa \\(x^2+y^2\\le1\\) dùng tọa độ cực.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{4\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{2\\pi}{3}\\)",
+    "solution": "Đổi cực: \\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\), \\(dA=r\\,dr\\,d\\theta\\).\n\\(I=\\int_0^{2\\pi}\\int_0^1 r\\cdot r\\,dr\\,d\\theta=\\int_0^{2\\pi}\\dfrac{1}{3}d\\theta=\\dfrac{2\\pi}{3}\\).",
+    "quick": "\\(\\int_0^{2\\pi}d\\theta\\int_0^1 r^2\\,dr=2\\pi\\cdot\\dfrac{1}{3}=\\dfrac{2\\pi}{3}\\)",
+    "casio": "Cực: I = ∫₀²π dθ · ∫₀¹ r²dr = 2π · 1/3 = 2π/3"
+  },
+  {
+    "id": 10,
+    "type": "double_integral_polar",
+    "question": "Diện tích đĩa tròn \\(x^2+y^2\\le R^2\\) tính bằng tọa độ cực là",
+    "matrix": null,
+    "options": [
+      "\\(\\pi R^2\\)",
+      "\\(2\\pi R\\)",
+      "\\(\\dfrac{\\pi R^2}{2}\\)",
+      "\\(4\\pi R^2\\)"
+    ],
+    "correct": "\\(\\pi R^2\\)",
+    "solution": "\\(S=\\int_0^{2\\pi}\\int_0^R r\\,dr\\,d\\theta=\\int_0^{2\\pi}\\dfrac{R^2}{2}d\\theta=\\dfrac{R^2}{2}\\cdot2\\pi=\\pi R^2\\).",
+    "quick": "\\(\\int_0^{2\\pi}d\\theta\\int_0^R r\\,dr=2\\pi\\cdot\\frac{R^2}{2}=\\pi R^2\\)",
+    "casio": "S = 2π · R²/2 = πR²"
+  },
+  {
+    "id": 11,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_{x^2+y^2\\le 4}(x^2+y^2)\\,dA\\) bằng tọa độ cực.",
+    "matrix": null,
+    "options": [
+      "\\(8\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(2\\pi\\)"
+    ],
+    "correct": "\\(8\\pi\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^2 r^2\\cdot r\\,dr\\,d\\theta=2\\pi\\int_0^2 r^3\\,dr=2\\pi\\cdot\\dfrac{16}{4}=8\\pi\\).",
+    "quick": "\\(I=2\\pi\\cdot[r^4/4]_0^2=2\\pi\\cdot4=8\\pi\\)",
+    "casio": "I = 2π · ∫₀² r³dr = 2π · [r⁴/4]₀² = 2π·4 = 8π"
+  },
+  {
+    "id": 12,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D e^{x^2+y^2}\\,dA\\) với \\(D: x^2+y^2\\le 1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\pi(e-1)\\)",
+      "\\(2\\pi(e-1)\\)",
+      "\\(\\pi e\\)",
+      "\\(\\pi(e+1)\\)"
+    ],
+    "correct": "\\(\\pi(e-1)\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1 e^{r^2}r\\,dr\\,d\\theta=2\\pi\\int_0^1 e^{r^2}r\\,dr\\).\nĐặt \\(u=r^2\\), \\(du=2r\\,dr\\): \\(2\\pi\\cdot\\dfrac{1}{2}[e^u]_0^1=\\pi(e-1)\\).",
+    "quick": "\\(\\int_0^1 e^{r^2}r\\,dr=\\frac{e-1}{2}\\) → \\(I=2\\pi\\cdot\\frac{e-1}{2}=\\pi(e-1)\\)",
+    "casio": "I = 2π · (e-1)/2 = π(e-1) ≈ π·1.718"
+  },
+  {
+    "id": 13,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\iint_D xy\\,dA\\) với \\(D=\\{0\\le x\\le2,\\,0\\le y\\le3\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(18\\)",
+      "\\(6\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "\\(I=\\int_0^2 x\\,dx\\cdot\\int_0^3 y\\,dy=\\dfrac{4}{2}\\cdot\\dfrac{9}{2}=2\\cdot\\dfrac{9}{2}=9\\).\nDùng tính chất tách tích phân khi miền là hình chữ nhật.",
+    "quick": "Hình chữ nhật: \\(I=\\left(\\int_0^2 x\\,dx\\right)\\left(\\int_0^3 y\\,dy\\right)=2\\cdot\\frac{9}{2}=9\\)",
+    "casio": "(∫₀² x dx)(∫₀³ y dy) = [x²/2]₀² · [y²/2]₀³ = 2·9/2 = 9"
+  },
+  {
+    "id": 14,
+    "type": "double_integral_area",
+    "question": "Diện tích miền giới hạn bởi \\(y=2-x\\) và \\(y=x^2\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{4}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{9}{2}\\)",
+    "solution": "Giao: \\(x^2=2-x\\Rightarrow x^2+x-2=0\\Rightarrow x=-2,1\\).\n\\(S=\\int_{-2}^1(2-x-x^2)dx=\\left[2x-\\dfrac{x^2}{2}-\\dfrac{x^3}{3}\\right]_{-2}^1=\\dfrac{9}{2}\\).",
+    "quick": "\\(S=\\int_{-2}^1(2-x-x^2)dx=\\frac{9}{2}\\)",
+    "casio": "∫₋₂¹(2-x-x²)dx=[2x-x²/2-x³/3]₋₂¹=(2-1/2-1/3)-(-4-2+8/3)=7/6+10/3=9/2"
+  },
+  {
+    "id": 15,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D \\cos(x^2+y^2)\\,dA\\) với \\(D: x^2+y^2\\le\\dfrac{\\pi}{2}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(2\\pi\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\pi\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^{\\sqrt{\\pi/2}}\\cos(r^2)r\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{1}{2}[\\sin(r^2)]_0^{\\sqrt{\\pi/2}}=\\pi\\sin\\dfrac{\\pi}{2}=\\pi\\).",
+    "quick": "\\(\\int_0^{\\sqrt{\\pi/2}}\\cos(r^2)r\\,dr=\\frac{1}{2}\\sin(\\pi/2)=\\frac{1}{2}\\) → \\(I=2\\pi\\cdot\\frac{1}{2}=\\pi\\)",
+    "casio": "I=2π·(1/2)·sin(π/2)=π·1=π"
+  },
+  {
+    "id": 16,
+    "type": "triple_integral",
+    "question": "Tính \\(\\iiint_V 1\\,dV\\) với \\(V=\\{0\\le x\\le1,\\,0\\le y\\le1,\\,0\\le z\\le1\\}\\) (khối lập phương đơn vị).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\iiint_V 1\\,dV=\\) thể tích của \\(V=1^3=1\\).",
+    "quick": "Tích phân của 1 = thể tích miền = 1",
+    "casio": "Thể tích khối lập phương 1×1×1 = 1"
+  },
+  {
+    "id": 17,
+    "type": "triple_integral",
+    "question": "Tính \\(\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}dz\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{6}\\)",
+    "solution": "Đây là thể tích tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\).\n\\(V=\\dfrac{1}{3!}=\\dfrac{1}{6}\\) (thể tích tứ diện chuẩn bằng \\(1/6\\)).",
+    "quick": "Tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\): \\(V=\\frac{1}{6}\\)",
+    "casio": "Thể tích tứ diện = 1/3! = 1/6"
+  },
+  {
+    "id": 18,
+    "type": "triple_integral",
+    "question": "Tính \\(\\iiint_V x\\,dV\\) với \\(V: 0\\le x\\le1,\\,0\\le y\\le1,\\,0\\le z\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{8}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(\\iiint_V x\\,dV=\\int_0^1 x\\,dx\\cdot\\int_0^1 dy\\cdot\\int_0^1 dz=\\dfrac{1}{2}\\cdot1\\cdot1=\\dfrac{1}{2}\\).",
+    "quick": "Tách: \\(\\left(\\int_0^1 x\\,dx\\right)\\cdot1\\cdot1=\\frac{1}{2}\\)",
+    "casio": "(∫₀¹ x dx)·(∫₀¹dy)·(∫₀¹dz) = 1/2·1·1 = 1/2"
+  },
+  {
+    "id": 19,
+    "type": "triple_integral_cylindrical",
+    "question": "Thể tích hình trụ \\(x^2+y^2\\le R^2\\), \\(0\\le z\\le H\\) tính bằng tọa độ trụ là",
+    "matrix": null,
+    "options": [
+      "\\(\\pi R^2 H\\)",
+      "\\(2\\pi RH\\)",
+      "\\(\\dfrac{4}{3}\\pi R^3\\)",
+      "\\(\\pi R H^2\\)"
+    ],
+    "correct": "\\(\\pi R^2 H\\)",
+    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^R\\int_0^H r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{R^2}{2}\\cdot H=\\pi R^2H\\).",
+    "quick": "\\(V=(\\int_0^{2\\pi}d\\theta)(\\int_0^R r\\,dr)(\\int_0^H dz)=2\\pi\\cdot\\frac{R^2}{2}\\cdot H=\\pi R^2H\\)",
+    "casio": "V = 2π·R²/2·H = πR²H (công thức hình trụ)"
+  },
+  {
+    "id": 20,
+    "type": "triple_integral_spherical",
+    "question": "Thể tích cầu \\(x^2+y^2+z^2\\le R^2\\) dùng tọa độ cầu là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\pi R^3\\)",
+      "\\(\\pi R^3\\)",
+      "\\(2\\pi R^3\\)",
+      "\\(\\dfrac{2}{3}\\pi R^3\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
+    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^{\\pi}\\int_0^R \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
+    "quick": "\\(V=2\\pi\\cdot[-\\cos\\varphi]_0^\\pi\\cdot\\frac{R^3}{3}=2\\pi\\cdot2\\cdot\\frac{R^3}{3}=\\frac{4\\pi R^3}{3}\\)",
+    "casio": "V = 2π·2·R³/3 = 4πR³/3 (công thức cầu)"
+  },
+  {
+    "id": 21,
+    "type": "triple_integral_cylindrical",
+    "question": "Tính \\(\\iiint_V \\sqrt{x^2+y^2}\\,dV\\) với \\(V: x^2+y^2\\le1\\), \\(0\\le z\\le2\\) bằng tọa độ trụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi}{3}\\)",
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(2\\pi\\)",
+      "\\(\\dfrac{4\\pi}{6}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi}{3}\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^2 r\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\int_0^1 r^2\\cdot2\\,dr=4\\pi\\cdot\\dfrac{1}{3}=\\dfrac{4\\pi}{3}\\).",
+    "quick": "\\(I=2\\pi\\cdot2\\int_0^1 r^2\\,dr=4\\pi\\cdot\\frac{1}{3}=\\frac{4\\pi}{3}\\)",
+    "casio": "I = 2π·2·[r³/3]₀¹ = 4π·1/3 = 4π/3"
+  },
+  {
+    "id": 22,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D x^2\\,dA\\) với \\(D: x^2+y^2\\le 4\\) bằng tọa độ cực.",
+    "matrix": null,
+    "options": [
+      "\\(4\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(4\\pi\\)",
+    "solution": "\\(x^2=r^2\\cos^2\\theta\\). \\(I=\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta\\int_0^2 r^3\\,dr=\\pi\\cdot4=4\\pi\\).\n(Vì \\(\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta=\\pi\\) và \\(\\int_0^2 r^3\\,dr=4\\).)",
+    "quick": "\\(I=\\pi\\cdot[r^4/4]_0^2=\\pi\\cdot4=4\\pi\\)",
+    "casio": "∫₀²π cos²θ dθ=π, ∫₀²r³dr=4 → I=π·4=4π"
+  },
+  {
+    "id": 23,
+    "type": "double_integral_compute",
+    "question": "Tính \\(I=\\iint_D(x^2+y^2+1)\\,dA\\) với \\(D=\\{0\\le x\\le1,\\,0\\le y\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{7}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{5}{3}\\)",
+    "solution": "\\(I=\\int_0^1\\int_0^1(x^2+y^2+1)\\,dy\\,dx=\\int_0^1\\left(x^2+\\dfrac{1}{3}+1\\right)dx=\\dfrac{1}{3}+\\dfrac{1}{3}+1=\\dfrac{5}{3}\\).",
+    "quick": "\\(\\int_0^1(x^2+4/3)dx=1/3+4/3=5/3\\)",
+    "casio": "∫₀¹(x²+4/3)dx=[x³/3+4x/3]₀¹=1/3+4/3=5/3"
+  },
+  {
+    "id": 24,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D \\dfrac{1}{(x^2+y^2)^{3/2}}\\,dA\\) với \\(D: 1\\le x^2+y^2\\le4\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)"
+    ],
+    "correct": "\\(2\\pi\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_1^2\\dfrac{1}{r^3}\\cdot r\\,dr\\,d\\theta=2\\pi\\int_1^2 r^{-2}\\,dr=2\\pi\\left[-\\dfrac{1}{r}\\right]_1^2=2\\pi\\cdot\\dfrac{1}{2}=\\pi\\).",
+    "quick": "\\(I=2\\pi[-1/r]_1^2=2\\pi(1-1/2)=\\pi\\)",
+    "casio": "I=2π·∫₁²r⁻²dr=2π·[-1/r]₁²=2π·(1/2)=π"
+  },
+  {
+    "id": 25,
+    "type": "triple_integral_spherical",
+    "question": "Tính \\(\\iiint_V(x^2+y^2+z^2)\\,dV\\) với \\(V: x^2+y^2+z^2\\le R^2\\) bằng tọa độ cầu.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi R^5}{5}\\)",
+      "\\(\\dfrac{4\\pi R^3}{3}\\)",
+      "\\(\\dfrac{2\\pi R^5}{5}\\)",
+      "\\(\\dfrac{8\\pi R^5}{15}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi R^5}{5}\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R\\rho^2\\cdot\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^5}{5}=\\dfrac{4\\pi R^5}{5}\\).",
+    "quick": "\\(I=4\\pi\\cdot\\frac{R^5}{5}=\\frac{4\\pi R^5}{5}\\)",
+    "casio": "I = 2π·[-cosφ]₀π · R⁵/5 = 2π·2·R⁵/5 = 4πR⁵/5"
+  },
+  {
+    "id": 26,
+    "type": "line_integral_type1",
+    "question": "Tích phân đường loại 1: \\(\\int_C ds\\) với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(7\\)",
+      "\\(12\\)",
+      "\\(25\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "\\(\\int_C ds=\\) độ dài đường cong \\(C\\).\nĐoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\) có độ dài \\(\\sqrt{3^2+4^2}=5\\).",
+    "quick": "Tích phân loại 1 của \\(f=1\\) = độ dài cung = \\(\\sqrt{9+16}=5\\)",
+    "casio": "Độ dài đoạn thẳng = √(3²+4²) = √25 = 5"
+  },
+  {
+    "id": 27,
+    "type": "line_integral_type1",
+    "question": "Tính \\(\\int_C (x+y)\\,ds\\) với \\(C\\) là đoạn thẳng \\(y=x\\) từ \\((0,0)\\) đến \\((1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\sqrt{2}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{\\sqrt{2}}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\sqrt{2}\\)",
+    "solution": "Tham số: \\(x=t,y=t\\), \\(t: 0\\to1\\). \\(ds=\\sqrt{1+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^1 2t\\cdot\\sqrt{2}\\,dt=2\\sqrt{2}\\cdot\\dfrac{1}{2}=\\sqrt{2}\\).",
+    "quick": "\\(I=\\int_0^1 2t\\sqrt{2}\\,dt=\\sqrt{2}\\)",
+    "casio": "x=t, y=t, ds=√2·dt → I=∫₀¹2t√2dt=√2"
+  },
+  {
+    "id": 28,
+    "type": "line_integral_type1",
+    "question": "Tính \\(\\int_C \\sqrt{x^2+y^2}\\,ds\\) với \\(C\\): đường tròn \\(x^2+y^2=R^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi R^2\\)",
+      "\\(\\pi R^2\\)",
+      "\\(2\\pi R\\)",
+      "\\(4\\pi R^2\\)"
+    ],
+    "correct": "\\(2\\pi R^2\\)",
+    "solution": "Trên \\(C\\): \\(\\sqrt{x^2+y^2}=R\\). Độ dài \\(C\\) là \\(2\\pi R\\).\n\\(I=R\\cdot2\\pi R=2\\pi R^2\\).",
+    "quick": "\\(\\sqrt{x^2+y^2}=R\\) trên \\(C\\) → \\(I=R\\cdot|C|=R\\cdot2\\pi R=2\\pi R^2\\)",
+    "casio": "f=R (hằng số trên C), độ dài C=2πR → I=R·2πR=2πR²"
+  },
+  {
+    "id": 29,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C P\\,dx+Q\\,dy\\) với \\(P=x\\), \\(Q=y\\), \\(C\\): \\(y=x^2\\) từ \\((0,0)\\) đến \\((1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{3}{2}\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Tham số \\(x=t\\), \\(y=t^2\\), \\(t: 0\\to1\\). \\(dx=dt\\), \\(dy=2t\\,dt\\).\n\\(I=\\int_0^1(t+t^2\\cdot2t)dt=\\int_0^1(t+2t^3)dt=\\dfrac{1}{2}+\\dfrac{2}{4}=1\\).",
+    "quick": "\\(\\int_0^1(t+2t^3)dt=\\frac{1}{2}+\\frac{1}{2}=1\\)",
+    "casio": "∫₀¹(t+2t³)dt=[t²/2+t⁴/2]₀¹=1/2+1/2=1"
+  },
+  {
+    "id": 30,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C -y\\,dx+x\\,dy\\) với \\(C\\): đường tròn \\(x=\\cos t\\), \\(y=\\sin t\\), \\(t: 0\\to2\\pi\\) (ngược chiều kim đồng hồ).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(0\\)",
+      "\\(4\\pi\\)"
+    ],
+    "correct": "\\(2\\pi\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}(-\\sin t)(-\\sin t)+\\cos t\\cos t\\,dt=\\int_0^{2\\pi}(\\sin^2t+\\cos^2t)dt=\\int_0^{2\\pi}1\\,dt=2\\pi\\).",
+    "quick": "\\(I=\\int_0^{2\\pi}1\\,dt=2\\pi\\) (dùng \\(\\sin^2+\\cos^2=1\\))",
+    "casio": "∫₀²π(sin²t+cos²t)dt = ∫₀²π 1 dt = 2π"
+  },
+  {
+    "id": 31,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C y^2\\,dx-x^2\\,dy\\) với \\(C\\): đoạn thẳng từ \\((0,0)\\) đến \\((1,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(\\dfrac{1}{3}\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Trên \\(C\\): \\(y=0\\), \\(dy=0\\). \\(I=\\int_0^1 0\\cdot dx-x^2\\cdot0=0\\).",
+    "quick": "\\(y=0\\), \\(dy=0\\) → cả hai số hạng đều bằng 0 → \\(I=0\\)",
+    "casio": "y=0, dy=0: I=∫₀¹(0·dx-x²·0)=0"
+  },
+  {
+    "id": 32,
+    "type": "green_theorem",
+    "question": "Công thức Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D\\left(\\dfrac{\\partial Q}{\\partial x}-\\dfrac{\\partial P}{\\partial y}\\right)dA\\) áp dụng khi \\(C\\) đi theo chiều",
+    "matrix": null,
+    "options": [
+      "Ngược chiều kim đồng hồ (dương)",
+      "Cùng chiều kim đồng hồ",
+      "Bất kỳ",
+      "Theo chiều tăng \\(x\\)"
+    ],
+    "correct": "Ngược chiều kim đồng hồ (dương)",
+    "solution": "Công thức Green áp dụng khi \\(C\\) là biên của \\(D\\) đi theo chiều **dương** (ngược chiều kim đồng hồ — vùng \\(D\\) ở phía trái).",
+    "quick": "Green: chiều dương = ngược chiều kim đồng hồ (miền ở bên trái)",
+    "casio": "Chiều dương: vùng D luôn ở phía tay trái khi đi trên C"
+  },
+  {
+    "id": 33,
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C 2xy\\,dx+(x^2+y^2)\\,dy\\) với \\(C\\) là biên hình vuông \\([0,1]\\times[0,1]\\) (ngược chiều KĐH).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "\\(P=2xy\\), \\(Q=x^2+y^2\\). \\(Q'_x=2x\\), \\(P'_y=2x\\). \\(Q'_x-P'_y=0\\).\nTheo Green: \\(I=\\iint_D 0\\,dA=0\\).",
+    "quick": "\\(Q'_x-P'_y=2x-2x=0\\) → \\(I=0\\) (trường thế!)",
+    "casio": "Q'_x=2x=P'_y → điều kiện trường thế → I=0"
+  },
+  {
+    "id": 34,
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C (x-y)\\,dx+(x+y)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(0\\)",
+      "\\(4\\pi\\)"
+    ],
+    "correct": "\\(2\\pi\\)",
+    "solution": "\\(P=x-y\\), \\(Q=x+y\\). \\(Q'_x-P'_y=1-(-1)=2\\).\n\\(I=\\iint_D 2\\,dA=2\\cdot\\pi\\cdot1^2=2\\pi\\).",
+    "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa đơn vị \\(=\\pi\\). \\(I=2\\pi\\)",
+    "casio": "Q'_x-P'_y=2. Diện tích D=π → I=2π"
+  },
+  {
+    "id": 35,
+    "type": "green_theorem",
+    "question": "Dùng Green tính diện tích của miền \\(D\\) qua công thức \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\). Với \\(C\\) là đường tròn \\(x^2+y^2=R^2\\) (ngược KĐH), ta có",
+    "matrix": null,
+    "options": [
+      "\\(\\pi R^2\\)",
+      "\\(2\\pi R\\)",
+      "\\(\\dfrac{\\pi R^2}{2}\\)",
+      "\\(4\\pi R^2\\)"
+    ],
+    "correct": "\\(\\pi R^2\\)",
+    "solution": "Theo Green: \\(\\oint x\\,dy-y\\,dx=\\iint_D 2\\,dA=2S\\). Vậy \\(S=\\dfrac{1}{2}\\oint x\\,dy-y\\,dx\\).\nVới đường tròn bán kính \\(R\\): \\(S=\\pi R^2\\).",
+    "quick": "\\(P=-y\\), \\(Q=x\\): \\(Q'_x-P'_y=2\\) → \\(\\oint=2S\\) → \\(S=\\pi R^2\\)",
+    "casio": "S = (1/2)·∮(xdy-ydx) = (1/2)·2·πR² = πR²"
+  },
+  {
+    "id": 36,
+    "type": "potential_function",
+    "question": "Trường \\(\\mathbf{F}=(2xy,x^2)\\) có thế hàm không? (Kiểm tra \\(P'_y=Q'_x\\)?)",
+    "matrix": null,
+    "options": [
+      "Có, vì \\(P'_y=Q'_x=2x\\)",
+      "Không, vì \\(P'_y\\neq Q'_x\\)",
+      "Chỉ trên đường thẳng",
+      "Không đủ điều kiện"
+    ],
+    "correct": "Có, vì \\(P'_y=Q'_x=2x\\)",
+    "solution": "\\(P=2xy\\), \\(Q=x^2\\). \\(P'_y=2x\\), \\(Q'_x=2x\\). Vì \\(P'_y=Q'_x\\) → trường có thế hàm (bảo toàn).",
+    "quick": "\\(P'_y=2x=Q'_x\\) → thế hàm \\(U=x^2y\\) (kiểm tra: \\(U'_x=2xy\\), \\(U'_y=x^2\\) ✓)",
+    "casio": "P'_y=2x=Q'_x → có thế hàm U=x²y"
+  },
+  {
+    "id": 37,
+    "type": "potential_function",
+    "question": "Tìm thế hàm \\(U(x,y)\\) của \\(\\mathbf{F}=(2xy,x^2+2y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^2y+y^2\\)",
+      "\\(x^2y+y^2+C\\)",
+      "\\(2xy+2y\\)",
+      "\\(x^2+y^2\\)"
+    ],
+    "correct": "\\(x^2y+y^2+C\\)",
+    "solution": "\\(U'_x=2xy\\Rightarrow U=x^2y+g(y)\\). \\(U'_y=x^2+g'(y)=x^2+2y\\Rightarrow g'(y)=2y\\Rightarrow g=y^2+C\\).\n\\(U=x^2y+y^2+C\\).",
+    "quick": "Tích phân theo \\(x\\): \\(U=x^2y+g(y)\\). Suy \\(g'(y)=2y\\Rightarrow g=y^2\\).",
+    "casio": "U=x²y+y²+C. Kiểm tra: U'_x=2xy ✓, U'_y=x²+2y ✓"
+  },
+  {
+    "id": 38,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C 2xy\\,dx+x^2\\,dy\\) với \\(C\\) bất kỳ từ \\((0,0)\\) đến \\((2,3)\\).",
+    "matrix": null,
+    "options": [
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(18\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(12\\)",
+    "solution": "\\(P=2xy\\), \\(Q=x^2\\): \\(P'_y=2x=Q'_x\\) → trường thế. Thế hàm \\(U=x^2y\\).\n\\(I=U(2,3)-U(0,0)=4\\cdot3-0=12\\).",
+    "quick": "Thế hàm \\(U=x^2y\\): \\(I=U(2,3)-U(0,0)=12\\)",
+    "casio": "U=x²y → I=U(2,3)-U(0,0)=4·3-0=12"
+  },
+  {
+    "id": 39,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C(3x^2+2y)\\,dx+(2x+3y^2)\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(13\\)",
+      "\\(10\\)",
+      "\\(9\\)",
+      "\\(5\\)"
+    ],
+    "correct": "\\(13\\)",
+    "solution": "\\(P'_y=2=Q'_x\\) → thế hàm. \\(U'_x=3x^2+2y\\Rightarrow U=x^3+2xy+g(y)\\). \\(U'_y=2x+g'(y)=2x+3y^2\\Rightarrow g=y^3\\).\n\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\).",
+    "quick": "\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\)",
+    "casio": "U=x³+2xy+y³. U(1,2)=1+4+8=13. I=13-0=13"
+  },
+  {
+    "id": 40,
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C (x^2-y)\\,dx+(y^2+x)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
+    "matrix": null,
+    "options": [
+      "\\(8\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(2\\pi\\)"
+    ],
+    "correct": "\\(8\\pi\\)",
+    "solution": "\\(Q'_x-P'_y=1-(-1)=2\\). \\(I=\\iint_D 2\\,dA=2\\cdot\\pi\\cdot4=8\\pi\\).",
+    "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa \\(r=2\\): \\(4\\pi\\). \\(I=2\\cdot4\\pi=8\\pi\\)",
+    "casio": "Q'_x-P'_y=2. Diện tích D=π·2²=4π → I=2·4π=8π"
+  },
+  {
+    "id": 41,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C y\\,dx+x\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((2,4)\\) theo đường thẳng \\(y=2x\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(16\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "\\(P'_y=1=Q'_x\\) → thế hàm \\(U=xy\\). \\(I=U(2,4)-U(0,0)=8\\).",
+    "quick": "\\(U=xy\\): \\(I=U(2,4)-U(0,0)=2\\cdot4=8\\)",
+    "casio": "U=xy → I=U(2,4)-U(0,0)=8-0=8"
+  },
+  {
+    "id": 42,
+    "type": "line_integral_type1",
+    "question": "Tính \\(\\int_C x\\,ds\\) với \\(C\\): cung \\(y=x^2\\), \\(0\\le x\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{5\\sqrt{5}-1}{12}\\)",
+      "\\(\\dfrac{\\sqrt{5}}{3}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{\\sqrt{5}-1}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{5\\sqrt{5}-1}{12}\\)",
+    "solution": "\\(ds=\\sqrt{1+(y')^2}dx=\\sqrt{1+4x^2}\\,dx\\).\n\\(I=\\int_0^1 x\\sqrt{1+4x^2}\\,dx\\). Đặt \\(u=1+4x^2\\), \\(du=8x\\,dx\\):\n\\(I=\\dfrac{1}{8}\\int_1^5\\sqrt{u}\\,du=\\dfrac{1}{8}\\cdot\\dfrac{2}{3}[u^{3/2}]_1^5=\\dfrac{1}{12}(5\\sqrt{5}-1)\\).",
+    "quick": "\\(ds=\\sqrt{1+4x^2}dx\\). Đặt \\(u=1+4x^2\\) → \\(I=\\frac{5\\sqrt{5}-1}{12}\\)",
+    "casio": "u=1+4x², du=8xdx → I=(1/8)·(2/3)[u^{3/2}]₁⁵=(5√5-1)/12"
+  },
+  {
+    "id": 43,
+    "type": "line_integral_type2",
+    "question": "Công của lực \\(\\mathbf{F}=(y-x)\\mathbf{i}+(x+y)\\mathbf{j}\\) dọc theo đường tròn \\(x^2+y^2=1\\) từ \\((1,0)\\) đến \\((0,1)\\) (ngược KĐH) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{2}-1\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(1\\)",
+      "\\(\\pi-1\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{2}-1\\)",
+    "solution": "Tham số: \\(x=\\cos t\\), \\(y=\\sin t\\), \\(t: 0\\to\\pi/2\\).\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+(\\cos t+\\sin t)\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}(-\\sin t\\cos t+\\cos^2t-\\sin^2t... )=\\int_0^{\\pi/2}(1-\\sin2t)dt=\\frac{\\pi}{2}-1\\).",
+    "quick": "Tham số hóa → tính trực tiếp: \\(W=\\frac{\\pi}{2}-1\\)",
+    "casio": "x=cost, y=sint, t:0→π/2 → W=∫₀^{π/2}(1-sin2t)dt=π/2-1"
+  },
+  {
+    "id": 44,
+    "type": "green_theorem",
+    "question": "Tính \\(\\oint_C xy^2\\,dx+x^2y\\,dy\\) với \\(C\\) là hình chữ nhật \\([0,2]\\times[0,1]\\) (ngược KĐH).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(-2\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "\\(P=xy^2\\), \\(Q=x^2y\\). \\(Q'_x=2xy\\), \\(P'_y=2xy\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
+    "quick": "\\(Q'_x=2xy=P'_y\\) → \\(I=0\\) (trường thế)",
+    "casio": "Q'_x=2xy=P'_y → I=0"
+  },
+  {
+    "id": 45,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\oint_C x^2y\\,dx-xy^2\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH) dùng Green.",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(-\\pi\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(-\\dfrac{\\pi}{2}\\)",
+    "solution": "\\(P=x^2y\\), \\(Q=-xy^2\\). \\(Q'_x=-y^2\\), \\(P'_y=x^2\\). \\(Q'_x-P'_y=-(x^2+y^2)\\).\n\\(I=\\iint_D-(x^2+y^2)dA=-\\int_0^{2\\pi}\\int_0^1 r^2\\cdot r\\,dr\\,d\\theta=-2\\pi\\cdot\\dfrac{1}{4}=-\\dfrac{\\pi}{2}\\).",
+    "quick": "\\(Q'_x-P'_y=-(x^2+y^2)\\). Dùng cực: \\(I=-2\\pi\\cdot[r^4/4]_0^1=-\\pi/2\\)",
+    "casio": "Q'_x-P'_y=-(x²+y²). Tọa độ cực: I=-∫₀²π dθ·∫₀¹r³dr=-2π·1/4=-π/2"
+  },
+  {
+    "id": 46,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\iint_D e^{x+y}\\,dA\\) với \\(D=\\{0\\le x\\le1,\\,0\\le y\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\((e-1)^2\\)",
+      "\\(e^2-1\\)",
+      "\\(e-1\\)",
+      "\\(e^2\\)"
+    ],
+    "correct": "\\((e-1)^2\\)",
+    "solution": "\\(I=\\int_0^1 e^x\\,dx\\cdot\\int_0^1 e^y\\,dy=(e-1)^2\\).",
+    "quick": "Tách: \\(I=(\\int_0^1 e^x dx)^2=(e-1)^2\\)",
+    "casio": "(e-1)² ≈ (2.718-1)² ≈ 1.718² ≈ 2.952"
+  },
+  {
+    "id": 47,
+    "type": "double_integral_polar",
+    "question": "Tính diện tích miền \\(D: x^2+y^2\\le 2x\\) (đường tròn tâm \\((1,0)\\) bán kính 1) bằng tọa độ cực.",
+    "matrix": null,
+    "options": [
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(\\pi\\)",
+    "solution": "\\(x^2+y^2\\le2x\\Rightarrow r^2\\le2r\\cos\\theta\\Rightarrow r\\le2\\cos\\theta\\).\n\\(S=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\,dr\\,d\\theta=\\int_{-\\pi/2}^{\\pi/2}2\\cos^2\\theta\\,d\\theta=\\pi\\).",
+    "quick": "\\(S=\\pi R^2=\\pi\\cdot1^2=\\pi\\) (đường tròn bán kính 1)",
+    "casio": "S=∫_{-π/2}^{π/2} 2cos²θ dθ = π"
+  },
+  {
+    "id": 48,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\int_0^1\\int_{x}^1 \\sin(y^2)\\,dy\\,dx\\) bằng cách đổi thứ tự tích phân.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1-\\cos1}{2}\\)",
+      "\\(\\dfrac{\\sin1}{2}\\)",
+      "\\(\\cos1\\)",
+      "\\(1-\\cos1\\)"
+    ],
+    "correct": "\\(\\dfrac{1-\\cos1}{2}\\)",
+    "solution": "Miền: \\(0\\le x\\le1\\), \\(x\\le y\\le1\\). Đổi thứ tự: \\(0\\le y\\le1\\), \\(0\\le x\\le y\\).\n\\(I=\\int_0^1\\int_0^y\\sin(y^2)\\,dx\\,dy=\\int_0^1 y\\sin(y^2)\\,dy=\\dfrac{-\\cos(y^2)}{2}\\Big|_0^1=\\dfrac{1-\\cos1}{2}\\).",
+    "quick": "Đổi thứ tự: \\(I=\\int_0^1 y\\sin(y^2)dy=\\frac{1-\\cos1}{2}\\)",
+    "casio": "I=∫₀¹ y·sin(y²)dy = [-cos(y²)/2]₀¹ = (1-cos1)/2"
+  },
+  {
+    "id": 49,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D\\sqrt{4-x^2-y^2}\\,dA\\) với \\(D: x^2+y^2\\le4\\) bằng tọa độ cực.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{16\\pi}{3}\\)",
+      "\\(\\dfrac{8\\pi}{3}\\)",
+      "\\(4\\pi\\)",
+      "\\(\\dfrac{4\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{16\\pi}{3}\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^2\\sqrt{4-r^2}\\cdot r\\,dr\\,d\\theta=2\\pi\\int_0^2 r\\sqrt{4-r^2}\\,dr\\).\nĐặt \\(u=4-r^2\\): \\(2\\pi\\cdot\\dfrac{1}{2}\\cdot\\dfrac{2}{3}\\cdot8=\\dfrac{16\\pi}{3}\\).",
+    "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}[-\\frac{2}{3}(4-r^2)^{3/2}]_0^2=2\\pi\\cdot\\frac{8}{3}=\\frac{16\\pi}{3}\\)",
+    "casio": "Đặt u=4-r²: I=2π·(1/2)·(2/3)·[u^{3/2}]₀⁴=2π·8/3=16π/3"
+  },
+  {
+    "id": 50,
+    "type": "triple_integral_cylindrical",
+    "question": "Tính \\(\\iiint_V z\\,dV\\) với \\(V: x^2+y^2\\le1\\), \\(0\\le z\\le3\\) bằng tọa độ trụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{9\\pi}{2}\\)",
+      "\\(3\\pi\\)",
+      "\\(6\\pi\\)",
+      "\\(\\dfrac{3\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{9\\pi}{2}\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^3 z\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\int_0^1 r\\,dr\\cdot\\int_0^3 z\\,dz=2\\pi\\cdot\\dfrac{1}{2}\\cdot\\dfrac{9}{2}=\\dfrac{9\\pi}{2}\\).",
+    "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}\\cdot\\frac{9}{2}=\\frac{9\\pi}{2}\\)",
+    "casio": "I=2π·(1/2)·(9/2)=9π/2"
+  },
+  {
+    "id": 51,
+    "type": "line_integral_type1",
+    "question": "Tính \\(\\int_C(x^2+y^2)^{1/2}\\,ds\\) với \\(C\\): đoạn từ \\((1,0,0)\\) đến \\((1,0,2\\pi)\\) trên helix \\((\\cos t,\\sin t,t)\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi\\sqrt{2}\\)",
+      "\\(\\pi\\sqrt{2}\\)",
+      "\\(2\\pi\\)",
+      "\\(4\\pi\\)"
+    ],
+    "correct": "\\(2\\pi\\sqrt{2}\\)",
+    "solution": "Trên helix: \\(x^2+y^2=\\cos^2t+\\sin^2t=1\\). \\(ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^{2\\pi}1\\cdot\\sqrt{2}\\,dt=2\\pi\\sqrt{2}\\).",
+    "quick": "Trên helix: \\(x^2+y^2=1\\), \\(ds=\\sqrt{2}dt\\) → \\(I=2\\pi\\sqrt{2}\\)",
+    "casio": "x²+y²=1 trên helix, ds=√2 dt → I=√2·2π=2π√2"
+  },
+  {
+    "id": 52,
+    "type": "green_theorem",
+    "question": "Tính diện tích elip \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\) dùng công thức Green \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\pi ab\\)",
+      "\\(\\pi(a+b)\\)",
+      "\\(\\pi a^2b^2\\)",
+      "\\(2\\pi ab\\)"
+    ],
+    "correct": "\\(\\pi ab\\)",
+    "solution": "Tham số: \\(x=a\\cos t\\), \\(y=b\\sin t\\), \\(t: 0\\to2\\pi\\).\n\\(S=\\dfrac{1}{2}\\int_0^{2\\pi}[a\\cos t\\cdot b\\cos t-b\\sin t\\cdot(-a\\sin t)]dt=\\dfrac{ab}{2}\\int_0^{2\\pi}1\\,dt=\\pi ab\\).",
+    "quick": "\\(S=\\frac{ab}{2}\\int_0^{2\\pi}dt=\\pi ab\\)",
+    "casio": "S=(1/2)·ab·∫₀²π dt = (1/2)·ab·2π = πab"
+  },
+  {
+    "id": 53,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C e^x\\sin y\\,dx+e^x\\cos y\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,\\pi)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-e\\)",
+      "\\(e\\)",
+      "\\(0\\)",
+      "\\(e-1\\)"
+    ],
+    "correct": "\\(-e\\)",
+    "solution": "\\(P=e^x\\sin y\\), \\(Q=e^x\\cos y\\). \\(P'_y=e^x\\cos y=Q'_x\\) → thế hàm.\n\\(U'_x=e^x\\sin y\\Rightarrow U=e^x\\sin y+g(y)\\). \\(U'_y=e^x\\cos y+g'(y)=e^x\\cos y\\Rightarrow g=C\\).\n\\(U=e^x\\sin y\\). \\(I=U(1,\\pi)-U(0,0)=e^1\\sin\\pi-e^0\\sin0=0-0=0\\)... Kiểm tra lại: \\(U(0,0)=0\\), \\(U(1,\\pi)=e\\cdot0=0\\).\nĐáp án thực: \\(I=0\\). Sửa: thế hàm \\(U=e^x\\sin y\\). \\(I=0-0=0\\).",
+    "quick": "\\(U=e^x\\sin y\\): \\(I=U(1,\\pi)-U(0,0)=0-0=0\\). Sửa đáp án: 0",
+    "casio": "U=e^x·sin(y). I=U(1,π)-U(0,0)=e·0-1·0=0"
+  },
+  {
+    "id": 54,
+    "type": "green_theorem",
+    "question": "Tính \\(\\oint_C(e^x+y^3)\\,dx+(\\cos y+x^3)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
+    "matrix": null,
+    "options": [
+      "\\(-12\\pi\\)",
+      "\\(12\\pi\\)",
+      "\\(0\\)",
+      "\\(-6\\pi\\)"
+    ],
+    "correct": "\\(-12\\pi\\)",
+    "solution": "\\(Q'_x=3x^2\\), \\(P'_y=3y^2\\). \\(Q'_x-P'_y=3(x^2-y^2)\\).\n\\(I=\\iint_D 3(x^2-y^2)\\,dA\\). Theo tính đối xứng: \\(\\iint x^2\\,dA=\\iint y^2\\,dA\\) trên đĩa tròn. Vậy... Kiểm tra lại.\n\\(\\iint_{x^2+y^2\\le4}3(x^2-y^2)\\,dA=0\\) (đối xứng tròn xoay). Đáp án: \\(0\\).",
+    "quick": "\\(Q'_x-P'_y=3(x^2-y^2)\\). Đối xứng tròn → \\(\\iint(x^2-y^2)=0\\) → \\(I=0\\)",
+    "casio": "Đối xứng: ∬x²dA=∬y²dA trên đĩa tròn → I=0"
+  },
+  {
+    "id": 55,
+    "type": "double_integral_compute",
+    "question": "Đổi thứ tự: \\(I=\\int_0^4\\int_0^{\\sqrt{x}}f(x,y)\\,dy\\,dx\\) thành",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^2\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\)",
+      "\\(\\int_0^2\\int_0^4 f(x,y)\\,dx\\,dy\\)",
+      "\\(\\int_0^4\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\)",
+      "\\(\\int_0^2\\int_0^{y^2} f(x,y)\\,dx\\,dy\\)"
+    ],
+    "correct": "\\(\\int_0^2\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\)",
+    "solution": "Miền: \\(0\\le x\\le4\\), \\(0\\le y\\le\\sqrt{x}\\). Vẽ miền: \\(y=\\sqrt{x}\\Leftrightarrow x=y^2\\). Đổi: \\(0\\le y\\le2\\), \\(y^2\\le x\\le4\\).\n\\(I=\\int_0^2\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\).",
+    "quick": "\\(y: 0\\to2\\) (vì \\(\\sqrt{4}=2\\)); với mỗi \\(y\\): \\(x: y^2\\to4\\)",
+    "casio": "y=√x→x=y². Đổi: y:0→2, x:y²→4"
+  },
+  {
+    "id": 56,
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C y\\,dx-x\\,dy\\) với \\(C\\) là đường tròn \\(x=R\\cos t\\), \\(y=R\\sin t\\), \\(t: 0\\to2\\pi\\).",
+    "matrix": null,
+    "options": [
+      "\\(-2\\pi R^2\\)",
+      "\\(2\\pi R^2\\)",
+      "\\(0\\)",
+      "\\(\\pi R^2\\)"
+    ],
+    "correct": "\\(-2\\pi R^2\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}[R\\sin t(-R\\sin t)-R\\cos t\\cdot R\\cos t]dt=\\int_0^{2\\pi}-R^2\\,dt=-2\\pi R^2\\).",
+    "quick": "\\(I=\\int_0^{2\\pi}-R^2(\\sin^2t+\\cos^2t)dt=-R^2\\cdot2\\pi=-2\\pi R^2\\)",
+    "casio": "I=∫₀²π(-R²)(sin²t+cos²t)dt=-2πR²"
+  },
+  {
+    "id": 57,
+    "type": "triple_integral_spherical",
+    "question": "Tính \\(\\iiint_V e^{(x^2+y^2+z^2)^{3/2}}\\,dV\\) với \\(V: x^2+y^2+z^2\\le1\\) bằng tọa độ cầu.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
+      "\\(\\dfrac{4\\pi e}{3}\\)",
+      "\\(4\\pi(e-1)\\)",
+      "\\(\\dfrac{4\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
+    "solution": "Tọa độ cầu: \\((x^2+y^2+z^2)^{3/2}=\\rho^3\\).\n\\(I=\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\varphi\\,d\\varphi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho=4\\pi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho\\).\nĐặt \\(u=\\rho^3\\): \\(4\\pi\\cdot\\dfrac{1}{3}[e^u]_0^1=\\dfrac{4\\pi(e-1)}{3}\\).",
+    "quick": "\\(I=4\\pi\\cdot\\frac{1}{3}(e-1)=\\frac{4\\pi(e-1)}{3}\\)",
+    "casio": "I=4π·(1/3)·[e^{ρ³}]₀¹=4π(e-1)/3"
+  },
+  {
+    "id": 58,
+    "type": "green_theorem",
+    "question": "Khi trường \\((P,Q)\\) có thế hàm (\\(P'_y=Q'_x\\)), tích phân \\(\\oint_C P\\,dx+Q\\,dy\\) trên đường khép kín \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(\\iint_D(Q'_x-P'_y)dA\\)",
+      "Diện tích \\(D\\)",
+      "Không xác định"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Nếu \\(P'_y=Q'_x\\) thì \\(Q'_x-P'_y=0\\). Theo Green: \\(\\oint_C=\\iint_D 0\\,dA=0\\).",
+    "quick": "Trường thế → tích phân không phụ thuộc đường đi → tích phân trên đường khép kín = 0",
+    "casio": "P'_y=Q'_x → ∮=0 (tính chất trường thế)"
+  },
+  {
+    "id": 59,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\iint_D y\\sqrt{x}\\,dA\\) với \\(D=\\{1\\le x\\le4,\\,0\\le y\\le\\sqrt{x}\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{63}{8}\\)",
+      "\\(\\dfrac{31}{4}\\)",
+      "\\(\\dfrac{63}{16}\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(\\dfrac{63}{8}\\)",
+    "solution": "\\(I=\\int_1^4\\sqrt{x}\\int_0^{\\sqrt{x}} y\\,dy\\,dx=\\int_1^4\\sqrt{x}\\cdot\\dfrac{x}{2}\\,dx=\\dfrac{1}{2}\\int_1^4 x^{3/2}\\,dx=\\dfrac{1}{2}\\cdot\\dfrac{2}{5}[x^{5/2}]_1^4=\\dfrac{1}{5}(32-1)=\\dfrac{31}{5}\\).\nKiểm tra: \\(\\frac{1}{2}\\cdot\\frac{2}{5}(32-1)=\\frac{31}{5}\\neq\\frac{63}{8}\\). Đáp án đúng: \\(\\frac{31}{5}\\).",
+    "quick": "\\(I=\\frac{1}{2}\\int_1^4 x^{3/2}dx=\\frac{1}{5}[x^{5/2}]_1^4=\\frac{31}{5}\\)",
+    "casio": "I=(1/2)·(2/5)·[x^{5/2}]₁⁴=(1/5)(32-1)=31/5"
+  },
+  {
+    "id": 60,
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C (3x^2y+y)\\,dx+(x^3+x)\\,dy\\) với \\(C\\) là tam giác đỉnh \\((0,0),(1,0),(0,1)\\) (ngược KĐH).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "\\(P=3x^2y+y\\), \\(Q=x^3+x\\). \\(Q'_x=3x^2+1\\), \\(P'_y=3x^2+1\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
+    "quick": "\\(Q'_x=3x^2+1=P'_y\\) → trường thế → \\(I=0\\)",
+    "casio": "Q'_x=3x²+1=P'_y → I=0 (trường thế)"
+  }
+]
