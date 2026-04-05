@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 1,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi hình học \\(\\sum_{n=0}^{\\infty} \\left(\\dfrac{1}{2}\\right)^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Chuỗi hình học với \\(a=1\\), \\(q=\\dfrac{1}{2}\\), \\(|q|<1\\). Tổng \\(S=\\dfrac{a}{1-q}=\\dfrac{1}{1-1/2}=2\\).",
+    "quick": "\\(S=\\dfrac{a}{1-q}=\\dfrac{1}{1/2}=2\\)",
+    "casio": "Không tính trực tiếp. Nhớ công thức: S=a/(1-q)=1/(1-0.5)=2"
+  },
+  {
+    "id": 2,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi hình học \\(\\sum_{n=0}^{\\infty} \\left(\\dfrac{1}{3}\\right)^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(1\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "\\(a=1\\), \\(q=1/3\\), \\(|q|<1\\). \\(S=\\dfrac{1}{1-1/3}=\\dfrac{1}{2/3}=\\dfrac{3}{2}\\).",
+    "quick": "\\(S=\\dfrac{1}{1-1/3}=\\dfrac{3}{2}\\)",
+    "casio": "S=1/(1-1/3)=1/(2/3)=3/2"
+  },
+  {
+    "id": 3,
+    "type": "series_sum",
+    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty} 2^n\\) có tổng là",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "\\(2\\)",
+      "\\(-1\\)",
+      "\\(\\infty\\) hội tụ"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(q=2>1\\) → chuỗi hình học phân kỳ vì \\(|q|\\geq1\\).",
+    "quick": "\\(|q|=2>1\\) → phân kỳ",
+    "casio": "q=2>1 → phân kỳ"
+  },
+  {
+    "id": 4,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi telescope \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n(n+1)}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\dfrac{1}{n(n+1)}=\\dfrac{1}{n}-\\dfrac{1}{n+1}\\). Tổng riêng \\(S_N=1-\\dfrac{1}{N+1}\\to1\\).",
+    "quick": "Phân phần: \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}\\) → telescope → \\(S=1\\)",
+    "casio": "Phân phần rồi rút gọn telescope: S=1"
+  },
+  {
+    "id": 5,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{(n+1)(n+2)}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(\\dfrac{1}{(n+1)(n+2)}=\\dfrac{1}{n+1}-\\dfrac{1}{n+2}\\). \\(S_N=\\dfrac{1}{2}-\\dfrac{1}{N+2}\\to\\dfrac{1}{2}\\).",
+    "quick": "Telescope: \\(S=\\dfrac{1}{2}\\) (số hạng đầu còn lại)",
+    "casio": "S_N=1/2-1/(N+2) → S=1/2"
+  },
+  {
+    "id": 6,
+    "type": "dalembert",
+    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^2+1}{2^n}\\). Theo tiêu chuẩn D'Alembert, \\(D=\\lim_{n\\to\\infty}\\dfrac{u_{n+1}}{u_n}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)^2+1}{2^{n+1}}\\cdot\\dfrac{2^n}{n^2+1}=\\dfrac{(n+1)^2+1}{2(n^2+1)}\\to\\dfrac{1}{2}\\).",
+    "quick": "Hệ số \\(2^n\\) ở mẫu → \\(D=1/2<1\\) → hội tụ",
+    "casio": "Thay n=10000: ((n+1)²+1)/(2(n²+1))≈1/2"
+  },
+  {
+    "id": 7,
+    "type": "dalembert",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^2+1}{2^n}\\) theo tiêu chuẩn D'Alembert là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(D=\\dfrac{1}{2}<1\\)",
+      "Phân kỳ vì \\(D=2>1\\)",
+      "Hội tụ vì \\(D=1\\)",
+      "Không kết luận"
+    ],
+    "correct": "Hội tụ vì \\(D=\\dfrac{1}{2}<1\\)",
+    "solution": "\\(D=\\dfrac{1}{2}<1\\) → chuỗi **hội tụ** theo tiêu chuẩn D'Alembert.",
+    "quick": "\\(D<1\\) → hội tụ; \\(D>1\\) → phân kỳ; \\(D=1\\) → không kết luận",
+    "casio": "D=1/2<1 → hội tụ"
+  },
+  {
+    "id": 8,
+    "type": "dalembert",
+    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{n^n}\\). Tính \\(D=\\lim\\dfrac{u_{n+1}}{u_n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(e^{-1}\\)",
+      "\\(1\\)",
+      "\\(e\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(e^{-1}\\)",
+    "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)!}{(n+1)^{n+1}}\\cdot\\dfrac{n^n}{n!}=\\left(\\dfrac{n}{n+1}\\right)^n=\\dfrac{1}{(1+1/n)^n}\\to\\dfrac{1}{e}\\).",
+    "quick": "\\(\\left(1+\\dfrac{1}{n}\\right)^n\\to e\\) → \\(D=1/e<1\\) → hội tụ",
+    "casio": "(n/(n+1))^n → 1/e ≈ 0.368 < 1 → hội tụ"
+  },
+  {
+    "id": 9,
+    "type": "dalembert",
+    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{3^n}{n!}\\). Theo D'Alembert, chuỗi",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Không kết luận",
+      "Hội tụ có điều kiện"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(D=\\lim\\dfrac{3^{n+1}/(n+1)!}{3^n/n!}=\\lim\\dfrac{3}{n+1}=0<1\\) → hội tụ.",
+    "quick": "\\(D=\\lim\\dfrac{3}{n+1}=0<1\\) → hội tụ",
+    "casio": "D=3/(n+1)→0<1 → hội tụ"
+  },
+  {
+    "id": 10,
+    "type": "dalembert",
+    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{3^n}\\). Theo D'Alembert, \\(D=\\)?",
+    "matrix": null,
+    "options": [
+      "\\(+\\infty\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(+\\infty\\)",
+    "solution": "\\(D=\\lim\\dfrac{(n+1)!/3^{n+1}}{n!/3^n}=\\lim\\dfrac{n+1}{3}=+\\infty>1\\) → phân kỳ.",
+    "quick": "\\(D=\\lim(n+1)/3=+\\infty\\) → phân kỳ",
+    "casio": "D=(n+1)/3→∞>1 → phân kỳ"
+  },
+  {
+    "id": 11,
+    "type": "cauchy",
+    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{n}{2n+1}\\right)^n\\). Tiêu chuẩn Cauchy: \\(C=\\lim\\sqrt[n]{u_n}=\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(C=\\lim\\sqrt[n]{u_n}=\\lim\\dfrac{n}{2n+1}=\\dfrac{1}{2}\\).",
+    "quick": "\\(C=\\lim\\dfrac{n}{2n+1}=\\dfrac{1}{2}<1\\) → hội tụ",
+    "casio": "n/(2n+1)→1/2 khi n→∞"
+  },
+  {
+    "id": 12,
+    "type": "cauchy",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{n}{2n+1}\\right)^n\\) theo tiêu chuẩn Cauchy là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(C=\\dfrac{1}{2}<1\\)",
+      "Phân kỳ",
+      "Không kết luận",
+      "Hội tụ điều kiện"
+    ],
+    "correct": "Hội tụ vì \\(C=\\dfrac{1}{2}<1\\)",
+    "solution": "\\(C=1/2<1\\) → hội tụ theo tiêu chuẩn Cauchy.",
+    "quick": "\\(C<1\\) → hội tụ; \\(C>1\\) → phân kỳ; \\(C=1\\) → không kết luận",
+    "casio": "C=1/2<1 → hội tụ"
+  },
+  {
+    "id": 13,
+    "type": "cauchy",
+    "question": "Cho chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n^2}{\\left(2+\\dfrac{1}{n}\\right)^n}\\). Tính \\(C=\\lim_{n\\to\\infty}\\sqrt[n]{u_n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(\\sqrt[n]{u_n}=\\dfrac{n^{2/n}}{2+1/n}\\). Vì \\(n^{2/n}\\to1\\) và \\(2+1/n\\to2\\), nên \\(C=\\dfrac{1}{2}<1\\) → hội tụ.",
+    "quick": "\\(n^{2/n}\\to1\\), \\((2+1/n)\\to2\\) → \\(C=1/2<1\\)",
+    "casio": "Thay n=1000: n^{2/n}≈1, mẫu≈2 → C≈1/2"
+  },
+  {
+    "id": 14,
+    "type": "leibniz",
+    "question": "Chuỗi đan dấu \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{n}=1-\\dfrac{1}{2}+\\dfrac{1}{3}-\\cdots\\) theo tiêu chuẩn Leibniz",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Hội tụ tuyệt đối",
+      "Không áp dụng được"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(u_n=1/n>0\\), đơn điệu giảm, \\(u_n\\to0\\). Theo Leibniz → chuỗi hội tụ (bán hội tụ, tổng \\(=\\ln2\\)).",
+    "quick": "Leibniz: \\(u_n\\downarrow\\to0\\) → hội tụ. Nhưng \\(\\sum1/n\\) phân kỳ → bán hội tụ.",
+    "casio": "Điều kiện Leibniz: u_n>0, giảm, →0 → hội tụ"
+  },
+  {
+    "id": 15,
+    "type": "leibniz",
+    "question": "Cho chuỗi đan dấu \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{\\sqrt{n}}\\). Chuỗi này",
+    "matrix": null,
+    "options": [
+      "Hội tụ bán hội tụ",
+      "Hội tụ tuyệt đối",
+      "Phân kỳ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ bán hội tụ",
+    "solution": "\\(u_n=1/\\sqrt{n}\\downarrow0\\) → Leibniz → hội tụ. Nhưng \\(\\sum1/\\sqrt{n}\\) phân kỳ (p=1/2≤1) → bán hội tụ.",
+    "quick": "Leibniz ✓ → hội tụ. \\(\\sum1/\\sqrt{n}\\) phân kỳ → bán hội tụ (không tuyệt đối)",
+    "casio": "u_n=1/√n↓0 → Leibniz → hội tụ; Σ1/√n phân kỳ → bán hội tụ"
+  },
+  {
+    "id": 16,
+    "type": "leibniz",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n^2}\\) là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Hội tụ bán hội tụ",
+      "Phân kỳ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ tuyệt đối",
+    "solution": "\\(\\sum|u_n|=\\sum\\dfrac{1}{n^2}\\) hội tụ (p=2>1). Vậy chuỗi hội tụ **tuyệt đối**.",
+    "quick": "\\(\\sum1/n^2\\) hội tụ (p=2>1) → hội tụ tuyệt đối",
+    "casio": "Σ1/n² hội tụ (chuỗi p với p=2>1) → tuyệt đối"
+  },
+  {
+    "id": 17,
+    "type": "p_series",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2}\\) có tổng bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi^2}{6}\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{\\pi^2}{6}\\)",
+    "solution": "Đây là chuỗi Basel nổi tiếng: \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2}=\\dfrac{\\pi^2}{6}\\approx1.6449\\).",
+    "quick": "Công thức nổi tiếng: \\(\\sum_{n=1}^{\\infty}1/n^2=\\pi^2/6\\)",
+    "casio": "π²/6 ≈ 1.6449. Học thuộc lòng!"
+  },
+  {
+    "id": 18,
+    "type": "p_series",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^p}\\) hội tụ khi và chỉ khi",
+    "matrix": null,
+    "options": [
+      "\\(p>1\\)",
+      "\\(p\\geq1\\)",
+      "\\(p>0\\)",
+      "\\(p\\geq0\\)"
+    ],
+    "correct": "\\(p>1\\)",
+    "solution": "Chuỗi \\(p\\): hội tụ \\(\\Leftrightarrow p>1\\), phân kỳ \\(\\Leftrightarrow p\\leq1\\).",
+    "quick": "Chuỗi \\(p\\): \\(p>1\\) hội tụ; \\(p\\leq1\\) phân kỳ",
+    "casio": "p>1: hội tụ. p=1: Σ1/n phân kỳ (điều hòa)"
+  },
+  {
+    "id": 19,
+    "type": "p_series",
+    "question": "Chuỗi điều hòa \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n}\\)",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ với tổng hữu hạn",
+      "Hội tụ với tổng \\(\\ln 2\\)",
+      "Hội tụ bán hội tụ"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "Chuỗi điều hòa \\(p=1\\leq1\\) → phân kỳ. Có thể chứng minh bằng so sánh nhóm.",
+    "quick": "\\(p=1\\leq1\\) → phân kỳ. Đây là chuỗi điều hòa nổi tiếng!",
+    "casio": "Σ1/n phân kỳ — p=1 không hội tụ"
+  },
+  {
+    "id": 20,
+    "type": "p_series",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{\\sqrt{n}}\\)",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(p=\\dfrac{1}{2}\\leq1\\)",
+      "Hội tụ vì \\(p=2>1\\)",
+      "Hội tụ tuyệt đối",
+      "Không xác định"
+    ],
+    "correct": "Phân kỳ vì \\(p=\\dfrac{1}{2}\\leq1\\)",
+    "solution": "\\(p=1/2\\leq1\\) → chuỗi \\(p\\) phân kỳ.",
+    "quick": "\\(p=1/2<1\\) → phân kỳ",
+    "casio": "p=0.5≤1 → phân kỳ"
+  },
+  {
+    "id": 21,
+    "type": "p_series",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^3}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(p=3>1\\)",
+      "Phân kỳ vì \\(p=3>1\\)",
+      "Hội tụ với tổng \\(\\dfrac{\\pi^3}{6}\\)",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ vì \\(p=3>1\\)",
+    "solution": "\\(p=3>1\\) → chuỗi \\(p\\) hội tụ. (Tổng \\(=\\zeta(3)=\\) hằng số Apéry \\(\\approx1.202\\).)",
+    "quick": "\\(p=3>1\\) → hội tụ",
+    "casio": "p=3>1 → hội tụ"
+  },
+  {
+    "id": 22,
+    "type": "convergence_test",
+    "question": "Điều kiện cần để chuỗi \\(\\sum u_n\\) hội tụ là",
+    "matrix": null,
+    "options": [
+      "\\(\\lim_{n\\to\\infty} u_n=0\\)",
+      "\\(u_n>0\\) với mọi \\(n\\)",
+      "\\(u_n\\) đơn điệu giảm",
+      "\\(\\sum|u_n|\\) hội tụ"
+    ],
+    "correct": "\\(\\lim_{n\\to\\infty} u_n=0\\)",
+    "solution": "Điều kiện cần: nếu \\(\\sum u_n\\) hội tụ thì \\(\\lim u_n=0\\). (Ngược lại không đúng!)",
+    "quick": "Điều kiện cần: \\(u_n\\to0\\). Chú ý: \\(u_n\\to0\\) chưa đủ để kết luận hội tụ!",
+    "casio": "Kiểm tra u_n→0 trước. Nếu không → phân kỳ ngay."
+  },
+  {
+    "id": 23,
+    "type": "convergence_test",
+    "question": "Nếu \\(\\lim_{n\\to\\infty} u_n\\neq 0\\) thì chuỗi \\(\\sum u_n\\)",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Bán hội tụ",
+      "Chưa kết luận được"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "Nếu \\(u_n\\not\\to0\\), chuỗi **chắc chắn phân kỳ** (tiêu chuẩn phân kỳ tất yếu).",
+    "quick": "\\(u_n\\not\\to0\\) → phân kỳ chắc chắn",
+    "casio": "Kiểm tra giới hạn u_n: nếu ≠ 0 → phân kỳ ngay"
+  },
+  {
+    "id": 24,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n}{n+1}\\)",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(u_n\\to1\\neq0\\)",
+      "Hội tụ vì các số hạng nhỏ",
+      "Hội tụ vì \\(u_n<1\\)",
+      "Không xác định"
+    ],
+    "correct": "Phân kỳ vì \\(u_n\\to1\\neq0\\)",
+    "solution": "\\(\\lim u_n=\\lim\\dfrac{n}{n+1}=1\\neq0\\) → chuỗi phân kỳ.",
+    "quick": "\\(u_n=n/(n+1)\\to1\\neq0\\) → phân kỳ",
+    "casio": "n/(n+1)→1≠0 → phân kỳ ngay"
+  },
+  {
+    "id": 25,
+    "type": "comparison",
+    "question": "So sánh \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+1}\\) với chuỗi \\(\\sum\\dfrac{1}{n^2}\\). Kết luận?",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(\\dfrac{1}{n^2+1}<\\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ",
+      "Phân kỳ",
+      "Không so sánh được",
+      "Bán hội tụ"
+    ],
+    "correct": "Hội tụ vì \\(\\dfrac{1}{n^2+1}<\\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ",
+    "solution": "\\(0<\\dfrac{1}{n^2+1}<\\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ → theo tiêu chuẩn so sánh → hội tụ.",
+    "quick": "Tiêu chuẩn so sánh: \\(0<u_n\\leq v_n\\), \\(\\sum v_n\\) hội tụ → \\(\\sum u_n\\) hội tụ",
+    "casio": "1/(n²+1)<1/n² và Σ1/n² hội tụ → hội tụ"
+  },
+  {
+    "id": 26,
+    "type": "comparison",
+    "question": "So sánh \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{\\ln n}\\) (với \\(n\\geq2\\)) với \\(\\sum\\dfrac{1}{n}\\). Kết luận?",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(\\dfrac{1}{\\ln n}>\\dfrac{1}{n}\\) và \\(\\sum\\dfrac{1}{n}\\) phân kỳ",
+      "Hội tụ",
+      "Không so sánh được",
+      "Bán hội tụ"
+    ],
+    "correct": "Phân kỳ vì \\(\\dfrac{1}{\\ln n}>\\dfrac{1}{n}\\) và \\(\\sum\\dfrac{1}{n}\\) phân kỳ",
+    "solution": "Với \\(n\\geq2\\): \\(\\ln n<n\\) → \\(\\dfrac{1}{\\ln n}>\\dfrac{1}{n}\\). \\(\\sum\\dfrac{1}{n}\\) phân kỳ → \\(\\sum\\dfrac{1}{\\ln n}\\) phân kỳ.",
+    "quick": "\\(\\ln n<n\\) → \\(1/\\ln n>1/n\\) → so sánh với \\(\\sum1/n\\) phân kỳ",
+    "casio": "lnn<n nên 1/lnn>1/n → so sánh phân kỳ"
+  },
+  {
+    "id": 27,
+    "type": "comparison_limit",
+    "question": "Dùng tiêu chuẩn so sánh giới hạn: \\(\\lim_{n\\to\\infty}\\dfrac{u_n}{v_n}=L\\neq0\\) thì \\(\\sum u_n\\) và \\(\\sum v_n\\)",
+    "matrix": null,
+    "options": [
+      "Cùng hội tụ hoặc cùng phân kỳ",
+      "\\(\\sum u_n\\) hội tụ và \\(\\sum v_n\\) phân kỳ",
+      "Không liên quan",
+      "\\(\\sum u_n\\) phân kỳ"
+    ],
+    "correct": "Cùng hội tụ hoặc cùng phân kỳ",
+    "solution": "Tiêu chuẩn so sánh giới hạn: nếu \\(0<L<+\\infty\\) thì \\(\\sum u_n\\) và \\(\\sum v_n\\) cùng tính chất hội tụ.",
+    "quick": "\\(0<L<\\infty\\) → \\(\\sum u_n\\) và \\(\\sum v_n\\) cùng hội tụ hoặc cùng phân kỳ",
+    "casio": "Tính giới hạn u_n/v_n: nếu 0<L<∞ → cùng tính chất"
+  },
+  {
+    "id": 28,
+    "type": "comparison_limit",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2n+1}{n^2+n}\\). So sánh giới hạn với \\(\\sum\\dfrac{1}{n}\\).",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(L=2>0\\)",
+      "Hội tụ",
+      "Không so sánh được",
+      "\\(L=0\\)"
+    ],
+    "correct": "Phân kỳ vì \\(L=2>0\\)",
+    "solution": "\\(\\lim\\dfrac{u_n}{1/n}=\\lim\\dfrac{n(2n+1)}{n^2+n}=\\lim\\dfrac{2n+1}{n+1}=2>0\\). \\(\\sum1/n\\) phân kỳ → \\(\\sum u_n\\) phân kỳ.",
+    "quick": "Chọn \\(v_n=1/n\\): \\(L=\\lim nu_n=2\\neq0\\), \\(\\sum1/n\\) phân kỳ → phân kỳ",
+    "casio": "n·u_n = n(2n+1)/(n²+n)→2≠0 → phân kỳ (như Σ1/n)"
+  },
+  {
+    "id": 29,
+    "type": "comparison_limit",
+    "question": "Xét \\(\\sum_{n=1}^{\\infty}\\dfrac{3n^2+1}{n^4+2}\\). So sánh giới hạn với \\(\\sum\\dfrac{1}{n^2}\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(L=3>0\\) và \\(\\sum1/n^2\\) hội tụ",
+      "Phân kỳ",
+      "\\(L=0\\)",
+      "\\(L=\\infty\\)"
+    ],
+    "correct": "Hội tụ vì \\(L=3>0\\) và \\(\\sum1/n^2\\) hội tụ",
+    "solution": "\\(L=\\lim\\dfrac{(3n^2+1)/( n^4+2)}{1/n^2}=\\lim\\dfrac{n^2(3n^2+1)}{n^4+2}=3>0\\). \\(\\sum1/n^2\\) hội tụ → hội tụ.",
+    "quick": "\\(n^2u_n\\to3\\), \\(\\sum1/n^2\\) hội tụ → hội tụ",
+    "casio": "n²·u_n=(3n²+1)/(n⁴+2)·n²→3>0 → hội tụ"
+  },
+  {
+    "id": 30,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của chuỗi lũy thừa \\(\\sum_{n=0}^{\\infty} x^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=1\\)",
+      "\\(R=0\\)",
+      "\\(R=+\\infty\\)",
+      "\\(R=2\\)"
+    ],
+    "correct": "\\(R=1\\)",
+    "solution": "Dùng D'Alembert: \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=1\\). Hoặc: \\(a_n=1\\) → \\(R=1/\\limsup\\sqrt[n]{|a_n|}=1/1=1\\).",
+    "quick": "\\(R=\\lim|a_n/a_{n+1}|=1/1=1\\)",
+    "casio": "a_n=1 mọi n → R=1/limsup(1)=1"
+  },
+  {
+    "id": 31,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=1\\)",
+      "\\(R=0\\)",
+      "\\(R=+\\infty\\)",
+      "\\(R=n\\)"
+    ],
+    "correct": "\\(R=1\\)",
+    "solution": "\\(a_n=1/n\\). \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{1/n}{1/(n+1)}=\\lim\\dfrac{n+1}{n}=1\\).",
+    "quick": "\\(R=\\lim(1/n)/(1/(n+1))=\\lim(n+1)/n=1\\)",
+    "casio": "R=lim(a_n/a_{n+1})=(n+1)/n→1"
+  },
+  {
+    "id": 32,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=+\\infty\\)",
+      "\\(R=1\\)",
+      "\\(R=0\\)",
+      "\\(R=e\\)"
+    ],
+    "correct": "\\(R=+\\infty\\)",
+    "solution": "\\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{1/n!}{1/(n+1)!}=\\lim(n+1)=+\\infty\\).",
+    "quick": "\\(R=\\lim(n+1)=+\\infty\\) → hội tụ với mọi \\(x\\in(-\\infty,+\\infty)\\)",
+    "casio": "R=lim(n+1)→∞ → hội tụ với mọi x"
+  },
+  {
+    "id": 33,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty} n!\\cdot x^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=0\\)",
+      "\\(R=1\\)",
+      "\\(R=+\\infty\\)",
+      "\\(R=e\\)"
+    ],
+    "correct": "\\(R=0\\)",
+    "solution": "\\(R=\\lim\\left|\\dfrac{n!}{(n+1)!}\\right|=\\lim\\dfrac{1}{n+1}=0\\).",
+    "quick": "\\(R=\\lim1/(n+1)=0\\) → chỉ hội tụ tại \\(x=0\\)",
+    "casio": "R=lim(1/(n+1))→0 → chỉ hội tụ tại x=0"
+  },
+  {
+    "id": 34,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{n+4}{n!}(x+4)^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=+\\infty\\)",
+      "\\(R=1\\)",
+      "\\(R=4\\)",
+      "\\(R=0\\)"
+    ],
+    "correct": "\\(R=+\\infty\\)",
+    "solution": "\\(a_n=(n+4)/n!\\). \\(R=\\lim\\dfrac{a_n}{a_{n+1}}=\\lim\\dfrac{(n+4)/n!}{(n+5)/(n+1)!}=\\lim\\dfrac{(n+4)(n+1)}{n+5}=+\\infty\\).",
+    "quick": "Có \\(n!\\) ở mẫu → \\(R=+\\infty\\) (thường gặp với chuỗi có giai thừa)",
+    "casio": "a_n=(n+4)/n! → R=lim(n+1)·(n+4)/(n+5)→∞"
+  },
+  {
+    "id": 35,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{n+4}{n!}x^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\((-\\infty,+\\infty)\\)",
+      "\\((-1,1)\\)",
+      "\\(\\{0\\}\\)",
+      "\\([-1,1]\\)"
+    ],
+    "correct": "\\((-\\infty,+\\infty)\\)",
+    "solution": "\\(R=+\\infty\\) → hội tụ với mọi \\(x\\in\\mathbb{R}=(-\\infty,+\\infty)\\).",
+    "quick": "\\(R=+\\infty\\) → miền hội tụ là toàn bộ \\(\\mathbb{R}\\)",
+    "casio": "R=∞ → hội tụ với mọi x"
+  },
+  {
+    "id": 36,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{n+4}{n^2+1}x^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\([-1,1)\\)",
+      "\\((-1,1)\\)",
+      "\\([-1,1]\\)",
+      "\\((-1,1]\\)"
+    ],
+    "correct": "\\([-1,1)\\)",
+    "solution": "\\(a_n=(n+4)/(n^2+1)\\). \\(R=\\lim|a_n/a_{n+1}|=1\\). Tại \\(x=1\\): \\(\\sum(n+4)/(n^2+1)\\) phân kỳ (∼1/n). Tại \\(x=-1\\): chuỗi đan dấu Leibniz → hội tụ. Miền: \\([-1,1)\\).",
+    "quick": "\\(R=1\\). Kiểm tra biên: \\(x=1\\) phân kỳ, \\(x=-1\\) hội tụ (Leibniz)",
+    "casio": "R=1. x=1: Σ(n+4)/(n²+1)~Σ1/n phân kỳ. x=-1: Leibniz → hội tụ"
+  },
+  {
+    "id": 37,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n^2}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([-1,1]\\)",
+      "\\((-1,1)\\)",
+      "\\([-1,1)\\)",
+      "\\((-1,1]\\)"
+    ],
+    "correct": "\\([-1,1]\\)",
+    "solution": "\\(R=1\\). Tại \\(x=\\pm1\\): \\(\\sum(\\pm1)^n/n^2\\), \\(|u_n|=1/n^2\\) → hội tụ tuyệt đối. Miền: \\([-1,1]\\).",
+    "quick": "\\(R=1\\). Tại \\(x=\\pm1\\): \\(\\sum1/n^2\\) hội tụ tuyệt đối → miền đóng \\([-1,1]\\)",
+    "casio": "R=1. Hai đầu: Σ1/n² hội tụ tuyệt đối → [-1,1]"
+  },
+  {
+    "id": 38,
+    "type": "alternating_series",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{1}{n^2}\\) là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Hội tụ bán hội tụ",
+      "Phân kỳ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ tuyệt đối",
+    "solution": "\\(\\sum|u_n|=\\sum1/n^2\\) hội tụ (p=2>1) → hội tụ tuyệt đối.",
+    "quick": "\\(\\sum|u_n|=\\sum1/n^2\\) hội tụ → tuyệt đối",
+    "casio": "Σ|u_n|=Σ1/n² hội tụ (p=2>1) → tuyệt đối"
+  },
+  {
+    "id": 39,
+    "type": "alternating_series",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{1}{\\sqrt{n}}\\) là",
+    "matrix": null,
+    "options": [
+      "Bán hội tụ",
+      "Hội tụ tuyệt đối",
+      "Phân kỳ",
+      "Hội tụ điều kiện"
+    ],
+    "correct": "Bán hội tụ",
+    "solution": "Leibniz: \\(1/\\sqrt{n}\\downarrow0\\) → hội tụ. \\(\\sum|u_n|=\\sum1/\\sqrt{n}\\) phân kỳ (p=1/2≤1) → bán hội tụ.",
+    "quick": "Hội tụ (Leibniz) nhưng không tuyệt đối → bán hội tụ",
+    "casio": "Leibniz ✓ → hội tụ. Σ1/√n phân kỳ → bán hội tụ"
+  },
+  {
+    "id": 40,
+    "type": "alternating_series",
+    "question": "Điều kiện Leibniz cho chuỗi đan dấu \\(\\sum(-1)^{n-1}u_n\\) (\\(u_n>0\\)) là",
+    "matrix": null,
+    "options": [
+      "\\(u_n\\) đơn điệu giảm và \\(u_n\\to0\\)",
+      "\\(u_n\\to0\\) là đủ",
+      "\\(u_n\\) đơn điệu giảm là đủ",
+      "\\(u_n\\) bị chặn"
+    ],
+    "correct": "\\(u_n\\) đơn điệu giảm và \\(u_n\\to0\\)",
+    "solution": "Tiêu chuẩn Leibniz: cần đồng thời: (1) \\(u_{n+1}\\leq u_n\\) (đơn điệu giảm) và (2) \\(\\lim u_n=0\\).",
+    "quick": "Cả hai: giảm VÀ →0. Thiếu một là không áp dụng được.",
+    "casio": "Kiểm tra: u_{n+1}≤u_n và u_n→0"
+  },
+  {
+    "id": 41,
+    "type": "alternating_series",
+    "question": "Chuỗi đan dấu \\(\\sum_{n=3}^{\\infty}(-1)^n\\dfrac{3n+1}{n(n-2)}\\) là",
+    "matrix": null,
+    "options": [
+      "Đan dấu và hội tụ",
+      "Không đan dấu và hội tụ",
+      "Đan dấu và phân kỳ",
+      "Không đan dấu và phân kỳ"
+    ],
+    "correct": "Đan dấu và hội tụ",
+    "solution": "\\(u_n=(3n+1)/(n(n-2))\\). Đây là chuỗi đan dấu. \\(u_n\\to0\\), \\(u_n\\) đơn điệu giảm (với n đủ lớn) → Leibniz → hội tụ.",
+    "quick": "\\((-1)^n\\) → đan dấu. \\(u_n\\to0\\) và giảm → Leibniz → hội tụ",
+    "casio": "u_n=(3n+1)/(n(n-2))→0, đan dấu → hội tụ theo Leibniz"
+  },
+  {
+    "id": 42,
+    "type": "alternating_series",
+    "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}(-1)^n\\dfrac{1}{n+(-1)^n}\\) là",
+    "matrix": null,
+    "options": [
+      "Không đan dấu và bán hội tụ",
+      "Đan dấu và hội tụ tuyệt đối",
+      "Phân kỳ",
+      "Đan dấu và phân kỳ"
+    ],
+    "correct": "Không đan dấu và bán hội tụ",
+    "solution": "\\((-1)^n/(n+(-1)^n)\\): dấu thay đổi nhưng không theo quy luật đan dấu chuẩn. Tuy nhiên \\(u_n\\to0\\) và có thể kiểm tra hội tụ bằng phương pháp khác. Chuỗi hội tụ bán hội tụ.",
+    "quick": "Chuỗi không đan dấu chuẩn nhưng vẫn hội tụ bán hội tụ",
+    "casio": "Kiểm tra từng số hạng để xác định dấu"
+  },
+  {
+    "id": 43,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{4n^2-1}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(\\dfrac{1}{4n^2-1}=\\dfrac{1}{(2n-1)(2n+1)}=\\dfrac{1}{2}\\left(\\dfrac{1}{2n-1}-\\dfrac{1}{2n+1}\\right)\\). Telescope: \\(S=\\dfrac{1}{2}\\cdot1=\\dfrac{1}{2}\\).",
+    "quick": "Phân phần → telescope. \\(S=\\dfrac{1}{2}\\cdot(1-\\lim_{N}\\dfrac{1}{2N+1})=\\dfrac{1}{2}\\)",
+    "casio": "1/(4n²-1)=½(1/(2n-1)-1/(2n+1)) → S=1/2"
+  },
+  {
+    "id": 44,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{3^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{3}{4}\\)",
+    "solution": "Chuỗi hình học với \\(a=1\\), \\(q=-1/3\\). \\(S=\\dfrac{1}{1-(-1/3)}=\\dfrac{1}{4/3}=\\dfrac{3}{4}\\).",
+    "quick": "\\(q=-1/3\\), \\(|q|<1\\): \\(S=\\dfrac{1}{1+1/3}=\\dfrac{3}{4}\\)",
+    "casio": "S=1/(1+1/3)=1/(4/3)=3/4"
+  },
+  {
+    "id": 45,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi hình học \\(\\sum_{n=0}^{\\infty}\\dfrac{2}{3^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(6\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "\\(a=2\\), \\(q=1/3\\). \\(S=\\dfrac{2}{1-1/3}=\\dfrac{2}{2/3}=3\\).",
+    "quick": "\\(S=\\dfrac{a}{1-q}=\\dfrac{2}{2/3}=3\\)",
+    "casio": "S=2/(1-1/3)=2/(2/3)=3"
+  },
+  {
+    "id": 46,
+    "type": "series_sum",
+    "question": "Tổng \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n^2-1}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{3}{4}\\)",
+    "solution": "\\(\\dfrac{1}{n^2-1}=\\dfrac{1}{(n-1)(n+1)}=\\dfrac{1}{2}\\left(\\dfrac{1}{n-1}-\\dfrac{1}{n+1}\\right)\\). Telescope: \\(S=\\dfrac{1}{2}\\left(1+\\dfrac{1}{2}\\right)=\\dfrac{3}{4}\\).",
+    "quick": "Phân phần → telescope. Cẩn thận bắt đầu từ \\(n=2\\)",
+    "casio": "S_N=½(1+½-1/N-1/(N+1)) → S=½·3/2=3/4"
+  },
+  {
+    "id": 47,
+    "type": "dalembert",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^n}{n!}\\). Theo D'Alembert, \\(D=\\)?",
+    "matrix": null,
+    "options": [
+      "\\(e\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(n\\)"
+    ],
+    "correct": "\\(e\\)",
+    "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)^{n+1}}{(n+1)!}\\cdot\\dfrac{n!}{n^n}=\\left(1+\\dfrac{1}{n}\\right)^n\\to e>1\\) → phân kỳ.",
+    "quick": "\\(D=e>1\\) → phân kỳ",
+    "casio": "(1+1/n)^n → e ≈ 2.718 > 1 → phân kỳ"
+  },
+  {
+    "id": 48,
+    "type": "dalembert",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{(2n)!}\\). Tính \\(D=\\lim u_{n+1}/u_n\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(e\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "\\(D=\\lim\\dfrac{(n+1)!}{(2n+2)!}\\cdot\\dfrac{(2n)!}{n!}=\\lim\\dfrac{n+1}{(2n+2)(2n+1)}=\\lim\\dfrac{1}{2(2n+1)}=0<1\\) → hội tụ.",
+    "quick": "\\((2n+2)!=(2n+2)(2n+1)(2n)!\\) → \\(D=0<1\\) → hội tụ",
+    "casio": "D=(n+1)/((2n+2)(2n+1))→0<1 → hội tụ"
+  },
+  {
+    "id": 49,
+    "type": "dalembert",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{4^n}{n^2}\\) theo D'Alembert",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(D=4>1\\)",
+      "Hội tụ vì \\(D=1/4<1\\)",
+      "Không kết luận vì \\(D=1\\)",
+      "Hội tụ điều kiện"
+    ],
+    "correct": "Phân kỳ vì \\(D=4>1\\)",
+    "solution": "\\(D=\\lim\\dfrac{4^{n+1}/(n+1)^2}{4^n/n^2}=\\lim\\dfrac{4n^2}{(n+1)^2}=4>1\\) → phân kỳ.",
+    "quick": "\\(D=4>1\\) → phân kỳ",
+    "casio": "D=4·(n/(n+1))²→4>1 → phân kỳ"
+  },
+  {
+    "id": 50,
+    "type": "cauchy",
+    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{3n}{4n+1}\\right)^n\\). Tiêu chuẩn Cauchy cho \\(C=\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{4}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{4}\\)",
+    "solution": "\\(C=\\lim\\sqrt[n]{u_n}=\\lim\\dfrac{3n}{4n+1}=\\dfrac{3}{4}<1\\) → hội tụ.",
+    "quick": "\\(C=\\lim\\dfrac{3n}{4n+1}=\\dfrac{3}{4}<1\\) → hội tụ",
+    "casio": "3n/(4n+1)→3/4 khi n→∞"
+  },
+  {
+    "id": 51,
+    "type": "cauchy",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{n+1}{2n}\\right)^n\\). Cauchy: \\(C=\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(e/2\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(C=\\lim\\dfrac{n+1}{2n}=\\dfrac{1}{2}<1\\) → hội tụ.",
+    "quick": "\\(C=(n+1)/(2n)\\to1/2<1\\) → hội tụ",
+    "casio": "(n+1)/(2n)→1/2<1 → hội tụ"
+  },
+  {
+    "id": 52,
+    "type": "cauchy",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{2n}{n+1}\\right)^n\\). Cauchy: \\(C=\\)?",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "\\(C=\\lim\\dfrac{2n}{n+1}=2>1\\) → phân kỳ.",
+    "quick": "\\(C=\\lim2n/(n+1)=2>1\\) → phân kỳ",
+    "casio": "2n/(n+1)→2>1 → phân kỳ"
+  },
+  {
+    "id": 53,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n}x^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=1\\)",
+      "\\(R=0\\)",
+      "\\(R=+\\infty\\)",
+      "\\(R=-1\\)"
+    ],
+    "correct": "\\(R=1\\)",
+    "solution": "\\(a_n=(-1)^n/n\\). \\(|a_n|=1/n\\). \\(R=1/\\limsup\\sqrt[n]{1/n}=1/1=1\\).",
+    "quick": "\\(R=\\lim|a_n/a_{n+1}|=\\lim(1/n)/(1/(n+1))=(n+1)/n\\to1\\)",
+    "casio": "R=lim(1/n)/(1/(n+1))=(n+1)/n→1"
+  },
+  {
+    "id": 54,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{2^n}{n+1}x^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=\\dfrac{1}{2}\\)",
+      "\\(R=2\\)",
+      "\\(R=1\\)",
+      "\\(R=+\\infty\\)"
+    ],
+    "correct": "\\(R=\\dfrac{1}{2}\\)",
+    "solution": "\\(a_n=2^n/(n+1)\\). \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{2^n/(n+1)}{2^{n+1}/(n+2)}=\\lim\\dfrac{n+2}{2(n+1)}=\\dfrac{1}{2}\\).",
+    "quick": "\\(R=\\lim(n+2)/(2(n+1))=1/2\\)",
+    "casio": "R=lim(n+2)/(2(n+1))→1/2"
+  },
+  {
+    "id": 55,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n\\cdot 3^n}x^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=3\\)",
+      "\\(R=\\dfrac{1}{3}\\)",
+      "\\(R=1\\)",
+      "\\(R=9\\)"
+    ],
+    "correct": "\\(R=3\\)",
+    "solution": "\\(a_n=1/(n\\cdot3^n)\\). \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{(n+1)3^{n+1}}{n\\cdot3^n}\\cdot\\dfrac{1}{1}=\\lim\\dfrac{3(n+1)}{n}=3\\).",
+    "quick": "\\(R=3\\lim(n+1)/n=3\\)",
+    "casio": "R=lim(n+1)·3/n→3"
+  },
+  {
+    "id": 56,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n\\cdot2^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([-2,2)\\)",
+      "\\((-2,2)\\)",
+      "\\([-2,2]\\)",
+      "\\((-2,2]\\)"
+    ],
+    "correct": "\\([-2,2)\\)",
+    "solution": "\\(R=2\\). Tại \\(x=2\\): \\(\\sum1/n\\) phân kỳ. Tại \\(x=-2\\): \\(\\sum(-1)^n/n\\) hội tụ (Leibniz). Miền: \\([-2,2)\\).",
+    "quick": "\\(R=2\\). Biên: \\(x=2\\) phân kỳ (\\(\\sum1/n\\)); \\(x=-2\\) hội tụ (Leibniz)",
+    "casio": "R=2. x=2: Σ1/n phân kỳ. x=-2: Leibniz → hội tụ → [-2,2)"
+  },
+  {
+    "id": 57,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\sum_{n=0}^{\\infty}(x-1)^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\((0,2)\\)",
+      "\\([0,2]\\)",
+      "\\((0,2]\\)",
+      "\\([0,2)\\)"
+    ],
+    "correct": "\\((0,2)\\)",
+    "solution": "Chuỗi hình học với \\(q=x-1\\). Hội tụ khi \\(|x-1|<1\\), tức \\(0<x<2\\). Tại biên phân kỳ.",
+    "quick": "\\(|x-1|<1\\Leftrightarrow 0<x<2\\). Tại biên: \\(|q|=1\\) → phân kỳ",
+    "casio": "|x-1|<1 → 0<x<2 → (0,2)"
+  },
+  {
+    "id": 58,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(x+2)^n}{n^2\\cdot3^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([-5,1]\\)",
+      "\\((-5,1)\\)",
+      "\\([-5,1)\\)",
+      "\\((-5,1]\\)"
+    ],
+    "correct": "\\([-5,1]\\)",
+    "solution": "\\(R=3\\). Tâm \\(x_0=-2\\). Hội tụ khi \\(|x+2|<3\\), tức \\(-5<x<1\\). Tại \\(x=\\pm\\): \\(\\sum1/n^2\\) hội tụ tuyệt đối. Miền: \\([-5,1]\\).",
+    "quick": "\\(R=3\\), tâm \\(-2\\): \\(|x+2|<3\\). Hai đầu: \\(\\sum1/n^2\\) hội tụ → \\([-5,1]\\)",
+    "casio": "R=3, tâm=-2. Hai biên: Σ1/n² hội tụ → đóng hai đầu"
+  },
+  {
+    "id": 59,
+    "type": "convergence_test",
+    "question": "Tiêu chuẩn tích phân Cauchy: nếu \\(f(x)\\geq0\\) giảm liên tục trên \\([1,\\infty)\\) thì \\(\\sum f(n)\\) và \\(\\int_1^{\\infty}f(x)\\,dx\\)",
+    "matrix": null,
+    "options": [
+      "Cùng hội tụ hoặc cùng phân kỳ",
+      "Chuỗi hội tụ khi tích phân phân kỳ",
+      "Không liên quan",
+      "Tích phân hội tụ khi chuỗi phân kỳ"
+    ],
+    "correct": "Cùng hội tụ hoặc cùng phân kỳ",
+    "solution": "Tiêu chuẩn tích phân Cauchy: \\(\\sum_{n=1}^{\\infty}f(n)\\) và \\(\\int_1^{\\infty}f(x)\\,dx\\) cùng hội tụ hoặc cùng phân kỳ.",
+    "quick": "Tích phân và chuỗi tương ứng cùng tính chất hội tụ",
+    "casio": "Kiểm tra tích phân: ∫₁^∞ f(x)dx và Σf(n) cùng tính chất"
+  },
+  {
+    "id": 60,
+    "type": "convergence_test",
+    "question": "Dùng tiêu chuẩn tích phân, chuỗi \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n\\ln n}\\) thì",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Bán hội tụ",
+      "Không áp dụng được"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\int_2^{\\infty}\\dfrac{dx}{x\\ln x}=\\ln(\\ln x)\\Big|_2^{\\infty}=+\\infty\\) → phân kỳ.",
+    "quick": "\\(\\int\\dfrac{dx}{x\\ln x}=\\ln|\\ln x|\\to+\\infty\\) → phân kỳ",
+    "casio": "∫1/(x·lnx)dx=ln(lnx)→∞ → phân kỳ"
+  },
+  {
+    "id": 61,
+    "type": "convergence_test",
+    "question": "Dùng tiêu chuẩn tích phân, chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+1}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(\\int_1^{\\infty}\\dfrac{dx}{x^2+1}=\\arctan x\\Big|_1^{\\infty}=\\dfrac{\\pi}{2}-\\dfrac{\\pi}{4}=\\dfrac{\\pi}{4}<+\\infty\\) → hội tụ.",
+    "quick": "\\(\\int_1^{\\infty}1/(x^2+1)\\,dx=\\pi/4<\\infty\\) → hội tụ",
+    "casio": "∫1/(x²+1)dx=arctan(x) → π/4 hữu hạn → hội tụ"
+  },
+  {
+    "id": 62,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{3}{n(n+3)}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{11}{6}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(3\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{11}{6}\\)",
+    "solution": "\\(\\dfrac{3}{n(n+3)}=\\dfrac{1}{n}-\\dfrac{1}{n+3}\\). Telescope với bước 3:\n\\(S=\\left(1+\\dfrac{1}{2}+\\dfrac{1}{3}\\right)=\\dfrac{11}{6}\\).",
+    "quick": "Phân phần → \\(S=\\sum_{n=1}^{3}\\dfrac{1}{n}=1+\\frac{1}{2}+\\frac{1}{3}=\\frac{11}{6}\\)",
+    "casio": "S=1+1/2+1/3=11/6"
+  },
+  {
+    "id": 63,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\sin\\dfrac{1}{n}\\) thì",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Hội tụ tuyệt đối",
+      "Không xác định"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\sin(1/n)\\sim1/n\\) khi \\(n\\to\\infty\\). So sánh giới hạn với \\(\\sum1/n\\): \\(L=\\lim\\dfrac{\\sin(1/n)}{1/n}=1>0\\). \\(\\sum1/n\\) phân kỳ → phân kỳ.",
+    "quick": "\\(\\sin(1/n)\\sim1/n\\) → so sánh với \\(\\sum1/n\\) phân kỳ → phân kỳ",
+    "casio": "sin(1/n)/(1/n)→1>0. Σ1/n phân kỳ → phân kỳ"
+  },
+  {
+    "id": 64,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\ln\\left(1+\\dfrac{1}{n}\\right)\\) thì",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Bán hội tụ",
+      "Hội tụ tuyệt đối"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\ln(1+1/n)\\sim1/n\\) khi \\(n\\to\\infty\\). So sánh với \\(\\sum1/n\\) phân kỳ → phân kỳ. (Thực ra \\(\\sum_{n=1}^N\\ln(1+1/n)=\\ln(N+1)\\to+\\infty\\).)",
+    "quick": "\\(\\ln(1+1/n)\\sim1/n\\) → phân kỳ như \\(\\sum1/n\\)",
+    "casio": "Tổng riêng = ln(N+1)→∞ → phân kỳ"
+  },
+  {
+    "id": 65,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(1-\\cos\\dfrac{1}{n}\\right)\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(1-\\cos(1/n)\\sim\\dfrac{1}{2n^2}\\) khi \\(n\\to\\infty\\). So sánh với \\(\\sum1/n^2\\) hội tụ → hội tụ.",
+    "quick": "\\(1-\\cos(1/n)\\sim1/(2n^2)\\) → so sánh \\(\\sum1/n^2\\) hội tụ → hội tụ",
+    "casio": "(1-cos(1/n))/(1/n²)→1/2>0. Σ1/n² hội tụ → hội tụ"
+  },
+  {
+    "id": 66,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n n}{n^2+1}\\) là",
+    "matrix": null,
+    "options": [
+      "Bán hội tụ",
+      "Hội tụ tuyệt đối",
+      "Phân kỳ",
+      "Không xác định"
+    ],
+    "correct": "Bán hội tụ",
+    "solution": "\\(u_n=n/(n^2+1)\\to0\\), đơn điệu giảm → Leibniz → hội tụ. \\(\\sum n/(n^2+1)\\sim\\sum1/n\\) phân kỳ → bán hội tụ.",
+    "quick": "Leibniz ✓ → hội tụ. \\(\\sum|u_n|\\sim\\sum1/n\\) phân kỳ → bán hội tụ",
+    "casio": "u_n=n/(n²+1)→0, giảm → Leibniz. Σ|u_n|~Σ1/n phân kỳ → bán hội tụ"
+  },
+  {
+    "id": 67,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n^{3/2}}\\) là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Bán hội tụ",
+      "Phân kỳ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ tuyệt đối",
+    "solution": "\\(\\sum|u_n|=\\sum1/n^{3/2}\\): chuỗi \\(p\\) với \\(p=3/2>1\\) → hội tụ → tuyệt đối.",
+    "quick": "\\(\\sum1/n^{3/2}\\) hội tụ (p=3/2>1) → hội tụ tuyệt đối",
+    "casio": "p=3/2>1 → Σ1/n^{3/2} hội tụ → tuyệt đối"
+  },
+  {
+    "id": 68,
+    "type": "convergence_test",
+    "question": "Hội tụ tuyệt đối có nghĩa là",
+    "matrix": null,
+    "options": [
+      "\\(\\sum|u_n|\\) hội tụ",
+      "\\(\\sum u_n\\) hội tụ và \\(u_n>0\\)",
+      "\\(\\lim u_n=0\\)",
+      "\\(\\sum u_n\\) hội tụ theo Leibniz"
+    ],
+    "correct": "\\(\\sum|u_n|\\) hội tụ",
+    "solution": "\\(\\sum u_n\\) hội tụ tuyệt đối \\(\\Leftrightarrow\\sum|u_n|\\) hội tụ.",
+    "quick": "Tuyệt đối: \\(\\sum|u_n|<\\infty\\)",
+    "casio": "Kiểm tra: Σ|u_n| có hội tụ không?"
+  },
+  {
+    "id": 69,
+    "type": "convergence_test",
+    "question": "Bán hội tụ (hội tụ có điều kiện) nghĩa là",
+    "matrix": null,
+    "options": [
+      "\\(\\sum u_n\\) hội tụ nhưng \\(\\sum|u_n|\\) phân kỳ",
+      "\\(\\sum|u_n|\\) hội tụ",
+      "\\(\\sum u_n\\) phân kỳ",
+      "Chỉ áp dụng cho chuỗi dương"
+    ],
+    "correct": "\\(\\sum u_n\\) hội tụ nhưng \\(\\sum|u_n|\\) phân kỳ",
+    "solution": "Bán hội tụ (hội tụ có điều kiện): \\(\\sum u_n\\) hội tụ nhưng \\(\\sum|u_n|\\) phân kỳ.",
+    "quick": "Hội tụ nhưng KHÔNG tuyệt đối → bán hội tụ",
+    "casio": "Σu_n hội tụ VÀ Σ|u_n| phân kỳ → bán hội tụ"
+  },
+  {
+    "id": 70,
+    "type": "convergence_test",
+    "question": "Hội tụ tuyệt đối kéo theo",
+    "matrix": null,
+    "options": [
+      "Hội tụ thông thường",
+      "Hội tụ bán hội tụ",
+      "Phân kỳ",
+      "Không kết luận được"
+    ],
+    "correct": "Hội tụ thông thường",
+    "solution": "Định lý: \\(\\sum|u_n|\\) hội tụ \\(\\Rightarrow\\sum u_n\\) hội tụ. Đây là tính chất quan trọng.",
+    "quick": "Tuyệt đối \\(\\Rightarrow\\) hội tụ (chiều ngược lại không đúng!)",
+    "casio": "Tuyệt đối → hội tụ thông thường (nhưng không ngược lại)"
+  },
+  {
+    "id": 71,
+    "type": "power_series_sum",
+    "question": "Tổng của chuỗi lũy thừa \\(\\sum_{n=0}^{\\infty}x^n=\\dfrac{1}{1-x}\\) áp dụng khi",
+    "matrix": null,
+    "options": [
+      "\\(|x|<1\\)",
+      "\\(x<1\\)",
+      "\\(|x|\\leq1\\)",
+      "Mọi \\(x\\)"
+    ],
+    "correct": "\\(|x|<1\\)",
+    "solution": "Chuỗi hình học: \\(\\sum_{n=0}^{\\infty}x^n=\\dfrac{1}{1-x}\\) với \\(|x|<1\\).",
+    "quick": "\\(\\sum x^n=1/(1-x)\\) khi \\(|x|<1\\). Đây là công thức cơ bản nhất!",
+    "casio": "Hội tụ khi |x|<1, bán kính R=1"
+  },
+  {
+    "id": 72,
+    "type": "power_series_sum",
+    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}=e^x\\) áp dụng với",
+    "matrix": null,
+    "options": [
+      "Mọi \\(x\\in\\mathbb{R}\\)",
+      "\\(|x|<1\\)",
+      "\\(x>0\\)",
+      "\\(x\\in[-1,1]\\)"
+    ],
+    "correct": "Mọi \\(x\\in\\mathbb{R}\\)",
+    "solution": "Chuỗi Taylor của \\(e^x\\) hội tụ với mọi \\(x\\in\\mathbb{R}\\) (bán kính \\(R=+\\infty\\)).",
+    "quick": "\\(e^x=\\sum x^n/n!\\) với mọi \\(x\\). Công thức cực kỳ quan trọng!",
+    "casio": "R=∞ → hội tụ mọi x"
+  },
+  {
+    "id": 73,
+    "type": "power_series_sum",
+    "question": "Chuỗi Taylor: \\(\\sin x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{(2n+1)!}\\) áp dụng với",
+    "matrix": null,
+    "options": [
+      "Mọi \\(x\\in\\mathbb{R}\\)",
+      "\\(|x|<1\\)",
+      "\\(|x|\\leq\\pi\\)",
+      "\\(x>0\\)"
+    ],
+    "correct": "Mọi \\(x\\in\\mathbb{R}\\)",
+    "solution": "Chuỗi Taylor của \\(\\sin x\\) hội tụ với mọi \\(x\\in\\mathbb{R}\\).",
+    "quick": "\\(\\sin x=x-x^3/3!+x^5/5!-\\cdots\\) với mọi \\(x\\)",
+    "casio": "R=∞. Công thức: sin(x)=Σ(-1)^n·x^{2n+1}/(2n+1)!"
+  },
+  {
+    "id": 74,
+    "type": "power_series_sum",
+    "question": "Chuỗi Taylor: \\(\\cos x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n}}{(2n)!}\\). Tính \\(\\cos 0\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(-1\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Tại \\(x=0\\): \\(\\cos0=\\sum\\dfrac{(-1)^n\\cdot0^{2n}}{(2n)!}=1+0+0+\\cdots=1\\). (Số hạng đầu \\(n=0\\): \\(0^0=1\\).)",
+    "quick": "\\(x=0\\): chỉ số hạng \\(n=0\\) còn lại: \\((-1)^0\\cdot0^0/0!=1\\)",
+    "casio": "cos(0)=1 theo công thức"
+  },
+  {
+    "id": 75,
+    "type": "power_series_sum",
+    "question": "Khai triển \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\) áp dụng với",
+    "matrix": null,
+    "options": [
+      "\\(-1<x\\leq1\\)",
+      "\\(-1<x<1\\)",
+      "\\(|x|<1\\)",
+      "Mọi \\(x\\)"
+    ],
+    "correct": "\\(-1<x\\leq1\\)",
+    "solution": "\\(R=1\\). Tại \\(x=1\\): chuỗi \\(\\sum(-1)^{n-1}/n\\) hội tụ (Leibniz). Tại \\(x=-1\\): \\(-\\sum1/n\\) phân kỳ. Miền: \\((-1,1]\\).",
+    "quick": "\\(-1<x\\leq1\\). Tại \\(x=1\\): \\(\\ln2=1-1/2+1/3-\\cdots\\)",
+    "casio": "R=1. x=1: hội tụ (Leibniz). x=-1: phân kỳ → (-1,1]"
+  },
+  {
+    "id": 76,
+    "type": "power_series_sum",
+    "question": "Tổng của \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{2n+1}=1-\\dfrac{1}{3}+\\dfrac{1}{5}-\\cdots\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(1\\)",
+      "\\(\\ln 2\\)",
+      "\\(\\dfrac{\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{4}\\)",
+    "solution": "Từ khai triển \\(\\arctan x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\), tại \\(x=1\\): \\(\\arctan 1=\\pi/4\\).",
+    "quick": "\\(\\arctan(1)=\\pi/4=1-1/3+1/5-\\cdots\\) (công thức Leibniz)",
+    "casio": "arctan(1)=π/4. Đây là chuỗi Leibniz nổi tiếng!"
+  },
+  {
+    "id": 77,
+    "type": "series_sum",
+    "question": "Tổng của \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n\\cdot2^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\ln 2\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(\\ln\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\ln 2\\)",
+    "solution": "Từ \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\), tại \\(x=1/2>0\\): \\(\\sum_{n=1}^{\\infty}\\dfrac{(1/2)^n}{n}\\cdot(-1)^{n-1}\\)... Thực ra \\(\\ln2=-\\ln(1/2)\\)... Dùng \\(-\\ln(1-x)=\\sum x^n/n\\) tại \\(x=1/2\\): \\(\\ln2\\).",
+    "quick": "\\(-\\ln(1-1/2)=\\ln2=\\sum_{n=1}^{\\infty}\\dfrac{(1/2)^n}{n}=\\sum\\dfrac{1}{n\\cdot2^n}\\)",
+    "casio": "Từ ln(1/(1-x))=Σx^n/n tại x=1/2: Σ1/(n·2^n)=ln2"
+  },
+  {
+    "id": 78,
+    "type": "dalembert",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-2)^n}{n^2}\\). Theo D'Alembert, \\(D=\\)?",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "\\(D=\\lim\\left|\\dfrac{u_{n+1}}{u_n}\\right|=\\lim\\dfrac{2^{n+1}/(n+1)^2}{2^n/n^2}=\\lim\\dfrac{2n^2}{(n+1)^2}=2>1\\) → phân kỳ.",
+    "quick": "\\(D=2>1\\) → phân kỳ",
+    "casio": "D=2·(n/(n+1))²→2>1 → phân kỳ"
+  },
+  {
+    "id": 79,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n(n+1)(n+2)}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(\\dfrac{1}{n(n+1)(n+2)}\\sim\\dfrac{1}{n^3}\\) khi \\(n\\to\\infty\\). So sánh với \\(\\sum1/n^3\\) (p=3>1) → hội tụ.",
+    "quick": "\\(u_n\\sim1/n^3\\) → so sánh với \\(\\sum1/n^3\\) hội tụ → hội tụ",
+    "casio": "u_n~1/n³ → so sánh p-series với p=3>1 → hội tụ"
+  },
+  {
+    "id": 80,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\sqrt{n+1}-\\sqrt{n}}{\\sqrt{n}}\\) thì",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\sqrt{n+1}-\\sqrt{n}=\\dfrac{1}{\\sqrt{n+1}+\\sqrt{n}}\\sim\\dfrac{1}{2\\sqrt{n}}\\). Vậy \\(u_n\\sim\\dfrac{1}{2n}\\sim1/n\\). \\(\\sum1/n\\) phân kỳ → phân kỳ.",
+    "quick": "\\(u_n\\sim1/(2n)\\) → so sánh \\(\\sum1/n\\) phân kỳ → phân kỳ",
+    "casio": "(√(n+1)-√n)/√n ~ 1/(2n) → phân kỳ như Σ1/n"
+  },
+  {
+    "id": 81,
+    "type": "series_sum",
+    "question": "Giá trị của \\(e^{-1}=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{n!}\\) xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(0.368\\)",
+      "\\(-0.368\\)",
+      "\\(1\\)",
+      "\\(2.718\\)"
+    ],
+    "correct": "\\(0.368\\)",
+    "solution": "\\(e^{-1}=1-1+\\dfrac{1}{2}-\\dfrac{1}{6}+\\dfrac{1}{24}-\\cdots\\approx0.3679\\approx0.368\\).",
+    "quick": "\\(e^{-1}\\approx0.368\\). Từ chuỗi Taylor: \\(\\sum(-1)^n/n!=e^{-1}\\)",
+    "casio": "1/e≈0.368"
+  },
+  {
+    "id": 82,
+    "type": "power_series_sum",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{x^n}{n}\\) hội tụ tới",
+    "matrix": null,
+    "options": [
+      "\\(\\ln(1+x)\\)",
+      "\\(\\ln(1-x)\\)",
+      "\\(e^x-1\\)",
+      "\\(\\arctan x\\)"
+    ],
+    "correct": "\\(\\ln(1+x)\\)",
+    "solution": "Đây chính là khai triển Taylor: \\(\\ln(1+x)=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\cdots=\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{x^n}{n}\\).",
+    "quick": "\\(\\ln(1+x)=\\sum\\dfrac{(-1)^{n-1}x^n}{n}\\) — công thức cần nhớ!",
+    "casio": "ln(1+x)=x-x²/2+x³/3-..."
+  },
+  {
+    "id": 83,
+    "type": "power_series_sum",
+    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\) hội tụ tới",
+    "matrix": null,
+    "options": [
+      "\\(\\arctan x\\)",
+      "\\(\\sin x\\)",
+      "\\(\\cos x\\)",
+      "\\(\\ln(1+x)\\)"
+    ],
+    "correct": "\\(\\arctan x\\)",
+    "solution": "\\(\\arctan x=x-\\dfrac{x^3}{3}+\\dfrac{x^5}{5}-\\cdots=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\), \\(|x|\\leq1\\).",
+    "quick": "\\(\\arctan x=\\sum\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\) — khai triển Taylor của arctg",
+    "casio": "arctan(x)=x-x³/3+x⁵/5-..."
+  },
+  {
+    "id": 84,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^{10}}{2^n}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Hội tụ",
+    "solution": "D'Alembert: \\(D=\\lim\\dfrac{(n+1)^{10}/2^{n+1}}{n^{10}/2^n}=\\dfrac{1}{2}\\lim\\left(\\dfrac{n+1}{n}\\right)^{10}=\\dfrac{1}{2}<1\\) → hội tụ.",
+    "quick": "\\(D=1/2<1\\) (số mũ đa thức không ảnh hưởng so với \\(2^n\\))",
+    "casio": "D=1/2·(1+1/n)^{10}→1/2<1 → hội tụ"
+  },
+  {
+    "id": 85,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{100^n}\\) thì",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "D'Alembert: \\(D=\\lim\\dfrac{(n+1)!/100^{n+1}}{n!/100^n}=\\lim\\dfrac{n+1}{100}=+\\infty>1\\) → phân kỳ.",
+    "quick": "\\(D=\\lim(n+1)/100=+\\infty>1\\) → phân kỳ. Giai thừa luôn thắng lũy thừa hữu hạn!",
+    "casio": "D=(n+1)/100→∞>1 → phân kỳ"
+  },
+  {
+    "id": 86,
+    "type": "comparison",
+    "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{\\sqrt{n^2-1}}\\) thì",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\dfrac{1}{\\sqrt{n^2-1}}\\sim\\dfrac{1}{n}\\) khi \\(n\\to\\infty\\) (so sánh giới hạn). \\(\\sum1/n\\) phân kỳ → phân kỳ.",
+    "quick": "\\(1/\\sqrt{n^2-1}\\sim1/n\\) → phân kỳ như \\(\\sum1/n\\)",
+    "casio": "1/√(n²-1)/(1/n)→1>0. Σ1/n phân kỳ → phân kỳ"
+  },
+  {
+    "id": 87,
+    "type": "comparison",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+n+1}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(\\dfrac{1}{n^2+n+1}\\sim\\dfrac{1}{n^2}\\). So sánh giới hạn: \\(L=1>0\\). \\(\\sum1/n^2\\) hội tụ → hội tụ.",
+    "quick": "\\(u_n\\sim1/n^2\\) → so sánh \\(\\sum1/n^2\\) hội tụ → hội tụ",
+    "casio": "(n²+n+1)·u_n=1→1>0. Σ1/n² hội tụ → hội tụ"
+  },
+  {
+    "id": 88,
+    "type": "comparison",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2^n+1}{3^n-1}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(\\dfrac{2^n+1}{3^n-1}\\sim\\dfrac{2^n}{3^n}=\\left(\\dfrac{2}{3}\\right)^n\\). So sánh với chuỗi hình học \\(\\sum(2/3)^n\\) hội tụ → hội tụ.",
+    "quick": "\\(u_n\\sim(2/3)^n\\) → hình học với \\(q=2/3<1\\) → hội tụ",
+    "casio": "u_n~(2/3)^n → hình học hội tụ"
+  },
+  {
+    "id": 89,
+    "type": "series_sum",
+    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{1}{2^n}+\\dfrac{1}{3^n}\\) có tổng là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{7}{2}\\)",
+      "\\(\\dfrac{5}{2}\\)",
+      "\\(5\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{7}{2}\\)",
+    "solution": "\\(\\sum\\dfrac{1}{2^n}=\\dfrac{1}{1-1/2}=2\\) và \\(\\sum\\dfrac{1}{3^n}=\\dfrac{1}{1-1/3}=\\dfrac{3}{2}\\). Tổng: \\(2+3/2=7/2\\).",
+    "quick": "\\(\\sum(a_n+b_n)=\\sum a_n+\\sum b_n=2+3/2=7/2\\)",
+    "casio": "Σ(1/2)^n=2, Σ(1/3)^n=3/2 → tổng=7/2"
+  },
+  {
+    "id": 90,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(2x)^n}{3^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(R=\\dfrac{3}{2}\\)",
+      "\\(R=3\\)",
+      "\\(R=\\dfrac{1}{2}\\)",
+      "\\(R=6\\)"
+    ],
+    "correct": "\\(R=\\dfrac{3}{2}\\)",
+    "solution": "\\(\\sum\\left(\\dfrac{2x}{3}\\right)^n\\): chuỗi hình học với \\(q=2x/3\\). Hội tụ khi \\(|2x/3|<1\\Leftrightarrow|x|<3/2\\). \\(R=3/2\\).",
+    "quick": "\\(|q|=|2x/3|<1\\Rightarrow|x|<3/2\\Rightarrow R=3/2\\)",
+    "casio": "q=2x/3 → |q|<1 → |x|<3/2 → R=3/2"
+  },
+  {
+    "id": 91,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{3n+1}{n(n-2)}\\) (bắt đầu từ \\(n=3\\)) là",
+    "matrix": null,
+    "options": [
+      "Đan dấu và hội tụ",
+      "Không đan dấu và hội tụ",
+      "Đan dấu và phân kỳ",
+      "Không đan dấu và phân kỳ"
+    ],
+    "correct": "Đan dấu và hội tụ",
+    "solution": "Chuỗi đan dấu (\\((-1)^n\\)). \\(u_n=(3n+1)/(n(n-2))\\to0\\) và đơn điệu giảm → Leibniz → hội tụ.",
+    "quick": "Đan dấu + Leibniz (\\(u_n\\to0\\), giảm) → hội tụ",
+    "casio": "u_n=(3n+1)/(n(n-2))→0 và giảm. Đan dấu → Leibniz → hội tụ"
+  },
+  {
+    "id": 92,
+    "type": "convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}(-1)^n\\dfrac{1}{n+(-1)^n}\\) là",
+    "matrix": null,
+    "options": [
+      "Không đan dấu và bán hội tụ",
+      "Đan dấu và hội tụ tuyệt đối",
+      "Phân kỳ",
+      "Đan dấu và phân kỳ"
+    ],
+    "correct": "Không đan dấu và bán hội tụ",
+    "solution": "Chuỗi không phải đan dấu chuẩn (mẫu thay đổi không đều). Tổng phân tích: các số hạng lẻ/chẵn tạo thành chuỗi con hội tụ. Tổng chuỗi tuyệt đối \\(\\sim\\sum1/n\\) phân kỳ → bán hội tụ.",
+    "quick": "Không đan dấu chuẩn. \\(|u_n|\\sim1/n\\) phân kỳ → bán hội tụ",
+    "casio": "Phân tích: không đan dấu đều → bán hội tụ"
+  },
+  {
+    "id": 93,
+    "type": "comparison",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\ln n}{n^2}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không kết luận"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(\\ln n<n^{1/2}\\) với \\(n\\) đủ lớn. Vậy \\(\\dfrac{\\ln n}{n^2}<\\dfrac{n^{1/2}}{n^2}=\\dfrac{1}{n^{3/2}}\\). \\(\\sum1/n^{3/2}\\) hội tụ → hội tụ.",
+    "quick": "\\(\\ln n\\ll n^{1/2}\\) → \\(\\ln n/n^2<1/n^{3/2}\\) → so sánh hội tụ",
+    "casio": "ln(n)/n² < n^{1/2}/n² = 1/n^{3/2}. Σ1/n^{3/2} hội tụ (p=3/2>1)"
+  },
+  {
+    "id": 94,
+    "type": "comparison",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{1+2+\\cdots+n}\\) thì",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ",
+    "solution": "\\(1+2+\\cdots+n=n(n+1)/2\\). Vậy \\(u_n=\\dfrac{2}{n(n+1)}\\sim\\dfrac{2}{n^2}\\). So sánh \\(\\sum1/n^2\\) → hội tụ.",
+    "quick": "\\(u_n=2/(n(n+1))\\sim2/n^2\\) → hội tụ",
+    "casio": "1+2+...+n=n(n+1)/2 → u_n=2/(n(n+1))~2/n² → hội tụ"
+  },
+  {
+    "id": 95,
+    "type": "convergence_test",
+    "question": "Nếu \\(\\sum u_n\\) hội tụ và \\(\\{v_n\\}\\) bị chặn đơn điệu thì \\(\\sum u_nv_n\\)",
+    "matrix": null,
+    "options": [
+      "Hội tụ (tiêu chuẩn Dirichlet-Abel)",
+      "Phân kỳ",
+      "Không kết luận",
+      "Chỉ hội tụ tuyệt đối"
+    ],
+    "correct": "Hội tụ (tiêu chuẩn Dirichlet-Abel)",
+    "solution": "Tiêu chuẩn Abel: nếu \\(\\sum u_n\\) hội tụ và \\(\\{v_n\\}\\) bị chặn đơn điệu thì \\(\\sum u_nv_n\\) hội tụ.",
+    "quick": "Abel: \\(\\sum u_n\\) hội tụ + \\(v_n\\) bị chặn đơn điệu → \\(\\sum u_nv_n\\) hội tụ",
+    "casio": "Đây là tiêu chuẩn Abel — áp dụng khi có tích của chuỗi hội tụ và dãy bị chặn"
+  },
+  {
+    "id": 96,
+    "type": "series_sum",
+    "question": "Tổng \\(\\sum_{n=1}^{\\infty}\\dfrac{2}{(2n-1)(2n+1)}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\dfrac{2}{(2n-1)(2n+1)}=\\dfrac{1}{2n-1}-\\dfrac{1}{2n+1}\\). Telescope: \\(S_N=1-\\dfrac{1}{2N+1}\\to1\\).",
+    "quick": "Phân phần → telescope → \\(S=1\\) (số hạng đầu còn lại)",
+    "casio": "S_N=1-1/(2N+1)→1"
+  },
+  {
+    "id": 97,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(x-3)^n}{n+1}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([2,4)\\)",
+      "\\((2,4)\\)",
+      "\\([2,4]\\)",
+      "\\((2,4]\\)"
+    ],
+    "correct": "\\([2,4)\\)",
+    "solution": "\\(R=1\\), tâm \\(x_0=3\\). Hội tụ khi \\(|x-3|<1\\), tức \\(2<x<4\\). Tại \\(x=4\\): \\(\\sum1/(n+1)\\) phân kỳ. Tại \\(x=2\\): \\(\\sum(-1)^n/(n+1)\\) hội tụ (Leibniz). Miền: \\([2,4)\\).",
+    "quick": "\\(|x-3|<1\\). Biên: \\(x=4\\) phân kỳ; \\(x=2\\) hội tụ → \\([2,4)\\)",
+    "casio": "R=1, tâm=3. x=4: Σ1/(n+1) phân kỳ. x=2: Leibniz → [2,4)"
+  },
+  {
+    "id": 98,
+    "type": "convergence_test",
+    "question": "Cho chuỗi \\(\\sum u_n\\) với các số hạng dương. Nếu tất cả các số hạng giảm dần và \\(\\lim_{n\\to\\infty}u_n=0\\), chuỗi",
+    "matrix": null,
+    "options": [
+      "Chưa kết luận được — cần thêm tiêu chuẩn",
+      "Hội tụ",
+      "Phân kỳ",
+      "Hội tụ theo Leibniz"
+    ],
+    "correct": "Chưa kết luận được — cần thêm tiêu chuẩn",
+    "solution": "\\(u_n\\downarrow0\\) là điều kiện cần nhưng chưa đủ. Ví dụ: \\(u_n=1/n\\downarrow0\\) nhưng \\(\\sum1/n\\) phân kỳ.",
+    "quick": "\\(u_n\\to0\\) là điều kiện cần, chưa đủ. Cần thêm so sánh, D'Alembert...",
+    "casio": "u_n→0 không đủ. Ví dụ Σ1/n: 1/n→0 nhưng phân kỳ"
+  },
+  {
+    "id": 99,
+    "type": "convergence_test",
+    "question": "Tiêu chuẩn nào phù hợp nhất để kiểm tra \\(\\sum\\dfrac{n^2}{2^n}\\)?",
+    "matrix": null,
+    "options": [
+      "D'Alembert (tỉ số)",
+      "Leibniz",
+      "So sánh với \\(\\sum1/n\\)",
+      "Tích phân Cauchy"
+    ],
+    "correct": "D'Alembert (tỉ số)",
+    "solution": "Khi có \\(a^n\\) hoặc \\(n!\\) → dùng D'Alembert. \\(D=\\lim(n+1)^2/2^{n+1}\\cdot2^n/n^2=\\lim(n+1)^2/(2n^2)=1/2<1\\) → hội tụ.",
+    "quick": "Thấy \\(2^n\\) → dùng D'Alembert: \\(D=1/2<1\\) → hội tụ",
+    "casio": "D=(n+1)²/(2n²)→1/2<1 → hội tụ"
+  },
+  {
+    "id": 100,
+    "type": "convergence_test",
+    "question": "Xếp loại đúng cho chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{1}{n^2}\\)",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối (và cũng hội tụ thông thường)",
+      "Bán hội tụ",
+      "Phân kỳ",
+      "Hội tụ nhưng chưa rõ loại"
+    ],
+    "correct": "Hội tụ tuyệt đối (và cũng hội tụ thông thường)",
+    "solution": "\\(\\sum|u_n|=\\sum1/n^2\\) hội tụ (p=2>1) → hội tụ **tuyệt đối**. Hội tụ tuyệt đối \\(\\Rightarrow\\) hội tụ thông thường.",
+    "quick": "\\(\\sum1/n^2\\) hội tụ → tuyệt đối → thông thường. Xếp loại: tuyệt đối.",
+    "casio": "Σ1/n² hội tụ (p=2>1) → hội tụ tuyệt đối"
+  }
+]
