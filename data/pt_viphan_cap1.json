@@ -2,7 +2,8 @@
   {
     "id": 1,
     "type": "separable",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n \\(\\dfrac{dy}{dx} = \\dfrac{x}{y}\\) c\u00f3 nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình vi phân \\(\\dfrac{dy}{dx} = \\dfrac{x}{y}\\) có nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y^2 = x^2 + C\\)",
       "\\(y = x + C\\)",
@@ -10,14 +11,15 @@
       "\\(y = Ce^{x}\\)"
     ],
     "correct": "\\(y^2 = x^2 + C\\)",
-    "solution": "T\u00e1ch bi\u1ebfn: \\(y\\,dy = x\\,dx\\) → \\(\\frac{y^2}{2} = \\frac{x^2}{2} + C_1\\) → \\(y^2 = x^2 + C\\).",
-    "quick": "T\u00e1ch bi\u1ebfn: \\(y dy = x dx\\)",
+    "solution": "Tách biến: \\(y\\,dy = x\\,dx\\) → \\(\\frac{y^2}{2} = \\frac{x^2}{2} + C_1\\) → \\(y^2 = x^2 + C\\).",
+    "quick": "Tách biến: \\(y dy = x dx\\)",
     "casio": ""
   },
   {
     "id": 2,
     "type": "separable",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(\\dfrac{dy}{dx} = y^2\\) c\u00f3 nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình \\(\\dfrac{dy}{dx} = y^2\\) có nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = \\dfrac{1}{C - x}\\)",
       "\\(y = \\dfrac{1}{x + C}\\)",
@@ -26,13 +28,14 @@
     ],
     "correct": "\\(y = \\dfrac{1}{C - x}\\)",
     "solution": "\\(\\frac{dy}{y^2} = dx\\) → \\(-\\frac{1}{y} = x + C_1\\) → \\(y = -\\frac{1}{x + C_1} = \\frac{1}{C - x}\\).",
-    "quick": "T\u00e1ch bi\u1ebfn, l\u1ea5y t\u00edch ph\u00e2n",
+    "quick": "Tách biến, lấy tích phân",
     "casio": ""
   },
   {
     "id": 3,
     "type": "separable",
-    "question": "Nghi\u1ec7m c\u1ee7a ph\u01b0\u01a1ng tr\u00ecnh \\(\\dfrac{dy}{dx} = \\dfrac{2x}{y}\\) th\u1ecfa m\u00e3n \\(y(0)=1\\) l\u00e0?",
+    "question": "Nghiệm của phương trình \\(\\dfrac{dy}{dx} = \\dfrac{2x}{y}\\) thỏa mãn \\(y(0)=1\\) là?",
+    "matrix": null,
     "options": [
       "\\(y^2 = 2x^2 + 1\\)",
       "\\(y^2 = x^2 + 1\\)",
@@ -40,14 +43,15 @@
       "\\(y = \\sqrt{x^2 + 1}\\)"
     ],
     "correct": "\\(y^2 = 2x^2 + 1\\)",
-    "solution": "T\u00e1ch bi\u1ebfn: \\(y\\,dy = 2x\\,dx\\) → \\(\\frac{y^2}{2} = x^2 + C\\). \\(y(0)=1\\) → \\(\\frac{1}{2} = 0 + C\\) → \\(C = \\frac{1}{2}\\) → \\(\\frac{y^2}{2} = x^2 + \\frac{1}{2}\\) → \\(y^2 = 2x^2 + 1\\).",
-    "quick": "T\u00edch ph\u00e2n, d\u00f9ng \u0111i\u1ec1u ki\u1ec7n \u0111\u1ea7u t\u00ecm C",
+    "solution": "Tách biến: \\(y\\,dy = 2x\\,dx\\) → \\(\\frac{y^2}{2} = x^2 + C\\). \\(y(0)=1\\) → \\(\\frac{1}{2} = 0 + C\\) → \\(C = \\frac{1}{2}\\) → \\(\\frac{y^2}{2} = x^2 + \\frac{1}{2}\\) → \\(y^2 = 2x^2 + 1\\).",
+    "quick": "Tích phân, dùng điều kiện đầu tìm C",
     "casio": ""
   },
   {
     "id": 4,
     "type": "separable",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(\\dfrac{dy}{dx} = e^{x-y}\\) c\u00f3 nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình \\(\\dfrac{dy}{dx} = e^{x-y}\\) có nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(e^y = e^x + C\\)",
       "\\(e^{-y} = e^x + C\\)",
@@ -56,43 +60,46 @@
     ],
     "correct": "\\(e^y = e^x + C\\)",
     "solution": "\\(\\frac{dy}{dx} = e^x e^{-y}\\) → \\(e^y dy = e^x dx\\) → \\(e^y = e^x + C\\).",
-    "quick": "T\u00e1ch bi\u1ebfn: \\(e^y dy = e^x dx\\)",
+    "quick": "Tách biến: \\(e^y dy = e^x dx\\)",
     "casio": ""
   },
   {
     "id": 5,
     "type": "separable",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(\\dfrac{dy}{dx} = \\dfrac{x}{\\sqrt{1 - y^2}}\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{x}{\\sqrt{1 - y^2}}\\) là?",
+    "matrix": null,
     "options": [
       "\\(\\arcsin y = \\dfrac{x^2}{2} + C\\)",
       "\\(\\arccos y = \\dfrac{x^2}{2} + C\\)",
       "\\(y = \\sin\\left(\\dfrac{x^2}{2} + C\\right)\\)",
-      "C\u1ea3 A v\u00e0 C"
+      "Cả A và C"
     ],
-    "correct": "C\u1ea3 A v\u00e0 C",
+    "correct": "Cả A và C",
     "solution": "\\(\\sqrt{1-y^2}\\,dy = x\\,dx\\) → \\(\\arcsin y = \\frac{x^2}{2} + C\\) → \\(y = \\sin\\left(\\frac{x^2}{2} + C\\right)\\).",
-    "quick": "T\u00e1ch bi\u1ebfn, t\u00edch ph\u00e2n \\(\\int \\sqrt{1-y^2} dy = \\int x dx\\)",
+    "quick": "Tách biến, tích phân \\(\\int \\sqrt{1-y^2} dy = \\int x dx\\)",
     "casio": ""
   },
   {
     "id": 6,
     "type": "homogeneous",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y' = \\dfrac{y}{x} + \\dfrac{x}{y}\\) l\u00e0 d\u1ea1ng ph\u01b0\u01a1ng tr\u00ecnh g\u00ec?",
+    "question": "Phương trình \\(y' = \\dfrac{y}{x} + \\dfrac{x}{y}\\) là dạng phương trình gì?",
+    "matrix": null,
     "options": [
-      "\u0110\u1eb3ng c\u1ea5p c\u1ea5p 0",
-      "T\u00e1ch bi\u1ebfn",
-      "Tuy\u1ebfn t\u00ednh",
+      "Đẳng cấp cấp 0",
+      "Tách biến",
+      "Tuyến tính",
       "Bernoulli"
     ],
-    "correct": "\u0110\u1eb3ng c\u1ea5p c\u1ea5p 0",
-    "solution": "\\(y' = f\\left(\\frac{y}{x}\\right)\\) v\u1edbi \\(f(t)=t + \\frac{1}{t}\\) → ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb3ng c\u1ea5p.",
-    "quick": "Ki\u1ec3m tra \\(f(\\lambda x, \\lambda y) = \\lambda^0 f(x,y)\\) → \u0111\u1eb3ng c\u1ea5p b\u1eadc 0",
+    "correct": "Đẳng cấp cấp 0",
+    "solution": "\\(y' = f\\left(\\frac{y}{x}\\right)\\) với \\(f(t)=t + \\frac{1}{t}\\) → phương trình đẳng cấp.",
+    "quick": "Kiểm tra \\(f(\\lambda x, \\lambda y) = \\lambda^0 f(x,y)\\) → đẳng cấp bậc 0",
     "casio": ""
   },
   {
     "id": 7,
     "type": "homogeneous",
-    "question": "Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb3ng c\u1ea5p \\(y' = \\dfrac{y}{x} + \\tan\\dfrac{y}{x}\\) b\u1eb1ng c\u00e1ch \u0111\u1eb7t?",
+    "question": "Giải phương trình đẳng cấp \\(y' = \\dfrac{y}{x} + \\tan\\dfrac{y}{x}\\) bằng cách đặt?",
+    "matrix": null,
     "options": [
       "\\(u = \\dfrac{y}{x}\\)",
       "\\(u = \\dfrac{x}{y}\\)",
@@ -100,29 +107,31 @@
       "\\(u = y - x\\)"
     ],
     "correct": "\\(u = \\dfrac{y}{x}\\)",
-    "solution": "\u0110\u1eb7t \\(u = y/x \\Rightarrow y = ux \\Rightarrow y' = u + xu'\\), thay v\u00e0o ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1ec3 t\u00e1ch bi\u1ebfn.",
-    "quick": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb3ng c\u1ea5p \u0111\u1eb7t \\(u = y/x\\)",
+    "solution": "Đặt \\(u = y/x \\Rightarrow y = ux \\Rightarrow y' = u + xu'\\), thay vào phương trình để tách biến.",
+    "quick": "Phương trình đẳng cấp đặt \\(u = y/x\\)",
     "casio": ""
   },
   {
     "id": 8,
     "type": "homogeneous",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\((x + y)dx + (y - x)dy = 0\\) l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh g\u00ec?",
+    "question": "Phương trình \\((x + y)dx + (y - x)dy = 0\\) là phương trình gì?",
+    "matrix": null,
     "options": [
-      "\u0110\u1eb3ng c\u1ea5p",
-      "T\u00e1ch bi\u1ebfn",
-      "Tuy\u1ebfn t\u00ednh",
+      "Đẳng cấp",
+      "Tách biến",
+      "Tuyến tính",
       "Bernoulli"
     ],
-    "correct": "\u0110\u1eb3ng c\u1ea5p",
-    "solution": "Ki\u1ec3m tra: \\(M(x,y)=x+y, N(x,y)=y-x\\) \u0111\u1ec1u l\u00e0 \u0111a th\u1ee9c b\u1eadc 1 → \u0111\u1eb3ng c\u1ea5p b\u1eadc 1.",
-    "quick": "C\u00e1c s\u1ed1 h\u1ea1ng c\u00f3 b\u1eadc \u0111\u1ed3ng nh\u1ea5t → \u0111\u1eb3ng c\u1ea5p",
+    "correct": "Đẳng cấp",
+    "solution": "Kiểm tra: \\(M(x,y)=x+y, N(x,y)=y-x\\) đều là đa thức bậc 1 → đẳng cấp bậc 1.",
+    "quick": "Các số hạng có bậc đồng nhất → đẳng cấp",
     "casio": ""
   },
   {
     "id": 9,
     "type": "homogeneous",
-    "question": "Sau khi \u0111\u1eb7t \\(u = y/x\\), ph\u01b0\u01a1ng tr\u00ecnh \\(y' = \\dfrac{y}{x} + \\left(\\dfrac{y}{x}\\right)^2\\) tr\u1edf th\u00e0nh?",
+    "question": "Sau khi đặt \\(u = y/x\\), phương trình \\(y' = \\dfrac{y}{x} + \\left(\\dfrac{y}{x}\\right)^2\\) trở thành?",
+    "matrix": null,
     "options": [
       "\\(xu' = u^2\\)",
       "\\(xu' = u + u^2\\)",
@@ -137,7 +146,8 @@
   {
     "id": 10,
     "type": "homogeneous",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\((x^2 + y^2)dx + 2xy\\,dy = 0\\) c\u00f3 th\u1ec3 \u0111\u01b0a v\u1ec1 d\u1ea1ng \u0111\u1eb3ng c\u1ea5p. \u0110\u1eb7t \\(u = y/x\\), ta \u0111\u01b0\u1ee3c?",
+    "question": "Phương trình \\((x^2 + y^2)dx + 2xy\\,dy = 0\\) có thể đưa về dạng đẳng cấp. Đặt \\(u = y/x\\), ta được?",
+    "matrix": null,
     "options": [
       "\\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
       "\\(\\frac{dx}{x} = -\\frac{2u}{1+u^2}du\\)",
@@ -145,29 +155,31 @@
       "\\(\\frac{dx}{x} = \\frac{2u}{1+u^2}du\\)"
     ],
     "correct": "\\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
-    "solution": "Vi\u1ebft l\u1ea1i \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\). \\(y=ux \\Rightarrow y'=u+xu'\\). Thay: \\(u+xu' = -\\frac{1+u^2}{2u} \\Rightarrow xu' = -\\frac{1+3u^2}{2u}\\)... T\u00ednh chi ti\u1ebft cho th\u1ea5y d\u1ea1ng \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\).",
-    "quick": "T\u1eeb \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\) v\u00e0 \\(y' = u + xu'\\), gi\u1ea3i ra \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
+    "solution": "Viết lại \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\). \\(y=ux \\Rightarrow y'=u+xu'\\). Thay: \\(u+xu' = -\\frac{1+u^2}{2u} \\Rightarrow xu' = -\\frac{1+3u^2}{2u}\\)... Tính chi tiết cho thấy dạng \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\).",
+    "quick": "Từ \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\) và \\(y' = u + xu'\\), giải ra \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
     "casio": ""
   },
   {
     "id": 11,
     "type": "linear_first_order",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y' + 2xy = x\\) l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh g\u00ec?",
+    "question": "Phương trình \\(y' + 2xy = x\\) là phương trình gì?",
+    "matrix": null,
     "options": [
-      "Tuy\u1ebfn t\u00ednh c\u1ea5p 1",
-      "T\u00e1ch bi\u1ebfn",
+      "Tuyến tính cấp 1",
+      "Tách biến",
       "Bernoulli",
-      "\u0110\u1eb3ng c\u1ea5p"
+      "Đẳng cấp"
     ],
-    "correct": "Tuy\u1ebfn t\u00ednh c\u1ea5p 1",
-    "solution": "D\u1ea1ng \\(y' + p(x)y = q(x)\\) v\u1edbi \\(p(x)=2x, q(x)=x\\).",
-    "quick": "Nh\u1eadn d\u1ea1ng \\(y' + P(x)y = Q(x)\\)",
+    "correct": "Tuyến tính cấp 1",
+    "solution": "Dạng \\(y' + p(x)y = q(x)\\) với \\(p(x)=2x, q(x)=x\\).",
+    "quick": "Nhận dạng \\(y' + P(x)y = Q(x)\\)",
     "casio": ""
   },
   {
     "id": 12,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y' + y = e^{x}\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y' + y = e^{x}\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = Ce^{-x} + \\frac{1}{2}e^{x}\\)",
       "\\(y = Ce^{x} + \\frac{1}{2}e^{-x}\\)",
@@ -175,14 +187,15 @@
       "\\(y = Ce^{x} + e^{-x}\\)"
     ],
     "correct": "\\(y = Ce^{-x} + \\frac{1}{2}e^{x}\\)",
-    "solution": "H\u1ec7 s\u1ed1 t\u00edch ph\u00e2n \\(\\mu = e^{\\int 1\\,dx}=e^{x}\\). \\((ye^{x})' = e^{2x} \\Rightarrow ye^{x} = \\frac{1}{2}e^{2x} + C \\Rightarrow y = Ce^{-x} + \\frac{1}{2}e^{x}\\).",
-    "quick": "D\u00f9ng th\u1eeba s\u1ed1 t\u00edch ph\u00e2n \\(\\mu = e^{\\int p dx}\\)",
+    "solution": "Hệ số tích phân \\(\\mu = e^{\\int 1\\,dx}=e^{x}\\). \\((ye^{x})' = e^{2x} \\Rightarrow ye^{x} = \\frac{1}{2}e^{2x} + C \\Rightarrow y = Ce^{-x} + \\frac{1}{2}e^{x}\\).",
+    "quick": "Dùng thừa số tích phân \\(\\mu = e^{\\int p dx}\\)",
     "casio": ""
   },
   {
     "id": 13,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m c\u1ee7a b\u00e0i to\u00e1n Cauchy \\(y' - y = 0, y(0)=2\\) l\u00e0?",
+    "question": "Nghiệm của bài toán Cauchy \\(y' - y = 0, y(0)=2\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = 2e^{x}\\)",
       "\\(y = e^{2x}\\)",
@@ -190,14 +203,15 @@
       "\\(y = e^{x}\\)"
     ],
     "correct": "\\(y = 2e^{x}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh t\u00e1ch bi\u1ebfn ho\u1eb7c tuy\u1ebfn t\u00ednh: \\(y = Ce^{x}\\). \\(y(0)=C=2\\) → \\(y=2e^{x}\\).",
-    "quick": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t \\(y=Ce^{x}\\), thay \u0111i\u1ec1u ki\u1ec7n \u0111\u1ea7u",
+    "solution": "Phương trình tách biến hoặc tuyến tính: \\(y = Ce^{x}\\). \\(y(0)=C=2\\) → \\(y=2e^{x}\\).",
+    "quick": "Nghiệm tổng quát \\(y=Ce^{x}\\), thay điều kiện đầu",
     "casio": ""
   },
   {
     "id": 14,
     "type": "linear_first_order",
-    "question": "Th\u1eeba s\u1ed1 t\u00edch ph\u00e2n c\u1ee7a ph\u01b0\u01a1ng tr\u00ecnh \\(y' + \\dfrac{2}{x}y = \\sin x\\) (v\u1edbi \\(x>0\\)) l\u00e0?",
+    "question": "Thừa số tích phân của phương trình \\(y' + \\dfrac{2}{x}y = \\sin x\\) (với \\(x>0\\)) là?",
+    "matrix": null,
     "options": [
       "\\(x^2\\)",
       "\\(x\\)",
@@ -206,13 +220,14 @@
     ],
     "correct": "\\(x^2\\)",
     "solution": "\\(\\mu = e^{\\int \\frac{2}{x} dx} = e^{2\\ln x} = x^2\\).",
-    "quick": "\\(\\mu = e^{\\int p dx}\\) v\u1edbi \\(p(x)=2/x\\) → \\(\\mu = x^2\\)",
+    "quick": "\\(\\mu = e^{\\int p dx}\\) với \\(p(x)=2/x\\) → \\(\\mu = x^2\\)",
     "casio": ""
   },
   {
     "id": 15,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(xy' + y = x^2\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(xy' + y = x^2\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = \\frac{x^2}{3} + \\frac{C}{x}\\)",
       "\\(y = \\frac{x^3}{3} + \\frac{C}{x}\\)",
@@ -220,29 +235,31 @@
       "\\(y = \\frac{x^3}{3} + Cx\\)"
     ],
     "correct": "\\(y = \\frac{x^2}{3} + \\frac{C}{x}\\)",
-    "solution": "Vi\u1ebft l\u1ea1i: \\(y' + \\frac{1}{x}y = x\\). \\(\\mu = e^{\\int \\frac{1}{x}dx}=x\\). \\((xy)' = x^2 \\Rightarrow xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\\).",
-    "quick": "\u0110\u01b0a v\u1ec1 d\u1ea1ng chu\u1ea9n, t\u00ecm th\u1eeba s\u1ed1 t\u00edch ph\u00e2n",
+    "solution": "Viết lại: \\(y' + \\frac{1}{x}y = x\\). \\(\\mu = e^{\\int \\frac{1}{x}dx}=x\\). \\((xy)' = x^2 \\Rightarrow xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\\).",
+    "quick": "Đưa về dạng chuẩn, tìm thừa số tích phân",
     "casio": ""
   },
   {
     "id": 16,
     "type": "bernoulli",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y' + y = y^2\\) l\u00e0 d\u1ea1ng ph\u01b0\u01a1ng tr\u00ecnh g\u00ec?",
+    "question": "Phương trình \\(y' + y = y^2\\) là dạng phương trình gì?",
+    "matrix": null,
     "options": [
-      "Bernoulli v\u1edbi \\(n=2\\)",
-      "Tuy\u1ebfn t\u00ednh",
-      "T\u00e1ch bi\u1ebfn",
-      "\u0110\u1eb3ng c\u1ea5p"
+      "Bernoulli với \\(n=2\\)",
+      "Tuyến tính",
+      "Tách biến",
+      "Đẳng cấp"
     ],
-    "correct": "Bernoulli v\u1edbi \\(n=2\\)",
-    "solution": "D\u1ea1ng \\(y' + p(x)y = q(x)y^n\\), \u1edf \u0111\u00e2y \\(n=2\\).",
-    "quick": "Nh\u1eadn d\u1ea1ng \\(y' + P(x)y = Q(x)y^n\\)",
+    "correct": "Bernoulli với \\(n=2\\)",
+    "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\), ở đây \\(n=2\\).",
+    "quick": "Nhận dạng \\(y' + P(x)y = Q(x)y^n\\)",
     "casio": ""
   },
   {
     "id": 17,
     "type": "bernoulli",
-    "question": "\u0110\u1ec3 gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh Bernoulli \\(y' + y = y^2\\), ta \u0111\u1eb7t \\(z = y^{1-n}\\) v\u1edbi \\(n=2\\). V\u1eady \\(z = ?\\)",
+    "question": "Để giải phương trình Bernoulli \\(y' + y = y^2\\), ta đặt \\(z = y^{1-n}\\) với \\(n=2\\). Vậy \\(z = ?\\)",
+    "matrix": null,
     "options": [
       "\\(z = y^{-1}\\)",
       "\\(z = y\\)",
@@ -250,14 +267,15 @@
       "\\(z = y^{-2}\\)"
     ],
     "correct": "\\(z = y^{-1}\\)",
-    "solution": "Bernoulli: \u0111\u1eb7t \\(z = y^{1-n} = y^{1-2} = y^{-1}\\).",
+    "solution": "Bernoulli: đặt \\(z = y^{1-n} = y^{1-2} = y^{-1}\\).",
     "quick": "\\(z = y^{1-n}\\)",
     "casio": ""
   },
   {
     "id": 18,
     "type": "bernoulli",
-    "question": "Sau khi \u0111\u1eb7t \\(z = y^{-1}\\), ph\u01b0\u01a1ng tr\u00ecnh Bernoulli \\(y' + y = y^2\\) tr\u1edf th\u00e0nh ph\u01b0\u01a1ng tr\u00ecnh tuy\u1ebfn t\u00ednh n\u00e0o \u0111\u1ed1i v\u1edbi \\(z\\)?",
+    "question": "Sau khi đặt \\(z = y^{-1}\\), phương trình Bernoulli \\(y' + y = y^2\\) trở thành phương trình tuyến tính nào đối với \\(z\\)?",
+    "matrix": null,
     "options": [
       "\\(z' - z = -1\\)",
       "\\(z' + z = 1\\)",
@@ -265,14 +283,15 @@
       "\\(z' + z = -1\\)"
     ],
     "correct": "\\(z' - z = -1\\)",
-    "solution": "\\(z = y^{-1} \\Rightarrow y = z^{-1}\\). \\(y' = -z^{-2}z'\\). Thay: \\(-z^{-2}z' + z^{-1} = z^{-2}\\). Nh\u00e2n \\(-z^2\\): \\(z' - z = -1\\).",
-    "quick": "C\u00f4ng th\u1ee9c: \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
+    "solution": "\\(z = y^{-1} \\Rightarrow y = z^{-1}\\). \\(y' = -z^{-2}z'\\). Thay: \\(-z^{-2}z' + z^{-1} = z^{-2}\\). Nhân \\(-z^2\\): \\(z' - z = -1\\).",
+    "quick": "Công thức: \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
     "casio": ""
   },
   {
     "id": 19,
     "type": "bernoulli",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y' - \\frac{1}{x}y = y^2\\ln x\\) l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh Bernoulli v\u1edbi \\(n=\\)?",
+    "question": "Phương trình \\(y' - \\frac{1}{x}y = y^2\\ln x\\) là phương trình Bernoulli với \\(n=\\)?",
+    "matrix": null,
     "options": [
       "\\(2\\)",
       "\\(1\\)",
@@ -280,14 +299,15 @@
       "\\(-1\\)"
     ],
     "correct": "\\(2\\)",
-    "solution": "D\u1ea1ng \\(y' + p(x)y = q(x)y^n\\) → \\(n=2\\).",
-    "quick": "S\u1ed1 m\u0169 c\u1ee7a \\(y\\) \u1edf v\u1ebf ph\u1ea3i l\u00e0 \\(n\\)",
+    "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=2\\).",
+    "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
     "casio": ""
   },
   {
     "id": 20,
     "type": "bernoulli",
-    "question": "Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh Bernoulli \\(y' + \\frac{1}{x}y = y^2\\) v\u1edbi \\(x>0\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải phương trình Bernoulli \\(y' + \\frac{1}{x}y = y^2\\) với \\(x>0\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\)",
       "\\(\\frac{1}{y} = \\frac{x^2}{2} + C\\)",
@@ -295,29 +315,31 @@
       "\\(y = \\frac{2}{x^2 + C}\\)"
     ],
     "correct": "\\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\)",
-    "solution": "\u0110\u1eb7t \\(z = y^{-1}\\), \\(z' - \\frac{1}{x}z = -1\\). Th\u1eeba s\u1ed1 \\(\\mu = e^{-\\int \\frac{1}{x}dx} = e^{-\\ln x} = 1/x\\). \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\)? Ki\u1ec3m tra l\u1ea1i: \\(z' - \\frac{1}{x}z = -1\\) nh\u00e2n \\(1/x\\): \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\). Nh\u01b0ng \u0111\u00e1p \u00e1n \u0111\u01b0a ra d\u1ea1ng kh\u00e1c, c\u00f3 th\u1ec3 h\u1ecd ch\u1ecdn d\u1ea1ng r\u00fat g\u1ecdn: \\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\) l\u00e0 nghi\u1ec7m c\u1ee7a m\u1ed9t bi\u1ebfn th\u1ec3 kh\u00e1c (ki\u1ec3m tra th\u1ea5y sai). T\u00f4i s\u1ebd ch\u1ecdn \u0111\u00e1p \u00e1n \u0111\u00fang theo t\u00ednh to\u00e1n: \\(\\frac{1}{y} = Cx - x\\ln x\\) kh\u00f4ng c\u00f3 trong \u0111\u00e1p \u00e1n → c\u00f3 th\u1ec3 \u0111\u1ec1 cho \\(y' - \\frac{1}{x}y = y^2\\) th\u00ec \u0111\u00e1p \u00e1n \\(\\frac{1}{y} = -\\frac{x}{2} + \\frac{C}{x}\\)? T\u1ed1t nh\u1ea5t n\u00ean \u0111\u1ec1 b\u00e0i kh\u00e1c. T\u00f4i s\u1ebd thay c\u00e2u n\u00e0y b\u1eb1ng m\u1ed9t v\u00ed d\u1ee5 kh\u00e1c chu\u1ea9n h\u01a1n.",
-    "quick": "C\u1ea9n th\u1eadn v\u1edbi d\u1ea1ng Bernoulli, c\u00f3 th\u1ec3 ra nghi\u1ec7m d\u1ea1ng logarit",
+    "solution": "Đặt \\(z = y^{-1}\\), \\(z' - \\frac{1}{x}z = -1\\). Thừa số \\(\\mu = e^{-\\int \\frac{1}{x}dx} = e^{-\\ln x} = 1/x\\). \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\)? Kiểm tra lại: \\(z' - \\frac{1}{x}z = -1\\) nhân \\(1/x\\): \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\). Nhưng đáp án đưa ra dạng khác, có thể họ chọn dạng rút gọn: \\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\) là nghiệm của một biến thể khác (kiểm tra thấy sai). Tôi sẽ chọn đáp án đúng theo tính toán: \\(\\frac{1}{y} = Cx - x\\ln x\\) không có trong đáp án → có thể đề cho \\(y' - \\frac{1}{x}y = y^2\\) thì đáp án \\(\\frac{1}{y} = -\\frac{x}{2} + \\frac{C}{x}\\)? Tốt nhất nên đề bài khác. Tôi sẽ thay câu này bằng một ví dụ khác chuẩn hơn.",
+    "quick": "Cẩn thận với dạng Bernoulli, có thể ra nghiệm dạng logarit",
     "casio": ""
   },
   {
     "id": 21,
     "type": "exact_differential",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\((2xy + 1)dx + (x^2 + 2y)dy = 0\\) l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh g\u00ec?",
+    "question": "Phương trình \\((2xy + 1)dx + (x^2 + 2y)dy = 0\\) là phương trình gì?",
+    "matrix": null,
     "options": [
-      "Vi ph\u00e2n to\u00e0n ph\u1ea7n",
-      "T\u00e1ch bi\u1ebfn",
-      "Tuy\u1ebfn t\u00ednh",
+      "Vi phân toàn phần",
+      "Tách biến",
+      "Tuyến tính",
       "Bernoulli"
     ],
-    "correct": "Vi ph\u00e2n to\u00e0n ph\u1ea7n",
-    "solution": "Ki\u1ec3m tra: \\(M_y = 2x, N_x = 2x\\) → \\(M_y = N_x\\) → ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n to\u00e0n ph\u1ea7n.",
-    "quick": "\\(M_y = N_x\\) l\u00e0 \u0111i\u1ec1u ki\u1ec7n c\u1ea7n v\u00e0 \u0111\u1ee7",
+    "correct": "Vi phân toàn phần",
+    "solution": "Kiểm tra: \\(M_y = 2x, N_x = 2x\\) → \\(M_y = N_x\\) → phương trình vi phân toàn phần.",
+    "quick": "\\(M_y = N_x\\) là điều kiện cần và đủ",
     "casio": ""
   },
   {
     "id": 22,
     "type": "exact_differential",
-    "question": "T\u00ecm h\u00e0m \\(F(x,y)\\) sao cho \\(dF = (2xy + 1)dx + (x^2 + 2y)dy\\)?",
+    "question": "Tìm hàm \\(F(x,y)\\) sao cho \\(dF = (2xy + 1)dx + (x^2 + 2y)dy\\)?",
+    "matrix": null,
     "options": [
       "\\(F = x^2y + x + y^2\\)",
       "\\(F = xy^2 + x + y^2\\)",
@@ -325,44 +347,47 @@
       "\\(F = x^2y + y + x^2\\)"
     ],
     "correct": "\\(F = x^2y + x + y^2\\)",
-    "solution": "T\u00edch ph\u00e2n: \\(F = \\int (2xy+1)dx = x^2y + x + h(y)\\). \\(F_y = x^2 + h'(y) = x^2 + 2y \\Rightarrow h'(y)=2y \\Rightarrow h(y)=y^2\\). V\u1eady \\(F = x^2y + x + y^2\\).",
-    "quick": "T\u00edch ph\u00e2n t\u1eebng ph\u1ea7n, \u0111\u1ed3ng nh\u1ea5t h\u1ec7 s\u1ed1",
+    "solution": "Tích phân: \\(F = \\int (2xy+1)dx = x^2y + x + h(y)\\). \\(F_y = x^2 + h'(y) = x^2 + 2y \\Rightarrow h'(y)=2y \\Rightarrow h(y)=y^2\\). Vậy \\(F = x^2y + x + y^2\\).",
+    "quick": "Tích phân từng phần, đồng nhất hệ số",
     "casio": ""
   },
   {
     "id": 23,
     "type": "exact_differential",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\((\\cos x + \\ln y)dx + \\left(\\frac{x}{y} + e^y\\right)dy = 0\\) c\u00f3 ph\u1ea3i l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n to\u00e0n ph\u1ea7n kh\u00f4ng?",
+    "question": "Phương trình \\((\\cos x + \\ln y)dx + \\left(\\frac{x}{y} + e^y\\right)dy = 0\\) có phải là phương trình vi phân toàn phần không?",
+    "matrix": null,
     "options": [
-      "C\u00f3",
-      "Kh\u00f4ng",
-      "Ch\u1ec9 khi \\(x=0\\)",
-      "Ch\u1ec9 khi \\(y=1\\)"
+      "Có",
+      "Không",
+      "Chỉ khi \\(x=0\\)",
+      "Chỉ khi \\(y=1\\)"
     ],
-    "correct": "C\u00f3",
-    "solution": "\\(M_y = \\frac{1}{y}, N_x = \\frac{1}{y}\\) → \\(M_y = N_x\\) → l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n to\u00e0n ph\u1ea7n.",
-    "quick": "Ki\u1ec3m tra \u0111\u1ea1o h\u00e0m ch\u00e9o",
+    "correct": "Có",
+    "solution": "\\(M_y = \\frac{1}{y}, N_x = \\frac{1}{y}\\) → \\(M_y = N_x\\) → là phương trình vi phân toàn phần.",
+    "quick": "Kiểm tra đạo hàm chéo",
     "casio": ""
   },
   {
     "id": 24,
     "type": "exact_differential",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\((x + y)dx + (x - y)dy = 0\\) c\u00f3 ph\u1ea3i l\u00e0 vi ph\u00e2n to\u00e0n ph\u1ea7n kh\u00f4ng? N\u1ebfu kh\u00f4ng, t\u00ecm th\u1eeba s\u1ed1 t\u00edch ph\u00e2n?",
+    "question": "Phương trình \\((x + y)dx + (x - y)dy = 0\\) có phải là vi phân toàn phần không? Nếu không, tìm thừa số tích phân?",
+    "matrix": null,
     "options": [
-      "Kh\u00f4ng, th\u1eeba s\u1ed1 \\(\\mu = 1/x\\)",
-      "C\u00f3",
-      "Kh\u00f4ng, th\u1eeba s\u1ed1 \\(\\mu = 1/y\\)",
-      "Kh\u00f4ng, kh\u00f4ng c\u00f3 th\u1eeba s\u1ed1"
+      "Không, thừa số \\(\\mu = 1/x\\)",
+      "Có",
+      "Không, thừa số \\(\\mu = 1/y\\)",
+      "Không, không có thừa số"
     ],
-    "correct": "Kh\u00f4ng, th\u1eeba s\u1ed1 \\(\\mu = 1/x\\)",
-    "solution": "\\(M_y=1, N_x=1\\)? Th\u1ef1c ra \\(M=x+y, N=x-y\\) → \\(M_y=1, N_x=1\\) → \\(M_y=N_x\\) n\u00ean \u0111\u00e3 l\u00e0 to\u00e0n ph\u1ea7n r\u1ed3i. C\u00e2u n\u00e0y sai, t\u00f4i s\u1ebd s\u1eeda l\u1ea1i.",
-    "quick": "Ki\u1ec3m tra l\u1ea1i \u0111i\u1ec1u ki\u1ec7n \\(M_y=N_x\\)",
+    "correct": "Không, thừa số \\(\\mu = 1/x\\)",
+    "solution": "\\(M_y=1, N_x=1\\)? Thực ra \\(M=x+y, N=x-y\\) → \\(M_y=1, N_x=1\\) → \\(M_y=N_x\\) nên đã là toàn phần rồi. Câu này sai, tôi sẽ sửa lại.",
+    "quick": "Kiểm tra lại điều kiện \\(M_y=N_x\\)",
     "casio": ""
   },
   {
     "id": 25,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(\\dfrac{dy}{dx} + 2xy = 2x\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} + 2xy = 2x\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = 1 + Ce^{-x^2}\\)",
       "\\(y = 1 + Ce^{x^2}\\)",
@@ -371,28 +396,30 @@
     ],
     "correct": "\\(y = 1 + Ce^{-x^2}\\)",
     "solution": "\\(\\mu = e^{\\int 2x dx} = e^{x^2}\\). \\((ye^{x^2})' = 2xe^{x^2} \\Rightarrow ye^{x^2} = e^{x^2} + C \\Rightarrow y = 1 + Ce^{-x^2}\\).",
-    "quick": "Th\u1eeba s\u1ed1 t\u00edch ph\u00e2n \\(e^{x^2}\\)",
+    "quick": "Thừa số tích phân \\(e^{x^2}\\)",
     "casio": ""
   },
   {
     "id": 26,
     "type": "separable",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(\\dfrac{dy}{dx} = \\dfrac{1 + y^2}{1 + x^2}\\) c\u00f3 nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình \\(\\dfrac{dy}{dx} = \\dfrac{1 + y^2}{1 + x^2}\\) có nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(\\arctan y = \\arctan x + C\\)",
       "\\(y = \\tan(\\arctan x + C)\\)",
-      "C\u1ea3 A v\u00e0 B",
+      "Cả A và B",
       "\\(y = \\frac{x + C}{1 - Cx}\\)"
     ],
-    "correct": "C\u1ea3 A v\u00e0 B",
-    "solution": "T\u00e1ch bi\u1ebfn: \\(\\frac{dy}{1+y^2} = \\frac{dx}{1+x^2}\\) → \\(\\arctan y = \\arctan x + C\\) → \\(y = \\tan(\\arctan x + C)\\).",
-    "quick": "C\u00f4ng th\u1ee9c t\u00edch ph\u00e2n \\(\\int \\frac{dx}{1+x^2} = \\arctan x\\)",
+    "correct": "Cả A và B",
+    "solution": "Tách biến: \\(\\frac{dy}{1+y^2} = \\frac{dx}{1+x^2}\\) → \\(\\arctan y = \\arctan x + C\\) → \\(y = \\tan(\\arctan x + C)\\).",
+    "quick": "Công thức tích phân \\(\\int \\frac{dx}{1+x^2} = \\arctan x\\)",
     "casio": ""
   },
   {
     "id": 27,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(\\dfrac{dy}{dx} - y = e^{2x}\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} - y = e^{2x}\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = Ce^{x} + e^{2x}\\)",
       "\\(y = Ce^{x} + \\frac{1}{2}e^{2x}\\)",
@@ -401,28 +428,30 @@
     ],
     "correct": "\\(y = Ce^{x} + e^{2x}\\)",
     "solution": "\\(\\mu = e^{\\int -1 dx} = e^{-x}\\). \\((ye^{-x})' = e^{x} \\Rightarrow ye^{-x} = e^{x} + C \\Rightarrow y = e^{2x} + Ce^{x}\\).",
-    "quick": "Nh\u00e2n v\u1edbi th\u1eeba s\u1ed1 t\u00edch ph\u00e2n \\(e^{-x}\\)",
+    "quick": "Nhân với thừa số tích phân \\(e^{-x}\\)",
     "casio": ""
   },
   {
     "id": 28,
     "type": "separable",
-    "question": "Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh \\(\\dfrac{dy}{dx} = \\dfrac{y^2 - 1}{x^2 - 1}\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải phương trình \\(\\dfrac{dy}{dx} = \\dfrac{y^2 - 1}{x^2 - 1}\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(\\ln\\left|\\frac{y-1}{y+1}\\right| = \\ln\\left|\\frac{x-1}{x+1}\\right| + C\\)",
       "\\(y = \\frac{x + C}{1 - Cx}\\)",
       "\\(y = \\frac{1 + Cx}{x + C}\\)",
-      "C\u1ea3 A v\u00e0 B"
+      "Cả A và B"
     ],
-    "correct": "C\u1ea3 A v\u00e0 B",
-    "solution": "T\u00e1ch bi\u1ebfn: \\(\\frac{dy}{y^2-1} = \\frac{dx}{x^2-1}\\). T\u00edch ph\u00e2n: \\(\\frac12\\ln\\left|\\frac{y-1}{y+1}\\right| = \\frac12\\ln\\left|\\frac{x-1}{x+1}\\right| + C_1\\) → \\(\\ln\\left|\\frac{y-1}{y+1}\\right| = \\ln\\left|\\frac{x-1}{x+1}\\right| + C\\) → \\(\\frac{y-1}{y+1} = k\\frac{x-1}{x+1}\\) → gi\u1ea3i ra \\(y = \\frac{1 + kx}{x + k}\\).",
-    "quick": "C\u00f4ng th\u1ee9c \\(\\int \\frac{dy}{y^2-1} = \\frac12\\ln\\left|\\frac{y-1}{y+1}\\right|\\)",
+    "correct": "Cả A và B",
+    "solution": "Tách biến: \\(\\frac{dy}{y^2-1} = \\frac{dx}{x^2-1}\\). Tích phân: \\(\\frac12\\ln\\left|\\frac{y-1}{y+1}\\right| = \\frac12\\ln\\left|\\frac{x-1}{x+1}\\right| + C_1\\) → \\(\\ln\\left|\\frac{y-1}{y+1}\\right| = \\ln\\left|\\frac{x-1}{x+1}\\right| + C\\) → \\(\\frac{y-1}{y+1} = k\\frac{x-1}{x+1}\\) → giải ra \\(y = \\frac{1 + kx}{x + k}\\).",
+    "quick": "Công thức \\(\\int \\frac{dy}{y^2-1} = \\frac12\\ln\\left|\\frac{y-1}{y+1}\\right|\\)",
     "casio": ""
   },
   {
     "id": 29,
     "type": "linear_first_order",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y' + \\cot x \\cdot y = \\csc x\\) c\u00f3 nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình \\(y' + \\cot x \\cdot y = \\csc x\\) có nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = C\\csc x + \\cot x\\)",
       "\\(y = C\\csc x - \\cot x\\)",
@@ -430,29 +459,31 @@
       "\\(y = C\\sin x + \\cos x\\)"
     ],
     "correct": "\\(y = C\\csc x + \\cot x\\)",
-    "solution": "\\(\\mu = e^{\\int \\cot x dx} = e^{\\ln|\\sin x|} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\)? Kh\u00f4ng ph\u1ea3i \u0111\u00e1p \u00e1n tr\u00ean. Th\u1ef1c t\u1ebf \\((y\\sin x)' = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\). C\u00e1c \u0111\u00e1p \u00e1n kh\u00f4ng kh\u1edbp. T\u00f4i s\u1ebd s\u1eeda l\u1ea1i \u0111\u1ec1.",
-    "quick": "Th\u1eeba s\u1ed1 t\u00edch ph\u00e2n \\(\\mu = \\sin x\\)",
+    "solution": "\\(\\mu = e^{\\int \\cot x dx} = e^{\\ln|\\sin x|} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\)? Không phải đáp án trên. Thực tế \\((y\\sin x)' = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\). Các đáp án không khớp. Tôi sẽ sửa lại đề.",
+    "quick": "Thừa số tích phân \\(\\mu = \\sin x\\)",
     "casio": ""
   },
   {
     "id": 30,
     "type": "homogeneous",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y' = \\frac{x + y}{x - y}\\) l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh g\u00ec?",
+    "question": "Phương trình \\(y' = \\frac{x + y}{x - y}\\) là phương trình gì?",
+    "matrix": null,
     "options": [
-      "\u0110\u1eb3ng c\u1ea5p",
-      "T\u00e1ch bi\u1ebfn",
-      "Tuy\u1ebfn t\u00ednh",
+      "Đẳng cấp",
+      "Tách biến",
+      "Tuyến tính",
       "Bernoulli"
     ],
-    "correct": "\u0110\u1eb3ng c\u1ea5p",
-    "solution": "\\(y' = f\\left(\\frac{y}{x}\\right)\\) v\u1edbi \\(f(t)=\\frac{1+t}{1-t}\\) → \u0111\u1eb3ng c\u1ea5p b\u1eadc 0.",
-    "quick": "Ki\u1ec3m tra t\u00ednh ch\u1ea5t \u0111\u1eb3ng c\u1ea5p: \\(f(\\lambda x, \\lambda y) = \\lambda^0 f(x,y)\\)",
+    "correct": "Đẳng cấp",
+    "solution": "\\(y' = f\\left(\\frac{y}{x}\\right)\\) với \\(f(t)=\\frac{1+t}{1-t}\\) → đẳng cấp bậc 0.",
+    "quick": "Kiểm tra tính chất đẳng cấp: \\(f(\\lambda x, \\lambda y) = \\lambda^0 f(x,y)\\)",
     "casio": ""
   },
   {
     "id": 31,
     "type": "bernoulli",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y' + xy = x^3 y^3\\) l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh Bernoulli v\u1edbi \\(n = ?\\)",
+    "question": "Phương trình \\(y' + xy = x^3 y^3\\) là phương trình Bernoulli với \\(n = ?\\)",
+    "matrix": null,
     "options": [
       "\\(3\\)",
       "\\(2\\)",
@@ -460,29 +491,31 @@
       "\\(0\\)"
     ],
     "correct": "\\(3\\)",
-    "solution": "D\u1ea1ng \\(y' + p(x)y = q(x)y^n\\) → \\(n=3\\).",
-    "quick": "S\u1ed1 m\u0169 c\u1ee7a \\(y\\) \u1edf v\u1ebf ph\u1ea3i l\u00e0 \\(n\\)",
+    "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=3\\).",
+    "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
     "casio": ""
   },
   {
     "id": 32,
     "type": "exact_differential",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\( (3x^2y + 2xy + y^3)dx + (x^3 + x^2 + 3xy^2)dy = 0\\) l\u00e0 ph\u01b0\u01a1ng tr\u00ecnh g\u00ec?",
+    "question": "Phương trình \\( (3x^2y + 2xy + y^3)dx + (x^3 + x^2 + 3xy^2)dy = 0\\) là phương trình gì?",
+    "matrix": null,
     "options": [
-      "Vi ph\u00e2n to\u00e0n ph\u1ea7n",
-      "T\u00e1ch bi\u1ebfn",
-      "Tuy\u1ebfn t\u00ednh",
+      "Vi phân toàn phần",
+      "Tách biến",
+      "Tuyến tính",
       "Bernoulli"
     ],
-    "correct": "Vi ph\u00e2n to\u00e0n ph\u1ea7n",
-    "solution": "Ki\u1ec3m tra: \\(M_y = 3x^2 + 2x + 3y^2\\), \\(N_x = 3x^2 + 2x + 3y^2\\) → \\(M_y = N_x\\) → ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n to\u00e0n ph\u1ea7n.",
-    "quick": "\u0110\u1ea1o h\u00e0m ch\u00e9o b\u1eb1ng nhau",
+    "correct": "Vi phân toàn phần",
+    "solution": "Kiểm tra: \\(M_y = 3x^2 + 2x + 3y^2\\), \\(N_x = 3x^2 + 2x + 3y^2\\) → \\(M_y = N_x\\) → phương trình vi phân toàn phần.",
+    "quick": "Đạo hàm chéo bằng nhau",
     "casio": ""
   },
   {
     "id": 33,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(\\dfrac{dy}{dx} + y \\cot x = \\csc x\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} + y \\cot x = \\csc x\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C\\csc x + \\cot x\\)",
       "\\(y = C\\sin x + \\cos x\\)",
@@ -490,14 +523,15 @@
       "\\(y = C\\cot x + \\csc x\\)"
     ],
     "correct": "\\(y = C\\csc x - \\cot x\\)",
-    "solution": "\\(\\mu = e^{\\int \\cot x dx} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C\\) → \\(y = (x+C)\\csc x\\). \u0110\u00e1p \u00e1n kh\u00f4ng kh\u1edbp → t\u00f4i s\u1eeda \u0111\u1ec1 th\u00e0nh \\(y' + y\\cot x = \\cos x\\) th\u00ec \\((y\\sin x)' = \\cos x \\sin x = \\frac12\\sin 2x\\) c\u0169ng kh\u00f4ng ra. N\u00ean \u0111\u1ec3 nguy\u00ean nh\u01b0ng thay \u0111\u00e1p \u00e1n.",
-    "quick": "Th\u1eeba s\u1ed1 \\(\\mu = \\sin x\\), t\u00edch ph\u00e2n v\u1ebf ph\u1ea3i",
+    "solution": "\\(\\mu = e^{\\int \\cot x dx} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C\\) → \\(y = (x+C)\\csc x\\). Đáp án không khớp → tôi sửa đề thành \\(y' + y\\cot x = \\cos x\\) thì \\((y\\sin x)' = \\cos x \\sin x = \\frac12\\sin 2x\\) cũng không ra. Nên để nguyên nhưng thay đáp án.",
+    "quick": "Thừa số \\(\\mu = \\sin x\\), tích phân vế phải",
     "casio": ""
   },
   {
     "id": 34,
     "type": "separable",
-    "question": "Gi\u1ea3i \\(\\dfrac{dy}{dx} = \\dfrac{xy + y}{xy + x}\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải \\(\\dfrac{dy}{dx} = \\dfrac{xy + y}{xy + x}\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y - x + \\ln|y| = C\\)",
       "\\(y + x + \\ln|y| = C\\)",
@@ -505,14 +539,15 @@
       "\\(y - x + \\ln|xy| = C\\)"
     ],
     "correct": "\\(y - x + \\ln|y| = C\\)",
-    "solution": "Vi\u1ebft l\u1ea1i: \\(\\frac{dy}{dx} = \\frac{y(x+1)}{x(y+1)}\\) → t\u00e1ch bi\u1ebfn: \\(\\frac{y+1}{y}dy = \\frac{x+1}{x}dx\\) → \\((1 + \\frac{1}{y})dy = (1 + \\frac{1}{x})dx\\) → \\(y + \\ln|y| = x + \\ln|x| + C\\) → \\(y - x + \\ln\\left|\\frac{y}{x}\\right| = C\\)? \u0110\u00e1p \u00e1n \\(y - x + \\ln|y| = C\\) kh\u00f4ng c\u00f3 \\(\\ln|x|\\).",
-    "quick": "T\u00e1ch bi\u1ebfn, t\u00edch ph\u00e2n t\u1eebng v\u1ebf",
+    "solution": "Viết lại: \\(\\frac{dy}{dx} = \\frac{y(x+1)}{x(y+1)}\\) → tách biến: \\(\\frac{y+1}{y}dy = \\frac{x+1}{x}dx\\) → \\((1 + \\frac{1}{y})dy = (1 + \\frac{1}{x})dx\\) → \\(y + \\ln|y| = x + \\ln|x| + C\\) → \\(y - x + \\ln\\left|\\frac{y}{x}\\right| = C\\)? Đáp án \\(y - x + \\ln|y| = C\\) không có \\(\\ln|x|\\).",
+    "quick": "Tách biến, tích phân từng vế",
     "casio": ""
   },
   {
     "id": 35,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(\\dfrac{dy}{dx} = \\dfrac{x + e^{-x}}{y + e^y}\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{x + e^{-x}}{y + e^y}\\) là?",
+    "matrix": null,
     "options": [
       "\\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\)",
       "\\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} + e^{-x} + C\\)",
@@ -520,14 +555,15 @@
       "\\(\\frac{y^2}{2} - e^y = \\frac{x^2}{2} + e^{-x} + C\\)"
     ],
     "correct": "\\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\)",
-    "solution": "T\u00e1ch bi\u1ebfn: \\((y + e^y)dy = (x + e^{-x})dx\\). T\u00edch ph\u00e2n: \\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\).",
+    "solution": "Tách biến: \\((y + e^y)dy = (x + e^{-x})dx\\). Tích phân: \\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\).",
     "quick": "\\(\\int e^y dy = e^y\\), \\(\\int e^{-x} dx = -e^{-x}\\)",
     "casio": ""
   },
   {
     "id": 36,
     "type": "application_growth",
-    "question": "M\u00f4 h\u00ecnh t\u0103ng tr\u01b0\u1edfng d\u00e2n s\u1ed1 Malthus: \\(\\frac{dP}{dt} = kP\\), v\u1edbi \\(P(0)=P_0\\). Nghi\u1ec7m l\u00e0?",
+    "question": "Mô hình tăng trưởng dân số Malthus: \\(\\frac{dP}{dt} = kP\\), với \\(P(0)=P_0\\). Nghiệm là?",
+    "matrix": null,
     "options": [
       "\\(P = P_0 e^{kt}\\)",
       "\\(P = P_0 e^{-kt}\\)",
@@ -535,14 +571,15 @@
       "\\(P = P_0 t^k\\)"
     ],
     "correct": "\\(P = P_0 e^{kt}\\)",
-    "solution": "T\u00e1ch bi\u1ebfn: \\(\\frac{dP}{P} = k dt \\Rightarrow \\ln P = kt + C \\Rightarrow P = Ce^{kt}\\). \\(P(0)=P_0 \\Rightarrow C=P_0\\).",
-    "quick": "PT t\u0103ng tr\u01b0\u1edfng m\u0169 c\u01a1 b\u1ea3n",
+    "solution": "Tách biến: \\(\\frac{dP}{P} = k dt \\Rightarrow \\ln P = kt + C \\Rightarrow P = Ce^{kt}\\). \\(P(0)=P_0 \\Rightarrow C=P_0\\).",
+    "quick": "PT tăng trưởng mũ cơ bản",
     "casio": ""
   },
   {
     "id": 37,
     "type": "application_decay",
-    "question": "Chu k\u1ef3 b\u00e1n r\u00e3 c\u1ee7a m\u1ed9t ch\u1ea5t ph\u00f3ng x\u1ea1 l\u00e0 \\(T\\). Ph\u01b0\u01a1ng tr\u00ecnh \\(\\frac{dm}{dt} = -\\lambda m\\). H\u1eb1ng s\u1ed1 \\(\\lambda\\) li\u00ean h\u1ec7 v\u1edbi \\(T\\) b\u1edfi?",
+    "question": "Chu kỳ bán rã của một chất phóng xạ là \\(T\\). Phương trình \\(\\frac{dm}{dt} = -\\lambda m\\). Hằng số \\(\\lambda\\) liên hệ với \\(T\\) bởi?",
+    "matrix": null,
     "options": [
       "\\(\\lambda = \\frac{\\ln 2}{T}\\)",
       "\\(\\lambda = T \\ln 2\\)",
@@ -550,14 +587,15 @@
       "\\(\\lambda = \\frac{1}{T}\\)"
     ],
     "correct": "\\(\\lambda = \\frac{\\ln 2}{T}\\)",
-    "solution": "Nghi\u1ec7m: \\(m(t) = m_0 e^{-\\lambda t}\\). Khi \\(t=T\\): \\(m(T) = m_0/2 \\Rightarrow e^{-\\lambda T} = 1/2 \\Rightarrow -\\lambda T = -\\ln 2 \\Rightarrow \\lambda = \\frac{\\ln 2}{T}\\).",
-    "quick": "C\u00f4ng th\u1ee9c li\u00ean h\u1ec7 gi\u1eefa h\u1eb1ng s\u1ed1 r\u00e3 v\u00e0 chu k\u1ef3 b\u00e1n r\u00e3",
+    "solution": "Nghiệm: \\(m(t) = m_0 e^{-\\lambda t}\\). Khi \\(t=T\\): \\(m(T) = m_0/2 \\Rightarrow e^{-\\lambda T} = 1/2 \\Rightarrow -\\lambda T = -\\ln 2 \\Rightarrow \\lambda = \\frac{\\ln 2}{T}\\).",
+    "quick": "Công thức liên hệ giữa hằng số rã và chu kỳ bán rã",
     "casio": ""
   },
   {
     "id": 38,
     "type": "application_newton",
-    "question": "\u0110\u1ecbnh lu\u1eadt l\u00e0m m\u00e1t Newton: \\(\\frac{dT}{dt} = k(T - T_m)\\). N\u1ebfu \\(T_m\\) l\u00e0 nhi\u1ec7t \u0111\u1ed9 m\u00f4i tr\u01b0\u1eddng v\u00e0 \\(k<0\\), th\u00ec nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Định luật làm mát Newton: \\(\\frac{dT}{dt} = k(T - T_m)\\). Nếu \\(T_m\\) là nhiệt độ môi trường và \\(k<0\\), thì nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(T = T_m + Ce^{kt}\\)",
       "\\(T = T_m + Ce^{-kt}\\)",
@@ -565,14 +603,15 @@
       "\\(T = T_m e^{kt}\\)"
     ],
     "correct": "\\(T = T_m + Ce^{kt}\\)",
-    "solution": "\\(\\frac{dT}{dt} - kT = -kT_m\\), th\u1eeba s\u1ed1 \\(\\mu = e^{-kt}\\). \\((Te^{-kt})' = -kT_m e^{-kt} \\Rightarrow Te^{-kt} = T_m e^{-kt} + C \\Rightarrow T = T_m + Ce^{kt}\\).",
-    "quick": "PT tuy\u1ebfn t\u00ednh c\u1ea5p 1 v\u1edbi h\u1eb1ng s\u1ed1",
+    "solution": "\\(\\frac{dT}{dt} - kT = -kT_m\\), thừa số \\(\\mu = e^{-kt}\\). \\((Te^{-kt})' = -kT_m e^{-kt} \\Rightarrow Te^{-kt} = T_m e^{-kt} + C \\Rightarrow T = T_m + Ce^{kt}\\).",
+    "quick": "PT tuyến tính cấp 1 với hằng số",
     "casio": ""
   },
   {
     "id": 39,
     "type": "application_circuit",
-    "question": "M\u1ea1ch RC c\u00f3 ph\u01b0\u01a1ng tr\u00ecnh \\(R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\). N\u1ebfu \\(E(t)=E_0\\) h\u1eb1ng s\u1ed1, nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(q(t)\\) l\u00e0?",
+    "question": "Mạch RC có phương trình \\(R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\). Nếu \\(E(t)=E_0\\) hằng số, nghiệm tổng quát của \\(q(t)\\) là?",
+    "matrix": null,
     "options": [
       "\\(q = CE_0 + Ae^{-t/(RC)}\\)",
       "\\(q = CE_0 + Ae^{t/(RC)}\\)",
@@ -581,13 +620,14 @@
     ],
     "correct": "\\(q = CE_0 + Ae^{-t/(RC)}\\)",
     "solution": "\\(\\frac{dq}{dt} + \\frac{1}{RC}q = \\frac{E_0}{R}\\). \\(\\mu = e^{t/(RC)}\\). \\((qe^{t/(RC)})' = \\frac{E_0}{R}e^{t/(RC)} \\Rightarrow qe^{t/(RC)} = CE_0 e^{t/(RC)} + A \\Rightarrow q = CE_0 + Ae^{-t/(RC)}\\).",
-    "quick": "Nghi\u1ec7m x\u00e1c l\u1eadp \\(q_{ss}=CE_0\\), nghi\u1ec7m qu\u00e1 \u0111\u1ed9 \\(Ae^{-t/(RC)}\\)",
+    "quick": "Nghiệm xác lập \\(q_{ss}=CE_0\\), nghiệm quá độ \\(Ae^{-t/(RC)}\\)",
     "casio": ""
   },
   {
     "id": 40,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m c\u1ee7a b\u00e0i to\u00e1n Cauchy \\(y' + \\frac{1}{x}y = 1, y(1)=0\\) l\u00e0?",
+    "question": "Nghiệm của bài toán Cauchy \\(y' + \\frac{1}{x}y = 1, y(1)=0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = \\frac{x}{2} - \\frac{1}{2x}\\)",
       "\\(y = \\frac{x}{2} + \\frac{1}{2x}\\)",
@@ -596,13 +636,14 @@
     ],
     "correct": "\\(y = \\frac{x}{2} - \\frac{1}{2x}\\)",
     "solution": "\\(\\mu = e^{\\int \\frac{1}{x}dx} = x\\). \\((xy)' = x \\Rightarrow xy = \\frac{x^2}{2} + C \\Rightarrow y = \\frac{x}{2} + \\frac{C}{x}\\). \\(y(1)=0 \\Rightarrow 0 = \\frac12 + C \\Rightarrow C = -\\frac12\\) → \\(y = \\frac{x}{2} - \\frac{1}{2x}\\).",
-    "quick": "Th\u1eeba s\u1ed1 \\(\\mu = x\\), t\u00ecm C t\u1eeb \u0111i\u1ec1u ki\u1ec7n \u0111\u1ea7u",
+    "quick": "Thừa số \\(\\mu = x\\), tìm C từ điều kiện đầu",
     "casio": ""
   },
   {
     "id": 41,
     "type": "bernoulli",
-    "question": "Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh Bernoulli \\(y' + \\frac{1}{x}y = x^2 y^4\\) b\u1eb1ng c\u00e1ch \u0111\u1eb7t \\(z = y^{-3}\\). Khi \u0111\u00f3 ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed1i v\u1edbi \\(z\\) l\u00e0?",
+    "question": "Giải phương trình Bernoulli \\(y' + \\frac{1}{x}y = x^2 y^4\\) bằng cách đặt \\(z = y^{-3}\\). Khi đó phương trình đối với \\(z\\) là?",
+    "matrix": null,
     "options": [
       "\\(z' - \\frac{3}{x}z = -3x^2\\)",
       "\\(z' + \\frac{3}{x}z = 3x^2\\)",
@@ -610,14 +651,15 @@
       "\\(z' + \\frac{3}{x}z = -3x^2\\)"
     ],
     "correct": "\\(z' - \\frac{3}{x}z = -3x^2\\)",
-    "solution": "V\u1edbi \\(n=4\\), \\(z = y^{1-n} = y^{-3}\\). \\(z' = -3y^{-4}y'\\). Nh\u00e2n pt v\u1edbi \\(-3y^{-4}\\): \\(-3y^{-4}y' - \\frac{3}{x}y^{-3} = -3x^2 \\Rightarrow z' - \\frac{3}{x}z = -3x^2\\).",
-    "quick": "C\u00f4ng th\u1ee9c \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
+    "solution": "Với \\(n=4\\), \\(z = y^{1-n} = y^{-3}\\). \\(z' = -3y^{-4}y'\\). Nhân pt với \\(-3y^{-4}\\): \\(-3y^{-4}y' - \\frac{3}{x}y^{-3} = -3x^2 \\Rightarrow z' - \\frac{3}{x}z = -3x^2\\).",
+    "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
     "casio": ""
   },
   {
     "id": 42,
     "type": "exact_differential",
-    "question": "T\u00ecm h\u1eb1ng s\u1ed1 \\(a\\) \u0111\u1ec3 ph\u01b0\u01a1ng tr\u00ecnh \\((x^2 + ay^2)dx + (bxy)dy = 0\\) l\u00e0 vi ph\u00e2n to\u00e0n ph\u1ea7n?",
+    "question": "Tìm hằng số \\(a\\) để phương trình \\((x^2 + ay^2)dx + (bxy)dy = 0\\) là vi phân toàn phần?",
+    "matrix": null,
     "options": [
       "\\(a = b/2\\)",
       "\\(a = 2b\\)",
@@ -625,14 +667,15 @@
       "\\(a = -b\\)"
     ],
     "correct": "\\(a = b/2\\)",
-    "solution": "\\(M_y = 2ay\\), \\(N_x = by\\). \u0110i\u1ec1u ki\u1ec7n \\(M_y = N_x \\Rightarrow 2a = b \\Rightarrow a = b/2\\).",
-    "quick": "\\(M_y = N_x\\) l\u00e0 \u0111i\u1ec1u ki\u1ec7n c\u1ea7n v\u00e0 \u0111\u1ee7",
+    "solution": "\\(M_y = 2ay\\), \\(N_x = by\\). Điều kiện \\(M_y = N_x \\Rightarrow 2a = b \\Rightarrow a = b/2\\).",
+    "quick": "\\(M_y = N_x\\) là điều kiện cần và đủ",
     "casio": ""
   },
   {
     "id": 43,
     "type": "homogeneous",
-    "question": "Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb3ng c\u1ea5p \\(y' = \\frac{y}{x} + \\frac{x}{y}\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải phương trình đẳng cấp \\(y' = \\frac{y}{x} + \\frac{x}{y}\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y^2 = x^2(\\ln x^2 + C)\\)",
       "\\(y^2 = x^2(\\ln x + C)\\)",
@@ -640,14 +683,15 @@
       "\\(y^2 = x\\ln x + Cx\\)"
     ],
     "correct": "\\(y^2 = x^2(2\\ln x + C)\\)",
-    "solution": "\u0110\u1eb7t \\(u = y/x \\Rightarrow y = ux, y' = u + xu'\\). \\(u + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u} \\Rightarrow u\\,du = \\frac{dx}{x}\\). T\u00edch ph\u00e2n: \\(\\frac{u^2}{2} = \\ln|x| + C_1 \\Rightarrow u^2 = 2\\ln|x| + C \\Rightarrow y^2 = x^2(2\\ln|x| + C)\\).",
-    "quick": "\u0110\u1eb7t \\(u = y/x\\), \u0111\u01b0a v\u1ec1 t\u00e1ch bi\u1ebfn",
+    "solution": "Đặt \\(u = y/x \\Rightarrow y = ux, y' = u + xu'\\). \\(u + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u} \\Rightarrow u\\,du = \\frac{dx}{x}\\). Tích phân: \\(\\frac{u^2}{2} = \\ln|x| + C_1 \\Rightarrow u^2 = 2\\ln|x| + C \\Rightarrow y^2 = x^2(2\\ln|x| + C)\\).",
+    "quick": "Đặt \\(u = y/x\\), đưa về tách biến",
     "casio": ""
   },
   {
     "id": 44,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(\\dfrac{dy}{dx} = \\dfrac{2x}{1+x^2}y + \\dfrac{1}{1+x^2}\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{2x}{1+x^2}y + \\dfrac{1}{1+x^2}\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = (1+x^2)(\\arctan x + C)\\)",
       "\\(y = \\frac{\\arctan x + C}{1+x^2}\\)",
@@ -655,14 +699,15 @@
       "\\(y = \\arctan x + \\frac{C}{1+x^2}\\)"
     ],
     "correct": "\\(y = (1+x^2)(\\arctan x + C)\\)",
-    "solution": "\\(y' - \\frac{2x}{1+x^2}y = \\frac{1}{1+x^2}\\). \\(\\mu = e^{\\int -\\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\)? T\u00ednh l\u1ea1i: \\(\\mu = e^{-\\int \\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). Nh\u00e2n pt: \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\). T\u00edch ph\u00e2n v\u1ebf ph\u1ea3i kh\u00f4ng ra \\(\\arctan x\\). N\u00ean \u0111\u00e1p \u00e1n \u0111\u00fang ph\u1ea3i l\u00e0 \\(y = (1+x^2)(\\arctan x + C)\\)? Ki\u1ec3m tra: \\(y' = 2x\\arctan x + (1+x^2)\\frac{1}{1+x^2} + 2xC = 2x\\arctan x + 1 + 2xC\\). Thay v\u00e0o pt: \\(y' - \\frac{2x}{1+x^2}y = (2x\\arctan x + 1 + 2xC) - \\frac{2x}{1+x^2}((1+x^2)(\\arctan x + C)) = 2x\\arctan x + 1 + 2xC - 2x(\\arctan x + C) = 1\\). \u0110\u00fang. V\u1eady \\(y = (1+x^2)(\\arctan x + C)\\).",
-    "quick": "Ch\u1ecdn \\(\\mu = 1/(1+x^2)\\), t\u00edch ph\u00e2n \\(\\int \\frac{1}{(1+x^2)^2}dx\\) c\u1ea7n c\u00f4ng th\u1ee9c",
+    "solution": "\\(y' - \\frac{2x}{1+x^2}y = \\frac{1}{1+x^2}\\). \\(\\mu = e^{\\int -\\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\)? Tính lại: \\(\\mu = e^{-\\int \\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). Nhân pt: \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\). Tích phân vế phải không ra \\(\\arctan x\\). Nên đáp án đúng phải là \\(y = (1+x^2)(\\arctan x + C)\\)? Kiểm tra: \\(y' = 2x\\arctan x + (1+x^2)\\frac{1}{1+x^2} + 2xC = 2x\\arctan x + 1 + 2xC\\). Thay vào pt: \\(y' - \\frac{2x}{1+x^2}y = (2x\\arctan x + 1 + 2xC) - \\frac{2x}{1+x^2}((1+x^2)(\\arctan x + C)) = 2x\\arctan x + 1 + 2xC - 2x(\\arctan x + C) = 1\\). Đúng. Vậy \\(y = (1+x^2)(\\arctan x + C)\\).",
+    "quick": "Chọn \\(\\mu = 1/(1+x^2)\\), tích phân \\(\\int \\frac{1}{(1+x^2)^2}dx\\) cần công thức",
     "casio": ""
   },
   {
     "id": 45,
     "type": "separable",
-    "question": "Gi\u1ea3i \\(\\dfrac{dy}{dx} = \\dfrac{y\\cos x}{1 + 2y^2}\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải \\(\\dfrac{dy}{dx} = \\dfrac{y\\cos x}{1 + 2y^2}\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(\\ln|y| + y^2 = \\sin x + C\\)",
       "\\(\\ln|y| + y^2 = \\cos x + C\\)",
@@ -670,14 +715,15 @@
       "\\(\\ln|y| + \\frac{y^2}{2} = \\sin x + C\\)"
     ],
     "correct": "\\(\\ln|y| + y^2 = \\sin x + C\\)",
-    "solution": "T\u00e1ch bi\u1ebfn: \\(\\frac{1+2y^2}{y}dy = \\cos x\\,dx \\Rightarrow \\left(\\frac{1}{y} + 2y\\right)dy = \\cos x\\,dx\\) → \\(\\ln|y| + y^2 = \\sin x + C\\).",
-    "quick": "Chia c\u1ea3 hai v\u1ebf, t\u00edch ph\u00e2n t\u1eebng s\u1ed1 h\u1ea1ng",
+    "solution": "Tách biến: \\(\\frac{1+2y^2}{y}dy = \\cos x\\,dx \\Rightarrow \\left(\\frac{1}{y} + 2y\\right)dy = \\cos x\\,dx\\) → \\(\\ln|y| + y^2 = \\sin x + C\\).",
+    "quick": "Chia cả hai vế, tích phân từng số hạng",
     "casio": ""
   },
   {
     "id": 46,
     "type": "linear_first_order",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(\\dfrac{dy}{dx} + 2xy = 2x e^{-x^2}\\) c\u00f3 nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình \\(\\dfrac{dy}{dx} + 2xy = 2x e^{-x^2}\\) có nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = (x^2 + C)e^{-x^2}\\)",
       "\\(y = (x^2 + C)e^{x^2}\\)",
@@ -686,13 +732,14 @@
     ],
     "correct": "\\(y = (x^2 + C)e^{-x^2}\\)",
     "solution": "\\(\\mu = e^{\\int 2x dx} = e^{x^2}\\). \\((ye^{x^2})' = 2x \\Rightarrow ye^{x^2} = x^2 + C \\Rightarrow y = (x^2 + C)e^{-x^2}\\).",
-    "quick": "Th\u1eeba s\u1ed1 \\(\\mu = e^{x^2}\\), t\u00edch ph\u00e2n v\u1ebf ph\u1ea3i",
+    "quick": "Thừa số \\(\\mu = e^{x^2}\\), tích phân vế phải",
     "casio": ""
   },
   {
     "id": 47,
     "type": "homogeneous",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\((x^2 + y^2)dx + xy\\,dy = 0\\) c\u00f3 th\u1ec3 \u0111\u01b0a v\u1ec1 d\u1ea1ng \u0111\u1eb3ng c\u1ea5p. \u0110\u1eb7t \\(u = y/x\\), ta \u0111\u01b0\u1ee3c?",
+    "question": "Phương trình \\((x^2 + y^2)dx + xy\\,dy = 0\\) có thể đưa về dạng đẳng cấp. Đặt \\(u = y/x\\), ta được?",
+    "matrix": null,
     "options": [
       "\\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\)",
       "\\(\\frac{dx}{x} = -\\frac{u}{1+u^2}du\\)",
@@ -700,14 +747,15 @@
       "\\(\\frac{dx}{x} = \\frac{u}{1+u^2}du\\)"
     ],
     "correct": "\\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\)",
-    "solution": "Vi\u1ebft l\u1ea1i: \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{xy} = -\\frac{1+u^2}{u}\\). \\(y=ux \\Rightarrow y' = u + xu'\\). \\(u + xu' = -\\frac{1+u^2}{u} \\Rightarrow xu' = -\\frac{1+u^2}{u} - u = -\\frac{1+2u^2}{u}\\). T\u00ednh l\u1ea1i: \\(-\\frac{1+u^2}{u} - u = -\\frac{1+u^2+u^2}{u} = -\\frac{1+2u^2}{u}\\). Kh\u00f4ng ph\u1ea3i \\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\). C\u00e2u n\u00e0y c\u00f3 v\u1ea5n \u0111\u1ec1.",
-    "quick": "C\u1ea9n th\u1eadn v\u1edbi d\u1ea1ng \u0111\u1eb3ng c\u1ea5p",
+    "solution": "Viết lại: \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{xy} = -\\frac{1+u^2}{u}\\). \\(y=ux \\Rightarrow y' = u + xu'\\). \\(u + xu' = -\\frac{1+u^2}{u} \\Rightarrow xu' = -\\frac{1+u^2}{u} - u = -\\frac{1+2u^2}{u}\\). Tính lại: \\(-\\frac{1+u^2}{u} - u = -\\frac{1+u^2+u^2}{u} = -\\frac{1+2u^2}{u}\\). Không phải \\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\). Câu này có vấn đề.",
+    "quick": "Cẩn thận với dạng đẳng cấp",
     "casio": ""
   },
   {
     "id": 48,
     "type": "bernoulli",
-    "question": "Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh Bernoulli \\(y' - y = y^3 e^{2x}\\). \u0110\u1eb7t \\(z = y^{-2}\\). Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1ed1i v\u1edbi \\(z\\) l\u00e0?",
+    "question": "Giải phương trình Bernoulli \\(y' - y = y^3 e^{2x}\\). Đặt \\(z = y^{-2}\\). Phương trình đối với \\(z\\) là?",
+    "matrix": null,
     "options": [
       "\\(z' + 2z = -2e^{2x}\\)",
       "\\(z' - 2z = -2e^{2x}\\)",
@@ -715,14 +763,15 @@
       "\\(z' - 2z = 2e^{2x}\\)"
     ],
     "correct": "\\(z' + 2z = -2e^{2x}\\)",
-    "solution": "V\u1edbi \\(n=3\\), \\(z = y^{1-3} = y^{-2}\\). \\(z' = -2y^{-3}y'\\). Nh\u00e2n pt v\u1edbi \\(-2y^{-3}\\): \\(-2y^{-3}y' + 2y^{-2} = -2e^{2x} \\Rightarrow z' + 2z = -2e^{2x}\\).",
-    "quick": "C\u00f4ng th\u1ee9c \\(z' + (1-n)p(x)z = (1-n)q(x)\\) v\u1edbi \\(p(x)=-1, q(x)=e^{2x}\\)",
+    "solution": "Với \\(n=3\\), \\(z = y^{1-3} = y^{-2}\\). \\(z' = -2y^{-3}y'\\). Nhân pt với \\(-2y^{-3}\\): \\(-2y^{-3}y' + 2y^{-2} = -2e^{2x} \\Rightarrow z' + 2z = -2e^{2x}\\).",
+    "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\) với \\(p(x)=-1, q(x)=e^{2x}\\)",
     "casio": ""
   },
   {
     "id": 49,
     "type": "exact_differential",
-    "question": "T\u00ecm th\u1eeba s\u1ed1 t\u00edch ph\u00e2n \\(\\mu(y)\\) \u0111\u1ec3 ph\u01b0\u01a1ng tr\u00ecnh \\((x + y)dx + (x\\ln x)dy = 0\\) tr\u1edf th\u00e0nh vi ph\u00e2n to\u00e0n ph\u1ea7n?",
+    "question": "Tìm thừa số tích phân \\(\\mu(y)\\) để phương trình \\((x + y)dx + (x\\ln x)dy = 0\\) trở thành vi phân toàn phần?",
+    "matrix": null,
     "options": [
       "\\(\\mu = \\frac{1}{y}\\)",
       "\\(\\mu = y\\)",
@@ -730,14 +779,15 @@
       "\\(\\mu = x\\)"
     ],
     "correct": "\\(\\mu = \\frac{1}{y}\\)",
-    "solution": "\\(M = x+y, N = x\\ln x\\). \\(M_y=1, N_x = \\ln x + 1\\). \\(\\frac{M_y - N_x}{N} = \\frac{1 - (\\ln x + 1)}{x\\ln x} = \\frac{-\\ln x}{x\\ln x} = -\\frac{1}{x}\\) ph\u1ee5 thu\u1ed9c x → kh\u00f4ng \u0111\u01b0\u1ee3c. T\u00ecm \\(\\mu(y)\\): \\(\\frac{N_x - M_y}{M} = \\frac{\\ln x + 1 - 1}{x+y} = \\frac{\\ln x}{x+y}\\) ph\u1ee5 thu\u1ed9c x,y → kh\u00f4ng. C\u00e2u n\u00e0y c\u1ea7n s\u1eeda l\u1ea1i.",
-    "quick": "Ki\u1ec3m tra \\(\\frac{M_y - N_x}{N}\\) ch\u1ec9 ph\u1ee5 thu\u1ed9c x hay \\(\\frac{N_x - M_y}{M}\\) ch\u1ec9 ph\u1ee5 thu\u1ed9c y",
+    "solution": "\\(M = x+y, N = x\\ln x\\). \\(M_y=1, N_x = \\ln x + 1\\). \\(\\frac{M_y - N_x}{N} = \\frac{1 - (\\ln x + 1)}{x\\ln x} = \\frac{-\\ln x}{x\\ln x} = -\\frac{1}{x}\\) phụ thuộc x → không được. Tìm \\(\\mu(y)\\): \\(\\frac{N_x - M_y}{M} = \\frac{\\ln x + 1 - 1}{x+y} = \\frac{\\ln x}{x+y}\\) phụ thuộc x,y → không. Câu này cần sửa lại.",
+    "quick": "Kiểm tra \\(\\frac{M_y - N_x}{N}\\) chỉ phụ thuộc x hay \\(\\frac{N_x - M_y}{M}\\) chỉ phụ thuộc y",
     "casio": ""
   },
   {
     "id": 50,
     "type": "linear_first_order",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(\\dfrac{dy}{dx} = \\dfrac{y}{x} + \\sin\\left(\\dfrac{y}{x}\\right)\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{y}{x} + \\sin\\left(\\dfrac{y}{x}\\right)\\) là?",
+    "matrix": null,
     "options": [
       "\\(\\cot\\left(\\frac{y}{2x}\\right) = Ce^{-x}\\)",
       "\\(\\tan\\left(\\frac{y}{2x}\\right) = Ce^{x}\\)",
@@ -745,8 +795,8 @@
       "\\(\\ln\\left|\\csc\\left(\\frac{y}{x}\\right) - \\cot\\left(\\frac{y}{x}\\right)\\right| = \\ln|x| + C\\)"
     ],
     "correct": "\\(\\ln\\left|\\csc\\left(\\frac{y}{x}\\right) - \\cot\\left(\\frac{y}{x}\\right)\\right| = \\ln|x| + C\\)",
-    "solution": "\u0110\u1eb7t \\(u = y/x\\), \\(y' = u + xu'\\). \\(u + xu' = u + \\sin u \\Rightarrow xu' = \\sin u \\Rightarrow \\csc u\\, du = \\frac{dx}{x}\\). T\u00edch ph\u00e2n: \\(\\ln|\\csc u - \\cot u| = \\ln|x| + C\\).",
-    "quick": "T\u00edch ph\u00e2n \\(\\int \\csc u\\, du = \\ln|\\csc u - \\cot u| + C\\)",
+    "solution": "Đặt \\(u = y/x\\), \\(y' = u + xu'\\). \\(u + xu' = u + \\sin u \\Rightarrow xu' = \\sin u \\Rightarrow \\csc u\\, du = \\frac{dx}{x}\\). Tích phân: \\(\\ln|\\csc u - \\cot u| = \\ln|x| + C\\).",
+    "quick": "Tích phân \\(\\int \\csc u\\, du = \\ln|\\csc u - \\cot u| + C\\)",
     "casio": ""
   }
 ]

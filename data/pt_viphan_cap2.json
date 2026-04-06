@@ -2,7 +2,8 @@
   {
     "id": 1,
     "type": "reducible_second_order",
-    "question": "Gi\u1ea3i ph\u01b0\u01a1ng tr\u00ecnh \\(y'' = 6x\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải phương trình \\(y'' = 6x\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = x^3 + C_1x + C_2\\)",
       "\\(y = 3x^2 + C_1x + C_2\\)",
@@ -10,14 +11,15 @@
       "\\(y = 6x + C_1\\)"
     ],
     "correct": "\\(y = x^3 + C_1x + C_2\\)",
-    "solution": "T\u00edch ph\u00e2n 2 l\u1ea7n: \\(y' = 3x^2 + C_1\\), \\(y = x^3 + C_1x + C_2\\).",
-    "quick": "T\u00edch ph\u00e2n 2 l\u1ea7n li\u00ean ti\u1ebfp",
+    "solution": "Tích phân 2 lần: \\(y' = 3x^2 + C_1\\), \\(y = x^3 + C_1x + C_2\\).",
+    "quick": "Tích phân 2 lần liên tiếp",
     "casio": ""
   },
   {
     "id": 2,
     "type": "reducible_second_order",
-    "question": "Gi\u1ea3i \\(y'' = \\sin x\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải \\(y'' = \\sin x\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = -\\sin x + C_1x + C_2\\)",
       "\\(y = \\sin x + C_1x + C_2\\)",
@@ -26,13 +28,14 @@
     ],
     "correct": "\\(y = -\\sin x + C_1x + C_2\\)",
     "solution": "\\(y' = -\\cos x + C_1\\), \\(y = -\\sin x + C_1x + C_2\\).",
-    "quick": "T\u00edch ph\u00e2n \\(\\sin x\\) ra \\(-\\cos x\\), r\u1ed3i t\u00edch ph\u00e2n l\u1ea7n 2",
+    "quick": "Tích phân \\(\\sin x\\) ra \\(-\\cos x\\), rồi tích phân lần 2",
     "casio": ""
   },
   {
     "id": 3,
     "type": "reducible_second_order",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y'' = (y')^2\\) c\u00f3 th\u1ec3 gi\u1ea3m c\u1ea5p b\u1eb1ng c\u00e1ch \u0111\u1eb7t?",
+    "question": "Phương trình \\(y'' = (y')^2\\) có thể giảm cấp bằng cách đặt?",
+    "matrix": null,
     "options": [
       "\\(p = y'\\)",
       "\\(p = y\\)",
@@ -40,14 +43,15 @@
       "\\(p = x\\)"
     ],
     "correct": "\\(p = y'\\)",
-    "solution": "\u0110\u1eb7t \\(p = y'\\), \\(y'' = p'\\). Ph\u01b0\u01a1ng tr\u00ecnh th\u00e0nh \\(p' = p^2\\), t\u00e1ch bi\u1ebfn.",
-    "quick": "D\u1ea1ng khuy\u1ebft \\(y\\): \u0111\u1eb7t \\(p=y'\\)",
+    "solution": "Đặt \\(p = y'\\), \\(y'' = p'\\). Phương trình thành \\(p' = p^2\\), tách biến.",
+    "quick": "Dạng khuyết \\(y\\): đặt \\(p=y'\\)",
     "casio": ""
   },
   {
     "id": 4,
     "type": "reducible_second_order",
-    "question": "Gi\u1ea3i \\(y'' = 2y'\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải \\(y'' = 2y'\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1 + C_2e^{2x}\\)",
       "\\(y = C_1e^{2x} + C_2e^{-2x}\\)",
@@ -55,14 +59,15 @@
       "\\(y = C_1 + C_2x\\)"
     ],
     "correct": "\\(y = C_1 + C_2e^{2x}\\)",
-    "solution": "\u0110\u1eb7t \\(p=y'\\), \\(p'=2p \\Rightarrow p=C_2e^{2x}\\). T\u00edch ph\u00e2n: \\(y=C_1 + \\frac{C_2}{2}e^{2x}\\) (g\u1ed9p h\u1eb1ng s\u1ed1).",
-    "quick": "Ph\u01b0\u01a1ng tr\u00ecnh tuy\u1ebfn t\u00ednh c\u1ea5p 2 khuy\u1ebft y: c\u00f3 nghi\u1ec7m 1 v\u00e0 \\(e^{2x}\\)",
+    "solution": "Đặt \\(p=y'\\), \\(p'=2p \\Rightarrow p=C_2e^{2x}\\). Tích phân: \\(y=C_1 + \\frac{C_2}{2}e^{2x}\\) (gộp hằng số).",
+    "quick": "Phương trình tuyến tính cấp 2 khuyết y: có nghiệm 1 và \\(e^{2x}\\)",
     "casio": ""
   },
   {
     "id": 5,
     "type": "reducible_second_order",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y'' + 2x(y')^2 = 0\\) c\u00f3 th\u1ec3 gi\u1ea3m c\u1ea5p b\u1eb1ng c\u00e1ch \u0111\u1eb7t?",
+    "question": "Phương trình \\(y'' + 2x(y')^2 = 0\\) có thể giảm cấp bằng cách đặt?",
+    "matrix": null,
     "options": [
       "\\(p = y'\\)",
       "\\(p = y\\)",
@@ -70,14 +75,15 @@
       "\\(p = y''\\)"
     ],
     "correct": "\\(p = y'\\)",
-    "solution": "Khuy\u1ebft \\(y\\): \u0111\u1eb7t \\(p=y'\\), \\(p' + 2xp^2 = 0\\) → t\u00e1ch bi\u1ebfn.",
-    "quick": "D\u1ea1ng khuy\u1ebft y: \u0111\u1eb7t p=y'",
+    "solution": "Khuyết \\(y\\): đặt \\(p=y'\\), \\(p' + 2xp^2 = 0\\) → tách biến.",
+    "quick": "Dạng khuyết y: đặt p=y'",
     "casio": ""
   },
   {
     "id": 6,
     "type": "homogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y'' - 3y' + 2y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y'' - 3y' + 2y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1e^{x} + C_2e^{2x}\\)",
       "\\(y = C_1e^{-x} + C_2e^{-2x}\\)",
@@ -85,14 +91,15 @@
       "\\(y = C_1\\cos x + C_2\\sin x\\)"
     ],
     "correct": "\\(y = C_1e^{x} + C_2e^{2x}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2 - 3r + 2 = 0 \\Rightarrow r=1,2\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t: \\(y = C_1e^{x} + C_2e^{2x}\\).",
-    "quick": "Nghi\u1ec7m th\u1ef1c ph\u00e2n bi\u1ec7t → t\u1ed5 h\u1ee3p tuy\u1ebfn t\u00ednh c\u00e1c m\u0169",
+    "solution": "Phương trình đặc trưng: \\(r^2 - 3r + 2 = 0 \\Rightarrow r=1,2\\). Nghiệm tổng quát: \\(y = C_1e^{x} + C_2e^{2x}\\).",
+    "quick": "Nghiệm thực phân biệt → tổ hợp tuyến tính các mũ",
     "casio": ""
   },
   {
     "id": 7,
     "type": "homogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y'' + 4y' + 4y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y'' + 4y' + 4y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1e^{-2x} + C_2xe^{-2x}\\)",
       "\\(y = C_1e^{2x} + C_2xe^{2x}\\)",
@@ -100,14 +107,15 @@
       "\\(y = C_1\\cos 2x + C_2\\sin 2x\\)"
     ],
     "correct": "\\(y = C_1e^{-2x} + C_2xe^{-2x}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2+4r+4=0 \\Rightarrow (r+2)^2=0 \\Rightarrow r=-2\\) (k\u00e9p). Nghi\u1ec7m: \\(y=(C_1+C_2x)e^{-2x}\\).",
-    "quick": "Nghi\u1ec7m k\u00e9p \\(r=-2\\) → \\(e^{-2x}\\) v\u00e0 \\(xe^{-2x}\\)",
+    "solution": "Phương trình đặc trưng: \\(r^2+4r+4=0 \\Rightarrow (r+2)^2=0 \\Rightarrow r=-2\\) (kép). Nghiệm: \\(y=(C_1+C_2x)e^{-2x}\\).",
+    "quick": "Nghiệm kép \\(r=-2\\) → \\(e^{-2x}\\) và \\(xe^{-2x}\\)",
     "casio": ""
   },
   {
     "id": 8,
     "type": "homogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y'' + y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y'' + y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1\\cos x + C_2\\sin x\\)",
       "\\(y = C_1e^{x} + C_2e^{-x}\\)",
@@ -115,14 +123,15 @@
       "\\(y = C_1\\cosh x + C_2\\sinh x\\)"
     ],
     "correct": "\\(y = C_1\\cos x + C_2\\sin x\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2+1=0 \\Rightarrow r = \\pm i\\). Nghi\u1ec7m: \\(y = C_1\\cos x + C_2\\sin x\\).",
-    "quick": "Nghi\u1ec7m ph\u1ee9c li\u00ean h\u1ee3p \\(\\pm i\\) → sin v\u00e0 cos",
+    "solution": "Phương trình đặc trưng: \\(r^2+1=0 \\Rightarrow r = \\pm i\\). Nghiệm: \\(y = C_1\\cos x + C_2\\sin x\\).",
+    "quick": "Nghiệm phức liên hợp \\(\\pm i\\) → sin và cos",
     "casio": ""
   },
   {
     "id": 9,
     "type": "homogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y'' - 2y' + 5y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y'' - 2y' + 5y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = e^{x}(C_1\\cos 2x + C_2\\sin 2x)\\)",
       "\\(y = e^{-x}(C_1\\cos 2x + C_2\\sin 2x)\\)",
@@ -130,29 +139,31 @@
       "\\(y = C_1\\cos 2x + C_2\\sin 2x\\)"
     ],
     "correct": "\\(y = e^{x}(C_1\\cos 2x + C_2\\sin 2x)\\)",
-    "solution": "\\(r^2-2r+5=0 \\Rightarrow r=1\\pm2i\\). Nghi\u1ec7m: \\(y = e^{x}(C_1\\cos 2x + C_2\\sin 2x)\\).",
+    "solution": "\\(r^2-2r+5=0 \\Rightarrow r=1\\pm2i\\). Nghiệm: \\(y = e^{x}(C_1\\cos 2x + C_2\\sin 2x)\\).",
     "quick": "\\(\\alpha=1, \\beta=2\\) → \\(e^{\\alpha x}(C_1\\cos\\beta x + C_2\\sin\\beta x)\\)",
     "casio": ""
   },
   {
     "id": 10,
     "type": "homogeneous_constant_coeff",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y'' - 5y' + 6y = 0\\) c\u00f3 nghi\u1ec7m ri\u00eang n\u00e0o sau \u0111\u00e2y?",
+    "question": "Phương trình \\(y'' - 5y' + 6y = 0\\) có nghiệm riêng nào sau đây?",
+    "matrix": null,
     "options": [
       "\\(e^{2x}\\)",
       "\\(e^{3x}\\)",
-      "C\u1ea3 hai \u0111\u00e1p \u00e1n tr\u00ean",
+      "Cả hai đáp án trên",
       "\\(e^{-2x}\\)"
     ],
-    "correct": "C\u1ea3 hai \u0111\u00e1p \u00e1n tr\u00ean",
-    "solution": "\\(r^2-5r+6=0 \\Rightarrow r=2,3\\). Nghi\u1ec7m ri\u00eang: \\(e^{2x}\\) v\u00e0 \\(e^{3x}\\).",
-    "quick": "C\u1ea3 \\(e^{2x}\\) v\u00e0 \\(e^{3x}\\) \u0111\u1ec1u l\u00e0 nghi\u1ec7m",
+    "correct": "Cả hai đáp án trên",
+    "solution": "\\(r^2-5r+6=0 \\Rightarrow r=2,3\\). Nghiệm riêng: \\(e^{2x}\\) và \\(e^{3x}\\).",
+    "quick": "Cả \\(e^{2x}\\) và \\(e^{3x}\\) đều là nghiệm",
     "casio": ""
   },
   {
     "id": 11,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' - 3y' + 2y = e^{x}\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' - 3y' + 2y = e^{x}\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(Axe^{x}\\)",
       "\\(Ae^{x}\\)",
@@ -160,14 +171,15 @@
       "\\(Axe^{2x}\\)"
     ],
     "correct": "\\(Axe^{x}\\)",
-    "solution": "V\u1ebf ph\u1ea3i \\(e^{x}\\), \\(r=1\\) l\u00e0 nghi\u1ec7m \u0111\u01a1n c\u1ee7a pt \u0111\u1eb7c tr\u01b0ng (r=1,2) → nghi\u1ec7m ri\u00eang d\u1ea1ng \\(Axe^{x}\\).",
-    "quick": "Tr\u00f9ng nghi\u1ec7m \u0111\u01a1n → nh\u00e2n th\u00eam x",
+    "solution": "Vế phải \\(e^{x}\\), \\(r=1\\) là nghiệm đơn của pt đặc trưng (r=1,2) → nghiệm riêng dạng \\(Axe^{x}\\).",
+    "quick": "Trùng nghiệm đơn → nhân thêm x",
     "casio": ""
   },
   {
     "id": 12,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' - 4y' + 4y = e^{2x}\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' - 4y' + 4y = e^{2x}\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(Ax^2e^{2x}\\)",
       "\\(Ae^{2x}\\)",
@@ -175,14 +187,15 @@
       "\\(Ae^{x}\\)"
     ],
     "correct": "\\(Ax^2e^{2x}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2-4r+4=0 \\Rightarrow r=2\\) (k\u00e9p). V\u1ebf ph\u1ea3i \\(e^{2x}\\) tr\u00f9ng nghi\u1ec7m k\u00e9p → nh\u00e2n \\(x^2\\).",
-    "quick": "Tr\u00f9ng nghi\u1ec7m k\u00e9p → nh\u00e2n \\(x^2\\)",
+    "solution": "Phương trình đặc trưng: \\(r^2-4r+4=0 \\Rightarrow r=2\\) (kép). Vế phải \\(e^{2x}\\) trùng nghiệm kép → nhân \\(x^2\\).",
+    "quick": "Trùng nghiệm kép → nhân \\(x^2\\)",
     "casio": ""
   },
   {
     "id": 13,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' + y = \\sin x\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' + y = \\sin x\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(A\\sin x\\)",
       "\\(A\\cos x\\)",
@@ -190,14 +203,15 @@
       "\\(A\\cos x + B\\sin x\\)"
     ],
     "correct": "\\(x(A\\cos x + B\\sin x)\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2+1=0 \\Rightarrow r=\\pm i\\). V\u1ebf ph\u1ea3i \\(\\sin x\\) (hay \\(e^{ix}\\)) tr\u00f9ng nghi\u1ec7m ph\u1ee9c → nh\u00e2n x.",
-    "quick": "Tr\u00f9ng nghi\u1ec7m ph\u1ee9c \\(\\pm i\\) → nh\u00e2n x",
+    "solution": "Phương trình đặc trưng: \\(r^2+1=0 \\Rightarrow r=\\pm i\\). Vế phải \\(\\sin x\\) (hay \\(e^{ix}\\)) trùng nghiệm phức → nhân x.",
+    "quick": "Trùng nghiệm phức \\(\\pm i\\) → nhân x",
     "casio": ""
   },
   {
     "id": 14,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' + 3y' + 2y = \\cos 2x\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' + 3y' + 2y = \\cos 2x\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(A\\cos 2x + B\\sin 2x\\)",
       "\\(A\\cos 2x\\)",
@@ -205,14 +219,15 @@
       "\\(Ae^{2x}\\)"
     ],
     "correct": "\\(A\\cos 2x + B\\sin 2x\\)",
-    "solution": "V\u1ebf ph\u1ea3i \\(\\cos 2x\\), \\(\\pm2i\\) kh\u00f4ng l\u00e0 nghi\u1ec7m c\u1ee7a pt \u0111\u1eb7c tr\u01b0ng (r=-1,-2) → d\u1ea1ng \\(A\\cos 2x + B\\sin 2x\\).",
-    "quick": "Kh\u00f4ng tr\u00f9ng nghi\u1ec7m → d\u1ea1ng t\u1ed5 h\u1ee3p sin/cos",
+    "solution": "Vế phải \\(\\cos 2x\\), \\(\\pm2i\\) không là nghiệm của pt đặc trưng (r=-1,-2) → dạng \\(A\\cos 2x + B\\sin 2x\\).",
+    "quick": "Không trùng nghiệm → dạng tổ hợp sin/cos",
     "casio": ""
   },
   {
     "id": 15,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' - 2y' + y = e^{x}\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' - 2y' + y = e^{x}\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(Ax^2e^{x}\\)",
       "\\(Ae^{x}\\)",
@@ -220,14 +235,15 @@
       "\\(Ae^{2x}\\)"
     ],
     "correct": "\\(Ax^2e^{x}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2-2r+1=0 \\Rightarrow r=1\\) (k\u00e9p). V\u1ebf ph\u1ea3i \\(e^{x}\\) tr\u00f9ng nghi\u1ec7m k\u00e9p → nh\u00e2n \\(x^2\\).",
-    "quick": "Tr\u00f9ng nghi\u1ec7m k\u00e9p → \\(x^2e^x\\)",
+    "solution": "Phương trình đặc trưng: \\(r^2-2r+1=0 \\Rightarrow r=1\\) (kép). Vế phải \\(e^{x}\\) trùng nghiệm kép → nhân \\(x^2\\).",
+    "quick": "Trùng nghiệm kép → \\(x^2e^x\\)",
     "casio": ""
   },
   {
     "id": 16,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' + 4y = \\sin 2x\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' + 4y = \\sin 2x\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(x(A\\cos 2x + B\\sin 2x)\\)",
       "\\(A\\cos 2x + B\\sin 2x\\)",
@@ -235,14 +251,15 @@
       "\\(A\\cos 2x\\)"
     ],
     "correct": "\\(x(A\\cos 2x + B\\sin 2x)\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2+4=0 \\Rightarrow r=\\pm2i\\). V\u1ebf ph\u1ea3i \\(\\sin 2x\\) tr\u00f9ng nghi\u1ec7m ph\u1ee9c → nh\u00e2n x.",
-    "quick": "Tr\u00f9ng nghi\u1ec7m ph\u1ee9c \\(\\pm2i\\) → nh\u00e2n x",
+    "solution": "Phương trình đặc trưng: \\(r^2+4=0 \\Rightarrow r=\\pm2i\\). Vế phải \\(\\sin 2x\\) trùng nghiệm phức → nhân x.",
+    "quick": "Trùng nghiệm phức \\(\\pm2i\\) → nhân x",
     "casio": ""
   },
   {
     "id": 17,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' - y' - 2y = x^2\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' - y' - 2y = x^2\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(Ax^2 + Bx + C\\)",
       "\\(Ax^2\\)",
@@ -250,14 +267,15 @@
       "\\(Axe^{2x}\\)"
     ],
     "correct": "\\(Ax^2 + Bx + C\\)",
-    "solution": "V\u1ebf ph\u1ea3i l\u00e0 \u0111a th\u1ee9c b\u1eadc 2, \\(r=0\\) kh\u00f4ng l\u00e0 nghi\u1ec7m c\u1ee7a pt \u0111\u1eb7c tr\u01b0ng (r=-1,2) → d\u1ea1ng \u0111a th\u1ee9c c\u00f9ng b\u1eadc.",
-    "quick": "\u0110a th\u1ee9c, kh\u00f4ng tr\u00f9ng nghi\u1ec7m 0 → d\u1ea1ng \u0111a th\u1ee9c b\u1eadc 2",
+    "solution": "Vế phải là đa thức bậc 2, \\(r=0\\) không là nghiệm của pt đặc trưng (r=-1,2) → dạng đa thức cùng bậc.",
+    "quick": "Đa thức, không trùng nghiệm 0 → dạng đa thức bậc 2",
     "casio": ""
   },
   {
     "id": 18,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' - 3y' + 2y = e^{2x}\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(y'' - 3y' + 2y = e^{2x}\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(Axe^{2x}\\)",
       "\\(Ae^{2x}\\)",
@@ -265,14 +283,15 @@
       "\\(Ae^{x}\\)"
     ],
     "correct": "\\(Axe^{2x}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2-3r+2=0 \\Rightarrow r=1,2\\). V\u1ebf ph\u1ea3i \\(e^{2x}\\) tr\u00f9ng nghi\u1ec7m \u0111\u01a1n \\(r=2\\) → nh\u00e2n x.",
-    "quick": "Tr\u00f9ng nghi\u1ec7m \u0111\u01a1n → \\(Axe^{2x}\\)",
+    "solution": "Phương trình đặc trưng: \\(r^2-3r+2=0 \\Rightarrow r=1,2\\). Vế phải \\(e^{2x}\\) trùng nghiệm đơn \\(r=2\\) → nhân x.",
+    "quick": "Trùng nghiệm đơn → \\(Axe^{2x}\\)",
     "casio": ""
   },
   {
     "id": 19,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Gi\u1ea3i \\(y'' + y = \\cos x\\). Nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Giải \\(y'' + y = \\cos x\\). Nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1\\cos x + C_2\\sin x + \\frac{x}{2}\\sin x\\)",
       "\\(y = C_1\\cos x + C_2\\sin x + \\frac{x}{2}\\cos x\\)",
@@ -280,14 +299,15 @@
       "\\(y = C_1e^{x} + C_2e^{-x} + \\cos x\\)"
     ],
     "correct": "\\(y = C_1\\cos x + C_2\\sin x + \\frac{x}{2}\\sin x\\)",
-    "solution": "Nghi\u1ec7m thu\u1ea7n nh\u1ea5t: \\(y_h = C_1\\cos x + C_2\\sin x\\). Nghi\u1ec7m ri\u00eang: \\(y_p = \\frac{x}{2}\\sin x\\).",
-    "quick": "Tr\u00f9ng nghi\u1ec7m ph\u1ee9c \\(\\pm i\\), v\u1ebf ph\u1ea3i \\(\\cos x\\) → nh\u00e2n x, d\u1ea1ng \\(x(A\\cos x + B\\sin x)\\). T\u00ednh ra \\(A=0, B=1/2\\).",
+    "solution": "Nghiệm thuần nhất: \\(y_h = C_1\\cos x + C_2\\sin x\\). Nghiệm riêng: \\(y_p = \\frac{x}{2}\\sin x\\).",
+    "quick": "Trùng nghiệm phức \\(\\pm i\\), vế phải \\(\\cos x\\) → nhân x, dạng \\(x(A\\cos x + B\\sin x)\\). Tính ra \\(A=0, B=1/2\\).",
     "casio": ""
   },
   {
     "id": 20,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "T\u00ecm nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' + 4y = 8\\sin 2x\\) b\u1eb1ng ph\u01b0\u01a1ng ph\u00e1p h\u1ec7 s\u1ed1 b\u1ea5t \u0111\u1ecbnh?",
+    "question": "Tìm nghiệm riêng của \\(y'' + 4y = 8\\sin 2x\\) bằng phương pháp hệ số bất định?",
+    "matrix": null,
     "options": [
       "\\(-2x\\cos 2x\\)",
       "\\(2x\\cos 2x\\)",
@@ -295,14 +315,15 @@
       "\\(2x\\sin 2x\\)"
     ],
     "correct": "\\(-2x\\cos 2x\\)",
-    "solution": "Nghi\u1ec7m ri\u00eang d\u1ea1ng \\(x(A\\cos 2x + B\\sin 2x)\\). Thay v\u00e0o, \u0111\u1ed3ng nh\u1ea5t h\u1ec7 s\u1ed1 \u0111\u01b0\u1ee3c \\(A=-2, B=0\\).",
-    "quick": "Tr\u00f9ng nghi\u1ec7m ph\u1ee9c \\(\\pm2i\\), \\(\\sin 2x\\) l\u1ea5y ph\u1ea7n \u1ea3o → nghi\u1ec7m ri\u00eang l\u00e0 \\(-2x\\cos 2x\\).",
+    "solution": "Nghiệm riêng dạng \\(x(A\\cos 2x + B\\sin 2x)\\). Thay vào, đồng nhất hệ số được \\(A=-2, B=0\\).",
+    "quick": "Trùng nghiệm phức \\(\\pm2i\\), \\(\\sin 2x\\) lấy phần ảo → nghiệm riêng là \\(-2x\\cos 2x\\).",
     "casio": ""
   },
   {
     "id": 21,
     "type": "cauchy_euler",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh Cauchy–Euler c\u00f3 d\u1ea1ng t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình Cauchy–Euler có dạng tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(ax^2y'' + bxy' + cy = f(x)\\)",
       "\\(ay'' + by' + cy = f(x)\\)",
@@ -310,14 +331,15 @@
       "\\(y' + p(x)y = q(x)\\)"
     ],
     "correct": "\\(ax^2y'' + bxy' + cy = f(x)\\)",
-    "solution": "\u0110\u00e2y l\u00e0 d\u1ea1ng chu\u1ea9n c\u1ee7a ph\u01b0\u01a1ng tr\u00ecnh Cauchy–Euler (Euler–Cauchy).",
-    "quick": "D\u1ea1ng: \\(x^2y'' + pxy' + qy = f(x)\\)",
+    "solution": "Đây là dạng chuẩn của phương trình Cauchy–Euler (Euler–Cauchy).",
+    "quick": "Dạng: \\(x^2y'' + pxy' + qy = f(x)\\)",
     "casio": ""
   },
   {
     "id": 22,
     "type": "cauchy_euler",
-    "question": "Nghi\u1ec7m c\u1ee7a ph\u01b0\u01a1ng tr\u00ecnh Cauchy–Euler thu\u1ea7n nh\u1ea5t \\(x^2y'' - 3xy' + 3y = 0\\) l\u00e0?",
+    "question": "Nghiệm của phương trình Cauchy–Euler thuần nhất \\(x^2y'' - 3xy' + 3y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1x + C_2x^3\\)",
       "\\(y = C_1x + C_2x^2\\)",
@@ -325,14 +347,15 @@
       "\\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\)"
     ],
     "correct": "\\(y = C_1x + C_2x^3\\)",
-    "solution": "T\u00ecm nghi\u1ec7m d\u1ea1ng \\(y=x^r\\), thay v\u00e0o \\(r(r-1)-3r+3=0 \\Rightarrow r^2-4r+3=0 \\Rightarrow r=1,3\\).",
-    "quick": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r(r-1)-3r+3=0\\) → \\(r=1,3\\) → \\(x^1, x^3\\)",
+    "solution": "Tìm nghiệm dạng \\(y=x^r\\), thay vào \\(r(r-1)-3r+3=0 \\Rightarrow r^2-4r+3=0 \\Rightarrow r=1,3\\).",
+    "quick": "Phương trình đặc trưng: \\(r(r-1)-3r+3=0\\) → \\(r=1,3\\) → \\(x^1, x^3\\)",
     "casio": ""
   },
   {
     "id": 23,
     "type": "cauchy_euler",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(x^2y'' + 3xy' + y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(x^2y'' + 3xy' + y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1x^{-1} + C_2x^{-1}\\ln x\\)",
       "\\(y = C_1x + C_2x\\ln x\\)",
@@ -340,14 +363,15 @@
       "\\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\)"
     ],
     "correct": "\\(y = C_1x^{-1} + C_2x^{-1}\\ln x\\)",
-    "solution": "\\(r(r-1)+3r+1=0 \\Rightarrow r^2+2r+1=0 \\Rightarrow (r+1)^2=0\\) (nghi\u1ec7m k\u00e9p \\(r=-1\\)). Nghi\u1ec7m: \\(y = C_1x^{-1} + C_2x^{-1}\\ln x\\).",
-    "quick": "Nghi\u1ec7m k\u00e9p \\(r=-1\\) → \\(x^{-1}\\) v\u00e0 \\(x^{-1}\\ln x\\)",
+    "solution": "\\(r(r-1)+3r+1=0 \\Rightarrow r^2+2r+1=0 \\Rightarrow (r+1)^2=0\\) (nghiệm kép \\(r=-1\\)). Nghiệm: \\(y = C_1x^{-1} + C_2x^{-1}\\ln x\\).",
+    "quick": "Nghiệm kép \\(r=-1\\) → \\(x^{-1}\\) và \\(x^{-1}\\ln x\\)",
     "casio": ""
   },
   {
     "id": 24,
     "type": "cauchy_euler",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(x^2y'' + xy' + y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(x^2y'' + xy' + y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\)",
       "\\(y = C_1x + C_2x^{-1}\\)",
@@ -355,14 +379,15 @@
       "\\(y = C_1\\cos x + C_2\\sin x\\)"
     ],
     "correct": "\\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\)",
-    "solution": "\\(r(r-1)+r+1=0 \\Rightarrow r^2+1=0 \\Rightarrow r=\\pm i\\). Nghi\u1ec7m: \\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\).",
-    "quick": "Nghi\u1ec7m ph\u1ee9c \\(\\pm i\\) → \\(\\cos(\\ln x), \\sin(\\ln x)\\)",
+    "solution": "\\(r(r-1)+r+1=0 \\Rightarrow r^2+1=0 \\Rightarrow r=\\pm i\\). Nghiệm: \\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\).",
+    "quick": "Nghiệm phức \\(\\pm i\\) → \\(\\cos(\\ln x), \\sin(\\ln x)\\)",
     "casio": ""
   },
   {
     "id": 25,
     "type": "cauchy_euler",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(x^2y'' - 2xy' + 2y = x^2\\) d\u1ea1ng?",
+    "question": "Nghiệm riêng của \\(x^2y'' - 2xy' + 2y = x^2\\) dạng?",
+    "matrix": null,
     "options": [
       "\\(Ax^2\\)",
       "\\(Ax^2\\ln x\\)",
@@ -370,29 +395,31 @@
       "\\(Ax^2e^{x}\\)"
     ],
     "correct": "\\(Ax^2\\ln x\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh thu\u1ea7n nh\u1ea5t: \\(r(r-1)-2r+2=0 \\Rightarrow r=1,2\\). V\u1ebf ph\u1ea3i \\(x^2\\) tr\u00f9ng nghi\u1ec7m \\(r=2\\) → nh\u00e2n \\(\\ln x\\).",
-    "quick": "Tr\u00f9ng nghi\u1ec7m \u0111\u01a1n c\u1ee7a pt Euler → nh\u00e2n \\(\\ln x\\)",
+    "solution": "Phương trình thuần nhất: \\(r(r-1)-2r+2=0 \\Rightarrow r=1,2\\). Vế phải \\(x^2\\) trùng nghiệm \\(r=2\\) → nhân \\(\\ln x\\).",
+    "quick": "Trùng nghiệm đơn của pt Euler → nhân \\(\\ln x\\)",
     "casio": ""
   },
   {
     "id": 26,
     "type": "variation_of_parameters",
-    "question": "Ph\u01b0\u01a1ng ph\u00e1p bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1 (variation of parameters) \u0111\u01b0\u1ee3c d\u00f9ng khi?",
+    "question": "Phương pháp biến thiên hằng số (variation of parameters) được dùng khi?",
+    "matrix": null,
     "options": [
-      "V\u1ebf ph\u1ea3i kh\u00f4ng c\u00f3 d\u1ea1ng \u0111\u1eb7c bi\u1ec7t ph\u00f9 h\u1ee3p v\u1edbi h\u1ec7 s\u1ed1 b\u1ea5t \u0111\u1ecbnh",
-      "V\u1ebf ph\u1ea3i l\u00e0 \u0111a th\u1ee9c",
-      "V\u1ebf ph\u1ea3i l\u00e0 h\u00e0m m\u0169",
-      "H\u1ec7 s\u1ed1 h\u1eb1ng"
+      "Vế phải không có dạng đặc biệt phù hợp với hệ số bất định",
+      "Vế phải là đa thức",
+      "Vế phải là hàm mũ",
+      "Hệ số hằng"
     ],
-    "correct": "V\u1ebf ph\u1ea3i kh\u00f4ng c\u00f3 d\u1ea1ng \u0111\u1eb7c bi\u1ec7t ph\u00f9 h\u1ee3p v\u1edbi h\u1ec7 s\u1ed1 b\u1ea5t \u0111\u1ecbnh",
-    "solution": "Ph\u01b0\u01a1ng ph\u00e1p bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1 \u00e1p d\u1ee5ng \u0111\u01b0\u1ee3c cho m\u1ecdi v\u1ebf ph\u1ea3i, \u0111\u1eb7c bi\u1ec7t khi h\u1ec7 s\u1ed1 b\u1ea5t \u0111\u1ecbnh kh\u00f4ng \u00e1p d\u1ee5ng \u0111\u01b0\u1ee3c.",
-    "quick": "D\u00f9ng khi v\u1ebf ph\u1ea3i kh\u00f4ng ph\u1ea3i d\u1ea1ng \u0111\u1eb7c bi\u1ec7t (m\u0169, sin, cos, \u0111a th\u1ee9c, t\u00edch c\u1ee7a ch\u00fang).",
+    "correct": "Vế phải không có dạng đặc biệt phù hợp với hệ số bất định",
+    "solution": "Phương pháp biến thiên hằng số áp dụng được cho mọi vế phải, đặc biệt khi hệ số bất định không áp dụng được.",
+    "quick": "Dùng khi vế phải không phải dạng đặc biệt (mũ, sin, cos, đa thức, tích của chúng).",
     "casio": ""
   },
   {
     "id": 27,
     "type": "variation_of_parameters",
-    "question": "Cho bi\u1ebft hai nghi\u1ec7m \u0111\u1ed9c l\u1eadp tuy\u1ebfn t\u00ednh c\u1ee7a pt thu\u1ea7n nh\u1ea5t \\(y_1, y_2\\). Nghi\u1ec7m ri\u00eang theo ph\u01b0\u01a1ng ph\u00e1p bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1 c\u00f3 d\u1ea1ng?",
+    "question": "Cho biết hai nghiệm độc lập tuyến tính của pt thuần nhất \\(y_1, y_2\\). Nghiệm riêng theo phương pháp biến thiên hằng số có dạng?",
+    "matrix": null,
     "options": [
       "\\(y_p = u_1(x)y_1 + u_2(x)y_2\\)",
       "\\(y_p = Ay_1 + By_2\\)",
@@ -400,14 +427,15 @@
       "\\(y_p = x^m\\)"
     ],
     "correct": "\\(y_p = u_1(x)y_1 + u_2(x)y_2\\)",
-    "solution": "Bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1: coi h\u1eb1ng s\u1ed1 l\u00e0 h\u00e0m: \\(y_p = u_1(x)y_1 + u_2(x)y_2\\).",
-    "quick": "D\u1ea1ng t\u1ed5ng qu\u00e1t: \\(y_p = u_1y_1 + u_2y_2\\)",
+    "solution": "Biến thiên hằng số: coi hằng số là hàm: \\(y_p = u_1(x)y_1 + u_2(x)y_2\\).",
+    "quick": "Dạng tổng quát: \\(y_p = u_1y_1 + u_2y_2\\)",
     "casio": ""
   },
   {
     "id": 28,
     "type": "variation_of_parameters",
-    "question": "Cho \\(y'' + y = \\tan x\\). D\u00f9ng bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1, h\u1ec7 ph\u01b0\u01a1ng tr\u00ecnh t\u00ecm \\(u_1', u_2'\\) l\u00e0?",
+    "question": "Cho \\(y'' + y = \\tan x\\). Dùng biến thiên hằng số, hệ phương trình tìm \\(u_1', u_2'\\) là?",
+    "matrix": null,
     "options": [
       "\\(\\begin{cases} u_1'\\cos x + u_2'\\sin x = 0 \\\\ -u_1'\\sin x + u_2'\\cos x = \\tan x \\end{cases}\\)",
       "\\(\\begin{cases} u_1'\\sin x + u_2'\\cos x = 0 \\\\ u_1'\\cos x - u_2'\\sin x = \\tan x \\end{cases}\\)",
@@ -415,14 +443,15 @@
       "\\(u_1' = 0, u_2' = \\tan x\\)"
     ],
     "correct": "\\(\\begin{cases} u_1'\\cos x + u_2'\\sin x = 0 \\\\ -u_1'\\sin x + u_2'\\cos x = \\tan x \\end{cases}\\)",
-    "solution": "H\u1ec7 \\(\\begin{cases} u_1'y_1 + u_2'y_2 = 0 \\\\ u_1'y_1' + u_2'y_2' = f(x) \\end{cases}\\) v\u1edbi \\(y_1=\\cos x, y_2=\\sin x\\).",
-    "quick": "H\u1ec7 chu\u1ea9n: \\(u_1'y_1 + u_2'y_2 = 0\\); \\(u_1'y_1' + u_2'y_2' = f\\)",
+    "solution": "Hệ \\(\\begin{cases} u_1'y_1 + u_2'y_2 = 0 \\\\ u_1'y_1' + u_2'y_2' = f(x) \\end{cases}\\) với \\(y_1=\\cos x, y_2=\\sin x\\).",
+    "quick": "Hệ chuẩn: \\(u_1'y_1 + u_2'y_2 = 0\\); \\(u_1'y_1' + u_2'y_2' = f\\)",
     "casio": ""
   },
   {
     "id": 29,
     "type": "initial_value",
-    "question": "Gi\u1ea3i b\u00e0i to\u00e1n Cauchy: \\(y'' - 3y' + 2y = 0\\), \\(y(0)=1, y'(0)=0\\). K\u1ebft qu\u1ea3 \\(y(1)=\\)?",
+    "question": "Giải bài toán Cauchy: \\(y'' - 3y' + 2y = 0\\), \\(y(0)=1, y'(0)=0\\). Kết quả \\(y(1)=\\)?",
+    "matrix": null,
     "options": [
       "\\(2e - e^2\\)",
       "\\(e^2 - 2e\\)",
@@ -430,14 +459,15 @@
       "\\(e^2 - e\\)"
     ],
     "correct": "\\(2e - e^2\\)",
-    "solution": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t: \\(y = C_1e^{x} + C_2e^{2x}\\). \\(y(0)=C_1+C_2=1\\), \\(y'(0)=C_1+2C_2=0 \\Rightarrow C_2=-1, C_1=2\\). V\u1eady \\(y=2e^{x}-e^{2x}\\), \\(y(1)=2e-e^2\\).",
-    "quick": "Gi\u1ea3i h\u1ec7 t\u00ecm C1, C2 r\u1ed3i thay x=1",
+    "solution": "Nghiệm tổng quát: \\(y = C_1e^{x} + C_2e^{2x}\\). \\(y(0)=C_1+C_2=1\\), \\(y'(0)=C_1+2C_2=0 \\Rightarrow C_2=-1, C_1=2\\). Vậy \\(y=2e^{x}-e^{2x}\\), \\(y(1)=2e-e^2\\).",
+    "quick": "Giải hệ tìm C1, C2 rồi thay x=1",
     "casio": ""
   },
   {
     "id": 30,
     "type": "initial_value",
-    "question": "B\u00e0i to\u00e1n Cauchy \\(y'' + y = 0\\), \\(y(0)=0, y'(0)=1\\) c\u00f3 nghi\u1ec7m l\u00e0?",
+    "question": "Bài toán Cauchy \\(y'' + y = 0\\), \\(y(0)=0, y'(0)=1\\) có nghiệm là?",
+    "matrix": null,
     "options": [
       "\\(y = \\sin x\\)",
       "\\(y = \\cos x\\)",
@@ -445,29 +475,31 @@
       "\\(y = e^{x}\\)"
     ],
     "correct": "\\(y = \\sin x\\)",
-    "solution": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t: \\(y = C_1\\cos x + C_2\\sin x\\). \\(y(0)=C_1=0\\), \\(y'(0)=C_2=1\\) → \\(y=\\sin x\\).",
-    "quick": "\u0110i\u1ec1u ki\u1ec7n \u0111\u1ea7u chu\u1ea9n c\u1ee7a sin",
+    "solution": "Nghiệm tổng quát: \\(y = C_1\\cos x + C_2\\sin x\\). \\(y(0)=C_1=0\\), \\(y'(0)=C_2=1\\) → \\(y=\\sin x\\).",
+    "quick": "Điều kiện đầu chuẩn của sin",
     "casio": ""
   },
   {
     "id": 31,
     "type": "application_oscillation",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh dao \u0111\u1ed9ng t\u1eaft d\u1ea7n c\u1ee7a con l\u1eafc l\u00f2 xo c\u00f3 d\u1ea1ng: \\(my'' + cy' + ky = 0\\). N\u1ebfu \\(c^2 - 4mk > 0\\), h\u1ec7 s\u1ebd?",
+    "question": "Phương trình dao động tắt dần của con lắc lò xo có dạng: \\(my'' + cy' + ky = 0\\). Nếu \\(c^2 - 4mk > 0\\), hệ sẽ?",
+    "matrix": null,
     "options": [
-      "Dao \u0111\u1ed9ng t\u1eaft d\u1ea7n m\u1ea1nh (qu\u00e1 t\u1eaft)",
-      "Dao \u0111\u1ed9ng \u0111i\u1ec1u h\u00f2a",
-      "Dao \u0111\u1ed9ng t\u1eaft d\u1ea7n y\u1ebfu",
-      "C\u1ed9ng h\u01b0\u1edfng"
+      "Dao động tắt dần mạnh (quá tắt)",
+      "Dao động điều hòa",
+      "Dao động tắt dần yếu",
+      "Cộng hưởng"
     ],
-    "correct": "Dao \u0111\u1ed9ng t\u1eaft d\u1ea7n m\u1ea1nh (qu\u00e1 t\u1eaft)",
-    "solution": "Nghi\u1ec7m c\u1ee7a pt \u0111\u1eb7c tr\u01b0ng l\u00e0 hai nghi\u1ec7m th\u1ef1c \u00e2m ph\u00e2n bi\u1ec7t → h\u1ec7 tr\u1edf v\u1ec1 v\u1ecb tr\u00ed c\u00e2n b\u1eb1ng m\u00e0 kh\u00f4ng dao \u0111\u1ed9ng.",
-    "quick": "\\(\\Delta>0\\) → qu\u00e1 t\u1eaft (overdamped)",
+    "correct": "Dao động tắt dần mạnh (quá tắt)",
+    "solution": "Nghiệm của pt đặc trưng là hai nghiệm thực âm phân biệt → hệ trở về vị trí cân bằng mà không dao động.",
+    "quick": "\\(\\Delta>0\\) → quá tắt (overdamped)",
     "casio": ""
   },
   {
     "id": 32,
     "type": "application_oscillation",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y'' + 4y = 0\\) m\u00f4 t\u1ea3 dao \u0111\u1ed9ng \u0111i\u1ec1u h\u00f2a v\u1edbi t\u1ea7n s\u1ed1 g\u00f3c?",
+    "question": "Phương trình \\(y'' + 4y = 0\\) mô tả dao động điều hòa với tần số góc?",
+    "matrix": null,
     "options": [
       "\\(2\\)",
       "\\(4\\)",
@@ -475,14 +507,15 @@
       "\\(\\pi\\)"
     ],
     "correct": "\\(2\\)",
-    "solution": "\\(y'' + \\omega^2 y = 0\\) → \\(\\omega^2=4 \\Rightarrow \\omega=2\\). T\u1ea7n s\u1ed1 g\u00f3c l\u00e0 2.",
+    "solution": "\\(y'' + \\omega^2 y = 0\\) → \\(\\omega^2=4 \\Rightarrow \\omega=2\\). Tần số góc là 2.",
     "quick": "\\(\\omega = \\sqrt{4}=2\\)",
     "casio": ""
   },
   {
     "id": 33,
     "type": "application_oscillation",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y'' + 2y' + 5y = 0\\) m\u00f4 t\u1ea3 dao \u0111\u1ed9ng t\u1eaft d\u1ea7n v\u1edbi t\u1ea7n s\u1ed1 g\u00f3c dao \u0111\u1ed9ng ri\u00eang (damped frequency) l\u00e0?",
+    "question": "Phương trình \\(y'' + 2y' + 5y = 0\\) mô tả dao động tắt dần với tần số góc dao động riêng (damped frequency) là?",
+    "matrix": null,
     "options": [
       "\\(2\\)",
       "\\(1\\)",
@@ -490,14 +523,15 @@
       "\\(\\sqrt{3}\\)"
     ],
     "correct": "\\(2\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r^2+2r+5=0 \\Rightarrow r=-1\\pm2i\\). T\u1ea7n s\u1ed1 g\u00f3c ri\u00eang (ph\u1ea7n \u1ea3o) l\u00e0 2.",
-    "quick": "\\(\\omega = \\sqrt{5-1^2}=2\\) ho\u1eb7c nh\u00ecn tr\u1ef1c ti\u1ebfp ph\u1ea7n \u1ea3o",
+    "solution": "Phương trình đặc trưng: \\(r^2+2r+5=0 \\Rightarrow r=-1\\pm2i\\). Tần số góc riêng (phần ảo) là 2.",
+    "quick": "\\(\\omega = \\sqrt{5-1^2}=2\\) hoặc nhìn trực tiếp phần ảo",
     "casio": ""
   },
   {
     "id": 34,
     "type": "application_circuit",
-    "question": "M\u1ea1ch RLC n\u1ed1i ti\u1ebfp \u0111\u01b0\u1ee3c m\u00f4 t\u1ea3 b\u1edfi ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n c\u1ea5p 2 n\u00e0o \u0111\u1ed1i v\u1edbi \u0111i\u1ec7n t\u00edch \\(q(t)\\)?",
+    "question": "Mạch RLC nối tiếp được mô tả bởi phương trình vi phân cấp 2 nào đối với điện tích \\(q(t)\\)?",
+    "matrix": null,
     "options": [
       "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
       "\\(Lq'' + Cq' + Rq = E(t)\\)",
@@ -505,14 +539,15 @@
       "\\(\\frac{1}{C}q'' + Rq' + Lq = E(t)\\)"
     ],
     "correct": "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
-    "solution": "\u0110\u1ecbnh lu\u1eadt Kirchhoff: \\(L\\frac{d^2q}{dt^2} + R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\).",
-    "quick": "M\u1ea1ch RLC n\u1ed1i ti\u1ebfp: \\(Lq'' + Rq' + q/C = E(t)\\)",
+    "solution": "Định luật Kirchhoff: \\(L\\frac{d^2q}{dt^2} + R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\).",
+    "quick": "Mạch RLC nối tiếp: \\(Lq'' + Rq' + q/C = E(t)\\)",
     "casio": ""
   },
   {
     "id": 35,
     "type": "application_circuit",
-    "question": "Trong m\u1ea1ch RLC, n\u1ebfu \\(R=0\\), ph\u01b0\u01a1ng tr\u00ecnh tr\u1edf th\u00e0nh \\(Lq'' + \\frac{1}{C}q = 0\\). T\u1ea7n s\u1ed1 g\u00f3c ri\u00eang c\u1ee7a m\u1ea1ch l\u00e0?",
+    "question": "Trong mạch RLC, nếu \\(R=0\\), phương trình trở thành \\(Lq'' + \\frac{1}{C}q = 0\\). Tần số góc riêng của mạch là?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{\\sqrt{LC}}\\)",
       "\\(\\sqrt{LC}\\)",
@@ -520,29 +555,31 @@
       "\\(\\frac{R}{L}\\)"
     ],
     "correct": "\\(\\frac{1}{\\sqrt{LC}}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \\(q'' + \\frac{1}{LC}q = 0\\) → \\(\\omega = \\frac{1}{\\sqrt{LC}}\\).",
-    "quick": "T\u1ea7n s\u1ed1 c\u1ed9ng h\u01b0\u1edfng ri\u00eang c\u1ee7a m\u1ea1ch LC: \\(\\omega_0 = 1/\\sqrt{LC}\\)",
+    "solution": "Phương trình \\(q'' + \\frac{1}{LC}q = 0\\) → \\(\\omega = \\frac{1}{\\sqrt{LC}}\\).",
+    "quick": "Tần số cộng hưởng riêng của mạch LC: \\(\\omega_0 = 1/\\sqrt{LC}\\)",
     "casio": ""
   },
   {
     "id": 36,
     "type": "higher_order_reduction",
-    "question": "\u0110\u1ec3 gi\u1ea3m c\u1ea5p ph\u01b0\u01a1ng tr\u00ecnh \\(y'' = f(y, y')\\) (khuy\u1ebft x), ta \u0111\u1eb7t?",
+    "question": "Để giảm cấp phương trình \\(y'' = f(y, y')\\) (khuyết x), ta đặt?",
+    "matrix": null,
     "options": [
-      "\\(p = y'\\) v\u00e0 coi \\(y\\) l\u00e0 bi\u1ebfn",
+      "\\(p = y'\\) và coi \\(y\\) là biến",
       "\\(p = y\\)",
       "\\(p = y''\\)",
       "\\(p = x\\)"
     ],
-    "correct": "\\(p = y'\\) v\u00e0 coi \\(y\\) l\u00e0 bi\u1ebfn",
-    "solution": "Khi khuy\u1ebft x, \u0111\u1eb7t \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\).",
-    "quick": "D\u1ea1ng \\(F(y, y', y'') = 0\\): \u0111\u1eb7t \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\)",
+    "correct": "\\(p = y'\\) và coi \\(y\\) là biến",
+    "solution": "Khi khuyết x, đặt \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\).",
+    "quick": "Dạng \\(F(y, y', y'') = 0\\): đặt \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\)",
     "casio": ""
   },
   {
     "id": 37,
     "type": "higher_order_reduction",
-    "question": "Gi\u1ea3i \\(y'' = 2y(y')^3\\) b\u1eb1ng c\u00e1ch \u0111\u1eb7t \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\). Ph\u01b0\u01a1ng tr\u00ecnh tr\u1edf th\u00e0nh?",
+    "question": "Giải \\(y'' = 2y(y')^3\\) bằng cách đặt \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\). Phương trình trở thành?",
+    "matrix": null,
     "options": [
       "\\(p\\frac{dp}{dy} = 2yp^3\\)",
       "\\(\\frac{dp}{dy} = 2yp^2\\)",
@@ -550,14 +587,15 @@
       "\\(\\frac{dp}{dy} = 2yp\\)"
     ],
     "correct": "\\(p\\frac{dp}{dy} = 2yp^3\\)",
-    "solution": "Thay tr\u1ef1c ti\u1ebfp \\(y'' = p\\frac{dp}{dy}\\) v\u00e0o \\(y'' = 2y(y')^3\\): \\(p\\frac{dp}{dy} = 2yp^3\\).",
+    "solution": "Thay trực tiếp \\(y'' = p\\frac{dp}{dy}\\) vào \\(y'' = 2y(y')^3\\): \\(p\\frac{dp}{dy} = 2yp^3\\).",
     "quick": "\\(y'' = p\\frac{dp}{dy}\\), \\((y')^3 = p^3\\)",
     "casio": ""
   },
   {
     "id": 38,
     "type": "wronskian",
-    "question": "\u0110\u1ecbnh th\u1ee9c Wronski (Wronskian) c\u1ee7a hai h\u00e0m \\(y_1, y_2\\) \u0111\u01b0\u1ee3c \u0111\u1ecbnh ngh\u0129a l\u00e0?",
+    "question": "Định thức Wronski (Wronskian) của hai hàm \\(y_1, y_2\\) được định nghĩa là?",
+    "matrix": null,
     "options": [
       "\\(W = y_1y_2' - y_1'y_2\\)",
       "\\(W = y_1y_2 + y_1'y_2'\\)",
@@ -566,13 +604,14 @@
     ],
     "correct": "\\(W = y_1y_2' - y_1'y_2\\)",
     "solution": "Wronskian \\(W(y_1,y_2) = \\begin{vmatrix} y_1 & y_2 \\\\ y_1' & y_2' \\end{vmatrix} = y_1y_2' - y_1'y_2\\).",
-    "quick": "\\(W = y_1y_2' - y_1'y_2\\) (kh\u00e1c 0 th\u00ec \u0111\u1ed9c l\u1eadp tuy\u1ebfn t\u00ednh)",
+    "quick": "\\(W = y_1y_2' - y_1'y_2\\) (khác 0 thì độc lập tuyến tính)",
     "casio": ""
   },
   {
     "id": 39,
     "type": "wronskian",
-    "question": "Wronskian c\u1ee7a \\(y_1 = e^{x}, y_2 = e^{2x}\\) l\u00e0?",
+    "question": "Wronskian của \\(y_1 = e^{x}, y_2 = e^{2x}\\) là?",
+    "matrix": null,
     "options": [
       "\\(e^{3x}\\)",
       "\\(2e^{3x}\\)",
@@ -580,14 +619,15 @@
       "\\(0\\)"
     ],
     "correct": "\\(e^{3x}\\)",
-    "solution": "\\(W = e^{x}\\cdot2e^{2x} - e^{x}\\cdot e^{2x} = 2e^{3x} - e^{3x} = e^{3x} \\neq 0\\) → \u0111\u1ed9c l\u1eadp tuy\u1ebfn t\u00ednh.",
+    "solution": "\\(W = e^{x}\\cdot2e^{2x} - e^{x}\\cdot e^{2x} = 2e^{3x} - e^{3x} = e^{3x} \\neq 0\\) → độc lập tuyến tính.",
     "quick": "\\(W = (1\\cdot2 - 1\\cdot1)e^{(1+2)x}=1\\cdot e^{3x}\\)",
     "casio": ""
   },
   {
     "id": 40,
     "type": "wronskian",
-    "question": "Wronskian c\u1ee7a \\(y_1 = x, y_2 = x^2\\) l\u00e0?",
+    "question": "Wronskian của \\(y_1 = x, y_2 = x^2\\) là?",
+    "matrix": null,
     "options": [
       "\\(x^2\\)",
       "\\(-x^2\\)",
@@ -602,22 +642,24 @@
   {
     "id": 41,
     "type": "nonhomogeneous_superposition",
-    "question": "Nguy\u00ean l\u00fd ch\u1ed3ng ch\u1ea5t (superposition) cho ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n tuy\u1ebfn t\u00ednh kh\u00f4ng thu\u1ea7n nh\u1ea5t ph\u00e1t bi\u1ec3u:",
+    "question": "Nguyên lý chồng chất (superposition) cho phương trình vi phân tuyến tính không thuần nhất phát biểu:",
+    "matrix": null,
     "options": [
-      "N\u1ebfu \\(y_{p1}\\) l\u00e0 nghi\u1ec7m ri\u00eang \u1ee9ng v\u1edbi v\u1ebf ph\u1ea3i \\(f_1\\) v\u00e0 \\(y_{p2}\\) \u1ee9ng v\u1edbi \\(f_2\\) th\u00ec \\(y_{p1}+y_{p2}\\) l\u00e0 nghi\u1ec7m ri\u00eang \u1ee9ng v\u1edbi \\(f_1+f_2\\)",
-      "Nghi\u1ec7m t\u1ed5ng qu\u00e1t = nghi\u1ec7m thu\u1ea7n nh\u1ea5t + nghi\u1ec7m ri\u00eang",
-      "C\u1ea3 A v\u00e0 B",
-      "Kh\u00f4ng c\u00f3 \u0111\u00e1p \u00e1n n\u00e0o"
+      "Nếu \\(y_{p1}\\) là nghiệm riêng ứng với vế phải \\(f_1\\) và \\(y_{p2}\\) ứng với \\(f_2\\) thì \\(y_{p1}+y_{p2}\\) là nghiệm riêng ứng với \\(f_1+f_2\\)",
+      "Nghiệm tổng quát = nghiệm thuần nhất + nghiệm riêng",
+      "Cả A và B",
+      "Không có đáp án nào"
     ],
-    "correct": "C\u1ea3 A v\u00e0 B",
-    "solution": "Nguy\u00ean l\u00fd ch\u1ed3ng ch\u1ea5t: \u0111\u00fang c\u1ea3 hai \u00fd A v\u00e0 B \u0111\u1ec1u l\u00e0 t\u00ednh ch\u1ea5t c\u01a1 b\u1ea3n c\u1ee7a PTVP tuy\u1ebfn t\u00ednh.",
-    "quick": "Superposition: \\(y_{p1}+y_{p2}\\) \u1ee9ng v\u1edbi \\(f_1+f_2\\); nghi\u1ec7m t\u1ed5ng qu\u00e1t = \\(y_h + y_p\\)",
+    "correct": "Cả A và B",
+    "solution": "Nguyên lý chồng chất: đúng cả hai ý A và B đều là tính chất cơ bản của PTVP tuyến tính.",
+    "quick": "Superposition: \\(y_{p1}+y_{p2}\\) ứng với \\(f_1+f_2\\); nghiệm tổng quát = \\(y_h + y_p\\)",
     "casio": ""
   },
   {
     "id": 42,
     "type": "nonhomogeneous_superposition",
-    "question": "Cho \\(y'' - y = e^{x} + \\sin x\\). N\u1ebfu \\(y_{p1} = \\frac{x}{2}e^{x}\\) l\u00e0 nghi\u1ec7m ri\u00eang \u1ee9ng v\u1edbi \\(e^{x}\\) v\u00e0 \\(y_{p2} = -\\frac{1}{2}\\sin x\\) \u1ee9ng v\u1edbi \\(\\sin x\\), th\u00ec nghi\u1ec7m ri\u00eang c\u1ee7a ph\u01b0\u01a1ng tr\u00ecnh \u0111\u00e3 cho l\u00e0?",
+    "question": "Cho \\(y'' - y = e^{x} + \\sin x\\). Nếu \\(y_{p1} = \\frac{x}{2}e^{x}\\) là nghiệm riêng ứng với \\(e^{x}\\) và \\(y_{p2} = -\\frac{1}{2}\\sin x\\) ứng với \\(\\sin x\\), thì nghiệm riêng của phương trình đã cho là?",
+    "matrix": null,
     "options": [
       "\\(\\frac{x}{2}e^{x} - \\frac{1}{2}\\sin x\\)",
       "\\(\\frac{x}{2}e^{x} + \\frac{1}{2}\\sin x\\)",
@@ -625,29 +667,31 @@
       "\\(\\frac{1}{2}e^{x} - \\frac{1}{2}\\sin x\\)"
     ],
     "correct": "\\(\\frac{x}{2}e^{x} - \\frac{1}{2}\\sin x\\)",
-    "solution": "Nguy\u00ean l\u00fd ch\u1ed3ng ch\u1ea5t: nghi\u1ec7m ri\u00eang \u1ee9ng v\u1edbi t\u1ed5ng v\u1ebf ph\u1ea3i = t\u1ed5ng c\u00e1c nghi\u1ec7m ri\u00eang t\u01b0\u01a1ng \u1ee9ng.",
+    "solution": "Nguyên lý chồng chất: nghiệm riêng ứng với tổng vế phải = tổng các nghiệm riêng tương ứng.",
     "quick": "\\(y_p = y_{p1} + y_{p2}\\)",
     "casio": ""
   },
   {
     "id": 43,
     "type": "cauchy_euler_nonhomogeneous",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(x^2y'' - 2xy' + 2y = x\\ln x\\) c\u00f3 th\u1ec3 t\u00ecm b\u1eb1ng ph\u01b0\u01a1ng ph\u00e1p?",
+    "question": "Nghiệm riêng của \\(x^2y'' - 2xy' + 2y = x\\ln x\\) có thể tìm bằng phương pháp?",
+    "matrix": null,
     "options": [
-      "Bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1",
-      "H\u1ec7 s\u1ed1 b\u1ea5t \u0111\u1ecbnh v\u1edbi d\u1ea1ng \u0111\u1eb7c bi\u1ec7t",
-      "T\u00e1ch bi\u1ebfn",
-      "Kh\u00f4ng gi\u1ea3i \u0111\u01b0\u1ee3c"
+      "Biến thiên hằng số",
+      "Hệ số bất định với dạng đặc biệt",
+      "Tách biến",
+      "Không giải được"
     ],
-    "correct": "Bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1",
-    "solution": "V\u1ebf ph\u1ea3i \\(x\\ln x\\) kh\u00f4ng ph\u1ea3i d\u1ea1ng \u0111\u1eb7c bi\u1ec7t c\u1ee7a ph\u01b0\u01a1ng ph\u00e1p h\u1ec7 s\u1ed1 b\u1ea5t \u0111\u1ecbnh → d\u00f9ng bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1.",
-    "quick": "V\u1ebf ph\u1ea3i kh\u00f4ng ph\u1ea3i m\u0169, \u0111a th\u1ee9c, sin, cos, t\u00edch c\u1ee7a ch\u00fang → bi\u1ebfn thi\u00ean h\u1eb1ng s\u1ed1",
+    "correct": "Biến thiên hằng số",
+    "solution": "Vế phải \\(x\\ln x\\) không phải dạng đặc biệt của phương pháp hệ số bất định → dùng biến thiên hằng số.",
+    "quick": "Vế phải không phải mũ, đa thức, sin, cos, tích của chúng → biến thiên hằng số",
     "casio": ""
   },
   {
     "id": 44,
     "type": "constant_coeff_quick",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y'' - 2y' - 3y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y'' - 2y' - 3y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1e^{3x} + C_2e^{-x}\\)",
       "\\(y = C_1e^{x} + C_2e^{-3x}\\)",
@@ -655,14 +699,15 @@
       "\\(y = C_1\\cos 3x + C_2\\sin 3x\\)"
     ],
     "correct": "\\(y = C_1e^{3x} + C_2e^{-x}\\)",
-    "solution": "\\(r^2-2r-3=0 \\Rightarrow r=3,-1\\) → nghi\u1ec7m \\(e^{3x}, e^{-x}\\).",
-    "quick": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng: \\(r=3, r=-1\\)",
+    "solution": "\\(r^2-2r-3=0 \\Rightarrow r=3,-1\\) → nghiệm \\(e^{3x}, e^{-x}\\).",
+    "quick": "Phương trình đặc trưng: \\(r=3, r=-1\\)",
     "casio": ""
   },
   {
     "id": 45,
     "type": "constant_coeff_quick",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y'' + 2y' + 2y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y'' + 2y' + 2y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = e^{-x}(C_1\\cos x + C_2\\sin x)\\)",
       "\\(y = e^{x}(C_1\\cos x + C_2\\sin x)\\)",
@@ -671,13 +716,14 @@
     ],
     "correct": "\\(y = e^{-x}(C_1\\cos x + C_2\\sin x)\\)",
     "solution": "\\(r^2+2r+2=0 \\Rightarrow r=-1\\pm i\\). \\(\\alpha=-1, \\beta=1\\) → \\(y = e^{-x}(C_1\\cos x + C_2\\sin x)\\).",
-    "quick": "Nghi\u1ec7m ph\u1ee9c \\(-1\\pm i\\) → \\(e^{-x}(\\cos x, \\sin x)\\)",
+    "quick": "Nghiệm phức \\(-1\\pm i\\) → \\(e^{-x}(\\cos x, \\sin x)\\)",
     "casio": ""
   },
   {
     "id": 46,
     "type": "constant_coeff_quick",
-    "question": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t c\u1ee7a \\(y'' + 4y' + 4y = 0\\) l\u00e0?",
+    "question": "Nghiệm tổng quát của \\(y'' + 4y' + 4y = 0\\) là?",
+    "matrix": null,
     "options": [
       "\\(y = (C_1 + C_2x)e^{-2x}\\)",
       "\\(y = C_1e^{2x} + C_2xe^{2x}\\)",
@@ -685,14 +731,15 @@
       "\\(y = C_1\\cos 2x + C_2\\sin 2x\\)"
     ],
     "correct": "\\(y = (C_1 + C_2x)e^{-2x}\\)",
-    "solution": "\\(r^2+4r+4=0 \\Rightarrow (r+2)^2=0\\) → nghi\u1ec7m k\u00e9p \\(r=-2\\).",
-    "quick": "Nghi\u1ec7m k\u00e9p \\(r=-2\\) → \\((C_1+C_2x)e^{-2x}\\)",
+    "solution": "\\(r^2+4r+4=0 \\Rightarrow (r+2)^2=0\\) → nghiệm kép \\(r=-2\\).",
+    "quick": "Nghiệm kép \\(r=-2\\) → \\((C_1+C_2x)e^{-2x}\\)",
     "casio": ""
   },
   {
     "id": 47,
     "type": "reducible_second_order",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh \\(y'' + (y')^2 = 0\\) c\u00f3 th\u1ec3 gi\u1ea3m c\u1ea5p b\u1eb1ng c\u00e1ch \u0111\u1eb7t?",
+    "question": "Phương trình \\(y'' + (y')^2 = 0\\) có thể giảm cấp bằng cách đặt?",
+    "matrix": null,
     "options": [
       "\\(p = y'\\)",
       "\\(p = y\\)",
@@ -700,14 +747,15 @@
       "\\(p = x\\)"
     ],
     "correct": "\\(p = y'\\)",
-    "solution": "Khuy\u1ebft y: \u0111\u1eb7t \\(p=y'\\), \\(p' + p^2 = 0\\), t\u00e1ch bi\u1ebfn.",
-    "quick": "D\u1ea1ng \\(y'' = f(y')\\): \u0111\u1eb7t \\(p=y'\\)",
+    "solution": "Khuyết y: đặt \\(p=y'\\), \\(p' + p^2 = 0\\), tách biến.",
+    "quick": "Dạng \\(y'' = f(y')\\): đặt \\(p=y'\\)",
     "casio": ""
   },
   {
     "id": 48,
     "type": "cauchy_euler",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh Cauchy–Euler \\(x^2y'' + xy' - y = 0\\) c\u00f3 nghi\u1ec7m t\u1ed5ng qu\u00e1t l\u00e0?",
+    "question": "Phương trình Cauchy–Euler \\(x^2y'' + xy' - y = 0\\) có nghiệm tổng quát là?",
+    "matrix": null,
     "options": [
       "\\(y = C_1x + C_2x^{-1}\\)",
       "\\(y = C_1e^{x} + C_2e^{-x}\\)",
@@ -715,14 +763,15 @@
       "\\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\)"
     ],
     "correct": "\\(y = C_1x + C_2x^{-1}\\)",
-    "solution": "\\(r(r-1)+r-1=0 \\Rightarrow r^2-1=0 \\Rightarrow r=\\pm1\\) → nghi\u1ec7m \\(x^1, x^{-1}\\).",
+    "solution": "\\(r(r-1)+r-1=0 \\Rightarrow r^2-1=0 \\Rightarrow r=\\pm1\\) → nghiệm \\(x^1, x^{-1}\\).",
     "quick": "\\(r^2-1=0\\) → \\(r=1, -1\\) → \\(x, 1/x\\)",
     "casio": ""
   },
   {
     "id": 49,
     "type": "initial_value",
-    "question": "Gi\u1ea3i \\(y'' - y = 0\\), \\(y(0)=1, y'(0)=1\\). Nghi\u1ec7m l\u00e0?",
+    "question": "Giải \\(y'' - y = 0\\), \\(y(0)=1, y'(0)=1\\). Nghiệm là?",
+    "matrix": null,
     "options": [
       "\\(y = e^{x}\\)",
       "\\(y = e^{-x}\\)",
@@ -730,14 +779,15 @@
       "\\(y = \\sinh x\\)"
     ],
     "correct": "\\(y = e^{x}\\)",
-    "solution": "Nghi\u1ec7m t\u1ed5ng qu\u00e1t: \\(y = C_1e^{x} + C_2e^{-x}\\). \\(y(0)=C_1+C_2=1\\), \\(y'(0)=C_1-C_2=1\\) → \\(C_1=1, C_2=0\\) → \\(y=e^{x}\\).",
-    "quick": "Gi\u1ea3i h\u1ec7 \\(C_1+C_2=1, C_1-C_2=1\\) → \\(C_1=1, C_2=0\\)",
+    "solution": "Nghiệm tổng quát: \\(y = C_1e^{x} + C_2e^{-x}\\). \\(y(0)=C_1+C_2=1\\), \\(y'(0)=C_1-C_2=1\\) → \\(C_1=1, C_2=0\\) → \\(y=e^{x}\\).",
+    "quick": "Giải hệ \\(C_1+C_2=1, C_1-C_2=1\\) → \\(C_1=1, C_2=0\\)",
     "casio": ""
   },
   {
     "id": 50,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghi\u1ec7m ri\u00eang c\u1ee7a \\(y'' - 2y' + y = e^{x}\\) b\u1eb1ng ph\u01b0\u01a1ng ph\u00e1p h\u1ec7 s\u1ed1 b\u1ea5t \u0111\u1ecbnh l\u00e0?",
+    "question": "Nghiệm riêng của \\(y'' - 2y' + y = e^{x}\\) bằng phương pháp hệ số bất định là?",
+    "matrix": null,
     "options": [
       "\\(\\frac{x^2}{2}e^{x}\\)",
       "\\(xe^{x}\\)",
@@ -745,8 +795,8 @@
       "\\(x^2e^{x}\\)"
     ],
     "correct": "\\(\\frac{x^2}{2}e^{x}\\)",
-    "solution": "Ph\u01b0\u01a1ng tr\u00ecnh \u0111\u1eb7c tr\u01b0ng \\(r=1\\) (k\u00e9p). Nghi\u1ec7m ri\u00eang d\u1ea1ng \\(Ax^2e^{x}\\). Thay v\u00e0o t\u00ecm \\(A=1/2\\).",
-    "quick": "Tr\u00f9ng nghi\u1ec7m k\u00e9p \\(r=1\\) → nh\u00e2n \\(x^2\\): \\(Ax^2e^{x}\\) → \\(A=1/2\\)",
+    "solution": "Phương trình đặc trưng \\(r=1\\) (kép). Nghiệm riêng dạng \\(Ax^2e^{x}\\). Thay vào tìm \\(A=1/2\\).",
+    "quick": "Trùng nghiệm kép \\(r=1\\) → nhân \\(x^2\\): \\(Ax^2e^{x}\\) → \\(A=1/2\\)",
     "casio": ""
   }
 ]

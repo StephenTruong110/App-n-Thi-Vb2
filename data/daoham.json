@@ -1,7 +1,9 @@
 [
   {
+    "id": 1,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{2}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2x\\)",
       "\\(x\\)",
@@ -14,8 +16,10 @@
     "casio": "d/dx(x^2)"
   },
   {
+    "id": 2,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{3}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(3x^{2}\\)",
       "\\(x^{2}\\)",
@@ -28,8 +32,10 @@
     "casio": "d/dx(x^3)"
   },
   {
+    "id": 3,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{5}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(5x^{4}\\)",
       "\\(4x^{5}\\)",
@@ -42,8 +48,10 @@
     "casio": "d/dx(x^5)"
   },
   {
+    "id": 4,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{10}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(10x^{9}\\)",
       "\\(9x^{10}\\)",
@@ -56,8 +64,10 @@
     "casio": "d/dx(x^10)"
   },
   {
+    "id": 5,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{-3}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-3x^{-4}\\)",
       "\\(3x^{-4}\\)",
@@ -70,8 +80,10 @@
     "casio": "d/dx(x^-3)"
   },
   {
+    "id": 6,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sqrt{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{2\\sqrt{x}}\\)",
       "\\(\\sqrt{x}\\)",
@@ -84,8 +96,10 @@
     "casio": "d/dx(sqrt(x))"
   },
   {
+    "id": 7,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sqrt[3]{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\)",
       "\\(\\frac{1}{3\\sqrt[3]{x}}\\)",
@@ -98,8 +112,10 @@
     "casio": "d/dx(x^(1/3))"
   },
   {
+    "id": 8,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\frac{1}{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\frac{1}{x^{2}}\\)",
       "\\(\\frac{1}{x^{2}}\\)",
@@ -112,8 +128,10 @@
     "casio": "d/dx(1/x)"
   },
   {
+    "id": 9,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\frac{1}{x^{4}}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\frac{4}{x^{5}}\\)",
       "\\(\\frac{4}{x^{5}}\\)",
@@ -126,8 +144,10 @@
     "casio": "d/dx(1/x^4)"
   },
   {
+    "id": 10,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{2}+x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2x+1\\)",
       "\\(2x\\)",
@@ -140,8 +160,10 @@
     "casio": "d/dx(x^2+x)"
   },
   {
+    "id": 11,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=3x^{2}-2x+5\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(6x-2\\)",
       "\\(3x-2\\)",
@@ -154,8 +176,10 @@
     "casio": "d/dx(3x^2-2x+5)"
   },
   {
+    "id": 12,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sin x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\cos x\\)",
       "\\(-\\sin x\\)",
@@ -168,8 +192,10 @@
     "casio": "d/dx(sin(x))"
   },
   {
+    "id": 13,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\cos x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\sin x\\)",
       "\\(\\sin x\\)",
@@ -182,8 +208,10 @@
     "casio": "d/dx(cos(x))"
   },
   {
+    "id": 14,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\tan x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{\\cos^{2} x}\\)",
       "\\(\\cos x\\)",
@@ -196,8 +224,10 @@
     "casio": "d/dx(tan(x))"
   },
   {
+    "id": 15,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\cot x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\frac{1}{\\sin^{2} x}\\)",
       "\\(\\frac{1}{\\sin^{2} x}\\)",
@@ -210,8 +240,10 @@
     "casio": "d/dx(cot(x))"
   },
   {
+    "id": 16,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sin(2x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2\\cos(2x)\\)",
       "\\(\\cos(2x)\\)",
@@ -224,8 +256,10 @@
     "casio": "d/dx(sin(2x))"
   },
   {
+    "id": 17,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\cos(3x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-3\\sin(3x)\\)",
       "\\(3\\sin(3x)\\)",
@@ -238,8 +272,10 @@
     "casio": "d/dx(cos(3x))"
   },
   {
+    "id": 18,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\tan(2x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{2}{\\cos^{2}(2x)}\\)",
       "\\(\\frac{1}{\\cos^{2}(2x)}\\)",
@@ -252,8 +288,10 @@
     "casio": "d/dx(tan(2x))"
   },
   {
+    "id": 19,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sin^{2}x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2\\sin x\\cos x\\)",
       "\\(\\sin x\\cos x\\)",
@@ -266,8 +304,10 @@
     "casio": "d/dx((sin(x))^2)"
   },
   {
+    "id": 20,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\cos^{2}x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-2\\cos x\\sin x\\)",
       "\\(2\\cos x\\sin x\\)",
@@ -280,8 +320,10 @@
     "casio": "d/dx((cos(x))^2)"
   },
   {
+    "id": 21,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=e^{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(e^{x}\\)",
       "\\(x e^{x}\\)",
@@ -294,8 +336,10 @@
     "casio": "d/dx(exp(x))"
   },
   {
+    "id": 22,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=e^{2x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2e^{2x}\\)",
       "\\(e^{2x}\\)",
@@ -308,8 +352,10 @@
     "casio": "d/dx(exp(2x))"
   },
   {
+    "id": 23,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=e^{-x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-e^{-x}\\)",
       "\\(e^{-x}\\)",
@@ -322,8 +368,10 @@
     "casio": "d/dx(exp(-x))"
   },
   {
+    "id": 24,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\ln x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{x}\\)",
       "\\(\\ln x\\)",
@@ -336,8 +384,10 @@
     "casio": "d/dx(ln(x))"
   },
   {
+    "id": 25,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\ln(2x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{x}\\)",
       "\\(\\frac{1}{2x}\\)",
@@ -350,8 +400,10 @@
     "casio": "d/dx(ln(2x))"
   },
   {
+    "id": 26,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\ln(x^{2}+1)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{2x}{x^{2}+1}\\)",
       "\\(\\frac{1}{x^{2}+1}\\)",
@@ -364,8 +416,10 @@
     "casio": "d/dx(ln(x^2+1))"
   },
   {
+    "id": 27,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\log_{2}x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{x\\ln2}\\)",
       "\\(\\frac{1}{x}\\)",
@@ -378,8 +432,10 @@
     "casio": "d/dx(log(2,x))"
   },
   {
+    "id": 28,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x\\ln x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\ln x+1\\)",
       "\\(\\ln x\\)",
@@ -392,8 +448,10 @@
     "casio": "d/dx(x*ln(x))"
   },
   {
+    "id": 29,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\frac{\\sin x}{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{x\\cos x-\\sin x}{x^{2}}\\)",
       "\\(\\frac{\\cos x}{x}\\)",
@@ -406,8 +464,10 @@
     "casio": "d/dx(sin(x)/x)"
   },
   {
+    "id": 30,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{2}e^{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(e^{x}(x^{2}+2x)\\)",
       "\\(2xe^{x}\\)",
@@ -420,8 +480,10 @@
     "casio": "d/dx(x^2*exp(x))"
   },
   {
+    "id": 31,
     "type": "derivative",
     "question": "Đạo hàm cấp 2 của \\(f(x)=x^{3}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(6x\\)",
       "\\(3x\\)",
@@ -434,8 +496,10 @@
     "casio": "d/dx(d/dx(x^3))"
   },
   {
+    "id": 32,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\arcsin x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{\\sqrt{1-x^{2}}}\\)",
       "\\(\\frac{1}{1+x^{2}}\\)",
@@ -448,8 +512,10 @@
     "casio": "d/dx(asin(x))"
   },
   {
+    "id": 33,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\arctan x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{1+x^{2}}\\)",
       "\\(\\frac{1}{1-x^{2}}\\)",
@@ -462,8 +528,10 @@
     "casio": "d/dx(atan(x))"
   },
   {
+    "id": 34,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=2^{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2^{x}\\ln2\\)",
       "\\(2^{x}\\)",
@@ -476,8 +544,10 @@
     "casio": "d/dx(2^x)"
   },
   {
+    "id": 35,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(x^{x}(\\ln x+1)\\)",
       "\\(x^{x}\\ln x\\)",
@@ -490,8 +560,10 @@
     "casio": "d/dx(x^x)"
   },
   {
+    "id": 36,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sqrt{\\sin x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{\\cos x}{2\\sqrt{\\sin x}}\\)",
       "\\(\\frac{\\sin x}{2\\sqrt{\\cos x}}\\)",
@@ -504,8 +576,10 @@
     "casio": "d/dx(sqrt(sin(x)))"
   },
   {
+    "id": 37,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\cos(\\ln x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\frac{\\sin(\\ln x)}{x}\\)",
       "\\(\\frac{\\sin(\\ln x)}{x}\\)",
@@ -518,8 +592,10 @@
     "casio": "d/dx(cos(ln(x)))"
   },
   {
+    "id": 38,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\cos x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\tan x\\)",
       "\\(\\tan x\\)",
@@ -532,8 +608,10 @@
     "casio": "d/dx(ln(cos(x)))"
   },
   {
+    "id": 39,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\frac{1}{\\ln x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\frac{1}{x(\\ln x)^{2}}\\)",
       "\\(\\frac{1}{x\\ln x}\\)",
@@ -546,8 +624,10 @@
     "casio": "d/dx(1/ln(x))"
   },
   {
+    "id": 40,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{2}\\sin x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2x\\sin x+x^{2}\\cos x\\)",
       "\\(2x\\sin x-x^{2}\\cos x\\)",
@@ -560,8 +640,10 @@
     "casio": "d/dx(x^2*sin(x))"
   },
   {
+    "id": 41,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\frac{\\ln x}{x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1-\\ln x}{x^{2}}\\)",
       "\\(\\frac{\\ln x-1}{x^{2}}\\)",
@@ -574,8 +656,10 @@
     "casio": "d/dx(ln(x)/x)"
   },
   {
+    "id": 42,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\tan^{2}x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\)",
       "\\(2\\tan x\\)",
@@ -588,8 +672,10 @@
     "casio": "d/dx((tan(x))^2)"
   },
   {
+    "id": 43,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sin(\\cos x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\cos(\\cos x)\\sin x\\)",
       "\\(\\cos(\\cos x)\\sin x\\)",
@@ -602,8 +688,10 @@
     "casio": "d/dx(sin(cos(x)))"
   },
   {
+    "id": 44,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sqrt{x^{2}+1}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{x}{\\sqrt{x^{2}+1}}\\)",
       "\\(\\frac{2x}{\\sqrt{x^{2}+1}}\\)",
@@ -616,8 +704,10 @@
     "casio": "d/dx(sqrt(x^2+1))"
   },
   {
+    "id": 45,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=e^{\\sin x}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(e^{\\sin x}\\cos x\\)",
       "\\(e^{\\sin x}\\)",
@@ -630,8 +720,10 @@
     "casio": "d/dx(exp(sin(x)))"
   },
   {
+    "id": 46,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\sin x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\cot x\\)",
       "\\(-\\cot x\\)",
@@ -644,8 +736,10 @@
     "casio": "d/dx(ln(sin(x)))"
   },
   {
+    "id": 47,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=x^{2}\\ln x\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(2x\\ln x+x\\)",
       "\\(2x\\ln x\\)",
@@ -658,8 +752,10 @@
     "casio": "d/dx(x^2*ln(x))"
   },
   {
+    "id": 48,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\frac{x+1}{x-1}\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-\\frac{2}{(x-1)^{2}}\\)",
       "\\(\\frac{2}{(x-1)^{2}}\\)",
@@ -672,8 +768,10 @@
     "casio": "d/dx((x+1)/(x-1))"
   },
   {
+    "id": 49,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\cos^{2}(2x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(-4\\cos(2x)\\sin(2x)\\)",
       "\\(-2\\cos(2x)\\sin(2x)\\)",
@@ -686,8 +784,10 @@
     "casio": "d/dx((cos(2x))^2)"
   },
   {
+    "id": 50,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\ln x)\\) là gì?",
+    "matrix": null,
     "options": [
       "\\(\\frac{1}{x\\ln x}\\)",
       "\\(\\frac{1}{\\ln x}\\)",
@@ -696,6 +796,7 @@
     ],
     "correct": "\\(\\frac{1}{x\\ln x}\\)",
     "solution": "\\((\\ln(\\ln x))'=\\frac{1}{\\ln x}\\cdot\\frac{1}{x}\\)",
-    "quick": "logarit của logarit"
+    "quick": "logarit của logarit",
+    "casio": ""
   }
 ]

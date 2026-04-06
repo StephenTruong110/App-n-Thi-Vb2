@@ -2,7 +2,8 @@
   {
     "id": 1,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 2} (x^2+3x-4)\\)?",
+    "question": "Tính \\(\\lim_{x\\to 2} (x^2+3x-4)\\)?",
+    "matrix": null,
     "options": [
       "\\(6\\)",
       "\\(5\\)",
@@ -10,44 +11,47 @@
       "\\(7\\)"
     ],
     "correct": "\\(6\\)",
-    "solution": "Thay tr\u1ef1c ti\u1ebfp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
-    "quick": "H\u00e0m \u0111a th\u1ee9c → thay s\u1ed1",
+    "solution": "Thay trực tiếp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
+    "quick": "Hàm đa thức → thay số",
     "casio": "CALC x=2"
   },
   {
     "id": 2,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 1} \\dfrac{x^2-1}{x-1}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 1} \\dfrac{x^2-1}{x-1}\\)?",
+    "matrix": null,
     "options": [
       "\\(2\\)",
       "\\(0\\)",
       "\\(1\\)",
-      "Kh\u00f4ng t\u1ed3n t\u1ea1i"
+      "Không tồn tại"
     ],
     "correct": "\\(2\\)",
     "solution": "\\(\\dfrac{(x-1)(x+1)}{x-1}=x+1\\to 2\\) khi \\(x\\to1\\).",
-    "quick": "Kh\u1eed d\u1ea1ng 0/0",
+    "quick": "Khử dạng 0/0",
     "casio": "CALC x=0.999999"
   },
   {
     "id": 3,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{\\sin x}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sin x}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(0\\)",
       "\\(\\infty\\)",
-      "Kh\u00f4ng t\u1ed3n t\u1ea1i"
+      "Không tồn tại"
     ],
     "correct": "\\(1\\)",
-    "solution": "Gi\u1edbi h\u1ea1n c\u01a1 b\u1ea3n: \\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\).",
-    "quick": "L\u01b0\u1ee3ng gi\u00e1c c\u01a1 b\u1ea3n",
+    "solution": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\).",
+    "quick": "Lượng giác cơ bản",
     "casio": "CALC x=0.001"
   },
   {
     "id": 4,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{1-\\cos x}{x^2}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{1-\\cos x}{x^2}\\)?",
+    "matrix": null,
     "options": [
       "\\(\\dfrac{1}{2}\\)",
       "\\(1\\)",
@@ -62,22 +66,24 @@
   {
     "id": 5,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{\\tan x}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\tan x}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(0\\)",
       "\\(\\infty\\)",
-      "Kh\u00f4ng t\u1ed3n t\u1ea1i"
+      "Không tồn tại"
     ],
     "correct": "\\(1\\)",
-    "solution": "\\(\\tan x \\sim x\\) khi \\(x\\to0\\) → gi\u1edbi h\u1ea1n = 1.",
+    "solution": "\\(\\tan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\tan x/x \\to 1\\)",
     "casio": "CALC x=0.001"
   },
   {
     "id": 6,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to \\infty} \\dfrac{3x^2+2x+1}{x^2-5}\\)?",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{3x^2+2x+1}{x^2-5}\\)?",
+    "matrix": null,
     "options": [
       "\\(3\\)",
       "\\(0\\)",
@@ -85,14 +91,15 @@
       "\\(1\\)"
     ],
     "correct": "\\(3\\)",
-    "solution": "Chia t\u1eed v\u00e0 m\u1eabu cho \\(x^2\\): \\(\\dfrac{3+2/x+1/x^2}{1-5/x^2}\\to3\\).",
-    "quick": "H\u1ec7 s\u1ed1 b\u1eadc cao nh\u1ea5t: \\(3/1=3\\)",
+    "solution": "Chia tử và mẫu cho \\(x^2\\): \\(\\dfrac{3+2/x+1/x^2}{1-5/x^2}\\to3\\).",
+    "quick": "Hệ số bậc cao nhất: \\(3/1=3\\)",
     "casio": "CALC x=1e6"
   },
   {
     "id": 7,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0^+} x \\ln x\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0^+} x \\ln x\\)?",
+    "matrix": null,
     "options": [
       "\\(0\\)",
       "\\(-\\infty\\)",
@@ -100,14 +107,15 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "\\(x\\ln x \\to 0\\) khi \\(x\\to0^+\\) (d\u1ea1ng 0·∞, \\(\\ln x\\) ch\u1eadm h\u01a1n \\(x\\)).",
-    "quick": "\\(x\\ln x \\to 0\\) (quen thu\u1ed9c)",
+    "solution": "\\(x\\ln x \\to 0\\) khi \\(x\\to0^+\\) (dạng 0·∞, \\(\\ln x\\) chậm hơn \\(x\\)).",
+    "quick": "\\(x\\ln x \\to 0\\) (quen thuộc)",
     "casio": "CALC x=1e-9"
   },
   {
     "id": 8,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{e^x-1}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{e^x-1}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(0\\)",
@@ -115,14 +123,15 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(1\\)",
-    "solution": "\\(e^x-1 \\sim x\\) khi \\(x\\to0\\) → gi\u1edbi h\u1ea1n = 1.",
+    "solution": "\\(e^x-1 \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\((e^x-1)/x \\to 1\\)",
     "casio": "CALC x=0.001"
   },
   {
     "id": 9,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{\\ln(1+x)}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\ln(1+x)}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(0\\)",
@@ -130,14 +139,15 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(1\\)",
-    "solution": "\\(\\ln(1+x)\\sim x\\) → gi\u1edbi h\u1ea1n = 1.",
+    "solution": "\\(\\ln(1+x)\\sim x\\) → giới hạn = 1.",
     "quick": "\\(\\ln(1+x)/x \\to 1\\)",
     "casio": "CALC x=0.001"
   },
   {
     "id": 10,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to \\infty} \\left(1+\\dfrac{1}{x}\\right)^x\\)?",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\left(1+\\dfrac{1}{x}\\right)^x\\)?",
+    "matrix": null,
     "options": [
       "\\(e\\)",
       "\\(1\\)",
@@ -145,14 +155,15 @@
       "\\(0\\)"
     ],
     "correct": "\\(e\\)",
-    "solution": "\u0110\u00e2y l\u00e0 \u0111\u1ecbnh ngh\u0129a c\u1ee7a \\(e\\): \\(\\lim (1+1/x)^x = e\\).",
-    "quick": "\\(e\\) (c\u00f4ng th\u1ee9c n\u1ed5i ti\u1ebfng)",
+    "solution": "Đây là định nghĩa của \\(e\\): \\(\\lim (1+1/x)^x = e\\).",
+    "quick": "\\(e\\) (công thức nổi tiếng)",
     "casio": "CALC x=1e6"
   },
   {
     "id": 11,
     "type": "limit_basic",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} (1+x)^{1/x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} (1+x)^{1/x}\\)?",
+    "matrix": null,
     "options": [
       "\\(e\\)",
       "\\(1\\)",
@@ -160,14 +171,15 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(e\\)",
-    "solution": "\u0110\u1ed5i bi\u1ebfn \\(t=1/x\\) → \\(\\lim_{t\\to\\infty}(1+1/t)^t=e\\).",
-    "quick": "D\u1ea1ng \\(1^\\infty\\) → \\(e\\)",
+    "solution": "Đổi biến \\(t=1/x\\) → \\(\\lim_{t\\to\\infty}(1+1/t)^t=e\\).",
+    "quick": "Dạng \\(1^\\infty\\) → \\(e\\)",
     "casio": "CALC x=0.001"
   },
   {
     "id": 12,
     "type": "limit_advanced",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{\\sin 2x}{3x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sin 2x}{3x}\\)?",
+    "matrix": null,
     "options": [
       "\\(\\dfrac{2}{3}\\)",
       "\\(\\dfrac{3}{2}\\)",
@@ -182,7 +194,8 @@
   {
     "id": 13,
     "type": "limit_advanced",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{\\sqrt{1+x}-1}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sqrt{1+x}-1}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(\\dfrac{1}{2}\\)",
       "\\(1\\)",
@@ -190,14 +203,15 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
-    "solution": "Nh\u00e2n li\u00ean h\u1ee3p: \\(\\dfrac{(\\sqrt{1+x}-1)(\\sqrt{1+x}+1)}{x(\\sqrt{1+x}+1)}=\\dfrac{x}{x(\\sqrt{1+x}+1)}\\to\\dfrac{1}{2}\\).",
+    "solution": "Nhân liên hợp: \\(\\dfrac{(\\sqrt{1+x}-1)(\\sqrt{1+x}+1)}{x(\\sqrt{1+x}+1)}=\\dfrac{x}{x(\\sqrt{1+x}+1)}\\to\\dfrac{1}{2}\\).",
     "quick": "\\(\\sqrt{1+x}-1 \\sim x/2\\)",
     "casio": "CALC x=0.001"
   },
   {
     "id": 14,
     "type": "limit_advanced",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{\\tan x - \\sin x}{x^3}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\tan x - \\sin x}{x^3}\\)?",
+    "matrix": null,
     "options": [
       "\\(\\dfrac{1}{2}\\)",
       "\\(1\\)",
@@ -206,13 +220,14 @@
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(\\tan x - \\sin x = \\sin x(\\frac{1}{\\cos x}-1)=\\sin x\\cdot\\frac{1-\\cos x}{\\cos x}\\sim x\\cdot\\frac{x^2/2}{1}=\\frac{x^3}{2}\\) → \\(\\lim = 1/2\\).",
-    "quick": "Khai tri\u1ec3n Taylor: \\(\\tan x - \\sin x \\sim x^3/2\\)",
+    "quick": "Khai triển Taylor: \\(\\tan x - \\sin x \\sim x^3/2\\)",
     "casio": "CALC x=0.001"
   },
   {
     "id": 15,
     "type": "limit_advanced",
-    "question": "T\u00ednh \\(\\lim_{x\\to \\infty} \\dfrac{\\ln x}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{\\ln x}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(0\\)",
       "\\(1\\)",
@@ -220,14 +235,15 @@
       "\\(e\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "\\(\\ln x\\) t\u0103ng ch\u1eadm h\u01a1n b\u1ea5t k\u1ef3 l\u0169y th\u1eeba d\u01b0\u01a1ng n\u00e0o c\u1ee7a \\(x\\) → gi\u1edbi h\u1ea1n = 0.",
+    "solution": "\\(\\ln x\\) tăng chậm hơn bất kỳ lũy thừa dương nào của \\(x\\) → giới hạn = 0.",
     "quick": "\\(\\ln x/x \\to 0\\)",
     "casio": "CALC x=1e6"
   },
   {
     "id": 16,
     "type": "limit_advanced",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0^+} x^x\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0^+} x^x\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(0\\)",
@@ -236,13 +252,14 @@
     ],
     "correct": "\\(1\\)",
     "solution": "\\(\\ln(x^x)=x\\ln x\\to0\\) → \\(x^x\\to e^0=1\\).",
-    "quick": "D\u1ea1ng \\(0^0\\) → \\(1\\)",
+    "quick": "Dạng \\(0^0\\) → \\(1\\)",
     "casio": "CALC x=1e-9"
   },
   {
     "id": 17,
     "type": "limit_advanced",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{\\arctan x}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\arctan x}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(0\\)",
@@ -250,59 +267,63 @@
       "\\(\\pi/2\\)"
     ],
     "correct": "\\(1\\)",
-    "solution": "\\(\\arctan x \\sim x\\) khi \\(x\\to0\\) → gi\u1edbi h\u1ea1n = 1.",
+    "solution": "\\(\\arctan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\arctan x/x \\to 1\\)",
     "casio": "CALC x=0.001"
   },
   {
     "id": 18,
     "type": "limit_one_sided",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0^+} \\dfrac{|x|}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0^+} \\dfrac{|x|}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(-1\\)",
       "\\(0\\)",
-      "Kh\u00f4ng t\u1ed3n t\u1ea1i"
+      "Không tồn tại"
     ],
     "correct": "\\(1\\)",
     "solution": "Khi \\(x>0\\), \\(|x|=x\\) → \\(x/x=1\\).",
-    "quick": "Ti\u1ebfn v\u1ec1 0 t\u1eeb ph\u1ea3i → d\u01b0\u01a1ng → =1",
+    "quick": "Tiến về 0 từ phải → dương → =1",
     "casio": "CALC x=0.001"
   },
   {
     "id": 19,
     "type": "limit_one_sided",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0^-} \\dfrac{|x|}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0^-} \\dfrac{|x|}{x}\\)?",
+    "matrix": null,
     "options": [
       "\\(-1\\)",
       "\\(1\\)",
       "\\(0\\)",
-      "Kh\u00f4ng t\u1ed3n t\u1ea1i"
+      "Không tồn tại"
     ],
     "correct": "\\(-1\\)",
     "solution": "Khi \\(x<0\\), \\(|x|=-x\\) → \\(-x/x=-1\\).",
-    "quick": "Ti\u1ebfn v\u1ec1 0 t\u1eeb tr\u00e1i → \u00e2m → =-1",
+    "quick": "Tiến về 0 từ trái → âm → =-1",
     "casio": "CALC x=-0.001"
   },
   {
     "id": 20,
     "type": "limit_one_sided",
-    "question": "T\u00ednh \\(\\lim_{x\\to 0} \\dfrac{|x|}{x}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{|x|}{x}\\)?",
+    "matrix": null,
     "options": [
-      "Kh\u00f4ng t\u1ed3n t\u1ea1i",
+      "Không tồn tại",
       "\\(1\\)",
       "\\(-1\\)",
       "\\(0\\)"
     ],
-    "correct": "Kh\u00f4ng t\u1ed3n t\u1ea1i",
-    "solution": "Gi\u1edbi h\u1ea1n tr\u00e1i = -1, gi\u1edbi h\u1ea1n ph\u1ea3i = 1, kh\u00e1c nhau → kh\u00f4ng t\u1ed3n t\u1ea1i gi\u1edbi h\u1ea1n.",
-    "quick": "Tr\u00e1i -1, ph\u1ea3i 1 → kh\u00f4ng t\u1ed3n t\u1ea1i",
-    "casio": "Kh\u00f4ng th\u1ec3 t\u00ednh tr\u1ef1c ti\u1ebfp"
+    "correct": "Không tồn tại",
+    "solution": "Giới hạn trái = -1, giới hạn phải = 1, khác nhau → không tồn tại giới hạn.",
+    "quick": "Trái -1, phải 1 → không tồn tại",
+    "casio": "Không thể tính trực tiếp"
   },
   {
     "id": 21,
     "type": "limit_infinite",
-    "question": "T\u00ednh \\(\\lim_{x\\to \\infty} \\dfrac{x^2+1}{x+1}\\)?",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{x^2+1}{x+1}\\)?",
+    "matrix": null,
     "options": [
       "\\(+\\infty\\)",
       "\\(1\\)",
@@ -310,14 +331,15 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(+\\infty\\)",
-    "solution": "B\u1eadc t\u1eed = 2 > b\u1eadc m\u1eabu = 1 → gi\u1edbi h\u1ea1n = \\(+\\infty\\).",
-    "quick": "B\u1eadc t\u1eed > b\u1eadc m\u1eabu → \\(\\infty\\)",
+    "solution": "Bậc tử = 2 > bậc mẫu = 1 → giới hạn = \\(+\\infty\\).",
+    "quick": "Bậc tử > bậc mẫu → \\(\\infty\\)",
     "casio": "CALC x=1e6"
   },
   {
     "id": 22,
     "type": "limit_infinite",
-    "question": "T\u00ednh \\(\\lim_{x\\to 1^-} \\dfrac{1}{x-1}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 1^-} \\dfrac{1}{x-1}\\)?",
+    "matrix": null,
     "options": [
       "\\(-\\infty\\)",
       "\\(+\\infty\\)",
@@ -325,14 +347,15 @@
       "\\(1\\)"
     ],
     "correct": "\\(-\\infty\\)",
-    "solution": "Khi \\(x\\to1^-\\): \\(x-1<0\\) v\u00e0 r\u1ea5t nh\u1ecf \u00e2m → ph\u00e2n s\u1ed1 ti\u1ebfn \u0111\u1ebfn \\(-\\infty\\).",
-    "quick": "M\u1eabu \u00e2m, ti\u1ebfn v\u1ec1 0 → \\(-\\infty\\)",
+    "solution": "Khi \\(x\\to1^-\\): \\(x-1<0\\) và rất nhỏ âm → phân số tiến đến \\(-\\infty\\).",
+    "quick": "Mẫu âm, tiến về 0 → \\(-\\infty\\)",
     "casio": "CALC x=0.999999"
   },
   {
     "id": 23,
     "type": "limit_infinite",
-    "question": "T\u00ednh \\(\\lim_{x\\to 1^+} \\dfrac{1}{x-1}\\)?",
+    "question": "Tính \\(\\lim_{x\\to 1^+} \\dfrac{1}{x-1}\\)?",
+    "matrix": null,
     "options": [
       "\\(+\\infty\\)",
       "\\(-\\infty\\)",
@@ -340,29 +363,31 @@
       "\\(1\\)"
     ],
     "correct": "\\(+\\infty\\)",
-    "solution": "Khi \\(x\\to1^+\\): \\(x-1>0\\) v\u00e0 r\u1ea5t nh\u1ecf d\u01b0\u01a1ng → ph\u00e2n s\u1ed1 ti\u1ebfn \u0111\u1ebfn \\(+\\infty\\).",
-    "quick": "M\u1eabu d\u01b0\u01a1ng, ti\u1ebfn v\u1ec1 0 → \\(+\\infty\\)",
+    "solution": "Khi \\(x\\to1^+\\): \\(x-1>0\\) và rất nhỏ dương → phân số tiến đến \\(+\\infty\\).",
+    "quick": "Mẫu dương, tiến về 0 → \\(+\\infty\\)",
     "casio": "CALC x=1.000001"
   },
   {
     "id": 24,
     "type": "continuity",
-    "question": "H\u00e0m \\(f(x)=x^2+3x-4\\) li\u00ean t\u1ee5c t\u1ea1i \u0111i\u1ec3m n\u00e0o?",
+    "question": "Hàm \\(f(x)=x^2+3x-4\\) liên tục tại điểm nào?",
+    "matrix": null,
     "options": [
-      "T\u1ea1i m\u1ecdi \\(x\\in\\mathbb{R}\\)",
-      "Ch\u1ec9 t\u1ea1i \\(x=2\\)",
-      "Ch\u1ec9 t\u1ea1i \\(x=0\\)",
-      "Kh\u00f4ng li\u00ean t\u1ee5c t\u1ea1i \u0111i\u1ec3m n\u00e0o"
+      "Tại mọi \\(x\\in\\mathbb{R}\\)",
+      "Chỉ tại \\(x=2\\)",
+      "Chỉ tại \\(x=0\\)",
+      "Không liên tục tại điểm nào"
     ],
-    "correct": "T\u1ea1i m\u1ecdi \\(x\\in\\mathbb{R}\\)",
-    "solution": "\u0110a th\u1ee9c li\u00ean t\u1ee5c tr\u00ean to\u00e0n b\u1ed9 \\(\\mathbb{R}\\).",
-    "quick": "\u0110a th\u1ee9c li\u00ean t\u1ee5c kh\u1eafp n\u01a1i",
+    "correct": "Tại mọi \\(x\\in\\mathbb{R}\\)",
+    "solution": "Đa thức liên tục trên toàn bộ \\(\\mathbb{R}\\).",
+    "quick": "Đa thức liên tục khắp nơi",
     "casio": ""
   },
   {
     "id": 25,
     "type": "continuity",
-    "question": "H\u00e0m \\(f(x)=\\dfrac{1}{x-2}\\) li\u00ean t\u1ee5c tr\u00ean kho\u1ea3ng n\u00e0o?",
+    "question": "Hàm \\(f(x)=\\dfrac{1}{x-2}\\) liên tục trên khoảng nào?",
+    "matrix": null,
     "options": [
       "\\((-\\infty,2)\\cup(2,+\\infty)\\)",
       "\\((-\\infty,+\\infty)\\)",
@@ -370,44 +395,47 @@
       "\\((-\\infty,2)\\)"
     ],
     "correct": "\\((-\\infty,2)\\cup(2,+\\infty)\\)",
-    "solution": "H\u00e0m ph\u00e2n th\u1ee9c li\u00ean t\u1ee5c tr\u00ean t\u1eadp x\u00e1c \u0111\u1ecbnh \\(\\mathbb{R}\\setminus\\{2\\}\\).",
-    "quick": "Gi\u00e1n \u0111o\u1ea1n t\u1ea1i \\(x=2\\)",
+    "solution": "Hàm phân thức liên tục trên tập xác định \\(\\mathbb{R}\\setminus\\{2\\}\\).",
+    "quick": "Gián đoạn tại \\(x=2\\)",
     "casio": ""
   },
   {
     "id": 26,
     "type": "continuity",
-    "question": "X\u00e9t t\u00ednh li\u00ean t\u1ee5c c\u1ee7a \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 1 & x=0 \\end{cases}\\) t\u1ea1i \\(x=0\\)?",
+    "question": "Xét tính liên tục của \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 1 & x=0 \\end{cases}\\) tại \\(x=0\\)?",
+    "matrix": null,
     "options": [
-      "Li\u00ean t\u1ee5c",
-      "Gi\u00e1n \u0111o\u1ea1n b\u1ecf \u0111\u01b0\u1ee3c",
-      "Gi\u00e1n \u0111o\u1ea1n lo\u1ea1i 1",
-      "Gi\u00e1n \u0111o\u1ea1n lo\u1ea1i 2"
+      "Liên tục",
+      "Gián đoạn bỏ được",
+      "Gián đoạn loại 1",
+      "Gián đoạn loại 2"
     ],
-    "correct": "Li\u00ean t\u1ee5c",
-    "solution": "\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1=f(0)\\) → h\u00e0m li\u00ean t\u1ee5c t\u1ea1i \\(x=0\\).",
-    "quick": "Gi\u1edbi h\u1ea1n = gi\u00e1 tr\u1ecb h\u00e0m → li\u00ean t\u1ee5c",
+    "correct": "Liên tục",
+    "solution": "\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1=f(0)\\) → hàm liên tục tại \\(x=0\\).",
+    "quick": "Giới hạn = giá trị hàm → liên tục",
     "casio": ""
   },
   {
     "id": 27,
     "type": "continuity",
-    "question": "X\u00e9t t\u00ednh li\u00ean t\u1ee5c c\u1ee7a \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) t\u1ea1i \\(x=0\\)?",
+    "question": "Xét tính liên tục của \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\)?",
+    "matrix": null,
     "options": [
-      "Gi\u00e1n \u0111o\u1ea1n b\u1ecf \u0111\u01b0\u1ee3c",
-      "Li\u00ean t\u1ee5c",
-      "Gi\u00e1n \u0111o\u1ea1n lo\u1ea1i 2",
-      "Gi\u00e1n \u0111o\u1ea1n lo\u1ea1i 1"
+      "Gián đoạn bỏ được",
+      "Liên tục",
+      "Gián đoạn loại 2",
+      "Gián đoạn loại 1"
     ],
-    "correct": "Gi\u00e1n \u0111o\u1ea1n b\u1ecf \u0111\u01b0\u1ee3c",
-    "solution": "\\(\\lim_{x\\to0}f(x)=1\\neq0=f(0)\\) → gi\u00e1n \u0111o\u1ea1n. C\u00f3 th\u1ec3 b\u1ed5 sung \u0111\u1ec3 li\u00ean t\u1ee5c (b\u1ecf \u0111\u01b0\u1ee3c).",
-    "quick": "Gi\u1edbi h\u1ea1n t\u1ed3n t\u1ea1i h\u1eefu h\u1ea1n nh\u01b0ng kh\u00e1c gi\u00e1 tr\u1ecb h\u00e0m → b\u1ecf \u0111\u01b0\u1ee3c",
+    "correct": "Gián đoạn bỏ được",
+    "solution": "\\(\\lim_{x\\to0}f(x)=1\\neq0=f(0)\\) → gián đoạn. Có thể bổ sung để liên tục (bỏ được).",
+    "quick": "Giới hạn tồn tại hữu hạn nhưng khác giá trị hàm → bỏ được",
     "casio": ""
   },
   {
     "id": 28,
     "type": "continuity",
-    "question": "T\u00ecm \\(a\\) \u0111\u1ec3 \\(f(x)=\\begin{cases} x^2 & x<1 \\\\ a & x=1 \\\\ 2x-1 & x>1 \\end{cases}\\) li\u00ean t\u1ee5c t\u1ea1i \\(x=1\\)?",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases} x^2 & x<1 \\\\ a & x=1 \\\\ 2x-1 & x>1 \\end{cases}\\) liên tục tại \\(x=1\\)?",
+    "matrix": null,
     "options": [
       "\\(1\\)",
       "\\(0\\)",
@@ -415,14 +443,15 @@
       "\\(-1\\)"
     ],
     "correct": "\\(1\\)",
-    "solution": "\\(\\lim_{x\\to1^-}f(x)=1^2=1\\), \\(\\lim_{x\\to1^+}f(x)=2\\cdot1-1=1\\). V\u1eady \\(\\lim_{x\\to1}f(x)=1\\). C\u1ea7n \\(f(1)=a=1\\).",
-    "quick": "Gi\u1edbi h\u1ea1n hai ph\u00eda =1 → a=1",
+    "solution": "\\(\\lim_{x\\to1^-}f(x)=1^2=1\\), \\(\\lim_{x\\to1^+}f(x)=2\\cdot1-1=1\\). Vậy \\(\\lim_{x\\to1}f(x)=1\\). Cần \\(f(1)=a=1\\).",
+    "quick": "Giới hạn hai phía =1 → a=1",
     "casio": ""
   },
   {
     "id": 29,
     "type": "continuity",
-    "question": "H\u00e0m \\(f(x)=\\dfrac{x^2-4}{x-2}\\) c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c \u0111\u1ecbnh ngh\u0129a l\u1ea1i t\u1ea1i \\(x=2\\) b\u1eb1ng gi\u00e1 tr\u1ecb n\u00e0o \u0111\u1ec3 li\u00ean t\u1ee5c?",
+    "question": "Hàm \\(f(x)=\\dfrac{x^2-4}{x-2}\\) có thể được định nghĩa lại tại \\(x=2\\) bằng giá trị nào để liên tục?",
+    "matrix": null,
     "options": [
       "\\(4\\)",
       "\\(2\\)",
@@ -430,29 +459,31 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(4\\)",
-    "solution": "\\(\\dfrac{x^2-4}{x-2}=x+2\\) v\u1edbi \\(x\\neq2\\). \\(\\lim_{x\\to2}f(x)=4\\). \u0110\u1eb7t \\(f(2)=4\\) \u0111\u1ec3 li\u00ean t\u1ee5c.",
-    "quick": "R\u00fat g\u1ecdn \\(x+2\\) → gi\u1edbi h\u1ea1n =4",
+    "solution": "\\(\\dfrac{x^2-4}{x-2}=x+2\\) với \\(x\\neq2\\). \\(\\lim_{x\\to2}f(x)=4\\). Đặt \\(f(2)=4\\) để liên tục.",
+    "quick": "Rút gọn \\(x+2\\) → giới hạn =4",
     "casio": ""
   },
   {
     "id": 30,
     "type": "continuity",
-    "question": "\u0110\u1ecbnh l\u00fd gi\u00e1 tr\u1ecb trung gian (IVT) kh\u1eb3ng \u0111\u1ecbnh \u0111i\u1ec1u g\u00ec?",
+    "question": "Định lý giá trị trung gian (IVT) khẳng định điều gì?",
+    "matrix": null,
     "options": [
-      "N\u1ebfu f li\u00ean t\u1ee5c tr\u00ean [a,b] th\u00ec f nh\u1eadn m\u1ecdi gi\u00e1 tr\u1ecb gi\u1eefa f(a) v\u00e0 f(b)",
-      "N\u1ebfu f li\u00ean t\u1ee5c th\u00ec f c\u00f3 \u0111\u1ea1o h\u00e0m",
-      "f c\u00f3 nghi\u1ec7m n\u1ebfu f(a)f(b)<0",
-      "C\u1ea3 A v\u00e0 C"
+      "Nếu f liên tục trên [a,b] thì f nhận mọi giá trị giữa f(a) và f(b)",
+      "Nếu f liên tục thì f có đạo hàm",
+      "f có nghiệm nếu f(a)f(b)<0",
+      "Cả A và C"
     ],
-    "correct": "C\u1ea3 A v\u00e0 C",
-    "solution": "\u0110\u1ecbnh l\u00fd IVT: f li\u00ean t\u1ee5c tr\u00ean [a,b] th\u00ec f nh\u1eadn m\u1ecdi gi\u00e1 tr\u1ecb gi\u1eefa f(a) v\u00e0 f(b). H\u1ec7 qu\u1ea3: n\u1ebfu f(a)f(b)<0 th\u00ec t\u1ed3n t\u1ea1i c\u00f3 f(c)=0.",
-    "quick": "IVT: f li\u00ean t\u1ee5c → nh\u1eadn m\u1ecdi gi\u00e1 tr\u1ecb trung gian",
+    "correct": "Cả A và C",
+    "solution": "Định lý IVT: f liên tục trên [a,b] thì f nhận mọi giá trị giữa f(a) và f(b). Hệ quả: nếu f(a)f(b)<0 thì tồn tại có f(c)=0.",
+    "quick": "IVT: f liên tục → nhận mọi giá trị trung gian",
     "casio": ""
   },
   {
     "id": 31,
     "type": "continuity",
-    "question": "\u1ee8ng d\u1ee5ng \u0111\u1ecbnh l\u00fd gi\u00e1 tr\u1ecb trung gian, ch\u1ee9ng minh ph\u01b0\u01a1ng tr\u00ecnh \\(x^3+x-1=0\\) c\u00f3 nghi\u1ec7m trong kho\u1ea3ng n\u00e0o?",
+    "question": "Ứng dụng định lý giá trị trung gian, chứng minh phương trình \\(x^3+x-1=0\\) có nghiệm trong khoảng nào?",
+    "matrix": null,
     "options": [
       "\\((0,1)\\)",
       "\\((1,2)\\)",
@@ -460,14 +491,15 @@
       "\\((2,3)\\)"
     ],
     "correct": "\\((0,1)\\)",
-    "solution": "\\(f(x)=x^3+x-1\\), \\(f(0)=-1<0\\), \\(f(1)=1>0\\), f li\u00ean t\u1ee5c → c\u00f3 nghi\u1ec7m trong (0,1).",
-    "quick": "\\(f(0)=-1, f(1)=1\\) → \u0111\u1ed5i d\u1ea5u → nghi\u1ec7m trong (0,1)",
+    "solution": "\\(f(x)=x^3+x-1\\), \\(f(0)=-1<0\\), \\(f(1)=1>0\\), f liên tục → có nghiệm trong (0,1).",
+    "quick": "\\(f(0)=-1, f(1)=1\\) → đổi dấu → nghiệm trong (0,1)",
     "casio": ""
   },
   {
     "id": 32,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(f(x)=x^3\\) t\u1ea1i \\(x=2\\) l\u00e0?",
+    "question": "Đạo hàm của \\(f(x)=x^3\\) tại \\(x=2\\) là?",
+    "matrix": null,
     "options": [
       "\\(12\\)",
       "\\(6\\)",
@@ -476,13 +508,14 @@
     ],
     "correct": "\\(12\\)",
     "solution": "\\(f'(x)=3x^2 \\Rightarrow f'(2)=3\\cdot4=12\\).",
-    "quick": "\\((x^3)'=3x^2\\) → t\u1ea1i x=2 → 12",
+    "quick": "\\((x^3)'=3x^2\\) → tại x=2 → 12",
     "casio": "d/dx(x^3)|x=2"
   },
   {
     "id": 33,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(f(x)=\\sin x\\) t\u1ea1i \\(x=\\pi\\) l\u00e0?",
+    "question": "Đạo hàm của \\(f(x)=\\sin x\\) tại \\(x=\\pi\\) là?",
+    "matrix": null,
     "options": [
       "\\(-1\\)",
       "\\(1\\)",
@@ -497,7 +530,8 @@
   {
     "id": 34,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(f(x)=e^{2x}\\) l\u00e0?",
+    "question": "Đạo hàm của \\(f(x)=e^{2x}\\) là?",
+    "matrix": null,
     "options": [
       "\\(2e^{2x}\\)",
       "\\(e^{2x}\\)",
@@ -506,13 +540,14 @@
     ],
     "correct": "\\(2e^{2x}\\)",
     "solution": "\\((e^{u})' = e^{u}u' = e^{2x}\\cdot2 = 2e^{2x}\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m h\u1ee3p: \\(e^{2x}\\cdot2\\)",
+    "quick": "Đạo hàm hợp: \\(e^{2x}\\cdot2\\)",
     "casio": "d/dx(exp(2x))"
   },
   {
     "id": 35,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(f(x)=\\ln(x^2+1)\\) l\u00e0?",
+    "question": "Đạo hàm của \\(f(x)=\\ln(x^2+1)\\) là?",
+    "matrix": null,
     "options": [
       "\\(\\dfrac{2x}{x^2+1}\\)",
       "\\(\\dfrac{1}{x^2+1}\\)",
@@ -521,88 +556,94 @@
     ],
     "correct": "\\(\\dfrac{2x}{x^2+1}\\)",
     "solution": "\\((\\ln u)' = u'/u = (2x)/(x^2+1)\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m logarit h\u1ee3p",
+    "quick": "Đạo hàm logarit hợp",
     "casio": "d/dx(ln(x^2+1))"
   },
   {
     "id": 36,
     "type": "differentiability",
-    "question": "T\u00ednh \\(\\lim_{h\\to 0} \\dfrac{f(x+h)-f(x)}{h}\\) l\u00e0 \u0111\u1ecbnh ngh\u0129a c\u1ee7a?",
+    "question": "Tính \\(\\lim_{h\\to 0} \\dfrac{f(x+h)-f(x)}{h}\\) là định nghĩa của?",
+    "matrix": null,
     "options": [
-      "\u0110\u1ea1o h\u00e0m t\u1ea1i \\(x\\)",
-      "Gi\u1edbi h\u1ea1n t\u1ea1i \\(x\\)",
-      "T\u00ednh li\u00ean t\u1ee5c",
-      "Vi ph\u00e2n"
+      "Đạo hàm tại \\(x\\)",
+      "Giới hạn tại \\(x\\)",
+      "Tính liên tục",
+      "Vi phân"
     ],
-    "correct": "\u0110\u1ea1o h\u00e0m t\u1ea1i \\(x\\)",
-    "solution": "\u0110\u1ecbnh ngh\u0129a \u0111\u1ea1o h\u00e0m: \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
-    "quick": "\u0110\u1ecbnh ngh\u0129a \u0111\u1ea1o h\u00e0m",
+    "correct": "Đạo hàm tại \\(x\\)",
+    "solution": "Định nghĩa đạo hàm: \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
+    "quick": "Định nghĩa đạo hàm",
     "casio": ""
   },
   {
     "id": 37,
     "type": "differentiability",
-    "question": "H\u00e0m \\(f(x)=|x|\\) c\u00f3 \u0111\u1ea1o h\u00e0m t\u1ea1i \\(x=0\\) kh\u00f4ng?",
+    "question": "Hàm \\(f(x)=|x|\\) có đạo hàm tại \\(x=0\\) không?",
+    "matrix": null,
     "options": [
-      "Kh\u00f4ng",
-      "C\u00f3, b\u1eb1ng 0",
-      "C\u00f3, b\u1eb1ng 1",
-      "C\u00f3, b\u1eb1ng -1"
+      "Không",
+      "Có, bằng 0",
+      "Có, bằng 1",
+      "Có, bằng -1"
     ],
-    "correct": "Kh\u00f4ng",
-    "solution": "\u0110\u1ea1o h\u00e0m tr\u00e1i = -1, ph\u1ea3i = 1, kh\u00e1c nhau → kh\u00f4ng kh\u1ea3 vi t\u1ea1i 0.",
-    "quick": "H\u00e0m |x| c\u00f3 \u0111i\u1ec3m g\u00e3y t\u1ea1i 0 → kh\u00f4ng kh\u1ea3 vi",
-    "casio": "d/dx(|x|) t\u1ea1i 0 kh\u00f4ng x\u00e1c \u0111\u1ecbnh"
+    "correct": "Không",
+    "solution": "Đạo hàm trái = -1, phải = 1, khác nhau → không khả vi tại 0.",
+    "quick": "Hàm |x| có điểm gãy tại 0 → không khả vi",
+    "casio": "d/dx(|x|) tại 0 không xác định"
   },
   {
     "id": 38,
     "type": "differentiability",
-    "question": "H\u00e0m \\(f(x)=\\sqrt[3]{x}\\) c\u00f3 \u0111\u1ea1o h\u00e0m t\u1ea1i \\(x=0\\) kh\u00f4ng?",
+    "question": "Hàm \\(f(x)=\\sqrt[3]{x}\\) có đạo hàm tại \\(x=0\\) không?",
+    "matrix": null,
     "options": [
-      "Kh\u00f4ng (v\u00ec \u0111\u1ea1o h\u00e0m ti\u1ebfn v\u00f4 c\u00f9ng)",
-      "C\u00f3, b\u1eb1ng 0",
-      "C\u00f3, b\u1eb1ng 1",
-      "C\u00f3, b\u1eb1ng \\(\\infty\\)"
+      "Không (vì đạo hàm tiến vô cùng)",
+      "Có, bằng 0",
+      "Có, bằng 1",
+      "Có, bằng \\(\\infty\\)"
     ],
-    "correct": "Kh\u00f4ng (v\u00ec \u0111\u1ea1o h\u00e0m ti\u1ebfn v\u00f4 c\u00f9ng)",
-    "solution": "\\(f'(x)=\\frac{1}{3}x^{-2/3}\\) → \\(\\lim_{x\\to0}f'(x)=+\\infty\\), kh\u00f4ng t\u1ed3n t\u1ea1i \u0111\u1ea1o h\u00e0m h\u1eefu h\u1ea1n t\u1ea1i 0.",
-    "quick": "\u0110\u1ea1o h\u00e0m ti\u1ebfn v\u00f4 c\u00f9ng → kh\u00f4ng kh\u1ea3 vi (ti\u1ebfp tuy\u1ebfn \u0111\u1ee9ng)",
-    "casio": "d/dx(x^(1/3)) t\u1ea1i 0 kh\u00f4ng x\u00e1c \u0111\u1ecbnh"
+    "correct": "Không (vì đạo hàm tiến vô cùng)",
+    "solution": "\\(f'(x)=\\frac{1}{3}x^{-2/3}\\) → \\(\\lim_{x\\to0}f'(x)=+\\infty\\), không tồn tại đạo hàm hữu hạn tại 0.",
+    "quick": "Đạo hàm tiến vô cùng → không khả vi (tiếp tuyến đứng)",
+    "casio": "d/dx(x^(1/3)) tại 0 không xác định"
   },
   {
     "id": 39,
     "type": "differentiability",
-    "question": "Cho \\(f(x)=\\begin{cases} x^2\\sin\\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\). Kh\u1eb3ng \u0111\u1ecbnh n\u00e0o \u0111\u00fang?",
+    "question": "Cho \\(f(x)=\\begin{cases} x^2\\sin\\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\). Khẳng định nào đúng?",
+    "matrix": null,
     "options": [
-      "Kh\u1ea3 vi t\u1ea1i \\(x=0\\)",
-      "Li\u00ean t\u1ee5c nh\u01b0ng kh\u00f4ng kh\u1ea3 vi",
-      "Gi\u00e1n \u0111o\u1ea1n",
-      "Kh\u00f4ng li\u00ean t\u1ee5c"
+      "Khả vi tại \\(x=0\\)",
+      "Liên tục nhưng không khả vi",
+      "Gián đoạn",
+      "Không liên tục"
     ],
-    "correct": "Kh\u1ea3 vi t\u1ea1i \\(x=0\\)",
-    "solution": "\\(\\lim_{x\\to0}f(x)=0=f(0)\\) li\u00ean t\u1ee5c. \\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=0\\) → kh\u1ea3 vi.",
-    "quick": "V\u00ed d\u1ee5 kinh \u0111i\u1ec3n: kh\u1ea3 vi t\u1ea1i 0 v\u1edbi \u0111\u1ea1o h\u00e0m =0",
+    "correct": "Khả vi tại \\(x=0\\)",
+    "solution": "\\(\\lim_{x\\to0}f(x)=0=f(0)\\) liên tục. \\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=0\\) → khả vi.",
+    "quick": "Ví dụ kinh điển: khả vi tại 0 với đạo hàm =0",
     "casio": ""
   },
   {
     "id": 40,
     "type": "differentiability",
-    "question": "M\u1ed1i li\u00ean h\u1ec7 gi\u1eefa kh\u1ea3 vi v\u00e0 li\u00ean t\u1ee5c: n\u1ebfu \\(f\\) kh\u1ea3 vi t\u1ea1i \\(x_0\\) th\u00ec",
+    "question": "Mối liên hệ giữa khả vi và liên tục: nếu \\(f\\) khả vi tại \\(x_0\\) thì",
+    "matrix": null,
     "options": [
-      "Li\u00ean t\u1ee5c t\u1ea1i \\(x_0\\)",
-      "Ch\u1eafc ch\u1eafn c\u00f3 \u0111\u1ea1o h\u00e0m c\u1ea5p 2",
-      "Gi\u00e1n \u0111o\u1ea1n t\u1ea1i \\(x_0\\)",
-      "Kh\u00f4ng li\u00ean quan"
+      "Liên tục tại \\(x_0\\)",
+      "Chắc chắn có đạo hàm cấp 2",
+      "Gián đoạn tại \\(x_0\\)",
+      "Không liên quan"
     ],
-    "correct": "Li\u00ean t\u1ee5c t\u1ea1i \\(x_0\\)",
-    "solution": "\u0110\u1ecbnh l\u00fd: kh\u1ea3 vi \\(\\Rightarrow\\) li\u00ean t\u1ee5c. Chi\u1ec1u ng\u01b0\u1ee3c l\u1ea1i kh\u00f4ng \u0111\u00fang.",
-    "quick": "Kh\u1ea3 vi \\(\\Rightarrow\\) li\u00ean t\u1ee5c",
+    "correct": "Liên tục tại \\(x_0\\)",
+    "solution": "Định lý: khả vi \\(\\Rightarrow\\) liên tục. Chiều ngược lại không đúng.",
+    "quick": "Khả vi \\(\\Rightarrow\\) liên tục",
     "casio": ""
   },
   {
     "id": 41,
     "type": "differentiability",
-    "question": "T\u00ecm \\(a,b\\) \u0111\u1ec3 \\(f(x)=\\begin{cases} x^2 & x\\le1 \\\\ ax+b & x>1 \\end{cases}\\) kh\u1ea3 vi t\u1ea1i \\(x=1\\)?",
+    "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases} x^2 & x\\le1 \\\\ ax+b & x>1 \\end{cases}\\) khả vi tại \\(x=1\\)?",
+    "matrix": null,
     "options": [
       "\\(a=2,b=-1\\)",
       "\\(a=2,b=0\\)",
@@ -610,14 +651,15 @@
       "\\(a=2,b=1\\)"
     ],
     "correct": "\\(a=2,b=-1\\)",
-    "solution": "Li\u00ean t\u1ee5c: \\(1^2=a\\cdot1+b \\Rightarrow a+b=1\\). Kh\u1ea3 vi: \\(\\lim_{x\\to1^-}2x=2 \\Rightarrow a=2\\). Suy ra \\(b=-1\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m tr\u00e1i =2, ph\u1ea3i = a → a=2; li\u00ean t\u1ee5c → 1=a+b → b=-1",
+    "solution": "Liên tục: \\(1^2=a\\cdot1+b \\Rightarrow a+b=1\\). Khả vi: \\(\\lim_{x\\to1^-}2x=2 \\Rightarrow a=2\\). Suy ra \\(b=-1\\).",
+    "quick": "Đạo hàm trái =2, phải = a → a=2; liên tục → 1=a+b → b=-1",
     "casio": ""
   },
   {
     "id": 42,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ea5p 2 c\u1ee7a \\(f(x)=x^4-3x^2+5\\) t\u1ea1i \\(x=1\\) l\u00e0?",
+    "question": "Đạo hàm cấp 2 của \\(f(x)=x^4-3x^2+5\\) tại \\(x=1\\) là?",
+    "matrix": null,
     "options": [
       "\\(6\\)",
       "\\(12\\)",
@@ -626,13 +668,14 @@
     ],
     "correct": "\\(6\\)",
     "solution": "\\(f'(x)=4x^3-6x\\), \\(f''(x)=12x^2-6 \\Rightarrow f''(1)=12-6=6\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m c\u1ea5p 2 r\u1ed3i thay s\u1ed1",
+    "quick": "Đạo hàm cấp 2 rồi thay số",
     "casio": "d^2/dx^2(x^4-3x^2+5)|x=1"
   },
   {
     "id": 43,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(f(x)=\\cos(2x)\\) l\u00e0?",
+    "question": "Đạo hàm của \\(f(x)=\\cos(2x)\\) là?",
+    "matrix": null,
     "options": [
       "\\(-2\\sin(2x)\\)",
       "\\(2\\sin(2x)\\)",
@@ -641,20 +684,21 @@
     ],
     "correct": "\\(-2\\sin(2x)\\)",
     "solution": "\\((\\cos u)'=-\\sin u \\cdot u' = -\\sin(2x)\\cdot2 = -2\\sin(2x)\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m h\u1ee3p l\u01b0\u1ee3ng gi\u00e1c",
+    "quick": "Đạo hàm hợp lượng giác",
     "casio": "d/dx(cos(2x))"
   },
   {
     "id": 44,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(f(x)=\\tan x\\) l\u00e0?",
+    "question": "Đạo hàm của \\(f(x)=\\tan x\\) là?",
+    "matrix": null,
     "options": [
       "\\(\\dfrac{1}{\\cos^2 x}\\)",
       "\\(\\dfrac{1}{\\sin^2 x}\\)",
       "\\(\\sec^2 x\\)",
-      "C\u1ea3 A v\u00e0 C"
+      "Cả A và C"
     ],
-    "correct": "C\u1ea3 A v\u00e0 C",
+    "correct": "Cả A và C",
     "solution": "\\((\\tan x)' = \\sec^2 x = \\dfrac{1}{\\cos^2 x}\\).",
     "quick": "\\((\\tan x)' = 1/\\cos^2 x = \\sec^2 x\\)",
     "casio": "d/dx(tan(x))"
@@ -662,7 +706,8 @@
   {
     "id": 45,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(f(x)=\\arcsin x\\) l\u00e0?",
+    "question": "Đạo hàm của \\(f(x)=\\arcsin x\\) là?",
+    "matrix": null,
     "options": [
       "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
       "\\(\\dfrac{1}{1+x^2}\\)",
@@ -671,13 +716,14 @@
     ],
     "correct": "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
     "solution": "\\((\\arcsin x)' = \\dfrac{1}{\\sqrt{1-x^2}}\\), \\(|x|<1\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m h\u00e0m l\u01b0\u1ee3ng gi\u00e1c ng\u01b0\u1ee3c",
+    "quick": "Đạo hàm hàm lượng giác ngược",
     "casio": "d/dx(asin(x))"
   },
   {
     "id": 46,
     "type": "differentiability",
-    "question": "\u0110\u1ea1o h\u00e0m c\u1ea5p 2 c\u1ee7a \\(f(x)=\\sin x\\) l\u00e0?",
+    "question": "Đạo hàm cấp 2 của \\(f(x)=\\sin x\\) là?",
+    "matrix": null,
     "options": [
       "\\(-\\sin x\\)",
       "\\(-\\cos x\\)",
@@ -686,13 +732,14 @@
     ],
     "correct": "\\(-\\sin x\\)",
     "solution": "\\(f'(x)=\\cos x\\), \\(f''(x)=-\\sin x\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m \u0111\u1ebfn c\u1ea5p 2 c\u1ee7a sin",
+    "quick": "Đạo hàm đến cấp 2 của sin",
     "casio": "d^2/dx^2(sin(x))"
   },
   {
     "id": 47,
     "type": "differentiability",
-    "question": "Cho \\(f(x)=x\\ln x - x\\). T\u00ednh \\(f'(x)\\)?",
+    "question": "Cho \\(f(x)=x\\ln x - x\\). Tính \\(f'(x)\\)?",
+    "matrix": null,
     "options": [
       "\\(\\ln x\\)",
       "\\(\\ln x - 1\\)",
@@ -701,13 +748,14 @@
     ],
     "correct": "\\(\\ln x\\)",
     "solution": "\\(f'(x)=1\\cdot\\ln x + x\\cdot\\frac{1}{x} - 1 = \\ln x + 1 - 1 = \\ln x\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m t\u1eebng ph\u1ea7n c\u1ee7a \\(x\\ln x\\)",
+    "quick": "Đạo hàm từng phần của \\(x\\ln x\\)",
     "casio": "d/dx(x*ln(x)-x)"
   },
   {
     "id": 48,
     "type": "differentiability",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh ti\u1ebfp tuy\u1ebfn c\u1ee7a \\(y=x^2\\) t\u1ea1i \u0111i\u1ec3m \\(x_0=1\\) l\u00e0?",
+    "question": "Phương trình tiếp tuyến của \\(y=x^2\\) tại điểm \\(x_0=1\\) là?",
+    "matrix": null,
     "options": [
       "\\(y=2x-1\\)",
       "\\(y=2x+1\\)",
@@ -715,14 +763,15 @@
       "\\(y=2x\\)"
     ],
     "correct": "\\(y=2x-1\\)",
-    "solution": "\\(y'=2x \\Rightarrow y'(1)=2\\). \\(y(1)=1\\). Ti\u1ebfp tuy\u1ebfn: \\(y-1=2(x-1) \\Rightarrow y=2x-1\\).",
-    "quick": "Ti\u1ebfp tuy\u1ebfn: \\(y=f'(x_0)(x-x_0)+f(x_0)\\)",
+    "solution": "\\(y'=2x \\Rightarrow y'(1)=2\\). \\(y(1)=1\\). Tiếp tuyến: \\(y-1=2(x-1) \\Rightarrow y=2x-1\\).",
+    "quick": "Tiếp tuyến: \\(y=f'(x_0)(x-x_0)+f(x_0)\\)",
     "casio": ""
   },
   {
     "id": 49,
     "type": "differentiability",
-    "question": "H\u00e0m \\(f(x)=e^x\\) c\u00f3 \u0111\u1ea1o h\u00e0m t\u1ea1i m\u1ecdi \u0111i\u1ec3m, \u0111\u1ea1o h\u00e0m \u0111\u00f3 l\u00e0?",
+    "question": "Hàm \\(f(x)=e^x\\) có đạo hàm tại mọi điểm, đạo hàm đó là?",
+    "matrix": null,
     "options": [
       "\\(e^x\\)",
       "\\(x e^{x-1}\\)",
@@ -731,22 +780,23 @@
     ],
     "correct": "\\(e^x\\)",
     "solution": "\\((e^x)' = e^x\\).",
-    "quick": "\u0110\u1ea1o h\u00e0m c\u1ee7a \\(e^x\\) l\u00e0 ch\u00ednh n\u00f3",
+    "quick": "Đạo hàm của \\(e^x\\) là chính nó",
     "casio": "d/dx(exp(x))"
   },
   {
     "id": 50,
     "type": "differentiability",
-    "question": "H\u00e0m \\(f(x)=\\begin{cases} x^2\\sin\\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) c\u00f3 \u0111\u1ea1o h\u00e0m t\u1ea1i \\(x=0\\) l\u00e0?",
+    "question": "Hàm \\(f(x)=\\begin{cases} x^2\\sin\\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) có đạo hàm tại \\(x=0\\) là?",
+    "matrix": null,
     "options": [
       "\\(0\\)",
       "\\(1\\)",
       "\\(\\infty\\)",
-      "Kh\u00f4ng t\u1ed3n t\u1ea1i"
+      "Không tồn tại"
     ],
     "correct": "\\(0\\)",
     "solution": "\\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=\\lim_{h\\to0}h\\sin(1/h)=0\\).",
-    "quick": "V\u00ed d\u1ee5: \u0111\u1ea1o h\u00e0m t\u1ea1i 0 b\u1eb1ng 0",
+    "quick": "Ví dụ: đạo hàm tại 0 bằng 0",
     "casio": ""
   }
 ]

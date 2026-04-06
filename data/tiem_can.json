@@ -2,7 +2,8 @@
   {
     "id": 1,
     "type": "vertical_asymptote",
-    "question": "Tìm ti\u1ec7m c\u1eadn \u0111\u1ee9ng c\u1ee7a \\(y = \\dfrac{x+1}{x-2}\\)?",
+    "question": "Tìm tiệm cận đứng của \\(y = \\dfrac{x+1}{x-2}\\)?",
+    "matrix": null,
     "options": [
       "\\(x=2\\)",
       "\\(x=-2\\)",
@@ -10,14 +11,15 @@
       "\\(x=-1\\)"
     ],
     "correct": "\\(x=2\\)",
-    "solution": "M\u1eabu s\u1ed1 \\(x-2=0 \\Rightarrow x=2\\), t\u1eed kh\u00e1c 0 t\u1ea1i \\(x=2\\) (b\u1eb1ng 3) → ti\u1ec7m c\u1eadn \u0111\u1ee9ng \\(x=2\\).",
-    "quick": "M\u1eabu = 0, t\u1eed \u2260 0",
-    "casio": "CALC x\u21922"
+    "solution": "Mẫu số \\(x-2=0 \\Rightarrow x=2\\), tử khác 0 tại \\(x=2\\) (bằng 3) → tiệm cận đứng \\(x=2\\).",
+    "quick": "Mẫu = 0, tử ≠ 0",
+    "casio": "CALC x→2"
   },
   {
     "id": 2,
     "type": "vertical_asymptote",
-    "question": "T\u00ecm s\u1ed1 \u0111\u01b0\u1eddng ti\u1ec7m c\u1eadn \u0111\u1ee9ng c\u1ee7a \\(y = \\dfrac{x-1}{x^2 + x - 2}\\)?",
+    "question": "Tìm số đường tiệm cận đứng của \\(y = \\dfrac{x-1}{x^2 + x - 2}\\)?",
+    "matrix": null,
     "options": [
       "0",
       "1",
@@ -25,14 +27,15 @@
       "3"
     ],
     "correct": "1",
-    "solution": "M\u1eabu: \\(x^2+x-2=0 \\Rightarrow x=1, x=-2\\). T\u1ea1i \\(x=1\\): t\u1eed b\u1eb1ng 0 → kh\u1eed \u0111\u01b0\u1ee3c, kh\u00f4ng ph\u1ea3i TC\u0110. T\u1ea1i \\(x=-2\\): t\u1eed b\u1eb1ng -3 \u2260 0 → TC\u0110 \\(x=-2\\).",
-    "quick": "M\u1eabu=0, t\u1eed \u2260 0 m\u1edbi l\u00e0 TC\u0110",
-    "casio": "Ph\u00e2n t\u00edch m\u1eabu"
+    "solution": "Mẫu: \\(x^2+x-2=0 \\Rightarrow x=1, x=-2\\). Tại \\(x=1\\): tử bằng 0 → khử được, không phải TCĐ. Tại \\(x=-2\\): tử bằng -3 ≠ 0 → TCĐ \\(x=-2\\).",
+    "quick": "Mẫu=0, tử ≠ 0 mới là TCĐ",
+    "casio": "Phân tích mẫu"
   },
   {
     "id": 3,
     "type": "horizontal_asymptote",
-    "question": "T\u00ecm ti\u1ec7m c\u1eadn ngang c\u1ee7a \\(y = \\dfrac{3x^2+2x+1}{x^2-5}\\)?",
+    "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{3x^2+2x+1}{x^2-5}\\)?",
+    "matrix": null,
     "options": [
       "\\(y=3\\)",
       "\\(y=0\\)",
@@ -40,44 +43,47 @@
       "\\(y=2\\)"
     ],
     "correct": "\\(y=3\\)",
-    "solution": "B\u1eadc t\u1eed = b\u1eadc m\u1eabu = 2 → TCN: \\(y = \\dfrac{3}{1}=3\\).",
-    "quick": "H\u1ec7 s\u1ed1 b\u1eadc cao nh\u1ea5t: 3/1=3",
+    "solution": "Bậc tử = bậc mẫu = 2 → TCN: \\(y = \\dfrac{3}{1}=3\\).",
+    "quick": "Hệ số bậc cao nhất: 3/1=3",
     "casio": "CALC x=1e6"
   },
   {
     "id": 4,
     "type": "horizontal_asymptote",
-    "question": "T\u00ecm ti\u1ec7m c\u1eadn ngang c\u1ee7a \\(y = \\dfrac{2x+1}{x^2+1}\\)?",
+    "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{2x+1}{x^2+1}\\)?",
+    "matrix": null,
     "options": [
       "\\(y=0\\)",
       "\\(y=2\\)",
       "\\(y=1\\)",
-      "Kh\u00f4ng c\u00f3 TCN"
+      "Không có TCN"
     ],
     "correct": "\\(y=0\\)",
-    "solution": "B\u1eadc t\u1eed (1) < b\u1eadc m\u1eabu (2) → TCN: \\(y=0\\).",
-    "quick": "B\u1eadc t\u1eed < b\u1eadc m\u1eabu → TCN y=0",
+    "solution": "Bậc tử (1) < bậc mẫu (2) → TCN: \\(y=0\\).",
+    "quick": "Bậc tử < bậc mẫu → TCN y=0",
     "casio": "CALC x=1e6 → 0"
   },
   {
     "id": 5,
     "type": "horizontal_asymptote",
-    "question": "T\u00ecm ti\u1ec7m c\u1eadn ngang c\u1ee7a \\(y = \\dfrac{x^2+1}{x+1}\\)?",
+    "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{x^2+1}{x+1}\\)?",
+    "matrix": null,
     "options": [
-      "Kh\u00f4ng c\u00f3 TCN",
+      "Không có TCN",
       "\\(y=0\\)",
       "\\(y=1\\)",
       "\\(y=x-1\\)"
     ],
-    "correct": "Kh\u00f4ng c\u00f3 TCN",
-    "solution": "B\u1eadc t\u1eed (2) > b\u1eadc m\u1eabu (1) → kh\u00f4ng c\u00f3 TCN, c\u00f3 TCX.",
-    "quick": "B\u1eadc t\u1eed > b\u1eadc m\u1eabu → kh\u00f4ng TCN",
-    "casio": "CALC x=1e6 → \u221e"
+    "correct": "Không có TCN",
+    "solution": "Bậc tử (2) > bậc mẫu (1) → không có TCN, có TCX.",
+    "quick": "Bậc tử > bậc mẫu → không TCN",
+    "casio": "CALC x=1e6 → ∞"
   },
   {
     "id": 6,
     "type": "oblique_asymptote",
-    "question": "Ti\u1ec7m c\u1eadn xi\u00ean c\u1ee7a \\(y = \\dfrac{x^2+1}{x+1}\\) l\u00e0?",
+    "question": "Tiệm cận xiên của \\(y = \\dfrac{x^2+1}{x+1}\\) là?",
+    "matrix": null,
     "options": [
       "\\(y=x-1\\)",
       "\\(y=x+1\\)",
@@ -85,14 +91,15 @@
       "\\(y=-x+1\\)"
     ],
     "correct": "\\(y=x-1\\)",
-    "solution": "Chia \u0111a th\u1ee9c: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\). Khi \\(x\\to\\infty\\), \\(y \\sim x-1\\).",
-    "quick": "L\u1ea5y t\u1eed chia m\u1eabu, b\u1ecf ph\u1ea7n d\u01b0",
+    "solution": "Chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\). Khi \\(x\\to\\infty\\), \\(y \\sim x-1\\).",
+    "quick": "Lấy tử chia mẫu, bỏ phần dư",
     "casio": "CALC x=1e6 → x-1"
   },
   {
     "id": 7,
     "type": "mixed_asymptotes",
-    "question": "S\u1ed1 \u0111\u01b0\u1eddng ti\u1ec7m c\u1eadn c\u1ee7a \\(y = \\dfrac{x^2-3x+2}{x^2-4}\\) l\u00e0?",
+    "question": "Số đường tiệm cận của \\(y = \\dfrac{x^2-3x+2}{x^2-4}\\) là?",
+    "matrix": null,
     "options": [
       "1",
       "2",
@@ -100,14 +107,15 @@
       "0"
     ],
     "correct": "2",
-    "solution": "M\u1eabu: \\(x^2-4=0 \\Rightarrow x=\\pm2\\). T\u1ea1i \\(x=2\\): t\u1eed =0 → kh\u1eed \u0111\u01b0\u1ee3c, kh\u00f4ng TC\u0110. T\u1ea1i \\(x=-2\\): t\u1eed =12 \u2260 0 → TC\u0110 \\(x=-2\\). B\u1eadc t\u1eed = b\u1eadc m\u1eabu =2 → TCN \\(y=1\\). T\u1ed5ng: 2 ti\u1ec7m c\u1eadn.",
-    "quick": "TC\u0110: x=-2; TCN: y=1",
-    "casio": "Ph\u00e2n t\u00edch t\u1eed v\u00e0 m\u1eabu"
+    "solution": "Mẫu: \\(x^2-4=0 \\Rightarrow x=\\pm2\\). Tại \\(x=2\\): tử =0 → khử được, không TCĐ. Tại \\(x=-2\\): tử =12 ≠ 0 → TCĐ \\(x=-2\\). Bậc tử = bậc mẫu =2 → TCN \\(y=1\\). Tổng: 2 tiệm cận.",
+    "quick": "TCĐ: x=-2; TCN: y=1",
+    "casio": "Phân tích tử và mẫu"
   },
   {
     "id": 8,
     "type": "vertical_asymptote",
-    "question": "\u0110\u1ed3 th\u1ecb h\u00e0m s\u1ed1 \\(y = \\dfrac{x^2-1}{x^2-3x+2}\\) c\u00f3 bao nhi\u00eau \u0111\u01b0\u1eddng ti\u1ec7m c\u1eadn \u0111\u1ee9ng?",
+    "question": "Đồ thị hàm số \\(y = \\dfrac{x^2-1}{x^2-3x+2}\\) có bao nhiêu đường tiệm cận đứng?",
+    "matrix": null,
     "options": [
       "0",
       "1",
@@ -115,29 +123,31 @@
       "3"
     ],
     "correct": "1",
-    "solution": "M\u1eabu: \\(x^2-3x+2=0 \\Rightarrow x=1, x=2\\). T\u1eed: \\(x^2-1=0 \\Rightarrow x=\\pm1\\). T\u1ea1i \\(x=1\\): t\u1eed =0 → kh\u1eed \u0111\u01b0\u1ee3c. T\u1ea1i \\(x=2\\): t\u1eed=3 \u2260 0 → TC\u0110 \\(x=2\\).",
-    "quick": "M\u1eabu=0, t\u1eed \u2260 0 → TC\u0110",
-    "casio": "CALC x=2 → v\u00f4 c\u00f9ng"
+    "solution": "Mẫu: \\(x^2-3x+2=0 \\Rightarrow x=1, x=2\\). Tử: \\(x^2-1=0 \\Rightarrow x=\\pm1\\). Tại \\(x=1\\): tử =0 → khử được. Tại \\(x=2\\): tử=3 ≠ 0 → TCĐ \\(x=2\\).",
+    "quick": "Mẫu=0, tử ≠ 0 → TCĐ",
+    "casio": "CALC x=2 → vô cùng"
   },
   {
     "id": 9,
     "type": "horizontal_asymptote",
-    "question": "T\u00ecm ti\u1ec7m c\u1eadn ngang c\u1ee7a \\(y = \\dfrac{\\sqrt{x^2+1}}{x}\\)?",
+    "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{\\sqrt{x^2+1}}{x}\\)?",
+    "matrix": null,
     "options": [
-      "\\(y=1\\) v\u00e0 \\(y=-1\\)",
+      "\\(y=1\\) và \\(y=-1\\)",
       "\\(y=1\\)",
       "\\(y=-1\\)",
-      "Kh\u00f4ng c\u00f3 TCN"
+      "Không có TCN"
     ],
-    "correct": "\\(y=1\\) v\u00e0 \\(y=-1\\)",
+    "correct": "\\(y=1\\) và \\(y=-1\\)",
     "solution": "Khi \\(x\\to+\\infty\\): \\(y = \\dfrac{\\sqrt{x^2+1}}{x} \\sim \\dfrac{x}{x}=1\\). Khi \\(x\\to-\\infty\\): \\(\\sqrt{x^2+1} \\sim |x| = -x\\) → \\(y \\sim \\dfrac{-x}{x} = -1\\).",
-    "quick": "X\u00e9t 2 ph\u00eda +∞ v\u00e0 -∞ ri\u00eang",
+    "quick": "Xét 2 phía +∞ và -∞ riêng",
     "casio": "CALC x=1e6 →1, x=-1e6 → -1"
   },
   {
     "id": 10,
     "type": "mixed_asymptotes",
-    "question": "S\u1ed1 \u0111\u01b0\u1eddng ti\u1ec7m c\u1eadn c\u1ee7a \\(y = \\dfrac{x+1}{\\sqrt{x^2-1}}\\) l\u00e0?",
+    "question": "Số đường tiệm cận của \\(y = \\dfrac{x+1}{\\sqrt{x^2-1}}\\) là?",
+    "matrix": null,
     "options": [
       "1",
       "2",
@@ -145,8 +155,8 @@
       "4"
     ],
     "correct": "3",
-    "solution": "TX\u0110: \\(x<-1\\) ho\u1eb7c \\(x>1\\). TC\u0110: \\(x=1\\) v\u00e0 \\(x=-1\\) (v\u00ec m\u1eabu →0). TCN: khi \\(x\\to\\pm\\infty\\), \\(y \\sim \\dfrac{x}{|x|} = \\pm1\\) → hai TCN \\(y=1\\) v\u00e0 \\(y=-1\\). T\u1ed5ng: 4? Ki\u1ec3m tra l\u1ea1i: 2 TC\u0110 + 2 TCN = 4.",
-    "quick": "TC\u0110: x=±1; TCN: y=±1 → 4 ti\u1ec7m c\u1eadn",
-    "casio": "Ph\u00e2n t\u00edch mi\u1ec1n x\u00e1c \u0111\u1ecbnh"
+    "solution": "TXĐ: \\(x<-1\\) hoặc \\(x>1\\). TCĐ: \\(x=1\\) và \\(x=-1\\) (vì mẫu →0). TCN: khi \\(x\\to\\pm\\infty\\), \\(y \\sim \\dfrac{x}{|x|} = \\pm1\\) → hai TCN \\(y=1\\) và \\(y=-1\\). Tổng: 4? Kiểm tra lại: 2 TCĐ + 2 TCN = 4.",
+    "quick": "TCĐ: x=±1; TCN: y=±1 → 4 tiệm cận",
+    "casio": "Phân tích miền xác định"
   }
 ]

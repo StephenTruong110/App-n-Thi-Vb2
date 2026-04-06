@@ -1,452 +1,802 @@
 [
   {
+    "id": 1,
     "type": "partial_derivative",
-    "question": "Cho \\(f(x,y)=x^{2}y+3y\\). T\u00ednh \\(f_x\\)?",
-    "options": ["\\(2xy\\)","\\(x^{2}+3\\)","\\(2xy+3\\)","\\(x^{2}\\)"],
+    "question": "Cho \\(f(x,y)=x^{2}y+3y\\). Tính \\(f_x\\)?",
+    "matrix": null,
+    "options": [
+      "\\(2xy\\)",
+      "\\(x^{2}+3\\)",
+      "\\(2xy+3\\)",
+      "\\(x^{2}\\)"
+    ],
     "correct": "\\(2xy\\)",
     "solution": "\\(f_x = \\frac{\\partial}{\\partial x}(x^{2}y+3y) = 2xy\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m theo x, y l\u00e0 h\u1eb1ng",
+    "quick": "đạo hàm theo x, y là hằng",
     "casio": "d/dx(x^2*y+3*y)"
   },
   {
+    "id": 2,
     "type": "partial_derivative",
-    "question": "Cho \\(f(x,y)=x^{2}y+3y\\). T\u00ednh \\(f_y\\)?",
-    "options": ["\\(x^{2}+3\\)","\\(2xy\\)","\\(x^{2}\\)","\\(3\\)"],
+    "question": "Cho \\(f(x,y)=x^{2}y+3y\\). Tính \\(f_y\\)?",
+    "matrix": null,
+    "options": [
+      "\\(x^{2}+3\\)",
+      "\\(2xy\\)",
+      "\\(x^{2}\\)",
+      "\\(3\\)"
+    ],
     "correct": "\\(x^{2}+3\\)",
     "solution": "\\(f_y = \\frac{\\partial}{\\partial y}(x^{2}y+3y)=x^{2}+3\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m theo y, x l\u00e0 h\u1eb1ng",
+    "quick": "đạo hàm theo y, x là hằng",
     "casio": "d/dy(x^2*y+3*y)"
   },
   {
+    "id": 3,
     "type": "partial_derivative",
-    "question": "Cho \\(f(x,y)=\\sin(xy)\\). T\u00ednh \\(f_x\\)?",
-    "options": ["\\(y\\cos(xy)\\)","\\(x\\cos(xy)\\)","\\(\\cos(xy)\\)","\\(-y\\cos(xy)\\)"],
+    "question": "Cho \\(f(x,y)=\\sin(xy)\\). Tính \\(f_x\\)?",
+    "matrix": null,
+    "options": [
+      "\\(y\\cos(xy)\\)",
+      "\\(x\\cos(xy)\\)",
+      "\\(\\cos(xy)\\)",
+      "\\(-y\\cos(xy)\\)"
+    ],
     "correct": "\\(y\\cos(xy)\\)",
     "solution": "\\(f_x = \\cos(xy)\\cdot y\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m h\u1ee3p",
+    "quick": "đạo hàm hợp",
     "casio": "d/dx(sin(x*y))"
   },
   {
+    "id": 4,
     "type": "partial_derivative",
-    "question": "Cho \\(f(x,y)=e^{xy}\\). T\u00ednh \\(f_y\\)?",
-    "options": ["\\(xe^{xy}\\)","\\(ye^{xy}\\)","\\(e^{xy}\\)","\\(xye^{xy}\\)"],
+    "question": "Cho \\(f(x,y)=e^{xy}\\). Tính \\(f_y\\)?",
+    "matrix": null,
+    "options": [
+      "\\(xe^{xy}\\)",
+      "\\(ye^{xy}\\)",
+      "\\(e^{xy}\\)",
+      "\\(xye^{xy}\\)"
+    ],
     "correct": "\\(xe^{xy}\\)",
     "solution": "\\(f_y = e^{xy}\\cdot x\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m theo y",
+    "quick": "đạo hàm theo y",
     "casio": "d/dy(exp(x*y))"
   },
   {
+    "id": 5,
     "type": "partial_derivative",
-    "question": "Cho \\(f(x,y)=\\ln(x^{2}+y^{2})\\). T\u00ednh \\(f_x\\)?",
-    "options": ["\\(\\frac{2x}{x^{2}+y^{2}}\\)","\\(\\frac{1}{x^{2}+y^{2}}\\)","\\(\\frac{2y}{x^{2}+y^{2}}\\)","\\(\\frac{x}{x^{2}+y^{2}}\\)"],
+    "question": "Cho \\(f(x,y)=\\ln(x^{2}+y^{2})\\). Tính \\(f_x\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{2x}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{1}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{2y}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{x}{x^{2}+y^{2}}\\)"
+    ],
     "correct": "\\(\\frac{2x}{x^{2}+y^{2}}\\)",
     "solution": "\\(f_x = \\frac{2x}{x^{2}+y^{2}}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m logarit",
+    "quick": "đạo hàm logarit",
     "casio": "d/dx(ln(x^2+y^2))"
   },
   {
+    "id": 6,
     "type": "partial_derivative",
-    "question": "Cho \\(f(x,y)=x^{3}y^{2}+5x\\). T\u00ednh \\(f_{xy}\\) ( \u0111\u1ea1o h\u00e0m h\u1ed7n h\u1ee3p c\u1ea5p 2)?",
-    "options": ["\\(6x^{2}y\\)","\\(6xy^{2}\\)","\\(3x^{2}y^{2}\\)","\\(6x^{2}y^{2}\\)"],
+    "question": "Cho \\(f(x,y)=x^{3}y^{2}+5x\\). Tính \\(f_{xy}\\) ( đạo hàm hỗn hợp cấp 2)?",
+    "matrix": null,
+    "options": [
+      "\\(6x^{2}y\\)",
+      "\\(6xy^{2}\\)",
+      "\\(3x^{2}y^{2}\\)",
+      "\\(6x^{2}y^{2}\\)"
+    ],
     "correct": "\\(6x^{2}y\\)",
     "solution": "\\(f_x=3x^{2}y^{2}+5 \\Rightarrow f_{xy}=6x^{2}y\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m ri\u00eang c\u1ea5p 2 h\u1ed7n h\u1ee3p",
+    "quick": "đạo hàm riêng cấp 2 hỗn hợp",
     "casio": "d/dx(d/dy(x^3*y^2+5x))"
   },
   {
+    "id": 7,
     "type": "partial_derivative",
-    "question": "Cho \\(f(x,y)=\\cos(x^{2}y)\\). T\u00ednh \\(f_y\\)?",
-    "options": ["\\(-x^{2}\\sin(x^{2}y)\\)","\\(-2xy\\sin(x^{2}y)\\)","\\(-\\sin(x^{2}y)\\)","\\(x^{2}\\sin(x^{2}y)\\)"],
+    "question": "Cho \\(f(x,y)=\\cos(x^{2}y)\\). Tính \\(f_y\\)?",
+    "matrix": null,
+    "options": [
+      "\\(-x^{2}\\sin(x^{2}y)\\)",
+      "\\(-2xy\\sin(x^{2}y)\\)",
+      "\\(-\\sin(x^{2}y)\\)",
+      "\\(x^{2}\\sin(x^{2}y)\\)"
+    ],
     "correct": "\\(-x^{2}\\sin(x^{2}y)\\)",
     "solution": "\\(f_y = -\\sin(x^{2}y)\\cdot x^{2}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m h\u1ee3p l\u01b0\u1ee3ng gi\u00e1c",
+    "quick": "đạo hàm hợp lượng giác",
     "casio": "d/dy(cos(x^2*y))"
   },
   {
+    "id": 8,
     "type": "total_differential",
-    "question": "Vi ph\u00e2n to\u00e0n ph\u1ea7n c\u1ee7a \\(f(x,y)=x^{2}+y^{2}\\) l\u00e0 g\u00ec?",
-    "options": ["\\(2xdx+2ydy\\)","\\(2xdx-2ydy\\)","\\(xdx+ydy\\)","\\(2x+2y\\)"],
+    "question": "Vi phân toàn phần của \\(f(x,y)=x^{2}+y^{2}\\) là gì?",
+    "matrix": null,
+    "options": [
+      "\\(2xdx+2ydy\\)",
+      "\\(2xdx-2ydy\\)",
+      "\\(xdx+ydy\\)",
+      "\\(2x+2y\\)"
+    ],
     "correct": "\\(2xdx+2ydy\\)",
     "solution": "\\(df = f_x dx + f_y dy = 2xdx+2ydy\\)",
-    "quick": "vi ph\u00e2n to\u00e0n ph\u1ea7n",
+    "quick": "vi phân toàn phần",
     "casio": ""
   },
   {
+    "id": 9,
     "type": "total_differential",
-    "question": "Vi ph\u00e2n to\u00e0n ph\u1ea7n c\u1ee7a \\(f(x,y)=xy\\) l\u00e0 g\u00ec?",
-    "options": ["\\(ydx+xdy\\)","\\(xdx+ydy\\)","\\(dx+dy\\)","\\(ydy+xdx\\)"],
+    "question": "Vi phân toàn phần của \\(f(x,y)=xy\\) là gì?",
+    "matrix": null,
+    "options": [
+      "\\(ydx+xdy\\)",
+      "\\(xdx+ydy\\)",
+      "\\(dx+dy\\)",
+      "\\(ydy+xdx\\)"
+    ],
     "correct": "\\(ydx+xdy\\)",
     "solution": "\\(df = ydx + xdy\\)",
-    "quick": "t\u00edch hai bi\u1ebfn",
+    "quick": "tích hai biến",
     "casio": ""
   },
   {
+    "id": 10,
     "type": "total_differential",
-    "question": "Cho \\(f(x,y)=e^{xy}\\). Vi ph\u00e2n to\u00e0n ph\u1ea7n \\(df\\) l\u00e0?",
-    "options": ["\\(e^{xy}(ydx+xdy)\\)","\\(e^{xy}dx+dy\\)","\\(ye^{xy}dx+xe^{xy}dy\\)","C\u1ea3 A v\u00e0 C"],
+    "question": "Cho \\(f(x,y)=e^{xy}\\). Vi phân toàn phần \\(df\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(e^{xy}(ydx+xdy)\\)",
+      "\\(e^{xy}dx+dy\\)",
+      "\\(ye^{xy}dx+xe^{xy}dy\\)",
+      "Cả A và C"
+    ],
     "correct": "\\(e^{xy}(ydx+xdy)\\)",
     "solution": "\\(df = ye^{xy}dx + xe^{xy}dy = e^{xy}(ydx+xdy)\\)",
-    "quick": "vi ph\u00e2n h\u00e0m m\u0169",
+    "quick": "vi phân hàm mũ",
     "casio": ""
   },
   {
+    "id": 11,
     "type": "total_differential",
-    "question": "Cho \\(f(x,y)=\\ln(x+y)\\). Vi ph\u00e2n to\u00e0n ph\u1ea7n \\(df\\) l\u00e0?",
-    "options": ["\\(\\frac{dx+dy}{x+y}\\)","\\(\\frac{dx}{x+y}+\\frac{dy}{x+y}\\)","\\(\\frac{dx-dy}{x+y}\\)","C\u1ea3 A v\u00e0 B"],
-    "correct": "C\u1ea3 A v\u00e0 B",
+    "question": "Cho \\(f(x,y)=\\ln(x+y)\\). Vi phân toàn phần \\(df\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{dx+dy}{x+y}\\)",
+      "\\(\\frac{dx}{x+y}+\\frac{dy}{x+y}\\)",
+      "\\(\\frac{dx-dy}{x+y}\\)",
+      "Cả A và B"
+    ],
+    "correct": "Cả A và B",
     "solution": "\\(df = \\frac{1}{x+y}dx + \\frac{1}{x+y}dy = \\frac{dx+dy}{x+y}\\)",
-    "quick": "vi ph\u00e2n logarit",
+    "quick": "vi phân logarit",
     "casio": ""
   },
   {
+    "id": 12,
     "type": "critical_point",
-    "question": "\u0110i\u1ec3m d\u1eebng (critical point) c\u1ee7a \\(f(x,y)=x^{2}+y^{2}-2x-4y+5\\) l\u00e0?",
-    "options": ["\\((1,2)\\)","\\((-1,-2)\\)","\\((2,1)\\)","\\((0,0)\\)"],
+    "question": "Điểm dừng (critical point) của \\(f(x,y)=x^{2}+y^{2}-2x-4y+5\\) là?",
+    "matrix": null,
+    "options": [
+      "\\((1,2)\\)",
+      "\\((-1,-2)\\)",
+      "\\((2,1)\\)",
+      "\\((0,0)\\)"
+    ],
     "correct": "\\((1,2)\\)",
     "solution": "\\(f_x=2x-2=0, f_y=2y-4=0 \\Rightarrow x=1,y=2\\)",
-    "quick": "gi\u1ea3i h\u1ec7 \u0111\u1ea1o h\u00e0m ri\u00eang =0",
+    "quick": "giải hệ đạo hàm riêng =0",
     "casio": ""
   },
   {
+    "id": 13,
     "type": "critical_point",
-    "question": "\u0110i\u1ec3m d\u1eebng c\u1ee7a \\(f(x,y)=x^{3}+y^{3}-3xy\\) l\u00e0?",
-    "options": ["\\((0,0),(1,1)\\)","\\((0,0),(-1,-1)\\)","\\((1,1)\\)","\\((0,1)\\)"],
+    "question": "Điểm dừng của \\(f(x,y)=x^{3}+y^{3}-3xy\\) là?",
+    "matrix": null,
+    "options": [
+      "\\((0,0),(1,1)\\)",
+      "\\((0,0),(-1,-1)\\)",
+      "\\((1,1)\\)",
+      "\\((0,1)\\)"
+    ],
     "correct": "\\((0,0),(1,1)\\)",
-    "solution": "\\(f_x=3x^{2}-3y=0, f_y=3y^{2}-3x=0 \\Rightarrow x=y=0 \\text{ ho\u1eb7c } x=y=1\\)",
-    "quick": "gi\u1ea3i h\u1ec7 \u0111\u1ed1i x\u1ee9ng",
+    "solution": "\\(f_x=3x^{2}-3y=0, f_y=3y^{2}-3x=0 \\Rightarrow x=y=0 \\text{ hoặc } x=y=1\\)",
+    "quick": "giải hệ đối xứng",
     "casio": ""
   },
   {
+    "id": 14,
     "type": "extremum_2var",
-    "question": "H\u00e0m \\(f(x,y)=x^{2}+y^{2}\\) c\u00f3 c\u1ef1c tr\u1ecb t\u1ea1i \\((0,0)\\)?",
-    "options": ["C\u1ef1c ti\u1ec3u","C\u1ef1c \u0111\u1ea1i","Kh\u00f4ng l\u00e0 c\u1ef1c tr\u1ecb","Y\u00ean ng\u1ef1a"],
-    "correct": "C\u1ef1c ti\u1ec3u",
-    "solution": "\\(f_{xx}=2>0, \\Delta = f_{xx}f_{yy}-f_{xy}^{2}=4>0 \\Rightarrow \\) c\u1ef1c ti\u1ec3u",
-    "quick": "d\u1ea5u hi\u1ec7u \u0111\u1ee7",
+    "question": "Hàm \\(f(x,y)=x^{2}+y^{2}\\) có cực trị tại \\((0,0)\\)?",
+    "matrix": null,
+    "options": [
+      "Cực tiểu",
+      "Cực đại",
+      "Không là cực trị",
+      "Yên ngựa"
+    ],
+    "correct": "Cực tiểu",
+    "solution": "\\(f_{xx}=2>0, \\Delta = f_{xx}f_{yy}-f_{xy}^{2}=4>0 \\Rightarrow \\) cực tiểu",
+    "quick": "dấu hiệu đủ",
     "casio": ""
   },
   {
+    "id": 15,
     "type": "extremum_2var",
-    "question": "H\u00e0m \\(f(x,y)=x^{2}-y^{2}\\) c\u00f3 c\u1ef1c tr\u1ecb t\u1ea1i \\((0,0)\\)?",
-    "options": ["\u0110i\u1ec3m y\u00ean ng\u1ef1a","C\u1ef1c ti\u1ec3u","C\u1ef1c \u0111\u1ea1i","Kh\u00f4ng x\u00e1c \u0111\u1ecbnh"],
-    "correct": "\u0110i\u1ec3m y\u00ean ng\u1ef1a",
-    "solution": "\\(\\Delta = f_{xx}f_{yy}-f_{xy}^{2}= (2)(-2)-0=-4<0 \\Rightarrow\\) y\u00ean ng\u1ef1a",
+    "question": "Hàm \\(f(x,y)=x^{2}-y^{2}\\) có cực trị tại \\((0,0)\\)?",
+    "matrix": null,
+    "options": [
+      "Điểm yên ngựa",
+      "Cực tiểu",
+      "Cực đại",
+      "Không xác định"
+    ],
+    "correct": "Điểm yên ngựa",
+    "solution": "\\(\\Delta = f_{xx}f_{yy}-f_{xy}^{2}= (2)(-2)-0=-4<0 \\Rightarrow\\) yên ngựa",
     "quick": "\\(\\Delta<0\\)",
     "casio": ""
   },
   {
+    "id": 16,
     "type": "extremum_2var",
-    "question": "T\u00ecm c\u1ef1c tr\u1ecb c\u1ee7a \\(f(x,y)=x^{2}+y^{2}-2x-4y+5\\)?",
-    "options": ["C\u1ef1c ti\u1ec3u =0 t\u1ea1i (1,2)","C\u1ef1c \u0111\u1ea1i =0 t\u1ea1i (1,2)","C\u1ef1c ti\u1ec3u =1 t\u1ea1i (1,2)","Kh\u00f4ng c\u00f3 c\u1ef1c tr\u1ecb"],
-    "correct": "C\u1ef1c ti\u1ec3u =0 t\u1ea1i (1,2)",
+    "question": "Tìm cực trị của \\(f(x,y)=x^{2}+y^{2}-2x-4y+5\\)?",
+    "matrix": null,
+    "options": [
+      "Cực tiểu =0 tại (1,2)",
+      "Cực đại =0 tại (1,2)",
+      "Cực tiểu =1 tại (1,2)",
+      "Không có cực trị"
+    ],
+    "correct": "Cực tiểu =0 tại (1,2)",
     "solution": "\\(f(1,2)=1+4-2-8+5=0\\), \\(f_{xx}>0, \\Delta>0\\)",
-    "quick": "\u0111i\u1ec3m d\u1eebng duy nh\u1ea5t",
+    "quick": "điểm dừng duy nhất",
     "casio": ""
   },
   {
+    "id": 17,
     "type": "extremum_2var",
-    "question": "H\u00e0m \\(f(x,y)=x^{3}+y^{3}-3xy\\) c\u00f3 c\u1ef1c tr\u1ecb t\u1ea1i \\((1,1)\\)?",
-    "options": ["C\u1ef1c ti\u1ec3u","C\u1ef1c \u0111\u1ea1i","Y\u00ean ng\u1ef1a","Kh\u00f4ng ph\u1ea3i \u0111i\u1ec3m d\u1eebng"],
-    "correct": "C\u1ef1c ti\u1ec3u",
+    "question": "Hàm \\(f(x,y)=x^{3}+y^{3}-3xy\\) có cực trị tại \\((1,1)\\)?",
+    "matrix": null,
+    "options": [
+      "Cực tiểu",
+      "Cực đại",
+      "Yên ngựa",
+      "Không phải điểm dừng"
+    ],
+    "correct": "Cực tiểu",
     "solution": "\\(f_{xx}=6x=6, f_{yy}=6y=6, f_{xy}=-3, \\Delta=36-9=27>0, f_{xx}>0\\)",
-    "quick": "t\u00ednh \u0111\u1ea1o h\u00e0m c\u1ea5p 2",
+    "quick": "tính đạo hàm cấp 2",
     "casio": ""
   },
   {
+    "id": 18,
     "type": "extremum_2var",
-    "question": "H\u00e0m \\(f(x,y)=x^{3}+y^{3}-3xy\\) c\u00f3 c\u1ef1c tr\u1ecb t\u1ea1i \\((0,0)\\)?",
-    "options": ["Kh\u00f4ng l\u00e0 c\u1ef1c tr\u1ecb","C\u1ef1c ti\u1ec3u","C\u1ef1c \u0111\u1ea1i","Y\u00ean ng\u1ef1a"],
-    "correct": "Kh\u00f4ng l\u00e0 c\u1ef1c tr\u1ecb",
-    "solution": "\\(f_{xx}=0, f_{yy}=0, f_{xy}=-3, \\Delta=-9<0 \\Rightarrow\\) y\u00ean ng\u1ef1a",
+    "question": "Hàm \\(f(x,y)=x^{3}+y^{3}-3xy\\) có cực trị tại \\((0,0)\\)?",
+    "matrix": null,
+    "options": [
+      "Không là cực trị",
+      "Cực tiểu",
+      "Cực đại",
+      "Yên ngựa"
+    ],
+    "correct": "Không là cực trị",
+    "solution": "\\(f_{xx}=0, f_{yy}=0, f_{xy}=-3, \\Delta=-9<0 \\Rightarrow\\) yên ngựa",
     "quick": "\\(\\Delta<0\\)",
     "casio": ""
   },
   {
+    "id": 19,
     "type": "extremum_2var",
-    "question": "T\u00ecm c\u1ef1c tr\u1ecb c\u1ee7a \\(f(x,y)=xy\\) tr\u00ean to\u00e0n b\u1ed9 m\u1eb7t ph\u1eb3ng?",
-    "options": ["Kh\u00f4ng c\u00f3 c\u1ef1c tr\u1ecb","C\u1ef1c ti\u1ec3u t\u1ea1i (0,0)","C\u1ef1c \u0111\u1ea1i t\u1ea1i (0,0)","\u0110i\u1ec3m y\u00ean ng\u1ef1a t\u1ea1i (0,0)"],
-    "correct": "\u0110i\u1ec3m y\u00ean ng\u1ef1a t\u1ea1i (0,0)",
+    "question": "Tìm cực trị của \\(f(x,y)=xy\\) trên toàn bộ mặt phẳng?",
+    "matrix": null,
+    "options": [
+      "Không có cực trị",
+      "Cực tiểu tại (0,0)",
+      "Cực đại tại (0,0)",
+      "Điểm yên ngựa tại (0,0)"
+    ],
+    "correct": "Điểm yên ngựa tại (0,0)",
     "solution": "\\(f_x=y=0, f_y=x=0 \\Rightarrow (0,0), \\Delta=-1<0\\)",
-    "quick": "\u0111i\u1ec3m y\u00ean ng\u1ef1a",
+    "quick": "điểm yên ngựa",
     "casio": ""
   },
   {
+    "id": 20,
     "type": "partial_derivative_higher_order",
-    "question": "Cho \\(f(x,y)=x^{2}y^{3}\\). T\u00ednh \\(f_{xxy}\\)?",
-    "options": ["\\(6y^{2}\\)","\\(6xy^{2}\\)","\\(2y^{3}\\)","\\(6x^{2}y\\)"],
+    "question": "Cho \\(f(x,y)=x^{2}y^{3}\\). Tính \\(f_{xxy}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(6y^{2}\\)",
+      "\\(6xy^{2}\\)",
+      "\\(2y^{3}\\)",
+      "\\(6x^{2}y\\)"
+    ],
     "correct": "\\(6y^{2}\\)",
     "solution": "\\(f_x=2xy^{3} \\Rightarrow f_{xx}=2y^{3} \\Rightarrow f_{xxy}=6y^{2}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m ri\u00eang c\u1ea5p cao",
+    "quick": "đạo hàm riêng cấp cao",
     "casio": ""
   },
   {
+    "id": 21,
     "type": "partial_derivative_higher_order",
-    "question": "Cho \\(f(x,y)=\\sin(xy)\\). T\u00ednh \\(f_{xy}\\)?",
-    "options": ["\\(\\cos(xy)-xy\\sin(xy)\\)","\\(-xy\\sin(xy)\\)","\\(y\\cos(xy)\\)","\\(x\\cos(xy)\\)"],
+    "question": "Cho \\(f(x,y)=\\sin(xy)\\). Tính \\(f_{xy}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\cos(xy)-xy\\sin(xy)\\)",
+      "\\(-xy\\sin(xy)\\)",
+      "\\(y\\cos(xy)\\)",
+      "\\(x\\cos(xy)\\)"
+    ],
     "correct": "\\(\\cos(xy)-xy\\sin(xy)\\)",
     "solution": "\\(f_x=y\\cos(xy) \\Rightarrow f_{xy}=\\cos(xy)-xy\\sin(xy)\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m h\u1ed7n h\u1ee3p",
+    "quick": "đạo hàm hỗn hợp",
     "casio": ""
   },
   {
+    "id": 22,
     "type": "total_differential_approx",
-    "question": "X\u1ea5p x\u1ec9 \\(\\sqrt{(1.1)^{2}+(1.9)^{2}}\\) d\u00f9ng vi ph\u00e2n to\u00e0n ph\u1ea7n t\u1ea1i (1,2)?",
-    "options": ["\\(\\sqrt{5}+\\frac{0.1+(-0.1)\\cdot2}{\\sqrt{5}}\\)","\\(\\sqrt{5}+\\frac{0.1+(-0.1)}{\\sqrt{5}}\\)","\\(\\sqrt{5}\\)","\\(\\sqrt{5}+0.1\\)"],
+    "question": "Xấp xỉ \\(\\sqrt{(1.1)^{2}+(1.9)^{2}}\\) dùng vi phân toàn phần tại (1,2)?",
+    "matrix": null,
+    "options": [
+      "\\(\\sqrt{5}+\\frac{0.1+(-0.1)\\cdot2}{\\sqrt{5}}\\)",
+      "\\(\\sqrt{5}+\\frac{0.1+(-0.1)}{\\sqrt{5}}\\)",
+      "\\(\\sqrt{5}\\)",
+      "\\(\\sqrt{5}+0.1\\)"
+    ],
     "correct": "\\(\\sqrt{5}+\\frac{0.1+(-0.1)\\cdot2}{\\sqrt{5}}\\)",
-    "solution": "\\(f(x,y)=\\sqrt{x^{2}+y^{2}}, f_x=x/f, f_y=y/f\\) t\u1ea1i (1,2), \\(dx=0.1, dy=-0.1\\)",
-    "quick": "c\u00f4ng th\u1ee9c x\u1ea5p x\u1ec9",
+    "solution": "\\(f(x,y)=\\sqrt{x^{2}+y^{2}}, f_x=x/f, f_y=y/f\\) tại (1,2), \\(dx=0.1, dy=-0.1\\)",
+    "quick": "công thức xấp xỉ",
     "casio": ""
   },
   {
+    "id": 23,
     "type": "total_differential_approx",
-    "question": "X\u1ea5p x\u1ec9 \\(e^{0.1\\cdot 1.9}\\) d\u00f9ng vi ph\u00e2n t\u1ea1i (0,2)?",
-    "options": ["\\(1+0.1\\cdot1.9\\)","\\(1+0.1\\)","\\(1+0.1\\cdot2\\)","\\(1+0.1\\cdot1.9+...\\)"],
+    "question": "Xấp xỉ \\(e^{0.1\\cdot 1.9}\\) dùng vi phân tại (0,2)?",
+    "matrix": null,
+    "options": [
+      "\\(1+0.1\\cdot1.9\\)",
+      "\\(1+0.1\\)",
+      "\\(1+0.1\\cdot2\\)",
+      "\\(1+0.1\\cdot1.9+...\\)"
+    ],
     "correct": "\\(1+0.1\\cdot2\\)",
     "solution": "\\(f(x,y)=e^{xy}, f(0,2)=1, df=ye^{xy}dx+xe^{xy}dy \\Rightarrow df=2dx+0dy=0.2\\)",
-    "quick": "x\u1ea5p x\u1ec9 b\u1eadc nh\u1ea5t",
+    "quick": "xấp xỉ bậc nhất",
     "casio": ""
   },
   {
+    "id": 24,
     "type": "constrained_extremum",
-    "question": "T\u00ecm c\u1ef1c tr\u1ecb c\u1ee7a \\(f(x,y)=x+y\\) v\u1edbi \u0111i\u1ec1u ki\u1ec7n \\(x^{2}+y^{2}=1\\)?",
-    "options": ["Max=\\(\\sqrt{2}\\), Min=\\(-\\sqrt{2}\\)","Max=1, Min=-1","Max=2, Min=-2","Kh\u00f4ng c\u00f3"],
+    "question": "Tìm cực trị của \\(f(x,y)=x+y\\) với điều kiện \\(x^{2}+y^{2}=1\\)?",
+    "matrix": null,
+    "options": [
+      "Max=\\(\\sqrt{2}\\), Min=\\(-\\sqrt{2}\\)",
+      "Max=1, Min=-1",
+      "Max=2, Min=-2",
+      "Không có"
+    ],
     "correct": "Max=\\(\\sqrt{2}\\), Min=\\(-\\sqrt{2}\\)",
-    "solution": "D\u00f9ng nh\u00e2n t\u1eed Lagrange: \\(\\nabla f = \\lambda \\nabla g \\Rightarrow (1,1)=\\lambda(2x,2y) \\Rightarrow x=y, x^{2}+y^{2}=1 \\Rightarrow x=y=\\pm1/\\sqrt{2}\\)",
-    "quick": "\u0111i\u1ec1u ki\u1ec7n r\u00e0ng bu\u1ed9c",
+    "solution": "Dùng nhân tử Lagrange: \\(\\nabla f = \\lambda \\nabla g \\Rightarrow (1,1)=\\lambda(2x,2y) \\Rightarrow x=y, x^{2}+y^{2}=1 \\Rightarrow x=y=\\pm1/\\sqrt{2}\\)",
+    "quick": "điều kiện ràng buộc",
     "casio": ""
   },
   {
+    "id": 25,
     "type": "constrained_extremum",
-    "question": "C\u1ef1c tr\u1ecb c\u1ee7a \\(f(x,y)=xy\\) v\u1edbi \u0111i\u1ec1u ki\u1ec7n \\(x+y=1\\)?",
-    "options": ["Max=1/4 t\u1ea1i (1/2,1/2)","Min=1/4","Max=1","Kh\u00f4ng c\u00f3"],
-    "correct": "Max=1/4 t\u1ea1i (1/2,1/2)",
-    "solution": "\\(y=1-x \\Rightarrow f=x(1-x)=-x^{2}+x \\Rightarrow \\) \u0111\u1ec9nh t\u1ea1i x=1/2",
-    "quick": "thay \u0111i\u1ec1u ki\u1ec7n v\u00e0o h\u00e0m",
+    "question": "Cực trị của \\(f(x,y)=xy\\) với điều kiện \\(x+y=1\\)?",
+    "matrix": null,
+    "options": [
+      "Max=1/4 tại (1/2,1/2)",
+      "Min=1/4",
+      "Max=1",
+      "Không có"
+    ],
+    "correct": "Max=1/4 tại (1/2,1/2)",
+    "solution": "\\(y=1-x \\Rightarrow f=x(1-x)=-x^{2}+x \\Rightarrow \\) đỉnh tại x=1/2",
+    "quick": "thay điều kiện vào hàm",
     "casio": ""
   },
   {
+    "id": 26,
     "type": "partial_derivative_application",
-    "question": "\u0110\u1ea1o h\u00e0m ri\u00eang \\(f_x\\) c\u1ee7a \\(f(x,y)=\\arctan\\left(\\frac{y}{x}\\right)\\) l\u00e0?",
-    "options": ["\\(\\frac{-y}{x^{2}+y^{2}}\\)","\\(\\frac{y}{x^{2}+y^{2}}\\)","\\(\\frac{x}{x^{2}+y^{2}}\\)","\\(\\frac{-x}{x^{2}+y^{2}}\\)"],
+    "question": "Đạo hàm riêng \\(f_x\\) của \\(f(x,y)=\\arctan\\left(\\frac{y}{x}\\right)\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{-y}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{y}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{x}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{-x}{x^{2}+y^{2}}\\)"
+    ],
     "correct": "\\(\\frac{-y}{x^{2}+y^{2}}\\)",
     "solution": "\\(\\frac{\\partial}{\\partial x}\\arctan(u) = \\frac{1}{1+u^{2}}\\cdot u_x, u=y/x \\Rightarrow u_x=-y/x^{2}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m arctan",
+    "quick": "đạo hàm arctan",
     "casio": ""
   },
   {
+    "id": 27,
     "type": "partial_derivative_application",
-    "question": "\u0110\u1ea1o h\u00e0m ri\u00eang \\(f_y\\) c\u1ee7a \\(f(x,y)=\\arctan\\left(\\frac{y}{x}\\right)\\) l\u00e0?",
-    "options": ["\\(\\frac{x}{x^{2}+y^{2}}\\)","\\(\\frac{-x}{x^{2}+y^{2}}\\)","\\(\\frac{y}{x^{2}+y^{2}}\\)","\\(\\frac{-y}{x^{2}+y^{2}}\\)"],
+    "question": "Đạo hàm riêng \\(f_y\\) của \\(f(x,y)=\\arctan\\left(\\frac{y}{x}\\right)\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{x}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{-x}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{y}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{-y}{x^{2}+y^{2}}\\)"
+    ],
     "correct": "\\(\\frac{x}{x^{2}+y^{2}}\\)",
     "solution": "\\(u_y=1/x \\Rightarrow f_y = \\frac{1}{1+(y/x)^{2}}\\cdot\\frac{1}{x} = \\frac{x}{x^{2}+y^{2}}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m theo y",
+    "quick": "đạo hàm theo y",
     "casio": ""
   },
   {
+    "id": 28,
     "type": "extremum_2var_application",
-    "question": "H\u00e0m s\u1ea3n xu\u1ea5t Cobb-Douglas \\(P(L,K)=10L^{0.5}K^{0.5}\\). T\u00ecm \\(P_L\\)?",
-    "options": ["\\(5L^{-0.5}K^{0.5}\\)","\\(5L^{0.5}K^{-0.5}\\)","\\(10L^{0.5}K^{0.5}\\)","\\(0.5L^{-0.5}K^{0.5}\\)"],
+    "question": "Hàm sản xuất Cobb-Douglas \\(P(L,K)=10L^{0.5}K^{0.5}\\). Tìm \\(P_L\\)?",
+    "matrix": null,
+    "options": [
+      "\\(5L^{-0.5}K^{0.5}\\)",
+      "\\(5L^{0.5}K^{-0.5}\\)",
+      "\\(10L^{0.5}K^{0.5}\\)",
+      "\\(0.5L^{-0.5}K^{0.5}\\)"
+    ],
     "correct": "\\(5L^{-0.5}K^{0.5}\\)",
     "solution": "\\(P_L = 10\\cdot0.5 L^{-0.5}K^{0.5}=5L^{-0.5}K^{0.5}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m ri\u00eang trong kinh t\u1ebf",
+    "quick": "đạo hàm riêng trong kinh tế",
     "casio": ""
   },
   {
+    "id": 29,
     "type": "higher_order_mixed",
-    "question": "Cho \\(f(x,y)=x^{2}y+\\sin(xy)\\). T\u00ednh \\(f_{xy}\\)?",
-    "options": ["\\(2x + \\cos(xy) - xy\\sin(xy)\\)","\\(2x + \\cos(xy)\\)","\\(2x - xy\\sin(xy)\\)","\\(2x + \\sin(xy)\\)"],
+    "question": "Cho \\(f(x,y)=x^{2}y+\\sin(xy)\\). Tính \\(f_{xy}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(2x + \\cos(xy) - xy\\sin(xy)\\)",
+      "\\(2x + \\cos(xy)\\)",
+      "\\(2x - xy\\sin(xy)\\)",
+      "\\(2x + \\sin(xy)\\)"
+    ],
     "correct": "\\(2x + \\cos(xy) - xy\\sin(xy)\\)",
     "solution": "\\(f_x=2xy + y\\cos(xy) \\Rightarrow f_{xy}=2x + \\cos(xy) - xy\\sin(xy)\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m h\u1ed7n h\u1ee3p",
+    "quick": "đạo hàm hỗn hợp",
     "casio": ""
   },
   {
+    "id": 30,
     "type": "total_differential_property",
-    "question": "Vi ph\u00e2n to\u00e0n ph\u1ea7n c\u1ee7a \\(f(x,y)=x^{2}y\\) t\u1ea1i (1,2) v\u1edbi \\(dx=0.1, dy=-0.1\\) l\u00e0?",
-    "options": ["\\(0.2\\)","\\(0.3\\)","\\(0.4\\)","\\(0.1\\)"],
+    "question": "Vi phân toàn phần của \\(f(x,y)=x^{2}y\\) tại (1,2) với \\(dx=0.1, dy=-0.1\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(0.2\\)",
+      "\\(0.3\\)",
+      "\\(0.4\\)",
+      "\\(0.1\\)"
+    ],
     "correct": "\\(0.2\\)",
     "solution": "\\(df = 2xy dx + x^{2} dy = 2\\cdot1\\cdot2\\cdot0.1 + 1^{2}\\cdot(-0.1) = 0.4 - 0.1 = 0.3\\)",
-    "quick": "t\u00ednh tr\u1ef1c ti\u1ebfp",
+    "quick": "tính trực tiếp",
     "casio": ""
   },
   {
+    "id": 31,
     "type": "critical_point_classify",
-    "question": "Ph\u00e2n lo\u1ea1i \u0111i\u1ec3m d\u1eebng (0,0) c\u1ee7a \\(f(x,y)=x^{4}+y^{4}-4xy+1\\)?",
-    "options": ["Ch\u01b0a k\u1ebft lu\u1eadn \u0111\u01b0\u1ee3c (c\u1ea7n \u0111\u1ea1o h\u00e0m b\u1eadc cao)","C\u1ef1c ti\u1ec3u","C\u1ef1c \u0111\u1ea1i","Y\u00ean ng\u1ef1a"],
-    "correct": "Ch\u01b0a k\u1ebft lu\u1eadn \u0111\u01b0\u1ee3c (c\u1ea7n \u0111\u1ea1o h\u00e0m b\u1eadc cao)",
-    "solution": "\\(f_x=4x^{3}-4y=0, f_y=4y^{3}-4x=0 \\Rightarrow (0,0)\\) l\u00e0 \u0111i\u1ec3m d\u1eebng nh\u01b0ng \\(f_{xx}=0, f_{yy}=0, f_{xy}=-4, \\Delta=-16<0\\) n\u00ean ch\u01b0a k\u1ebft lu\u1eadn \u0111\u01b0\u1ee3c b\u1eb1ng d\u1ea5u hi\u1ec7u c\u1ea5p 2",
-    "quick": "\u0111i\u1ec3m suy bi\u1ebfn",
+    "question": "Phân loại điểm dừng (0,0) của \\(f(x,y)=x^{4}+y^{4}-4xy+1\\)?",
+    "matrix": null,
+    "options": [
+      "Chưa kết luận được (cần đạo hàm bậc cao)",
+      "Cực tiểu",
+      "Cực đại",
+      "Yên ngựa"
+    ],
+    "correct": "Chưa kết luận được (cần đạo hàm bậc cao)",
+    "solution": "\\(f_x=4x^{3}-4y=0, f_y=4y^{3}-4x=0 \\Rightarrow (0,0)\\) là điểm dừng nhưng \\(f_{xx}=0, f_{yy}=0, f_{xy}=-4, \\Delta=-16<0\\) nên chưa kết luận được bằng dấu hiệu cấp 2",
+    "quick": "điểm suy biến",
     "casio": ""
   },
   {
+    "id": 32,
     "type": "partial_derivative_implicit",
-    "question": "Cho \\(z\\) \u0111\u01b0\u1ee3c x\u00e1c \u0111\u1ecbnh b\u1edfi \\(x^{2}+y^{2}+z^{2}=1\\). T\u00ednh \\(\\frac{\\partial z}{\\partial x}\\)?",
-    "options": ["\\(-\\frac{x}{z}\\)","\\(-\\frac{z}{x}\\)","\\(\\frac{x}{z}\\)","\\(-x\\)"],
+    "question": "Cho \\(z\\) được xác định bởi \\(x^{2}+y^{2}+z^{2}=1\\). Tính \\(\\frac{\\partial z}{\\partial x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(-\\frac{x}{z}\\)",
+      "\\(-\\frac{z}{x}\\)",
+      "\\(\\frac{x}{z}\\)",
+      "\\(-x\\)"
+    ],
     "correct": "\\(-\\frac{x}{z}\\)",
     "solution": "\\(2x + 2z z_x = 0 \\Rightarrow z_x = -x/z\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m h\u00e0m \u1ea9n",
+    "quick": "đạo hàm hàm ẩn",
     "casio": ""
   },
   {
+    "id": 33,
     "type": "partial_derivative_implicit",
-    "question": "Cho \\(e^{z}=xyz\\). T\u00ednh \\(\\frac{\\partial z}{\\partial y}\\)?",
-    "options": ["\\(\\frac{xz}{e^{z}-xy}\\)","\\(\\frac{xy}{e^{z}-xz}\\)","\\(\\frac{yz}{e^{z}-xy}\\)","\\(\\frac{xz}{e^{z}}\\)"],
+    "question": "Cho \\(e^{z}=xyz\\). Tính \\(\\frac{\\partial z}{\\partial y}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{xz}{e^{z}-xy}\\)",
+      "\\(\\frac{xy}{e^{z}-xz}\\)",
+      "\\(\\frac{yz}{e^{z}-xy}\\)",
+      "\\(\\frac{xz}{e^{z}}\\)"
+    ],
     "correct": "\\(\\frac{xz}{e^{z}-xy}\\)",
     "solution": "\\(e^{z}z_y = xz + xy z_y \\Rightarrow z_y(e^{z}-xy)=xz \\Rightarrow z_y = \\frac{xz}{e^{z}-xy}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m h\u00e0m \u1ea9n",
+    "quick": "đạo hàm hàm ẩn",
     "casio": ""
   },
   {
+    "id": 34,
     "type": "extremum_on_closed_region",
-    "question": "T\u00ecm GTLN c\u1ee7a \\(f(x,y)=x+y\\) tr\u00ean mi\u1ec1n \\(x^{2}+y^{2}\\le 1\\)?",
-    "options": ["\\(\\sqrt{2}\\)","1","2","0"],
+    "question": "Tìm GTLN của \\(f(x,y)=x+y\\) trên miền \\(x^{2}+y^{2}\\le 1\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\sqrt{2}\\)",
+      "1",
+      "2",
+      "0"
+    ],
     "correct": "\\(\\sqrt{2}\\)",
-    "solution": "Trong mi\u1ec1n: \u0111i\u1ec3m d\u1eebng (0,0) cho f=0; tr\u00ean bi\u00ean d\u00f9ng Lagrange \u0111\u01b0\u1ee3c \\(\\pm\\sqrt{2}\\)",
-    "quick": "bi\u00ean l\u00e0 \u0111\u01b0\u1eddng tr\u00f2n",
+    "solution": "Trong miền: điểm dừng (0,0) cho f=0; trên biên dùng Lagrange được \\(\\pm\\sqrt{2}\\)",
+    "quick": "biên là đường tròn",
     "casio": ""
   },
   {
+    "id": 35,
     "type": "total_differential_check_exact",
-    "question": "Bi\u1ec3u th\u1ee9c \\(2xydx + x^{2}dy\\) c\u00f3 ph\u1ea3i l\u00e0 vi ph\u00e2n to\u00e0n ph\u1ea7n c\u1ee7a h\u00e0m n\u00e0o kh\u00f4ng?",
-    "options": ["C\u00f3, c\u1ee7a \\(x^{2}y\\)","C\u00f3, c\u1ee7a \\(xy^{2}\\)","Kh\u00f4ng","C\u00f3, c\u1ee7a \\(x^{2}y^{2}\\)"],
-    "correct": "C\u00f3, c\u1ee7a \\(x^{2}y\\)",
+    "question": "Biểu thức \\(2xydx + x^{2}dy\\) có phải là vi phân toàn phần của hàm nào không?",
+    "matrix": null,
+    "options": [
+      "Có, của \\(x^{2}y\\)",
+      "Có, của \\(xy^{2}\\)",
+      "Không",
+      "Có, của \\(x^{2}y^{2}\\)"
+    ],
+    "correct": "Có, của \\(x^{2}y\\)",
     "solution": "\\(df = 2xydx + x^{2}dy \\Rightarrow f_x=2xy \\Rightarrow f=x^{2}y+g(y) \\Rightarrow f_y=x^{2}+g'(y)=x^{2} \\Rightarrow g'(y)=0\\)",
-    "quick": "ki\u1ec3m tra \\(\\frac{\\partial P}{\\partial y}=\\frac{\\partial Q}{\\partial x}\\)",
+    "quick": "kiểm tra \\(\\frac{\\partial P}{\\partial y}=\\frac{\\partial Q}{\\partial x}\\)",
     "casio": ""
   },
   {
+    "id": 36,
     "type": "total_differential_check_exact",
-    "question": "Bi\u1ec3u th\u1ee9c \\(ydx - xdy\\) c\u00f3 ph\u1ea3i l\u00e0 vi ph\u00e2n to\u00e0n ph\u1ea7n kh\u00f4ng?",
-    "options": ["Kh\u00f4ng","C\u00f3","Ch\u1ec9 khi x=y","Ch\u1ec9 khi x,y>0"],
-    "correct": "Kh\u00f4ng",
+    "question": "Biểu thức \\(ydx - xdy\\) có phải là vi phân toàn phần không?",
+    "matrix": null,
+    "options": [
+      "Không",
+      "Có",
+      "Chỉ khi x=y",
+      "Chỉ khi x,y>0"
+    ],
+    "correct": "Không",
     "solution": "\\(P=y, Q=-x \\Rightarrow P_y=1, Q_x=-1 \\Rightarrow P_y \\neq Q_x\\)",
-    "quick": "kh\u00f4ng th\u1ecfa \u0111i\u1ec1u ki\u1ec7n \u0111\u00f3ng",
+    "quick": "không thỏa điều kiện đóng",
     "casio": ""
   },
   {
+    "id": 37,
     "type": "partial_derivative_physics",
-    "question": "Trong nhi\u1ec7t \u0111\u1ed9ng l\u1ef1c h\u1ecdc, \u00e1p su\u1ea5t \\(P\\) ph\u1ee5 thu\u1ed9c th\u1ec3 t\u00edch V v\u00e0 nhi\u1ec7t \u0111\u1ed9 T: \\(P=nRT/V\\). T\u00ednh \\(\\frac{\\partial P}{\\partial V}\\)?",
-    "options": ["\\(-\\frac{nRT}{V^{2}}\\)","\\(\\frac{nRT}{V^{2}}\\)","\\(\\frac{nR}{V}\\)","\\(-\\frac{nR}{V^{2}}\\)"],
+    "question": "Trong nhiệt động lực học, áp suất \\(P\\) phụ thuộc thể tích V và nhiệt độ T: \\(P=nRT/V\\). Tính \\(\\frac{\\partial P}{\\partial V}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(-\\frac{nRT}{V^{2}}\\)",
+      "\\(\\frac{nRT}{V^{2}}\\)",
+      "\\(\\frac{nR}{V}\\)",
+      "\\(-\\frac{nR}{V^{2}}\\)"
+    ],
     "correct": "\\(-\\frac{nRT}{V^{2}}\\)",
     "solution": "\\(P = nRT\\cdot V^{-1} \\Rightarrow \\frac{\\partial P}{\\partial V} = nRT\\cdot(-1)V^{-2}\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m theo th\u1ec3 t\u00edch",
+    "quick": "đạo hàm theo thể tích",
     "casio": ""
   },
   {
+    "id": 38,
     "type": "partial_derivative_economics",
-    "question": "H\u00e0m c\u1ea7u \\(Q(P,I)=100-2P+0.5I\\), v\u1edbi P l\u00e0 gi\u00e1, I l\u00e0 thu nh\u1eadp. T\u00ednh \\(\\frac{\\partial Q}{\\partial I}\\)?",
-    "options": ["0.5","-2","100","0"],
+    "question": "Hàm cầu \\(Q(P,I)=100-2P+0.5I\\), với P là giá, I là thu nhập. Tính \\(\\frac{\\partial Q}{\\partial I}\\)?",
+    "matrix": null,
+    "options": [
+      "0.5",
+      "-2",
+      "100",
+      "0"
+    ],
     "correct": "0.5",
     "solution": "\\(Q_I = 0.5\\)",
-    "quick": "\u0111\u1ea1o h\u00e0m theo thu nh\u1eadp",
+    "quick": "đạo hàm theo thu nhập",
     "casio": ""
   },
   {
+    "id": 39,
     "type": "extremum_2var_negative_definite",
-    "question": "H\u00e0m \\(f(x,y)=-x^{2}-y^{2}\\) c\u00f3 c\u1ef1c tr\u1ecb t\u1ea1i (0,0)?",
-    "options": ["C\u1ef1c \u0111\u1ea1i","C\u1ef1c ti\u1ec3u","Y\u00ean ng\u1ef1a","Kh\u00f4ng"],
-    "correct": "C\u1ef1c \u0111\u1ea1i",
-    "solution": "\\(f_{xx}=-2<0, \\Delta=4>0 \\Rightarrow\\) c\u1ef1c \u0111\u1ea1i",
-    "quick": "d\u1ea5u hi\u1ec7u \u0111\u1ee7",
+    "question": "Hàm \\(f(x,y)=-x^{2}-y^{2}\\) có cực trị tại (0,0)?",
+    "matrix": null,
+    "options": [
+      "Cực đại",
+      "Cực tiểu",
+      "Yên ngựa",
+      "Không"
+    ],
+    "correct": "Cực đại",
+    "solution": "\\(f_{xx}=-2<0, \\Delta=4>0 \\Rightarrow\\) cực đại",
+    "quick": "dấu hiệu đủ",
     "casio": ""
   },
   {
+    "id": 40,
     "type": "total_differential_application",
-    "question": "Cho \\(f(x,y)=\\ln(x^{2}+y^{2})\\). Vi ph\u00e2n to\u00e0n ph\u1ea7n t\u1ea1i (1,1) l\u00e0?",
-    "options": ["\\(dx+dy\\)","\\(\\frac{dx+dy}{2}\\)","\\(\\frac{dx-dy}{2}\\)","\\(2dx+2dy\\)"],
+    "question": "Cho \\(f(x,y)=\\ln(x^{2}+y^{2})\\). Vi phân toàn phần tại (1,1) là?",
+    "matrix": null,
+    "options": [
+      "\\(dx+dy\\)",
+      "\\(\\frac{dx+dy}{2}\\)",
+      "\\(\\frac{dx-dy}{2}\\)",
+      "\\(2dx+2dy\\)"
+    ],
     "correct": "\\(\\frac{dx+dy}{2}\\)",
     "solution": "\\(f_x=\\frac{2x}{x^{2}+y^{2}}=\\frac{2}{2}=1, f_y=\\frac{2y}{x^{2}+y^{2}}=1 \\Rightarrow df = 1\\cdot dx+1\\cdot dy\\)",
-    "quick": "t\u1ea1i (1,1) \u0111\u1ed1i x\u1ee9ng",
+    "quick": "tại (1,1) đối xứng",
     "casio": ""
   },
   {
+    "id": 41,
     "type": "mixed_partial_equality",
-    "question": "\u0110\u1ecbnh l\u00fd Schwarz kh\u1eb3ng \u0111\u1ecbnh \u0111i\u1ec1u g\u00ec v\u1ec1 \\(f_{xy}\\) v\u00e0 \\(f_{yx}\\) n\u1ebfu f c\u00f3 \u0111\u1ea1o h\u00e0m ri\u00eang c\u1ea5p 2 li\u00ean t\u1ee5c?",
-    "options": ["\\(f_{xy}=f_{yx}\\)","\\(f_{xy}=-f_{yx}\\)","\\(f_{xy}=0\\)","Kh\u00f4ng li\u00ean quan"],
+    "question": "Định lý Schwarz khẳng định điều gì về \\(f_{xy}\\) và \\(f_{yx}\\) nếu f có đạo hàm riêng cấp 2 liên tục?",
+    "matrix": null,
+    "options": [
+      "\\(f_{xy}=f_{yx}\\)",
+      "\\(f_{xy}=-f_{yx}\\)",
+      "\\(f_{xy}=0\\)",
+      "Không liên quan"
+    ],
     "correct": "\\(f_{xy}=f_{yx}\\)",
-    "solution": "\u0110\u1ecbnh l\u00fd Schwarz: \u0111\u1ea1o h\u00e0m h\u1ed7n h\u1ee3p b\u1eb1ng nhau n\u1ebfu li\u00ean t\u1ee5c",
-    "quick": "t\u00ednh ch\u1ea5t \u0111\u1ed1i x\u1ee9ng",
+    "solution": "Định lý Schwarz: đạo hàm hỗn hợp bằng nhau nếu liên tục",
+    "quick": "tính chất đối xứng",
     "casio": ""
   },
   {
+    "id": 42,
     "type": "extremum_2var_with_parameter",
-    "question": "H\u00e0m \\(f(x,y)=x^{2}+y^{2}+kxy\\) c\u00f3 c\u1ef1c ti\u1ec3u t\u1ea1i (0,0) khi n\u00e0o?",
-    "options": ["\\(|k|<2\\)","\\(|k|>2\\)","\\(k=0\\)","\\(k\\neq0\\)"],
+    "question": "Hàm \\(f(x,y)=x^{2}+y^{2}+kxy\\) có cực tiểu tại (0,0) khi nào?",
+    "matrix": null,
+    "options": [
+      "\\(|k|<2\\)",
+      "\\(|k|>2\\)",
+      "\\(k=0\\)",
+      "\\(k\\neq0\\)"
+    ],
     "correct": "\\(|k|<2\\)",
     "solution": "\\(f_{xx}=2, f_{yy}=2, f_{xy}=k, \\Delta=4-k^{2}>0 \\Rightarrow |k|<2\\)",
-    "quick": "\u0111i\u1ec1u ki\u1ec7n \u0111\u1ee7 c\u1ef1c ti\u1ec3u",
+    "quick": "điều kiện đủ cực tiểu",
     "casio": ""
   },
   {
+    "id": 43,
     "type": "gradient_direction",
-    "question": "Gradient c\u1ee7a \\(f(x,y)=x^{2}+y^{2}\\) t\u1ea1i (1,1) l\u00e0?",
-    "options": ["\\((2,2)\\)","\\((1,1)\\)","\\((2,1)\\)","\\((1,2)\\)"],
+    "question": "Gradient của \\(f(x,y)=x^{2}+y^{2}\\) tại (1,1) là?",
+    "matrix": null,
+    "options": [
+      "\\((2,2)\\)",
+      "\\((1,1)\\)",
+      "\\((2,1)\\)",
+      "\\((1,2)\\)"
+    ],
     "correct": "\\((2,2)\\)",
     "solution": "\\(\\nabla f = (2x,2y) \\Rightarrow \\nabla f(1,1)=(2,2)\\)",
-    "quick": "vector \u0111\u1ea1o h\u00e0m ri\u00eang",
+    "quick": "vector đạo hàm riêng",
     "casio": ""
   },
   {
+    "id": 44,
     "type": "directional_derivative",
-    "question": "\u0110\u1ea1o h\u00e0m theo h\u01b0\u1edbng \\(\\vec{u}=(1,0)\\) c\u1ee7a \\(f(x,y)=x^{2}y\\) t\u1ea1i (1,2) l\u00e0?",
-    "options": ["\\(4\\)","\\(2\\)","\\(1\\)","\\(0\\)"],
+    "question": "Đạo hàm theo hướng \\(\\vec{u}=(1,0)\\) của \\(f(x,y)=x^{2}y\\) tại (1,2) là?",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
     "correct": "\\(4\\)",
     "solution": "\\(\\nabla f=(2xy, x^{2})=(4,1) \\Rightarrow \\nabla f\\cdot \\vec{u}=4\\cdot1+1\\cdot0=4\\)",
-    "quick": "t\u00edch v\u00f4 h\u01b0\u1edbng gradient v\u1edbi vector \u0111\u01a1n v\u1ecb",
+    "quick": "tích vô hướng gradient với vector đơn vị",
     "casio": ""
   },
   {
+    "id": 45,
     "type": "tangent_plane",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh m\u1eb7t ph\u1eb3ng ti\u1ebfp x\u00fac v\u1edbi m\u1eb7t \\(z=x^{2}+y^{2}\\) t\u1ea1i (1,1,2)?",
-    "options": ["\\(z=2x+2y-2\\)","\\(z=2x+2y\\)","\\(z=x+y\\)","\\(z=2x+2y+2\\)"],
+    "question": "Phương trình mặt phẳng tiếp xúc với mặt \\(z=x^{2}+y^{2}\\) tại (1,1,2)?",
+    "matrix": null,
+    "options": [
+      "\\(z=2x+2y-2\\)",
+      "\\(z=2x+2y\\)",
+      "\\(z=x+y\\)",
+      "\\(z=2x+2y+2\\)"
+    ],
     "correct": "\\(z=2x+2y-2\\)",
     "solution": "\\(z_x=2x=2, z_y=2y=2 \\Rightarrow z-2=2(x-1)+2(y-1) \\Rightarrow z=2x+2y-2\\)",
-    "quick": "c\u00f4ng th\u1ee9c m\u1eb7t ph\u1eb3ng ti\u1ebfp x\u00fac",
+    "quick": "công thức mặt phẳng tiếp xúc",
     "casio": ""
   },
   {
+    "id": 46,
     "type": "tangent_plane_implicit",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh m\u1eb7t ph\u1eb3ng ti\u1ebfp x\u00fac v\u1edbi m\u1eb7t \\(x^{2}+y^{2}+z^{2}=3\\) t\u1ea1i (1,1,1)?",
-    "options": ["\\(x+y+z=3\\)","\\(x+y+z=1\\)","\\(x+y=2\\)","\\(x+y+z=0\\)"],
+    "question": "Phương trình mặt phẳng tiếp xúc với mặt \\(x^{2}+y^{2}+z^{2}=3\\) tại (1,1,1)?",
+    "matrix": null,
+    "options": [
+      "\\(x+y+z=3\\)",
+      "\\(x+y+z=1\\)",
+      "\\(x+y=2\\)",
+      "\\(x+y+z=0\\)"
+    ],
     "correct": "\\(x+y+z=3\\)",
     "solution": "\\(\\nabla F=(2x,2y,2z)=(2,2,2) \\Rightarrow 2(x-1)+2(y-1)+2(z-1)=0 \\Rightarrow x+y+z=3\\)",
-    "quick": "m\u1eb7t c\u1ea7u",
+    "quick": "mặt cầu",
     "casio": ""
   },
   {
+    "id": 47,
     "type": "extremum_2var_saddle",
-    "question": "\u0110i\u1ec3m n\u00e0o l\u00e0 \u0111i\u1ec3m y\u00ean ng\u1ef1a c\u1ee7a \\(f(x,y)=x^{3}-3x+y^{2}\\)?",
-    "options": ["\\((1,0)\\)","\\((-1,0)\\)","\\((0,0)\\)","\\((0,1)\\)"],
+    "question": "Điểm nào là điểm yên ngựa của \\(f(x,y)=x^{3}-3x+y^{2}\\)?",
+    "matrix": null,
+    "options": [
+      "\\((1,0)\\)",
+      "\\((-1,0)\\)",
+      "\\((0,0)\\)",
+      "\\((0,1)\\)"
+    ],
     "correct": "\\((1,0)\\)",
-    "solution": "\\(f_x=3x^{2}-3=0 \\Rightarrow x=\\pm1, f_y=2y=0 \\Rightarrow y=0, \\Delta= (6x)(2)-0=12x, x=1 \\Rightarrow \\Delta>0, f_{xx}>0 \\Rightarrow \\) c\u1ef1c ti\u1ec3u, x=-1 \\Rightarrow \\Delta<0 \\Rightarrow y\u00ean ng\u1ef1a",
-    "quick": "\u0111i\u1ec3m y\u00ean ng\u1ef1a",
+    "solution": "\\(f_x=3x^{2}-3=0 \\Rightarrow x=\\pm1, f_y=2y=0 \\Rightarrow y=0, \\Delta= (6x)(2)-0=12x, x=1 \\Rightarrow \\Delta>0, f_{xx}>0 \\Rightarrow \\) cực tiểu, x=-1 \\Rightarrow \\Delta<0 \\Rightarrow yên ngựa",
+    "quick": "điểm yên ngựa",
     "casio": ""
   },
   {
+    "id": 48,
     "type": "total_differential_definition",
-    "question": "Vi ph\u00e2n to\u00e0n ph\u1ea7n \\(df\\) c\u1ee7a h\u00e0m kh\u1ea3 vi \\(f(x,y)\\) t\u1ea1i (a,b) \u0111\u01b0\u1ee3c \u0111\u1ecbnh ngh\u0129a l\u00e0?",
-    "options": ["\\(f_x(a,b)dx+f_y(a,b)dy\\)","\\(f(a+dx,b+dy)-f(a,b)\\)","\\(f_x(a,b)+f_y(a,b)\\)","\\(\\Delta f\\)"],
+    "question": "Vi phân toàn phần \\(df\\) của hàm khả vi \\(f(x,y)\\) tại (a,b) được định nghĩa là?",
+    "matrix": null,
+    "options": [
+      "\\(f_x(a,b)dx+f_y(a,b)dy\\)",
+      "\\(f(a+dx,b+dy)-f(a,b)\\)",
+      "\\(f_x(a,b)+f_y(a,b)\\)",
+      "\\(\\Delta f\\)"
+    ],
     "correct": "\\(f_x(a,b)dx+f_y(a,b)dy\\)",
-    "solution": "\u0110\u1ecbnh ngh\u0129a vi ph\u00e2n to\u00e0n ph\u1ea7n",
-    "quick": "x\u1ea5p x\u1ec9 tuy\u1ebfn t\u00ednh",
+    "solution": "Định nghĩa vi phân toàn phần",
+    "quick": "xấp xỉ tuyến tính",
     "casio": ""
   },
   {
+    "id": 49,
     "type": "partial_derivative_chain_rule",
-    "question": "Cho \\(z=f(x,y), x=t^{2}, y=e^{t}\\). T\u00ednh \\(\\frac{dz}{dt}\\) theo \u0111\u1ea1o h\u00e0m ri\u00eang c\u1ee7a f?",
-    "options": ["\\(f_x\\cdot 2t + f_y\\cdot e^{t}\\)","\\(f_x\\cdot e^{t} + f_y\\cdot 2t\\)","\\(f_x\\cdot t^{2} + f_y\\cdot e^{t}\\)","\\(f_x + f_y\\)"],
+    "question": "Cho \\(z=f(x,y), x=t^{2}, y=e^{t}\\). Tính \\(\\frac{dz}{dt}\\) theo đạo hàm riêng của f?",
+    "matrix": null,
+    "options": [
+      "\\(f_x\\cdot 2t + f_y\\cdot e^{t}\\)",
+      "\\(f_x\\cdot e^{t} + f_y\\cdot 2t\\)",
+      "\\(f_x\\cdot t^{2} + f_y\\cdot e^{t}\\)",
+      "\\(f_x + f_y\\)"
+    ],
     "correct": "\\(f_x\\cdot 2t + f_y\\cdot e^{t}\\)",
     "solution": "\\(\\frac{dz}{dt} = f_x\\frac{dx}{dt} + f_y\\frac{dy}{dt} = f_x\\cdot 2t + f_y\\cdot e^{t}\\)",
-    "quick": "quy t\u1eafc chu\u1ed7i",
+    "quick": "quy tắc chuỗi",
     "casio": ""
   },
   {
+    "id": 50,
     "type": "total_differential_exact_equation",
-    "question": "Ph\u01b0\u01a1ng tr\u00ecnh vi ph\u00e2n to\u00e0n ph\u1ea7n \\((2xy+1)dx + (x^{2}+2y)dy=0\\) c\u00f3 nghi\u1ec7m l\u00e0?",
-    "options": ["\\(x^{2}y + x + y^{2}=C\\)","\\(x^{2}y + y^{2}=C\\)","\\(xy^{2}+x^{2}=C\\)","\\(x^{2}+y^{2}=C\\)"],
+    "question": "Phương trình vi phân toàn phần \\((2xy+1)dx + (x^{2}+2y)dy=0\\) có nghiệm là?",
+    "matrix": null,
+    "options": [
+      "\\(x^{2}y + x + y^{2}=C\\)",
+      "\\(x^{2}y + y^{2}=C\\)",
+      "\\(xy^{2}+x^{2}=C\\)",
+      "\\(x^{2}+y^{2}=C\\)"
+    ],
     "correct": "\\(x^{2}y + x + y^{2}=C\\)",
-    "solution": "\\(P=2xy+1, Q=x^{2}+2y, P_y=2x=Q_x \\Rightarrow\\) to\u00e0n ph\u1ea7n, t\u00ecm f: \\(f_x=2xy+1 \\Rightarrow f=x^{2}y+x+g(y), f_y=x^{2}+g'(y)=x^{2}+2y \\Rightarrow g'(y)=2y \\Rightarrow g(y)=y^{2}\\)",
-    "quick": "gi\u1ea3i PTVP to\u00e0n ph\u1ea7n",
+    "solution": "\\(P=2xy+1, Q=x^{2}+2y, P_y=2x=Q_x \\Rightarrow\\) toàn phần, tìm f: \\(f_x=2xy+1 \\Rightarrow f=x^{2}y+x+g(y), f_y=x^{2}+g'(y)=x^{2}+2y \\Rightarrow g'(y)=2y \\Rightarrow g(y)=y^{2}\\)",
+    "quick": "giải PTVP toàn phần",
     "casio": ""
   }
 ]
