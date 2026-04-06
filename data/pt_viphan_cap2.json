@@ -13,7 +13,7 @@
     "correct": "\\(y = x^3 + C_1x + C_2\\)",
     "solution": "Tích phân 2 lần: \\(y' = 3x^2 + C_1\\), \\(y = x^3 + C_1x + C_2\\).",
     "quick": "Tích phân 2 lần liên tiếp",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận."
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
     "correct": "\\(y = -\\sin x + C_1x + C_2\\)",
     "solution": "\\(y' = -\\cos x + C_1\\), \\(y = -\\sin x + C_1x + C_2\\).",
     "quick": "Tích phân \\(\\sin x\\) ra \\(-\\cos x\\), rồi tích phân lần 2",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận."
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     "correct": "\\(p = y'\\)",
     "solution": "Đặt \\(p = y'\\), \\(y'' = p'\\). Phương trình thành \\(p' = p^2\\), tách biến.",
     "quick": "Dạng khuyết \\(y\\): đặt \\(p=y'\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận."
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
     "correct": "\\(y = C_1 + C_2e^{2x}\\)",
     "solution": "Đặt \\(p=y'\\), \\(p'=2p \\Rightarrow p=C_2e^{2x}\\). Tích phân: \\(y=C_1 + \\frac{C_2}{2}e^{2x}\\) (gộp hằng số).",
     "quick": "Phương trình tuyến tính cấp 2 khuyết y: có nghiệm 1 và \\(e^{2x}\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận."
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
     "correct": "\\(p = y'\\)",
     "solution": "Khuyết \\(y\\): đặt \\(p=y'\\), \\(p' + 2xp^2 = 0\\) → tách biến.",
     "quick": "Dạng khuyết y: đặt p=y'",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận."
   },
   {
     "id": 6,
@@ -93,7 +93,7 @@
     "correct": "\\(y = C_1e^{x} + C_2e^{2x}\\)",
     "solution": "Phương trình đặc trưng: \\(r^2 - 3r + 2 = 0 \\Rightarrow r=1,2\\). Nghiệm tổng quát: \\(y = C_1e^{x} + C_2e^{2x}\\).",
     "quick": "Nghiệm thực phân biệt → tổ hợp tuyến tính các mũ",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng bằng MODE 5-3 (PT bậc 2). Nhập hệ số a,b,c → nghiệm k₁,k₂."
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
     "correct": "\\(y = C_1e^{-2x} + C_2xe^{-2x}\\)",
     "solution": "Phương trình đặc trưng: \\(r^2+4r+4=0 \\Rightarrow (r+2)^2=0 \\Rightarrow r=-2\\) (kép). Nghiệm: \\(y=(C_1+C_2x)e^{-2x}\\).",
     "quick": "Nghiệm kép \\(r=-2\\) → \\(e^{-2x}\\) và \\(xe^{-2x}\\)",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng bằng MODE 5-3 (PT bậc 2). Nhập hệ số a,b,c → nghiệm k₁,k₂."
   },
   {
     "id": 8,
@@ -125,7 +125,7 @@
     "correct": "\\(y = C_1\\cos x + C_2\\sin x\\)",
     "solution": "Phương trình đặc trưng: \\(r^2+1=0 \\Rightarrow r = \\pm i\\). Nghiệm: \\(y = C_1\\cos x + C_2\\sin x\\).",
     "quick": "Nghiệm phức liên hợp \\(\\pm i\\) → sin và cos",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng bằng MODE 5-3 (PT bậc 2). Nhập hệ số a,b,c → nghiệm k₁,k₂."
   },
   {
     "id": 9,
@@ -141,7 +141,7 @@
     "correct": "\\(y = e^{x}(C_1\\cos 2x + C_2\\sin 2x)\\)",
     "solution": "\\(r^2-2r+5=0 \\Rightarrow r=1\\pm2i\\). Nghiệm: \\(y = e^{x}(C_1\\cos 2x + C_2\\sin 2x)\\).",
     "quick": "\\(\\alpha=1, \\beta=2\\) → \\(e^{\\alpha x}(C_1\\cos\\beta x + C_2\\sin\\beta x)\\)",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng bằng MODE 5-3 (PT bậc 2). Nhập hệ số a,b,c → nghiệm k₁,k₂."
   },
   {
     "id": 10,
@@ -157,7 +157,7 @@
     "correct": "Cả hai đáp án trên",
     "solution": "\\(r^2-5r+6=0 \\Rightarrow r=2,3\\). Nghiệm riêng: \\(e^{2x}\\) và \\(e^{3x}\\).",
     "quick": "Cả \\(e^{2x}\\) và \\(e^{3x}\\) đều là nghiệm",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng bằng MODE 5-3 (PT bậc 2). Nhập hệ số a,b,c → nghiệm k₁,k₂."
   },
   {
     "id": 11,
@@ -173,7 +173,7 @@
     "correct": "\\(Axe^{x}\\)",
     "solution": "Vế phải \\(e^{x}\\), \\(r=1\\) là nghiệm đơn của pt đặc trưng (r=1,2) → nghiệm riêng dạng \\(Axe^{x}\\).",
     "quick": "Trùng nghiệm đơn → nhân thêm x",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 12,
@@ -189,7 +189,7 @@
     "correct": "\\(Ax^2e^{2x}\\)",
     "solution": "Phương trình đặc trưng: \\(r^2-4r+4=0 \\Rightarrow r=2\\) (kép). Vế phải \\(e^{2x}\\) trùng nghiệm kép → nhân \\(x^2\\).",
     "quick": "Trùng nghiệm kép → nhân \\(x^2\\)",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 13,
@@ -205,7 +205,7 @@
     "correct": "\\(x(A\\cos x + B\\sin x)\\)",
     "solution": "Phương trình đặc trưng: \\(r^2+1=0 \\Rightarrow r=\\pm i\\). Vế phải \\(\\sin x\\) (hay \\(e^{ix}\\)) trùng nghiệm phức → nhân x.",
     "quick": "Trùng nghiệm phức \\(\\pm i\\) → nhân x",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 14,
@@ -221,7 +221,7 @@
     "correct": "\\(A\\cos 2x + B\\sin 2x\\)",
     "solution": "Vế phải \\(\\cos 2x\\), \\(\\pm2i\\) không là nghiệm của pt đặc trưng (r=-1,-2) → dạng \\(A\\cos 2x + B\\sin 2x\\).",
     "quick": "Không trùng nghiệm → dạng tổ hợp sin/cos",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 15,
@@ -237,7 +237,7 @@
     "correct": "\\(Ax^2e^{x}\\)",
     "solution": "Phương trình đặc trưng: \\(r^2-2r+1=0 \\Rightarrow r=1\\) (kép). Vế phải \\(e^{x}\\) trùng nghiệm kép → nhân \\(x^2\\).",
     "quick": "Trùng nghiệm kép → \\(x^2e^x\\)",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 16,
@@ -253,7 +253,7 @@
     "correct": "\\(x(A\\cos 2x + B\\sin 2x)\\)",
     "solution": "Phương trình đặc trưng: \\(r^2+4=0 \\Rightarrow r=\\pm2i\\). Vế phải \\(\\sin 2x\\) trùng nghiệm phức → nhân x.",
     "quick": "Trùng nghiệm phức \\(\\pm2i\\) → nhân x",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 17,
@@ -269,7 +269,7 @@
     "correct": "\\(Ax^2 + Bx + C\\)",
     "solution": "Vế phải là đa thức bậc 2, \\(r=0\\) không là nghiệm của pt đặc trưng (r=-1,2) → dạng đa thức cùng bậc.",
     "quick": "Đa thức, không trùng nghiệm 0 → dạng đa thức bậc 2",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 18,
@@ -285,7 +285,7 @@
     "correct": "\\(Axe^{2x}\\)",
     "solution": "Phương trình đặc trưng: \\(r^2-3r+2=0 \\Rightarrow r=1,2\\). Vế phải \\(e^{2x}\\) trùng nghiệm đơn \\(r=2\\) → nhân x.",
     "quick": "Trùng nghiệm đơn → \\(Axe^{2x}\\)",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 19,
@@ -301,7 +301,7 @@
     "correct": "\\(y = C_1\\cos x + C_2\\sin x + \\frac{x}{2}\\sin x\\)",
     "solution": "Nghiệm thuần nhất: \\(y_h = C_1\\cos x + C_2\\sin x\\). Nghiệm riêng: \\(y_p = \\frac{x}{2}\\sin x\\).",
     "quick": "Trùng nghiệm phức \\(\\pm i\\), vế phải \\(\\cos x\\) → nhân x, dạng \\(x(A\\cos x + B\\sin x)\\). Tính ra \\(A=0, B=1/2\\).",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 20,
@@ -317,7 +317,7 @@
     "correct": "\\(-2x\\cos 2x\\)",
     "solution": "Nghiệm riêng dạng \\(x(A\\cos 2x + B\\sin 2x)\\). Thay vào, đồng nhất hệ số được \\(A=-2, B=0\\).",
     "quick": "Trùng nghiệm phức \\(\\pm2i\\), \\(\\sin 2x\\) lấy phần ảo → nghiệm riêng là \\(-2x\\cos 2x\\).",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   },
   {
     "id": 21,
@@ -333,7 +333,7 @@
     "correct": "\\(ax^2y'' + bxy' + cy = f(x)\\)",
     "solution": "Đây là dạng chuẩn của phương trình Cauchy–Euler (Euler–Cauchy).",
     "quick": "Dạng: \\(x^2y'' + pxy' + qy = f(x)\\)",
-    "casio": ""
+    "casio": "CASIO: Đặt x=eᵗ → PT hệ số hằng. Giải PT đặc trưng bằng MODE 5-3."
   },
   {
     "id": 22,
@@ -349,7 +349,7 @@
     "correct": "\\(y = C_1x + C_2x^3\\)",
     "solution": "Tìm nghiệm dạng \\(y=x^r\\), thay vào \\(r(r-1)-3r+3=0 \\Rightarrow r^2-4r+3=0 \\Rightarrow r=1,3\\).",
     "quick": "Phương trình đặc trưng: \\(r(r-1)-3r+3=0\\) → \\(r=1,3\\) → \\(x^1, x^3\\)",
-    "casio": ""
+    "casio": "CASIO: Đặt x=eᵗ → PT hệ số hằng. Giải PT đặc trưng bằng MODE 5-3."
   },
   {
     "id": 23,
@@ -365,7 +365,7 @@
     "correct": "\\(y = C_1x^{-1} + C_2x^{-1}\\ln x\\)",
     "solution": "\\(r(r-1)+3r+1=0 \\Rightarrow r^2+2r+1=0 \\Rightarrow (r+1)^2=0\\) (nghiệm kép \\(r=-1\\)). Nghiệm: \\(y = C_1x^{-1} + C_2x^{-1}\\ln x\\).",
     "quick": "Nghiệm kép \\(r=-1\\) → \\(x^{-1}\\) và \\(x^{-1}\\ln x\\)",
-    "casio": ""
+    "casio": "CASIO: Đặt x=eᵗ → PT hệ số hằng. Giải PT đặc trưng bằng MODE 5-3."
   },
   {
     "id": 24,
@@ -381,7 +381,7 @@
     "correct": "\\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\)",
     "solution": "\\(r(r-1)+r+1=0 \\Rightarrow r^2+1=0 \\Rightarrow r=\\pm i\\). Nghiệm: \\(y = C_1\\cos(\\ln x) + C_2\\sin(\\ln x)\\).",
     "quick": "Nghiệm phức \\(\\pm i\\) → \\(\\cos(\\ln x), \\sin(\\ln x)\\)",
-    "casio": ""
+    "casio": "CASIO: Đặt x=eᵗ → PT hệ số hằng. Giải PT đặc trưng bằng MODE 5-3."
   },
   {
     "id": 25,
@@ -397,7 +397,7 @@
     "correct": "\\(Ax^2\\ln x\\)",
     "solution": "Phương trình thuần nhất: \\(r(r-1)-2r+2=0 \\Rightarrow r=1,2\\). Vế phải \\(x^2\\) trùng nghiệm \\(r=2\\) → nhân \\(\\ln x\\).",
     "quick": "Trùng nghiệm đơn của pt Euler → nhân \\(\\ln x\\)",
-    "casio": ""
+    "casio": "CASIO: Đặt x=eᵗ → PT hệ số hằng. Giải PT đặc trưng bằng MODE 5-3."
   },
   {
     "id": 26,
@@ -413,7 +413,7 @@
     "correct": "Vế phải không có dạng đặc biệt phù hợp với hệ số bất định",
     "solution": "Phương pháp biến thiên hằng số áp dụng được cho mọi vế phải, đặc biệt khi hệ số bất định không áp dụng được.",
     "quick": "Dùng khi vế phải không phải dạng đặc biệt (mũ, sin, cos, đa thức, tích của chúng).",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách tính y', y'' và thay vào PT."
   },
   {
     "id": 27,
@@ -429,7 +429,7 @@
     "correct": "\\(y_p = u_1(x)y_1 + u_2(x)y_2\\)",
     "solution": "Biến thiên hằng số: coi hằng số là hàm: \\(y_p = u_1(x)y_1 + u_2(x)y_2\\).",
     "quick": "Dạng tổng quát: \\(y_p = u_1y_1 + u_2y_2\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách tính y', y'' và thay vào PT."
   },
   {
     "id": 28,
@@ -445,7 +445,7 @@
     "correct": "\\(\\begin{cases} u_1'\\cos x + u_2'\\sin x = 0 \\\\ -u_1'\\sin x + u_2'\\cos x = \\tan x \\end{cases}\\)",
     "solution": "Hệ \\(\\begin{cases} u_1'y_1 + u_2'y_2 = 0 \\\\ u_1'y_1' + u_2'y_2' = f(x) \\end{cases}\\) với \\(y_1=\\cos x, y_2=\\sin x\\).",
     "quick": "Hệ chuẩn: \\(u_1'y_1 + u_2'y_2 = 0\\); \\(u_1'y_1' + u_2'y_2' = f\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách tính y', y'' và thay vào PT."
   },
   {
     "id": 29,
@@ -461,7 +461,7 @@
     "correct": "\\(2e - e^2\\)",
     "solution": "Nghiệm tổng quát: \\(y = C_1e^{x} + C_2e^{2x}\\). \\(y(0)=C_1+C_2=1\\), \\(y'(0)=C_1+2C_2=0 \\Rightarrow C_2=-1, C_1=2\\). Vậy \\(y=2e^{x}-e^{2x}\\), \\(y(1)=2e-e^2\\).",
     "quick": "Giải hệ tìm C1, C2 rồi thay x=1",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Thay điều kiện đầu để tìm C₁, C₂."
   },
   {
     "id": 30,
@@ -477,7 +477,7 @@
     "correct": "\\(y = \\sin x\\)",
     "solution": "Nghiệm tổng quát: \\(y = C_1\\cos x + C_2\\sin x\\). \\(y(0)=C_1=0\\), \\(y'(0)=C_2=1\\) → \\(y=\\sin x\\).",
     "quick": "Điều kiện đầu chuẩn của sin",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Thay điều kiện đầu để tìm C₁, C₂."
   },
   {
     "id": 31,
@@ -493,7 +493,7 @@
     "correct": "Dao động tắt dần mạnh (quá tắt)",
     "solution": "Nghiệm của pt đặc trưng là hai nghiệm thực âm phân biệt → hệ trở về vị trí cân bằng mà không dao động.",
     "quick": "\\(\\Delta>0\\) → quá tắt (overdamped)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm dao động x(t) bằng cách thay t vào và tính x', x''."
   },
   {
     "id": 32,
@@ -509,7 +509,7 @@
     "correct": "\\(2\\)",
     "solution": "\\(y'' + \\omega^2 y = 0\\) → \\(\\omega^2=4 \\Rightarrow \\omega=2\\). Tần số góc là 2.",
     "quick": "\\(\\omega = \\sqrt{4}=2\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm dao động x(t) bằng cách thay t vào và tính x', x''."
   },
   {
     "id": 33,
@@ -525,7 +525,7 @@
     "correct": "\\(2\\)",
     "solution": "Phương trình đặc trưng: \\(r^2+2r+5=0 \\Rightarrow r=-1\\pm2i\\). Tần số góc riêng (phần ảo) là 2.",
     "quick": "\\(\\omega = \\sqrt{5-1^2}=2\\) hoặc nhìn trực tiếp phần ảo",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm dao động x(t) bằng cách thay t vào và tính x', x''."
   },
   {
     "id": 34,
@@ -541,7 +541,7 @@
     "correct": "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
     "solution": "Định luật Kirchhoff: \\(L\\frac{d^2q}{dt^2} + R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\).",
     "quick": "Mạch RLC nối tiếp: \\(Lq'' + Rq' + q/C = E(t)\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm mạch điện bằng cách thay t vào và tính I'."
   },
   {
     "id": 35,
@@ -557,7 +557,7 @@
     "correct": "\\(\\frac{1}{\\sqrt{LC}}\\)",
     "solution": "Phương trình \\(q'' + \\frac{1}{LC}q = 0\\) → \\(\\omega = \\frac{1}{\\sqrt{LC}}\\).",
     "quick": "Tần số cộng hưởng riêng của mạch LC: \\(\\omega_0 = 1/\\sqrt{LC}\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm mạch điện bằng cách thay t vào và tính I'."
   },
   {
     "id": 36,
@@ -573,7 +573,7 @@
     "correct": "\\(p = y'\\) và coi \\(y\\) là biến",
     "solution": "Khi khuyết x, đặt \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\).",
     "quick": "Dạng \\(F(y, y', y'') = 0\\): đặt \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách tính các đạo hàm và thay vào PT."
   },
   {
     "id": 37,
@@ -589,7 +589,7 @@
     "correct": "\\(p\\frac{dp}{dy} = 2yp^3\\)",
     "solution": "Thay trực tiếp \\(y'' = p\\frac{dp}{dy}\\) vào \\(y'' = 2y(y')^3\\): \\(p\\frac{dp}{dy} = 2yp^3\\).",
     "quick": "\\(y'' = p\\frac{dp}{dy}\\), \\((y')^3 = p^3\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách tính các đạo hàm và thay vào PT."
   },
   {
     "id": 38,
@@ -605,7 +605,7 @@
     "correct": "\\(W = y_1y_2' - y_1'y_2\\)",
     "solution": "Wronskian \\(W(y_1,y_2) = \\begin{vmatrix} y_1 & y_2 \\\\ y_1' & y_2' \\end{vmatrix} = y_1y_2' - y_1'y_2\\).",
     "quick": "\\(W = y_1y_2' - y_1'y_2\\) (khác 0 thì độc lập tuyến tính)",
-    "casio": ""
+    "casio": "CASIO: Wronskian W=det[[y₁,y₂],[y₁',y₂']]. Tính det 2×2 bằng MODE 6."
   },
   {
     "id": 39,
@@ -621,7 +621,7 @@
     "correct": "\\(e^{3x}\\)",
     "solution": "\\(W = e^{x}\\cdot2e^{2x} - e^{x}\\cdot e^{2x} = 2e^{3x} - e^{3x} = e^{3x} \\neq 0\\) → độc lập tuyến tính.",
     "quick": "\\(W = (1\\cdot2 - 1\\cdot1)e^{(1+2)x}=1\\cdot e^{3x}\\)",
-    "casio": ""
+    "casio": "CASIO: Wronskian W=det[[y₁,y₂],[y₁',y₂']]. Tính det 2×2 bằng MODE 6."
   },
   {
     "id": 40,
@@ -637,7 +637,7 @@
     "correct": "\\(x^2\\)",
     "solution": "\\(W = x\\cdot2x - 1\\cdot x^2 = 2x^2 - x^2 = x^2\\).",
     "quick": "\\(W = x\\cdot(2x) - 1\\cdot x^2 = x^2\\)",
-    "casio": ""
+    "casio": "CASIO: Wronskian W=det[[y₁,y₂],[y₁',y₂']]. Tính det 2×2 bằng MODE 6."
   },
   {
     "id": 41,
@@ -653,7 +653,7 @@
     "correct": "Cả A và B",
     "solution": "Nguyên lý chồng chất: đúng cả hai ý A và B đều là tính chất cơ bản của PTVP tuyến tính.",
     "quick": "Superposition: \\(y_{p1}+y_{p2}\\) ứng với \\(f_1+f_2\\); nghiệm tổng quát = \\(y_h + y_p\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra từng nghiệm riêng, rồi cộng lại theo nguyên lý叠加."
   },
   {
     "id": 42,
@@ -669,7 +669,7 @@
     "correct": "\\(\\frac{x}{2}e^{x} - \\frac{1}{2}\\sin x\\)",
     "solution": "Nguyên lý chồng chất: nghiệm riêng ứng với tổng vế phải = tổng các nghiệm riêng tương ứng.",
     "quick": "\\(y_p = y_{p1} + y_{p2}\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra từng nghiệm riêng, rồi cộng lại theo nguyên lý叠加."
   },
   {
     "id": 43,
@@ -685,7 +685,7 @@
     "correct": "Biến thiên hằng số",
     "solution": "Vế phải \\(x\\ln x\\) không phải dạng đặc biệt của phương pháp hệ số bất định → dùng biến thiên hằng số.",
     "quick": "Vế phải không phải mũ, đa thức, sin, cos, tích của chúng → biến thiên hằng số",
-    "casio": ""
+    "casio": "CASIO: Đặt x=eᵗ, chuyển về PT hệ số hằng, rồi dùng MODE 5-3."
   },
   {
     "id": 44,
@@ -701,7 +701,7 @@
     "correct": "\\(y = C_1e^{3x} + C_2e^{-x}\\)",
     "solution": "\\(r^2-2r-3=0 \\Rightarrow r=3,-1\\) → nghiệm \\(e^{3x}, e^{-x}\\).",
     "quick": "Phương trình đặc trưng: \\(r=3, r=-1\\)",
-    "casio": ""
+    "casio": "CASIO: MODE 5-3: nhập a=1, b=hệ số y', c=hệ số y → nghiệm đặc trưng k."
   },
   {
     "id": 45,
@@ -717,7 +717,7 @@
     "correct": "\\(y = e^{-x}(C_1\\cos x + C_2\\sin x)\\)",
     "solution": "\\(r^2+2r+2=0 \\Rightarrow r=-1\\pm i\\). \\(\\alpha=-1, \\beta=1\\) → \\(y = e^{-x}(C_1\\cos x + C_2\\sin x)\\).",
     "quick": "Nghiệm phức \\(-1\\pm i\\) → \\(e^{-x}(\\cos x, \\sin x)\\)",
-    "casio": ""
+    "casio": "CASIO: MODE 5-3: nhập a=1, b=hệ số y', c=hệ số y → nghiệm đặc trưng k."
   },
   {
     "id": 46,
@@ -733,7 +733,7 @@
     "correct": "\\(y = (C_1 + C_2x)e^{-2x}\\)",
     "solution": "\\(r^2+4r+4=0 \\Rightarrow (r+2)^2=0\\) → nghiệm kép \\(r=-2\\).",
     "quick": "Nghiệm kép \\(r=-2\\) → \\((C_1+C_2x)e^{-2x}\\)",
-    "casio": ""
+    "casio": "CASIO: MODE 5-3: nhập a=1, b=hệ số y', c=hệ số y → nghiệm đặc trưng k."
   },
   {
     "id": 47,
@@ -749,7 +749,7 @@
     "correct": "\\(p = y'\\)",
     "solution": "Khuyết y: đặt \\(p=y'\\), \\(p' + p^2 = 0\\), tách biến.",
     "quick": "Dạng \\(y'' = f(y')\\): đặt \\(p=y'\\)",
-    "casio": ""
+    "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận."
   },
   {
     "id": 48,
@@ -765,7 +765,7 @@
     "correct": "\\(y = C_1x + C_2x^{-1}\\)",
     "solution": "\\(r(r-1)+r-1=0 \\Rightarrow r^2-1=0 \\Rightarrow r=\\pm1\\) → nghiệm \\(x^1, x^{-1}\\).",
     "quick": "\\(r^2-1=0\\) → \\(r=1, -1\\) → \\(x, 1/x\\)",
-    "casio": ""
+    "casio": "CASIO: Đặt x=eᵗ → PT hệ số hằng. Giải PT đặc trưng bằng MODE 5-3."
   },
   {
     "id": 49,
@@ -781,7 +781,7 @@
     "correct": "\\(y = e^{x}\\)",
     "solution": "Nghiệm tổng quát: \\(y = C_1e^{x} + C_2e^{-x}\\). \\(y(0)=C_1+C_2=1\\), \\(y'(0)=C_1-C_2=1\\) → \\(C_1=1, C_2=0\\) → \\(y=e^{x}\\).",
     "quick": "Giải hệ \\(C_1+C_2=1, C_1-C_2=1\\) → \\(C_1=1, C_2=0\\)",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Thay điều kiện đầu để tìm C₁, C₂."
   },
   {
     "id": 50,
@@ -797,6 +797,6 @@
     "correct": "\\(\\frac{x^2}{2}e^{x}\\)",
     "solution": "Phương trình đặc trưng \\(r=1\\) (kép). Nghiệm riêng dạng \\(Ax^2e^{x}\\). Thay vào tìm \\(A=1/2\\).",
     "quick": "Trùng nghiệm kép \\(r=1\\) → nhân \\(x^2\\): \\(Ax^2e^{x}\\) → \\(A=1/2\\)",
-    "casio": ""
+    "casio": "CASIO: Giải PT đặc trưng MODE 5-3. Với nghiệm riêng: thay y* vào PT kiểm tra."
   }
 ]

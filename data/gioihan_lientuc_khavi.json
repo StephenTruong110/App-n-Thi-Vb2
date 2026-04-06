@@ -381,7 +381,7 @@
     "correct": "Tại mọi \\(x\\in\\mathbb{R}\\)",
     "solution": "Đa thức liên tục trên toàn bộ \\(\\mathbb{R}\\).",
     "quick": "Đa thức liên tục khắp nơi",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 25,
@@ -397,7 +397,7 @@
     "correct": "\\((-\\infty,2)\\cup(2,+\\infty)\\)",
     "solution": "Hàm phân thức liên tục trên tập xác định \\(\\mathbb{R}\\setminus\\{2\\}\\).",
     "quick": "Gián đoạn tại \\(x=2\\)",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 26,
@@ -413,7 +413,7 @@
     "correct": "Liên tục",
     "solution": "\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1=f(0)\\) → hàm liên tục tại \\(x=0\\).",
     "quick": "Giới hạn = giá trị hàm → liên tục",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 27,
@@ -429,7 +429,7 @@
     "correct": "Gián đoạn bỏ được",
     "solution": "\\(\\lim_{x\\to0}f(x)=1\\neq0=f(0)\\) → gián đoạn. Có thể bổ sung để liên tục (bỏ được).",
     "quick": "Giới hạn tồn tại hữu hạn nhưng khác giá trị hàm → bỏ được",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 28,
@@ -445,7 +445,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\lim_{x\\to1^-}f(x)=1^2=1\\), \\(\\lim_{x\\to1^+}f(x)=2\\cdot1-1=1\\). Vậy \\(\\lim_{x\\to1}f(x)=1\\). Cần \\(f(1)=a=1\\).",
     "quick": "Giới hạn hai phía =1 → a=1",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 29,
@@ -461,7 +461,7 @@
     "correct": "\\(4\\)",
     "solution": "\\(\\dfrac{x^2-4}{x-2}=x+2\\) với \\(x\\neq2\\). \\(\\lim_{x\\to2}f(x)=4\\). Đặt \\(f(2)=4\\) để liên tục.",
     "quick": "Rút gọn \\(x+2\\) → giới hạn =4",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 30,
@@ -477,7 +477,7 @@
     "correct": "Cả A và C",
     "solution": "Định lý IVT: f liên tục trên [a,b] thì f nhận mọi giá trị giữa f(a) và f(b). Hệ quả: nếu f(a)f(b)<0 thì tồn tại có f(c)=0.",
     "quick": "IVT: f liên tục → nhận mọi giá trị trung gian",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 31,
@@ -493,7 +493,7 @@
     "correct": "\\((0,1)\\)",
     "solution": "\\(f(x)=x^3+x-1\\), \\(f(0)=-1<0\\), \\(f(1)=1>0\\), f liên tục → có nghiệm trong (0,1).",
     "quick": "\\(f(0)=-1, f(1)=1\\) → đổi dấu → nghiệm trong (0,1)",
-    "casio": ""
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
   },
   {
     "id": 32,
@@ -573,7 +573,7 @@
     "correct": "Đạo hàm tại \\(x\\)",
     "solution": "Định nghĩa đạo hàm: \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
     "quick": "Định nghĩa đạo hàm",
-    "casio": ""
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
   },
   {
     "id": 37,
@@ -621,7 +621,7 @@
     "correct": "Khả vi tại \\(x=0\\)",
     "solution": "\\(\\lim_{x\\to0}f(x)=0=f(0)\\) liên tục. \\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=0\\) → khả vi.",
     "quick": "Ví dụ kinh điển: khả vi tại 0 với đạo hàm =0",
-    "casio": ""
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
   },
   {
     "id": 40,
@@ -637,7 +637,7 @@
     "correct": "Liên tục tại \\(x_0\\)",
     "solution": "Định lý: khả vi \\(\\Rightarrow\\) liên tục. Chiều ngược lại không đúng.",
     "quick": "Khả vi \\(\\Rightarrow\\) liên tục",
-    "casio": ""
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
   },
   {
     "id": 41,
@@ -653,7 +653,7 @@
     "correct": "\\(a=2,b=-1\\)",
     "solution": "Liên tục: \\(1^2=a\\cdot1+b \\Rightarrow a+b=1\\). Khả vi: \\(\\lim_{x\\to1^-}2x=2 \\Rightarrow a=2\\). Suy ra \\(b=-1\\).",
     "quick": "Đạo hàm trái =2, phải = a → a=2; liên tục → 1=a+b → b=-1",
-    "casio": ""
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
   },
   {
     "id": 42,
@@ -765,7 +765,7 @@
     "correct": "\\(y=2x-1\\)",
     "solution": "\\(y'=2x \\Rightarrow y'(1)=2\\). \\(y(1)=1\\). Tiếp tuyến: \\(y-1=2(x-1) \\Rightarrow y=2x-1\\).",
     "quick": "Tiếp tuyến: \\(y=f'(x_0)(x-x_0)+f(x_0)\\)",
-    "casio": ""
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
   },
   {
     "id": 49,
@@ -797,6 +797,6 @@
     "correct": "\\(0\\)",
     "solution": "\\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=\\lim_{h\\to0}h\\sin(1/h)=0\\).",
     "quick": "Ví dụ: đạo hàm tại 0 bằng 0",
-    "casio": ""
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
   }
 ]

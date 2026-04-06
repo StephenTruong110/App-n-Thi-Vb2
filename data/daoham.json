@@ -797,6 +797,6 @@
     "correct": "\\(\\frac{1}{x\\ln x}\\)",
     "solution": "\\((\\ln(\\ln x))'=\\frac{1}{\\ln x}\\cdot\\frac{1}{x}\\)",
     "quick": "logarit của logarit",
-    "casio": ""
+    "casio": "CASIO fx-580VNX: Dùng CALC → d/dx, nhập hàm, nhập giá trị x rồi EXE để kiểm tra đạo hàm tại điểm cụ thể."
   }
 ]
