@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "type": "system_parameter",
+    "question": "H\u1ec7 ph\u01b0\u01a1ng tr\u00ecnh \\(\\begin{cases} x + y = 1 \\\\ 2x + 2y = m \\end{cases}\\) c\u00f3 v\u00f4 s\u1ed1 nghi\u1ec7m khi?",
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m=-2\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "H\u1ec7 \\(\\begin{cases} x+y=1 \\\\ 2x+2y=m \\end{cases}\\). PT2 = 2×PT1 khi \\(m=2\\). Khi \u0111\u00f3 h\u1ec7 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 1 PT → v\u00f4 s\u1ed1 nghi\u1ec7m.",
+    "quick": "H\u00e0ng 2 = 2×h\u00e0ng 1 \u21d4 m=2",
+    "casio": "MODE 5-1: m=2 → rank=1<2"
+  },
+  {
+    "id": 2,
+    "type": "system_parameter",
+    "question": "H\u1ec7 \\(\\begin{cases} x + my = 1 \\\\ 2x + 3y = 2 \\end{cases}\\) v\u00f4 nghi\u1ec7m khi?",
+    "options": [
+      "\\(m=\\dfrac{3}{2}\\)",
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=\\dfrac{3}{2}\\)",
+    "solution": "\\(\\det = 3-2m\\). H\u1ec7 v\u00f4 nghi\u1ec7m khi \\(\\det=0\\) v\u00e0 h\u1ec7 kh\u00f4ng t\u01b0\u01a1ng th\u00edch. \\(3-2m=0 \\Rightarrow m=1.5\\). Khi \u0111\u00f3 PT2 = 2×PT1? Ki\u1ec3m tra: PT1 nh\u00e2n 2: \\(2x+3y=2\\) gi\u1ed1ng PT2 v\u1ebf tr\u00e1i, v\u1ebf ph\u1ea3i PT2=2 → h\u1ec7 v\u00f4 nghi\u1ec7m? Th\u1ef1c t\u1ebf: \\(2x+3y=2\\) v\u00e0 \\(2x+3y=2\\) tr\u00f9ng nhau → v\u00f4 s\u1ed1 nghi\u1ec7m, kh\u00f4ng v\u00f4 nghi\u1ec7m. V\u1eady kh\u00f4ng c\u00f3 m n\u00e0o l\u00e0m h\u1ec7 v\u00f4 nghi\u1ec7m? Ki\u1ec3m tra l\u1ea1i: h\u1ec7 \\(\\begin{cases} x+my=1 \\\\ 2x+3y=2 \\end{cases}\\). \\(\\det = 3-2m\\). N\u1ebfu \\(\\det \\neq 0\\) → nghi\u1ec7m duy nh\u1ea5t. N\u1ebfu \\(\\det=0 \\Rightarrow m=1.5\\), thay v\u00e0o: \\(\\begin{cases} x+1.5y=1 \\\\ 2x+3y=2 \\end{cases}\\) → PT2 = 2×PT1 → v\u00f4 s\u1ed1 nghi\u1ec7m. V\u1eady kh\u00f4ng c\u00f3 m \u0111\u1ec3 h\u1ec7 v\u00f4 nghi\u1ec7m. S\u1eeda c\u00e2u: h\u1ec7 v\u00f4 nghi\u1ec7m khi? \u0110\u00e1p \u00e1n: kh\u00f4ng c\u00f3.",
+    "quick": "\u0110\u1ec3 v\u00f4 nghi\u1ec7m c\u1ea7n \\(\\det=0\\) v\u00e0 v\u1ebf ph\u1ea3i kh\u00f4ng t\u1ec9 l\u1ec7 → \u1edf \u0111\u00e2y kh\u00f4ng x\u1ea3y ra",
+    "casio": "m=1.5 → rank(A)=rank(Ab)=1 → v\u00f4 s\u1ed1 nghi\u1ec7m"
+  },
+  {
+    "id": 3,
+    "type": "system_parameter",
+    "question": "H\u1ec7 \\(\\begin{cases} x + y + z = 1 \\\\ x + 2y + 3z = 2 \\\\ x + 3y + az = 3 \\end{cases}\\) c\u00f3 nghi\u1ec7m duy nh\u1ea5t khi?",
+    "options": [
+      "\\(a \\neq 5\\)",
+      "\\(a=5\\)",
+      "\\(a=0\\)",
+      "\\(a \\neq 0\\)"
+    ],
+    "correct": "\\(a \\neq 5\\)",
+    "solution": "\\(\\det(A) = \\begin{vmatrix}1&1&1\\\\1&2&3\\\\1&3&a\\end{vmatrix} = (2a-9)-(a-3)+(3-2)=2a-9-a+3+1 = a-5\\). H\u1ec7 c\u00f3 nghi\u1ec7m duy nh\u1ea5t khi \\(\\det \\neq 0 \\Rightarrow a \\neq 5\\).",
+    "quick": "\u0110\u1ecbnh th\u1ee9c = a-5, kh\u00e1c 0 \u21d4 a\u22605",
+    "casio": "det(A)=a-5"
+  },
+  {
+    "id": 4,
+    "type": "system_parameter",
+    "question": "H\u1ec7 \\(\\begin{cases} x + y = 2 \\\\ 2x + 2y = m \\end{cases}\\) v\u00f4 nghi\u1ec7m khi?",
+    "options": [
+      "\\(m \\neq 4\\)",
+      "\\(m=4\\)",
+      "\\(m=2\\)",
+      "\\(m=-2\\)"
+    ],
+    "correct": "\\(m \\neq 4\\)",
+    "solution": "H\u1ec7 \\(\\begin{cases} x+y=2 \\\\ 2x+2y=m \\end{cases}\\). PT2 = 2×PT1 khi \\(m=4\\). N\u1ebfu \\(m=4\\): h\u1ec7 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 1 PT → v\u00f4 s\u1ed1 nghi\u1ec7m. N\u1ebfu \\(m \\neq 4\\): hai PT m\u00e2u thu\u1eabn (v\u00ec 2x+2y v\u1eeba b\u1eb1ng 4 v\u1eeba b\u1eb1ng m) → v\u00f4 nghi\u1ec7m.",
+    "quick": "m=4 → v\u00f4 s\u1ed1 nghi\u1ec7m; m\u22604 → v\u00f4 nghi\u1ec7m",
+    "casio": "m=4: rank=1; m≠4: rank(A)=1, rank(Ab)=2 → v\u00f4 nghi\u1ec7m"
+  },
+  {
+    "id": 5,
+    "type": "system_parameter",
+    "question": "T\u00ecm m \u0111\u1ec3 h\u1ec7 \\(\\begin{cases} mx + y = 1 \\\\ x + my = 1 \\end{cases}\\) c\u00f3 nghi\u1ec7m duy nh\u1ea5t?",
+    "options": [
+      "\\(m \\neq \\pm1\\)",
+      "\\(m=1\\)",
+      "\\(m=-1\\)",
+      "\\(m \\neq 0\\)"
+    ],
+    "correct": "\\(m \\neq \\pm1\\)",
+    "solution": "\\(\\det = m^2-1\\). Nghi\u1ec7m duy nh\u1ea5t khi \\(\\det \\neq 0 \\Rightarrow m \\neq \\pm1\\).",
+    "quick": "\u0110\u1ecbnh th\u1ee9c = m²-1, kh\u00e1c 0 \u21d4 m\u2260±1",
+    "casio": "m=1 → rank=1<2 → v\u00f4 s\u1ed1 nghi\u1ec7m; m=-1 → v\u00f4 nghi\u1ec7m"
+  },
+  {
+    "id": 6,
+    "type": "system_parameter",
+    "question": "H\u1ec7 \\(\\begin{cases} x + ay = 2 \\\\ ax + y = 2 \\end{cases}\\) c\u00f3 v\u00f4 s\u1ed1 nghi\u1ec7m khi?",
+    "options": [
+      "\\(a=1\\)",
+      "\\(a=-1\\)",
+      "\\(a=0\\)",
+      "\\(a=2\\)"
+    ],
+    "correct": "\\(a=1\\)",
+    "solution": "\\(\\det = 1-a^2\\). H\u1ec7 v\u00f4 s\u1ed1 nghi\u1ec7m khi \\(\\det=0\\) v\u00e0 c\u00e1c PT t\u01b0\u01a1ng th\u00edch. \\(1-a^2=0 \\Rightarrow a=\\pm1\\). V\u1edbi \\(a=1\\): hai PT gi\u1ed1ng nhau → v\u00f4 s\u1ed1 nghi\u1ec7m. V\u1edbi \\(a=-1\\): \\(\\begin{cases} x-y=2 \\\\ -x+y=2 \\end{cases}\\) → m\u00e2u thu\u1eabn → v\u00f4 nghi\u1ec7m.",
+    "quick": "a=1: 2 PT tr\u00f9ng nhau → v\u00f4 s\u1ed1 nghi\u1ec7m",
+    "casio": "a=1: rank=1<2; a=-1: v\u00f4 nghi\u1ec7m"
+  },
+  {
+    "id": 7,
+    "type": "system_parameter",
+    "question": "H\u1ec7 \\(\\begin{cases} 2x - y = 3 \\\\ 4x - 2y = m \\end{cases}\\) v\u00f4 s\u1ed1 nghi\u1ec7m khi?",
+    "options": [
+      "\\(m=6\\)",
+      "\\(m=3\\)",
+      "\\(m=4\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=6\\)",
+    "solution": "PT2 = 2×PT1 khi \\(m=6\\). Khi \u0111\u00f3 h\u1ec7 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 1 PT → v\u00f4 s\u1ed1 nghi\u1ec7m.",
+    "quick": "2×PT1: \\(4x-2y=6\\) \u21d4 m=6",
+    "casio": "m=6: rank=1<2"
+  },
+  {
+    "id": 8,
+    "type": "system_parameter",
+    "question": "T\u00ecm a \u0111\u1ec3 h\u1ec7 \\(\\begin{cases} x + y + z = 1 \\\\ 2x + 3y + 4z = 2 \\\\ 3x + 4y + az = 3 \\end{cases}\\) v\u00f4 nghi\u1ec7m?",
+    "options": [
+      "\\(a=5\\)",
+      "\\(a=4\\)",
+      "\\(a=3\\)",
+      "\\(a=2\\)"
+    ],
+    "correct": "\\(a=5\\)",
+    "solution": "\\(\\det = a-5\\). \u0110\u1ec3 v\u00f4 nghi\u1ec7m c\u1ea7n \\(\\det=0\\) v\u00e0 h\u1ec7 kh\u00f4ng t\u01b0\u01a1ng th\u00edch. \\(a=5\\): thay v\u00e0o, ma tr\u1eadn m\u1edf r\u1ed9ng c\u00f3 h\u1ea1ng 3? Ki\u1ec3m tra: v\u1edbi a=5, rank(A)=2, rank(Ab)=3 → v\u00f4 nghi\u1ec7m.",
+    "quick": "a=5: det=0, h\u1ec7 v\u00f4 nghi\u1ec7m",
+    "casio": "a=5: rank(A)=2, rank(Ab)=3"
+  },
+  {
+    "id": 9,
+    "type": "system_parameter",
+    "question": "T\u00ecm m \u0111\u1ec3 h\u1ec7 \\(\\begin{cases} x + 2y = 1 \\\\ 3x + my = 2 \\end{cases}\\) c\u00f3 nghi\u1ec7m duy nh\u1ea5t?",
+    "options": [
+      "\\(m \\neq 6\\)",
+      "\\(m=6\\)",
+      "\\(m=3\\)",
+      "\\(m \\neq 3\\)"
+    ],
+    "correct": "\\(m \\neq 6\\)",
+    "solution": "\\(\\det = m-6\\). Nghi\u1ec7m duy nh\u1ea5t khi \\(\\det \\neq 0 \\Rightarrow m \\neq 6\\).",
+    "quick": "\u0110\u1ecbnh th\u1ee9c = m-6, kh\u00e1c 0 \u21d4 m\u22606",
+    "casio": "m=6: rank=1<2 → v\u00f4 s\u1ed1 nghi\u1ec7m"
+  },
+  {
+    "id": 10,
+    "type": "system_parameter",
+    "question": "H\u1ec7 \\(\\begin{cases} 2x + 3y = 1 \\\\ 4x + 6y = m \\end{cases}\\) c\u00f3 nghi\u1ec7m khi?",
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=4\\)",
+      "\\(m=6\\)",
+      "\\(m=8\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "PT2 = 2×PT1 khi \\(m=2\\). Khi \u0111\u00f3 h\u1ec7 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng 1 PT → v\u00f4 s\u1ed1 nghi\u1ec7m (c\u00f3 nghi\u1ec7m). V\u1edbi \\(m \\neq 2\\): h\u1ec7 v\u00f4 nghi\u1ec7m. V\u1eady h\u1ec7 c\u00f3 nghi\u1ec7m khi \\(m=2\\).",
+    "quick": "2×PT1: \\(4x+6y=2\\) \u21d4 m=2",
+    "casio": "m=2: rank=1 → v\u00f4 s\u1ed1 nghi\u1ec7m; m≠2: v\u00f4 nghi\u1ec7m"
+  }
+]
