@@ -13,7 +13,7 @@
     "correct": "\\(x=2\\)",
     "solution": "Mẫu số \\(x-2=0 \\Rightarrow x=2\\), tử khác 0 tại \\(x=2\\) (bằng 3) → tiệm cận đứng \\(x=2\\).",
     "quick": "Mẫu = 0, tử ≠ 0",
-    "casio": "CALC x→2"
+    "casio": "CASIO: Thay x tiến gần giá trị làm mẫu=0 (x₀±0.0001) bằng CALC. Nếu giá trị rất lớn (→±∞) → đó là TCĐ. Nhớ: tử phải ≠ 0 tại x₀."
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
     "correct": "1",
     "solution": "Mẫu: \\(x^2+x-2=0 \\Rightarrow x=1, x=-2\\). Tại \\(x=1\\): tử bằng 0 → khử được, không phải TCĐ. Tại \\(x=-2\\): tử bằng -3 ≠ 0 → TCĐ \\(x=-2\\).",
     "quick": "Mẫu=0, tử ≠ 0 mới là TCĐ",
-    "casio": "Phân tích mẫu"
+    "casio": "CASIO: Thay x tiến gần giá trị làm mẫu=0 (x₀±0.0001) bằng CALC. Nếu giá trị rất lớn (→±∞) → đó là TCĐ. Nhớ: tử phải ≠ 0 tại x₀."
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     "correct": "\\(y=3\\)",
     "solution": "Bậc tử = bậc mẫu = 2 → TCN: \\(y = \\dfrac{3}{1}=3\\).",
     "quick": "Hệ số bậc cao nhất: 3/1=3",
-    "casio": "CALC x=1e6"
+    "casio": "CASIO: Thay x=10^6 (và x=-10^6) vào hàm bằng CALC. Kết quả → giá trị TCN. Nếu → ∞ → không có TCN."
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
     "correct": "\\(y=0\\)",
     "solution": "Bậc tử (1) < bậc mẫu (2) → TCN: \\(y=0\\).",
     "quick": "Bậc tử < bậc mẫu → TCN y=0",
-    "casio": "CALC x=1e6 → 0"
+    "casio": "CASIO: Thay x=10^6 (và x=-10^6) vào hàm bằng CALC. Kết quả → giá trị TCN. Nếu → ∞ → không có TCN."
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
     "correct": "Không có TCN",
     "solution": "Bậc tử (2) > bậc mẫu (1) → không có TCN, có TCX.",
     "quick": "Bậc tử > bậc mẫu → không TCN",
-    "casio": "CALC x=1e6 → ∞"
+    "casio": "CASIO: Thay x=10^6 (và x=-10^6) vào hàm bằng CALC. Kết quả → giá trị TCN. Nếu → ∞ → không có TCN."
   },
   {
     "id": 6,
@@ -93,7 +93,7 @@
     "correct": "\\(y=x-1\\)",
     "solution": "Chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\). Khi \\(x\\to\\infty\\), \\(y \\sim x-1\\).",
     "quick": "Lấy tử chia mẫu, bỏ phần dư",
-    "casio": "CALC x=1e6 → x-1"
+    "casio": "CASIO: Chia tử cho mẫu (chia đa thức), phần nguyên = TCX. Kiểm tra: thay x=10^6 → kết quả ≈ ax+b là TCX."
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
     "correct": "2",
     "solution": "Mẫu: \\(x^2-4=0 \\Rightarrow x=\\pm2\\). Tại \\(x=2\\): tử =0 → khử được, không TCĐ. Tại \\(x=-2\\): tử =12 ≠ 0 → TCĐ \\(x=-2\\). Bậc tử = bậc mẫu =2 → TCN \\(y=1\\). Tổng: 2 tiệm cận.",
     "quick": "TCĐ: x=-2; TCN: y=1",
-    "casio": "Phân tích tử và mẫu"
+    "casio": "CASIO: Tổng hợp: tìm TCĐ (mẫu=0, tử≠0), TCN (x→±∞), TCX (bậc tử=bậc mẫu+1). Mỗi loại thay giá trị tương ứng vào CALC để xác nhận."
   },
   {
     "id": 8,
@@ -125,7 +125,7 @@
     "correct": "1",
     "solution": "Mẫu: \\(x^2-3x+2=0 \\Rightarrow x=1, x=2\\). Tử: \\(x^2-1=0 \\Rightarrow x=\\pm1\\). Tại \\(x=1\\): tử =0 → khử được. Tại \\(x=2\\): tử=3 ≠ 0 → TCĐ \\(x=2\\).",
     "quick": "Mẫu=0, tử ≠ 0 → TCĐ",
-    "casio": "CALC x=2 → vô cùng"
+    "casio": "CASIO: Thay x tiến gần giá trị làm mẫu=0 (x₀±0.0001) bằng CALC. Nếu giá trị rất lớn (→±∞) → đó là TCĐ. Nhớ: tử phải ≠ 0 tại x₀."
   },
   {
     "id": 9,
@@ -157,6 +157,6 @@
     "correct": "3",
     "solution": "TXĐ: \\(x<-1\\) hoặc \\(x>1\\). TCĐ: \\(x=1\\) và \\(x=-1\\) (vì mẫu →0). TCN: khi \\(x\\to\\pm\\infty\\), \\(y \\sim \\dfrac{x}{|x|} = \\pm1\\) → hai TCN \\(y=1\\) và \\(y=-1\\). Tổng: 4? Kiểm tra lại: 2 TCĐ + 2 TCN = 4.",
     "quick": "TCĐ: x=±1; TCN: y=±1 → 4 tiệm cận",
-    "casio": "Phân tích miền xác định"
+    "casio": "CASIO: Tổng hợp: tìm TCĐ (mẫu=0, tử≠0), TCN (x→±∞), TCX (bậc tử=bậc mẫu+1). Mỗi loại thay giá trị tương ứng vào CALC để xác nhận."
   }
 ]

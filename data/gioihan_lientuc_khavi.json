@@ -13,7 +13,7 @@
     "correct": "\\(6\\)",
     "solution": "Thay trực tiếp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
     "quick": "Hàm đa thức → thay số",
-    "casio": "CALC x=2"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
     "correct": "\\(2\\)",
     "solution": "\\(\\dfrac{(x-1)(x+1)}{x-1}=x+1\\to 2\\) khi \\(x\\to1\\).",
     "quick": "Khử dạng 0/0",
-    "casio": "CALC x=0.999999"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     "correct": "\\(1\\)",
     "solution": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\).",
     "quick": "Lượng giác cơ bản",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(1-\\cos x \\sim \\dfrac{x^2}{2}\\) → \\(\\lim = \\dfrac{1}{2}\\).",
     "quick": "\\(1-\\cos x \\sim x^2/2\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\tan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\tan x/x \\to 1\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 6,
@@ -93,7 +93,7 @@
     "correct": "\\(3\\)",
     "solution": "Chia tử và mẫu cho \\(x^2\\): \\(\\dfrac{3+2/x+1/x^2}{1-5/x^2}\\to3\\).",
     "quick": "Hệ số bậc cao nhất: \\(3/1=3\\)",
-    "casio": "CALC x=1e6"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
     "correct": "\\(0\\)",
     "solution": "\\(x\\ln x \\to 0\\) khi \\(x\\to0^+\\) (dạng 0·∞, \\(\\ln x\\) chậm hơn \\(x\\)).",
     "quick": "\\(x\\ln x \\to 0\\) (quen thuộc)",
-    "casio": "CALC x=1e-9"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 8,
@@ -125,7 +125,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(e^x-1 \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\((e^x-1)/x \\to 1\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 9,
@@ -141,7 +141,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\ln(1+x)\\sim x\\) → giới hạn = 1.",
     "quick": "\\(\\ln(1+x)/x \\to 1\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 10,
@@ -157,7 +157,7 @@
     "correct": "\\(e\\)",
     "solution": "Đây là định nghĩa của \\(e\\): \\(\\lim (1+1/x)^x = e\\).",
     "quick": "\\(e\\) (công thức nổi tiếng)",
-    "casio": "CALC x=1e6"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 11,
@@ -173,7 +173,7 @@
     "correct": "\\(e\\)",
     "solution": "Đổi biến \\(t=1/x\\) → \\(\\lim_{t\\to\\infty}(1+1/t)^t=e\\).",
     "quick": "Dạng \\(1^\\infty\\) → \\(e\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 12,
@@ -189,7 +189,7 @@
     "correct": "\\(\\dfrac{2}{3}\\)",
     "solution": "\\(\\dfrac{\\sin2x}{3x}=\\dfrac{2}{3}\\cdot\\dfrac{\\sin2x}{2x}\\to\\dfrac{2}{3}\\cdot1=\\dfrac{2}{3}\\).",
     "quick": "\\(\\sin(ax)/(bx) \\to a/b\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 13,
@@ -205,7 +205,7 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "Nhân liên hợp: \\(\\dfrac{(\\sqrt{1+x}-1)(\\sqrt{1+x}+1)}{x(\\sqrt{1+x}+1)}=\\dfrac{x}{x(\\sqrt{1+x}+1)}\\to\\dfrac{1}{2}\\).",
     "quick": "\\(\\sqrt{1+x}-1 \\sim x/2\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 14,
@@ -221,7 +221,7 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(\\tan x - \\sin x = \\sin x(\\frac{1}{\\cos x}-1)=\\sin x\\cdot\\frac{1-\\cos x}{\\cos x}\\sim x\\cdot\\frac{x^2/2}{1}=\\frac{x^3}{2}\\) → \\(\\lim = 1/2\\).",
     "quick": "Khai triển Taylor: \\(\\tan x - \\sin x \\sim x^3/2\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 15,
@@ -237,7 +237,7 @@
     "correct": "\\(0\\)",
     "solution": "\\(\\ln x\\) tăng chậm hơn bất kỳ lũy thừa dương nào của \\(x\\) → giới hạn = 0.",
     "quick": "\\(\\ln x/x \\to 0\\)",
-    "casio": "CALC x=1e6"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 16,
@@ -253,7 +253,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\ln(x^x)=x\\ln x\\to0\\) → \\(x^x\\to e^0=1\\).",
     "quick": "Dạng \\(0^0\\) → \\(1\\)",
-    "casio": "CALC x=1e-9"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 17,
@@ -269,7 +269,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\arctan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\arctan x/x \\to 1\\)",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 18,
@@ -285,7 +285,7 @@
     "correct": "\\(1\\)",
     "solution": "Khi \\(x>0\\), \\(|x|=x\\) → \\(x/x=1\\).",
     "quick": "Tiến về 0 từ phải → dương → =1",
-    "casio": "CALC x=0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 19,
@@ -301,7 +301,7 @@
     "correct": "\\(-1\\)",
     "solution": "Khi \\(x<0\\), \\(|x|=-x\\) → \\(-x/x=-1\\).",
     "quick": "Tiến về 0 từ trái → âm → =-1",
-    "casio": "CALC x=-0.001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 20,
@@ -317,7 +317,7 @@
     "correct": "Không tồn tại",
     "solution": "Giới hạn trái = -1, giới hạn phải = 1, khác nhau → không tồn tại giới hạn.",
     "quick": "Trái -1, phải 1 → không tồn tại",
-    "casio": "Không thể tính trực tiếp"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 21,
@@ -333,7 +333,7 @@
     "correct": "\\(+\\infty\\)",
     "solution": "Bậc tử = 2 > bậc mẫu = 1 → giới hạn = \\(+\\infty\\).",
     "quick": "Bậc tử > bậc mẫu → \\(\\infty\\)",
-    "casio": "CALC x=1e6"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 22,
@@ -349,7 +349,7 @@
     "correct": "\\(-\\infty\\)",
     "solution": "Khi \\(x\\to1^-\\): \\(x-1<0\\) và rất nhỏ âm → phân số tiến đến \\(-\\infty\\).",
     "quick": "Mẫu âm, tiến về 0 → \\(-\\infty\\)",
-    "casio": "CALC x=0.999999"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 23,
@@ -365,7 +365,7 @@
     "correct": "\\(+\\infty\\)",
     "solution": "Khi \\(x\\to1^+\\): \\(x-1>0\\) và rất nhỏ dương → phân số tiến đến \\(+\\infty\\).",
     "quick": "Mẫu dương, tiến về 0 → \\(+\\infty\\)",
-    "casio": "CALC x=1.000001"
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
     "id": 24,
@@ -509,7 +509,7 @@
     "correct": "\\(12\\)",
     "solution": "\\(f'(x)=3x^2 \\Rightarrow f'(2)=3\\cdot4=12\\).",
     "quick": "\\((x^3)'=3x^2\\) → tại x=2 → 12",
-    "casio": "d/dx(x^3)|x=2"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 33,
@@ -525,7 +525,7 @@
     "correct": "\\(-1\\)",
     "solution": "\\(f'(x)=\\cos x \\Rightarrow f'(\\pi)=\\cos\\pi=-1\\).",
     "quick": "\\(\\sin' = \\cos\\), \\(\\cos\\pi=-1\\)",
-    "casio": "d/dx(sin(x))|x=π"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 34,
@@ -541,7 +541,7 @@
     "correct": "\\(2e^{2x}\\)",
     "solution": "\\((e^{u})' = e^{u}u' = e^{2x}\\cdot2 = 2e^{2x}\\).",
     "quick": "Đạo hàm hợp: \\(e^{2x}\\cdot2\\)",
-    "casio": "d/dx(exp(2x))"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 35,
@@ -557,7 +557,7 @@
     "correct": "\\(\\dfrac{2x}{x^2+1}\\)",
     "solution": "\\((\\ln u)' = u'/u = (2x)/(x^2+1)\\).",
     "quick": "Đạo hàm logarit hợp",
-    "casio": "d/dx(ln(x^2+1))"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 36,
@@ -669,7 +669,7 @@
     "correct": "\\(6\\)",
     "solution": "\\(f'(x)=4x^3-6x\\), \\(f''(x)=12x^2-6 \\Rightarrow f''(1)=12-6=6\\).",
     "quick": "Đạo hàm cấp 2 rồi thay số",
-    "casio": "d^2/dx^2(x^4-3x^2+5)|x=1"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 43,
@@ -685,7 +685,7 @@
     "correct": "\\(-2\\sin(2x)\\)",
     "solution": "\\((\\cos u)'=-\\sin u \\cdot u' = -\\sin(2x)\\cdot2 = -2\\sin(2x)\\).",
     "quick": "Đạo hàm hợp lượng giác",
-    "casio": "d/dx(cos(2x))"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 44,
@@ -701,7 +701,7 @@
     "correct": "Cả A và C",
     "solution": "\\((\\tan x)' = \\sec^2 x = \\dfrac{1}{\\cos^2 x}\\).",
     "quick": "\\((\\tan x)' = 1/\\cos^2 x = \\sec^2 x\\)",
-    "casio": "d/dx(tan(x))"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 45,
@@ -717,7 +717,7 @@
     "correct": "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
     "solution": "\\((\\arcsin x)' = \\dfrac{1}{\\sqrt{1-x^2}}\\), \\(|x|<1\\).",
     "quick": "Đạo hàm hàm lượng giác ngược",
-    "casio": "d/dx(asin(x))"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 46,
@@ -733,7 +733,7 @@
     "correct": "\\(-\\sin x\\)",
     "solution": "\\(f'(x)=\\cos x\\), \\(f''(x)=-\\sin x\\).",
     "quick": "Đạo hàm đến cấp 2 của sin",
-    "casio": "d^2/dx^2(sin(x))"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 47,
@@ -749,7 +749,7 @@
     "correct": "\\(\\ln x\\)",
     "solution": "\\(f'(x)=1\\cdot\\ln x + x\\cdot\\frac{1}{x} - 1 = \\ln x + 1 - 1 = \\ln x\\).",
     "quick": "Đạo hàm từng phần của \\(x\\ln x\\)",
-    "casio": "d/dx(x*ln(x)-x)"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 48,
@@ -781,7 +781,7 @@
     "correct": "\\(e^x\\)",
     "solution": "\\((e^x)' = e^x\\).",
     "quick": "Đạo hàm của \\(e^x\\) là chính nó",
-    "casio": "d/dx(exp(x))"
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
   },
   {
     "id": 50,

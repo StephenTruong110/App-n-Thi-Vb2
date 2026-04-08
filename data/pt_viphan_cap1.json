@@ -253,7 +253,7 @@
     "correct": "Bernoulli với \\(n=2\\)",
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\), ở đây \\(n=2\\).",
     "quick": "Nhận dạng \\(y' + P(x)y = Q(x)y^n\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 17,
@@ -269,7 +269,7 @@
     "correct": "\\(z = y^{-1}\\)",
     "solution": "Bernoulli: đặt \\(z = y^{1-n} = y^{1-2} = y^{-1}\\).",
     "quick": "\\(z = y^{1-n}\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 18,
@@ -285,7 +285,7 @@
     "correct": "\\(z' - z = -1\\)",
     "solution": "\\(z = y^{-1} \\Rightarrow y = z^{-1}\\). \\(y' = -z^{-2}z'\\). Thay: \\(-z^{-2}z' + z^{-1} = z^{-2}\\). Nhân \\(-z^2\\): \\(z' - z = -1\\).",
     "quick": "Công thức: \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 19,
@@ -301,7 +301,7 @@
     "correct": "\\(2\\)",
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=2\\).",
     "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 20,
@@ -317,7 +317,7 @@
     "correct": "\\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\)",
     "solution": "Đặt \\(z = y^{-1}\\), \\(z' - \\frac{1}{x}z = -1\\). Thừa số \\(\\mu = e^{-\\int \\frac{1}{x}dx} = e^{-\\ln x} = 1/x\\). \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\)? Kiểm tra lại: \\(z' - \\frac{1}{x}z = -1\\) nhân \\(1/x\\): \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\). Nhưng đáp án đưa ra dạng khác, có thể họ chọn dạng rút gọn: \\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\) là nghiệm của một biến thể khác (kiểm tra thấy sai). Tôi sẽ chọn đáp án đúng theo tính toán: \\(\\frac{1}{y} = Cx - x\\ln x\\) không có trong đáp án → có thể đề cho \\(y' - \\frac{1}{x}y = y^2\\) thì đáp án \\(\\frac{1}{y} = -\\frac{x}{2} + \\frac{C}{x}\\)? Tốt nhất nên đề bài khác. Tôi sẽ thay câu này bằng một ví dụ khác chuẩn hơn.",
     "quick": "Cẩn thận với dạng Bernoulli, có thể ra nghiệm dạng logarit",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 21,
@@ -493,7 +493,7 @@
     "correct": "\\(3\\)",
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=3\\).",
     "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 32,
@@ -573,7 +573,7 @@
     "correct": "\\(P = P_0 e^{kt}\\)",
     "solution": "Tách biến: \\(\\frac{dP}{P} = k dt \\Rightarrow \\ln P = kt + C \\Rightarrow P = Ce^{kt}\\). \\(P(0)=P_0 \\Rightarrow C=P_0\\).",
     "quick": "PT tăng trưởng mũ cơ bản",
-    "casio": "CASIO: Kiểm tra nghiệm N(t)=N₀·eᵏᵗ bằng cách thay t cụ thể."
+    "casio": "CASIO: Mô hình tăng trưởng N'=kN → N=N₀·eᵏᵗ. Tìm k từ dữ kiện: k=ln(N₁/N₀)/t. Dùng CASIO tính ln và e^x."
   },
   {
     "id": 37,
@@ -589,7 +589,7 @@
     "correct": "\\(\\lambda = \\frac{\\ln 2}{T}\\)",
     "solution": "Nghiệm: \\(m(t) = m_0 e^{-\\lambda t}\\). Khi \\(t=T\\): \\(m(T) = m_0/2 \\Rightarrow e^{-\\lambda T} = 1/2 \\Rightarrow -\\lambda T = -\\ln 2 \\Rightarrow \\lambda = \\frac{\\ln 2}{T}\\).",
     "quick": "Công thức liên hệ giữa hằng số rã và chu kỳ bán rã",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay t vào hàm và tính đạo hàm."
+    "casio": "CASIO: Phân rã N'=-kN → N=N₀·e⁻ᵏᵗ. Tìm k từ chu kỳ bán rã: k=ln2/T. Tính bằng CASIO: ln2/T."
   },
   {
     "id": 38,
@@ -605,7 +605,7 @@
     "correct": "\\(T = T_m + Ce^{kt}\\)",
     "solution": "\\(\\frac{dT}{dt} - kT = -kT_m\\), thừa số \\(\\mu = e^{-kt}\\). \\((Te^{-kt})' = -kT_m e^{-kt} \\Rightarrow Te^{-kt} = T_m e^{-kt} + C \\Rightarrow T = T_m + Ce^{kt}\\).",
     "quick": "PT tuyến tính cấp 1 với hằng số",
-    "casio": "CASIO: Kiểm tra nghiệm Newton làm lạnh/nóng bằng cách thay t vào."
+    "casio": "CASIO: Định luật Newton làm lạnh: T(t)=T_env+(T₀-T_env)e^{-kt}. Tìm k từ dữ kiện nhiệt độ tại t₁. Dùng CASIO tính ln và e^x."
   },
   {
     "id": 39,
@@ -621,7 +621,7 @@
     "correct": "\\(q = CE_0 + Ae^{-t/(RC)}\\)",
     "solution": "\\(\\frac{dq}{dt} + \\frac{1}{RC}q = \\frac{E_0}{R}\\). \\(\\mu = e^{t/(RC)}\\). \\((qe^{t/(RC)})' = \\frac{E_0}{R}e^{t/(RC)} \\Rightarrow qe^{t/(RC)} = CE_0 e^{t/(RC)} + A \\Rightarrow q = CE_0 + Ae^{-t/(RC)}\\).",
     "quick": "Nghiệm xác lập \\(q_{ss}=CE_0\\), nghiệm quá độ \\(Ae^{-t/(RC)}\\)",
-    "casio": "CASIO: Kiểm tra nghiệm mạch điện bằng cách thay t vào và tính I'."
+    "casio": "CASIO: Mạch RC/RL: I(t)=I_ss+(I₀-I_ss)e^{-t/τ}. Tính τ=L/R hoặc τ=RC. Kiểm tra I(0)=I₀ và lim I(t)=I_ss."
   },
   {
     "id": 40,
@@ -653,7 +653,7 @@
     "correct": "\\(z' - \\frac{3}{x}z = -3x^2\\)",
     "solution": "Với \\(n=4\\), \\(z = y^{1-n} = y^{-3}\\). \\(z' = -3y^{-4}y'\\). Nhân pt với \\(-3y^{-4}\\): \\(-3y^{-4}y' - \\frac{3}{x}y^{-3} = -3x^2 \\Rightarrow z' - \\frac{3}{x}z = -3x^2\\).",
     "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 42,
@@ -765,7 +765,7 @@
     "correct": "\\(z' + 2z = -2e^{2x}\\)",
     "solution": "Với \\(n=3\\), \\(z = y^{1-3} = y^{-2}\\). \\(z' = -2y^{-3}y'\\). Nhân pt với \\(-2y^{-3}\\): \\(-2y^{-3}y' + 2y^{-2} = -2e^{2x} \\Rightarrow z' + 2z = -2e^{2x}\\).",
     "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\) với \\(p(x)=-1, q(x)=e^{2x}\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay giá trị cụ thể vào 2 vế PT."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
   },
   {
     "id": 49,

@@ -93,7 +93,7 @@
     "correct": "\\(4\\)",
     "solution": "\\(\\int_0^2 x(4-x^2)\\,dx=\\int_0^2(4x-x^3)dx=\\left[2x^2-\\dfrac{x^4}{4}\\right]_0^2=8-4=4\\).",
     "quick": "\\(\\int_0^2 x(4-x^2)dx=[2x^2-x^4/4]_0^2=8-4=4\\)",
-    "casio": "∫₀²(4x-x³)dx = [2x²-x⁴/4]₀² = 8-4 = 4"
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
   },
   {
     "id": 7,
@@ -125,7 +125,7 @@
     "correct": "\\(\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
     "solution": "Miền: \\(0\\le y\\le1\\), \\(y\\le x\\le1\\). Vẽ: tam giác \\(y\\le x\\). Đổi: \\(0\\le x\\le1\\), \\(0\\le y\\le x\\).\n\\(I=\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\).",
     "quick": "Tam giác \\(y\\le x\\le1\\): đổi thành \\(x: 0\\to1\\), \\(y: 0\\to x\\)",
-    "casio": "Miền y≤x: đổi thứ tự → x: 0→1, y: 0→x"
+    "casio": "CASIO: Đổi thứ tự: vẽ miền D, xác định lại cận. Không cần CASIO cho bước này — cần kỹ năng vẽ và phân tích miền."
   },
   {
     "id": 9,
@@ -157,7 +157,7 @@
     "correct": "\\(\\pi R^2\\)",
     "solution": "\\(S=\\int_0^{2\\pi}\\int_0^R r\\,dr\\,d\\theta=\\int_0^{2\\pi}\\dfrac{R^2}{2}d\\theta=\\dfrac{R^2}{2}\\cdot2\\pi=\\pi R^2\\).",
     "quick": "\\(\\int_0^{2\\pi}d\\theta\\int_0^R r\\,dr=2\\pi\\cdot\\frac{R^2}{2}=\\pi R^2\\)",
-    "casio": "S = 2π · R²/2 = πR²"
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
   },
   {
     "id": 11,
@@ -189,7 +189,7 @@
     "correct": "\\(\\pi(e-1)\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1 e^{r^2}r\\,dr\\,d\\theta=2\\pi\\int_0^1 e^{r^2}r\\,dr\\).\nĐặt \\(u=r^2\\), \\(du=2r\\,dr\\): \\(2\\pi\\cdot\\dfrac{1}{2}[e^u]_0^1=\\pi(e-1)\\).",
     "quick": "\\(\\int_0^1 e^{r^2}r\\,dr=\\frac{e-1}{2}\\) → \\(I=2\\pi\\cdot\\frac{e-1}{2}=\\pi(e-1)\\)",
-    "casio": "I = 2π · (e-1)/2 = π(e-1) ≈ π·1.718"
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
   },
   {
     "id": 13,
@@ -237,7 +237,7 @@
     "correct": "\\(\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^{\\sqrt{\\pi/2}}\\cos(r^2)r\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{1}{2}[\\sin(r^2)]_0^{\\sqrt{\\pi/2}}=\\pi\\sin\\dfrac{\\pi}{2}=\\pi\\).",
     "quick": "\\(\\int_0^{\\sqrt{\\pi/2}}\\cos(r^2)r\\,dr=\\frac{1}{2}\\sin(\\pi/2)=\\frac{1}{2}\\) → \\(I=2\\pi\\cdot\\frac{1}{2}=\\pi\\)",
-    "casio": "I=2π·(1/2)·sin(π/2)=π·1=π"
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
   },
   {
     "id": 16,
@@ -253,7 +253,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\iiint_V 1\\,dV=\\) thể tích của \\(V=1^3=1\\).",
     "quick": "Tích phân của 1 = thể tích miền = 1",
-    "casio": "Thể tích khối lập phương 1×1×1 = 1"
+    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu)."
   },
   {
     "id": 17,
@@ -269,7 +269,7 @@
     "correct": "\\(\\dfrac{1}{6}\\)",
     "solution": "Đây là thể tích tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\).\n\\(V=\\dfrac{1}{3!}=\\dfrac{1}{6}\\) (thể tích tứ diện chuẩn bằng \\(1/6\\)).",
     "quick": "Tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\): \\(V=\\frac{1}{6}\\)",
-    "casio": "Thể tích tứ diện = 1/3! = 1/6"
+    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu)."
   },
   {
     "id": 18,
@@ -317,7 +317,7 @@
     "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
     "solution": "\\(V=\\int_0^{2\\pi}\\int_0^{\\pi}\\int_0^R \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
     "quick": "\\(V=2\\pi\\cdot[-\\cos\\varphi]_0^\\pi\\cdot\\frac{R^3}{3}=2\\pi\\cdot2\\cdot\\frac{R^3}{3}=\\frac{4\\pi R^3}{3}\\)",
-    "casio": "V = 2π·2·R³/3 = 4πR³/3 (công thức cầu)"
+    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt."
   },
   {
     "id": 21,
@@ -333,7 +333,7 @@
     "correct": "\\(\\dfrac{4\\pi}{3}\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^2 r\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\int_0^1 r^2\\cdot2\\,dr=4\\pi\\cdot\\dfrac{1}{3}=\\dfrac{4\\pi}{3}\\).",
     "quick": "\\(I=2\\pi\\cdot2\\int_0^1 r^2\\,dr=4\\pi\\cdot\\frac{1}{3}=\\frac{4\\pi}{3}\\)",
-    "casio": "I = 2π·2·[r³/3]₀¹ = 4π·1/3 = 4π/3"
+    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx."
   },
   {
     "id": 22,
@@ -349,7 +349,7 @@
     "correct": "\\(4\\pi\\)",
     "solution": "\\(x^2=r^2\\cos^2\\theta\\). \\(I=\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta\\int_0^2 r^3\\,dr=\\pi\\cdot4=4\\pi\\).\n(Vì \\(\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta=\\pi\\) và \\(\\int_0^2 r^3\\,dr=4\\).)",
     "quick": "\\(I=\\pi\\cdot[r^4/4]_0^2=\\pi\\cdot4=4\\pi\\)",
-    "casio": "∫₀²π cos²θ dθ=π, ∫₀²r³dr=4 → I=π·4=4π"
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
   },
   {
     "id": 23,
@@ -365,7 +365,7 @@
     "correct": "\\(\\dfrac{5}{3}\\)",
     "solution": "\\(I=\\int_0^1\\int_0^1(x^2+y^2+1)\\,dy\\,dx=\\int_0^1\\left(x^2+\\dfrac{1}{3}+1\\right)dx=\\dfrac{1}{3}+\\dfrac{1}{3}+1=\\dfrac{5}{3}\\).",
     "quick": "\\(\\int_0^1(x^2+4/3)dx=1/3+4/3=5/3\\)",
-    "casio": "∫₀¹(x²+4/3)dx=[x³/3+4x/3]₀¹=1/3+4/3=5/3"
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
   },
   {
     "id": 24,
@@ -381,7 +381,7 @@
     "correct": "\\(2\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_1^2\\dfrac{1}{r^3}\\cdot r\\,dr\\,d\\theta=2\\pi\\int_1^2 r^{-2}\\,dr=2\\pi\\left[-\\dfrac{1}{r}\\right]_1^2=2\\pi\\cdot\\dfrac{1}{2}=\\pi\\).",
     "quick": "\\(I=2\\pi[-1/r]_1^2=2\\pi(1-1/2)=\\pi\\)",
-    "casio": "I=2π·∫₁²r⁻²dr=2π·[-1/r]₁²=2π·(1/2)=π"
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
   },
   {
     "id": 25,
@@ -413,7 +413,7 @@
     "correct": "\\(5\\)",
     "solution": "\\(\\int_C ds=\\) độ dài đường cong \\(C\\).\nĐoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\) có độ dài \\(\\sqrt{3^2+4^2}=5\\).",
     "quick": "Tích phân loại 1 của \\(f=1\\) = độ dài cung = \\(\\sqrt{9+16}=5\\)",
-    "casio": "Độ dài đoạn thẳng = √(3²+4²) = √25 = 5"
+    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t."
   },
   {
     "id": 27,
@@ -429,7 +429,7 @@
     "correct": "\\(\\sqrt{2}\\)",
     "solution": "Tham số: \\(x=t,y=t\\), \\(t: 0\\to1\\). \\(ds=\\sqrt{1+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^1 2t\\cdot\\sqrt{2}\\,dt=2\\sqrt{2}\\cdot\\dfrac{1}{2}=\\sqrt{2}\\).",
     "quick": "\\(I=\\int_0^1 2t\\sqrt{2}\\,dt=\\sqrt{2}\\)",
-    "casio": "x=t, y=t, ds=√2·dt → I=∫₀¹2t√2dt=√2"
+    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t."
   },
   {
     "id": 28,
@@ -461,7 +461,7 @@
     "correct": "\\(1\\)",
     "solution": "Tham số \\(x=t\\), \\(y=t^2\\), \\(t: 0\\to1\\). \\(dx=dt\\), \\(dy=2t\\,dt\\).\n\\(I=\\int_0^1(t+t^2\\cdot2t)dt=\\int_0^1(t+2t^3)dt=\\dfrac{1}{2}+\\dfrac{2}{4}=1\\).",
     "quick": "\\(\\int_0^1(t+2t^3)dt=\\frac{1}{2}+\\frac{1}{2}=1\\)",
-    "casio": "∫₀¹(t+2t³)dt=[t²/2+t⁴/2]₀¹=1/2+1/2=1"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 30,
@@ -477,7 +477,7 @@
     "correct": "\\(2\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}(-\\sin t)(-\\sin t)+\\cos t\\cos t\\,dt=\\int_0^{2\\pi}(\\sin^2t+\\cos^2t)dt=\\int_0^{2\\pi}1\\,dt=2\\pi\\).",
     "quick": "\\(I=\\int_0^{2\\pi}1\\,dt=2\\pi\\) (dùng \\(\\sin^2+\\cos^2=1\\))",
-    "casio": "∫₀²π(sin²t+cos²t)dt = ∫₀²π 1 dt = 2π"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 31,
@@ -493,7 +493,7 @@
     "correct": "\\(0\\)",
     "solution": "Trên \\(C\\): \\(y=0\\), \\(dy=0\\). \\(I=\\int_0^1 0\\cdot dx-x^2\\cdot0=0\\).",
     "quick": "\\(y=0\\), \\(dy=0\\) → cả hai số hạng đều bằng 0 → \\(I=0\\)",
-    "casio": "y=0, dy=0: I=∫₀¹(0·dx-x²·0)=0"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 32,
@@ -541,7 +541,7 @@
     "correct": "\\(2\\pi\\)",
     "solution": "\\(P=x-y\\), \\(Q=x+y\\). \\(Q'_x-P'_y=1-(-1)=2\\).\n\\(I=\\iint_D 2\\,dA=2\\cdot\\pi\\cdot1^2=2\\pi\\).",
     "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa đơn vị \\(=\\pi\\). \\(I=2\\pi\\)",
-    "casio": "Q'_x-P'_y=2. Diện tích D=π → I=2π"
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
   },
   {
     "id": 35,
@@ -573,7 +573,7 @@
     "correct": "Có, vì \\(P'_y=Q'_x=2x\\)",
     "solution": "\\(P=2xy\\), \\(Q=x^2\\). \\(P'_y=2x\\), \\(Q'_x=2x\\). Vì \\(P'_y=Q'_x\\) → trường có thế hàm (bảo toàn).",
     "quick": "\\(P'_y=2x=Q'_x\\) → thế hàm \\(U=x^2y\\) (kiểm tra: \\(U'_x=2xy\\), \\(U'_y=x^2\\) ✓)",
-    "casio": "P'_y=2x=Q'_x → có thế hàm U=x²y"
+    "casio": "CASIO: Kiểm tra trường thế: P'_y = Q'_x? Dùng d/dx(P) theo y và d/dx(Q) theo x. Nếu bằng nhau → tích phân đường không phụ thuộc đường đi → I = U(B) - U(A)."
   },
   {
     "id": 37,
@@ -605,7 +605,7 @@
     "correct": "\\(12\\)",
     "solution": "\\(P=2xy\\), \\(Q=x^2\\): \\(P'_y=2x=Q'_x\\) → trường thế. Thế hàm \\(U=x^2y\\).\n\\(I=U(2,3)-U(0,0)=4\\cdot3-0=12\\).",
     "quick": "Thế hàm \\(U=x^2y\\): \\(I=U(2,3)-U(0,0)=12\\)",
-    "casio": "U=x²y → I=U(2,3)-U(0,0)=4·3-0=12"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 39,
@@ -621,7 +621,7 @@
     "correct": "\\(13\\)",
     "solution": "\\(P'_y=2=Q'_x\\) → thế hàm. \\(U'_x=3x^2+2y\\Rightarrow U=x^3+2xy+g(y)\\). \\(U'_y=2x+g'(y)=2x+3y^2\\Rightarrow g=y^3\\).\n\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\).",
     "quick": "\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\)",
-    "casio": "U=x³+2xy+y³. U(1,2)=1+4+8=13. I=13-0=13"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 40,
@@ -653,7 +653,7 @@
     "correct": "\\(8\\)",
     "solution": "\\(P'_y=1=Q'_x\\) → thế hàm \\(U=xy\\). \\(I=U(2,4)-U(0,0)=8\\).",
     "quick": "\\(U=xy\\): \\(I=U(2,4)-U(0,0)=2\\cdot4=8\\)",
-    "casio": "U=xy → I=U(2,4)-U(0,0)=8-0=8"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 42,
@@ -701,7 +701,7 @@
     "correct": "\\(0\\)",
     "solution": "\\(P=xy^2\\), \\(Q=x^2y\\). \\(Q'_x=2xy\\), \\(P'_y=2xy\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
     "quick": "\\(Q'_x=2xy=P'_y\\) → \\(I=0\\) (trường thế)",
-    "casio": "Q'_x=2xy=P'_y → I=0"
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
   },
   {
     "id": 45,
@@ -733,7 +733,7 @@
     "correct": "\\((e-1)^2\\)",
     "solution": "\\(I=\\int_0^1 e^x\\,dx\\cdot\\int_0^1 e^y\\,dy=(e-1)^2\\).",
     "quick": "Tách: \\(I=(\\int_0^1 e^x dx)^2=(e-1)^2\\)",
-    "casio": "(e-1)² ≈ (2.718-1)² ≈ 1.718² ≈ 2.952"
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
   },
   {
     "id": 47,
@@ -749,7 +749,7 @@
     "correct": "\\(\\pi\\)",
     "solution": "\\(x^2+y^2\\le2x\\Rightarrow r^2\\le2r\\cos\\theta\\Rightarrow r\\le2\\cos\\theta\\).\n\\(S=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\,dr\\,d\\theta=\\int_{-\\pi/2}^{\\pi/2}2\\cos^2\\theta\\,d\\theta=\\pi\\).",
     "quick": "\\(S=\\pi R^2=\\pi\\cdot1^2=\\pi\\) (đường tròn bán kính 1)",
-    "casio": "S=∫_{-π/2}^{π/2} 2cos²θ dθ = π"
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
   },
   {
     "id": 48,
@@ -797,7 +797,7 @@
     "correct": "\\(\\dfrac{9\\pi}{2}\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^3 z\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\int_0^1 r\\,dr\\cdot\\int_0^3 z\\,dz=2\\pi\\cdot\\dfrac{1}{2}\\cdot\\dfrac{9}{2}=\\dfrac{9\\pi}{2}\\).",
     "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}\\cdot\\frac{9}{2}=\\frac{9\\pi}{2}\\)",
-    "casio": "I=2π·(1/2)·(9/2)=9π/2"
+    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx."
   },
   {
     "id": 51,
@@ -829,7 +829,7 @@
     "correct": "\\(\\pi ab\\)",
     "solution": "Tham số: \\(x=a\\cos t\\), \\(y=b\\sin t\\), \\(t: 0\\to2\\pi\\).\n\\(S=\\dfrac{1}{2}\\int_0^{2\\pi}[a\\cos t\\cdot b\\cos t-b\\sin t\\cdot(-a\\sin t)]dt=\\dfrac{ab}{2}\\int_0^{2\\pi}1\\,dt=\\pi ab\\).",
     "quick": "\\(S=\\frac{ab}{2}\\int_0^{2\\pi}dt=\\pi ab\\)",
-    "casio": "S=(1/2)·ab·∫₀²π dt = (1/2)·ab·2π = πab"
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
   },
   {
     "id": 53,
@@ -845,7 +845,7 @@
     "correct": "\\(-e\\)",
     "solution": "\\(P=e^x\\sin y\\), \\(Q=e^x\\cos y\\). \\(P'_y=e^x\\cos y=Q'_x\\) → thế hàm.\n\\(U'_x=e^x\\sin y\\Rightarrow U=e^x\\sin y+g(y)\\). \\(U'_y=e^x\\cos y+g'(y)=e^x\\cos y\\Rightarrow g=C\\).\n\\(U=e^x\\sin y\\). \\(I=U(1,\\pi)-U(0,0)=e^1\\sin\\pi-e^0\\sin0=0-0=0\\)... Kiểm tra lại: \\(U(0,0)=0\\), \\(U(1,\\pi)=e\\cdot0=0\\).\nĐáp án thực: \\(I=0\\). Sửa: thế hàm \\(U=e^x\\sin y\\). \\(I=0-0=0\\).",
     "quick": "\\(U=e^x\\sin y\\): \\(I=U(1,\\pi)-U(0,0)=0-0=0\\). Sửa đáp án: 0",
-    "casio": "U=e^x·sin(y). I=U(1,π)-U(0,0)=e·0-1·0=0"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 54,
@@ -877,7 +877,7 @@
     "correct": "\\(\\int_0^2\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\)",
     "solution": "Miền: \\(0\\le x\\le4\\), \\(0\\le y\\le\\sqrt{x}\\). Vẽ miền: \\(y=\\sqrt{x}\\Leftrightarrow x=y^2\\). Đổi: \\(0\\le y\\le2\\), \\(y^2\\le x\\le4\\).\n\\(I=\\int_0^2\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\).",
     "quick": "\\(y: 0\\to2\\) (vì \\(\\sqrt{4}=2\\)); với mỗi \\(y\\): \\(x: y^2\\to4\\)",
-    "casio": "y=√x→x=y². Đổi: y:0→2, x:y²→4"
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
   },
   {
     "id": 56,
@@ -893,7 +893,7 @@
     "correct": "\\(-2\\pi R^2\\)",
     "solution": "\\(I=\\int_0^{2\\pi}[R\\sin t(-R\\sin t)-R\\cos t\\cdot R\\cos t]dt=\\int_0^{2\\pi}-R^2\\,dt=-2\\pi R^2\\).",
     "quick": "\\(I=\\int_0^{2\\pi}-R^2(\\sin^2t+\\cos^2t)dt=-R^2\\cdot2\\pi=-2\\pi R^2\\)",
-    "casio": "I=∫₀²π(-R²)(sin²t+cos²t)dt=-2πR²"
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
   },
   {
     "id": 57,
@@ -909,7 +909,7 @@
     "correct": "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
     "solution": "Tọa độ cầu: \\((x^2+y^2+z^2)^{3/2}=\\rho^3\\).\n\\(I=\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\varphi\\,d\\varphi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho=4\\pi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho\\).\nĐặt \\(u=\\rho^3\\): \\(4\\pi\\cdot\\dfrac{1}{3}[e^u]_0^1=\\dfrac{4\\pi(e-1)}{3}\\).",
     "quick": "\\(I=4\\pi\\cdot\\frac{1}{3}(e-1)=\\frac{4\\pi(e-1)}{3}\\)",
-    "casio": "I=4π·(1/3)·[e^{ρ³}]₀¹=4π(e-1)/3"
+    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt."
   },
   {
     "id": 58,
@@ -925,7 +925,7 @@
     "correct": "\\(0\\)",
     "solution": "Nếu \\(P'_y=Q'_x\\) thì \\(Q'_x-P'_y=0\\). Theo Green: \\(\\oint_C=\\iint_D 0\\,dA=0\\).",
     "quick": "Trường thế → tích phân không phụ thuộc đường đi → tích phân trên đường khép kín = 0",
-    "casio": "P'_y=Q'_x → ∮=0 (tính chất trường thế)"
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
   },
   {
     "id": 59,
@@ -957,6 +957,6 @@
     "correct": "\\(0\\)",
     "solution": "\\(P=3x^2y+y\\), \\(Q=x^3+x\\). \\(Q'_x=3x^2+1\\), \\(P'_y=3x^2+1\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
     "quick": "\\(Q'_x=3x^2+1=P'_y\\) → trường thế → \\(I=0\\)",
-    "casio": "Q'_x=3x²+1=P'_y → I=0 (trường thế)"
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
   }
 ]

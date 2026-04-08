@@ -13,7 +13,7 @@
     "correct": "1",
     "solution": "Tại \\(x=1\\): \\(\\lim_{x\\to1}f(x)=\\lim_{x\\to1}(x+1)=2=f(1)\\) → liên tục. Hàm liên tục trên R → 0 điểm gián đoạn.",
     "quick": "Rút gọn \\(f(x)=x+1\\) với \\(x\\neq1\\), \\(f(1)=2\\) → liên tục",
-    "casio": "CALC x=1 → 2"
+    "casio": "CASIO: Thay x tiến gần điểm nghi ngờ từ hai phía (x₀±0.0001) bằng CALC. Nếu 2 giới hạn một phía không bằng nhau hoặc khác f(x₀) → gián đoạn."
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
     "correct": "1",
     "solution": "Tại \\(x=1\\): \\(\\lim_{x\\to1}f(x)=2 \\neq f(1)=1\\) → gián đoạn bỏ được tại \\(x=1\\). Các điểm khác liên tục.",
     "quick": "Giới hạn =2, f(1)=1 → gián đoạn tại x=1",
-    "casio": "CALC x=1 → 2 ≠ 1"
+    "casio": "CASIO: Thay x tiến gần điểm nghi ngờ từ hai phía (x₀±0.0001) bằng CALC. Nếu 2 giới hạn một phía không bằng nhau hoặc khác f(x₀) → gián đoạn."
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
     "correct": "1",
     "solution": "Tại \\(x=0\\): \\(\\lim_{x\\to0^-}f(x)=0\\), \\(\\lim_{x\\to0^+}f(x)=+\\infty\\) → gián đoạn loại 2. Các điểm khác liên tục.",
     "quick": "Giới hạn trái =0, phải = +∞ → gián đoạn tại x=0",
-    "casio": "CALC x=0^-=0, x=0^+=+∞"
+    "casio": "CASIO: Thay x tiến gần điểm nghi ngờ từ hai phía (x₀±0.0001) bằng CALC. Nếu 2 giới hạn một phía không bằng nhau hoặc khác f(x₀) → gián đoạn."
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
     "correct": "Bỏ được",
     "solution": "\\(\\lim_{x\\to0}f(x)=1\\neq f(0)=0\\) → gián đoạn, có thể bổ sung \\(f(0)=1\\) để liên tục.",
     "quick": "Giới hạn tồn tại hữu hạn, khác giá trị hàm → bỏ được",
-    "casio": "CALC x=0 → 1, f(0)=0"
+    "casio": "CASIO: Tính lim trái (x₀-0.0001) và lim phải (x₀+0.0001) bằng CALC. Bỏ được: 2 giới hạn bằng nhau nhưng ≠ f(x₀). Loại 1: 2 giới hạn hữu hạn nhưng khác nhau. Loại 2: một trong 2 = ±∞."
   },
   {
     "id": 5,
@@ -93,7 +93,7 @@
     "correct": "Loại 2",
     "solution": "\\(\\lim_{x\\to0^+}f(x)=+\\infty\\), \\(\\lim_{x\\to0^-}f(x)=-\\infty\\) → gián đoạn loại 2 (vô cực).",
     "quick": "Giới hạn một phía là vô cực → loại 2",
-    "casio": "CALC x=0^+=+∞"
+    "casio": "CASIO: Tính lim trái (x₀-0.0001) và lim phải (x₀+0.0001) bằng CALC. Bỏ được: 2 giới hạn bằng nhau nhưng ≠ f(x₀). Loại 1: 2 giới hạn hữu hạn nhưng khác nhau. Loại 2: một trong 2 = ±∞."
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
     "correct": "2",
     "solution": "\\(\\tan x\\) gián đoạn tại \\(x=\\dfrac{\\pi}{2}\\) và \\(x=\\dfrac{3\\pi}{2}\\) trên \\([0,2\\pi]\\).",
     "quick": "Điểm mà cosx=0 → 2 điểm trong [0,2π]",
-    "casio": "cos(π/2)=0, cos(3π/2)=0"
+    "casio": "CASIO: Thay x tiến gần điểm nghi ngờ từ hai phía (x₀±0.0001) bằng CALC. Nếu 2 giới hạn một phía không bằng nhau hoặc khác f(x₀) → gián đoạn."
   },
   {
     "id": 8,
@@ -125,7 +125,7 @@
     "correct": "1",
     "solution": "Tại \\(x=2\\): \\(\\lim_{x\\to2}f(x)=4 \\neq f(2)=3\\) → gián đoạn. Các điểm khác liên tục.",
     "quick": "Giới hạn =4, f(2)=3 → gián đoạn tại x=2",
-    "casio": "CALC x=2 → 4"
+    "casio": "CASIO: Thay x tiến gần điểm nghi ngờ từ hai phía (x₀±0.0001) bằng CALC. Nếu 2 giới hạn một phía không bằng nhau hoặc khác f(x₀) → gián đoạn."
   },
   {
     "id": 9,
@@ -141,7 +141,7 @@
     "correct": "2",
     "solution": "Mẫu: \\(x^2-3x+2=0 \\Rightarrow x=1, x=2\\). Tại \\(x=1\\): tử =0 → gián đoạn bỏ được. Tại \\(x=2\\): tử =3 ≠ 0 → gián đoạn loại 2 (vô cực).",
     "quick": "Mẫu=0 → 2 điểm gián đoạn",
-    "casio": "CALC x=1 → 2, x=2 → ∞"
+    "casio": "CASIO: Thay x tiến gần điểm nghi ngờ từ hai phía (x₀±0.0001) bằng CALC. Nếu 2 giới hạn một phía không bằng nhau hoặc khác f(x₀) → gián đoạn."
   },
   {
     "id": 10,
@@ -157,6 +157,6 @@
     "correct": "1",
     "solution": "Tại \\(x=0\\): \\(\\lim_{x\\to0^+}f(x)=1\\), \\(\\lim_{x\\to0^-}f(x)=-1\\) → gián đoạn loại 1 (bước nhảy). Các điểm khác liên tục.",
     "quick": "Giới hạn trái = -1, phải = 1, f(0)=1 → gián đoạn tại x=0",
-    "casio": "CALC x=0^+=1, x=0^-=-1"
+    "casio": "CASIO: Thay x tiến gần điểm nghi ngờ từ hai phía (x₀±0.0001) bằng CALC. Nếu 2 giới hạn một phía không bằng nhau hoặc khác f(x₀) → gián đoạn."
   }
 ]
