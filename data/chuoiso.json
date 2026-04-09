@@ -44,7 +44,7 @@
     ],
     "correct": "Phân kỳ",
     "solution": "\\(q=2>1\\) → chuỗi hình học phân kỳ vì \\(|q|\\geq1\\).",
-    "quick": "\\(|q|=2>1\\) → phân kỳ",
+    "quick": "Hình học: \\(S=\\dfrac{a}{1-q}\\) khi \\(|q|<1\\). **Điều kiện:** |công bội| < 1",
     "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại)."
   },
   {
@@ -316,7 +316,7 @@
     ],
     "correct": "Phân kỳ vì \\(p=\\dfrac{1}{2}\\leq1\\)",
     "solution": "\\(p=1/2\\leq1\\) → chuỗi \\(p\\) phân kỳ.",
-    "quick": "\\(p=1/2<1\\) → phân kỳ",
+    "quick": "Chuỗi p: **p>1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
     "casio": "CASIO: Chuỗi p Σ1/nᵖ: p>1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449."
   },
   {
@@ -332,7 +332,7 @@
     ],
     "correct": "Hội tụ vì \\(p=3>1\\)",
     "solution": "\\(p=3>1\\) → chuỗi \\(p\\) hội tụ. (Tổng \\(=\\zeta(3)=\\) hằng số Apéry \\(\\approx1.202\\).)",
-    "quick": "\\(p=3>1\\) → hội tụ",
+    "quick": "Chuỗi p: **p>1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
     "casio": "CASIO: Chuỗi p Σ1/nᵖ: p>1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449."
   },
   {
@@ -780,7 +780,7 @@
     ],
     "correct": "Phân kỳ vì \\(D=4>1\\)",
     "solution": "\\(D=\\lim\\dfrac{4^{n+1}/(n+1)^2}{4^n/n^2}=\\lim\\dfrac{4n^2}{(n+1)^2}=4>1\\) → phân kỳ.",
-    "quick": "\\(D=4>1\\) → phân kỳ",
+    "quick": "\\(D=4>1\\) → phân kỳ — **Nhớ:** cần kiểm tra u_n→0 trước (điều kiện cần). Nếu u_n↛0 → phân kỳ ngay!",
     "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận."
   },
   {

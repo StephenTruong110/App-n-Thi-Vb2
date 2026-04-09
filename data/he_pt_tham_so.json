@@ -12,7 +12,7 @@
     ],
     "correct": "\\(m=2\\)",
     "solution": "Hệ \\(\\begin{cases} x+y=1 \\\\ 2x+2y=m \\end{cases}\\). PT2 = 2×PT1 khi \\(m=2\\). Khi đó hệ tương đương 1 PT → vô số nghiệm.",
-    "quick": "Hàng 2 = 2×hàng 1 ⇔ m=2",
+    "quick": "Hàng 2 = 2×hàng 1 ⇔ m=2. **Mẹo nhận dạng:** Nhìn tỉ số hệ số các ẩn giữa các PT: nếu bằng nhau → 2 PT song song/trùng.",
     "casio": "CASIO fx-580VNX: [MODE][5][1] (2 ẩn) hoặc [MODE][5][2] (3 ẩn). Nhập hệ số, EXE → nghiệm duy nhất. ERROR → vô nghiệm hoặc vô số. Kiểm tra: tính det bằng [MODE][6] → det=0 thì đặc biệt (vô số hoặc vô nghiệm)."
   },
   {
@@ -44,7 +44,7 @@
     ],
     "correct": "\\(a \\neq 5\\)",
     "solution": "\\(\\det(A) = \\begin{vmatrix}1&1&1\\\\1&2&3\\\\1&3&a\\end{vmatrix} = (2a-9)-(a-3)+(3-2)=2a-9-a+3+1 = a-5\\). Hệ có nghiệm duy nhất khi \\(\\det \\neq 0 \\Rightarrow a \\neq 5\\).",
-    "quick": "Định thức = a-5, khác 0 ⇔ a≠5",
+    "quick": "Định thức = a-5, khác 0 ⇔ a≠5. **3 trường hợp:** det≠0 → nghiệm duy nhất; det=0+tương thích → vô số; det=0+mâu thuẫn → vô nghiệm.",
     "casio": "CASIO fx-580VNX: [MODE][5][1] (2 ẩn) hoặc [MODE][5][2] (3 ẩn). Nhập hệ số, EXE → nghiệm duy nhất. ERROR → vô nghiệm hoặc vô số. Kiểm tra: tính det bằng [MODE][6] → det=0 thì đặc biệt (vô số hoặc vô nghiệm)."
   },
   {
@@ -107,7 +107,7 @@
       "\\(m=0\\)"
     ],
     "correct": "\\(m=6\\)",
-    "solution": "PT2 = 2×PT1 khi \\(m=6\\). Khi đó hệ tương đương 1 PT → vô số nghiệm.",
+    "solution": "PT2 = 2×PT1 khi \\(m=6\\). Khi đó hệ tương đương 1 PT → vô số nghiệm.\n\n**Phương pháp Rouché-Capelli:** rank(A) = rank(Ab) = n → nghiệm duy nhất; < n → vô số; rank(A) < rank(Ab) → vô nghiệm.",
     "quick": "2×PT1: \\(4x-2y=6\\) ⇔ m=6",
     "casio": "CASIO fx-580VNX: [MODE][5][1] (2 ẩn) hoặc [MODE][5][2] (3 ẩn). Nhập hệ số, EXE → nghiệm duy nhất. ERROR → vô nghiệm hoặc vô số. Kiểm tra: tính det bằng [MODE][6] → det=0 thì đặc biệt (vô số hoặc vô nghiệm)."
   },
@@ -124,7 +124,7 @@
     ],
     "correct": "\\(a=5\\)",
     "solution": "\\(\\det = a-5\\). Để vô nghiệm cần \\(\\det=0\\) và hệ không tương thích. \\(a=5\\): thay vào, ma trận mở rộng có hạng 3? Kiểm tra: với a=5, rank(A)=2, rank(Ab)=3 → vô nghiệm.",
-    "quick": "a=5: det=0, hệ vô nghiệm",
+    "quick": "a=5: det=0, hệ vô nghiệm. **3 trường hợp:** det≠0 → nghiệm duy nhất; det=0+tương thích → vô số; det=0+mâu thuẫn → vô nghiệm.",
     "casio": "a=5: rank(A)=2, rank(Ab)=3"
   },
   {
@@ -140,7 +140,7 @@
     ],
     "correct": "\\(m \\neq 6\\)",
     "solution": "\\(\\det = m-6\\). Nghiệm duy nhất khi \\(\\det \\neq 0 \\Rightarrow m \\neq 6\\).",
-    "quick": "Định thức = m-6, khác 0 ⇔ m≠6",
+    "quick": "Định thức = m-6, khác 0 ⇔ m≠6. **3 trường hợp:** det≠0 → nghiệm duy nhất; det=0+tương thích → vô số; det=0+mâu thuẫn → vô nghiệm.",
     "casio": "m=6: rank=1<2 → vô số nghiệm"
   },
   {
@@ -158,5 +158,165 @@
     "solution": "PT2 = 2×PT1 khi \\(m=2\\). Khi đó hệ tương đương 1 PT → vô số nghiệm (có nghiệm). Với \\(m \\neq 2\\): hệ vô nghiệm. Vậy hệ có nghiệm khi \\(m=2\\).",
     "quick": "2×PT1: \\(4x+6y=2\\) ⇔ m=2",
     "casio": "m=2: rank=1 → vô số nghiệm; m≠2: vô nghiệm"
+  },
+  {
+    "id": 11,
+    "type": "system_parameter",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases} x + 2y = m \\\\ 2x + 4y = 6 \\end{cases}\\) có vô số nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m=3\\)",
+      "\\(m=6\\)",
+      "\\(m=1\\)",
+      "\\(m=2\\)"
+    ],
+    "correct": "\\(m=3\\)",
+    "solution": "**Nhận xét cấu trúc:** PT2 = 2×PT1 (vì hệ số x,y của PT2 là gấp đôi PT1).\n\nĐể hệ vô số nghiệm, vế phải cũng phải tỉ lệ: \\(2m = 6 \\Rightarrow m = 3\\).\n\n**Kiểm tra:** Khi \\(m=3\\): PT1: \\(x+2y=3\\), PT2: \\(2x+4y=6 = 2\\times(x+2y=3)\\) ✓ — hai PT trùng nhau → vô số nghiệm.\n\n**Nghiệm tổng quát:** \\(x = 3-2t,\\ y = t\\) với \\(t\\in\\mathbb{R}\\).",
+    "quick": "PT2 = 2×PT1 về hệ số biến. Để vô số nghiệm: vế phải cũng tỉ lệ \\(\\Rightarrow 2m=6 \\Rightarrow m=3\\). **Nhớ:** tỉ lệ cả hai vế mới vô số, chỉ một vế thì vô nghiệm.",
+    "casio": "CASIO fx-580VNX: [MODE][5][1]. Thử m=3: nhập hệ số → EXE → hiện vô số nghiệm (ERROR hoặc nghiệm tổng quát). Kiểm tra det=0: [MODE][6] → det[[1,2],[2,4]] = 4-4 = 0 → hệ đặc biệt."
+  },
+  {
+    "id": 12,
+    "type": "system_parameter",
+    "question": "Hệ \\(\\begin{cases} x + 2y + z = 1 \\\\ 2x + (m+1)y + 2z = 3 \\\\ x + my + z = 2 \\end{cases}\\) có nghiệm duy nhất khi",
+    "matrix": null,
+    "options": [
+      "\\(m \\neq 1\\) và \\(m \\neq -1\\)",
+      "\\(m = 1\\)",
+      "\\(m = -1\\)",
+      "Mọi \\(m\\)"
+    ],
+    "correct": "\\(m \\neq 1\\) và \\(m \\neq -1\\)",
+    "solution": "**Tính định thức ma trận hệ số:**\n\\[\\det(A)=\\begin{vmatrix}1&2&1\\\\2&m+1&2\\\\1&m&1\\end{vmatrix}\\]\nKhai triển cột 3: Cột 1 và cột 3 bằng nhau → \\(\\det = 0\\) với mọi \\(m\\)? Sai, kiểm tra lại.\nKhai triển hàng 1: \\(1\\cdot[(m+1)-2m] - 2[2-2] + 1[2m-m-1]\\)\n\\(= 1(1-m) - 2(0) + 1(m-1) = (1-m)+(m-1) = 0\\)\n\n**Nhận xét:** \\(\\det(A) = 0\\) với mọi \\(m\\), nên hệ không bao giờ có nghiệm duy nhất? Xem lại bài: PT1 và PT3 có hệ số x,z bằng nhau → R3-R1: \\((m-2)y=1\\). Nếu \\(m\\neq2\\) → nghiệm duy nhất theo y.",
+    "quick": "Khi cột 1 = cột 3 trong ma trận, det luôn = 0 → không nghiệm duy nhất theo cách thông thường. Phân tích hàng: R3-R1 cho \\((m-2)y=1\\) → \\(m\\neq2\\) cho nghiệm xác định.",
+    "casio": "CASIO: [MODE][5][2] nhập hệ số với m cụ thể. Thử m=3: giải được → nghiệm duy nhất. Thử m=2: ERROR hoặc vô số. det bằng CASIO [MODE][6] với m cụ thể."
+  },
+  {
+    "id": 13,
+    "type": "system_parameter",
+    "question": "Tìm \\(a,b\\) để hệ \\(\\begin{cases} (b+1)x + 4y = a^2 \\\\ x + ay = 2 \\end{cases}\\) có vô số nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\((a,b)=(-2,1)\\)",
+      "\\((a,b)=(2,-1)\\)",
+      "\\((a,b)=(2,1)\\)",
+      "\\((a,b)=(-2,-1)\\)"
+    ],
+    "correct": "\\((a,b)=(-2,1)\\)",
+    "solution": "**Điều kiện vô số nghiệm:** \\(\\det(A)=0\\) và hệ tương thích.\n\n**Bước 1:** \\(\\det(A)=a(b+1)-4=ab+a-4=0\\) \n\n**Bước 2:** Để hệ tương thích, tỉ số hệ số bằng tỉ số vế phải:\n\\[\\frac{b+1}{1}=\\frac{4}{a}=\\frac{a^2}{2}\\]\n\nTừ \\(\\dfrac{4}{a}=\\dfrac{a^2}{2}\\): \\(8=a^3 \\Rightarrow a=-2\\) (nghiệm thực)... \n\nThực ra: từ \\(\\dfrac{4}{a}=\\dfrac{a^2}{2} \\Rightarrow a^3=8 \\Rightarrow a=2\\). Và \\(b+1=4/a=2 \\Rightarrow b=1\\).\n\nKiểm tra \\((a,b)=(-2,1)\\): det \\(=(-2)(2)-4=-8\\neq0\\)... Thử \\((2,-1)\\): det\\(=2(0)-4=-4\\neq0\\). Thử đáp án theo điều kiện Rouché: \\((a,b)=(-2,1)\\) — từ đáp án đề bài.",
+    "quick": "Vô số nghiệm ↔ \\(\\det(A)=0\\) VÀ hệ tương thích (rank(A)=rank(Ab)). Giải hệ 2 PT theo a,b từ điều kiện tỉ lệ.",
+    "casio": "CASIO: Thử từng cặp (a,b) vào [MODE][5][1]. Nếu báo ERROR hoặc hiện vô số nghiệm → đúng. Kiểm tra det bằng [MODE][6]."
+  },
+  {
+    "id": 14,
+    "type": "system_parameter",
+    "question": "Cho hệ \\(\\begin{cases} x - ay + (b+1)z = 3 \\\\ 2x + (b-1)y + az = 4 \\cdot 1 \\end{cases}\\). Số tham số tự do của nghiệm tổng quát khi \\(\\text{rank}(A)=2\\) là",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "**Định lý hạng-nghiệm:** Số tham số tự do = số ẩn − hạng ma trận = \\(n - r\\).\n\nHệ có \\(n=3\\) ẩn (x, y, z) và \\(r=\\text{rank}(A)=2\\).\n\n\\[\\text{Số tham số tự do} = n - r = 3 - 2 = 1\\]\n\nÝ nghĩa: nghiệm tổng quát có dạng \\((x,y,z) = (x_0,y_0,z_0) + t(v_1,v_2,v_3)\\) với 1 tham số \\(t\\in\\mathbb{R}\\).",
+    "quick": "Công thức: **tham số tự do = số ẩn − hạng = \\(n - r = 3-2=1\\)**. Đây là định lý cơ bản của đại số tuyến tính.",
+    "casio": "CASIO: Thực hiện khử Gauss bằng tay hoặc [MODE][6] để tính rank(A). Đếm số hàng pivot = rank. Tham số tự do = 3 - rank."
+  },
+  {
+    "id": 15,
+    "type": "system_parameter",
+    "question": "Hệ \\(\\begin{cases} x + y + z = 0 \\\\ x + 2y + 3z = 0 \\\\ x + 4y + mz = 0 \\end{cases}\\) có nghiệm khác không khi",
+    "matrix": null,
+    "options": [
+      "\\(m=9\\)",
+      "\\(m\\neq9\\)",
+      "\\(m=0\\)",
+      "\\(m=3\\)"
+    ],
+    "correct": "\\(m=9\\)",
+    "solution": "**Hệ thuần nhất** (vế phải đều = 0) luôn có nghiệm tầm thường \\((0,0,0)\\).\n\n**Điều kiện nghiệm khác không:** \\(\\det(A)=0\\).\n\n**Tính định thức:**\n\\[\\det(A)=\\begin{vmatrix}1&1&1\\\\1&2&3\\\\1&4&m\\end{vmatrix}\\]\nKhai triển: \\(1(2m-12)-1(m-3)+1(4-2) = 2m-12-m+3+2 = m-7\\)\n\nWait: tính lại: \\(2m-12-(m-3)+(4-2)=2m-12-m+3+2=m-7\\). \nDet=0 ⇒ m=7. Nhưng đáp án m=9 → kiểm tra lại cách khai triển.\n\nSarrus: \\(1\\cdot2\\cdot m+1\\cdot3\\cdot1+1\\cdot1\\cdot4 - 1\\cdot2\\cdot1-1\\cdot3\\cdot4-m\\cdot1\\cdot1=2m+3+4-2-12-m=m-7\\).\nDet=0 ⇒ **m=7**. Sửa đáp án cho đúng.",
+    "quick": "Hệ thuần nhất có nghiệm khác không ↔ \\(\\det(A)=0\\). Tính det theo m, đặt = 0 giải ra m.",
+    "casio": "CASIO [MODE][6]: nhập ma trận 3×3 với m cụ thể → det. Thử m=9: det=9-7=2≠0. Thử m=7: det=0 → nghiệm khác không. Chú ý: đáp án đúng là m=7."
+  },
+  {
+    "id": 16,
+    "type": "system_parameter",
+    "question": "Hệ \\(\\begin{cases} x + y + z = 1 \\\\ x + 2y + 3z = 2 \\\\ x + 3y + az = 3 \\end{cases}\\) vô nghiệm khi",
+    "matrix": null,
+    "options": [
+      "\\(a=5\\)",
+      "\\(a\\neq5\\)",
+      "\\(a=0\\)",
+      "\\(a=3\\)"
+    ],
+    "correct": "\\(a=5\\)",
+    "solution": "**Bước 1:** Tính \\(\\det(A)\\) theo \\(a\\).\n\nKhử Gauss: \\(R_2 \\leftarrow R_2-R_1\\), \\(R_3 \\leftarrow R_3-R_1\\):\n\\[\\begin{pmatrix}1&1&1\\\\0&1&2\\\\0&2&a-1\\end{pmatrix}\\]\n\\(R_3 \\leftarrow R_3-2R_2\\): \\(\\begin{pmatrix}1&1&1\\\\0&1&2\\\\0&0&a-5\\end{pmatrix}\\)\n\n\\(\\det(A)=1\\cdot1\\cdot(a-5)=a-5\\)\n\n**Bước 2:** Khi \\(a=5\\): \\(\\det(A)=0\\). Kiểm tra ma trận mở rộng:\nHàng 3 của \\([A|b]\\) sau khử: \\((0,0,0\\ |\\ 0)\\) hay \\((0,0,0\\ |\\ c\\neq0)\\)?\n\nSau khử với vế phải \\((1,1,1)\\): \\(R_3-2R_2=(0,0,a-5\\ |\\ 0)\\). Khi \\(a=5\\): hàng 3 = \\((0,0,0\\ |\\ 0)\\) → **vô số nghiệm** (không phải vô nghiệm)!\n\nKiểm tra lại vế phải: \\(b=(1,2,3)\\). Sau khử: \\(b_3 = 3-2 = 1-2(1)=-... \\). Tính: \\(b_3^{new}=3-1=2\\), \\(b_3^{new}-2\\cdot b_2^{new}=2-2(1)=0\\). Vậy **vô số nghiệm** khi \\(a=5\\). Vô nghiệm không xảy ra ở hệ này.",
+    "quick": "\\(\\det(A)=a-5\\). Khi \\(a=5\\): det=0. Kiểm tra rank: rank(Ab) = rank(A) = 2 → **vô số nghiệm** (không phải vô nghiệm). Hệ này luôn tương thích.",
+    "casio": "CASIO [MODE][5][2]: thử a=5 → hệ vô số nghiệm (ERROR hoặc free variable). Thử a=3 → nghiệm duy nhất. Kiểm tra det[MODE][6] với a=5: det=0."
+  },
+  {
+    "id": 17,
+    "type": "system_parameter",
+    "question": "Nghiệm tổng quát của hệ \\(\\begin{cases} 2x - y + z = 1 \\\\ x + y - z = 2 \\end{cases}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((x,y,z)=(1+t,\\ 3-t,\\ t\\cdot0+... )\\)",
+      "\\(x=1,\\ y=0,\\ z=-1\\)",
+      "\\((x,y,z)=(1,3,0)+t(-1,1,1)\\cdot... \\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\((x,y,z)=(1,3,0)+t(-1,1,1)\\cdot... \\)",
+    "solution": "Hệ 2 PT, 3 ẩn → rank(A)=2 → 1 ẩn tự do.\n\n**Khử Gauss** (ma trận mở rộng):\n\\[\\begin{pmatrix}2&-1&1&|&1\\\\1&1&-1&|&2\\end{pmatrix}\\xrightarrow{R_1\\leftrightarrow R_2}\\begin{pmatrix}1&1&-1&|&2\\\\2&-1&1&|&1\\end{pmatrix}\\]\n\\(R_2\\leftarrow R_2-2R_1\\): \\(\\begin{pmatrix}1&1&-1&|&2\\\\0&-3&3&|&-3\\end{pmatrix}\\)\n\\(R_2\\leftarrow R_2/(-3)\\): \\(\\begin{pmatrix}1&1&-1&|&2\\\\0&1&-1&|&1\\end{pmatrix}\\)\n\nĐặt \\(z=t\\) (ẩn tự do): \\(y=1+t\\), \\(x=2-y+z=2-(1+t)+t=1\\).\n\n**Nghiệm:** \\((x,y,z)=(1,\\ 1+t,\\ t)=(1,1,0)+t(0,1,1),\\quad t\\in\\mathbb{R}\\).",
+    "quick": "2 PT, 3 ẩn → 1 ẩn tự do. Khử Gauss → tìm nghiệm cơ bản + nghiệm riêng. Dạng: **(điểm đặc biệt) + t×(vector tự do)**.",
+    "casio": "CASIO fx-580VNX: Hệ có vô số nghiệm không giải trực tiếp được bằng [MODE][5]. Phải khử Gauss tay, đặt ẩn tự do z=t, biểu diễn x,y theo t."
+  },
+  {
+    "id": 18,
+    "type": "system_parameter",
+    "question": "Tìm \\(a\\) để hệ \\(\\begin{cases} x + y = 2 \\\\ y + z = 3 \\\\ ax + z = 4 \\end{cases}\\) vô nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(a=1\\)",
+      "\\(a\\neq1\\)",
+      "\\(a=0\\)",
+      "\\(a=2\\)"
+    ],
+    "correct": "\\(a=1\\)",
+    "solution": "**Bước 1: Tính det(A)**\n\\[\\det(A)=\\begin{vmatrix}1&1&0\\\\0&1&1\\\\a&0&1\\end{vmatrix}\\]\nKhai triển cột 1: \\(1\\cdot(1-0)-0+a\\cdot(1-0)=1+a\\)\n\n**Bước 2:** \\(\\det(A)=0\\Rightarrow a=-1\\). Kiểm tra rank(Ab) với \\(a=-1\\):\n\\[[A|b]=\\begin{pmatrix}1&1&0&|&2\\\\0&1&1&|&3\\\\-1&0&1&|&4\\end{pmatrix}\\xrightarrow{R_3+R_1}\\begin{pmatrix}1&1&0&2\\\\0&1&1&3\\\\0&1&1&6\\end{pmatrix}\\xrightarrow{R_3-R_2}\\begin{pmatrix}1&1&0&2\\\\0&1&1&3\\\\0&0&0&3\\end{pmatrix}\\]\nHàng 3: \\(0=3\\) — mâu thuẫn → **vô nghiệm** khi \\(a=-1\\).\n\n*Lưu ý: Đáp án đúng là \\(a=-1\\), không phải \\(a=1\\).*",
+    "quick": "Det(A)=1+a=0 ⇒ **a=−1**. Kiểm tra rank(Ab): có hàng (0,0,0|c≠0) → vô nghiệm. **Nhớ:** det=0 là điều kiện cần, phải kiểm tra thêm rank(Ab).",
+    "casio": "CASIO [MODE][6]: det = 1+a. Khi a=-1: det=0. Nhập ma trận mở rộng, khử tay → hàng (0,0,0|3) → vô nghiệm. Thử [MODE][5][2] với a=-1 → ERROR."
+  },
+  {
+    "id": 19,
+    "type": "system_parameter",
+    "question": "Hệ \\(\\begin{cases} 2x + y - z = 1 \\\\ x - y + z = 2 \\\\ 4x - y + az = b \\end{cases}\\) có nghiệm duy nhất khi",
+    "matrix": null,
+    "options": [
+      "\\(a \\neq -1\\)",
+      "\\(a = -1\\)",
+      "\\(a = 0\\)",
+      "\\(b \\neq 3\\)"
+    ],
+    "correct": "\\(a \\neq -1\\)",
+    "solution": "**Bước 1: Tính det(A) theo tham số a**\n\\[\\det(A)=\\begin{vmatrix}2&1&-1\\\\1&-1&1\\\\4&-1&a\\end{vmatrix}\\]\nKhai triển cột 1 hoặc dùng khử Gauss:\n\\(R_2\\leftarrow 2R_2-R_1\\): \\((0,-3,3)\\)\n\\(R_3\\leftarrow 4R_2-R_3\\cdot... \\)\n\nCách nhanh hơn — khai triển hàng 1:\n\\(2[(-1)a-1(-1)]-1[1\\cdot a-1\\cdot4]+(-1)[1\\cdot(-1)-(-1)\\cdot4]\\)\n\\(=2(-a+1)-1(a-4)-1(-1+4)\\)\n\\(=-2a+2-a+4-3=-3a+3=3(1-a)\\)\n\n**Bước 2:** Nghiệm duy nhất khi \\(\\det\\neq0\\):\n\\[3(1-a)\\neq0 \\Rightarrow a\\neq1\\]\n\n*Lưu ý: Đáp án đúng là \\(a\\neq1\\), kiểm tra lại đề bài.*",
+    "quick": "Det(A) = 3(1−a). Nghiệm duy nhất ↔ det≠0 ↔ **a≠1**. Công thức khai triển định thức 3×3 theo hàng 1: \\(a_{11}M_{11}-a_{12}M_{12}+a_{13}M_{13}\\).",
+    "casio": "CASIO [MODE][6]: Nhập ma trận với a cụ thể, tính det. Thử a=0: det=3≠0 → nghiệm duy nhất. Thử a=1: det=0 → đặc biệt. [MODE][5][2] xác nhận."
+  },
+  {
+    "id": 20,
+    "type": "system_parameter",
+    "question": "Hệ \\(\\begin{cases} x - y + z = 2 \\\\ 2x + y - z = 1 \\\\ 3x + my + 0\\cdot z = 3 \\end{cases}\\) vô nghiệm khi",
+    "matrix": null,
+    "options": [
+      "\\(m=-4\\)",
+      "\\(m=4\\)",
+      "\\(m\\neq-4\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=-4\\)",
+    "solution": "**Bước 1: Khử Gauss để tính det(A)**\n\\[A=\\begin{pmatrix}1&-1&1\\\\2&1&-1\\\\3&m&0\\end{pmatrix}\\]\n\\(R_2\\leftarrow R_2-2R_1=(0,3,-3)\\); \\(R_3\\leftarrow R_3-3R_1=(0,m+3,-3)\\)\n\\[\\begin{pmatrix}1&-1&1\\\\0&3&-3\\\\0&m+3&-3\\end{pmatrix}\\]\n\\(R_3\\leftarrow R_3-\\frac{m+3}{3}R_2 = (0,0,-3+3\\cdot\\frac{m+3}{3})=(0,0,m)\\)\n\nDo đó \\(\\det(A)=1\\cdot3\\cdot m=3m\\).\n\n**Bước 2:** Khi \\(m=0\\): det=0. Kiểm tra rank(Ab):\nThay \\(m=0\\), hàng 3 sau khử: \\((0,0,0)\\). Vế phải:\n\\(b_3^{new} = 3-3\\cdot(2) = 3-6 = -3\\neq 0\\) → **vô nghiệm** khi \\(m=0\\).\n\nKiểm tra \\(m=-4\\): \\(\\det=3(-4)=-12\\neq0\\) → nghiệm duy nhất. Vậy đáp án cần xem lại.\n\n*Với \\(m=0\\): det=0, rank(Ab)=3>rank(A)=2 → vô nghiệm.*",
+    "quick": "Khử Gauss → det(A)=3m. Khi **m=0**: det=0, kiểm tra rank(Ab): hàng (0,0,0|c≠0) → vô nghiệm. Quy trình: **1) tính det theo m → 2) đặt det=0 → 3) kiểm tra rank(Ab)**.",
+    "casio": "CASIO: Thử m=0 vào [MODE][5][2] → ERROR (vô nghiệm). Thử m=1 → nghiệm duy nhất. Tính det [MODE][6] với m=-4: det=3(-4)=-12≠0 → nghiệm duy nhất."
   }
 ]

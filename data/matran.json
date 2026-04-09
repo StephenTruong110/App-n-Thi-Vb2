@@ -20,8 +20,8 @@
       "0"
     ],
     "correct": "-2",
-    "solution": "\\(\\det(A)=1\\cdot4-2\\cdot3=4-6=-2\\)",
-    "quick": "\\(ad-bc=4-6=-2\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=1\\cdot4-(2)\\cdot(3)=4-(6)=-2\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((1)\\cdot(4)-(2)\\cdot(3)=4-6=-2\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "MODE 6 → MatA 2×2 → nhập số → OPTN → Matrix → det → EXE"
   },
   {
@@ -45,8 +45,8 @@
       "11"
     ],
     "correct": "1",
-    "solution": "\\(\\det(A)=2\\cdot3-1\\cdot5=6-5=1\\)",
-    "quick": "\\(ad-bc=6-5=1\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=2\\cdot3-(1)\\cdot(5)=6-(5)=1\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((2)\\cdot(3)-(1)\\cdot(5)=6-5=1\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -70,8 +70,8 @@
       "5"
     ],
     "correct": "10",
-    "solution": "\\(\\det(A)=3\\cdot4-2\\cdot1=12-2=10\\)",
-    "quick": "\\(12-2=10\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=3\\cdot4-(2)\\cdot(1)=12-(2)=10\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((3)\\cdot(4)-(2)\\cdot(1)=12-2=10\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -95,8 +95,8 @@
       "-10"
     ],
     "correct": "-2",
-    "solution": "\\(\\det(A)=(-1)(-4)-2\\cdot3=4-6=-2\\)",
-    "quick": "\\(4-6=-2\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=-1\\cdot-4-(2)\\cdot(3)=4-(6)=-2\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((-1)\\cdot(-4)-(2)\\cdot(3)=4-6=-2\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -120,8 +120,8 @@
       "7"
     ],
     "correct": "-1",
-    "solution": "\\(\\det(A)=5\\cdot1-3\\cdot2=5-6=-1\\)",
-    "quick": "\\(5-6=-1\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=5\\cdot1-(3)\\cdot(2)=5-(6)=-1\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((5)\\cdot(1)-(3)\\cdot(2)=5-6=-1\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -145,8 +145,8 @@
       "24"
     ],
     "correct": "0",
-    "solution": "\\(\\det(A)=4\\cdot3-6\\cdot2=12-12=0\\) — ma trận suy biến",
-    "quick": "\\(12-12=0\\) — hai hàng tỉ lệ nhau",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=4\\cdot3-(6)\\cdot(2)=12-(12)=0\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((4)\\cdot(3)-(6)\\cdot(2)=12-12=0\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "det → 0 → không khả nghịch"
   },
   {
@@ -170,8 +170,8 @@
       "2"
     ],
     "correct": "-1",
-    "solution": "\\(\\det(A)=0\\cdot0-1\\cdot1=-1\\)",
-    "quick": "\\(0-1=-1\\) — ma trận hoán vị",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=0\\cdot0-(1)\\cdot(1)=0-(1)=-1\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((0)\\cdot(0)-(1)\\cdot(1)=0-1=-1\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -195,8 +195,8 @@
       "11"
     ],
     "correct": "-1",
-    "solution": "\\(\\det(A)=7\\cdot1-2\\cdot4=7-8=-1\\)",
-    "quick": "\\(7-8=-1\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=7\\cdot1-(2)\\cdot(4)=7-(8)=-1\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((7)\\cdot(1)-(2)\\cdot(4)=7-8=-1\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -220,8 +220,8 @@
       "4"
     ],
     "correct": "20",
-    "solution": "\\(\\det(A)=6\\cdot3-(-1)\\cdot2=18+2=20\\)",
-    "quick": "\\(18+2=20\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=6\\cdot3-(-1)\\cdot(2)=18-(-2)=20\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((6)\\cdot(3)-(-1)\\cdot(2)=18--2=20\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -245,8 +245,8 @@
       "2"
     ],
     "correct": "10",
-    "solution": "\\(\\det(A)=(-3)(-4)-(-2)(-1)=12-2=10\\)",
-    "quick": "\\(12-2=10\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=-3\\cdot-4-(-2)\\cdot(-1)=12-(2)=10\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((-3)\\cdot(-4)-(-2)\\cdot(-1)=12-2=10\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -270,8 +270,8 @@
       "5"
     ],
     "correct": "2",
-    "solution": "\\(\\det=8\\cdot1-3\\cdot2=8-6=2\\)",
-    "quick": "\\(8-6=2\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=8\\cdot1-(3)\\cdot(2)=8-(6)=2\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((8)\\cdot(1)-(3)\\cdot(2)=8-6=2\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -295,8 +295,8 @@
       "11"
     ],
     "correct": "-1",
-    "solution": "\\(\\det=(-5)(-1)-2\\cdot3=5-6=-1\\)",
-    "quick": "\\(5-6=-1\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=-5\\cdot-1-(2)\\cdot(3)=5-(6)=-1\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((-5)\\cdot(-1)-(2)\\cdot(3)=5-6=-1\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -320,8 +320,8 @@
       "15"
     ],
     "correct": "3",
-    "solution": "\\(\\det=9\\cdot3-4\\cdot6=27-24=3\\)",
-    "quick": "\\(27-24=3\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=9\\cdot3-(4)\\cdot(6)=27-(24)=3\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((9)\\cdot(3)-(4)\\cdot(6)=27-24=3\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -345,8 +345,8 @@
       "9"
     ],
     "correct": "-6",
-    "solution": "\\(\\det=0\\cdot0-3\\cdot2=-6\\)",
-    "quick": "\\(0-6=-6\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=0\\cdot0-(3)\\cdot(2)=0-(6)=-6\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((0)\\cdot(0)-(3)\\cdot(2)=0-6=-6\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -370,8 +370,8 @@
       "-10"
     ],
     "correct": "2",
-    "solution": "\\(\\det=4(-1)-(-3)(2)=-4+6=2\\)",
-    "quick": "\\(-4+6=2\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=4\\cdot-1-(-3)\\cdot(2)=-4-(-6)=2\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((4)\\cdot(-1)-(-3)\\cdot(2)=-4--6=2\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -395,8 +395,8 @@
       "20"
     ],
     "correct": "0",
-    "solution": "\\(\\det=10-10=0\\) — hàng 2 = 2×hàng 1 → suy biến",
-    "quick": "\\(10-10=0\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=1\\cdot10-(5)\\cdot(2)=10-(10)=0\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((1)\\cdot(10)-(5)\\cdot(2)=10-10=0\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -420,8 +420,8 @@
       "10"
     ],
     "correct": "-2",
-    "solution": "\\(\\det=(-2)(-5)-(-3)(-4)=10-12=-2\\)",
-    "quick": "\\(10-12=-2\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=-2\\cdot-5-(-3)\\cdot(-4)=10-(12)=-2\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((-2)\\cdot(-5)-(-3)\\cdot(-4)=10-12=-2\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -445,8 +445,8 @@
       "18"
     ],
     "correct": "-2",
-    "solution": "\\(\\det=18-20=-2\\)",
-    "quick": "\\(18-20=-2\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=6\\cdot3-(5)\\cdot(4)=18-(20)=-2\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((6)\\cdot(3)-(5)\\cdot(4)=18-20=-2\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -470,8 +470,8 @@
       "1"
     ],
     "correct": "17",
-    "solution": "\\(\\det=7\\cdot2-(-1)\\cdot3=14+3=17\\)",
-    "quick": "\\(14+3=17\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=7\\cdot2-(-1)\\cdot(3)=14-(-3)=17\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((7)\\cdot(2)-(-1)\\cdot(3)=14--3=17\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -495,8 +495,8 @@
       "29"
     ],
     "correct": "-1",
-    "solution": "\\(\\det=10\\cdot2-3\\cdot7=20-21=-1\\)",
-    "quick": "\\(20-21=-1\\)",
+    "solution": "**Quy tắc định thức 2×2:** \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\)\n\nÁp dụng: \\(\\det(A)=10\\cdot2-(3)\\cdot(7)=20-(21)=-1\\)",
+    "quick": "Chéo xuôi trừ chéo ngược: \\((10)\\cdot(2)-(3)\\cdot(7)=20-21=-1\\). **Mẹo nhớ:** ↘ trừ ↗",
     "casio": "CASIO fx-580VNX: [MODE][6] → chọn 1 (Matrix) → chọn MatA → nhập cỡ 2×2 → nhập từng phần tử → [AC] → [OPTN][F2](Matrix) → [F3](det) → [F1](MatA) → [EXE]. Kết quả hiện ngay."
   },
   {
@@ -527,8 +527,8 @@
       "1"
     ],
     "correct": "6",
-    "solution": "Ma trận đường chéo: \\(\\det=1\\cdot2\\cdot3=6\\)",
-    "quick": "Đường chéo: nhân các phần tử trên đường chéo chính",
+    "solution": "**Ma trận tam giác trên** → định thức = tích đường chéo chính:\n\\(\\det(A)=1\\cdot2\\cdot3=6\\)",
+    "quick": "Tam giác trên: nhân đường chéo: \\(1\\times2\\times3=6\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -623,8 +623,8 @@
       "12"
     ],
     "correct": "36",
-    "solution": "Ma trận tam giác dưới: \\(\\det=3\\cdot2\\cdot6=36\\)",
-    "quick": "Tam giác dưới → tích đường chéo chính",
+    "solution": "**Ma trận tam giác dưới** → định thức = tích đường chéo chính:\n\\(\\det(A)=3\\cdot2\\cdot6=36\\)",
+    "quick": "Tam giác dưới: nhân đường chéo: \\(3\\times2\\times6=36\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -655,8 +655,8 @@
       "15"
     ],
     "correct": "40",
-    "solution": "Ma trận tam giác trên: \\(\\det=2\\cdot5\\cdot4=40\\)",
-    "quick": "Tam giác trên → tích đường chéo",
+    "solution": "**Ma trận tam giác trên** → định thức = tích đường chéo chính:\n\\(\\det(A)=2\\cdot5\\cdot4=40\\)",
+    "quick": "Tam giác trên: nhân đường chéo: \\(2\\times5\\times4=40\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -687,8 +687,8 @@
       "6"
     ],
     "correct": "8",
-    "solution": "Tam giác trên: \\(\\det=(-1)(-2)(4)=8\\)",
-    "quick": "\\((-1)\\times(-2)\\times4=8\\)",
+    "solution": "**Ma trận tam giác trên** → định thức = tích đường chéo chính:\n\\(\\det(A)=-1\\cdot-2\\cdot4=8\\)",
+    "quick": "Tam giác trên: nhân đường chéo: \\(-1\\times-2\\times4=8\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -751,8 +751,8 @@
       "45"
     ],
     "correct": "0",
-    "solution": "Hàng 1 + Hàng 3 = 2×Hàng 2 → ba hàng phụ thuộc tuyến tính → \\(\\det=0\\)",
-    "quick": "Hàng 1+Hàng 3 = 2×Hàng 2 → phụ thuộc → det=0",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 1\\cdot5\\cdot9=45,\\quad 2\\cdot6\\cdot7=84,\\quad 3\\cdot4\\cdot8=96\\)\n\\(-: 3\\cdot5\\cdot7=105,\\quad 2\\cdot4\\cdot9=72,\\quad 1\\cdot6\\cdot8=48\\)\n\\(\\det(A)=(45+84+96)-(105+72+48)=225-225=0\\)",
+    "quick": "Sarrus: (+45+84+96)−(+105+72+48)=0=0. Kiểm tra: det=0",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -783,8 +783,8 @@
       "15"
     ],
     "correct": "30",
-    "solution": "Ma trận đường chéo: \\(\\det=5\\cdot3\\cdot2=30\\)",
-    "quick": "\\(5\\times3\\times2=30\\)",
+    "solution": "**Ma trận tam giác trên** → định thức = tích đường chéo chính:\n\\(\\det(A)=5\\cdot3\\cdot2=30\\)",
+    "quick": "Tam giác trên: nhân đường chéo: \\(5\\times3\\times2=30\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -815,8 +815,8 @@
       "4"
     ],
     "correct": "-6",
-    "solution": "Khai triển hàng 1: \\(1(3(-1)-1\\cdot1)-(-1)(2(-1)-0)+0=(-4)+(-2)=-6\\)",
-    "quick": "Khai triển hàng 1: \\(-4-2=-6\\)",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 1\\cdot3\\cdot-1=-3,\\quad -1\\cdot1\\cdot0=0,\\quad 0\\cdot2\\cdot1=0\\)\n\\(-: 0\\cdot3\\cdot0=0,\\quad -1\\cdot2\\cdot-1=2,\\quad 1\\cdot1\\cdot1=1\\)\n\\(\\det(A)=(-3+0+0)-(0+2+1)=-3-3=-6\\)",
+    "quick": "Sarrus: (+-3+0+0)−(+0+2+1)=-6=-6. Kiểm tra: det=-6",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -879,8 +879,8 @@
       "15"
     ],
     "correct": "30",
-    "solution": "Tam giác dưới: \\(\\det=2\\cdot3\\cdot5=30\\)",
-    "quick": "\\(2\\times3\\times5=30\\)",
+    "solution": "**Ma trận tam giác dưới** → định thức = tích đường chéo chính:\n\\(\\det(A)=2\\cdot3\\cdot5=30\\)",
+    "quick": "Tam giác dưới: nhân đường chéo: \\(2\\times3\\times5=30\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -911,8 +911,8 @@
       "42"
     ],
     "correct": "-14",
-    "solution": "Khai triển cột 3: \\(7\\cdot(1\\cdot4-2\\cdot3)=7(-2)=-14\\)",
-    "quick": "Cột 3 chỉ có \\(a_{33}=7\\): \\(7\\times(4-6)=-14\\)",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 1\\cdot4\\cdot7=28,\\quad 2\\cdot0\\cdot5=0,\\quad 0\\cdot3\\cdot6=0\\)\n\\(-: 0\\cdot4\\cdot5=0,\\quad 2\\cdot3\\cdot7=42,\\quad 1\\cdot0\\cdot6=0\\)\n\\(\\det(A)=(28+0+0)-(0+42+0)=28-42=-14\\)",
+    "quick": "Sarrus: (+28+0+0)−(+0+42+0)=-14=-14. Kiểm tra: det=-14",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -943,8 +943,8 @@
       "11"
     ],
     "correct": "120",
-    "solution": "Ma trận đường chéo: \\(\\det=4\\cdot5\\cdot6=120\\)",
-    "quick": "\\(4\\times5\\times6=120\\)",
+    "solution": "**Ma trận tam giác trên** → định thức = tích đường chéo chính:\n\\(\\det(A)=4\\cdot5\\cdot6=120\\)",
+    "quick": "Tam giác trên: nhân đường chéo: \\(4\\times5\\times6=120\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -975,8 +975,8 @@
       "2"
     ],
     "correct": "-1",
-    "solution": "Khai triển hàng 1: \\(1(6-4)-2(4-3)+1(8-9)=2-2-1=-1\\)",
-    "quick": "\\(2-2-1=-1\\)",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 1\\cdot3\\cdot2=6,\\quad 2\\cdot1\\cdot3=6,\\quad 1\\cdot2\\cdot4=8\\)\n\\(-: 1\\cdot3\\cdot3=9,\\quad 2\\cdot2\\cdot2=8,\\quad 1\\cdot1\\cdot4=4\\)\n\\(\\det(A)=(6+6+8)-(9+8+4)=20-21=-1\\)",
+    "quick": "Sarrus: (+6+6+8)−(+9+8+4)=-1=-1. Kiểm tra: det=-1",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -1039,8 +1039,8 @@
       "-2"
     ],
     "correct": "2",
-    "solution": "Khai triển hàng 1: \\(1(1-0)-1(0-1)+0=1+1=2\\)",
-    "quick": "\\(1+1=2\\)",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 1\\cdot1\\cdot1=1,\\quad 1\\cdot1\\cdot1=1,\\quad 0\\cdot0\\cdot0=0\\)\n\\(-: 0\\cdot1\\cdot1=0,\\quad 1\\cdot0\\cdot1=0,\\quad 1\\cdot1\\cdot0=0\\)\n\\(\\det(A)=(1+1+0)-(0+0+0)=2-0=2\\)",
+    "quick": "Sarrus: (+1+1+0)−(+0+0+0)=2=2. Kiểm tra: det=2",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -1071,8 +1071,8 @@
       "5"
     ],
     "correct": "6",
-    "solution": "Tam giác trên: \\(\\det=3\\cdot1\\cdot2=6\\)",
-    "quick": "Tích đường chéo: \\(3\\times1\\times2=6\\)",
+    "solution": "**Ma trận tam giác trên** → định thức = tích đường chéo chính:\n\\(\\det(A)=3\\cdot1\\cdot2=6\\)",
+    "quick": "Tam giác trên: nhân đường chéo: \\(3\\times1\\times2=6\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -1103,8 +1103,8 @@
       "20"
     ],
     "correct": "40",
-    "solution": "Tam giác trên: \\(\\det=2\\cdot4\\cdot5=40\\)",
-    "quick": "\\(2\\times4\\times5=40\\)",
+    "solution": "**Ma trận tam giác trên** → định thức = tích đường chéo chính:\n\\(\\det(A)=2\\cdot4\\cdot5=40\\)",
+    "quick": "Tam giác trên: nhân đường chéo: \\(2\\times4\\times5=40\\)",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -1135,8 +1135,8 @@
       "2"
     ],
     "correct": "0",
-    "solution": "Hàng 3 = Hàng 1 + Hàng 2: \\((2,3,4)=(1,2,3)+(1,1,1)\\) → phụ thuộc → \\(\\det=0\\)",
-    "quick": "Hàng 3 = Hàng 1 + Hàng 2 → phụ thuộc → det=0",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 1\\cdot1\\cdot4=4,\\quad 2\\cdot1\\cdot2=4,\\quad 3\\cdot1\\cdot3=9\\)\n\\(-: 3\\cdot1\\cdot2=6,\\quad 2\\cdot1\\cdot4=8,\\quad 1\\cdot1\\cdot3=3\\)\n\\(\\det(A)=(4+4+9)-(6+8+3)=17-17=0\\)",
+    "quick": "Sarrus: (+4+4+9)−(+6+8+3)=0=0. Kiểm tra: det=0",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -1167,8 +1167,8 @@
       "5"
     ],
     "correct": "35",
-    "solution": "Khai triển cột 3: \\(7\\cdot(2\\cdot4-3\\cdot1)=7\\cdot5=35\\)",
-    "quick": "Cột 3 chỉ có \\(a_{33}=7\\): \\(7\\times5=35\\)",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 2\\cdot4\\cdot7=56,\\quad 3\\cdot0\\cdot5=0,\\quad 0\\cdot1\\cdot6=0\\)\n\\(-: 0\\cdot4\\cdot5=0,\\quad 3\\cdot1\\cdot7=21,\\quad 2\\cdot0\\cdot6=0\\)\n\\(\\det(A)=(56+0+0)-(0+21+0)=56-21=35\\)",
+    "quick": "Sarrus: (+56+0+0)−(+0+21+0)=35=35. Kiểm tra: det=35",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -1295,8 +1295,8 @@
       "13"
     ],
     "correct": "1",
-    "solution": "Khai triển hàng 1: \\(1(0-24)-2(0-20)+3(0-5)=-24+40-15=1\\)",
-    "quick": "\\(-24+40-15=1\\)",
+    "solution": "**Quy tắc Sarrus** (mở rộng 3 cột đầu sang bên phải):\n\\(+: 1\\cdot1\\cdot0=0,\\quad 2\\cdot4\\cdot5=40,\\quad 3\\cdot0\\cdot6=0\\)\n\\(-: 3\\cdot1\\cdot5=15,\\quad 2\\cdot0\\cdot0=0,\\quad 1\\cdot4\\cdot6=24\\)\n\\(\\det(A)=(0+40+0)-(15+0+24)=40-39=1\\)",
+    "quick": "Sarrus: (+0+40+0)−(+15+0+24)=1=1. Kiểm tra: det=1",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn."
   },
   {
@@ -1615,7 +1615,7 @@
       "9"
     ],
     "correct": "54",
-    "solution": "\\(\\det(3A)=3^3\\cdot\\det(A)=27\\cdot2=54\\)",
+    "solution": "\\(\\det(3A)=3^3\\cdot\\det(A)=27\\cdot2=54\\)\n\n**Công thức:** \\(\\det(kA)=k^n\\cdot\\det(A)\\) với \\(n\\) là cỡ ma trận. Mỗi hàng nhân \\(k\\), có \\(n\\) hàng → nhân \\(k^n\\) lần.",
     "quick": "\\(3^3\\times2=27\\times2=54\\)",
     "casio": "CASIO: Dùng công thức det(kA)=kⁿ·det(A), det(AB)=det(A)·det(B), det(Aᵀ)=det(A). Tính số học trực tiếp trên màn hình CASIO sau khi áp công thức."
   },
@@ -1679,7 +1679,7 @@
       "48"
     ],
     "correct": "192",
-    "solution": "\\(\\det(2A)=2^6\\cdot\\det(A)=64\\cdot3=192\\)",
+    "solution": "\\(\\det(2A)=2^6\\cdot\\det(A)=64\\cdot3=192\\)\n\n**Công thức:** \\(\\det(kA)=k^n\\cdot\\det(A)\\) với \\(n\\) là cỡ ma trận. Mỗi hàng nhân \\(k\\), có \\(n\\) hàng → nhân \\(k^n\\) lần.",
     "quick": "\\(2^6\\times3=64\\times3=192\\)",
     "casio": "CASIO: Dùng công thức det(kA)=kⁿ·det(A), det(AB)=det(A)·det(B), det(Aᵀ)=det(A). Tính số học trực tiếp trên màn hình CASIO sau khi áp công thức."
   },
@@ -1983,7 +1983,7 @@
       "Vô nghiệm"
     ],
     "correct": "\\(x=1,y=2\\)",
-    "solution": "Cộng 2 PT: \\(3x=3\\to x=1\\), \\(y=3-1=2\\)",
+    "solution": "Cộng 2 PT: \\(3x=3\\to x=1\\), \\(y=3-1=2\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
     "quick": "Cộng PT1+PT2: \\(3x=3\\to x=1,y=2\\)",
     "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số."
   },
@@ -1999,7 +1999,7 @@
       "Vô số nghiệm"
     ],
     "correct": "\\(x=2,y=1\\)",
-    "solution": "Cộng 2 PT: \\(3x=6\\to x=2\\), \\(y=2-1=1\\)",
+    "solution": "Cộng 2 PT: \\(3x=6\\to x=2\\), \\(y=2-1=1\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
     "quick": "Cộng PT: \\(3x=6\\to x=2\\)",
     "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số."
   },
@@ -2015,7 +2015,7 @@
       "Hai nghiệm"
     ],
     "correct": "Vô số nghiệm",
-    "solution": "PT2 = 2×PT1 → phụ thuộc → vô số nghiệm: \\(x=t, y=1-t\\)",
+    "solution": "PT2 = 2×PT1 → phụ thuộc → vô số nghiệm: \\(x=t, y=1-t\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
     "quick": "Hàng 2 tỉ lệ hàng 1 → vô số nghiệm",
     "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số."
   },
@@ -2031,7 +2031,7 @@
       "\\(x=0\\)"
     ],
     "correct": "Vô nghiệm",
-    "solution": "Hai PT mâu thuẫn nhau → vô nghiệm. rank(A)≠rank(Ab)",
+    "solution": "Hai PT mâu thuẫn nhau → vô nghiệm. rank(A)≠rank(Ab)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
     "quick": "rank(A)≠rank(Ab) → vô nghiệm",
     "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số."
   },
@@ -2047,7 +2047,7 @@
       "3"
     ],
     "correct": "1",
-    "solution": "2 PT, 3 ẩn, rank(A)=2 → tham số tự do = \\(n-\\text{rank}=3-2=1\\)",
+    "solution": "2 PT, 3 ẩn, rank(A)=2 → tham số tự do = \\(n-\\text{rank}=3-2=1\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
     "quick": "Tham số tự do = số ẩn − hạng = 3-2=1",
     "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số."
   },

@@ -251,7 +251,7 @@
       "\\(8\\)"
     ],
     "correct": "\\(1\\)",
-    "solution": "\\(\\iiint_V 1\\,dV=\\) thể tích của \\(V=1^3=1\\).",
+    "solution": "**Ý nghĩa hình học:** \\(\\iiint_V 1\\,dV =\\) **thể tích** của miền \\(V\\).\n\nMiền \\(V\\) là khối lập phương đơn vị \\([0,1]^3\\).\n\nThể tích = cạnh³ = \\(1^3 = 1\\).\n\n**Kiểm tra bằng tích phân lặp:**\n\\(\\int_0^1\\int_0^1\\int_0^1 dz\\,dy\\,dx = \\int_0^1\\int_0^1[z]_0^1\\,dy\\,dx = \\int_0^1\\int_0^1 1\\,dy\\,dx = 1\\)",
     "quick": "Tích phân của 1 = thể tích miền = 1",
     "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu)."
   },

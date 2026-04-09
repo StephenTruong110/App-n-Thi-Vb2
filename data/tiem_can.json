@@ -12,7 +12,7 @@
     ],
     "correct": "\\(x=2\\)",
     "solution": "Mẫu số \\(x-2=0 \\Rightarrow x=2\\), tử khác 0 tại \\(x=2\\) (bằng 3) → tiệm cận đứng \\(x=2\\).",
-    "quick": "Mẫu = 0, tử ≠ 0",
+    "quick": "**TCĐ:** mẫu = 0 VÀ tử ≠ 0 tại điểm đó. Nếu tử cũng = 0 → rút gọn trước!",
     "casio": "CASIO: Thay x tiến gần giá trị làm mẫu=0 (x₀±0.0001) bằng CALC. Nếu giá trị rất lớn (→±∞) → đó là TCĐ. Nhớ: tử phải ≠ 0 tại x₀."
   },
   {
@@ -43,7 +43,7 @@
       "\\(y=2\\)"
     ],
     "correct": "\\(y=3\\)",
-    "solution": "Bậc tử = bậc mẫu = 2 → TCN: \\(y = \\dfrac{3}{1}=3\\).",
+    "solution": "Bậc tử = bậc mẫu = 2 → TCN: \\(y = \\dfrac{3}{1}=3\\).\n\n**Quy tắc nhanh:** (1) Bậc tử < bậc mẫu → TCN \\(y=0\\). (2) Bậc tử = bậc mẫu → TCN \\(y=\\) tỉ số hệ số bậc cao nhất. (3) Bậc tử > bậc mẫu → không TCN (có TCX).",
     "quick": "Hệ số bậc cao nhất: 3/1=3",
     "casio": "CASIO: Thay x=10^6 (và x=-10^6) vào hàm bằng CALC. Kết quả → giá trị TCN. Nếu → ∞ → không có TCN."
   },
@@ -59,7 +59,7 @@
       "Không có TCN"
     ],
     "correct": "\\(y=0\\)",
-    "solution": "Bậc tử (1) < bậc mẫu (2) → TCN: \\(y=0\\).",
+    "solution": "Bậc tử (1) < bậc mẫu (2) → TCN: \\(y=0\\).\n\n**Quy tắc nhanh:** (1) Bậc tử < bậc mẫu → TCN \\(y=0\\). (2) Bậc tử = bậc mẫu → TCN \\(y=\\) tỉ số hệ số bậc cao nhất. (3) Bậc tử > bậc mẫu → không TCN (có TCX).",
     "quick": "Bậc tử < bậc mẫu → TCN y=0",
     "casio": "CASIO: Thay x=10^6 (và x=-10^6) vào hàm bằng CALC. Kết quả → giá trị TCN. Nếu → ∞ → không có TCN."
   },
@@ -75,7 +75,7 @@
       "\\(y=x-1\\)"
     ],
     "correct": "Không có TCN",
-    "solution": "Bậc tử (2) > bậc mẫu (1) → không có TCN, có TCX.",
+    "solution": "Bậc tử (2) > bậc mẫu (1) → không có TCN, có TCX.\n\n**Quy tắc nhanh:** (1) Bậc tử < bậc mẫu → TCN \\(y=0\\). (2) Bậc tử = bậc mẫu → TCN \\(y=\\) tỉ số hệ số bậc cao nhất. (3) Bậc tử > bậc mẫu → không TCN (có TCX).",
     "quick": "Bậc tử > bậc mẫu → không TCN",
     "casio": "CASIO: Thay x=10^6 (và x=-10^6) vào hàm bằng CALC. Kết quả → giá trị TCN. Nếu → ∞ → không có TCN."
   },
@@ -124,7 +124,7 @@
     ],
     "correct": "1",
     "solution": "Mẫu: \\(x^2-3x+2=0 \\Rightarrow x=1, x=2\\). Tử: \\(x^2-1=0 \\Rightarrow x=\\pm1\\). Tại \\(x=1\\): tử =0 → khử được. Tại \\(x=2\\): tử=3 ≠ 0 → TCĐ \\(x=2\\).",
-    "quick": "Mẫu=0, tử ≠ 0 → TCĐ",
+    "quick": "**TCĐ:** mẫu = 0 VÀ tử ≠ 0 tại điểm đó. Nếu tử cũng = 0 → rút gọn trước!",
     "casio": "CASIO: Thay x tiến gần giá trị làm mẫu=0 (x₀±0.0001) bằng CALC. Nếu giá trị rất lớn (→±∞) → đó là TCĐ. Nhớ: tử phải ≠ 0 tại x₀."
   },
   {

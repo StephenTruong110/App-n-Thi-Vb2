@@ -12,7 +12,7 @@
     ],
     "correct": "\\(6\\)",
     "solution": "Thay trực tiếp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
-    "quick": "Hàm đa thức → thay số",
+    "quick": "Hàm đa thức liên tục tại mọi điểm → **thay số trực tiếp** vào",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
@@ -28,7 +28,7 @@
     ],
     "correct": "\\(2\\)",
     "solution": "\\(\\dfrac{(x-1)(x+1)}{x-1}=x+1\\to 2\\) khi \\(x\\to1\\).",
-    "quick": "Khử dạng 0/0",
+    "quick": "Dạng \\(0/0\\): **phân tích nhân tử** (hoặc L'Hôpital) rồi rút gọn",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
@@ -44,7 +44,7 @@
     ],
     "correct": "\\(1\\)",
     "solution": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\).",
-    "quick": "Lượng giác cơ bản",
+    "quick": "Công thức đặc biệt: \\(\\lim_{x\\to0}\\dfrac{\\sin x}{x}=1\\) — học thuộc!",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
@@ -316,7 +316,7 @@
     ],
     "correct": "Không tồn tại",
     "solution": "Giới hạn trái = -1, giới hạn phải = 1, khác nhau → không tồn tại giới hạn.",
-    "quick": "Trái -1, phải 1 → không tồn tại",
+    "quick": "Giới hạn hai phía ≠ nhau → **giới hạn không tồn tại**",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
@@ -332,7 +332,7 @@
     ],
     "correct": "\\(+\\infty\\)",
     "solution": "Bậc tử = 2 > bậc mẫu = 1 → giới hạn = \\(+\\infty\\).",
-    "quick": "Bậc tử > bậc mẫu → \\(\\infty\\)",
+    "quick": "Bậc tử > bậc mẫu → \\(\\lim=\\pm\\infty\\) (xét dấu để biết + hay −)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
   },
   {
@@ -572,7 +572,7 @@
     ],
     "correct": "Đạo hàm tại \\(x\\)",
     "solution": "Định nghĩa đạo hàm: \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
-    "quick": "Định nghĩa đạo hàm",
+    "quick": "\\(f'(x)=\\lim_{h\\to0}\\dfrac{f(x+h)-f(x)}{h}\\) — định nghĩa đạo hàm bằng giới hạn",
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
   },
   {
