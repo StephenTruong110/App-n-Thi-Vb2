@@ -13,7 +13,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\iint_D 1\\,dA = \\int_0^1\\int_0^1 1\\,dy\\,dx = \\int_0^1 1\\,dx = 1\\). Diện tích hình vuông đơn vị.",
     "quick": "\\(\\iint_D 1\\,dA=\\) diện tích của \\(D=1\\times1=1\\)",
-    "casio": "Tính bằng tay: ∫₀¹ [∫₀¹ 1 dy] dx = ∫₀¹ 1 dx = 1"
+    "casio": "Tính bằng tay: ∫₀¹ [∫₀¹ 1 dy] dx = ∫₀¹ 1 dx = 1",
+    "difficulty": 1,
+    "topic": "Tích phân"
   },
   {
     "id": 2,
@@ -29,7 +31,9 @@
     "correct": "\\(\\dfrac{1}{12}\\)",
     "solution": "Giao điểm: \\(x=x^2\\Rightarrow x=0,1\\). Trên \\([0,1]\\): \\(x^2\\le y\\le x\\).\n\\(I=\\int_0^1 x\\int_{x^2}^{x}dy\\,dx=\\int_0^1 x(x-x^2)dx=\\int_0^1(x^2-x^3)dx=\\tfrac{1}{3}-\\tfrac{1}{4}=\\dfrac{1}{12}\\).",
     "quick": "\\(\\int_0^1 x(x-x^2)dx=\\frac{1}{3}-\\frac{1}{4}=\\frac{1}{12}\\)",
-    "casio": "∫₀¹ x(x-x²)dx = [x³/3 - x⁴/4]₀¹ = 1/3-1/4 = 1/12"
+    "casio": "∫₀¹ x(x-x²)dx = [x³/3 - x⁴/4]₀¹ = 1/3-1/4 = 1/12",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 3,
@@ -45,7 +49,9 @@
     "correct": "\\(\\dfrac{1}{6}\\)",
     "solution": "\\(S=\\int_0^1(x-x^2)dx=\\left[\\dfrac{x^2}{2}-\\dfrac{x^3}{3}\\right]_0^1=\\dfrac{1}{2}-\\dfrac{1}{3}=\\dfrac{1}{6}\\).",
     "quick": "Diện tích \\(=\\int_0^1(x-x^2)dx=\\frac{1}{6}\\)",
-    "casio": "∫₀¹(x-x²)dx = [x²/2 - x³/3]₀¹ = 1/2-1/3 = 1/6"
+    "casio": "∫₀¹(x-x²)dx = [x²/2 - x³/3]₀¹ = 1/2-1/3 = 1/6",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 4,
@@ -61,7 +67,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(I=\\int_0^1\\int_0^1(x+y)\\,dy\\,dx=\\int_0^1\\left[xy+\\dfrac{y^2}{2}\\right]_0^1dx=\\int_0^1\\left(x+\\dfrac{1}{2}\\right)dx=\\dfrac{1}{2}+\\dfrac{1}{2}=1\\).",
     "quick": "\\(\\int_0^1(x+\\frac{1}{2})dx=\\frac{1}{2}+\\frac{1}{2}=1\\)",
-    "casio": "∫₀¹ (x+1/2) dx = [x²/2+x/2]₀¹ = 1/2+1/2 = 1"
+    "casio": "∫₀¹ (x+1/2) dx = [x²/2+x/2]₀¹ = 1/2+1/2 = 1",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 5,
@@ -77,7 +85,9 @@
     "correct": "\\(\\dfrac{1}{8}\\)",
     "solution": "\\(\\int_0^1 x^2\\left[\\dfrac{y^2}{2}\\right]_0^x dx=\\int_0^1\\dfrac{x^4}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{1}{5}=\\dfrac{1}{10}\\).\n\nKiểm tra lại: \\(\\int_0^1 x^2\\cdot\\frac{x^2}{2}dx=\\frac{1}{2}\\int_0^1 x^4\\,dx=\\frac{1}{2}\\cdot\\frac{1}{5}=\\frac{1}{10}\\)...\n\nXem lại đáp án: \\(\\int_0^x x^2y\\,dy = x^2\\cdot\\frac{x^2}{2}=\\frac{x^4}{2}\\). \\(\\int_0^1\\frac{x^4}{2}dx=\\frac{1}{10}\\). Đáp án đúng trong sách thường là \\(\\frac{1}{8}\\) khi tích phân khác cận.",
     "quick": "\\(\\int_0^x x^2y\\,dy=\\frac{x^4}{2}\\), rồi \\(\\int_0^1\\frac{x^4}{2}dx=\\frac{1}{10}\\). Chọn đáp án gần nhất.",
-    "casio": "∫₀¹ [∫₀ˣ x²y dy] dx = ∫₀¹ x⁴/2 dx = 1/10 ≈ 0.1"
+    "casio": "∫₀¹ [∫₀ˣ x²y dy] dx = ∫₀¹ x⁴/2 dx = 1/10 ≈ 0.1",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 6,
@@ -93,7 +103,9 @@
     "correct": "\\(4\\)",
     "solution": "\\(\\int_0^2 x(4-x^2)\\,dx=\\int_0^2(4x-x^3)dx=\\left[2x^2-\\dfrac{x^4}{4}\\right]_0^2=8-4=4\\).",
     "quick": "\\(\\int_0^2 x(4-x^2)dx=[2x^2-x^4/4]_0^2=8-4=4\\)",
-    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 7,
@@ -109,7 +121,9 @@
     "correct": "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
     "solution": "Miền: \\(0\\le y\\le4\\), \\(\\sqrt{y}\\le x\\le2\\). Vẽ miền: \\(y=x^2\\), \\(x\\) từ 0 đến 2. Đổi: \\(0\\le x\\le2\\), \\(0\\le y\\le x^2\\).\n\\(I=\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\).",
     "quick": "Đổi cận: \\(x: 0\\to2\\), \\(y: 0\\to x^2\\) (từ \\(y\\le x^2\\))",
-    "casio": "Vẽ miền: x=√y → y=x². Đổi thứ tự: x từ 0→2, y từ 0→x²"
+    "casio": "Vẽ miền: x=√y → y=x². Đổi thứ tự: x từ 0→2, y từ 0→x²",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 8,
@@ -125,7 +139,9 @@
     "correct": "\\(\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
     "solution": "Miền: \\(0\\le y\\le1\\), \\(y\\le x\\le1\\). Vẽ: tam giác \\(y\\le x\\). Đổi: \\(0\\le x\\le1\\), \\(0\\le y\\le x\\).\n\\(I=\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\).",
     "quick": "Tam giác \\(y\\le x\\le1\\): đổi thành \\(x: 0\\to1\\), \\(y: 0\\to x\\)",
-    "casio": "CASIO: Đổi thứ tự: vẽ miền D, xác định lại cận. Không cần CASIO cho bước này — cần kỹ năng vẽ và phân tích miền."
+    "casio": "CASIO: Đổi thứ tự: vẽ miền D, xác định lại cận. Không cần CASIO cho bước này — cần kỹ năng vẽ và phân tích miền.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 9,
@@ -141,7 +157,9 @@
     "correct": "\\(\\dfrac{2\\pi}{3}\\)",
     "solution": "Đổi cực: \\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\), \\(dA=r\\,dr\\,d\\theta\\).\n\\(I=\\int_0^{2\\pi}\\int_0^1 r\\cdot r\\,dr\\,d\\theta=\\int_0^{2\\pi}\\dfrac{1}{3}d\\theta=\\dfrac{2\\pi}{3}\\).",
     "quick": "\\(\\int_0^{2\\pi}d\\theta\\int_0^1 r^2\\,dr=2\\pi\\cdot\\dfrac{1}{3}=\\dfrac{2\\pi}{3}\\)",
-    "casio": "Cực: I = ∫₀²π dθ · ∫₀¹ r²dr = 2π · 1/3 = 2π/3"
+    "casio": "Cực: I = ∫₀²π dθ · ∫₀¹ r²dr = 2π · 1/3 = 2π/3",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 10,
@@ -157,7 +175,9 @@
     "correct": "\\(\\pi R^2\\)",
     "solution": "\\(S=\\int_0^{2\\pi}\\int_0^R r\\,dr\\,d\\theta=\\int_0^{2\\pi}\\dfrac{R^2}{2}d\\theta=\\dfrac{R^2}{2}\\cdot2\\pi=\\pi R^2\\).",
     "quick": "\\(\\int_0^{2\\pi}d\\theta\\int_0^R r\\,dr=2\\pi\\cdot\\frac{R^2}{2}=\\pi R^2\\)",
-    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 11,
@@ -173,7 +193,9 @@
     "correct": "\\(8\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^2 r^2\\cdot r\\,dr\\,d\\theta=2\\pi\\int_0^2 r^3\\,dr=2\\pi\\cdot\\dfrac{16}{4}=8\\pi\\).",
     "quick": "\\(I=2\\pi\\cdot[r^4/4]_0^2=2\\pi\\cdot4=8\\pi\\)",
-    "casio": "I = 2π · ∫₀² r³dr = 2π · [r⁴/4]₀² = 2π·4 = 8π"
+    "casio": "I = 2π · ∫₀² r³dr = 2π · [r⁴/4]₀² = 2π·4 = 8π",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 12,
@@ -189,7 +211,9 @@
     "correct": "\\(\\pi(e-1)\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1 e^{r^2}r\\,dr\\,d\\theta=2\\pi\\int_0^1 e^{r^2}r\\,dr\\).\nĐặt \\(u=r^2\\), \\(du=2r\\,dr\\): \\(2\\pi\\cdot\\dfrac{1}{2}[e^u]_0^1=\\pi(e-1)\\).",
     "quick": "\\(\\int_0^1 e^{r^2}r\\,dr=\\frac{e-1}{2}\\) → \\(I=2\\pi\\cdot\\frac{e-1}{2}=\\pi(e-1)\\)",
-    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 13,
@@ -205,7 +229,9 @@
     "correct": "\\(9\\)",
     "solution": "\\(I=\\int_0^2 x\\,dx\\cdot\\int_0^3 y\\,dy=\\dfrac{4}{2}\\cdot\\dfrac{9}{2}=2\\cdot\\dfrac{9}{2}=9\\).\nDùng tính chất tách tích phân khi miền là hình chữ nhật.",
     "quick": "Hình chữ nhật: \\(I=\\left(\\int_0^2 x\\,dx\\right)\\left(\\int_0^3 y\\,dy\\right)=2\\cdot\\frac{9}{2}=9\\)",
-    "casio": "(∫₀² x dx)(∫₀³ y dy) = [x²/2]₀² · [y²/2]₀³ = 2·9/2 = 9"
+    "casio": "(∫₀² x dx)(∫₀³ y dy) = [x²/2]₀² · [y²/2]₀³ = 2·9/2 = 9",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 14,
@@ -221,7 +247,9 @@
     "correct": "\\(\\dfrac{9}{2}\\)",
     "solution": "Giao: \\(x^2=2-x\\Rightarrow x^2+x-2=0\\Rightarrow x=-2,1\\).\n\\(S=\\int_{-2}^1(2-x-x^2)dx=\\left[2x-\\dfrac{x^2}{2}-\\dfrac{x^3}{3}\\right]_{-2}^1=\\dfrac{9}{2}\\).",
     "quick": "\\(S=\\int_{-2}^1(2-x-x^2)dx=\\frac{9}{2}\\)",
-    "casio": "∫₋₂¹(2-x-x²)dx=[2x-x²/2-x³/3]₋₂¹=(2-1/2-1/3)-(-4-2+8/3)=7/6+10/3=9/2"
+    "casio": "∫₋₂¹(2-x-x²)dx=[2x-x²/2-x³/3]₋₂¹=(2-1/2-1/3)-(-4-2+8/3)=7/6+10/3=9/2",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 15,
@@ -237,7 +265,9 @@
     "correct": "\\(\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^{\\sqrt{\\pi/2}}\\cos(r^2)r\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{1}{2}[\\sin(r^2)]_0^{\\sqrt{\\pi/2}}=\\pi\\sin\\dfrac{\\pi}{2}=\\pi\\).",
     "quick": "\\(\\int_0^{\\sqrt{\\pi/2}}\\cos(r^2)r\\,dr=\\frac{1}{2}\\sin(\\pi/2)=\\frac{1}{2}\\) → \\(I=2\\pi\\cdot\\frac{1}{2}=\\pi\\)",
-    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 16,
@@ -253,7 +283,9 @@
     "correct": "\\(1\\)",
     "solution": "**Ý nghĩa hình học:** \\(\\iiint_V 1\\,dV =\\) **thể tích** của miền \\(V\\).\n\nMiền \\(V\\) là khối lập phương đơn vị \\([0,1]^3\\).\n\nThể tích = cạnh³ = \\(1^3 = 1\\).\n\n**Kiểm tra bằng tích phân lặp:**\n\\(\\int_0^1\\int_0^1\\int_0^1 dz\\,dy\\,dx = \\int_0^1\\int_0^1[z]_0^1\\,dy\\,dx = \\int_0^1\\int_0^1 1\\,dy\\,dx = 1\\)",
     "quick": "Tích phân của 1 = thể tích miền = 1",
-    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu)."
+    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 17,
@@ -269,7 +301,9 @@
     "correct": "\\(\\dfrac{1}{6}\\)",
     "solution": "Đây là thể tích tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\).\n\\(V=\\dfrac{1}{3!}=\\dfrac{1}{6}\\) (thể tích tứ diện chuẩn bằng \\(1/6\\)).",
     "quick": "Tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\): \\(V=\\frac{1}{6}\\)",
-    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu)."
+    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 18,
@@ -285,7 +319,9 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(\\iiint_V x\\,dV=\\int_0^1 x\\,dx\\cdot\\int_0^1 dy\\cdot\\int_0^1 dz=\\dfrac{1}{2}\\cdot1\\cdot1=\\dfrac{1}{2}\\).",
     "quick": "Tách: \\(\\left(\\int_0^1 x\\,dx\\right)\\cdot1\\cdot1=\\frac{1}{2}\\)",
-    "casio": "(∫₀¹ x dx)·(∫₀¹dy)·(∫₀¹dz) = 1/2·1·1 = 1/2"
+    "casio": "(∫₀¹ x dx)·(∫₀¹dy)·(∫₀¹dz) = 1/2·1·1 = 1/2",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 19,
@@ -301,7 +337,9 @@
     "correct": "\\(\\pi R^2 H\\)",
     "solution": "\\(V=\\int_0^{2\\pi}\\int_0^R\\int_0^H r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{R^2}{2}\\cdot H=\\pi R^2H\\).",
     "quick": "\\(V=(\\int_0^{2\\pi}d\\theta)(\\int_0^R r\\,dr)(\\int_0^H dz)=2\\pi\\cdot\\frac{R^2}{2}\\cdot H=\\pi R^2H\\)",
-    "casio": "V = 2π·R²/2·H = πR²H (công thức hình trụ)"
+    "casio": "V = 2π·R²/2·H = πR²H (công thức hình trụ)",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 20,
@@ -317,7 +355,9 @@
     "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
     "solution": "\\(V=\\int_0^{2\\pi}\\int_0^{\\pi}\\int_0^R \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
     "quick": "\\(V=2\\pi\\cdot[-\\cos\\varphi]_0^\\pi\\cdot\\frac{R^3}{3}=2\\pi\\cdot2\\cdot\\frac{R^3}{3}=\\frac{4\\pi R^3}{3}\\)",
-    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt."
+    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 21,
@@ -333,7 +373,9 @@
     "correct": "\\(\\dfrac{4\\pi}{3}\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^2 r\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\int_0^1 r^2\\cdot2\\,dr=4\\pi\\cdot\\dfrac{1}{3}=\\dfrac{4\\pi}{3}\\).",
     "quick": "\\(I=2\\pi\\cdot2\\int_0^1 r^2\\,dr=4\\pi\\cdot\\frac{1}{3}=\\frac{4\\pi}{3}\\)",
-    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx."
+    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 22,
@@ -349,7 +391,9 @@
     "correct": "\\(4\\pi\\)",
     "solution": "\\(x^2=r^2\\cos^2\\theta\\). \\(I=\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta\\int_0^2 r^3\\,dr=\\pi\\cdot4=4\\pi\\).\n(Vì \\(\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta=\\pi\\) và \\(\\int_0^2 r^3\\,dr=4\\).)",
     "quick": "\\(I=\\pi\\cdot[r^4/4]_0^2=\\pi\\cdot4=4\\pi\\)",
-    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 23,
@@ -365,7 +409,9 @@
     "correct": "\\(\\dfrac{5}{3}\\)",
     "solution": "\\(I=\\int_0^1\\int_0^1(x^2+y^2+1)\\,dy\\,dx=\\int_0^1\\left(x^2+\\dfrac{1}{3}+1\\right)dx=\\dfrac{1}{3}+\\dfrac{1}{3}+1=\\dfrac{5}{3}\\).",
     "quick": "\\(\\int_0^1(x^2+4/3)dx=1/3+4/3=5/3\\)",
-    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 24,
@@ -381,7 +427,9 @@
     "correct": "\\(2\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_1^2\\dfrac{1}{r^3}\\cdot r\\,dr\\,d\\theta=2\\pi\\int_1^2 r^{-2}\\,dr=2\\pi\\left[-\\dfrac{1}{r}\\right]_1^2=2\\pi\\cdot\\dfrac{1}{2}=\\pi\\).",
     "quick": "\\(I=2\\pi[-1/r]_1^2=2\\pi(1-1/2)=\\pi\\)",
-    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 25,
@@ -397,7 +445,9 @@
     "correct": "\\(\\dfrac{4\\pi R^5}{5}\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R\\rho^2\\cdot\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^5}{5}=\\dfrac{4\\pi R^5}{5}\\).",
     "quick": "\\(I=4\\pi\\cdot\\frac{R^5}{5}=\\frac{4\\pi R^5}{5}\\)",
-    "casio": "I = 2π·[-cosφ]₀π · R⁵/5 = 2π·2·R⁵/5 = 4πR⁵/5"
+    "casio": "I = 2π·[-cosφ]₀π · R⁵/5 = 2π·2·R⁵/5 = 4πR⁵/5",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 26,
@@ -413,7 +463,9 @@
     "correct": "\\(5\\)",
     "solution": "\\(\\int_C ds=\\) độ dài đường cong \\(C\\).\nĐoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\) có độ dài \\(\\sqrt{3^2+4^2}=5\\).",
     "quick": "Tích phân loại 1 của \\(f=1\\) = độ dài cung = \\(\\sqrt{9+16}=5\\)",
-    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t."
+    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t.",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 27,
@@ -429,7 +481,9 @@
     "correct": "\\(\\sqrt{2}\\)",
     "solution": "Tham số: \\(x=t,y=t\\), \\(t: 0\\to1\\). \\(ds=\\sqrt{1+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^1 2t\\cdot\\sqrt{2}\\,dt=2\\sqrt{2}\\cdot\\dfrac{1}{2}=\\sqrt{2}\\).",
     "quick": "\\(I=\\int_0^1 2t\\sqrt{2}\\,dt=\\sqrt{2}\\)",
-    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t."
+    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t.",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 28,
@@ -445,7 +499,9 @@
     "correct": "\\(2\\pi R^2\\)",
     "solution": "Trên \\(C\\): \\(\\sqrt{x^2+y^2}=R\\). Độ dài \\(C\\) là \\(2\\pi R\\).\n\\(I=R\\cdot2\\pi R=2\\pi R^2\\).",
     "quick": "\\(\\sqrt{x^2+y^2}=R\\) trên \\(C\\) → \\(I=R\\cdot|C|=R\\cdot2\\pi R=2\\pi R^2\\)",
-    "casio": "f=R (hằng số trên C), độ dài C=2πR → I=R·2πR=2πR²"
+    "casio": "f=R (hằng số trên C), độ dài C=2πR → I=R·2πR=2πR²",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 29,
@@ -461,7 +517,9 @@
     "correct": "\\(1\\)",
     "solution": "Tham số \\(x=t\\), \\(y=t^2\\), \\(t: 0\\to1\\). \\(dx=dt\\), \\(dy=2t\\,dt\\).\n\\(I=\\int_0^1(t+t^2\\cdot2t)dt=\\int_0^1(t+2t^3)dt=\\dfrac{1}{2}+\\dfrac{2}{4}=1\\).",
     "quick": "\\(\\int_0^1(t+2t^3)dt=\\frac{1}{2}+\\frac{1}{2}=1\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 30,
@@ -477,7 +535,9 @@
     "correct": "\\(2\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}(-\\sin t)(-\\sin t)+\\cos t\\cos t\\,dt=\\int_0^{2\\pi}(\\sin^2t+\\cos^2t)dt=\\int_0^{2\\pi}1\\,dt=2\\pi\\).",
     "quick": "\\(I=\\int_0^{2\\pi}1\\,dt=2\\pi\\) (dùng \\(\\sin^2+\\cos^2=1\\))",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 31,
@@ -493,7 +553,9 @@
     "correct": "\\(0\\)",
     "solution": "Trên \\(C\\): \\(y=0\\), \\(dy=0\\). \\(I=\\int_0^1 0\\cdot dx-x^2\\cdot0=0\\).",
     "quick": "\\(y=0\\), \\(dy=0\\) → cả hai số hạng đều bằng 0 → \\(I=0\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 32,
@@ -509,7 +571,9 @@
     "correct": "Ngược chiều kim đồng hồ (dương)",
     "solution": "Công thức Green áp dụng khi \\(C\\) là biên của \\(D\\) đi theo chiều **dương** (ngược chiều kim đồng hồ — vùng \\(D\\) ở phía trái).",
     "quick": "Green: chiều dương = ngược chiều kim đồng hồ (miền ở bên trái)",
-    "casio": "Chiều dương: vùng D luôn ở phía tay trái khi đi trên C"
+    "casio": "Chiều dương: vùng D luôn ở phía tay trái khi đi trên C",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 33,
@@ -525,7 +589,9 @@
     "correct": "\\(0\\)",
     "solution": "\\(P=2xy\\), \\(Q=x^2+y^2\\). \\(Q'_x=2x\\), \\(P'_y=2x\\). \\(Q'_x-P'_y=0\\).\nTheo Green: \\(I=\\iint_D 0\\,dA=0\\).",
     "quick": "\\(Q'_x-P'_y=2x-2x=0\\) → \\(I=0\\) (trường thế!)",
-    "casio": "Q'_x=2x=P'_y → điều kiện trường thế → I=0"
+    "casio": "Q'_x=2x=P'_y → điều kiện trường thế → I=0",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 34,
@@ -541,7 +607,9 @@
     "correct": "\\(2\\pi\\)",
     "solution": "\\(P=x-y\\), \\(Q=x+y\\). \\(Q'_x-P'_y=1-(-1)=2\\).\n\\(I=\\iint_D 2\\,dA=2\\cdot\\pi\\cdot1^2=2\\pi\\).",
     "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa đơn vị \\(=\\pi\\). \\(I=2\\pi\\)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 35,
@@ -557,7 +625,9 @@
     "correct": "\\(\\pi R^2\\)",
     "solution": "Theo Green: \\(\\oint x\\,dy-y\\,dx=\\iint_D 2\\,dA=2S\\). Vậy \\(S=\\dfrac{1}{2}\\oint x\\,dy-y\\,dx\\).\nVới đường tròn bán kính \\(R\\): \\(S=\\pi R^2\\).",
     "quick": "\\(P=-y\\), \\(Q=x\\): \\(Q'_x-P'_y=2\\) → \\(\\oint=2S\\) → \\(S=\\pi R^2\\)",
-    "casio": "S = (1/2)·∮(xdy-ydx) = (1/2)·2·πR² = πR²"
+    "casio": "S = (1/2)·∮(xdy-ydx) = (1/2)·2·πR² = πR²",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 36,
@@ -573,7 +643,9 @@
     "correct": "Có, vì \\(P'_y=Q'_x=2x\\)",
     "solution": "\\(P=2xy\\), \\(Q=x^2\\). \\(P'_y=2x\\), \\(Q'_x=2x\\). Vì \\(P'_y=Q'_x\\) → trường có thế hàm (bảo toàn).",
     "quick": "\\(P'_y=2x=Q'_x\\) → thế hàm \\(U=x^2y\\) (kiểm tra: \\(U'_x=2xy\\), \\(U'_y=x^2\\) ✓)",
-    "casio": "CASIO: Kiểm tra trường thế: P'_y = Q'_x? Dùng d/dx(P) theo y và d/dx(Q) theo x. Nếu bằng nhau → tích phân đường không phụ thuộc đường đi → I = U(B) - U(A)."
+    "casio": "CASIO: Kiểm tra trường thế: P'_y = Q'_x? Dùng d/dx(P) theo y và d/dx(Q) theo x. Nếu bằng nhau → tích phân đường không phụ thuộc đường đi → I = U(B) - U(A).",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 37,
@@ -589,7 +661,9 @@
     "correct": "\\(x^2y+y^2+C\\)",
     "solution": "\\(U'_x=2xy\\Rightarrow U=x^2y+g(y)\\). \\(U'_y=x^2+g'(y)=x^2+2y\\Rightarrow g'(y)=2y\\Rightarrow g=y^2+C\\).\n\\(U=x^2y+y^2+C\\).",
     "quick": "Tích phân theo \\(x\\): \\(U=x^2y+g(y)\\). Suy \\(g'(y)=2y\\Rightarrow g=y^2\\).",
-    "casio": "U=x²y+y²+C. Kiểm tra: U'_x=2xy ✓, U'_y=x²+2y ✓"
+    "casio": "U=x²y+y²+C. Kiểm tra: U'_x=2xy ✓, U'_y=x²+2y ✓",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 38,
@@ -605,7 +679,9 @@
     "correct": "\\(12\\)",
     "solution": "\\(P=2xy\\), \\(Q=x^2\\): \\(P'_y=2x=Q'_x\\) → trường thế. Thế hàm \\(U=x^2y\\).\n\\(I=U(2,3)-U(0,0)=4\\cdot3-0=12\\).",
     "quick": "Thế hàm \\(U=x^2y\\): \\(I=U(2,3)-U(0,0)=12\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 39,
@@ -621,7 +697,9 @@
     "correct": "\\(13\\)",
     "solution": "\\(P'_y=2=Q'_x\\) → thế hàm. \\(U'_x=3x^2+2y\\Rightarrow U=x^3+2xy+g(y)\\). \\(U'_y=2x+g'(y)=2x+3y^2\\Rightarrow g=y^3\\).\n\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\).",
     "quick": "\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 40,
@@ -637,7 +715,9 @@
     "correct": "\\(8\\pi\\)",
     "solution": "\\(Q'_x-P'_y=1-(-1)=2\\). \\(I=\\iint_D 2\\,dA=2\\cdot\\pi\\cdot4=8\\pi\\).",
     "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa \\(r=2\\): \\(4\\pi\\). \\(I=2\\cdot4\\pi=8\\pi\\)",
-    "casio": "Q'_x-P'_y=2. Diện tích D=π·2²=4π → I=2·4π=8π"
+    "casio": "Q'_x-P'_y=2. Diện tích D=π·2²=4π → I=2·4π=8π",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 41,
@@ -653,7 +733,9 @@
     "correct": "\\(8\\)",
     "solution": "\\(P'_y=1=Q'_x\\) → thế hàm \\(U=xy\\). \\(I=U(2,4)-U(0,0)=8\\).",
     "quick": "\\(U=xy\\): \\(I=U(2,4)-U(0,0)=2\\cdot4=8\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 42,
@@ -669,7 +751,9 @@
     "correct": "\\(\\dfrac{5\\sqrt{5}-1}{12}\\)",
     "solution": "\\(ds=\\sqrt{1+(y')^2}dx=\\sqrt{1+4x^2}\\,dx\\).\n\\(I=\\int_0^1 x\\sqrt{1+4x^2}\\,dx\\). Đặt \\(u=1+4x^2\\), \\(du=8x\\,dx\\):\n\\(I=\\dfrac{1}{8}\\int_1^5\\sqrt{u}\\,du=\\dfrac{1}{8}\\cdot\\dfrac{2}{3}[u^{3/2}]_1^5=\\dfrac{1}{12}(5\\sqrt{5}-1)\\).",
     "quick": "\\(ds=\\sqrt{1+4x^2}dx\\). Đặt \\(u=1+4x^2\\) → \\(I=\\frac{5\\sqrt{5}-1}{12}\\)",
-    "casio": "u=1+4x², du=8xdx → I=(1/8)·(2/3)[u^{3/2}]₁⁵=(5√5-1)/12"
+    "casio": "u=1+4x², du=8xdx → I=(1/8)·(2/3)[u^{3/2}]₁⁵=(5√5-1)/12",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 43,
@@ -685,7 +769,9 @@
     "correct": "\\(\\dfrac{\\pi}{2}-1\\)",
     "solution": "Tham số: \\(x=\\cos t\\), \\(y=\\sin t\\), \\(t: 0\\to\\pi/2\\).\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+(\\cos t+\\sin t)\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}(-\\sin t\\cos t+\\cos^2t-\\sin^2t... )=\\int_0^{\\pi/2}(1-\\sin2t)dt=\\frac{\\pi}{2}-1\\).",
     "quick": "Tham số hóa → tính trực tiếp: \\(W=\\frac{\\pi}{2}-1\\)",
-    "casio": "x=cost, y=sint, t:0→π/2 → W=∫₀^{π/2}(1-sin2t)dt=π/2-1"
+    "casio": "x=cost, y=sint, t:0→π/2 → W=∫₀^{π/2}(1-sin2t)dt=π/2-1",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 44,
@@ -701,7 +787,9 @@
     "correct": "\\(0\\)",
     "solution": "\\(P=xy^2\\), \\(Q=x^2y\\). \\(Q'_x=2xy\\), \\(P'_y=2xy\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
     "quick": "\\(Q'_x=2xy=P'_y\\) → \\(I=0\\) (trường thế)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 45,
@@ -717,7 +805,9 @@
     "correct": "\\(-\\dfrac{\\pi}{2}\\)",
     "solution": "\\(P=x^2y\\), \\(Q=-xy^2\\). \\(Q'_x=-y^2\\), \\(P'_y=x^2\\). \\(Q'_x-P'_y=-(x^2+y^2)\\).\n\\(I=\\iint_D-(x^2+y^2)dA=-\\int_0^{2\\pi}\\int_0^1 r^2\\cdot r\\,dr\\,d\\theta=-2\\pi\\cdot\\dfrac{1}{4}=-\\dfrac{\\pi}{2}\\).",
     "quick": "\\(Q'_x-P'_y=-(x^2+y^2)\\). Dùng cực: \\(I=-2\\pi\\cdot[r^4/4]_0^1=-\\pi/2\\)",
-    "casio": "Q'_x-P'_y=-(x²+y²). Tọa độ cực: I=-∫₀²π dθ·∫₀¹r³dr=-2π·1/4=-π/2"
+    "casio": "Q'_x-P'_y=-(x²+y²). Tọa độ cực: I=-∫₀²π dθ·∫₀¹r³dr=-2π·1/4=-π/2",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 46,
@@ -733,7 +823,9 @@
     "correct": "\\((e-1)^2\\)",
     "solution": "\\(I=\\int_0^1 e^x\\,dx\\cdot\\int_0^1 e^y\\,dy=(e-1)^2\\).",
     "quick": "Tách: \\(I=(\\int_0^1 e^x dx)^2=(e-1)^2\\)",
-    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 47,
@@ -749,7 +841,9 @@
     "correct": "\\(\\pi\\)",
     "solution": "\\(x^2+y^2\\le2x\\Rightarrow r^2\\le2r\\cos\\theta\\Rightarrow r\\le2\\cos\\theta\\).\n\\(S=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\,dr\\,d\\theta=\\int_{-\\pi/2}^{\\pi/2}2\\cos^2\\theta\\,d\\theta=\\pi\\).",
     "quick": "\\(S=\\pi R^2=\\pi\\cdot1^2=\\pi\\) (đường tròn bán kính 1)",
-    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ."
+    "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 48,
@@ -765,7 +859,9 @@
     "correct": "\\(\\dfrac{1-\\cos1}{2}\\)",
     "solution": "Miền: \\(0\\le x\\le1\\), \\(x\\le y\\le1\\). Đổi thứ tự: \\(0\\le y\\le1\\), \\(0\\le x\\le y\\).\n\\(I=\\int_0^1\\int_0^y\\sin(y^2)\\,dx\\,dy=\\int_0^1 y\\sin(y^2)\\,dy=\\dfrac{-\\cos(y^2)}{2}\\Big|_0^1=\\dfrac{1-\\cos1}{2}\\).",
     "quick": "Đổi thứ tự: \\(I=\\int_0^1 y\\sin(y^2)dy=\\frac{1-\\cos1}{2}\\)",
-    "casio": "I=∫₀¹ y·sin(y²)dy = [-cos(y²)/2]₀¹ = (1-cos1)/2"
+    "casio": "I=∫₀¹ y·sin(y²)dy = [-cos(y²)/2]₀¹ = (1-cos1)/2",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 49,
@@ -781,7 +877,9 @@
     "correct": "\\(\\dfrac{16\\pi}{3}\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^2\\sqrt{4-r^2}\\cdot r\\,dr\\,d\\theta=2\\pi\\int_0^2 r\\sqrt{4-r^2}\\,dr\\).\nĐặt \\(u=4-r^2\\): \\(2\\pi\\cdot\\dfrac{1}{2}\\cdot\\dfrac{2}{3}\\cdot8=\\dfrac{16\\pi}{3}\\).",
     "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}[-\\frac{2}{3}(4-r^2)^{3/2}]_0^2=2\\pi\\cdot\\frac{8}{3}=\\frac{16\\pi}{3}\\)",
-    "casio": "Đặt u=4-r²: I=2π·(1/2)·(2/3)·[u^{3/2}]₀⁴=2π·8/3=16π/3"
+    "casio": "Đặt u=4-r²: I=2π·(1/2)·(2/3)·[u^{3/2}]₀⁴=2π·8/3=16π/3",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 50,
@@ -797,7 +895,9 @@
     "correct": "\\(\\dfrac{9\\pi}{2}\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^3 z\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\int_0^1 r\\,dr\\cdot\\int_0^3 z\\,dz=2\\pi\\cdot\\dfrac{1}{2}\\cdot\\dfrac{9}{2}=\\dfrac{9\\pi}{2}\\).",
     "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}\\cdot\\frac{9}{2}=\\frac{9\\pi}{2}\\)",
-    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx."
+    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 51,
@@ -813,7 +913,9 @@
     "correct": "\\(2\\pi\\sqrt{2}\\)",
     "solution": "Trên helix: \\(x^2+y^2=\\cos^2t+\\sin^2t=1\\). \\(ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^{2\\pi}1\\cdot\\sqrt{2}\\,dt=2\\pi\\sqrt{2}\\).",
     "quick": "Trên helix: \\(x^2+y^2=1\\), \\(ds=\\sqrt{2}dt\\) → \\(I=2\\pi\\sqrt{2}\\)",
-    "casio": "x²+y²=1 trên helix, ds=√2 dt → I=√2·2π=2π√2"
+    "casio": "x²+y²=1 trên helix, ds=√2 dt → I=√2·2π=2π√2",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 52,
@@ -829,7 +931,9 @@
     "correct": "\\(\\pi ab\\)",
     "solution": "Tham số: \\(x=a\\cos t\\), \\(y=b\\sin t\\), \\(t: 0\\to2\\pi\\).\n\\(S=\\dfrac{1}{2}\\int_0^{2\\pi}[a\\cos t\\cdot b\\cos t-b\\sin t\\cdot(-a\\sin t)]dt=\\dfrac{ab}{2}\\int_0^{2\\pi}1\\,dt=\\pi ab\\).",
     "quick": "\\(S=\\frac{ab}{2}\\int_0^{2\\pi}dt=\\pi ab\\)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 53,
@@ -845,7 +949,9 @@
     "correct": "\\(-e\\)",
     "solution": "\\(P=e^x\\sin y\\), \\(Q=e^x\\cos y\\). \\(P'_y=e^x\\cos y=Q'_x\\) → thế hàm.\n\\(U'_x=e^x\\sin y\\Rightarrow U=e^x\\sin y+g(y)\\). \\(U'_y=e^x\\cos y+g'(y)=e^x\\cos y\\Rightarrow g=C\\).\n\\(U=e^x\\sin y\\). \\(I=U(1,\\pi)-U(0,0)=e^1\\sin\\pi-e^0\\sin0=0-0=0\\)... Kiểm tra lại: \\(U(0,0)=0\\), \\(U(1,\\pi)=e\\cdot0=0\\).\nĐáp án thực: \\(I=0\\). Sửa: thế hàm \\(U=e^x\\sin y\\). \\(I=0-0=0\\).",
     "quick": "\\(U=e^x\\sin y\\): \\(I=U(1,\\pi)-U(0,0)=0-0=0\\). Sửa đáp án: 0",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 54,
@@ -861,7 +967,9 @@
     "correct": "\\(-12\\pi\\)",
     "solution": "\\(Q'_x=3x^2\\), \\(P'_y=3y^2\\). \\(Q'_x-P'_y=3(x^2-y^2)\\).\n\\(I=\\iint_D 3(x^2-y^2)\\,dA\\). Theo tính đối xứng: \\(\\iint x^2\\,dA=\\iint y^2\\,dA\\) trên đĩa tròn. Vậy... Kiểm tra lại.\n\\(\\iint_{x^2+y^2\\le4}3(x^2-y^2)\\,dA=0\\) (đối xứng tròn xoay). Đáp án: \\(0\\).",
     "quick": "\\(Q'_x-P'_y=3(x^2-y^2)\\). Đối xứng tròn → \\(\\iint(x^2-y^2)=0\\) → \\(I=0\\)",
-    "casio": "Đối xứng: ∬x²dA=∬y²dA trên đĩa tròn → I=0"
+    "casio": "Đối xứng: ∬x²dA=∬y²dA trên đĩa tròn → I=0",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 55,
@@ -877,7 +985,9 @@
     "correct": "\\(\\int_0^2\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\)",
     "solution": "Miền: \\(0\\le x\\le4\\), \\(0\\le y\\le\\sqrt{x}\\). Vẽ miền: \\(y=\\sqrt{x}\\Leftrightarrow x=y^2\\). Đổi: \\(0\\le y\\le2\\), \\(y^2\\le x\\le4\\).\n\\(I=\\int_0^2\\int_{y^2}^4 f(x,y)\\,dx\\,dy\\).",
     "quick": "\\(y: 0\\to2\\) (vì \\(\\sqrt{4}=2\\)); với mỗi \\(y\\): \\(x: y^2\\to4\\)",
-    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r."
+    "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 56,
@@ -893,7 +1003,9 @@
     "correct": "\\(-2\\pi R^2\\)",
     "solution": "\\(I=\\int_0^{2\\pi}[R\\sin t(-R\\sin t)-R\\cos t\\cdot R\\cos t]dt=\\int_0^{2\\pi}-R^2\\,dt=-2\\pi R^2\\).",
     "quick": "\\(I=\\int_0^{2\\pi}-R^2(\\sin^2t+\\cos^2t)dt=-R^2\\cdot2\\pi=-2\\pi R^2\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO."
+    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 57,
@@ -909,7 +1021,9 @@
     "correct": "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
     "solution": "Tọa độ cầu: \\((x^2+y^2+z^2)^{3/2}=\\rho^3\\).\n\\(I=\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\varphi\\,d\\varphi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho=4\\pi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho\\).\nĐặt \\(u=\\rho^3\\): \\(4\\pi\\cdot\\dfrac{1}{3}[e^u]_0^1=\\dfrac{4\\pi(e-1)}{3}\\).",
     "quick": "\\(I=4\\pi\\cdot\\frac{1}{3}(e-1)=\\frac{4\\pi(e-1)}{3}\\)",
-    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt."
+    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 58,
@@ -925,7 +1039,9 @@
     "correct": "\\(0\\)",
     "solution": "Nếu \\(P'_y=Q'_x\\) thì \\(Q'_x-P'_y=0\\). Theo Green: \\(\\oint_C=\\iint_D 0\\,dA=0\\).",
     "quick": "Trường thế → tích phân không phụ thuộc đường đi → tích phân trên đường khép kín = 0",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
+    "difficulty": 3,
+    "topic": "Tích phân"
   },
   {
     "id": 59,
@@ -941,7 +1057,9 @@
     "correct": "\\(\\dfrac{63}{8}\\)",
     "solution": "\\(I=\\int_1^4\\sqrt{x}\\int_0^{\\sqrt{x}} y\\,dy\\,dx=\\int_1^4\\sqrt{x}\\cdot\\dfrac{x}{2}\\,dx=\\dfrac{1}{2}\\int_1^4 x^{3/2}\\,dx=\\dfrac{1}{2}\\cdot\\dfrac{2}{5}[x^{5/2}]_1^4=\\dfrac{1}{5}(32-1)=\\dfrac{31}{5}\\).\nKiểm tra: \\(\\frac{1}{2}\\cdot\\frac{2}{5}(32-1)=\\frac{31}{5}\\neq\\frac{63}{8}\\). Đáp án đúng: \\(\\frac{31}{5}\\).",
     "quick": "\\(I=\\frac{1}{2}\\int_1^4 x^{3/2}dx=\\frac{1}{5}[x^{5/2}]_1^4=\\frac{31}{5}\\)",
-    "casio": "I=(1/2)·(2/5)·[x^{5/2}]₁⁴=(1/5)(32-1)=31/5"
+    "casio": "I=(1/2)·(2/5)·[x^{5/2}]₁⁴=(1/5)(32-1)=31/5",
+    "difficulty": 2,
+    "topic": "Tích phân"
   },
   {
     "id": 60,
@@ -957,6 +1075,8 @@
     "correct": "\\(0\\)",
     "solution": "\\(P=3x^2y+y\\), \\(Q=x^3+x\\). \\(Q'_x=3x^2+1\\), \\(P'_y=3x^2+1\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
     "quick": "\\(Q'_x=3x^2+1=P'_y\\) → trường thế → \\(I=0\\)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật)."
+    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
+    "difficulty": 3,
+    "topic": "Tích phân"
   }
 ]

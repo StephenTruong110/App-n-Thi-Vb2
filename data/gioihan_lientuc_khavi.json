@@ -13,7 +13,9 @@
     "correct": "\\(6\\)",
     "solution": "Thay trực tiếp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
     "quick": "Hàm đa thức liên tục tại mọi điểm → **thay số trực tiếp** vào",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 2,
@@ -29,7 +31,9 @@
     "correct": "\\(2\\)",
     "solution": "\\(\\dfrac{(x-1)(x+1)}{x-1}=x+1\\to 2\\) khi \\(x\\to1\\).",
     "quick": "Dạng \\(0/0\\): **phân tích nhân tử** (hoặc L'Hôpital) rồi rút gọn",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 3,
@@ -45,7 +49,9 @@
     "correct": "\\(1\\)",
     "solution": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\).",
     "quick": "Công thức đặc biệt: \\(\\lim_{x\\to0}\\dfrac{\\sin x}{x}=1\\) — học thuộc!",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 4,
@@ -61,7 +67,9 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(1-\\cos x \\sim \\dfrac{x^2}{2}\\) → \\(\\lim = \\dfrac{1}{2}\\).",
     "quick": "\\(1-\\cos x \\sim x^2/2\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 5,
@@ -77,7 +85,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\tan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\tan x/x \\to 1\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 6,
@@ -93,7 +103,9 @@
     "correct": "\\(3\\)",
     "solution": "Chia tử và mẫu cho \\(x^2\\): \\(\\dfrac{3+2/x+1/x^2}{1-5/x^2}\\to3\\).",
     "quick": "Hệ số bậc cao nhất: \\(3/1=3\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 7,
@@ -109,7 +121,9 @@
     "correct": "\\(0\\)",
     "solution": "\\(x\\ln x \\to 0\\) khi \\(x\\to0^+\\) (dạng 0·∞, \\(\\ln x\\) chậm hơn \\(x\\)).",
     "quick": "\\(x\\ln x \\to 0\\) (quen thuộc)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 8,
@@ -125,7 +139,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(e^x-1 \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\((e^x-1)/x \\to 1\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 9,
@@ -141,7 +157,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\ln(1+x)\\sim x\\) → giới hạn = 1.",
     "quick": "\\(\\ln(1+x)/x \\to 1\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 10,
@@ -157,7 +175,9 @@
     "correct": "\\(e\\)",
     "solution": "Đây là định nghĩa của \\(e\\): \\(\\lim (1+1/x)^x = e\\).",
     "quick": "\\(e\\) (công thức nổi tiếng)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 11,
@@ -173,7 +193,9 @@
     "correct": "\\(e\\)",
     "solution": "Đổi biến \\(t=1/x\\) → \\(\\lim_{t\\to\\infty}(1+1/t)^t=e\\).",
     "quick": "Dạng \\(1^\\infty\\) → \\(e\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 12,
@@ -189,7 +211,9 @@
     "correct": "\\(\\dfrac{2}{3}\\)",
     "solution": "\\(\\dfrac{\\sin2x}{3x}=\\dfrac{2}{3}\\cdot\\dfrac{\\sin2x}{2x}\\to\\dfrac{2}{3}\\cdot1=\\dfrac{2}{3}\\).",
     "quick": "\\(\\sin(ax)/(bx) \\to a/b\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 13,
@@ -205,7 +229,9 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "Nhân liên hợp: \\(\\dfrac{(\\sqrt{1+x}-1)(\\sqrt{1+x}+1)}{x(\\sqrt{1+x}+1)}=\\dfrac{x}{x(\\sqrt{1+x}+1)}\\to\\dfrac{1}{2}\\).",
     "quick": "\\(\\sqrt{1+x}-1 \\sim x/2\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 14,
@@ -221,7 +247,9 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(\\tan x - \\sin x = \\sin x(\\frac{1}{\\cos x}-1)=\\sin x\\cdot\\frac{1-\\cos x}{\\cos x}\\sim x\\cdot\\frac{x^2/2}{1}=\\frac{x^3}{2}\\) → \\(\\lim = 1/2\\).",
     "quick": "Khai triển Taylor: \\(\\tan x - \\sin x \\sim x^3/2\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 15,
@@ -237,7 +265,9 @@
     "correct": "\\(0\\)",
     "solution": "\\(\\ln x\\) tăng chậm hơn bất kỳ lũy thừa dương nào của \\(x\\) → giới hạn = 0.",
     "quick": "\\(\\ln x/x \\to 0\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 16,
@@ -253,7 +283,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\ln(x^x)=x\\ln x\\to0\\) → \\(x^x\\to e^0=1\\).",
     "quick": "Dạng \\(0^0\\) → \\(1\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 17,
@@ -269,7 +301,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\arctan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\arctan x/x \\to 1\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 18,
@@ -285,7 +319,9 @@
     "correct": "\\(1\\)",
     "solution": "Khi \\(x>0\\), \\(|x|=x\\) → \\(x/x=1\\).",
     "quick": "Tiến về 0 từ phải → dương → =1",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 19,
@@ -301,7 +337,9 @@
     "correct": "\\(-1\\)",
     "solution": "Khi \\(x<0\\), \\(|x|=-x\\) → \\(-x/x=-1\\).",
     "quick": "Tiến về 0 từ trái → âm → =-1",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 20,
@@ -317,7 +355,9 @@
     "correct": "Không tồn tại",
     "solution": "Giới hạn trái = -1, giới hạn phải = 1, khác nhau → không tồn tại giới hạn.",
     "quick": "Giới hạn hai phía ≠ nhau → **giới hạn không tồn tại**",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 21,
@@ -333,7 +373,9 @@
     "correct": "\\(+\\infty\\)",
     "solution": "Bậc tử = 2 > bậc mẫu = 1 → giới hạn = \\(+\\infty\\).",
     "quick": "Bậc tử > bậc mẫu → \\(\\lim=\\pm\\infty\\) (xét dấu để biết + hay −)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 22,
@@ -349,7 +391,9 @@
     "correct": "\\(-\\infty\\)",
     "solution": "Khi \\(x\\to1^-\\): \\(x-1<0\\) và rất nhỏ âm → phân số tiến đến \\(-\\infty\\).",
     "quick": "Mẫu âm, tiến về 0 → \\(-\\infty\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 23,
@@ -365,7 +409,9 @@
     "correct": "\\(+\\infty\\)",
     "solution": "Khi \\(x\\to1^+\\): \\(x-1>0\\) và rất nhỏ dương → phân số tiến đến \\(+\\infty\\).",
     "quick": "Mẫu dương, tiến về 0 → \\(+\\infty\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2)."
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 24,
@@ -381,7 +427,9 @@
     "correct": "Tại mọi \\(x\\in\\mathbb{R}\\)",
     "solution": "Đa thức liên tục trên toàn bộ \\(\\mathbb{R}\\).",
     "quick": "Đa thức liên tục khắp nơi",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 25,
@@ -397,7 +445,9 @@
     "correct": "\\((-\\infty,2)\\cup(2,+\\infty)\\)",
     "solution": "Hàm phân thức liên tục trên tập xác định \\(\\mathbb{R}\\setminus\\{2\\}\\).",
     "quick": "Gián đoạn tại \\(x=2\\)",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 26,
@@ -413,7 +463,9 @@
     "correct": "Liên tục",
     "solution": "\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1=f(0)\\) → hàm liên tục tại \\(x=0\\).",
     "quick": "Giới hạn = giá trị hàm → liên tục",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 27,
@@ -429,7 +481,9 @@
     "correct": "Gián đoạn bỏ được",
     "solution": "\\(\\lim_{x\\to0}f(x)=1\\neq0=f(0)\\) → gián đoạn. Có thể bổ sung để liên tục (bỏ được).",
     "quick": "Giới hạn tồn tại hữu hạn nhưng khác giá trị hàm → bỏ được",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 28,
@@ -445,7 +499,9 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\lim_{x\\to1^-}f(x)=1^2=1\\), \\(\\lim_{x\\to1^+}f(x)=2\\cdot1-1=1\\). Vậy \\(\\lim_{x\\to1}f(x)=1\\). Cần \\(f(1)=a=1\\).",
     "quick": "Giới hạn hai phía =1 → a=1",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 29,
@@ -461,7 +517,9 @@
     "correct": "\\(4\\)",
     "solution": "\\(\\dfrac{x^2-4}{x-2}=x+2\\) với \\(x\\neq2\\). \\(\\lim_{x\\to2}f(x)=4\\). Đặt \\(f(2)=4\\) để liên tục.",
     "quick": "Rút gọn \\(x+2\\) → giới hạn =4",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 30,
@@ -477,7 +535,9 @@
     "correct": "Cả A và C",
     "solution": "Định lý IVT: f liên tục trên [a,b] thì f nhận mọi giá trị giữa f(a) và f(b). Hệ quả: nếu f(a)f(b)<0 thì tồn tại có f(c)=0.",
     "quick": "IVT: f liên tục → nhận mọi giá trị trung gian",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 31,
@@ -493,7 +553,9 @@
     "correct": "\\((0,1)\\)",
     "solution": "\\(f(x)=x^3+x-1\\), \\(f(0)=-1<0\\), \\(f(1)=1>0\\), f liên tục → có nghiệm trong (0,1).",
     "quick": "\\(f(0)=-1, f(1)=1\\) → đổi dấu → nghiệm trong (0,1)",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục."
+    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 32,
@@ -509,7 +571,9 @@
     "correct": "\\(12\\)",
     "solution": "\\(f'(x)=3x^2 \\Rightarrow f'(2)=3\\cdot4=12\\).",
     "quick": "\\((x^3)'=3x^2\\) → tại x=2 → 12",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 33,
@@ -525,7 +589,9 @@
     "correct": "\\(-1\\)",
     "solution": "\\(f'(x)=\\cos x \\Rightarrow f'(\\pi)=\\cos\\pi=-1\\).",
     "quick": "\\(\\sin' = \\cos\\), \\(\\cos\\pi=-1\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 34,
@@ -541,7 +607,9 @@
     "correct": "\\(2e^{2x}\\)",
     "solution": "\\((e^{u})' = e^{u}u' = e^{2x}\\cdot2 = 2e^{2x}\\).",
     "quick": "Đạo hàm hợp: \\(e^{2x}\\cdot2\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 35,
@@ -557,7 +625,9 @@
     "correct": "\\(\\dfrac{2x}{x^2+1}\\)",
     "solution": "\\((\\ln u)' = u'/u = (2x)/(x^2+1)\\).",
     "quick": "Đạo hàm logarit hợp",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 36,
@@ -573,7 +643,9 @@
     "correct": "Đạo hàm tại \\(x\\)",
     "solution": "Định nghĩa đạo hàm: \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
     "quick": "\\(f'(x)=\\lim_{h\\to0}\\dfrac{f(x+h)-f(x)}{h}\\) — định nghĩa đạo hàm bằng giới hạn",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 37,
@@ -589,7 +661,9 @@
     "correct": "Không",
     "solution": "Đạo hàm trái = -1, phải = 1, khác nhau → không khả vi tại 0.",
     "quick": "Hàm |x| có điểm gãy tại 0 → không khả vi",
-    "casio": "d/dx(|x|) tại 0 không xác định"
+    "casio": "d/dx(|x|) tại 0 không xác định",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 38,
@@ -605,7 +679,9 @@
     "correct": "Không (vì đạo hàm tiến vô cùng)",
     "solution": "\\(f'(x)=\\frac{1}{3}x^{-2/3}\\) → \\(\\lim_{x\\to0}f'(x)=+\\infty\\), không tồn tại đạo hàm hữu hạn tại 0.",
     "quick": "Đạo hàm tiến vô cùng → không khả vi (tiếp tuyến đứng)",
-    "casio": "d/dx(x^(1/3)) tại 0 không xác định"
+    "casio": "d/dx(x^(1/3)) tại 0 không xác định",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 39,
@@ -621,7 +697,9 @@
     "correct": "Khả vi tại \\(x=0\\)",
     "solution": "\\(\\lim_{x\\to0}f(x)=0=f(0)\\) liên tục. \\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=0\\) → khả vi.",
     "quick": "Ví dụ kinh điển: khả vi tại 0 với đạo hàm =0",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 40,
@@ -637,7 +715,9 @@
     "correct": "Liên tục tại \\(x_0\\)",
     "solution": "Định lý: khả vi \\(\\Rightarrow\\) liên tục. Chiều ngược lại không đúng.",
     "quick": "Khả vi \\(\\Rightarrow\\) liên tục",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 41,
@@ -653,7 +733,9 @@
     "correct": "\\(a=2,b=-1\\)",
     "solution": "Liên tục: \\(1^2=a\\cdot1+b \\Rightarrow a+b=1\\). Khả vi: \\(\\lim_{x\\to1^-}2x=2 \\Rightarrow a=2\\). Suy ra \\(b=-1\\).",
     "quick": "Đạo hàm trái =2, phải = a → a=2; liên tục → 1=a+b → b=-1",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 42,
@@ -669,7 +751,9 @@
     "correct": "\\(6\\)",
     "solution": "\\(f'(x)=4x^3-6x\\), \\(f''(x)=12x^2-6 \\Rightarrow f''(1)=12-6=6\\).",
     "quick": "Đạo hàm cấp 2 rồi thay số",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 43,
@@ -685,7 +769,9 @@
     "correct": "\\(-2\\sin(2x)\\)",
     "solution": "\\((\\cos u)'=-\\sin u \\cdot u' = -\\sin(2x)\\cdot2 = -2\\sin(2x)\\).",
     "quick": "Đạo hàm hợp lượng giác",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 44,
@@ -701,7 +787,9 @@
     "correct": "Cả A và C",
     "solution": "\\((\\tan x)' = \\sec^2 x = \\dfrac{1}{\\cos^2 x}\\).",
     "quick": "\\((\\tan x)' = 1/\\cos^2 x = \\sec^2 x\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 45,
@@ -717,7 +805,9 @@
     "correct": "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
     "solution": "\\((\\arcsin x)' = \\dfrac{1}{\\sqrt{1-x^2}}\\), \\(|x|<1\\).",
     "quick": "Đạo hàm hàm lượng giác ngược",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 46,
@@ -733,7 +823,9 @@
     "correct": "\\(-\\sin x\\)",
     "solution": "\\(f'(x)=\\cos x\\), \\(f''(x)=-\\sin x\\).",
     "quick": "Đạo hàm đến cấp 2 của sin",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 47,
@@ -749,7 +841,9 @@
     "correct": "\\(\\ln x\\)",
     "solution": "\\(f'(x)=1\\cdot\\ln x + x\\cdot\\frac{1}{x} - 1 = \\ln x + 1 - 1 = \\ln x\\).",
     "quick": "Đạo hàm từng phần của \\(x\\ln x\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 48,
@@ -765,7 +859,9 @@
     "correct": "\\(y=2x-1\\)",
     "solution": "\\(y'=2x \\Rightarrow y'(1)=2\\). \\(y(1)=1\\). Tiếp tuyến: \\(y-1=2(x-1) \\Rightarrow y=2x-1\\).",
     "quick": "Tiếp tuyến: \\(y=f'(x_0)(x-x_0)+f(x_0)\\)",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 49,
@@ -781,7 +877,9 @@
     "correct": "\\(e^x\\)",
     "solution": "\\((e^x)' = e^x\\).",
     "quick": "Đạo hàm của \\(e^x\\) là chính nó",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu."
+    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   },
   {
     "id": 50,
@@ -797,6 +895,8 @@
     "correct": "\\(0\\)",
     "solution": "\\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=\\lim_{h\\to0}h\\sin(1/h)=0\\).",
     "quick": "Ví dụ: đạo hàm tại 0 bằng 0",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC."
+    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   }
 ]

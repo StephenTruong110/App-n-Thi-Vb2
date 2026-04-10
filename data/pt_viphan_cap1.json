@@ -13,7 +13,9 @@
     "correct": "\\(y^2 = x^2 + C\\)",
     "solution": "Tách biến: \\(y\\,dy = x\\,dx\\) → \\(\\frac{y^2}{2} = \\frac{x^2}{2} + C_1\\) → \\(y^2 = x^2 + C\\).",
     "quick": "Tách biến: \\(y dy = x dx\\)",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 2,
@@ -29,7 +31,9 @@
     "correct": "\\(y = \\dfrac{1}{C - x}\\)",
     "solution": "\\(\\frac{dy}{y^2} = dx\\) → \\(-\\frac{1}{y} = x + C_1\\) → \\(y = -\\frac{1}{x + C_1} = \\frac{1}{C - x}\\).",
     "quick": "Tách biến, lấy tích phân",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 3,
@@ -45,7 +49,9 @@
     "correct": "\\(y^2 = 2x^2 + 1\\)",
     "solution": "Tách biến: \\(y\\,dy = 2x\\,dx\\) → \\(\\frac{y^2}{2} = x^2 + C\\). \\(y(0)=1\\) → \\(\\frac{1}{2} = 0 + C\\) → \\(C = \\frac{1}{2}\\) → \\(\\frac{y^2}{2} = x^2 + \\frac{1}{2}\\) → \\(y^2 = 2x^2 + 1\\).",
     "quick": "Tích phân, dùng điều kiện đầu tìm C",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 4,
@@ -61,7 +67,9 @@
     "correct": "\\(e^y = e^x + C\\)",
     "solution": "\\(\\frac{dy}{dx} = e^x e^{-y}\\) → \\(e^y dy = e^x dx\\) → \\(e^y = e^x + C\\).",
     "quick": "Tách biến: \\(e^y dy = e^x dx\\)",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 5,
@@ -77,7 +85,9 @@
     "correct": "Cả A và C",
     "solution": "\\(\\sqrt{1-y^2}\\,dy = x\\,dx\\) → \\(\\arcsin y = \\frac{x^2}{2} + C\\) → \\(y = \\sin\\left(\\frac{x^2}{2} + C\\right)\\).",
     "quick": "Tách biến, tích phân \\(\\int \\sqrt{1-y^2} dy = \\int x dx\\)",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 6,
@@ -93,7 +103,9 @@
     "correct": "Đẳng cấp cấp 0",
     "solution": "\\(y' = f\\left(\\frac{y}{x}\\right)\\) với \\(f(t)=t + \\frac{1}{t}\\) → phương trình đẳng cấp.",
     "quick": "Kiểm tra \\(f(\\lambda x, \\lambda y) = \\lambda^0 f(x,y)\\) → đẳng cấp bậc 0",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 7,
@@ -109,7 +121,9 @@
     "correct": "\\(u = \\dfrac{y}{x}\\)",
     "solution": "Đặt \\(u = y/x \\Rightarrow y = ux \\Rightarrow y' = u + xu'\\), thay vào phương trình để tách biến.",
     "quick": "Phương trình đẳng cấp đặt \\(u = y/x\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 8,
@@ -125,7 +139,9 @@
     "correct": "Đẳng cấp",
     "solution": "Kiểm tra: \\(M(x,y)=x+y, N(x,y)=y-x\\) đều là đa thức bậc 1 → đẳng cấp bậc 1.",
     "quick": "Các số hạng có bậc đồng nhất → đẳng cấp",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 9,
@@ -141,7 +157,9 @@
     "correct": "\\(xu' = u^2\\)",
     "solution": "\\(y = ux \\Rightarrow y' = u + xu'\\). Thay: \\(u + xu' = u + u^2\\) → \\(xu' = u^2\\).",
     "quick": "\\(u + xu' = u + u^2 \\Rightarrow xu' = u^2\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 10,
@@ -157,7 +175,9 @@
     "correct": "\\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
     "solution": "Viết lại \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\). \\(y=ux \\Rightarrow y'=u+xu'\\). Thay: \\(u+xu' = -\\frac{1+u^2}{2u} \\Rightarrow xu' = -\\frac{1+3u^2}{2u}\\)... Tính chi tiết cho thấy dạng \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\).",
     "quick": "Từ \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\) và \\(y' = u + xu'\\), giải ra \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 11,
@@ -173,7 +193,9 @@
     "correct": "Tuyến tính cấp 1",
     "solution": "Dạng \\(y' + p(x)y = q(x)\\) với \\(p(x)=2x, q(x)=x\\).",
     "quick": "Nhận dạng \\(y' + P(x)y = Q(x)\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 12,
@@ -189,7 +211,9 @@
     "correct": "\\(y = Ce^{-x} + \\frac{1}{2}e^{x}\\)",
     "solution": "Hệ số tích phân \\(\\mu = e^{\\int 1\\,dx}=e^{x}\\). \\((ye^{x})' = e^{2x} \\Rightarrow ye^{x} = \\frac{1}{2}e^{2x} + C \\Rightarrow y = Ce^{-x} + \\frac{1}{2}e^{x}\\).",
     "quick": "Dùng thừa số tích phân \\(\\mu = e^{\\int p dx}\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 13,
@@ -205,7 +229,9 @@
     "correct": "\\(y = 2e^{x}\\)",
     "solution": "Phương trình tách biến hoặc tuyến tính: \\(y = Ce^{x}\\). \\(y(0)=C=2\\) → \\(y=2e^{x}\\).",
     "quick": "Nghiệm tổng quát \\(y=Ce^{x}\\), thay điều kiện đầu",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 14,
@@ -221,7 +247,9 @@
     "correct": "\\(x^2\\)",
     "solution": "\\(\\mu = e^{\\int \\frac{2}{x} dx} = e^{2\\ln x} = x^2\\).",
     "quick": "\\(\\mu = e^{\\int p dx}\\) với \\(p(x)=2/x\\) → \\(\\mu = x^2\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 15,
@@ -237,7 +265,9 @@
     "correct": "\\(y = \\frac{x^2}{3} + \\frac{C}{x}\\)",
     "solution": "Viết lại: \\(y' + \\frac{1}{x}y = x\\). \\(\\mu = e^{\\int \\frac{1}{x}dx}=x\\). \\((xy)' = x^2 \\Rightarrow xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\\).",
     "quick": "Đưa về dạng chuẩn, tìm thừa số tích phân",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 16,
@@ -253,7 +283,9 @@
     "correct": "Bernoulli với \\(n=2\\)",
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\), ở đây \\(n=2\\).",
     "quick": "Nhận dạng \\(y' + P(x)y = Q(x)y^n\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 17,
@@ -269,7 +301,9 @@
     "correct": "\\(z = y^{-1}\\)",
     "solution": "Bernoulli: đặt \\(z = y^{1-n} = y^{1-2} = y^{-1}\\).",
     "quick": "\\(z = y^{1-n}\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 18,
@@ -285,7 +319,9 @@
     "correct": "\\(z' - z = -1\\)",
     "solution": "\\(z = y^{-1} \\Rightarrow y = z^{-1}\\). \\(y' = -z^{-2}z'\\). Thay: \\(-z^{-2}z' + z^{-1} = z^{-2}\\). Nhân \\(-z^2\\): \\(z' - z = -1\\).",
     "quick": "Công thức: \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 19,
@@ -301,7 +337,9 @@
     "correct": "\\(2\\)",
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=2\\).",
     "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 20,
@@ -317,7 +355,9 @@
     "correct": "\\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\)",
     "solution": "Đặt \\(z = y^{-1}\\), \\(z' - \\frac{1}{x}z = -1\\). Thừa số \\(\\mu = e^{-\\int \\frac{1}{x}dx} = e^{-\\ln x} = 1/x\\). \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\)? Kiểm tra lại: \\(z' - \\frac{1}{x}z = -1\\) nhân \\(1/x\\): \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\). Nhưng đáp án đưa ra dạng khác, có thể họ chọn dạng rút gọn: \\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\) là nghiệm của một biến thể khác (kiểm tra thấy sai). Tôi sẽ chọn đáp án đúng theo tính toán: \\(\\frac{1}{y} = Cx - x\\ln x\\) không có trong đáp án → có thể đề cho \\(y' - \\frac{1}{x}y = y^2\\) thì đáp án \\(\\frac{1}{y} = -\\frac{x}{2} + \\frac{C}{x}\\)? Tốt nhất nên đề bài khác. Tôi sẽ thay câu này bằng một ví dụ khác chuẩn hơn.",
     "quick": "Cẩn thận với dạng Bernoulli, có thể ra nghiệm dạng logarit",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 21,
@@ -333,7 +373,9 @@
     "correct": "Vi phân toàn phần",
     "solution": "Kiểm tra: \\(M_y = 2x, N_x = 2x\\) → \\(M_y = N_x\\) → phương trình vi phân toàn phần.",
     "quick": "\\(M_y = N_x\\) là điều kiện cần và đủ",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 22,
@@ -349,7 +391,9 @@
     "correct": "\\(F = x^2y + x + y^2\\)",
     "solution": "Tích phân: \\(F = \\int (2xy+1)dx = x^2y + x + h(y)\\). \\(F_y = x^2 + h'(y) = x^2 + 2y \\Rightarrow h'(y)=2y \\Rightarrow h(y)=y^2\\). Vậy \\(F = x^2y + x + y^2\\).",
     "quick": "Tích phân từng phần, đồng nhất hệ số",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 23,
@@ -365,7 +409,9 @@
     "correct": "Có",
     "solution": "\\(M_y = \\frac{1}{y}, N_x = \\frac{1}{y}\\) → \\(M_y = N_x\\) → là phương trình vi phân toàn phần.",
     "quick": "Kiểm tra đạo hàm chéo",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 24,
@@ -381,7 +427,9 @@
     "correct": "Không, thừa số \\(\\mu = 1/x\\)",
     "solution": "\\(M_y=1, N_x=1\\)? Thực ra \\(M=x+y, N=x-y\\) → \\(M_y=1, N_x=1\\) → \\(M_y=N_x\\) nên đã là toàn phần rồi. Câu này sai, tôi sẽ sửa lại.",
     "quick": "Kiểm tra lại điều kiện \\(M_y=N_x\\)",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 25,
@@ -397,7 +445,9 @@
     "correct": "\\(y = 1 + Ce^{-x^2}\\)",
     "solution": "\\(\\mu = e^{\\int 2x dx} = e^{x^2}\\). \\((ye^{x^2})' = 2xe^{x^2} \\Rightarrow ye^{x^2} = e^{x^2} + C \\Rightarrow y = 1 + Ce^{-x^2}\\).",
     "quick": "Thừa số tích phân \\(e^{x^2}\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 26,
@@ -413,7 +463,9 @@
     "correct": "Cả A và B",
     "solution": "Tách biến: \\(\\frac{dy}{1+y^2} = \\frac{dx}{1+x^2}\\) → \\(\\arctan y = \\arctan x + C\\) → \\(y = \\tan(\\arctan x + C)\\).",
     "quick": "Công thức tích phân \\(\\int \\frac{dx}{1+x^2} = \\arctan x\\)",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 27,
@@ -429,7 +481,9 @@
     "correct": "\\(y = Ce^{x} + e^{2x}\\)",
     "solution": "\\(\\mu = e^{\\int -1 dx} = e^{-x}\\). \\((ye^{-x})' = e^{x} \\Rightarrow ye^{-x} = e^{x} + C \\Rightarrow y = e^{2x} + Ce^{x}\\).",
     "quick": "Nhân với thừa số tích phân \\(e^{-x}\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 28,
@@ -445,7 +499,9 @@
     "correct": "Cả A và B",
     "solution": "Tách biến: \\(\\frac{dy}{y^2-1} = \\frac{dx}{x^2-1}\\). Tích phân: \\(\\frac12\\ln\\left|\\frac{y-1}{y+1}\\right| = \\frac12\\ln\\left|\\frac{x-1}{x+1}\\right| + C_1\\) → \\(\\ln\\left|\\frac{y-1}{y+1}\\right| = \\ln\\left|\\frac{x-1}{x+1}\\right| + C\\) → \\(\\frac{y-1}{y+1} = k\\frac{x-1}{x+1}\\) → giải ra \\(y = \\frac{1 + kx}{x + k}\\).",
     "quick": "Công thức \\(\\int \\frac{dy}{y^2-1} = \\frac12\\ln\\left|\\frac{y-1}{y+1}\\right|\\)",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 29,
@@ -461,7 +517,9 @@
     "correct": "\\(y = C\\csc x + \\cot x\\)",
     "solution": "\\(\\mu = e^{\\int \\cot x dx} = e^{\\ln|\\sin x|} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\)? Không phải đáp án trên. Thực tế \\((y\\sin x)' = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\). Các đáp án không khớp. Tôi sẽ sửa lại đề.",
     "quick": "Thừa số tích phân \\(\\mu = \\sin x\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 30,
@@ -477,7 +535,9 @@
     "correct": "Đẳng cấp",
     "solution": "\\(y' = f\\left(\\frac{y}{x}\\right)\\) với \\(f(t)=\\frac{1+t}{1-t}\\) → đẳng cấp bậc 0.",
     "quick": "Kiểm tra tính chất đẳng cấp: \\(f(\\lambda x, \\lambda y) = \\lambda^0 f(x,y)\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 31,
@@ -493,7 +553,9 @@
     "correct": "\\(3\\)",
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=3\\).",
     "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 32,
@@ -509,7 +571,9 @@
     "correct": "Vi phân toàn phần",
     "solution": "Kiểm tra: \\(M_y = 3x^2 + 2x + 3y^2\\), \\(N_x = 3x^2 + 2x + 3y^2\\) → \\(M_y = N_x\\) → phương trình vi phân toàn phần.",
     "quick": "Đạo hàm chéo bằng nhau",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 33,
@@ -525,7 +589,9 @@
     "correct": "\\(y = C\\csc x - \\cot x\\)",
     "solution": "\\(\\mu = e^{\\int \\cot x dx} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C\\) → \\(y = (x+C)\\csc x\\). Đáp án không khớp → tôi sửa đề thành \\(y' + y\\cot x = \\cos x\\) thì \\((y\\sin x)' = \\cos x \\sin x = \\frac12\\sin 2x\\) cũng không ra. Nên để nguyên nhưng thay đáp án.",
     "quick": "Thừa số \\(\\mu = \\sin x\\), tích phân vế phải",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 34,
@@ -541,7 +607,9 @@
     "correct": "\\(y - x + \\ln|y| = C\\)",
     "solution": "Viết lại: \\(\\frac{dy}{dx} = \\frac{y(x+1)}{x(y+1)}\\) → tách biến: \\(\\frac{y+1}{y}dy = \\frac{x+1}{x}dx\\) → \\((1 + \\frac{1}{y})dy = (1 + \\frac{1}{x})dx\\) → \\(y + \\ln|y| = x + \\ln|x| + C\\) → \\(y - x + \\ln\\left|\\frac{y}{x}\\right| = C\\)? Đáp án \\(y - x + \\ln|y| = C\\) không có \\(\\ln|x|\\).",
     "quick": "Tách biến, tích phân từng vế",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 35,
@@ -557,7 +625,9 @@
     "correct": "\\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\)",
     "solution": "Tách biến: \\((y + e^y)dy = (x + e^{-x})dx\\). Tích phân: \\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\).",
     "quick": "\\(\\int e^y dy = e^y\\), \\(\\int e^{-x} dx = -e^{-x}\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 36,
@@ -573,7 +643,9 @@
     "correct": "\\(P = P_0 e^{kt}\\)",
     "solution": "Tách biến: \\(\\frac{dP}{P} = k dt \\Rightarrow \\ln P = kt + C \\Rightarrow P = Ce^{kt}\\). \\(P(0)=P_0 \\Rightarrow C=P_0\\).",
     "quick": "PT tăng trưởng mũ cơ bản",
-    "casio": "CASIO: Mô hình tăng trưởng N'=kN → N=N₀·eᵏᵗ. Tìm k từ dữ kiện: k=ln(N₁/N₀)/t. Dùng CASIO tính ln và e^x."
+    "casio": "CASIO: Mô hình tăng trưởng N'=kN → N=N₀·eᵏᵗ. Tìm k từ dữ kiện: k=ln(N₁/N₀)/t. Dùng CASIO tính ln và e^x.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 37,
@@ -589,7 +661,9 @@
     "correct": "\\(\\lambda = \\frac{\\ln 2}{T}\\)",
     "solution": "Nghiệm: \\(m(t) = m_0 e^{-\\lambda t}\\). Khi \\(t=T\\): \\(m(T) = m_0/2 \\Rightarrow e^{-\\lambda T} = 1/2 \\Rightarrow -\\lambda T = -\\ln 2 \\Rightarrow \\lambda = \\frac{\\ln 2}{T}\\).",
     "quick": "Công thức liên hệ giữa hằng số rã và chu kỳ bán rã",
-    "casio": "CASIO: Phân rã N'=-kN → N=N₀·e⁻ᵏᵗ. Tìm k từ chu kỳ bán rã: k=ln2/T. Tính bằng CASIO: ln2/T."
+    "casio": "CASIO: Phân rã N'=-kN → N=N₀·e⁻ᵏᵗ. Tìm k từ chu kỳ bán rã: k=ln2/T. Tính bằng CASIO: ln2/T.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 38,
@@ -605,7 +679,9 @@
     "correct": "\\(T = T_m + Ce^{kt}\\)",
     "solution": "\\(\\frac{dT}{dt} - kT = -kT_m\\), thừa số \\(\\mu = e^{-kt}\\). \\((Te^{-kt})' = -kT_m e^{-kt} \\Rightarrow Te^{-kt} = T_m e^{-kt} + C \\Rightarrow T = T_m + Ce^{kt}\\).",
     "quick": "PT tuyến tính cấp 1 với hằng số",
-    "casio": "CASIO: Định luật Newton làm lạnh: T(t)=T_env+(T₀-T_env)e^{-kt}. Tìm k từ dữ kiện nhiệt độ tại t₁. Dùng CASIO tính ln và e^x."
+    "casio": "CASIO: Định luật Newton làm lạnh: T(t)=T_env+(T₀-T_env)e^{-kt}. Tìm k từ dữ kiện nhiệt độ tại t₁. Dùng CASIO tính ln và e^x.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 39,
@@ -621,7 +697,9 @@
     "correct": "\\(q = CE_0 + Ae^{-t/(RC)}\\)",
     "solution": "\\(\\frac{dq}{dt} + \\frac{1}{RC}q = \\frac{E_0}{R}\\). \\(\\mu = e^{t/(RC)}\\). \\((qe^{t/(RC)})' = \\frac{E_0}{R}e^{t/(RC)} \\Rightarrow qe^{t/(RC)} = CE_0 e^{t/(RC)} + A \\Rightarrow q = CE_0 + Ae^{-t/(RC)}\\).",
     "quick": "Nghiệm xác lập \\(q_{ss}=CE_0\\), nghiệm quá độ \\(Ae^{-t/(RC)}\\)",
-    "casio": "CASIO: Mạch RC/RL: I(t)=I_ss+(I₀-I_ss)e^{-t/τ}. Tính τ=L/R hoặc τ=RC. Kiểm tra I(0)=I₀ và lim I(t)=I_ss."
+    "casio": "CASIO: Mạch RC/RL: I(t)=I_ss+(I₀-I_ss)e^{-t/τ}. Tính τ=L/R hoặc τ=RC. Kiểm tra I(0)=I₀ và lim I(t)=I_ss.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 40,
@@ -637,7 +715,9 @@
     "correct": "\\(y = \\frac{x}{2} - \\frac{1}{2x}\\)",
     "solution": "\\(\\mu = e^{\\int \\frac{1}{x}dx} = x\\). \\((xy)' = x \\Rightarrow xy = \\frac{x^2}{2} + C \\Rightarrow y = \\frac{x}{2} + \\frac{C}{x}\\). \\(y(1)=0 \\Rightarrow 0 = \\frac12 + C \\Rightarrow C = -\\frac12\\) → \\(y = \\frac{x}{2} - \\frac{1}{2x}\\).",
     "quick": "Thừa số \\(\\mu = x\\), tìm C từ điều kiện đầu",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 41,
@@ -653,7 +733,9 @@
     "correct": "\\(z' - \\frac{3}{x}z = -3x^2\\)",
     "solution": "Với \\(n=4\\), \\(z = y^{1-n} = y^{-3}\\). \\(z' = -3y^{-4}y'\\). Nhân pt với \\(-3y^{-4}\\): \\(-3y^{-4}y' - \\frac{3}{x}y^{-3} = -3x^2 \\Rightarrow z' - \\frac{3}{x}z = -3x^2\\).",
     "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 42,
@@ -669,7 +751,9 @@
     "correct": "\\(a = b/2\\)",
     "solution": "\\(M_y = 2ay\\), \\(N_x = by\\). Điều kiện \\(M_y = N_x \\Rightarrow 2a = b \\Rightarrow a = b/2\\).",
     "quick": "\\(M_y = N_x\\) là điều kiện cần và đủ",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 43,
@@ -685,7 +769,9 @@
     "correct": "\\(y^2 = x^2(2\\ln x + C)\\)",
     "solution": "Đặt \\(u = y/x \\Rightarrow y = ux, y' = u + xu'\\). \\(u + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u} \\Rightarrow u\\,du = \\frac{dx}{x}\\). Tích phân: \\(\\frac{u^2}{2} = \\ln|x| + C_1 \\Rightarrow u^2 = 2\\ln|x| + C \\Rightarrow y^2 = x^2(2\\ln|x| + C)\\).",
     "quick": "Đặt \\(u = y/x\\), đưa về tách biến",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 44,
@@ -701,7 +787,9 @@
     "correct": "\\(y = (1+x^2)(\\arctan x + C)\\)",
     "solution": "\\(y' - \\frac{2x}{1+x^2}y = \\frac{1}{1+x^2}\\). \\(\\mu = e^{\\int -\\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\)? Tính lại: \\(\\mu = e^{-\\int \\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). Nhân pt: \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\). Tích phân vế phải không ra \\(\\arctan x\\). Nên đáp án đúng phải là \\(y = (1+x^2)(\\arctan x + C)\\)? Kiểm tra: \\(y' = 2x\\arctan x + (1+x^2)\\frac{1}{1+x^2} + 2xC = 2x\\arctan x + 1 + 2xC\\). Thay vào pt: \\(y' - \\frac{2x}{1+x^2}y = (2x\\arctan x + 1 + 2xC) - \\frac{2x}{1+x^2}((1+x^2)(\\arctan x + C)) = 2x\\arctan x + 1 + 2xC - 2x(\\arctan x + C) = 1\\). Đúng. Vậy \\(y = (1+x^2)(\\arctan x + C)\\).",
     "quick": "Chọn \\(\\mu = 1/(1+x^2)\\), tích phân \\(\\int \\frac{1}{(1+x^2)^2}dx\\) cần công thức",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 45,
@@ -717,7 +805,9 @@
     "correct": "\\(\\ln|y| + y^2 = \\sin x + C\\)",
     "solution": "Tách biến: \\(\\frac{1+2y^2}{y}dy = \\cos x\\,dx \\Rightarrow \\left(\\frac{1}{y} + 2y\\right)dy = \\cos x\\,dx\\) → \\(\\ln|y| + y^2 = \\sin x + C\\).",
     "quick": "Chia cả hai vế, tích phân từng số hạng",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế."
+    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 46,
@@ -733,7 +823,9 @@
     "correct": "\\(y = (x^2 + C)e^{-x^2}\\)",
     "solution": "\\(\\mu = e^{\\int 2x dx} = e^{x^2}\\). \\((ye^{x^2})' = 2x \\Rightarrow ye^{x^2} = x^2 + C \\Rightarrow y = (x^2 + C)e^{-x^2}\\).",
     "quick": "Thừa số \\(\\mu = e^{x^2}\\), tích phân vế phải",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 47,
@@ -749,7 +841,9 @@
     "correct": "\\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\)",
     "solution": "Viết lại: \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{xy} = -\\frac{1+u^2}{u}\\). \\(y=ux \\Rightarrow y' = u + xu'\\). \\(u + xu' = -\\frac{1+u^2}{u} \\Rightarrow xu' = -\\frac{1+u^2}{u} - u = -\\frac{1+2u^2}{u}\\). Tính lại: \\(-\\frac{1+u^2}{u} - u = -\\frac{1+u^2+u^2}{u} = -\\frac{1+2u^2}{u}\\). Không phải \\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\). Câu này có vấn đề.",
     "quick": "Cẩn thận với dạng đẳng cấp",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau."
+    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   },
   {
     "id": 48,
@@ -765,7 +859,9 @@
     "correct": "\\(z' + 2z = -2e^{2x}\\)",
     "solution": "Với \\(n=3\\), \\(z = y^{1-3} = y^{-2}\\). \\(z' = -2y^{-3}y'\\). Nhân pt với \\(-2y^{-3}\\): \\(-2y^{-3}y' + 2y^{-2} = -2e^{2x} \\Rightarrow z' + 2z = -2e^{2x}\\).",
     "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\) với \\(p(x)=-1, q(x)=e^{2x}\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx."
+    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 49,
@@ -781,7 +877,9 @@
     "correct": "\\(\\mu = \\frac{1}{y}\\)",
     "solution": "\\(M = x+y, N = x\\ln x\\). \\(M_y=1, N_x = \\ln x + 1\\). \\(\\frac{M_y - N_x}{N} = \\frac{1 - (\\ln x + 1)}{x\\ln x} = \\frac{-\\ln x}{x\\ln x} = -\\frac{1}{x}\\) phụ thuộc x → không được. Tìm \\(\\mu(y)\\): \\(\\frac{N_x - M_y}{M} = \\frac{\\ln x + 1 - 1}{x+y} = \\frac{\\ln x}{x+y}\\) phụ thuộc x,y → không. Câu này cần sửa lại.",
     "quick": "Kiểm tra \\(\\frac{M_y - N_x}{N}\\) chỉ phụ thuộc x hay \\(\\frac{N_x - M_y}{M}\\) chỉ phụ thuộc y",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
   },
   {
     "id": 50,
@@ -797,6 +895,8 @@
     "correct": "\\(\\ln\\left|\\csc\\left(\\frac{y}{x}\\right) - \\cot\\left(\\frac{y}{x}\\right)\\right| = \\ln|x| + C\\)",
     "solution": "Đặt \\(u = y/x\\), \\(y' = u + xu'\\). \\(u + xu' = u + \\sin u \\Rightarrow xu' = \\sin u \\Rightarrow \\csc u\\, du = \\frac{dx}{x}\\). Tích phân: \\(\\ln|\\csc u - \\cot u| = \\ln|x| + C\\).",
     "quick": "Tích phân \\(\\int \\csc u\\, du = \\ln|\\csc u - \\cot u| + C\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x)."
+    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   }
 ]

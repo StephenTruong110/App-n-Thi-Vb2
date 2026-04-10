@@ -13,7 +13,9 @@
     "correct": "\\(2xy\\)",
     "solution": "\\(f_x = \\frac{\\partial}{\\partial x}(x^{2}y+3y) = 2xy\\)",
     "quick": "đạo hàm theo x, y là hằng",
-    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE."
+    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 2,
@@ -29,7 +31,9 @@
     "correct": "\\(x^{2}+3\\)",
     "solution": "\\(f_y = \\frac{\\partial}{\\partial y}(x^{2}y+3y)=x^{2}+3\\)",
     "quick": "đạo hàm theo y, x là hằng",
-    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE."
+    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 3,
@@ -45,7 +49,9 @@
     "correct": "\\(y\\cos(xy)\\)",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** \\(f_x = \\cos(xy)\\cdot y\\)\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "Coi biến kia là HẰNG SỐ rồi đạo hàm theo biến đang xét",
-    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE."
+    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 4,
@@ -61,7 +67,9 @@
     "correct": "\\(xe^{xy}\\)",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** \\(f_y = e^{xy}\\cdot x\\)\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "Coi biến kia là HẰNG SỐ rồi đạo hàm theo biến đang xét",
-    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE."
+    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 5,
@@ -77,7 +85,9 @@
     "correct": "\\(\\frac{2x}{x^{2}+y^{2}}\\)",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** \\(f_x = \\frac{2x}{x^{2}+y^{2}}\\)\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "Coi biến kia là HẰNG SỐ rồi đạo hàm theo biến đang xét",
-    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE."
+    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 6,
@@ -93,7 +103,9 @@
     "correct": "\\(6x^{2}y\\)",
     "solution": "\\(f_x=3x^{2}y^{2}+5 \\Rightarrow f_{xy}=6x^{2}y\\)",
     "quick": "đạo hàm riêng cấp 2 hỗn hợp",
-    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE."
+    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 7,
@@ -109,7 +121,9 @@
     "correct": "\\(-x^{2}\\sin(x^{2}y)\\)",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** \\(f_y = -\\sin(x^{2}y)\\cdot x^{2}\\)\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "đạo hàm hợp lượng giác",
-    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE."
+    "casio": "CASIO fx-580VNX: Đạo hàm riêng không tính trực tiếp bằng ký hiệu. Cách kiểm tra: cố định biến còn lại (VD y=1), dùng [SHIFT][d/dx] nhập f(x,1) rồi nhập x₀. Ví dụ: ∂f/∂x tại (2,1) → d/dx(f(x,1), 2) → EXE.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 8,
@@ -125,7 +139,9 @@
     "correct": "\\(2xdx+2ydy\\)",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** \\(df = f_x dx + f_y dy = 2xdx+2ydy\\)\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "\\(df = f'_x\\,dx + f'_y\\,dy\\) — tổng các đạo hàm riêng nhân vi phân",
-    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy."
+    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 9,
@@ -141,7 +157,9 @@
     "correct": "\\(ydx+xdy\\)",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** \\(df = ydx + xdy\\)\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "\\(df = f'_x\\,dx + f'_y\\,dy\\) — tổng các đạo hàm riêng nhân vi phân",
-    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy."
+    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 10,
@@ -157,7 +175,9 @@
     "correct": "\\(e^{xy}(ydx+xdy)\\)",
     "solution": "\\(df = ye^{xy}dx + xe^{xy}dy = e^{xy}(ydx+xdy)\\)",
     "quick": "\\(df = f'_x\\,dx + f'_y\\,dy\\) — tổng các đạo hàm riêng nhân vi phân",
-    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy."
+    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 11,
@@ -173,7 +193,9 @@
     "correct": "Cả A và B",
     "solution": "\\(df = \\frac{1}{x+y}dx + \\frac{1}{x+y}dy = \\frac{dx+dy}{x+y}\\)",
     "quick": "\\(df = f'_x\\,dx + f'_y\\,dy\\) — tổng các đạo hàm riêng nhân vi phân",
-    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy."
+    "casio": "CASIO không tính vi phân trực tiếp. Tính ∂f/∂x và ∂f/∂y bằng CALC → d/dx tại giá trị cụ thể rồi lắp vào df=f'_x·dx+f'_y·dy.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 12,
@@ -189,7 +211,9 @@
     "correct": "\\((1,2)\\)",
     "solution": "\\(f_x=2x-2=0, f_y=2y-4=0 \\Rightarrow x=1,y=2\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "giải hệ đạo hàm riêng =0",
-    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa."
+    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 13,
@@ -205,7 +229,9 @@
     "correct": "\\((0,0),(1,1)\\)",
     "solution": "\\(f_x=3x^{2}-3y=0, f_y=3y^{2}-3x=0 \\Rightarrow x=y=0 \\text{ hoặc } x=y=1\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "giải hệ đối xứng",
-    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa."
+    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 14,
@@ -221,7 +247,9 @@
     "correct": "Cực tiểu",
     "solution": "\\(f_{xx}=2>0, \\Delta = f_{xx}f_{yy}-f_{xy}^{2}=4>0 \\Rightarrow \\) cực tiểu\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "Điều kiện cần: \\(f'_x=0, f'_y=0\\). Đủ: \\(AC-B^2>0\\)",
-    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại."
+    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 15,
@@ -237,7 +265,9 @@
     "correct": "Điểm yên ngựa",
     "solution": "\\(\\Delta = f_{xx}f_{yy}-f_{xy}^{2}= (2)(-2)-0=-4<0 \\Rightarrow\\) yên ngựa\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "Điều kiện cần: \\(f'_x=0, f'_y=0\\). Đủ: \\(AC-B^2>0\\)",
-    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại."
+    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 16,
@@ -253,7 +283,9 @@
     "correct": "Cực tiểu =0 tại (1,2)",
     "solution": "\\(f(1,2)=1+4-2-8+5=0\\), \\(f_{xx}>0, \\Delta>0\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "Điều kiện cần: \\(f'_x=0, f'_y=0\\). Đủ: \\(AC-B^2>0\\)",
-    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại."
+    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 17,
@@ -269,7 +301,9 @@
     "correct": "Cực tiểu",
     "solution": "\\(f_{xx}=6x=6, f_{yy}=6y=6, f_{xy}=-3, \\Delta=36-9=27>0, f_{xx}>0\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "Điều kiện cần: \\(f'_x=0, f'_y=0\\). Đủ: \\(AC-B^2>0\\)",
-    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại."
+    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 18,
@@ -285,7 +319,9 @@
     "correct": "Không là cực trị",
     "solution": "\\(f_{xx}=0, f_{yy}=0, f_{xy}=-3, \\Delta=-9<0 \\Rightarrow\\) yên ngựa\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "Điều kiện cần: \\(f'_x=0, f'_y=0\\). Đủ: \\(AC-B^2>0\\)",
-    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại."
+    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 19,
@@ -301,7 +337,9 @@
     "correct": "Điểm yên ngựa tại (0,0)",
     "solution": "\\(f_x=y=0, f_y=x=0 \\Rightarrow (0,0), \\Delta=-1<0\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "Điều kiện cần: \\(f'_x=0, f'_y=0\\). Đủ: \\(AC-B^2>0\\)",
-    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại."
+    "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 20,
@@ -317,7 +355,9 @@
     "correct": "\\(6y^{2}\\)",
     "solution": "\\(f_x=2xy^{3} \\Rightarrow f_{xx}=2y^{3} \\Rightarrow f_{xxy}=6y^{2}\\)",
     "quick": "đạo hàm riêng cấp cao",
-    "casio": "CASIO: Tính đạo hàm riêng nhiều lần, mỗi lần cố định biến còn lại."
+    "casio": "CASIO: Tính đạo hàm riêng nhiều lần, mỗi lần cố định biến còn lại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 21,
@@ -333,7 +373,9 @@
     "correct": "\\(\\cos(xy)-xy\\sin(xy)\\)",
     "solution": "\\(f_x=y\\cos(xy) \\Rightarrow f_{xy}=\\cos(xy)-xy\\sin(xy)\\)",
     "quick": "đạo hàm hỗn hợp",
-    "casio": "CASIO: Tính đạo hàm riêng nhiều lần, mỗi lần cố định biến còn lại."
+    "casio": "CASIO: Tính đạo hàm riêng nhiều lần, mỗi lần cố định biến còn lại.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 22,
@@ -349,7 +391,9 @@
     "correct": "\\(\\sqrt{5}+\\frac{0.1+(-0.1)\\cdot2}{\\sqrt{5}}\\)",
     "solution": "\\(f(x,y)=\\sqrt{x^{2}+y^{2}}, f_x=x/f, f_y=y/f\\) tại (1,2), \\(dx=0.1, dy=-0.1\\)",
     "quick": "công thức xấp xỉ",
-    "casio": "CASIO: Xấp xỉ: Δf ≈ f'_x·Δx + f'_y·Δy. Tính f'_x và f'_y tại điểm cơ sở, nhân với Δx, Δy rồi cộng."
+    "casio": "CASIO: Xấp xỉ: Δf ≈ f'_x·Δx + f'_y·Δy. Tính f'_x và f'_y tại điểm cơ sở, nhân với Δx, Δy rồi cộng.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 23,
@@ -365,7 +409,9 @@
     "correct": "\\(1+0.1\\cdot2\\)",
     "solution": "\\(f(x,y)=e^{xy}, f(0,2)=1, df=ye^{xy}dx+xe^{xy}dy \\Rightarrow df=2dx+0dy=0.2\\)",
     "quick": "xấp xỉ bậc nhất",
-    "casio": "CASIO: Xấp xỉ: Δf ≈ f'_x·Δx + f'_y·Δy. Tính f'_x và f'_y tại điểm cơ sở, nhân với Δx, Δy rồi cộng."
+    "casio": "CASIO: Xấp xỉ: Δf ≈ f'_x·Δx + f'_y·Δy. Tính f'_x và f'_y tại điểm cơ sở, nhân với Δx, Δy rồi cộng.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 24,
@@ -381,7 +427,9 @@
     "correct": "Max=\\(\\sqrt{2}\\), Min=\\(-\\sqrt{2}\\)",
     "solution": "Dùng nhân tử Lagrange: \\(\\nabla f = \\lambda \\nabla g \\Rightarrow (1,1)=\\lambda(2x,2y) \\Rightarrow x=y, x^{2}+y^{2}=1 \\Rightarrow x=y=\\pm1/\\sqrt{2}\\)",
     "quick": "điều kiện ràng buộc",
-    "casio": "CASIO: Giải hệ Lagrange bằng MODE 5. Thay tham số để kiểm tra."
+    "casio": "CASIO: Giải hệ Lagrange bằng MODE 5. Thay tham số để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 25,
@@ -397,7 +445,9 @@
     "correct": "Max=1/4 tại (1/2,1/2)",
     "solution": "\\(y=1-x \\Rightarrow f=x(1-x)=-x^{2}+x \\Rightarrow \\) đỉnh tại x=1/2\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "thay điều kiện vào hàm",
-    "casio": "CASIO: Giải hệ Lagrange bằng MODE 5. Thay tham số để kiểm tra."
+    "casio": "CASIO: Giải hệ Lagrange bằng MODE 5. Thay tham số để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 26,
@@ -413,7 +463,9 @@
     "correct": "\\(\\frac{-y}{x^{2}+y^{2}}\\)",
     "solution": "\\(\\frac{\\partial}{\\partial x}\\arctan(u) = \\frac{1}{1+u^{2}}\\cdot u_x, u=y/x \\Rightarrow u_x=-y/x^{2}\\)",
     "quick": "đạo hàm arctan",
-    "casio": "CASIO: Tính đạo hàm riêng tại điểm cho trước bằng CALC → d/dx."
+    "casio": "CASIO: Tính đạo hàm riêng tại điểm cho trước bằng CALC → d/dx.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 27,
@@ -429,7 +481,9 @@
     "correct": "\\(\\frac{x}{x^{2}+y^{2}}\\)",
     "solution": "\\(u_y=1/x \\Rightarrow f_y = \\frac{1}{1+(y/x)^{2}}\\cdot\\frac{1}{x} = \\frac{x}{x^{2}+y^{2}}\\)",
     "quick": "đạo hàm theo y",
-    "casio": "CASIO: Tính đạo hàm riêng tại điểm cho trước bằng CALC → d/dx."
+    "casio": "CASIO: Tính đạo hàm riêng tại điểm cho trước bằng CALC → d/dx.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 28,
@@ -445,7 +499,9 @@
     "correct": "\\(5L^{-0.5}K^{0.5}\\)",
     "solution": "\\(P_L = 10\\cdot0.5 L^{-0.5}K^{0.5}=5L^{-0.5}K^{0.5}\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "đạo hàm riêng trong kinh tế",
-    "casio": "CASIO: Lập hệ điều kiện, giải MODE 5, kiểm tra AC-B² tại điểm dừng."
+    "casio": "CASIO: Lập hệ điều kiện, giải MODE 5, kiểm tra AC-B² tại điểm dừng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 29,
@@ -461,7 +517,9 @@
     "correct": "\\(2x + \\cos(xy) - xy\\sin(xy)\\)",
     "solution": "\\(f_x=2xy + y\\cos(xy) \\Rightarrow f_{xy}=2x + \\cos(xy) - xy\\sin(xy)\\)",
     "quick": "đạo hàm hỗn hợp",
-    "casio": "CASIO: Tính đạo hàm riêng theo từng bước. f'_x trước, rồi đạo hàm theo y."
+    "casio": "CASIO: Tính đạo hàm riêng theo từng bước. f'_x trước, rồi đạo hàm theo y.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 30,
@@ -477,7 +535,9 @@
     "correct": "\\(0.2\\)",
     "solution": "\\(df = 2xy dx + x^{2} dy = 2\\cdot1\\cdot2\\cdot0.1 + 1^{2}\\cdot(-0.1) = 0.4 - 0.1 = 0.3\\)",
     "quick": "tính trực tiếp",
-    "casio": "CASIO: Tính df = f'_x·dx + f'_y·dy. Dùng [SHIFT][d/dx] để tính f'_x(x₀,y₀) và f'_y(x₀,y₀) bằng cách cố định từng biến. Sau đó nhân với dx, dy rồi cộng lại."
+    "casio": "CASIO: Tính df = f'_x·dx + f'_y·dy. Dùng [SHIFT][d/dx] để tính f'_x(x₀,y₀) và f'_y(x₀,y₀) bằng cách cố định từng biến. Sau đó nhân với dx, dy rồi cộng lại.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 31,
@@ -493,7 +553,9 @@
     "correct": "Chưa kết luận được (cần đạo hàm bậc cao)",
     "solution": "\\(f_x=4x^{3}-4y=0, f_y=4y^{3}-4x=0 \\Rightarrow (0,0)\\) là điểm dừng nhưng \\(f_{xx}=0, f_{yy}=0, f_{xy}=-4, \\Delta=-16<0\\) nên chưa kết luận được bằng dấu hiệu cấp 2",
     "quick": "điểm suy biến",
-    "casio": "CASIO: Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Kiểm tra AC-B²."
+    "casio": "CASIO: Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Kiểm tra AC-B².",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 32,
@@ -509,7 +571,9 @@
     "correct": "\\(-\\frac{x}{z}\\)",
     "solution": "\\(2x + 2z z_x = 0 \\Rightarrow z_x = -x/z\\)",
     "quick": "đạo hàm hàm ẩn",
-    "casio": "CASIO: Dùng công thức hàm ẩn ∂z/∂x=-F'_x/F'_z, tính từng đạo hàm riêng."
+    "casio": "CASIO: Dùng công thức hàm ẩn ∂z/∂x=-F'_x/F'_z, tính từng đạo hàm riêng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 33,
@@ -525,7 +589,9 @@
     "correct": "\\(\\frac{xz}{e^{z}-xy}\\)",
     "solution": "\\(e^{z}z_y = xz + xy z_y \\Rightarrow z_y(e^{z}-xy)=xz \\Rightarrow z_y = \\frac{xz}{e^{z}-xy}\\)",
     "quick": "đạo hàm hàm ẩn",
-    "casio": "CASIO: Dùng công thức hàm ẩn ∂z/∂x=-F'_x/F'_z, tính từng đạo hàm riêng."
+    "casio": "CASIO: Dùng công thức hàm ẩn ∂z/∂x=-F'_x/F'_z, tính từng đạo hàm riêng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 34,
@@ -541,7 +607,9 @@
     "correct": "\\(\\sqrt{2}\\)",
     "solution": "Trong miền: điểm dừng (0,0) cho f=0; trên biên dùng Lagrange được \\(\\pm\\sqrt{2}\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "biên là đường tròn",
-    "casio": "CASIO: Tìm điểm dừng trong miền bằng MODE 5. Kiểm tra trên biên bằng cách tham số hóa biên và tìm cực trị 1 biến."
+    "casio": "CASIO: Tìm điểm dừng trong miền bằng MODE 5. Kiểm tra trên biên bằng cách tham số hóa biên và tìm cực trị 1 biến.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 35,
@@ -557,7 +625,9 @@
     "correct": "Có, của \\(x^{2}y\\)",
     "solution": "\\(df = 2xydx + x^{2}dy \\Rightarrow f_x=2xy \\Rightarrow f=x^{2}y+g(y) \\Rightarrow f_y=x^{2}+g'(y)=x^{2} \\Rightarrow g'(y)=0\\)",
     "quick": "kiểm tra \\(\\frac{\\partial P}{\\partial y}=\\frac{\\partial Q}{\\partial x}\\)",
-    "casio": "CASIO: Kiểm tra P'_y và Q'_x bằng CALC → d/dx cố định biến còn lại."
+    "casio": "CASIO: Kiểm tra P'_y và Q'_x bằng CALC → d/dx cố định biến còn lại.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 36,
@@ -573,7 +643,9 @@
     "correct": "Không",
     "solution": "\\(P=y, Q=-x \\Rightarrow P_y=1, Q_x=-1 \\Rightarrow P_y \\neq Q_x\\)",
     "quick": "không thỏa điều kiện đóng",
-    "casio": "CASIO: Kiểm tra P'_y và Q'_x bằng CALC → d/dx cố định biến còn lại."
+    "casio": "CASIO: Kiểm tra P'_y và Q'_x bằng CALC → d/dx cố định biến còn lại.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 37,
@@ -589,7 +661,9 @@
     "correct": "\\(-\\frac{nRT}{V^{2}}\\)",
     "solution": "\\(P = nRT\\cdot V^{-1} \\Rightarrow \\frac{\\partial P}{\\partial V} = nRT\\cdot(-1)V^{-2}\\)",
     "quick": "đạo hàm theo thể tích",
-    "casio": "CASIO: Tính đạo hàm riêng bằng CALC → d/dx với biến còn lại cố định."
+    "casio": "CASIO: Tính đạo hàm riêng bằng CALC → d/dx với biến còn lại cố định.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 38,
@@ -605,7 +679,9 @@
     "correct": "0.5",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** \\(Q_I = 0.5\\)\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "đạo hàm theo thu nhập",
-    "casio": "CASIO: Tính đạo hàm riêng bằng CALC → d/dx với biến còn lại cố định."
+    "casio": "CASIO: Tính đạo hàm riêng bằng CALC → d/dx với biến còn lại cố định.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 39,
@@ -621,7 +697,9 @@
     "correct": "Cực đại",
     "solution": "\\(f_{xx}=-2<0, \\Delta=4>0 \\Rightarrow\\) cực đại\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "dấu hiệu đủ",
-    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa."
+    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 40,
@@ -637,7 +715,9 @@
     "correct": "\\(\\frac{dx+dy}{2}\\)",
     "solution": "\\(f_x=\\frac{2x}{x^{2}+y^{2}}=\\frac{2}{2}=1, f_y=\\frac{2y}{x^{2}+y^{2}}=1 \\Rightarrow df = 1\\cdot dx+1\\cdot dy\\)",
     "quick": "tại (1,1) đối xứng",
-    "casio": "CASIO: df ≈ Δf. Tính f'_x·Δx + f'_y·Δy với giá trị số cụ thể."
+    "casio": "CASIO: df ≈ Δf. Tính f'_x·Δx + f'_y·Δy với giá trị số cụ thể.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 41,
@@ -653,7 +733,9 @@
     "correct": "\\(f_{xy}=f_{yx}\\)",
     "solution": "Định lý Schwarz: đạo hàm hỗn hợp bằng nhau nếu liên tục",
     "quick": "tính chất đối xứng",
-    "casio": "CASIO: Kiểm tra f''_xy = f''_yx. Tính cả hai bằng CASIO rồi so sánh."
+    "casio": "CASIO: Kiểm tra f''_xy = f''_yx. Tính cả hai bằng CASIO rồi so sánh.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 42,
@@ -669,7 +751,9 @@
     "correct": "\\(|k|<2\\)",
     "solution": "\\(f_{xx}=2, f_{yy}=2, f_{xy}=k, \\Delta=4-k^{2}>0 \\Rightarrow |k|<2\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
     "quick": "điều kiện đủ cực tiểu",
-    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa."
+    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 43,
@@ -685,7 +769,9 @@
     "correct": "\\((2,2)\\)",
     "solution": "\\(\\nabla f = (2x,2y) \\Rightarrow \\nabla f(1,1)=(2,2)\\)",
     "quick": "vector đạo hàm riêng",
-    "casio": "CASIO: Tính gradient (f'_x, f'_y) tại điểm cho trước bằng CALC → d/dx."
+    "casio": "CASIO: Tính gradient (f'_x, f'_y) tại điểm cho trước bằng CALC → d/dx.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 44,
@@ -701,7 +787,9 @@
     "correct": "\\(4\\)",
     "solution": "\\(\\nabla f=(2xy, x^{2})=(4,1) \\Rightarrow \\nabla f\\cdot \\vec{u}=4\\cdot1+1\\cdot0=4\\)",
     "quick": "tích vô hướng gradient với vector đơn vị",
-    "casio": "CASIO: D_u f = f'_x·cos α + f'_y·cos β. Tính f'_x, f'_y rồi nhân với thành phần hướng."
+    "casio": "CASIO: D_u f = f'_x·cos α + f'_y·cos β. Tính f'_x, f'_y rồi nhân với thành phần hướng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 45,
@@ -717,7 +805,9 @@
     "correct": "\\(z=2x+2y-2\\)",
     "solution": "\\(z_x=2x=2, z_y=2y=2 \\Rightarrow z-2=2(x-1)+2(y-1) \\Rightarrow z=2x+2y-2\\)",
     "quick": "công thức mặt phẳng tiếp xúc",
-    "casio": "CASIO: Phương trình mp tiếp tuyến: f'_x(x₀,y₀)(x-x₀)+f'_y(x₀,y₀)(y-y₀)-(z-z₀)=0."
+    "casio": "CASIO: Phương trình mp tiếp tuyến: f'_x(x₀,y₀)(x-x₀)+f'_y(x₀,y₀)(y-y₀)-(z-z₀)=0.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 46,
@@ -733,7 +823,9 @@
     "correct": "\\(x+y+z=3\\)",
     "solution": "\\(\\nabla F=(2x,2y,2z)=(2,2,2) \\Rightarrow 2(x-1)+2(y-1)+2(z-1)=0 \\Rightarrow x+y+z=3\\)",
     "quick": "mặt cầu",
-    "casio": "CASIO: Mặt phẳng tiếp tuyến: F'_x(x-x₀)+F'_y(y-y₀)+F'_z(z-z₀)=0."
+    "casio": "CASIO: Mặt phẳng tiếp tuyến: F'_x(x-x₀)+F'_y(y-y₀)+F'_z(z-z₀)=0.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 47,
@@ -749,7 +841,9 @@
     "correct": "\\((1,0)\\)",
     "solution": "\\(f_x=3x^{2}-3=0 \\Rightarrow x=\\pm1, f_y=2y=0 \\Rightarrow y=0, \\Delta= (6x)(2)-0=12x, x=1 \\Rightarrow \\Delta>0, f_{xx}>0 \\Rightarrow \\) cực tiểu, x=-1 \\Rightarrow \\Delta<0 \\Rightarrow yên ngựa",
     "quick": "điểm yên ngựa",
-    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa."
+    "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 48,
@@ -765,7 +859,9 @@
     "correct": "\\(f_x(a,b)dx+f_y(a,b)dy\\)",
     "solution": "**Phương pháp:** Coi biến còn lại là hằng số, áp dụng quy tắc đạo hàm thông thường.\n**Kết quả:** Định nghĩa vi phân toàn phần\n**Kiểm tra:** Thay giá trị số cụ thể để xác nhận.",
     "quick": "xấp xỉ tuyến tính",
-    "casio": "CASIO: Tính vi phân toàn phần bằng cách tính 2 đạo hàm riêng."
+    "casio": "CASIO: Tính vi phân toàn phần bằng cách tính 2 đạo hàm riêng.",
+    "difficulty": 1,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 49,
@@ -781,7 +877,9 @@
     "correct": "\\(f_x\\cdot 2t + f_y\\cdot e^{t}\\)",
     "solution": "\\(\\frac{dz}{dt} = f_x\\frac{dx}{dt} + f_y\\frac{dy}{dt} = f_x\\cdot 2t + f_y\\cdot e^{t}\\)",
     "quick": "quy tắc chuỗi",
-    "casio": "CASIO: Thay giá trị cụ thể vào, tính từng đạo hàm riêng rồi ghép theo quy tắc dây chuyền."
+    "casio": "CASIO: Thay giá trị cụ thể vào, tính từng đạo hàm riêng rồi ghép theo quy tắc dây chuyền.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   },
   {
     "id": 50,
@@ -797,6 +895,8 @@
     "correct": "\\(x^{2}y + x + y^{2}=C\\)",
     "solution": "\\(P=2xy+1, Q=x^{2}+2y, P_y=2x=Q_x \\Rightarrow\\) toàn phần, tìm f: \\(f_x=2xy+1 \\Rightarrow f=x^{2}y+x+g(y), f_y=x^{2}+g'(y)=x^{2}+2y \\Rightarrow g'(y)=2y \\Rightarrow g(y)=y^{2}\\)",
     "quick": "giải PTVP toàn phần",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng cách tính từng đạo hàm riêng."
+    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng cách tính từng đạo hàm riêng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   }
 ]
