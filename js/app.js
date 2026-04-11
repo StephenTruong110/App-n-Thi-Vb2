@@ -1,7 +1,9 @@
-
 /* ================================================================
-   STATE
+   app.js  — PRACTICE MODE
+   (original code + difficulty filter + mode switch integration)
 ================================================================ */
+
+/* ── STATE ── */
 let questions   = [];
 let userAnswers = [];
 let current     = 0;
@@ -9,110 +11,123 @@ let answered    = false;
 let selectedIdx = -1;
 let solTab      = 'giai';
 
-let totalDone   = 0;
-let totalRight  = 0;
-let totalWrong  = 0;
-let grades      = []; // null = chưa chấm, true/false = đúng/sai
+let totalDone  = 0;
+let totalRight = 0;
+let totalWrong = 0;
+let grades     = [];
 
 const LETTERS = ['A','B','C','D','E','F'];
+const DIFF_LABEL = { 1:'Dễ', 2:'Trung bình', 3:'Khó' };
+const DIFF_CLASS = { 1:'diff-1', 2:'diff-2', 3:'diff-3' };
 
-// Save Progress
-function saveProgress() {
-  const data = {
-    questions,
-    current,
-    userAnswers,
-    grades,
-    totalDone,
-    totalRight,
-    totalWrong
-  };
-
-  localStorage.setItem("vb2_exam", JSON.stringify(data));
+/* ================================================================
+   MODE SWITCH
+================================================================ */
+function switchMode(mode) {
+  if (mode === 'exam') {
+    // Delegate to exam.js
+    document.getElementById('btn-mode-practice').classList.remove('active');
+    document.getElementById('btn-mode-exam').classList.add('active');
+    initExamMode();
+    return;
+  }
+  // Practice mode
+  document.getElementById('btn-mode-practice').classList.add('active');
+  document.getElementById('btn-mode-exam').classList.remove('active');
+  showScreen('screen-practice');
 }
-// Load Progress
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => {
+    s.classList.remove('active');
+    s.style.display = 'none';
+  });
+  const el = document.getElementById(id);
+  el.classList.add('active');
+  el.style.display = (id === 'screen-exam') ? 'flex' : 'block';
+}
+
+/* ================================================================
+   SAVE / LOAD PROGRESS (practice)
+================================================================ */
+function saveProgress() {
+  localStorage.setItem('vb2_exam', JSON.stringify({
+    questions, current, userAnswers, grades,
+    totalDone, totalRight, totalWrong
+  }));
+}
+
 function loadProgress() {
-  const data = localStorage.getItem("vb2_exam");
-  if (!data) return false;
-
+  const raw = localStorage.getItem('vb2_exam');
+  if (!raw) return false;
   try {
-    const parsed = JSON.parse(data);
-
-    questions   = parsed.questions || [];
-    current     = parsed.current || 0;
-    userAnswers = parsed.userAnswers || [];
-    grades      = parsed.grades || [];
-    totalDone   = parsed.totalDone || 0;
-    totalRight  = parsed.totalRight || 0;
-    totalWrong  = parsed.totalWrong || 0;
-
-    normalizeProgressArrays();
+    const p = JSON.parse(raw);
+    // Only restore if it's practice data (not exam data which has different shape)
+    if (p.examQuestions) return false; // skip exam data
+    questions   = p.questions   || [];
+    current     = p.current     || 0;
+    userAnswers = p.userAnswers || [];
+    grades      = p.grades      || [];
+    totalDone   = p.totalDone   || 0;
+    totalRight  = p.totalRight  || 0;
+    totalWrong  = p.totalWrong  || 0;
+    normalizeArrays();
     recomputeTotals();
     return true;
-  } catch {
-    return false;
-  }
+  } catch { return false; }
 }
 
-function normalizeProgressArrays() {
+function normalizeArrays() {
   if (!Array.isArray(userAnswers)) userAnswers = [];
-  if (!Array.isArray(grades)) grades = [];
-
+  if (!Array.isArray(grades))      grades = [];
   if (questions.length) {
-    if (userAnswers.length !== questions.length) {
-      const nextAnswers = Array(questions.length).fill(-1);
-      for (let i = 0; i < Math.min(userAnswers.length, nextAnswers.length); i++) {
-        nextAnswers[i] = userAnswers[i] ?? -1;
-      }
-      userAnswers = nextAnswers;
-    }
-
-    if (grades.length !== questions.length) {
-      const nextGrades = Array(questions.length).fill(null);
-      for (let i = 0; i < Math.min(grades.length, nextGrades.length); i++) {
-        nextGrades[i] = grades[i] ?? null;
-      }
-      grades = nextGrades;
-    }
+    if (userAnswers.length !== questions.length)
+      userAnswers = Array(questions.length).fill(-1).map((v,i) => userAnswers[i] ?? -1);
+    if (grades.length !== questions.length)
+      grades = Array(questions.length).fill(null).map((v,i) => grades[i] ?? null);
   }
 }
 
 function recomputeTotals() {
-  totalDone = 0;
-  totalRight = 0;
-  totalWrong = 0;
-
+  totalDone = totalRight = totalWrong = 0;
   for (const g of grades) {
     if (g !== true && g !== false) continue;
     totalDone++;
-    if (g === true) totalRight++;
-    else totalWrong++;
+    if (g === true) totalRight++; else totalWrong++;
   }
 }
+
 /* ================================================================
    LOAD DATA
 ================================================================ */
 async function loadData() {
   const type = document.getElementById('type').value;
+  const diff = document.getElementById('diff-filter').value;
   showSpinner();
 
   try {
-    const res = await fetch("data/" + type + '.json');
+    const res = await fetch('data/' + type + '.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    questions = await res.json();
-    questions = shuffleArr(questions);
-    current   = 0;
-    answered  = false;
-    selectedIdx = -1;
-    solTab    = 'giai';
+    let data = await res.json();
+
+    // Filter by difficulty
+    if (diff !== 'all') {
+      data = data.filter(q => String(q.difficulty) === diff);
+      if (!data.length) {
+        showError('Không có câu nào ở mức độ <b>' + ({'1':'Dễ','2':'Trung bình','3':'Khó'}[diff]) + '</b> cho chủ đề này.');
+        return;
+      }
+    }
+
+    questions   = shuffleArr(data);
+    current     = 0; answered = false; selectedIdx = -1; solTab = 'giai';
     userAnswers = Array(questions.length).fill(-1);
-    grades = Array(questions.length).fill(null);
-    normalizeProgressArrays();
-    recomputeTotals();
+    grades      = Array(questions.length).fill(null);
+    totalDone = totalRight = totalWrong = 0;
     saveProgress();
     renderQ();
   } catch(e) {
-    showError('Không tải được file <b>' + type + '.json</b>.<br>Hãy chắc chắn các file JSON nằm cùng thư mục với HTML và mở qua web server (Live Server, Python http.server…).');
+    showError('Không tải được file <b>' + type + '.json</b>.<br>Hãy mở qua web server (Live Server hoặc <code>python -m http.server</code>).');
   }
 }
 
@@ -121,38 +136,30 @@ async function loadData() {
 ================================================================ */
 function renderQ() {
   if (!questions.length) { showError('Không có câu hỏi.'); return; }
+  normalizeArrays(); recomputeTotals();
 
-  normalizeProgressArrays();
-  recomputeTotals();
-
-  const q       = questions[current];
-  solTab        = 'giai';
-  selectedIdx   = userAnswers[current] ?? -1;
-  answered      = grades[current] === true || grades[current] === false;
+  const q    = questions[current];
+  solTab     = 'giai';
+  selectedIdx = userAnswers[current] ?? -1;
+  answered   = grades[current] === true || grades[current] === false;
   updateStats();
 
-  /* ── build options HTML ── */
-  /* Lưu đáp án vào dataset thay vì truyền qua onclick string để tránh lỗi escape */
   const optsHtml = q.options.map((opt, i) => `
-    <button class="opt-btn" id="opt-${i}" data-idx="${i}" onclick="pick(${i})" aria-label="Đáp án ${LETTERS[i]}">
+    <button class="opt-btn" id="opt-${i}" data-idx="${i}" onclick="pick(${i})">
       <div class="opt-letter">${LETTERS[i]}</div>
       <div class="opt-text" id="otext-${i}">${opt}</div>
     </button>`).join('');
 
-  /* ── matrix rendering (LaTeX) ── */
   const matrixHtml = q.matrix ? renderMatrix(q.matrix) : '';
-
-  /* ── question text ── */
-  const qText = q.question + (matrixHtml ? '<div style="margin:12px 0;">' + matrixHtml + '</div>' : '');
-
-  /* ── type badge ── */
-  const typeLabel = { det:'Định thức 2×2', det3:'Định thức 3×3', derivative:'Đạo hàm', limit:'Giới hạn', integral:'Tích phân' };
-  const badge = typeLabel[q.type] || q.type || '';
+  const qText = q.question + (matrixHtml ? '<div style="margin:12px 0">' + matrixHtml + '</div>' : '');
+  const diffBadge = q.difficulty ? `<span class="diff-badge ${DIFF_CLASS[q.difficulty]}">${DIFF_LABEL[q.difficulty]}</span>` : '';
+  const typeBadge = q.type ? `<span class="type-badge">${q.type}</span>` : '';
 
   document.getElementById('q-card').innerHTML = `
     <div class="q-meta">
       <span class="badge">Câu ${current + 1}</span>
-      ${badge ? `<span class="type-badge">${badge}</span>` : ''}
+      ${typeBadge}
+      ${diffBadge}
     </div>
     <div class="q-body">
       <div class="q-text" id="qtext">${qText}</div>
@@ -160,90 +167,78 @@ function renderQ() {
       <div id="res-area"></div>
       <button class="btn" style="margin-top:14px;width:100%;" onclick="showAnswer()">Xem đáp án</button>
     </div>
-    <div id="sol-wrap" style="display:none;">
+    <div id="sol-wrap" style="display:none">
       <div class="sol-wrap">
         <div class="sol-tabs">
-          <button class="sol-tab active" data-t="giai" onclick="switchTab('giai')">Giải nhanh</button>
-          <button class="sol-tab"        data-t="day"  onclick="switchTab('day')">Giải chi tiết</button>
-          <button class="sol-tab"        data-t="nhanh"onclick="switchTab('nhanh')">💡 Mẹo</button>
-          <button class="sol-tab"        data-t="casio"onclick="switchTab('casio')">🖩 CASIO</button>
+          <button class="sol-tab active" data-t="giai"  onclick="switchTab('giai')">Giải nhanh</button>
+          <button class="sol-tab"        data-t="day"   onclick="switchTab('day')">Giải chi tiết</button>
+          <button class="sol-tab"        data-t="nhanh" onclick="switchTab('nhanh')">💡 Mẹo</button>
+          <button class="sol-tab"        data-t="casio" onclick="switchTab('casio')">🖩 CASIO</button>
         </div>
         <div class="sol-content" id="sol-content">${getSolHtml('giai')}</div>
       </div>
     </div>`;
 
-  if (selectedIdx !== -1) {
-    const btn = document.getElementById('opt-' + selectedIdx);
-    if (btn) btn.classList.add('selected');
-  }
-
+  if (selectedIdx !== -1) document.getElementById('opt-' + selectedIdx)?.classList.add('selected');
   if (answered) showAnswer(true);
-  typeset();
+  typeset('q-card');
 }
 
-/* ================================================================
-   RENDER MATRIX — dùng LaTeX pmatrix thay vì HTML table
-================================================================ */
 function renderMatrix(matrix) {
-  let rows = matrix.map(row => row.join(' & ')).join(' \\\\ ');
+  const rows = matrix.map(r => r.join(' & ')).join(' \\\\ ');
   return '\\[\\begin{pmatrix}' + rows + '\\end{pmatrix}\\]';
 }
 
 /* ================================================================
-   PICK ANSWER
+   PICK & SHOW ANSWER
 ================================================================ */
 function pick(idx) {
   if (grades[current] === true || grades[current] === false) return;
   selectedIdx = idx;
-  userAnswers[current] = idx; // ✅ lưu
-
-  document.querySelectorAll('.opt-btn').forEach(b => {
-    b.classList.remove('selected');
-  });
-  document.getElementById('opt-' + idx).classList.add('selected');
-
-  saveProgress(); // ✅ lưu localStorage
+  userAnswers[current] = idx;
+  document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  document.getElementById('opt-' + idx)?.classList.add('selected');
+  saveProgress();
 }
 
-/* ================================================================
-   SHOW ANSWER
-================================================================ */
 function showAnswer(renderOnly = false) {
   answered = true;
+  const q = questions[current];
+  const correctIdx = q.options.indexOf(q.correct);
+  const isRight = selectedIdx !== -1 && q.options[selectedIdx] === q.correct;
 
-  const q       = questions[current];
-  const correct = q.correct;
-
-  /* Tìm index đáp án đúng */
-  const correctIdx = q.options.indexOf(correct);
-
-  /* Nếu người dùng chưa chọn → coi như sai */
-  const isRight = selectedIdx !== -1 && q.options[selectedIdx] === correct;
-  if (isRight) totalRight++; else totalWrong++;
+  // Only count once
+  if (grades[current] === null) {
+    grades[current] = isRight;
+    if (isRight) totalRight++; else totalWrong++;
+    totalDone++;
+    saveProgress();
+  }
   updateStats();
 
-  /* Màu sắc các nút */
   q.options.forEach((_, i) => {
     const btn = document.getElementById('opt-' + i);
+    if (!btn) return;
     btn.disabled = true;
-    if (i === correctIdx) {
+    if (i === correctIdx)
       btn.classList.add(selectedIdx === correctIdx ? 'correct' : 'show-correct');
-    } else if (i === selectedIdx && !isRight) {
+    else if (i === selectedIdx && !isRight)
       btn.classList.add('wrong');
-    }
   });
 
-  /* Result badge */
   document.getElementById('res-area').innerHTML = `
     <div class="result-badge ${isRight ? 'correct' : 'wrong'}">
       <span class="result-icon">${isRight ? '✓' : '✗'}</span>
-      <span>${isRight ? 'Chính xác!' : (selectedIdx === -1 ? 'Bạn chưa chọn đáp án — đáp án đúng: ' + correct : 'Sai rồi — Đáp án đúng: ' + correct)}</span>
+      <span>${isRight
+        ? 'Chính xác!'
+        : (selectedIdx === -1
+          ? 'Bạn chưa chọn — đáp án đúng: ' + q.correct
+          : 'Sai rồi — Đáp án đúng: ' + q.correct)}</span>
     </div>`;
 
-  /* Hiện solution */
   document.getElementById('sol-wrap').style.display = 'block';
   renderSolContent();
-  typeset();
+  typeset('q-card');
 }
 
 /* ================================================================
@@ -251,11 +246,9 @@ function showAnswer(renderOnly = false) {
 ================================================================ */
 function switchTab(tab) {
   solTab = tab;
-  document.querySelectorAll('.sol-tab').forEach(b => {
-    b.classList.toggle('active', b.dataset.t === tab);
-  });
+  document.querySelectorAll('.sol-tab').forEach(b => b.classList.toggle('active', b.dataset.t === tab));
   renderSolContent();
-  typeset();
+  typeset('sol-content');
 }
 
 function renderSolContent() {
@@ -266,66 +259,56 @@ function renderSolContent() {
 function getSolHtml(tab) {
   const q = questions[current];
   if (!q) return '';
-
-  if (tab === 'giai')  return '<b>Giải nhanh:</b> ' + (q.quick    || '—');
-  if (tab === 'day')   return '<b>Lời giải:</b><br>' + (q.solution || '—');
-  if (tab === 'nhanh') return '<b>💡 Mẹo nhớ:</b><br>' + (q.quick || '—');
-  if (tab === 'casio') return `
-    <div class="casio-box">🖩 CASIO fx-580VNX
-──────────────────
-${q.casio || 'Không có hướng dẫn CASIO cho câu này.'}</div>`;
+  if (tab === 'giai')  return '<b>Giải nhanh:</b> '     + (q.quick    || '—');
+  if (tab === 'day')   return '<b>Lời giải:</b><br>'     + (q.solution || '—');
+  if (tab === 'nhanh') return '<b>💡 Mẹo nhớ:</b><br>'  + (q.quick    || '—');
+  if (tab === 'casio') return `<div class="casio-box">🖩 CASIO fx-580VNX\n──────────────────\n${q.casio || 'Không có hướng dẫn CASIO.'}</div>`;
   return '';
 }
 
 /* ================================================================
-   NAV
+   NAVIGATION
 ================================================================ */
 function goNext() {
   if (!questions.length) return;
   current = (current + 1) % questions.length;
-  saveProgress();
-  renderQ();
+  saveProgress(); renderQ();
 }
-
 function goPrev() {
   if (!questions.length) return;
   current = (current - 1 + questions.length) % questions.length;
-  saveProgress();
-  renderQ();;
+  saveProgress(); renderQ();
 }
-
 function shuffle() {
   if (!questions.length) return;
   questions = shuffleArr(questions);
-  current = 0; answered = false; selectedIdx = -1;
-  renderQ();
+  current = 0; answered = false; selectedIdx = -1; renderQ();
 }
 function resetData() {
-  localStorage.removeItem("vb2_exam");
+  localStorage.removeItem('vb2_exam');
   location.reload();
 }
+
 /* ================================================================
-   STATS & PROGRESS
+   STATS
 ================================================================ */
 function updateStats() {
   const total = questions.length;
-  document.getElementById('s-cur').textContent = total ? (current + 1) + ' / ' + total : '—';
-  document.getElementById('s-tot').textContent = totalDone;
-  document.getElementById('s-rig').textContent = totalRight;
-  document.getElementById('s-wro').textContent = totalWrong;
-  document.getElementById('nav-info').textContent =
-    total ? 'Câu ' + (current+1) + ' trong số ' + total + ' câu' : '—';
-
-  const pct = total ? ((current) / total * 100).toFixed(0) : 0;
+  document.getElementById('s-cur').textContent  = total ? (current+1) + ' / ' + total : '—';
+  document.getElementById('s-tot').textContent  = totalDone;
+  document.getElementById('s-rig').textContent  = totalRight;
+  document.getElementById('s-wro').textContent  = totalWrong;
+  document.getElementById('nav-info').textContent = total ? 'Câu ' + (current+1) + ' / ' + total : '—';
+  const pct = total ? (current / total * 100).toFixed(0) : 0;
   document.getElementById('prog').style.width = pct + '%';
 }
 
 /* ================================================================
-   MATHJAX — re-typeset chỉ phần thay đổi
+   MATHJAX
 ================================================================ */
-function typeset() {
+function typeset(containerId) {
   if (!window.MathJax || !MathJax.typesetPromise) return;
-  const el = document.getElementById('q-card');
+  const el = containerId ? document.getElementById(containerId) : document.body;
   if (el) MathJax.typesetPromise([el]).catch(() => {});
 }
 
@@ -333,20 +316,12 @@ function typeset() {
    SPINNER / ERROR
 ================================================================ */
 function showSpinner() {
-  document.getElementById('q-card').innerHTML = `
-    <div class="center-box">
-      <div class="spinner"></div>
-      <p>Đang tải dữ liệu...</p>
-    </div>`;
+  document.getElementById('q-card').innerHTML =
+    '<div class="center-box"><div class="spinner"></div><p>Đang tải dữ liệu...</p></div>';
 }
-
 function showError(msg) {
-  document.getElementById('q-card').innerHTML = `
-    <div class="center-box">
-      <p style="font-size:32px; margin-bottom:10px;">⚠️</p>
-      <p style="color:#dc2626; font-weight:600; margin-bottom:8px;">Không tải được dữ liệu</p>
-      <p style="color:#6b7090; font-size:13px;">${msg}</p>
-    </div>`;
+  document.getElementById('q-card').innerHTML =
+    `<div class="center-box"><p style="font-size:32px;margin-bottom:10px">⚠️</p><p style="color:#dc2626;font-weight:600;margin-bottom:8px">Không tải được dữ liệu</p><p style="color:#6b7090;font-size:13px">${msg}</p></div>`;
 }
 
 /* ================================================================
@@ -354,21 +329,25 @@ function showError(msg) {
 ================================================================ */
 function shuffleArr(arr) {
   const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+  for (let i = a.length-1; i > 0; i--) {
+    const j = Math.floor(Math.random()*(i+1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
 }
 
 /* ================================================================
-   KEYBOARD SHORTCUTS
+   KEYBOARD SHORTCUTS (practice)
 ================================================================ */
 document.addEventListener('keydown', e => {
+  // Only active on practice screen
+  if (!document.getElementById('screen-practice').classList.contains('active')) return;
   if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
-  const map = { ArrowRight:'next', n:'next', ArrowLeft:'prev', p:'prev',
-                a:'0', b:'1', c:'2', d:'3', A:'0', B:'1', C:'2', D:'3',
-                Enter:'answer', ' ':'answer' };
+  const map = {
+    ArrowRight:'next', n:'next', ArrowLeft:'prev', p:'prev',
+    a:'0', b:'1', c:'2', d:'3', A:'0', B:'1', C:'2', D:'3',
+    Enter:'answer', ' ':'answer'
+  };
   const act = map[e.key];
   if (!act) return;
   e.preventDefault();
@@ -377,37 +356,31 @@ document.addEventListener('keydown', e => {
   else if (act === 'answer') showAnswer();
   else pick(parseInt(act));
 });
-// countdownt
+
+/* ================================================================
+   COUNTDOWN
+================================================================ */
 function updateCountdown() {
-  const examDate = new Date("2026-09-20T00:00:00");
-  const now = new Date();
-
-  const diff = examDate - now;
-
-  if (diff <= 0) {
-    document.getElementById("countdown").innerHTML =
-      "🔥 Hôm nay thi rồi!";
-    return;
-  }
-
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
-
-  document.getElementById("countdown").innerHTML =
-    `⏳ Còn <b>${days}</b> ngày ${hours}h ${minutes}m ${seconds}s đến kỳ thi VB2`;
+  const examDate = new Date('2026-09-20T00:00:00');
+  const diff = examDate - new Date();
+  const el = document.getElementById('countdown');
+  if (!el) return;
+  if (diff <= 0) { el.innerHTML = '🔥 Hôm nay thi rồi! Chúc bạn may mắn!'; return; }
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+  el.innerHTML = `⏳ Còn <b>${d}</b> ngày ${h}h ${m}m ${s}s đến kỳ thi VB2`;
 }
-
-// chạy ngay + lặp mỗi giây
 updateCountdown();
 setInterval(updateCountdown, 1000);
-/* ── INIT ── */
+
+/* ================================================================
+   INIT
+================================================================ */
 window.onload = () => {
+  showScreen('screen-practice');
   const ok = loadProgress();
-  if (ok && questions.length) {
-    renderQ();
-  } else {
-    loadData();
-  }
+  if (ok && questions.length) renderQ();
+  // else: wait for user to click Load
 };
