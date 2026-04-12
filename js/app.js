@@ -1,6 +1,9 @@
 /* ================================================================
-   app.js  — PRACTICE MODE
-   (original code + difficulty filter + mode switch integration)
+   app.js  — PRACTICE MODE  v2
+   ✅ Dark mode (toggle + system preference + localStorage)
+   ✅ Debounce MathJax (dùng chung với exam.js)
+   ✅ Random đáp án (chống học tủ)
+   ✅ Lưu ngay khi chọn
 ================================================================ */
 
 /* ── STATE ── */
@@ -10,28 +13,56 @@ let current     = 0;
 let answered    = false;
 let selectedIdx = -1;
 let solTab      = 'giai';
+let totalDone   = 0;
+let totalRight  = 0;
+let totalWrong  = 0;
+let grades      = [];
 
-let totalDone  = 0;
-let totalRight = 0;
-let totalWrong = 0;
-let grades     = [];
-
-const LETTERS = ['A','B','C','D','E','F'];
+const LETTERS    = ['A','B','C','D','E','F'];
 const DIFF_LABEL = { 1:'Dễ', 2:'Trung bình', 3:'Khó' };
 const DIFF_CLASS = { 1:'diff-1', 2:'diff-2', 3:'diff-3' };
+
+/* ── MATHJAX DEBOUNCE — định nghĩa ở đây, dùng chung cho exam.js ── */
+let _mjPending = null;
+function typesetDebounced(el, delay) {
+  delay = delay || 120;
+  if (_mjPending) clearTimeout(_mjPending);
+  _mjPending = setTimeout(() => {
+    if (!window.MathJax || !MathJax.typesetPromise) return;
+    MathJax.typesetPromise([el]).catch(() => {});
+  }, delay);
+}
+
+/* ================================================================
+   DARK MODE
+================================================================ */
+function applyTheme(dark) {
+  document.documentElement.classList.toggle('dark', dark);
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = dark ? '☀️' : '🌙';
+  localStorage.setItem('vb2_theme', dark ? 'dark' : 'light');
+}
+
+function toggleTheme() {
+  applyTheme(!document.documentElement.classList.contains('dark'));
+}
+
+function initTheme() {
+  const saved = localStorage.getItem('vb2_theme');
+  if (saved) { applyTheme(saved === 'dark'); return; }
+  applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+}
 
 /* ================================================================
    MODE SWITCH
 ================================================================ */
 function switchMode(mode) {
   if (mode === 'exam') {
-    // Delegate to exam.js
     document.getElementById('btn-mode-practice').classList.remove('active');
     document.getElementById('btn-mode-exam').classList.add('active');
-    initExamMode();
+    initExamMode(); // defined in exam.js
     return;
   }
-  // Practice mode
   document.getElementById('btn-mode-practice').classList.add('active');
   document.getElementById('btn-mode-exam').classList.remove('active');
   showScreen('screen-practice');
@@ -51,19 +82,19 @@ function showScreen(id) {
    SAVE / LOAD PROGRESS (practice)
 ================================================================ */
 function saveProgress() {
-  localStorage.setItem('vb2_exam', JSON.stringify({
-    questions, current, userAnswers, grades,
-    totalDone, totalRight, totalWrong
-  }));
+  try {
+    localStorage.setItem('vb2_practice', JSON.stringify({
+      questions, current, userAnswers, grades,
+      totalDone, totalRight, totalWrong
+    }));
+  } catch(e) {}
 }
 
 function loadProgress() {
-  const raw = localStorage.getItem('vb2_exam');
+  const raw = localStorage.getItem('vb2_practice');
   if (!raw) return false;
   try {
     const p = JSON.parse(raw);
-    // Only restore if it's practice data (not exam data which has different shape)
-    if (p.examQuestions) return false; // skip exam data
     questions   = p.questions   || [];
     current     = p.current     || 0;
     userAnswers = p.userAnswers || [];
@@ -73,19 +104,18 @@ function loadProgress() {
     totalWrong  = p.totalWrong  || 0;
     normalizeArrays();
     recomputeTotals();
-    return true;
+    return questions.length > 0;
   } catch { return false; }
 }
 
 function normalizeArrays() {
   if (!Array.isArray(userAnswers)) userAnswers = [];
   if (!Array.isArray(grades))      grades = [];
-  if (questions.length) {
-    if (userAnswers.length !== questions.length)
-      userAnswers = Array(questions.length).fill(-1).map((v,i) => userAnswers[i] ?? -1);
-    if (grades.length !== questions.length)
-      grades = Array(questions.length).fill(null).map((v,i) => grades[i] ?? null);
-  }
+  if (!questions.length) return;
+  if (userAnswers.length !== questions.length)
+    userAnswers = Array(questions.length).fill(-1).map((v,i) => userAnswers[i] ?? -1);
+  if (grades.length !== questions.length)
+    grades = Array(questions.length).fill(null).map((v,i) => grades[i] ?? null);
 }
 
 function recomputeTotals() {
@@ -104,22 +134,21 @@ async function loadData() {
   const type = document.getElementById('type').value;
   const diff = document.getElementById('diff-filter').value;
   showSpinner();
-
   try {
     const res = await fetch('data/' + type + '.json');
     if (!res.ok) throw new Error('HTTP ' + res.status);
     let data = await res.json();
 
-    // Filter by difficulty
     if (diff !== 'all') {
       data = data.filter(q => String(q.difficulty) === diff);
       if (!data.length) {
-        showError('Không có câu nào ở mức độ <b>' + ({'1':'Dễ','2':'Trung bình','3':'Khó'}[diff]) + '</b> cho chủ đề này.');
+        showError('Không có câu nào ở mức <b>' + ({1:'Dễ',2:'Trung bình',3:'Khó'}[diff]) + '</b>.');
         return;
       }
     }
 
-    questions   = shuffleArr(data);
+    // Random đáp án ngay khi load
+    questions   = shuffleArr(data).map(q => shuffleOptionsForPractice(q));
     current     = 0; answered = false; selectedIdx = -1; solTab = 'giai';
     userAnswers = Array(questions.length).fill(-1);
     grades      = Array(questions.length).fill(null);
@@ -127,42 +156,57 @@ async function loadData() {
     saveProgress();
     renderQ();
   } catch(e) {
-    showError('Không tải được file <b>' + type + '.json</b>.<br>Hãy mở qua web server (Live Server hoặc <code>python -m http.server</code>).');
+    showError('Không tải được <b>' + type + '.json</b>.<br>Hãy mở qua web server (Live Server / <code>python -m http.server</code>).');
   }
 }
 
+// Giống shuffleOptions trong exam.js nhưng cho practice
+function shuffleOptionsForPractice(q) {
+  if (!q.options || q.options.length === 0) return q;
+  const orig    = [...q.options];
+  const correct = q.correct;
+  const indices = shuffleArr([0,1,2,3].slice(0, orig.length));
+  const shuffled = indices.map(i => orig[i]);
+  return { ...q, options: shuffled }; // ghi đè options, q.correct vẫn là chuỗi
+}
+
 /* ================================================================
-   RENDER QUESTION
+   RENDER QUESTION (lazy — chỉ câu hiện tại)
 ================================================================ */
 function renderQ() {
   if (!questions.length) { showError('Không có câu hỏi.'); return; }
   normalizeArrays(); recomputeTotals();
 
-  const q    = questions[current];
-  solTab     = 'giai';
+  const q     = questions[current];
+  solTab      = 'giai';
   selectedIdx = userAnswers[current] ?? -1;
-  answered   = grades[current] === true || grades[current] === false;
+  answered    = grades[current] === true || grades[current] === false;
   updateStats();
 
+  const matHtml = q.matrix
+    ? '<div style="margin:12px 0">\\[\\begin{pmatrix}'
+      + q.matrix.map(r => r.join(' & ')).join(' \\\\ ')
+      + '\\end{pmatrix}\\]</div>'
+    : '';
+
   const optsHtml = q.options.map((opt, i) => `
-    <button class="opt-btn" id="opt-${i}" data-idx="${i}" onclick="pick(${i})">
+    <button class="opt-btn${selectedIdx === i ? ' selected' : ''}" id="opt-${i}" onclick="pick(${i})">
       <div class="opt-letter">${LETTERS[i]}</div>
       <div class="opt-text" id="otext-${i}">${opt}</div>
     </button>`).join('');
 
-  const matrixHtml = q.matrix ? renderMatrix(q.matrix) : '';
-  const qText = q.question + (matrixHtml ? '<div style="margin:12px 0">' + matrixHtml + '</div>' : '');
-  const diffBadge = q.difficulty ? `<span class="diff-badge ${DIFF_CLASS[q.difficulty]}">${DIFF_LABEL[q.difficulty]}</span>` : '';
+  const diffBadge = q.difficulty
+    ? `<span class="diff-badge ${DIFF_CLASS[q.difficulty]}">${DIFF_LABEL[q.difficulty]}</span>` : '';
   const typeBadge = q.type ? `<span class="type-badge">${q.type}</span>` : '';
 
-  document.getElementById('q-card').innerHTML = `
+  const card = document.getElementById('q-card');
+  card.innerHTML = `
     <div class="q-meta">
       <span class="badge">Câu ${current + 1}</span>
-      ${typeBadge}
-      ${diffBadge}
+      ${typeBadge}${diffBadge}
     </div>
     <div class="q-body">
-      <div class="q-text" id="qtext">${qText}</div>
+      <div class="q-text" id="qtext">${q.question}${matHtml}</div>
       <div class="options" id="opts">${optsHtml}</div>
       <div id="res-area"></div>
       <button class="btn" style="margin-top:14px;width:100%;" onclick="showAnswer()">Xem đáp án</button>
@@ -179,35 +223,32 @@ function renderQ() {
       </div>
     </div>`;
 
-  if (selectedIdx !== -1) document.getElementById('opt-' + selectedIdx)?.classList.add('selected');
-  if (answered) showAnswer(true);
-  typeset('q-card');
-}
-
-function renderMatrix(matrix) {
-  const rows = matrix.map(r => r.join(' & ')).join(' \\\\ ');
-  return '\\[\\begin{pmatrix}' + rows + '\\end{pmatrix}\\]';
+  if (answered) _renderAnswerUI();
+  typesetDebounced(card, 100);
 }
 
 /* ================================================================
-   PICK & SHOW ANSWER
+   PICK ANSWER — lưu NGAY
 ================================================================ */
 function pick(idx) {
   if (grades[current] === true || grades[current] === false) return;
   selectedIdx = idx;
   userAnswers[current] = idx;
-  document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
-  document.getElementById('opt-' + idx)?.classList.add('selected');
-  saveProgress();
+  document.querySelectorAll('.opt-btn').forEach((b,i) =>
+    b.classList.toggle('selected', i === idx));
+  saveProgress(); // lưu ngay
 }
 
-function showAnswer(renderOnly = false) {
+function showAnswer() {
+  if (answered && grades[current] !== null) {
+    // Đã xem rồi, chỉ render lại UI (khi goNext/goPrev quay lại)
+    _renderAnswerUI();
+    return;
+  }
   answered = true;
-  const q = questions[current];
-  const correctIdx = q.options.indexOf(q.correct);
-  const isRight = selectedIdx !== -1 && q.options[selectedIdx] === q.correct;
+  const q          = questions[current];
+  const isRight    = selectedIdx !== -1 && q.options[selectedIdx] === q.correct;
 
-  // Only count once
   if (grades[current] === null) {
     grades[current] = isRight;
     if (isRight) totalRight++; else totalWrong++;
@@ -215,30 +256,40 @@ function showAnswer(renderOnly = false) {
     saveProgress();
   }
   updateStats();
+  _renderAnswerUI();
+  typesetDebounced(document.getElementById('q-card'), 80);
+}
+
+function _renderAnswerUI() {
+  const q          = questions[current];
+  const correctIdx = q.options.indexOf(q.correct);
+  const isRight    = selectedIdx !== -1 && q.options[selectedIdx] === q.correct;
 
   q.options.forEach((_, i) => {
     const btn = document.getElementById('opt-' + i);
     if (!btn) return;
     btn.disabled = true;
+    btn.classList.remove('selected', 'correct', 'wrong', 'show-correct');
     if (i === correctIdx)
       btn.classList.add(selectedIdx === correctIdx ? 'correct' : 'show-correct');
     else if (i === selectedIdx && !isRight)
       btn.classList.add('wrong');
+    else if (i === selectedIdx)
+      btn.classList.add('selected');
   });
 
-  document.getElementById('res-area').innerHTML = `
+  const resArea = document.getElementById('res-area');
+  if (resArea) resArea.innerHTML = `
     <div class="result-badge ${isRight ? 'correct' : 'wrong'}">
       <span class="result-icon">${isRight ? '✓' : '✗'}</span>
-      <span>${isRight
-        ? 'Chính xác!'
-        : (selectedIdx === -1
-          ? 'Bạn chưa chọn — đáp án đúng: ' + q.correct
-          : 'Sai rồi — Đáp án đúng: ' + q.correct)}</span>
+      <span>${isRight ? 'Chính xác!' :
+        (selectedIdx === -1 ? 'Chưa chọn — đáp án: ' + q.correct
+                            : 'Sai rồi — Đáp án đúng: ' + q.correct)}</span>
     </div>`;
 
-  document.getElementById('sol-wrap').style.display = 'block';
+  const solWrap = document.getElementById('sol-wrap');
+  if (solWrap) solWrap.style.display = 'block';
   renderSolContent();
-  typeset('q-card');
 }
 
 /* ================================================================
@@ -248,7 +299,7 @@ function switchTab(tab) {
   solTab = tab;
   document.querySelectorAll('.sol-tab').forEach(b => b.classList.toggle('active', b.dataset.t === tab));
   renderSolContent();
-  typeset('sol-content');
+  typesetDebounced(document.getElementById('sol-content'), 80);
 }
 
 function renderSolContent() {
@@ -259,9 +310,9 @@ function renderSolContent() {
 function getSolHtml(tab) {
   const q = questions[current];
   if (!q) return '';
-  if (tab === 'giai')  return '<b>Giải nhanh:</b> '     + (q.quick    || '—');
-  if (tab === 'day')   return '<b>Lời giải:</b><br>'     + (q.solution || '—');
-  if (tab === 'nhanh') return '<b>💡 Mẹo nhớ:</b><br>'  + (q.quick    || '—');
+  if (tab === 'giai')  return '<b>Giải nhanh:</b> '    + (q.quick    || '—');
+  if (tab === 'day')   return '<b>Lời giải:</b><br>'    + (q.solution || '—');
+  if (tab === 'nhanh') return '<b>💡 Mẹo nhớ:</b><br>' + (q.quick    || '—');
   if (tab === 'casio') return `<div class="casio-box">🖩 CASIO fx-580VNX\n──────────────────\n${q.casio || 'Không có hướng dẫn CASIO.'}</div>`;
   return '';
 }
@@ -281,16 +332,31 @@ function goPrev() {
 }
 function shuffle() {
   if (!questions.length) return;
+  // 1. Đảo thứ tự câu hỏi
   questions = shuffleArr(questions);
-  current = 0; answered = false; selectedIdx = -1; renderQ();
+  // 2. Xáo lại đáp án trong mỗi câu (chống học tủ vị trí)
+  questions = questions.map(q => shuffleOptionsForPractice(q));
+  // 3. Reset TẤT CẢ trạng thái — bắt buộc vì userAnswers lưu theo index
+  //    Sau khi đảo câu, câu ở index 0 đã là câu khác → index cũ sẽ sai
+  current     = 0;
+  answered    = false;
+  selectedIdx = -1;
+  solTab      = 'giai';
+  userAnswers = Array(questions.length).fill(-1);
+  grades      = Array(questions.length).fill(null);
+  totalDone   = 0;
+  totalRight  = 0;
+  totalWrong  = 0;
+  saveProgress();
+  renderQ();
 }
 function resetData() {
-  localStorage.removeItem('vb2_exam');
+  localStorage.removeItem('vb2_practice');
   location.reload();
 }
 
 /* ================================================================
-   STATS
+   STATS & PROGRESS
 ================================================================ */
 function updateStats() {
   const total = questions.length;
@@ -299,17 +365,7 @@ function updateStats() {
   document.getElementById('s-rig').textContent  = totalRight;
   document.getElementById('s-wro').textContent  = totalWrong;
   document.getElementById('nav-info').textContent = total ? 'Câu ' + (current+1) + ' / ' + total : '—';
-  const pct = total ? (current / total * 100).toFixed(0) : 0;
-  document.getElementById('prog').style.width = pct + '%';
-}
-
-/* ================================================================
-   MATHJAX
-================================================================ */
-function typeset(containerId) {
-  if (!window.MathJax || !MathJax.typesetPromise) return;
-  const el = containerId ? document.getElementById(containerId) : document.body;
-  if (el) MathJax.typesetPromise([el]).catch(() => {});
+  document.getElementById('prog').style.width = (total ? current / total * 100 : 0).toFixed(0) + '%';
 }
 
 /* ================================================================
@@ -321,7 +377,9 @@ function showSpinner() {
 }
 function showError(msg) {
   document.getElementById('q-card').innerHTML =
-    `<div class="center-box"><p style="font-size:32px;margin-bottom:10px">⚠️</p><p style="color:#dc2626;font-weight:600;margin-bottom:8px">Không tải được dữ liệu</p><p style="color:#6b7090;font-size:13px">${msg}</p></div>`;
+    `<div class="center-box"><p style="font-size:32px;margin-bottom:10px">⚠️</p>
+     <p style="color:var(--red);font-weight:600;margin-bottom:8px">Không tải được dữ liệu</p>
+     <p style="color:var(--muted);font-size:13px">${msg}</p></div>`;
 }
 
 /* ================================================================
@@ -331,27 +389,24 @@ function shuffleArr(arr) {
   const a = [...arr];
   for (let i = a.length-1; i > 0; i--) {
     const j = Math.floor(Math.random()*(i+1));
-    [a[i], a[j]] = [a[j], a[i]];
+    [a[i],a[j]] = [a[j],a[i]];
   }
   return a;
 }
 
 /* ================================================================
-   KEYBOARD SHORTCUTS (practice)
+   KEYBOARD — practice screen
 ================================================================ */
 document.addEventListener('keydown', e => {
-  // Only active on practice screen
   if (!document.getElementById('screen-practice').classList.contains('active')) return;
   if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
-  const map = {
-    ArrowRight:'next', n:'next', ArrowLeft:'prev', p:'prev',
-    a:'0', b:'1', c:'2', d:'3', A:'0', B:'1', C:'2', D:'3',
-    Enter:'answer', ' ':'answer'
-  };
+  const map = { ArrowRight:'next', n:'next', ArrowLeft:'prev', p:'prev',
+                a:'0', b:'1', c:'2', d:'3', A:'0', B:'1', C:'2', D:'3',
+                Enter:'answer', ' ':'answer' };
   const act = map[e.key];
   if (!act) return;
   e.preventDefault();
-  if (act === 'next')   goNext();
+  if      (act === 'next')   goNext();
   else if (act === 'prev')   goPrev();
   else if (act === 'answer') showAnswer();
   else pick(parseInt(act));
@@ -361,15 +416,14 @@ document.addEventListener('keydown', e => {
    COUNTDOWN
 ================================================================ */
 function updateCountdown() {
-  const examDate = new Date('2026-09-20T00:00:00');
-  const diff = examDate - new Date();
+  const diff = new Date('2026-09-20T00:00:00') - new Date();
   const el = document.getElementById('countdown');
   if (!el) return;
   if (diff <= 0) { el.innerHTML = '🔥 Hôm nay thi rồi! Chúc bạn may mắn!'; return; }
   const d = Math.floor(diff / 86400000);
   const h = Math.floor((diff % 86400000) / 3600000);
-  const m = Math.floor((diff % 3600000) / 60000);
-  const s = Math.floor((diff % 60000) / 1000);
+  const m = Math.floor((diff % 3600000)  / 60000);
+  const s = Math.floor((diff % 60000)    / 1000);
   el.innerHTML = `⏳ Còn <b>${d}</b> ngày ${h}h ${m}m ${s}s đến kỳ thi VB2`;
 }
 updateCountdown();
@@ -379,8 +433,7 @@ setInterval(updateCountdown, 1000);
    INIT
 ================================================================ */
 window.onload = () => {
+  initTheme();
   showScreen('screen-practice');
-  const ok = loadProgress();
-  if (ok && questions.length) renderQ();
-  // else: wait for user to click Load
+  if (loadProgress() && questions.length) renderQ();
 };

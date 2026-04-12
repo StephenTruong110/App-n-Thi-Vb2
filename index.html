@@ -21,9 +21,12 @@ window.MathJax = {
 <div id="screen-practice" class="screen active">
 <div class="wrap">
   <div class="header">
-    <div class="header-badge">VB2CA1 2026</div>
+    <div class="header-top">
+      <div class="header-badge">VB2CA · 2026</div>
+      <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Chuyển giao diện tối/sáng">🌙</button>
+    </div>
     <h1>🎯 Luyện thi Toán Cao Cấp</h1>
-    <p>Luyện theo chủ đề hoặc thi thử 70 câu</p>
+    <p>Luyện theo chủ đề hoặc thi thử 70 câu như đề thật</p>
   </div>
   <div id="countdown">⏳ Đang tính...</div>
   <div class="mode-switch">
@@ -56,9 +59,9 @@ window.MathJax = {
   </div>
   <div class="stats">
     <div class="stat-card"><span class="stat-val s-current" id="s-cur">—</span><span class="stat-lbl">Câu hiện tại</span></div>
-    <div class="stat-card"><span class="stat-val s-total" id="s-tot">0</span><span class="stat-lbl">Đã làm</span></div>
-    <div class="stat-card"><span class="stat-val s-right" id="s-rig">0</span><span class="stat-lbl">✓ Đúng</span></div>
-    <div class="stat-card"><span class="stat-val s-wrong" id="s-wro">0</span><span class="stat-lbl">✗ Sai</span></div>
+    <div class="stat-card"><span class="stat-val s-total"   id="s-tot">0</span><span class="stat-lbl">Đã làm</span></div>
+    <div class="stat-card"><span class="stat-val s-right"   id="s-rig">0</span><span class="stat-lbl">✓ Đúng</span></div>
+    <div class="stat-card"><span class="stat-val s-wrong"   id="s-wro">0</span><span class="stat-lbl">✗ Sai</span></div>
   </div>
   <div class="progress"><div class="progress-bar" id="prog" style="width:0%"></div></div>
   <div class="q-card" id="q-card">
@@ -77,7 +80,9 @@ window.MathJax = {
   <div class="exam-topbar">
     <div class="etb-left">
       <button class="btn-icon" onclick="askExitExam()" title="Thoát bài thi">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
       <div class="etb-info">
         <span class="etb-title">Đề thi thử VB2CA 2026</span>
@@ -95,7 +100,6 @@ window.MathJax = {
       <button class="btn-submit-exam" onclick="askSubmitExam()">Nộp bài</button>
     </div>
   </div>
-
   <div class="exam-body">
     <div class="exam-nav-panel">
       <div class="nav-panel-hdr">
@@ -109,7 +113,6 @@ window.MathJax = {
       </div>
       <div class="nav-grid" id="ex-nav-grid"></div>
     </div>
-
     <div class="exam-q-area" id="exam-q-area">
       <div class="center-box"><div class="spinner"></div><p>Đang tạo đề thi...</p></div>
     </div>
@@ -123,12 +126,14 @@ window.MathJax = {
 </div>
 </div>
 
-<!-- ═══ MODALS ═══ -->
+<!-- ═══════════ MODALS ═══════════ -->
+
+<!-- Submit -->
 <div class="overlay hidden" id="modal-submit">
   <div class="modal">
     <div class="modal-emoji">📋</div>
     <h3>Xác nhận nộp bài</h3>
-    <p>Bài thi của bạn sẽ được chấm ngay. Hành động này không thể hoàn tác.</p>
+    <p>Bài thi sẽ được chấm ngay. Hành động này không thể hoàn tác.</p>
     <div class="modal-stats">
       <div class="mstat ok"><b id="ms-done">0</b><small>Đã trả lời</small></div>
       <div class="mstat warn"><b id="ms-skip">70</b><small>Chưa làm</small></div>
@@ -141,6 +146,7 @@ window.MathJax = {
   </div>
 </div>
 
+<!-- Exit -->
 <div class="overlay hidden" id="modal-exit">
   <div class="modal">
     <div class="modal-emoji">💾</div>
@@ -153,17 +159,19 @@ window.MathJax = {
   </div>
 </div>
 
+<!-- Timeout -->
 <div class="overlay hidden" id="modal-timeout">
   <div class="modal">
     <div class="modal-emoji">⏰</div>
     <h3>Hết giờ!</h3>
-    <p>180 phút đã hết. Bài thi của bạn sẽ được chấm tự động ngay bây giờ.</p>
+    <p>180 phút đã hết. Bài thi sẽ được chấm tự động.</p>
     <div class="modal-btns">
       <button class="btn primary" onclick="doSubmitExam()">Xem kết quả</button>
     </div>
   </div>
 </div>
 
+<!-- Resume -->
 <div class="overlay hidden" id="modal-resume">
   <div class="modal">
     <div class="modal-emoji">⚡</div>
@@ -172,6 +180,34 @@ window.MathJax = {
     <div class="modal-btns">
       <button class="btn" onclick="startFreshExam()">Thi lại từ đầu</button>
       <button class="btn primary" onclick="resumeSavedExam()">Tiếp tục</button>
+    </div>
+  </div>
+</div>
+
+<!-- Retake / New exam (after results) -->
+<div class="overlay hidden" id="modal-retake">
+  <div class="modal">
+    <div class="modal-emoji">🔄</div>
+    <h3>Bạn muốn làm gì tiếp theo?</h3>
+    <p>Chọn cách bạn muốn luyện tiếp.</p>
+    <div class="retake-options">
+      <button class="retake-opt" onclick="retakeExam()">
+        <div class="ro-icon">🔁</div>
+        <div class="ro-text">
+          <b>Làm lại đề này</b>
+          <span>Cùng câu hỏi, đáp án xáo trộn lại, reset thời gian</span>
+        </div>
+      </button>
+      <button class="retake-opt" onclick="newExamFromBank()">
+        <div class="ro-icon">🎲</div>
+        <div class="ro-text">
+          <b>Tạo đề mới từ ngân hàng</b>
+          <span>70 câu mới được chọn ngẫu nhiên từ kho 550+ câu</span>
+        </div>
+      </button>
+    </div>
+    <div class="modal-btns" style="margin-top:8px">
+      <button class="btn" onclick="closeOverlay('modal-retake')">Hủy</button>
     </div>
   </div>
 </div>
