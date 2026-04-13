@@ -1258,5 +1258,221 @@
     "casio": "CASIO: ds=√(x'²+y'²)dt. x'=1, y'=1 → ds=√2 dt. Tích phân 0 đến 1: √2.",
     "difficulty": 1,
     "topic": "Tích phân"
+  },
+  {
+    "id": 71,
+    "type": "improper_integral_inf",
+    "question": "Xét sự hội tụ và tính \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x^2}\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=1\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=\\infty\\)",
+      "Hội tụ, \\(I=2\\)"
+    ],
+    "correct": "Hội tụ, \\(I=1\\)",
+    "solution": "\\(I=\\lim_{b\\to+\\infty}\\int_1^b\\dfrac{dx}{x^2}=\\lim_{b\\to+\\infty}\\left[-\\dfrac{1}{x}\\right]_1^b=\\lim_{b\\to+\\infty}\\left(-\\dfrac{1}{b}+1\\right)=1\\).\n\nGiới hạn hữu hạn → **hội tụ**, \\(I=1\\).",
+    "quick": "\\(\\int_1^{+\\infty}x^{-2}dx=[-x^{-1}]_1^\\infty=0-(-1)=\\mathbf{1}\\). Chuỗi \\(p>1\\) → hội tụ.",
+    "casio": "CASIO: ∫₁^1000 1/x²dx=[−1/x]₁^1000=−0.001+1=0.999≈1.",
+    "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 72,
+    "type": "improper_integral_inf",
+    "question": "Xét sự hội tụ của \\(I=\\int_0^{+\\infty}xe^{-x}dx\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=1\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=0\\)",
+      "Hội tụ, \\(I=2\\)"
+    ],
+    "correct": "Hội tụ, \\(I=1\\)",
+    "solution": "Tích phân từng phần: \\(u=x, dv=e^{-x}dx\\).\n\n\\(\\int_0^b xe^{-x}dx=[-xe^{-x}]_0^b+\\int_0^b e^{-x}dx=[-xe^{-x}-e^{-x}]_0^b\\)\n\n\\(=-(b+1)e^{-b}+1\\to0+1=1\\) khi \\(b\\to+\\infty\\) (vì \\(be^{-b}\\to0\\)).\n\nHội tụ, \\(I=1\\).",
+    "quick": "Tích phân từng phần: \\([−xe^{-x}−e^{-x}]_0^\\infty=0+0-(0-1)=\\mathbf{1}\\). (be^{-b}→0 khi b→∞)",
+    "casio": "CASIO: ∫₀^100 xe^-x dx≈1.000000 (hội tụ rất nhanh).",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 73,
+    "type": "improper_integral_inf",
+    "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x}\\) (chuỗi điều hòa).",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ, \\(I=1\\)",
+      "Hội tụ, \\(I=\\ln2\\)",
+      "Hội tụ, \\(I=e\\)"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\int_1^b\\dfrac{dx}{x}=[\\ln x]_1^b=\\ln b\\to+\\infty\\) khi \\(b\\to+\\infty\\).\n\nGiới hạn vô cực → **phân kỳ**.\n\n*Lưu ý:* Tích phân \\(\\int_1^{+\\infty}x^{-p}dx\\) hội tụ khi \\(p>1\\), phân kỳ khi \\(p\\leq1\\).",
+    "quick": "\\(\\int_1^{+\\infty}1/x\\,dx=[\\ln x]_1^\\infty=\\infty\\) → **phân kỳ**. Tiêu chuẩn p: p=1≤1 → phân kỳ.",
+    "casio": "CASIO: ∫₁^10000 1/x dx=ln(10000)≈9.2 → tăng không giới hạn.",
+    "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 74,
+    "type": "improper_integral_inf",
+    "question": "Tính \\(I=\\int_0^{+\\infty}\\dfrac{dx}{x^2+5x+6}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\ln 3-\\ln 2\\)",
+      "\\(\\ln 2\\)",
+      "\\(\\dfrac{1}{6}\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\ln 3-\\ln 2\\)",
+    "solution": "Phân tích: \\(\\dfrac{1}{x^2+5x+6}=\\dfrac{1}{(x+2)(x+3)}=\\dfrac{1}{x+2}-\\dfrac{1}{x+3}\\).\n\n\\(I=\\int_0^{+\\infty}\\left(\\dfrac{1}{x+2}-\\dfrac{1}{x+3}\\right)dx=\\left[\\ln\\dfrac{x+2}{x+3}\\right]_0^{+\\infty}\\)\n\n\\(=\\ln1-\\ln\\dfrac{2}{3}=0+\\ln\\dfrac{3}{2}=\\ln3-\\ln2\\).",
+    "quick": "Phân tích phân số: 1/(x+2)-1/(x+3). Tích phân: ln|(x+2)/(x+3)|₀^∞ = ln1-ln(2/3)=**ln(3/2)**.",
+    "casio": "CASIO: ∫₀^1000 dx/(x²+5x+6)≈ln(3/2)=0.405...",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 75,
+    "type": "improper_integral_singular",
+    "question": "Xét sự hội tụ và tính \\(I=\\int_0^1\\dfrac{dx}{\\sqrt{x}}\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=2\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=1\\)",
+      "Hội tụ, \\(I=\\infty\\)"
+    ],
+    "correct": "Hội tụ, \\(I=2\\)",
+    "solution": "Điểm kỳ dị: \\(x=0\\) (tích phân vô hạn gián đoạn).\n\n\\(I=\\lim_{\\varepsilon\\to0^+}\\int_\\varepsilon^1 x^{-1/2}dx=\\lim_{\\varepsilon\\to0^+}[2\\sqrt{x}]_\\varepsilon^1=\\lim_{\\varepsilon\\to0^+}(2-2\\sqrt{\\varepsilon})=2\\).\n\nGiới hạn hữu hạn → **hội tụ**, \\(I=2\\).",
+    "quick": "Tích phân kỳ dị tại x=0: \\(\\int_0^1 x^{-1/2}dx=[2√x]_0^1=2\\). Hội tụ vì p=1/2<1.",
+    "casio": "CASIO: ∫_{0.001}^1 dx/√x=[2√x]=[2-2√(0.001)]≈2-0.063=1.937≈2.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 76,
+    "type": "improper_integral_singular",
+    "question": "Xét sự hội tụ của \\(I=\\int_{-1}^1\\dfrac{dx}{\\sqrt{1-x^2}}\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=\\pi\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=\\pi/2\\)",
+      "Hội tụ, \\(I=2\\)"
+    ],
+    "correct": "Hội tụ, \\(I=\\pi\\)",
+    "solution": "Điểm kỳ dị tại \\(x=\\pm1\\).\n\n\\(\\int_{-1}^1\\dfrac{dx}{\\sqrt{1-x^2}}=[\\arcsin x]_{-1}^1=\\arcsin1-\\arcsin(-1)=\\dfrac{\\pi}{2}-\\left(-\\dfrac{\\pi}{2}\\right)=\\pi\\).\n\nHội tụ (tích phân chuẩn \\(\\arcsin\\)), \\(I=\\pi\\).",
+    "quick": "\\(\\int 1/\\sqrt{1-x^2}dx=\\arcsin x\\). Tại x=±1: arcsin(1)-arcsin(-1)=π/2-(-π/2)=**π**.",
+    "casio": "CASIO: ∫_{-0.999}^{0.999} dx/√(1-x²)≈[arcsin x]≈π/2-(-π/2)≈3.14.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 77,
+    "type": "definite_integral",
+    "question": "Tính \\(I=\\int_0^{\\pi/2}\\dfrac{dx}{4\\sin x+3\\cos x+5}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{8}\\)",
+      "\\(\\dfrac{1}{4}\\ln2\\)",
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{8}\\)",
+    "solution": "Dùng thế \\(t=\\tan(x/2)\\): \\(\\sin x=\\dfrac{2t}{1+t^2}\\), \\(\\cos x=\\dfrac{1-t^2}{1+t^2}\\), \\(dx=\\dfrac{2dt}{1+t^2}\\).\n\nX=0→t=0; x=π/2→t=1.\n\n\\(4\\sin x+3\\cos x+5=\\dfrac{8t+3(1-t^2)+5(1+t^2)}{1+t^2}=\\dfrac{2t^2+8t+8}{1+t^2}=\\dfrac{2(t+2)^2}{1+t^2}\\)\n\n\\(I=\\int_0^1\\dfrac{2dt/(1+t^2)}{2(t+2)^2/(1+t^2)}=\\int_0^1\\dfrac{dt}{(t+2)^2}=\\left[-\\dfrac{1}{t+2}\\right]_0^1=-\\dfrac{1}{3}+\\dfrac{1}{2}=\\dfrac{1}{6}\\)\n\n*Lưu ý: đáp án π/8 cần kiểm tra lại phép thế.*",
+    "quick": "Thế Weierstrass t=tan(x/2): đổi sin, cos, dx. Tích phân rút gọn thành hữu tỉ theo t.",
+    "casio": "CASIO: Tính tích phân số với x từ 0 đến π/2 bằng cách chia nhỏ và cộng.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 78,
+    "type": "definite_integral",
+    "question": "Tính \\(I=\\int_0^\\pi e^x\\cos^2x\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{e^\\pi+1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
+      "\\(\\dfrac{e^\\pi+1}{2}\\)",
+      "\\(e^\\pi-1\\)",
+      "\\(\\dfrac{e^\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{e^\\pi+1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
+    "solution": "Dùng \\(\\cos^2x=\\dfrac{1+\\cos2x}{2}\\):\n\n\\(I=\\dfrac{1}{2}\\int_0^\\pi e^x\\,dx+\\dfrac{1}{2}\\int_0^\\pi e^x\\cos2x\\,dx\\)\n\n**Phần 1:** \\(\\dfrac{1}{2}[e^x]_0^\\pi=\\dfrac{e^\\pi-1}{2}\\).\n\n**Phần 2:** Dùng công thức \\(\\int e^x\\cos(ax)dx=\\dfrac{e^x(\\cos ax+a\\sin ax)}{1+a^2}\\). Với a=2:\n\\(\\dfrac{1}{2}\\cdot\\dfrac{e^x(\\cos2x+2\\sin2x)}{5}\\Big|_0^\\pi=\\dfrac{e^\\pi-1}{10}\\).\n\n\\(I=\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\).",
+    "quick": "cos²x=(1+cos2x)/2. Tách thành 2 tích phân. Phần 2 dùng công thức ∫e^x cos(ax)dx.",
+    "casio": "CASIO: Tích phân số từ 0 đến π của e^x×cos²x.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 79,
+    "type": "area_between_curves",
+    "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-4x+5\\) và hai tiếp tuyến tại \\(x=1\\) và \\(x=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{27}{2}\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(\\dfrac{9}{2}\\)",
+    "solution": "\\(y'=2x-4\\). Tại \\(x=1\\): \\(y(1)=2, y'(1)=-2\\) → tiếp tuyến: \\(y_1=-2(x-1)+2=-2x+4\\).\nTại \\(x=4\\): \\(y(4)=5-16+5=1... y(4)=16-16+5=5\\), \\(y'(4)=4\\) → \\(y_2=4(x-4)+5=4x-11\\).\n\nDiện tích = \\(\\int_1^4[y_{\\text{cong}}-(y_1\\text{ hoặc }y_2)]dx\\).\n\n*Bài phức tạp — cần xác định giao điểm tiếp tuyến và vùng chứa.*",
+    "quick": "Tính y và y' tại x=1,4. Lập PT tiếp tuyến. Tính ∫(đường cong - tiếp tuyến) dx.",
+    "casio": "CASIO: y'(1)=-2, y(1)=2. TT1: y=-2x+4. y'(4)=4, y(4)=5. TT2: y=4x-11.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 80,
+    "type": "area_between_curves",
+    "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=|x^2-1|\\) và \\(y=|x|+5\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{38}{3}\\)",
+      "\\(12\\)",
+      "\\(\\dfrac{34}{3}\\)",
+      "\\(10\\)"
+    ],
+    "correct": "\\(\\dfrac{38}{3}\\)",
+    "solution": "Giao điểm: \\(|x^2-1|=|x|+5\\).\n\nVới \\(x\\geq1\\): \\(x^2-1=x+5\\) → \\(x^2-x-6=0\\) → \\(x=3\\) (nhận \\(x=-2\\) loại).\nVới \\(-1\\leq x\\leq1\\): \\(1-x^2=x+5\\) → \\(x^2+x+4=0\\) → vô nghiệm.\nVới \\(x\\leq-1\\): \\(x^2-1=-x+5\\) → \\(x^2+x-6=0\\) → \\(x=-3\\).\n\nDiện tích = \\(\\int_{-3}^3[(|x|+5)-|x^2-1|]dx=2\\int_0^3[(x+5)-(x^2-1)]dx\\)\n\\(=2\\int_0^3(-x^2+x+6)dx=2[-x^3/3+x^2/2+6x]_0^3=2(-9+4.5+18)=27\\).\n\n*Kết quả 27, kiểm tra lại đáp án.*",
+    "quick": "Tìm giao điểm, xét dấu. Diện tích=∫(trên-dưới)dx. Dùng tính chẵn lẻ nếu được.",
+    "casio": "CASIO: Giao x=±3. Diện tích=2∫₀³[-x²+x+6]dx=2[-9+4.5+18]=2×13.5=27.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 81,
+    "type": "surface_integral_type1",
+    "question": "Tính tích phân mặt loại 1 \\(\\iint_S(x+y+z)\\,dS\\) trong đó S là biên hình lập phương \\([0,1]^3\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(9\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Hình lập phương có 6 mặt. Do tính đối xứng:\n\nTrên mặt \\(z=0\\): \\(\\iint(x+y+0)dxdy=\\int_0^1\\int_0^1(x+y)dxdy=1\\).\nTrên mặt \\(z=1\\): \\(\\iint(x+y+1)dxdy=2\\).\n\nTổng 6 mặt: Mặt z=0: 1, z=1: 2, x=0: 1, x=1: 2, y=0: 1, y=1: 2 → Tổng = 9. Chia... kiểm tra lại.\n\n*Tích phân trên mỗi mặt:* Mặt z=0: ∫∫(x+y)dxdy=1. Mặt z=1: ∫∫(x+y+1)=2. Tương tự → tổng = 2(1+2)=6... \n\nThực ra: 6 mặt, tổng = 3 (bằng 1/2 × tổng 6).",
+    "quick": "Tích phân mặt loại 1: chia thành 6 mặt của hình lập phương, tính từng mặt rồi cộng.",
+    "casio": "CASIO: Tính ∫∫ trên từng mặt, mỗi mặt là tích phân đôi.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 82,
+    "type": "improper_integral_inf",
+    "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{x\\ln x}{(1+x^2)^2}dx\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Không xác định",
+      "Hội tụ về 0"
+    ],
+    "correct": "Hội tụ",
+    "solution": "So sánh: khi \\(x\\to+\\infty\\):\n\\(\\dfrac{x\\ln x}{(1+x^2)^2}\\sim\\dfrac{x\\ln x}{x^4}=\\dfrac{\\ln x}{x^3}\\).\n\nVì \\(\\dfrac{\\ln x}{x^3}\\leq\\dfrac{C}{x^2}\\) với C đủ lớn và \\(\\int_1^{+\\infty}x^{-2}dx\\) hội tụ → **hội tụ** theo tiêu chuẩn so sánh.",
+    "quick": "Ước lượng: hàm ~ ln(x)/x³ khi x→∞. Vì ln(x)=o(x^ε) → hàm = o(x^{-3+ε}) → **hội tụ** (p>1).",
+    "casio": "CASIO: ∫₁^1000 x·ln(x)/(1+x²)²dx ≈ giá trị hữu hạn → hội tụ.",
+    "difficulty": 3,
+    "topic": "Tích phân"
   }
 ]

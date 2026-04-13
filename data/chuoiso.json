@@ -1798,5 +1798,185 @@
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 2,
     "topic": "Chuỗi số"
+  },
+  {
+    "id": 101,
+    "type": "power_series_expansion",
+    "question": "Khai triển \\(f(x)=\\dfrac{1}{1+x}\\) thành chuỗi lũy thừa và tìm miền hội tụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\), \\(|x|<1\\)",
+      "\\(\\sum_{n=0}^\\infty x^n\\), \\(|x|<1\\)",
+      "\\(\\sum_{n=1}^\\infty(-1)^nx^n\\), \\(|x|<1\\)",
+      "\\(e^{-x}\\)"
+    ],
+    "correct": "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\), \\(|x|<1\\)",
+    "solution": "\\(\\dfrac{1}{1+x}=\\dfrac{1}{1-(-x)}=\\sum_{n=0}^\\infty(-x)^n=\\sum_{n=0}^\\infty(-1)^nx^n\\)\n\n\\(=1-x+x^2-x^3+\\ldots\\)\n\nHội tụ khi \\(|-x|<1\\), tức \\(|x|<1\\).",
+    "quick": "Thay x bằng (-x) trong \\(1/(1-x)=\\sum x^n\\) → **\\(\\sum(-1)^nx^n\\)**, \\(|x|<1\\).",
+    "casio": "CASIO: f(0.5)=1/1.5=0.667. Kiểm tra: 1-0.5+0.25-0.125+...=0.667✓.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 102,
+    "type": "power_series_expansion",
+    "question": "Khai triển \\(f(x)=\\ln(1+x)\\) thành chuỗi Maclaurin.",
+    "matrix": null,
+    "options": [
+      "\\(\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n\\)",
+      "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\)",
+      "\\(\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\)",
+      "\\(x-x^2+x^3-\\ldots\\)"
+    ],
+    "correct": "\\(\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n\\)",
+    "solution": "Tích phân chuỗi \\(1/(1+x)\\):\n\n\\(\\ln(1+x)=\\int_0^x\\dfrac{dt}{1+t}=\\int_0^x\\sum_{n=0}^\\infty(-1)^nt^n\\,dt=\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{n+1}x^{n+1}\\)\n\n\\(=\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\ldots\\)\n\nHội tụ với \\(-1<x\\leq1\\).",
+    "quick": "Tích phân chuỗi 1/(1+x): \\(\\ln(1+x)=x-x^2/2+x^3/3-\\ldots=\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}x^n}{n}\\).",
+    "casio": "CASIO: ln(1.5)=0.405. Kiểm tra: 0.5-0.125+0.0417-0.0156+...≈0.405✓.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 103,
+    "type": "power_series_expansion",
+    "question": "Khai triển \\(f(x)=\\dfrac{1}{3-x}\\) thành chuỗi lũy thừa tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
+      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3}\\)",
+      "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty(-1)^n\\dfrac{x^n}{3^n}\\)",
+      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
+    "solution": "\\(\\dfrac{1}{3-x}=\\dfrac{1}{3}\\cdot\\dfrac{1}{1-x/3}=\\dfrac{1}{3}\\sum_{n=0}^\\infty\\left(\\dfrac{x}{3}\\right)^n=\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}=\\sum_{n=0}^\\infty\\dfrac{x^n}{3^{n+1}}\\)\n\nHội tụ khi \\(|x/3|<1\\), tức \\(|x|<3\\).",
+    "quick": "\\(1/(3-x)=(1/3)\\cdot1/(1-x/3)=(1/3)\\sum(x/3)^n=\\sum x^n/3^{n+1}\\), \\(|x|<3\\).",
+    "casio": "CASIO: f(1)=1/2=0.5. Kiểm tra: (1/3)(1+1/3+1/9+...)=(1/3)·(3/2)=1/2✓.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 104,
+    "type": "power_series_expansion",
+    "question": "Khai triển \\(f(x)=\\dfrac{x^2}{2-x}\\) thành chuỗi lũy thừa.",
+    "matrix": null,
+    "options": [
+      "\\(\\sum_{n=0}^\\infty\\dfrac{x^{n+2}}{2^{n+1}}\\)",
+      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{2^n}\\)",
+      "\\(\\dfrac{x^2}{2}\\sum_{n=0}^\\infty x^n\\)",
+      "\\(\\sum_{n=2}^\\infty x^n/2^{n-1}\\)"
+    ],
+    "correct": "\\(\\sum_{n=0}^\\infty\\dfrac{x^{n+2}}{2^{n+1}}\\)",
+    "solution": "\\(\\dfrac{x^2}{2-x}=x^2\\cdot\\dfrac{1}{2-x}=x^2\\cdot\\dfrac{1}{2}\\cdot\\dfrac{1}{1-x/2}=\\dfrac{x^2}{2}\\sum_{n=0}^\\infty\\left(\\dfrac{x}{2}\\right)^n\\)\n\n\\(=\\sum_{n=0}^\\infty\\dfrac{x^{n+2}}{2^{n+1}}\\)\n\nHội tụ khi \\(|x|<2\\).",
+    "quick": "Tách x² ra: \\(x^2/(2-x)=x^2\\cdot(1/2)\\cdot1/(1-x/2)=(x^2/2)\\sum(x/2)^n=\\sum x^{n+2}/2^{n+1}\\).",
+    "casio": "CASIO: f(1)=1/1=1. Kiểm tra: Σ1/2^(n+1) n=0,1,...=1✓.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 105,
+    "type": "series_sum_telescope",
+    "question": "Tính tổng chuỗi \\(S=\\sum_{n=1}^\\infty\\dfrac{1}{(2n-1)(2n+1)}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\ln2\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Phân tích phân số: \\(\\dfrac{1}{(2n-1)(2n+1)}=\\dfrac{1}{2}\\left(\\dfrac{1}{2n-1}-\\dfrac{1}{2n+1}\\right)\\).\n\nChuỗi telescope:\n\\(S=\\dfrac{1}{2}\\sum_{n=1}^\\infty\\left(\\dfrac{1}{2n-1}-\\dfrac{1}{2n+1}\\right)=\\dfrac{1}{2}\\cdot\\dfrac{1}{1}=\\dfrac{1}{2}\\)\n\n(Các hạng triệt tiêu nhau, chỉ còn lại \\(1/(2\\cdot1-1)=1\\) từ n=1).",
+    "quick": "Phân tích phân số → chuỗi rút gọn telescope. Tổng = 1/2 × (số hạng đầu tiên = 1/(2·1-1)=1).",
+    "casio": "CASIO: 1/(1×3)+1/(3×5)+1/(5×7)+...≈0.333+0.0667+0.0286+...≈0.5.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 106,
+    "type": "series_sum_telescope",
+    "question": "Tính tổng \\(S=\\sum_{n=1}^\\infty\\dfrac{1}{n(n+1)}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{\\pi^2}{6}-1\\)",
+      "\\(\\ln2\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Phân tích: \\(\\dfrac{1}{n(n+1)}=\\dfrac{1}{n}-\\dfrac{1}{n+1}\\).\n\n\\(S=\\sum_{n=1}^N\\left(\\dfrac{1}{n}-\\dfrac{1}{n+1}\\right)=1-\\dfrac{1}{N+1}\\to1\\).\n\nTổng chuỗi = **1**.",
+    "quick": "Telescope: 1/n-1/(n+1) → S=(1-1/2)+(1/2-1/3)+...=**1**. Bài kinh điển!",
+    "casio": "CASIO: 1/(1×2)+1/(2×3)+1/(3×4)+...=0.5+0.167+0.083+...≈1.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 107,
+    "type": "power_series_expansion",
+    "question": "Khai triển \\(f(x)=\\ln(3-x)\\) tại \\(x=0\\) và tìm miền hội tụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\ln3-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)",
+      "\\(\\ln3+\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\)",
+      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
+      "\\(-\\ln x+\\ln3\\)"
+    ],
+    "correct": "\\(\\ln3-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)",
+    "solution": "\\(\\ln(3-x)=\\ln3+\\ln\\left(1-\\dfrac{x}{3}\\right)\\).\n\nDùng \\(\\ln(1-t)=-\\sum_{n=1}^\\infty\\dfrac{t^n}{n}\\) với \\(t=x/3\\):\n\n\\(\\ln\\left(1-\\dfrac{x}{3}\\right)=-\\sum_{n=1}^\\infty\\dfrac{(x/3)^n}{n}=-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)\n\n\\(f(x)=\\ln3-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)\n\nHội tụ: \\(|x/3|\\leq1\\) và \\(x/3\\neq-1\\) → \\(-3<x\\leq3\\).",
+    "quick": "\\(\\ln(3-x)=\\ln3+\\ln(1-x/3)\\). Dùng chuỗi \\(\\ln(1-t)=-\\sum t^n/n\\). **Miền hội tụ: (-3,3]**.",
+    "casio": "CASIO: ln(2)=0.693. Kiểm tra: ln3-Σ(1^n)/(n×3^n)=ln3-(1/3+1/18+1/81+...)≈0.693✓.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 108,
+    "type": "power_series_expansion",
+    "question": "Khai triển \\(f(x)=\\arctan x\\) thành chuỗi Maclaurin và cho biết miền hội tụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\), \\(|x|\\leq1\\)",
+      "\\(\\sum_{n=0}^\\infty(-1)^nx^{2n}\\)",
+      "\\(\\sum_{n=0}^\\infty\\dfrac{x^{2n}}{(2n)!}\\)",
+      "\\(\\arctan x=x-x^2/2+x^3/3-\\ldots\\)"
+    ],
+    "correct": "\\(\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\), \\(|x|\\leq1\\)",
+    "solution": "Tích phân chuỗi \\(1/(1+x^2)\\):\n\n\\(\\dfrac{1}{1+x^2}=\\sum_{n=0}^\\infty(-1)^nx^{2n}\\)\n\n\\(\\arctan x=\\int_0^x\\dfrac{dt}{1+t^2}=\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\)\n\n\\(=x-\\dfrac{x^3}{3}+\\dfrac{x^5}{5}-\\ldots\\)\n\nHội tụ với \\(|x|\\leq1\\) (kể cả biên).",
+    "quick": "Tích phân: arctan x=∫1/(1+x²)dx. Chuỗi: **∑(-1)^n x^(2n+1)/(2n+1)**, \\(|x|\\leq1\\).",
+    "casio": "CASIO: arctan(1)=π/4≈0.785. Kiểm tra: 1-1/3+1/5-1/7+...≈π/4✓ (Leibniz).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 109,
+    "type": "power_series_sum",
+    "question": "Tính tổng chuỗi lũy thừa \\(S(x)=\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\) trong miền hội tụ.",
+    "matrix": null,
+    "options": [
+      "\\(-\\ln(1-x)\\)",
+      "\\(\\ln(1+x)\\)",
+      "\\(-\\ln(1+x)\\)",
+      "\\(\\dfrac{x}{1-x}\\)"
+    ],
+    "correct": "\\(-\\ln(1-x)\\)",
+    "solution": "Đạo hàm chuỗi: \\(S'(x)=\\sum_{n=1}^\\infty x^{n-1}=\\dfrac{1}{1-x}\\) với \\(|x|<1\\).\n\nTích phân: \\(S(x)=\\int_0^x\\dfrac{dt}{1-t}=[-\\ln(1-t)]_0^x=-\\ln(1-x)\\).\n\nMiền hội tụ: \\(-1\\leq x<1\\) (từ tiêu chuẩn d'Alembert).",
+    "quick": "S'(x)=∑x^(n-1)=1/(1-x) → S(x)=∫dt/(1-t)=**-ln(1-x)**. (Kỹ thuật vi-tích phân chuỗi)",
+    "casio": "CASIO: S(0.5)=0.5+0.125+0.0417+...≈0.693=-ln(0.5)=ln2✓.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 110,
+    "type": "convergence_test",
+    "question": "Xét sự hội tụ của chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{(2n)!}{(n!)^2}\\cdot\\left(\\dfrac{1}{4}\\right)^n\\).",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ",
+      "Hội tụ tuyệt đối",
+      "Hội tụ có điều kiện"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "Dùng tiêu chuẩn Stirling hoặc d'Alembert:\n\n\\(a_n=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}\\).\n\nDùng công thức Stirling: \\(n!\\approx\\sqrt{2\\pi n}(n/e)^n\\):\n\n\\(a_n\\approx\\dfrac{\\sqrt{4\\pi n}(2n/e)^{2n}}{2\\pi n(n/e)^{2n}\\cdot4^n}=\\dfrac{\\sqrt{4\\pi n}\\cdot2^{2n}}{2\\pi n\\cdot4^n}=\\dfrac{1}{\\sqrt{\\pi n}}\\)\n\n\\(\\sum\\dfrac{1}{\\sqrt{n}}\\) phân kỳ (chuỗi p với p=1/2≤1) → **phân kỳ**.",
+    "quick": "a_n ~ 1/√(πn) (Stirling). Chuỗi ~ ∑1/√n là chuỗi p với p=1/2<1 → **phân kỳ**.",
+    "casio": "CASIO: Tính a_1=0.5, a_2=3/8=0.375, a_3=5/16=0.3125... → a_n không → 0 đủ nhanh.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
   }
 ]
