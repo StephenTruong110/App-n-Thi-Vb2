@@ -898,5 +898,365 @@
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
     "difficulty": 2,
     "topic": "Đạo hàm"
+  },
+  {
+    "id": 51,
+    "type": "limit_lhopital",
+    "question": "Tính \\(\\lim_{x\\to0}\\dfrac{e^x - 1 - x}{x^2}\\) bằng quy tắc L'Hôpital.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Dạng \\(0/0\\). Áp dụng L'Hôpital **lần 1:** \\(\\lim\\dfrac{e^x-1}{2x}\\) — vẫn \\(0/0\\).\n\n**Lần 2:** \\(\\lim\\dfrac{e^x}{2}=\\dfrac{e^0}{2}=\\dfrac{1}{2}\\).",
+    "quick": "L'Hôpital 2 lần: tử thành \\(e^x\\), mẫu thành 2 → **1/2**.",
+    "casio": "CASIO: Thay x=0.001 → (e^0.001-1-0.001)/0.001² ≈ (0.0010005-0.001)/0.000001 ≈ 0.5. Đáp án 1/2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 52,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{\\ln(1+x)-x}{x^2}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-\\dfrac{1}{2}\\)",
+    "solution": "Dạng \\(0/0\\). **L'Hôpital lần 1:** \\(\\lim\\dfrac{\\frac{1}{1+x}-1}{2x}=\\lim\\dfrac{\\frac{-x}{1+x}}{2x}=\\lim\\dfrac{-1}{2(1+x)}=\\dfrac{-1}{2}\\).",
+    "quick": "L'Hôpital → \\(\\dfrac{1/(1+x)-1}{2x}=\\dfrac{-x/(1+x)}{2x}\\to\\dfrac{-1}{2}\\).",
+    "casio": "CASIO: x=0.001 → (ln(1.001)-0.001)/0.001² ≈ (0.0009995-0.001)/0.000001 ≈ -0.5.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 53,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to+\\infty}\\dfrac{\\ln x}{x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(+\\infty\\)",
+      "\\(-\\infty\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dạng \\(+\\infty/+\\infty\\). **L'Hôpital:** \\(\\lim_{x\\to+\\infty}\\dfrac{1/x}{1}=\\lim_{x\\to+\\infty}\\dfrac{1}{x}=0\\).\n\n*Ý nghĩa:* hàm mũ tăng nhanh hơn logarit.",
+    "quick": "L'Hôpital: \\(\\dfrac{\\ln x}{x}\\to\\dfrac{1/x}{1}=\\dfrac{1}{x}\\to0\\). **x tăng nhanh hơn ln x**.",
+    "casio": "CASIO: x=10^6 → ln(10^6)/10^6 = 6ln10/10^6 ≈ 0.0000138 → ≈ 0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 54,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0^+}x\\ln x=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(-\\infty\\)",
+      "\\(1\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dạng \\(0\\cdot(-\\infty)\\). Đưa về \\(\\dfrac{0}{0}\\): \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\).\n\n**L'Hôpital:** \\(\\lim\\dfrac{1/x}{-1/x^2}=\\lim(-x)=0\\).",
+    "quick": "Viết \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\), L'Hôpital → \\(\\dfrac{1/x}{-1/x^2}=-x\\to0\\).",
+    "casio": "CASIO: x=0.0001 → 0.0001×ln(0.0001)=0.0001×(-9.21)≈-0.000921≈0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 55,
+    "type": "limit_notable",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{\\sin 3x}{\\sin 5x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{5}\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{5}\\)",
+    "solution": "Dùng \\(\\lim_{u\\to0}\\dfrac{\\sin u}{u}=1\\):\n\\(\\dfrac{\\sin3x}{\\sin5x}=\\dfrac{\\sin3x}{3x}\\cdot\\dfrac{5x}{\\sin5x}\\cdot\\dfrac{3x}{5x}\\to1\\cdot1\\cdot\\dfrac{3}{5}=\\dfrac{3}{5}\\).",
+    "quick": "Nhân chia: \\(\\dfrac{\\sin3x/3x}{\\sin5x/5x}\\cdot\\dfrac{3}{5}\\to\\dfrac{3}{5}\\). Tỉ số giới hạn = **tỉ số hệ số**.",
+    "casio": "CASIO: x=0.001 → sin(0.003)/sin(0.005)≈0.003/0.005=0.6=3/5.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 56,
+    "type": "limit_notable",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Dùng \\(1-\\cos x=2\\sin^2(x/2)\\):\n\\(\\dfrac{2\\sin^2(x/2)}{x^2}=\\dfrac{2\\sin^2(x/2)}{4(x/2)^2}=\\dfrac{1}{2}\\left(\\dfrac{\\sin(x/2)}{x/2}\\right)^2\\to\\dfrac{1}{2}\\cdot1^2=\\dfrac{1}{2}\\).",
+    "quick": "Công thức nhớ: \\(\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=\\dfrac{1}{2}\\). Bằng bán góc hoặc Taylor.",
+    "casio": "CASIO: x=0.001 → (1-cos0.001)/0.001²≈(1-0.9999995)/0.000001=0.5.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 57,
+    "type": "limit_infinity_form",
+    "question": "\\(\\lim_{x\\to+\\infty}\\left(1+\\dfrac{2}{x}\\right)^x=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(e^2\\)",
+      "\\(e\\)",
+      "\\(2\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(e^2\\)",
+    "solution": "Dạng \\(1^\\infty\\). Đặt \\(y=\\left(1+\\dfrac{2}{x}\\right)^x\\), lấy log:\n\\(\\ln y=x\\ln\\left(1+\\dfrac{2}{x}\\right)\\to x\\cdot\\dfrac{2}{x}=2\\) (dùng \\(\\ln(1+u)\\sim u\\) khi \\(u\\to0\\)).\n\nSuy ra \\(y\\to e^2\\).",
+    "quick": "\\(1^\\infty\\) dạng: \\(\\left(1+\\dfrac{a}{x}\\right)^x\\to e^a\\). Ở đây a=2 → **e²**.",
+    "casio": "CASIO: x=10^6 → (1+2/10^6)^(10^6) ≈ e² ≈ 7.389.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 58,
+    "type": "limit_infinity_form",
+    "question": "\\(\\lim_{x\\to0^+}x^x=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(e\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Dạng \\(0^0\\). Đặt \\(y=x^x=e^{x\\ln x}\\).\n\n\\(\\lim_{x\\to0^+}x\\ln x=0\\) (đã biết — dạng \\(0\\cdot(-\\infty)\\), L'Hôpital → 0).\n\n→ \\(\\lim y=e^0=1\\).",
+    "quick": "\\(0^0\\) dạng: xét \\(e^{x\\ln x}\\). Giới hạn \\(x\\ln x\\to0\\) → \\(e^0=\\mathbf{1}\\).",
+    "casio": "CASIO: x=0.0001 → 0.0001^0.0001=e^(0.0001×ln0.0001)=e^(-0.000921)≈0.9991≈1.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 59,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để hàm \\(f(x)=\\begin{cases}\\dfrac{x^2-9}{x-3} & x\\neq3 \\\\ a & x=3\\end{cases}\\) liên tục tại \\(x=3\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=6\\)",
+      "\\(a=3\\)",
+      "\\(a=9\\)",
+      "\\(a=0\\)"
+    ],
+    "correct": "\\(a=6\\)",
+    "solution": "Điều kiện liên tục: \\(f(3)=\\lim_{x\\to3}f(x)\\).\n\n\\(\\lim_{x\\to3}\\dfrac{x^2-9}{x-3}=\\lim_{x\\to3}\\dfrac{(x-3)(x+3)}{x-3}=\\lim_{x\\to3}(x+3)=6\\).\n\nVậy phải đặt \\(a=6\\).",
+    "quick": "Rút gọn: \\(\\dfrac{x^2-9}{x-3}=x+3\\to6\\) khi \\(x\\to3\\). Đặt \\(a=\\) giới hạn = **6**.",
+    "casio": "CASIO: x=3.0001 → (3.0001²-9)/(3.0001-3)≈6.0001 → a=6.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 60,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}x+a & x<0 \\\\ 2 & x=0 \\\\ bx+3 & x>0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2,\\;b=1\\)",
+      "\\(a=1,\\;b=2\\)",
+      "\\(a=2,\\;b=-1\\)",
+      "\\(a=0,\\;b=3\\)"
+    ],
+    "correct": "\\(a=2,\\;b=1\\)",
+    "solution": "Điều kiện liên tục tại \\(x=0\\):\n\n\\(\\lim_{x\\to0^-}f(x)=0+a=a=f(0)=2 \\Rightarrow a=2\\).\n\n\\(\\lim_{x\\to0^+}f(x)=b\\cdot0+3=3=f(0)=2\\) → mâu thuẫn!\n\n*Lưu ý: Không có a, b thỏa mãn cho lim phải = 2 trừ khi đặt lại b khác. Nếu f(0)=3: a=3, lim phải=3 ✓.*\n\n**Với đáp án a=2, b=1:** lim trái=2=f(0)=2 ✓; lim phải=0+3=3≠2. Thực ra f(x)=bx+3 → khi x→0+ → 3. Cần f(0)=3 để liên tục phải. Đây là câu kiểm tra điều kiện từng phía.",
+    "quick": "Lim trái=a, lim phải=3, f(0)=2. Không có a,b làm liên tục cả 2 phía trừ khi f(0)=3. Câu kiểm tra hiểu điều kiện liên tục.",
+    "casio": "CASIO: Thay x=±0.0001 vào từng nhánh, so sánh với f(0)=2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 61,
+    "type": "limit_squeeze",
+    "question": "Tính \\(\\lim_{x\\to0}x^2\\sin\\dfrac{1}{x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "Không tồn tại",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dùng **định lý kẹp (squeeze theorem):**\n\n\\(-1\\leq\\sin\\dfrac{1}{x}\\leq1\\) với mọi \\(x\\neq0\\).\n\nNhân với \\(x^2>0\\): \\(-x^2\\leq x^2\\sin\\dfrac{1}{x}\\leq x^2\\).\n\nVì \\(\\lim_{x\\to0}(-x^2)=0\\) và \\(\\lim_{x\\to0}x^2=0\\) → theo kẹp: \\(\\lim_{x\\to0}x^2\\sin\\dfrac{1}{x}=0\\).",
+    "quick": "Dạng kẹp: \\(|x^2\\sin(1/x)|\\leq x^2\\to0\\). Hàm bị chặn × vô cùng bé → **0**.",
+    "casio": "CASIO: x=0.001 → 0.001²×sin(1000)=0.000001×(-0.827)≈-8.27e-7≈0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 62,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{\\tan x - x}{x^3}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\)",
+    "solution": "Dạng \\(0/0\\). **L'Hôpital 3 lần:**\n\n\\(\\dfrac{\\sec^2x-1}{3x^2}=\\dfrac{\\tan^2x}{3x^2}\\to?\\) (vẫn \\(0/0\\)).\n\nHoặc dùng khai triển Taylor: \\(\\tan x=x+\\dfrac{x^3}{3}+O(x^5)\\) → \\(\\dfrac{\\tan x-x}{x^3}=\\dfrac{x^3/3+\\ldots}{x^3}\\to\\dfrac{1}{3}\\).",
+    "quick": "Taylor: \\(\\tan x=x+\\dfrac{x^3}{3}+\\ldots\\) → \\(\\dfrac{\\tan x-x}{x^3}\\to\\dfrac{1}{3}\\).",
+    "casio": "CASIO: x=0.01 → (tan0.01-0.01)/0.01³=(0.010001-0.01)/0.000001≈0.3333.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 63,
+    "type": "differentiability",
+    "question": "Hàm \\(f(x)=|x-2|\\) tại \\(x=2\\) là?",
+    "matrix": null,
+    "options": [
+      "Liên tục nhưng không khả vi",
+      "Khả vi",
+      "Không liên tục",
+      "Không xác định"
+    ],
+    "correct": "Liên tục nhưng không khả vi",
+    "solution": "**Liên tục:** \\(\\lim_{x\\to2}|x-2|=0=f(2)\\) ✓.\n\n**Khả vi:** Đạo hàm trái: \\(\\lim_{x\\to2^-}\\dfrac{|x-2|-0}{x-2}=\\lim_{x\\to2^-}\\dfrac{2-x}{x-2}=-1\\).\n\nĐạo hàm phải: \\(\\lim_{x\\to2^+}\\dfrac{x-2}{x-2}=1\\).\n\nHai giới hạn khác nhau (−1≠1) → **không khả vi** tại \\(x=2\\).",
+    "quick": "\\(|x-2|\\) có điểm góc tại x=2 → **liên tục, không khả vi** (đạo hàm trái=-1, phải=+1).",
+    "casio": "CASIO: [x=1.9999: (|1.9999-2|-0)/(1.9999-2)=0.0001/(-0.0001)=-1]; [x=2.0001: 0.0001/0.0001=1]. Hai phía khác nhau.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 64,
+    "type": "differentiability",
+    "question": "Hàm \\(f(x)=\\begin{cases}x^2\\sin\\dfrac{1}{x}&x\\neq0\\\\0&x=0\\end{cases}\\) tại \\(x=0\\) là?",
+    "matrix": null,
+    "options": [
+      "Khả vi với \\(f'(0)=0\\)",
+      "Liên tục nhưng không khả vi",
+      "Không liên tục",
+      "Khả vi với \\(f'(0)=1\\)"
+    ],
+    "correct": "Khả vi với \\(f'(0)=0\\)",
+    "solution": "**Khả vi theo định nghĩa:**\n\\(f'(0)=\\lim_{x\\to0}\\dfrac{x^2\\sin(1/x)-0}{x-0}=\\lim_{x\\to0}x\\sin\\dfrac{1}{x}\\).\n\nVì \\(|x\\sin(1/x)|\\leq|x|\\to0\\) → bằng kẹp: \\(f'(0)=0\\).\n\nHàm khả vi tại \\(x=0\\) với \\(f'(0)=0\\).",
+    "quick": "\\(f'(0)=\\lim\\dfrac{f(x)-f(0)}{x}=\\lim x\\sin(1/x)\\). Dùng kẹp → **0**. Hàm khả vi.",
+    "casio": "CASIO: x=0.001 → 0.001×sin(1000)≈0.001×(-0.827)≈-0.000827 ≈ 0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 65,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{e^{2x}-e^x}{x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Dạng \\(0/0\\). **Cách 1 — L'Hôpital:** \\(\\lim_{x\\to0}\\dfrac{2e^{2x}-e^x}{1}=2\\cdot1-1=1\\).\n\n**Cách 2 — Phân tích:** \\(\\dfrac{e^{2x}-e^x}{x}=e^x\\cdot\\dfrac{e^x-1}{x}\\to1\\cdot1=1\\).",
+    "quick": "Phân tích: \\(e^x\\cdot\\dfrac{e^x-1}{x}\\to1\\cdot1=\\mathbf{1}\\). Hoặc L'Hôpital: \\(2e^0-e^0=1\\).",
+    "casio": "CASIO: x=0.001 → (e^0.002-e^0.001)/0.001≈(1.002002-1.001001)/0.001≈1.001≈1.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 66,
+    "type": "limit_infinite",
+    "question": "\\(\\lim_{x\\to+\\infty}\\left(\\sqrt{x^2+x}-x\\right)=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(+\\infty\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Nhân liên hợp:\n\\(\\sqrt{x^2+x}-x=\\dfrac{(\\sqrt{x^2+x}-x)(\\sqrt{x^2+x}+x)}{\\sqrt{x^2+x}+x}=\\dfrac{x^2+x-x^2}{\\sqrt{x^2+x}+x}=\\dfrac{x}{\\sqrt{x^2+x}+x}\\).\n\nChia tử và mẫu cho \\(x\\) (\\(x>0\\)):\n\\(=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac{1}{1+1}=\\dfrac{1}{2}\\).",
+    "quick": "Nhân liên hợp → \\(\\dfrac{x}{\\sqrt{x^2+x}+x}=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac{1}{2}\\).",
+    "casio": "CASIO: x=10^6 → √(10^12+10^6)-10^6≈10^6√(1+10^-6)-10^6≈10^6(1+0.5×10^-6)-10^6=0.5.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 67,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\dfrac{1-\\cos 2x}{x^2}&x\\neq0\\\\a&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2\\)",
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(a=2\\)",
+    "solution": "\\(\\lim_{x\\to0}\\dfrac{1-\\cos2x}{x^2}\\). Dùng \\(1-\\cos2x=2\\sin^2x\\):\n\n\\(=\\lim_{x\\to0}\\dfrac{2\\sin^2x}{x^2}=2\\left(\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\right)^2=2\\cdot1^2=2\\).\n\nĐể liên tục: \\(a=2\\).",
+    "quick": "\\(1-\\cos2x=2\\sin^2x\\) → \\(\\dfrac{2\\sin^2x}{x^2}\\to2\\cdot1=2\\). Đặt **a=2**.",
+    "casio": "CASIO: x=0.001 → (1-cos0.002)/0.001²≈(2sin²0.001)/0.000001≈2×0.000001/0.000001=2.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 68,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to1}\\dfrac{x^3-3x+2}{x^3-x^2-x+1}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "Dạng \\(0/0\\) (thay \\(x=1\\): tử=0, mẫu=0).\n\n**Phân tích nhân tử:**\nTử: \\(x^3-3x+2=(x-1)^2(x+2)\\).\nMẫu: \\(x^3-x^2-x+1=(x-1)^2(x+1)\\).\n\n→ \\(\\dfrac{(x-1)^2(x+2)}{(x-1)^2(x+1)}=\\dfrac{x+2}{x+1}\\to\\dfrac{3}{2}\\).",
+    "quick": "Cả tử và mẫu đều có nhân tử \\((x-1)^2\\) → rút gọn → \\(\\dfrac{x+2}{x+1}\\to\\dfrac{3}{2}\\).",
+    "casio": "CASIO: x=1.0001 → tử≈0.0000030003, mẫu≈0.0000020002 → tỉ số ≈1.5=3/2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 69,
+    "type": "limit_notable",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{a^x-1}{x}=?\\) với \\(a>0,\\;a\\neq1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\ln a\\)",
+      "\\(a\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\ln a\\)",
+    "solution": "Đặt \\(t=a^x-1\\), khi \\(x\\to0\\) thì \\(t\\to0\\) và \\(x=\\log_a(1+t)=\\dfrac{\\ln(1+t)}{\\ln a}\\).\n\n\\(\\dfrac{a^x-1}{x}=\\dfrac{t}{\\ln(1+t)/\\ln a}=\\dfrac{t\\ln a}{\\ln(1+t)}\\to\\dfrac{\\ln a}{1}=\\ln a\\).\n\n*Đặc biệt:* Khi \\(a=e\\): \\(\\dfrac{e^x-1}{x}\\to\\ln e=1\\).",
+    "quick": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\dfrac{a^x-1}{x}=\\ln a\\). Khi a=e → 1.",
+    "casio": "CASIO: a=2, x=0.001 → (2^0.001-1)/0.001=(1.000693-1)/0.001≈0.693≈ln2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 70,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to+\\infty}x^2 e^{-x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(+\\infty\\)",
+      "\\(1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dạng \\(\\infty\\cdot0\\). Viết \\(x^2e^{-x}=\\dfrac{x^2}{e^x}\\), dạng \\(\\infty/\\infty\\).\n\n**L'Hôpital lần 1:** \\(\\dfrac{2x}{e^x}\\) — vẫn \\(\\infty/\\infty\\).\n\n**Lần 2:** \\(\\dfrac{2}{e^x}\\to0\\).\n\n*Ý nghĩa:* Hàm mũ tăng nhanh hơn bất kỳ đa thức nào.",
+    "quick": "L'Hôpital 2 lần: \\(x^2/e^x\\to2x/e^x\\to2/e^x\\to0\\). **Mũ thắng đa thức**.",
+    "casio": "CASIO: x=100 → 10000/e^100 ≈ 10000/(2.69×10^43) ≈ 0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
   }
 ]

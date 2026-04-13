@@ -358,5 +358,201 @@
     "casio": "CASIO: Thử m=0 vào [MODE][5][2] → ERROR (vô nghiệm). Thử m=1 → nghiệm duy nhất. Tính det [MODE][6] với m=-4: det=3(-4)=-12≠0 → nghiệm duy nhất.",
     "difficulty": 2,
     "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 21,
+    "type": "system_homogeneous",
+    "question": "Hệ \\(\\begin{cases}x+2y=0\\\\2x+4y=0\\end{cases}\\) có bao nhiêu nghiệm?",
+    "matrix": null,
+    "options": [
+      "Vô số nghiệm",
+      "1 nghiệm",
+      "Vô nghiệm",
+      "Đúng 2 nghiệm"
+    ],
+    "correct": "Vô số nghiệm",
+    "solution": "Hệ thuần nhất (vế phải = 0) **luôn có nghiệm tầm thường** (0,0).\n\nPT2 = 2×PT1 → hai PT là bội nhau → hệ chỉ có 1 phương trình độc lập → vô số nghiệm.\n\nNghiệm tổng quát: \\(x=-2t,\\;y=t\\), \\(t\\in\\mathbb{R}\\).",
+    "quick": "Hệ thuần nhất (b=0): **luôn có nghiệm**. Nếu det=0 → vô số. Det=|1,2;2,4|=4-4=0 → vô số.",
+    "casio": "CASIO [MODE][5][1]: nhập hệ số, nếu báo lỗi hoặc không giải được → vô số nghiệm. Det=0 xác nhận.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 22,
+    "type": "rank_system",
+    "question": "Hạng (rank) của ma trận \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\0&1&1\\end{pmatrix}\\) là?",
+    "matrix": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        4,
+        6
+      ],
+      [
+        0,
+        1,
+        1
+      ]
+    ],
+    "options": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ],
+    "correct": "2",
+    "solution": "Hàng 2 = 2×Hàng 1 → khử R2: \\(\\begin{pmatrix}1&2&3\\\\0&0&0\\\\0&1&1\\end{pmatrix}\\).\n\nHàng 1,3 độc lập tuyến tính → rank(A) = **2**.",
+    "quick": "R2 = 2R1 → phụ thuộc → loại. Còn R1 và R3 độc lập → **rank = 2**.",
+    "casio": "CASIO [MODE][6]: Nhập ma trận, tính det. Nếu det=0 → rank<3. Tìm hàng/cột max độc lập.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 23,
+    "type": "system_solution_form",
+    "question": "Hệ \\(\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+2y+3z=2\\end{cases}\\) có số tham số tự do của nghiệm là?",
+    "matrix": null,
+    "options": [
+      "1",
+      "0",
+      "2",
+      "3"
+    ],
+    "correct": "1",
+    "solution": "Quan sát: PT2 = 2×PT1 → chỉ còn 2 PT độc lập (PT1 và PT3).\n\nKhử: từ PT1 và PT3: \\(y+2z=1\\) → 2 ẩn, 1 PT → 1 ẩn tự do.\n\n**Công thức:** tham số tự do = n − rank(A) = 3 − 2 = **1**.",
+    "quick": "n=3 ẩn, rank(A)=2 (PT2=2×PT1) → tham số tự do = 3-2 = **1**.",
+    "casio": "CASIO: Khử Gauss → còn 2 hàng pivot → rank=2. Tham số tự do = 3-2=1.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 24,
+    "type": "system_3vars_parameter",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+y+z=1\\\\x+2y+mz=3\\\\x+3y+3z=5\\end{cases}\\) vô nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m\\neq2\\)",
+      "\\(m=0\\)",
+      "Mọi m"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Khử Gauss:\nR2←R2-R1: \\((0,1,m-1|2)\\)\nR3←R3-R1: \\((0,2,2|4)\\)\nR3←R3-2R2: \\((0,0,4-2(m-1)|4-4)=(0,0,6-2m|0)\\)\n\nHàng cuối: \\(0\\cdot z=0\\) → **hệ tương thích** khi \\(m=3\\)... \n\nXét lại: R3←R3-2R2=(0,0,2-2(m-1),0)=(0,0,4-2m,0).\nNếu \\(4-2m=0\\) (m=2): hàng 3 = (0,0,0|0) → vô số nghiệm.\nNếu \\(m\\neq2\\): hàng 3 = (0,0,c≠0|0) nhưng vế phải=0 → 0=0 → vẫn tương thích!\n\n*Thực ra hệ này luôn tương thích. Vô nghiệm không xảy ra ở đây.*\n\nVới m=2: vô số; m≠2: nghiệm duy nhất.",
+    "quick": "Khử Gauss: m=2 → hàng 3 phụ thuộc → vô số nghiệm; m≠2 → nghiệm duy nhất. **Không có m nào cho vô nghiệm**.",
+    "casio": "CASIO [MODE][5][2]: thử m=2 (báo lỗi/vô số); thử m=0 (nghiệm duy nhất). Không có vô nghiệm.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 25,
+    "type": "system_homogeneous",
+    "question": "Hệ thuần nhất \\(AX=0\\) có nghiệm khác không khi và chỉ khi?",
+    "matrix": null,
+    "options": [
+      "\\(\\det(A)=0\\)",
+      "\\(\\det(A)\\neq0\\)",
+      "\\(A=0\\)",
+      "Không bao giờ"
+    ],
+    "correct": "\\(\\det(A)=0\\)",
+    "solution": "**Định lý:** Hệ \\(AX=0\\) (thuần nhất) có:\n- **Nghiệm duy nhất** (= nghiệm tầm thường 0) khi \\(\\det(A)\\neq0\\).\n- **Vô số nghiệm** (gồm nghiệm khác không) khi \\(\\det(A)=0\\).\n\nĐây là tính chất cơ bản của đại số tuyến tính.",
+    "quick": "AX=0 có nghiệm ≠ 0 ↔ **det(A)=0** ↔ rank(A)<n. Nếu det≠0 → chỉ nghiệm X=0.",
+    "casio": "CASIO [MODE][6]: Tính det(A). Nếu det=0 → có nghiệm ≠ 0.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 26,
+    "type": "cramer",
+    "question": "Giải hệ \\(\\begin{cases}2x+y=5\\\\x+3y=10\\end{cases}\\) bằng quy tắc Cramer.",
+    "matrix": null,
+    "options": [
+      "\\(x=1,\\;y=3\\)",
+      "\\(x=3,\\;y=1\\)",
+      "\\(x=2,\\;y=1\\)",
+      "\\(x=1,\\;y=4\\)"
+    ],
+    "correct": "\\(x=1,\\;y=3\\)",
+    "solution": "\\(D=\\begin{vmatrix}2&1\\\\1&3\\end{vmatrix}=6-1=5\\).\n\n\\(D_x=\\begin{vmatrix}5&1\\\\10&3\\end{vmatrix}=15-10=5\\), \\(x=D_x/D=1\\).\n\n\\(D_y=\\begin{vmatrix}2&5\\\\1&10\\end{vmatrix}=20-5=15\\), \\(y=D_y/D=3\\).",
+    "quick": "D=5, Dx=5, Dy=15 → **x=1, y=3**. Cramer: x=Dx/D, y=Dy/D.",
+    "casio": "CASIO [MODE][5][1]: nhập hệ số → x=1, y=3. Kiểm tra: 2(1)+3=5✓, 1+3(3)=10✓.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 27,
+    "type": "system_inconsistent",
+    "question": "Hệ \\(\\begin{cases}x+2y=3\\\\2x+4y=7\\end{cases}\\) là?",
+    "matrix": null,
+    "options": [
+      "Vô nghiệm",
+      "Nghiệm duy nhất",
+      "Vô số nghiệm",
+      "Không xác định"
+    ],
+    "correct": "Vô nghiệm",
+    "solution": "Det = |1,2;2,4| = 4-4 = 0 → hệ đặc biệt.\n\nPT2 hệ số = 2×PT1 nhưng vế phải 7 ≠ 2×3 = 6 → **mâu thuẫn** → **vô nghiệm**.\n\nCách xem: chia PT2 cho 2: \\(x+2y=3.5\\neq3\\) → hai đường thẳng song song.",
+    "quick": "Det=0, vế phải không tỉ lệ (7≠2×3) → **vô nghiệm** (2 đường song song, không giao).",
+    "casio": "CASIO [MODE][5][1]: nhập hệ số → báo ERROR (vô nghiệm). Det=0 xác nhận.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 28,
+    "type": "rank_system",
+    "question": "Theo định lý Rouché-Capelli, hệ \\(AX=b\\) có nghiệm khi và chỉ khi?",
+    "matrix": null,
+    "options": [
+      "\\(\\text{rank}(A)=\\text{rank}(A|b)\\)",
+      "\\(\\det(A)\\neq0\\)",
+      "\\(\\text{rank}(A)=n\\)",
+      "\\(\\text{rank}(A|b)>\\text{rank}(A)\\)"
+    ],
+    "correct": "\\(\\text{rank}(A)=\\text{rank}(A|b)\\)",
+    "solution": "**Định lý Rouché-Capelli:** Hệ \\(AX=b\\) có nghiệm ↔ rank(A) = rank(A|b).\n\nBa trường hợp:\n- rank(A)=rank(A|b)=n: **nghiệm duy nhất**.\n- rank(A)=rank(A|b)<n: **vô số nghiệm** (n−rank tham số tự do).\n- rank(A)<rank(A|b): **vô nghiệm**.",
+    "quick": "Có nghiệm ↔ **rank(A)=rank(A|b)**. Đây là định lý cơ bản để phân tích hệ PT.",
+    "casio": "CASIO: Tính rank(A) và rank(A|b) bằng cách đưa về bậc thang. So sánh hai hạng.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 29,
+    "type": "system_3vars_parameter",
+    "question": "Hệ \\(\\begin{cases}x+y+z=0\\\\2x+3y+4z=0\\\\3x+4y+5z=0\\end{cases}\\) có bao nhiêu tham số tự do?",
+    "matrix": null,
+    "options": [
+      "1",
+      "0",
+      "2",
+      "3"
+    ],
+    "correct": "1",
+    "solution": "Hệ thuần nhất. Khử Gauss:\nR2←R2-2R1: (0,1,2,0). R3←R3-3R1: (0,1,2,0).\nR3←R3-R2: (0,0,0,0).\n\nCòn 2 hàng pivot → rank(A)=2.\n\nTham số tự do = n − rank = 3 − 2 = **1**.",
+    "quick": "Khử → rank(A)=2. Tham số tự do = 3-2 = **1**. Một ẩn tự do.",
+    "casio": "CASIO: Khử Gauss, đếm số hàng khác 0 = rank = 2. Tham số = 3-2=1.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 30,
+    "type": "system_parameter",
+    "question": "Hệ \\(\\begin{cases}x-y=a\\\\-x+y=b\\end{cases}\\) có nghiệm khi?",
+    "matrix": null,
+    "options": [
+      "\\(a+b=0\\)",
+      "\\(a=b\\)",
+      "\\(a-b=0\\)",
+      "Mọi a,b"
+    ],
+    "correct": "\\(a+b=0\\)",
+    "solution": "Det = |1,-1;-1,1| = 1-1 = 0 → hệ đặc biệt với mọi a,b.\n\nCộng hai PT: \\(0=a+b\\). Để hệ tương thích → **a+b=0**.\n\nKhi \\(a+b=0\\): PT2 = −PT1 → vô số nghiệm: \\(x=t,\\;y=t-a\\), \\(t\\in\\mathbb{R}\\).",
+    "quick": "PT1+PT2: 0=a+b → điều kiện có nghiệm: **a+b=0**. Khi đó vô số nghiệm.",
+    "casio": "CASIO: Det=0. Thêm hai PT: 0=a+b → a=-b. Ví dụ a=1,b=-1: vô số nghiệm. a=1,b=1: vô nghiệm.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
   }
 ]

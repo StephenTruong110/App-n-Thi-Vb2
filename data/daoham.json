@@ -199,7 +199,7 @@
   },
   {
     "id": 12,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\sin x\\) là gì?",
     "matrix": null,
     "options": [
@@ -217,7 +217,7 @@
   },
   {
     "id": 13,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\cos x\\) là gì?",
     "matrix": null,
     "options": [
@@ -235,7 +235,7 @@
   },
   {
     "id": 14,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\tan x\\) là gì?",
     "matrix": null,
     "options": [
@@ -271,7 +271,7 @@
   },
   {
     "id": 16,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\sin(2x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -289,7 +289,7 @@
   },
   {
     "id": 17,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\cos(3x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -307,7 +307,7 @@
   },
   {
     "id": 18,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\tan(2x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -325,7 +325,7 @@
   },
   {
     "id": 19,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\sin^{2}x\\) là gì?",
     "matrix": null,
     "options": [
@@ -343,7 +343,7 @@
   },
   {
     "id": 20,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\cos^{2}x\\) là gì?",
     "matrix": null,
     "options": [
@@ -361,7 +361,7 @@
   },
   {
     "id": 21,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=e^{x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -379,7 +379,7 @@
   },
   {
     "id": 22,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=e^{2x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -397,7 +397,7 @@
   },
   {
     "id": 23,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=e^{-x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -415,7 +415,7 @@
   },
   {
     "id": 24,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\ln x\\) là gì?",
     "matrix": null,
     "options": [
@@ -433,7 +433,7 @@
   },
   {
     "id": 25,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\ln(2x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -451,7 +451,7 @@
   },
   {
     "id": 26,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\ln(x^{2}+1)\\) là gì?",
     "matrix": null,
     "options": [
@@ -487,7 +487,7 @@
   },
   {
     "id": 28,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=x\\ln x\\) là gì?",
     "matrix": null,
     "options": [
@@ -505,7 +505,7 @@
   },
   {
     "id": 29,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\frac{\\sin x}{x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -523,7 +523,7 @@
   },
   {
     "id": 30,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=x^{2}e^{x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -541,7 +541,7 @@
   },
   {
     "id": 31,
-    "type": "derivative",
+    "type": "derivative_higher_order",
     "question": "Đạo hàm cấp 2 của \\(f(x)=x^{3}\\) là gì?",
     "matrix": null,
     "options": [
@@ -559,7 +559,7 @@
   },
   {
     "id": 32,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\arcsin x\\) là gì?",
     "matrix": null,
     "options": [
@@ -577,7 +577,7 @@
   },
   {
     "id": 33,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\arctan x\\) là gì?",
     "matrix": null,
     "options": [
@@ -631,7 +631,7 @@
   },
   {
     "id": 36,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\sqrt{\\sin x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -649,7 +649,7 @@
   },
   {
     "id": 37,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\cos(\\ln x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -667,7 +667,7 @@
   },
   {
     "id": 38,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\cos x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -685,7 +685,7 @@
   },
   {
     "id": 39,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\frac{1}{\\ln x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -703,7 +703,7 @@
   },
   {
     "id": 40,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=x^{2}\\sin x\\) là gì?",
     "matrix": null,
     "options": [
@@ -721,7 +721,7 @@
   },
   {
     "id": 41,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\frac{\\ln x}{x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -739,7 +739,7 @@
   },
   {
     "id": 42,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\tan^{2}x\\) là gì?",
     "matrix": null,
     "options": [
@@ -757,7 +757,7 @@
   },
   {
     "id": 43,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\sin(\\cos x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -793,7 +793,7 @@
   },
   {
     "id": 45,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=e^{\\sin x}\\) là gì?",
     "matrix": null,
     "options": [
@@ -811,7 +811,7 @@
   },
   {
     "id": 46,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\sin x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -829,7 +829,7 @@
   },
   {
     "id": 47,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=x^{2}\\ln x\\) là gì?",
     "matrix": null,
     "options": [
@@ -865,7 +865,7 @@
   },
   {
     "id": 49,
-    "type": "derivative",
+    "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\cos^{2}(2x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -883,7 +883,7 @@
   },
   {
     "id": 50,
-    "type": "derivative",
+    "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\ln x)\\) là gì?",
     "matrix": null,
     "options": [
@@ -897,6 +897,366 @@
     "quick": "logarit của logarit",
     "casio": "CASIO fx-580VNX: Dùng CALC → d/dx, nhập hàm, nhập giá trị x rồi EXE để kiểm tra đạo hàm tại điểm cụ thể.",
     "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 51,
+    "type": "derivative_implicit",
+    "question": "Cho \\(x^2+y^2=25\\). Tìm \\(y'\\) theo phương pháp đạo hàm hàm ẩn.",
+    "matrix": null,
+    "options": [
+      "\\(y'=-\\dfrac{x}{y}\\)",
+      "\\(y'=\\dfrac{x}{y}\\)",
+      "\\(y'=-\\dfrac{y}{x}\\)",
+      "\\(y'=\\dfrac{y}{x}\\)"
+    ],
+    "correct": "\\(y'=-\\dfrac{x}{y}\\)",
+    "solution": "Đạo hàm hai vế theo \\(x\\), coi \\(y=y(x)\\):\n\\(2x+2yy'=0\\)\n\\(y'=-\\dfrac{2x}{2y}=-\\dfrac{x}{y}\\)",
+    "quick": "Đạo hàm ẩn: mỗi lần gặp y thêm y'. \\(2x+2yy'=0\\) → \\(y'=-x/y\\).",
+    "casio": "CASIO: Thử điểm (3,4): y'=-3/4. Kiểm tra: độ dốc tiếp tuyến đường tròn tại (3,4) là -3/4 ✓.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 52,
+    "type": "derivative_implicit",
+    "question": "Hàm ẩn \\(x^3+y^3=6xy\\). Tìm \\(y'\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2y-x^2}{y^2-2x}\\)",
+      "\\(\\dfrac{x^2-2y}{y^2-2x}\\)",
+      "\\(\\dfrac{2y-x}{y-2x}\\)",
+      "\\(-\\dfrac{x^2}{y^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{2y-x^2}{y^2-2x}\\)",
+    "solution": "Đạo hàm hai vế: \\(3x^2+3y^2y'=6(y+xy')\\).\n\nGiải \\(y'\\): \\(3y^2y'-6xy'=6y-3x^2\\)\n\\(y'(3y^2-6x)=6y-3x^2\\)\n\\(y'=\\dfrac{6y-3x^2}{3y^2-6x}=\\dfrac{2y-x^2}{y^2-2x}\\).",
+    "quick": "Đạo hàm cả vế, gom y' sang trái: \\(y'=\\dfrac{6y-3x^2}{3(y^2-2x)}=\\dfrac{2y-x^2}{y^2-2x}\\).",
+    "casio": "CASIO: Không dùng trực tiếp được. Thay điểm thỏa mãn phương trình rồi kiểm tra.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 53,
+    "type": "derivative_parametric",
+    "question": "Hàm tham số: \\(x=t^2-1,\\;y=t^3\\). Tìm \\(\\dfrac{dy}{dx}\\) tại \\(t=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(6\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "\\(\\dfrac{dy}{dx}=\\dfrac{y'_t}{x'_t}=\\dfrac{3t^2}{2t}=\\dfrac{3t}{2}\\).\n\nTại \\(t=2\\): \\(\\dfrac{dy}{dx}=\\dfrac{3\\cdot2}{2}=3\\).",
+    "quick": "\\(dy/dx=(dy/dt)/(dx/dt)=3t^2/2t=3t/2\\). Tại t=2: **3**.",
+    "casio": "CASIO: Tính y'_t=3t²=12, x'_t=2t=4. Tỉ số 12/4=3.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 54,
+    "type": "derivative_parametric",
+    "question": "Cho \\(x=\\cos t,\\;y=\\sin t\\). Tính \\(\\dfrac{dy}{dx}\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\cot t\\)",
+      "\\(\\cot t\\)",
+      "\\(-\\tan t\\)",
+      "\\(\\tan t\\)"
+    ],
+    "correct": "\\(-\\cot t\\)",
+    "solution": "\\(\\dfrac{dy}{dx}=\\dfrac{(\\sin t)'_t}{(\\cos t)'_t}=\\dfrac{\\cos t}{-\\sin t}=-\\cot t\\).\n\n*Lưu ý:* Đây là vòng tròn đơn vị, \\(-\\cot t\\) chính là độ dốc tiếp tuyến tại điểm \\((\\cos t,\\sin t)\\).",
+    "quick": "\\(dy/dx=\\cos t/(-\\sin t)=-\\cot t\\). Vòng tròn đơn vị: tiếp tuyến vuông góc với bán kính.",
+    "casio": "CASIO: t=π/4: dy/dx=cos(π/4)/(-sin(π/4))=-1. -cot(π/4)=-1 ✓.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 55,
+    "type": "derivative_higher_order",
+    "question": "Tính \\(y''\\) nếu \\(y=x\\ln x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{x}\\)",
+      "\\(\\ln x+1\\)",
+      "\\(\\ln x\\)",
+      "\\(x+\\ln x\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{x}\\)",
+    "solution": "\\(y'=(x\\ln x)'=\\ln x+x\\cdot\\dfrac{1}{x}=\\ln x+1\\).\n\n\\(y''=(\\ln x+1)'=\\dfrac{1}{x}+0=\\dfrac{1}{x}\\).",
+    "quick": "Bước 1: \\(y'=\\ln x+1\\). Bước 2: \\(y''=1/x\\).",
+    "casio": "CASIO: Tính y'(x)=lnx+1, rồi đạo hàm tiếp → 1/x.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 56,
+    "type": "derivative_higher_order",
+    "question": "Tính \\(y^{(n)}\\) của \\(y=e^{3x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(3^n e^{3x}\\)",
+      "\\(ne^{3x}\\)",
+      "\\(3e^{nx}\\)",
+      "\\(e^{3nx}\\)"
+    ],
+    "correct": "\\(3^n e^{3x}\\)",
+    "solution": "\\(y'=3e^{3x},\\;y''=9e^{3x}=3^2e^{3x},\\;y'''=27e^{3x}=3^3e^{3x},\\ldots\\)\n\nQuy luật: \\(y^{(n)}=3^ne^{3x}\\).\n\nChứng minh bằng quy nạp: \\(y^{(n+1)}=(3^ne^{3x})'=3^n\\cdot3e^{3x}=3^{n+1}e^{3x}\\) ✓.",
+    "quick": "Mỗi lần đạo hàm nhân thêm 3 (đạo hàm dây chuyền) → sau n lần: **\\(3^ne^{3x}\\)**.",
+    "casio": "CASIO: y'(x)=3e^3x, y''(x)=9e^3x, ... → hệ số là 3^n.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 57,
+    "type": "logarithmic_differentiation",
+    "question": "Tính \\(y'\\) của \\(y=x^x\\) (\\(x>0\\)).",
+    "matrix": null,
+    "options": [
+      "\\(x^x(\\ln x+1)\\)",
+      "\\(x^{x-1}\\)",
+      "\\(x^x\\ln x\\)",
+      "\\((x+1)x^x\\)"
+    ],
+    "correct": "\\(x^x(\\ln x+1)\\)",
+    "solution": "**Logarit hóa:** Lấy \\(\\ln\\) cả hai vế:\n\\(\\ln y=x\\ln x\\).\n\nĐạo hàm: \\(\\dfrac{y'}{y}=\\ln x+x\\cdot\\dfrac{1}{x}=\\ln x+1\\).\n\n\\(y'=y(\\ln x+1)=x^x(\\ln x+1)\\).",
+    "quick": "Đặt \\(\\ln y=x\\ln x\\), đạo hàm: \\(y'/y=\\ln x+1\\) → \\(y'=x^x(\\ln x+1)\\).",
+    "casio": "CASIO: Thử x=1: y'=1^1(0+1)=1. Kiểm tra: lim(x^x-1)/x→1 ở x=1? Gần đúng ✓.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 58,
+    "type": "logarithmic_differentiation",
+    "question": "Tính \\(y'\\) của \\(y=\\dfrac{(x+1)^2\\sqrt{x-3}}{(x^2+1)^3}\\) bằng logarit hóa.",
+    "matrix": null,
+    "options": [
+      "\\(y\\left[\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\right]\\)",
+      "\\(\\dfrac{2}{x+1}+\\dfrac{1}{2\\sqrt{x-3}}-\\dfrac{6x}{x^2+1}\\)",
+      "\\(y\\left[\\dfrac{2}{x+1}-\\dfrac{1}{2(x-3)}+\\dfrac{6x}{x^2+1}\\right]\\)",
+      "\\(y\\left[\\dfrac{2}{x+1}+\\dfrac{1}{x-3}-\\dfrac{6x}{x^2+1}\\right]\\)"
+    ],
+    "correct": "\\(y\\left[\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\right]\\)",
+    "solution": "\\(\\ln y=2\\ln(x+1)+\\tfrac{1}{2}\\ln(x-3)-3\\ln(x^2+1)\\).\n\nĐạo hàm: \\(\\dfrac{y'}{y}=\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\).\n\n\\(y'=y\\cdot\\left[\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\right]\\).",
+    "quick": "Log hóa: \\(\\ln y=2\\ln(x+1)+\\frac{1}{2}\\ln(x-3)-3\\ln(x^2+1)\\) → đạo hàm từng số hạng → nhân lại với y.",
+    "casio": "CASIO: Quá phức tạp để CASIO trực tiếp. Thay số cụ thể để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 59,
+    "type": "derivative_application_tangent",
+    "question": "Phương trình tiếp tuyến của \\(y=x^2-2x\\) tại điểm có hoành độ \\(x=2\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(y=2x-4\\)",
+      "\\(y=2x-2\\)",
+      "\\(y=4x-4\\)",
+      "\\(y=2x\\)"
+    ],
+    "correct": "\\(y=2x-4\\)",
+    "solution": "\\(y'=2x-2\\). Tại \\(x=2\\): \\(k=y'(2)=2\\cdot2-2=2\\).\n\n\\(y(2)=4-4=0\\).\n\nPTTT: \\(y-0=2(x-2)\\) → \\(y=2x-4\\).",
+    "quick": "k = y'(2) = 2. Điểm (2,0). PTTT: \\(y-0=2(x-2)\\) → **y=2x-4**.",
+    "casio": "CASIO: y'=2x-2, tại x=2: k=2. y(2)=0. PTTT: y=2(x-2)=2x-4.",
+    "difficulty": 1,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 60,
+    "type": "derivative_application_tangent",
+    "question": "Tiếp tuyến của \\(y=\\sin x\\) tại \\(x=\\pi/2\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(y=1\\)",
+      "\\(y=x-\\pi/2+1\\)",
+      "\\(y=0\\)",
+      "\\(y=x\\)"
+    ],
+    "correct": "\\(y=1\\)",
+    "solution": "\\(y'=\\cos x\\). Tại \\(x=\\pi/2\\): \\(k=\\cos(\\pi/2)=0\\) → tiếp tuyến **nằm ngang**.\n\n\\(y(\\pi/2)=\\sin(\\pi/2)=1\\).\n\nPTTT: \\(y=1\\).",
+    "quick": "\\(y'=\\cos x\\), tại x=π/2: k=0 (ngang). Điểm (π/2, 1). PTTT: **y=1**.",
+    "casio": "CASIO: y'(π/2)=cos(π/2)=0. y(π/2)=1. Tiếp tuyến ngang y=1.",
+    "difficulty": 1,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 61,
+    "type": "derivative_higher_order",
+    "question": "Tính \\(y^{(4)}\\) của \\(y=\\sin x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\sin x\\)",
+      "\\(\\cos x\\)",
+      "\\(-\\sin x\\)",
+      "\\(-\\cos x\\)"
+    ],
+    "correct": "\\(\\sin x\\)",
+    "solution": "Đạo hàm sin x chu kỳ 4:\n\\(y'=\\cos x\\)\n\\(y''=-\\sin x\\)\n\\(y'''=-\\cos x\\)\n\\(y^{(4)}=\\sin x\\).\n\nSau 4 lần đạo hàm, hàm sin trở về chính nó.",
+    "quick": "Chu kỳ sin: sin→cos→-sin→-cos→**sin**. Bậc 4 → **sin x**.",
+    "casio": "CASIO: y'=cosx, y''=-sinx, y'''=-cosx, y''''=sinx ✓.",
+    "difficulty": 1,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 62,
+    "type": "derivative_higher_order",
+    "question": "Hàm \\(y=\\dfrac{1}{1-x}\\). Tính \\(y^{(n)}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{n!}{(1-x)^{n+1}}\\)",
+      "\\(\\dfrac{n}{(1-x)^n}\\)",
+      "\\(\\dfrac{(-1)^n n!}{(1-x)^{n+1}}\\)",
+      "\\(\\dfrac{1}{(1-x)^n}\\)"
+    ],
+    "correct": "\\(\\dfrac{n!}{(1-x)^{n+1}}\\)",
+    "solution": "\\(y=(1-x)^{-1}\\), \\(y'=(1-x)^{-2}\\), \\(y''=2(1-x)^{-3}\\), \\(y'''=6(1-x)^{-4}\\)...\n\nQuy luật: \\(y^{(n)}=\\dfrac{n!}{(1-x)^{n+1}}\\).\n\nChú ý: \\((-1)^n\\cdot(-1)^n=1\\) vì đạo hàm \\((1-x)\\) cho ra \\(-1\\) hai lần = tích dương.",
+    "quick": "\\(y=(1-x)^{-1}\\). Quy tắc: mỗi lần đạo hàm cho nhân tử giai thừa và giảm bậc −1. Kết quả: \\(n!/(1-x)^{n+1}\\).",
+    "casio": "CASIO: y'(x)=1/(1-x)², y''(x)=2/(1-x)³, ... → hệ số n!",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 63,
+    "type": "derivative_implicit",
+    "question": "Phương trình \\(xy+y^2=5\\). Tìm \\(y'\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{y}{x+2y}\\)",
+      "\\(-\\dfrac{x}{x+2y}\\)",
+      "\\(\\dfrac{y}{x+2y}\\)",
+      "\\(-\\dfrac{y}{2y-x}\\)"
+    ],
+    "correct": "\\(-\\dfrac{y}{x+2y}\\)",
+    "solution": "Đạo hàm: \\((xy)'+(y^2)'=0\\)\n\\(y+xy'+2yy'=0\\)\n\\(y'(x+2y)=-y\\)\n\\(y'=-\\dfrac{y}{x+2y}\\)",
+    "quick": "Quy tắc tích: \\(y+xy'\\) từ xy. Gom y': \\((x+2y)y'=-y\\) → \\(y'=-y/(x+2y)\\).",
+    "casio": "CASIO: Thử điểm thỏa PT. Ví dụ (0,√5): y'=-√5/(0+2√5)=-1/2.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 64,
+    "type": "derivative_application_rate",
+    "question": "Bán kính hình cầu tăng với tốc độ \\(\\dfrac{dr}{dt}=2\\) cm/s. Tốc độ tăng thể tích khi \\(r=3\\) cm là?",
+    "matrix": null,
+    "options": [
+      "\\(72\\pi\\) cm³/s",
+      "\\(36\\pi\\) cm³/s",
+      "\\(24\\pi\\) cm³/s",
+      "\\(12\\pi\\) cm³/s"
+    ],
+    "correct": "\\(72\\pi\\) cm³/s",
+    "solution": "\\(V=\\dfrac{4}{3}\\pi r^3\\).\n\n\\(\\dfrac{dV}{dt}=\\dfrac{dV}{dr}\\cdot\\dfrac{dr}{dt}=4\\pi r^2\\cdot2=8\\pi r^2\\).\n\nKhi \\(r=3\\): \\(\\dfrac{dV}{dt}=8\\pi\\cdot9=72\\pi\\) cm³/s.",
+    "quick": "\\(dV/dt=(dV/dr)(dr/dt)=4\\pi r^2\\cdot2\\). Tại r=3: **8π×9=72π** cm³/s.",
+    "casio": "CASIO: dV/dr=4π×9=36π, nhân với dr/dt=2 → 72π.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 65,
+    "type": "derivative_application_tangent",
+    "question": "Số điểm trên đường cong \\(y=x^3-3x\\) có tiếp tuyến song song với trục Ox là?",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Tiếp tuyến song song Ox ↔ \\(y'=0\\).\n\n\\(y'=3x^2-3=0 \\Rightarrow x^2=1 \\Rightarrow x=\\pm1\\).\n\nHai điểm: \\((1,-2)\\) và \\((-1,2)\\). Đường cong có **2 điểm** có tiếp tuyến nằm ngang.",
+    "quick": "Tiếp tuyến // Ox ↔ k=0 ↔ y'=0. Giải \\(3x^2-3=0\\) → **2 nghiệm x=±1**.",
+    "casio": "CASIO: Giải phương trình y'=3x²-3=0 → x=±1 → 2 điểm.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 66,
+    "type": "derivative_exp_log",
+    "question": "Đạo hàm của \\(y=\\log_a x\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{x\\ln a}\\)",
+      "\\(\\dfrac{1}{x}\\)",
+      "\\(\\dfrac{\\ln a}{x}\\)",
+      "\\(\\dfrac{a}{x}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{x\\ln a}\\)",
+    "solution": "Dùng công thức đổi cơ số: \\(\\log_a x=\\dfrac{\\ln x}{\\ln a}\\).\n\n\\(y'=\\left(\\dfrac{\\ln x}{\\ln a}\\right)'=\\dfrac{1}{\\ln a}\\cdot\\dfrac{1}{x}=\\dfrac{1}{x\\ln a}\\).\n\n*Đặc biệt:* Khi \\(a=e\\): \\((\\ln x)'=1/x\\).",
+    "quick": "\\(\\log_a x=\\ln x/\\ln a\\) → đạo hàm: \\(\\dfrac{1}{x\\ln a}\\). a=e cho **1/x**.",
+    "casio": "CASIO: d/dx[log_a(x)]. Tại x=1: 1/(1·ln a)=1/ln a. Ví dụ a=10: 1/ln10≈0.4343.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 67,
+    "type": "derivative_higher_order",
+    "question": "Cho \\(y=e^x\\). Đạo hàm cấp 100 là?",
+    "matrix": null,
+    "options": [
+      "\\(e^x\\)",
+      "\\(100e^x\\)",
+      "\\(e^{100x}\\)",
+      "\\(100!e^x\\)"
+    ],
+    "correct": "\\(e^x\\)",
+    "solution": "\\((e^x)'=e^x,\\;(e^x)''=e^x,\\ldots\\)\n\nHàm \\(e^x\\) đặc biệt: mọi đạo hàm đều bằng chính nó.\n\n\\(y^{(100)}=e^x\\).",
+    "quick": "\\(e^x\\) là hàm **bất động** của phép đạo hàm: \\((e^x)^{(n)}=e^x\\) với mọi n.",
+    "casio": "CASIO: Hiển nhiên y'=e^x=y → đạo hàm mọi bậc = e^x.",
+    "difficulty": 1,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 68,
+    "type": "derivative_trig",
+    "question": "Đạo hàm của \\(y=\\arctan(2x)\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{1+4x^2}\\)",
+      "\\(\\dfrac{1}{1+4x^2}\\)",
+      "\\(\\dfrac{2}{1+2x^2}\\)",
+      "\\(\\dfrac{1}{1+2x^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{1+4x^2}\\)",
+    "solution": "Dùng dây chuyền: \\((\\arctan u)'=\\dfrac{u'}{1+u^2}\\) với \\(u=2x\\), \\(u'=2\\).\n\n\\(y'=\\dfrac{2}{1+(2x)^2}=\\dfrac{2}{1+4x^2}\\).",
+    "quick": "\\((\\arctan u)'=u'/(1+u²)\\). Đây u=2x, u'=2 → **2/(1+4x²)**.",
+    "casio": "CASIO: Tại x=0: y'=2/(1+0)=2. Kiểm tra lại: arctan(2x) tại x=0 có độ dốc =2 ✓.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 69,
+    "type": "derivative_chain",
+    "question": "Đạo hàm của \\(y=\\ln(\\sin x)\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\cot x\\)",
+      "\\(\\tan x\\)",
+      "\\(-\\cot x\\)",
+      "\\(\\dfrac{1}{\\sin x}\\)"
+    ],
+    "correct": "\\(\\cot x\\)",
+    "solution": "Dùng dây chuyền: \\(y'=\\dfrac{(\\sin x)'}{\\sin x}=\\dfrac{\\cos x}{\\sin x}=\\cot x\\).\n\nÁp dụng: \\((\\ln u)'=u'/u\\) với \\(u=\\sin x\\), \\(u'=\\cos x\\).",
+    "quick": "\\((\\ln u)'=u'/u\\): \\(u=\\sin x, u'=\\cos x\\) → **cos x/sin x = cot x**.",
+    "casio": "CASIO: Tại x=π/4: y'=cot(π/4)=1. Kiểm tra: d/dx[ln(sin x)] tại x=π/4.",
+    "difficulty": 1,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 70,
+    "type": "derivative_chain",
+    "question": "Đạo hàm của \\(y=e^{\\sin x}\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(e^{\\sin x}\\cos x\\)",
+      "\\(e^{\\sin x}\\)",
+      "\\(\\cos x\\cdot e^{\\cos x}\\)",
+      "\\(e^{\\cos x}\\sin x\\)"
+    ],
+    "correct": "\\(e^{\\sin x}\\cos x\\)",
+    "solution": "Dây chuyền: \\(y'=e^{\\sin x}\\cdot(\\sin x)'=e^{\\sin x}\\cos x\\).\n\nÁp dụng: \\((e^u)'=e^u\\cdot u'\\) với \\(u=\\sin x\\), \\(u'=\\cos x\\).",
+    "quick": "\\((e^u)'=e^u u'\\): \\(u=\\sin x, u'=\\cos x\\) → **e^{sin x}·cos x**.",
+    "casio": "CASIO: Tại x=0: y'=e^0·1=1. Kiểm tra d/dx[e^sinx] tại x=0.",
+    "difficulty": 1,
     "topic": "Đạo hàm"
   }
 ]

@@ -898,5 +898,365 @@
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
     "difficulty": 2,
     "topic": "PT Vi phân"
+  },
+  {
+    "id": 51,
+    "type": "identify_type",
+    "question": "Phương trình \\(y' + P(x)y = Q(x)\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "PT tuyến tính cấp 1",
+      "PT phân ly biến số",
+      "PT thuần nhất",
+      "PT Bernoulli"
+    ],
+    "correct": "PT tuyến tính cấp 1",
+    "solution": "Dạng chuẩn **PT tuyến tính cấp 1**: \\(y'+P(x)y=Q(x)\\).\n\nĐặc điểm: y và y' đều bậc 1, không có tích y·y' hay luỹ thừa.\n\nNghiệm: \\(y=e^{-\\int P\\,dx}\\left[\\int Q\\,e^{\\int P\\,dx}\\,dx+C\\right]\\).",
+    "quick": "Dạng: y' + P(x)y = Q(x) → **tuyến tính bậc 1**. Nhận dạng: y và y' xuất hiện bậc 1.",
+    "casio": "CASIO: Không giải trực tiếp. Tìm nhân tử tích hợp μ=e^∫P dx, nhân cả vế, rồi tích phân.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 52,
+    "type": "identify_type",
+    "question": "Phương trình \\(y'=f(y/x)\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "PT thuần nhất",
+      "PT tuyến tính",
+      "PT phân ly biến",
+      "PT Bernoulli"
+    ],
+    "correct": "PT thuần nhất",
+    "solution": "Dạng chuẩn **PT thuần nhất**: \\(y'=f(y/x)\\) hoặc \\(M(x,y)dx+N(x,y)dy=0\\) trong đó M, N là hàm thuần nhất cùng bậc.\n\nGiải bằng đặt \\(u=y/x\\) → \\(y=ux\\) → \\(y'=u+xu'\\).",
+    "quick": "Dạng \\(y'=f(y/x)\\) → **thuần nhất**. Đặt \\(u=y/x\\) để đưa về phân ly biến.",
+    "casio": "CASIO: Đặt u=y/x, y=ux, y'=u+xu'. Thay vào, phân ly biến theo u và x.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 53,
+    "type": "identify_type",
+    "question": "Phương trình \\(y'+P(x)y=Q(x)y^n\\) (\\(n\\neq0,1\\)) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "PT Bernoulli",
+      "PT tuyến tính",
+      "PT phân ly biến",
+      "PT thuần nhất"
+    ],
+    "correct": "PT Bernoulli",
+    "solution": "Đây là **PT Bernoulli** với đặc trưng có \\(y^n\\) (n ≠ 0, 1) ở vế phải.\n\nGiải: đặt \\(z=y^{1-n}\\) → \\(z'=(1-n)y^{-n}y'\\) → biến về PT tuyến tính theo z.\n\nKhi n=0: PT tuyến tính. Khi n=1: PT phân ly biến.",
+    "quick": "\\(y'+Py=Qy^n\\), n≠0,1 → **Bernoulli**. Đặt \\(z=y^{1-n}\\) → tuyến tính.",
+    "casio": "CASIO: Nhận dạng: có y^n ở vế phải với n≥2 → Bernoulli. Đặt z=y^(1-n).",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 54,
+    "type": "separable",
+    "question": "Giải \\(y'=xy\\) (\\(y\\neq0\\)).",
+    "matrix": null,
+    "options": [
+      "\\(y=Ce^{x^2/2}\\)",
+      "\\(y=Ce^x\\)",
+      "\\(y=Ce^{x^2}\\)",
+      "\\(y=Cxe^x\\)"
+    ],
+    "correct": "\\(y=Ce^{x^2/2}\\)",
+    "solution": "Phân ly biến: \\(\\dfrac{dy}{y}=x\\,dx\\).\n\nTích phân: \\(\\ln|y|=\\dfrac{x^2}{2}+C_1\\).\n\n\\(y=Ce^{x^2/2}\\) với \\(C=\\pm e^{C_1}\\).",
+    "quick": "Tách: \\(dy/y=xdx\\) → \\(\\ln|y|=x^2/2+C_1\\) → **y=Ce^{x²/2}**.",
+    "casio": "CASIO: Tích phân ∫dy/y=ln|y|; ∫xdx=x²/2. Nghiệm: y=Ce^(x²/2).",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 55,
+    "type": "separable",
+    "question": "Nghiệm của \\(y'=\\dfrac{y}{x}\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(y=Cx\\)",
+      "\\(y=C/x\\)",
+      "\\(y=Ce^x\\)",
+      "\\(y=Cx^2\\)"
+    ],
+    "correct": "\\(y=Cx\\)",
+    "solution": "Phân ly biến: \\(\\dfrac{dy}{y}=\\dfrac{dx}{x}\\).\n\nTích phân: \\(\\ln|y|=\\ln|x|+C_1\\) → \\(|y|=e^{C_1}|x|\\) → \\(y=Cx\\).",
+    "quick": "\\(dy/y=dx/x\\) → \\(\\ln y=\\ln x+C\\) → **y=Cx** (hàm tuyến tính qua gốc).",
+    "casio": "CASIO: ∫dy/y=ln|y|; ∫dx/x=ln|x|. Nghiệm: y=Cx.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 56,
+    "type": "linear_first_order",
+    "question": "Giải \\(y'+y=e^x\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{e^x}{2}+Ce^{-x}\\)",
+      "\\(y=e^x+Ce^{-x}\\)",
+      "\\(y=xe^x+Ce^{-x}\\)",
+      "\\(y=\\dfrac{e^x}{2}+C\\)"
+    ],
+    "correct": "\\(y=\\dfrac{e^x}{2}+Ce^{-x}\\)",
+    "solution": "Nhân tử tích hợp: \\(\\mu=e^{\\int1\\,dx}=e^x\\).\n\nNhân cả vế: \\((e^xy)'=e^{2x}\\).\n\nTích phân: \\(e^xy=\\dfrac{e^{2x}}{2}+C\\).\n\n\\(y=\\dfrac{e^x}{2}+Ce^{-x}\\).",
+    "quick": "μ=e^x, nhân vào: (ye^x)'=e^2x → ye^x=e^2x/2+C → **y=e^x/2+Ce^-x**.",
+    "casio": "CASIO: Nhân tử tích hợp μ=e^∫P dx=e^x. Nhân vế: d(ye^x)=e^2x dx. Tích phân: ye^x=e^2x/2+C.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 57,
+    "type": "linear_first_order",
+    "question": "Tìm nghiệm riêng của \\(y'-2y=4\\) thỏa \\(y(0)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=-2+2e^{2x}\\)",
+      "\\(y=2e^{2x}-2\\)",
+      "\\(y=-2(1-e^{2x})\\)",
+      "\\(y=2(e^{2x}-1)\\)"
+    ],
+    "correct": "\\(y=-2+2e^{2x}\\)",
+    "solution": "Nghiệm tổng quát: μ=e^{-2x}. Nhân: \\((ye^{-2x})'=4e^{-2x}\\).\n\n\\(ye^{-2x}=4\\cdot\\dfrac{e^{-2x}}{-2}+C=-2e^{-2x}+C\\).\n\n\\(y=-2+Ce^{2x}\\).\n\nĐiều kiện \\(y(0)=0\\): \\(0=-2+C \\Rightarrow C=2\\).\n\n\\(y=-2+2e^{2x}\\).",
+    "quick": "Nghiệm TQ: y=-2+Ce^2x. Điều kiện y(0)=0: C=2 → **y=-2+2e^2x**.",
+    "casio": "CASIO: Tính nghiệm TQ, thay y(0)=0, tìm C=2.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 58,
+    "type": "homogeneous",
+    "question": "Giải \\(y'=\\dfrac{y-x}{y+x}\\) bằng đặt \\(u=y/x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\arctan(y/x)-\\dfrac{1}{2}\\ln(x^2+y^2)=C\\)",
+      "\\(\\arctan(y/x)=C\\)",
+      "\\(y^2-x^2=C\\)",
+      "\\(\\ln|x|+y/x=C\\)"
+    ],
+    "correct": "\\(\\arctan(y/x)-\\dfrac{1}{2}\\ln(x^2+y^2)=C\\)",
+    "solution": "\\(y'=\\dfrac{y/x-1}{y/x+1}=f(u)\\) với \\(u=y/x\\).\n\nĐặt \\(y=ux\\): \\(u+xu'=\\dfrac{u-1}{u+1}\\) → \\(xu'=\\dfrac{u-1}{u+1}-u=\\dfrac{-1-u^2}{u+1}\\).\n\nPhân ly: \\(\\dfrac{u+1}{1+u^2}du=-\\dfrac{dx}{x}\\).\n\nTích phân: \\(\\arctan u+\\dfrac{1}{2}\\ln(1+u^2)=-\\ln|x|+C_1\\).\n\nĐặt lại \\(u=y/x\\): \\(\\arctan(y/x)-\\dfrac{1}{2}\\ln(x^2+y^2)=C\\).",
+    "quick": "Đặt u=y/x → phân ly biến → \\(\\int\\dfrac{u+1}{1+u^2}du=\\arctan u+\\frac{1}{2}\\ln(1+u^2)\\).",
+    "casio": "CASIO: Phương pháp ẩn u=y/x, không tính được trực tiếp. Xác nhận nghiệm bằng vi phân toàn phần.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 59,
+    "type": "application_mixing",
+    "question": "Bể chứa 100L nước muối 1g/L. Nước muối 2g/L chảy vào với tốc độ 5L/phút, đồng thời hỗn hợp chảy ra 5L/phút. Lượng muối S(t) sau t phút thỏa PT nào?",
+    "matrix": null,
+    "options": [
+      "\\(S'=10-\\dfrac{S}{20}\\)",
+      "\\(S'=10-5S/100\\)",
+      "\\(S'=5\\cdot2-5\\cdot\\dfrac{S}{100}\\)",
+      "Cả B và C đều đúng"
+    ],
+    "correct": "Cả B và C đều đúng",
+    "solution": "Tốc độ vào: \\(5\\text{L/ph}\\times2\\text{g/L}=10\\text{g/ph}\\).\n\nTốc độ ra: \\(5\\text{L/ph}\\times\\dfrac{S}{100}\\text{g/L}=\\dfrac{S}{20}\\text{g/ph}\\).\n\n\\(S'=10-\\dfrac{S}{20}\\).\n\nPhương án B: \\(10-5S/100=10-S/20\\) ✓. Phương án C cũng = \\(10-S/20\\) ✓.",
+    "quick": "Vào - Ra: \\(S'=(\\text{nồng độ vào})(\\text{lưu lượng vào})-(\\text{nồng độ hiện tại})(\\text{lưu lượng ra})\\).",
+    "casio": "CASIO: PT tuyến tính S'+S/20=10. Nhân tử tích hợp e^(t/20). Nghiệm: S=200+(S₀-200)e^(-t/20).",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 60,
+    "type": "application_population",
+    "question": "Dân số tăng tỉ lệ với chính nó. Năm 2000 có 1000 người, năm 2010 có 1500 người. Dự báo năm 2020 có bao nhiêu người?",
+    "matrix": null,
+    "options": [
+      "\\(2250\\)",
+      "\\(2000\\)",
+      "\\(3000\\)",
+      "\\(2500\\)"
+    ],
+    "correct": "\\(2250\\)",
+    "solution": "\\(P'=kP\\) → \\(P(t)=P_0e^{kt}\\).\n\n\\(P(10)=1000e^{10k}=1500\\) → \\(e^{10k}=1.5\\).\n\n\\(P(20)=1000e^{20k}=1000(e^{10k})^2=1000\\times1.5^2=2250\\).",
+    "quick": "Sau mỗi 10 năm nhân 1.5. Năm 2020 = 1000×1.5² = **2250**.",
+    "casio": "CASIO: k=ln(1.5)/10. P(20)=1000e^(20k)=1000×(1.5)²=2250.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 61,
+    "type": "exact_differential",
+    "question": "Phương trình \\((2xy+1)dx+(x^2-1)dy=0\\) là PT vi phân toàn phần vì?",
+    "matrix": null,
+    "options": [
+      "\\(\\partial M/\\partial y=\\partial N/\\partial x=2x\\)",
+      "\\(M=N\\)",
+      "\\(MN=\\text{const}\\)",
+      "\\(M+N=0\\)"
+    ],
+    "correct": "\\(\\partial M/\\partial y=\\partial N/\\partial x=2x\\)",
+    "solution": "\\(M=2xy+1,\\;N=x^2-1\\).\n\n\\(\\dfrac{\\partial M}{\\partial y}=2x\\), \\(\\dfrac{\\partial N}{\\partial x}=2x\\).\n\nVì \\(\\dfrac{\\partial M}{\\partial y}=\\dfrac{\\partial N}{\\partial x}\\) → PT là **vi phân toàn phần**.\n\nNghiệm: \\(F(x,y)=x^2y+x-y=C\\).",
+    "quick": "Kiểm tra: \\(M_y=2x=N_x=2x\\) ✓ → vi phân toàn phần. Nghiệm: x²y+x-y=C.",
+    "casio": "CASIO: Tính M_y và N_x bằng tay. Nếu bằng nhau → toàn phần. Tìm F: ∂F/∂x=M, ∂F/∂y=N.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 62,
+    "type": "clairaut",
+    "question": "Phương trình Clairaut có dạng gì?",
+    "matrix": null,
+    "options": [
+      "\\(y=xy'+f(y')\\)",
+      "\\(y=xf(y')\\)",
+      "\\(y'=f(x/y)\\)",
+      "\\(y'+Py=Qy^n\\)"
+    ],
+    "correct": "\\(y=xy'+f(y')\\)",
+    "solution": "**PT Clairaut:** \\(y=xy'+f(y')\\).\n\nĐặt \\(p=y'\\): \\(y=xp+f(p)\\).\n\nĐạo hàm theo x: \\(p=p+xp'+f'(p)p'\\) → \\(p'[x+f'(p)]=0\\).\n\n- Nếu \\(p'=0\\): \\(p=C\\) → **nghiệm tổng quát** \\(y=Cx+f(C)\\) (họ đường thẳng).\n- Nếu \\(x+f'(p)=0\\): **nghiệm kỳ dị** (bao của họ đường thẳng).",
+    "quick": "Dạng Clairaut: **y=xy'+f(y')**. Nghiệm TQ: họ đường thẳng y=Cx+f(C).",
+    "casio": "CASIO: Không giải trực tiếp. Xác định dạng, đặt p=y', giải hệ để tìm nghiệm kỳ dị.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 63,
+    "type": "bernoulli",
+    "question": "Giải PT Bernoulli \\(y'+y=y^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{1}{1+Ce^x}\\)",
+      "\\(y=\\dfrac{1}{1+Ce^{-x}}\\)",
+      "\\(y=\\dfrac{e^x}{C+e^x}\\)",
+      "\\(y=1/(Ce^x)\\)"
+    ],
+    "correct": "\\(y=\\dfrac{1}{1+Ce^x}\\)",
+    "solution": "Bernoulli với \\(n=2\\). Đặt \\(z=y^{1-2}=y^{-1}=1/y\\).\n\n\\(z'=-y^{-2}y'\\). Chia PT cho \\(y^2\\): \\(y^{-2}y'+y^{-1}=1\\) → \\(-z'+z=1\\) → \\(z'-z=-1\\).\n\nPT tuyến tính z'+(-1)z=-1. Nhân tử: \\(e^{-x}\\).\n\n\\((ze^{-x})'=-e^{-x}\\) → \\(ze^{-x}=e^{-x}+C\\) → \\(z=1+Ce^x\\).\n\n\\(y=1/z=\\dfrac{1}{1+Ce^x}\\).",
+    "quick": "n=2: z=1/y → z'-z=-1 → z=1+Ce^x → **y=1/(1+Ce^x)**.",
+    "casio": "CASIO: Đặt z=1/y, biến thành PT tuyến tính bậc 1 rồi giải.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 64,
+    "type": "separable",
+    "question": "Giải \\(\\dfrac{dy}{dx}=\\dfrac{x^2}{1-y^2}\\) với điều kiện \\(y(0)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}\\)",
+      "\\(y^2=x^2\\)",
+      "\\(y=x\\)",
+      "\\(y+y^3/3=x^3/3\\)"
+    ],
+    "correct": "\\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}\\)",
+    "solution": "Phân ly: \\((1-y^2)dy=x^2\\,dx\\).\n\nTích phân: \\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}+C\\).\n\nĐiều kiện \\(y(0)=0\\): \\(0-0=0+C \\Rightarrow C=0\\).\n\nNghiệm: \\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}\\).",
+    "quick": "Tách: \\((1-y^2)dy=x^2dx\\) → tích phân → **y-y³/3=x³/3** (vì C=0).",
+    "casio": "CASIO: ∫(1-y²)dy=y-y³/3; ∫x²dx=x³/3. Điều kiện y(0)=0 → C=0.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 65,
+    "type": "integrating_factor",
+    "question": "Phương trình \\((y^2-x)dx+2xy\\,dy=0\\) không là vi phân toàn phần. Nhân tử tích hợp \\(\\mu(x)\\) thỏa điều kiện nào?",
+    "matrix": null,
+    "options": [
+      "\\(\\mu=1/x^2\\)",
+      "\\(\\mu=x\\)",
+      "\\(\\mu=1/x\\)",
+      "\\(\\mu=e^x\\)"
+    ],
+    "correct": "\\(\\mu=1/x^2\\)",
+    "solution": "Kiểm tra: \\(M_y=2y,\\;N_x=2y\\) → thực ra đã toàn phần! \n\nKhoan, \\(M=y^2-x,\\;N=2xy\\). \\(M_y=2y,\\;N_x=2y\\). Bằng nhau → **đã toàn phần**.\n\nNghiệm: \\(F_x=y^2-x\\) → \\(F=xy^2-x^2/2+g(y)\\). \\(F_y=2xy=N=2xy\\) ✓ → \\(g'=0\\).\n\nNghiệm: \\(xy^2-x^2/2=C\\).\n\n*Câu này kiểm tra nhận dạng: PT đã toàn phần nên μ=1.*",
+    "quick": "Tính M_y=2y và N_x=2y → bằng nhau → **đã toàn phần**, μ=1. Không cần nhân tử!",
+    "casio": "CASIO: Tính M_y và N_x. Nếu M_y=N_x → toàn phần. Nghiệm F=xy²-x²/2=C.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 66,
+    "type": "application_decay",
+    "question": "Chất phóng xạ phân rã theo \\(N'=-kN\\). Sau 10 năm còn 80%. Sau bao nhiêu năm còn 50%?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{10\\ln 2}{\\ln(10/8)}\\)",
+      "\\(\\dfrac{10\\ln0.5}{\\ln0.8}\\)",
+      "\\(\\dfrac{\\ln2}{k}\\)",
+      "Cả A và B đều đúng"
+    ],
+    "correct": "Cả A và B đều đúng",
+    "solution": "\\(N(t)=N_0e^{-kt}\\). Sau 10 năm: \\(e^{-10k}=0.8\\) → \\(k=\\dfrac{\\ln(10/8)}{10}=\\dfrac{-\\ln0.8}{10}\\).\n\nBán chu kỳ \\(T_{1/2}\\): \\(e^{-kT}=0.5\\) → \\(T=\\dfrac{\\ln2}{k}=\\dfrac{10\\ln2}{\\ln(10/8)}=\\dfrac{10\\ln2}{-\\ln0.8}=\\dfrac{10\\ln0.5}{\\ln0.8}\\).",
+    "quick": "\\(k=-\\ln0.8/10\\). \\(T_{1/2}=\\ln2/k=10\\ln2/(-\\ln0.8)=10\\ln0.5/\\ln0.8\\). Cả A và B đúng.",
+    "casio": "CASIO: k=ln(0.8)/(-10)≈0.02231. T=ln2/k≈0.6931/0.02231≈31.07 năm.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 67,
+    "type": "linear_first_order",
+    "question": "Nghiệm tổng quát của \\(y'+\\dfrac{1}{x}y=x^2\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{x^3}{4}+\\dfrac{C}{x}\\)",
+      "\\(y=\\dfrac{x^3}{4}+Cx\\)",
+      "\\(y=x^3+C/x\\)",
+      "\\(y=x^2/3+C/x\\)"
+    ],
+    "correct": "\\(y=\\dfrac{x^3}{4}+\\dfrac{C}{x}\\)",
+    "solution": "Nhân tử: \\(\\mu=e^{\\int(1/x)dx}=e^{\\ln x}=x\\).\n\nNhân vế: \\((xy)'=x^3\\).\n\nTích phân: \\(xy=\\dfrac{x^4}{4}+C\\).\n\n\\(y=\\dfrac{x^3}{4}+\\dfrac{C}{x}\\).",
+    "quick": "μ=x, (xy)'=x³ → xy=x⁴/4+C → **y=x³/4+C/x**.",
+    "casio": "CASIO: μ=e^∫(1/x)dx=x. Nhân vào: d(xy)=x³dx. Tích phân: xy=x⁴/4+C.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 68,
+    "type": "separable",
+    "question": "Giải \\((x^2+1)y'=2xy^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{-1}{\\ln(x^2+1)+C}\\)",
+      "\\(y=\\dfrac{1}{C-\\ln(x^2+1)}\\)",
+      "\\(y=C(x^2+1)\\)",
+      "\\(y=\\dfrac{C}{x^2+1}\\)"
+    ],
+    "correct": "\\(y=\\dfrac{1}{C-\\ln(x^2+1)}\\)",
+    "solution": "Phân ly: \\(\\dfrac{dy}{y^2}=\\dfrac{2x\\,dx}{x^2+1}\\).\n\nTích phân: \\(-\\dfrac{1}{y}=\\ln(x^2+1)+C_1\\).\n\n\\(y=\\dfrac{-1}{\\ln(x^2+1)+C_1}=\\dfrac{1}{C-\\ln(x^2+1)}\\).",
+    "quick": "Tách: \\(dy/y²=2xdx/(x²+1)\\) → \\(-1/y=\\ln(x²+1)+C\\) → **y=1/(C-ln(x²+1))**.",
+    "casio": "CASIO: ∫dy/y²=-1/y; ∫2x/(x²+1)dx=ln(x²+1). Gom và giải y.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 69,
+    "type": "application_newton",
+    "question": "Vật nguội từ 100°C, nhiệt độ môi trường 20°C. Sau 5 phút còn 80°C. PT mô tả?",
+    "matrix": null,
+    "options": [
+      "\\(T'=-k(T-20)\\)",
+      "\\(T'=-kT\\)",
+      "\\(T'=k(20-T)\\)",
+      "\\(T'=-k(T+20)\\)"
+    ],
+    "correct": "\\(T'=-k(T-20)\\)",
+    "solution": "**Định luật Newton về làm nguội:** Tốc độ thay đổi nhiệt độ tỉ lệ với **hiệu nhiệt độ** vật và môi trường.\n\n\\(\\dfrac{dT}{dt}=-k(T-T_{\\text{môi trường}})=-k(T-20)\\).\n\nNghiệm: \\(T(t)=20+(T_0-20)e^{-kt}=20+80e^{-kt}\\).",
+    "quick": "Newton làm nguội: \\(T'=-k(T-T_{MT})\\). Ở đây \\(T_{MT}=20\\) → **T'=-k(T-20)**.",
+    "casio": "CASIO: k từ T(5)=80: 80+80e^(-5k)... Giải k=ln(60/80)/(-5)=ln(4/3)/5.",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 70,
+    "type": "exact_differential",
+    "question": "Nghiệm của PT vi phân toàn phần \\((3x^2+y)dx+(x+2y)dy=0\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(x^3+xy+y^2=C\\)",
+      "\\(x^3+x^2y+y^2=C\\)",
+      "\\(3x^2y+y^2=C\\)",
+      "\\(x^3+2xy+y^2=C\\)"
+    ],
+    "correct": "\\(x^3+xy+y^2=C\\)",
+    "solution": "Kiểm tra: \\(M_y=1=N_x=1\\) ✓ → toàn phần.\n\n\\(F_x=3x^2+y\\) → \\(F=x^3+xy+g(y)\\).\n\n\\(F_y=x+g'(y)=x+2y=N\\) → \\(g'(y)=2y\\) → \\(g(y)=y^2\\).\n\nNghiệm: \\(x^3+xy+y^2=C\\).",
+    "quick": "M_y=1=N_x → toàn phần. ∂F/∂x=M → F=x³+xy+g(y). ∂F/∂y=x+g'=N=x+2y → g=y². Nghiệm: **x³+xy+y²=C**.",
+    "casio": "CASIO: F=∫M dx=x³+xy+g(y). ∂F/∂y=x+g'=x+2y → g'=2y → g=y².",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
   }
 ]
