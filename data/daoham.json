@@ -1258,5 +1258,77 @@
     "casio": "CASIO: Tại x=0: y'=e^0·1=1. Kiểm tra d/dx[e^sinx] tại x=0.",
     "difficulty": 1,
     "topic": "Đạo hàm"
+  },
+  {
+    "id": 71,
+    "type": "derivative_identity",
+    "question": "Cho \\(y=\\sin^2 x\\). Khẳng định nào sau đây đúng?",
+    "matrix": null,
+    "options": [
+      "\\(4y+y''=2\\)",
+      "\\(2y'+y''=\\sin2x\\)",
+      "\\(4y-y''=2\\)",
+      "\\(2y+y'\\tan x=2\\)"
+    ],
+    "correct": "\\(4y+y''=2\\)",
+    "solution": "\\(y=\\sin^2x\\).\n\n\\(y'=2\\sin x\\cos x=\\sin2x\\).\n\n\\(y''=2\\cos2x=2(1-2\\sin^2x)=2-4\\sin^2x=2-4y\\).\n\n→ \\(y''=2-4y\\) → \\(4y+y''=2\\) ✓.",
+    "quick": "y''=2cos2x=2-4sin²x=2-4y → **4y+y''=2**. Đây là câu C14 đề CA1 2025.",
+    "casio": "CASIO: y=sin²x, y'=sin2x, y''=2cos2x. Kiểm tra 4y+y''=4sin²x+2cos2x=4sin²x+2-4sin²x=2✓.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 72,
+    "type": "derivative_identity",
+    "question": "Cho \\(y=e^{2x}\\). Khẳng định nào sau đây đúng?",
+    "matrix": null,
+    "options": [
+      "\\(y''-4y=0\\)",
+      "\\(y''-2y=0\\)",
+      "\\(y''+4y=0\\)",
+      "\\(y''-y=0\\)"
+    ],
+    "correct": "\\(y''-4y=0\\)",
+    "solution": "\\(y'=2e^{2x}=2y\\), \\(y''=4e^{2x}=4y\\).\n\n→ \\(y''-4y=4y-4y=0\\) ✓.",
+    "quick": "y''=4e^2x=4y → **y''-4y=0**.",
+    "casio": "CASIO: y=e^2x, y''=4e^2x=4y. y''-4y=4y-4y=0✓.",
+    "difficulty": 1,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 73,
+    "type": "derivative_identity",
+    "question": "Cho \\(y=\\cos^2x\\). Khẳng định nào đúng?",
+    "matrix": null,
+    "options": [
+      "\\(4y+y''=2\\)",
+      "\\(4y-y''=2\\)",
+      "\\(y''+2y=1\\)",
+      "\\(y''-4y=0\\)"
+    ],
+    "correct": "\\(4y+y''=2\\)",
+    "solution": "\\(y'=-2\\cos x\\sin x=-\\sin2x\\).\n\n\\(y''=-2\\cos2x=-2(1-2\\sin^2x)=-2+4\\sin^2x\\).\n\nNhưng \\(1-y=1-\\cos^2x=\\sin^2x\\) → \\(y''=-2+4(1-y)=2-4y\\).\n\n→ \\(y''=2-4y\\) → \\(4y+y''=2\\) ✓.\n\n*(Cùng kết quả với sin²x vì sin²x+cos²x=1)*",
+    "quick": "y''=2-4y → **4y+y''=2**. Tương tự sin²x (lý do: cos²x+sin²x=1).",
+    "casio": "CASIO: y''=-2cos2x. 4y+y''=4cos²x-2cos2x=4cos²x-2(2cos²x-1)=2✓.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 74,
+    "type": "derivative_identity",
+    "question": "Cho \\(y=xe^x\\). Khẳng định nào đúng?",
+    "matrix": null,
+    "options": [
+      "\\(y''-2y'+y=0\\)",
+      "\\(y''-y=e^x\\)",
+      "\\(y''-y=2e^x\\)",
+      "\\(y''+y=xe^x\\)"
+    ],
+    "correct": "\\(y''-2y'+y=0\\)",
+    "solution": "\\(y'=e^x+xe^x=(1+x)e^x\\).\n\\(y''=e^x+(1+x)e^x=(2+x)e^x\\).\n\nKiểm tra \\(y''-2y'+y\\):\n\\(=(2+x)e^x-2(1+x)e^x+xe^x=[(2+x)-(2+2x)+x]e^x=0\\) ✓.",
+    "quick": "y=xe^x, y'=(1+x)e^x, y''=(2+x)e^x. y''-2y'+y=(2+x-2-2x+x)e^x=**0**.",
+    "casio": "CASIO: Tính y'', 2y', y tại x=1: y''=3e, 2y'=4e, y=e. y''-2y'+y=3e-4e+e=0✓.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
   }
 ]

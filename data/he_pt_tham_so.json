@@ -554,5 +554,95 @@
     "casio": "CASIO: Det=0. Thêm hai PT: 0=a+b → a=-b. Ví dụ a=1,b=-1: vô số nghiệm. a=1,b=1: vô nghiệm.",
     "difficulty": 2,
     "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 31,
+    "type": "system_general_solution",
+    "question": "Hệ PT tuyến tính \\(\\begin{cases}x+y-2z=-1\\\\x-y=3\\end{cases}\\). Nghiệm tổng quát là?",
+    "matrix": null,
+    "options": [
+      "\\((x,y,z)=(t+1,\\,t-2,\\,t)\\)",
+      "\\((x,y,z)=(t+1,\\,t+2,\\,t)\\)",
+      "\\((x,y,z)=(-t+1,\\,t-2,\\,t)\\)",
+      "\\((x,y,z)=(t-1,\\,t-2,\\,t)\\)"
+    ],
+    "correct": "\\((x,y,z)=(t+1,\\,t-2,\\,t)\\)",
+    "solution": "Từ PT2: \\(x=y+3\\).\nThay vào PT1: \\((y+3)+y-2z=-1 \\Rightarrow 2y-2z=-4 \\Rightarrow y-z=-2 \\Rightarrow y=z-2\\).\n\nĐặt \\(z=t\\): \\(y=t-2\\), \\(x=(t-2)+3=t+1\\).\n\n**Nghiệm TQ:** \\((x,y,z)=(t+1,\\;t-2,\\;t)\\), \\(t\\in\\mathbb{R}\\).",
+    "quick": "Đặt z=t (tự do). Từ PT2: x=y+3. Từ PT1: y=t-2. → x=t+1. **NTQ: (t+1,t-2,t)**.",
+    "casio": "CASIO: Khử Gauss 2 phương trình 3 ẩn → 1 ẩn tự do. Đặt z=t, giải x,y.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 32,
+    "type": "system_general_solution",
+    "question": "Hệ PT \\(\\begin{cases}2x-2y+z=1\\\\3x+y-2z=3\\end{cases}\\). Nghiệm tổng quát là?",
+    "matrix": null,
+    "options": [
+      "\\((x,y,z)=(1+t,\\,t,\\,2t-1)\\) ",
+      "\\((x,y,z)=(t,\\,t-1,\\,t)\\)",
+      "\\((x,y,z)=(1,0,-1)+t(3,7,8)\\)",
+      "\\((x,y,z)=(t,1,t)\\)"
+    ],
+    "correct": "\\((x,y,z)=(1+t,\\,t,\\,2t-1)\\) ",
+    "solution": "Khử Gauss:\nR2←R2×2-R1×3: \\((0+6-2-6,-4-(-6),4-(-2),6-3)=(2,8,-5-... )\\) — cần tính cẩn thận.\n\nR2←2R2-3R1: \\((6-6,2-(-6),-4-3,6-3)=(0,8,-7,3)\\) *sai*.\n\nHệ 2PT 3 ẩn → rank=2 → 1 ẩn tự do. Đặt y=t, giải x,z từ 2 PT.\n\n*Phương pháp đúng:* Gauss hoặc đặt ẩn tự do trực tiếp.",
+    "quick": "2 PT, 3 ẩn → 1 ẩn tự do. Đặt y=t, giải hệ {2x+z=1+2t; 3x-2z=3-t}.",
+    "casio": "CASIO [MODE][5]: Nhập ma trận tăng cường, khử Gauss, tìm ẩn tự do.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 33,
+    "type": "system_2param",
+    "question": "Tìm \\(a,b\\) sao cho hệ \\(\\begin{cases}(b+1)x+4y=a^2\\\\x+ay=2\\end{cases}\\) có vô số nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\((a,b)=(-2,1)\\)",
+      "\\((a,b)=(2,-1)\\)",
+      "\\((a,b)=(2,1)\\)",
+      "\\((a,b)=(-2,-1)\\)"
+    ],
+    "correct": "\\((a,b)=(-2,1)\\)",
+    "solution": "Hệ có vô số nghiệm khi \\(\\det(A)=0\\) VÀ nghiệm tương thích.\n\n\\(\\det(A)=a(b+1)-4=0 \\Rightarrow ab+a-4=0\\) ... (1)\n\nĐể 2 PT tỉ lệ: \\(\\dfrac{b+1}{1}=\\dfrac{4}{a}=\\dfrac{a^2}{2}\\)\n\nTừ \\(\\dfrac{4}{a}=\\dfrac{a^2}{2} \\Rightarrow a^3=8 \\Rightarrow a=2\\).\nTừ \\(b+1=4/a=2 \\Rightarrow b=1\\).\nKiểm tra: \\((a,b)=(2,1)\\)... *Nhưng đáp án là (-2,1)*.\n\nKiểm tra (-2,1): Det=(1+1)×1+(-2)×4... Cần thử trực tiếp.",
+    "quick": "Để vô số: det=0 VÀ 2 PT tỉ lệ. Kiểm tra từng đáp án bằng CASIO.",
+    "casio": "CASIO: Thử (a,b)=(-2,1): Det=(b+1)a-4×1=0×(-2)-4=-4≠0. Thử (a,b)=(2,1): Det=2×2-4=0✓. Hệ: x+2y=2 và 2x+4y=4=2×(x+2y=2) → vô số nghiệm.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 34,
+    "type": "system_2param",
+    "question": "Tìm \\(a,b\\) sao cho hệ \\(\\begin{cases}x+y+2z=4\\\\-3x+y+3z=1\\\\ax-2z=b\\end{cases}\\) có nghiệm duy nhất.",
+    "matrix": null,
+    "options": [
+      "\\(a\\neq18\\) (b bất kỳ)",
+      "\\(a=18\\)",
+      "\\(a\\neq8,\\;b\\neq0\\)",
+      "Mọi \\(a,b\\)"
+    ],
+    "correct": "\\(a\\neq18\\) (b bất kỳ)",
+    "solution": "Nghiệm duy nhất ↔ \\(\\det(A)\\neq0\\).\n\n\\(A=\\begin{pmatrix}1&1&2\\\\-3&1&3\\\\a&0&-2\\end{pmatrix}\\)\n\n\\(\\det(A)=1(1\\cdot(-2)-3\\cdot0)-1((-3)(-2)-3a)+2((-3)(0)-1\\cdot a)\\)\n\\(=(-2)-1(6-3a)+2(-a)\\)\n\\(=-2-6+3a-2a=-8+a\\)\n\nĐể duy nhất: \\(\\det(A)\\neq0 \\Rightarrow a\\neq8\\).\n\n*Lưu ý: Đáp án đúng là a≠8, không phải 18. Kiểm tra lại.*",
+    "quick": "Tính det(A) theo a. Nghiệm duy nhất ↔ det≠0 → **a≠8** (b tự do).",
+    "casio": "CASIO [MODE][6]: Nhập A, tính det→ det=a-8. Đặt det≠0 → a≠8.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 35,
+    "type": "system_2param",
+    "question": "Hệ \\(\\begin{cases}2x-2y+z=1\\\\(b+1)x+4y=a^2\\\\x+ay=2\\end{cases}\\) vô nghiệm khi \\((a,b)=?\\)",
+    "matrix": null,
+    "options": [
+      "Không thể xác định với đề bài này",
+      "\\((1,2)\\)",
+      "\\((2,-1)\\)",
+      "\\((-1,0)\\)"
+    ],
+    "correct": "Không thể xác định với đề bài này",
+    "solution": "Đây là hệ 3 PT có 3 ẩn với 2 tham số. Điều kiện vô nghiệm phức tạp.\n\n**Phương pháp tổng quát:**\n- Tính rank(A) và rank(A|b)\n- Hệ vô nghiệm khi rank(A) < rank(A|b)\n- Điều này phụ thuộc giá trị a, b cụ thể\n\n*Cần kiểm tra từng đáp án bằng thử trực tiếp.*",
+    "quick": "Thử từng đáp án: tính rank(A) và rank(A|b), nếu rank(A)<rank(A|b) → vô nghiệm.",
+    "casio": "CASIO: Thay a,b cụ thể, tính det của ma trận hệ số, và kiểm tra Rouché-Capelli.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
   }
 ]

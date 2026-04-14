@@ -1438,5 +1438,95 @@
     "casio": "CASIO: f(1)=1-2+3=2. f'(1-)=3-4=-1. 2a=-1→a=-0.5. b=2-2(-0.5)=3.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 81,
+    "type": "limit_inf_sqrt",
+    "question": "Tìm \\(\\lim_{x\\to-\\infty}\\dfrac{\\sqrt{x^2+x}}{2x+\\sqrt{x^2+1}}\\).",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(-\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(-1\\)",
+    "solution": "Khi \\(x\\to-\\infty\\): chia tử và mẫu cho \\(|x|=-x\\) (vì \\(x<0\\)).\n\n**Tử:** \\(\\dfrac{\\sqrt{x^2+x}}{-x}=\\sqrt{\\dfrac{x^2+x}{x^2}}=\\sqrt{1+\\dfrac{1}{x}}\\to1\\).\n\n**Mẫu:** \\(\\dfrac{2x+\\sqrt{x^2+1}}{-x}=-2+\\dfrac{\\sqrt{x^2+1}}{-x}=-2+\\sqrt{\\dfrac{x^2+1}{x^2}}=-2+\\sqrt{1+\\dfrac{1}{x^2}}\\to-2+1=-1\\).\n\nGiới hạn = \\(\\dfrac{1}{-1}=-1\\).",
+    "quick": "x→-∞: chia cho |x|=-x. Tử→1, mẫu→-2+1=-1. Giới hạn = **-1**. (Lưu ý: |x|=-x khi x<0!)",
+    "casio": "CASIO: x=-10^6 → tử≈10^6, mẫu≈-2×10^6+10^6=-10^6. Tỉ số≈-1.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 82,
+    "type": "limit_inf_sqrt",
+    "question": "Tính \\(\\lim_{x\\to+\\infty}\\dfrac{\\sqrt{x^2+x}}{2x+\\sqrt{x^2+1}}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\)",
+    "solution": "Khi \\(x\\to+\\infty\\): chia tử và mẫu cho \\(x\\) (vì \\(x>0\\), \\(|x|=x\\)).\n\n**Tử:** \\(\\dfrac{\\sqrt{x^2+x}}{x}=\\sqrt{1+1/x}\\to1\\).\n\n**Mẫu:** \\(\\dfrac{2x+\\sqrt{x^2+1}}{x}=2+\\sqrt{1+1/x^2}\\to2+1=3\\).\n\nGiới hạn = \\(\\dfrac{1}{3}\\).",
+    "quick": "x→+∞: chia x. Tử→1, mẫu→2+1=3. Giới hạn = **1/3**.",
+    "casio": "CASIO: x=10^6 → √(10^12+10^6)/(2×10^6+√(10^12+1))≈10^6/(2×10^6+10^6)=1/3.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 83,
+    "type": "limit_ratio_roots",
+    "question": "Tính \\(\\lim_{x\\to1}\\dfrac{\\sqrt[5]{x}-1}{\\sqrt[3]{x}-1}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{5}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{5}\\)",
+    "solution": "Đặt \\(t=x^{1/15}\\) (hoặc dùng L'Hôpital dạng \\(0/0\\)):\n\n**L'Hôpital:**\n\\(\\lim_{x\\to1}\\dfrac{x^{1/5}-1}{x^{1/3}-1}\\)\n\nĐạo hàm tử: \\(\\dfrac{1}{5}x^{-4/5}\\to\\dfrac{1}{5}\\)\nĐạo hàm mẫu: \\(\\dfrac{1}{3}x^{-2/3}\\to\\dfrac{1}{3}\\)\n\nGiới hạn = \\(\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).\n\n**Cách khác** — dùng giới hạn cơ bản: \\(\\lim_{x\\to1}\\dfrac{x^\\alpha-1}{x-1}=\\alpha\\):\n\\(\\dfrac{x^{1/5}-1}{x^{1/3}-1}=\\dfrac{x^{1/5}-1}{x-1}\\cdot\\dfrac{x-1}{x^{1/3}-1}\\to\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).",
+    "quick": "L'Hôpital: \\(\\dfrac{(1/5)x^{-4/5}}{(1/3)x^{-2/3}}\\Big|_{x=1}=\\dfrac{1/5}{1/3}=\\mathbf{\\dfrac{3}{5}}\\).",
+    "casio": "CASIO: x=1.001 → (1.001^0.2-1)/(1.001^(1/3)-1)≈(0.0002)/(0.000333)≈0.6=3/5.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 84,
+    "type": "limit_ratio_roots",
+    "question": "Tính \\(\\lim_{x\\to1}\\dfrac{\\sqrt[4]{x}-1}{\\sqrt[3]{x}-1}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{4}\\)",
+    "solution": "Dùng \\(\\lim_{x\\to1}\\dfrac{x^\\alpha-1}{x-1}=\\alpha\\):\n\n\\(\\dfrac{x^{1/4}-1}{x^{1/3}-1}=\\dfrac{(x^{1/4}-1)/(x-1)}{(x^{1/3}-1)/(x-1)}\\to\\dfrac{1/4}{1/3}=\\dfrac{3}{4}\\).",
+    "quick": "\\(\\dfrac{x^{1/4}-1}{x^{1/3}-1}\\to\\dfrac{1/4}{1/3}=\\dfrac{3}{4}\\). **Quy tắc:** \\(\\dfrac{x^{p/q}-1}{x^{r/s}-1}\\to\\dfrac{p/q}{r/s}\\) khi \\(x\\to1\\).",
+    "casio": "CASIO: x=1.001 → (1.001^0.25-1)/(1.001^(1/3)-1)≈(0.00025)/(0.000333)≈0.75=3/4.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 85,
+    "type": "limit_inf_sqrt",
+    "question": "Tính \\(\\lim_{x\\to-\\infty}\\left(x+\\sqrt{x^2+2x}\\right)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(+\\infty\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-1\\)",
+    "solution": "Dạng \\(-\\infty+\\infty\\). Nhân liên hợp:\n\n\\(x+\\sqrt{x^2+2x}=\\dfrac{(x+\\sqrt{x^2+2x})(x-\\sqrt{x^2+2x})}{x-\\sqrt{x^2+2x}}=\\dfrac{x^2-(x^2+2x)}{x-\\sqrt{x^2+2x}}=\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\)\n\nKhi \\(x\\to-\\infty\\), chia cho \\(-x=|x|>0\\):\n\n\\(\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\cdot\\dfrac{-1/x}{-1/x}=\\dfrac{2}{-1+\\sqrt{1+2/x}}\\to\\dfrac{2}{-1+1}\\)... \n\nCần cẩn thận: \\(\\sqrt{x^2+2x}/(-x)=\\sqrt{1+2/x}\\to1\\). Mẫu: \\(x/(-x)+\\sqrt{x^2+2x}/(-x)=-1+1=0\\)?\n\n*Tính lại:* \\(x+\\sqrt{x^2+2x}=x+|x|\\sqrt{1+2/x}=x-x\\sqrt{1+2/x}=x(1-\\sqrt{1+2/x})\\to x\\cdot(-1/x)=-1\\).",
+    "quick": "Nhân liên hợp: \\(x+\\sqrt{x^2+2x}=\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\). Khi x→-∞: → \\(\\dfrac{-2x}{x+x}=\\dfrac{-2x}{2x}=-1\\).",
+    "casio": "CASIO: x=-10^6 → -10^6+√(10^12-2×10^6)≈-10^6+10^6(1-10^-6)=-1.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
   }
 ]

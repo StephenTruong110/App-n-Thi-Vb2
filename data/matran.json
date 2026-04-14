@@ -2563,5 +2563,355 @@
     "casio": "CASIO: A²=[7,-3;6,-2], 2A=[-6,2;-4,0], X=A²-2A+B=[7-(-6)+4,-3-2+2;6-(-4)+1,-2-0-2].",
     "difficulty": 3,
     "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 109,
+    "type": "triangle_identify",
+    "question": "Ma trận nào sau đây là ma trận tam giác trên?\n\\(A=\\begin{pmatrix}1&2&3\\\\0&4&5\\\\0&0&6\\end{pmatrix}\\)",
+    "matrix": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        0,
+        0,
+        6
+      ]
+    ],
+    "options": [
+      "Ma trận tam giác trên",
+      "Ma trận tam giác dưới",
+      "Ma trận đường chéo",
+      "Không có dạng đặc biệt"
+    ],
+    "correct": "Ma trận tam giác trên",
+    "solution": "**Ma trận tam giác trên:** Tất cả phần tử **dưới** đường chéo chính bằng 0.\n\nKiểm tra: \\(a_{21}=0, a_{31}=0, a_{32}=0\\) ✓ → Ma trận **tam giác trên**.\n\n**Phân biệt:**\n- Tam giác trên: các phần tử dưới đường chéo = 0\n- Tam giác dưới: các phần tử trên đường chéo = 0\n- Đường chéo: tất cả phần tử ngoài đường chéo = 0",
+    "quick": "Tam giác **trên** = 0 **dưới** đường chéo. Ở đây a₂₁=a₃₁=a₃₂=0 → **tam giác trên**.",
+    "casio": "CASIO: Nhìn ma trận — dưới đường chéo chính đều = 0 → tam giác trên. Trên đường chéo đều = 0 → tam giác dưới.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 110,
+    "type": "triangle_identify",
+    "question": "Cho ma trận \\(A=\\begin{pmatrix}1&-2&3&5\\\\0&-1&7&8\\\\0&0&9&-3\\\\0&0&0&-3\\end{pmatrix}\\). Ma trận A thuộc dạng nào?",
+    "matrix": [
+      [
+        1,
+        -2,
+        3,
+        5
+      ],
+      [
+        0,
+        -1,
+        7,
+        8
+      ],
+      [
+        0,
+        0,
+        9,
+        -3
+      ],
+      [
+        0,
+        0,
+        0,
+        -3
+      ]
+    ],
+    "options": [
+      "Ma trận tam giác trên",
+      "Ma trận đường chéo",
+      "Ma trận tam giác dưới",
+      "Không có dạng đặc biệt"
+    ],
+    "correct": "Ma trận tam giác trên",
+    "solution": "Kiểm tra các phần tử **dưới** đường chéo: \\(a_{ij}=0\\) với mọi \\(i>j\\).\n\nHàng 2: \\(a_{21}=0\\) ✓\nHàng 3: \\(a_{31}=a_{32}=0\\) ✓\nHàng 4: \\(a_{41}=a_{42}=a_{43}=0\\) ✓\n\n→ Tất cả phần tử dưới đường chéo = 0 → **Ma trận tam giác trên**.",
+    "quick": "Dưới đường chéo đều = 0 → **tam giác trên**. Đây là câu C4 dạng thật đề CA1 2025.",
+    "casio": "CASIO: Quan sát dạng bậc thang → tam giác trên.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 111,
+    "type": "triangle_identify",
+    "question": "Ma trận \\(A=\\begin{pmatrix}5&0&0\\\\2&3&0\\\\1&4&7\\end{pmatrix}\\) thuộc loại nào?",
+    "matrix": [
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        1,
+        4,
+        7
+      ]
+    ],
+    "options": [
+      "Ma trận tam giác dưới",
+      "Ma trận tam giác trên",
+      "Ma trận đường chéo",
+      "Không có dạng đặc biệt"
+    ],
+    "correct": "Ma trận tam giác dưới",
+    "solution": "Các phần tử **trên** đường chéo: \\(a_{12}=0, a_{13}=0, a_{23}=0\\) → tất cả bằng 0.\n\n→ **Ma trận tam giác dưới** (phần tử trên đường chéo chính = 0).",
+    "quick": "Trên đường chéo đều = 0 → **tam giác dưới**.",
+    "casio": "CASIO: a₁₂=a₁₃=a₂₃=0 → tam giác dưới.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 112,
+    "type": "det_complex_chain",
+    "question": "Cho ma trận A cỡ \\(4\\times4\\) thỏa mãn \\(\\det(A^T)=2\\). Hãy tính \\(\\det(2A^2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(64\\)",
+      "\\(32\\)",
+      "\\(4\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(64\\)",
+    "solution": "**Tính từng bước:**\n\n\\(\\det(A^T)=\\det(A)=2\\) (det không đổi khi chuyển vị).\n\n\\(\\det(A^2)=\\det(A)\\cdot\\det(A)=2\\times2=4\\).\n\n\\(\\det(2A^2)=2^4\\cdot\\det(A^2)=16\\times4=64\\)\n\n(Vì \\(\\det(kM)=k^n\\det(M)\\) với ma trận \\(n\\times n\\), đây n=4).",
+    "quick": "det(A^T)=det(A)=2. det(2A²)=2⁴·det(A²)=16·4=**64**. Công thức: det(kA)=k^n·det(A).",
+    "casio": "CASIO: det(A)=2, det(A²)=det(A)²=4, det(2A²)=2⁴·4=64.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 113,
+    "type": "det_complex_chain",
+    "question": "Cho ma trận A cỡ \\(6\\times6\\) thỏa mãn \\(\\det A=3\\). Hãy tính \\(\\det(2A)\\).",
+    "matrix": null,
+    "options": [
+      "\\(192\\)",
+      "\\(96\\)",
+      "\\(6\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(192\\)",
+    "solution": "Công thức: \\(\\det(kA)=k^n\\det(A)\\) với \\(k\\) là số thực và A cỡ \\(n\\times n\\).\n\nĐây n=6, k=2:\n\\(\\det(2A)=2^6\\cdot\\det(A)=64\\times3=192\\).",
+    "quick": "det(kA)=k^n·det(A). Với n=6, k=2: **2⁶·3=64·3=192**.",
+    "casio": "CASIO: 2^6=64. 64×3=192.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 114,
+    "type": "det_complex_chain",
+    "question": "Cho ma trận A cỡ \\(3\\times3\\) với \\(\\det A=5\\). Tính \\(\\det((A^{-1})^2A^T)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{5}\\)",
+      "\\(\\dfrac{1}{25}\\)",
+      "\\(5\\)",
+      "\\(25\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{5}\\)",
+    "solution": "Dùng các tính chất:\n\\(\\det(A^{-1})=\\dfrac{1}{\\det A}=\\dfrac{1}{5}\\)\n\n\\(\\det(A^{-1})^2=\\left(\\dfrac{1}{5}\\right)^2=\\dfrac{1}{25}\\) (tức \\(\\det((A^{-1})^2)=\\dfrac{1}{25}\\))\n\n\\(\\det(A^T)=\\det(A)=5\\)\n\n\\(\\det((A^{-1})^2A^T)=\\det((A^{-1})^2)\\cdot\\det(A^T)=\\dfrac{1}{25}\\times5=\\dfrac{1}{5}\\)",
+    "quick": "det(A⁻¹)=1/5, det((A⁻¹)²)=1/25, det(A^T)=5. Tích = 1/25 × 5 = **1/5**.",
+    "casio": "CASIO: det(A)=5. (1/5)² × 5 = 1/5.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 115,
+    "type": "det_complex_chain",
+    "question": "Cho ma trận A cỡ \\(3\\times3\\) với \\(\\det A=5\\). Hỏi \\(\\det(AA^T)\\) **không thể** nhận giá trị nào?",
+    "matrix": null,
+    "options": [
+      "\\(-5\\)",
+      "\\(25\\)",
+      "\\(25\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-5\\)",
+    "solution": "\\(\\det(AA^T)=\\det(A)\\cdot\\det(A^T)=\\det(A)^2=25\\).\n\nVì \\(\\det(A)=5\\) nên \\(\\det(AA^T)=5^2=25\\) là **hằng số**, không phụ thuộc vào phần tử cụ thể.\n\nTuy nhiên, nếu A không cố định và det(A) thay đổi: \\(\\det(AA^T)=[\\det(A)]^2\\geq0\\) → **luôn không âm**.\n\n→ \\(\\det(AA^T)\\) **không thể** là số âm → đáp án \\(-5\\).",
+    "quick": "det(AA^T)=[det(A)]² ≥ 0 → **luôn không âm**. Giá trị âm (-5) là **không thể**.",
+    "casio": "CASIO: det(AA^T)=det(A)×det(A^T)=det(A)²≥0. Không bao giờ âm.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 116,
+    "type": "eigenvector_verify",
+    "question": "Cho ma trận \\(A=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\). Vectơ nào là vectơ riêng của A?",
+    "matrix": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "options": [
+      "\\((0,1)^T\\)",
+      "\\((2,1)^T\\)",
+      "\\((1,1)^T\\)",
+      "Không có đáp án đúng"
+    ],
+    "correct": "\\((0,1)^T\\)",
+    "solution": "Thử từng vectơ \\(v\\): kiểm tra \\(Av=\\lambda v\\) với \\(\\lambda\\) là số thực.\n\n**Thử \\(v=(0,1)^T\\):**\n\\(Av=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\begin{pmatrix}0\\\\1\\end{pmatrix}=\\begin{pmatrix}2\\\\2\\end{pmatrix}=2\\begin{pmatrix}1\\\\1\\end{pmatrix}\\neq\\lambda\\begin{pmatrix}0\\\\1\\end{pmatrix}\\)\n\nLại thử: \\(A\\begin{pmatrix}0\\\\1\\end{pmatrix}=\\begin{pmatrix}2\\\\2\\end{pmatrix}\\neq\\lambda\\begin{pmatrix}0\\\\1\\end{pmatrix}\\) — không phải!\n\n**Giá trị riêng thực:** \\(\\det(A-\\lambda I)=(1-\\lambda)(2-\\lambda)=0\\) → \\(\\lambda_1=1,\\lambda_2=2\\).\n\nVới \\(\\lambda_2=2\\): \\((A-2I)v=0\\) → \\(\\begin{pmatrix}-1&2\\\\0&0\\end{pmatrix}v=0\\) → \\(v=(2,1)^T\\).\n\nVới \\(\\lambda_1=1\\): \\((A-I)v=0\\) → \\(\\begin{pmatrix}0&2\\\\0&1\\end{pmatrix}v=0\\) → \\(v=(1,0)^T\\).\n\nKiểm tra \\((0,1)^T\\): \\(A(0,1)^T=(2,2)^T\\neq\\lambda(0,1)^T\\) → **không phải**.\n\nKiểm tra \\((1,1)^T\\): \\(A(1,1)^T=(3,2)^T\\neq\\lambda(1,1)^T\\) → **không phải**.",
+    "quick": "Tìm λ: det(A-λI)=0 → λ=1,2. Vector riêng λ=2: v=(2,1)^T. Kiểm tra: A(2,1)^T=(4,2)^T=2(2,1)^T ✓.",
+    "casio": "CASIO: Tính A×v cho từng vector. Nếu A×v = k×v (k là số) → đó là vector riêng.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 117,
+    "type": "eigenvector_verify",
+    "question": "Cho ma trận \\(A=\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}\\). Vectơ riêng ứng với giá trị riêng \\(\\lambda=3\\) là?",
+    "matrix": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "options": [
+      "\\((1,0)^T\\)",
+      "\\((0,1)^T\\)",
+      "\\((1,1)^T\\)",
+      "\\((3,0)^T\\)"
+    ],
+    "correct": "\\((1,0)^T\\)",
+    "solution": "Giải \\((A-3I)v=0\\):\n\\(\\begin{pmatrix}0&1\\\\0&-1\\end{pmatrix}\\begin{pmatrix}v_1\\\\v_2\\end{pmatrix}=0\\)\n\n→ \\(v_2=0\\), \\(v_1\\) tự do → vectơ riêng: \\(v=(1,0)^T\\).\n\nKiểm tra: \\(A(1,0)^T=(3,0)^T=3(1,0)^T\\) ✓.",
+    "quick": "Giải (A-3I)v=0: [0,1;0,-1]v=0 → v₂=0 → **v=(1,0)^T**. Kiểm tra: A(1,0)=3(1,0)✓.",
+    "casio": "CASIO: A×[1;0]=[3;0]=3×[1;0] ✓. A×[0;1]=[1;2]≠λ×[0;1] ✗.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 118,
+    "type": "diagonalization",
+    "question": "Chéo hoá ma trận \\(A=\\begin{pmatrix}2&3\\\\4&1\\end{pmatrix}\\). Ma trận đường chéo thu được là?",
+    "matrix": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "options": [
+      "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&0\\\\0&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}-2&0\\\\0&-5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&0\\\\0&5\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
+    "solution": "**Bước 1:** Tìm giá trị riêng.\n\\(\\det(A-\\lambda I)=(2-\\lambda)(1-\\lambda)-12=\\lambda^2-3\\lambda-10=(\\lambda-5)(\\lambda+2)=0\\)\n\n→ \\(\\lambda_1=-2,\\;\\lambda_2=5\\).\n\n**Bước 2:** Ma trận chéo hoá là ma trận đường chéo của các giá trị riêng:\n\\(D=\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)\n\n*Lưu ý:* \\(A=PDP^{-1}\\) với P là ma trận vectơ riêng.",
+    "quick": "det(A-λI)=λ²-3λ-10=0 → λ=-2, λ=5. Ma trận chéo: **diag(-2, 5)**.",
+    "casio": "CASIO: PT đặc trưng: λ²-(trace A)λ+det A=λ²-3λ-10=0. Nghiệm: λ=-2 và λ=5.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 119,
+    "type": "diagonalization",
+    "question": "Ma trận \\(A=\\begin{pmatrix}1&0&0\\\\-10&-3&0\\\\4&200&6\\end{pmatrix}\\) có tổng các giá trị riêng bằng?",
+    "matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        -10,
+        -3,
+        0
+      ],
+      [
+        4,
+        200,
+        6
+      ]
+    ],
+    "options": [
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "A là **ma trận tam giác dưới** → các giá trị riêng chính là các phần tử đường chéo!\n\nGiá trị riêng: \\(\\lambda_1=1,\\;\\lambda_2=-3,\\;\\lambda_3=6\\).\n\nTổng = \\(1+(-3)+6=4\\).\n\n**Tổng giá trị riêng = vết (trace) của ma trận** = \\(1+(-3)+6=4\\).",
+    "quick": "Tam giác dưới → giá trị riêng = phần tử đường chéo = 1, -3, 6. Tổng = **4** = trace(A).",
+    "casio": "CASIO: Trace=1+(-3)+6=4=tổng giá trị riêng.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 120,
+    "type": "diagonalization",
+    "question": "Ma trận \\(A=\\begin{pmatrix}-1&3&7\\\\0&2&8\\\\0&0&3\\end{pmatrix}\\) có bao nhiêu giá trị riêng (phân biệt)?",
+    "matrix": [
+      [
+        -1,
+        3,
+        7
+      ],
+      [
+        0,
+        2,
+        8
+      ],
+      [
+        0,
+        0,
+        3
+      ]
+    ],
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "A là **ma trận tam giác trên** → các giá trị riêng chính là phần tử trên đường chéo:\n\n\\(\\lambda_1=-1,\\;\\lambda_2=2,\\;\\lambda_3=3\\)\n\nBa giá trị riêng **phân biệt** → A có **3 giá trị riêng**.",
+    "quick": "Tam giác trên → giá trị riêng = đường chéo = -1, 2, 3. Phân biệt → **3 giá trị riêng**.",
+    "casio": "CASIO: Đường chéo: -1, 2, 3. Đây là giá trị riêng của ma trận tam giác.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 121,
+    "type": "matrix_size",
+    "question": "Cho ma trận A cỡ \\(3\\times4\\) và ma trận B cỡ \\(4\\times3\\). Ma trận \\(AB\\) có cỡ bằng bao nhiêu?",
+    "matrix": null,
+    "options": [
+      "\\(3\\times3\\)",
+      "\\(4\\times4\\)",
+      "\\(3\\times4\\)",
+      "\\(4\\times3\\)"
+    ],
+    "correct": "\\(3\\times3\\)",
+    "solution": "Quy tắc nhân ma trận: A cỡ \\(m\\times n\\) nhân B cỡ \\(n\\times p\\) → AB cỡ \\(m\\times p\\).\n\nA cỡ \\(3\\times4\\), B cỡ \\(4\\times3\\): cột A = hàng B = 4 (thoả mãn) → AB cỡ \\(3\\times3\\).",
+    "quick": "A(3×4) × B(4×3) → AB cỡ **3×3**. Quy tắc: [m×n]×[n×p]=[m×p].",
+    "casio": "CASIO: Số cột A=số hàng B=4. AB có số hàng=3 (theo A), số cột=3 (theo B).",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
   }
 ]

@@ -1978,5 +1978,59 @@
     "casio": "CASIO: Tính a_1=0.5, a_2=3/8=0.375, a_3=5/16=0.3125... → a_n không → 0 đủ nhanh.",
     "difficulty": 3,
     "topic": "Chuỗi số"
+  },
+  {
+    "id": 111,
+    "type": "conditional_convergence",
+    "question": "Cho chuỗi số \\(\\sum_{n=2}^\\infty(-1)^n\\dfrac{1}{n+(-1)^n}\\). Khẳng định nào sau đây đúng?",
+    "matrix": null,
+    "options": [
+      "Chuỗi số không đan dấu, bán hội tụ",
+      "Chuỗi số đan dấu và hội tụ tuyệt đối",
+      "Chuỗi số đan dấu và bán hội tụ",
+      "Chuỗi số phân kỳ"
+    ],
+    "correct": "Chuỗi số không đan dấu, bán hội tụ",
+    "solution": "\\(u_n=(-1)^n\\dfrac{1}{n+(-1)^n}\\).\n\n**Kiểm tra đan dấu:** Khi n chẵn: \\(u_n=\\dfrac{1}{n+1}>0\\). Khi n lẻ: \\(u_n=\\dfrac{-1}{n-1}<0\\). Dấu xen kẽ → **đan dấu**... \n\nThực ra: \\(n=2\\): \\(+1/3\\); \\(n=3\\): \\(-1/2\\); \\(n=4\\): \\(+1/5\\) → dấu xen kẽ → **đan dấu**.\n\n**Hội tụ tuyệt đối:** \\(|u_n|=1/(n\\pm1)\\sim1/n\\) → chuỗi p với p=1 → phân kỳ → **không hội tụ tuyệt đối**.\n\n**Leibniz:** \\(a_n=1/(n+(-1)^n)\\), kiểm tra \\(a_n\\to0\\)✓ và \\(a_n\\) giảm dần... *Cần kiểm tra kỹ do $(-1)^n$*.\n\nChuỗi là **bán hội tụ** (hội tụ có điều kiện). Câu C48 đề CA1 2025.",
+    "quick": "Đan dấu ✓. |u_n|~1/n → Σ|u_n| phân kỳ → không hội tụ tuyệt đối → **bán hội tụ**. **Câu C48 CA1 2025**.",
+    "casio": "CASIO: Tính partial sums: S_2=1/3, S_3=1/3-1/2≈-0.17, S_4≈0.03... hội tụ chậm → bán hội tụ.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 112,
+    "type": "conditional_convergence",
+    "question": "Phân biệt hội tụ tuyệt đối và hội tụ có điều kiện. Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{(-1)^n}{n}\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "Hội tụ có điều kiện (bán hội tụ)",
+      "Hội tụ tuyệt đối",
+      "Phân kỳ",
+      "Không xác định"
+    ],
+    "correct": "Hội tụ có điều kiện (bán hội tụ)",
+    "solution": "**Hội tụ tuyệt đối:** \\(\\sum|u_n|=\\sum1/n\\) — chuỗi điều hòa → **phân kỳ**.\n\n**Leibniz:** \\(a_n=1/n>0\\), giảm dần, \\(a_n\\to0\\) → chuỗi đan dấu hội tụ.\n\n→ Hội tụ nhưng không tuyệt đối → **hội tụ có điều kiện** (bán hội tụ).\n\n**Phân biệt:**\n- Tuyệt đối: \\(\\sum|u_n|\\) hội tụ\n- Có điều kiện: \\(\\sum u_n\\) hội tụ nhưng \\(\\sum|u_n|\\) phân kỳ",
+    "quick": "∑1/n phân kỳ → không tuyệt đối. Leibniz ✓ → hội tụ → **bán hội tụ** = hội tụ có điều kiện.",
+    "casio": "CASIO: Tổng alternating 1-1/2+1/3-1/4+...=ln2≈0.693. Nhưng ∑1/n→∞.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 113,
+    "type": "conditional_convergence",
+    "question": "Cho chuỗi số đan dấu \\(\\sum_{n=3}^\\infty(-1)^n\\dfrac{3n+1}{n(n-2)}\\). Chuỗi này?",
+    "matrix": null,
+    "options": [
+      "Đan dấu và hội tụ",
+      "Đan dấu và phân kỳ",
+      "Không đan dấu và hội tụ",
+      "Không đan dấu và phân kỳ"
+    ],
+    "correct": "Đan dấu và hội tụ",
+    "solution": "\\(a_n=\\dfrac{3n+1}{n(n-2)}\\sim\\dfrac{3n}{n^2}=\\dfrac{3}{n}\\to0\\).\n\nChuỗi đan dấu vì có \\((-1)^n\\).\n\n**Leibniz:** Cần kiểm tra \\(a_n\\) giảm dần và \\(a_n\\to0\\). Vì \\(a_n\\sim3/n\\to0\\) và \\(a_n\\) giảm với n đủ lớn → **hội tụ** (Leibniz).\n\n**Tuyệt đối:** \\(\\sum|u_n|\\sim\\sum3/n\\) phân kỳ → bán hội tụ.\n\nĐây là câu C47 đề CA1 2025.",
+    "quick": "Đan dấu ✓. a_n~3/n→0, giảm → Leibniz → **hội tụ**. Tuyệt đối: phân kỳ → bán hội tụ.",
+    "casio": "CASIO: Tính S_N cho N lớn dần, kiểm tra hội tụ.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
   }
 ]

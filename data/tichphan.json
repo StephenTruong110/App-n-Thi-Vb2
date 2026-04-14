@@ -1474,5 +1474,167 @@
     "casio": "CASIO: ∫₁^1000 x·ln(x)/(1+x²)²dx ≈ giá trị hữu hạn → hội tụ.",
     "difficulty": 3,
     "topic": "Tích phân"
+  },
+  {
+    "id": 83,
+    "type": "change_order",
+    "question": "Cho tích phân lặp \\(I=\\int_0^2\\int_{\\sqrt{y}}^2 f(x,y)\\,dx\\,dy\\). Đổi thứ tự tích phân:",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^2\\int_0^{x^2}f\\,dy\\,dx\\)",
+      "\\(I=\\int_0^4\\int_0^{x^2}f\\,dy\\,dx\\)",
+      "\\(I=\\int_0^2\\int_0^{x}f\\,dy\\,dx\\)",
+      "\\(I=\\int_0^2\\int_{x^2}^4 f\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(I=\\int_0^2\\int_0^{x^2}f\\,dy\\,dx\\)",
+    "solution": "**Xác định miền D từ tích phân gốc:**\n- \\(y\\) từ 0 đến 2 (ngoài)\n- \\(x\\) từ \\(\\sqrt{y}\\) đến 2 (trong)\n\n**Biên miền:** \\(x=\\sqrt{y} \\Rightarrow y=x^2\\), \\(x=2\\), \\(y=0\\).\n\n**Đổi thứ tự** (x ngoài, y trong):\n- \\(x\\) từ 0 đến 2\n- \\(y\\) từ 0 đến \\(x^2\\)\n\n\\(I=\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
+    "quick": "Gốc: y:0→2, x:√y→2. Miền D: x²≥y≥0, 0≤x≤2. Đổi: **x:0→2, y:0→x²**.",
+    "casio": "CASIO: Vẽ miền D (tam giác/parabol), đọc giới hạn theo thứ tự mới.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 84,
+    "type": "change_order",
+    "question": "Tích phân lặp \\(I=\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\). Sau khi đổi thứ tự trở thành?",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^1\\int_0^y f\\,dx\\,dy\\)",
+      "\\(\\int_0^1\\int_y^1 f\\,dx\\,dy\\)",
+      "\\(\\int_0^1\\int_0^x f\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_x^1 f\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\int_0^1\\int_0^y f\\,dx\\,dy\\)",
+    "solution": "**Miền D:** \\(0\\leq x\\leq1\\), \\(x\\leq y\\leq1\\).\n\nHệ bất phương trình: \\(0\\leq x\\leq y\\), \\(0\\leq y\\leq1\\).\n\n**Đổi thứ tự:** y ngoài (0→1), x trong (0→y):\n\\(I=\\int_0^1\\int_0^y f(x,y)\\,dx\\,dy\\).",
+    "quick": "Miền: y≥x, 0≤x≤1, 0≤y≤1. Đổi: **y:0→1, x:0→y**.",
+    "casio": "CASIO: Miền là tam giác dưới đường y=x trong hình vuông [0,1]².",
+    "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 85,
+    "type": "change_order",
+    "question": "Đổi thứ tự tích phân: \\(I=\\int_0^4\\int_{\\sqrt{x}}^2 f(x,y)\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^2\\int_0^{y^2}f\\,dx\\,dy\\)",
+      "\\(\\int_0^2\\int_0^{\\sqrt{y}}f\\,dx\\,dy\\)",
+      "\\(\\int_0^4\\int_0^y f\\,dx\\,dy\\)",
+      "\\(\\int_0^2\\int_{y^2}^4 f\\,dx\\,dy\\)"
+    ],
+    "correct": "\\(\\int_0^2\\int_0^{y^2}f\\,dx\\,dy\\)",
+    "solution": "**Miền D:** \\(0\\leq x\\leq4\\), \\(\\sqrt{x}\\leq y\\leq2\\).\n\nViết lại: \\(y\\geq\\sqrt{x} \\Leftrightarrow y^2\\geq x\\), và \\(0\\leq y\\leq2\\).\n\nNên \\(0\\leq x\\leq y^2\\), \\(0\\leq y\\leq2\\).\n\n\\(I=\\int_0^2\\int_0^{y^2}f(x,y)\\,dx\\,dy\\).",
+    "quick": "Gốc: x:0→4, y:√x→2. Đổi: **y:0→2, x:0→y²**.",
+    "casio": "CASIO: Miền D là vùng bên trên y=√x, dưới y=2.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 86,
+    "type": "polar_domain_complex",
+    "question": "Cho \\(I=\\iint_D(x^2+y^2+1)\\,dA\\) với D trong góc phần tư 1, nằm trong \\(x^2+y^2=4x\\) và ngoài \\(x^2+y^2=4\\). Dạng tọa độ cực là?",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\)",
+      "\\(I=\\int_0^{\\pi/2}\\int_2^4(r^2+1)r\\,dr\\,d\\theta\\)",
+      "\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)\\,dr\\,d\\theta\\)",
+      "\\(I=\\int_0^{\\pi/2}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\)"
+    ],
+    "correct": "\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\)",
+    "solution": "**Đổi sang cực:** \\(x=r\\cos\\theta, y=r\\sin\\theta\\).\n\n**Đường tròn ngoài** \\(x^2+y^2=4\\) → \\(r=2\\).\n\n**Đường tròn trong** \\(x^2+y^2=4x\\) → \\(r^2=4r\\cos\\theta\\) → \\(r=4\\cos\\theta\\).\n\n**Góc phần tư 1:** Điều kiện giao nhau: \\(4\\cos\\theta=2 \\Rightarrow \\cos\\theta=1/2 \\Rightarrow \\theta=\\pi/3\\).\n\nNên \\(\\theta\\in[0,\\pi/3]\\), \\(r\\in[2,4\\cos\\theta]\\).\n\n\\(f=x^2+y^2+1=r^2+1\\), \\(dA=r\\,dr\\,d\\theta\\).\n\n\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\).",
+    "quick": "Cực: r từ 2 (vòng ngoài) đến 4cosθ (vòng trong). θ từ 0 đến π/3 (giao 2 đường tròn). **Đây là dạng C61 CA1 2025**.",
+    "casio": "CASIO: Giao 2 đường tròn: r=2 và r=4cosθ tại cosθ=1/2 → θ=π/3.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 87,
+    "type": "polar_domain_complex",
+    "question": "Tính \\(I=\\iint_D\\sqrt{x^2+y^2}\\,dA\\) trong đó D là đĩa \\(x^2+y^2\\leq 2x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(\\dfrac{4}{3}\\pi\\)",
+      "\\(\\dfrac{8\\pi}{3}\\)",
+      "\\(2\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{8}{3}\\)",
+    "solution": "\\(x^2+y^2=2x\\) → \\(r=2\\cos\\theta\\).\n\nMiền: \\(0\\leq r\\leq2\\cos\\theta\\), \\(\\theta\\in[-\\pi/2,\\pi/2]\\).\n\n\\(I=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}r\\cdot r\\,dr\\,d\\theta=\\int_{-\\pi/2}^{\\pi/2}\\dfrac{r^3}{3}\\Big|_0^{2\\cos\\theta}d\\theta\\)\n\n\\(=\\int_{-\\pi/2}^{\\pi/2}\\dfrac{8\\cos^3\\theta}{3}d\\theta=\\dfrac{16}{3}\\int_0^{\\pi/2}\\cos^3\\theta\\,d\\theta=\\dfrac{16}{3}\\cdot\\dfrac{2}{3}=\\dfrac{32}{9}\\).\n\n*Kiểm tra: ∫cos³θ dθ = sinθ - sin³θ/3. Tại π/2: 1-1/3=2/3.*",
+    "quick": "Tọa độ cực: r=2cosθ. I=∫∫r²drdθ = (16/3)∫cos³θdθ = 8/3... Kiểm tra lại.",
+    "casio": "CASIO: ∫_{-π/2}^{π/2} 8cos³θ/3 dθ. ∫cos³θ=sinθ-sin³θ/3.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 88,
+    "type": "line_work",
+    "question": "Tính công \\(W\\) của trường vectơ \\(\\mathbf{F}=(y-x)\\mathbf{i}+x\\mathbf{j}\\) dọc theo cung \\(x^2+y^2=1\\) từ \\((1;0)\\) đến \\((0;1)\\) (ngược chiều kim đồng hồ).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
+    "solution": "\\(W=\\int_C(y-x)dx+x\\,dy\\).\n\nTham số: \\(x=\\cos t, y=\\sin t\\), \\(t\\in[0,\\pi/2]\\).\n\n\\(dx=-\\sin t\\,dt\\), \\(dy=\\cos t\\,dt\\).\n\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+\\cos t\\cdot\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}[-\\sin^2t+\\sin t\\cos t+\\cos^2t]dt\\)\n\\(=\\int_0^{\\pi/2}[\\cos2t+\\dfrac{\\sin2t}{2}]dt\\)\n\\(=[\\dfrac{\\sin2t}{2}-\\dfrac{\\cos2t}{4}]_0^{\\pi/2}=(0+1/4)-(0-1/4)=1/2\\).\n\n*Kết quả ½. Đây là câu C69 đề CA1 2025.*",
+    "quick": "Tham số hóa vòng tròn: x=cost, y=sint. Tính ∫Mdx+Ndy bằng thế tham số t từ 0 đến π/2.",
+    "casio": "CASIO: Thay x=cost, y=sint, dx=-sindt, dy=cosdt vào ∫Mdx+Ndy.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 89,
+    "type": "line_work",
+    "question": "Tính công \\(W=\\int_C\\mathbf{F}\\cdot d\\mathbf{r}\\) với \\(\\mathbf{F}=(y,x)\\) dọc đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(W=\\int_C y\\,dx+x\\,dy\\).\n\nTham số: \\(x=t, y=t\\), \\(t\\in[0,1]\\). \\(dx=dt, dy=dt\\).\n\n\\(W=\\int_0^1[t\\cdot dt+t\\cdot dt]=\\int_0^1 2t\\,dt=[t^2]_0^1=1\\).\n\n*Kiểm tra nhanh:* \\(Mdx+Ndy=ydx+xdy=d(xy)\\) → thế vị \\(U=xy\\). \\(W=U(1,1)-U(0,0)=1-0=1\\).",
+    "quick": "F=(y,x): kiểm tra M_y=1=N_x=1 → toàn phần! \\(W=U(1,1)-U(0,0)=xy|_{(0,0)}^{(1,1)}=\\mathbf{1}\\).",
+    "casio": "CASIO: Thế vị U=xy (vì dU=ydx+xdy). W=U(đến)-U(từ)=1-0=1.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 90,
+    "type": "triple_iterated",
+    "question": "Cho \\(I=\\iiint_V f(x,y,z)\\,dV\\) với V giới hạn bởi \\(z=y, z=0, y=1-x^2\\). Tích phân lặp đúng là?",
+    "matrix": null,
+    "options": [
+      "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\)",
+      "\\(\\int_{-1}^1\\int_0^1\\int_0^y f\\,dz\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dx\\,dy\\)",
+      "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_y^0 f\\,dz\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\)",
+    "solution": "**Phân tích miền V:**\n\nMặt trên: \\(z=y\\). Mặt dưới: \\(z=0\\). → \\(0\\leq z\\leq y\\).\n\nMặt bên: \\(y=1-x^2\\) (parabol). Vì \\(z\\geq0\\) và \\(z\\leq y\\) → cần \\(y\\geq0\\). → \\(0\\leq y\\leq1-x^2\\).\n\nX: miền chiếu lên Oxy: \\(0\\leq y\\leq1-x^2\\) → \\(x\\in[-1,1]\\).\n\n\\(I=\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\).",
+    "quick": "Thứ tự: z trong (0→y), y giữa (0→1-x²), x ngoài (-1→1). **Đây là dạng C64 CA1 2025**.",
+    "casio": "CASIO: Xác định giới hạn từ trong ra ngoài: z, rồi y, rồi x.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 91,
+    "type": "triple_iterated",
+    "question": "Thể tích vật thể V giới hạn bởi \\(x+y+z=2\\), \\(x=0,y=0,z=0\\) bằng?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{2}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "\\(V=\\int_0^2\\int_0^{2-x}\\int_0^{2-x-y}dz\\,dy\\,dx\\)\n\n\\(=\\int_0^2\\int_0^{2-x}(2-x-y)dy\\,dx\\)\n\n\\(=\\int_0^2\\left[(2-x)y-\\dfrac{y^2}{2}\\right]_0^{2-x}dx\\)\n\n\\(=\\int_0^2\\dfrac{(2-x)^2}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{(2-x)^3}{-3}\\Big|_0^2=\\dfrac{1}{2}\\cdot\\dfrac{8}{3}=\\dfrac{4}{3}\\).",
+    "quick": "Tích phân ba lớp của 1 trên tứ diện x+y+z≤2, x,y,z≥0. Kết quả: **4/3**.",
+    "casio": "CASIO: V=∫₀²∫₀^{2-x}(2-x-y)dy dx = ∫₀² (2-x)²/2 dx = 4/3.",
+    "difficulty": 2,
+    "topic": "Tích phân"
   }
 ]
