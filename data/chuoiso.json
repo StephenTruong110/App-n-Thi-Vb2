@@ -2032,5 +2032,239 @@
     "casio": "CASIO: Tính S_N cho N lớn dần, kiểm tra hội tụ.",
     "difficulty": 2,
     "topic": "Chuỗi số"
+  },
+  {
+    "id": 114,
+    "type": "identify_convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{1}{n^2}\\) được xét bằng tiêu chuẩn nào đơn giản nhất?",
+    "matrix": null,
+    "options": [
+      "Chuỗi p với p=2>1 → hội tụ",
+      "D'Alembert",
+      "Leibniz",
+      "So sánh với 1/n"
+    ],
+    "correct": "Chuỗi p với p=2>1 → hội tụ",
+    "solution": "Chuỗi \\(\\sum 1/n^p\\) hội tụ khi \\(p>1\\), phân kỳ khi \\(p\\leq1\\). Đây là **chuỗi p** với p=2>1 → hội tụ.",
+    "quick": "Chuỗi p: p=2>1 → **hội tụ**. Học thuộc: ∑1/n² hội tụ, ∑1/n phân kỳ.",
+    "casio": "CASIO: Tổng riêng S₁₀₀ ≈ 1.635, S₁₀₀₀ ≈ 1.643 → hội tụ về π²/6 ≈ 1.645.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 115,
+    "type": "identify_convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{1}{n}\\) (chuỗi điều hòa) là?",
+    "matrix": null,
+    "options": [
+      "Phân kỳ (p=1 ≤ 1)",
+      "Hội tụ",
+      "Hội tụ tuyệt đối",
+      "Không xác định"
+    ],
+    "correct": "Phân kỳ (p=1 ≤ 1)",
+    "solution": "Chuỗi p với p=1: phân kỳ (\\(p\\leq1\\)). Đây là **chuỗi điều hòa** — phân kỳ dù số hạng → 0.",
+    "quick": "p=1 ≤ 1 → **phân kỳ**. Chú ý: u_n→0 là cần nhưng chưa đủ để hội tụ!",
+    "casio": "CASIO: S₁₀₀ ≈ 5.18, S₁₀₀₀ ≈ 7.49 → tăng không giới hạn → phân kỳ.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 116,
+    "type": "identify_convergence_test",
+    "question": "Điều kiện cần (nhưng chưa đủ) để chuỗi \\(\\sum u_n\\) hội tụ là?",
+    "matrix": null,
+    "options": [
+      "\\(\\lim_{n\\to\\infty}u_n=0\\)",
+      "\\(\\sum|u_n|\\) hội tụ",
+      "\\(u_n>0\\)",
+      "\\(u_n\\) giảm dần"
+    ],
+    "correct": "\\(\\lim_{n\\to\\infty}u_n=0\\)",
+    "solution": "**Điều kiện cần:** Nếu \\(\\sum u_n\\) hội tụ thì \\(\\lim u_n=0\\).\n\nLưu ý: ngược lại không đúng (chuỗi điều hòa ∑1/n: u_n→0 nhưng phân kỳ).",
+    "quick": "Hội tụ → u_n→0. Nhưng u_n→0 **không đảm bảo** hội tụ. Chuỗi điều hòa là phản ví dụ.",
+    "casio": "CASIO: Nếu u_n không → 0 → chắc chắn phân kỳ. Đây là cách kiểm tra nhanh nhất.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 117,
+    "type": "identify_convergence_test",
+    "question": "Chuỗi hình học \\(\\sum_{n=0}^\\infty ar^n\\) hội tụ khi nào?",
+    "matrix": null,
+    "options": [
+      "\\(|r|<1\\)",
+      "\\(r<1\\)",
+      "\\(r>0\\)",
+      "\\(|r|>1\\)"
+    ],
+    "correct": "\\(|r|<1\\)",
+    "solution": "Chuỗi hình học \\(\\sum ar^n\\) hội tụ khi \\(|r|<1\\) và tổng = \\(\\dfrac{a}{1-r}\\).\n\nPhân kỳ khi \\(|r|\\geq1\\).",
+    "quick": "\\(|r|<1\\) → hội tụ, tổng = a/(1-r). \\(|r|\\geq1\\) → phân kỳ.",
+    "casio": "CASIO: r=0.5, a=1: tổng=1+0.5+0.25+...→2=1/(1-0.5)✓.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 118,
+    "type": "series_sum",
+    "question": "Tính tổng chuỗi hình học \\(S=\\sum_{n=0}^\\infty\\left(\\dfrac{1}{3}\\right)^n\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "Chuỗi hình học \\(a=1\\), \\(r=1/3\\), \\(|r|<1\\) → hội tụ.\n\n\\(S=\\dfrac{a}{1-r}=\\dfrac{1}{1-1/3}=\\dfrac{1}{2/3}=\\dfrac{3}{2}\\)",
+    "quick": "a=1, r=1/3: S=1/(1-1/3)=1/(2/3)=**3/2**.",
+    "casio": "CASIO: 1+1/3+1/9+1/27+...=3/2=1.5.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 119,
+    "type": "identify_convergence_test",
+    "question": "Nếu \\(\\lim_{n\\to\\infty}u_n=5\\neq0\\) thì chuỗi \\(\\sum u_n\\) là?",
+    "matrix": null,
+    "options": [
+      "Phân kỳ chắc chắn",
+      "Hội tụ",
+      "Cần xét thêm",
+      "Không kết luận được"
+    ],
+    "correct": "Phân kỳ chắc chắn",
+    "solution": "Nếu \\(\\lim u_n\\neq0\\) thì **chắc chắn phân kỳ** (vi phạm điều kiện cần).\n\nĐây là cách kiểm tra nhanh nhất: nếu số hạng không tiến về 0 → phân kỳ ngay.",
+    "quick": "u_n→5≠0 → **phân kỳ**. Tiêu chuẩn phân kỳ nhanh: số hạng không→0 → phân kỳ.",
+    "casio": "CASIO: Tổng riêng tăng tuyến tính → phân kỳ.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 120,
+    "type": "p_series",
+    "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{1}{n^{0.5}}\\) là hội tụ hay phân kỳ?",
+    "matrix": null,
+    "options": [
+      "Phân kỳ (p=0.5≤1)",
+      "Hội tụ",
+      "Hội tụ nhanh",
+      "Dao động"
+    ],
+    "correct": "Phân kỳ (p=0.5≤1)",
+    "solution": "Chuỗi p với \\(p=0.5\\leq1\\) → **phân kỳ**.\n\nTổng quát: \\(\\sum 1/n^p\\) hội tụ ↔ \\(p>1\\).",
+    "quick": "p=1/2 ≤ 1 → **phân kỳ**. Cần p>1 để hội tụ.",
+    "casio": "CASIO: S₁₀₀₀ ≈ 61.8 → tăng chậm nhưng phân kỳ.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 121,
+    "type": "power_series_domain",
+    "question": "Bán kính hội tụ R của chuỗi lũy thừa \\(\\sum_{n=0}^\\infty x^n\\) là bao nhiêu?",
+    "matrix": null,
+    "options": [
+      "\\(R=1\\)",
+      "\\(R=\\infty\\)",
+      "\\(R=0\\)",
+      "\\(R=2\\)"
+    ],
+    "correct": "\\(R=1\\)",
+    "solution": "Chuỗi \\(\\sum x^n\\) là chuỗi hình học với công bội \\(x\\).\n\nHội tụ khi \\(|x|<1\\) → bán kính hội tụ \\(R=1\\), miền hội tụ \\((-1,1)\\).",
+    "quick": "∑xⁿ hội tụ khi |x|<1 → **R=1**.",
+    "casio": "CASIO: Thay x=0.5: hội tụ về 2. Thay x=2: phân kỳ. R=1.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 122,
+    "type": "dalembert",
+    "question": "Áp dụng D'Alembert cho \\(\\sum_{n=1}^\\infty\\dfrac{1}{n!}\\). Tỉ số \\(\\lim\\dfrac{u_{n+1}}{u_n}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(0<1\\) → hội tụ",
+      "\\(1\\)",
+      "\\(\\infty\\)",
+      "\\(\\dfrac{1}{n+1}\\)"
+    ],
+    "correct": "\\(0<1\\) → hội tụ",
+    "solution": "\\(u_n=\\dfrac{1}{n!}\\), \\(u_{n+1}=\\dfrac{1}{(n+1)!}\\).\n\n\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{n!}{(n+1)!}=\\dfrac{1}{n+1}\\to0<1\\) → **hội tụ** theo D'Alembert.",
+    "quick": "\\(u_{n+1}/u_n=1/(n+1)\\to0<1\\) → **hội tụ**. (Tổng = e-1 ≈ 1.718)",
+    "casio": "CASIO: 1+1/2+1/6+1/24+...≈1.718≈e-1. Rất hội tụ nhanh.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 123,
+    "type": "identify_convergence_test",
+    "question": "Chuỗi đan dấu \\(\\sum(-1)^{n+1}\\dfrac{1}{n}=1-\\dfrac{1}{2}+\\dfrac{1}{3}-\\ldots\\) là?",
+    "matrix": null,
+    "options": [
+      "Hội tụ (Leibniz)",
+      "Phân kỳ",
+      "Hội tụ tuyệt đối",
+      "Dao động"
+    ],
+    "correct": "Hội tụ (Leibniz)",
+    "solution": "Tiêu chuẩn **Leibniz** cho chuỗi đan dấu \\(\\sum(-1)^{n+1}a_n\\):\n- \\(a_n=1/n>0\\) ✓\n- \\(a_n\\) giảm dần ✓\n- \\(a_n\\to0\\) ✓\n→ **Hội tụ** (= ln2 ≈ 0.693).",
+    "quick": "Leibniz: a_n=1/n>0, giảm, →0 → **hội tụ**. Tổng = ln2. (Không tuyệt đối vì ∑1/n phân kỳ)",
+    "casio": "CASIO: 1-0.5+0.333-0.25+...≈0.693≈ln2. Hội tụ chậm.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 124,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của chuỗi \\(\\sum_{n=0}^\\infty\\dfrac{x^n}{n!}\\) là?",
+    "matrix": null,
+    "options": [
+      "\\((-\\infty,+\\infty)\\)",
+      "\\((-1,1)\\)",
+      "\\(|x|<e\\)",
+      "\\(x>0\\)"
+    ],
+    "correct": "\\((-\\infty,+\\infty)\\)",
+    "solution": "D'Alembert: \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{x^{n+1}/(n+1)!}{x^n/n!}=\\dfrac{|x|}{n+1}\\to0<1\\) với mọi \\(x\\).\n\nBán kính hội tụ \\(R=+\\infty\\), hội tụ trên \\((-\\infty,+\\infty)\\). Tổng = \\(e^x\\).",
+    "quick": "∑xⁿ/n!=eˣ hội tụ với mọi x → R=∞, miền **(−∞,+∞)**.",
+    "casio": "CASIO: Thay x=100: D'Alembert → |x|/(n+1)→0 → hội tụ mọi x.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 125,
+    "type": "series_sum",
+    "question": "Tổng của chuỗi hình học \\(2+1+\\dfrac{1}{2}+\\dfrac{1}{4}+\\ldots\\) là bao nhiêu?",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(3\\)",
+      "\\(\\infty\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "\\(a=2\\), \\(r=1/2\\), \\(|r|<1\\) → hội tụ.\n\n\\(S=\\dfrac{a}{1-r}=\\dfrac{2}{1-1/2}=\\dfrac{2}{1/2}=4\\).",
+    "quick": "a=2, r=1/2: S=2/(1-1/2)=2/(1/2)=**4**.",
+    "casio": "CASIO: 2+1+0.5+0.25+0.125+...=4.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 126,
+    "type": "identify_convergence_test",
+    "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{n}{n^2+1}\\) hội tụ hay phân kỳ?",
+    "matrix": null,
+    "options": [
+      "Phân kỳ (so sánh với 1/n)",
+      "Hội tụ",
+      "Hội tụ tuyệt đối",
+      "Cần dùng tích phân"
+    ],
+    "correct": "Phân kỳ (so sánh với 1/n)",
+    "solution": "\\(\\dfrac{n}{n^2+1}\\sim\\dfrac{n}{n^2}=\\dfrac{1}{n}\\) khi \\(n\\to\\infty\\).\n\nTiêu chuẩn **so sánh giới hạn** với \\(1/n\\) (phân kỳ): \\(\\lim\\dfrac{n/(n^2+1)}{1/n}=\\lim\\dfrac{n^2}{n^2+1}=1\\neq0\\) → **cùng tính phân kỳ**.",
+    "quick": "u_n ~ 1/n (chuỗi điều hòa) → **phân kỳ**. So sánh giới hạn = 1 → cùng tính.",
+    "casio": "CASIO: Tổng riêng tăng dần không chặn → phân kỳ.",
+    "difficulty": 1,
+    "topic": "Chuỗi số"
   }
 ]

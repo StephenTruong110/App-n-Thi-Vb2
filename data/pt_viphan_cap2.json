@@ -1258,5 +1258,221 @@
     "casio": "CASIO: Thử y_p=x/2·sin2x, tính y'' rồi kiểm tra y''+4y=2cos2x ✓.",
     "difficulty": 3,
     "topic": "PT Vi phân"
+  },
+  {
+    "id": 71,
+    "type": "identify_roots",
+    "question": "PT đặc trưng \\(k^2+k-6=0\\) có nghiệm là?",
+    "matrix": null,
+    "options": [
+      "\\(k_1=2,\\;k_2=-3\\)",
+      "\\(k_1=-2,\\;k_2=3\\)",
+      "\\(k_1=6,\\;k_2=-1\\)",
+      "\\(k_1=1,\\;k_2=-6\\)"
+    ],
+    "correct": "\\(k_1=2,\\;k_2=-3\\)",
+    "solution": "\\(k^2+k-6=(k-2)(k+3)=0\\) → \\(k_1=2,\\;k_2=-3\\).\n\nNghiệm TQ: \\(y=C_1e^{2x}+C_2e^{-3x}\\).",
+    "quick": "(k-2)(k+3)=0 → **k=2 và k=-3**. Nghiệm: C₁e²ˣ+C₂e⁻³ˣ.",
+    "casio": "CASIO: Giải bậc 2: k=(-1±√(1+24))/2=(-1±5)/2 → k=2 hoặc k=-3.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 72,
+    "type": "identify_roots",
+    "question": "PT đặc trưng \\(k^2-4=0\\) có nghiệm là?",
+    "matrix": null,
+    "options": [
+      "\\(k=\\pm2\\)",
+      "\\(k=\\pm2i\\)",
+      "\\(k=4\\)",
+      "\\(k=2\\) (kép)"
+    ],
+    "correct": "\\(k=\\pm2\\)",
+    "solution": "\\(k^2=4\\) → \\(k=\\pm2\\) (hai nghiệm thực phân biệt).\n\nNghiệm TQ: \\(y=C_1e^{2x}+C_2e^{-2x}\\).",
+    "quick": "k²=4 → **k=±2** (thực phân biệt). Nghiệm: C₁e²ˣ+C₂e⁻²ˣ.",
+    "casio": "CASIO: k²=4 → k=2 hoặc k=-2.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 73,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của \\(y''-y=0\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(C_1e^x+C_2e^{-x}\\)",
+      "\\(C_1\\cos x+C_2\\sin x\\)",
+      "\\((C_1+C_2x)e^x\\)",
+      "\\(C_1e^x+C_2xe^x\\)"
+    ],
+    "correct": "\\(C_1e^x+C_2e^{-x}\\)",
+    "solution": "PT đặc trưng: \\(k^2-1=0\\) → \\(k=\\pm1\\) (phân biệt).\n\nNghiệm: \\(y=C_1e^x+C_2e^{-x}\\).",
+    "quick": "k²-1=0 → k=±1 → **C₁eˣ+C₂e⁻ˣ**.",
+    "casio": "CASIO: k²=1 → k=1,-1. Hai nghiệm thực → y=C₁e^x+C₂e^-x.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 74,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của \\(y''+9y=0\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(C_1\\cos3x+C_2\\sin3x\\)",
+      "\\(C_1e^{3x}+C_2e^{-3x}\\)",
+      "\\((C_1+C_2x)e^{3x}\\)",
+      "\\(C_1\\cos9x+C_2\\sin9x\\)"
+    ],
+    "correct": "\\(C_1\\cos3x+C_2\\sin3x\\)",
+    "solution": "PT đặc trưng: \\(k^2+9=0\\) → \\(k=\\pm3i\\) (phức, α=0, β=3).\n\nNghiệm: \\(e^{0}(C_1\\cos3x+C_2\\sin3x)=C_1\\cos3x+C_2\\sin3x\\).",
+    "quick": "k=±3i → nghiệm phức → **C₁cos3x+C₂sin3x**.",
+    "casio": "CASIO: k²=-9 → k=±3i. α=0,β=3 → e⁰(C₁cos3x+C₂sin3x).",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 75,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của \\(y''-2y'+y=0\\) là?",
+    "matrix": null,
+    "options": [
+      "\\((C_1+C_2x)e^x\\)",
+      "\\(C_1e^x+C_2e^{-x}\\)",
+      "\\(C_1\\cos x+C_2\\sin x\\)",
+      "\\((C_1+C_2x)e^{-x}\\)"
+    ],
+    "correct": "\\((C_1+C_2x)e^x\\)",
+    "solution": "PT đặc trưng: \\(k^2-2k+1=(k-1)^2=0\\) → **nghiệm kép** k=1.\n\nNghiệm: \\((C_1+C_2x)e^x\\).",
+    "quick": "(k-1)²=0 → kép k=1 → **(C₁+C₂x)eˣ**. Nghiệm kép: thêm nhân tử x.",
+    "casio": "CASIO: Δ=4-4=0 → kép k=1. Dạng (C₁+C₂x)e^x.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 76,
+    "type": "identify_roots",
+    "question": "Cho \\(y''+2y'+5y=0\\). Phương trình đặc trưng có nghiệm là?",
+    "matrix": null,
+    "options": [
+      "\\(k=-1\\pm2i\\)",
+      "\\(k=1\\pm2i\\)",
+      "\\(k=\\pm5\\)",
+      "\\(k=-2\\pm i\\)"
+    ],
+    "correct": "\\(k=-1\\pm2i\\)",
+    "solution": "\\(k^2+2k+5=0\\), Δ=4-20=-16<0.\n\n\\(k=\\dfrac{-2\\pm\\sqrt{-16}}{2}=\\dfrac{-2\\pm4i}{2}=-1\\pm2i\\).\n\nNghiệm: \\(e^{-x}(C_1\\cos2x+C_2\\sin2x)\\).",
+    "quick": "Δ<0 → phức: k=(-2±4i)/2=**-1±2i**. α=-1, β=2.",
+    "casio": "CASIO: Δ=4-20=-16<0. k=(-2±√(-16))/2=-1±2i.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 77,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm TQ của \\(y''+4y'+4y=0\\) là?",
+    "matrix": null,
+    "options": [
+      "\\((C_1+C_2x)e^{-2x}\\)",
+      "\\(C_1e^{2x}+C_2e^{-2x}\\)",
+      "\\(C_1e^{-2x}+C_2e^{-2x}\\)",
+      "\\(C_1\\cos2x+C_2\\sin2x\\)"
+    ],
+    "correct": "\\((C_1+C_2x)e^{-2x}\\)",
+    "solution": "PT đặc trưng: \\(k^2+4k+4=(k+2)^2=0\\) → **kép** k=-2.\n\nNghiệm: \\((C_1+C_2x)e^{-2x}\\).",
+    "quick": "(k+2)²=0 → kép k=-2 → **(C₁+C₂x)e^{-2x}**.",
+    "casio": "CASIO: Δ=16-16=0 → kép k=-2.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 78,
+    "type": "identify_roots",
+    "question": "Ba loại nghiệm của PT đặc trưng cấp 2 và dạng nghiệm tương ứng?",
+    "matrix": null,
+    "options": [
+      "Phân biệt: C₁e^{k₁x}+C₂e^{k₂x}; Kép: (C₁+C₂x)e^{kx}; Phức: e^{αx}(C₁cosβx+C₂sinβx)",
+      "Chỉ một dạng: C₁e^{k₁x}+C₂e^{k₂x}",
+      "Kép: C₁e^{k₁x}+C₂e^{k₂x}",
+      "Phức: C₁cosαx+C₂sinβx"
+    ],
+    "correct": "Phân biệt: C₁e^{k₁x}+C₂e^{k₂x}; Kép: (C₁+C₂x)e^{kx}; Phức: e^{αx}(C₁cosβx+C₂sinβx)",
+    "solution": "Ba trường hợp:\n1. **Δ>0**: hai nghiệm thực phân biệt k₁,k₂ → \\(C_1e^{k_1x}+C_2e^{k_2x}\\)\n2. **Δ=0**: nghiệm kép k → \\((C_1+C_2x)e^{kx}\\)\n3. **Δ<0**: nghiệm phức k=α±βi → \\(e^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)\\)",
+    "quick": "Phân biệt→Ce^kx; Kép→(C₁+C₂x)e^kx; Phức→e^αx(cosβx+sinβx). **Học thuộc 3 dạng!**",
+    "casio": "CASIO: Tính Δ=b²-4ac. Δ>0 phân biệt, Δ=0 kép, Δ<0 phức.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 79,
+    "type": "reducible_second_order",
+    "question": "Giải \\(y''=6x\\) bằng tích phân trực tiếp.",
+    "matrix": null,
+    "options": [
+      "\\(y=x^3+C_1x+C_2\\)",
+      "\\(y=6x+C\\)",
+      "\\(y=3x^2+C\\)",
+      "\\(y=x^2+C\\)"
+    ],
+    "correct": "\\(y=x^3+C_1x+C_2\\)",
+    "solution": "Tích phân lần 1: \\(y'=\\int6x\\,dx=3x^2+C_1\\).\nTích phân lần 2: \\(y=\\int(3x^2+C_1)dx=x^3+C_1x+C_2\\).",
+    "quick": "y''=6x → y'=3x²+C₁ → **y=x³+C₁x+C₂**.",
+    "casio": "CASIO: ∫6x dx=3x²+C₁, rồi ∫(3x²+C₁)dx=x³+C₁x+C₂.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 80,
+    "type": "identify_roots",
+    "question": "PT đặc trưng của \\(y''-5y'+6y=0\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(k^2-5k+6=0\\)",
+      "\\(k^2+5k+6=0\\)",
+      "\\(k^2-5k-6=0\\)",
+      "\\(5k^2-k+6=0\\)"
+    ],
+    "correct": "\\(k^2-5k+6=0\\)",
+    "solution": "PT tuyến tính \\(y''+ay'+by=0\\) có PT đặc trưng **\\(k^2+ak+b=0\\)**.\n\nHệ số: a=-5, b=6 → \\(k^2-5k+6=0\\).",
+    "quick": "ay''+by'+cy=0 → ak²+bk+c=0. Đây: **k²-5k+6=0**.",
+    "casio": "CASIO: Thay k² cho y'', k cho y', 1 cho y: k²-5k+6=0.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 81,
+    "type": "initial_value",
+    "question": "Nghiệm của \\(y''-y=0\\) thỏa \\(y(0)=1,\\;y'(0)=1\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(y=e^x\\)",
+      "\\(y=\\cosh x\\)",
+      "\\(y=e^x+e^{-x}\\)",
+      "\\(y=\\sinh x\\)"
+    ],
+    "correct": "\\(y=e^x\\)",
+    "solution": "Nghiệm TQ: \\(y=C_1e^x+C_2e^{-x}\\).\n\n\\(y(0)=C_1+C_2=1\\) và \\(y'(0)=C_1-C_2=1\\).\n\nGiải: \\(C_1=1,\\;C_2=0\\) → \\(y=e^x\\).",
+    "quick": "y=C₁eˣ+C₂e⁻ˣ. y(0)=C₁+C₂=1, y'(0)=C₁-C₂=1 → C₁=1,C₂=0 → **y=eˣ**.",
+    "casio": "CASIO: Giải hệ {C₁+C₂=1; C₁-C₂=1} → C₁=1, C₂=0.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 82,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm TQ của \\(y''-2y'-3y=0\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(C_1e^{3x}+C_2e^{-x}\\)",
+      "\\(C_1e^{-3x}+C_2e^x\\)",
+      "\\((C_1+C_2x)e^{3x}\\)",
+      "\\(C_1\\cos3x+C_2\\sin3x\\)"
+    ],
+    "correct": "\\(C_1e^{3x}+C_2e^{-x}\\)",
+    "solution": "PT đặc trưng: \\(k^2-2k-3=(k-3)(k+1)=0\\) → \\(k_1=3,\\;k_2=-1\\).\n\nNghiệm: \\(C_1e^{3x}+C_2e^{-x}\\).",
+    "quick": "(k-3)(k+1)=0 → k=3,-1 → **C₁e³ˣ+C₂e⁻ˣ**.",
+    "casio": "CASIO: k=2±√(4+12)/2=2±4/2 → k=3 hoặc k=-1.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
   }
 ]

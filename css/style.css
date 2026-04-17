@@ -110,14 +110,30 @@ html.dark #countdown { background:#0a0f1a; }
   display:flex; gap:6px;
   background:var(--card); border:1px solid var(--border);
   border-radius:var(--radius); padding:6px; margin-bottom:14px;
+  flex-wrap:wrap;
 }
 .mode-btn {
   flex:1; padding:9px 12px; border:none; border-radius:10px;
   font-family:inherit; font-size:13px; font-weight:600;
   cursor:pointer; color:var(--muted); background:transparent; transition:all .2s;
+  position:relative;
 }
 .mode-btn.active  { background:var(--accent); color:#fff; box-shadow:0 2px 8px rgba(61,90,241,.3); }
 .mode-btn:not(.active):hover { background:var(--bg); color:var(--accent); }
+
+/* Wrong bank button */
+.wrong-mode-btn { color:var(--red) !important; }
+.wrong-mode-btn:hover { background:rgba(var(--red-rgb,239,68,68),.08) !important; color:var(--red) !important; }
+.wrong-mode-btn.has-items { background:rgba(var(--red-rgb,239,68,68),.06); }
+
+/* Badge số câu sai */
+.wrong-bank-badge {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:18px; height:18px; padding:0 5px;
+  background:var(--red); color:#fff;
+  border-radius:9px; font-size:11px; font-weight:700;
+  margin-left:5px; line-height:1;
+}
 
 /* ── TOOLBAR ── */
 .toolbar {
@@ -504,3 +520,28 @@ html.dark .score-hero { background:linear-gradient(135deg, #1e2a5e 0%, #1a3060 5
   .etb-title      { font-size:12px; }
   .etb-center     { display:none; }
 }
+/* ── WRONG BANK ACTION BUTTON (trong trang kết quả) ── */
+.wrong-bank-action-btn {
+  color: var(--red) !important;
+  border-color: var(--red) !important;
+}
+.wrong-bank-action-btn:hover {
+  background: rgba(239,68,68,.08) !important;
+}
+
+/* ── WRONG MODE BAR (hiện khi ôn câu sai) ── */
+.wrong-mode-bar {
+  display:none;
+  align-items:center; justify-content:space-between;
+  gap:10px; flex-wrap:wrap;
+  background:rgba(239,68,68,.08);
+  border:1px solid rgba(239,68,68,.25);
+  border-radius:var(--radius);
+  padding:10px 14px;
+  margin-bottom:10px;
+}
+.wmb-info { font-size:13px; color:var(--red); }
+.wmb-actions { display:flex; gap:8px; }
+.wmb-btn { padding:6px 12px !important; font-size:12px !important; }
+.danger-btn { color:var(--red) !important; border-color:var(--red) !important; }
+.danger-btn:hover { background:rgba(239,68,68,.1) !important; }

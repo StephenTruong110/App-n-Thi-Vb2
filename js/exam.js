@@ -12,22 +12,23 @@
 
 /* ── CONFIG ── */
 const EXAM_DIST = [
-  { file:'matran',                n:18 },
+  { file:'matran',                n:16 },
+  { file:'he_pt_tham_so',        n:5  },
   { file:'gioihan_lientuc_khavi', n:8  },
   { file:'tiem_can',              n:2  },
   { file:'gian_doan_ham_so',      n:2  },
-  { file:'daoham',                n:8  },
-  { file:'daohamrieng',           n:10 },
-  { file:'chuoiso',               n:10 },
-  { file:'pt_viphan_cap1',        n:5  },
-  { file:'pt_viphan_cap2',        n:5  },
-  { file:'tichphan',              n:10 },
+  { file:'daoham',                n:7  },
+  { file:'daohamrieng',           n:9  },
+  { file:'chuoiso',               n:9  },
+  { file:'pt_viphan_cap1',        n:4  },
+  { file:'pt_viphan_cap2',        n:4  },
+  { file:'tichphan',              n:4  },
 ];
 const DIFF_RATIO = { easy:0.25, med:0.55, hard:0.20 };
 const EXAM_TOTAL = 70;
 const EXAM_SECS  = 180 * 60;
 const LS_KEY     = 'vb2_exam70_v2';
-const WRONG_PAGE = 20; // câu sai mỗi trang
+const WRONG_PAGE = 20;
 
 /* ── STATE ── */
 let examQs          = [];  // [{...q, _shuffledOptions:[...], _optMap:{newIdx->origIdx}}]
@@ -112,7 +113,7 @@ function buildExamQuestions() {
     picked.forEach(q => selected.push({ ...q, _src: spec.file }));
   }
   // Shuffle câu hỏi, sau đó shuffle đáp án mỗi câu
-  return shuffleArr(selected).slice(0, EXAM_TOTAL).map(q => shuffleOptions(q));
+  return shuffleArr(selected).slice(0, EXAM_TOTAL).map(q => shuffleOptions({ ...q }));
 }
 
 // Tạo bản sao câu hỏi với đáp án đã xáo trộn
@@ -468,6 +469,9 @@ function gradeAndShowResults(timeUsed) {
   window._wrongDetails = details.filter(d => !d.isOk);
   wrongPage = 0;
 
+  // ── LƯU NGÂN HÀNG CÂU SAI ──
+  saveWrongToBank(details);
+
   // Save last result
   localStorage.setItem('vb2_last_result', JSON.stringify({
     correct, total, pct, timeUsed, grade,
@@ -512,6 +516,7 @@ function gradeAndShowResults(timeUsed) {
         📖 ${window._wrongDetails.length > 0 ? `Xem ${window._wrongDetails.length} câu sai` : 'Không có câu sai 🎉'}
       </button>
       <button class="btn" onclick="switchMode('practice')">📚 Luyện theo chủ đề</button>
+      ${getWrongBank().length > 0 ? `<button class="btn wrong-bank-action-btn" onclick="startWrongBankSession()">❌ Ôn ${getWrongBank().length} câu sai tích lũy</button>` : ''}
     </div>
 
     ${window._wrongDetails.length > 0 ? `
@@ -644,3 +649,180 @@ document.addEventListener('visibilitychange', () => {
     updateTimerDisplay(secs);
   }
 });
+/* ================================================================
+   NGÂN HÀNG CÂU SAI — Wrong Bank
+   Lưu câu sai qua localStorage, hỗ trợ ôn tập có chủ đích
+================================================================ */
+
+const WRONG_BANK_KEY = 'vb2_wrong_bank';
+const WRONG_BANK_MAX = 300;
+
+// ── Helpers ──────────────────────────────────────────────────
+
+function _wrongKey(q) {
+  return `${q._src || q.topic || 'x'}_${q.id}`;
+}
+
+function getWrongBank() {
+  try { return JSON.parse(localStorage.getItem(WRONG_BANK_KEY) || '[]'); }
+  catch { return []; }
+}
+
+function _saveWrongBank(bank) {
+  try {
+    if (bank.length > WRONG_BANK_MAX) bank = bank.slice(-WRONG_BANK_MAX);
+    localStorage.setItem(WRONG_BANK_KEY, JSON.stringify(bank));
+  } catch(e) { console.warn('Wrong bank save error', e); }
+}
+
+// ── Thêm câu sai ─────────────────────────────────────────────
+
+function addToWrongBank(q) {
+  const bank = getWrongBank();
+  if (!bank.find(x => _wrongKey(x) === _wrongKey(q))) {
+    bank.push({ ...q, _wrongAt: Date.now() });
+    _saveWrongBank(bank);
+  }
+  updateWrongBadge();
+}
+
+// ── Xóa câu (khi trả lời đúng) ───────────────────────────────
+
+function removeFromWrongBank(q) {
+  const bank = getWrongBank().filter(x => _wrongKey(x) !== _wrongKey(q));
+  _saveWrongBank(bank);
+  updateWrongBadge();
+}
+
+// ── Lưu câu sai từ kết quả thi thử ──────────────────────────
+
+function saveWrongToBank(details) {
+  const bank = getWrongBank();
+  let added = 0;
+  details.forEach(({ q, isOk }) => {
+    if (isOk) return;
+    if (!bank.find(x => _wrongKey(x) === _wrongKey(q))) {
+      bank.push({ ...q, _wrongAt: Date.now() });
+      added++;
+    }
+  });
+  if (added > 0) { _saveWrongBank(bank); updateWrongBadge(); }
+}
+
+// ── Reset / Xóa ngân hàng ────────────────────────────────────
+
+function clearWrongBank() {
+  const n = getWrongBank().length;
+  if (!n) { alert('Ngân hàng câu sai đang trống!'); return; }
+  if (!confirm(`Xóa toàn bộ ${n} câu trong ngân hàng sai?\nHành động này không thể hoàn tác.`)) return;
+  localStorage.removeItem(WRONG_BANK_KEY);
+  updateWrongBadge();
+  // Cập nhật badge (không overwrite textContent vì có badge span bên trong)
+  updateWrongBadge();
+  hideWrongBankControls();
+  // Thông báo nhẹ không dùng alert — hiện toast
+  showToast('✅ Đã xóa ngân hàng câu sai!');
+}
+
+// ── Cập nhật badge ───────────────────────────────────────────
+
+function updateWrongBadge() {
+  const n = getWrongBank().length;
+  const badge = document.getElementById('wrong-bank-badge');
+  const btn   = document.getElementById('btn-mode-wrong');
+  if (badge) {
+    badge.textContent = n;
+    badge.style.display = n > 0 ? 'inline-flex' : 'none';
+  }
+  if (btn) {
+    btn.classList.toggle('has-items', n > 0);
+  }
+}
+
+// ── Bắt đầu phiên luyện câu sai ─────────────────────────────
+
+function startWrongBankSession() {
+  const bank = getWrongBank();
+  if (!bank.length) {
+    // Hiện modal thay vì alert
+    const modal = document.getElementById('modal-wrong-empty');
+    if (modal) { modal.classList.remove('hidden'); }
+    else { alert('Ngân hàng câu sai trống!\nHãy làm bài thi thử hoặc luyện theo chủ đề để thêm câu sai vào đây.'); }
+    return;
+  }
+
+  // Shuffle và chuẩn bị câu hỏi
+  const qs = shuffleArr([...bank]).map(q => {
+    // Shuffle đáp án và ghi nhớ đáp án đúng mới
+    const origCorrect = q.correct;
+    const opts = shuffleArr([...q.options]);
+    return { ...q, options: opts, correct: origCorrect, _wrongMode: true };
+  });
+
+  // Chuyển sang practice mode với câu từ wrong bank
+  loadWrongBankPractice(qs);
+}
+
+// ── Load câu sai vào engine practice ────────────────────────
+
+function loadWrongBankPractice(qs) {
+  switchMode('wrong');
+  setTimeout(() => {
+    // Reset state
+    questions   = qs;
+    userAnswers = Array(qs.length).fill(-1);
+    grades      = Array(qs.length).fill(null);
+    current     = 0;
+    answered    = false;
+    selectedIdx = -1;
+    totalDone   = 0;
+    totalRight  = 0;
+    totalWrong  = 0;
+
+    // Cập nhật UI
+    const navInfo = document.getElementById('nav-info');
+    if (navInfo) navInfo.textContent = `Ôn ${qs.length} câu sai`;
+
+    ['s-tot','s-rig','s-wro'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = '0';
+    });
+
+    const sCur = document.getElementById('s-cur');
+    if (sCur) sCur.textContent = '1';
+
+    // Ẩn toolbar chọn chủ đề, hiện nút quản lý bank
+    showWrongBankControls(qs.length);
+
+    renderQ();
+    if (typeof updateProgress === 'function') updateProgress();
+    saveProgress();
+  }, 120);
+}
+
+// ── Hiện controls quản lý trong practice mode ───────────────
+
+function showWrongBankControls(count) {
+  // Thêm hoặc cập nhật thanh thông báo ôn câu sai
+  let bar = document.getElementById('wrong-mode-bar');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'wrong-mode-bar';
+    bar.className = 'wrong-mode-bar';
+    const toolbar = document.querySelector('.toolbar');
+    if (toolbar) toolbar.insertAdjacentElement('beforebegin', bar);
+  }
+  bar.innerHTML = `
+    <span class="wmb-info">❌ Đang ôn <b>${count}</b> câu sai tích lũy</span>
+    <div class="wmb-actions">
+      <button class="btn wmb-btn" onclick="startWrongBankSession()" title="Shuffle lại">🔀 Shuffle lại</button>
+      <button class="btn wmb-btn danger-btn" onclick="clearWrongBank()" title="Xóa ngân hàng câu sai">🗑 Xóa tất cả</button>
+    </div>
+  `;
+  bar.style.display = 'flex';
+}
+
+function hideWrongBankControls() {
+  const bar = document.getElementById('wrong-mode-bar');
+  if (bar) bar.style.display = 'none';
+}

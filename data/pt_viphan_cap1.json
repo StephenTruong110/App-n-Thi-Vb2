@@ -1258,5 +1258,221 @@
     "casio": "CASIO: F=∫M dx=x³+xy+g(y). ∂F/∂y=x+g'=x+2y → g'=2y → g=y².",
     "difficulty": 2,
     "topic": "PT Vi phân"
+  },
+  {
+    "id": 71,
+    "type": "identify_type",
+    "question": "Phương trình \\(\\dfrac{dy}{dx}=f(x)\\cdot g(y)\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "Phân ly biến số",
+      "Tuyến tính",
+      "Thuần nhất",
+      "Bernoulli"
+    ],
+    "correct": "Phân ly biến số",
+    "solution": "Khi vế phải **tách được thành tích** f(x)·g(y) → **phân ly biến số**.\n\nGiải: \\(\\dfrac{dy}{g(y)}=f(x)dx\\) rồi tích phân hai vế.",
+    "quick": "f(x)·g(y) → **phân ly biến**. Tách: dy/g(y) = f(x)dx → tích phân.",
+    "casio": "CASIO: Tách, tích phân, giải lấy nghiệm hiện hoặc ẩn.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 72,
+    "type": "identify_type",
+    "question": "Phương trình \\(y'+2y=e^x\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "Tuyến tính cấp 1",
+      "Phân ly biến",
+      "Bernoulli n=2",
+      "Thuần nhất"
+    ],
+    "correct": "Tuyến tính cấp 1",
+    "solution": "Dạng \\(y'+P(x)y=Q(x)\\) với P=2 (hằng số), Q=eˣ → **tuyến tính cấp 1**.\n\nNhân tử tích hợp: μ=e^∫2dx=e^{2x}.",
+    "quick": "y'+Py=Q → **tuyến tính cấp 1**. Nhân tử μ=e^∫P dx.",
+    "casio": "CASIO: Nhận dạng cấu trúc y'+Py=Q.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 73,
+    "type": "identify_type",
+    "question": "Phương trình \\(y'=\\dfrac{y}{x}+1\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "Tuyến tính cấp 1",
+      "Thuần nhất",
+      "Phân ly biến",
+      "Bernoulli"
+    ],
+    "correct": "Tuyến tính cấp 1",
+    "solution": "Viết lại: \\(y'-\\dfrac{1}{x}y=1\\) → dạng \\(y'+P(x)y=Q(x)\\) với P=-1/x, Q=1 → **tuyến tính cấp 1**.",
+    "quick": "Viết lại y'-(1/x)y=1 → **tuyến tính**. Nhân tử μ=e^∫(-1/x)dx=1/x.",
+    "casio": "CASIO: Xác định P(x)=-1/x, Q(x)=1.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 74,
+    "type": "separable",
+    "question": "Nghiệm tổng quát của \\(y'=2x\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(y=x^2+C\\)",
+      "\\(y=2x+C\\)",
+      "\\(y=x^2\\)",
+      "\\(y=2+C\\)"
+    ],
+    "correct": "\\(y=x^2+C\\)",
+    "solution": "Tích phân trực tiếp: \\(y=\\int2x\\,dx=x^2+C\\).",
+    "quick": "y'=2x → tích phân → **y=x²+C**.",
+    "casio": "CASIO: ∫2x dx=x²+C.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 75,
+    "type": "separable",
+    "question": "Nghiệm tổng quát của \\(y'=\\cos x\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(y=\\sin x+C\\)",
+      "\\(y=\\cos x+C\\)",
+      "\\(y=-\\sin x+C\\)",
+      "\\(y=\\cos x\\cdot x+C\\)"
+    ],
+    "correct": "\\(y=\\sin x+C\\)",
+    "solution": "Tích phân: \\(y=\\int\\cos x\\,dx=\\sin x+C\\).",
+    "quick": "y'=cosx → **y=sinx+C**.",
+    "casio": "CASIO: ∫cosx dx=sinx+C.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 76,
+    "type": "identify_type",
+    "question": "Phân biệt 3 yếu tố của phương trình vi phân: bậc, ẩn hàm, biến độc lập trong \\(y''+2y'+y=0\\).",
+    "matrix": null,
+    "options": [
+      "Bậc 2, ẩn y=y(x), biến x",
+      "Bậc 1, ẩn y, biến x",
+      "Bậc 3",
+      "Bậc 2, ẩn x=x(y)"
+    ],
+    "correct": "Bậc 2, ẩn y=y(x), biến x",
+    "solution": "**Bậc** = bậc cao nhất của đạo hàm = 2 (có y'').\n**Ẩn hàm** = y (hàm cần tìm).\n**Biến độc lập** = x.\n\nĐây là PT tuyến tính cấp 2 hệ số hằng thuần nhất.",
+    "quick": "Bậc = bậc đạo hàm cao nhất. Đây **bậc 2** (có y''). Ẩn y, biến x.",
+    "casio": "CASIO: Đọc đạo hàm cao nhất → xác định bậc.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 77,
+    "type": "separable",
+    "question": "Giải \\(y'=3y\\). Nghiệm tổng quát là?",
+    "matrix": null,
+    "options": [
+      "\\(y=Ce^{3x}\\)",
+      "\\(y=3e^x+C\\)",
+      "\\(y=Ce^x\\)",
+      "\\(y=3x+C\\)"
+    ],
+    "correct": "\\(y=Ce^{3x}\\)",
+    "solution": "Phân ly biến: \\(\\dfrac{dy}{y}=3dx\\) → \\(\\ln|y|=3x+C_1\\) → \\(y=Ce^{3x}\\).",
+    "quick": "y'=3y → dy/y=3dx → ln|y|=3x → **y=Ce^3x**.",
+    "casio": "CASIO: dy/y=3dx → ∫dy/y=3∫dx → lny=3x+C.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 78,
+    "type": "identify_type",
+    "question": "Phương trình \\((x^2+y^2)dx-2xy\\,dy=0\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "Thuần nhất",
+      "Tuyến tính",
+      "Toàn phần",
+      "Phân ly biến"
+    ],
+    "correct": "Thuần nhất",
+    "solution": "Kiểm tra: M=x²+y², N=-2xy đều là hàm thuần nhất bậc 2 → **PT thuần nhất**.\n\nGiải bằng đặt \\(u=y/x\\).",
+    "quick": "M,N thuần nhất cùng bậc → **thuần nhất**. Đặt u=y/x.",
+    "casio": "CASIO: Thử M(tx,ty)=t²M(x,y) ✓ → thuần nhất.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 79,
+    "type": "identify_type",
+    "question": "Phương trình \\(y'=\\dfrac{y-x}{y+x}\\) thuộc loại nào?",
+    "matrix": null,
+    "options": [
+      "Thuần nhất (y'=f(y/x))",
+      "Tuyến tính",
+      "Phân ly biến",
+      "Toàn phần"
+    ],
+    "correct": "Thuần nhất (y'=f(y/x))",
+    "solution": "\\(y'=\\dfrac{y/x-1}{y/x+1}=f(y/x)\\) → **PT thuần nhất**.\n\nĐặt \\(u=y/x\\): \\(y=ux\\), \\(y'=u+xu'\\).",
+    "quick": "y'=(y-x)/(y+x)=f(y/x) → **thuần nhất**. Đặt u=y/x.",
+    "casio": "CASIO: Chia tử và mẫu cho x → f(y/x).",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 80,
+    "type": "linear_first_order",
+    "question": "Nhân tử tích hợp của \\(y'-3y=e^x\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(e^{-3x}\\)",
+      "\\(e^{3x}\\)",
+      "\\(e^x\\)",
+      "\\(3x\\)"
+    ],
+    "correct": "\\(e^{-3x}\\)",
+    "solution": "Dạng \\(y'+P(x)y=Q(x)\\) với P=-3.\n\nNhân tử tích hợp: \\(\\mu=e^{\\int P\\,dx}=e^{\\int(-3)dx}=e^{-3x}\\).",
+    "quick": "P=-3 → μ=e^∫(-3)dx=**e^{-3x}**. Nhân vào PT → (ye^{-3x})'=e^x·e^{-3x}.",
+    "casio": "CASIO: P=-3, μ=e^(-3x). Nhân vào: d(ye^-3x)=e^-2x dx.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 81,
+    "type": "separable",
+    "question": "Tìm nghiệm riêng của \\(y'=y\\), \\(y(0)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=2e^x\\)",
+      "\\(y=e^{2x}\\)",
+      "\\(y=2x+2\\)",
+      "\\(y=e^x+1\\)"
+    ],
+    "correct": "\\(y=2e^x\\)",
+    "solution": "Nghiệm TQ: \\(y'=y\\) → \\(y=Ce^x\\).\n\nĐiều kiện: \\(y(0)=C=2\\) → **y=2eˣ**.",
+    "quick": "y'=y → y=Ce^x. y(0)=C=2 → **y=2e^x**.",
+    "casio": "CASIO: C=y(0)=2. Nghiệm: y=2e^x.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 82,
+    "type": "identify_type",
+    "question": "Phương trình \\(y'+y^2=0\\) là loại gì?",
+    "matrix": null,
+    "options": [
+      "Phân ly biến",
+      "Tuyến tính",
+      "Bernoulli n=2",
+      "Thuần nhất"
+    ],
+    "correct": "Phân ly biến",
+    "solution": "\\(y'=-y^2\\) → \\(\\dfrac{dy}{y^2}=-dx\\) → **phân ly biến**.\n\nTích phân: \\(-1/y=-x+C\\) → \\(y=\\dfrac{1}{x+C}\\).\n\n(Lưu ý: cũng là Bernoulli với n=2, nhưng dễ nhất là phân ly biến)",
+    "quick": "y'=-y² → dy/y²=-dx → **phân ly biến**. Nghiệm: y=1/(x+C).",
+    "casio": "CASIO: ∫dy/y²=-1/y; ∫-dx=-x. Nghiệm: -1/y=-x+C → y=1/(x+C).",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
   }
 ]

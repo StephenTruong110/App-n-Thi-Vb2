@@ -57,14 +57,23 @@ function initTheme() {
    MODE SWITCH
 ================================================================ */
 function switchMode(mode) {
+  // Reset all mode buttons
+  ['btn-mode-practice','btn-mode-exam','btn-mode-wrong'].forEach(id => {
+    document.getElementById(id)?.classList.remove('active');
+  });
+
   if (mode === 'exam') {
-    document.getElementById('btn-mode-practice').classList.remove('active');
     document.getElementById('btn-mode-exam').classList.add('active');
     initExamMode(); // defined in exam.js
     return;
   }
+  if (mode === 'wrong') {
+    document.getElementById('btn-mode-wrong')?.classList.add('active');
+    showScreen('screen-practice');
+    return;
+  }
+  // default: practice
   document.getElementById('btn-mode-practice').classList.add('active');
-  document.getElementById('btn-mode-exam').classList.remove('active');
   showScreen('screen-practice');
 }
 
@@ -131,6 +140,7 @@ function recomputeTotals() {
    LOAD DATA
 ================================================================ */
 async function loadData() {
+  if (typeof hideWrongBankControls === 'function') hideWrongBankControls();
   const type = document.getElementById('type').value;
   const diff = document.getElementById('diff-filter').value;
   showSpinner();
@@ -251,7 +261,17 @@ function showAnswer() {
 
   if (grades[current] === null) {
     grades[current] = isRight;
-    if (isRight) totalRight++; else totalWrong++;
+    if (isRight) {
+      totalRight++;
+      // Nếu trả lời đúng, xóa khỏi wrong bank (đã ôn xong)
+      if (questions[current]) removeFromWrongBank(questions[current]);
+    } else {
+      totalWrong++;
+      // Lưu câu sai vào wrong bank (nếu có hàm)
+      if (questions[current] && typeof addToWrongBank === 'function') {
+        addToWrongBank(questions[current]);
+      }
+    }
     totalDone++;
     saveProgress();
   }
@@ -310,9 +330,9 @@ function renderSolContent() {
 function getSolHtml(tab) {
   const q = questions[current];
   if (!q) return '';
-  if (tab === 'giai')  return '<b>Giải nhanh:</b> '    + (q.quick    || '—');
-  if (tab === 'day')   return '<b>Lời giải:</b><br>'    + (q.solution || '—');
-  if (tab === 'nhanh') return '<b>💡 Mẹo nhớ:</b><br>' + (q.quick    || '—');
+  if (tab === 'giai')  return '<b>💡 Giải nhanh:</b><br>' + (q.quick    || '—');
+  if (tab === 'day')   return '<b>📖 Lời giải chi tiết:</b><br>' + (q.solution || '—');
+  if (tab === 'nhanh') return '<b>🎯 Mẹo nhớ:</b><br>'   + (q.solution || q.quick || '—');
   if (tab === 'casio') return `<div class="casio-box">🖩 CASIO fx-580VNX\n──────────────────\n${q.casio || 'Không có hướng dẫn CASIO.'}</div>`;
   return '';
 }
@@ -331,6 +351,7 @@ function goPrev() {
   saveProgress(); renderQ();
 }
 function shuffle() {
+  if (typeof hideWrongBankControls === 'function') hideWrongBankControls();
   if (!questions.length) return;
   // 1. Đảo thứ tự câu hỏi
   questions = shuffleArr(questions);
@@ -437,3 +458,23 @@ window.onload = () => {
   showScreen('screen-practice');
   if (loadProgress() && questions.length) renderQ();
 };
+/* ================================================================
+   TOAST NOTIFICATION (thay alert cho các thông báo nhẹ)
+================================================================ */
+function showToast(msg, duration) {
+  duration = duration || 2500;
+  let toast = document.getElementById('vb2-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'vb2-toast';
+    toast.className = 'vb2-toast';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = msg;
+  toast.classList.add('show');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => toast.classList.remove('show'), duration);
+}
+
+/* ── updateProgress (alias for updateStats, called by exam.js) ── */
+function updateProgress() { updateStats(); }
