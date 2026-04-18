@@ -1,0 +1,385 @@
+[
+  {
+    "id": 1,
+    "type": "eigenvalue",
+    "question": "Giá trị riêng của \\(A=\\begin{pmatrix}3&0\\\\0&5\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "3 và 5",
+      "0 và 0",
+      "15",
+      "8"
+    ],
+    "correct": "3 và 5",
+    "solution": "Ma trận đường chéo: \\(\\lambda_1=3, \\lambda_2=5\\)",
+    "quick": "Đường chéo → đọc thẳng giá trị riêng",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 2,
+    "type": "eigenvalue",
+    "question": "Tìm giá trị riêng của \\(A=\\begin{pmatrix}2&1\\\\0&3\\end{pmatrix}\\)",
+    "matrix": null,
+    "options": [
+      "2 và 3",
+      "1 và 0",
+      "5",
+      "6"
+    ],
+    "correct": "2 và 3",
+    "solution": "Tam giác trên: \\(\\lambda_1=2, \\lambda_2=3\\)",
+    "quick": "Ma trận tam giác → đọc đường chéo",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 3,
+    "type": "eigenvalue",
+    "question": "Tìm giá trị riêng của \\(A=\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\)",
+    "matrix": null,
+    "options": [
+      "5 và 2",
+      "4 và 3",
+      "7 và 0",
+      "1 và 6"
+    ],
+    "correct": "5 và 2",
+    "solution": "\\(\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=\\lambda^2-7\\lambda+10=(\\lambda-5)(\\lambda-2)=0\\)",
+    "quick": "PT đặc trưng: \\(\\lambda^2-7\\lambda+10=0 \\to (\\lambda-5)(\\lambda-2)=0\\)",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 4,
+    "type": "eigenvalue",
+    "question": "Tổng các giá trị riêng của \\(A=\\begin{pmatrix}1&0&0\\\\-10&-3&0\\\\4&200&6\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "4",
+      "0",
+      "6",
+      "10"
+    ],
+    "correct": "4",
+    "solution": "Tam giác dưới: \\(\\lambda_1=1,\\lambda_2=-3,\\lambda_3=6\\). Tổng \\(=\\text{tr}(A)=1-3+6=4\\)",
+    "quick": "Tổng giá trị riêng = vết (trace). \\(1-3+6=4\\)",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 5,
+    "type": "eigenvalue",
+    "question": "Tích các giá trị riêng của \\(A=\\begin{pmatrix}2&3\\\\1&4\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "5",
+      "8",
+      "6",
+      "11"
+    ],
+    "correct": "5",
+    "solution": "Tích giá trị riêng \\(=\\det(A)=2\\cdot4-3\\cdot1=8-3=5\\)",
+    "quick": "Tích giá trị riêng = \\(\\det(A)=5\\)",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 6,
+    "type": "eigenvalue",
+    "question": "Ma trận \\(A=\\begin{pmatrix}2&3\\\\4&1\\end{pmatrix}\\) chéo hoá thành ma trận nào?",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}5&0\\\\0&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0\\\\0&3\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
+    "solution": "PT đặc trưng: \\(\\lambda^2-3\\lambda-10=(\\lambda+2)(\\lambda-5)=0\\to\\lambda=-2,5\\)",
+    "quick": "Chéo hoá: đặt giá trị riêng trên đường chéo theo thứ tự",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 7,
+    "type": "eigenvalue",
+    "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) có giá trị riêng là",
+    "matrix": null,
+    "options": [
+      "1 (bội kép)",
+      "0 và 1",
+      "0 (bội kép)",
+      "1 và 2"
+    ],
+    "correct": "1 (bội kép)",
+    "solution": "\\(\\det(I-\\lambda I)=(1-\\lambda)^2=0\\to\\lambda=1\\) bội kép",
+    "quick": "Ma trận đơn vị: mọi giá trị riêng đều bằng 1",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 8,
+    "type": "eigenvalue",
+    "question": "Số giá trị riêng phân biệt của \\(A=\\begin{pmatrix}-1&3&7\\\\0&2&8\\\\0&0&3\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ],
+    "correct": "3",
+    "solution": "Tam giác trên: \\(\\lambda_1=-1,\\lambda_2=2,\\lambda_3=3\\) — ba giá trị riêng phân biệt",
+    "quick": "Tam giác → đọc đường chéo: -1, 2, 3 → 3 giá trị phân biệt",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 9,
+    "type": "eigenvalue",
+    "question": "Cho \\(A=\\begin{pmatrix}5&2\\\\2&5\\end{pmatrix}\\). Các giá trị riêng của \\(A\\) là",
+    "matrix": null,
+    "options": [
+      "3 và 7",
+      "5 và 5",
+      "5 và 2",
+      "4 và 6"
+    ],
+    "correct": "3 và 7",
+    "solution": "\\(\\det(A-\\lambda I)=(5-\\lambda)^2-4=0\\to(5-\\lambda)^2=4\\to\\lambda=3,7\\)",
+    "quick": "\\((5-\\lambda)^2=4\\to\\lambda=5\\pm2=3,7\\)",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 10,
+    "type": "eigenvalue",
+    "question": "Vectơ riêng ứng với \\(\\lambda=2\\) của \\(A=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((2,1)^T\\)",
+      "\\((1,0)^T\\)",
+      "\\((0,1)^T\\)",
+      "\\((1,1)^T\\)"
+    ],
+    "correct": "\\((2,1)^T\\)",
+    "solution": "\\((A-2I)v=0\\): \\(\\begin{pmatrix}-1&2\\\\0&0\\end{pmatrix}v=0\\to -v_1+2v_2=0\\to v_1=2v_2\\). Chọn \\(v_2=1\\): \\(v=(2,1)^T\\)",
+    "quick": "Giải \\((A-\\lambda I)v=0\\), đặt \\(v_2=1\\)",
+    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 11,
+    "type": "linear_independence",
+    "question": "Hệ vectơ \\(v_1=(1,0)^T\\), \\(v_2=(0,1)^T\\) là",
+    "matrix": null,
+    "options": [
+      "Độc lập tuyến tính",
+      "Phụ thuộc tuyến tính",
+      "Cùng chiều",
+      "Bằng nhau"
+    ],
+    "correct": "Độc lập tuyến tính",
+    "solution": "\\(\\alpha(1,0)+\\beta(0,1)=(0,0)\\Rightarrow\\alpha=\\beta=0\\) — độc lập",
+    "quick": "Cơ sở chuẩn luôn độc lập tuyến tính",
+    "casio": "CASIO: Tính det của ma trận ghép các vector thành cột. det=0 → phụ thuộc tuyến tính; det≠0 → độc lập.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 12,
+    "type": "linear_independence",
+    "question": "Hệ \\(v_1=(1,2)^T\\), \\(v_2=(2,4)^T\\) là",
+    "matrix": null,
+    "options": [
+      "Phụ thuộc tuyến tính",
+      "Độc lập tuyến tính",
+      "Cơ sở",
+      "Trực giao"
+    ],
+    "correct": "Phụ thuộc tuyến tính",
+    "solution": "\\(v_2=2v_1\\) → phụ thuộc tuyến tính",
+    "quick": "\\(v_2=2v_1\\) → phụ thuộc",
+    "casio": "CASIO: Tính det của ma trận ghép các vector thành cột. det=0 → phụ thuộc tuyến tính; det≠0 → độc lập.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 13,
+    "type": "linear_independence",
+    "question": "Cho \\(v_1=(1,2,1)^T\\), \\(v_2=(3,1,1)^T\\), \\(v_3=(5,0,a)^T\\). Hệ phụ thuộc khi \\(a=\\)",
+    "matrix": null,
+    "options": [
+      "1",
+      "-2",
+      "2",
+      "-1"
+    ],
+    "correct": "1",
+    "solution": "Lập ma trận lấy các vectơ làm cột: \\(M=\\begin{pmatrix}1&3&5\\\\2&1&0\\\\1&1&a\\end{pmatrix}\\). Hệ phụ thuộc tuyến tính khi \\(\\det(M)=0\\). Tính được \\(\\det(M)=5(1-a)\\). Suy ra \\(\\det(M)=0 \\Leftrightarrow a=1\\).",
+    "quick": "Phụ thuộc tuyến tính \\(\\Leftrightarrow \\det=0\\). Ở đây \\(\\det=5(1-a)\\Rightarrow a=1\\).",
+    "casio": "CASIO: Tính det của ma trận ghép các vector thành cột. det=0 → phụ thuộc tuyến tính; det≠0 → độc lập.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 14,
+    "type": "eigenvector_verify",
+    "question": "Cho ma trận \\(A=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\). Vectơ nào là vectơ riêng của A?",
+    "matrix": [
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "options": [
+      "\\((0,1)^T\\)",
+      "\\((2,1)^T\\)",
+      "\\((1,1)^T\\)",
+      "Không có đáp án đúng"
+    ],
+    "correct": "\\((2,1)^T\\)",
+    "solution": "Giá trị riêng của A: \\(\\det(A-\\lambda I)=(1-\\lambda)(2-\\lambda)=0\\) → \\(\\lambda_1=1,\\;\\lambda_2=2\\).\n\n**Thử \\((0,1)^T\\):** \\(A(0,1)^T=(2,2)^T\\). Kiểm tra: \\(2\\neq\\lambda\\cdot(0,1)^T\\) với mọi \\(\\lambda\\) → **không phải** vectơ riêng.\n\n**Với \\(\\lambda_2=2\\):** \\((A-2I)v=0\\): \\(\\begin{pmatrix}-1&2\\\\0&0\\end{pmatrix}v=0\\) → \\(v_1=2v_2\\). Chọn \\(v_2=1\\) → \\(v=(2,1)^T\\).\n\n**Kiểm tra:** \\(A(2,1)^T=(4,2)^T=2(2,1)^T\\) ✓ → **đây là vectơ riêng** ứng với \\(\\lambda=2\\).",
+    "quick": "PT đặc trưng (1-λ)(2-λ)=0 → λ=1,2. Thử: A(0,1)=(2,2)≠λ(0,1) → sai. A(2,1)=(4,2)=2(2,1) → **đúng**, v=(2,1)^T là vectơ riêng λ=2.",
+    "casio": "CASIO: Tính A×v cho từng vector. Nếu A×v = k×v (k là số) → đó là vector riêng.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 15,
+    "type": "eigenvector_verify",
+    "question": "Cho ma trận \\(A=\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}\\). Vectơ riêng ứng với giá trị riêng \\(\\lambda=3\\) là?",
+    "matrix": [
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "options": [
+      "\\((1,0)^T\\)",
+      "\\((0,1)^T\\)",
+      "\\((1,1)^T\\)",
+      "\\((3,0)^T\\)"
+    ],
+    "correct": "\\((1,0)^T\\)",
+    "solution": "Giải \\((A-3I)v=0\\):\n\\(\\begin{pmatrix}0&1\\\\0&-1\\end{pmatrix}\\begin{pmatrix}v_1\\\\v_2\\end{pmatrix}=0\\)\n\n→ \\(v_2=0\\), \\(v_1\\) tự do → vectơ riêng: \\(v=(1,0)^T\\).\n\nKiểm tra: \\(A(1,0)^T=(3,0)^T=3(1,0)^T\\) ✓.",
+    "quick": "Giải (A-3I)v=0: [0,1;0,-1]v=0 → v₂=0 → **v=(1,0)^T**. Kiểm tra: A(1,0)=3(1,0)✓.",
+    "casio": "CASIO: A×[1;0]=[3;0]=3×[1;0] ✓. A×[0;1]=[1;2]≠λ×[0;1] ✗.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 16,
+    "type": "diagonalization",
+    "question": "Chéo hoá ma trận \\(A=\\begin{pmatrix}2&3\\\\4&1\\end{pmatrix}\\). Ma trận đường chéo thu được là?",
+    "matrix": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    "options": [
+      "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&0\\\\0&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}-2&0\\\\0&-5\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&0\\\\0&5\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
+    "solution": "**Bước 1:** Tìm giá trị riêng.\n\\(\\det(A-\\lambda I)=(2-\\lambda)(1-\\lambda)-12=\\lambda^2-3\\lambda-10=(\\lambda-5)(\\lambda+2)=0\\)\n\n→ \\(\\lambda_1=-2,\\;\\lambda_2=5\\).\n\n**Bước 2:** Ma trận chéo hoá là ma trận đường chéo của các giá trị riêng:\n\\(D=\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)\n\n*Lưu ý:* \\(A=PDP^{-1}\\) với P là ma trận vectơ riêng.",
+    "quick": "det(A-λI)=λ²-3λ-10=0 → λ=-2, λ=5. Ma trận chéo: **diag(-2, 5)**.",
+    "casio": "CASIO: PT đặc trưng: λ²-(trace A)λ+det A=λ²-3λ-10=0. Nghiệm: λ=-2 và λ=5.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 17,
+    "type": "diagonalization",
+    "question": "Ma trận \\(A=\\begin{pmatrix}1&0&0\\\\-10&-3&0\\\\4&200&6\\end{pmatrix}\\) có tổng các giá trị riêng bằng?",
+    "matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        -10,
+        -3,
+        0
+      ],
+      [
+        4,
+        200,
+        6
+      ]
+    ],
+    "options": [
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "A là **ma trận tam giác dưới** → các giá trị riêng chính là các phần tử đường chéo!\n\nGiá trị riêng: \\(\\lambda_1=1,\\;\\lambda_2=-3,\\;\\lambda_3=6\\).\n\nTổng = \\(1+(-3)+6=4\\).\n\n**Tổng giá trị riêng = vết (trace) của ma trận** = \\(1+(-3)+6=4\\).",
+    "quick": "Tam giác dưới → giá trị riêng = phần tử đường chéo = 1, -3, 6. Tổng = **4** = trace(A).",
+    "casio": "CASIO: Trace=1+(-3)+6=4=tổng giá trị riêng.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 18,
+    "type": "diagonalization",
+    "question": "Ma trận \\(A=\\begin{pmatrix}-1&3&7\\\\0&2&8\\\\0&0&3\\end{pmatrix}\\) có bao nhiêu giá trị riêng (phân biệt)?",
+    "matrix": [
+      [
+        -1,
+        3,
+        7
+      ],
+      [
+        0,
+        2,
+        8
+      ],
+      [
+        0,
+        0,
+        3
+      ]
+    ],
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "A là **ma trận tam giác trên** → các giá trị riêng chính là phần tử trên đường chéo:\n\n\\(\\lambda_1=-1,\\;\\lambda_2=2,\\;\\lambda_3=3\\)\n\nBa giá trị riêng **phân biệt** → A có **3 giá trị riêng**.",
+    "quick": "Tam giác trên → giá trị riêng = đường chéo = -1, 2, 3. Phân biệt → **3 giá trị riêng**.",
+    "casio": "CASIO: Đường chéo: -1, 2, 3. Đây là giá trị riêng của ma trận tam giác.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  }
+]

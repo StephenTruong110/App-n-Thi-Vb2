@@ -4,7 +4,12 @@
     "type": "vertical_asymptote",
     "question": "Tìm tiệm cận đứng của \\(y = \\dfrac{x+1}{x-2}\\)?",
     "matrix": null,
-    "options": ["\\(x=2\\)","\\(x=-2\\)","\\(x=1\\)","\\(x=-1\\)"],
+    "options": [
+      "\\(x=2\\)",
+      "\\(x=-2\\)",
+      "\\(x=1\\)",
+      "\\(x=-1\\)"
+    ],
     "correct": "\\(x=2\\)",
     "solution": "**Tìm TCĐ:** Cho mẫu = 0: \\(x-2=0 \\Rightarrow x=2\\).\nTử tại \\(x=2\\): \\(2+1=3\\neq0\\) → **TCĐ: \\(x=2\\)**.\n\n\\(\\lim_{x\\to2^\\pm}\\dfrac{x+1}{x-2}=\\pm\\infty\\) xác nhận.",
     "quick": "**Quy tắc TCĐ:** mẫu=0 VÀ tử≠0 tại điểm đó. Ở đây mẫu=0 tại x=2, tử=3≠0 → **x=2**.",
@@ -17,7 +22,12 @@
     "type": "vertical_asymptote",
     "question": "Tìm số đường tiệm cận đứng của \\(y = \\dfrac{x-1}{x^2+x-2}\\)?",
     "matrix": null,
-    "options": ["0","1","2","3"],
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
     "correct": "1",
     "solution": "Mẫu: \\(x^2+x-2=(x-1)(x+2)=0 \\Rightarrow x=1,\\;x=-2\\).\n\n**Tại \\(x=1\\):** Tử \\(x-1=0\\) tại \\(x=1\\) → có thể rút gọn: \\(\\dfrac{x-1}{(x-1)(x+2)}=\\dfrac{1}{x+2}\\). Giới hạn = \\(\\dfrac{1}{3}\\) hữu hạn → **không phải TCĐ**.\n\n**Tại \\(x=-2\\):** Tử \\(-2-1=-3\\neq0\\) → giới hạn = ±∞ → **TCĐ: \\(x=-2\\)**.\n\nChỉ có **1 đường TCĐ**.",
     "quick": "Mẫu=0 tại x=1 và x=-2. Tại x=1: tử=0 → rút gọn (không TCĐ). Tại x=-2: tử=-3≠0 → **1 TCĐ**.",
@@ -30,7 +40,12 @@
     "type": "horizontal_asymptote",
     "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{3x^2+2x+1}{x^2-5}\\)?",
     "matrix": null,
-    "options": ["\\(y=3\\)","\\(y=0\\)","\\(y=1\\)","\\(y=2\\)"],
+    "options": [
+      "\\(y=3\\)",
+      "\\(y=0\\)",
+      "\\(y=1\\)",
+      "\\(y=2\\)"
+    ],
     "correct": "\\(y=3\\)",
     "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{3x^2+2x+1}{x^2-5}=\\lim_{x\\to\\pm\\infty}\\dfrac{3+2/x+1/x^2}{1-5/x^2}=\\dfrac{3}{1}=3\\)\n\n**Quy tắc:** Bậc tử = bậc mẫu = 2 → TCN = tỉ số hệ số bậc cao nhất = 3/1 = **y = 3**.",
     "quick": "Bậc tử = bậc mẫu → TCN = hệ số cao nhất tử / hệ số cao nhất mẫu = **3/1 = y=3**.",
@@ -43,7 +58,12 @@
     "type": "horizontal_asymptote",
     "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{2x+1}{x^2+1}\\)?",
     "matrix": null,
-    "options": ["\\(y=0\\)","\\(y=2\\)","\\(y=1\\)","Không có TCN"],
+    "options": [
+      "\\(y=0\\)",
+      "\\(y=2\\)",
+      "\\(y=1\\)",
+      "Không có TCN"
+    ],
     "correct": "\\(y=0\\)",
     "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{2x+1}{x^2+1}=\\lim_{x\\to\\pm\\infty}\\dfrac{2/x+1/x^2}{1+1/x^2}=\\dfrac{0}{1}=0\\)\n\n**Quy tắc:** Bậc tử (1) < bậc mẫu (2) → \\(y=0\\) là TCN.",
     "quick": "Bậc tử < bậc mẫu → TCN **y=0** (hàm → 0 khi x→±∞).",
@@ -56,7 +76,12 @@
     "type": "horizontal_asymptote",
     "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{x^2+1}{x+1}\\)?",
     "matrix": null,
-    "options": ["Không có TCN","\\(y=0\\)","\\(y=1\\)","\\(y=x-1\\)"],
+    "options": [
+      "Không có TCN",
+      "\\(y=0\\)",
+      "\\(y=1\\)",
+      "\\(y=x-1\\)"
+    ],
     "correct": "Không có TCN",
     "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{x^2+1}{x+1}=\\pm\\infty\\) (vì bậc tử > bậc mẫu).\n\nKhông có giá trị hữu hạn nào → **không có TCN**.\n\nTuy nhiên, chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\) → có **tiệm cận xiên** \\(y=x-1\\).",
     "quick": "Bậc tử (2) > bậc mẫu (1) → **không có TCN** (nhưng có TCX).",
@@ -69,7 +94,12 @@
     "type": "oblique_asymptote",
     "question": "Tiệm cận xiên của \\(y = \\dfrac{x^2+1}{x+1}\\) là?",
     "matrix": null,
-    "options": ["\\(y=x-1\\)","\\(y=x+1\\)","\\(y=x\\)","\\(y=-x+1\\)"],
+    "options": [
+      "\\(y=x-1\\)",
+      "\\(y=x+1\\)",
+      "\\(y=x\\)",
+      "\\(y=-x+1\\)"
+    ],
     "correct": "\\(y=x-1\\)",
     "solution": "**Tìm TCX \\(y=ax+b\\):**\n\n\\(a=\\lim_{x\\to\\infty}\\dfrac{f(x)}{x}=\\lim_{x\\to\\infty}\\dfrac{x^2+1}{x(x+1)}=\\lim_{x\\to\\infty}\\dfrac{x^2+1}{x^2+x}=1\\)\n\n\\(b=\\lim_{x\\to\\infty}[f(x)-ax]=\\lim_{x\\to\\infty}\\left[\\dfrac{x^2+1}{x+1}-x\\right]=\\lim_{x\\to\\infty}\\dfrac{x^2+1-x(x+1)}{x+1}=\\lim_{x\\to\\infty}\\dfrac{-x+1}{x+1}=-1\\)\n\nTCX: **\\(y=x-1\\)**.\n\n*Cách nhanh:* Chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\) → phần nguyên = \\(x-1\\) = TCX.",
     "quick": "Chia tử cho mẫu: \\(x^2+1 = (x+1)(x-1)+2\\) → \\(y=x-1+\\dfrac{2}{x+1}\\) → TCX: **y=x-1**.",
@@ -82,7 +112,12 @@
     "type": "mixed_asymptotes",
     "question": "Số đường tiệm cận của \\(y = \\dfrac{x^2-3x+2}{x^2-4}\\) là?",
     "matrix": null,
-    "options": ["1","2","3","0"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
     "correct": "2",
     "solution": "**TCĐ:** Mẫu \\(x^2-4=(x-2)(x+2)=0\\) tại \\(x=2,\\;x=-2\\).\n\nTử \\(x^2-3x+2=(x-1)(x-2)\\).\n- Tại \\(x=2\\): Tử = 0 → rút gọn: \\(\\dfrac{(x-2)(x-1)}{(x-2)(x+2)}=\\dfrac{x-1}{x+2}\\) → giới hạn = 1/4 hữu hạn → **không TCĐ**.\n- Tại \\(x=-2\\): Tử = 12 ≠ 0 → **TCĐ: \\(x=-2\\)**.\n\n**TCN:** Bậc tử = bậc mẫu → TCN = 1/1 = **\\(y=1\\)**.\n\nTổng: TCĐ (1) + TCN (1) = **2 đường tiệm cận**.",
     "quick": "TCĐ: chỉ x=-2 (x=2 rút gọn được). TCN: y=1 (bậc bằng nhau). Tổng: **2 đường**.",
@@ -95,7 +130,12 @@
     "type": "vertical_asymptote",
     "question": "Đồ thị hàm số \\(y = \\dfrac{x^2-1}{x^2-3x+2}\\) có bao nhiêu đường tiệm cận đứng?",
     "matrix": null,
-    "options": ["0","1","2","3"],
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
     "correct": "1",
     "solution": "Mẫu: \\(x^2-3x+2=(x-1)(x-2)=0\\) tại \\(x=1,\\;x=2\\).\n\nTử: \\(x^2-1=(x-1)(x+1)\\).\n- Tại \\(x=1\\): Tử = 0 → rút gọn: \\(\\dfrac{(x-1)(x+1)}{(x-1)(x-2)}=\\dfrac{x+1}{x-2}\\) → hữu hạn → **không TCĐ**.\n- Tại \\(x=2\\): Tử = 3 ≠ 0 → **TCĐ: \\(x=2\\)**.\n\nCó **1 đường TCĐ**.",
     "quick": "Mẫu=0 tại x=1,2. Tại x=1: tử=0 → rút gọn. Tại x=2: tử=3≠0 → **1 TCĐ**.",
@@ -108,7 +148,12 @@
     "type": "horizontal_asymptote",
     "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{\\sqrt{x^2+1}}{x}\\)?",
     "matrix": null,
-    "options": ["\\(y=1\\) và \\(y=-1\\)","\\(y=1\\)","\\(y=-1\\)","Không có TCN"],
+    "options": [
+      "\\(y=1\\) và \\(y=-1\\)",
+      "\\(y=1\\)",
+      "\\(y=-1\\)",
+      "Không có TCN"
+    ],
     "correct": "\\(y=1\\) và \\(y=-1\\)",
     "solution": "**Khi \\(x\\to+\\infty\\):** \\(\\sqrt{x^2+1}\\sim|x|=x\\) (vì \\(x>0\\)) → \\(y=\\dfrac{x}{x}=1\\) → **TCN: \\(y=1\\)**.\n\n**Khi \\(x\\to-\\infty\\):** \\(\\sqrt{x^2+1}\\sim|x|=-x\\) (vì \\(x<0\\)) → \\(y=\\dfrac{-x}{x}=-1\\) → **TCN: \\(y=-1\\)**.\n\nCó **2 đường TCN**: \\(y=1\\) và \\(y=-1\\).",
     "quick": "Với \\(\\sqrt{x^2}=|x|\\): phía +∞ → y=1; phía −∞ → y=−1. **Luôn xét 2 phía với giá trị tuyệt đối!**",
@@ -121,10 +166,15 @@
     "type": "mixed_asymptotes",
     "question": "Số đường tiệm cận của \\(y = \\dfrac{x+1}{\\sqrt{x^2-1}}\\) là?",
     "matrix": null,
-    "options": ["2","3","4","1"],
-    "correct": "4",
-    "solution": "**TCĐ:** \\(x^2-1=0 \\Rightarrow x=\\pm1\\). Tại \\(x=1^+\\): tử=2≠0, mẫu→0 → **TCĐ: \\(x=1\\)**. Tại \\(x=-1^-\\): tử=0 nhưng mẫu→0... Cần kiểm tra: \\(\\dfrac{x+1}{\\sqrt{(x-1)(x+1)}}=\\dfrac{\\sqrt{x+1}}{\\sqrt{x-1}}\\) → lim \\(x\\to-1^-\\) không xác định vì trong căn âm. Thực ra: \\(x<-1\\) là miền xác định (cả hai nhân tử âm → tích dương) → **TCĐ: \\(x=-1\\)** (\\(x\\to-1^-\\): mẫu→0, tử→0 nhưng \\(\\sqrt{x+1}/\\sqrt{x-1}\\to0/\\sqrt{-2}\\) không thực → TXĐ không chứa lân cận x=-1 từ phải) → chỉ xét \\(x\\to-1^-\\): mẫu→0 → +∞.\n\n**Thực tế:** TXĐ \\(x>1\\) hoặc \\(x<-1\\) → TCĐ tại \\(x=1\\) và \\(x=-1\\): **2 đường TCĐ**.\n\n**TCN:** khi \\(x\\to+\\infty\\): \\(\\dfrac{x+1}{\\sqrt{x^2-1}}\\to\\dfrac{x}{x}=1\\) → \\(y=1\\). Khi \\(x\\to-\\infty\\): \\(\\dfrac{x+1}{\\sqrt{x^2-1}}\\to\\dfrac{x}{-x}=-1\\) → \\(y=-1\\): **2 đường TCN**.\n\nTổng: **4 đường tiệm cận**.",
-    "quick": "2 TCĐ (x=±1) + 2 TCN (y=±1) = **4 đường tiệm cận**.",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correct": "3",
+    "solution": "TXĐ: \\(x>1\\) hoặc \\(x<-1\\).\n\n**TCĐ:** \\(\\lim_{x\\to1^+}\\dfrac{x+1}{\\sqrt{x^2-1}}=+\\infty\\) → **TCĐ: \\(x=1\\)**.\n\nTại \\(x=-1\\): \\(\\lim_{x\\to-1^-}\\dfrac{x+1}{\\sqrt{x^2-1}}=\\dfrac{0}{0^+}=0\\) (hữu hạn) → **không phải TCĐ**.\n\n**TCN:** \\(\\lim_{x\\to+\\infty}=1\\) → \\(y=1\\); \\(\\lim_{x\\to-\\infty}=-1\\) → \\(y=-1\\).\n\n**Tổng: 1 TCĐ + 2 TCN = 3 đường tiệm cận.**",
+    "quick": "x=1 (TCĐ, lim=∞). x=-1: lim=0 (hữu hạn, không TCĐ). y=±1 (TCN). Tổng: **3**.",
     "casio": "CASIO: x=1.0001 → rất lớn → TCĐ x=1. x=-1.0001 → lớn → TCĐ x=-1. x=10^6 → ≈1 → TCN y=1. x=-10^6 → ≈-1 → TCN y=-1.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
@@ -134,7 +184,12 @@
     "type": "oblique_asymptote",
     "question": "Tiệm cận xiên của \\(y = \\dfrac{2x^2-x+3}{x-2}\\) là?",
     "matrix": null,
-    "options": ["\\(y=2x+3\\)","\\(y=2x-3\\)","\\(y=2x\\)","\\(y=x+3\\)"],
+    "options": [
+      "\\(y=2x+3\\)",
+      "\\(y=2x-3\\)",
+      "\\(y=2x\\)",
+      "\\(y=x+3\\)"
+    ],
     "correct": "\\(y=2x+3\\)",
     "solution": "Chia đa thức:\n\\(2x^2-x+3 \\div (x-2)\\):\n\\(2x^2-x+3 = (x-2)(2x+3)+9\\)\n\nKiểm tra: \\((x-2)(2x+3)=2x^2+3x-4x-6=2x^2-x-6\\). Vậy \\(2x^2-x+3-(2x^2-x-6)=9\\) ✓\n\n\\(y=\\dfrac{(x-2)(2x+3)+9}{x-2}=2x+3+\\dfrac{9}{x-2}\\)\n\nKhi \\(x\\to\\infty\\): \\(y\\to2x+3\\) → **TCX: \\(y=2x+3\\)**.",
     "quick": "Chia đa thức: \\(2x^2-x+3=(x-2)(2x+3)+9\\) → phần nguyên = **y=2x+3**.",
@@ -147,7 +202,12 @@
     "type": "mixed_asymptotes",
     "question": "Tổng số đường tiệm cận của \\(y = \\dfrac{x^2+x-2}{x^2-x-2}\\) là?",
     "matrix": null,
-    "options": ["1","2","3","4"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
     "correct": "3",
     "solution": "**TCĐ:** Mẫu \\(x^2-x-2=(x-2)(x+1)=0\\) tại \\(x=2,\\;x=-1\\).\n\nTử \\(x^2+x-2=(x+2)(x-1)\\).\n- Tại \\(x=2\\): Tử = \\((2+2)(2-1)=4\\neq0\\) → **TCĐ: \\(x=2\\)**.\n- Tại \\(x=-1\\): Tử = \\((-1+2)(-1-1)=-2\\neq0\\) → **TCĐ: \\(x=-1\\)**.\n\n**TCN:** Bậc tử = bậc mẫu = 2 → TCN = \\(\\dfrac{1}{1}=1\\) → **TCN: \\(y=1\\)**.\n\nTổng: 2 TCĐ + 1 TCN = **3 đường tiệm cận**.",
     "quick": "2 TCĐ (x=2 và x=-1, cả hai tử≠0) + 1 TCN (y=1) = **3 đường**.",
@@ -160,7 +220,12 @@
     "type": "vertical_asymptote",
     "question": "Tìm tất cả tiệm cận đứng của \\(y = \\dfrac{1}{x^2-4x+3}\\)?",
     "matrix": null,
-    "options": ["\\(x=1\\) và \\(x=3\\)","\\(x=4\\)","\\(x=1\\)","\\(x=3\\)"],
+    "options": [
+      "\\(x=1\\) và \\(x=3\\)",
+      "\\(x=4\\)",
+      "\\(x=1\\)",
+      "\\(x=3\\)"
+    ],
     "correct": "\\(x=1\\) và \\(x=3\\)",
     "solution": "Mẫu: \\(x^2-4x+3=(x-1)(x-3)=0 \\Rightarrow x=1,\\;x=3\\).\n\nTử = 1 ≠ 0 tại cả hai điểm → cả hai đều là **TCĐ**.\n\n**TCĐ: \\(x=1\\) và \\(x=3\\)**.",
     "quick": "Mẫu=0 tại x=1 và x=3; tử=1≠0 → **cả hai đều là TCĐ**.",
@@ -173,7 +238,12 @@
     "type": "oblique_asymptote",
     "question": "Tiệm cận xiên của \\(y = \\dfrac{x^2-3x+5}{x-2}\\) là?",
     "matrix": null,
-    "options": ["\\(y=x-1\\)","\\(y=x+1\\)","\\(y=x-2\\)","\\(y=x\\)"],
+    "options": [
+      "\\(y=x-1\\)",
+      "\\(y=x+1\\)",
+      "\\(y=x-2\\)",
+      "\\(y=x\\)"
+    ],
     "correct": "\\(y=x-1\\)",
     "solution": "Chia đa thức:\n\\(x^2-3x+5=(x-2)(x-1)+3\\)\n\nKiểm tra: \\((x-2)(x-1)=x^2-3x+2\\). Vậy \\(x^2-3x+5-(x^2-3x+2)=3\\) ✓\n\n\\(y=x-1+\\dfrac{3}{x-2}\\)\n\nKhi \\(x\\to\\infty\\): \\(y\\to x-1\\) → **TCX: \\(y=x-1\\)**.",
     "quick": "Chia: \\(x^2-3x+5=(x-2)(x-1)+3\\) → phần nguyên = **y=x-1**.",
@@ -186,7 +256,12 @@
     "type": "horizontal_asymptote",
     "question": "Tìm tiệm cận ngang của \\(y = \\dfrac{3x-1}{\\sqrt{4x^2+2}}\\)?",
     "matrix": null,
-    "options": ["\\(y=\\dfrac{3}{2}\\) và \\(y=-\\dfrac{3}{2}\\)","\\(y=\\dfrac{3}{2}\\)","\\(y=-\\dfrac{3}{2}\\)","\\(y=0\\)"],
+    "options": [
+      "\\(y=\\dfrac{3}{2}\\) và \\(y=-\\dfrac{3}{2}\\)",
+      "\\(y=\\dfrac{3}{2}\\)",
+      "\\(y=-\\dfrac{3}{2}\\)",
+      "\\(y=0\\)"
+    ],
     "correct": "\\(y=\\dfrac{3}{2}\\) và \\(y=-\\dfrac{3}{2}\\)",
     "solution": "**Khi \\(x\\to+\\infty\\):** \\(\\sqrt{4x^2+2}\\sim\\sqrt{4x^2}=2x\\) (\\(x>0\\)) → \\(y\\sim\\dfrac{3x}{2x}=\\dfrac{3}{2}\\).\n\n**Khi \\(x\\to-\\infty\\):** \\(\\sqrt{4x^2+2}\\sim2|x|=-2x\\) (\\(x<0\\)) → \\(y\\sim\\dfrac{3x}{-2x}=-\\dfrac{3}{2}\\).\n\n**Hai TCN:** \\(y=\\dfrac{3}{2}\\) và \\(y=-\\dfrac{3}{2}\\).",
     "quick": "\\(\\sqrt{4x^2}=2|x|\\): phía +∞ → y=3/2; phía −∞ → y=−3/2. **2 TCN** (lưu ý |x| thay đổi dấu).",
@@ -199,7 +274,12 @@
     "type": "mixed_asymptotes",
     "question": "Hàm \\(y=\\dfrac{x^3-1}{x^2-1}\\) có tiệm cận nào?",
     "matrix": null,
-    "options": ["TCĐ x=−1, TCX y=x","TCĐ x=1 và x=−1, TCN y=0","TCX y=x+1","TCĐ x=−1 và TCX y=x"],
+    "options": [
+      "TCĐ x=−1, TCX y=x",
+      "TCĐ x=1 và x=−1, TCN y=0",
+      "TCX y=x+1",
+      "TCĐ x=−1 và TCX y=x"
+    ],
     "correct": "TCĐ x=−1, TCX y=x",
     "solution": "Mẫu: \\(x^2-1=(x-1)(x+1)=0\\) tại \\(x=1,\\;x=-1\\).\n\nTử: \\(x^3-1=(x-1)(x^2+x+1)\\).\n\n**Tại \\(x=1\\):** Tử = 0 → rút gọn: \\(\\dfrac{(x-1)(x^2+x+1)}{(x-1)(x+1)}=\\dfrac{x^2+x+1}{x+1}\\) → giới hạn = 3/2 hữu hạn → **không TCĐ**.\n\n**Tại \\(x=-1\\):** Tử = \\(-2\\neq0\\) → **TCĐ: \\(x=-1\\)**.\n\n**TCX:** Sau khi rút gọn \\(y=\\dfrac{x^2+x+1}{x+1}=x+\\dfrac{1}{x+1}\\) → **TCX: \\(y=x\\)**.\n\nTổng: **TCĐ: \\(x=-1\\)** và **TCX: \\(y=x\\)**.",
     "quick": "Rút gọn: \\(y=\\dfrac{x^2+x+1}{x+1}=x+\\dfrac{1}{x+1}\\) → TCĐ x=-1, TCX y=x.",
@@ -212,7 +292,12 @@
     "type": "vertical_asymptote",
     "question": "Hàm \\(y = \\ln(x-3)\\) có tiệm cận đứng là?",
     "matrix": null,
-    "options": ["\\(x=3\\)","\\(x=-3\\)","\\(x=0\\)","Không có TCĐ"],
+    "options": [
+      "\\(x=3\\)",
+      "\\(x=-3\\)",
+      "\\(x=0\\)",
+      "Không có TCĐ"
+    ],
     "correct": "\\(x=3\\)",
     "solution": "Hàm \\(\\ln u\\) không xác định khi \\(u\\leq0\\).\n\nTại \\(x=3^+\\): \\(x-3\\to0^+\\) → \\(\\ln(x-3)\\to-\\infty\\).\n\n→ **TCĐ: \\(x=3\\)** (tiệm cận đứng của hàm logarit).\n\nMiền xác định: \\(x>3\\).",
     "quick": "\\(\\ln u\\to-\\infty\\) khi \\(u\\to0^+\\) → TCĐ tại điểm làm đối số = 0: **x=3**.",
@@ -225,7 +310,12 @@
     "type": "horizontal_asymptote",
     "question": "Tìm tiệm cận ngang của \\(y = 2-e^{-x}\\)?",
     "matrix": null,
-    "options": ["\\(y=2\\) và \\(y=-\\infty\\)","\\(y=2\\)","\\(y=0\\)","\\(y=2\\) và \\(y=0\\)"],
+    "options": [
+      "\\(y=2\\) và \\(y=-\\infty\\)",
+      "\\(y=2\\)",
+      "\\(y=0\\)",
+      "\\(y=2\\) và \\(y=0\\)"
+    ],
     "correct": "\\(y=2\\)",
     "solution": "**Khi \\(x\\to+\\infty\\):** \\(e^{-x}\\to0\\) → \\(y\\to2-0=2\\) → **TCN: \\(y=2\\)**.\n\n**Khi \\(x\\to-\\infty\\):** \\(e^{-x}\\to+\\infty\\) → \\(y\\to2-\\infty=-\\infty\\) → không có TCN.\n\nChỉ có **1 TCN: \\(y=2\\)**.",
     "quick": "\\(x\\to+\\infty\\): \\(e^{-x}\\to0\\) → y→2. \\(x\\to-\\infty\\): y→−∞. Chỉ **y=2** là TCN.",
@@ -238,7 +328,12 @@
     "type": "mixed_asymptotes",
     "question": "Tổng số tiệm cận của \\(y=\\dfrac{2x^2+3x-1}{x^2-1}\\) là?",
     "matrix": null,
-    "options": ["1","2","3","4"],
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
     "correct": "3",
     "solution": "**TCĐ:** Mẫu \\(x^2-1=(x-1)(x+1)=0\\) tại \\(x=\\pm1\\).\n\nTử tại \\(x=1\\): \\(2+3-1=4\\neq0\\) → **TCĐ: \\(x=1\\)**.\nTử tại \\(x=-1\\): \\(2-3-1=-2\\neq0\\) → **TCĐ: \\(x=-1\\)**.\n\n**TCN:** Bậc tử = bậc mẫu = 2 → TCN = \\(\\dfrac{2}{1}=2\\) → **TCN: \\(y=2\\)**.\n\nTổng: 2 TCĐ + 1 TCN = **3 đường tiệm cận**.",
     "quick": "2 TCĐ (x=±1, tử≠0 ở cả hai) + 1 TCN (y=2) = **3 đường**.",
@@ -251,7 +346,12 @@
     "type": "oblique_asymptote",
     "question": "Tiệm cận xiên của \\(y = \\dfrac{x^3}{x^2+1}\\) là?",
     "matrix": null,
-    "options": ["\\(y=x\\)","\\(y=x+1\\)","\\(y=x-1\\)","\\(y=x^2\\)"],
+    "options": [
+      "\\(y=x\\)",
+      "\\(y=x+1\\)",
+      "\\(y=x-1\\)",
+      "\\(y=x^2\\)"
+    ],
     "correct": "\\(y=x\\)",
     "solution": "Chia đa thức:\n\\(x^3 \\div (x^2+1)\\):\n\\(x^3 = (x^2+1)\\cdot x - x\\)\n\n\\(y=\\dfrac{(x^2+1)x-x}{x^2+1}=x-\\dfrac{x}{x^2+1}\\)\n\nKhi \\(x\\to\\infty\\): \\(\\dfrac{x}{x^2+1}\\to0\\) → \\(y\\to x\\) → **TCX: \\(y=x\\)**.\n\nKiểm tra bằng công thức: \\(a=\\lim\\dfrac{f(x)}{x}=\\lim\\dfrac{x^2}{x^2+1}=1\\), \\(b=\\lim(f(x)-x)=\\lim\\dfrac{-x}{x^2+1}=0\\) → \\(y=x\\).",
     "quick": "Chia: \\(x^3=(x^2+1)\\cdot x-x\\) → \\(y=x-\\dfrac{x}{x^2+1}\\) → TCX: **y=x**.",

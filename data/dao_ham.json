@@ -584,7 +584,7 @@
       "\\(\\frac{1}{1+x^{2}}\\)",
       "\\(\\frac{1}{1-x^{2}}\\)",
       "\\(\\frac{1}{\\sqrt{1-x^{2}}}\\)",
-      "\\(\\frac{1}{x^{2}+1}\\)"
+      "\\(\\frac{1}{x}\\)"
     ],
     "correct": "\\(\\frac{1}{1+x^{2}}\\)",
     "solution": "Áp dụng quy tắc đạo hàm: \\((\\arctan x)'=\\frac{1}{1+x^{2}}\\). Kết quả: \\(\\frac{1}{1+x^{2}}\\).",
@@ -602,7 +602,7 @@
       "\\(2^{x}\\ln2\\)",
       "\\(2^{x}\\)",
       "\\(x2^{x-1}\\)",
-      "\\(\\ln2\\cdot2^{x}\\)"
+      "\\(\\ln2\\)"
     ],
     "correct": "\\(2^{x}\\ln2\\)",
     "solution": "Áp dụng quy tắc đạo hàm: \\((a^{x})'=a^{x}\\ln a\\). Kết quả: \\(2^{x}\\ln2\\).",
@@ -743,10 +743,10 @@
     "question": "Đạo hàm của \\(f(x)=\\tan^{2}x\\) là gì?",
     "matrix": null,
     "options": [
-      "\\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\)",
+      "\\(\\frac{2\\tan x}{\\cos^{2}x}\\)",
+      "\\(\\frac{2}{\\cos^{2}x}\\)",
       "\\(2\\tan x\\)",
-      "\\(2\\tan x\\cdot\\frac{1}{\\sin^{2}x}\\)",
-      "\\(\\frac{2\\tan x}{\\cos^{2}x}\\)"
+      "\\(\\frac{1}{\\cos^{2}x}\\)"
     ],
     "correct": "\\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\)",
     "solution": "Áp dụng quy tắc đạo hàm: \\((\\tan^{2}x)'=2\\tan x\\cdot(\\tan x)'\\). Kết quả: \\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\).",

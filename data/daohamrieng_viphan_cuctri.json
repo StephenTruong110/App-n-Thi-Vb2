@@ -316,9 +316,9 @@
       "Cực đại",
       "Yên ngựa"
     ],
-    "correct": "Không là cực trị",
-    "solution": "\\(f_{xx}=0, f_{yy}=0, f_{xy}=-3, \\Delta=-9<0 \\Rightarrow\\) yên ngựa\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
-    "quick": "Điều kiện cần: \\(f'_x=0, f'_y=0\\). Đủ: \\(AC-B^2>0\\)",
+    "correct": "Yên ngựa",
+    "solution": "\\(f_{xx}=6x,\\; f_{yy}=6y,\\; f_{xy}=-3\\). Tại \\((0,0)\\): \\(f_{xx}=0,\\; f_{yy}=0,\\; f_{xy}=-3\\). Do đó \\(\\Delta=f_{xx}f_{yy}-f_{xy}^{2}=0\\cdot0-(-3)^2=-9<0\\). Vậy \\((0,0)\\) là **điểm yên ngựa**.",
+  "quick": "Tại \\((0,0)\\): \\(\\Delta=-9<0\\) nên là **yên ngựa**.",
     "casio": "CASIO: Giải hệ f'_x=0, f'_y=0 bằng MODE 5. Tính A=f''_xx, B=f''_xy, C=f''_yy. AC-B²>0,A>0→cực tiểu; <0→cực đại.",
     "difficulty": 3,
     "topic": "Hàm nhiều biến"
@@ -532,9 +532,9 @@
       "\\(0.4\\)",
       "\\(0.1\\)"
     ],
-    "correct": "\\(0.2\\)",
-    "solution": "\\(df = 2xy dx + x^{2} dy = 2\\cdot1\\cdot2\\cdot0.1 + 1^{2}\\cdot(-0.1) = 0.4 - 0.1 = 0.3\\)",
-    "quick": "tính trực tiếp",
+    "correct": "\\(0.3\\)",
+    "solution": "\\(f(x,y)=x^2y\\Rightarrow f_x=2xy,\\; f_y=x^2\\). Tại \\((1,2)\\): \\(f_x=2\\cdot1\\cdot2=4\\), \\(f_y=1^2=1\\). Do đó \\(df=f_xdx+f_ydy=4\\cdot0.1+1\\cdot(-0.1)=0.4-0.1=0.3\\).",
+    "quick": "\\(df=2xy\\,dx+x^2\\,dy\\). Tại \\((1,2)\\): \\(df=4\\cdot0.1+1\\cdot(-0.1)=0.3\\).",
     "casio": "CASIO: Tính df = f'_x·dx + f'_y·dy. Dùng [SHIFT][d/dx] để tính f'_x(x₀,y₀) và f'_y(x₀,y₀) bằng cách cố định từng biến. Sau đó nhân với dx, dy rồi cộng lại.",
     "difficulty": 2,
     "topic": "Hàm nhiều biến"
@@ -550,9 +550,9 @@
       "Cực đại",
       "Yên ngựa"
     ],
-    "correct": "Chưa kết luận được (cần đạo hàm bậc cao)",
-    "solution": "\\(f_x=4x^{3}-4y=0, f_y=4y^{3}-4x=0 \\Rightarrow (0,0)\\) là điểm dừng nhưng \\(f_{xx}=0, f_{yy}=0, f_{xy}=-4, \\Delta=-16<0\\) nên chưa kết luận được bằng dấu hiệu cấp 2",
-    "quick": "điểm suy biến",
+    "correct": "Yên ngựa",
+    "solution": "\\(f(x,y)=x^4+y^4-4xy+1\\). Tại \\((0,0)\\): \\(f_x=4x^3-4y=0\\), \\(f_y=4y^3-4x=0\\), nên \\((0,0)\\) là điểm dừng. Tính đạo hàm cấp hai: \\(f_{xx}=12x^2\\), \\(f_{yy}=12y^2\\), \\(f_{xy}=-4\\). Tại \\((0,0)\\): \\(f_{xx}=0\\), \\(f_{yy}=0\\), \\(f_{xy}=-4\\). Suy ra \\(\\Delta=f_{xx}f_{yy}-f_{xy}^2=0\\cdot0-16=-16<0\\). Vậy \\((0,0)\\) là **điểm yên ngựa**.",
+    "quick": "Tại \\((0,0)\\): \\(\\Delta=-16<0\\) nên là **yên ngựa**.",
     "casio": "CASIO: Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Kiểm tra AC-B².",
     "difficulty": 2,
     "topic": "Hàm nhiều biến"
@@ -712,9 +712,9 @@
       "\\(\\frac{dx-dy}{2}\\)",
       "\\(2dx+2dy\\)"
     ],
-    "correct": "\\(\\frac{dx+dy}{2}\\)",
-    "solution": "\\(f_x=\\frac{2x}{x^{2}+y^{2}}=\\frac{2}{2}=1, f_y=\\frac{2y}{x^{2}+y^{2}}=1 \\Rightarrow df = 1\\cdot dx+1\\cdot dy\\)",
-    "quick": "tại (1,1) đối xứng",
+    "correct": "\\(dx+dy\\)",
+  "solution": "\\(f(x,y)=\\ln(x^2+y^2)\\Rightarrow f_x=\\dfrac{2x}{x^2+y^2},\\; f_y=\\dfrac{2y}{x^2+y^2}\\). Tại \\((1,1)\\): \\(f_x=\\dfrac{2}{2}=1\\), \\(f_y=\\dfrac{2}{2}=1\\). Do đó vi phân toàn phần là \\(df=f_xdx+f_ydy=dx+dy\\).",
+  "quick": "Tại \\((1,1)\\): \\(f_x=f_y=1\\), nên \\(df=dx+dy\\).",
     "casio": "CASIO: df ≈ Δf. Tính f'_x·Δx + f'_y·Δy với giá trị số cụ thể.",
     "difficulty": 2,
     "topic": "Hàm nhiều biến"
@@ -838,9 +838,9 @@
       "\\((0,0)\\)",
       "\\((0,1)\\)"
     ],
-    "correct": "\\((1,0)\\)",
-    "solution": "\\(f_x=3x^{2}-3=0 \\Rightarrow x=\\pm1, f_y=2y=0 \\Rightarrow y=0, \\Delta= (6x)(2)-0=12x, x=1 \\Rightarrow \\Delta>0, f_{xx}>0 \\Rightarrow \\) cực tiểu, x=-1 \\Rightarrow \\Delta<0 \\Rightarrow yên ngựa",
-    "quick": "điểm yên ngựa",
+    "correct": "\\((-1,0)\\)",
+  "solution": "\\(f(x,y)=x^3-3x+y^2\\). Ta có \\(f_x=3x^2-3\\), \\(f_y=2y\\). Giải hệ \\(f_x=0,\\;f_y=0\\) được hai điểm dừng \\((1,0)\\) và \\((-1,0)\\). Tính đạo hàm cấp hai: \\(f_{xx}=6x\\), \\(f_{yy}=2\\), \\(f_{xy}=0\\). Khi đó \\(\\Delta=f_{xx}f_{yy}-f_{xy}^2=12x\\). Tại \\((1,0)\\): \\(\\Delta=12>0\\), \\(f_{xx}=6>0\\) nên là cực tiểu. Tại \\((-1,0)\\): \\(\\Delta=-12<0\\) nên là **điểm yên ngựa**. Vậy điểm yên ngựa là \\((-1,0)\\).",
+  "quick": "Hai điểm dừng: \\((1,0)\\), \\((-1,0)\\). Tại \\((-1,0)\\): \\(\\Delta<0\\) nên là **yên ngựa**.",
     "casio": "CASIO fx-580VNX: Giải hệ f'_x=0, f'_y=0 bằng [MODE][5][1] hoặc [5][2]. Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng (cố định biến, dùng d/dx). Áp tiêu chuẩn: AC−B²>0 và A>0 → cực tiểu; A<0 → cực đại; <0 → yên ngựa.",
     "difficulty": 3,
     "topic": "Hàm nhiều biến"
@@ -1383,6 +1383,186 @@
     "quick": "Giải hệ f_x=f_y=0. Từ đó tính T=x₀+y₀.",
     "casio": "CASIO: Giải hệ f_x=0, f_y=0 để tìm điểm dừng.",
     "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 78,
+    "type": "partial_derivative_application",
+    "question": "Đạo hàm riêng \\(f_x\\) của \\(f(x,y)=\\arctan\\left(\\frac{y}{x}\\right)\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{-y}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{y}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{x}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{-x}{x^{2}+y^{2}}\\)"
+    ],
+    "correct": "\\(\\frac{-y}{x^{2}+y^{2}}\\)",
+    "solution": "\\(\\frac{\\partial}{\\partial x}\\arctan(u) = \\frac{1}{1+u^{2}}\\cdot u_x, u=y/x \\Rightarrow u_x=-y/x^{2}\\)",
+    "quick": "đạo hàm arctan",
+    "casio": "CASIO: Tính đạo hàm riêng tại điểm cho trước bằng CALC → d/dx.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 79,
+    "type": "partial_derivative_application",
+    "question": "Đạo hàm riêng \\(f_y\\) của \\(f(x,y)=\\arctan\\left(\\frac{y}{x}\\right)\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{x}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{-x}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{y}{x^{2}+y^{2}}\\)",
+      "\\(\\frac{-y}{x^{2}+y^{2}}\\)"
+    ],
+    "correct": "\\(\\frac{x}{x^{2}+y^{2}}\\)",
+    "solution": "\\(u_y=1/x \\Rightarrow f_y = \\frac{1}{1+(y/x)^{2}}\\cdot\\frac{1}{x} = \\frac{x}{x^{2}+y^{2}}\\)",
+    "quick": "đạo hàm theo y",
+    "casio": "CASIO: Tính đạo hàm riêng tại điểm cho trước bằng CALC → d/dx.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 80,
+    "type": "extremum_2var_application",
+    "question": "Hàm sản xuất Cobb-Douglas \\(P(L,K)=10L^{0.5}K^{0.5}\\). Tìm \\(P_L\\)?",
+    "matrix": null,
+    "options": [
+      "\\(5L^{-0.5}K^{0.5}\\)",
+      "\\(5L^{0.5}K^{-0.5}\\)",
+      "\\(10L^{0.5}K^{0.5}\\)",
+      "\\(0.5L^{-0.5}K^{0.5}\\)"
+    ],
+    "correct": "\\(5L^{-0.5}K^{0.5}\\)",
+    "solution": "\\(P_L = 10\\cdot0.5 L^{-0.5}K^{0.5}=5L^{-0.5}K^{0.5}\\)\n\n**Tiêu chuẩn đủ cực trị 2 biến:** Đặt A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Nếu AC−B²>0, A>0 → **cực tiểu**; AC−B²>0, A<0 → **cực đại**; AC−B²<0 → **yên ngựa** (không cực trị).",
+    "quick": "đạo hàm riêng trong kinh tế",
+    "casio": "CASIO: Lập hệ điều kiện, giải MODE 5, kiểm tra AC-B² tại điểm dừng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 81,
+    "type": "higher_order_mixed",
+    "question": "Cho \\(f(x,y)=x^{2}y+\\sin(xy)\\). Tính \\(f_{xy}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(2x + \\cos(xy) - xy\\sin(xy)\\)",
+      "\\(2x + \\cos(xy)\\)",
+      "\\(2x - xy\\sin(xy)\\)",
+      "\\(2x + \\sin(xy)\\)"
+    ],
+    "correct": "\\(2x + \\cos(xy) - xy\\sin(xy)\\)",
+    "solution": "\\(f_x=2xy + y\\cos(xy) \\Rightarrow f_{xy}=2x + \\cos(xy) - xy\\sin(xy)\\)",
+    "quick": "đạo hàm hỗn hợp",
+    "casio": "CASIO: Tính đạo hàm riêng theo từng bước. f'_x trước, rồi đạo hàm theo y.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 82,
+    "type": "total_differential_property",
+    "question": "Vi phân toàn phần của \\(f(x,y)=x^{2}y\\) tại (1,2) với \\(dx=0.1, dy=-0.1\\) là?",
+    "matrix": null,
+    "options": [
+      "\\(0.2\\)",
+      "\\(0.3\\)",
+      "\\(0.4\\)",
+      "\\(0.1\\)"
+    ],
+    "correct": "\\(0.2\\)",
+    "solution": "\\(df = 2xy dx + x^{2} dy = 2\\cdot1\\cdot2\\cdot0.1 + 1^{2}\\cdot(-0.1) = 0.4 - 0.1 = 0.3\\)",
+    "quick": "tính trực tiếp",
+    "casio": "CASIO: Tính df = f'_x·dx + f'_y·dy. Dùng [SHIFT][d/dx] để tính f'_x(x₀,y₀) và f'_y(x₀,y₀) bằng cách cố định từng biến. Sau đó nhân với dx, dy rồi cộng lại.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 83,
+    "type": "critical_point_classify",
+    "question": "Phân loại điểm dừng (0,0) của \\(f(x,y)=x^{4}+y^{4}-4xy+1\\)?",
+    "matrix": null,
+    "options": [
+      "Chưa kết luận được (cần đạo hàm bậc cao)",
+      "Cực tiểu",
+      "Cực đại",
+      "Yên ngựa"
+    ],
+    "correct": "Yên ngựa",
+    "solution": "\\(f(x,y)=x^4+y^4-4xy+1\\). Tại \\((0,0)\\): \\(f_x=4x^3-4y=0\\), \\(f_y=4y^3-4x=0\\), nên \\((0,0)\\) là điểm dừng. Tính đạo hàm cấp hai: \\(f_{xx}=12x^2\\), \\(f_{yy}=12y^2\\), \\(f_{xy}=-4\\). Tại \\((0,0)\\): \\(f_{xx}=0\\), \\(f_{yy}=0\\), \\(f_{xy}=-4\\). Suy ra \\(\\Delta=f_{xx}f_{yy}-f_{xy}^2=0\\cdot0-16=-16<0\\). Vậy \\((0,0)\\) là **điểm yên ngựa**.",
+    "quick": "Tại \\((0,0)\\): \\(\\Delta=-16<0\\) nên là **yên ngựa**.",
+    "casio": "CASIO: Tính A=f''_xx, B=f''_xy, C=f''_yy tại điểm dừng. Kiểm tra AC-B².",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 84,
+    "type": "partial_derivative_implicit",
+    "question": "Cho \\(z\\) được xác định bởi \\(x^{2}+y^{2}+z^{2}=1\\). Tính \\(\\frac{\\partial z}{\\partial x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(-\\frac{x}{z}\\)",
+      "\\(-\\frac{z}{x}\\)",
+      "\\(\\frac{x}{z}\\)",
+      "\\(-x\\)"
+    ],
+    "correct": "\\(-\\frac{x}{z}\\)",
+    "solution": "\\(2x + 2z z_x = 0 \\Rightarrow z_x = -x/z\\)",
+    "quick": "đạo hàm hàm ẩn",
+    "casio": "CASIO: Dùng công thức hàm ẩn ∂z/∂x=-F'_x/F'_z, tính từng đạo hàm riêng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 85,
+    "type": "partial_derivative_implicit",
+    "question": "Cho \\(e^{z}=xyz\\). Tính \\(\\frac{\\partial z}{\\partial y}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{xz}{e^{z}-xy}\\)",
+      "\\(\\frac{xy}{e^{z}-xz}\\)",
+      "\\(\\frac{yz}{e^{z}-xy}\\)",
+      "\\(\\frac{xz}{e^{z}}\\)"
+    ],
+    "correct": "\\(\\frac{xz}{e^{z}-xy}\\)",
+    "solution": "\\(e^{z}z_y = xz + xy z_y \\Rightarrow z_y(e^{z}-xy)=xz \\Rightarrow z_y = \\frac{xz}{e^{z}-xy}\\)",
+    "quick": "đạo hàm hàm ẩn",
+    "casio": "CASIO: Dùng công thức hàm ẩn ∂z/∂x=-F'_x/F'_z, tính từng đạo hàm riêng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 86,
+    "type": "total_differential_check_exact",
+    "question": "Biểu thức \\(2xydx + x^{2}dy\\) có phải là vi phân toàn phần của hàm nào không?",
+    "matrix": null,
+    "options": [
+      "Có, của \\(x^{2}y\\)",
+      "Có, của \\(xy^{2}\\)",
+      "Không",
+      "Có, của \\(x^{2}y^{2}\\)"
+    ],
+    "correct": "Có, của \\(x^{2}y\\)",
+    "solution": "\\(df = 2xydx + x^{2}dy \\Rightarrow f_x=2xy \\Rightarrow f=x^{2}y+g(y) \\Rightarrow f_y=x^{2}+g'(y)=x^{2} \\Rightarrow g'(y)=0\\)",
+    "quick": "kiểm tra \\(\\frac{\\partial P}{\\partial y}=\\frac{\\partial Q}{\\partial x}\\)",
+    "casio": "CASIO: Kiểm tra P'_y và Q'_x bằng CALC → d/dx cố định biến còn lại.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 87,
+    "type": "total_differential_check_exact",
+    "question": "Biểu thức \\(ydx - xdy\\) có phải là vi phân toàn phần không?",
+    "matrix": null,
+    "options": [
+      "Không",
+      "Có",
+      "Chỉ khi x=y",
+      "Chỉ khi x,y>0"
+    ],
+    "correct": "Không",
+    "solution": "\\(P=y, Q=-x \\Rightarrow P_y=1, Q_x=-1 \\Rightarrow P_y \\neq Q_x\\)",
+    "quick": "không thỏa điều kiện đóng",
+    "casio": "CASIO: Kiểm tra P'_y và Q'_x bằng CALC → d/dx cố định biến còn lại.",
+    "difficulty": 2,
     "topic": "Hàm nhiều biến"
   }
 ]

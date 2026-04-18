@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "type": "triple_integral",
+    "question": "Tính \\(\\iiint_V 1\\,dV\\) với \\(V=\\{0\\le x\\le1,\\,0\\le y\\le1,\\,0\\le z\\le1\\}\\) (khối lập phương đơn vị).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "**Ý nghĩa hình học:** \\(\\iiint_V 1\\,dV =\\) **thể tích** của miền \\(V\\).\n\nMiền \\(V\\) là khối lập phương đơn vị \\([0,1]^3\\).\n\nThể tích = cạnh³ = \\(1^3 = 1\\).\n\n**Kiểm tra bằng tích phân lặp:**\n\\(\\int_0^1\\int_0^1\\int_0^1 dz\\,dy\\,dx = \\int_0^1\\int_0^1[z]_0^1\\,dy\\,dx = \\int_0^1\\int_0^1 1\\,dy\\,dx = 1\\)",
+    "quick": "Tích phân của 1 = thể tích miền = 1",
+    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 2,
+    "type": "triple_integral",
+    "question": "Tính \\(\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}dz\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{6}\\)",
+    "solution": "Đây là thể tích tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\).\n\\(V=\\dfrac{1}{3!}=\\dfrac{1}{6}\\) (thể tích tứ diện chuẩn bằng \\(1/6\\)).",
+    "quick": "Tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\): \\(V=\\frac{1}{6}\\)",
+    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 3,
+    "type": "triple_integral",
+    "question": "Tính \\(\\iiint_V x\\,dV\\) với \\(V: 0\\le x\\le1,\\,0\\le y\\le1,\\,0\\le z\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{8}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(\\iiint_V x\\,dV=\\int_0^1 x\\,dx\\cdot\\int_0^1 dy\\cdot\\int_0^1 dz=\\dfrac{1}{2}\\cdot1\\cdot1=\\dfrac{1}{2}\\).",
+    "quick": "Tách: \\(\\left(\\int_0^1 x\\,dx\\right)\\cdot1\\cdot1=\\frac{1}{2}\\)",
+    "casio": "(∫₀¹ x dx)·(∫₀¹dy)·(∫₀¹dz) = 1/2·1·1 = 1/2",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 4,
+    "type": "triple_integral_cylindrical",
+    "question": "Thể tích hình trụ \\(x^2+y^2\\le R^2\\), \\(0\\le z\\le H\\) tính bằng tọa độ trụ là",
+    "matrix": null,
+    "options": [
+      "\\(\\pi R^2 H\\)",
+      "\\(2\\pi RH\\)",
+      "\\(\\dfrac{4}{3}\\pi R^3\\)",
+      "\\(\\pi R H^2\\)"
+    ],
+    "correct": "\\(\\pi R^2 H\\)",
+    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^R\\int_0^H r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{R^2}{2}\\cdot H=\\pi R^2H\\).",
+    "quick": "\\(V=(\\int_0^{2\\pi}d\\theta)(\\int_0^R r\\,dr)(\\int_0^H dz)=2\\pi\\cdot\\frac{R^2}{2}\\cdot H=\\pi R^2H\\)",
+    "casio": "V = 2π·R²/2·H = πR²H (công thức hình trụ)",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 5,
+    "type": "triple_integral_spherical",
+    "question": "Thể tích cầu \\(x^2+y^2+z^2\\le R^2\\) dùng tọa độ cầu là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\pi R^3\\)",
+      "\\(\\pi R^3\\)",
+      "\\(2\\pi R^3\\)",
+      "\\(\\dfrac{2}{3}\\pi R^3\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
+    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^{\\pi}\\int_0^R \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
+    "quick": "\\(V=2\\pi\\cdot[-\\cos\\varphi]_0^\\pi\\cdot\\frac{R^3}{3}=2\\pi\\cdot2\\cdot\\frac{R^3}{3}=\\frac{4\\pi R^3}{3}\\)",
+    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 6,
+    "type": "triple_integral_cylindrical",
+    "question": "Tính \\(\\iiint_V \\sqrt{x^2+y^2}\\,dV\\) với \\(V: x^2+y^2\\le1\\), \\(0\\le z\\le2\\) bằng tọa độ trụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi}{3}\\)",
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(2\\pi\\)",
+      "\\(\\dfrac{4\\pi}{6}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi}{3}\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^2 r\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\int_0^1 r^2\\cdot2\\,dr=4\\pi\\cdot\\dfrac{1}{3}=\\dfrac{4\\pi}{3}\\).",
+    "quick": "\\(I=2\\pi\\cdot2\\int_0^1 r^2\\,dr=4\\pi\\cdot\\frac{1}{3}=\\frac{4\\pi}{3}\\)",
+    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 7,
+    "type": "triple_integral_spherical",
+    "question": "Tính \\(\\iiint_V(x^2+y^2+z^2)\\,dV\\) với \\(V: x^2+y^2+z^2\\le R^2\\) bằng tọa độ cầu.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi R^5}{5}\\)",
+      "\\(\\dfrac{4\\pi R^3}{3}\\)",
+      "\\(\\dfrac{2\\pi R^5}{5}\\)",
+      "\\(\\dfrac{8\\pi R^5}{15}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi R^5}{5}\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R\\rho^2\\cdot\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^5}{5}=\\dfrac{4\\pi R^5}{5}\\).",
+    "quick": "\\(I=4\\pi\\cdot\\frac{R^5}{5}=\\frac{4\\pi R^5}{5}\\)",
+    "casio": "I = 2π·[-cosφ]₀π · R⁵/5 = 2π·2·R⁵/5 = 4πR⁵/5",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 8,
+    "type": "triple_integral_cylindrical",
+    "question": "Tính \\(\\iiint_V z\\,dV\\) với \\(V: x^2+y^2\\le1\\), \\(0\\le z\\le3\\) bằng tọa độ trụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{9\\pi}{2}\\)",
+      "\\(3\\pi\\)",
+      "\\(6\\pi\\)",
+      "\\(\\dfrac{3\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{9\\pi}{2}\\)",
+    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^3 z\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\int_0^1 r\\,dr\\cdot\\int_0^3 z\\,dz=2\\pi\\cdot\\dfrac{1}{2}\\cdot\\dfrac{9}{2}=\\dfrac{9\\pi}{2}\\).",
+    "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}\\cdot\\frac{9}{2}=\\frac{9\\pi}{2}\\)",
+    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 9,
+    "type": "triple_integral_spherical",
+    "question": "Tính \\(\\iiint_V e^{(x^2+y^2+z^2)^{3/2}}\\,dV\\) với \\(V: x^2+y^2+z^2\\le1\\) bằng tọa độ cầu.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
+      "\\(\\dfrac{4\\pi e}{3}\\)",
+      "\\(4\\pi(e-1)\\)",
+      "\\(\\dfrac{4\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
+    "solution": "Tọa độ cầu: \\((x^2+y^2+z^2)^{3/2}=\\rho^3\\).\n\\(I=\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\varphi\\,d\\varphi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho=4\\pi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho\\).\nĐặt \\(u=\\rho^3\\): \\(4\\pi\\cdot\\dfrac{1}{3}[e^u]_0^1=\\dfrac{4\\pi(e-1)}{3}\\).",
+    "quick": "\\(I=4\\pi\\cdot\\frac{1}{3}(e-1)=\\frac{4\\pi(e-1)}{3}\\)",
+    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 10,
+    "type": "triple_integral",
+    "question": "Thể tích hình cầu bán kính R tính bằng tích phân ba là?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\pi R^3\\)",
+      "\\(\\pi R^3\\)",
+      "\\(\\dfrac{2}{3}\\pi R^3\\)",
+      "\\(4\\pi R^2\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
+    "solution": "Dùng tọa độ cầu: \\(dV=r^2\\sin\\phi\\,dr\\,d\\phi\\,d\\theta\\).\n\n\\(V=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R r^2\\sin\\phi\\,dr\\,d\\phi\\,d\\theta\\)\n\n\\(=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
+    "quick": "Tọa độ cầu: V=∫₀^2π dθ·∫₀^π sinφ dφ·∫₀^R r² dr=2π·2·R³/3=**4πR³/3**.",
+    "casio": "CASIO: ∫₀^πsinφ dφ=[-cosφ]₀^π=2. ∫₀^Rr²dr=R³/3. Kết quả: 2π·2·R³/3=4πR³/3.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 11,
+    "type": "surface_integral_type1",
+    "question": "Tính tích phân mặt loại 1 \\(\\iint_S(x+y+z)\\,dS\\) trong đó S là biên hình lập phương \\([0,1]^3\\).",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "6 mặt của hình lập phương \\([0,1]^3\\), mỗi mặt có diện tích = 1:\n\n- Mặt z=0: \\(\\iint(x+y)dxdy=1\\)\n- Mặt z=1: \\(\\iint(x+y+1)dxdy=2\\)\n- Mặt y=0: \\(\\iint(x+z)dxdz=1\\)\n- Mặt y=1: \\(\\iint(x+1+z)dxdz=2\\)\n- Mặt x=0: \\(\\iint(y+z)dydz=1\\)\n- Mặt x=1: \\(\\iint(1+y+z)dydz=2\\)\n\n\\(I=1+2+1+2+1+2=\\mathbf{9}\\).",
+    "quick": "6 mặt: z=0→1, y=0→2, x=0→2, z=1→2, y=1→2, x=1→2. Tổng=1+2+1+2+1+2=**9**.",
+    "casio": "CASIO: Tính ∫∫ trên từng mặt, mỗi mặt là tích phân đôi.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 12,
+    "type": "triple_iterated",
+    "question": "Cho \\(I=\\iiint_V f(x,y,z)\\,dV\\) với V giới hạn bởi \\(z=y, z=0, y=1-x^2\\). Tích phân lặp đúng là?",
+    "matrix": null,
+    "options": [
+      "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\)",
+      "\\(\\int_{-1}^1\\int_0^1\\int_0^y f\\,dz\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dx\\,dy\\)",
+      "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_y^0 f\\,dz\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\)",
+    "solution": "**Phân tích miền V:**\n\nMặt trên: \\(z=y\\). Mặt dưới: \\(z=0\\). → \\(0\\leq z\\leq y\\).\n\nMặt bên: \\(y=1-x^2\\) (parabol). Vì \\(z\\geq0\\) và \\(z\\leq y\\) → cần \\(y\\geq0\\). → \\(0\\leq y\\leq1-x^2\\).\n\nX: miền chiếu lên Oxy: \\(0\\leq y\\leq1-x^2\\) → \\(x\\in[-1,1]\\).\n\n\\(I=\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\).",
+    "quick": "Thứ tự: z trong (0→y), y giữa (0→1-x²), x ngoài (-1→1). **Đây là dạng C64 CA1 2025**.",
+    "casio": "CASIO: Xác định giới hạn từ trong ra ngoài: z, rồi y, rồi x.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 13,
+    "type": "triple_iterated",
+    "question": "Thể tích vật thể V giới hạn bởi \\(x+y+z=2\\), \\(x=0,y=0,z=0\\) bằng?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{2}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "\\(V=\\int_0^2\\int_0^{2-x}\\int_0^{2-x-y}dz\\,dy\\,dx\\)\n\n\\(=\\int_0^2\\int_0^{2-x}(2-x-y)dy\\,dx\\)\n\n\\(=\\int_0^2\\left[(2-x)y-\\dfrac{y^2}{2}\\right]_0^{2-x}dx\\)\n\n\\(=\\int_0^2\\dfrac{(2-x)^2}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{(2-x)^3}{-3}\\Big|_0^2=\\dfrac{1}{2}\\cdot\\dfrac{8}{3}=\\dfrac{4}{3}\\).",
+    "quick": "Tích phân ba lớp của 1 trên tứ diện x+y+z≤2, x,y,z≥0. Kết quả: **4/3**.",
+    "casio": "CASIO: V=∫₀²∫₀^{2-x}(2-x-y)dy dx = ∫₀² (2-x)²/2 dx = 4/3.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 14,
+    "type": "triple_integral",
+    "question": "\\(\\iiint_V dV\\) với V là khối lập phương \\([0,1]^3\\) bằng?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\iiint_V dV\\) = thể tích V = 1×1×1 = **1**.",
+    "quick": "∭1 dV = thể tích khối lập phương = **1³=1**.",
+    "casio": "CASIO: ∫₀¹∫₀¹∫₀¹ dz dy dx=1.",
+    "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 15,
+    "type": "triple_integral_cylindrical",
+    "question": "Jacobian của tọa độ trụ (r,θ,z) là?",
+    "matrix": null,
+    "options": [
+      "\\(r\\)",
+      "\\(r^2\\)",
+      "\\(r^2\\sin\\phi\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(r\\)",
+    "solution": "Tọa độ trụ: x=rcosθ, y=rsinθ, z=z.\n\nJacobian = r (giống tọa độ cực × 1 theo z).\n\n\\(dV=dx\\,dy\\,dz=r\\,dr\\,d\\theta\\,dz\\).",
+    "quick": "Trụ: dV=**r** dr dθ dz. (Cầu: r²sinφ dr dφ dθ)",
+    "casio": "CASIO: J=r. dV=r dr dθ dz.",
+    "difficulty": 1,
+    "topic": "Tích phân"
+  }
+]

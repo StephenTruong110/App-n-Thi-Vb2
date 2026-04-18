@@ -601,8 +601,8 @@
       "1"
     ],
     "correct": "-7",
-    "solution": "Khai triển cột 2: \\(1\\cdot(1\\cdot1-3\\cdot4)=1-12=-11\\)... Sarrus: \\(1+0+0-8-0-0=-7\\)",
-    "quick": "Chọn cột/hàng nhiều số 0 để khai triển",
+    "solution": "Khai triển theo cột 2 (có hai số 0):\n\\(\\det(A)=1\\cdot\\begin{vmatrix}1&2\\\\4&1\\end{vmatrix}=1\\cdot(1\\cdot1-2\\cdot4)=1-8=-7\\).\n\nVậy \\(\\det(A)=-7\\).",
+    "quick": "Khai triển cột 2: \\(\\det(A)=\\begin{vmatrix}1&2\\\\4&1\\end{vmatrix}=1-8=-7\\).",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn.",
     "difficulty": 2,
     "topic": "Ma trận & Định thức"
@@ -1315,8 +1315,8 @@
       "5"
     ],
     "correct": "-15",
-    "solution": "Khai triển hàng 2: \\(-3(2\\cdot3-(-1)\\cdot1)+0-2(1\\cdot3-(-1)\\cdot2)=-3(7)-2(5)=-21-10=-31\\)... Dùng Sarrus: \\(6+4+3-0-2-20=-9\\)... CASIO → -15",
-    "quick": "Sarrus: 1·0·3 + 2·2·2 + -1·3·1 - -1·0·2 - 2·3·3 - 1·2·1 = -15",
+    "solution": "Khai triển theo hàng 1:\n\\[\n\\det(A)=1\\begin{vmatrix}0&2\\\\1&3\\end{vmatrix}-2\\begin{vmatrix}3&2\\\\2&3\\end{vmatrix}+(-1)\\begin{vmatrix}3&0\\\\2&1\\end{vmatrix}\n\\]\n\\[\n=(-2)-2(9-4)-3=-2-10-3=-15.\n\\]\nVậy \\(\\det(A)=-15\\).",
+  "quick": "Khai triển hàng 1: \\((-2)-2\\cdot5-3=-15\\).",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn.",
     "difficulty": 2,
     "topic": "Ma trận & Định thức"
@@ -1391,168 +1391,6 @@
   },
   {
     "id": 46,
-    "type": "transpose",
-    "question": "Ma trận chuyển vị \\(A^T\\) của \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}4&3\\\\2&1\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
-    "solution": "Chuyển vị: đổi hàng thành cột. Hàng 1 \\((1,2)\\) → cột 1; hàng 2 \\((3,4)\\) → cột 2.",
-    "quick": "\\(a_{ij}\\to a_{ji}\\): hàng thành cột",
-    "casio": "CASIO fx-580VNX: [MODE][6] → nhập MatA → [AC] → [OPTN][F2](Matrix) → [F6](►) → [F1](Trn) → MatA → [EXE]. Kết quả là Aᵀ. Cỡ đổi chiều: m×n → n×m.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 47,
-    "type": "transpose",
-    "question": "Cho \\(A\\) cỡ \\(2\\times3\\). Cỡ của \\(A^T\\) là",
-    "matrix": null,
-    "options": [
-      "\\(3\\times2\\)",
-      "\\(2\\times3\\)",
-      "\\(2\\times2\\)",
-      "\\(3\\times3\\)"
-    ],
-    "correct": "\\(3\\times2\\)",
-    "solution": "\\(A\\) cỡ \\(m\\times n\\) → \\(A^T\\) cỡ \\(n\\times m\\). Vậy \\(2\\times3 \\to 3\\times2\\).",
-    "quick": "Cỡ bị đảo ngược: \\(m\\times n \\to n\\times m\\)",
-    "casio": "CASIO fx-580VNX: [MODE][6] → nhập MatA → [AC] → [OPTN][F2](Matrix) → [F6](►) → [F1](Trn) → MatA → [EXE]. Kết quả là Aᵀ. Cỡ đổi chiều: m×n → n×m.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 48,
-    "type": "transpose",
-    "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\4&5&6\\end{pmatrix}\\). Phần tử \\((A^T)_{21}\\) là",
-    "matrix": null,
-    "options": [
-      "2",
-      "4",
-      "1",
-      "5"
-    ],
-    "correct": "2",
-    "solution": "\\((A^T)_{ij}=a_{ji}\\). Vậy \\((A^T)_{21}=a_{12}=2\\).",
-    "quick": "\\((A^T)_{21}=a_{12}=2\\)",
-    "casio": "Phần tử hàng 2 cột 1 của A^T = phần tử hàng 1 cột 2 của A = 2",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 49,
-    "type": "trace",
-    "question": "Vết (trace) của ma trận \\(A=\\begin{pmatrix}3&1\\\\2&5\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "8",
-      "15",
-      "6",
-      "2"
-    ],
-    "correct": "8",
-    "solution": "\\(\\text{tr}(A)=a_{11}+a_{22}=3+5=8\\)",
-    "quick": "Tổng đường chéo chính: \\(3+5=8\\)",
-    "casio": "CASIO: Không có phím trace. Đọc các phần tử a₁₁, a₂₂, a₃₃ từ màn hình nhập ma trận rồi cộng tay.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 50,
-    "type": "trace",
-    "question": "Vết của \\(A=\\begin{pmatrix}-3&2&1\\\\0&-1&2\\\\2&2&6\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "2",
-      "-2",
-      "3",
-      "1"
-    ],
-    "correct": "2",
-    "solution": "\\(\\text{tr}(A)=(-3)+(-1)+6=2\\)",
-    "quick": "\\(-3-1+6=2\\)",
-    "casio": "CASIO: Không có phím trace. Đọc các phần tử a₁₁, a₂₂, a₃₃ từ màn hình nhập ma trận rồi cộng tay.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 51,
-    "type": "multiply",
-    "question": "Cho \\(A\\) cỡ \\(3\\times4\\) và \\(B\\) cỡ \\(4\\times3\\). Cỡ của \\(AB\\) là",
-    "matrix": null,
-    "options": [
-      "\\(3\\times3\\)",
-      "\\(4\\times4\\)",
-      "\\(3\\times4\\)",
-      "\\(4\\times3\\)"
-    ],
-    "correct": "\\(3\\times3\\)",
-    "solution": "\\((m\\times n)(n\\times p)=m\\times p\\): \\((3\\times4)(4\\times3)=3\\times3\\)",
-    "quick": "Số giữa triệt tiêu: \\(3\\times\\mathbf{4}\\cdot\\mathbf{4}\\times3=3\\times3\\)",
-    "casio": "Nhân MatA × MatB → kích thước 3×3",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 52,
-    "type": "multiply",
-    "question": "Tính \\(AB\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\)",
-    "matrix": null,
-    "options": [
-      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}0&2\\\\3&0\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
-    "solution": "\\(c_{11}=0+2=2\\), \\(c_{12}=1+0=1\\), \\(c_{21}=0+4=4\\), \\(c_{22}=3+0=3\\)",
-    "quick": "Nhân hàng × cột: \\(AB=\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 53,
-    "type": "multiply",
-    "question": "Tính \\(A^2\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
-    "matrix": null,
-    "options": [
-      "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&4\\\\9&16\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}2&4\\\\6&8\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}4&6\\\\8&10\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
-    "solution": "\\(c_{11}=1+6=7\\), \\(c_{12}=2+8=10\\), \\(c_{21}=3+12=15\\), \\(c_{22}=6+16=22\\)",
-    "quick": "Nhân \\(A\\times A\\) bình thường",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 54,
-    "type": "multiply",
-    "question": "Cho \\(A\\) cỡ \\(2\\times3\\) và \\(B\\) cỡ \\(3\\times2\\). Cỡ của \\(BA\\) là",
-    "matrix": null,
-    "options": [
-      "\\(3\\times3\\)",
-      "\\(2\\times2\\)",
-      "\\(2\\times3\\)",
-      "Không xác định"
-    ],
-    "correct": "\\(3\\times3\\)",
-    "solution": "\\(BA\\): \\(B\\) cỡ \\(3\\times2\\), \\(A\\) cỡ \\(2\\times3\\) → \\(BA\\) cỡ \\(3\\times3\\)",
-    "quick": "\\((3\\times2)(2\\times3)=3\\times3\\)",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 55,
     "type": "inverse",
     "question": "Ma trận nghịch đảo của \\(A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix}\\) là",
     "matrix": null,
@@ -1570,7 +1408,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 56,
+    "id": 47,
     "type": "inverse",
     "question": "Ma trận \\(A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\\) có nghịch đảo không?",
     "matrix": null,
@@ -1588,7 +1426,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 57,
+    "id": 48,
     "type": "inverse",
     "question": "Ma trận nghịch đảo của \\(A=\\begin{pmatrix}3&1\\\\5&2\\end{pmatrix}\\) là",
     "matrix": null,
@@ -1606,7 +1444,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 58,
+    "id": 49,
     "type": "inverse",
     "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\). \\(A^{-1}\\) là",
     "matrix": null,
@@ -1624,7 +1462,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 59,
+    "id": 50,
     "type": "inverse",
     "question": "Cho \\(\\det(A)=5\\) với \\(A\\) cỡ \\(3\\times3\\). Ma trận \\(A\\) có khả nghịch không?",
     "matrix": null,
@@ -1642,7 +1480,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 60,
+    "id": 51,
     "type": "inverse",
     "question": "Ma trận nghịch đảo của ma trận đơn vị \\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) là",
     "matrix": null,
@@ -1660,7 +1498,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 61,
+    "id": 52,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=5\\). Tính \\(\\det(2A)\\).",
     "matrix": null,
@@ -1678,7 +1516,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 62,
+    "id": 53,
     "type": "det_property",
     "question": "Cho \\(\\det(A)=3\\) với \\(A\\) cỡ \\(4\\times4\\). Tính \\(\\det(A^T)\\).",
     "matrix": null,
@@ -1696,7 +1534,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 63,
+    "id": 54,
     "type": "det_property",
     "question": "Cho \\(\\det(A)=4\\) với \\(A\\) cỡ \\(2\\times2\\). Tính \\(\\det(A^{-1})\\).",
     "matrix": null,
@@ -1714,7 +1552,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 64,
+    "id": 55,
     "type": "det_property",
     "question": "Cho \\(\\det(A)=2\\), \\(\\det(B)=3\\) cùng cỡ \\(2\\times2\\). Tính \\(\\det(AB)\\).",
     "matrix": null,
@@ -1732,7 +1570,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 65,
+    "id": 56,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=2\\). Tính \\(\\det(3A)\\).",
     "matrix": null,
@@ -1750,7 +1588,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 66,
+    "id": 57,
     "type": "det_property",
     "question": "Cho \\(\\det(A)=2\\) với \\(A\\) cỡ \\(4\\times4\\). Tính \\(\\det(2A^2)\\).",
     "matrix": null,
@@ -1768,7 +1606,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 67,
+    "id": 58,
     "type": "det_property",
     "question": "Nếu hai hàng của ma trận vuông \\(A\\) bằng nhau thì \\(\\det(A)=\\)",
     "matrix": null,
@@ -1786,7 +1624,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 68,
+    "id": 59,
     "type": "det_property",
     "question": "Đổi chỗ hai hàng của \\(A\\) được \\(B\\). Quan hệ giữa \\(\\det(B)\\) và \\(\\det(A)\\) là",
     "matrix": null,
@@ -1804,7 +1642,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 69,
+    "id": 60,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(6\\times6\\) với \\(\\det(A)=3\\). Tính \\(\\det(2A)\\).",
     "matrix": null,
@@ -1822,7 +1660,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 70,
+    "id": 61,
     "type": "det_property",
     "question": "Cho \\(\\det(A)=4\\) với \\(A\\) cỡ \\(3\\times3\\). Tính \\(\\det(A^{-1})\\).",
     "matrix": null,
@@ -1840,403 +1678,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 71,
-    "type": "eigenvalue",
-    "question": "Giá trị riêng của \\(A=\\begin{pmatrix}3&0\\\\0&5\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "3 và 5",
-      "0 và 0",
-      "15",
-      "8"
-    ],
-    "correct": "3 và 5",
-    "solution": "Ma trận đường chéo: \\(\\lambda_1=3, \\lambda_2=5\\)",
-    "quick": "Đường chéo → đọc thẳng giá trị riêng",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 72,
-    "type": "eigenvalue",
-    "question": "Tìm giá trị riêng của \\(A=\\begin{pmatrix}2&1\\\\0&3\\end{pmatrix}\\)",
-    "matrix": null,
-    "options": [
-      "2 và 3",
-      "1 và 0",
-      "5",
-      "6"
-    ],
-    "correct": "2 và 3",
-    "solution": "Tam giác trên: \\(\\lambda_1=2, \\lambda_2=3\\)",
-    "quick": "Ma trận tam giác → đọc đường chéo",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 73,
-    "type": "eigenvalue",
-    "question": "Tìm giá trị riêng của \\(A=\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\)",
-    "matrix": null,
-    "options": [
-      "5 và 2",
-      "4 và 3",
-      "7 và 0",
-      "1 và 6"
-    ],
-    "correct": "5 và 2",
-    "solution": "\\(\\det(A-\\lambda I)=(4-\\lambda)(3-\\lambda)-2=\\lambda^2-7\\lambda+10=(\\lambda-5)(\\lambda-2)=0\\)",
-    "quick": "PT đặc trưng: \\(\\lambda^2-7\\lambda+10=0 \\to (\\lambda-5)(\\lambda-2)=0\\)",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 74,
-    "type": "eigenvalue",
-    "question": "Tổng các giá trị riêng của \\(A=\\begin{pmatrix}1&0&0\\\\-10&-3&0\\\\4&200&6\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "4",
-      "0",
-      "6",
-      "10"
-    ],
-    "correct": "4",
-    "solution": "Tam giác dưới: \\(\\lambda_1=1,\\lambda_2=-3,\\lambda_3=6\\). Tổng \\(=\\text{tr}(A)=1-3+6=4\\)",
-    "quick": "Tổng giá trị riêng = vết (trace). \\(1-3+6=4\\)",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 75,
-    "type": "eigenvalue",
-    "question": "Tích các giá trị riêng của \\(A=\\begin{pmatrix}2&3\\\\1&4\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "5",
-      "8",
-      "6",
-      "11"
-    ],
-    "correct": "5",
-    "solution": "Tích giá trị riêng \\(=\\det(A)=2\\cdot4-3\\cdot1=8-3=5\\)",
-    "quick": "Tích giá trị riêng = \\(\\det(A)=5\\)",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 76,
-    "type": "eigenvalue",
-    "question": "Ma trận \\(A=\\begin{pmatrix}2&3\\\\4&1\\end{pmatrix}\\) chéo hoá thành ma trận nào?",
-    "matrix": null,
-    "options": [
-      "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}5&0\\\\0&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&0\\\\0&3\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
-    "solution": "PT đặc trưng: \\(\\lambda^2-3\\lambda-10=(\\lambda+2)(\\lambda-5)=0\\to\\lambda=-2,5\\)",
-    "quick": "Chéo hoá: đặt giá trị riêng trên đường chéo theo thứ tự",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 77,
-    "type": "eigenvalue",
-    "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) có giá trị riêng là",
-    "matrix": null,
-    "options": [
-      "1 (bội kép)",
-      "0 và 1",
-      "0 (bội kép)",
-      "1 và 2"
-    ],
-    "correct": "1 (bội kép)",
-    "solution": "\\(\\det(I-\\lambda I)=(1-\\lambda)^2=0\\to\\lambda=1\\) bội kép",
-    "quick": "Ma trận đơn vị: mọi giá trị riêng đều bằng 1",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 78,
-    "type": "eigenvalue",
-    "question": "Số giá trị riêng phân biệt của \\(A=\\begin{pmatrix}-1&3&7\\\\0&2&8\\\\0&0&3\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "3",
-      "1",
-      "2",
-      "0"
-    ],
-    "correct": "3",
-    "solution": "Tam giác trên: \\(\\lambda_1=-1,\\lambda_2=2,\\lambda_3=3\\) — ba giá trị riêng phân biệt",
-    "quick": "Tam giác → đọc đường chéo: -1, 2, 3 → 3 giá trị phân biệt",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 79,
-    "type": "eigenvalue",
-    "question": "Cho \\(A=\\begin{pmatrix}5&2\\\\2&5\\end{pmatrix}\\). Các giá trị riêng của \\(A\\) là",
-    "matrix": null,
-    "options": [
-      "3 và 7",
-      "5 và 5",
-      "5 và 2",
-      "4 và 6"
-    ],
-    "correct": "3 và 7",
-    "solution": "\\(\\det(A-\\lambda I)=(5-\\lambda)^2-4=0\\to(5-\\lambda)^2=4\\to\\lambda=3,7\\)",
-    "quick": "\\((5-\\lambda)^2=4\\to\\lambda=5\\pm2=3,7\\)",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 80,
-    "type": "eigenvalue",
-    "question": "Vectơ riêng ứng với \\(\\lambda=2\\) của \\(A=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "\\((2,1)^T\\)",
-      "\\((1,0)^T\\)",
-      "\\((0,1)^T\\)",
-      "\\((1,1)^T\\)"
-    ],
-    "correct": "\\((2,1)^T\\)",
-    "solution": "\\((A-2I)v=0\\): \\(\\begin{pmatrix}-1&2\\\\0&0\\end{pmatrix}v=0\\to -v_1+2v_2=0\\to v_1=2v_2\\). Chọn \\(v_2=1\\): \\(v=(2,1)^T\\)",
-    "quick": "Giải \\((A-\\lambda I)v=0\\), đặt \\(v_2=1\\)",
-    "casio": "CASIO fx-580VNX không tính trị riêng trực tiếp. Giải PT đặc trưng det(A−λI)=0: với ma trận 2×2 dùng [MODE][5][3] (PT bậc 2) nhập hệ số a,b,c → EXE ra λ₁,λ₂.",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 81,
-    "type": "rank",
-    "question": "Hạng của \\(A=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&0\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "2",
-      "3",
-      "1",
-      "0"
-    ],
-    "correct": "2",
-    "solution": "Có 2 hàng khác 0 và độc lập tuyến tính → \\(\\text{rank}(A)=2\\)",
-    "quick": "Đếm số hàng pivot sau khử Gauss",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 82,
-    "type": "rank",
-    "question": "Hạng của \\(A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "1",
-      "2",
-      "0",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "Hàng 2 = 2×hàng 1 → phụ thuộc → \\(\\text{rank}(A)=1\\)",
-    "quick": "Hàng 2 tỉ lệ hàng 1 → rank=1",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 83,
-    "type": "rank",
-    "question": "Hạng của \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\3&6&9\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "1",
-      "2",
-      "3",
-      "0"
-    ],
-    "correct": "1",
-    "solution": "Hàng 2=2×Hàng1, Hàng 3=3×Hàng1 → tất cả phụ thuộc → rank=1",
-    "quick": "Tất cả hàng tỉ lệ nhau → rank=1",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 84,
-    "type": "rank",
-    "question": "Ma trận đơn vị \\(I_n\\) có hạng là",
-    "matrix": null,
-    "options": [
-      "\\(n\\)",
-      "1",
-      "0",
-      "\\(n-1\\)"
-    ],
-    "correct": "\\(n\\)",
-    "solution": "\\(I_n\\) có \\(n\\) hàng độc lập tuyến tính → rank\\((I_n)=n\\)",
-    "quick": "Ma trận đơn vị: rank = cỡ ma trận = \\(n\\)",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 85,
-    "type": "linear_independence",
-    "question": "Hệ vectơ \\(v_1=(1,0)^T\\), \\(v_2=(0,1)^T\\) là",
-    "matrix": null,
-    "options": [
-      "Độc lập tuyến tính",
-      "Phụ thuộc tuyến tính",
-      "Cùng chiều",
-      "Bằng nhau"
-    ],
-    "correct": "Độc lập tuyến tính",
-    "solution": "\\(\\alpha(1,0)+\\beta(0,1)=(0,0)\\Rightarrow\\alpha=\\beta=0\\) — độc lập",
-    "quick": "Cơ sở chuẩn luôn độc lập tuyến tính",
-    "casio": "CASIO: Tính det của ma trận ghép các vector thành cột. det=0 → phụ thuộc tuyến tính; det≠0 → độc lập.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 86,
-    "type": "linear_independence",
-    "question": "Hệ \\(v_1=(1,2)^T\\), \\(v_2=(2,4)^T\\) là",
-    "matrix": null,
-    "options": [
-      "Phụ thuộc tuyến tính",
-      "Độc lập tuyến tính",
-      "Cơ sở",
-      "Trực giao"
-    ],
-    "correct": "Phụ thuộc tuyến tính",
-    "solution": "\\(v_2=2v_1\\) → phụ thuộc tuyến tính",
-    "quick": "\\(v_2=2v_1\\) → phụ thuộc",
-    "casio": "CASIO: Tính det của ma trận ghép các vector thành cột. det=0 → phụ thuộc tuyến tính; det≠0 → độc lập.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 87,
-    "type": "linear_independence",
-    "question": "Cho \\(v_1=(1,2,1)^T\\), \\(v_2=(3,1,1)^T\\), \\(v_3=(5,0,a)^T\\). Hệ phụ thuộc khi \\(a=\\)",
-    "matrix": null,
-    "options": [
-      "1",
-      "-2",
-      "2",
-      "-1"
-    ],
-    "correct": "1",
-    "solution": "\\(\\det[v_1,v_2,v_3]=0\\): tính det và đặt \\(=0\\) → \\(a=1\\)",
-    "quick": "Phụ thuộc ↔ det=0 → giải theo tham số \\(a\\)",
-    "casio": "CASIO: Tính det của ma trận ghép các vector thành cột. det=0 → phụ thuộc tuyến tính; det≠0 → độc lập.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 88,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}x+y=3\\\\2x-y=0\\end{cases}\\) có nghiệm",
-    "matrix": null,
-    "options": [
-      "\\(x=1,y=2\\)",
-      "\\(x=2,y=1\\)",
-      "\\(x=0,y=3\\)",
-      "Vô nghiệm"
-    ],
-    "correct": "\\(x=1,y=2\\)",
-    "solution": "Cộng 2 PT: \\(3x=3\\to x=1\\), \\(y=3-1=2\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Cộng PT1+PT2: \\(3x=3\\to x=1,y=2\\)",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 89,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}2x+y=5\\\\x-y=1\\end{cases}\\) có nghiệm",
-    "matrix": null,
-    "options": [
-      "\\(x=2,y=1\\)",
-      "\\(x=1,y=3\\)",
-      "\\(x=3,y=-1\\)",
-      "Vô số nghiệm"
-    ],
-    "correct": "\\(x=2,y=1\\)",
-    "solution": "Cộng 2 PT: \\(3x=6\\to x=2\\), \\(y=2-1=1\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Cộng PT: \\(3x=6\\to x=2\\)",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 90,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}x+y=1\\\\2x+2y=2\\end{cases}\\) có",
-    "matrix": null,
-    "options": [
-      "Vô số nghiệm",
-      "Một nghiệm",
-      "Vô nghiệm",
-      "Hai nghiệm"
-    ],
-    "correct": "Vô số nghiệm",
-    "solution": "PT2 = 2×PT1 → phụ thuộc → vô số nghiệm: \\(x=t, y=1-t\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Hàng 2 tỉ lệ hàng 1 → vô số nghiệm",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 91,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}x+y=1\\\\x+y=2\\end{cases}\\) có",
-    "matrix": null,
-    "options": [
-      "Vô nghiệm",
-      "Một nghiệm",
-      "Vô số nghiệm",
-      "\\(x=0\\)"
-    ],
-    "correct": "Vô nghiệm",
-    "solution": "Hai PT mâu thuẫn nhau → vô nghiệm. rank(A)≠rank(Ab)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "rank(A)≠rank(Ab) → vô nghiệm",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 92,
-    "type": "system",
-    "question": "Số tham số tự do của hệ \\(\\begin{cases}2x-2y+z=1\\\\3x+y-2z=3\\end{cases}\\) là",
-    "matrix": null,
-    "options": [
-      "1",
-      "0",
-      "2",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "2 PT, 3 ẩn, rank(A)=2 → tham số tự do = \\(n-\\text{rank}=3-2=1\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Tham số tự do = số ẩn − hạng = 3-2=1",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 93,
+    "id": 62,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\), \\(\\det(A)=2\\). Tính \\(\\det(A^3)\\).",
     "matrix": null,
@@ -2254,7 +1696,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 94,
+    "id": 63,
     "type": "det_property",
     "question": "Cho \\(A,B\\) cỡ \\(3\\times3\\) với \\(\\det(A)=2\\), \\(\\det(B)=-1\\). Tính \\(\\det(AB^2)\\).",
     "matrix": null,
@@ -2272,7 +1714,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 95,
+    "id": 64,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(2\\times2\\), \\(\\det(A)=3\\). Tính \\(\\det((2A)^{-1})\\).",
     "matrix": null,
@@ -2290,7 +1732,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 96,
+    "id": 65,
     "type": "det_property",
     "question": "Cho \\(\\det(A)=7\\) với \\(A\\) cỡ \\(2\\times2\\). Tính \\(\\det(A^T)\\).",
     "matrix": null,
@@ -2308,7 +1750,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 97,
+    "id": 66,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=2\\). Tính \\(\\det(A^{-1})\\).",
     "matrix": null,
@@ -2326,7 +1768,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 98,
+    "id": 67,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(4\\times4\\) với \\(\\det(A^T)=2\\). Tính \\(\\det(2A^2)\\).",
     "matrix": null,
@@ -2344,25 +1786,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 99,
-    "type": "multiply",
-    "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) nhân với \\(B=\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\) cho kết quả là",
-    "matrix": null,
-    "options": [
-      "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}3&0\\\\0&7\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
-    "solution": "\\(I\\cdot B=B\\) — nhân với ma trận đơn vị không thay đổi kết quả",
-    "quick": "\\(IB=B\\) luôn đúng",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 100,
+    "id": 68,
     "type": "det_property",
     "question": "Cho \\(A\\) cỡ \\(3\\times3\\) với \\(\\det(A)=6\\). Nếu nhân một hàng của \\(A\\) với \\(k=3\\) được ma trận \\(B\\), thì \\(\\det(B)=\\)",
     "matrix": null,
@@ -2380,61 +1804,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 101,
-    "type": "matrix_equation",
-    "question": "Giải phương trình ma trận \\(XA=B\\) biết \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix},\\;B=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=BA^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\)",
-      "\\(X=A^{-1}B\\)",
-      "\\(X=AB^{-1}\\)",
-      "\\(X=B\\)"
-    ],
-    "correct": "\\(X=BA^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\)",
-    "solution": "\\(XA=B \\Rightarrow X=BA^{-1}\\).\n\n\\(\\det(A)=4-6=-2\\). \\(A^{-1}=\\dfrac{1}{-2}\\begin{pmatrix}4&-2\\\\-3&1\\end{pmatrix}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\).\n\n\\(X=I\\cdot A^{-1}=A^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\).",
-    "quick": "XA=B → **X=BA⁻¹** (nhân A⁻¹ từ phải). Lưu ý thứ tự: XA→nhân phải; AX→nhân trái.",
-    "casio": "CASIO [MODE][6]: Tính A⁻¹, rồi nhân B×A⁻¹. Kiểm tra: X×A=B ✓.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 102,
-    "type": "matrix_equation",
-    "question": "Giải phương trình ma trận \\(AX=B\\) biết \\(A=\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix},\\;B=\\begin{pmatrix}3&1\\\\1&0\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\)",
-      "\\(X=AB\\)",
-      "\\(X=BA^{-1}\\)",
-      "\\(X=\\begin{pmatrix}3&0\\\\5&0\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(X=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\)",
-    "solution": "\\(AX=B \\Rightarrow X=A^{-1}B\\).\n\n\\(\\det(A)=6-5=1\\). \\(A^{-1}=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\begin{pmatrix}3&1\\\\1&0\\end{pmatrix}=\\begin{pmatrix}9-1&3-0\\\\-15+2&-5+0\\end{pmatrix}=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\).",
-    "quick": "AX=B → **X=A⁻¹B** (nhân A⁻¹ từ trái). det(A)=1 nên A⁻¹ dễ tính.",
-    "casio": "CASIO: A⁻¹=[3,-1;-5,2]. X=A⁻¹B=[3,-1;-5,2]×[3,1;1,0]=[8,3;-13,-5].",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 103,
-    "type": "matrix_equation",
-    "question": "Tìm ma trận \\(X\\) thỏa mãn \\(X+2A+3B=A^2\\) biết \\(A=\\begin{pmatrix}1&3\\\\0&2\\end{pmatrix},\\;B=\\begin{pmatrix}-2&1\\\\-1&0\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=A^2-2A-3B\\)",
-      "\\(X=A^2+2A+3B\\)",
-      "\\(X=A^2\\)",
-      "\\(X=-2A-3B\\)"
-    ],
-    "correct": "\\(X=A^2-2A-3B\\)",
-    "solution": "\\(X=A^2-2A-3B\\).\n\n\\(A^2=\\begin{pmatrix}1&9\\\\0&4\\end{pmatrix}\\), \\(2A=\\begin{pmatrix}2&6\\\\0&4\\end{pmatrix}\\), \\(3B=\\begin{pmatrix}-6&3\\\\-3&0\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}1&9\\\\0&4\\end{pmatrix}-\\begin{pmatrix}2&6\\\\0&4\\end{pmatrix}-\\begin{pmatrix}-6&3\\\\-3&0\\end{pmatrix}=\\begin{pmatrix}5&0\\\\3&0\\end{pmatrix}\\).",
-    "quick": "Chuyển vế: **X=A²-2A-3B**. Tính A²=[1,9;0,4]. Rồi X=[1,9;0,4]-[2,6;0,4]-[-6,3;-3,0]=[5,0;3,0].",
-    "casio": "CASIO [MODE][6]: Tính A²=A×A, rồi X=A²-2A-3B bằng phép tính ma trận.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 104,
+    "id": 69,
     "type": "inverse_param",
     "question": "Tìm giá trị \\(m\\) để ma trận \\(A=\\begin{pmatrix}1&1&3\\\\2&2&0\\\\2&1&m\\end{pmatrix}\\) khả nghịch.",
     "matrix": [
@@ -2460,15 +1830,15 @@
       "\\(m\\neq2\\)",
       "Mọi m"
     ],
-    "correct": "\\(m\\neq0\\)",
-    "solution": "A khả nghịch ↔ \\(\\det(A)\\neq0\\).\n\nTính \\(\\det(A)\\) theo cột 1 hoặc khai triển:\n\\(\\det(A)=1(2m-0)-1(2m-0)+3(2-4)=2m-2m-6=-6\\neq0\\)\n\n*Tính lại kỹ hơn:*\n\\(\\det=1(2m-0)-1(2m-0)+3(2-4)\\). \nR2←R2-2R1, R3←R3-2R1: \\(\\begin{pmatrix}1&1&3\\\\0&0&-6\\\\0&-1&m-6\\end{pmatrix}\\). det=-(-1)(-6)·1=-6. Hằng số → luôn ≠0.\n\n*Thực ra det=-6 với mọi m → A luôn khả nghịch!* Kiểm tra lại m trong ma trận.",
-    "quick": "Tính det(A) theo m, đặt ≠0 để tìm điều kiện. Nếu det hằng số → luôn khả nghịch.",
+    "correct": "Mọi m",
+    "solution": "A khả nghịch ↔ \\(\\det(A)\\neq0\\).\n\nTính \\(\\det(A)\\) khai triển hàng 1:\n\\(\\det(A)=1\\cdot(2m-0)-1\\cdot(2m-0)+3\\cdot(2-4)=2m-2m-6=\\mathbf{-6}\\)\n\nVì \\(\\det(A)=-6\\neq0\\) với **mọi m** → A **luôn khả nghịch** không phụ thuộc m.",
+    "quick": "\\(\\det=2m-2m-6=-6\\neq0\\) với mọi m → **Mọi m** đều cho A khả nghịch.",
     "casio": "CASIO [MODE][6]: Nhập ma trận với m cụ thể (m=0, m=1...) để thử. Nếu det=0 → suy biến.",
     "difficulty": 2,
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 105,
+    "id": 70,
     "type": "inverse_param",
     "question": "Tìm \\(k\\) để ma trận \\(A=\\begin{pmatrix}4&1&-3\\\\2&k&2\\\\3&2&-2\\end{pmatrix}\\) khả nghịch.",
     "matrix": [
@@ -2489,194 +1859,20 @@
       ]
     ],
     "options": [
+      "\\(k\\neq18\\)",
       "\\(k\\neq\\dfrac{17}{5}\\)",
       "\\(k=0\\)",
-      "\\(k\\neq0\\)",
       "Mọi k"
     ],
-    "correct": "\\(k\\neq\\dfrac{17}{5}\\)",
-    "solution": "\\(\\det(A)=4(−2k−4)−1(−4−6)+(−3)(4−3k)\\)\n\\(=-8k-16+10-12+9k=k-18\\)\n\n*Kiểm tra lại:*\nKhai triển hàng 1:\n\\(4(-2k-4)-1(-4-6)+(-3)(4-3k)\\)\n\\(=-8k-16+10-12+9k=k-18\\)\n\nA khả nghịch khi \\(k-18\\neq0\\) → \\(k\\neq18\\).\n\n*Lưu ý: đáp án phụ thuộc giá trị ma trận cụ thể. Kiểm tra bằng CASIO.*",
-    "quick": "det(A) là đa thức theo k. Đặt det=0, tìm k → đó là giá trị cần loại bỏ.",
+    "correct": "\\(k\\neq18\\)",
+    "solution": "\\(\\det(A)=4(-2k-4)-1(-4-6)+(-3)(4-3k)\\)\n\\(=-8k-16+10-12+9k=k-18\\)\n\nA khả nghịch khi \\(\\det(A)\\neq0\\) → \\(k-18\\neq0\\) → **\\(k\\neq18\\)**.",
+    "quick": "det=k-18. A khả nghịch ↔ det≠0 → **k≠18**.",
     "casio": "CASIO [MODE][6]: Nhập ma trận với k cụ thể, tính det. Tìm k làm det=0.",
     "difficulty": 2,
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 106,
-    "type": "matrix_equation",
-    "question": "Giải phương trình ma trận \\(AX-2B-C=0\\) biết \\(A=\\begin{pmatrix}1&-1\\\\2&3\\end{pmatrix},\\;2B+C=\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=A^{-1}(2B+C)\\)",
-      "\\(X=A(2B+C)\\)",
-      "\\(X=(2B+C)A^{-1}\\)",
-      "\\(X=A^{-1}+2B+C\\)"
-    ],
-    "correct": "\\(X=A^{-1}(2B+C)\\)",
-    "solution": "\\(AX=2B+C \\Rightarrow X=A^{-1}(2B+C)\\).\n\n\\(\\det(A)=3+2=5\\). \\(A^{-1}=\\dfrac{1}{5}\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\).\n\n\\(X=\\dfrac{1}{5}\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}=\\dfrac{1}{5}\\begin{pmatrix}9&5\\\\-6&0\\end{pmatrix}=\\begin{pmatrix}1.8&1\\\\-1.2&0\\end{pmatrix}\\).",
-    "quick": "AX=2B+C → **X=A⁻¹(2B+C)**. Tính A⁻¹ rồi nhân với vế phải.",
-    "casio": "CASIO: A⁻¹=(1/5)[3,1;-2,1]. X=A⁻¹×[3,1;0,2]=(1/5)[9,5;-6,0]=[1.8,1;-1.2,0].",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 107,
-    "type": "matrix_power",
-    "question": "Tính \\(A^{10}\\) biết \\(A=\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}\\).",
-    "matrix": [
-      [
-        2,
-        0
-      ],
-      [
-        0,
-        3
-      ]
-    ],
-    "options": [
-      "\\(\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}20&0\\\\0&30\\end{pmatrix}\\)",
-      "\\(10A\\)",
-      "\\(\\begin{pmatrix}2^{10}+3^{10}&0\\\\0&0\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}\\)",
-    "solution": "Ma trận đường chéo có luỹ thừa rất dễ:\n\n\\(A^n=\\begin{pmatrix}2^n&0\\\\0&3^n\\end{pmatrix}\\)\n\nVì phần tử (1,1)=2 nhân chính nó n lần = \\(2^n\\), tương tự (2,2)=3.\n\n\\(A^{10}=\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}=\\begin{pmatrix}1024&0\\\\0&59049\\end{pmatrix}\\)",
-    "quick": "Ma trận đường chéo: **(diag(a,b))ⁿ = diag(aⁿ,bⁿ)**. Mỗi phần tử đường chéo lũy thừa n.",
-    "casio": "CASIO [MODE][6]: Nhập A, tính A×A×...×A (10 lần) hoặc dùng A^10. Kết quả diag(1024,59049).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 108,
-    "type": "matrix_equation",
-    "question": "Tìm ma trận \\(X\\) thỏa mãn \\(A^2-X+B=2A\\) biết \\(A=\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix},\\;B=\\begin{pmatrix}4&2\\\\1&-2\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=A^2-2A+B\\)",
-      "\\(X=A^2+2A+B\\)",
-      "\\(X=2A-A^2-B\\)",
-      "\\(X=B\\)"
-    ],
-    "correct": "\\(X=A^2-2A+B\\)",
-    "solution": "Chuyển vế: \\(X=A^2-2A+B\\).\n\n\\(A^2=\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix}\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix}=\\begin{pmatrix}9-2&-3+0\\\\6+0&-2+0\\end{pmatrix}=\\begin{pmatrix}7&-3\\\\6&-2\\end{pmatrix}\\).\n\n\\(2A=\\begin{pmatrix}-6&2\\\\-4&0\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}7&-3\\\\6&-2\\end{pmatrix}-\\begin{pmatrix}-6&2\\\\-4&0\\end{pmatrix}+\\begin{pmatrix}4&2\\\\1&-2\\end{pmatrix}=\\begin{pmatrix}17&-3\\\\11&-4\\end{pmatrix}\\).",
-    "quick": "Chuyển vế: **X=A²-2A+B**. Tính A²=[7,-3;6,-2]. Kết quả X=[17,-3;11,-4].",
-    "casio": "CASIO: A²=[7,-3;6,-2], 2A=[-6,2;-4,0], X=A²-2A+B=[7-(-6)+4,-3-2+2;6-(-4)+1,-2-0-2].",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 109,
-    "type": "triangle_identify",
-    "question": "Ma trận nào sau đây là ma trận tam giác trên?\n\\(A=\\begin{pmatrix}1&2&3\\\\0&4&5\\\\0&0&6\\end{pmatrix}\\)",
-    "matrix": [
-      [
-        1,
-        2,
-        3
-      ],
-      [
-        0,
-        4,
-        5
-      ],
-      [
-        0,
-        0,
-        6
-      ]
-    ],
-    "options": [
-      "Ma trận tam giác trên",
-      "Ma trận tam giác dưới",
-      "Ma trận đường chéo",
-      "Không có dạng đặc biệt"
-    ],
-    "correct": "Ma trận tam giác trên",
-    "solution": "**Ma trận tam giác trên:** Tất cả phần tử **dưới** đường chéo chính bằng 0.\n\nKiểm tra: \\(a_{21}=0, a_{31}=0, a_{32}=0\\) ✓ → Ma trận **tam giác trên**.\n\n**Phân biệt:**\n- Tam giác trên: các phần tử dưới đường chéo = 0\n- Tam giác dưới: các phần tử trên đường chéo = 0\n- Đường chéo: tất cả phần tử ngoài đường chéo = 0",
-    "quick": "Tam giác **trên** = 0 **dưới** đường chéo. Ở đây a₂₁=a₃₁=a₃₂=0 → **tam giác trên**.",
-    "casio": "CASIO: Nhìn ma trận — dưới đường chéo chính đều = 0 → tam giác trên. Trên đường chéo đều = 0 → tam giác dưới.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 110,
-    "type": "triangle_identify",
-    "question": "Cho ma trận \\(A=\\begin{pmatrix}1&-2&3&5\\\\0&-1&7&8\\\\0&0&9&-3\\\\0&0&0&-3\\end{pmatrix}\\). Ma trận A thuộc dạng nào?",
-    "matrix": [
-      [
-        1,
-        -2,
-        3,
-        5
-      ],
-      [
-        0,
-        -1,
-        7,
-        8
-      ],
-      [
-        0,
-        0,
-        9,
-        -3
-      ],
-      [
-        0,
-        0,
-        0,
-        -3
-      ]
-    ],
-    "options": [
-      "Ma trận tam giác trên",
-      "Ma trận đường chéo",
-      "Ma trận tam giác dưới",
-      "Không có dạng đặc biệt"
-    ],
-    "correct": "Ma trận tam giác trên",
-    "solution": "Kiểm tra các phần tử **dưới** đường chéo: \\(a_{ij}=0\\) với mọi \\(i>j\\).\n\nHàng 2: \\(a_{21}=0\\) ✓\nHàng 3: \\(a_{31}=a_{32}=0\\) ✓\nHàng 4: \\(a_{41}=a_{42}=a_{43}=0\\) ✓\n\n→ Tất cả phần tử dưới đường chéo = 0 → **Ma trận tam giác trên**.",
-    "quick": "Dưới đường chéo đều = 0 → **tam giác trên**. Đây là câu C4 dạng thật đề CA1 2025.",
-    "casio": "CASIO: Quan sát dạng bậc thang → tam giác trên.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 111,
-    "type": "triangle_identify",
-    "question": "Ma trận \\(A=\\begin{pmatrix}5&0&0\\\\2&3&0\\\\1&4&7\\end{pmatrix}\\) thuộc loại nào?",
-    "matrix": [
-      [
-        5,
-        0,
-        0
-      ],
-      [
-        2,
-        3,
-        0
-      ],
-      [
-        1,
-        4,
-        7
-      ]
-    ],
-    "options": [
-      "Ma trận tam giác dưới",
-      "Ma trận tam giác trên",
-      "Ma trận đường chéo",
-      "Không có dạng đặc biệt"
-    ],
-    "correct": "Ma trận tam giác dưới",
-    "solution": "Các phần tử **trên** đường chéo: \\(a_{12}=0, a_{13}=0, a_{23}=0\\) → tất cả bằng 0.\n\n→ **Ma trận tam giác dưới** (phần tử trên đường chéo chính = 0).",
-    "quick": "Trên đường chéo đều = 0 → **tam giác dưới**.",
-    "casio": "CASIO: a₁₂=a₁₃=a₂₃=0 → tam giác dưới.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 112,
+    "id": 71,
     "type": "det_complex_chain",
     "question": "Cho ma trận A cỡ \\(4\\times4\\) thỏa mãn \\(\\det(A^T)=2\\). Hãy tính \\(\\det(2A^2)\\).",
     "matrix": null,
@@ -2694,7 +1890,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 113,
+    "id": 72,
     "type": "det_complex_chain",
     "question": "Cho ma trận A cỡ \\(6\\times6\\) thỏa mãn \\(\\det A=3\\). Hãy tính \\(\\det(2A)\\).",
     "matrix": null,
@@ -2712,7 +1908,7 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 114,
+    "id": 73,
     "type": "det_complex_chain",
     "question": "Cho ma trận A cỡ \\(3\\times3\\) với \\(\\det A=5\\). Tính \\(\\det((A^{-1})^2A^T)\\).",
     "matrix": null,
@@ -2730,188 +1926,21 @@
     "topic": "Ma trận & Định thức"
   },
   {
-    "id": 115,
+    "id": 74,
     "type": "det_complex_chain",
-    "question": "Cho ma trận A cỡ \\(3\\times3\\) với \\(\\det A=5\\). Hỏi \\(\\det(AA^T)\\) **không thể** nhận giá trị nào?",
+    "question": "Cho ma trận A cỡ \\(3\\times3\\) với \\(\\det A=5\\). Tính \\(\\det(AA^T)\\).",
     "matrix": null,
     "options": [
-      "\\(-5\\)",
       "\\(25\\)",
-      "\\(25\\)",
+      "\\(5\\)",
+      "\\(-25\\)",
       "\\(1\\)"
     ],
-    "correct": "\\(-5\\)",
-    "solution": "\\(\\det(AA^T)=\\det(A)\\cdot\\det(A^T)=\\det(A)^2=25\\).\n\nVì \\(\\det(A)=5\\) nên \\(\\det(AA^T)=5^2=25\\) là **hằng số**, không phụ thuộc vào phần tử cụ thể.\n\nTuy nhiên, nếu A không cố định và det(A) thay đổi: \\(\\det(AA^T)=[\\det(A)]^2\\geq0\\) → **luôn không âm**.\n\n→ \\(\\det(AA^T)\\) **không thể** là số âm → đáp án \\(-5\\).",
-    "quick": "det(AA^T)=[det(A)]² ≥ 0 → **luôn không âm**. Giá trị âm (-5) là **không thể**.",
-    "casio": "CASIO: det(AA^T)=det(A)×det(A^T)=det(A)²≥0. Không bao giờ âm.",
+    "correct": "\\(25\\)",
+    "solution": "\\(\\det(AA^T)=\\det(A)\\cdot\\det(A^T)=\\det(A)^2=5^2=25\\).",
+    "quick": "\\(\\det(AA^T)=\\det(A)^2=25\\).",
+    "casio": "CASIO: dùng tính chất \\(\\det(A^T)=\\det(A)\\), \\(\\det(AB)=\\det(A)\\det(B)\\).",
     "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 116,
-    "type": "eigenvector_verify",
-    "question": "Cho ma trận \\(A=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\). Vectơ nào là vectơ riêng của A?",
-    "matrix": [
-      [
-        1,
-        2
-      ],
-      [
-        0,
-        2
-      ]
-    ],
-    "options": [
-      "\\((0,1)^T\\)",
-      "\\((2,1)^T\\)",
-      "\\((1,1)^T\\)",
-      "Không có đáp án đúng"
-    ],
-    "correct": "\\((0,1)^T\\)",
-    "solution": "Thử từng vectơ \\(v\\): kiểm tra \\(Av=\\lambda v\\) với \\(\\lambda\\) là số thực.\n\n**Thử \\(v=(0,1)^T\\):**\n\\(Av=\\begin{pmatrix}1&2\\\\0&2\\end{pmatrix}\\begin{pmatrix}0\\\\1\\end{pmatrix}=\\begin{pmatrix}2\\\\2\\end{pmatrix}=2\\begin{pmatrix}1\\\\1\\end{pmatrix}\\neq\\lambda\\begin{pmatrix}0\\\\1\\end{pmatrix}\\)\n\nLại thử: \\(A\\begin{pmatrix}0\\\\1\\end{pmatrix}=\\begin{pmatrix}2\\\\2\\end{pmatrix}\\neq\\lambda\\begin{pmatrix}0\\\\1\\end{pmatrix}\\) — không phải!\n\n**Giá trị riêng thực:** \\(\\det(A-\\lambda I)=(1-\\lambda)(2-\\lambda)=0\\) → \\(\\lambda_1=1,\\lambda_2=2\\).\n\nVới \\(\\lambda_2=2\\): \\((A-2I)v=0\\) → \\(\\begin{pmatrix}-1&2\\\\0&0\\end{pmatrix}v=0\\) → \\(v=(2,1)^T\\).\n\nVới \\(\\lambda_1=1\\): \\((A-I)v=0\\) → \\(\\begin{pmatrix}0&2\\\\0&1\\end{pmatrix}v=0\\) → \\(v=(1,0)^T\\).\n\nKiểm tra \\((0,1)^T\\): \\(A(0,1)^T=(2,2)^T\\neq\\lambda(0,1)^T\\) → **không phải**.\n\nKiểm tra \\((1,1)^T\\): \\(A(1,1)^T=(3,2)^T\\neq\\lambda(1,1)^T\\) → **không phải**.",
-    "quick": "Tìm λ: det(A-λI)=0 → λ=1,2. Vector riêng λ=2: v=(2,1)^T. Kiểm tra: A(2,1)^T=(4,2)^T=2(2,1)^T ✓.",
-    "casio": "CASIO: Tính A×v cho từng vector. Nếu A×v = k×v (k là số) → đó là vector riêng.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 117,
-    "type": "eigenvector_verify",
-    "question": "Cho ma trận \\(A=\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}\\). Vectơ riêng ứng với giá trị riêng \\(\\lambda=3\\) là?",
-    "matrix": [
-      [
-        3,
-        1
-      ],
-      [
-        0,
-        2
-      ]
-    ],
-    "options": [
-      "\\((1,0)^T\\)",
-      "\\((0,1)^T\\)",
-      "\\((1,1)^T\\)",
-      "\\((3,0)^T\\)"
-    ],
-    "correct": "\\((1,0)^T\\)",
-    "solution": "Giải \\((A-3I)v=0\\):\n\\(\\begin{pmatrix}0&1\\\\0&-1\\end{pmatrix}\\begin{pmatrix}v_1\\\\v_2\\end{pmatrix}=0\\)\n\n→ \\(v_2=0\\), \\(v_1\\) tự do → vectơ riêng: \\(v=(1,0)^T\\).\n\nKiểm tra: \\(A(1,0)^T=(3,0)^T=3(1,0)^T\\) ✓.",
-    "quick": "Giải (A-3I)v=0: [0,1;0,-1]v=0 → v₂=0 → **v=(1,0)^T**. Kiểm tra: A(1,0)=3(1,0)✓.",
-    "casio": "CASIO: A×[1;0]=[3;0]=3×[1;0] ✓. A×[0;1]=[1;2]≠λ×[0;1] ✗.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 118,
-    "type": "diagonalization",
-    "question": "Chéo hoá ma trận \\(A=\\begin{pmatrix}2&3\\\\4&1\\end{pmatrix}\\). Ma trận đường chéo thu được là?",
-    "matrix": [
-      [
-        2,
-        3
-      ],
-      [
-        4,
-        1
-      ]
-    ],
-    "options": [
-      "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}2&0\\\\0&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}-2&0\\\\0&-5\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}2&0\\\\0&5\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)",
-    "solution": "**Bước 1:** Tìm giá trị riêng.\n\\(\\det(A-\\lambda I)=(2-\\lambda)(1-\\lambda)-12=\\lambda^2-3\\lambda-10=(\\lambda-5)(\\lambda+2)=0\\)\n\n→ \\(\\lambda_1=-2,\\;\\lambda_2=5\\).\n\n**Bước 2:** Ma trận chéo hoá là ma trận đường chéo của các giá trị riêng:\n\\(D=\\begin{pmatrix}-2&0\\\\0&5\\end{pmatrix}\\)\n\n*Lưu ý:* \\(A=PDP^{-1}\\) với P là ma trận vectơ riêng.",
-    "quick": "det(A-λI)=λ²-3λ-10=0 → λ=-2, λ=5. Ma trận chéo: **diag(-2, 5)**.",
-    "casio": "CASIO: PT đặc trưng: λ²-(trace A)λ+det A=λ²-3λ-10=0. Nghiệm: λ=-2 và λ=5.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 119,
-    "type": "diagonalization",
-    "question": "Ma trận \\(A=\\begin{pmatrix}1&0&0\\\\-10&-3&0\\\\4&200&6\\end{pmatrix}\\) có tổng các giá trị riêng bằng?",
-    "matrix": [
-      [
-        1,
-        0,
-        0
-      ],
-      [
-        -10,
-        -3,
-        0
-      ],
-      [
-        4,
-        200,
-        6
-      ]
-    ],
-    "options": [
-      "\\(4\\)",
-      "\\(6\\)",
-      "\\(2\\)",
-      "\\(0\\)"
-    ],
-    "correct": "\\(4\\)",
-    "solution": "A là **ma trận tam giác dưới** → các giá trị riêng chính là các phần tử đường chéo!\n\nGiá trị riêng: \\(\\lambda_1=1,\\;\\lambda_2=-3,\\;\\lambda_3=6\\).\n\nTổng = \\(1+(-3)+6=4\\).\n\n**Tổng giá trị riêng = vết (trace) của ma trận** = \\(1+(-3)+6=4\\).",
-    "quick": "Tam giác dưới → giá trị riêng = phần tử đường chéo = 1, -3, 6. Tổng = **4** = trace(A).",
-    "casio": "CASIO: Trace=1+(-3)+6=4=tổng giá trị riêng.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 120,
-    "type": "diagonalization",
-    "question": "Ma trận \\(A=\\begin{pmatrix}-1&3&7\\\\0&2&8\\\\0&0&3\\end{pmatrix}\\) có bao nhiêu giá trị riêng (phân biệt)?",
-    "matrix": [
-      [
-        -1,
-        3,
-        7
-      ],
-      [
-        0,
-        2,
-        8
-      ],
-      [
-        0,
-        0,
-        3
-      ]
-    ],
-    "options": [
-      "\\(3\\)",
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(0\\)"
-    ],
-    "correct": "\\(3\\)",
-    "solution": "A là **ma trận tam giác trên** → các giá trị riêng chính là phần tử trên đường chéo:\n\n\\(\\lambda_1=-1,\\;\\lambda_2=2,\\;\\lambda_3=3\\)\n\nBa giá trị riêng **phân biệt** → A có **3 giá trị riêng**.",
-    "quick": "Tam giác trên → giá trị riêng = đường chéo = -1, 2, 3. Phân biệt → **3 giá trị riêng**.",
-    "casio": "CASIO: Đường chéo: -1, 2, 3. Đây là giá trị riêng của ma trận tam giác.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 121,
-    "type": "matrix_size",
-    "question": "Cho ma trận A cỡ \\(3\\times4\\) và ma trận B cỡ \\(4\\times3\\). Ma trận \\(AB\\) có cỡ bằng bao nhiêu?",
-    "matrix": null,
-    "options": [
-      "\\(3\\times3\\)",
-      "\\(4\\times4\\)",
-      "\\(3\\times4\\)",
-      "\\(4\\times3\\)"
-    ],
-    "correct": "\\(3\\times3\\)",
-    "solution": "Quy tắc nhân ma trận: A cỡ \\(m\\times n\\) nhân B cỡ \\(n\\times p\\) → AB cỡ \\(m\\times p\\).\n\nA cỡ \\(3\\times4\\), B cỡ \\(4\\times3\\): cột A = hàng B = 4 (thoả mãn) → AB cỡ \\(3\\times3\\).",
-    "quick": "A(3×4) × B(4×3) → AB cỡ **3×3**. Quy tắc: [m×n]×[n×p]=[m×p].",
-    "casio": "CASIO: Số cột A=số hàng B=4. AB có số hàng=3 (theo A), số cột=3 (theo B).",
-    "difficulty": 1,
     "topic": "Ma trận & Định thức"
   }
 ]

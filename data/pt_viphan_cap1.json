@@ -347,14 +347,14 @@
     "question": "Giải phương trình Bernoulli \\(y' + \\frac{1}{x}y = y^2\\) với \\(x>0\\). Nghiệm tổng quát là?",
     "matrix": null,
     "options": [
-      "\\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\)",
-      "\\(\\frac{1}{y} = \\frac{x^2}{2} + C\\)",
-      "\\(\\frac{1}{y} = Cx + \\frac{x^2}{2}\\)",
-      "\\(y = \\frac{2}{x^2 + C}\\)"
+      "\\(\\dfrac{1}{y} = Cx - x\\ln x\\)",
+      "\\(\\dfrac{1}{y} = \\dfrac{x}{2} + \\dfrac{C}{x}\\)",
+      "\\(\\dfrac{1}{y} = Cx + \\dfrac{x^2}{2}\\)",
+      "\\(y = \\dfrac{2}{x^2 + C}\\)"
     ],
-    "correct": "\\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\)",
-    "solution": "Đặt \\(z = y^{-1}\\), \\(z' - \\frac{1}{x}z = -1\\). Thừa số \\(\\mu = e^{-\\int \\frac{1}{x}dx} = e^{-\\ln x} = 1/x\\). \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\)? Kiểm tra lại: \\(z' - \\frac{1}{x}z = -1\\) nhân \\(1/x\\): \\((z/x)' = -1/x \\Rightarrow z/x = -\\ln x + C \\Rightarrow z = -x\\ln x + Cx\\). Nhưng đáp án đưa ra dạng khác, có thể họ chọn dạng rút gọn: \\(\\frac{1}{y} = \\frac{x}{2} + \\frac{C}{x}\\) là nghiệm của một biến thể khác (kiểm tra thấy sai). Tôi sẽ chọn đáp án đúng theo tính toán: \\(\\frac{1}{y} = Cx - x\\ln x\\) không có trong đáp án → có thể đề cho \\(y' - \\frac{1}{x}y = y^2\\) thì đáp án \\(\\frac{1}{y} = -\\frac{x}{2} + \\frac{C}{x}\\)? Tốt nhất nên đề bài khác. Tôi sẽ thay câu này bằng một ví dụ khác chuẩn hơn.",
-    "quick": "Cẩn thận với dạng Bernoulli, có thể ra nghiệm dạng logarit",
+    "correct": "\\(\\dfrac{1}{y} = Cx - x\\ln x\\)",
+    "solution": "Bernoulli n=2. Đặt \\(z=1/y\\): \\(z'-\\frac{1}{x}z=-1\\).\n\n\\(\\mu=e^{-\\int1/x\\,dx}=1/x\\). \\((z/x)'=-1/x\\).\n\n\\(z/x=-\\ln x+C \\Rightarrow z=Cx-x\\ln x\\).\n\n\\(\\dfrac{1}{y}=Cx-x\\ln x\\).",
+    "quick": "z=1/y: z'-(1/x)z=-1. μ=1/x. (z/x)'=-1/x → z/x=-lnx+C → **1/y=Cx-x ln x**.",
     "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
     "difficulty": 3,
     "topic": "PT Vi phân"
@@ -416,17 +416,17 @@
   {
     "id": 24,
     "type": "exact_differential",
-    "question": "Phương trình \\((x + y)dx + (x - y)dy = 0\\) có phải là vi phân toàn phần không? Nếu không, tìm thừa số tích phân?",
+    "question": "Phương trình \\((x+y)\\,dx+(x-y)\\,dy=0\\) có phải vi phân toàn phần không?",
     "matrix": null,
     "options": [
-      "Không, thừa số \\(\\mu = 1/x\\)",
       "Có",
+      "Không, thừa số \\(\\mu = 1/x\\)",
       "Không, thừa số \\(\\mu = 1/y\\)",
       "Không, không có thừa số"
     ],
-    "correct": "Không, thừa số \\(\\mu = 1/x\\)",
-    "solution": "\\(M_y=1, N_x=1\\)? Thực ra \\(M=x+y, N=x-y\\) → \\(M_y=1, N_x=1\\) → \\(M_y=N_x\\) nên đã là toàn phần rồi. Câu này sai, tôi sẽ sửa lại.",
-    "quick": "Kiểm tra lại điều kiện \\(M_y=N_x\\)",
+    "correct": "Có",
+    "solution": "\\(M=x+y,\\;N=x-y\\).\n\\(M_y=1,\\;N_x=1\\) → \\(M_y=N_x\\) → **Đã là vi phân toàn phần!**\n\nTìm hàm thế \\(F\\): \\(F_x=x+y \\Rightarrow F=x^2/2+xy+g(y)\\).\n\\(F_y=x+g'(y)=x-y \\Rightarrow g'(y)=-y \\Rightarrow g(y)=-y^2/2\\).\n\nNghiệm: \\(\\dfrac{x^2}{2}+xy-\\dfrac{y^2}{2}=C\\).",
+    "quick": "My=1=Nx=1 → **đã toàn phần**. F=x²/2+xy-y²/2=C.",
     "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
     "difficulty": 3,
     "topic": "PT Vi phân"
@@ -509,14 +509,14 @@
     "question": "Phương trình \\(y' + \\cot x \\cdot y = \\csc x\\) có nghiệm tổng quát là?",
     "matrix": null,
     "options": [
+      "\\(y = (x+C)\\csc x\\)",
       "\\(y = C\\csc x + \\cot x\\)",
       "\\(y = C\\csc x - \\cot x\\)",
-      "\\(y = C\\cot x + \\csc x\\)",
       "\\(y = C\\sin x + \\cos x\\)"
     ],
-    "correct": "\\(y = C\\csc x + \\cot x\\)",
-    "solution": "\\(\\mu = e^{\\int \\cot x dx} = e^{\\ln|\\sin x|} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\)? Không phải đáp án trên. Thực tế \\((y\\sin x)' = 1 \\Rightarrow y\\sin x = x + C \\Rightarrow y = (x+C)\\csc x\\). Các đáp án không khớp. Tôi sẽ sửa lại đề.",
-    "quick": "Thừa số tích phân \\(\\mu = \\sin x\\)",
+    "correct": "\\(y = (x+C)\\csc x\\)",
+    "solution": "\\(P=\\cot x,\\;Q=\\csc x\\).\n\\(\\mu=e^{\\int\\cot x\\,dx}=\\sin x\\).\n\n\\((y\\sin x)'=\\csc x\\cdot\\sin x=1\\).\n\n\\(y\\sin x=x+C \\Rightarrow y=\\dfrac{x+C}{\\sin x}=(x+C)\\csc x\\).",
+    "quick": "μ=sinx. (y sinx)'=1 → y sinx=x+C → **y=(x+C)cscx**.",
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
     "difficulty": 2,
     "topic": "PT Vi phân"
@@ -1154,17 +1154,17 @@
   {
     "id": 65,
     "type": "integrating_factor",
-    "question": "Phương trình \\((y^2-x)dx+2xy\\,dy=0\\) không là vi phân toàn phần. Nhân tử tích hợp \\(\\mu(x)\\) thỏa điều kiện nào?",
+    "question": "Phương trình \\((y^2-x)\\,dx+2xy\\,dy=0\\). Phân tích đúng là?",
     "matrix": null,
     "options": [
+      "PT đã là vi phân toàn phần (\\(\\mu=1\\))",
       "\\(\\mu=1/x^2\\)",
-      "\\(\\mu=x\\)",
       "\\(\\mu=1/x\\)",
       "\\(\\mu=e^x\\)"
     ],
-    "correct": "\\(\\mu=1/x^2\\)",
-    "solution": "Kiểm tra: \\(M_y=2y,\\;N_x=2y\\) → thực ra đã toàn phần! \n\nKhoan, \\(M=y^2-x,\\;N=2xy\\). \\(M_y=2y,\\;N_x=2y\\). Bằng nhau → **đã toàn phần**.\n\nNghiệm: \\(F_x=y^2-x\\) → \\(F=xy^2-x^2/2+g(y)\\). \\(F_y=2xy=N=2xy\\) ✓ → \\(g'=0\\).\n\nNghiệm: \\(xy^2-x^2/2=C\\).\n\n*Câu này kiểm tra nhận dạng: PT đã toàn phần nên μ=1.*",
-    "quick": "Tính M_y=2y và N_x=2y → bằng nhau → **đã toàn phần**, μ=1. Không cần nhân tử!",
+    "correct": "PT đã là vi phân toàn phần (\\(\\mu=1\\))",
+    "solution": "\\(M=y^2-x,\\;N=2xy\\).\n\\(M_y=2y,\\;N_x=2y\\) → \\(M_y=N_x\\) → **PT đã là vi phân toàn phần!**\n\nTìm hàm thế \\(F\\): \\(F_y=2xy \\Rightarrow F=xy^2+g(x)\\).\n\\(F_x=y^2+g'(x)=y^2-x \\Rightarrow g'(x)=-x \\Rightarrow g(x)=-x^2/2\\).\n\nNghiệm: \\(xy^2-x^2/2=C\\).",
+    "quick": "My=2y=Nx=2y → **đã toàn phần** (μ=1). Nghiệm: xy²-x²/2=C.",
     "casio": "CASIO: Tính M_y và N_x. Nếu M_y=N_x → toàn phần. Nghiệm F=xy²-x²/2=C.",
     "difficulty": 2,
     "topic": "PT Vi phân"
@@ -1473,6 +1473,42 @@
     "quick": "y'=-y² → dy/y²=-dx → **phân ly biến**. Nghiệm: y=1/(x+C).",
     "casio": "CASIO: ∫dy/y²=-1/y; ∫-dx=-x. Nghiệm: -1/y=-x+C → y=1/(x+C).",
     "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 83,
+    "type": "application_circuit",
+    "question": "Mạch RLC nối tiếp được mô tả bởi phương trình vi phân cấp 2 nào đối với điện tích \\(q(t)\\)?",
+    "matrix": null,
+    "options": [
+      "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
+      "\\(Lq'' + Cq' + Rq = E(t)\\)",
+      "\\(Rq'' + Lq' + \\frac{1}{C}q = E(t)\\)",
+      "\\(\\frac{1}{C}q'' + Rq' + Lq = E(t)\\)"
+    ],
+    "correct": "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
+    "solution": "Định luật Kirchhoff: \\(L\\frac{d^2q}{dt^2} + R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\).",
+    "quick": "Mạch RLC nối tiếp: \\(Lq'' + Rq' + q/C = E(t)\\)",
+    "casio": "CASIO: Mạch RLC: LQ''+RQ'+Q/C=E(t). Giải PT đặc trưng. Tính r=R/(2L), ω₀=1/√(LC). Phân loại: tắt dần/cộng hưởng.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 84,
+    "type": "application_circuit",
+    "question": "Trong mạch RLC, nếu \\(R=0\\), phương trình trở thành \\(Lq'' + \\frac{1}{C}q = 0\\). Tần số góc riêng của mạch là?",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{1}{\\sqrt{LC}}\\)",
+      "\\(\\sqrt{LC}\\)",
+      "\\(\\frac{1}{LC}\\)",
+      "\\(\\frac{R}{L}\\)"
+    ],
+    "correct": "\\(\\frac{1}{\\sqrt{LC}}\\)",
+    "solution": "Phương trình \\(q'' + \\frac{1}{LC}q = 0\\) → \\(\\omega = \\frac{1}{\\sqrt{LC}}\\).",
+    "quick": "Tần số cộng hưởng riêng của mạch LC: \\(\\omega_0 = 1/\\sqrt{LC}\\)",
+    "casio": "CASIO: Mạch RLC: LQ''+RQ'+Q/C=E(t). Giải PT đặc trưng. Tính r=R/(2L), ω₀=1/√(LC). Phân loại: tắt dần/cộng hưởng.",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   }
 ]

@@ -1,0 +1,428 @@
+[
+  {
+    "id": 1,
+    "type": "transpose",
+    "question": "Ma trận chuyển vị \\(A^T\\) của \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}4&3\\\\2&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
+    "solution": "Chuyển vị: đổi hàng thành cột. Hàng 1 \\((1,2)\\) → cột 1; hàng 2 \\((3,4)\\) → cột 2.",
+    "quick": "\\(a_{ij}\\to a_{ji}\\): hàng thành cột",
+    "casio": "CASIO fx-580VNX: [MODE][6] → nhập MatA → [AC] → [OPTN][F2](Matrix) → [F6](►) → [F1](Trn) → MatA → [EXE]. Kết quả là Aᵀ. Cỡ đổi chiều: m×n → n×m.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 2,
+    "type": "transpose",
+    "question": "Cho \\(A\\) cỡ \\(2\\times3\\). Cỡ của \\(A^T\\) là",
+    "matrix": null,
+    "options": [
+      "\\(3\\times2\\)",
+      "\\(2\\times3\\)",
+      "\\(2\\times2\\)",
+      "\\(3\\times3\\)"
+    ],
+    "correct": "\\(3\\times2\\)",
+    "solution": "\\(A\\) cỡ \\(m\\times n\\) → \\(A^T\\) cỡ \\(n\\times m\\). Vậy \\(2\\times3 \\to 3\\times2\\).",
+    "quick": "Cỡ bị đảo ngược: \\(m\\times n \\to n\\times m\\)",
+    "casio": "CASIO fx-580VNX: [MODE][6] → nhập MatA → [AC] → [OPTN][F2](Matrix) → [F6](►) → [F1](Trn) → MatA → [EXE]. Kết quả là Aᵀ. Cỡ đổi chiều: m×n → n×m.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 3,
+    "type": "transpose",
+    "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\4&5&6\\end{pmatrix}\\). Phần tử \\((A^T)_{21}\\) là",
+    "matrix": null,
+    "options": [
+      "2",
+      "4",
+      "1",
+      "5"
+    ],
+    "correct": "2",
+    "solution": "\\((A^T)_{ij}=a_{ji}\\). Vậy \\((A^T)_{21}=a_{12}=2\\).",
+    "quick": "\\((A^T)_{21}=a_{12}=2\\)",
+    "casio": "Phần tử hàng 2 cột 1 của A^T = phần tử hàng 1 cột 2 của A = 2",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 4,
+    "type": "trace",
+    "question": "Vết (trace) của ma trận \\(A=\\begin{pmatrix}3&1\\\\2&5\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "8",
+      "15",
+      "6",
+      "2"
+    ],
+    "correct": "8",
+    "solution": "\\(\\text{tr}(A)=a_{11}+a_{22}=3+5=8\\)",
+    "quick": "Tổng đường chéo chính: \\(3+5=8\\)",
+    "casio": "CASIO: Không có phím trace. Đọc các phần tử a₁₁, a₂₂, a₃₃ từ màn hình nhập ma trận rồi cộng tay.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 5,
+    "type": "trace",
+    "question": "Vết của \\(A=\\begin{pmatrix}-3&2&1\\\\0&-1&2\\\\2&2&6\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "2",
+      "-2",
+      "3",
+      "1"
+    ],
+    "correct": "2",
+    "solution": "\\(\\text{tr}(A)=(-3)+(-1)+6=2\\)",
+    "quick": "\\(-3-1+6=2\\)",
+    "casio": "CASIO: Không có phím trace. Đọc các phần tử a₁₁, a₂₂, a₃₃ từ màn hình nhập ma trận rồi cộng tay.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 6,
+    "type": "multiply",
+    "question": "Cho \\(A\\) cỡ \\(3\\times4\\) và \\(B\\) cỡ \\(4\\times3\\). Cỡ của \\(AB\\) là",
+    "matrix": null,
+    "options": [
+      "\\(3\\times3\\)",
+      "\\(4\\times4\\)",
+      "\\(3\\times4\\)",
+      "\\(4\\times3\\)"
+    ],
+    "correct": "\\(3\\times3\\)",
+    "solution": "\\((m\\times n)(n\\times p)=m\\times p\\): \\((3\\times4)(4\\times3)=3\\times3\\)",
+    "quick": "Số giữa triệt tiêu: \\(3\\times\\mathbf{4}\\cdot\\mathbf{4}\\times3=3\\times3\\)",
+    "casio": "Nhân MatA × MatB → kích thước 3×3",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 7,
+    "type": "multiply",
+    "question": "Tính \\(AB\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0&2\\\\3&0\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
+    "solution": "\\(c_{11}=0+2=2\\), \\(c_{12}=1+0=1\\), \\(c_{21}=0+4=4\\), \\(c_{22}=3+0=3\\)",
+    "quick": "Nhân hàng × cột: \\(AB=\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
+    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 8,
+    "type": "multiply",
+    "question": "Tính \\(A^2\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&4\\\\9&16\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&4\\\\6&8\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}4&6\\\\8&10\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
+    "solution": "\\(c_{11}=1+6=7\\), \\(c_{12}=2+8=10\\), \\(c_{21}=3+12=15\\), \\(c_{22}=6+16=22\\)",
+    "quick": "Nhân \\(A\\times A\\) bình thường",
+    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 9,
+    "type": "multiply",
+    "question": "Cho \\(A\\) cỡ \\(2\\times3\\) và \\(B\\) cỡ \\(3\\times2\\). Cỡ của \\(BA\\) là",
+    "matrix": null,
+    "options": [
+      "\\(3\\times3\\)",
+      "\\(2\\times2\\)",
+      "\\(2\\times3\\)",
+      "Không xác định"
+    ],
+    "correct": "\\(3\\times3\\)",
+    "solution": "\\(BA\\): \\(B\\) cỡ \\(3\\times2\\), \\(A\\) cỡ \\(2\\times3\\) → \\(BA\\) cỡ \\(3\\times3\\)",
+    "quick": "\\((3\\times2)(2\\times3)=3\\times3\\)",
+    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 10,
+    "type": "multiply",
+    "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) nhân với \\(B=\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\) cho kết quả là",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}3&0\\\\0&7\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
+    "solution": "\\(I\\cdot B=B\\) — nhân với ma trận đơn vị không thay đổi kết quả",
+    "quick": "\\(IB=B\\) luôn đúng",
+    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 11,
+    "type": "matrix_equation",
+    "question": "Giải phương trình ma trận \\(XA=B\\) biết \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix},\\;B=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(X=BA^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\)",
+      "\\(X=A^{-1}B\\)",
+      "\\(X=AB^{-1}\\)",
+      "\\(X=B\\)"
+    ],
+    "correct": "\\(X=BA^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\)",
+    "solution": "\\(XA=B \\Rightarrow X=BA^{-1}\\).\n\n\\(\\det(A)=4-6=-2\\). \\(A^{-1}=\\dfrac{1}{-2}\\begin{pmatrix}4&-2\\\\-3&1\\end{pmatrix}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\).\n\n\\(X=I\\cdot A^{-1}=A^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\).",
+    "quick": "XA=B → **X=BA⁻¹** (nhân A⁻¹ từ phải). Lưu ý thứ tự: XA→nhân phải; AX→nhân trái.",
+    "casio": "CASIO [MODE][6]: Tính A⁻¹, rồi nhân B×A⁻¹. Kiểm tra: X×A=B ✓.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 12,
+    "type": "matrix_equation",
+    "question": "Giải phương trình ma trận \\(AX=B\\) biết \\(A=\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix},\\;B=\\begin{pmatrix}3&1\\\\1&0\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(X=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\)",
+      "\\(X=AB\\)",
+      "\\(X=BA^{-1}\\)",
+      "\\(X=\\begin{pmatrix}3&0\\\\5&0\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(X=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\)",
+    "solution": "\\(AX=B \\Rightarrow X=A^{-1}B\\).\n\n\\(\\det(A)=6-5=1\\). \\(A^{-1}=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\begin{pmatrix}3&1\\\\1&0\\end{pmatrix}=\\begin{pmatrix}9-1&3-0\\\\-15+2&-5+0\\end{pmatrix}=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\).",
+    "quick": "AX=B → **X=A⁻¹B** (nhân A⁻¹ từ trái). det(A)=1 nên A⁻¹ dễ tính.",
+    "casio": "CASIO: A⁻¹=[3,-1;-5,2]. X=A⁻¹B=[3,-1;-5,2]×[3,1;1,0]=[8,3;-13,-5].",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 13,
+    "type": "matrix_equation",
+    "question": "Tìm ma trận \\(X\\) thỏa mãn \\(X+2A+3B=A^2\\) biết \\(A=\\begin{pmatrix}1&3\\\\0&2\\end{pmatrix},\\;B=\\begin{pmatrix}-2&1\\\\-1&0\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(X=A^2-2A-3B\\)",
+      "\\(X=A^2+2A+3B\\)",
+      "\\(X=A^2\\)",
+      "\\(X=-2A-3B\\)"
+    ],
+    "correct": "\\(X=A^2-2A-3B\\)",
+    "solution": "\\(X=A^2-2A-3B\\).\n\n\\(A^2=\\begin{pmatrix}1&9\\\\0&4\\end{pmatrix}\\), \\(2A=\\begin{pmatrix}2&6\\\\0&4\\end{pmatrix}\\), \\(3B=\\begin{pmatrix}-6&3\\\\-3&0\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}1&9\\\\0&4\\end{pmatrix}-\\begin{pmatrix}2&6\\\\0&4\\end{pmatrix}-\\begin{pmatrix}-6&3\\\\-3&0\\end{pmatrix}=\\begin{pmatrix}5&0\\\\3&0\\end{pmatrix}\\).",
+    "quick": "Chuyển vế: **X=A²-2A-3B**. Tính A²=[1,9;0,4]. Rồi X=[1,9;0,4]-[2,6;0,4]-[-6,3;-3,0]=[5,0;3,0].",
+    "casio": "CASIO [MODE][6]: Tính A²=A×A, rồi X=A²-2A-3B bằng phép tính ma trận.",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 14,
+    "type": "matrix_equation",
+    "question": "Giải phương trình ma trận \\(AX-2B-C=0\\) biết \\(A=\\begin{pmatrix}1&-1\\\\2&3\\end{pmatrix},\\;2B+C=\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(X=A^{-1}(2B+C)\\)",
+      "\\(X=A(2B+C)\\)",
+      "\\(X=(2B+C)A^{-1}\\)",
+      "\\(X=A^{-1}+2B+C\\)"
+    ],
+    "correct": "\\(X=A^{-1}(2B+C)\\)",
+    "solution": "\\(AX=2B+C \\Rightarrow X=A^{-1}(2B+C)\\).\n\n\\(\\det(A)=3+2=5\\). \\(A^{-1}=\\dfrac{1}{5}\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\).\n\n\\(X=\\dfrac{1}{5}\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}=\\dfrac{1}{5}\\begin{pmatrix}9&5\\\\-6&0\\end{pmatrix}=\\begin{pmatrix}1.8&1\\\\-1.2&0\\end{pmatrix}\\).",
+    "quick": "AX=2B+C → **X=A⁻¹(2B+C)**. Tính A⁻¹ rồi nhân với vế phải.",
+    "casio": "CASIO: A⁻¹=(1/5)[3,1;-2,1]. X=A⁻¹×[3,1;0,2]=(1/5)[9,5;-6,0]=[1.8,1;-1.2,0].",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 15,
+    "type": "matrix_power",
+    "question": "Tính \\(A^{10}\\) biết \\(A=\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}\\).",
+    "matrix": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "options": [
+      "\\(\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}20&0\\\\0&30\\end{pmatrix}\\)",
+      "\\(10A\\)",
+      "\\(\\begin{pmatrix}2^{10}+3^{10}&0\\\\0&0\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}\\)",
+    "solution": "Ma trận đường chéo có luỹ thừa rất dễ:\n\n\\(A^n=\\begin{pmatrix}2^n&0\\\\0&3^n\\end{pmatrix}\\)\n\nVì phần tử (1,1)=2 nhân chính nó n lần = \\(2^n\\), tương tự (2,2)=3.\n\n\\(A^{10}=\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}=\\begin{pmatrix}1024&0\\\\0&59049\\end{pmatrix}\\)",
+    "quick": "Ma trận đường chéo: **(diag(a,b))ⁿ = diag(aⁿ,bⁿ)**. Mỗi phần tử đường chéo lũy thừa n.",
+    "casio": "CASIO [MODE][6]: Nhập A, tính A×A×...×A (10 lần) hoặc dùng A^10. Kết quả diag(1024,59049).",
+    "difficulty": 2,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 16,
+    "type": "matrix_equation",
+    "question": "Tìm ma trận \\(X\\) thỏa mãn \\(A^2-X+B=2A\\) biết \\(A=\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix},\\;B=\\begin{pmatrix}4&2\\\\1&-2\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(X=A^2-2A+B\\)",
+      "\\(X=A^2+2A+B\\)",
+      "\\(X=2A-A^2-B\\)",
+      "\\(X=B\\)"
+    ],
+    "correct": "\\(X=A^2-2A+B\\)",
+    "solution": "Chuyển vế: \\(X=A^2-2A+B\\).\n\n\\(A^2=\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix}\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix}=\\begin{pmatrix}9-2&-3+0\\\\6+0&-2+0\\end{pmatrix}=\\begin{pmatrix}7&-3\\\\6&-2\\end{pmatrix}\\).\n\n\\(2A=\\begin{pmatrix}-6&2\\\\-4&0\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}7&-3\\\\6&-2\\end{pmatrix}-\\begin{pmatrix}-6&2\\\\-4&0\\end{pmatrix}+\\begin{pmatrix}4&2\\\\1&-2\\end{pmatrix}=\\begin{pmatrix}17&-3\\\\11&-4\\end{pmatrix}\\).",
+    "quick": "Chuyển vế: **X=A²-2A+B**. Tính A²=[7,-3;6,-2]. Kết quả X=[17,-3;11,-4].",
+    "casio": "CASIO: A²=[7,-3;6,-2], 2A=[-6,2;-4,0], X=A²-2A+B=[7-(-6)+4,-3-2+2;6-(-4)+1,-2-0-2].",
+    "difficulty": 3,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 17,
+    "type": "triangle_identify",
+    "question": "Ma trận nào sau đây là ma trận tam giác trên?\n\\(A=\\begin{pmatrix}1&2&3\\\\0&4&5\\\\0&0&6\\end{pmatrix}\\)",
+    "matrix": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        0,
+        0,
+        6
+      ]
+    ],
+    "options": [
+      "Ma trận tam giác trên",
+      "Ma trận tam giác dưới",
+      "Ma trận đường chéo",
+      "Không có dạng đặc biệt"
+    ],
+    "correct": "Ma trận tam giác trên",
+    "solution": "**Ma trận tam giác trên:** Tất cả phần tử **dưới** đường chéo chính bằng 0.\n\nKiểm tra: \\(a_{21}=0, a_{31}=0, a_{32}=0\\) ✓ → Ma trận **tam giác trên**.\n\n**Phân biệt:**\n- Tam giác trên: các phần tử dưới đường chéo = 0\n- Tam giác dưới: các phần tử trên đường chéo = 0\n- Đường chéo: tất cả phần tử ngoài đường chéo = 0",
+    "quick": "Tam giác **trên** = 0 **dưới** đường chéo. Ở đây a₂₁=a₃₁=a₃₂=0 → **tam giác trên**.",
+    "casio": "CASIO: Nhìn ma trận — dưới đường chéo chính đều = 0 → tam giác trên. Trên đường chéo đều = 0 → tam giác dưới.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 18,
+    "type": "triangle_identify",
+    "question": "Cho ma trận \\(A=\\begin{pmatrix}1&-2&3&5\\\\0&-1&7&8\\\\0&0&9&-3\\\\0&0&0&-3\\end{pmatrix}\\). Ma trận A thuộc dạng nào?",
+    "matrix": [
+      [
+        1,
+        -2,
+        3,
+        5
+      ],
+      [
+        0,
+        -1,
+        7,
+        8
+      ],
+      [
+        0,
+        0,
+        9,
+        -3
+      ],
+      [
+        0,
+        0,
+        0,
+        -3
+      ]
+    ],
+    "options": [
+      "Ma trận tam giác trên",
+      "Ma trận đường chéo",
+      "Ma trận tam giác dưới",
+      "Không có dạng đặc biệt"
+    ],
+    "correct": "Ma trận tam giác trên",
+    "solution": "Kiểm tra các phần tử **dưới** đường chéo: \\(a_{ij}=0\\) với mọi \\(i>j\\).\n\nHàng 2: \\(a_{21}=0\\) ✓\nHàng 3: \\(a_{31}=a_{32}=0\\) ✓\nHàng 4: \\(a_{41}=a_{42}=a_{43}=0\\) ✓\n\n→ Tất cả phần tử dưới đường chéo = 0 → **Ma trận tam giác trên**.",
+    "quick": "Dưới đường chéo đều = 0 → **tam giác trên**. Đây là câu C4 dạng thật đề CA1 2025.",
+    "casio": "CASIO: Quan sát dạng bậc thang → tam giác trên.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 19,
+    "type": "triangle_identify",
+    "question": "Ma trận \\(A=\\begin{pmatrix}5&0&0\\\\2&3&0\\\\1&4&7\\end{pmatrix}\\) thuộc loại nào?",
+    "matrix": [
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        1,
+        4,
+        7
+      ]
+    ],
+    "options": [
+      "Ma trận tam giác dưới",
+      "Ma trận tam giác trên",
+      "Ma trận đường chéo",
+      "Không có dạng đặc biệt"
+    ],
+    "correct": "Ma trận tam giác dưới",
+    "solution": "Các phần tử **trên** đường chéo: \\(a_{12}=0, a_{13}=0, a_{23}=0\\) → tất cả bằng 0.\n\n→ **Ma trận tam giác dưới** (phần tử trên đường chéo chính = 0).",
+    "quick": "Trên đường chéo đều = 0 → **tam giác dưới**.",
+    "casio": "CASIO: a₁₂=a₁₃=a₂₃=0 → tam giác dưới.",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  },
+  {
+    "id": 20,
+    "type": "matrix_size",
+    "question": "Cho ma trận A cỡ \\(3\\times4\\) và ma trận B cỡ \\(4\\times3\\). Ma trận \\(AB\\) có cỡ bằng bao nhiêu?",
+    "matrix": null,
+    "options": [
+      "\\(3\\times3\\)",
+      "\\(4\\times4\\)",
+      "\\(3\\times4\\)",
+      "\\(4\\times3\\)"
+    ],
+    "correct": "\\(3\\times3\\)",
+    "solution": "Quy tắc nhân ma trận: A cỡ \\(m\\times n\\) nhân B cỡ \\(n\\times p\\) → AB cỡ \\(m\\times p\\).\n\nA cỡ \\(3\\times4\\), B cỡ \\(4\\times3\\): cột A = hàng B = 4 (thoả mãn) → AB cỡ \\(3\\times3\\).",
+    "quick": "A(3×4) × B(4×3) → AB cỡ **3×3**. Quy tắc: [m×n]×[n×p]=[m×p].",
+    "casio": "CASIO: Số cột A=số hàng B=4. AB có số hàng=3 (theo A), số cột=3 (theo B).",
+    "difficulty": 1,
+    "topic": "Ma trận & Định thức"
+  }
+]

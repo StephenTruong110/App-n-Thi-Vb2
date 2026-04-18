@@ -12,21 +12,26 @@
 
 /* ── CONFIG ── */
 const EXAM_DIST = [
-  { file:'matran',                n:16 },
-  { file:'he_pt_tham_so',        n:5  },
-  { file:'gioihan_lientuc_khavi', n:8  },
-  { file:'tiem_can',              n:2  },
-  { file:'gian_doan_ham_so',      n:2  },
-  { file:'daoham',                n:7  },
-  { file:'daohamrieng',           n:9  },
-  { file:'chuoiso',               n:9  },
-  { file:'pt_viphan_cap1',        n:4  },
-  { file:'pt_viphan_cap2',        n:4  },
-  { file:'tichphan',              n:4  },
+  { file:'matran_co_ban',             n:6 },
+  { file:'dinh_thuc',                 n:5 },
+  { file:'gia_tri_rieng',             n:4 },
+  { file:'he_pt_tuyen_tinh',          n:5 },
+  { file:'gioi_han',                  n:4 },
+  { file:'lientuc_giandoan_khavi',    n:6 },
+  { file:'tiem_can',                  n:3 },
+  { file:'dao_ham',                   n:7 },
+  { file:'daohamrieng_viphan_cuctri', n:9 },
+  { file:'chuoi_so',                  n:5 },
+  { file:'chuoi_luy_thua',            n:4 },
+  { file:'pt_viphan_cap1',            n:4 },
+  { file:'pt_viphan_cap2',            n:4 },
+  { file:'tichphan_kep',              n:2 },
+  { file:'tichphan_ba',               n:1 },
+  { file:'tichphan_duong_green',      n:1 },
 ];
 const DIFF_RATIO = { easy:0.25, med:0.55, hard:0.20 };
 const EXAM_TOTAL = 70;
-const EXAM_SECS  = 180 * 60;
+const EXAM_SECS  = 100 * 60;
 const LS_KEY     = 'vb2_exam70_v2';
 const WRONG_PAGE = 20;
 

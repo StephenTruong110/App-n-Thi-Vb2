@@ -545,3 +545,35 @@ html.dark .score-hero { background:linear-gradient(135deg, #1e2a5e 0%, #1a3060 5
 .wmb-btn { padding:6px 12px !important; font-size:12px !important; }
 .danger-btn { color:var(--red) !important; border-color:var(--red) !important; }
 .danger-btn:hover { background:rgba(239,68,68,.1) !important; }
+/* ══════════════════════════════════════════════════════════
+   TOAST NOTIFICATION
+══════════════════════════════════════════════════════════ */
+.vb2-toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--text);
+  color: var(--bg);
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .25s, transform .25s;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+}
+.vb2-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── Wrong mode btn active state ── */
+.mode-btn.wrong-mode-btn.active {
+  background: var(--red) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(239,68,68,.3);
+}

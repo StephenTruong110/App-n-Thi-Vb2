@@ -595,42 +595,6 @@
   },
   {
     "id": 34,
-    "type": "application_circuit",
-    "question": "Mạch RLC nối tiếp được mô tả bởi phương trình vi phân cấp 2 nào đối với điện tích \\(q(t)\\)?",
-    "matrix": null,
-    "options": [
-      "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
-      "\\(Lq'' + Cq' + Rq = E(t)\\)",
-      "\\(Rq'' + Lq' + \\frac{1}{C}q = E(t)\\)",
-      "\\(\\frac{1}{C}q'' + Rq' + Lq = E(t)\\)"
-    ],
-    "correct": "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
-    "solution": "Định luật Kirchhoff: \\(L\\frac{d^2q}{dt^2} + R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\).",
-    "quick": "Mạch RLC nối tiếp: \\(Lq'' + Rq' + q/C = E(t)\\)",
-    "casio": "CASIO: Mạch RLC: LQ''+RQ'+Q/C=E(t). Giải PT đặc trưng. Tính r=R/(2L), ω₀=1/√(LC). Phân loại: tắt dần/cộng hưởng.",
-    "difficulty": 3,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 35,
-    "type": "application_circuit",
-    "question": "Trong mạch RLC, nếu \\(R=0\\), phương trình trở thành \\(Lq'' + \\frac{1}{C}q = 0\\). Tần số góc riêng của mạch là?",
-    "matrix": null,
-    "options": [
-      "\\(\\frac{1}{\\sqrt{LC}}\\)",
-      "\\(\\sqrt{LC}\\)",
-      "\\(\\frac{1}{LC}\\)",
-      "\\(\\frac{R}{L}\\)"
-    ],
-    "correct": "\\(\\frac{1}{\\sqrt{LC}}\\)",
-    "solution": "Phương trình \\(q'' + \\frac{1}{LC}q = 0\\) → \\(\\omega = \\frac{1}{\\sqrt{LC}}\\).",
-    "quick": "Tần số cộng hưởng riêng của mạch LC: \\(\\omega_0 = 1/\\sqrt{LC}\\)",
-    "casio": "CASIO: Mạch RLC: LQ''+RQ'+Q/C=E(t). Giải PT đặc trưng. Tính r=R/(2L), ω₀=1/√(LC). Phân loại: tắt dần/cộng hưởng.",
-    "difficulty": 3,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 36,
     "type": "higher_order_reduction",
     "question": "Để giảm cấp phương trình \\(y'' = f(y, y')\\) (khuyết x), ta đặt?",
     "matrix": null,
@@ -648,7 +612,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 37,
+    "id": 35,
     "type": "higher_order_reduction",
     "question": "Giải \\(y'' = 2y(y')^3\\) bằng cách đặt \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\). Phương trình trở thành?",
     "matrix": null,
@@ -666,7 +630,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 38,
+    "id": 36,
     "type": "wronskian",
     "question": "Định thức Wronski (Wronskian) của hai hàm \\(y_1, y_2\\) được định nghĩa là?",
     "matrix": null,
@@ -684,7 +648,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 39,
+    "id": 37,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1 = e^{x}, y_2 = e^{2x}\\) là?",
     "matrix": null,
@@ -702,7 +666,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 40,
+    "id": 38,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1 = x, y_2 = x^2\\) là?",
     "matrix": null,
@@ -720,7 +684,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 41,
+    "id": 39,
     "type": "nonhomogeneous_superposition",
     "question": "Nguyên lý chồng chất (superposition) cho phương trình vi phân tuyến tính không thuần nhất phát biểu:",
     "matrix": null,
@@ -738,7 +702,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 42,
+    "id": 40,
     "type": "nonhomogeneous_superposition",
     "question": "Cho \\(y'' - y = e^{x} + \\sin x\\). Nếu \\(y_{p1} = \\frac{x}{2}e^{x}\\) là nghiệm riêng ứng với \\(e^{x}\\) và \\(y_{p2} = -\\frac{1}{2}\\sin x\\) ứng với \\(\\sin x\\), thì nghiệm riêng của phương trình đã cho là?",
     "matrix": null,
@@ -756,7 +720,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 43,
+    "id": 41,
     "type": "cauchy_euler_nonhomogeneous",
     "question": "Nghiệm riêng của \\(x^2y'' - 2xy' + 2y = x\\ln x\\) có thể tìm bằng phương pháp?",
     "matrix": null,
@@ -774,7 +738,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 44,
+    "id": 42,
     "type": "constant_coeff_quick",
     "question": "Nghiệm tổng quát của \\(y'' - 2y' - 3y = 0\\) là?",
     "matrix": null,
@@ -792,7 +756,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 45,
+    "id": 43,
     "type": "constant_coeff_quick",
     "question": "Nghiệm tổng quát của \\(y'' + 2y' + 2y = 0\\) là?",
     "matrix": null,
@@ -810,7 +774,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 46,
+    "id": 44,
     "type": "constant_coeff_quick",
     "question": "Nghiệm tổng quát của \\(y'' + 4y' + 4y = 0\\) là?",
     "matrix": null,
@@ -828,7 +792,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 47,
+    "id": 45,
     "type": "reducible_second_order",
     "question": "Phương trình \\(y'' + (y')^2 = 0\\) có thể giảm cấp bằng cách đặt?",
     "matrix": null,
@@ -846,7 +810,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 48,
+    "id": 46,
     "type": "cauchy_euler",
     "question": "Phương trình Cauchy–Euler \\(x^2y'' + xy' - y = 0\\) có nghiệm tổng quát là?",
     "matrix": null,
@@ -864,7 +828,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 49,
+    "id": 47,
     "type": "initial_value",
     "question": "Giải \\(y'' - y = 0\\), \\(y(0)=1, y'(0)=1\\). Nghiệm là?",
     "matrix": null,
@@ -882,7 +846,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 50,
+    "id": 48,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm riêng của \\(y'' - 2y' + y = e^{x}\\) bằng phương pháp hệ số bất định là?",
     "matrix": null,
@@ -900,7 +864,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 51,
+    "id": 49,
     "type": "identify_roots",
     "question": "PT đặc trưng \\(k^2-5k+6=0\\) có nghiệm là?",
     "matrix": null,
@@ -918,7 +882,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 52,
+    "id": 50,
     "type": "identify_roots",
     "question": "PT đặc trưng \\(k^2+4=0\\) có nghiệm là?",
     "matrix": null,
@@ -936,7 +900,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 53,
+    "id": 51,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-5y'+6y=0\\) là?",
     "matrix": null,
@@ -954,7 +918,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 54,
+    "id": 52,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-2y'+y=0\\) là?",
     "matrix": null,
@@ -972,7 +936,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 55,
+    "id": 53,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''+4y=0\\) là?",
     "matrix": null,
@@ -990,7 +954,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 56,
+    "id": 54,
     "type": "undetermined_coefficients_poly",
     "question": "Dạng nghiệm riêng của \\(y''+y'+y=3x^2+1\\) là?",
     "matrix": null,
@@ -1008,7 +972,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 57,
+    "id": 55,
     "type": "undetermined_coefficients_poly",
     "question": "Nghiệm riêng của \\(y''-y=2\\) là?",
     "matrix": null,
@@ -1026,7 +990,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 58,
+    "id": 56,
     "type": "undetermined_coefficients_exp",
     "question": "Dạng nghiệm riêng của \\(y''-3y'+2y=e^{3x}\\) là?",
     "matrix": null,
@@ -1044,7 +1008,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 59,
+    "id": 57,
     "type": "undetermined_coefficients_exp",
     "question": "Nghiệm riêng của \\(y''-3y'+2y=e^x\\) là?",
     "matrix": null,
@@ -1062,7 +1026,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 60,
+    "id": 58,
     "type": "undetermined_coefficients_trig",
     "question": "Dạng nghiệm riêng của \\(y''+y=\\sin x\\) là?",
     "matrix": null,
@@ -1080,7 +1044,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 61,
+    "id": 59,
     "type": "undetermined_coefficients_trig",
     "question": "Dạng nghiệm riêng của \\(y''+4y=\\cos3x\\) là?",
     "matrix": null,
@@ -1098,7 +1062,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 62,
+    "id": 60,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-5y'+6y=e^{3x}\\) là?",
     "matrix": null,
@@ -1116,7 +1080,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 63,
+    "id": 61,
     "type": "initial_value",
     "question": "Nghiệm của \\(y''-y=0\\) thỏa \\(y(0)=2,\\;y'(0)=0\\) là?",
     "matrix": null,
@@ -1134,7 +1098,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 64,
+    "id": 62,
     "type": "boundary_value",
     "question": "Nghiệm của \\(y''+y=0,\\;y(0)=0,\\;y(\\pi/2)=1\\) là?",
     "matrix": null,
@@ -1152,7 +1116,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 65,
+    "id": 63,
     "type": "reducible_second_order",
     "question": "Giải \\(y''=2x\\) bằng tích phân trực tiếp.",
     "matrix": null,
@@ -1170,7 +1134,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 66,
+    "id": 64,
     "type": "cauchy_euler",
     "question": "PT Euler-Cauchy \\(x^2y''-3xy'+4y=0\\) có PT đặc trưng nào?",
     "matrix": null,
@@ -1188,7 +1152,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 67,
+    "id": 65,
     "type": "cauchy_euler",
     "question": "Nghiệm tổng quát của \\(x^2y''-3xy'+4y=0\\) là?",
     "matrix": null,
@@ -1206,7 +1170,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 68,
+    "id": 66,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1=e^x\\) và \\(y_2=e^{-x}\\) là?",
     "matrix": null,
@@ -1224,7 +1188,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 69,
+    "id": 67,
     "type": "application_oscillation",
     "question": "Con lắc đơn nhỏ dao động tự do: \\(y''+\\omega^2y=0\\). Tần số góc \\(\\omega=3\\). Nghiệm tổng quát là?",
     "matrix": null,
@@ -1242,7 +1206,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 70,
+    "id": 68,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm riêng của \\(y''+4y=2\\cos2x\\) là?",
     "matrix": null,
@@ -1260,7 +1224,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 71,
+    "id": 69,
     "type": "identify_roots",
     "question": "PT đặc trưng \\(k^2+k-6=0\\) có nghiệm là?",
     "matrix": null,
@@ -1278,7 +1242,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 72,
+    "id": 70,
     "type": "identify_roots",
     "question": "PT đặc trưng \\(k^2-4=0\\) có nghiệm là?",
     "matrix": null,
@@ -1296,7 +1260,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 73,
+    "id": 71,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-y=0\\) là?",
     "matrix": null,
@@ -1314,7 +1278,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 74,
+    "id": 72,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''+9y=0\\) là?",
     "matrix": null,
@@ -1332,7 +1296,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 75,
+    "id": 73,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-2y'+y=0\\) là?",
     "matrix": null,
@@ -1350,7 +1314,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 76,
+    "id": 74,
     "type": "identify_roots",
     "question": "Cho \\(y''+2y'+5y=0\\). Phương trình đặc trưng có nghiệm là?",
     "matrix": null,
@@ -1368,7 +1332,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 77,
+    "id": 75,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm TQ của \\(y''+4y'+4y=0\\) là?",
     "matrix": null,
@@ -1386,7 +1350,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 78,
+    "id": 76,
     "type": "identify_roots",
     "question": "Ba loại nghiệm của PT đặc trưng cấp 2 và dạng nghiệm tương ứng?",
     "matrix": null,
@@ -1404,7 +1368,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 79,
+    "id": 77,
     "type": "reducible_second_order",
     "question": "Giải \\(y''=6x\\) bằng tích phân trực tiếp.",
     "matrix": null,
@@ -1422,7 +1386,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 80,
+    "id": 78,
     "type": "identify_roots",
     "question": "PT đặc trưng của \\(y''-5y'+6y=0\\) là?",
     "matrix": null,
@@ -1440,7 +1404,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 81,
+    "id": 79,
     "type": "initial_value",
     "question": "Nghiệm của \\(y''-y=0\\) thỏa \\(y(0)=1,\\;y'(0)=1\\) là?",
     "matrix": null,
@@ -1458,7 +1422,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 82,
+    "id": 80,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm TQ của \\(y''-2y'-3y=0\\) là?",
     "matrix": null,

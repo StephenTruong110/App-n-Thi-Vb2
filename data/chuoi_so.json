@@ -523,150 +523,6 @@
   },
   {
     "id": 30,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của chuỗi lũy thừa \\(\\sum_{n=0}^{\\infty} x^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=1\\)",
-      "\\(R=0\\)",
-      "\\(R=+\\infty\\)",
-      "\\(R=2\\)"
-    ],
-    "correct": "\\(R=1\\)",
-    "solution": "Dùng D'Alembert: \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=1\\). Hoặc: \\(a_n=1\\) → \\(R=1/\\limsup\\sqrt[n]{|a_n|}=1/1=1\\).",
-    "quick": "\\(R=\\lim|a_n/a_{n+1}|=1/1=1\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 31,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=1\\)",
-      "\\(R=0\\)",
-      "\\(R=+\\infty\\)",
-      "\\(R=n\\)"
-    ],
-    "correct": "\\(R=1\\)",
-    "solution": "\\(a_n=1/n\\). \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{1/n}{1/(n+1)}=\\lim\\dfrac{n+1}{n}=1\\).",
-    "quick": "\\(R=\\lim(1/n)/(1/(n+1))=\\lim(n+1)/n=1\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 32,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=+\\infty\\)",
-      "\\(R=1\\)",
-      "\\(R=0\\)",
-      "\\(R=e\\)"
-    ],
-    "correct": "\\(R=+\\infty\\)",
-    "solution": "\\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{1/n!}{1/(n+1)!}=\\lim(n+1)=+\\infty\\).",
-    "quick": "\\(R=\\lim(n+1)=+\\infty\\) → hội tụ với mọi \\(x\\in(-\\infty,+\\infty)\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 33,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty} n!\\cdot x^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=0\\)",
-      "\\(R=1\\)",
-      "\\(R=+\\infty\\)",
-      "\\(R=e\\)"
-    ],
-    "correct": "\\(R=0\\)",
-    "solution": "\\(R=\\lim\\left|\\dfrac{n!}{(n+1)!}\\right|=\\lim\\dfrac{1}{n+1}=0\\).",
-    "quick": "\\(R=\\lim1/(n+1)=0\\) → chỉ hội tụ tại \\(x=0\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 34,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{n+4}{n!}(x+4)^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=+\\infty\\)",
-      "\\(R=1\\)",
-      "\\(R=4\\)",
-      "\\(R=0\\)"
-    ],
-    "correct": "\\(R=+\\infty\\)",
-    "solution": "\\(a_n=(n+4)/n!\\). \\(R=\\lim\\dfrac{a_n}{a_{n+1}}=\\lim\\dfrac{(n+4)/n!}{(n+5)/(n+1)!}=\\lim\\dfrac{(n+4)(n+1)}{n+5}=+\\infty\\).",
-    "quick": "Có \\(n!\\) ở mẫu → \\(R=+\\infty\\) (thường gặp với chuỗi có giai thừa)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 35,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{n+4}{n!}x^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\((-\\infty,+\\infty)\\)",
-      "\\((-1,1)\\)",
-      "\\(\\{0\\}\\)",
-      "\\([-1,1]\\)"
-    ],
-    "correct": "\\((-\\infty,+\\infty)\\)",
-    "solution": "\\(R=+\\infty\\) → hội tụ với mọi \\(x\\in\\mathbb{R}=(-\\infty,+\\infty)\\).",
-    "quick": "\\(R=+\\infty\\) → miền hội tụ là toàn bộ \\(\\mathbb{R}\\)",
-    "casio": "CASIO: Sau khi có R, kiểm tra 2 đầu: thay x=x₀-R và x=x₀+R vào chuỗi, xét hội tụ/phân kỳ (thường dùng Leibniz hoặc chuỗi p).",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 36,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{n+4}{n^2+1}x^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\([-1,1)\\)",
-      "\\((-1,1)\\)",
-      "\\([-1,1]\\)",
-      "\\((-1,1]\\)"
-    ],
-    "correct": "\\([-1,1)\\)",
-    "solution": "\\(a_n=(n+4)/(n^2+1)\\). \\(R=\\lim|a_n/a_{n+1}|=1\\). Tại \\(x=1\\): \\(\\sum(n+4)/(n^2+1)\\) phân kỳ (∼1/n). Tại \\(x=-1\\): chuỗi đan dấu Leibniz → hội tụ. Miền: \\([-1,1)\\).",
-    "quick": "\\(R=1\\). Kiểm tra biên: \\(x=1\\) phân kỳ, \\(x=-1\\) hội tụ (Leibniz)",
-    "casio": "R=1. x=1: Σ(n+4)/(n²+1)~Σ1/n phân kỳ. x=-1: Leibniz → hội tụ",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 37,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n^2}\\) là",
-    "matrix": null,
-    "options": [
-      "\\([-1,1]\\)",
-      "\\((-1,1)\\)",
-      "\\([-1,1)\\)",
-      "\\((-1,1]\\)"
-    ],
-    "correct": "\\([-1,1]\\)",
-    "solution": "\\(R=1\\). Tại \\(x=\\pm1\\): \\(\\sum(\\pm1)^n/n^2\\), \\(|u_n|=1/n^2\\) → hội tụ tuyệt đối. Miền: \\([-1,1]\\).",
-    "quick": "\\(R=1\\). Tại \\(x=\\pm1\\): \\(\\sum1/n^2\\) hội tụ tuyệt đối → miền đóng \\([-1,1]\\)",
-    "casio": "CASIO: Sau khi có R, kiểm tra 2 đầu: thay x=x₀-R và x=x₀+R vào chuỗi, xét hội tụ/phân kỳ (thường dùng Leibniz hoặc chuỗi p).",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 38,
     "type": "alternating_series",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{1}{n^2}\\) là",
     "matrix": null,
@@ -684,7 +540,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 39,
+    "id": 31,
     "type": "alternating_series",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{1}{\\sqrt{n}}\\) là",
     "matrix": null,
@@ -702,7 +558,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 40,
+    "id": 32,
     "type": "alternating_series",
     "question": "Điều kiện Leibniz cho chuỗi đan dấu \\(\\sum(-1)^{n-1}u_n\\) (\\(u_n>0\\)) là",
     "matrix": null,
@@ -720,7 +576,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 41,
+    "id": 33,
     "type": "alternating_series",
     "question": "Chuỗi đan dấu \\(\\sum_{n=3}^{\\infty}(-1)^n\\dfrac{3n+1}{n(n-2)}\\) là",
     "matrix": null,
@@ -738,25 +594,25 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 42,
+    "id": 34,
     "type": "alternating_series",
     "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}(-1)^n\\dfrac{1}{n+(-1)^n}\\) là",
     "matrix": null,
     "options": [
+      "Đan dấu và bán hội tụ",
       "Không đan dấu và bán hội tụ",
       "Đan dấu và hội tụ tuyệt đối",
-      "Phân kỳ",
-      "Đan dấu và phân kỳ"
+      "Phân kỳ"
     ],
-    "correct": "Không đan dấu và bán hội tụ",
-    "solution": "\\((-1)^n/(n+(-1)^n)\\): dấu thay đổi nhưng không theo quy luật đan dấu chuẩn. Tuy nhiên \\(u_n\\to0\\) và có thể kiểm tra hội tụ bằng phương pháp khác. Chuỗi hội tụ bán hội tụ.",
-    "quick": "Chuỗi không đan dấu chuẩn nhưng vẫn hội tụ bán hội tụ",
+    "correct": "Đan dấu và bán hội tụ",
+    "solution": "Xét dãy: n=2→u₂=1/3>0; n=3→u₃=-1/2<0; n=4→1/5>0... → **đan dấu** ✓\n\n**Hội tụ tuyệt đối?** \\(|u_n|=\\dfrac{1}{n\\pm1}\\sim\\dfrac{1}{n}\\) → chuỗi p=1 → **phân kỳ** → không tuyệt đối.\n\n**Leibniz:** \\(a_n=1/(n+(-1)^n)\\to0\\) và giảm dần → hội tụ.\n\n→ **Đan dấu và bán hội tụ** (hội tụ có điều kiện).",
+    "quick": "u_n alternates sign → đan dấu. |u_n|~1/n → không tuyệt đối → **bán hội tụ**.",
     "casio": "CASIO: Kiểm tra hội tụ tuyệt đối: tính Σ|u_n| có hội tụ không. Nếu hội tụ tuyệt đối: Σu_n hội tụ. Nếu không: xét Leibniz.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
   {
-    "id": 43,
+    "id": 35,
     "type": "series_sum",
     "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{4n^2-1}\\) là",
     "matrix": null,
@@ -774,7 +630,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 44,
+    "id": 36,
     "type": "series_sum",
     "question": "Tổng của chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{3^n}\\) là",
     "matrix": null,
@@ -792,7 +648,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 45,
+    "id": 37,
     "type": "series_sum",
     "question": "Tổng của chuỗi hình học \\(\\sum_{n=0}^{\\infty}\\dfrac{2}{3^n}\\) là",
     "matrix": null,
@@ -810,7 +666,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 46,
+    "id": 38,
     "type": "series_sum",
     "question": "Tổng \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n^2-1}\\) là",
     "matrix": null,
@@ -828,7 +684,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 47,
+    "id": 39,
     "type": "dalembert",
     "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^n}{n!}\\). Theo D'Alembert, \\(D=\\)?",
     "matrix": null,
@@ -846,7 +702,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 48,
+    "id": 40,
     "type": "dalembert",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{(2n)!}\\). Tính \\(D=\\lim u_{n+1}/u_n\\).",
     "matrix": null,
@@ -864,7 +720,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 49,
+    "id": 41,
     "type": "dalembert",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{4^n}{n^2}\\) theo D'Alembert",
     "matrix": null,
@@ -882,7 +738,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 50,
+    "id": 42,
     "type": "cauchy",
     "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{3n}{4n+1}\\right)^n\\). Tiêu chuẩn Cauchy cho \\(C=\\)?",
     "matrix": null,
@@ -900,7 +756,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 51,
+    "id": 43,
     "type": "cauchy",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{n+1}{2n}\\right)^n\\). Cauchy: \\(C=\\)?",
     "matrix": null,
@@ -918,7 +774,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 52,
+    "id": 44,
     "type": "cauchy",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{2n}{n+1}\\right)^n\\). Cauchy: \\(C=\\)?",
     "matrix": null,
@@ -936,115 +792,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 53,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n}x^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=1\\)",
-      "\\(R=0\\)",
-      "\\(R=+\\infty\\)",
-      "\\(R=-1\\)"
-    ],
-    "correct": "\\(R=1\\)",
-    "solution": "\\(a_n=(-1)^n/n\\). \\(|a_n|=1/n\\). \\(R=1/\\limsup\\sqrt[n]{1/n}=1/1=1\\).",
-    "quick": "\\(R=\\lim|a_n/a_{n+1}|=\\lim(1/n)/(1/(n+1))=(n+1)/n\\to1\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 54,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{2^n}{n+1}x^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=\\dfrac{1}{2}\\)",
-      "\\(R=2\\)",
-      "\\(R=1\\)",
-      "\\(R=+\\infty\\)"
-    ],
-    "correct": "\\(R=\\dfrac{1}{2}\\)",
-    "solution": "\\(a_n=2^n/(n+1)\\). \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{2^n/(n+1)}{2^{n+1}/(n+2)}=\\lim\\dfrac{n+2}{2(n+1)}=\\dfrac{1}{2}\\).",
-    "quick": "\\(R=\\lim(n+2)/(2(n+1))=1/2\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 55,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n\\cdot 3^n}x^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=3\\)",
-      "\\(R=\\dfrac{1}{3}\\)",
-      "\\(R=1\\)",
-      "\\(R=9\\)"
-    ],
-    "correct": "\\(R=3\\)",
-    "solution": "\\(a_n=1/(n\\cdot3^n)\\). \\(R=\\lim\\left|\\dfrac{a_n}{a_{n+1}}\\right|=\\lim\\dfrac{(n+1)3^{n+1}}{n\\cdot3^n}\\cdot\\dfrac{1}{1}=\\lim\\dfrac{3(n+1)}{n}=3\\).",
-    "quick": "\\(R=3\\lim(n+1)/n=3\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 56,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n\\cdot2^n}\\) là",
-    "matrix": null,
-    "options": [
-      "\\([-2,2)\\)",
-      "\\((-2,2)\\)",
-      "\\([-2,2]\\)",
-      "\\((-2,2]\\)"
-    ],
-    "correct": "\\([-2,2)\\)",
-    "solution": "\\(R=2\\). Tại \\(x=2\\): \\(\\sum1/n\\) phân kỳ. Tại \\(x=-2\\): \\(\\sum(-1)^n/n\\) hội tụ (Leibniz). Miền: \\([-2,2)\\).",
-    "quick": "\\(R=2\\). Biên: \\(x=2\\) phân kỳ (\\(\\sum1/n\\)); \\(x=-2\\) hội tụ (Leibniz)",
-    "casio": "R=2. x=2: Σ1/n phân kỳ. x=-2: Leibniz → hội tụ → [-2,2)",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 57,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của \\(\\sum_{n=0}^{\\infty}(x-1)^n\\) là",
-    "matrix": null,
-    "options": [
-      "\\((0,2)\\)",
-      "\\([0,2]\\)",
-      "\\((0,2]\\)",
-      "\\([0,2)\\)"
-    ],
-    "correct": "\\((0,2)\\)",
-    "solution": "Chuỗi hình học với \\(q=x-1\\). Hội tụ khi \\(|x-1|<1\\), tức \\(0<x<2\\). Tại biên phân kỳ.",
-    "quick": "\\(|x-1|<1\\Leftrightarrow 0<x<2\\). Tại biên: \\(|q|=1\\) → phân kỳ",
-    "casio": "CASIO: Sau khi có R, kiểm tra 2 đầu: thay x=x₀-R và x=x₀+R vào chuỗi, xét hội tụ/phân kỳ (thường dùng Leibniz hoặc chuỗi p).",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 58,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(x+2)^n}{n^2\\cdot3^n}\\) là",
-    "matrix": null,
-    "options": [
-      "\\([-5,1]\\)",
-      "\\((-5,1)\\)",
-      "\\([-5,1)\\)",
-      "\\((-5,1]\\)"
-    ],
-    "correct": "\\([-5,1]\\)",
-    "solution": "\\(R=3\\). Tâm \\(x_0=-2\\). Hội tụ khi \\(|x+2|<3\\), tức \\(-5<x<1\\). Tại \\(x=\\pm\\): \\(\\sum1/n^2\\) hội tụ tuyệt đối. Miền: \\([-5,1]\\).",
-    "quick": "\\(R=3\\), tâm \\(-2\\): \\(|x+2|<3\\). Hai đầu: \\(\\sum1/n^2\\) hội tụ → \\([-5,1]\\)",
-    "casio": "R=3, tâm=-2. Hai biên: Σ1/n² hội tụ → đóng hai đầu",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 59,
+    "id": 45,
     "type": "convergence_test",
     "question": "Tiêu chuẩn tích phân Cauchy: nếu \\(f(x)\\geq0\\) giảm liên tục trên \\([1,\\infty)\\) thì \\(\\sum f(n)\\) và \\(\\int_1^{\\infty}f(x)\\,dx\\)",
     "matrix": null,
@@ -1062,7 +810,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 60,
+    "id": 46,
     "type": "convergence_test",
     "question": "Dùng tiêu chuẩn tích phân, chuỗi \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n\\ln n}\\) thì",
     "matrix": null,
@@ -1080,7 +828,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 61,
+    "id": 47,
     "type": "convergence_test",
     "question": "Dùng tiêu chuẩn tích phân, chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+1}\\) thì",
     "matrix": null,
@@ -1098,7 +846,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 62,
+    "id": 48,
     "type": "series_sum",
     "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{3}{n(n+3)}\\) là",
     "matrix": null,
@@ -1116,7 +864,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 63,
+    "id": 49,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\sin\\dfrac{1}{n}\\) thì",
     "matrix": null,
@@ -1134,7 +882,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 64,
+    "id": 50,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\ln\\left(1+\\dfrac{1}{n}\\right)\\) thì",
     "matrix": null,
@@ -1152,7 +900,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 65,
+    "id": 51,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(1-\\cos\\dfrac{1}{n}\\right)\\) thì",
     "matrix": null,
@@ -1170,7 +918,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 66,
+    "id": 52,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n n}{n^2+1}\\) là",
     "matrix": null,
@@ -1188,7 +936,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 67,
+    "id": 53,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n^{3/2}}\\) là",
     "matrix": null,
@@ -1206,7 +954,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 68,
+    "id": 54,
     "type": "convergence_test",
     "question": "Hội tụ tuyệt đối có nghĩa là",
     "matrix": null,
@@ -1224,7 +972,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 69,
+    "id": 55,
     "type": "convergence_test",
     "question": "Bán hội tụ (hội tụ có điều kiện) nghĩa là",
     "matrix": null,
@@ -1242,7 +990,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 70,
+    "id": 56,
     "type": "convergence_test",
     "question": "Hội tụ tuyệt đối kéo theo",
     "matrix": null,
@@ -1260,115 +1008,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 71,
-    "type": "power_series_sum",
-    "question": "Tổng của chuỗi lũy thừa \\(\\sum_{n=0}^{\\infty}x^n=\\dfrac{1}{1-x}\\) áp dụng khi",
-    "matrix": null,
-    "options": [
-      "\\(|x|<1\\)",
-      "\\(x<1\\)",
-      "\\(|x|\\leq1\\)",
-      "Mọi \\(x\\)"
-    ],
-    "correct": "\\(|x|<1\\)",
-    "solution": "Chuỗi hình học: \\(\\sum_{n=0}^{\\infty}x^n=\\dfrac{1}{1-x}\\) với \\(|x|<1\\).",
-    "quick": "\\(\\sum x^n=1/(1-x)\\) khi \\(|x|<1\\). Đây là công thức cơ bản nhất!",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 72,
-    "type": "power_series_sum",
-    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}=e^x\\) áp dụng với",
-    "matrix": null,
-    "options": [
-      "Mọi \\(x\\in\\mathbb{R}\\)",
-      "\\(|x|<1\\)",
-      "\\(x>0\\)",
-      "\\(x\\in[-1,1]\\)"
-    ],
-    "correct": "Mọi \\(x\\in\\mathbb{R}\\)",
-    "solution": "Chuỗi Taylor của \\(e^x\\) hội tụ với mọi \\(x\\in\\mathbb{R}\\) (bán kính \\(R=+\\infty\\)).",
-    "quick": "\\(e^x=\\sum x^n/n!\\) với mọi \\(x\\). Công thức cực kỳ quan trọng!",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 73,
-    "type": "power_series_sum",
-    "question": "Chuỗi Taylor: \\(\\sin x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{(2n+1)!}\\) áp dụng với",
-    "matrix": null,
-    "options": [
-      "Mọi \\(x\\in\\mathbb{R}\\)",
-      "\\(|x|<1\\)",
-      "\\(|x|\\leq\\pi\\)",
-      "\\(x>0\\)"
-    ],
-    "correct": "Mọi \\(x\\in\\mathbb{R}\\)",
-    "solution": "Chuỗi Taylor của \\(\\sin x\\) hội tụ với mọi \\(x\\in\\mathbb{R}\\).",
-    "quick": "\\(\\sin x=x-x^3/3!+x^5/5!-\\cdots\\) với mọi \\(x\\)",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 74,
-    "type": "power_series_sum",
-    "question": "Chuỗi Taylor: \\(\\cos x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n}}{(2n)!}\\). Tính \\(\\cos 0\\).",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(\\pi\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "Tại \\(x=0\\): \\(\\cos0=\\sum\\dfrac{(-1)^n\\cdot0^{2n}}{(2n)!}=1+0+0+\\cdots=1\\). (Số hạng đầu \\(n=0\\): \\(0^0=1\\).)",
-    "quick": "\\(x=0\\): chỉ số hạng \\(n=0\\) còn lại: \\((-1)^0\\cdot0^0/0!=1\\)",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 75,
-    "type": "power_series_sum",
-    "question": "Khai triển \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\) áp dụng với",
-    "matrix": null,
-    "options": [
-      "\\(-1<x\\leq1\\)",
-      "\\(-1<x<1\\)",
-      "\\(|x|<1\\)",
-      "Mọi \\(x\\)"
-    ],
-    "correct": "\\(-1<x\\leq1\\)",
-    "solution": "\\(R=1\\). Tại \\(x=1\\): chuỗi \\(\\sum(-1)^{n-1}/n\\) hội tụ (Leibniz). Tại \\(x=-1\\): \\(-\\sum1/n\\) phân kỳ. Miền: \\((-1,1]\\).",
-    "quick": "\\(-1<x\\leq1\\). Tại \\(x=1\\): \\(\\ln2=1-1/2+1/3-\\cdots\\)",
-    "casio": "R=1. x=1: hội tụ (Leibniz). x=-1: phân kỳ → (-1,1]",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 76,
-    "type": "power_series_sum",
-    "question": "Tổng của \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{2n+1}=1-\\dfrac{1}{3}+\\dfrac{1}{5}-\\cdots\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{\\pi}{4}\\)",
-      "\\(1\\)",
-      "\\(\\ln 2\\)",
-      "\\(\\dfrac{\\pi}{2}\\)"
-    ],
-    "correct": "\\(\\dfrac{\\pi}{4}\\)",
-    "solution": "Từ khai triển \\(\\arctan x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\), tại \\(x=1\\): \\(\\arctan 1=\\pi/4\\).",
-    "quick": "\\(\\arctan(1)=\\pi/4=1-1/3+1/5-\\cdots\\) (công thức Leibniz)",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 77,
+    "id": 57,
     "type": "series_sum",
     "question": "Tổng của \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n\\cdot2^n}\\) là",
     "matrix": null,
@@ -1386,7 +1026,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 78,
+    "id": 58,
     "type": "dalembert",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-2)^n}{n^2}\\). Theo D'Alembert, \\(D=\\)?",
     "matrix": null,
@@ -1404,7 +1044,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 79,
+    "id": 59,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n(n+1)(n+2)}\\) thì",
     "matrix": null,
@@ -1422,7 +1062,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 80,
+    "id": 60,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\sqrt{n+1}-\\sqrt{n}}{\\sqrt{n}}\\) thì",
     "matrix": null,
@@ -1440,7 +1080,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 81,
+    "id": 61,
     "type": "series_sum",
     "question": "Giá trị của \\(e^{-1}=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{n!}\\) xấp xỉ bằng",
     "matrix": null,
@@ -1458,43 +1098,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 82,
-    "type": "power_series_sum",
-    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{x^n}{n}\\) hội tụ tới",
-    "matrix": null,
-    "options": [
-      "\\(\\ln(1+x)\\)",
-      "\\(\\ln(1-x)\\)",
-      "\\(e^x-1\\)",
-      "\\(\\arctan x\\)"
-    ],
-    "correct": "\\(\\ln(1+x)\\)",
-    "solution": "Đây chính là khai triển Taylor: \\(\\ln(1+x)=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\cdots=\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{x^n}{n}\\).",
-    "quick": "\\(\\ln(1+x)=\\sum\\dfrac{(-1)^{n-1}x^n}{n}\\) — công thức cần nhớ!",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 83,
-    "type": "power_series_sum",
-    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\) hội tụ tới",
-    "matrix": null,
-    "options": [
-      "\\(\\arctan x\\)",
-      "\\(\\sin x\\)",
-      "\\(\\cos x\\)",
-      "\\(\\ln(1+x)\\)"
-    ],
-    "correct": "\\(\\arctan x\\)",
-    "solution": "\\(\\arctan x=x-\\dfrac{x^3}{3}+\\dfrac{x^5}{5}-\\cdots=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\), \\(|x|\\leq1\\).",
-    "quick": "\\(\\arctan x=\\sum\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\) — khai triển Taylor của arctg",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 84,
+    "id": 62,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^{10}}{2^n}\\) thì",
     "matrix": null,
@@ -1512,7 +1116,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 85,
+    "id": 63,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{100^n}\\) thì",
     "matrix": null,
@@ -1530,7 +1134,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 86,
+    "id": 64,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{\\sqrt{n^2-1}}\\) thì",
     "matrix": null,
@@ -1548,7 +1152,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 87,
+    "id": 65,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+n+1}\\) thì",
     "matrix": null,
@@ -1566,7 +1170,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 88,
+    "id": 66,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2^n+1}{3^n-1}\\) thì",
     "matrix": null,
@@ -1584,7 +1188,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 89,
+    "id": 67,
     "type": "series_sum",
     "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{1}{2^n}+\\dfrac{1}{3^n}\\) có tổng là",
     "matrix": null,
@@ -1602,25 +1206,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 90,
-    "type": "power_series_radius",
-    "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(2x)^n}{3^n}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(R=\\dfrac{3}{2}\\)",
-      "\\(R=3\\)",
-      "\\(R=\\dfrac{1}{2}\\)",
-      "\\(R=6\\)"
-    ],
-    "correct": "\\(R=\\dfrac{3}{2}\\)",
-    "solution": "\\(\\sum\\left(\\dfrac{2x}{3}\\right)^n\\): chuỗi hình học với \\(q=2x/3\\). Hội tụ khi \\(|2x/3|<1\\Leftrightarrow|x|<3/2\\). \\(R=3/2\\).",
-    "quick": "\\(|q|=|2x/3|<1\\Rightarrow|x|<3/2\\Rightarrow R=3/2\\)",
-    "casio": "CASIO: Bán kính hội tụ R = lim|a_n/a_{n+1}| hoặc R = 1/limⁿ√|a_n|. Tính tỉ số a_n/a_{n+1} tại n lớn bằng CALC.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 91,
+    "id": 68,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{3n+1}{n(n-2)}\\) (bắt đầu từ \\(n=3\\)) là",
     "matrix": null,
@@ -1638,25 +1224,25 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 92,
+    "id": 69,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}(-1)^n\\dfrac{1}{n+(-1)^n}\\) là",
     "matrix": null,
     "options": [
+      "Đan dấu và bán hội tụ",
       "Không đan dấu và bán hội tụ",
       "Đan dấu và hội tụ tuyệt đối",
-      "Phân kỳ",
-      "Đan dấu và phân kỳ"
+      "Phân kỳ"
     ],
-    "correct": "Không đan dấu và bán hội tụ",
-    "solution": "Chuỗi không phải đan dấu chuẩn (mẫu thay đổi không đều). Tổng phân tích: các số hạng lẻ/chẵn tạo thành chuỗi con hội tụ. Tổng chuỗi tuyệt đối \\(\\sim\\sum1/n\\) phân kỳ → bán hội tụ.",
-    "quick": "Không đan dấu chuẩn. \\(|u_n|\\sim1/n\\) phân kỳ → bán hội tụ",
+    "correct": "Đan dấu và bán hội tụ",
+    "solution": "Xét dãy: n=2→u₂=1/3>0; n=3→u₃=-1/2<0; n=4→1/5>0... → **đan dấu** ✓\n\n**Hội tụ tuyệt đối?** \\(|u_n|=\\dfrac{1}{n\\pm1}\\sim\\dfrac{1}{n}\\) → chuỗi p=1 → **phân kỳ** → không tuyệt đối.\n\n**Leibniz:** \\(a_n=1/(n+(-1)^n)\\to0\\) và giảm dần → hội tụ.\n\n→ **Đan dấu và bán hội tụ** (hội tụ có điều kiện).",
+    "quick": "u_n alternates sign → đan dấu. |u_n|~1/n → không tuyệt đối → **bán hội tụ**.",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
   {
-    "id": 93,
+    "id": 70,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\ln n}{n^2}\\) thì",
     "matrix": null,
@@ -1674,7 +1260,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 94,
+    "id": 71,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{1+2+\\cdots+n}\\) thì",
     "matrix": null,
@@ -1692,7 +1278,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 95,
+    "id": 72,
     "type": "convergence_test",
     "question": "Nếu \\(\\sum u_n\\) hội tụ và \\(\\{v_n\\}\\) bị chặn đơn điệu thì \\(\\sum u_nv_n\\)",
     "matrix": null,
@@ -1710,7 +1296,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 96,
+    "id": 73,
     "type": "series_sum",
     "question": "Tổng \\(\\sum_{n=1}^{\\infty}\\dfrac{2}{(2n-1)(2n+1)}\\) là",
     "matrix": null,
@@ -1728,25 +1314,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 97,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(x-3)^n}{n+1}\\) là",
-    "matrix": null,
-    "options": [
-      "\\([2,4)\\)",
-      "\\((2,4)\\)",
-      "\\([2,4]\\)",
-      "\\((2,4]\\)"
-    ],
-    "correct": "\\([2,4)\\)",
-    "solution": "\\(R=1\\), tâm \\(x_0=3\\). Hội tụ khi \\(|x-3|<1\\), tức \\(2<x<4\\). Tại \\(x=4\\): \\(\\sum1/(n+1)\\) phân kỳ. Tại \\(x=2\\): \\(\\sum(-1)^n/(n+1)\\) hội tụ (Leibniz). Miền: \\([2,4)\\).",
-    "quick": "\\(|x-3|<1\\). Biên: \\(x=4\\) phân kỳ; \\(x=2\\) hội tụ → \\([2,4)\\)",
-    "casio": "R=1, tâm=3. x=4: Σ1/(n+1) phân kỳ. x=2: Leibniz → [2,4)",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 98,
+    "id": 74,
     "type": "convergence_test",
     "question": "Cho chuỗi \\(\\sum u_n\\) với các số hạng dương. Nếu tất cả các số hạng giảm dần và \\(\\lim_{n\\to\\infty}u_n=0\\), chuỗi",
     "matrix": null,
@@ -1764,7 +1332,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 99,
+    "id": 75,
     "type": "convergence_test",
     "question": "Tiêu chuẩn nào phù hợp nhất để kiểm tra \\(\\sum\\dfrac{n^2}{2^n}\\)?",
     "matrix": null,
@@ -1782,7 +1350,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 100,
+    "id": 76,
     "type": "convergence_test",
     "question": "Xếp loại đúng cho chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{1}{n^2}\\)",
     "matrix": null,
@@ -1800,79 +1368,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 101,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\dfrac{1}{1+x}\\) thành chuỗi lũy thừa và tìm miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\), \\(|x|<1\\)",
-      "\\(\\sum_{n=0}^\\infty x^n\\), \\(|x|<1\\)",
-      "\\(\\sum_{n=1}^\\infty(-1)^nx^n\\), \\(|x|<1\\)",
-      "\\(e^{-x}\\)"
-    ],
-    "correct": "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\), \\(|x|<1\\)",
-    "solution": "\\(\\dfrac{1}{1+x}=\\dfrac{1}{1-(-x)}=\\sum_{n=0}^\\infty(-x)^n=\\sum_{n=0}^\\infty(-1)^nx^n\\)\n\n\\(=1-x+x^2-x^3+\\ldots\\)\n\nHội tụ khi \\(|-x|<1\\), tức \\(|x|<1\\).",
-    "quick": "Thay x bằng (-x) trong \\(1/(1-x)=\\sum x^n\\) → **\\(\\sum(-1)^nx^n\\)**, \\(|x|<1\\).",
-    "casio": "CASIO: f(0.5)=1/1.5=0.667. Kiểm tra: 1-0.5+0.25-0.125+...=0.667✓.",
-    "difficulty": 1,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 102,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\ln(1+x)\\) thành chuỗi Maclaurin.",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n\\)",
-      "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\)",
-      "\\(\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\)",
-      "\\(x-x^2+x^3-\\ldots\\)"
-    ],
-    "correct": "\\(\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n\\)",
-    "solution": "Tích phân chuỗi \\(1/(1+x)\\):\n\n\\(\\ln(1+x)=\\int_0^x\\dfrac{dt}{1+t}=\\int_0^x\\sum_{n=0}^\\infty(-1)^nt^n\\,dt=\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{n+1}x^{n+1}\\)\n\n\\(=\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\ldots\\)\n\nHội tụ với \\(-1<x\\leq1\\).",
-    "quick": "Tích phân chuỗi 1/(1+x): \\(\\ln(1+x)=x-x^2/2+x^3/3-\\ldots=\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}x^n}{n}\\).",
-    "casio": "CASIO: ln(1.5)=0.405. Kiểm tra: 0.5-0.125+0.0417-0.0156+...≈0.405✓.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 103,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\dfrac{1}{3-x}\\) thành chuỗi lũy thừa tại \\(x=0\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3}\\)",
-      "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty(-1)^n\\dfrac{x^n}{3^n}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
-    "solution": "\\(\\dfrac{1}{3-x}=\\dfrac{1}{3}\\cdot\\dfrac{1}{1-x/3}=\\dfrac{1}{3}\\sum_{n=0}^\\infty\\left(\\dfrac{x}{3}\\right)^n=\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}=\\sum_{n=0}^\\infty\\dfrac{x^n}{3^{n+1}}\\)\n\nHội tụ khi \\(|x/3|<1\\), tức \\(|x|<3\\).",
-    "quick": "\\(1/(3-x)=(1/3)\\cdot1/(1-x/3)=(1/3)\\sum(x/3)^n=\\sum x^n/3^{n+1}\\), \\(|x|<3\\).",
-    "casio": "CASIO: f(1)=1/2=0.5. Kiểm tra: (1/3)(1+1/3+1/9+...)=(1/3)·(3/2)=1/2✓.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 104,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\dfrac{x^2}{2-x}\\) thành chuỗi lũy thừa.",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^{n+2}}{2^{n+1}}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{2^n}\\)",
-      "\\(\\dfrac{x^2}{2}\\sum_{n=0}^\\infty x^n\\)",
-      "\\(\\sum_{n=2}^\\infty x^n/2^{n-1}\\)"
-    ],
-    "correct": "\\(\\sum_{n=0}^\\infty\\dfrac{x^{n+2}}{2^{n+1}}\\)",
-    "solution": "\\(\\dfrac{x^2}{2-x}=x^2\\cdot\\dfrac{1}{2-x}=x^2\\cdot\\dfrac{1}{2}\\cdot\\dfrac{1}{1-x/2}=\\dfrac{x^2}{2}\\sum_{n=0}^\\infty\\left(\\dfrac{x}{2}\\right)^n\\)\n\n\\(=\\sum_{n=0}^\\infty\\dfrac{x^{n+2}}{2^{n+1}}\\)\n\nHội tụ khi \\(|x|<2\\).",
-    "quick": "Tách x² ra: \\(x^2/(2-x)=x^2\\cdot(1/2)\\cdot1/(1-x/2)=(x^2/2)\\sum(x/2)^n=\\sum x^{n+2}/2^{n+1}\\).",
-    "casio": "CASIO: f(1)=1/1=1. Kiểm tra: Σ1/2^(n+1) n=0,1,...=1✓.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 105,
+    "id": 77,
     "type": "series_sum_telescope",
     "question": "Tính tổng chuỗi \\(S=\\sum_{n=1}^\\infty\\dfrac{1}{(2n-1)(2n+1)}\\).",
     "matrix": null,
@@ -1890,7 +1386,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 106,
+    "id": 78,
     "type": "series_sum_telescope",
     "question": "Tính tổng \\(S=\\sum_{n=1}^\\infty\\dfrac{1}{n(n+1)}\\).",
     "matrix": null,
@@ -1908,61 +1404,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 107,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\ln(3-x)\\) tại \\(x=0\\) và tìm miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\ln3-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)",
-      "\\(\\ln3+\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
-      "\\(-\\ln x+\\ln3\\)"
-    ],
-    "correct": "\\(\\ln3-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)",
-    "solution": "\\(\\ln(3-x)=\\ln3+\\ln\\left(1-\\dfrac{x}{3}\\right)\\).\n\nDùng \\(\\ln(1-t)=-\\sum_{n=1}^\\infty\\dfrac{t^n}{n}\\) với \\(t=x/3\\):\n\n\\(\\ln\\left(1-\\dfrac{x}{3}\\right)=-\\sum_{n=1}^\\infty\\dfrac{(x/3)^n}{n}=-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)\n\n\\(f(x)=\\ln3-\\sum_{n=1}^\\infty\\dfrac{x^n}{n\\cdot3^n}\\)\n\nHội tụ: \\(|x/3|\\leq1\\) và \\(x/3\\neq-1\\) → \\(-3<x\\leq3\\).",
-    "quick": "\\(\\ln(3-x)=\\ln3+\\ln(1-x/3)\\). Dùng chuỗi \\(\\ln(1-t)=-\\sum t^n/n\\). **Miền hội tụ: (-3,3]**.",
-    "casio": "CASIO: ln(2)=0.693. Kiểm tra: ln3-Σ(1^n)/(n×3^n)=ln3-(1/3+1/18+1/81+...)≈0.693✓.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 108,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\arctan x\\) thành chuỗi Maclaurin và cho biết miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\), \\(|x|\\leq1\\)",
-      "\\(\\sum_{n=0}^\\infty(-1)^nx^{2n}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^{2n}}{(2n)!}\\)",
-      "\\(\\arctan x=x-x^2/2+x^3/3-\\ldots\\)"
-    ],
-    "correct": "\\(\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\), \\(|x|\\leq1\\)",
-    "solution": "Tích phân chuỗi \\(1/(1+x^2)\\):\n\n\\(\\dfrac{1}{1+x^2}=\\sum_{n=0}^\\infty(-1)^nx^{2n}\\)\n\n\\(\\arctan x=\\int_0^x\\dfrac{dt}{1+t^2}=\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\)\n\n\\(=x-\\dfrac{x^3}{3}+\\dfrac{x^5}{5}-\\ldots\\)\n\nHội tụ với \\(|x|\\leq1\\) (kể cả biên).",
-    "quick": "Tích phân: arctan x=∫1/(1+x²)dx. Chuỗi: **∑(-1)^n x^(2n+1)/(2n+1)**, \\(|x|\\leq1\\).",
-    "casio": "CASIO: arctan(1)=π/4≈0.785. Kiểm tra: 1-1/3+1/5-1/7+...≈π/4✓ (Leibniz).",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 109,
-    "type": "power_series_sum",
-    "question": "Tính tổng chuỗi lũy thừa \\(S(x)=\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\) trong miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(-\\ln(1-x)\\)",
-      "\\(\\ln(1+x)\\)",
-      "\\(-\\ln(1+x)\\)",
-      "\\(\\dfrac{x}{1-x}\\)"
-    ],
-    "correct": "\\(-\\ln(1-x)\\)",
-    "solution": "Đạo hàm chuỗi: \\(S'(x)=\\sum_{n=1}^\\infty x^{n-1}=\\dfrac{1}{1-x}\\) với \\(|x|<1\\).\n\nTích phân: \\(S(x)=\\int_0^x\\dfrac{dt}{1-t}=[-\\ln(1-t)]_0^x=-\\ln(1-x)\\).\n\nMiền hội tụ: \\(-1\\leq x<1\\) (từ tiêu chuẩn d'Alembert).",
-    "quick": "S'(x)=∑x^(n-1)=1/(1-x) → S(x)=∫dt/(1-t)=**-ln(1-x)**. (Kỹ thuật vi-tích phân chuỗi)",
-    "casio": "CASIO: S(0.5)=0.5+0.125+0.0417+...≈0.693=-ln(0.5)=ln2✓.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 110,
+    "id": 79,
     "type": "convergence_test",
     "question": "Xét sự hội tụ của chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{(2n)!}{(n!)^2}\\cdot\\left(\\dfrac{1}{4}\\right)^n\\).",
     "matrix": null,
@@ -1980,25 +1422,25 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 111,
+    "id": 80,
     "type": "conditional_convergence",
     "question": "Cho chuỗi số \\(\\sum_{n=2}^\\infty(-1)^n\\dfrac{1}{n+(-1)^n}\\). Khẳng định nào sau đây đúng?",
     "matrix": null,
     "options": [
-      "Chuỗi số không đan dấu, bán hội tụ",
-      "Chuỗi số đan dấu và hội tụ tuyệt đối",
-      "Chuỗi số đan dấu và bán hội tụ",
-      "Chuỗi số phân kỳ"
+      "Đan dấu và bán hội tụ",
+      "Không đan dấu và bán hội tụ",
+      "Đan dấu và hội tụ tuyệt đối",
+      "Phân kỳ"
     ],
-    "correct": "Chuỗi số không đan dấu, bán hội tụ",
-    "solution": "\\(u_n=(-1)^n\\dfrac{1}{n+(-1)^n}\\).\n\n**Kiểm tra đan dấu:** Khi n chẵn: \\(u_n=\\dfrac{1}{n+1}>0\\). Khi n lẻ: \\(u_n=\\dfrac{-1}{n-1}<0\\). Dấu xen kẽ → **đan dấu**... \n\nThực ra: \\(n=2\\): \\(+1/3\\); \\(n=3\\): \\(-1/2\\); \\(n=4\\): \\(+1/5\\) → dấu xen kẽ → **đan dấu**.\n\n**Hội tụ tuyệt đối:** \\(|u_n|=1/(n\\pm1)\\sim1/n\\) → chuỗi p với p=1 → phân kỳ → **không hội tụ tuyệt đối**.\n\n**Leibniz:** \\(a_n=1/(n+(-1)^n)\\), kiểm tra \\(a_n\\to0\\)✓ và \\(a_n\\) giảm dần... *Cần kiểm tra kỹ do $(-1)^n$*.\n\nChuỗi là **bán hội tụ** (hội tụ có điều kiện). Câu C48 đề CA1 2025.",
-    "quick": "Đan dấu ✓. |u_n|~1/n → Σ|u_n| phân kỳ → không hội tụ tuyệt đối → **bán hội tụ**. **Câu C48 CA1 2025**.",
+    "correct": "Đan dấu và bán hội tụ",
+    "solution": "Xét dãy: n=2→u₂=1/3>0; n=3→u₃=-1/2<0; n=4→1/5>0... → **đan dấu** ✓\n\n**Hội tụ tuyệt đối?** \\(|u_n|=\\dfrac{1}{n\\pm1}\\sim\\dfrac{1}{n}\\) → chuỗi p=1 → **phân kỳ** → không tuyệt đối.\n\n**Leibniz:** \\(a_n=1/(n+(-1)^n)\\to0\\) và giảm dần → hội tụ.\n\n→ **Đan dấu và bán hội tụ** (hội tụ có điều kiện).",
+    "quick": "u_n alternates sign → đan dấu. |u_n|~1/n → không tuyệt đối → **bán hội tụ**.",
     "casio": "CASIO: Tính partial sums: S_2=1/3, S_3=1/3-1/2≈-0.17, S_4≈0.03... hội tụ chậm → bán hội tụ.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
   {
-    "id": 112,
+    "id": 81,
     "type": "conditional_convergence",
     "question": "Phân biệt hội tụ tuyệt đối và hội tụ có điều kiện. Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{(-1)^n}{n}\\) thuộc loại nào?",
     "matrix": null,
@@ -2016,7 +1458,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 113,
+    "id": 82,
     "type": "conditional_convergence",
     "question": "Cho chuỗi số đan dấu \\(\\sum_{n=3}^\\infty(-1)^n\\dfrac{3n+1}{n(n-2)}\\). Chuỗi này?",
     "matrix": null,
@@ -2034,7 +1476,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 114,
+    "id": 83,
     "type": "identify_convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{1}{n^2}\\) được xét bằng tiêu chuẩn nào đơn giản nhất?",
     "matrix": null,
@@ -2052,7 +1494,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 115,
+    "id": 84,
     "type": "identify_convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{1}{n}\\) (chuỗi điều hòa) là?",
     "matrix": null,
@@ -2070,7 +1512,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 116,
+    "id": 85,
     "type": "identify_convergence_test",
     "question": "Điều kiện cần (nhưng chưa đủ) để chuỗi \\(\\sum u_n\\) hội tụ là?",
     "matrix": null,
@@ -2088,7 +1530,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 117,
+    "id": 86,
     "type": "identify_convergence_test",
     "question": "Chuỗi hình học \\(\\sum_{n=0}^\\infty ar^n\\) hội tụ khi nào?",
     "matrix": null,
@@ -2106,7 +1548,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 118,
+    "id": 87,
     "type": "series_sum",
     "question": "Tính tổng chuỗi hình học \\(S=\\sum_{n=0}^\\infty\\left(\\dfrac{1}{3}\\right)^n\\).",
     "matrix": null,
@@ -2124,7 +1566,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 119,
+    "id": 88,
     "type": "identify_convergence_test",
     "question": "Nếu \\(\\lim_{n\\to\\infty}u_n=5\\neq0\\) thì chuỗi \\(\\sum u_n\\) là?",
     "matrix": null,
@@ -2142,7 +1584,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 120,
+    "id": 89,
     "type": "p_series",
     "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{1}{n^{0.5}}\\) là hội tụ hay phân kỳ?",
     "matrix": null,
@@ -2160,25 +1602,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 121,
-    "type": "power_series_domain",
-    "question": "Bán kính hội tụ R của chuỗi lũy thừa \\(\\sum_{n=0}^\\infty x^n\\) là bao nhiêu?",
-    "matrix": null,
-    "options": [
-      "\\(R=1\\)",
-      "\\(R=\\infty\\)",
-      "\\(R=0\\)",
-      "\\(R=2\\)"
-    ],
-    "correct": "\\(R=1\\)",
-    "solution": "Chuỗi \\(\\sum x^n\\) là chuỗi hình học với công bội \\(x\\).\n\nHội tụ khi \\(|x|<1\\) → bán kính hội tụ \\(R=1\\), miền hội tụ \\((-1,1)\\).",
-    "quick": "∑xⁿ hội tụ khi |x|<1 → **R=1**.",
-    "casio": "CASIO: Thay x=0.5: hội tụ về 2. Thay x=2: phân kỳ. R=1.",
-    "difficulty": 1,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 122,
+    "id": 90,
     "type": "dalembert",
     "question": "Áp dụng D'Alembert cho \\(\\sum_{n=1}^\\infty\\dfrac{1}{n!}\\). Tỉ số \\(\\lim\\dfrac{u_{n+1}}{u_n}=?\\)",
     "matrix": null,
@@ -2196,7 +1620,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 123,
+    "id": 91,
     "type": "identify_convergence_test",
     "question": "Chuỗi đan dấu \\(\\sum(-1)^{n+1}\\dfrac{1}{n}=1-\\dfrac{1}{2}+\\dfrac{1}{3}-\\ldots\\) là?",
     "matrix": null,
@@ -2214,25 +1638,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 124,
-    "type": "power_series_domain",
-    "question": "Miền hội tụ của chuỗi \\(\\sum_{n=0}^\\infty\\dfrac{x^n}{n!}\\) là?",
-    "matrix": null,
-    "options": [
-      "\\((-\\infty,+\\infty)\\)",
-      "\\((-1,1)\\)",
-      "\\(|x|<e\\)",
-      "\\(x>0\\)"
-    ],
-    "correct": "\\((-\\infty,+\\infty)\\)",
-    "solution": "D'Alembert: \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{x^{n+1}/(n+1)!}{x^n/n!}=\\dfrac{|x|}{n+1}\\to0<1\\) với mọi \\(x\\).\n\nBán kính hội tụ \\(R=+\\infty\\), hội tụ trên \\((-\\infty,+\\infty)\\). Tổng = \\(e^x\\).",
-    "quick": "∑xⁿ/n!=eˣ hội tụ với mọi x → R=∞, miền **(−∞,+∞)**.",
-    "casio": "CASIO: Thay x=100: D'Alembert → |x|/(n+1)→0 → hội tụ mọi x.",
-    "difficulty": 1,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 125,
+    "id": 92,
     "type": "series_sum",
     "question": "Tổng của chuỗi hình học \\(2+1+\\dfrac{1}{2}+\\dfrac{1}{4}+\\ldots\\) là bao nhiêu?",
     "matrix": null,
@@ -2250,7 +1656,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 126,
+    "id": 93,
     "type": "identify_convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{n}{n^2+1}\\) hội tụ hay phân kỳ?",
     "matrix": null,

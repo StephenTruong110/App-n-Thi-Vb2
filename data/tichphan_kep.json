@@ -77,14 +77,14 @@
     "question": "Tính \\(\\int_0^1\\int_0^x x^2 y\\,dy\\,dx\\).",
     "matrix": null,
     "options": [
+      "\\(\\dfrac{1}{10}\\)",
       "\\(\\dfrac{1}{8}\\)",
       "\\(\\dfrac{1}{6}\\)",
-      "\\(\\dfrac{1}{4}\\)",
       "\\(\\dfrac{1}{12}\\)"
     ],
-    "correct": "\\(\\dfrac{1}{8}\\)",
-    "solution": "\\(\\int_0^1 x^2\\left[\\dfrac{y^2}{2}\\right]_0^x dx=\\int_0^1\\dfrac{x^4}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{1}{5}=\\dfrac{1}{10}\\).\n\nKiểm tra lại: \\(\\int_0^1 x^2\\cdot\\frac{x^2}{2}dx=\\frac{1}{2}\\int_0^1 x^4\\,dx=\\frac{1}{2}\\cdot\\frac{1}{5}=\\frac{1}{10}\\)...\n\nXem lại đáp án: \\(\\int_0^x x^2y\\,dy = x^2\\cdot\\frac{x^2}{2}=\\frac{x^4}{2}\\). \\(\\int_0^1\\frac{x^4}{2}dx=\\frac{1}{10}\\). Đáp án đúng trong sách thường là \\(\\frac{1}{8}\\) khi tích phân khác cận.",
-    "quick": "\\(\\int_0^x x^2y\\,dy=\\frac{x^4}{2}\\), rồi \\(\\int_0^1\\frac{x^4}{2}dx=\\frac{1}{10}\\). Chọn đáp án gần nhất.",
+    "correct": "\\(\\dfrac{1}{10}\\)",
+    "solution": "Tích phân trong (theo y, 0→x): \\(x^2\\cdot\\dfrac{y^2}{2}\\Big|_0^x=\\dfrac{x^4}{2}\\).\n\nTích phân ngoài: \\(\\int_0^1\\dfrac{x^4}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{1}{5}=\\dfrac{1}{10}\\).",
+    "quick": "∫₀^x x²y dy=x⁴/2. ∫₀¹x⁴/2 dx=1/10. Đáp án: **1/10**.",
     "casio": "∫₀¹ [∫₀ˣ x²y dy] dx = ∫₀¹ x⁴/2 dx = 1/10 ≈ 0.1",
     "difficulty": 2,
     "topic": "Tích phân"
@@ -271,114 +271,6 @@
   },
   {
     "id": 16,
-    "type": "triple_integral",
-    "question": "Tính \\(\\iiint_V 1\\,dV\\) với \\(V=\\{0\\le x\\le1,\\,0\\le y\\le1,\\,0\\le z\\le1\\}\\) (khối lập phương đơn vị).",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(8\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "**Ý nghĩa hình học:** \\(\\iiint_V 1\\,dV =\\) **thể tích** của miền \\(V\\).\n\nMiền \\(V\\) là khối lập phương đơn vị \\([0,1]^3\\).\n\nThể tích = cạnh³ = \\(1^3 = 1\\).\n\n**Kiểm tra bằng tích phân lặp:**\n\\(\\int_0^1\\int_0^1\\int_0^1 dz\\,dy\\,dx = \\int_0^1\\int_0^1[z]_0^1\\,dy\\,dx = \\int_0^1\\int_0^1 1\\,dy\\,dx = 1\\)",
-    "quick": "Tích phân của 1 = thể tích miền = 1",
-    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 17,
-    "type": "triple_integral",
-    "question": "Tính \\(\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}dz\\,dy\\,dx\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{6}\\)",
-      "\\(\\dfrac{1}{3}\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{6}\\)",
-    "solution": "Đây là thể tích tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\).\n\\(V=\\dfrac{1}{3!}=\\dfrac{1}{6}\\) (thể tích tứ diện chuẩn bằng \\(1/6\\)).",
-    "quick": "Tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\): \\(V=\\frac{1}{6}\\)",
-    "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 18,
-    "type": "triple_integral",
-    "question": "Tính \\(\\iiint_V x\\,dV\\) với \\(V: 0\\le x\\le1,\\,0\\le y\\le1,\\,0\\le z\\le1\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(\\dfrac{1}{4}\\)",
-      "\\(1\\)",
-      "\\(\\dfrac{1}{8}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{2}\\)",
-    "solution": "\\(\\iiint_V x\\,dV=\\int_0^1 x\\,dx\\cdot\\int_0^1 dy\\cdot\\int_0^1 dz=\\dfrac{1}{2}\\cdot1\\cdot1=\\dfrac{1}{2}\\).",
-    "quick": "Tách: \\(\\left(\\int_0^1 x\\,dx\\right)\\cdot1\\cdot1=\\frac{1}{2}\\)",
-    "casio": "(∫₀¹ x dx)·(∫₀¹dy)·(∫₀¹dz) = 1/2·1·1 = 1/2",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 19,
-    "type": "triple_integral_cylindrical",
-    "question": "Thể tích hình trụ \\(x^2+y^2\\le R^2\\), \\(0\\le z\\le H\\) tính bằng tọa độ trụ là",
-    "matrix": null,
-    "options": [
-      "\\(\\pi R^2 H\\)",
-      "\\(2\\pi RH\\)",
-      "\\(\\dfrac{4}{3}\\pi R^3\\)",
-      "\\(\\pi R H^2\\)"
-    ],
-    "correct": "\\(\\pi R^2 H\\)",
-    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^R\\int_0^H r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{R^2}{2}\\cdot H=\\pi R^2H\\).",
-    "quick": "\\(V=(\\int_0^{2\\pi}d\\theta)(\\int_0^R r\\,dr)(\\int_0^H dz)=2\\pi\\cdot\\frac{R^2}{2}\\cdot H=\\pi R^2H\\)",
-    "casio": "V = 2π·R²/2·H = πR²H (công thức hình trụ)",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 20,
-    "type": "triple_integral_spherical",
-    "question": "Thể tích cầu \\(x^2+y^2+z^2\\le R^2\\) dùng tọa độ cầu là",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{4}{3}\\pi R^3\\)",
-      "\\(\\pi R^3\\)",
-      "\\(2\\pi R^3\\)",
-      "\\(\\dfrac{2}{3}\\pi R^3\\)"
-    ],
-    "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
-    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^{\\pi}\\int_0^R \\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
-    "quick": "\\(V=2\\pi\\cdot[-\\cos\\varphi]_0^\\pi\\cdot\\frac{R^3}{3}=2\\pi\\cdot2\\cdot\\frac{R^3}{3}=\\frac{4\\pi R^3}{3}\\)",
-    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 21,
-    "type": "triple_integral_cylindrical",
-    "question": "Tính \\(\\iiint_V \\sqrt{x^2+y^2}\\,dV\\) với \\(V: x^2+y^2\\le1\\), \\(0\\le z\\le2\\) bằng tọa độ trụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{4\\pi}{3}\\)",
-      "\\(\\dfrac{2\\pi}{3}\\)",
-      "\\(2\\pi\\)",
-      "\\(\\dfrac{4\\pi}{6}\\)"
-    ],
-    "correct": "\\(\\dfrac{4\\pi}{3}\\)",
-    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^2 r\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\int_0^1 r^2\\cdot2\\,dr=4\\pi\\cdot\\dfrac{1}{3}=\\dfrac{4\\pi}{3}\\).",
-    "quick": "\\(I=2\\pi\\cdot2\\int_0^1 r^2\\,dr=4\\pi\\cdot\\frac{1}{3}=\\frac{4\\pi}{3}\\)",
-    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 22,
     "type": "double_integral_polar",
     "question": "Tính \\(\\iint_D x^2\\,dA\\) với \\(D: x^2+y^2\\le 4\\) bằng tọa độ cực.",
     "matrix": null,
@@ -396,7 +288,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 23,
+    "id": 17,
     "type": "double_integral_compute",
     "question": "Tính \\(I=\\iint_D(x^2+y^2+1)\\,dA\\) với \\(D=\\{0\\le x\\le1,\\,0\\le y\\le1\\}\\).",
     "matrix": null,
@@ -414,7 +306,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 24,
+    "id": 18,
     "type": "double_integral_polar",
     "question": "Tính \\(\\iint_D \\dfrac{1}{(x^2+y^2)^{3/2}}\\,dA\\) với \\(D: 1\\le x^2+y^2\\le4\\).",
     "matrix": null,
@@ -432,385 +324,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 25,
-    "type": "triple_integral_spherical",
-    "question": "Tính \\(\\iiint_V(x^2+y^2+z^2)\\,dV\\) với \\(V: x^2+y^2+z^2\\le R^2\\) bằng tọa độ cầu.",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{4\\pi R^5}{5}\\)",
-      "\\(\\dfrac{4\\pi R^3}{3}\\)",
-      "\\(\\dfrac{2\\pi R^5}{5}\\)",
-      "\\(\\dfrac{8\\pi R^5}{15}\\)"
-    ],
-    "correct": "\\(\\dfrac{4\\pi R^5}{5}\\)",
-    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R\\rho^2\\cdot\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{R^5}{5}=\\dfrac{4\\pi R^5}{5}\\).",
-    "quick": "\\(I=4\\pi\\cdot\\frac{R^5}{5}=\\frac{4\\pi R^5}{5}\\)",
-    "casio": "I = 2π·[-cosφ]₀π · R⁵/5 = 2π·2·R⁵/5 = 4πR⁵/5",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 26,
-    "type": "line_integral_type1",
-    "question": "Tích phân đường loại 1: \\(\\int_C ds\\) với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(5\\)",
-      "\\(7\\)",
-      "\\(12\\)",
-      "\\(25\\)"
-    ],
-    "correct": "\\(5\\)",
-    "solution": "\\(\\int_C ds=\\) độ dài đường cong \\(C\\).\nĐoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\) có độ dài \\(\\sqrt{3^2+4^2}=5\\).",
-    "quick": "Tích phân loại 1 của \\(f=1\\) = độ dài cung = \\(\\sqrt{9+16}=5\\)",
-    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 27,
-    "type": "line_integral_type1",
-    "question": "Tính \\(\\int_C (x+y)\\,ds\\) với \\(C\\) là đoạn thẳng \\(y=x\\) từ \\((0,0)\\) đến \\((1,1)\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\sqrt{2}\\)",
-      "\\(2\\)",
-      "\\(\\dfrac{\\sqrt{2}}{2}\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(\\sqrt{2}\\)",
-    "solution": "Tham số: \\(x=t,y=t\\), \\(t: 0\\to1\\). \\(ds=\\sqrt{1+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^1 2t\\cdot\\sqrt{2}\\,dt=2\\sqrt{2}\\cdot\\dfrac{1}{2}=\\sqrt{2}\\).",
-    "quick": "\\(I=\\int_0^1 2t\\sqrt{2}\\,dt=\\sqrt{2}\\)",
-    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 28,
-    "type": "line_integral_type1",
-    "question": "Tính \\(\\int_C \\sqrt{x^2+y^2}\\,ds\\) với \\(C\\): đường tròn \\(x^2+y^2=R^2\\).",
-    "matrix": null,
-    "options": [
-      "\\(2\\pi R^2\\)",
-      "\\(\\pi R^2\\)",
-      "\\(2\\pi R\\)",
-      "\\(4\\pi R^2\\)"
-    ],
-    "correct": "\\(2\\pi R^2\\)",
-    "solution": "Trên \\(C\\): \\(\\sqrt{x^2+y^2}=R\\). Độ dài \\(C\\) là \\(2\\pi R\\).\n\\(I=R\\cdot2\\pi R=2\\pi R^2\\).",
-    "quick": "\\(\\sqrt{x^2+y^2}=R\\) trên \\(C\\) → \\(I=R\\cdot|C|=R\\cdot2\\pi R=2\\pi R^2\\)",
-    "casio": "f=R (hằng số trên C), độ dài C=2πR → I=R·2πR=2πR²",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 29,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C P\\,dx+Q\\,dy\\) với \\(P=x\\), \\(Q=y\\), \\(C\\): \\(y=x^2\\) từ \\((0,0)\\) đến \\((1,1)\\).",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(2\\)",
-      "\\(\\dfrac{3}{2}\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "Tham số \\(x=t\\), \\(y=t^2\\), \\(t: 0\\to1\\). \\(dx=dt\\), \\(dy=2t\\,dt\\).\n\\(I=\\int_0^1(t+t^2\\cdot2t)dt=\\int_0^1(t+2t^3)dt=\\dfrac{1}{2}+\\dfrac{2}{4}=1\\).",
-    "quick": "\\(\\int_0^1(t+2t^3)dt=\\frac{1}{2}+\\frac{1}{2}=1\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 30,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C -y\\,dx+x\\,dy\\) với \\(C\\): đường tròn \\(x=\\cos t\\), \\(y=\\sin t\\), \\(t: 0\\to2\\pi\\) (ngược chiều kim đồng hồ).",
-    "matrix": null,
-    "options": [
-      "\\(2\\pi\\)",
-      "\\(\\pi\\)",
-      "\\(0\\)",
-      "\\(4\\pi\\)"
-    ],
-    "correct": "\\(2\\pi\\)",
-    "solution": "\\(I=\\int_0^{2\\pi}(-\\sin t)(-\\sin t)+\\cos t\\cos t\\,dt=\\int_0^{2\\pi}(\\sin^2t+\\cos^2t)dt=\\int_0^{2\\pi}1\\,dt=2\\pi\\).",
-    "quick": "\\(I=\\int_0^{2\\pi}1\\,dt=2\\pi\\) (dùng \\(\\sin^2+\\cos^2=1\\))",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 31,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C y^2\\,dx-x^2\\,dy\\) với \\(C\\): đoạn thẳng từ \\((0,0)\\) đến \\((1,0)\\).",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(\\dfrac{1}{3}\\)"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "Trên \\(C\\): \\(y=0\\), \\(dy=0\\). \\(I=\\int_0^1 0\\cdot dx-x^2\\cdot0=0\\).",
-    "quick": "\\(y=0\\), \\(dy=0\\) → cả hai số hạng đều bằng 0 → \\(I=0\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 32,
-    "type": "green_theorem",
-    "question": "Công thức Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D\\left(\\dfrac{\\partial Q}{\\partial x}-\\dfrac{\\partial P}{\\partial y}\\right)dA\\) áp dụng khi \\(C\\) đi theo chiều",
-    "matrix": null,
-    "options": [
-      "Ngược chiều kim đồng hồ (dương)",
-      "Cùng chiều kim đồng hồ",
-      "Bất kỳ",
-      "Theo chiều tăng \\(x\\)"
-    ],
-    "correct": "Ngược chiều kim đồng hồ (dương)",
-    "solution": "Công thức Green áp dụng khi \\(C\\) là biên của \\(D\\) đi theo chiều **dương** (ngược chiều kim đồng hồ — vùng \\(D\\) ở phía trái).",
-    "quick": "Green: chiều dương = ngược chiều kim đồng hồ (miền ở bên trái)",
-    "casio": "Chiều dương: vùng D luôn ở phía tay trái khi đi trên C",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 33,
-    "type": "green_theorem",
-    "question": "Dùng Green tính \\(\\oint_C 2xy\\,dx+(x^2+y^2)\\,dy\\) với \\(C\\) là biên hình vuông \\([0,1]\\times[0,1]\\) (ngược chiều KĐH).",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(2\\)"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "\\(P=2xy\\), \\(Q=x^2+y^2\\). \\(Q'_x=2x\\), \\(P'_y=2x\\). \\(Q'_x-P'_y=0\\).\nTheo Green: \\(I=\\iint_D 0\\,dA=0\\).",
-    "quick": "\\(Q'_x-P'_y=2x-2x=0\\) → \\(I=0\\) (trường thế!)",
-    "casio": "Q'_x=2x=P'_y → điều kiện trường thế → I=0",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 34,
-    "type": "green_theorem",
-    "question": "Dùng Green tính \\(\\oint_C (x-y)\\,dx+(x+y)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH).",
-    "matrix": null,
-    "options": [
-      "\\(2\\pi\\)",
-      "\\(\\pi\\)",
-      "\\(0\\)",
-      "\\(4\\pi\\)"
-    ],
-    "correct": "\\(2\\pi\\)",
-    "solution": "\\(P=x-y\\), \\(Q=x+y\\). \\(Q'_x-P'_y=1-(-1)=2\\).\n\\(I=\\iint_D 2\\,dA=2\\cdot\\pi\\cdot1^2=2\\pi\\).",
-    "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa đơn vị \\(=\\pi\\). \\(I=2\\pi\\)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 35,
-    "type": "green_theorem",
-    "question": "Dùng Green tính diện tích của miền \\(D\\) qua công thức \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\). Với \\(C\\) là đường tròn \\(x^2+y^2=R^2\\) (ngược KĐH), ta có",
-    "matrix": null,
-    "options": [
-      "\\(\\pi R^2\\)",
-      "\\(2\\pi R\\)",
-      "\\(\\dfrac{\\pi R^2}{2}\\)",
-      "\\(4\\pi R^2\\)"
-    ],
-    "correct": "\\(\\pi R^2\\)",
-    "solution": "Theo Green: \\(\\oint x\\,dy-y\\,dx=\\iint_D 2\\,dA=2S\\). Vậy \\(S=\\dfrac{1}{2}\\oint x\\,dy-y\\,dx\\).\nVới đường tròn bán kính \\(R\\): \\(S=\\pi R^2\\).",
-    "quick": "\\(P=-y\\), \\(Q=x\\): \\(Q'_x-P'_y=2\\) → \\(\\oint=2S\\) → \\(S=\\pi R^2\\)",
-    "casio": "S = (1/2)·∮(xdy-ydx) = (1/2)·2·πR² = πR²",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 36,
-    "type": "potential_function",
-    "question": "Trường \\(\\mathbf{F}=(2xy,x^2)\\) có thế hàm không? (Kiểm tra \\(P'_y=Q'_x\\)?)",
-    "matrix": null,
-    "options": [
-      "Có, vì \\(P'_y=Q'_x=2x\\)",
-      "Không, vì \\(P'_y\\neq Q'_x\\)",
-      "Chỉ trên đường thẳng",
-      "Không đủ điều kiện"
-    ],
-    "correct": "Có, vì \\(P'_y=Q'_x=2x\\)",
-    "solution": "\\(P=2xy\\), \\(Q=x^2\\). \\(P'_y=2x\\), \\(Q'_x=2x\\). Vì \\(P'_y=Q'_x\\) → trường có thế hàm (bảo toàn).",
-    "quick": "\\(P'_y=2x=Q'_x\\) → thế hàm \\(U=x^2y\\) (kiểm tra: \\(U'_x=2xy\\), \\(U'_y=x^2\\) ✓)",
-    "casio": "CASIO: Kiểm tra trường thế: P'_y = Q'_x? Dùng d/dx(P) theo y và d/dx(Q) theo x. Nếu bằng nhau → tích phân đường không phụ thuộc đường đi → I = U(B) - U(A).",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 37,
-    "type": "potential_function",
-    "question": "Tìm thế hàm \\(U(x,y)\\) của \\(\\mathbf{F}=(2xy,x^2+2y)\\).",
-    "matrix": null,
-    "options": [
-      "\\(x^2y+y^2\\)",
-      "\\(x^2y+y^2+C\\)",
-      "\\(2xy+2y\\)",
-      "\\(x^2+y^2\\)"
-    ],
-    "correct": "\\(x^2y+y^2+C\\)",
-    "solution": "\\(U'_x=2xy\\Rightarrow U=x^2y+g(y)\\). \\(U'_y=x^2+g'(y)=x^2+2y\\Rightarrow g'(y)=2y\\Rightarrow g=y^2+C\\).\n\\(U=x^2y+y^2+C\\).",
-    "quick": "Tích phân theo \\(x\\): \\(U=x^2y+g(y)\\). Suy \\(g'(y)=2y\\Rightarrow g=y^2\\).",
-    "casio": "U=x²y+y²+C. Kiểm tra: U'_x=2xy ✓, U'_y=x²+2y ✓",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 38,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C 2xy\\,dx+x^2\\,dy\\) với \\(C\\) bất kỳ từ \\((0,0)\\) đến \\((2,3)\\).",
-    "matrix": null,
-    "options": [
-      "\\(12\\)",
-      "\\(6\\)",
-      "\\(18\\)",
-      "\\(4\\)"
-    ],
-    "correct": "\\(12\\)",
-    "solution": "\\(P=2xy\\), \\(Q=x^2\\): \\(P'_y=2x=Q'_x\\) → trường thế. Thế hàm \\(U=x^2y\\).\n\\(I=U(2,3)-U(0,0)=4\\cdot3-0=12\\).",
-    "quick": "Thế hàm \\(U=x^2y\\): \\(I=U(2,3)-U(0,0)=12\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 39,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C(3x^2+2y)\\,dx+(2x+3y^2)\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,2)\\).",
-    "matrix": null,
-    "options": [
-      "\\(13\\)",
-      "\\(10\\)",
-      "\\(9\\)",
-      "\\(5\\)"
-    ],
-    "correct": "\\(13\\)",
-    "solution": "\\(P'_y=2=Q'_x\\) → thế hàm. \\(U'_x=3x^2+2y\\Rightarrow U=x^3+2xy+g(y)\\). \\(U'_y=2x+g'(y)=2x+3y^2\\Rightarrow g=y^3\\).\n\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\).",
-    "quick": "\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 40,
-    "type": "green_theorem",
-    "question": "Dùng Green tính \\(\\oint_C (x^2-y)\\,dx+(y^2+x)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
-    "matrix": null,
-    "options": [
-      "\\(8\\pi\\)",
-      "\\(4\\pi\\)",
-      "\\(16\\pi\\)",
-      "\\(2\\pi\\)"
-    ],
-    "correct": "\\(8\\pi\\)",
-    "solution": "\\(Q'_x-P'_y=1-(-1)=2\\). \\(I=\\iint_D 2\\,dA=2\\cdot\\pi\\cdot4=8\\pi\\).",
-    "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa \\(r=2\\): \\(4\\pi\\). \\(I=2\\cdot4\\pi=8\\pi\\)",
-    "casio": "Q'_x-P'_y=2. Diện tích D=π·2²=4π → I=2·4π=8π",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 41,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C y\\,dx+x\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((2,4)\\) theo đường thẳng \\(y=2x\\).",
-    "matrix": null,
-    "options": [
-      "\\(8\\)",
-      "\\(4\\)",
-      "\\(16\\)",
-      "\\(2\\)"
-    ],
-    "correct": "\\(8\\)",
-    "solution": "\\(P'_y=1=Q'_x\\) → thế hàm \\(U=xy\\). \\(I=U(2,4)-U(0,0)=8\\).",
-    "quick": "\\(U=xy\\): \\(I=U(2,4)-U(0,0)=2\\cdot4=8\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 42,
-    "type": "line_integral_type1",
-    "question": "Tính \\(\\int_C x\\,ds\\) với \\(C\\): cung \\(y=x^2\\), \\(0\\le x\\le1\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{5\\sqrt{5}-1}{12}\\)",
-      "\\(\\dfrac{\\sqrt{5}}{3}\\)",
-      "\\(\\dfrac{1}{3}\\)",
-      "\\(\\dfrac{\\sqrt{5}-1}{4}\\)"
-    ],
-    "correct": "\\(\\dfrac{5\\sqrt{5}-1}{12}\\)",
-    "solution": "\\(ds=\\sqrt{1+(y')^2}dx=\\sqrt{1+4x^2}\\,dx\\).\n\\(I=\\int_0^1 x\\sqrt{1+4x^2}\\,dx\\). Đặt \\(u=1+4x^2\\), \\(du=8x\\,dx\\):\n\\(I=\\dfrac{1}{8}\\int_1^5\\sqrt{u}\\,du=\\dfrac{1}{8}\\cdot\\dfrac{2}{3}[u^{3/2}]_1^5=\\dfrac{1}{12}(5\\sqrt{5}-1)\\).",
-    "quick": "\\(ds=\\sqrt{1+4x^2}dx\\). Đặt \\(u=1+4x^2\\) → \\(I=\\frac{5\\sqrt{5}-1}{12}\\)",
-    "casio": "u=1+4x², du=8xdx → I=(1/8)·(2/3)[u^{3/2}]₁⁵=(5√5-1)/12",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 43,
-    "type": "line_integral_type2",
-    "question": "Công của lực \\(\\mathbf{F}=(y-x)\\mathbf{i}+(x+y)\\mathbf{j}\\) dọc theo đường tròn \\(x^2+y^2=1\\) từ \\((1,0)\\) đến \\((0,1)\\) (ngược KĐH) là",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{\\pi}{2}-1\\)",
-      "\\(\\dfrac{\\pi}{2}\\)",
-      "\\(1\\)",
-      "\\(\\pi-1\\)"
-    ],
-    "correct": "\\(\\dfrac{\\pi}{2}-1\\)",
-    "solution": "Tham số: \\(x=\\cos t\\), \\(y=\\sin t\\), \\(t: 0\\to\\pi/2\\).\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+(\\cos t+\\sin t)\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}(-\\sin t\\cos t+\\cos^2t-\\sin^2t... )=\\int_0^{\\pi/2}(1-\\sin2t)dt=\\frac{\\pi}{2}-1\\).",
-    "quick": "Tham số hóa → tính trực tiếp: \\(W=\\frac{\\pi}{2}-1\\)",
-    "casio": "x=cost, y=sint, t:0→π/2 → W=∫₀^{π/2}(1-sin2t)dt=π/2-1",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 44,
-    "type": "green_theorem",
-    "question": "Tính \\(\\oint_C xy^2\\,dx+x^2y\\,dy\\) với \\(C\\) là hình chữ nhật \\([0,2]\\times[0,1]\\) (ngược KĐH).",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(4\\)",
-      "\\(2\\)",
-      "\\(-2\\)"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "\\(P=xy^2\\), \\(Q=x^2y\\). \\(Q'_x=2xy\\), \\(P'_y=2xy\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
-    "quick": "\\(Q'_x=2xy=P'_y\\) → \\(I=0\\) (trường thế)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 45,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\oint_C x^2y\\,dx-xy^2\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH) dùng Green.",
-    "matrix": null,
-    "options": [
-      "\\(-\\dfrac{\\pi}{2}\\)",
-      "\\(\\dfrac{\\pi}{2}\\)",
-      "\\(-\\pi\\)",
-      "\\(0\\)"
-    ],
-    "correct": "\\(-\\dfrac{\\pi}{2}\\)",
-    "solution": "\\(P=x^2y\\), \\(Q=-xy^2\\). \\(Q'_x=-y^2\\), \\(P'_y=x^2\\). \\(Q'_x-P'_y=-(x^2+y^2)\\).\n\\(I=\\iint_D-(x^2+y^2)dA=-\\int_0^{2\\pi}\\int_0^1 r^2\\cdot r\\,dr\\,d\\theta=-2\\pi\\cdot\\dfrac{1}{4}=-\\dfrac{\\pi}{2}\\).",
-    "quick": "\\(Q'_x-P'_y=-(x^2+y^2)\\). Dùng cực: \\(I=-2\\pi\\cdot[r^4/4]_0^1=-\\pi/2\\)",
-    "casio": "Q'_x-P'_y=-(x²+y²). Tọa độ cực: I=-∫₀²π dθ·∫₀¹r³dr=-2π·1/4=-π/2",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 46,
+    "id": 19,
     "type": "double_integral_compute",
     "question": "Tính \\(\\iint_D e^{x+y}\\,dA\\) với \\(D=\\{0\\le x\\le1,\\,0\\le y\\le1\\}\\).",
     "matrix": null,
@@ -828,7 +342,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 47,
+    "id": 20,
     "type": "double_integral_polar",
     "question": "Tính diện tích miền \\(D: x^2+y^2\\le 2x\\) (đường tròn tâm \\((1,0)\\) bán kính 1) bằng tọa độ cực.",
     "matrix": null,
@@ -846,7 +360,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 48,
+    "id": 21,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^1\\int_{x}^1 \\sin(y^2)\\,dy\\,dx\\) bằng cách đổi thứ tự tích phân.",
     "matrix": null,
@@ -864,7 +378,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 49,
+    "id": 22,
     "type": "double_integral_polar",
     "question": "Tính \\(\\iint_D\\sqrt{4-x^2-y^2}\\,dA\\) với \\(D: x^2+y^2\\le4\\) bằng tọa độ cực.",
     "matrix": null,
@@ -882,97 +396,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 50,
-    "type": "triple_integral_cylindrical",
-    "question": "Tính \\(\\iiint_V z\\,dV\\) với \\(V: x^2+y^2\\le1\\), \\(0\\le z\\le3\\) bằng tọa độ trụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{9\\pi}{2}\\)",
-      "\\(3\\pi\\)",
-      "\\(6\\pi\\)",
-      "\\(\\dfrac{3\\pi}{2}\\)"
-    ],
-    "correct": "\\(\\dfrac{9\\pi}{2}\\)",
-    "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^3 z\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\int_0^1 r\\,dr\\cdot\\int_0^3 z\\,dz=2\\pi\\cdot\\dfrac{1}{2}\\cdot\\dfrac{9}{2}=\\dfrac{9\\pi}{2}\\).",
-    "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}\\cdot\\frac{9}{2}=\\frac{9\\pi}{2}\\)",
-    "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 51,
-    "type": "line_integral_type1",
-    "question": "Tính \\(\\int_C(x^2+y^2)^{1/2}\\,ds\\) với \\(C\\): đoạn từ \\((1,0,0)\\) đến \\((1,0,2\\pi)\\) trên helix \\((\\cos t,\\sin t,t)\\).",
-    "matrix": null,
-    "options": [
-      "\\(2\\pi\\sqrt{2}\\)",
-      "\\(\\pi\\sqrt{2}\\)",
-      "\\(2\\pi\\)",
-      "\\(4\\pi\\)"
-    ],
-    "correct": "\\(2\\pi\\sqrt{2}\\)",
-    "solution": "Trên helix: \\(x^2+y^2=\\cos^2t+\\sin^2t=1\\). \\(ds=\\sqrt{(-\\sin t)^2+(\\cos t)^2+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^{2\\pi}1\\cdot\\sqrt{2}\\,dt=2\\pi\\sqrt{2}\\).",
-    "quick": "Trên helix: \\(x^2+y^2=1\\), \\(ds=\\sqrt{2}dt\\) → \\(I=2\\pi\\sqrt{2}\\)",
-    "casio": "x²+y²=1 trên helix, ds=√2 dt → I=√2·2π=2π√2",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 52,
-    "type": "green_theorem",
-    "question": "Tính diện tích elip \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\) dùng công thức Green \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\pi ab\\)",
-      "\\(\\pi(a+b)\\)",
-      "\\(\\pi a^2b^2\\)",
-      "\\(2\\pi ab\\)"
-    ],
-    "correct": "\\(\\pi ab\\)",
-    "solution": "Tham số: \\(x=a\\cos t\\), \\(y=b\\sin t\\), \\(t: 0\\to2\\pi\\).\n\\(S=\\dfrac{1}{2}\\int_0^{2\\pi}[a\\cos t\\cdot b\\cos t-b\\sin t\\cdot(-a\\sin t)]dt=\\dfrac{ab}{2}\\int_0^{2\\pi}1\\,dt=\\pi ab\\).",
-    "quick": "\\(S=\\frac{ab}{2}\\int_0^{2\\pi}dt=\\pi ab\\)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 53,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C e^x\\sin y\\,dx+e^x\\cos y\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,\\pi)\\).",
-    "matrix": null,
-    "options": [
-      "\\(-e\\)",
-      "\\(e\\)",
-      "\\(0\\)",
-      "\\(e-1\\)"
-    ],
-    "correct": "\\(-e\\)",
-    "solution": "\\(P=e^x\\sin y\\), \\(Q=e^x\\cos y\\). \\(P'_y=e^x\\cos y=Q'_x\\) → thế hàm.\n\\(U'_x=e^x\\sin y\\Rightarrow U=e^x\\sin y+g(y)\\). \\(U'_y=e^x\\cos y+g'(y)=e^x\\cos y\\Rightarrow g=C\\).\n\\(U=e^x\\sin y\\). \\(I=U(1,\\pi)-U(0,0)=e^1\\sin\\pi-e^0\\sin0=0-0=0\\)... Kiểm tra lại: \\(U(0,0)=0\\), \\(U(1,\\pi)=e\\cdot0=0\\).\nĐáp án thực: \\(I=0\\). Sửa: thế hàm \\(U=e^x\\sin y\\). \\(I=0-0=0\\).",
-    "quick": "\\(U=e^x\\sin y\\): \\(I=U(1,\\pi)-U(0,0)=0-0=0\\). Sửa đáp án: 0",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 54,
-    "type": "green_theorem",
-    "question": "Tính \\(\\oint_C(e^x+y^3)\\,dx+(\\cos y+x^3)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
-    "matrix": null,
-    "options": [
-      "\\(-12\\pi\\)",
-      "\\(12\\pi\\)",
-      "\\(0\\)",
-      "\\(-6\\pi\\)"
-    ],
-    "correct": "\\(-12\\pi\\)",
-    "solution": "\\(Q'_x=3x^2\\), \\(P'_y=3y^2\\). \\(Q'_x-P'_y=3(x^2-y^2)\\).\n\\(I=\\iint_D 3(x^2-y^2)\\,dA\\). Theo tính đối xứng: \\(\\iint x^2\\,dA=\\iint y^2\\,dA\\) trên đĩa tròn. Vậy... Kiểm tra lại.\n\\(\\iint_{x^2+y^2\\le4}3(x^2-y^2)\\,dA=0\\) (đối xứng tròn xoay). Đáp án: \\(0\\).",
-    "quick": "\\(Q'_x-P'_y=3(x^2-y^2)\\). Đối xứng tròn → \\(\\iint(x^2-y^2)=0\\) → \\(I=0\\)",
-    "casio": "Đối xứng: ∬x²dA=∬y²dA trên đĩa tròn → I=0",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 55,
+    "id": 23,
     "type": "double_integral_compute",
     "question": "Đổi thứ tự: \\(I=\\int_0^4\\int_0^{\\sqrt{x}}f(x,y)\\,dy\\,dx\\) thành",
     "matrix": null,
@@ -990,61 +414,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 56,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C y\\,dx-x\\,dy\\) với \\(C\\) là đường tròn \\(x=R\\cos t\\), \\(y=R\\sin t\\), \\(t: 0\\to2\\pi\\).",
-    "matrix": null,
-    "options": [
-      "\\(-2\\pi R^2\\)",
-      "\\(2\\pi R^2\\)",
-      "\\(0\\)",
-      "\\(\\pi R^2\\)"
-    ],
-    "correct": "\\(-2\\pi R^2\\)",
-    "solution": "\\(I=\\int_0^{2\\pi}[R\\sin t(-R\\sin t)-R\\cos t\\cdot R\\cos t]dt=\\int_0^{2\\pi}-R^2\\,dt=-2\\pi R^2\\).",
-    "quick": "\\(I=\\int_0^{2\\pi}-R^2(\\sin^2t+\\cos^2t)dt=-R^2\\cdot2\\pi=-2\\pi R^2\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 57,
-    "type": "triple_integral_spherical",
-    "question": "Tính \\(\\iiint_V e^{(x^2+y^2+z^2)^{3/2}}\\,dV\\) với \\(V: x^2+y^2+z^2\\le1\\) bằng tọa độ cầu.",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
-      "\\(\\dfrac{4\\pi e}{3}\\)",
-      "\\(4\\pi(e-1)\\)",
-      "\\(\\dfrac{4\\pi}{3}\\)"
-    ],
-    "correct": "\\(\\dfrac{4\\pi(e-1)}{3}\\)",
-    "solution": "Tọa độ cầu: \\((x^2+y^2+z^2)^{3/2}=\\rho^3\\).\n\\(I=\\int_0^{2\\pi}d\\theta\\int_0^\\pi\\sin\\varphi\\,d\\varphi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho=4\\pi\\int_0^1 e^{\\rho^3}\\rho^2\\,d\\rho\\).\nĐặt \\(u=\\rho^3\\): \\(4\\pi\\cdot\\dfrac{1}{3}[e^u]_0^1=\\dfrac{4\\pi(e-1)}{3}\\).",
-    "quick": "\\(I=4\\pi\\cdot\\frac{1}{3}(e-1)=\\frac{4\\pi(e-1)}{3}\\)",
-    "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 58,
-    "type": "green_theorem",
-    "question": "Khi trường \\((P,Q)\\) có thế hàm (\\(P'_y=Q'_x\\)), tích phân \\(\\oint_C P\\,dx+Q\\,dy\\) trên đường khép kín \\(C\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(\\iint_D(Q'_x-P'_y)dA\\)",
-      "Diện tích \\(D\\)",
-      "Không xác định"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "Nếu \\(P'_y=Q'_x\\) thì \\(Q'_x-P'_y=0\\). Theo Green: \\(\\oint_C=\\iint_D 0\\,dA=0\\).",
-    "quick": "Trường thế → tích phân không phụ thuộc đường đi → tích phân trên đường khép kín = 0",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 59,
+    "id": 24,
     "type": "double_integral_compute",
     "question": "Tính \\(\\iint_D y\\sqrt{x}\\,dA\\) với \\(D=\\{1\\le x\\le4,\\,0\\le y\\le\\sqrt{x}\\}\\).",
     "matrix": null,
@@ -1062,25 +432,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 60,
-    "type": "green_theorem",
-    "question": "Dùng Green tính \\(\\oint_C (3x^2y+y)\\,dx+(x^3+x)\\,dy\\) với \\(C\\) là tam giác đỉnh \\((0,0),(1,0),(0,1)\\) (ngược KĐH).",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(-\\dfrac{1}{2}\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "\\(P=3x^2y+y\\), \\(Q=x^3+x\\). \\(Q'_x=3x^2+1\\), \\(P'_y=3x^2+1\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
-    "quick": "\\(Q'_x=3x^2+1=P'_y\\) → trường thế → \\(I=0\\)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 61,
+    "id": 25,
     "type": "double_integral_setup",
     "question": "Tích phân \\(\\iint_D f(x,y)\\,dA\\) trên miền \\(D=[0,1]\\times[0,2]\\) bằng?",
     "matrix": null,
@@ -1098,7 +450,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 62,
+    "id": 26,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^1\\int_0^1(x+y)\\,dx\\,dy\\).",
     "matrix": null,
@@ -1116,7 +468,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 63,
+    "id": 27,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^2\\int_0^3 xy\\,dy\\,dx\\).",
     "matrix": null,
@@ -1134,7 +486,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 64,
+    "id": 28,
     "type": "double_integral_volume",
     "question": "Thể tích khối trụ \\(x^2+y^2\\leq4,\\;0\\leq z\\leq3\\) tính bằng tích phân đôi là?",
     "matrix": null,
@@ -1152,7 +504,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 65,
+    "id": 29,
     "type": "double_integral_volume",
     "question": "Thể tích của vật thể nằm dưới \\(z=4-x^2-y^2\\) và trên \\(z=0\\) là?",
     "matrix": null,
@@ -1170,7 +522,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 66,
+    "id": 30,
     "type": "jacobian",
     "question": "Jacobian của phép đổi biến sang tọa độ cực \\(x=r\\cos\\theta,\\;y=r\\sin\\theta\\) là?",
     "matrix": null,
@@ -1188,7 +540,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 67,
+    "id": 31,
     "type": "jacobian",
     "question": "Jacobian của tọa độ trụ \\((r,\\theta,z)\\) là?",
     "matrix": null,
@@ -1206,7 +558,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 68,
+    "id": 32,
     "type": "double_integral_compute",
     "question": "Tính \\(\\iint_D e^{x^2+y^2}\\,dA\\) trên \\(D: x^2+y^2\\leq1\\).",
     "matrix": null,
@@ -1224,43 +576,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 69,
-    "type": "triple_integral",
-    "question": "Thể tích hình cầu bán kính R tính bằng tích phân ba là?",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{4}{3}\\pi R^3\\)",
-      "\\(\\pi R^3\\)",
-      "\\(\\dfrac{2}{3}\\pi R^3\\)",
-      "\\(4\\pi R^2\\)"
-    ],
-    "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
-    "solution": "Dùng tọa độ cầu: \\(dV=r^2\\sin\\phi\\,dr\\,d\\phi\\,d\\theta\\).\n\n\\(V=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R r^2\\sin\\phi\\,dr\\,d\\phi\\,d\\theta\\)\n\n\\(=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
-    "quick": "Tọa độ cầu: V=∫₀^2π dθ·∫₀^π sinφ dφ·∫₀^R r² dr=2π·2·R³/3=**4πR³/3**.",
-    "casio": "CASIO: ∫₀^πsinφ dφ=[-cosφ]₀^π=2. ∫₀^Rr²dr=R³/3. Kết quả: 2π·2·R³/3=4πR³/3.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 70,
-    "type": "line_integral_type1",
-    "question": "Tích phân đường loại 1 \\(\\int_C ds\\) trên đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\) bằng?",
-    "matrix": null,
-    "options": [
-      "\\(\\sqrt{2}\\)",
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(\\sqrt{2}/2\\)"
-    ],
-    "correct": "\\(\\sqrt{2}\\)",
-    "solution": "\\(\\int_C ds\\) = **độ dài đường cong** C.\n\nĐoạn thẳng từ (0,0) đến (1,1): độ dài = \\(\\sqrt{(1-0)^2+(1-0)^2}=\\sqrt{2}\\).\n\nKiểm tra bằng tham số: \\(x=t,y=t\\), \\(t\\in[0,1]\\). \\(ds=\\sqrt{x'^2+y'^2}dt=\\sqrt{2}dt\\). \\(\\int_0^1\\sqrt{2}dt=\\sqrt{2}\\).",
-    "quick": "\\(\\int_C ds\\) = độ dài đường. Đoạn (0,0)→(1,1) dài √[(1²+1²)]=**√2**.",
-    "casio": "CASIO: ds=√(x'²+y'²)dt. x'=1, y'=1 → ds=√2 dt. Tích phân 0 đến 1: √2.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 71,
+    "id": 33,
     "type": "improper_integral_inf",
     "question": "Xét sự hội tụ và tính \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x^2}\\).",
     "matrix": null,
@@ -1278,7 +594,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 72,
+    "id": 34,
     "type": "improper_integral_inf",
     "question": "Xét sự hội tụ của \\(I=\\int_0^{+\\infty}xe^{-x}dx\\).",
     "matrix": null,
@@ -1296,7 +612,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 73,
+    "id": 35,
     "type": "improper_integral_inf",
     "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x}\\) (chuỗi điều hòa).",
     "matrix": null,
@@ -1314,7 +630,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 74,
+    "id": 36,
     "type": "improper_integral_inf",
     "question": "Tính \\(I=\\int_0^{+\\infty}\\dfrac{dx}{x^2+5x+6}\\).",
     "matrix": null,
@@ -1332,7 +648,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 75,
+    "id": 37,
     "type": "improper_integral_singular",
     "question": "Xét sự hội tụ và tính \\(I=\\int_0^1\\dfrac{dx}{\\sqrt{x}}\\).",
     "matrix": null,
@@ -1350,7 +666,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 76,
+    "id": 38,
     "type": "improper_integral_singular",
     "question": "Xét sự hội tụ của \\(I=\\int_{-1}^1\\dfrac{dx}{\\sqrt{1-x^2}}\\).",
     "matrix": null,
@@ -1368,25 +684,25 @@
     "topic": "Tích phân"
   },
   {
-    "id": 77,
+    "id": 39,
     "type": "definite_integral",
     "question": "Tính \\(I=\\int_0^{\\pi/2}\\dfrac{dx}{4\\sin x+3\\cos x+5}\\).",
     "matrix": null,
     "options": [
+      "\\(\\dfrac{1}{6}\\)",
       "\\(\\dfrac{\\pi}{8}\\)",
       "\\(\\dfrac{1}{4}\\ln2\\)",
-      "\\(\\dfrac{\\pi}{4}\\)",
       "\\(\\dfrac{1}{2}\\)"
     ],
-    "correct": "\\(\\dfrac{\\pi}{8}\\)",
-    "solution": "Dùng thế \\(t=\\tan(x/2)\\): \\(\\sin x=\\dfrac{2t}{1+t^2}\\), \\(\\cos x=\\dfrac{1-t^2}{1+t^2}\\), \\(dx=\\dfrac{2dt}{1+t^2}\\).\n\nX=0→t=0; x=π/2→t=1.\n\n\\(4\\sin x+3\\cos x+5=\\dfrac{8t+3(1-t^2)+5(1+t^2)}{1+t^2}=\\dfrac{2t^2+8t+8}{1+t^2}=\\dfrac{2(t+2)^2}{1+t^2}\\)\n\n\\(I=\\int_0^1\\dfrac{2dt/(1+t^2)}{2(t+2)^2/(1+t^2)}=\\int_0^1\\dfrac{dt}{(t+2)^2}=\\left[-\\dfrac{1}{t+2}\\right]_0^1=-\\dfrac{1}{3}+\\dfrac{1}{2}=\\dfrac{1}{6}\\)\n\n*Lưu ý: đáp án π/8 cần kiểm tra lại phép thế.*",
-    "quick": "Thế Weierstrass t=tan(x/2): đổi sin, cos, dx. Tích phân rút gọn thành hữu tỉ theo t.",
+    "correct": "\\(\\dfrac{1}{6}\\)",
+    "solution": "Weierstrass \\(t=\\tan(x/2)\\), x:0→π/2 thành t:0→1.\n\n\\(4\\sin x+3\\cos x+5=\\dfrac{2(t+2)^2}{1+t^2}\\).\n\n\\(I=\\int_0^1\\dfrac{2dt/(1+t^2)}{2(t+2)^2/(1+t^2)}=\\int_0^1\\dfrac{dt}{(t+2)^2}\\)\n\n\\(=\\left[-\\dfrac{1}{t+2}\\right]_0^1=-\\dfrac{1}{3}+\\dfrac{1}{2}=\\dfrac{1}{6}\\).",
+    "quick": "Weierstrass → ∫₀¹dt/(t+2)²=[-1/(t+2)]₀¹=-1/3+1/2=**1/6**.",
     "casio": "CASIO: Tính tích phân số với x từ 0 đến π/2 bằng cách chia nhỏ và cộng.",
     "difficulty": 3,
     "topic": "Tích phân"
   },
   {
-    "id": 78,
+    "id": 40,
     "type": "definite_integral",
     "question": "Tính \\(I=\\int_0^\\pi e^x\\cos^2x\\,dx\\).",
     "matrix": null,
@@ -1404,7 +720,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 79,
+    "id": 41,
     "type": "area_between_curves",
     "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-4x+5\\) và hai tiếp tuyến tại \\(x=1\\) và \\(x=4\\).",
     "matrix": null,
@@ -1422,43 +738,25 @@
     "topic": "Tích phân"
   },
   {
-    "id": 80,
+    "id": 42,
     "type": "area_between_curves",
     "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=|x^2-1|\\) và \\(y=|x|+5\\).",
     "matrix": null,
     "options": [
+      "\\(\\dfrac{73}{3}\\)",
       "\\(\\dfrac{38}{3}\\)",
       "\\(12\\)",
-      "\\(\\dfrac{34}{3}\\)",
-      "\\(10\\)"
+      "\\(\\dfrac{34}{3}\\)"
     ],
-    "correct": "\\(\\dfrac{38}{3}\\)",
-    "solution": "Giao điểm: \\(|x^2-1|=|x|+5\\).\n\nVới \\(x\\geq1\\): \\(x^2-1=x+5\\) → \\(x^2-x-6=0\\) → \\(x=3\\) (nhận \\(x=-2\\) loại).\nVới \\(-1\\leq x\\leq1\\): \\(1-x^2=x+5\\) → \\(x^2+x+4=0\\) → vô nghiệm.\nVới \\(x\\leq-1\\): \\(x^2-1=-x+5\\) → \\(x^2+x-6=0\\) → \\(x=-3\\).\n\nDiện tích = \\(\\int_{-3}^3[(|x|+5)-|x^2-1|]dx=2\\int_0^3[(x+5)-(x^2-1)]dx\\)\n\\(=2\\int_0^3(-x^2+x+6)dx=2[-x^3/3+x^2/2+6x]_0^3=2(-9+4.5+18)=27\\).\n\n*Kết quả 27, kiểm tra lại đáp án.*",
-    "quick": "Tìm giao điểm, xét dấu. Diện tích=∫(trên-dưới)dx. Dùng tính chẵn lẻ nếu được.",
+    "correct": "\\(\\dfrac{73}{3}\\)",
+    "solution": "Giao điểm: \\(x=\\pm3\\).\n\n**Khu vực I** \\(x\\in[-3,-1]\\): \\(|x^2-1|=x^2-1\\), \\(|x|=-x\\)\n\\(\\int_{-3}^{-1}(-x+5-(x^2-1))dx=\\int_{-3}^{-1}(-x^2-x+6)dx=\\dfrac{22}{3}\\)\n\n**Khu vực II** \\(x\\in[-1,1]\\): \\(|x^2-1|=1-x^2\\), \\(|x|\\geq0\\)\n\\(\\int_{-1}^{1}(|x|+5-(1-x^2))dx=\\int_{-1}^{1}(|x|+x^2+4)dx=\\dfrac{29}{3}\\)\n\n**Khu vực III** \\(x\\in[1,3]\\): \\(|x^2-1|=x^2-1\\), \\(|x|=x\\)\n\\(\\int_1^3(x+5-(x^2-1))dx=\\int_1^3(-x^2+x+6)dx=\\dfrac{22}{3}\\)\n\n\\(S=\\dfrac{22}{3}+\\dfrac{29}{3}+\\dfrac{22}{3}=\\dfrac{73}{3}\\).",
+    "quick": "3 khu vực: [−3,−1],[−1,1],[1,3]. Tổng=22/3+29/3+22/3=**73/3**.",
     "casio": "CASIO: Giao x=±3. Diện tích=2∫₀³[-x²+x+6]dx=2[-9+4.5+18]=2×13.5=27.",
     "difficulty": 3,
     "topic": "Tích phân"
   },
   {
-    "id": 81,
-    "type": "surface_integral_type1",
-    "question": "Tính tích phân mặt loại 1 \\(\\iint_S(x+y+z)\\,dS\\) trong đó S là biên hình lập phương \\([0,1]^3\\).",
-    "matrix": null,
-    "options": [
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(9\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(3\\)",
-    "solution": "Hình lập phương có 6 mặt. Do tính đối xứng:\n\nTrên mặt \\(z=0\\): \\(\\iint(x+y+0)dxdy=\\int_0^1\\int_0^1(x+y)dxdy=1\\).\nTrên mặt \\(z=1\\): \\(\\iint(x+y+1)dxdy=2\\).\n\nTổng 6 mặt: Mặt z=0: 1, z=1: 2, x=0: 1, x=1: 2, y=0: 1, y=1: 2 → Tổng = 9. Chia... kiểm tra lại.\n\n*Tích phân trên mỗi mặt:* Mặt z=0: ∫∫(x+y)dxdy=1. Mặt z=1: ∫∫(x+y+1)=2. Tương tự → tổng = 2(1+2)=6... \n\nThực ra: 6 mặt, tổng = 3 (bằng 1/2 × tổng 6).",
-    "quick": "Tích phân mặt loại 1: chia thành 6 mặt của hình lập phương, tính từng mặt rồi cộng.",
-    "casio": "CASIO: Tính ∫∫ trên từng mặt, mỗi mặt là tích phân đôi.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 82,
+    "id": 43,
     "type": "improper_integral_inf",
     "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{x\\ln x}{(1+x^2)^2}dx\\).",
     "matrix": null,
@@ -1476,7 +774,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 83,
+    "id": 44,
     "type": "change_order",
     "question": "Cho tích phân lặp \\(I=\\int_0^2\\int_{\\sqrt{y}}^2 f(x,y)\\,dx\\,dy\\). Đổi thứ tự tích phân:",
     "matrix": null,
@@ -1494,7 +792,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 84,
+    "id": 45,
     "type": "change_order",
     "question": "Tích phân lặp \\(I=\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\). Sau khi đổi thứ tự trở thành?",
     "matrix": null,
@@ -1512,7 +810,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 85,
+    "id": 46,
     "type": "change_order",
     "question": "Đổi thứ tự tích phân: \\(I=\\int_0^4\\int_{\\sqrt{x}}^2 f(x,y)\\,dy\\,dx\\).",
     "matrix": null,
@@ -1530,7 +828,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 86,
+    "id": 47,
     "type": "polar_domain_complex",
     "question": "Cho \\(I=\\iint_D(x^2+y^2+1)\\,dA\\) với D trong góc phần tư 1, nằm trong \\(x^2+y^2=4x\\) và ngoài \\(x^2+y^2=4\\). Dạng tọa độ cực là?",
     "matrix": null,
@@ -1548,7 +846,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 87,
+    "id": 48,
     "type": "polar_domain_complex",
     "question": "Tính \\(I=\\iint_D\\sqrt{x^2+y^2}\\,dA\\) trong đó D là đĩa \\(x^2+y^2\\leq 2x\\).",
     "matrix": null,
@@ -1566,79 +864,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 88,
-    "type": "line_work",
-    "question": "Tính công \\(W\\) của trường vectơ \\(\\mathbf{F}=(y-x)\\mathbf{i}+x\\mathbf{j}\\) dọc theo cung \\(x^2+y^2=1\\) từ \\((1;0)\\) đến \\((0;1)\\) (ngược chiều kim đồng hồ).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(-\\dfrac{1}{2}\\)",
-      "\\(\\dfrac{\\pi}{4}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
-    "solution": "\\(W=\\int_C(y-x)dx+x\\,dy\\).\n\nTham số: \\(x=\\cos t, y=\\sin t\\), \\(t\\in[0,\\pi/2]\\).\n\n\\(dx=-\\sin t\\,dt\\), \\(dy=\\cos t\\,dt\\).\n\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+\\cos t\\cdot\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}[-\\sin^2t+\\sin t\\cos t+\\cos^2t]dt\\)\n\\(=\\int_0^{\\pi/2}[\\cos2t+\\dfrac{\\sin2t}{2}]dt\\)\n\\(=[\\dfrac{\\sin2t}{2}-\\dfrac{\\cos2t}{4}]_0^{\\pi/2}=(0+1/4)-(0-1/4)=1/2\\).\n\n*Kết quả ½. Đây là câu C69 đề CA1 2025.*",
-    "quick": "Tham số hóa vòng tròn: x=cost, y=sint. Tính ∫Mdx+Ndy bằng thế tham số t từ 0 đến π/2.",
-    "casio": "CASIO: Thay x=cost, y=sint, dx=-sindt, dy=cosdt vào ∫Mdx+Ndy.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 89,
-    "type": "line_work",
-    "question": "Tính công \\(W=\\int_C\\mathbf{F}\\cdot d\\mathbf{r}\\) với \\(\\mathbf{F}=(y,x)\\) dọc đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(2\\)",
-      "\\(0\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "\\(W=\\int_C y\\,dx+x\\,dy\\).\n\nTham số: \\(x=t, y=t\\), \\(t\\in[0,1]\\). \\(dx=dt, dy=dt\\).\n\n\\(W=\\int_0^1[t\\cdot dt+t\\cdot dt]=\\int_0^1 2t\\,dt=[t^2]_0^1=1\\).\n\n*Kiểm tra nhanh:* \\(Mdx+Ndy=ydx+xdy=d(xy)\\) → thế vị \\(U=xy\\). \\(W=U(1,1)-U(0,0)=1-0=1\\).",
-    "quick": "F=(y,x): kiểm tra M_y=1=N_x=1 → toàn phần! \\(W=U(1,1)-U(0,0)=xy|_{(0,0)}^{(1,1)}=\\mathbf{1}\\).",
-    "casio": "CASIO: Thế vị U=xy (vì dU=ydx+xdy). W=U(đến)-U(từ)=1-0=1.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 90,
-    "type": "triple_iterated",
-    "question": "Cho \\(I=\\iiint_V f(x,y,z)\\,dV\\) với V giới hạn bởi \\(z=y, z=0, y=1-x^2\\). Tích phân lặp đúng là?",
-    "matrix": null,
-    "options": [
-      "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\)",
-      "\\(\\int_{-1}^1\\int_0^1\\int_0^y f\\,dz\\,dy\\,dx\\)",
-      "\\(\\int_0^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dx\\,dy\\)",
-      "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_y^0 f\\,dz\\,dy\\,dx\\)"
-    ],
-    "correct": "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\)",
-    "solution": "**Phân tích miền V:**\n\nMặt trên: \\(z=y\\). Mặt dưới: \\(z=0\\). → \\(0\\leq z\\leq y\\).\n\nMặt bên: \\(y=1-x^2\\) (parabol). Vì \\(z\\geq0\\) và \\(z\\leq y\\) → cần \\(y\\geq0\\). → \\(0\\leq y\\leq1-x^2\\).\n\nX: miền chiếu lên Oxy: \\(0\\leq y\\leq1-x^2\\) → \\(x\\in[-1,1]\\).\n\n\\(I=\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\).",
-    "quick": "Thứ tự: z trong (0→y), y giữa (0→1-x²), x ngoài (-1→1). **Đây là dạng C64 CA1 2025**.",
-    "casio": "CASIO: Xác định giới hạn từ trong ra ngoài: z, rồi y, rồi x.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 91,
-    "type": "triple_iterated",
-    "question": "Thể tích vật thể V giới hạn bởi \\(x+y+z=2\\), \\(x=0,y=0,z=0\\) bằng?",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{4}{3}\\)",
-      "\\(2\\)",
-      "\\(\\dfrac{1}{3}\\)",
-      "\\(\\dfrac{2}{3}\\)"
-    ],
-    "correct": "\\(\\dfrac{4}{3}\\)",
-    "solution": "\\(V=\\int_0^2\\int_0^{2-x}\\int_0^{2-x-y}dz\\,dy\\,dx\\)\n\n\\(=\\int_0^2\\int_0^{2-x}(2-x-y)dy\\,dx\\)\n\n\\(=\\int_0^2\\left[(2-x)y-\\dfrac{y^2}{2}\\right]_0^{2-x}dx\\)\n\n\\(=\\int_0^2\\dfrac{(2-x)^2}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{(2-x)^3}{-3}\\Big|_0^2=\\dfrac{1}{2}\\cdot\\dfrac{8}{3}=\\dfrac{4}{3}\\).",
-    "quick": "Tích phân ba lớp của 1 trên tứ diện x+y+z≤2, x,y,z≥0. Kết quả: **4/3**.",
-    "casio": "CASIO: V=∫₀²∫₀^{2-x}(2-x-y)dy dx = ∫₀² (2-x)²/2 dx = 4/3.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 92,
+    "id": 49,
     "type": "double_integral_setup",
     "question": "Miền D là hình vuông [0,2]×[0,2]. Tích phân \\(\\iint_D 1\\,dA\\) bằng?",
     "matrix": null,
@@ -1656,7 +882,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 93,
+    "id": 50,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^1\\int_0^1 x\\,dx\\,dy\\).",
     "matrix": null,
@@ -1674,7 +900,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 94,
+    "id": 51,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^2\\int_0^1(x+y)\\,dx\\,dy\\).",
     "matrix": null,
@@ -1692,7 +918,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 95,
+    "id": 52,
     "type": "jacobian",
     "question": "Khi đổi sang tọa độ cực, \\(dA=dx\\,dy\\) trở thành?",
     "matrix": null,
@@ -1710,7 +936,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 96,
+    "id": 53,
     "type": "double_integral_area",
     "question": "Diện tích hình tròn \\(x^2+y^2\\leq R^2\\) tính bằng tích phân đôi là?",
     "matrix": null,
@@ -1728,7 +954,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 97,
+    "id": 54,
     "type": "double_integral_order",
     "question": "Miền D: \\(0\\leq x\\leq1,\\;0\\leq y\\leq x\\). Đây là miền loại?",
     "matrix": null,
@@ -1746,43 +972,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 98,
-    "type": "triple_integral",
-    "question": "\\(\\iiint_V dV\\) với V là khối lập phương \\([0,1]^3\\) bằng?",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(\\pi\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "\\(\\iiint_V dV\\) = thể tích V = 1×1×1 = **1**.",
-    "quick": "∭1 dV = thể tích khối lập phương = **1³=1**.",
-    "casio": "CASIO: ∫₀¹∫₀¹∫₀¹ dz dy dx=1.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 99,
-    "type": "line_integral_type1",
-    "question": "Tích phân đường \\(\\int_C 1\\,ds\\) bằng?",
-    "matrix": null,
-    "options": [
-      "Độ dài đường cong C",
-      "Diện tích dưới C",
-      "0",
-      "1"
-    ],
-    "correct": "Độ dài đường cong C",
-    "solution": "\\(\\int_C 1\\,ds = \\int_C ds\\) = **độ dài đường cong C**.\n\nĐây là ý nghĩa hình học của tích phân đường loại 1.",
-    "quick": "∫_C ds = **độ dài** đường cong C.",
-    "casio": "CASIO: ds=√(x'²+y'²)dt. ∫dt (không tích phân hàm) = độ dài.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 100,
+    "id": 55,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^\\pi\\int_0^1 r\\sin\\theta\\,dr\\,d\\theta\\) (tọa độ cực).",
     "matrix": null,
@@ -1800,25 +990,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 101,
-    "type": "green_theorem",
-    "question": "Định lý Green liên hệ tích phân đường với tích phân gì?",
-    "matrix": null,
-    "options": [
-      "Tích phân đôi trên miền phẳng D",
-      "Tích phân ba",
-      "Tích phân mặt",
-      "Tích phân xác định"
-    ],
-    "correct": "Tích phân đôi trên miền phẳng D",
-    "solution": "**Định lý Green:** \\(\\oint_L Mdx+Ndy=\\iint_D\\left(\\dfrac{\\partial N}{\\partial x}-\\dfrac{\\partial M}{\\partial y}\\right)dA\\).\n\nChuyển tích phân đường (trên biên L) → tích phân **đôi** (trên miền D).",
-    "quick": "Green: ∮Mdx+Ndy = ∬(N_x-M_y)dA. **Đường → đôi**.",
-    "casio": "CASIO: Kiểm tra N_x-M_y trước. Nếu đơn giản → dùng Green.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 102,
+    "id": 56,
     "type": "double_integral_polar",
     "question": "Đổi sang tọa độ cực: \\(x^2+y^2=4\\) trở thành?",
     "matrix": null,
@@ -1832,24 +1004,6 @@
     "solution": "\\(x^2+y^2=r^2\\). Phương trình \\(x^2+y^2=4\\) → \\(r^2=4\\) → \\(r=2\\) (đường tròn bán kính 2).",
     "quick": "x²+y²=r². Vì vậy x²+y²=4 → r²=4 → **r=2**.",
     "casio": "CASIO: r=√(x²+y²)=√4=2.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 103,
-    "type": "triple_integral_cylindrical",
-    "question": "Jacobian của tọa độ trụ (r,θ,z) là?",
-    "matrix": null,
-    "options": [
-      "\\(r\\)",
-      "\\(r^2\\)",
-      "\\(r^2\\sin\\phi\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(r\\)",
-    "solution": "Tọa độ trụ: x=rcosθ, y=rsinθ, z=z.\n\nJacobian = r (giống tọa độ cực × 1 theo z).\n\n\\(dV=dx\\,dy\\,dz=r\\,dr\\,d\\theta\\,dz\\).",
-    "quick": "Trụ: dV=**r** dr dθ dz. (Cầu: r²sinφ dr dφ dθ)",
-    "casio": "CASIO: J=r. dV=r dr dθ dz.",
     "difficulty": 1,
     "topic": "Tích phân"
   }

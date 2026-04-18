@@ -1,0 +1,776 @@
+[
+  {
+    "id": 1,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 2} (x^2+3x-4)\\)?",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(5\\)",
+      "\\(4\\)",
+      "\\(7\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Thay trực tiếp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
+    "quick": "Hàm đa thức liên tục tại mọi điểm → **thay số trực tiếp** vào",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 2,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 1} \\dfrac{x^2-1}{x-1}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "\\(\\dfrac{(x-1)(x+1)}{x-1}=x+1\\to 2\\) khi \\(x\\to1\\).",
+    "quick": "Dạng \\(0/0\\): **phân tích nhân tử** (hoặc L'Hôpital) rồi rút gọn",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 3,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sin x}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\).",
+    "quick": "Công thức đặc biệt: \\(\\lim_{x\\to0}\\dfrac{\\sin x}{x}=1\\) — học thuộc!",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 4,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{1-\\cos x}{x^2}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(1-\\cos x \\sim \\dfrac{x^2}{2}\\) → \\(\\lim = \\dfrac{1}{2}\\).",
+    "quick": "\\(1-\\cos x \\sim x^2/2\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 5,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\tan x}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\tan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
+    "quick": "\\(\\tan x/x \\to 1\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 6,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{3x^2+2x+1}{x^2-5}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Chia tử và mẫu cho \\(x^2\\): \\(\\dfrac{3+2/x+1/x^2}{1-5/x^2}\\to3\\).",
+    "quick": "Hệ số bậc cao nhất: \\(3/1=3\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 7,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 0^+} x \\ln x\\)?",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(-\\infty\\)",
+      "\\(1\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "\\(x\\ln x \\to 0\\) khi \\(x\\to0^+\\) (dạng 0·∞, \\(\\ln x\\) chậm hơn \\(x\\)).",
+    "quick": "\\(x\\ln x \\to 0\\) (quen thuộc)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 8,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{e^x-1}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(e\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(e^x-1 \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
+    "quick": "\\((e^x-1)/x \\to 1\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 9,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\ln(1+x)}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(e\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\ln(1+x)\\sim x\\) → giới hạn = 1.",
+    "quick": "\\(\\ln(1+x)/x \\to 1\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 10,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\left(1+\\dfrac{1}{x}\\right)^x\\)?",
+    "matrix": null,
+    "options": [
+      "\\(e\\)",
+      "\\(1\\)",
+      "\\(\\infty\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(e\\)",
+    "solution": "Đây là định nghĩa của \\(e\\): \\(\\lim (1+1/x)^x = e\\).",
+    "quick": "\\(e\\) (công thức nổi tiếng)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 11,
+    "type": "limit_basic",
+    "question": "Tính \\(\\lim_{x\\to 0} (1+x)^{1/x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(e\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(e\\)",
+    "solution": "Đổi biến \\(t=1/x\\) → \\(\\lim_{t\\to\\infty}(1+1/t)^t=e\\).",
+    "quick": "Dạng \\(1^\\infty\\) → \\(e\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 12,
+    "type": "limit_advanced",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sin 2x}{3x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3}\\)",
+    "solution": "\\(\\dfrac{\\sin2x}{3x}=\\dfrac{2}{3}\\cdot\\dfrac{\\sin2x}{2x}\\to\\dfrac{2}{3}\\cdot1=\\dfrac{2}{3}\\).",
+    "quick": "\\(\\sin(ax)/(bx) \\to a/b\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 13,
+    "type": "limit_advanced",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sqrt{1+x}-1}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Nhân liên hợp: \\(\\dfrac{(\\sqrt{1+x}-1)(\\sqrt{1+x}+1)}{x(\\sqrt{1+x}+1)}=\\dfrac{x}{x(\\sqrt{1+x}+1)}\\to\\dfrac{1}{2}\\).",
+    "quick": "\\(\\sqrt{1+x}-1 \\sim x/2\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 14,
+    "type": "limit_advanced",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\tan x - \\sin x}{x^3}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{1}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(\\tan x - \\sin x = \\sin x(\\frac{1}{\\cos x}-1)=\\sin x\\cdot\\frac{1-\\cos x}{\\cos x}\\sim x\\cdot\\frac{x^2/2}{1}=\\frac{x^3}{2}\\) → \\(\\lim = 1/2\\).",
+    "quick": "Khai triển Taylor: \\(\\tan x - \\sin x \\sim x^3/2\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 15,
+    "type": "limit_advanced",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{\\ln x}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\infty\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "\\(\\ln x\\) tăng chậm hơn bất kỳ lũy thừa dương nào của \\(x\\) → giới hạn = 0.",
+    "quick": "\\(\\ln x/x \\to 0\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 16,
+    "type": "limit_advanced",
+    "question": "Tính \\(\\lim_{x\\to 0^+} x^x\\)?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\ln(x^x)=x\\ln x\\to0\\) → \\(x^x\\to e^0=1\\).",
+    "quick": "Dạng \\(0^0\\) → \\(1\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 17,
+    "type": "limit_advanced",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\arctan x}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)",
+      "\\(\\pi/2\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\arctan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
+    "quick": "\\(\\arctan x/x \\to 1\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 18,
+    "type": "limit_one_sided",
+    "question": "Tính \\(\\lim_{x\\to 0^+} \\dfrac{|x|}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Khi \\(x>0\\), \\(|x|=x\\) → \\(x/x=1\\).",
+    "quick": "Tiến về 0 từ phải → dương → =1",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 19,
+    "type": "limit_one_sided",
+    "question": "Tính \\(\\lim_{x\\to 0^-} \\dfrac{|x|}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\(-1\\)",
+    "solution": "Khi \\(x<0\\), \\(|x|=-x\\) → \\(-x/x=-1\\).",
+    "quick": "Tiến về 0 từ trái → âm → =-1",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 20,
+    "type": "limit_one_sided",
+    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{|x|}{x}\\)?",
+    "matrix": null,
+    "options": [
+      "Không tồn tại",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "Không tồn tại",
+    "solution": "Giới hạn trái = -1, giới hạn phải = 1, khác nhau → không tồn tại giới hạn.",
+    "quick": "Giới hạn hai phía ≠ nhau → **giới hạn không tồn tại**",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 1,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 21,
+    "type": "limit_infinite",
+    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{x^2+1}{x+1}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(+\\infty\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(+\\infty\\)",
+    "solution": "Bậc tử = 2 > bậc mẫu = 1 → giới hạn = \\(+\\infty\\).",
+    "quick": "Bậc tử > bậc mẫu → \\(\\lim=\\pm\\infty\\) (xét dấu để biết + hay −)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 22,
+    "type": "limit_infinite",
+    "question": "Tính \\(\\lim_{x\\to 1^-} \\dfrac{1}{x-1}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(-\\infty\\)",
+      "\\(+\\infty\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-\\infty\\)",
+    "solution": "Khi \\(x\\to1^-\\): \\(x-1<0\\) và rất nhỏ âm → phân số tiến đến \\(-\\infty\\).",
+    "quick": "Mẫu âm, tiến về 0 → \\(-\\infty\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 23,
+    "type": "limit_infinite",
+    "question": "Tính \\(\\lim_{x\\to 1^+} \\dfrac{1}{x-1}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(+\\infty\\)",
+      "\\(-\\infty\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(+\\infty\\)",
+    "solution": "Khi \\(x\\to1^+\\): \\(x-1>0\\) và rất nhỏ dương → phân số tiến đến \\(+\\infty\\).",
+    "quick": "Mẫu dương, tiến về 0 → \\(+\\infty\\)",
+    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 24,
+    "type": "limit_lhopital",
+    "question": "Tính \\(\\lim_{x\\to0}\\dfrac{e^x - 1 - x}{x^2}\\) bằng quy tắc L'Hôpital.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Dạng \\(0/0\\). Áp dụng L'Hôpital **lần 1:** \\(\\lim\\dfrac{e^x-1}{2x}\\) — vẫn \\(0/0\\).\n\n**Lần 2:** \\(\\lim\\dfrac{e^x}{2}=\\dfrac{e^0}{2}=\\dfrac{1}{2}\\).",
+    "quick": "L'Hôpital 2 lần: tử thành \\(e^x\\), mẫu thành 2 → **1/2**.",
+    "casio": "CASIO: Thay x=0.001 → (e^0.001-1-0.001)/0.001² ≈ (0.0010005-0.001)/0.000001 ≈ 0.5. Đáp án 1/2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 25,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{\\ln(1+x)-x}{x^2}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-\\dfrac{1}{2}\\)",
+    "solution": "Dạng \\(0/0\\). **L'Hôpital lần 1:** \\(\\lim\\dfrac{\\frac{1}{1+x}-1}{2x}=\\lim\\dfrac{\\frac{-x}{1+x}}{2x}=\\lim\\dfrac{-1}{2(1+x)}=\\dfrac{-1}{2}\\).",
+    "quick": "L'Hôpital → \\(\\dfrac{1/(1+x)-1}{2x}=\\dfrac{-x/(1+x)}{2x}\\to\\dfrac{-1}{2}\\).",
+    "casio": "CASIO: x=0.001 → (ln(1.001)-0.001)/0.001² ≈ (0.0009995-0.001)/0.000001 ≈ -0.5.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 26,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to+\\infty}\\dfrac{\\ln x}{x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(+\\infty\\)",
+      "\\(-\\infty\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dạng \\(+\\infty/+\\infty\\). **L'Hôpital:** \\(\\lim_{x\\to+\\infty}\\dfrac{1/x}{1}=\\lim_{x\\to+\\infty}\\dfrac{1}{x}=0\\).\n\n*Ý nghĩa:* hàm mũ tăng nhanh hơn logarit.",
+    "quick": "L'Hôpital: \\(\\dfrac{\\ln x}{x}\\to\\dfrac{1/x}{1}=\\dfrac{1}{x}\\to0\\). **x tăng nhanh hơn ln x**.",
+    "casio": "CASIO: x=10^6 → ln(10^6)/10^6 = 6ln10/10^6 ≈ 0.0000138 → ≈ 0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 27,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0^+}x\\ln x=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(-\\infty\\)",
+      "\\(1\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dạng \\(0\\cdot(-\\infty)\\). Đưa về \\(\\dfrac{0}{0}\\): \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\).\n\n**L'Hôpital:** \\(\\lim\\dfrac{1/x}{-1/x^2}=\\lim(-x)=0\\).",
+    "quick": "Viết \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\), L'Hôpital → \\(\\dfrac{1/x}{-1/x^2}=-x\\to0\\).",
+    "casio": "CASIO: x=0.0001 → 0.0001×ln(0.0001)=0.0001×(-9.21)≈-0.000921≈0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 28,
+    "type": "limit_notable",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{\\sin 3x}{\\sin 5x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{5}\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{5}\\)",
+    "solution": "Dùng \\(\\lim_{u\\to0}\\dfrac{\\sin u}{u}=1\\):\n\\(\\dfrac{\\sin3x}{\\sin5x}=\\dfrac{\\sin3x}{3x}\\cdot\\dfrac{5x}{\\sin5x}\\cdot\\dfrac{3x}{5x}\\to1\\cdot1\\cdot\\dfrac{3}{5}=\\dfrac{3}{5}\\).",
+    "quick": "Nhân chia: \\(\\dfrac{\\sin3x/3x}{\\sin5x/5x}\\cdot\\dfrac{3}{5}\\to\\dfrac{3}{5}\\). Tỉ số giới hạn = **tỉ số hệ số**.",
+    "casio": "CASIO: x=0.001 → sin(0.003)/sin(0.005)≈0.003/0.005=0.6=3/5.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 29,
+    "type": "limit_notable",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Dùng \\(1-\\cos x=2\\sin^2(x/2)\\):\n\\(\\dfrac{2\\sin^2(x/2)}{x^2}=\\dfrac{2\\sin^2(x/2)}{4(x/2)^2}=\\dfrac{1}{2}\\left(\\dfrac{\\sin(x/2)}{x/2}\\right)^2\\to\\dfrac{1}{2}\\cdot1^2=\\dfrac{1}{2}\\).",
+    "quick": "Công thức nhớ: \\(\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=\\dfrac{1}{2}\\). Bằng bán góc hoặc Taylor.",
+    "casio": "CASIO: x=0.001 → (1-cos0.001)/0.001²≈(1-0.9999995)/0.000001=0.5.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 30,
+    "type": "limit_infinity_form",
+    "question": "\\(\\lim_{x\\to+\\infty}\\left(1+\\dfrac{2}{x}\\right)^x=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(e^2\\)",
+      "\\(e\\)",
+      "\\(2\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(e^2\\)",
+    "solution": "Dạng \\(1^\\infty\\). Đặt \\(y=\\left(1+\\dfrac{2}{x}\\right)^x\\), lấy log:\n\\(\\ln y=x\\ln\\left(1+\\dfrac{2}{x}\\right)\\to x\\cdot\\dfrac{2}{x}=2\\) (dùng \\(\\ln(1+u)\\sim u\\) khi \\(u\\to0\\)).\n\nSuy ra \\(y\\to e^2\\).",
+    "quick": "\\(1^\\infty\\) dạng: \\(\\left(1+\\dfrac{a}{x}\\right)^x\\to e^a\\). Ở đây a=2 → **e²**.",
+    "casio": "CASIO: x=10^6 → (1+2/10^6)^(10^6) ≈ e² ≈ 7.389.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 31,
+    "type": "limit_infinity_form",
+    "question": "\\(\\lim_{x\\to0^+}x^x=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(e\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Dạng \\(0^0\\). Đặt \\(y=x^x=e^{x\\ln x}\\).\n\n\\(\\lim_{x\\to0^+}x\\ln x=0\\) (đã biết — dạng \\(0\\cdot(-\\infty)\\), L'Hôpital → 0).\n\n→ \\(\\lim y=e^0=1\\).",
+    "quick": "\\(0^0\\) dạng: xét \\(e^{x\\ln x}\\). Giới hạn \\(x\\ln x\\to0\\) → \\(e^0=\\mathbf{1}\\).",
+    "casio": "CASIO: x=0.0001 → 0.0001^0.0001=e^(0.0001×ln0.0001)=e^(-0.000921)≈0.9991≈1.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 32,
+    "type": "limit_squeeze",
+    "question": "Tính \\(\\lim_{x\\to0}x^2\\sin\\dfrac{1}{x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "Không tồn tại",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dùng **định lý kẹp (squeeze theorem):**\n\n\\(-1\\leq\\sin\\dfrac{1}{x}\\leq1\\) với mọi \\(x\\neq0\\).\n\nNhân với \\(x^2>0\\): \\(-x^2\\leq x^2\\sin\\dfrac{1}{x}\\leq x^2\\).\n\nVì \\(\\lim_{x\\to0}(-x^2)=0\\) và \\(\\lim_{x\\to0}x^2=0\\) → theo kẹp: \\(\\lim_{x\\to0}x^2\\sin\\dfrac{1}{x}=0\\).",
+    "quick": "Dạng kẹp: \\(|x^2\\sin(1/x)|\\leq x^2\\to0\\). Hàm bị chặn × vô cùng bé → **0**.",
+    "casio": "CASIO: x=0.001 → 0.001²×sin(1000)=0.000001×(-0.827)≈-8.27e-7≈0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 33,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{\\tan x - x}{x^3}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\)",
+    "solution": "Dạng \\(0/0\\). **L'Hôpital 3 lần:**\n\n\\(\\dfrac{\\sec^2x-1}{3x^2}=\\dfrac{\\tan^2x}{3x^2}\\to?\\) (vẫn \\(0/0\\)).\n\nHoặc dùng khai triển Taylor: \\(\\tan x=x+\\dfrac{x^3}{3}+O(x^5)\\) → \\(\\dfrac{\\tan x-x}{x^3}=\\dfrac{x^3/3+\\ldots}{x^3}\\to\\dfrac{1}{3}\\).",
+    "quick": "Taylor: \\(\\tan x=x+\\dfrac{x^3}{3}+\\ldots\\) → \\(\\dfrac{\\tan x-x}{x^3}\\to\\dfrac{1}{3}\\).",
+    "casio": "CASIO: x=0.01 → (tan0.01-0.01)/0.01³=(0.010001-0.01)/0.000001≈0.3333.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 34,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{e^{2x}-e^x}{x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Dạng \\(0/0\\). **Cách 1 — L'Hôpital:** \\(\\lim_{x\\to0}\\dfrac{2e^{2x}-e^x}{1}=2\\cdot1-1=1\\).\n\n**Cách 2 — Phân tích:** \\(\\dfrac{e^{2x}-e^x}{x}=e^x\\cdot\\dfrac{e^x-1}{x}\\to1\\cdot1=1\\).",
+    "quick": "Phân tích: \\(e^x\\cdot\\dfrac{e^x-1}{x}\\to1\\cdot1=\\mathbf{1}\\). Hoặc L'Hôpital: \\(2e^0-e^0=1\\).",
+    "casio": "CASIO: x=0.001 → (e^0.002-e^0.001)/0.001≈(1.002002-1.001001)/0.001≈1.001≈1.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 35,
+    "type": "limit_infinite",
+    "question": "\\(\\lim_{x\\to+\\infty}\\left(\\sqrt{x^2+x}-x\\right)=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)",
+      "\\(+\\infty\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "Nhân liên hợp:\n\\(\\sqrt{x^2+x}-x=\\dfrac{(\\sqrt{x^2+x}-x)(\\sqrt{x^2+x}+x)}{\\sqrt{x^2+x}+x}=\\dfrac{x^2+x-x^2}{\\sqrt{x^2+x}+x}=\\dfrac{x}{\\sqrt{x^2+x}+x}\\).\n\nChia tử và mẫu cho \\(x\\) (\\(x>0\\)):\n\\(=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac{1}{1+1}=\\dfrac{1}{2}\\).",
+    "quick": "Nhân liên hợp → \\(\\dfrac{x}{\\sqrt{x^2+x}+x}=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac{1}{2}\\).",
+    "casio": "CASIO: x=10^6 → √(10^12+10^6)-10^6≈10^6√(1+10^-6)-10^6≈10^6(1+0.5×10^-6)-10^6=0.5.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 36,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to1}\\dfrac{x^3-3x+2}{x^3-x^2-x+1}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "Dạng \\(0/0\\) (thay \\(x=1\\): tử=0, mẫu=0).\n\n**Phân tích nhân tử:**\nTử: \\(x^3-3x+2=(x-1)^2(x+2)\\).\nMẫu: \\(x^3-x^2-x+1=(x-1)^2(x+1)\\).\n\n→ \\(\\dfrac{(x-1)^2(x+2)}{(x-1)^2(x+1)}=\\dfrac{x+2}{x+1}\\to\\dfrac{3}{2}\\).",
+    "quick": "Cả tử và mẫu đều có nhân tử \\((x-1)^2\\) → rút gọn → \\(\\dfrac{x+2}{x+1}\\to\\dfrac{3}{2}\\).",
+    "casio": "CASIO: x=1.0001 → tử≈0.0000030003, mẫu≈0.0000020002 → tỉ số ≈1.5=3/2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 37,
+    "type": "limit_notable",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{a^x-1}{x}=?\\) với \\(a>0,\\;a\\neq1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\ln a\\)",
+      "\\(a\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\ln a\\)",
+    "solution": "Đặt \\(t=a^x-1\\), khi \\(x\\to0\\) thì \\(t\\to0\\) và \\(x=\\log_a(1+t)=\\dfrac{\\ln(1+t)}{\\ln a}\\).\n\n\\(\\dfrac{a^x-1}{x}=\\dfrac{t}{\\ln(1+t)/\\ln a}=\\dfrac{t\\ln a}{\\ln(1+t)}\\to\\dfrac{\\ln a}{1}=\\ln a\\).\n\n*Đặc biệt:* Khi \\(a=e\\): \\(\\dfrac{e^x-1}{x}\\to\\ln e=1\\).",
+    "quick": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\dfrac{a^x-1}{x}=\\ln a\\). Khi a=e → 1.",
+    "casio": "CASIO: a=2, x=0.001 → (2^0.001-1)/0.001=(1.000693-1)/0.001≈0.693≈ln2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 38,
+    "type": "limit_lhopital",
+    "question": "\\(\\lim_{x\\to+\\infty}x^2 e^{-x}=?\\)",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(+\\infty\\)",
+      "\\(1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Dạng \\(\\infty\\cdot0\\). Viết \\(x^2e^{-x}=\\dfrac{x^2}{e^x}\\), dạng \\(\\infty/\\infty\\).\n\n**L'Hôpital lần 1:** \\(\\dfrac{2x}{e^x}\\) — vẫn \\(\\infty/\\infty\\).\n\n**Lần 2:** \\(\\dfrac{2}{e^x}\\to0\\).\n\n*Ý nghĩa:* Hàm mũ tăng nhanh hơn bất kỳ đa thức nào.",
+    "quick": "L'Hôpital 2 lần: \\(x^2/e^x\\to2x/e^x\\to2/e^x\\to0\\). **Mũ thắng đa thức**.",
+    "casio": "CASIO: x=100 → 10000/e^100 ≈ 10000/(2.69×10^43) ≈ 0.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 39,
+    "type": "limit_inf_sqrt",
+    "question": "Tìm \\(\\lim_{x\\to-\\infty}\\dfrac{\\sqrt{x^2+x}}{2x+\\sqrt{x^2+1}}\\).",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(-\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(-1\\)",
+    "solution": "Khi \\(x\\to-\\infty\\): chia tử và mẫu cho \\(|x|=-x\\) (vì \\(x<0\\)).\n\n**Tử:** \\(\\dfrac{\\sqrt{x^2+x}}{-x}=\\sqrt{\\dfrac{x^2+x}{x^2}}=\\sqrt{1+\\dfrac{1}{x}}\\to1\\).\n\n**Mẫu:** \\(\\dfrac{2x+\\sqrt{x^2+1}}{-x}=-2+\\dfrac{\\sqrt{x^2+1}}{-x}=-2+\\sqrt{\\dfrac{x^2+1}{x^2}}=-2+\\sqrt{1+\\dfrac{1}{x^2}}\\to-2+1=-1\\).\n\nGiới hạn = \\(\\dfrac{1}{-1}=-1\\).",
+    "quick": "x→-∞: chia cho |x|=-x. Tử→1, mẫu→-2+1=-1. Giới hạn = **-1**. (Lưu ý: |x|=-x khi x<0!)",
+    "casio": "CASIO: x=-10^6 → tử≈10^6, mẫu≈-2×10^6+10^6=-10^6. Tỉ số≈-1.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 40,
+    "type": "limit_inf_sqrt",
+    "question": "Tính \\(\\lim_{x\\to+\\infty}\\dfrac{\\sqrt{x^2+x}}{2x+\\sqrt{x^2+1}}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\)",
+    "solution": "Khi \\(x\\to+\\infty\\): chia tử và mẫu cho \\(x\\) (vì \\(x>0\\), \\(|x|=x\\)).\n\n**Tử:** \\(\\dfrac{\\sqrt{x^2+x}}{x}=\\sqrt{1+1/x}\\to1\\).\n\n**Mẫu:** \\(\\dfrac{2x+\\sqrt{x^2+1}}{x}=2+\\sqrt{1+1/x^2}\\to2+1=3\\).\n\nGiới hạn = \\(\\dfrac{1}{3}\\).",
+    "quick": "x→+∞: chia x. Tử→1, mẫu→2+1=3. Giới hạn = **1/3**.",
+    "casio": "CASIO: x=10^6 → √(10^12+10^6)/(2×10^6+√(10^12+1))≈10^6/(2×10^6+10^6)=1/3.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 41,
+    "type": "limit_ratio_roots",
+    "question": "Tính \\(\\lim_{x\\to1}\\dfrac{\\sqrt[5]{x}-1}{\\sqrt[3]{x}-1}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{5}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{5}\\)",
+    "solution": "Đặt \\(t=x^{1/15}\\) (hoặc dùng L'Hôpital dạng \\(0/0\\)):\n\n**L'Hôpital:**\n\\(\\lim_{x\\to1}\\dfrac{x^{1/5}-1}{x^{1/3}-1}\\)\n\nĐạo hàm tử: \\(\\dfrac{1}{5}x^{-4/5}\\to\\dfrac{1}{5}\\)\nĐạo hàm mẫu: \\(\\dfrac{1}{3}x^{-2/3}\\to\\dfrac{1}{3}\\)\n\nGiới hạn = \\(\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).\n\n**Cách khác** — dùng giới hạn cơ bản: \\(\\lim_{x\\to1}\\dfrac{x^\\alpha-1}{x-1}=\\alpha\\):\n\\(\\dfrac{x^{1/5}-1}{x^{1/3}-1}=\\dfrac{x^{1/5}-1}{x-1}\\cdot\\dfrac{x-1}{x^{1/3}-1}\\to\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).",
+    "quick": "L'Hôpital: \\(\\dfrac{(1/5)x^{-4/5}}{(1/3)x^{-2/3}}\\Big|_{x=1}=\\dfrac{1/5}{1/3}=\\mathbf{\\dfrac{3}{5}}\\).",
+    "casio": "CASIO: x=1.001 → (1.001^0.2-1)/(1.001^(1/3)-1)≈(0.0002)/(0.000333)≈0.6=3/5.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 42,
+    "type": "limit_ratio_roots",
+    "question": "Tính \\(\\lim_{x\\to1}\\dfrac{\\sqrt[4]{x}-1}{\\sqrt[3]{x}-1}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{4}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{4}\\)",
+    "solution": "Dùng \\(\\lim_{x\\to1}\\dfrac{x^\\alpha-1}{x-1}=\\alpha\\):\n\n\\(\\dfrac{x^{1/4}-1}{x^{1/3}-1}=\\dfrac{(x^{1/4}-1)/(x-1)}{(x^{1/3}-1)/(x-1)}\\to\\dfrac{1/4}{1/3}=\\dfrac{3}{4}\\).",
+    "quick": "\\(\\dfrac{x^{1/4}-1}{x^{1/3}-1}\\to\\dfrac{1/4}{1/3}=\\dfrac{3}{4}\\). **Quy tắc:** \\(\\dfrac{x^{p/q}-1}{x^{r/s}-1}\\to\\dfrac{p/q}{r/s}\\) khi \\(x\\to1\\).",
+    "casio": "CASIO: x=1.001 → (1.001^0.25-1)/(1.001^(1/3)-1)≈(0.00025)/(0.000333)≈0.75=3/4.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 43,
+    "type": "limit_inf_sqrt",
+    "question": "Tính \\(\\lim_{x\\to-\\infty}\\left(x+\\sqrt{x^2+2x}\\right)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(+\\infty\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-1\\)",
+    "solution": "Dạng \\(-\\infty+\\infty\\). Nhân liên hợp:\n\n\\(x+\\sqrt{x^2+2x}=\\dfrac{(x+\\sqrt{x^2+2x})(x-\\sqrt{x^2+2x})}{x-\\sqrt{x^2+2x}}=\\dfrac{x^2-(x^2+2x)}{x-\\sqrt{x^2+2x}}=\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\)\n\nKhi \\(x\\to-\\infty\\), chia cho \\(-x=|x|>0\\):\n\n\\(\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\cdot\\dfrac{-1/x}{-1/x}=\\dfrac{2}{-1+\\sqrt{1+2/x}}\\to\\dfrac{2}{-1+1}\\)... \n\nCần cẩn thận: \\(\\sqrt{x^2+2x}/(-x)=\\sqrt{1+2/x}\\to1\\). Mẫu: \\(x/(-x)+\\sqrt{x^2+2x}/(-x)=-1+1=0\\)?\n\n*Tính lại:* \\(x+\\sqrt{x^2+2x}=x+|x|\\sqrt{1+2/x}=x-x\\sqrt{1+2/x}=x(1-\\sqrt{1+2/x})\\to x\\cdot(-1/x)=-1\\).",
+    "quick": "Nhân liên hợp: \\(x+\\sqrt{x^2+2x}=\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\). Khi x→-∞: → \\(\\dfrac{-2x}{x+x}=\\dfrac{-2x}{2x}=-1\\).",
+    "casio": "CASIO: x=-10^6 → -10^6+√(10^12-2×10^6)≈-10^6+10^6(1-10^-6)=-1.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  }
+]
