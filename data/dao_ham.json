@@ -11,7 +11,7 @@
       "\\(2\\)"
     ],
     "correct": "\\(2x\\)",
-    "solution": "\\(\\left(x^{n}\\right)' = n x^{n-1} \\Rightarrow \\left(x^{2 \\right)'=2x\\)",
+    "solution": "\\(\\left(x^{n}\\right)' = n x^{n-1} \\Rightarrow \\((x^{2})'=2x\\)",
     "quick": "Luỹ thừa bậc 2: \\((x^2)'=2x\\). Quy tắc: \\((x^n)'=nx^{n-1}\\) với \\(n=2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
@@ -125,7 +125,7 @@
       "\\(3\\sqrt[3]{x^{2}}\\)"
     ],
     "correct": "\\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\)",
-    "solution": "Áp dụng quy tắc đạo hàm: \\(x^{1/3}' = \\frac{1}{3}x^{-2/3}\\). Kết quả: \\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\).",
+    "solution": "Áp dụng quy tắc đạo hàm: \\( (x^{1/3})' = \\frac{1}{3}x^{-2/3} \\). Kết quả: \\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\).",
     "quick": "\\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
@@ -657,7 +657,7 @@
       "\\(\\frac{-\\cos x}{2\\sqrt{\\sin x}}\\)"
     ],
     "correct": "\\(\\frac{\\cos x}{2\\sqrt{\\sin x}}\\)",
-    "solution": "**Bước 1:** Nhận dạng dạng hàm.\n**Bước 2:** Áp dụng công thức đạo hàm cơ bản.\n**Kết quả:** \\((\\sin x)^{1/2}'=\\frac{1}{2}(\\sin x)^{-1/2}\\cos x\\)",
+    "solution": "**Bước 1:** Nhận dạng dạng hàm.\n**Bước 2:** Áp dụng công thức đạo hàm cơ bản.\n**Kết quả:** \\(((\\sin x)^{1/2})' = \\frac{1}{2}(\\sin x)^{-1/2}\\cos x \\)",
     "quick": "\\((\\sin x)'=\\cos x\\) — sin đổi thành cos, không đổi dấu",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
@@ -714,7 +714,7 @@
       "\\(\\frac{1}{(\\ln x)^{2}}\\)"
     ],
     "correct": "\\(-\\frac{1}{x(\\ln x)^{2}}\\)",
-    "solution": "**Bước 1:** Nhận dạng dạng hàm.\n**Bước 2:** Áp dụng công thức đạo hàm cơ bản.\n**Kết quả:** \\((\\ln x)^{-1}'=-1\\cdot(\\ln x)^{-2}\\cdot\\frac{1}{x}\\)",
+    "solution": "**Bước 1:** Nhận dạng dạng hàm.\n**Bước 2:** Áp dụng công thức đạo hàm cơ bản.\n**Kết quả:** \\(((\\ln x)^{-1})'=-1\\cdot(\\ln x)^{-2}\\cdot\\frac{1}{x}\\)",
     "quick": "đạo hàm hàm hợp",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
