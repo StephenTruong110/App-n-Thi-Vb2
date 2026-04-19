@@ -39,6 +39,7 @@ const EXAM_TOTAL = 70;
 const EXAM_SECS  = 100 * 60;
 const LS_KEY     = 'vb2_exam70_v2';
 const WRONG_PAGE = 20;
+const EXAM_NAV_KEY = 'vb2_exam_nav_collapsed';
 
 /* ── STATE ── */
 let examQs          = [];  // [{...q, _shuffledOptions:[...], _optMap:{newIdx->origIdx}}]
@@ -48,6 +49,7 @@ let examCurrent     = 0;
 let examTimerRAF    = null;
 let examDeadline    = 0;   // timestamp ms khi hết giờ
 let examDone        = false;
+let examNavCollapsed = false;
 let wrongPage       = 0;   // trang hiện tại trong wrong review
 
 const EX_LETTERS  = ['A','B','C','D'];
@@ -63,6 +65,8 @@ const examDB = {};
 ================================================================ */
 async function initExamMode() {
   showScreen('screen-exam');
+  loadExamNavState();
+  syncExamNavPanelUI();
   const area = document.getElementById('exam-q-area');
   if (area) area.innerHTML = '<div class="center-box"><div class="spinner"></div><p>Đang tải dữ liệu...</p></div>';
 
@@ -309,6 +313,36 @@ function updateNavGrid() {
       + (examAnswers[i] !== undefined ? ' nc-done' : '')
       + (examFlagged.has(i)           ? ' nc-flag' : '');
   });
+}
+
+function loadExamNavState() {
+  try {
+    examNavCollapsed = localStorage.getItem(EXAM_NAV_KEY) === '1';
+  } catch(e) {
+    examNavCollapsed = false;
+  }
+}
+
+function saveExamNavState() {
+  try {
+    localStorage.setItem(EXAM_NAV_KEY, examNavCollapsed ? '1' : '0');
+  } catch(e) {}
+}
+
+function syncExamNavPanelUI() {
+  const panel = document.querySelector('.exam-nav-panel');
+  const btn = document.getElementById('nav-panel-toggle');
+  if (!panel || !btn) return;
+  panel.classList.toggle('collapsed', examNavCollapsed);
+  btn.textContent = examNavCollapsed ? 'Mở panel' : 'Thu gọn';
+  btn.setAttribute('aria-expanded', examNavCollapsed ? 'false' : 'true');
+  btn.title = examNavCollapsed ? 'Mở rộng panel điều hướng' : 'Thu gọn panel điều hướng';
+}
+
+function toggleExamNavPanel() {
+  examNavCollapsed = !examNavCollapsed;
+  saveExamNavState();
+  syncExamNavPanelUI();
 }
 
 function exGoTo(idx) {
