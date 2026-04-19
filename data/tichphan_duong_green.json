@@ -317,8 +317,8 @@
       "\\(\\pi-1\\)"
     ],
     "correct": "\\(\\dfrac{\\pi}{2}-1\\)",
-    "solution": "Tham số: \\(x=\\cos t\\), \\(y=\\sin t\\), \\(t: 0\\to\\pi/2\\).\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+(\\cos t+\\sin t)\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}(-\\sin t\\cos t+\\cos^2t-\\sin^2t... )=\\int_0^{\\pi/2}(1-\\sin2t)dt=\\frac{\\pi}{2}-1\\).",
-    "quick": "Tham số hóa → tính trực tiếp: \\(W=\\frac{\\pi}{2}-1\\)",
+    "solution": "Tham số hóa cung tròn đơn vị ngược chiều kim đồng hồ từ \\((1,0)\\) đến \\((0,1)\\):\n\\[x=\\cos t,\\quad y=\\sin t,\\quad t\\in[0,\\pi/2].\\]\nKhi đó\n\\[dx=-\\sin t\\,dt,\\qquad dy=\\cos t\\,dt.\\]\n\nTa có\n\\[W=\\int_C (y-x)\\,dx+(x+y)\\,dy\\]\n\\[=\\int_0^{\\pi/2}\\big[(\\sin t-\\cos t)(-\\sin t)+(\\cos t+\\sin t)\\cos t\\big]dt\\]\n\\[=\\int_0^{\\pi/2}(1-\\sin2t)dt\\]\n\\[=\\left[t+\\frac{\\cos2t}{2}\\right]_0^{\\pi/2}=\\frac{\\pi}{2}-1.\\]\nVậy \\(W=\\dfrac{\\pi}{2}-1\\).",
+    "quick": "Tham số hóa \\(x=\\cos t, y=\\sin t\\), \\(t:0\\to\\pi/2\\). Tính ra \\(W=\\frac{\\pi}{2}-1\\).",
     "casio": "x=cost, y=sint, t:0→π/2 → W=∫₀^{π/2}(1-sin2t)dt=π/2-1",
     "difficulty": 3,
     "topic": "Tích phân"
@@ -509,14 +509,14 @@
     "question": "Tính công \\(W\\) của trường vectơ \\(\\mathbf{F}=(y-x)\\mathbf{i}+x\\mathbf{j}\\) dọc theo cung \\(x^2+y^2=1\\) từ \\((1;0)\\) đến \\((0;1)\\) (ngược chiều kim đồng hồ).",
     "matrix": null,
     "options": [
-      "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(-\\dfrac{1}{2}\\)",
-      "\\(\\dfrac{\\pi}{4}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
-    "solution": "\\(W=\\int_C(y-x)dx+x\\,dy\\).\n\nTham số: \\(x=\\cos t, y=\\sin t\\), \\(t\\in[0,\\pi/2]\\).\n\n\\(dx=-\\sin t\\,dt\\), \\(dy=\\cos t\\,dt\\).\n\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+\\cos t\\cdot\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}[-\\sin^2t+\\sin t\\cos t+\\cos^2t]dt\\)\n\\(=\\int_0^{\\pi/2}[\\cos2t+\\dfrac{\\sin2t}{2}]dt\\)\n\\(=[\\dfrac{\\sin2t}{2}-\\dfrac{\\cos2t}{4}]_0^{\\pi/2}=(0+1/4)-(0-1/4)=1/2\\).\n\n*Kết quả ½. Đây là câu C69 đề CA1 2025.*",
-    "quick": "Tham số hóa vòng tròn: x=cost, y=sint. Tính ∫Mdx+Ndy bằng thế tham số t từ 0 đến π/2.",
+    "\\(\\dfrac{1}{2}\\)",
+    "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
+    "\\(-\\dfrac{1}{2}\\)",
+    "\\(\\dfrac{\\pi}{4}\\)"
+  ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(W=\\int_C(y-x)dx+x\\,dy\\).\n\nTham số: \\(x=\\cos t, y=\\sin t\\), \\(t\\in[0,\\pi/2]\\). \\(dx=-\\sin t\\,dt\\), \\(dy=\\cos t\\,dt\\).\n\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+\\cos t\\cdot\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}[-\\sin^2t+\\sin t\\cos t+\\cos^2t]dt\\)\n\\(=\\int_0^{\\pi/2}[\\cos2t+\\dfrac{\\sin2t}{2}]dt\\)\n\\(=\\left[\\dfrac{\\sin2t}{2}-\\dfrac{\\cos2t}{4}\\right]_0^{\\pi/2}=\\left(0+\\dfrac14\\right)-\\left(0-\\dfrac14\\right)=\\dfrac12.\\)\n\nVậy đáp án đúng là \\(\\dfrac12\\).",
+    "quick": "Tham số hóa cung tròn đơn vị: \\(x=\\cos t, y=\\sin t\\), \\(t:0\\to\\pi/2\\). Tính ra \\(W=\\dfrac12\\).",
     "casio": "CASIO: Thay x=cost, y=sint, dx=-sindt, dy=cosdt vào ∫Mdx+Ndy.",
     "difficulty": 3,
     "topic": "Tích phân"

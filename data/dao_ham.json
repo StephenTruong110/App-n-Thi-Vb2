@@ -15,7 +15,8 @@
     "quick": "Luỹ thừa bậc 2: \\((x^2)'=2x\\). Quy tắc: \\((x^n)'=nx^{n-1}\\) với \\(n=2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 1
   },
   {
     "id": 2,
@@ -33,7 +34,8 @@
     "quick": "\\((x^3)'=3x^2\\). Nhân số mũ 3 xuống, giảm bậc: \\(3x^{3-1}=3x^2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 2
   },
   {
     "id": 3,
@@ -51,7 +53,8 @@
     "quick": "\\(5x^{4}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 3
   },
   {
     "id": 4,
@@ -69,7 +72,8 @@
     "quick": "\\(10x^{9}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 4
   },
   {
     "id": 5,
@@ -87,7 +91,8 @@
     "quick": "\\(-3x^{-4}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 5
   },
   {
     "id": 6,
@@ -105,7 +110,8 @@
     "quick": "\\(\\frac{1}{2\\sqrt{x}}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 6
   },
   {
     "id": 7,
@@ -123,7 +129,8 @@
     "quick": "\\(\\frac{1}{3\\sqrt[3]{x^{2}}}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 7
   },
   {
     "id": 8,
@@ -141,7 +148,8 @@
     "quick": "\\(-\\frac{1}{x^{2}}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 8
   },
   {
     "id": 9,
@@ -159,7 +167,8 @@
     "quick": "Thương \\((u/v)'=\\frac{u'v-uv'}{v^2}\\): tử chéo trừ, mẫu bình phương",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 9
   },
   {
     "id": 10,
@@ -177,7 +186,8 @@
     "quick": "Luỹ thừa bậc 2: \\((x^2)'=2x\\). Quy tắc: \\((x^n)'=nx^{n-1}\\) với \\(n=2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 10
   },
   {
     "id": 11,
@@ -195,7 +205,8 @@
     "quick": "Luỹ thừa bậc 2: \\((x^2)'=2x\\). Quy tắc: \\((x^n)'=nx^{n-1}\\) với \\(n=2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 11
   },
   {
     "id": 12,
@@ -213,7 +224,8 @@
     "quick": "\\((\\sin x)'=\\cos x\\) — sin đổi thành cos, không đổi dấu",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 12
   },
   {
     "id": 13,
@@ -231,7 +243,8 @@
     "quick": "\\((\\cos x)'=-\\sin x\\) — cos đổi thành sin, có dấu trừ",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 13
   },
   {
     "id": 14,
@@ -249,7 +262,8 @@
     "quick": "\\(\\sec^{2}x\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 14
   },
   {
     "id": 15,
@@ -267,7 +281,8 @@
     "quick": "\\(-\\csc^{2}x\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 15
   },
   {
     "id": 16,
@@ -285,7 +300,8 @@
     "quick": "nhân đạo hàm trong",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 16
   },
   {
     "id": 17,
@@ -303,7 +319,8 @@
     "quick": "\\(-3\\sin(3x)\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 17
   },
   {
     "id": 18,
@@ -321,7 +338,8 @@
     "quick": "đạo hàm trong * sec^2",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 18
   },
   {
     "id": 19,
@@ -339,7 +357,8 @@
     "quick": "đạo hàm hợp",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 19
   },
   {
     "id": 20,
@@ -357,7 +376,8 @@
     "quick": "\\(-2\\cos x\\sin x\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 20
   },
   {
     "id": 21,
@@ -375,7 +395,8 @@
     "quick": "Đặc biệt: \\((e^x)'=e^x\\) — e mũ x đạo hàm cho chính nó!",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 21
   },
   {
     "id": 22,
@@ -393,7 +414,8 @@
     "quick": "nhân đạo hàm trong",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 22
   },
   {
     "id": 23,
@@ -411,7 +433,8 @@
     "quick": "\\(-e^{-x}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 23
   },
   {
     "id": 24,
@@ -429,7 +452,8 @@
     "quick": "\\(\\frac{1}{x}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 24
   },
   {
     "id": 25,
@@ -447,7 +471,8 @@
     "quick": "Thương \\((u/v)'=\\frac{u'v-uv'}{v^2}\\): tử chéo trừ, mẫu bình phương",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 25
   },
   {
     "id": 26,
@@ -465,7 +490,8 @@
     "quick": "\\(\\frac{2x}{x^{2}+1}\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 26
   },
   {
     "id": 27,
@@ -483,7 +509,8 @@
     "quick": "Thương \\((u/v)'=\\frac{u'v-uv'}{v^2}\\): tử chéo trừ, mẫu bình phương",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 27
   },
   {
     "id": 28,
@@ -501,7 +528,8 @@
     "quick": "Tích \\((uv)'=u'v+uv'\\): đạo hàm lần lượt từng nhân tử",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 28
   },
   {
     "id": 29,
@@ -519,7 +547,8 @@
     "quick": "\\((\\sin x)'=\\cos x\\) — sin đổi thành cos, không đổi dấu",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 29
   },
   {
     "id": 30,
@@ -537,7 +566,8 @@
     "quick": "Luỹ thừa bậc 2: \\((x^2)'=2x\\). Quy tắc: \\((x^n)'=nx^{n-1}\\) với \\(n=2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 30
   },
   {
     "id": 31,
@@ -555,7 +585,8 @@
     "quick": "\\((x^3)'=3x^2\\). Nhân số mũ 3 xuống, giảm bậc: \\(3x^{3-1}=3x^2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 31
   },
   {
     "id": 32,
@@ -573,7 +604,8 @@
     "quick": "hàm lượng giác ngược",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 32
   },
   {
     "id": 33,
@@ -591,7 +623,8 @@
     "quick": "Thương \\((u/v)'=\\frac{u'v-uv'}{v^2}\\): tử chéo trừ, mẫu bình phương",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 33
   },
   {
     "id": 34,
@@ -609,28 +642,11 @@
     "quick": "\\(2^{x}\\ln2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 34
   },
   {
     "id": 35,
-    "type": "derivative",
-    "question": "Đạo hàm của \\(f(x)=x^{x}\\) là gì?",
-    "matrix": null,
-    "options": [
-      "\\(x^{x}(\\ln x+1)\\)",
-      "\\(x^{x}\\ln x\\)",
-      "\\(x^{x}\\)",
-      "\\(x^{x-1}\\)"
-    ],
-    "correct": "\\(x^{x}(\\ln x+1)\\)",
-    "solution": "\\(\\ln f = x\\ln x \\Rightarrow \\frac{f'}{f} = \\ln x + 1\\)",
-    "quick": "Logarit hóa: đặt \\(y=x^x\\), lấy \\(\\ln y = x\\ln x\\), đạo hàm 2 vế.",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 36,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\sqrt{\\sin x}\\) là gì?",
     "matrix": null,
@@ -645,10 +661,11 @@
     "quick": "\\((\\sin x)'=\\cos x\\) — sin đổi thành cos, không đổi dấu",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 36
   },
   {
-    "id": 37,
+    "id": 36,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\cos(\\ln x)\\) là gì?",
     "matrix": null,
@@ -663,10 +680,11 @@
     "quick": "Dây chuyền: đạo hàm ngoài × đạo hàm trong",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 37
   },
   {
-    "id": 38,
+    "id": 37,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\cos x)\\) là gì?",
     "matrix": null,
@@ -681,10 +699,11 @@
     "quick": "\\((\\cos x)'=-\\sin x\\) — cos đổi thành sin, có dấu trừ",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 38
   },
   {
-    "id": 39,
+    "id": 38,
     "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\frac{1}{\\ln x}\\) là gì?",
     "matrix": null,
@@ -699,10 +718,11 @@
     "quick": "đạo hàm hàm hợp",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 39
   },
   {
-    "id": 40,
+    "id": 39,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=x^{2}\\sin x\\) là gì?",
     "matrix": null,
@@ -717,10 +737,11 @@
     "quick": "Quy tắc tích: \\((uv)'=u'v+uv'\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 40
   },
   {
-    "id": 41,
+    "id": 40,
     "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\frac{\\ln x}{x}\\) là gì?",
     "matrix": null,
@@ -735,10 +756,11 @@
     "quick": "\\((\\ln x)'=\\dfrac{1}{x}\\) — logarit tự nhiên → nghịch đảo",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 41
   },
   {
-    "id": 42,
+    "id": 41,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\tan^{2}x\\) là gì?",
     "matrix": null,
@@ -753,10 +775,11 @@
     "quick": "Dây chuyền: đạo hàm ngoài × đạo hàm trong",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 42
   },
   {
-    "id": 43,
+    "id": 42,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\sin(\\cos x)\\) là gì?",
     "matrix": null,
@@ -771,10 +794,11 @@
     "quick": "\\((\\cos x)'=-\\sin x\\) — cos đổi thành sin, có dấu trừ",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 43
   },
   {
-    "id": 44,
+    "id": 43,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\sqrt{x^{2}+1}\\) là gì?",
     "matrix": null,
@@ -789,10 +813,11 @@
     "quick": "Luỹ thừa bậc 2: \\((x^2)'=2x\\). Quy tắc: \\((x^n)'=nx^{n-1}\\) với \\(n=2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 44
   },
   {
-    "id": 45,
+    "id": 44,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=e^{\\sin x}\\) là gì?",
     "matrix": null,
@@ -807,10 +832,11 @@
     "quick": "\\((\\sin x)'=\\cos x\\) — sin đổi thành cos, không đổi dấu",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 45
   },
   {
-    "id": 46,
+    "id": 45,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\sin x)\\) là gì?",
     "matrix": null,
@@ -825,10 +851,11 @@
     "quick": "\\((\\sin x)'=\\cos x\\) — sin đổi thành cos, không đổi dấu",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 46
   },
   {
-    "id": 47,
+    "id": 46,
     "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=x^{2}\\ln x\\) là gì?",
     "matrix": null,
@@ -843,10 +870,11 @@
     "quick": "Quy tắc tích: \\((uv)'=u'v+uv'\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 47
   },
   {
-    "id": 48,
+    "id": 47,
     "type": "derivative",
     "question": "Đạo hàm của \\(f(x)=\\frac{x+1}{x-1}\\) là gì?",
     "matrix": null,
@@ -861,10 +889,11 @@
     "quick": "Quy tắc thương: \\((u/v)'=(u'v-uv')/v^2\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 48
   },
   {
-    "id": 49,
+    "id": 48,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(f(x)=\\cos^{2}(2x)\\) là gì?",
     "matrix": null,
@@ -879,10 +908,11 @@
     "quick": "hợp 2 lớp",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 49
   },
   {
-    "id": 50,
+    "id": 49,
     "type": "derivative_exp_log",
     "question": "Đạo hàm của \\(f(x)=\\ln(\\ln x)\\) là gì?",
     "matrix": null,
@@ -897,10 +927,11 @@
     "quick": "logarit của logarit",
     "casio": "CASIO fx-580VNX: Dùng CALC → d/dx, nhập hàm, nhập giá trị x rồi EXE để kiểm tra đạo hàm tại điểm cụ thể.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 50
   },
   {
-    "id": 51,
+    "id": 50,
     "type": "derivative_implicit",
     "question": "Cho \\(x^2+y^2=25\\). Tìm \\(y'\\) theo phương pháp đạo hàm hàm ẩn.",
     "matrix": null,
@@ -915,64 +946,11 @@
     "quick": "Đạo hàm ẩn: mỗi lần gặp y thêm y'. \\(2x+2yy'=0\\) → \\(y'=-x/y\\).",
     "casio": "CASIO: Thử điểm (3,4): y'=-3/4. Kiểm tra: độ dốc tiếp tuyến đường tròn tại (3,4) là -3/4 ✓.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 51
   },
   {
-    "id": 52,
-    "type": "derivative_implicit",
-    "question": "Hàm ẩn \\(x^3+y^3=6xy\\). Tìm \\(y'\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{2y-x^2}{y^2-2x}\\)",
-      "\\(\\dfrac{x^2-2y}{y^2-2x}\\)",
-      "\\(\\dfrac{2y-x}{y-2x}\\)",
-      "\\(-\\dfrac{x^2}{y^2}\\)"
-    ],
-    "correct": "\\(\\dfrac{2y-x^2}{y^2-2x}\\)",
-    "solution": "Đạo hàm hai vế: \\(3x^2+3y^2y'=6(y+xy')\\).\n\nGiải \\(y'\\): \\(3y^2y'-6xy'=6y-3x^2\\)\n\\(y'(3y^2-6x)=6y-3x^2\\)\n\\(y'=\\dfrac{6y-3x^2}{3y^2-6x}=\\dfrac{2y-x^2}{y^2-2x}\\).",
-    "quick": "Đạo hàm cả vế, gom y' sang trái: \\(y'=\\dfrac{6y-3x^2}{3(y^2-2x)}=\\dfrac{2y-x^2}{y^2-2x}\\).",
-    "casio": "CASIO: Không dùng trực tiếp được. Thay điểm thỏa mãn phương trình rồi kiểm tra.",
-    "difficulty": 3,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 53,
-    "type": "derivative_parametric",
-    "question": "Hàm tham số: \\(x=t^2-1,\\;y=t^3\\). Tìm \\(\\dfrac{dy}{dx}\\) tại \\(t=2\\).",
-    "matrix": null,
-    "options": [
-      "\\(3\\)",
-      "\\(\\dfrac{3}{2}\\)",
-      "\\(6\\)",
-      "\\(2\\)"
-    ],
-    "correct": "\\(3\\)",
-    "solution": "\\(\\dfrac{dy}{dx}=\\dfrac{y'_t}{x'_t}=\\dfrac{3t^2}{2t}=\\dfrac{3t}{2}\\).\n\nTại \\(t=2\\): \\(\\dfrac{dy}{dx}=\\dfrac{3\\cdot2}{2}=3\\).",
-    "quick": "\\(dy/dx=(dy/dt)/(dx/dt)=3t^2/2t=3t/2\\). Tại t=2: **3**.",
-    "casio": "CASIO: Tính y'_t=3t²=12, x'_t=2t=4. Tỉ số 12/4=3.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 54,
-    "type": "derivative_parametric",
-    "question": "Cho \\(x=\\cos t,\\;y=\\sin t\\). Tính \\(\\dfrac{dy}{dx}\\).",
-    "matrix": null,
-    "options": [
-      "\\(-\\cot t\\)",
-      "\\(\\cot t\\)",
-      "\\(-\\tan t\\)",
-      "\\(\\tan t\\)"
-    ],
-    "correct": "\\(-\\cot t\\)",
-    "solution": "\\(\\dfrac{dy}{dx}=\\dfrac{(\\sin t)'_t}{(\\cos t)'_t}=\\dfrac{\\cos t}{-\\sin t}=-\\cot t\\).\n\n*Lưu ý:* Đây là vòng tròn đơn vị, \\(-\\cot t\\) chính là độ dốc tiếp tuyến tại điểm \\((\\cos t,\\sin t)\\).",
-    "quick": "\\(dy/dx=\\cos t/(-\\sin t)=-\\cot t\\). Vòng tròn đơn vị: tiếp tuyến vuông góc với bán kính.",
-    "casio": "CASIO: t=π/4: dy/dx=cos(π/4)/(-sin(π/4))=-1. -cot(π/4)=-1 ✓.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 55,
+    "id": 51,
     "type": "derivative_higher_order",
     "question": "Tính \\(y''\\) nếu \\(y=x\\ln x\\).",
     "matrix": null,
@@ -987,64 +965,11 @@
     "quick": "Bước 1: \\(y'=\\ln x+1\\). Bước 2: \\(y''=1/x\\).",
     "casio": "CASIO: Tính y'(x)=lnx+1, rồi đạo hàm tiếp → 1/x.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 55
   },
   {
-    "id": 56,
-    "type": "derivative_higher_order",
-    "question": "Tính \\(y^{(n)}\\) của \\(y=e^{3x}\\).",
-    "matrix": null,
-    "options": [
-      "\\(3^n e^{3x}\\)",
-      "\\(ne^{3x}\\)",
-      "\\(3e^{nx}\\)",
-      "\\(e^{3nx}\\)"
-    ],
-    "correct": "\\(3^n e^{3x}\\)",
-    "solution": "\\(y'=3e^{3x},\\;y''=9e^{3x}=3^2e^{3x},\\;y'''=27e^{3x}=3^3e^{3x},\\ldots\\)\n\nQuy luật: \\(y^{(n)}=3^ne^{3x}\\).\n\nChứng minh bằng quy nạp: \\(y^{(n+1)}=(3^ne^{3x})'=3^n\\cdot3e^{3x}=3^{n+1}e^{3x}\\) ✓.",
-    "quick": "Mỗi lần đạo hàm nhân thêm 3 (đạo hàm dây chuyền) → sau n lần: **\\(3^ne^{3x}\\)**.",
-    "casio": "CASIO: y'(x)=3e^3x, y''(x)=9e^3x, ... → hệ số là 3^n.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 57,
-    "type": "logarithmic_differentiation",
-    "question": "Tính \\(y'\\) của \\(y=x^x\\) (\\(x>0\\)).",
-    "matrix": null,
-    "options": [
-      "\\(x^x(\\ln x+1)\\)",
-      "\\(x^{x-1}\\)",
-      "\\(x^x\\ln x\\)",
-      "\\((x+1)x^x\\)"
-    ],
-    "correct": "\\(x^x(\\ln x+1)\\)",
-    "solution": "**Logarit hóa:** Lấy \\(\\ln\\) cả hai vế:\n\\(\\ln y=x\\ln x\\).\n\nĐạo hàm: \\(\\dfrac{y'}{y}=\\ln x+x\\cdot\\dfrac{1}{x}=\\ln x+1\\).\n\n\\(y'=y(\\ln x+1)=x^x(\\ln x+1)\\).",
-    "quick": "Đặt \\(\\ln y=x\\ln x\\), đạo hàm: \\(y'/y=\\ln x+1\\) → \\(y'=x^x(\\ln x+1)\\).",
-    "casio": "CASIO: Thử x=1: y'=1^1(0+1)=1. Kiểm tra: lim(x^x-1)/x→1 ở x=1? Gần đúng ✓.",
-    "difficulty": 3,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 58,
-    "type": "logarithmic_differentiation",
-    "question": "Tính \\(y'\\) của \\(y=\\dfrac{(x+1)^2\\sqrt{x-3}}{(x^2+1)^3}\\) bằng logarit hóa.",
-    "matrix": null,
-    "options": [
-      "\\(y\\left[\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\right]\\)",
-      "\\(\\dfrac{2}{x+1}+\\dfrac{1}{2\\sqrt{x-3}}-\\dfrac{6x}{x^2+1}\\)",
-      "\\(y\\left[\\dfrac{2}{x+1}-\\dfrac{1}{2(x-3)}+\\dfrac{6x}{x^2+1}\\right]\\)",
-      "\\(y\\left[\\dfrac{2}{x+1}+\\dfrac{1}{x-3}-\\dfrac{6x}{x^2+1}\\right]\\)"
-    ],
-    "correct": "\\(y\\left[\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\right]\\)",
-    "solution": "\\(\\ln y=2\\ln(x+1)+\\tfrac{1}{2}\\ln(x-3)-3\\ln(x^2+1)\\).\n\nĐạo hàm: \\(\\dfrac{y'}{y}=\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\).\n\n\\(y'=y\\cdot\\left[\\dfrac{2}{x+1}+\\dfrac{1}{2(x-3)}-\\dfrac{6x}{x^2+1}\\right]\\).",
-    "quick": "Log hóa: \\(\\ln y=2\\ln(x+1)+\\frac{1}{2}\\ln(x-3)-3\\ln(x^2+1)\\) → đạo hàm từng số hạng → nhân lại với y.",
-    "casio": "CASIO: Quá phức tạp để CASIO trực tiếp. Thay số cụ thể để kiểm tra.",
-    "difficulty": 3,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 59,
+    "id": 52,
     "type": "derivative_application_tangent",
     "question": "Phương trình tiếp tuyến của \\(y=x^2-2x\\) tại điểm có hoành độ \\(x=2\\) là?",
     "matrix": null,
@@ -1059,10 +984,11 @@
     "quick": "k = y'(2) = 2. Điểm (2,0). PTTT: \\(y-0=2(x-2)\\) → **y=2x-4**.",
     "casio": "CASIO: y'=2x-2, tại x=2: k=2. y(2)=0. PTTT: y=2(x-2)=2x-4.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 59
   },
   {
-    "id": 60,
+    "id": 53,
     "type": "derivative_application_tangent",
     "question": "Tiếp tuyến của \\(y=\\sin x\\) tại \\(x=\\pi/2\\) là?",
     "matrix": null,
@@ -1077,46 +1003,11 @@
     "quick": "\\(y'=\\cos x\\), tại x=π/2: k=0 (ngang). Điểm (π/2, 1). PTTT: **y=1**.",
     "casio": "CASIO: y'(π/2)=cos(π/2)=0. y(π/2)=1. Tiếp tuyến ngang y=1.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 60
   },
   {
-    "id": 61,
-    "type": "derivative_higher_order",
-    "question": "Tính \\(y^{(4)}\\) của \\(y=\\sin x\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\sin x\\)",
-      "\\(\\cos x\\)",
-      "\\(-\\sin x\\)",
-      "\\(-\\cos x\\)"
-    ],
-    "correct": "\\(\\sin x\\)",
-    "solution": "Đạo hàm sin x chu kỳ 4:\n\\(y'=\\cos x\\)\n\\(y''=-\\sin x\\)\n\\(y'''=-\\cos x\\)\n\\(y^{(4)}=\\sin x\\).\n\nSau 4 lần đạo hàm, hàm sin trở về chính nó.",
-    "quick": "Chu kỳ sin: sin→cos→-sin→-cos→**sin**. Bậc 4 → **sin x**.",
-    "casio": "CASIO: y'=cosx, y''=-sinx, y'''=-cosx, y''''=sinx ✓.",
-    "difficulty": 1,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 62,
-    "type": "derivative_higher_order",
-    "question": "Hàm \\(y=\\dfrac{1}{1-x}\\). Tính \\(y^{(n)}\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{n!}{(1-x)^{n+1}}\\)",
-      "\\(\\dfrac{n}{(1-x)^n}\\)",
-      "\\(\\dfrac{(-1)^n n!}{(1-x)^{n+1}}\\)",
-      "\\(\\dfrac{1}{(1-x)^n}\\)"
-    ],
-    "correct": "\\(\\dfrac{n!}{(1-x)^{n+1}}\\)",
-    "solution": "\\(y=(1-x)^{-1}\\), \\(y'=(1-x)^{-2}\\), \\(y''=2(1-x)^{-3}\\), \\(y'''=6(1-x)^{-4}\\)...\n\nQuy luật: \\(y^{(n)}=\\dfrac{n!}{(1-x)^{n+1}}\\).\n\nChú ý: \\((-1)^n\\cdot(-1)^n=1\\) vì đạo hàm \\((1-x)\\) cho ra \\(-1\\) hai lần = tích dương.",
-    "quick": "\\(y=(1-x)^{-1}\\). Quy tắc: mỗi lần đạo hàm cho nhân tử giai thừa và giảm bậc −1. Kết quả: \\(n!/(1-x)^{n+1}\\).",
-    "casio": "CASIO: y'(x)=1/(1-x)², y''(x)=2/(1-x)³, ... → hệ số n!",
-    "difficulty": 3,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 63,
+    "id": 54,
     "type": "derivative_implicit",
     "question": "Phương trình \\(xy+y^2=5\\). Tìm \\(y'\\).",
     "matrix": null,
@@ -1131,28 +1022,11 @@
     "quick": "Quy tắc tích: \\(y+xy'\\) từ xy. Gom y': \\((x+2y)y'=-y\\) → \\(y'=-y/(x+2y)\\).",
     "casio": "CASIO: Thử điểm thỏa PT. Ví dụ (0,√5): y'=-√5/(0+2√5)=-1/2.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 63
   },
   {
-    "id": 64,
-    "type": "derivative_application_rate",
-    "question": "Bán kính hình cầu tăng với tốc độ \\(\\dfrac{dr}{dt}=2\\) cm/s. Tốc độ tăng thể tích khi \\(r=3\\) cm là?",
-    "matrix": null,
-    "options": [
-      "\\(72\\pi\\) cm³/s",
-      "\\(36\\pi\\) cm³/s",
-      "\\(24\\pi\\) cm³/s",
-      "\\(12\\pi\\) cm³/s"
-    ],
-    "correct": "\\(72\\pi\\) cm³/s",
-    "solution": "\\(V=\\dfrac{4}{3}\\pi r^3\\).\n\n\\(\\dfrac{dV}{dt}=\\dfrac{dV}{dr}\\cdot\\dfrac{dr}{dt}=4\\pi r^2\\cdot2=8\\pi r^2\\).\n\nKhi \\(r=3\\): \\(\\dfrac{dV}{dt}=8\\pi\\cdot9=72\\pi\\) cm³/s.",
-    "quick": "\\(dV/dt=(dV/dr)(dr/dt)=4\\pi r^2\\cdot2\\). Tại r=3: **8π×9=72π** cm³/s.",
-    "casio": "CASIO: dV/dr=4π×9=36π, nhân với dr/dt=2 → 72π.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 65,
+    "id": 55,
     "type": "derivative_application_tangent",
     "question": "Số điểm trên đường cong \\(y=x^3-3x\\) có tiếp tuyến song song với trục Ox là?",
     "matrix": null,
@@ -1167,46 +1041,11 @@
     "quick": "Tiếp tuyến // Ox ↔ k=0 ↔ y'=0. Giải \\(3x^2-3=0\\) → **2 nghiệm x=±1**.",
     "casio": "CASIO: Giải phương trình y'=3x²-3=0 → x=±1 → 2 điểm.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 65
   },
   {
-    "id": 66,
-    "type": "derivative_exp_log",
-    "question": "Đạo hàm của \\(y=\\log_a x\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{x\\ln a}\\)",
-      "\\(\\dfrac{1}{x}\\)",
-      "\\(\\dfrac{\\ln a}{x}\\)",
-      "\\(\\dfrac{a}{x}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{x\\ln a}\\)",
-    "solution": "Dùng công thức đổi cơ số: \\(\\log_a x=\\dfrac{\\ln x}{\\ln a}\\).\n\n\\(y'=\\left(\\dfrac{\\ln x}{\\ln a}\\right)'=\\dfrac{1}{\\ln a}\\cdot\\dfrac{1}{x}=\\dfrac{1}{x\\ln a}\\).\n\n*Đặc biệt:* Khi \\(a=e\\): \\((\\ln x)'=1/x\\).",
-    "quick": "\\(\\log_a x=\\ln x/\\ln a\\) → đạo hàm: \\(\\dfrac{1}{x\\ln a}\\). a=e cho **1/x**.",
-    "casio": "CASIO: d/dx[log_a(x)]. Tại x=1: 1/(1·ln a)=1/ln a. Ví dụ a=10: 1/ln10≈0.4343.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 67,
-    "type": "derivative_higher_order",
-    "question": "Cho \\(y=e^x\\). Đạo hàm cấp 100 là?",
-    "matrix": null,
-    "options": [
-      "\\(e^x\\)",
-      "\\(100e^x\\)",
-      "\\(e^{100x}\\)",
-      "\\(100!e^x\\)"
-    ],
-    "correct": "\\(e^x\\)",
-    "solution": "\\((e^x)'=e^x,\\;(e^x)''=e^x,\\ldots\\)\n\nHàm \\(e^x\\) đặc biệt: mọi đạo hàm đều bằng chính nó.\n\n\\(y^{(100)}=e^x\\).",
-    "quick": "\\(e^x\\) là hàm **bất động** của phép đạo hàm: \\((e^x)^{(n)}=e^x\\) với mọi n.",
-    "casio": "CASIO: Hiển nhiên y'=e^x=y → đạo hàm mọi bậc = e^x.",
-    "difficulty": 1,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 68,
+    "id": 56,
     "type": "derivative_trig",
     "question": "Đạo hàm của \\(y=\\arctan(2x)\\) là?",
     "matrix": null,
@@ -1221,114 +1060,7 @@
     "quick": "\\((\\arctan u)'=u'/(1+u²)\\). Đây u=2x, u'=2 → **2/(1+4x²)**.",
     "casio": "CASIO: Tại x=0: y'=2/(1+0)=2. Kiểm tra lại: arctan(2x) tại x=0 có độ dốc =2 ✓.",
     "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 69,
-    "type": "derivative_chain",
-    "question": "Đạo hàm của \\(y=\\ln(\\sin x)\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\cot x\\)",
-      "\\(\\tan x\\)",
-      "\\(-\\cot x\\)",
-      "\\(\\dfrac{1}{\\sin x}\\)"
-    ],
-    "correct": "\\(\\cot x\\)",
-    "solution": "Dùng dây chuyền: \\(y'=\\dfrac{(\\sin x)'}{\\sin x}=\\dfrac{\\cos x}{\\sin x}=\\cot x\\).\n\nÁp dụng: \\((\\ln u)'=u'/u\\) với \\(u=\\sin x\\), \\(u'=\\cos x\\).",
-    "quick": "\\((\\ln u)'=u'/u\\): \\(u=\\sin x, u'=\\cos x\\) → **cos x/sin x = cot x**.",
-    "casio": "CASIO: Tại x=π/4: y'=cot(π/4)=1. Kiểm tra: d/dx[ln(sin x)] tại x=π/4.",
-    "difficulty": 1,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 70,
-    "type": "derivative_chain",
-    "question": "Đạo hàm của \\(y=e^{\\sin x}\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(e^{\\sin x}\\cos x\\)",
-      "\\(e^{\\sin x}\\)",
-      "\\(\\cos x\\cdot e^{\\cos x}\\)",
-      "\\(e^{\\cos x}\\sin x\\)"
-    ],
-    "correct": "\\(e^{\\sin x}\\cos x\\)",
-    "solution": "Dây chuyền: \\(y'=e^{\\sin x}\\cdot(\\sin x)'=e^{\\sin x}\\cos x\\).\n\nÁp dụng: \\((e^u)'=e^u\\cdot u'\\) với \\(u=\\sin x\\), \\(u'=\\cos x\\).",
-    "quick": "\\((e^u)'=e^u u'\\): \\(u=\\sin x, u'=\\cos x\\) → **e^{sin x}·cos x**.",
-    "casio": "CASIO: Tại x=0: y'=e^0·1=1. Kiểm tra d/dx[e^sinx] tại x=0.",
-    "difficulty": 1,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 71,
-    "type": "derivative_identity",
-    "question": "Cho \\(y=\\sin^2 x\\). Khẳng định nào sau đây đúng?",
-    "matrix": null,
-    "options": [
-      "\\(4y+y''=2\\)",
-      "\\(2y'+y''=\\sin2x\\)",
-      "\\(4y-y''=2\\)",
-      "\\(2y+y'\\tan x=2\\)"
-    ],
-    "correct": "\\(4y+y''=2\\)",
-    "solution": "\\(y=\\sin^2x\\).\n\n\\(y'=2\\sin x\\cos x=\\sin2x\\).\n\n\\(y''=2\\cos2x=2(1-2\\sin^2x)=2-4\\sin^2x=2-4y\\).\n\n→ \\(y''=2-4y\\) → \\(4y+y''=2\\) ✓.",
-    "quick": "y''=2cos2x=2-4sin²x=2-4y → **4y+y''=2**. Đây là câu C14 đề CA1 2025.",
-    "casio": "CASIO: y=sin²x, y'=sin2x, y''=2cos2x. Kiểm tra 4y+y''=4sin²x+2cos2x=4sin²x+2-4sin²x=2✓.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 72,
-    "type": "derivative_identity",
-    "question": "Cho \\(y=e^{2x}\\). Khẳng định nào sau đây đúng?",
-    "matrix": null,
-    "options": [
-      "\\(y''-4y=0\\)",
-      "\\(y''-2y=0\\)",
-      "\\(y''+4y=0\\)",
-      "\\(y''-y=0\\)"
-    ],
-    "correct": "\\(y''-4y=0\\)",
-    "solution": "\\(y'=2e^{2x}=2y\\), \\(y''=4e^{2x}=4y\\).\n\n→ \\(y''-4y=4y-4y=0\\) ✓.",
-    "quick": "y''=4e^2x=4y → **y''-4y=0**.",
-    "casio": "CASIO: y=e^2x, y''=4e^2x=4y. y''-4y=4y-4y=0✓.",
-    "difficulty": 1,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 73,
-    "type": "derivative_identity",
-    "question": "Cho \\(y=\\cos^2x\\). Khẳng định nào đúng?",
-    "matrix": null,
-    "options": [
-      "\\(4y+y''=2\\)",
-      "\\(4y-y''=2\\)",
-      "\\(y''+2y=1\\)",
-      "\\(y''-4y=0\\)"
-    ],
-    "correct": "\\(4y+y''=2\\)",
-    "solution": "\\(y'=-2\\cos x\\sin x=-\\sin2x\\).\n\n\\(y''=-2\\cos2x=-2(1-2\\sin^2x)=-2+4\\sin^2x\\).\n\nNhưng \\(1-y=1-\\cos^2x=\\sin^2x\\) → \\(y''=-2+4(1-y)=2-4y\\).\n\n→ \\(y''=2-4y\\) → \\(4y+y''=2\\) ✓.\n\n*(Cùng kết quả với sin²x vì sin²x+cos²x=1)*",
-    "quick": "y''=2-4y → **4y+y''=2**. Tương tự sin²x (lý do: cos²x+sin²x=1).",
-    "casio": "CASIO: y''=-2cos2x. 4y+y''=4cos²x-2cos2x=4cos²x-2(2cos²x-1)=2✓.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 74,
-    "type": "derivative_identity",
-    "question": "Cho \\(y=xe^x\\). Khẳng định nào đúng?",
-    "matrix": null,
-    "options": [
-      "\\(y''-2y'+y=0\\)",
-      "\\(y''-y=e^x\\)",
-      "\\(y''-y=2e^x\\)",
-      "\\(y''+y=xe^x\\)"
-    ],
-    "correct": "\\(y''-2y'+y=0\\)",
-    "solution": "\\(y'=e^x+xe^x=(1+x)e^x\\).\n\\(y''=e^x+(1+x)e^x=(2+x)e^x\\).\n\nKiểm tra \\(y''-2y'+y\\):\n\\(=(2+x)e^x-2(1+x)e^x+xe^x=[(2+x)-(2+2x)+x]e^x=0\\) ✓.",
-    "quick": "y=xe^x, y'=(1+x)e^x, y''=(2+x)e^x. y''-2y'+y=(2+x-2-2x+x)e^x=**0**.",
-    "casio": "CASIO: Tính y'', 2y', y tại x=1: y''=3e, 2y'=4e, y=e. y''-2y'+y=3e-4e+e=0✓.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Đạo hàm",
+    "original_id": 68
   }
 ]

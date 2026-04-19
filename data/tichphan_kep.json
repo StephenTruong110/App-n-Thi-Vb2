@@ -113,15 +113,15 @@
     "question": "Đổi thứ tự tích phân: \\(I=\\int_0^2\\int_{\\sqrt{y}}^2 f(x,y)\\,dx\\,dy\\) thành",
     "matrix": null,
     "options": [
-      "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
-      "\\(\\int_0^4\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
-      "\\(\\int_0^2\\int_0^{2}f(x,y)\\,dy\\,dx\\)",
-      "\\(\\int_0^2\\int_{x^2}^{4}f(x,y)\\,dy\\,dx\\)"
-    ],
-    "correct": "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
-    "solution": "Miền: \\(0\\le y\\le4\\), \\(\\sqrt{y}\\le x\\le2\\). Vẽ miền: \\(y=x^2\\), \\(x\\) từ 0 đến 2. Đổi: \\(0\\le x\\le2\\), \\(0\\le y\\le x^2\\).\n\\(I=\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\).",
-    "quick": "Đổi cận: \\(x: 0\\to2\\), \\(y: 0\\to x^2\\) (từ \\(y\\le x^2\\))",
-    "casio": "Vẽ miền: x=√y → y=x². Đổi thứ tự: x từ 0→2, y từ 0→x²",
+    "\\(\\int_0^{\\sqrt2}\\!\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2} f(x,y)\\,dy\\,dx\\)",
+    "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
+    "\\(\\int_0^2\\int_0^{2}f(x,y)\\,dy\\,dx\\)",
+    "\\(\\int_0^2\\int_{x^2}^{4}f(x,y)\\,dy\\,dx\\)"
+  ],
+    "correct": "\\(\\int_0^{\\sqrt2}\\!\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2} f(x,y)\\,dy\\,dx\\)",
+    "solution": "Miền gốc: \\(0\\le y\\le2\\), \\(\\sqrt y\\le x\\le2\\). Điều kiện \\(\\sqrt y\\le x\\) tương đương \\(y\\le x^2\\). Khi đổi thứ tự, cần xét hai khoảng của \\(x\\):\n- Với \\(0\\le x\\le\\sqrt2\\): \\(0\\le y\\le x^2\\)\n- Với \\(\\sqrt2\\le x\\le2\\): \\(0\\le y\\le2\\)\nDo đó\n\\[I=\\int_0^{\\sqrt2}\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\int_0^{2} f(x,y)\\,dy\\,dx.\\]",
+    "quick": "Miền bị cắt tại \\(x=\\sqrt2\\), nên phải tách thành 2 tích phân sau khi đổi thứ tự.",
+    "casio": "Vẽ miền: \\(x=\\sqrt y\\Leftrightarrow y=x^2\\), với \\(0\\le y\\le2\\). Khi đổi thứ tự phải tách 2 miền: \\(0\\le x\\le\\sqrt2\\) thì \\(0\\le y\\le x^2\\); còn \\(\\sqrt2\\le x\\le2\\) thì \\(0\\le y\\le2\\).",
     "difficulty": 3,
     "topic": "Tích phân"
   },
@@ -316,9 +316,9 @@
       "\\(4\\pi\\)",
       "\\(\\dfrac{\\pi}{2}\\)"
     ],
-    "correct": "\\(2\\pi\\)",
+    "correct": "\\(\\pi\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_1^2\\dfrac{1}{r^3}\\cdot r\\,dr\\,d\\theta=2\\pi\\int_1^2 r^{-2}\\,dr=2\\pi\\left[-\\dfrac{1}{r}\\right]_1^2=2\\pi\\cdot\\dfrac{1}{2}=\\pi\\).",
-    "quick": "\\(I=2\\pi[-1/r]_1^2=2\\pi(1-1/2)=\\pi\\)",
+    "quick": "\\(I=2\\pi[-1/r]_1^2=2\\pi(1-1/2)=\\pi\\).",
     "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
     "difficulty": 3,
     "topic": "Tích phân"
@@ -419,14 +419,14 @@
     "question": "Tính \\(\\iint_D y\\sqrt{x}\\,dA\\) với \\(D=\\{1\\le x\\le4,\\,0\\le y\\le\\sqrt{x}\\}\\).",
     "matrix": null,
     "options": [
-      "\\(\\dfrac{63}{8}\\)",
-      "\\(\\dfrac{31}{4}\\)",
-      "\\(\\dfrac{63}{16}\\)",
-      "\\(8\\)"
-    ],
-    "correct": "\\(\\dfrac{63}{8}\\)",
-    "solution": "\\(I=\\int_1^4\\sqrt{x}\\int_0^{\\sqrt{x}} y\\,dy\\,dx=\\int_1^4\\sqrt{x}\\cdot\\dfrac{x}{2}\\,dx=\\dfrac{1}{2}\\int_1^4 x^{3/2}\\,dx=\\dfrac{1}{2}\\cdot\\dfrac{2}{5}[x^{5/2}]_1^4=\\dfrac{1}{5}(32-1)=\\dfrac{31}{5}\\).\nKiểm tra: \\(\\frac{1}{2}\\cdot\\frac{2}{5}(32-1)=\\frac{31}{5}\\neq\\frac{63}{8}\\). Đáp án đúng: \\(\\frac{31}{5}\\).",
-    "quick": "\\(I=\\frac{1}{2}\\int_1^4 x^{3/2}dx=\\frac{1}{5}[x^{5/2}]_1^4=\\frac{31}{5}\\)",
+    "\\(\\dfrac{31}{5}\\)",
+    "\\(\\dfrac{63}{8}\\)",
+    "\\(\\dfrac{31}{4}\\)",
+    "\\(\\dfrac{63}{16}\\)"
+  ],
+    "correct": "\\(\\dfrac{31}{5}\\)",
+    "solution": "\\(I=\\int_1^4\\sqrt{x}\\int_0^{\\sqrt{x}} y\\,dy\\,dx=\\int_1^4\\sqrt{x}\\cdot\\dfrac{x}{2}\\,dx=\\dfrac{1}{2}\\int_1^4 x^{3/2}\\,dx\\).\n\nTính tiếp:\n\\[\\dfrac{1}{2}\\int_1^4 x^{3/2}\\,dx=\\dfrac{1}{2}\\cdot\\dfrac{2}{5}[x^{5/2}]_1^4=\\dfrac{1}{5}(32-1)=\\dfrac{31}{5}.\\]\nVậy đáp án đúng là \\(\\dfrac{31}{5}\\).",
+    "quick": "\\(\\int_0^{\\sqrt x} y\\,dy=x/2\\), nên \\(I=\\frac12\\int_1^4 x^{3/2}dx=\\frac{31}{5}\\).",
     "casio": "I=(1/2)·(2/5)·[x^{5/2}]₁⁴=(1/5)(32-1)=31/5",
     "difficulty": 2,
     "topic": "Tích phân"
@@ -707,14 +707,14 @@
     "question": "Tính \\(I=\\int_0^\\pi e^x\\cos^2x\\,dx\\).",
     "matrix": null,
     "options": [
-      "\\(\\dfrac{e^\\pi+1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
-      "\\(\\dfrac{e^\\pi+1}{2}\\)",
-      "\\(e^\\pi-1\\)",
-      "\\(\\dfrac{e^\\pi}{2}\\)"
-    ],
-    "correct": "\\(\\dfrac{e^\\pi+1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
-    "solution": "Dùng \\(\\cos^2x=\\dfrac{1+\\cos2x}{2}\\):\n\n\\(I=\\dfrac{1}{2}\\int_0^\\pi e^x\\,dx+\\dfrac{1}{2}\\int_0^\\pi e^x\\cos2x\\,dx\\)\n\n**Phần 1:** \\(\\dfrac{1}{2}[e^x]_0^\\pi=\\dfrac{e^\\pi-1}{2}\\).\n\n**Phần 2:** Dùng công thức \\(\\int e^x\\cos(ax)dx=\\dfrac{e^x(\\cos ax+a\\sin ax)}{1+a^2}\\). Với a=2:\n\\(\\dfrac{1}{2}\\cdot\\dfrac{e^x(\\cos2x+2\\sin2x)}{5}\\Big|_0^\\pi=\\dfrac{e^\\pi-1}{10}\\).\n\n\\(I=\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\).",
-    "quick": "cos²x=(1+cos2x)/2. Tách thành 2 tích phân. Phần 2 dùng công thức ∫e^x cos(ax)dx.",
+    "\\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
+    "\\(\\dfrac{e^\\pi-1}{2}\\)",
+    "\\(e^\\pi-1\\)",
+    "\\(\\dfrac{e^\\pi}{2}\\)"
+  ],
+    "correct": "\\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
+    "solution": "Dùng \\(\\cos^2x=\\dfrac{1+\\cos2x}{2}\\):\n\\[I=\\dfrac{1}{2}\\int_0^\\pi e^x\\,dx+\\dfrac{1}{2}\\int_0^\\pi e^x\\cos2x\\,dx.\\]\n\nPhần 1:\n\\[\\dfrac12\\int_0^\\pi e^x dx=\\dfrac12(e^\\pi-1).\\]\n\nPhần 2: dùng công thức\n\\[\\int e^x\\cos2x\\,dx=\\dfrac{e^x(\\cos2x+2\\sin2x)}{5}.\\]\nNên\n\\[\\dfrac12\\int_0^\\pi e^x\\cos2x\\,dx=\\dfrac12\\cdot\\dfrac{e^\\pi-1}{5}=\\dfrac{e^\\pi-1}{10}.\\]\n\nVậy\n\\[I=\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}=\\dfrac{3}{5}(e^\\pi-1).\\]",
+    "quick": "Tách \\(\\cos^2x\\) thành \\((1+\\cos2x)/2\\). Kết quả đúng là \\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\).",
     "casio": "CASIO: Tích phân số từ 0 đến π của e^x×cos²x.",
     "difficulty": 3,
     "topic": "Tích phân"
@@ -779,15 +779,15 @@
     "question": "Cho tích phân lặp \\(I=\\int_0^2\\int_{\\sqrt{y}}^2 f(x,y)\\,dx\\,dy\\). Đổi thứ tự tích phân:",
     "matrix": null,
     "options": [
-      "\\(I=\\int_0^2\\int_0^{x^2}f\\,dy\\,dx\\)",
-      "\\(I=\\int_0^4\\int_0^{x^2}f\\,dy\\,dx\\)",
-      "\\(I=\\int_0^2\\int_0^{x}f\\,dy\\,dx\\)",
-      "\\(I=\\int_0^2\\int_{x^2}^4 f\\,dy\\,dx\\)"
-    ],
-    "correct": "\\(I=\\int_0^2\\int_0^{x^2}f\\,dy\\,dx\\)",
-    "solution": "**Xác định miền D từ tích phân gốc:**\n- \\(y\\) từ 0 đến 2 (ngoài)\n- \\(x\\) từ \\(\\sqrt{y}\\) đến 2 (trong)\n\n**Biên miền:** \\(x=\\sqrt{y} \\Rightarrow y=x^2\\), \\(x=2\\), \\(y=0\\).\n\n**Đổi thứ tự** (x ngoài, y trong):\n- \\(x\\) từ 0 đến 2\n- \\(y\\) từ 0 đến \\(x^2\\)\n\n\\(I=\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
-    "quick": "Gốc: y:0→2, x:√y→2. Miền D: x²≥y≥0, 0≤x≤2. Đổi: **x:0→2, y:0→x²**.",
-    "casio": "CASIO: Vẽ miền D (tam giác/parabol), đọc giới hạn theo thứ tự mới.",
+    "\\(I=\\int_0^{\\sqrt2}\\!\\int_0^{x^2}f\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2}f\\,dy\\,dx\\)",
+    "\\(I=\\int_0^4\\int_0^{x^2}f\\,dy\\,dx\\)",
+    "\\(I=\\int_0^2\\int_0^{x}f\\,dy\\,dx\\)",
+    "\\(I=\\int_0^2\\int_{x^2}^4 f\\,dy\\,dx\\)"
+  ],
+    "correct": "\\(I=\\int_0^{\\sqrt2}\\!\\int_0^{x^2}f\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2}f\\,dy\\,dx\\)",
+    "solution": "Miền gốc: \\(0\\le y\\le2\\), \\(\\sqrt y\\le x\\le2\\). Điều kiện \\(\\sqrt y\\le x\\) tương đương \\(y\\le x^2\\). Khi đổi thứ tự, phải xét hai khoảng của \\(x\\):\n- Với \\(0\\le x\\le\\sqrt2\\): \\(0\\le y\\le x^2\\)\n- Với \\(\\sqrt2\\le x\\le2\\): \\(0\\le y\\le2\\)\nDo đó\n\\[I=\\int_0^{\\sqrt2}\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\int_0^{2} f(x,y)\\,dy\\,dx.\\]",
+    "quick": "Miền bị cắt tại \\(x=\\sqrt2\\), nên sau khi đổi thứ tự phải tách thành 2 tích phân.",
+    "casio": "Vẽ miền: \\(x=\\sqrt y\\Leftrightarrow y=x^2\\), với \\(0\\le y\\le2\\). Khi đổi thứ tự phải tách 2 miền: \\(0\\le x\\le\\sqrt2\\) thì \\(0\\le y\\le x^2\\); còn \\(\\sqrt2\\le x\\le2\\) thì \\(0\\le y\\le2\\).",
     "difficulty": 2,
     "topic": "Tích phân"
   },
@@ -851,14 +851,14 @@
     "question": "Tính \\(I=\\iint_D\\sqrt{x^2+y^2}\\,dA\\) trong đó D là đĩa \\(x^2+y^2\\leq 2x\\).",
     "matrix": null,
     "options": [
-      "\\(\\dfrac{8}{3}\\)",
-      "\\(\\dfrac{4}{3}\\pi\\)",
-      "\\(\\dfrac{8\\pi}{3}\\)",
-      "\\(2\\pi\\)"
-    ],
-    "correct": "\\(\\dfrac{8}{3}\\)",
-    "solution": "\\(x^2+y^2=2x\\) → \\(r=2\\cos\\theta\\).\n\nMiền: \\(0\\leq r\\leq2\\cos\\theta\\), \\(\\theta\\in[-\\pi/2,\\pi/2]\\).\n\n\\(I=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta}r\\cdot r\\,dr\\,d\\theta=\\int_{-\\pi/2}^{\\pi/2}\\dfrac{r^3}{3}\\Big|_0^{2\\cos\\theta}d\\theta\\)\n\n\\(=\\int_{-\\pi/2}^{\\pi/2}\\dfrac{8\\cos^3\\theta}{3}d\\theta=\\dfrac{16}{3}\\int_0^{\\pi/2}\\cos^3\\theta\\,d\\theta=\\dfrac{16}{3}\\cdot\\dfrac{2}{3}=\\dfrac{32}{9}\\).\n\n*Kiểm tra: ∫cos³θ dθ = sinθ - sin³θ/3. Tại π/2: 1-1/3=2/3.*",
-    "quick": "Tọa độ cực: r=2cosθ. I=∫∫r²drdθ = (16/3)∫cos³θdθ = 8/3... Kiểm tra lại.",
+    "\\(\\dfrac{32}{9}\\)",
+    "\\(\\dfrac{8}{3}\\)",
+    "\\(\\dfrac{4\\pi}{3}\\)",
+    "\\(\\dfrac{8\\pi}{3}\\)"
+  ],
+    "correct": "\\(\\dfrac{32}{9}\\)",
+    "solution": "\\(x^2+y^2\\le 2x\\Rightarrow r^2\\le 2r\\cos\\theta\\Rightarrow 0\\le r\\le 2\\cos\\theta\\), với \\(-\\pi/2\\le\\theta\\le\\pi/2\\).\n\nDo \\(\\sqrt{x^2+y^2}=r\\), ta có\n\\[I=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\cdot r\\,dr\\,d\\theta=\\int_{-\\pi/2}^{\\pi/2}\\frac{(2\\cos\\theta)^3}{3}\\,d\\theta=\\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta\\,d\\theta.\\]\n\nVì\n\\[\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta\\,d\\theta=2\\int_0^{\\pi/2}\\cos^3\\theta\\,d\\theta=2\\cdot\\frac{2}{3}=\\frac{4}{3},\\]\n\nnên\n\\[I=\\frac{8}{3}\\cdot\\frac{4}{3}=\\frac{32}{9}.\\]",
+    "quick": "Cực: \\(r\\le 2\\cos\\theta\\). Tính ra \\(I=\\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta d\\theta=\\frac{32}{9}\\).",
     "casio": "CASIO: ∫_{-π/2}^{π/2} 8cos³θ/3 dθ. ∫cos³θ=sinθ-sin³θ/3.",
     "difficulty": 3,
     "topic": "Tích phân"

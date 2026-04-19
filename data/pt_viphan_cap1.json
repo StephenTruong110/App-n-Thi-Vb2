@@ -74,7 +74,7 @@
   {
     "id": 5,
     "type": "separable",
-    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{x}{\\sqrt{1 - y^2}}\\) là?",
+    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = x\\sqrt{1 - y^2}\\) là?",
     "matrix": null,
     "options": [
       "\\(\\arcsin y = \\dfrac{x^2}{2} + C\\)",
@@ -83,8 +83,8 @@
       "Cả A và C"
     ],
     "correct": "Cả A và C",
-    "solution": "\\(\\sqrt{1-y^2}\\,dy = x\\,dx\\) → \\(\\arcsin y = \\frac{x^2}{2} + C\\) → \\(y = \\sin\\left(\\frac{x^2}{2} + C\\right)\\).",
-    "quick": "Tách biến, tích phân \\(\\int \\sqrt{1-y^2} dy = \\int x dx\\)",
+    "solution": "Tách biến: \\(\\dfrac{dy}{\\sqrt{1-y^2}} = x\\,dx\\). Lấy tích phân hai vế: \\(\\arcsin y = \\dfrac{x^2}{2} + C\\). Suy ra tương đương \\(y = \\sin\\left(\\dfrac{x^2}{2} + C\\right)\\).",
+    "quick": "Tách biến: \\(dy/\\sqrt{1-y^2}=x\\,dx\\) nên \\(\\arcsin y=\\dfrac{x^2}{2}+C\\).",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
     "difficulty": 2,
     "topic": "PT Vi phân"
@@ -167,14 +167,14 @@
     "question": "Phương trình \\((x^2 + y^2)dx + 2xy\\,dy = 0\\) có thể đưa về dạng đẳng cấp. Đặt \\(u = y/x\\), ta được?",
     "matrix": null,
     "options": [
-      "\\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
-      "\\(\\frac{dx}{x} = -\\frac{2u}{1+u^2}du\\)",
-      "\\(\\frac{dx}{x} = \\frac{1+u^2}{2u}du\\)",
-      "\\(\\frac{dx}{x} = \\frac{2u}{1+u^2}du\\)"
-    ],
-    "correct": "\\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
-    "solution": "Viết lại \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\). \\(y=ux \\Rightarrow y'=u+xu'\\). Thay: \\(u+xu' = -\\frac{1+u^2}{2u} \\Rightarrow xu' = -\\frac{1+3u^2}{2u}\\)... Tính chi tiết cho thấy dạng \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\).",
-    "quick": "Từ \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{2xy} = -\\frac{1+u^2}{2u}\\) và \\(y' = u + xu'\\), giải ra \\(\\frac{dx}{x} = -\\frac{1+u^2}{2u}du\\)",
+    "\\(\\dfrac{2u}{1+3u^2}\\,du = -\\dfrac{dx}{x}\\)",
+    "\\(\\dfrac{dx}{x} = -\\dfrac{1+u^2}{2u}\\,du\\)",
+    "\\(\\dfrac{dx}{x} = \\dfrac{1+u^2}{2u}\\,du\\)",
+    "\\(\\dfrac{dx}{x} = -\\dfrac{2u}{1+u^2}\\,du\\)"
+  ],
+    "correct": "\\(\\dfrac{2u}{1+3u^2}\\,du = -\\dfrac{dx}{x}\\)",
+    "solution": "Từ \\((x^2+y^2)dx+2xy\\,dy=0\\), chia cho \\(dx\\): \\(2xy\\,y'=-(x^2+y^2)\\). Đặt \\(u=y/x\\Rightarrow y=ux,\\; y'=u+xu'\\). Thay vào: \\(2ux^2(u+xu')=-(1+u^2)x^2\\). Rút gọn: \\(2u^2+2uxu'=-(1+u^2)\\), nên \\(2uxu'=-(1+3u^2)\\). Do đó \\(\\dfrac{2u}{1+3u^2}\\,du=-\\dfrac{dx}{x}\\).",
+    "quick": "Đặt \\(u=y/x\\), thay \\(y=ux\\), \\(y'=u+xu'\\), rút gọn được \\(\\dfrac{2u}{1+3u^2}\\,du=-\\dfrac{dx}{x}\\).",
     "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
     "difficulty": 2,
     "topic": "PT Vi phân"
@@ -581,14 +581,14 @@
     "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} + y \\cot x = \\csc x\\) là?",
     "matrix": null,
     "options": [
+      "\\(y = (x+C)\\csc x\\)",
       "\\(y = C\\csc x + \\cot x\\)",
-      "\\(y = C\\sin x + \\cos x\\)",
       "\\(y = C\\csc x - \\cot x\\)",
-      "\\(y = C\\cot x + \\csc x\\)"
+      "\\(y = C\\sin x + \\cos x\\)"
     ],
-    "correct": "\\(y = C\\csc x - \\cot x\\)",
-    "solution": "\\(\\mu = e^{\\int \\cot x dx} = \\sin x\\). \\((y\\sin x)' = \\csc x \\cdot \\sin x = 1 \\Rightarrow y\\sin x = x + C\\) → \\(y = (x+C)\\csc x\\). Đáp án không khớp → tôi sửa đề thành \\(y' + y\\cot x = \\cos x\\) thì \\((y\\sin x)' = \\cos x \\sin x = \\frac12\\sin 2x\\) cũng không ra. Nên để nguyên nhưng thay đáp án.",
-    "quick": "Thừa số \\(\\mu = \\sin x\\), tích phân vế phải",
+    "correct": "\\(y = (x+C)\\csc x\\)",
+    "solution": "Với \\(y' + y\\cot x = \\csc x\\), ta có thừa số tích phân \\(\\mu = e^{\\int \\cot x\\,dx}=\\sin x\\). Khi đó \\((y\\sin x)' = \\csc x\\cdot\\sin x = 1\\). Lấy tích phân: \\(y\\sin x = x + C\\). Suy ra \\(y = \\dfrac{x+C}{\\sin x} = (x+C)\\csc x\\).",
+    "quick": "\\(\\mu=\\sin x\\), nên \\((y\\sin x)'=1\\Rightarrow y\\sin x=x+C\\Rightarrow y=(x+C)\\csc x\\).",
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
     "difficulty": 2,
     "topic": "PT Vi phân"
@@ -599,14 +599,14 @@
     "question": "Giải \\(\\dfrac{dy}{dx} = \\dfrac{xy + y}{xy + x}\\). Nghiệm tổng quát là?",
     "matrix": null,
     "options": [
-      "\\(y - x + \\ln|y| = C\\)",
+      "\\(y - x + \\ln\\left|\\dfrac{y}{x}\\right| = C\\)",
       "\\(y + x + \\ln|y| = C\\)",
       "\\(y - x + \\ln|x| = C\\)",
       "\\(y - x + \\ln|xy| = C\\)"
     ],
-    "correct": "\\(y - x + \\ln|y| = C\\)",
-    "solution": "Viết lại: \\(\\frac{dy}{dx} = \\frac{y(x+1)}{x(y+1)}\\) → tách biến: \\(\\frac{y+1}{y}dy = \\frac{x+1}{x}dx\\) → \\((1 + \\frac{1}{y})dy = (1 + \\frac{1}{x})dx\\) → \\(y + \\ln|y| = x + \\ln|x| + C\\) → \\(y - x + \\ln\\left|\\frac{y}{x}\\right| = C\\)? Đáp án \\(y - x + \\ln|y| = C\\) không có \\(\\ln|x|\\).",
-    "quick": "Tách biến, tích phân từng vế",
+    "correct": "\\(y - x + \\ln\\left|\\dfrac{y}{x}\\right| = C\\)",
+    "solution": "Ta có \\(\\dfrac{dy}{dx}=\\dfrac{xy+y}{xy+x}=\\dfrac{y(x+1)}{x(y+1)}\\). Tách biến: \\(\\dfrac{y+1}{y}\\,dy=\\dfrac{x+1}{x}\\,dx\\). Lấy tích phân: \\(\\int\\left(1+\\dfrac1y\\right)dy=\\int\\left(1+\\dfrac1x\\right)dx\\). Suy ra \\(y+\\ln|y|=x+\\ln|x|+C\\), hay tương đương \\(y-x+\\ln\\left|\\dfrac{y}{x}\\right|=C\\).",
+    "quick": "Tách biến: \\((1+1/y)dy=(1+1/x)dx\\) nên \\(y+\\ln|y|=x+\\ln|x|+C\\).",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
     "difficulty": 2,
     "topic": "PT Vi phân"
