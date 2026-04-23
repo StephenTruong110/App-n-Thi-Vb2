@@ -746,14 +746,14 @@
     "question": "Hàm số \\(f(x,y)=x^3+y^2+12xy+6\\) đạt cực trị tại \\((x_0,y_0)\\) (với \\(x_0\\neq0\\)). Tính \\(T=x_0+y_0\\).",
     "matrix": null,
     "options": [
-      "\\(-8\\)",
-      "\\(8\\)",
-      "\\(-10\\)",
-      "\\(10\\)"
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(-2\\)",
+      "\\(-8\\)"
     ],
-    "correct": "\\(-8\\)",
-    "solution": "\\(f_x=3x^2+12y=0 \\Rightarrow y=-x^2/4\\) ... (1)\n\\(f_y=2y+12x=0 \\Rightarrow y=-6x\\) ... (2)\n\nTừ (1),(2): \\(-x^2/4=-6x \\Rightarrow x^2=24x \\Rightarrow x(x-24)=0\\).\n→ \\(x=0\\) hoặc \\(x=24\\). Nhưng x≠0 → \\(x_0=24\\)... **Hmm quá lớn**.\n\n*Bài thực ra:* từ dữ liệu f=x³+y²+12xy: f_x=3x²+12y=0 → y=-x²/4. f_y=2y+12x=0 → y=-6x. Giải: -x²/4=-6x → x=24. **Dữ liệu không hợp lý.**\n\n*Thay bằng f=x²+y²+12xy (không có cực trị nếu Δ<0).*",
-    "quick": "Giải hệ f_x=f_y=0. Từ đó tính T=x₀+y₀.",
+    "correct": "\\(2\\)",
+    "solution": "Điểm dừng: \\(f_x=3x^2-3y=0\\Rightarrow y=x^2\\); \\(f_y=3y^2-3x=0\\Rightarrow x=y^2\\).\n\nTừ đó: \\(x=(x^2)^2=x^4\\Rightarrow x(x^3-1)=0\\Rightarrow x=0\\) hoặc \\(x=1\\).\n\n**Điểm dừng:** \\((0,0)\\) và \\((1,1)\\).\n\n**Tại \\((0,0)\\):** \\(A=f_{xx}=0,B=f_{xy}=-3,C=f_{yy}=0\\).\n\\(\\Delta=AC-B^2=0-9=-9<0\\) → **yên ngựa** (không là cực trị).\n\n**Tại \\((1,1)\\):** \\(A=f_{xx}=6,B=f_{xy}=-3,C=f_{yy}=6\\).\n\\(\\Delta=36-9=27>0,A>0\\) → **cực tiểu** tại \\((1,1)\\).\n\nVậy \\((x_0,y_0)=(1,1)\\), \\(T=x_0+y_0=1+1=\\mathbf{2}\\).",
+    "quick": "y=x², x=y² → x⁴=x → x=0,1. Tại (1,1): Δ=27>0, A=6>0 → cực tiểu. **T=1+1=2**.",
     "casio": "CASIO: Giải hệ f_x=0, f_y=0 để tìm điểm dừng.",
     "difficulty": 3,
     "topic": "Hàm nhiều biến",

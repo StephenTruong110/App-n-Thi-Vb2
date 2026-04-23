@@ -765,12 +765,12 @@
     "question": "Đạo hàm của \\(f(x)=\\tan^{2}x\\) là gì?",
     "matrix": null,
     "options": [
-      "\\(\\frac{2\\tan x}{\\cos^{2}x}\\)",
-      "\\(\\frac{2}{\\cos^{2}x}\\)",
+      "\\(\\dfrac{2\\tan x}{\\cos^{2}x}\\)",
+      "\\(\\dfrac{2}{\\cos^{2}x}\\)",
       "\\(2\\tan x\\)",
-      "\\(\\frac{1}{\\cos^{2}x}\\)"
+      "\\(\\dfrac{1}{\\cos^{2}x}\\)"
     ],
-    "correct": "\\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\)",
+    "correct": "\\(\\dfrac{2\\tan x}{\\cos^{2}x}\\)",
     "solution": "Áp dụng quy tắc đạo hàm: \\((\\tan^{2}x)'=2\\tan x\\cdot(\\tan x)'\\). Kết quả: \\(2\\tan x\\cdot\\frac{1}{\\cos^{2}x}\\).",
     "quick": "Dây chuyền: đạo hàm ngoài × đạo hàm trong",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập giá trị x → [)] → [EXE]. Ví dụ: d/dx(x², 3) cho kết quả 6. Dùng để kiểm tra, không thể cho kết quả ký hiệu.",

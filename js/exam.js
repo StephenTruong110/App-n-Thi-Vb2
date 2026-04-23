@@ -20,9 +20,9 @@ const EXAM_DIST = [
   { file:'gioi_han',                              n:2 },
   { file:'tiem_can',                              n:1 },
   { file:'lientuc_giandoan_khavi',                n:4 },
-  { file:'dao_ham_trong_tam',                     n:3 },
+  { file:'dao_ham',                               n:3 },
 
-  { file:'daohamrieng_viphan_cuctri_trong_tam',   n:8 },
+  { file:'daohamrieng_viphan_cuctri',             n:8 },
 
   { file:'chuoi_so',                              n:5 },
   { file:'chuoi_luy_thua',                        n:1 },
@@ -213,6 +213,7 @@ function resumeSavedExam() {
 function renderExamFull() {
   buildNavGrid();
   renderExamQ();
+  _injectMobBar();
 }
 
 function renderExamQ() {
@@ -277,6 +278,7 @@ function renderExamQ() {
     </div>`;
 
   updateNavGrid();
+  _updateMobBar();
   typesetDebounced(area);
 }
 
@@ -331,18 +333,35 @@ function saveExamNavState() {
 
 function syncExamNavPanelUI() {
   const panel = document.querySelector('.exam-nav-panel');
-  const btn = document.getElementById('nav-panel-toggle');
-  if (!panel || !btn) return;
-  panel.classList.toggle('collapsed', examNavCollapsed);
-  btn.textContent = examNavCollapsed ? 'Mở panel' : 'Thu gọn';
-  btn.setAttribute('aria-expanded', examNavCollapsed ? 'false' : 'true');
-  btn.title = examNavCollapsed ? 'Mở rộng panel điều hướng' : 'Thu gọn panel điều hướng';
+  const btn   = document.getElementById('nav-panel-toggle');
+  if (!panel) return;
+  if (window.innerWidth <= 640) {
+    const isOpen = panel.classList.contains('mob-open');
+    if (btn) {
+      btn.textContent = isOpen ? '▲ Thu gọn' : '▼ Xem câu';
+      btn.setAttribute('aria-expanded', String(isOpen));
+    }
+  } else {
+    panel.classList.toggle('collapsed', examNavCollapsed);
+    panel.classList.remove('mob-open');
+    if (btn) {
+      btn.textContent = examNavCollapsed ? 'Mở panel' : 'Thu gọn';
+      btn.setAttribute('aria-expanded', examNavCollapsed ? 'false' : 'true');
+      btn.title = examNavCollapsed ? 'Mở rộng panel' : 'Thu gọn panel';
+    }
+  }
 }
 
 function toggleExamNavPanel() {
-  examNavCollapsed = !examNavCollapsed;
-  saveExamNavState();
-  syncExamNavPanelUI();
+  if (window.innerWidth <= 640) {
+    const panel = document.querySelector('.exam-nav-panel');
+    if (panel) panel.classList.toggle('mob-open');
+    syncExamNavPanelUI();
+  } else {
+    examNavCollapsed = !examNavCollapsed;
+    saveExamNavState();
+    syncExamNavPanelUI();
+  }
 }
 
 function exGoTo(idx) {
@@ -870,3 +889,66 @@ function hideWrongBankControls() {
   const bar = document.getElementById('wrong-mode-bar');
   if (bar) bar.style.display = 'none';
 }
+
+/* ================================================================
+   MOBILE BOTTOM NAV BAR
+   Chỉ gồm: Trước | số câu | Tiếp
+   (Nút Đánh dấu đã có sẵn trên header của câu hỏi)
+================================================================ */
+
+function _injectMobBar() {
+  if (window.innerWidth > 640) {
+    const old = document.getElementById('_mob-bar');
+    if (old) old.remove();
+    return;
+  }
+  const old = document.getElementById('_mob-bar');
+  if (old) old.remove();
+
+  const bar = document.createElement('div');
+  bar.id = '_mob-bar';
+  bar.className = 'mob-exam-bar';
+  bar.innerHTML =
+    '<button class="meb-btn" id="meb-prev" onclick="_mobPrev()">' +
+      '&#8592; Trước' +
+    '</button>' +
+    '<span class="meb-info" id="meb-info">- / -</span>' +
+    '<button class="meb-btn primary" id="meb-next" onclick="_mobNext()">' +
+      'Tiếp &#8594;' +
+    '</button>';
+  document.body.appendChild(bar);
+  _updateMobBar();
+}
+
+function _updateMobBar() {
+  const prev = document.getElementById('meb-prev');
+  const next = document.getElementById('meb-next');
+  const info = document.getElementById('meb-info');
+  if (!prev || !next) return;
+
+  const total = examQs.length || 70;
+  const cur   = examCurrent;
+
+  prev.disabled = (cur <= 0);
+
+  const isLast = (cur >= total - 1);
+  next.textContent = isLast ? 'Nộp bài ✓' : 'Tiếp →';
+  next.onclick     = isLast ? askSubmitExam : _mobNext;
+
+  if (info) info.textContent = (cur + 1) + ' / ' + total;
+}
+
+function _mobPrev() {
+  if (examCurrent > 0) { examCurrent--; renderExamQ(); }
+}
+function _mobNext() {
+  if (examCurrent < examQs.length - 1) { examCurrent++; renderExamQ(); }
+}
+
+window.addEventListener('resize', function() {
+  clearTimeout(window._resT);
+  window._resT = setTimeout(function() {
+    _injectMobBar();
+    syncExamNavPanelUI();
+  }, 250);
+});

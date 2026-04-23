@@ -617,11 +617,11 @@
     "question": "Cho \\(f(x)=\\begin{cases}x^2+ax+b & x\\leq1 \\\\ 2ax+b & x>1\\end{cases}\\). Tìm \\(a,b\\) để \\(f\\) khả vi tại \\(x=1\\).",
     "matrix": null,
     "options": [
-    "Không tồn tại \\(a,b\\)",
-    "\\(a=1,\\;b=0\\)",
-    "\\(a=2,\\;b=-1\\)",
-    "\\(a=2,\\;b=1\\)"
-  ],
+      "Không tồn tại \\(a,b\\)",
+      "\\(a=1,\\;b=0\\)",
+      "\\(a=2,\\;b=-1\\)",
+      "\\(a=2,\\;b=1\\)"
+    ],
     "correct": "Không tồn tại \\(a,b\\)",
     "solution": "Xét tính khả vi tại \\(x=1\\). Trước hết cần liên tục: \\(f(1^-)=1^2+a+b=1+a+b\\), còn \\(f(1^+)=2a+b\\). Điều kiện liên tục cho \\(1+a+b=2a+b\\Rightarrow a=1\\). Tiếp theo, đạo hàm trái là \\((x^2+ax+b)'=2x+a\\), nên tại \\(x=1\\): \\(f'_-(1)=2+a\\). Đạo hàm phải của \\(2ax+b\\) là \\(2a\\), nên \\(f'_+(1)=2a\\). Điều kiện khả vi cho \\(2+a=2a\\Rightarrow a=2\\). Mâu thuẫn với điều kiện liên tục \\(a=1\\). Vậy **không tồn tại cặp \\((a,b)\\)** nào làm hàm khả vi tại \\(x=1\\).",
     "quick": "Liên tục cho \\(a=1\\), còn khả vi cho \\(a=2\\). Mâu thuẫn nên **không tồn tại \\(a,b\\)**.",
@@ -743,11 +743,11 @@
     "question": "Cho \\(f(x)=\\begin{cases}x^3-2x^2+3 & x\\leq1 \\\\ 2ax+b & x>1\\end{cases}\\). Tìm \\(a,b\\) để \\(f\\) khả vi tại \\(x=1\\).",
     "matrix": null,
     "options": [
-    "\\(a=-\\dfrac{1}{2},\\;b=3\\)",
-    "\\(a=\\dfrac{1}{2},\\;b=1\\)",
-    "\\(a=-1,\\;b=2\\)",
-    "\\(a=1,\\;b=0\\)"
-  ],
+      "\\(a=-\\dfrac{1}{2},\\;b=3\\)",
+      "\\(a=\\dfrac{1}{2},\\;b=1\\)",
+      "\\(a=-1,\\;b=2\\)",
+      "\\(a=1,\\;b=0\\)"
+    ],
     "correct": "\\(a=-\\dfrac{1}{2},\\;b=3\\)",
     "solution": "Xét tại \\(x=1\\). Với nhánh trái: \\(f(1)=1^3-2\\cdot1^2+3=2\\). Để liên tục, cần \\(2a+b=2\\). Đạo hàm nhánh trái là \\(f'_-(x)=3x^2-4x\\), nên \\(f'_-(1)=3-4=-1\\). Đạo hàm nhánh phải của \\(2ax+b\\) là \\(f'_+(x)=2a\\), nên điều kiện khả vi cho \\(2a=-1\\Rightarrow a=-\\dfrac{1}{2}\\). Thế vào điều kiện liên tục: \\(2(-\\dfrac{1}{2})+b=2\\Rightarrow -1+b=2\\Rightarrow b=3\\). Vậy \\(a=-\\dfrac{1}{2},\\;b=3\\).",
     "quick": "Khả vi: \\(2a=-1\\Rightarrow a=-1/2\\). Liên tục: \\(2a+b=2\\Rightarrow b=3\\).",

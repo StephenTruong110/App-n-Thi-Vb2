@@ -299,31 +299,19 @@
   {
     "id": 17,
     "type": "triangle_identify",
-    "question": "Ma trận nào sau đây là ma trận tam giác trên?\n\\(A=\\begin{pmatrix}1&2&3\\\\0&4&5\\\\0&0&6\\end{pmatrix}\\)",
-    "matrix": [
-      [
-        1,
-        2,
-        3
-      ],
-      [
-        0,
-        4,
-        5
-      ],
-      [
-        0,
-        0,
-        6
-      ]
-    ],
-    "options": [
-      "Ma trận tam giác trên",
-      "Ma trận tam giác dưới",
-      "Ma trận đường chéo",
-      "Không có dạng đặc biệt"
-    ],
-    "correct": "Ma trận tam giác trên",
+  "question": "Cho ma trận \\(A\\). Ma trận \\(A\\) thuộc loại nào?",
+  "matrix": [
+    [1, 2, 3],
+    [0, 4, 5],
+    [0, 0, 6]
+  ],
+  "options": [
+    "Ma trận tam giác trên",
+    "Ma trận tam giác dưới",
+    "Ma trận đường chéo",
+    "Không có dạng đặc biệt"
+  ],
+  "correct": "Ma trận tam giác trên",
     "solution": "**Ma trận tam giác trên:** Tất cả phần tử **dưới** đường chéo chính bằng 0.\n\nKiểm tra: \\(a_{21}=0, a_{31}=0, a_{32}=0\\) ✓ → Ma trận **tam giác trên**.\n\n**Phân biệt:**\n- Tam giác trên: các phần tử dưới đường chéo = 0\n- Tam giác dưới: các phần tử trên đường chéo = 0\n- Đường chéo: tất cả phần tử ngoài đường chéo = 0",
     "quick": "Tam giác **trên** = 0 **dưới** đường chéo. Ở đây a₂₁=a₃₁=a₃₂=0 → **tam giác trên**.",
     "casio": "CASIO: Nhìn ma trận — dưới đường chéo chính đều = 0 → tam giác trên. Trên đường chéo đều = 0 → tam giác dưới.",

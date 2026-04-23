@@ -1316,7 +1316,7 @@
     ],
     "correct": "-15",
     "solution": "Khai triển theo hàng 1:\n\\[\n\\det(A)=1\\begin{vmatrix}0&2\\\\1&3\\end{vmatrix}-2\\begin{vmatrix}3&2\\\\2&3\\end{vmatrix}+(-1)\\begin{vmatrix}3&0\\\\2&1\\end{vmatrix}\n\\]\n\\[\n=(-2)-2(9-4)-3=-2-10-3=-15.\n\\]\nVậy \\(\\det(A)=-15\\).",
-  "quick": "Khai triển hàng 1: \\((-2)-2\\cdot5-3=-15\\).",
+    "quick": "Khai triển hàng 1: \\((-2)-2\\cdot5-3=-15\\).",
     "casio": "CASIO fx-580VNX: [MODE][6] → MatA 3×3 → nhập 9 phần tử → [AC] → [OPTN][F2][F3][F1][EXE]. Mẹo: khai triển theo hàng/cột có nhiều số 0 để tính tay nhanh hơn.",
     "difficulty": 2,
     "topic": "Ma trận & Định thức"
