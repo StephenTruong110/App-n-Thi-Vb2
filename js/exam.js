@@ -351,7 +351,6 @@ function syncExamNavPanelUI() {
     }
   }
 }
-
 function toggleExamNavPanel() {
   if (window.innerWidth <= 640) {
     const panel = document.querySelector('.exam-nav-panel');
@@ -363,7 +362,6 @@ function toggleExamNavPanel() {
     syncExamNavPanelUI();
   }
 }
-
 function exGoTo(idx) {
   if (idx < 0 || idx >= examQs.length) return;
   examCurrent = idx;
@@ -468,6 +466,7 @@ function doExitExam() {
   stopExamTimer();
   saveExamProgress();
   closeOverlay('modal-exit');
+  _removeMobBar();
   showScreen('screen-practice');
   document.getElementById('btn-mode-practice').classList.add('active');
   document.getElementById('btn-mode-exam').classList.remove('active');
@@ -542,6 +541,7 @@ function gradeAndShowResults(timeUsed) {
     time: new Date().toLocaleTimeString('vi-VN'),
   }));
 
+  _removeMobBar();
   showScreen('screen-results');
   const inner = document.getElementById('results-inner');
   if (!inner) return;
@@ -686,6 +686,7 @@ function openOverlay(id)  { document.getElementById(id)?.classList.remove('hidde
 function closeOverlay(id) { document.getElementById(id)?.classList.add('hidden'); }
 
 function backFromResults() {
+  _removeMobBar();
   showScreen('screen-practice');
   document.getElementById('btn-mode-practice')?.classList.add('active');
   document.getElementById('btn-mode-exam')?.classList.remove('active');
@@ -829,6 +830,7 @@ function startWrongBankSession() {
 // ── Load câu sai vào engine practice ────────────────────────
 
 function loadWrongBankPractice(qs) {
+  _removeMobBar();
   switchMode('wrong');
   setTimeout(() => {
     // Reset state
@@ -892,30 +894,23 @@ function hideWrongBankControls() {
 
 /* ================================================================
    MOBILE BOTTOM NAV BAR
-   Chỉ gồm: Trước | số câu | Tiếp
-   (Nút Đánh dấu đã có sẵn trên header của câu hỏi)
 ================================================================ */
 
-function _injectMobBar() {
-  if (window.innerWidth > 640) {
-    const old = document.getElementById('_mob-bar');
-    if (old) old.remove();
-    return;
-  }
-  const old = document.getElementById('_mob-bar');
-  if (old) old.remove();
+function _removeMobBar() {
+  const el = document.getElementById('_mob-bar');
+  if (el) el.remove();
+}
 
+function _injectMobBar() {
+  if (window.innerWidth > 640) { _removeMobBar(); return; }
+  _removeMobBar();
   const bar = document.createElement('div');
   bar.id = '_mob-bar';
   bar.className = 'mob-exam-bar';
   bar.innerHTML =
-    '<button class="meb-btn" id="meb-prev" onclick="_mobPrev()">' +
-      '&#8592; Trước' +
-    '</button>' +
+    '<button class="meb-btn" id="meb-prev" onclick="_mobPrev()">&#8592; Trước</button>' +
     '<span class="meb-info" id="meb-info">- / -</span>' +
-    '<button class="meb-btn primary" id="meb-next" onclick="_mobNext()">' +
-      'Tiếp &#8594;' +
-    '</button>';
+    '<button class="meb-btn primary" id="meb-next" onclick="_mobNext()">Tiếp &#8594;</button>';
   document.body.appendChild(bar);
   _updateMobBar();
 }
@@ -925,16 +920,12 @@ function _updateMobBar() {
   const next = document.getElementById('meb-next');
   const info = document.getElementById('meb-info');
   if (!prev || !next) return;
-
   const total = examQs.length || 70;
   const cur   = examCurrent;
-
   prev.disabled = (cur <= 0);
-
   const isLast = (cur >= total - 1);
   next.textContent = isLast ? 'Nộp bài ✓' : 'Tiếp →';
   next.onclick     = isLast ? askSubmitExam : _mobNext;
-
   if (info) info.textContent = (cur + 1) + ' / ' + total;
 }
 
@@ -948,7 +939,7 @@ function _mobNext() {
 window.addEventListener('resize', function() {
   clearTimeout(window._resT);
   window._resT = setTimeout(function() {
-    _injectMobBar();
-    syncExamNavPanelUI();
+    const isExam = document.getElementById('screen-exam')?.classList.contains('active');
+    if (isExam) _injectMobBar(); else _removeMobBar();
   }, 250);
 });

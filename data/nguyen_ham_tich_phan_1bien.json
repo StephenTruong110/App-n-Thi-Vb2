@@ -1,0 +1,830 @@
+[
+  {
+    "id": 1,
+    "type": "indefinite_basic",
+    "question": "Tìm \\(\\int x^2 \\, dx\\)?",
+    "options": [
+      "\\(\\dfrac{x^3}{3} + C\\)",
+      "\\(3x^3 + C\\)",
+      "\\(x^3 + C\\)",
+      "\\(\\dfrac{x^3}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{x^3}{3} + C\\)",
+    "solution": "Công thức \\(\\int x^n dx = \\frac{x^{n+1}}{n+1} + C\\). Với n=2: \\(\\int x^2 dx = \\frac{x^3}{3} + C\\).",
+    "quick": "\\(\\int x^n = x^{n+1}/(n+1)\\)",
+    "casio": "CASIO: không tích phân ký hiệu, chỉ kiểm tra đạo hàm: \\(\\frac{d}{dx}(x^3/3)=x^2\\).",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 1
+  },
+  {
+    "id": 2,
+    "type": "indefinite_basic",
+    "question": "Tìm \\(\\int \\sin x \\, dx\\)?",
+    "options": [
+      "\\(-\\cos x + C\\)",
+      "\\(\\cos x + C\\)",
+      "\\(-\\sin x + C\\)",
+      "\\(\\sin x + C\\)"
+    ],
+    "correct": "\\(-\\cos x + C\\)",
+    "solution": "\\(\\int \\sin x dx = -\\cos x + C\\).",
+    "quick": "Nguyên hàm của sin là -cos",
+    "casio": "Đạo hàm của -cos x = sin x ✓",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 2
+  },
+  {
+    "id": 3,
+    "type": "indefinite_basic",
+    "question": "Tìm \\(\\int \\dfrac{1}{x} \\, dx\\) (với \\(x>0\\))?",
+    "options": [
+      "\\(\\ln x + C\\)",
+      "\\(\\dfrac{1}{x^2} + C\\)",
+      "\\(\\ln|x| + C\\)",
+      "\\(\\dfrac{x^2}{2} + C\\)"
+    ],
+    "correct": "\\(\\ln x + C\\)",
+    "solution": "\\(\\int \\frac{1}{x} dx = \\ln|x| + C\\). Với x>0 thì \\(\\ln x + C\\).",
+    "quick": "Nguyên hàm của 1/x là ln|x|",
+    "casio": "Đạo hàm của ln x = 1/x",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 3
+  },
+  {
+    "id": 4,
+    "type": "indefinite_basic",
+    "question": "Tìm \\(\\int e^{2x} \\, dx\\)?",
+    "options": [
+      "\\(\\dfrac{1}{2}e^{2x} + C\\)",
+      "\\(2e^{2x} + C\\)",
+      "\\(e^{2x} + C\\)",
+      "\\(\\dfrac{1}{2}e^{x} + C\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}e^{2x} + C\\)",
+    "solution": "\\(\\int e^{ax} dx = \\frac{1}{a}e^{ax}+C\\) → \\(\\int e^{2x}dx = \\frac{1}{2}e^{2x}+C\\).",
+    "quick": "Dạng mũ: \\(\\int e^{kx} = e^{kx}/k\\)",
+    "casio": "Đạo hàm (e^{2x}/2) = e^{2x}",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 4
+  },
+  {
+    "id": 5,
+    "type": "indefinite_basic",
+    "question": "Tìm \\(\\int \\cos 3x \\, dx\\)?",
+    "options": [
+      "\\(\\dfrac{1}{3}\\sin 3x + C\\)",
+      "\\(3\\sin 3x + C\\)",
+      "\\(-\\dfrac{1}{3}\\sin 3x + C\\)",
+      "\\(\\sin 3x + C\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\sin 3x + C\\)",
+    "solution": "\\(\\int \\cos(kx) dx = \\frac{1}{k}\\sin(kx)+C\\), k=3 → \\(\\frac{1}{3}\\sin 3x + C\\).",
+    "quick": "Nguyên hàm của cos(kx) = sin(kx)/k",
+    "casio": "Đạo hàm (sin3x/3) = cos3x",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 5
+  },
+  {
+    "id": 6,
+    "type": "indefinite_basic",
+    "question": "Tìm \\(\\int \\dfrac{1}{\\sqrt{1-x^2}} \\, dx\\)?",
+    "options": [
+      "\\(\\arcsin x + C\\)",
+      "\\(\\arccos x + C\\)",
+      "\\(\\dfrac{1}{\\sqrt{1-x^2}} + C\\)",
+      "\\(\\arctan x + C\\)"
+    ],
+    "correct": "\\(\\arcsin x + C\\)",
+    "solution": "\\(\\int \\frac{dx}{\\sqrt{1-x^2}} = \\arcsin x + C\\).",
+    "quick": "Công thức lượng giác ngược",
+    "casio": "Đạo hàm arcsin x = 1/√(1-x²)",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 6
+  },
+  {
+    "id": 7,
+    "type": "indefinite_substitution",
+    "question": "Tính \\(\\int (2x+1)^{10} \\, dx\\) bằng phương pháp đổi biến.",
+    "options": [
+      "\\(\\dfrac{(2x+1)^{11}}{22} + C\\)",
+      "\\(\\dfrac{(2x+1)^{11}}{11} + C\\)",
+      "\\(\\dfrac{(2x+1)^{10}}{10} + C\\)",
+      "\\(\\dfrac{(2x+1)^{9}}{18} + C\\)"
+    ],
+    "correct": "\\(\\dfrac{(2x+1)^{11}}{22} + C\\)",
+    "solution": "Đặt u = 2x+1, du = 2dx → dx = du/2. \\(\\int u^{10} \\frac{du}{2} = \\frac{1}{2} \\cdot \\frac{u^{11}}{11} + C = \\frac{(2x+1)^{11}}{22} + C\\).",
+    "quick": "Đổi biến u = 2x+1, nhớ chia cho đạo hàm",
+    "casio": "Tính đạo hàm kết quả để kiểm tra",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 7
+  },
+  {
+    "id": 8,
+    "type": "indefinite_substitution",
+    "question": "Tính \\(\\int x e^{x^2} \\, dx\\) bằng phương pháp đổi biến.",
+    "options": [
+      "\\(\\dfrac{1}{2}e^{x^2} + C\\)",
+      "\\(e^{x^2} + C\\)",
+      "\\(x^2 e^{x^2} + C\\)",
+      "\\(\\dfrac{1}{2}x^2 e^{x^2} + C\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}e^{x^2} + C\\)",
+    "solution": "Đặt u = x², du = 2x dx → x dx = du/2. \\(\\int e^u \\frac{du}{2} = \\frac{1}{2} e^u + C = \\frac{1}{2} e^{x^2} + C\\).",
+    "quick": "Nhóm x dx tạo thành du/2",
+    "casio": "Đạo hàm (e^{x²}/2) = x e^{x²}",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 8
+  },
+  {
+    "id": 9,
+    "type": "indefinite_substitution",
+    "question": "Tính \\(\\int \\dfrac{\\ln x}{x} \\, dx\\) bằng đổi biến.",
+    "options": [
+      "\\(\\dfrac{(\\ln x)^2}{2} + C\\)",
+      "\\(\\ln(\\ln x) + C\\)",
+      "\\(\\dfrac{1}{x^2} + C\\)",
+      "\\(\\ln x + C\\)"
+    ],
+    "correct": "\\(\\dfrac{(\\ln x)^2}{2} + C\\)",
+    "solution": "Đặt u = ln x, du = dx/x. \\(\\int u \\, du = \\frac{u^2}{2} + C = \\frac{(\\ln x)^2}{2} + C\\).",
+    "quick": "ln x/x dx = u du",
+    "casio": "Đạo hàm kết quả = (ln x)/x",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 9
+  },
+  {
+    "id": 10,
+    "type": "indefinite_substitution",
+    "question": "Tính \\(\\int \\sin^3 x \\cos x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{\\sin^4 x}{4} + C\\)",
+      "\\(\\dfrac{\\cos^4 x}{4} + C\\)",
+      "\\(-\\dfrac{\\sin^4 x}{4} + C\\)",
+      "\\(\\dfrac{\\sin^3 x}{3} + C\\)"
+    ],
+    "correct": "\\(\\dfrac{\\sin^4 x}{4} + C\\)",
+    "solution": "Đặt u = sin x, du = cos x dx. \\(\\int u^3 du = \\frac{u^4}{4} + C = \\frac{\\sin^4 x}{4} + C\\).",
+    "quick": "u = sin x, du = cos x dx",
+    "casio": "Đạo hàm (sin⁴x/4) = sin³x cos x",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 10
+  },
+  {
+    "id": 11,
+    "type": "indefinite_parts",
+    "question": "Tính \\(\\int x e^x \\, dx\\) bằng tích phân từng phần.",
+    "options": [
+      "\\((x-1)e^x + C\\)",
+      "\\((x+1)e^x + C\\)",
+      "\\(xe^x + C\\)",
+      "\\(e^x + C\\)"
+    ],
+    "correct": "\\((x-1)e^x + C\\)",
+    "solution": "Đặt u = x, dv = e^x dx → du = dx, v = e^x. \\(\\int x e^x dx = x e^x - \\int e^x dx = x e^x - e^x + C = (x-1)e^x + C\\).",
+    "quick": "Công thức \\(\\int x e^{ax} = e^{ax}(ax-1)/a^2\\), với a=1",
+    "casio": "Đạo hàm (x-1)e^x = e^x + (x-1)e^x = x e^x",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 11
+  },
+  {
+    "id": 12,
+    "type": "indefinite_parts",
+    "question": "Tính \\(\\int x \\ln x \\, dx\\) (với x>0).",
+    "options": [
+      "\\(\\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} + C\\)",
+      "\\(\\dfrac{x^2}{2}\\ln x + \\dfrac{x^2}{4} + C\\)",
+      "\\(x\\ln x - x + C\\)",
+      "\\(\\dfrac{x^2}{2}\\ln x + C\\)"
+    ],
+    "correct": "\\(\\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} + C\\)",
+    "solution": "Đặt u = ln x, dv = x dx → du = dx/x, v = x²/2. \\(\\int x\\ln x dx = \\frac{x^2}{2}\\ln x - \\int \\frac{x^2}{2} \\cdot \\frac{1}{x} dx = \\frac{x^2}{2}\\ln x - \\frac{1}{2}\\int x dx = \\frac{x^2}{2}\\ln x - \\frac{x^2}{4} + C\\).",
+    "quick": "Từng phần u=ln x, dv=x dx",
+    "casio": "Đạo hàm kết quả kiểm tra",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 12
+  },
+  {
+    "id": 13,
+    "type": "indefinite_parts",
+    "question": "Tính \\(\\int \\ln x \\, dx\\) (x>0).",
+    "options": [
+      "\\(x\\ln x - x + C\\)",
+      "\\(x\\ln x + x + C\\)",
+      "\\(\\ln x + C\\)",
+      "\\(\\frac{1}{x} + C\\)"
+    ],
+    "correct": "\\(x\\ln x - x + C\\)",
+    "solution": "Đặt u = ln x, dv = dx → du = dx/x, v = x. \\(\\int \\ln x dx = x\\ln x - \\int x \\cdot \\frac{1}{x} dx = x\\ln x - \\int dx = x\\ln x - x + C\\).",
+    "quick": "Từng phần với u=ln x, dv=dx",
+    "casio": "Đạo hàm (x ln x - x) = ln x",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 13
+  },
+  {
+    "id": 14,
+    "type": "indefinite_parts",
+    "question": "Tính \\(\\int x^2 e^x \\, dx\\).",
+    "options": [
+      "\\(e^x (x^2 - 2x + 2) + C\\)",
+      "\\(e^x (x^2 + 2x + 2) + C\\)",
+      "\\(e^x (x^2 - 2x) + C\\)",
+      "\\(e^x x^2 + C\\)"
+    ],
+    "correct": "\\(e^x (x^2 - 2x + 2) + C\\)",
+    "solution": "Lặp lại từng phần: lần 1 u=x², dv=e^x dx → du=2x, v=e^x → được x²e^x - 2∫x e^x dx. Lại từng phần cho ∫x e^x dx = (x-1)e^x. Kết quả: x²e^x - 2[(x-1)e^x] + C = e^x(x² - 2x + 2) + C.",
+    "quick": "Công thức \\(\\int x^2 e^x = e^x(x^2-2x+2)\\)",
+    "casio": "Đạo hàm e^x(x²-2x+2) = e^x(x²-2x+2) + e^x(2x-2) = e^x x²",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 14
+  },
+  {
+    "id": 15,
+    "type": "indefinite_parts",
+    "question": "Tính \\(\\int e^x \\sin x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{e^x}{2}(\\sin x - \\cos x) + C\\)",
+      "\\(\\dfrac{e^x}{2}(\\sin x + \\cos x) + C\\)",
+      "\\(e^x \\sin x + C\\)",
+      "\\(e^x \\cos x + C\\)"
+    ],
+    "correct": "\\(\\dfrac{e^x}{2}(\\sin x - \\cos x) + C\\)",
+    "solution": "Đặt I = ∫eˣ sin x dx. Dùng từng phần 2 lần, thu được I = eˣ sin x - ∫eˣ cos x dx, và ∫eˣ cos x dx = eˣ cos x + ∫eˣ sin x dx. Suy ra I = eˣ sin x - eˣ cos x - I ⇒ 2I = eˣ(sin x - cos x) ⇒ I = (eˣ/2)(sin x - cos x) + C.",
+    "quick": "Công thức: \\(\\int e^{ax}\\sin(bx) = \\frac{e^{ax}(a\\sin(bx)-b\\cos(bx))}{a^2+b^2}\\)",
+    "casio": "Đạo hàm kết quả = eˣ sin x",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 15
+  },
+  {
+    "id": 16,
+    "type": "definite_basic",
+    "question": "Tính \\(\\int_0^1 x^2 \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\)",
+    "solution": "\\(\\int_0^1 x^2 dx = \\left[\\frac{x^3}{3}\\right]_0^1 = \\frac{1}{3}\\).",
+    "quick": "Tích phân x² cận 0→1 = 1/3",
+    "casio": "CASIO: ∫(x²,0,1) → 0.3333",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 16
+  },
+  {
+    "id": 17,
+    "type": "definite_basic",
+    "question": "Tính \\(\\int_0^{\\pi/2} \\sin x \\, dx\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\int_0^{\\pi/2} \\sin x dx = [-\\cos x]_0^{\\pi/2} = -\\cos(\\pi/2) + \\cos0 = 0 + 1 = 1\\).",
+    "quick": "Tích phân sin x từ 0→π/2 = 1",
+    "casio": "∫(sin x,0,π/2)=1",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 17
+  },
+  {
+    "id": 18,
+    "type": "definite_basic",
+    "question": "Tính \\(\\int_1^e \\dfrac{1}{x} \\, dx\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(e\\)",
+      "\\(\\ln e\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\int_1^e \\frac{1}{x} dx = [\\ln x]_1^e = \\ln e - \\ln 1 = 1 - 0 = 1\\).",
+    "quick": "Tích phân 1/x từ 1→e = ln e = 1",
+    "casio": "∫(1/x,1,e)=1",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 18
+  },
+  {
+    "id": 19,
+    "type": "definite_substitution",
+    "question": "Tính \\(\\int_0^1 \\dfrac{x}{\\sqrt{1-x^2}} \\, dx\\) bằng đổi biến.",
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Đặt u = 1-x², du = -2x dx → x dx = -du/2. Đổi cận: x=0 → u=1; x=1 → u=0. \\(\\int_0^1 \\frac{x dx}{\\sqrt{1-x^2}} = \\int_1^0 \\frac{-du/2}{\\sqrt{u}} = \\frac{1}{2}\\int_0^1 u^{-1/2} du = \\frac{1}{2}[2\\sqrt{u}]_0^1 = 1\\).",
+    "quick": "Đổi biến u=1-x², kết quả = 1",
+    "casio": "CASIO: ∫(x/√(1-x²),0,1) → 1",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 19
+  },
+  {
+    "id": 20,
+    "type": "definite_substitution",
+    "question": "Tính \\(\\int_0^{\\pi/2} \\sin^3 x \\cos x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{4}\\)",
+    "solution": "Đặt u = sin x, du = cos x dx. x=0→u=0; x=π/2→u=1. \\(\\int_0^1 u^3 du = [\\frac{u^4}{4}]_0^1 = \\frac{1}{4}\\).",
+    "quick": "Đổi biến u=sin x → tích phân u³ du từ 0→1 = 1/4",
+    "casio": "∫(sin³x cos x,0,π/2)=0.25",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 20
+  },
+  {
+    "id": 21,
+    "type": "definite_parts",
+    "question": "Tính \\(\\int_0^1 x e^x \\, dx\\) bằng từng phần.",
+    "options": [
+      "\\(1\\)",
+      "\\(e-1\\)",
+      "\\(1 - e\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\int_0^1 x e^x dx = [ (x-1)e^x ]_0^1 = (0)e^1 - (-1)e^0 = 1\\).",
+    "quick": "Kết quả từng phần: (x-1)e^x cận 0→1 =1",
+    "casio": "∫(x e^x,0,1)=1",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 21
+  },
+  {
+    "id": 22,
+    "type": "definite_parts",
+    "question": "Tính \\(\\int_0^{\\pi/2} x \\sin x \\, dx\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{\\pi}{2} - 1\\)",
+      "\\(\\dfrac{\\pi}{2} + 1\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Từng phần: u=x, dv=sin x dx → du=dx, v=-cos x. \\(\\int_0^{π/2} x sin x dx = [-x cos x]_0^{π/2} + \\int_0^{π/2} cos x dx = (0 + 0) + [sin x]_0^{π/2} = 1\\).",
+    "quick": "Kết quả = 1",
+    "casio": "∫(x sin x,0,π/2)=1",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 22
+  },
+  {
+    "id": 23,
+    "type": "definite_parts",
+    "question": "Tính \\(\\int_1^e \\ln x \\, dx\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(e-1\\)",
+      "\\(1 - e\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Từng phần: u=ln x, dv=dx → du=dx/x, v=x. \\(\\int_1^e \\ln x dx = [x\\ln x]_1^e - \\int_1^e dx = (e·1 - 0) - (e-1) = 1\\).",
+    "quick": "Kết quả = 1",
+    "casio": "∫(ln x,1,e)=1",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 23
+  },
+  {
+    "id": 24,
+    "type": "definite_parts",
+    "question": "Tính \\(\\int_0^{\\pi} x \\cos x \\, dx\\).",
+    "options": [
+      "\\(-2\\)",
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(-2\\)",
+    "solution": "Từng phần: u=x, dv=cos x dx → du=dx, v=sin x. \\(\\int_0^{\\pi} x cos x dx = [x sin x]_0^{\\pi} - \\int_0^{\\pi} sin x dx = (0 - 0) - [-cos x]_0^{\\pi} = - ( -cos π + cos 0) = -(-(-1) + 1) = - (1+1) = -2\\).",
+    "quick": "Kết quả = -2",
+    "casio": "∫(x cos x,0,π) = -2",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 24
+  },
+  {
+    "id": 25,
+    "type": "area",
+    "question": "Diện tích hình phẳng giới hạn bởi \\(y = \\sin x\\), trục hoành, \\(x=0\\) và \\(x=\\pi\\) là?",
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(\\pi\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Trên [0,π], sin x ≥0. \\(S = \\int_0^\\pi \\sin x dx = [-\\cos x]_0^\\pi = -\\cos\\pi + \\cos0 = -(-1)+1 = 2\\).",
+    "quick": "Diện tích dưới sin x từ 0→π = 2",
+    "casio": "∫(sin x,0,π)=2",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 26
+  },
+  {
+    "id": 26,
+    "type": "improper_inf",
+    "question": "Tính tích phân suy rộng \\(\\int_1^{+\\infty} \\dfrac{dx}{x^2}\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(+\\infty\\)",
+      "\\(0\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\int_1^{+\\infty} x^{-2} dx = \\lim_{b\\to\\infty} [-1/x]_1^b = \\lim_{b\\to\\infty}(-1/b +1) = 1\\).",
+    "quick": "Tích phân hội tụ về 1",
+    "casio": "Tính ∫(1/x²,1,10000) ≈ 0.9999",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 27
+  },
+  {
+    "id": 27,
+    "type": "improper_inf",
+    "question": "Xét sự hội tụ của \\(\\int_1^{+\\infty} \\dfrac{1}{x} \\, dx\\).",
+    "options": [
+      "Phân kỳ",
+      "Hội tụ về 1",
+      "Hội tụ về e",
+      "Hội tụ về 0"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\int_1^b \\frac{1}{x} dx = \\ln b \\to +\\infty\\) khi b→∞ → phân kỳ.",
+    "quick": "Tích phân 1/x từ 1→∞ phân kỳ",
+    "casio": "∫(1/x,1,10^6) ≈ 13.8 → lớn dần",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 28
+  },
+  {
+    "id": 28,
+    "type": "improper_singular",
+    "question": "Tính tích phân suy rộng \\(\\int_0^1 \\dfrac{dx}{\\sqrt{x}}\\).",
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(+\\infty\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "\\(\\int_0^1 x^{-1/2} dx = \\lim_{\\varepsilon\\to0^+} [2\\sqrt{x}]_\\varepsilon^1 = 2\\).",
+    "quick": "Hội tụ về 2",
+    "casio": "∫(1/√x,0,1)=2",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 29
+  },
+  {
+    "id": 29,
+    "type": "improper_singular",
+    "question": "Xét sự hội tụ của \\(\\int_0^1 \\dfrac{dx}{x}\\).",
+    "options": [
+      "Phân kỳ",
+      "Hội tụ về 0",
+      "Hội tụ về 1",
+      "Hội tụ về +∞"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\int_\\varepsilon^1 \\frac{dx}{x} = -\\ln\\varepsilon \\to +\\infty\\) → phân kỳ.",
+    "quick": "Tích phân 1/x từ 0→1 phân kỳ",
+    "casio": "∫(1/x,0.0001,1) ≈ 9.21 lớn",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 30
+  },
+  {
+    "id": 30,
+    "type": "definite_substitution",
+    "question": "Tính \\(\\int_0^{\\ln 2} e^{2x} \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{3}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "\\(\\int e^{2x}dx = \\frac{1}{2}e^{2x}\\). Cận 0→ln2: \\(\\frac{1}{2}(e^{2\\ln2} - e^0) = \\frac{1}{2}(4-1)=\\frac{3}{2}\\).",
+    "quick": "e^{2ln2}=4, (4-1)/2=1.5",
+    "casio": "∫(e^(2x),0,ln2)=1.5",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 31
+  },
+  {
+    "id": 31,
+    "type": "definite_trig",
+    "question": "Tính \\(\\int_0^{\\pi/4} \\tan x \\, dx\\).",
+    "options": [
+      "\\(\\ln 2\\)",
+      "\\(\\dfrac{1}{2}\\ln 2\\)",
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\ln \\sqrt{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\ln 2\\)",
+    "solution": "\\(\\int \\tan x dx = -\\ln|\\cos x| + C\\). Cận 0→π/4: \\([-\\ln\\cos x]_0^{π/4} = -\\ln(\\sqrt{2}/2) + \\ln1 = -\\ln(\\sqrt{2}/2) = \\ln(2/\\sqrt{2}) = \\ln\\sqrt{2} = \\frac{1}{2}\\ln2\\).",
+    "quick": "Kết quả = (ln2)/2",
+    "casio": "∫(tan x,0,π/4)≈0.3466 = ln2/2",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 32
+  },
+  {
+    "id": 32,
+    "type": "definite_absolute",
+    "question": "Tính \\(\\int_0^2 |x-1| \\, dx\\).",
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Chia đoạn: trên [0,1], |x-1| = 1-x; trên [1,2], = x-1. \\(\\int_0^1 (1-x)dx + \\int_1^2 (x-1)dx = [x - x^2/2]_0^1 + [x^2/2 - x]_1^2 = (1-0.5) + (2-2 - (0.5-1)) = 0.5 + (0 - (-0.5)) = 0.5+0.5=1\\).",
+    "quick": "Diện tích tam giác = 1",
+    "casio": "∫(|x-1|,0,2)=1",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 33
+  },
+  {
+    "id": 33,
+    "type": "definite_geometry",
+    "question": "Diện tích hình phẳng giới hạn bởi \\(y = \\sqrt{x}\\) và \\(y = x^2\\) là?",
+    "options": [
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\)",
+    "solution": "Giao điểm: \\(\\sqrt{x}=x^2 \\Rightarrow x^4=x \\Rightarrow x(x^3-1)=0 \\Rightarrow x=0,1\\). Trên [0,1], \\(\\sqrt{x} \\ge x^2\\). \\(S=\\int_0^1 (\\sqrt{x} - x^2) dx = [\\frac{2}{3}x^{3/2} - \\frac{x^3}{3}]_0^1 = \\frac{2}{3} - \\frac{1}{3} = \\frac{1}{3}\\).",
+    "quick": "Tính tích phân hiệu",
+    "casio": "∫(√x - x²,0,1)=1/3",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 35
+  },
+  {
+    "id": 34,
+    "type": "definite_geometry",
+    "question": "Diện tích hình phẳng giới hạn bởi \\(y = x^2\\) và \\(y = x\\) là?",
+    "options": [
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{6}\\)",
+    "solution": "Giao điểm: x²=x ⇒ x=0,1. Trên [0,1], x ≥ x². \\(S=\\int_0^1 (x - x^2) dx = [\\frac{x^2}{2} - \\frac{x^3}{3}]_0^1 = \\frac12 - \\frac13 = \\frac16\\).",
+    "quick": "Diện tích giữa x và x² = 1/6",
+    "casio": "∫(x-x²,0,1)=1/6",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 36
+  },
+  {
+    "id": 35,
+    "type": "improper_both",
+    "question": "Tích phân \\(\\int_{-\\infty}^{+\\infty} \\dfrac{1}{1+x^2} dx\\) có giá trị?",
+    "options": [
+      "\\(\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(2\\pi\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\pi\\)",
+    "solution": "Hàm chẵn: \\(\\int_{-\\infty}^{\\infty} \\frac{dx}{1+x^2} = 2\\int_0^{\\infty} \\frac{dx}{1+x^2} = 2\\lim_{b\\to\\infty}[\\arctan x]_0^b = 2\\cdot\\frac{\\pi}{2} = \\pi\\).",
+    "quick": "Nguyên hàm arctan x, kết quả π",
+    "casio": "Tính gần đúng với cận lớn → π",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 37
+  },
+  {
+    "id": 36,
+    "type": "indefinite_parts",
+    "question": "Tính \\(\\int x \\cos 2x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{x}{2}\\sin 2x + \\dfrac{1}{4}\\cos 2x + C\\)",
+      "\\(\\dfrac{x}{2}\\sin 2x - \\dfrac{1}{4}\\cos 2x + C\\)",
+      "\\(\\dfrac{x}{2}\\cos 2x + \\dfrac{1}{4}\\sin 2x + C\\)",
+      "\\(\\dfrac{x}{2}\\cos 2x - \\dfrac{1}{4}\\sin 2x + C\\)"
+    ],
+    "correct": "\\(\\dfrac{x}{2}\\sin 2x + \\dfrac{1}{4}\\cos 2x + C\\)",
+    "solution": "Đặt u=x, dv=cos2x dx → du=dx, v=½ sin2x. \\(\\int x cos2x dx = \\frac{x}{2}\\sin2x - \\frac{1}{2}\\int \\sin2x dx = \\frac{x}{2}\\sin2x + \\frac{1}{4}\\cos2x + C\\).",
+    "quick": "Từng phần với u=x",
+    "casio": "Đạo hàm kết quả = x cos2x",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 38
+  },
+  {
+    "id": 37,
+    "type": "indefinite_substitution",
+    "question": "Tính \\(\\int \\dfrac{dx}{\\sqrt{4x^2+9}}\\) (dạng \\(\\int \\frac{dx}{\\sqrt{x^2+a^2}}\\)).",
+    "options": [
+      "\\(\\dfrac{1}{2}\\ln\\left|2x+\\sqrt{4x^2+9}\\right| + C\\)",
+      "\\(\\ln\\left|x+\\sqrt{4x^2+9}\\right| + C\\)",
+      "\\(\\dfrac{1}{2}\\arcsin\\dfrac{2x}{3} + C\\)",
+      "\\(\\dfrac{1}{2}\\arctan\\dfrac{2x}{3} + C\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\ln\\left|2x+\\sqrt{4x^2+9}\\right| + C\\)",
+    "solution": "Đặt u=2x, du=2dx → dx=du/2, \\(\\int \\frac{dx}{\\sqrt{4x^2+9}} = \\frac12 \\int \\frac{du}{\\sqrt{u^2+9}} = \\frac12 \\ln|u+\\sqrt{u^2+9}| + C = \\frac12 \\ln|2x+\\sqrt{4x^2+9}| + C\\).",
+    "quick": "Công thức \\(\\int \\frac{dx}{\\sqrt{x^2+a^2}} = \\ln|x+\\sqrt{x^2+a^2}|\\)",
+    "casio": "Kiểm tra đạo hàm",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 39
+  },
+  {
+    "id": 38,
+    "type": "indefinite_parts",
+    "question": "Tính \\(\\int \\arctan x \\, dx\\).",
+    "options": [
+      "\\(x\\arctan x - \\frac{1}{2}\\ln(1+x^2) + C\\)",
+      "\\(x\\arctan x + \\frac{1}{2}\\ln(1+x^2) + C\\)",
+      "\\(\\frac{1}{1+x^2} + C\\)",
+      "\\(\\frac{x^2}{2}\\arctan x + C\\)"
+    ],
+    "correct": "\\(x\\arctan x - \\frac{1}{2}\\ln(1+x^2) + C\\)",
+    "solution": "Đặt u = arctan x, dv=dx → du=dx/(1+x²), v=x. \\(\\int \\arctan x dx = x\\arctan x - \\int \\frac{x}{1+x^2} dx = x\\arctan x - \\frac12 \\ln(1+x^2) + C\\).",
+    "quick": "Từng phần u=arctan x",
+    "casio": "Đạo hàm kết quả = arctan x",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân",
+    "original_id": 40
+  },
+  {
+    "type": "indefinite_rational",
+    "question": "Tính \\(\\int \\dfrac{dx}{(x+1)(x+2)} \\, dx\\).",
+    "options": [
+      "\\(\\ln\\left|\\dfrac{x+1}{x+2}\\right| + C\\)",
+      "\\(\\dfrac{1}{x+1}+C\\)",
+      "\\(\\ln|(x+1)(x+2)|+C\\)",
+      "\\(\\dfrac{1}{x+2}+C\\)"
+    ],
+    "correct": "\\(\\ln\\left|\\dfrac{x+1}{x+2}\\right| + C\\)",
+    "solution": "Phân tích thành phân số đơn: \\n\\[\\frac{1}{(x+1)(x+2)}=\\frac{1}{x+1}-\\frac{1}{x+2}.\\]\\nDo đó\\n\\[\\int \\frac{dx}{(x+1)(x+2)}=\\int \\left(\\frac{1}{x+1}-\\frac{1}{x+2}\\right)dx=\\ln|x+1|-\\ln|x+2|+C=\\ln\\left|\\frac{x+1}{x+2}\\right|+C.\\]",
+    "quick": "Tách phân thức: \\(1/((x+1)(x+2))=1/(x+1)-1/(x+2)\\).",
+    "casio": "Đạo hàm của \\ln|(x+1)/(x+2)| cho lại phân thức ban đầu.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 39,
+    "original_id": null
+  },
+  {
+    "type": "indefinite_rational",
+    "question": "Tính \\(\\int \\dfrac{2x+3}{x^2+3x+1} \\, dx\\).",
+    "options": [
+      "\\(\\ln|x^2+3x+1| + C\\)",
+      "\\(\\dfrac{1}{x^2+3x+1}+C\\)",
+      "\\(\\arctan(x^2+3x+1)+C\\)",
+      "\\(\\dfrac{2x+3}{x^2+3x+1}+C\\)"
+    ],
+    "correct": "\\(\\ln|x^2+3x+1| + C\\)",
+    "solution": "Vì đạo hàm của mẫu là \\(2x+3\\), nên đặt \\(u=x^2+3x+1\\), \\(du=(2x+3)dx\\). Khi đó\\n\\[\\int \\frac{2x+3}{x^2+3x+1}dx=\\int \\frac{du}{u}=\\ln|u|+C=\\ln|x^2+3x+1|+C.\\]",
+    "quick": "Tử số đúng bằng đạo hàm mẫu \\u2192 ra \\ln|mẫu|.",
+    "casio": "Nhận dạng nhanh dạng \\(f'(x)/f(x)\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 40,
+    "original_id": null
+  },
+  {
+    "type": "indefinite_irrational",
+    "question": "Tính \\(\\int \\dfrac{x}{\\sqrt{x^2+1}} \\, dx\\).",
+    "options": [
+      "\\(\\sqrt{x^2+1}+C\\)",
+      "\\(\\ln|x^2+1|+C\\)",
+      "\\(\\dfrac{1}{\\sqrt{x^2+1}}+C\\)",
+      "\\(\\arctan x + C\\)"
+    ],
+    "correct": "\\(\\sqrt{x^2+1}+C\\)",
+    "solution": "Đặt \\(u=x^2+1\\), \\(du=2x dx\\). Khi đó\\n\\[\\int \\frac{x}{\\sqrt{x^2+1}}dx=\\frac12\\int u^{-1/2}du=\\sqrt{u}+C=\\sqrt{x^2+1}+C.\\]",
+    "quick": "Đặt \\(u=x^2+1\\), rồi dùng \\int u^{-1/2}du.",
+    "casio": "Đạo hàm của \\sqrt{x^2+1}\\ bằng x/\\sqrt{x^2+1} nhân 2 rồi chia đúng hệ số.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 41,
+    "original_id": null
+  },
+  {
+    "type": "indefinite_irrational",
+    "question": "Tính \\(\\int \\sqrt{x} \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{2}{3}x^{3/2}+C\\)",
+      "\\(2\\sqrt{x}+C\\)",
+      "\\(\\dfrac{1}{2}x^{3/2}+C\\)",
+      "\\(x\\sqrt{x}+C\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3}x^{3/2}+C\\)",
+    "solution": "Viết \\sqrt{x}=x^{1/2}. Khi đó\\n\\[\\int x^{1/2}dx=\\frac{x^{3/2}}{3/2}+C=\\frac{2}{3}x^{3/2}+C.\\]",
+    "quick": "Đổi căn thành lũy thừa: \\(x^{1/2}\\).",
+    "casio": "Đạo hàm của \\frac{2}{3}x^{3/2}\\ là \\sqrt{x}.",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 42,
+    "original_id": null
+  },
+  {
+    "type": "indefinite_trig_basic",
+    "question": "Tính \\(\\int \\sin x \\cos x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{1}{2}\\sin^2 x + C\\)",
+      "\\(\\dfrac{1}{2}\\cos^2 x + C\\)",
+      "\\(-\\cos x + C\\)",
+      "\\(\\sin^2 x + C\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\sin^2 x + C\\)",
+    "solution": "Đặt \\(u=\\sin x\\), \\(du=\\cos x dx\\). Khi đó\\n\\[\\int \\sin x\\cos x \\,dx=\\int u\\,du=\\frac{u^2}{2}+C=\\frac{1}{2}\\sin^2x+C.\\]",
+    "quick": "Một cặp rất cơ bản: đặt \\(u=\\sin x\\).",
+    "casio": "Đạo hàm của \\(\\sin^2x/2\\) bằng \\(\\sin x\\cos x\\).",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 43,
+    "original_id": null
+  },
+  {
+    "type": "indefinite_trig_basic",
+    "question": "Tính \\(\\int \\sin^2 x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{x}{2}-\\dfrac{\\sin 2x}{4}+C\\)",
+      "\\(\\dfrac{x}{2}+\\dfrac{\\sin 2x}{4}+C\\)",
+      "\\(-\\dfrac{\\cos 2x}{2}+C\\)",
+      "\\(\\sin x\\cos x+C\\)"
+    ],
+    "correct": "\\(\\dfrac{x}{2}-\\dfrac{\\sin 2x}{4}+C\\)",
+    "solution": "Dùng công thức hạ bậc \\(\\sin^2x=\\frac{1-\\cos2x}{2}\\). Khi đó\\n\\[\\int \\sin^2x\\,dx=\\int \\left(\\frac12-\\frac{\\cos2x}{2}\\right)dx=\\frac{x}{2}-\\frac{\\sin2x}{4}+C.\\]",
+    "quick": "Hạ bậc: \\(\\sin^2x=(1-\\cos2x)/2\\).",
+    "casio": "Học thuộc công thức hạ bậc để làm nhanh.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 44,
+    "original_id": null
+  },
+  {
+    "type": "indefinite_trig_basic",
+    "question": "Tính \\(\\int \\cos^2 x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{x}{2}+\\dfrac{\\sin 2x}{4}+C\\)",
+      "\\(\\dfrac{x}{2}-\\dfrac{\\sin 2x}{4}+C\\)",
+      "\\(\\dfrac{\\cos 2x}{2}+C\\)",
+      "\\(\\sin x\\cos x+C\\)"
+    ],
+    "correct": "\\(\\dfrac{x}{2}+\\dfrac{\\sin 2x}{4}+C\\)",
+    "solution": "Dùng công thức hạ bậc \\(\\cos^2x=\\frac{1+\\cos2x}{2}\\). Khi đó\\n\\[\\int \\cos^2x\\,dx=\\int \\left(\\frac12+\\frac{\\cos2x}{2}\\right)dx=\\frac{x}{2}+\\frac{\\sin2x}{4}+C.\\]",
+    "quick": "Hạ bậc: \\(\\cos^2x=(1+\\cos2x)/2\\).",
+    "casio": "Đây là dạng lượng giác cơ bản rất nên thuộc.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 45,
+    "original_id": null
+  },
+  {
+    "type": "definite_trig_basic",
+    "question": "Tính \\(\\int_0^{\\pi/2} \\sin^2 x \\, dx\\).",
+    "options": [
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{4}\\)",
+    "solution": "Dùng \\(\\sin^2x=\\frac{1-\\cos2x}{2}\\):\\n\\[\\int_0^{\\pi/2}\\sin^2x\\,dx=\\left[\\frac{x}{2}-\\frac{\\sin2x}{4}\\right]_0^{\\pi/2}=\\frac{\\pi}{4}.\\]",
+    "quick": "Công thức rất hay gặp: \\(\\int_0^{\\pi/2}\\sin^2x dx=\\pi/4\\).",
+    "casio": "CASIO: ∫(sin²x,0,π/2)=π/4≈0.7854.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân",
+    "id": 46,
+    "original_id": null
+  }
+]
