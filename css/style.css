@@ -548,140 +548,89 @@ html.dark .score-hero { background:linear-gradient(135deg, #1e2a5e 0%, #1a3060 5
    RESPONSIVE
 ═══════════════════════════════════════════ */
 @media (max-width:640px) {
-
-  /* ── Practice ── */
+  /* Practice */
   .stats   { grid-template-columns:repeat(2,1fr); }
   .toolbar { flex-direction:column; }
   select   { width:100%; }
   .res-cards { grid-template-columns:repeat(2,1fr); }
 
-  /* ── Topbar compact ── */
+  /* Topbar compact */
   .exam-topbar { padding:6px 10px; gap:6px; }
   .etb-left    { gap:6px; flex:1; min-width:0; }
   .etb-center  { display:none; }
   .etb-right   { gap:6px; flex-shrink:0; }
-  .etb-title   { font-size:11px; white-space:nowrap; overflow:hidden;
-                  text-overflow:ellipsis; max-width:130px; }
+  .etb-title   { font-size:11px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:130px; }
   .etb-sub     { display:none; }
   .btn-icon    { width:30px; height:30px; }
   .timer-box   { padding:4px 9px; font-size:13px; gap:3px; }
   .timer-icon  { display:none; }
   .btn-submit-exam { padding:6px 11px; font-size:12px; }
 
-  /* ── Exam body: stack ── */
+  /* Exam body stacked */
   .exam-body { flex-direction:column; overflow:visible; height:auto; }
 
-  /* ── Nav panel: sticky header bar ── */
+  /* Nav panel sticky */
   .exam-nav-panel {
-    position:sticky; top:0; z-index:20;
-    width:100%; border-right:none;
-    border-bottom:1px solid var(--border);
-    background:var(--card);
-    padding:8px 12px;
-    overflow:hidden; flex-shrink:0;
+    position:sticky; top:0; z-index:20; width:100%;
+    border-right:none; border-bottom:1px solid var(--border);
+    background:var(--card); padding:8px 12px; overflow:hidden; flex-shrink:0;
   }
-  .nav-panel-hdr {
-    display:flex; align-items:center;
-    justify-content:space-between;
-    gap:8px; margin-bottom:0; padding-bottom:0;
-  }
+  .nav-panel-hdr { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:0; }
   .nav-panel-title  { font-size:11px; flex-shrink:0; }
-  .nav-panel-actions {
-    display:flex; align-items:center;
-    flex-direction:row; gap:6px; margin-left:auto;
-  }
+  .nav-panel-actions { display:flex; align-items:center; flex-direction:row; gap:6px; margin-left:auto; }
   .nav-panel-count  { font-size:11px; padding:3px 8px; flex-shrink:0; }
   .nav-panel-toggle { padding:4px 10px; font-size:11px; font-weight:700; flex-shrink:0; }
-  .nav-legend       { display:none !important; }
+  .nav-legend { display:none !important; }
 
-  /* Grid ẩn mặc định, hiện khi mob-open */
+  /* Grid: ẩn, scroll ngang 4 hàng khi mở */
   .nav-grid {
     display:none;
-    /* 4 hàng cố định, scroll ngang */
-    grid-template-rows:repeat(4, 36px);
-    grid-auto-flow:column;
-    grid-auto-columns:36px;
-    gap:5px;
-    overflow-x:auto; overflow-y:hidden;
-    -webkit-overflow-scrolling:touch;
-    padding:8px 0 4px;
-    scrollbar-width:none;
-    /* Đảm bảo scroll không bị clip */
-    width:100%;
-    box-sizing:border-box;
+    grid-template-rows:repeat(4, 36px); grid-auto-flow:column; grid-auto-columns:36px;
+    gap:5px; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch;
+    padding:8px 0 4px; scrollbar-width:none; width:100%;
   }
   .nav-grid::-webkit-scrollbar { display:none; }
-  .nav-cell {
-    width:36px; height:36px;
-    font-size:11px; border-radius:6px;
-    flex-shrink:0; touch-action:manipulation;
-    /* Override any max-width */
-    min-width:36px;
-  }
+  .nav-cell { width:36px; height:36px; font-size:11px; border-radius:6px; flex-shrink:0; min-width:36px; touch-action:manipulation; }
 
   /* Panel mở */
   .exam-nav-panel.mob-open .nav-grid { display:grid; }
-  .exam-nav-panel.mob-open           { padding-bottom:10px; }
+  .exam-nav-panel.mob-open { padding-bottom:10px; }
 
-  /* Reset desktop collapsed trên mobile */
+  /* Reset desktop collapsed */
   .exam-nav-panel.collapsed { width:100%; padding:8px 12px; }
-  .exam-nav-panel.collapsed .nav-panel-hdr {
-    flex-direction:row; align-items:center; gap:8px; margin-bottom:0;
-  }
+  .exam-nav-panel.collapsed .nav-panel-hdr { flex-direction:row; align-items:center; gap:8px; margin-bottom:0; }
   .exam-nav-panel.collapsed .nav-panel-actions { flex-direction:row; align-items:center; }
   .exam-nav-panel.collapsed .nav-legend { display:none !important; }
   .exam-nav-panel.collapsed .nav-grid   { display:none; }
 
-  /* ── Question area ── */
-  .exam-q-area {
-    padding:12px 10px 82px; /* padding-bottom = height bottom bar + 10px */
-    overflow-y:visible; flex:none;
-  }
-  .ex-q-card  { max-width:100%; }
-  .opt-btn    { min-height:50px; padding:10px 12px; }
-  .opt-letter { width:30px; height:30px; font-size:13px; flex-shrink:0; }
+  /* Question area */
+  .exam-q-area { padding:12px 10px 82px; overflow-y:visible; flex:none; }
+  .ex-q-card   { max-width:100%; }
+  .opt-btn     { min-height:50px; padding:10px 12px; }
+  .opt-letter  { width:30px; height:30px; font-size:13px; flex-shrink:0; }
+  .ex-q-nav    { display:none !important; }
 
-  /* Ẩn nav trong card (dùng bottom bar thay) */
-  .ex-q-nav { display:none !important; }
-
-  /* ── Fixed bottom bar: chỉ 3 phần ── */
+  /* ── Fixed bottom bar ── */
   .mob-exam-bar {
-    display:flex !important;
-    position:fixed; bottom:0; left:0; right:0;
-    background:var(--card);
-    border-top:1.5px solid var(--border);
-    padding:8px 12px;
-    padding-bottom:max(8px, env(safe-area-inset-bottom));
+    display:flex !important; position:fixed; bottom:0; left:0; right:0;
+    background:var(--card); border-top:1.5px solid var(--border);
+    padding:8px 12px; padding-bottom:max(8px, env(safe-area-inset-bottom));
     gap:8px; z-index:40; align-items:center;
   }
-  /* Trước / Tiếp */
   .meb-btn {
-    flex:1; height:46px;
-    border:1.5px solid var(--border); border-radius:10px;
-    background:transparent; color:var(--text);
-    font-family:inherit; font-size:14px; font-weight:600;
-    cursor:pointer;
+    flex:1; height:46px; border:1.5px solid var(--border); border-radius:10px;
+    background:transparent; color:var(--text); font-family:inherit;
+    font-size:14px; font-weight:600; cursor:pointer;
     display:flex; align-items:center; justify-content:center; gap:4px;
-    touch-action:manipulation;
-    -webkit-tap-highlight-color:transparent;
+    touch-action:manipulation; -webkit-tap-highlight-color:transparent;
   }
   .meb-btn:disabled { opacity:.4; pointer-events:none; }
   .meb-btn.primary  { background:var(--accent); color:#fff; border-color:var(--accent); }
   .meb-btn:active   { filter:brightness(.9); transform:scale(.98); }
-  /* Số câu giữa */
-  .meb-info {
-    flex:0 0 auto;
-    min-width:60px;
-    font-size:13px; font-weight:700;
-    color:var(--muted); text-align:center;
-    pointer-events:none;
-  }
+  .meb-info { flex:0 0 auto; min-width:64px; font-size:13px; font-weight:700; color:var(--muted); text-align:center; pointer-events:none; }
 }
 
-/* Desktop: ẩn mobile bar */
-@media (min-width:641px) {
-  .mob-exam-bar { display:none !important; }
-}
+@media (min-width:641px) { .mob-exam-bar { display:none !important; } }
 /* ── WRONG BANK ACTION BUTTON (trong trang kết quả) ── */
 .wrong-bank-action-btn {
   color: var(--red) !important;

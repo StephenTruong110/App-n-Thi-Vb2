@@ -347,7 +347,6 @@ function syncExamNavPanelUI() {
     if (btn) {
       btn.textContent = examNavCollapsed ? 'Mở panel' : 'Thu gọn';
       btn.setAttribute('aria-expanded', examNavCollapsed ? 'false' : 'true');
-      btn.title = examNavCollapsed ? 'Mở rộng panel' : 'Thu gọn panel';
     }
   }
 }
@@ -895,18 +894,15 @@ function hideWrongBankControls() {
 /* ================================================================
    MOBILE BOTTOM NAV BAR
 ================================================================ */
-
 function _removeMobBar() {
   const el = document.getElementById('_mob-bar');
   if (el) el.remove();
 }
-
 function _injectMobBar() {
   if (window.innerWidth > 640) { _removeMobBar(); return; }
   _removeMobBar();
   const bar = document.createElement('div');
-  bar.id = '_mob-bar';
-  bar.className = 'mob-exam-bar';
+  bar.id = '_mob-bar'; bar.className = 'mob-exam-bar';
   bar.innerHTML =
     '<button class="meb-btn" id="meb-prev" onclick="_mobPrev()">&#8592; Trước</button>' +
     '<span class="meb-info" id="meb-info">- / -</span>' +
@@ -914,28 +910,20 @@ function _injectMobBar() {
   document.body.appendChild(bar);
   _updateMobBar();
 }
-
 function _updateMobBar() {
   const prev = document.getElementById('meb-prev');
   const next = document.getElementById('meb-next');
   const info = document.getElementById('meb-info');
   if (!prev || !next) return;
-  const total = examQs.length || 70;
-  const cur   = examCurrent;
+  const total = examQs.length || 70, cur = examCurrent;
   prev.disabled = (cur <= 0);
-  const isLast = (cur >= total - 1);
+  const isLast = cur >= total - 1;
   next.textContent = isLast ? 'Nộp bài ✓' : 'Tiếp →';
-  next.onclick     = isLast ? askSubmitExam : _mobNext;
+  next.onclick = isLast ? askSubmitExam : _mobNext;
   if (info) info.textContent = (cur + 1) + ' / ' + total;
 }
-
-function _mobPrev() {
-  if (examCurrent > 0) { examCurrent--; renderExamQ(); }
-}
-function _mobNext() {
-  if (examCurrent < examQs.length - 1) { examCurrent++; renderExamQ(); }
-}
-
+function _mobPrev() { if (examCurrent > 0) { examCurrent--; renderExamQ(); } }
+function _mobNext() { if (examCurrent < examQs.length - 1) { examCurrent++; renderExamQ(); } }
 window.addEventListener('resize', function() {
   clearTimeout(window._resT);
   window._resT = setTimeout(function() {
