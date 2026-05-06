@@ -628,6 +628,8 @@ html.dark .score-hero { background:linear-gradient(135deg, #1e2a5e 0%, #1a3060 5
   .meb-btn.primary  { background:var(--accent); color:#fff; border-color:var(--accent); }
   .meb-btn:active   { filter:brightness(.9); transform:scale(.98); }
   .meb-info { flex:0 0 auto; min-width:64px; font-size:13px; font-weight:700; color:var(--muted); text-align:center; pointer-events:none; }
+  .meb-flag { width:46px; height:46px; flex-shrink:0; border:1.5px solid var(--border); border-radius:10px; background:transparent; cursor:pointer; font-size:17px; display:flex; align-items:center; justify-content:center; touch-action:manipulation; }
+  .meb-flag.on { border-color:var(--amber); background:var(--amber-lt); }
 }
 
 @media (min-width:641px) { .mob-exam-bar { display:none !important; } }

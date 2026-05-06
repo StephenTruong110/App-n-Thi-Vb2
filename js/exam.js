@@ -479,6 +479,7 @@ function doSubmitExam() {
   const used = EXAM_SECS - Math.round((examDeadline - Date.now()) / 1000);
   gradeAndShowResults(Math.max(0, used));
   localStorage.removeItem(LS_KEY);
+  _removeMobBar();
 }
 
 /* ================================================================
@@ -529,8 +530,6 @@ function gradeAndShowResults(timeUsed) {
   // Lưu tất cả câu sai vào window để dùng cho phân trang
   window._wrongDetails = details.filter(d => !d.isOk);
   wrongPage = 0;
-
-  // ── LƯU NGÂN HÀNG CÂU SAI ──
   saveWrongToBank(details);
 
   // Save last result
