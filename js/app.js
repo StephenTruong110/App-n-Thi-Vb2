@@ -17,9 +17,11 @@ let totalDone   = 0;
 let totalRight  = 0;
 let totalWrong  = 0;
 let grades      = [];
+let loadedType = '';
+let loadedDiff = 'all';
 
 const LETTERS    = ['A','B','C','D','E','F'];
-const DIFF_LABEL = { 1:'Dễ', 2:'Trung bình', 3:'Khó' };
+const DIFF_LABEL = { 1:'Biết', 2:'Hiểu', 3:'Vận dụng' };
 const DIFF_CLASS = { 1:'diff-1', 2:'diff-2', 3:'diff-3' };
 
 /* ── MATHJAX DEBOUNCE — định nghĩa ở đây, dùng chung cho exam.js ── */
@@ -94,7 +96,7 @@ function saveProgress() {
   try {
     localStorage.setItem('vb2_practice', JSON.stringify({
       questions, current, userAnswers, grades,
-      totalDone, totalRight, totalWrong
+      totalDone, totalRight, totalWrong,loadedType,loadedDiff
     }));
   } catch(e) {}
 }
@@ -111,6 +113,27 @@ function loadProgress() {
     totalDone   = p.totalDone   || 0;
     totalRight  = p.totalRight  || 0;
     totalWrong  = p.totalWrong  || 0;
+
+     loadedType = p.loadedType || '';
+    loadedDiff = p.loadedDiff || 'all';
+
+    const typeSelect = document.getElementById('type');
+    const diffSelect = document.getElementById('diff-filter');
+
+    if (
+      typeSelect &&
+      loadedType &&
+      [...typeSelect.options].some(option => option.value === loadedType)
+    ) {
+      typeSelect.value = loadedType;
+    }
+
+    if (
+      diffSelect &&
+      [...diffSelect.options].some(option => option.value === loadedDiff)
+    ) {
+      diffSelect.value = loadedDiff;
+    }
     normalizeArrays();
     recomputeTotals();
     return questions.length > 0;
@@ -163,6 +186,8 @@ async function loadData() {
     userAnswers = Array(questions.length).fill(-1);
     grades      = Array(questions.length).fill(null);
     totalDone = totalRight = totalWrong = 0;
+    loadedType = type;
+    loadedDiff = diff;
     saveProgress();
     renderQ();
   } catch(e) {
@@ -332,7 +357,7 @@ function getSolHtml(tab) {
   if (!q) return '';
   if (tab === 'giai')  return '<b>💡 Giải nhanh:</b><br>' + (q.quick    || '—');
   if (tab === 'day')   return '<b>📖 Lời giải chi tiết:</b><br>' + (q.solution || '—');
-  if (tab === 'nhanh') return '<b>🎯 Mẹo nhớ:</b><br>'   + (q.solution || q.quick || '—');
+  if (tab === 'nhanh') return '<b>🎯 Mẹo nhớ:</b><br>' + (q.quick || q.solution || '—');
   if (tab === 'casio') return `<div class="casio-box">🖩 CASIO fx-580VNX\n──────────────────\n${q.casio || 'Không có hướng dẫn CASIO.'}</div>`;
   return '';
 }
@@ -386,7 +411,7 @@ function updateStats() {
   document.getElementById('s-rig').textContent  = totalRight;
   document.getElementById('s-wro').textContent  = totalWrong;
   document.getElementById('nav-info').textContent = total ? 'Câu ' + (current+1) + ' / ' + total : '—';
-  document.getElementById('prog').style.width = (total ? current / total * 100 : 0).toFixed(0) + '%';
+  document.getElementById('prog').style.width =(total ? (current + 1) / total * 100 : 0).toFixed(0) + '%';
 }
 
 /* ================================================================
@@ -453,11 +478,14 @@ setInterval(updateCountdown, 1000);
 /* ================================================================
    INIT
 ================================================================ */
-window.onload = () => {
+window.addEventListener('load', () => {
   initTheme();
   showScreen('screen-practice');
-  if (loadProgress() && questions.length) renderQ();
-};
+
+  if (loadProgress() && questions.length) {
+    renderQ();
+  }
+});
 /* ================================================================
    TOAST NOTIFICATION (thay alert cho các thông báo nhẹ)
 ================================================================ */

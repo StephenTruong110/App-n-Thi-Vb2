@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "type": "improper_inf",
+    "question": "Xét sự hội tụ và tính \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x^2}\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=1\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=\\infty\\)",
+      "Hội tụ, \\(I=2\\)"
+    ],
+    "correct": "Hội tụ, \\(I=1\\)",
+    "solution": "\\(I=\\lim_{b\\to+\\infty}\\int_1^b\\dfrac{dx}{x^2}=\\lim_{b\\to+\\infty}\\left[-\\dfrac{1}{x}\\right]_1^b=\\lim_{b\\to+\\infty}\\left(-\\dfrac{1}{b}+1\\right)=1\\).\n\nGiới hạn hữu hạn → **hội tụ**, \\(I=1\\).",
+    "quick": "\\(\\int_1^{+\\infty}x^{-2}dx=[-x^{-1}]_1^\\infty=0-(-1)=\\mathbf{1}\\). Chuỗi \\(p>1\\) → hội tụ.",
+    "casio": "CASIO: ∫₁^1000 1/x²dx=[−1/x]₁^1000=−0.001+1=0.999≈1.",
+    "difficulty": 2,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 33,
+    "source_id_before_split": 26
+  },
+  {
+    "id": 2,
+    "type": "improper_inf",
+    "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x}\\) (chuỗi điều hòa).",
+    "matrix": null,
+    "options": [
+      "Phân kỳ",
+      "Hội tụ, \\(I=1\\)",
+      "Hội tụ, \\(I=\\ln2\\)",
+      "Hội tụ, \\(I=e\\)"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\int_1^b\\dfrac{dx}{x}=[\\ln x]_1^b=\\ln b\\to+\\infty\\) khi \\(b\\to+\\infty\\).\n\nGiới hạn vô cực → **phân kỳ**.\n\n*Lưu ý:* Tích phân \\(\\int_1^{+\\infty}x^{-p}dx\\) hội tụ khi \\(p>1\\), phân kỳ khi \\(p\\leq1\\).",
+    "quick": "\\(\\int_1^{+\\infty}1/x\\,dx=[\\ln x]_1^\\infty=\\infty\\) → **phân kỳ**. Tiêu chuẩn p: p=1≤1 → phân kỳ.",
+    "casio": "CASIO: ∫₁^10000 1/x dx=ln(10000)≈9.2 → tăng không giới hạn.",
+    "difficulty": 2,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 35,
+    "source_id_before_split": 27
+  },
+  {
+    "id": 3,
+    "type": "improper_singular",
+    "question": "Xét sự hội tụ và tính \\(I=\\int_0^1\\dfrac{dx}{\\sqrt{x}}\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=2\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=1\\)",
+      "Hội tụ, \\(I=\\infty\\)"
+    ],
+    "correct": "Hội tụ, \\(I=2\\)",
+    "solution": "Điểm kỳ dị: \\(x=0\\) (tích phân vô hạn gián đoạn).\n\n\\(I=\\lim_{\\varepsilon\\to0^+}\\int_\\varepsilon^1 x^{-1/2}dx=\\lim_{\\varepsilon\\to0^+}[2\\sqrt{x}]_\\varepsilon^1=\\lim_{\\varepsilon\\to0^+}(2-2\\sqrt{\\varepsilon})=2\\).\n\nGiới hạn hữu hạn → **hội tụ**, \\(I=2\\).",
+    "quick": "Tích phân kỳ dị tại x=0: \\(\\int_0^1 x^{-1/2}dx=[2√x]_0^1=2\\). Hội tụ vì p=1/2<1.",
+    "casio": "CASIO: ∫_{0.001}^1 dx/√x=[2√x]=[2-2√(0.001)]≈2-0.063=1.937≈2.",
+    "difficulty": 2,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 37,
+    "source_id_before_split": 28
+  },
+  {
+    "id": 4,
+    "type": "improper_singular",
+    "question": "Xét sự hội tụ của \\(\\int_0^1 \\dfrac{dx}{x}\\).",
+    "options": [
+      "Phân kỳ",
+      "Hội tụ về 0",
+      "Hội tụ về 1",
+      "Hội tụ về +∞"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "\\(\\int_\\varepsilon^1 \\frac{dx}{x} = -\\ln\\varepsilon \\to +\\infty\\) → phân kỳ.",
+    "quick": "Tích phân 1/x từ 0→1 phân kỳ",
+    "casio": "∫(1/x,0.0001,1) ≈ 9.21 lớn",
+    "difficulty": 3,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 30,
+    "matrix": null,
+    "source_id_before_split": 29
+  },
+  {
+    "id": 5,
+    "type": "improper_both",
+    "question": "Tích phân \\(\\int_{-\\infty}^{+\\infty} \\dfrac{1}{1+x^2} dx\\) có giá trị?",
+    "options": [
+      "\\(\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(2\\pi\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\pi\\)",
+    "solution": "Hàm chẵn: \\(\\int_{-\\infty}^{\\infty} \\frac{dx}{1+x^2} = 2\\int_0^{\\infty} \\frac{dx}{1+x^2} = 2\\lim_{b\\to\\infty}[\\arctan x]_0^b = 2\\cdot\\frac{\\pi}{2} = \\pi\\).",
+    "quick": "Nguyên hàm arctan x, kết quả π",
+    "casio": "Tính gần đúng với cận lớn → π",
+    "difficulty": 3,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 37,
+    "matrix": null,
+    "source_id_before_split": 35
+  },
+  {
+    "id": 6,
+    "type": "improper_parameter",
+    "question": "Tích phân suy rộng \\(\\displaystyle\\int_1^{+\\infty}\\frac{dx}{x^p}\\) hội tụ khi và chỉ khi",
+    "matrix": null,
+    "options": [
+      "\\(p>1\\)",
+      "\\(p\\ge1\\)",
+      "\\(p>0\\)",
+      "\\(p<1\\)"
+    ],
+    "correct": "\\(p>1\\)",
+    "solution": "Với p≠1, nguyên hàm là \\(x^{1-p}/(1-p)\\). Giới hạn tại vô cực hữu hạn đúng khi \\(1-p<0\\), tức p>1. Trường hợp p=1 phân kỳ.",
+    "quick": "Tiêu chuẩn tích phân p: vô cực cần p>1.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": null,
+    "source_id_before_split": 53
+  },
+  {
+    "id": 7,
+    "type": "improper_inf",
+    "question": "Xét sự hội tụ của \\(I=\\int_0^{+\\infty}xe^{-x}dx\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=1\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=0\\)",
+      "Hội tụ, \\(I=2\\)"
+    ],
+    "correct": "Hội tụ, \\(I=1\\)",
+    "solution": "Tích phân từng phần: \\(u=x, dv=e^{-x}dx\\).\n\n\\(\\int_0^b xe^{-x}dx=[-xe^{-x}]_0^b+\\int_0^b e^{-x}dx=[-xe^{-x}-e^{-x}]_0^b\\)\n\n\\(=-(b+1)e^{-b}+1\\to0+1=1\\) khi \\(b\\to+\\infty\\) (vì \\(be^{-b}\\to0\\)).\n\nHội tụ, \\(I=1\\).",
+    "quick": "Tích phân từng phần: \\([−xe^{-x}−e^{-x}]_0^\\infty=0+0-(0-1)=\\mathbf{1}\\). (be^{-b}→0 khi b→∞)",
+    "casio": "CASIO: ∫₀^100 xe^-x dx≈1.000000 (hội tụ rất nhanh).",
+    "difficulty": 3,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 34,
+    "source_id_before_split": 56
+  },
+  {
+    "id": 8,
+    "type": "improper_inf",
+    "question": "Tính \\(I=\\int_0^{+\\infty}\\dfrac{dx}{x^2+5x+6}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\ln 3-\\ln 2\\)",
+      "\\(\\ln 2\\)",
+      "\\(\\dfrac{1}{6}\\)",
+      "Phân kỳ"
+    ],
+    "correct": "\\(\\ln 3-\\ln 2\\)",
+    "solution": "Phân tích: \\(\\dfrac{1}{x^2+5x+6}=\\dfrac{1}{(x+2)(x+3)}=\\dfrac{1}{x+2}-\\dfrac{1}{x+3}\\).\n\n\\(I=\\int_0^{+\\infty}\\left(\\dfrac{1}{x+2}-\\dfrac{1}{x+3}\\right)dx=\\left[\\ln\\dfrac{x+2}{x+3}\\right]_0^{+\\infty}\\)\n\n\\(=\\ln1-\\ln\\dfrac{2}{3}=0+\\ln\\dfrac{3}{2}=\\ln3-\\ln2\\).",
+    "quick": "Phân tích phân số: 1/(x+2)-1/(x+3). Tích phân: ln|(x+2)/(x+3)|₀^∞ = ln1-ln(2/3)=**ln(3/2)**.",
+    "casio": "CASIO: ∫₀^1000 dx/(x²+5x+6)≈ln(3/2)=0.405...",
+    "difficulty": 3,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 36,
+    "source_id_before_split": 57
+  },
+  {
+    "id": 9,
+    "type": "improper_singular",
+    "question": "Xét sự hội tụ của \\(I=\\int_{-1}^1\\dfrac{dx}{\\sqrt{1-x^2}}\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ, \\(I=\\pi\\)",
+      "Phân kỳ",
+      "Hội tụ, \\(I=\\pi/2\\)",
+      "Hội tụ, \\(I=2\\)"
+    ],
+    "correct": "Hội tụ, \\(I=\\pi\\)",
+    "solution": "Điểm kỳ dị tại \\(x=\\pm1\\).\n\n\\(\\int_{-1}^1\\dfrac{dx}{\\sqrt{1-x^2}}=[\\arcsin x]_{-1}^1=\\arcsin1-\\arcsin(-1)=\\dfrac{\\pi}{2}-\\left(-\\dfrac{\\pi}{2}\\right)=\\pi\\).\n\nHội tụ (tích phân chuẩn \\(\\arcsin\\)), \\(I=\\pi\\).",
+    "quick": "\\(\\int 1/\\sqrt{1-x^2}dx=\\arcsin x\\). Tại x=±1: arcsin(1)-arcsin(-1)=π/2-(-π/2)=**π**.",
+    "casio": "CASIO: ∫_{-0.999}^{0.999} dx/√(1-x²)≈[arcsin x]≈π/2-(-π/2)≈3.14.",
+    "difficulty": 3,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 38,
+    "source_id_before_split": 58
+  },
+  {
+    "id": 10,
+    "type": "improper_inf",
+    "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{x\\ln x}{(1+x^2)^2}dx\\).",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Không xác định",
+      "Hội tụ về 0"
+    ],
+    "correct": "Hội tụ",
+    "solution": "So sánh: khi \\(x\\to+\\infty\\):\n\\(\\dfrac{x\\ln x}{(1+x^2)^2}\\sim\\dfrac{x\\ln x}{x^4}=\\dfrac{\\ln x}{x^3}\\).\n\nVì \\(\\dfrac{\\ln x}{x^3}\\leq\\dfrac{C}{x^2}\\) với C đủ lớn và \\(\\int_1^{+\\infty}x^{-2}dx\\) hội tụ → **hội tụ** theo tiêu chuẩn so sánh.",
+    "quick": "Ước lượng: hàm ~ ln(x)/x³ khi x→∞. Vì ln(x)=o(x^ε) → hàm = o(x^{-3+ε}) → **hội tụ** (p>1).",
+    "casio": "CASIO: ∫₁^1000 x·ln(x)/(1+x²)²dx ≈ giá trị hữu hạn → hội tụ.",
+    "difficulty": 3,
+    "topic": "Tích phân suy rộng (tham khảo)",
+    "original_id": 43,
+    "source_id_before_split": 63
+  }
+]

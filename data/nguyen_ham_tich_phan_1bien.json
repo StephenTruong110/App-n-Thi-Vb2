@@ -14,8 +14,10 @@
     "quick": "\\(\\int x^n = x^{n+1}/(n+1)\\)",
     "casio": "CASIO: không tích phân ký hiệu, chỉ kiểm tra đạo hàm: \\(\\frac{d}{dx}(x^3/3)=x^2\\).",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 1
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 1,
+    "matrix": null,
+    "source_id_before_split": 1
   },
   {
     "id": 2,
@@ -32,26 +34,30 @@
     "quick": "Nguyên hàm của sin là -cos",
     "casio": "Đạo hàm của -cos x = sin x ✓",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 2
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 2,
+    "matrix": null,
+    "source_id_before_split": 2
   },
   {
     "id": 3,
     "type": "indefinite_basic",
     "question": "Tìm \\(\\int \\dfrac{1}{x} \\, dx\\) (với \\(x>0\\))?",
     "options": [
-      "\\(\\ln x + C\\)",
-      "\\(\\dfrac{1}{x^2} + C\\)",
-      "\\(\\ln|x| + C\\)",
-      "\\(\\dfrac{x^2}{2} + C\\)"
+      "\\(\\ln x+C\\)",
+      "\\(-\\ln x+C\\)",
+      "\\(x\\ln x-x+C\\)",
+      "\\(x^{-1}+C\\)"
     ],
-    "correct": "\\(\\ln x + C\\)",
+    "correct": "\\(\\ln x+C\\)",
     "solution": "\\(\\int \\frac{1}{x} dx = \\ln|x| + C\\). Với x>0 thì \\(\\ln x + C\\).",
     "quick": "Nguyên hàm của 1/x là ln|x|",
     "casio": "Đạo hàm của ln x = 1/x",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 3
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 3,
+    "matrix": null,
+    "source_id_before_split": 3
   },
   {
     "id": 4,
@@ -67,9 +73,11 @@
     "solution": "\\(\\int e^{ax} dx = \\frac{1}{a}e^{ax}+C\\) → \\(\\int e^{2x}dx = \\frac{1}{2}e^{2x}+C\\).",
     "quick": "Dạng mũ: \\(\\int e^{kx} = e^{kx}/k\\)",
     "casio": "Đạo hàm (e^{2x}/2) = e^{2x}",
-    "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 4
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 4,
+    "matrix": null,
+    "source_id_before_split": 4
   },
   {
     "id": 5,
@@ -85,9 +93,11 @@
     "solution": "\\(\\int \\cos(kx) dx = \\frac{1}{k}\\sin(kx)+C\\), k=3 → \\(\\frac{1}{3}\\sin 3x + C\\).",
     "quick": "Nguyên hàm của cos(kx) = sin(kx)/k",
     "casio": "Đạo hàm (sin3x/3) = cos3x",
-    "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 5
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 5,
+    "matrix": null,
+    "source_id_before_split": 5
   },
   {
     "id": 6,
@@ -104,8 +114,10 @@
     "quick": "Công thức lượng giác ngược",
     "casio": "Đạo hàm arcsin x = 1/√(1-x²)",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 6
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 6,
+    "matrix": null,
+    "source_id_before_split": 6
   },
   {
     "id": 7,
@@ -122,8 +134,10 @@
     "quick": "Đổi biến u = 2x+1, nhớ chia cho đạo hàm",
     "casio": "Tính đạo hàm kết quả để kiểm tra",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 7
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 7,
+    "matrix": null,
+    "source_id_before_split": 7
   },
   {
     "id": 8,
@@ -140,8 +154,10 @@
     "quick": "Nhóm x dx tạo thành du/2",
     "casio": "Đạo hàm (e^{x²}/2) = x e^{x²}",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 8
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 8,
+    "matrix": null,
+    "source_id_before_split": 8
   },
   {
     "id": 9,
@@ -158,8 +174,10 @@
     "quick": "ln x/x dx = u du",
     "casio": "Đạo hàm kết quả = (ln x)/x",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 9
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 9,
+    "matrix": null,
+    "source_id_before_split": 9
   },
   {
     "id": 10,
@@ -176,8 +194,10 @@
     "quick": "u = sin x, du = cos x dx",
     "casio": "Đạo hàm (sin⁴x/4) = sin³x cos x",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 10
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 10,
+    "matrix": null,
+    "source_id_before_split": 10
   },
   {
     "id": 11,
@@ -194,8 +214,10 @@
     "quick": "Công thức \\(\\int x e^{ax} = e^{ax}(ax-1)/a^2\\), với a=1",
     "casio": "Đạo hàm (x-1)e^x = e^x + (x-1)e^x = x e^x",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 11
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 11,
+    "matrix": null,
+    "source_id_before_split": 11
   },
   {
     "id": 12,
@@ -212,8 +234,10 @@
     "quick": "Từng phần u=ln x, dv=x dx",
     "casio": "Đạo hàm kết quả kiểm tra",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 12
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 12,
+    "matrix": null,
+    "source_id_before_split": 12
   },
   {
     "id": 13,
@@ -230,8 +254,10 @@
     "quick": "Từng phần với u=ln x, dv=dx",
     "casio": "Đạo hàm (x ln x - x) = ln x",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 13
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 13,
+    "matrix": null,
+    "source_id_before_split": 13
   },
   {
     "id": 14,
@@ -248,8 +274,10 @@
     "quick": "Công thức \\(\\int x^2 e^x = e^x(x^2-2x+2)\\)",
     "casio": "Đạo hàm e^x(x²-2x+2) = e^x(x²-2x+2) + e^x(2x-2) = e^x x²",
     "difficulty": 3,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 14
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 14,
+    "matrix": null,
+    "source_id_before_split": 14
   },
   {
     "id": 15,
@@ -266,8 +294,10 @@
     "quick": "Công thức: \\(\\int e^{ax}\\sin(bx) = \\frac{e^{ax}(a\\sin(bx)-b\\cos(bx))}{a^2+b^2}\\)",
     "casio": "Đạo hàm kết quả = eˣ sin x",
     "difficulty": 3,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 15
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 15,
+    "matrix": null,
+    "source_id_before_split": 15
   },
   {
     "id": 16,
@@ -284,8 +314,10 @@
     "quick": "Tích phân x² cận 0→1 = 1/3",
     "casio": "CASIO: ∫(x²,0,1) → 0.3333",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 16
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 16,
+    "matrix": null,
+    "source_id_before_split": 16
   },
   {
     "id": 17,
@@ -302,8 +334,10 @@
     "quick": "Tích phân sin x từ 0→π/2 = 1",
     "casio": "∫(sin x,0,π/2)=1",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 17
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 17,
+    "matrix": null,
+    "source_id_before_split": 17
   },
   {
     "id": 18,
@@ -313,15 +347,17 @@
       "\\(1\\)",
       "\\(0\\)",
       "\\(e\\)",
-      "\\(\\ln e\\)"
+      "\\(e-1\\)"
     ],
     "correct": "\\(1\\)",
     "solution": "\\(\\int_1^e \\frac{1}{x} dx = [\\ln x]_1^e = \\ln e - \\ln 1 = 1 - 0 = 1\\).",
     "quick": "Tích phân 1/x từ 1→e = ln e = 1",
     "casio": "∫(1/x,1,e)=1",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 18
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 18,
+    "matrix": null,
+    "source_id_before_split": 18
   },
   {
     "id": 19,
@@ -338,8 +374,10 @@
     "quick": "Đổi biến u=1-x², kết quả = 1",
     "casio": "CASIO: ∫(x/√(1-x²),0,1) → 1",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 19
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 19,
+    "matrix": null,
+    "source_id_before_split": 19
   },
   {
     "id": 20,
@@ -356,8 +394,10 @@
     "quick": "Đổi biến u=sin x → tích phân u³ du từ 0→1 = 1/4",
     "casio": "∫(sin³x cos x,0,π/2)=0.25",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 20
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 20,
+    "matrix": null,
+    "source_id_before_split": 20
   },
   {
     "id": 21,
@@ -373,9 +413,11 @@
     "solution": "\\(\\int_0^1 x e^x dx = [ (x-1)e^x ]_0^1 = (0)e^1 - (-1)e^0 = 1\\).",
     "quick": "Kết quả từng phần: (x-1)e^x cận 0→1 =1",
     "casio": "∫(x e^x,0,1)=1",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 21
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 21,
+    "matrix": null,
+    "source_id_before_split": 21
   },
   {
     "id": 22,
@@ -391,9 +433,11 @@
     "solution": "Từng phần: u=x, dv=sin x dx → du=dx, v=-cos x. \\(\\int_0^{π/2} x sin x dx = [-x cos x]_0^{π/2} + \\int_0^{π/2} cos x dx = (0 + 0) + [sin x]_0^{π/2} = 1\\).",
     "quick": "Kết quả = 1",
     "casio": "∫(x sin x,0,π/2)=1",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 22
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 22,
+    "matrix": null,
+    "source_id_before_split": 22
   },
   {
     "id": 23,
@@ -409,9 +453,11 @@
     "solution": "Từng phần: u=ln x, dv=dx → du=dx/x, v=x. \\(\\int_1^e \\ln x dx = [x\\ln x]_1^e - \\int_1^e dx = (e·1 - 0) - (e-1) = 1\\).",
     "quick": "Kết quả = 1",
     "casio": "∫(ln x,1,e)=1",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 23
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 23,
+    "matrix": null,
+    "source_id_before_split": 23
   },
   {
     "id": 24,
@@ -428,8 +474,10 @@
     "quick": "Kết quả = -2",
     "casio": "∫(x cos x,0,π) = -2",
     "difficulty": 3,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 24
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 24,
+    "matrix": null,
+    "source_id_before_split": 24
   },
   {
     "id": 25,
@@ -445,84 +493,14 @@
     "solution": "Trên [0,π], sin x ≥0. \\(S = \\int_0^\\pi \\sin x dx = [-\\cos x]_0^\\pi = -\\cos\\pi + \\cos0 = -(-1)+1 = 2\\).",
     "quick": "Diện tích dưới sin x từ 0→π = 2",
     "casio": "∫(sin x,0,π)=2",
-    "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 26
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 26,
+    "matrix": null,
+    "source_id_before_split": 25
   },
   {
     "id": 26,
-    "type": "improper_inf",
-    "question": "Tính tích phân suy rộng \\(\\int_1^{+\\infty} \\dfrac{dx}{x^2}\\).",
-    "options": [
-      "\\(1\\)",
-      "\\(+\\infty\\)",
-      "\\(0\\)",
-      "\\(-1\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "\\(\\int_1^{+\\infty} x^{-2} dx = \\lim_{b\\to\\infty} [-1/x]_1^b = \\lim_{b\\to\\infty}(-1/b +1) = 1\\).",
-    "quick": "Tích phân hội tụ về 1",
-    "casio": "Tính ∫(1/x²,1,10000) ≈ 0.9999",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 27
-  },
-  {
-    "id": 27,
-    "type": "improper_inf",
-    "question": "Xét sự hội tụ của \\(\\int_1^{+\\infty} \\dfrac{1}{x} \\, dx\\).",
-    "options": [
-      "Phân kỳ",
-      "Hội tụ về 1",
-      "Hội tụ về e",
-      "Hội tụ về 0"
-    ],
-    "correct": "Phân kỳ",
-    "solution": "\\(\\int_1^b \\frac{1}{x} dx = \\ln b \\to +\\infty\\) khi b→∞ → phân kỳ.",
-    "quick": "Tích phân 1/x từ 1→∞ phân kỳ",
-    "casio": "∫(1/x,1,10^6) ≈ 13.8 → lớn dần",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 28
-  },
-  {
-    "id": 28,
-    "type": "improper_singular",
-    "question": "Tính tích phân suy rộng \\(\\int_0^1 \\dfrac{dx}{\\sqrt{x}}\\).",
-    "options": [
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(+\\infty\\)",
-      "\\(0\\)"
-    ],
-    "correct": "\\(2\\)",
-    "solution": "\\(\\int_0^1 x^{-1/2} dx = \\lim_{\\varepsilon\\to0^+} [2\\sqrt{x}]_\\varepsilon^1 = 2\\).",
-    "quick": "Hội tụ về 2",
-    "casio": "∫(1/√x,0,1)=2",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 29
-  },
-  {
-    "id": 29,
-    "type": "improper_singular",
-    "question": "Xét sự hội tụ của \\(\\int_0^1 \\dfrac{dx}{x}\\).",
-    "options": [
-      "Phân kỳ",
-      "Hội tụ về 0",
-      "Hội tụ về 1",
-      "Hội tụ về +∞"
-    ],
-    "correct": "Phân kỳ",
-    "solution": "\\(\\int_\\varepsilon^1 \\frac{dx}{x} = -\\ln\\varepsilon \\to +\\infty\\) → phân kỳ.",
-    "quick": "Tích phân 1/x từ 0→1 phân kỳ",
-    "casio": "∫(1/x,0.0001,1) ≈ 9.21 lớn",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 30
-  },
-  {
-    "id": 30,
     "type": "definite_substitution",
     "question": "Tính \\(\\int_0^{\\ln 2} e^{2x} \\, dx\\).",
     "options": [
@@ -535,30 +513,34 @@
     "solution": "\\(\\int e^{2x}dx = \\frac{1}{2}e^{2x}\\). Cận 0→ln2: \\(\\frac{1}{2}(e^{2\\ln2} - e^0) = \\frac{1}{2}(4-1)=\\frac{3}{2}\\).",
     "quick": "e^{2ln2}=4, (4-1)/2=1.5",
     "casio": "∫(e^(2x),0,ln2)=1.5",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 31
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 31,
+    "matrix": null,
+    "source_id_before_split": 30
   },
   {
-    "id": 31,
+    "id": 27,
     "type": "definite_trig",
     "question": "Tính \\(\\int_0^{\\pi/4} \\tan x \\, dx\\).",
     "options": [
-      "\\(\\ln 2\\)",
-      "\\(\\dfrac{1}{2}\\ln 2\\)",
+      "\\(\\dfrac12\\ln2\\)",
+      "\\(\\ln2\\)",
       "\\(\\dfrac{\\pi}{4}\\)",
-      "\\(\\ln \\sqrt{2}\\)"
+      "\\(1\\)"
     ],
-    "correct": "\\(\\dfrac{1}{2}\\ln 2\\)",
-    "solution": "\\(\\int \\tan x dx = -\\ln|\\cos x| + C\\). Cận 0→π/4: \\([-\\ln\\cos x]_0^{π/4} = -\\ln(\\sqrt{2}/2) + \\ln1 = -\\ln(\\sqrt{2}/2) = \\ln(2/\\sqrt{2}) = \\ln\\sqrt{2} = \\frac{1}{2}\\ln2\\).",
+    "correct": "\\(\\dfrac12\\ln2\\)",
+    "solution": "\\(\\int\\tan x\\,dx=-\\ln|\\cos x|+C\\). Vì vậy \\(\\int_0^{\\pi/4}\\tan x\\,dx=-\\ln(\\sqrt2/2)=\\ln\\sqrt2=\\frac12\\ln2\\).",
     "quick": "Kết quả = (ln2)/2",
     "casio": "∫(tan x,0,π/4)≈0.3466 = ln2/2",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 32
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 32,
+    "matrix": null,
+    "source_id_before_split": 31
   },
   {
-    "id": 32,
+    "id": 28,
     "type": "definite_absolute",
     "question": "Tính \\(\\int_0^2 |x-1| \\, dx\\).",
     "options": [
@@ -571,12 +553,14 @@
     "solution": "Chia đoạn: trên [0,1], |x-1| = 1-x; trên [1,2], = x-1. \\(\\int_0^1 (1-x)dx + \\int_1^2 (x-1)dx = [x - x^2/2]_0^1 + [x^2/2 - x]_1^2 = (1-0.5) + (2-2 - (0.5-1)) = 0.5 + (0 - (-0.5)) = 0.5+0.5=1\\).",
     "quick": "Diện tích tam giác = 1",
     "casio": "∫(|x-1|,0,2)=1",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 33
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 33,
+    "matrix": null,
+    "source_id_before_split": 32
   },
   {
-    "id": 33,
+    "id": 29,
     "type": "definite_geometry",
     "question": "Diện tích hình phẳng giới hạn bởi \\(y = \\sqrt{x}\\) và \\(y = x^2\\) là?",
     "options": [
@@ -589,12 +573,14 @@
     "solution": "Giao điểm: \\(\\sqrt{x}=x^2 \\Rightarrow x^4=x \\Rightarrow x(x^3-1)=0 \\Rightarrow x=0,1\\). Trên [0,1], \\(\\sqrt{x} \\ge x^2\\). \\(S=\\int_0^1 (\\sqrt{x} - x^2) dx = [\\frac{2}{3}x^{3/2} - \\frac{x^3}{3}]_0^1 = \\frac{2}{3} - \\frac{1}{3} = \\frac{1}{3}\\).",
     "quick": "Tính tích phân hiệu",
     "casio": "∫(√x - x²,0,1)=1/3",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 35
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 35,
+    "matrix": null,
+    "source_id_before_split": 33
   },
   {
-    "id": 34,
+    "id": 30,
     "type": "definite_geometry",
     "question": "Diện tích hình phẳng giới hạn bởi \\(y = x^2\\) và \\(y = x\\) là?",
     "options": [
@@ -607,30 +593,14 @@
     "solution": "Giao điểm: x²=x ⇒ x=0,1. Trên [0,1], x ≥ x². \\(S=\\int_0^1 (x - x^2) dx = [\\frac{x^2}{2} - \\frac{x^3}{3}]_0^1 = \\frac12 - \\frac13 = \\frac16\\).",
     "quick": "Diện tích giữa x và x² = 1/6",
     "casio": "∫(x-x²,0,1)=1/6",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 36
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 36,
+    "matrix": null,
+    "source_id_before_split": 34
   },
   {
-    "id": 35,
-    "type": "improper_both",
-    "question": "Tích phân \\(\\int_{-\\infty}^{+\\infty} \\dfrac{1}{1+x^2} dx\\) có giá trị?",
-    "options": [
-      "\\(\\pi\\)",
-      "\\(\\dfrac{\\pi}{2}\\)",
-      "\\(2\\pi\\)",
-      "Phân kỳ"
-    ],
-    "correct": "\\(\\pi\\)",
-    "solution": "Hàm chẵn: \\(\\int_{-\\infty}^{\\infty} \\frac{dx}{1+x^2} = 2\\int_0^{\\infty} \\frac{dx}{1+x^2} = 2\\lim_{b\\to\\infty}[\\arctan x]_0^b = 2\\cdot\\frac{\\pi}{2} = \\pi\\).",
-    "quick": "Nguyên hàm arctan x, kết quả π",
-    "casio": "Tính gần đúng với cận lớn → π",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 37
-  },
-  {
-    "id": 36,
+    "id": 31,
     "type": "indefinite_parts",
     "question": "Tính \\(\\int x \\cos 2x \\, dx\\).",
     "options": [
@@ -643,12 +613,14 @@
     "solution": "Đặt u=x, dv=cos2x dx → du=dx, v=½ sin2x. \\(\\int x cos2x dx = \\frac{x}{2}\\sin2x - \\frac{1}{2}\\int \\sin2x dx = \\frac{x}{2}\\sin2x + \\frac{1}{4}\\cos2x + C\\).",
     "quick": "Từng phần với u=x",
     "casio": "Đạo hàm kết quả = x cos2x",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 38
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 38,
+    "matrix": null,
+    "source_id_before_split": 36
   },
   {
-    "id": 37,
+    "id": 32,
     "type": "indefinite_substitution",
     "question": "Tính \\(\\int \\dfrac{dx}{\\sqrt{4x^2+9}}\\) (dạng \\(\\int \\frac{dx}{\\sqrt{x^2+a^2}}\\)).",
     "options": [
@@ -662,11 +634,13 @@
     "quick": "Công thức \\(\\int \\frac{dx}{\\sqrt{x^2+a^2}} = \\ln|x+\\sqrt{x^2+a^2}|\\)",
     "casio": "Kiểm tra đạo hàm",
     "difficulty": 3,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 39
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 39,
+    "matrix": null,
+    "source_id_before_split": 37
   },
   {
-    "id": 38,
+    "id": 33,
     "type": "indefinite_parts",
     "question": "Tính \\(\\int \\arctan x \\, dx\\).",
     "options": [
@@ -680,8 +654,10 @@
     "quick": "Từng phần u=arctan x",
     "casio": "Đạo hàm kết quả = arctan x",
     "difficulty": 3,
-    "topic": "Nguyên hàm & Tích phân",
-    "original_id": 40
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 40,
+    "matrix": null,
+    "source_id_before_split": 38
   },
   {
     "type": "indefinite_rational",
@@ -696,10 +672,12 @@
     "solution": "Phân tích thành phân số đơn: \\n\\[\\frac{1}{(x+1)(x+2)}=\\frac{1}{x+1}-\\frac{1}{x+2}.\\]\\nDo đó\\n\\[\\int \\frac{dx}{(x+1)(x+2)}=\\int \\left(\\frac{1}{x+1}-\\frac{1}{x+2}\\right)dx=\\ln|x+1|-\\ln|x+2|+C=\\ln\\left|\\frac{x+1}{x+2}\\right|+C.\\]",
     "quick": "Tách phân thức: \\(1/((x+1)(x+2))=1/(x+1)-1/(x+2)\\).",
     "casio": "Đạo hàm của \\ln|(x+1)/(x+2)| cho lại phân thức ban đầu.",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "id": 39,
-    "original_id": null
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 34,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 39
   },
   {
     "type": "indefinite_rational",
@@ -714,10 +692,12 @@
     "solution": "Vì đạo hàm của mẫu là \\(2x+3\\), nên đặt \\(u=x^2+3x+1\\), \\(du=(2x+3)dx\\). Khi đó\\n\\[\\int \\frac{2x+3}{x^2+3x+1}dx=\\int \\frac{du}{u}=\\ln|u|+C=\\ln|x^2+3x+1|+C.\\]",
     "quick": "Tử số đúng bằng đạo hàm mẫu \\u2192 ra \\ln|mẫu|.",
     "casio": "Nhận dạng nhanh dạng \\(f'(x)/f(x)\\).",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "id": 40,
-    "original_id": null
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 35,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 40
   },
   {
     "type": "indefinite_irrational",
@@ -732,10 +712,12 @@
     "solution": "Đặt \\(u=x^2+1\\), \\(du=2x dx\\). Khi đó\\n\\[\\int \\frac{x}{\\sqrt{x^2+1}}dx=\\frac12\\int u^{-1/2}du=\\sqrt{u}+C=\\sqrt{x^2+1}+C.\\]",
     "quick": "Đặt \\(u=x^2+1\\), rồi dùng \\int u^{-1/2}du.",
     "casio": "Đạo hàm của \\sqrt{x^2+1}\\ bằng x/\\sqrt{x^2+1} nhân 2 rồi chia đúng hệ số.",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "id": 41,
-    "original_id": null
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 36,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 41
   },
   {
     "type": "indefinite_irrational",
@@ -751,9 +733,11 @@
     "quick": "Đổi căn thành lũy thừa: \\(x^{1/2}\\).",
     "casio": "Đạo hàm của \\frac{2}{3}x^{3/2}\\ là \\sqrt{x}.",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "id": 42,
-    "original_id": null
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 37,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 42
   },
   {
     "type": "indefinite_trig_basic",
@@ -769,9 +753,11 @@
     "quick": "Một cặp rất cơ bản: đặt \\(u=\\sin x\\).",
     "casio": "Đạo hàm của \\(\\sin^2x/2\\) bằng \\(\\sin x\\cos x\\).",
     "difficulty": 1,
-    "topic": "Nguyên hàm & Tích phân",
-    "id": 43,
-    "original_id": null
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 38,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 43
   },
   {
     "type": "indefinite_trig_basic",
@@ -786,10 +772,12 @@
     "solution": "Dùng công thức hạ bậc \\(\\sin^2x=\\frac{1-\\cos2x}{2}\\). Khi đó\\n\\[\\int \\sin^2x\\,dx=\\int \\left(\\frac12-\\frac{\\cos2x}{2}\\right)dx=\\frac{x}{2}-\\frac{\\sin2x}{4}+C.\\]",
     "quick": "Hạ bậc: \\(\\sin^2x=(1-\\cos2x)/2\\).",
     "casio": "Học thuộc công thức hạ bậc để làm nhanh.",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "id": 44,
-    "original_id": null
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 39,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 44
   },
   {
     "type": "indefinite_trig_basic",
@@ -804,10 +792,12 @@
     "solution": "Dùng công thức hạ bậc \\(\\cos^2x=\\frac{1+\\cos2x}{2}\\). Khi đó\\n\\[\\int \\cos^2x\\,dx=\\int \\left(\\frac12+\\frac{\\cos2x}{2}\\right)dx=\\frac{x}{2}+\\frac{\\sin2x}{4}+C.\\]",
     "quick": "Hạ bậc: \\(\\cos^2x=(1+\\cos2x)/2\\).",
     "casio": "Đây là dạng lượng giác cơ bản rất nên thuộc.",
-    "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
-    "id": 45,
-    "original_id": null
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 40,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 45
   },
   {
     "type": "definite_trig_basic",
@@ -822,9 +812,251 @@
     "solution": "Dùng \\(\\sin^2x=\\frac{1-\\cos2x}{2}\\):\\n\\[\\int_0^{\\pi/2}\\sin^2x\\,dx=\\left[\\frac{x}{2}-\\frac{\\sin2x}{4}\\right]_0^{\\pi/2}=\\frac{\\pi}{4}.\\]",
     "quick": "Công thức rất hay gặp: \\(\\int_0^{\\pi/2}\\sin^2x dx=\\pi/4\\).",
     "casio": "CASIO: ∫(sin²x,0,π/2)=π/4≈0.7854.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "id": 41,
+    "original_id": null,
+    "matrix": null,
+    "source_id_before_split": 46
+  },
+  {
+    "id": 42,
+    "type": "application_work",
+    "question": "Một bể hình hộp chữ nhật dài 2 m, rộng 1,5 m, cao 3 m chứa đầy nước. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần để bơm toàn bộ nước qua mặt trên của bể bằng",
+    "matrix": null,
+    "options": [
+      "\\(132{,}3\\,\\mathrm{kJ}\\)",
+      "\\(122{,}3\\,\\mathrm{kJ}\\)",
+      "\\(130\\,\\mathrm{kJ}\\)",
+      "\\(139\\,\\mathrm{kJ}\\)"
+    ],
+    "correct": "\\(132{,}3\\,\\mathrm{kJ}\\)",
+    "solution": "Chọn y đo từ đáy. Lát nước dày dy có thể tích \\(3dy\\), trọng lượng \\(1000\\cdot9.8\\cdot3dy\\), phải nâng quãng đường \\(3-y\\). Vì vậy \\(W=29400\\int_0^3(3-y)dy=132300\\,J=132.3\\,kJ\\).",
+    "quick": "Diện tích đáy 3 m²; khoảng nâng của lớp ở độ cao y là 3-y.",
+    "casio": "CASIO: 1000×9.8×3×(9/2)=132300 J.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 47
+  },
+  {
+    "id": 43,
+    "type": "fundamental_theorem",
+    "question": "Cho \\(F(x)=\\displaystyle\\int_0^{x^2}e^{t^2}\\,dt\\). Khi đó \\(F'(x)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(2xe^{x^4}\\)",
+      "\\(e^{x^4}\\)",
+      "\\(2xe^{x^2}\\)",
+      "\\(x^2e^{x^4}\\)"
+    ],
+    "correct": "\\(2xe^{x^4}\\)",
+    "solution": "Theo định lý cơ bản và quy tắc chuỗi, \\(F'(x)=e^{(x^2)^2}\\cdot(x^2)'=2xe^{x^4}\\).",
+    "quick": "Đạo hàm tích phân có cận trên u(x): f(u(x))u'(x).",
+    "casio": "CASIO có thể kiểm tra tại một x cụ thể bằng đạo hàm số.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 48
+  },
+  {
+    "id": 44,
+    "type": "definite_basic",
+    "question": "Tính \\(\\displaystyle\\int_0^1\\frac{dx}{1+x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\ln2\\)",
+      "\\(1\\)",
+      "\\(\\dfrac12\\)",
+      "\\(e-1\\)"
+    ],
+    "correct": "\\(\\ln2\\)",
+    "solution": "Nguyên hàm là \\(\\ln(1+x)\\). Thay cận được \\(\\ln2-\\ln1=\\ln2\\).",
+    "quick": "Nhận dạng dạng u'/u.",
+    "casio": "CASIO: dùng phím tích phân với cận 0 và 1, kết quả xấp xỉ 0.6931.",
     "difficulty": 2,
-    "topic": "Nguyên hàm & Tích phân",
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 49
+  },
+  {
+    "id": 45,
+    "type": "definite_absolute",
+    "question": "Tính \\(\\displaystyle\\int_{-1}^{1}|x|\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Hàm |x| chẵn, nên tích phân bằng \\(2\\int_0^1x\\,dx=1\\).",
+    "quick": "Dùng tính chẵn để nhân đôi nửa khoảng.",
+    "casio": "CASIO: tích phân |x| từ -1 đến 1 cho kết quả 1.",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 50
+  },
+  {
     "id": 46,
-    "original_id": null
+    "type": "volume_revolution",
+    "question": "Thể tích khối tròn xoay tạo bởi miền dưới đồ thị \\(y=\\sqrt x\\), \\(0\\le x\\le1\\), khi quay quanh trục Ox là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\pi\\)",
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(\\dfrac{\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{2}\\)",
+    "solution": "Phương pháp đĩa: \\(V=\\pi\\int_0^1y^2dx=\\pi\\int_0^1x\\,dx=\\pi/2\\).",
+    "quick": "Quay quanh Ox: V=π∫y²dx.",
+    "casio": "CASIO: π×∫_0^1 x dx = π/2.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 51
+  },
+  {
+    "id": 47,
+    "type": "average_value",
+    "question": "Giá trị trung bình của \\(f(x)=x^2\\) trên đoạn \\([0,3]\\) là",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(9\\)",
+      "\\(\\dfrac32\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "\\(f_{tb}=\\frac1{3-0}\\int_0^3x^2dx=\\frac13\\cdot9=3\\).",
+    "quick": "Giá trị trung bình = tích phân chia độ dài đoạn.",
+    "casio": "CASIO: ∫_0^3 x² dx =9, rồi chia 3.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 52
+  },
+  {
+    "id": 48,
+    "type": "application_work",
+    "question": "Một lò xo tuân theo định luật Hooke với hằng số \\(k=100\\,\\mathrm{N/m}\\). Công để kéo lò xo từ vị trí cân bằng đến độ giãn 0,2 m là",
+    "matrix": null,
+    "options": [
+      "\\(2\\,\\mathrm{J}\\)",
+      "\\(20\\,\\mathrm{J}\\)",
+      "\\(4\\,\\mathrm{J}\\)",
+      "\\(10\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(2\\,\\mathrm{J}\\)",
+    "solution": "\\(W=\\int_0^{0.2}kx\\,dx=\\frac12k(0.2)^2=2\\,J\\).",
+    "quick": "Công lò xo = 1/2 kx².",
+    "casio": "CASIO: 0.5×100×0.2²=2.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 54
+  },
+  {
+    "id": 49,
+    "type": "definite_symmetry",
+    "question": "Nếu \\(f\\) là hàm lẻ và khả tích trên \\([-a,a]\\), thì \\(\\displaystyle\\int_{-a}^{a}f(x)\\,dx\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(2\\int_0^af(x)dx\\)",
+      "\\(\\int_0^af(x)dx\\)",
+      "Không xác định"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Phần diện tích có dấu ở hai nửa đối xứng triệt tiêu nhau đối với hàm lẻ.",
+    "quick": "Hàm lẻ trên đoạn đối xứng có tích phân bằng 0.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": null,
+    "source_id_before_split": 55
+  },
+  {
+    "id": 50,
+    "type": "definite_integral",
+    "question": "Tính \\(I=\\int_0^{\\pi/2}\\dfrac{dx}{4\\sin x+3\\cos x+5}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{\\pi}{8}\\)",
+      "\\(\\dfrac{1}{4}\\ln2\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{6}\\)",
+    "solution": "Weierstrass \\(t=\\tan(x/2)\\), x:0→π/2 thành t:0→1.\n\n\\(4\\sin x+3\\cos x+5=\\dfrac{2(t+2)^2}{1+t^2}\\).\n\n\\(I=\\int_0^1\\dfrac{2dt/(1+t^2)}{2(t+2)^2/(1+t^2)}=\\int_0^1\\dfrac{dt}{(t+2)^2}\\)\n\n\\(=\\left[-\\dfrac{1}{t+2}\\right]_0^1=-\\dfrac{1}{3}+\\dfrac{1}{2}=\\dfrac{1}{6}\\).",
+    "quick": "Weierstrass → ∫₀¹dt/(t+2)²=[-1/(t+2)]₀¹=-1/3+1/2=**1/6**.",
+    "casio": "CASIO: Tính tích phân số với x từ 0 đến π/2 bằng cách chia nhỏ và cộng.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 39,
+    "source_id_before_split": 59
+  },
+  {
+    "id": 51,
+    "type": "definite_integral",
+    "question": "Tính \\(I=\\int_0^\\pi e^x\\cos^2x\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
+      "\\(\\dfrac{e^\\pi-1}{2}\\)",
+      "\\(e^\\pi-1\\)",
+      "\\(\\dfrac{e^\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
+    "solution": "Dùng \\(\\cos^2x=\\dfrac{1+\\cos2x}{2}\\):\n\\[I=\\dfrac{1}{2}\\int_0^\\pi e^x\\,dx+\\dfrac{1}{2}\\int_0^\\pi e^x\\cos2x\\,dx.\\]\n\nPhần 1:\n\\[\\dfrac12\\int_0^\\pi e^x dx=\\dfrac12(e^\\pi-1).\\]\n\nPhần 2: dùng công thức\n\\[\\int e^x\\cos2x\\,dx=\\dfrac{e^x(\\cos2x+2\\sin2x)}{5}.\\]\nNên\n\\[\\dfrac12\\int_0^\\pi e^x\\cos2x\\,dx=\\dfrac12\\cdot\\dfrac{e^\\pi-1}{5}=\\dfrac{e^\\pi-1}{10}.\\]\n\nVậy\n\\[I=\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}=\\dfrac{3}{5}(e^\\pi-1).\\]",
+    "quick": "Tách \\(\\cos^2x\\) thành \\((1+\\cos2x)/2\\). Kết quả đúng là \\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\).",
+    "casio": "CASIO: Tích phân số từ 0 đến π của e^x×cos²x.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 40,
+    "source_id_before_split": 60
+  },
+  {
+    "id": 52,
+    "type": "area_between_curves",
+    "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-4x+5\\) và hai tiếp tuyến tại \\(x=1\\) và \\(x=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{9}{4}\\)",
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{27}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{9}{4}\\)",
+    "solution": "Với \\(f(x)=x^2-4x+5\\), tiếp tuyến tại \\(x=1\\) là \\(y_1=-2x+4\\), tại \\(x=4\\) là \\(y_2=4x-11\\). Hai tiếp tuyến cắt nhau tại \\(x=5/2\\). Trên \\([1,5/2]\\), \\(f-y_1=(x-1)^2\\); trên \\([5/2,4]\\), \\(f-y_2=(x-4)^2\\). Do đó \\(S=\\int_1^{5/2}(x-1)^2dx+\\int_{5/2}^4(x-4)^2dx=2\\cdot\\dfrac{(3/2)^3}{3}=9/4\\).",
+    "quick": "Hai phần đối xứng, mỗi phần có diện tích \\((3/2)^3/3=9/8\\).",
+    "casio": "CASIO: Tính hai tích phân xác định hoặc dùng đối xứng \\(2\\int_0^{3/2}t^2dt\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 41,
+    "source_id_before_split": 61
+  },
+  {
+    "id": 53,
+    "type": "area_between_curves",
+    "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=|x^2-1|\\) và \\(y=|x|+5\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{73}{3}\\)",
+      "\\(\\dfrac{38}{3}\\)",
+      "\\(12\\)",
+      "\\(\\dfrac{34}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{73}{3}\\)",
+    "solution": "Giao điểm: \\(x=\\pm3\\).\n\n**Khu vực I** \\(x\\in[-3,-1]\\): \\(|x^2-1|=x^2-1\\), \\(|x|=-x\\)\n\\(\\int_{-3}^{-1}(-x+5-(x^2-1))dx=\\int_{-3}^{-1}(-x^2-x+6)dx=\\dfrac{22}{3}\\)\n\n**Khu vực II** \\(x\\in[-1,1]\\): \\(|x^2-1|=1-x^2\\), \\(|x|\\geq0\\)\n\\(\\int_{-1}^{1}(|x|+5-(1-x^2))dx=\\int_{-1}^{1}(|x|+x^2+4)dx=\\dfrac{29}{3}\\)\n\n**Khu vực III** \\(x\\in[1,3]\\): \\(|x^2-1|=x^2-1\\), \\(|x|=x\\)\n\\(\\int_1^3(x+5-(x^2-1))dx=\\int_1^3(-x^2+x+6)dx=\\dfrac{22}{3}\\)\n\n\\(S=\\dfrac{22}{3}+\\dfrac{29}{3}+\\dfrac{22}{3}=\\dfrac{73}{3}\\).",
+    "quick": "3 khu vực: [−3,−1],[−1,1],[1,3]. Tổng=22/3+29/3+22/3=**73/3**.",
+    "casio": "CASIO: Chia miền tại x=-1, 0, 1 và dùng tính đối xứng. Có thể tính 2×[∫₀¹(x²+x+4)dx + ∫₁³(-x²+x+6)dx] = 73/3.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến",
+    "original_id": 42,
+    "source_id_before_split": 62
   }
 ]

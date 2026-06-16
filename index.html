@@ -1,249 +1,289 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luyện thi VB2 — Toán Cao Cấp</title>
-<script>
-window.MathJax = {
-  tex: { inlineMath:[['\\(','\\)'],['$','$']], displayMath:[['$$','$$'],['\\[','\\]']], processEscapes:true },
-  options: { skipHtmlTags:['script','noscript','style','textarea'] },
-  startup: { typeset:false }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luyện thi VB2 — Toán Cao Cấp</title>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['$$', '$$'], ['\\[', '\\]']], processEscapes: true },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea'] },
+      startup: { typeset: false }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- ═══ SCREEN: PRACTICE ═══ -->
-<div id="screen-practice" class="screen active">
-<div class="wrap">
-  <div class="header">
-    <div class="header-top">
-      <div class="header-badge">VB2CA · 2026</div>
-      <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Chuyển giao diện tối/sáng">🌙</button>
-    </div>
-    <h1>🎯 Luyện thi Toán Cao Cấp</h1>
-  </div>
-  <div id="countdown">⏳ Đang tính...</div>
-  <div class="mode-switch">
-    <button class="mode-btn active" id="btn-mode-practice" onclick="switchMode('practice')">📚 Luyện theo chủ đề</button>
-    <button class="mode-btn" id="btn-mode-exam" onclick="switchMode('exam')">🎯 Thi thử 70 câu</button>
-    <button class="mode-btn wrong-mode-btn" id="btn-mode-wrong" onclick="startWrongBankSession()">
-      ❌ Luyện câu sai
-      <span class="wrong-bank-badge" id="wrong-bank-badge" style="display:none">0</span>
-    </button>
-  </div>
-  <div class="toolbar">
-    <select id="type">
-      <option value="matran_co_ban">Ma trận cơ bản</option>
-      <option value="dinh_thuc">* Định thức</option>
-      <option value="he_pt_tuyen_tinh">* Hệ PT tuyến tính có tham số</option>
-      <option value="gia_tri_rieng">Giá trị riêng – chéo hóa</option>
-      <option value="gioi_han_day_so">Giới hạn dãy số</option>
-      <option value="gioi_han">Giới hạn</option>
-      <option value="lientuc_giandoan_khavi">* Liên tục – gián đoạn – khả vi</option>
-      <option value="dao_ham">* Đạo hàm</option>
-      <option value="tiem_can">Tiệm cận</option>
-      <option value="daohamrieng_viphan_cuctri">* Đạo hàm riêng – vi phân – cực trị</option>
-      <option value="nguyen_ham_tich_phan_1bien">* Nguyên hàm - tích phân 1 biến</option>
-      <option value="chuoi_so">* Chuỗi số</option>
-      <option value="chuoi_luy_thua">Chuỗi lũy thừa</option>
-      <option value="pt_viphan_cap1">* PT vi phân cấp 1</option>
-      <option value="pt_viphan_cap2">* PT vi phân cấp 2</option>
-      <option value="tichphan_kep">Tích phân kép</option>
-      <option value="tichphan_ba">Tích phân ba</option>
-      <option value="tichphan_duong_green">Tích phân đường – Green</option>
-    </select>
-    <select id="diff-filter">
-      <option value="all">Tất cả độ khó</option>
-      <option value="1">🟢 Dễ</option>
-      <option value="2">🟡 Trung bình</option>
-      <option value="3">🔴 Khó</option>
-    </select>
-    <button class="btn primary" onclick="loadData()">📂 Load đề</button>
-    <button class="btn" onclick="shuffle()">🔀 Ngẫu nhiên</button>
-    <button class="btn" onclick="resetData()">🗑 Reset</button>
-  </div>
-  <div class="stats">
-    <div class="stat-card"><span class="stat-val s-current" id="s-cur">—</span><span class="stat-lbl">Câu hiện tại</span></div>
-    <div class="stat-card"><span class="stat-val s-total"   id="s-tot">0</span><span class="stat-lbl">Đã làm</span></div>
-    <div class="stat-card"><span class="stat-val s-right"   id="s-rig">0</span><span class="stat-lbl">✓ Đúng</span></div>
-    <div class="stat-card"><span class="stat-val s-wrong"   id="s-wro">0</span><span class="stat-lbl">✗ Sai</span></div>
-  </div>
-  <div class="progress"><div class="progress-bar" id="prog" style="width:0%"></div></div>
-  <div class="q-card" id="q-card">
-    <div class="center-box"><div class="spinner"></div><p>Chọn chủ đề và nhấn Load đề để bắt đầu...</p></div>
-  </div>
-  <div class="nav-row">
-    <button class="btn" onclick="goPrev()">← Trước</button>
-    <div class="nav-info" id="nav-info">—</div>
-    <button class="btn primary" onclick="goNext()">Tiếp theo →</button>
-  </div>
-</div>
-</div>
-
-<!-- ═══ SCREEN: EXAM ═══ -->
-<div id="screen-exam" class="screen">
-  <div class="exam-topbar">
-    <div class="etb-left">
-      <button class="btn-icon" onclick="askExitExam()" title="Thoát bài thi">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-      <div class="etb-info">
-        <span class="etb-title">Đề thi thử VB2CA 2026</span>
-        <span class="etb-sub" id="ex-prog-text">0 / 70 câu đã làm</span>
+  <!-- ═══ SCREEN: PRACTICE ═══ -->
+  <div id="screen-practice" class="screen active">
+    <div class="wrap">
+      <div class="header">
+        <div class="header-top">
+          <div class="header-badge">VB2CA · 2026</div>
+          <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()"
+            title="Chuyển giao diện tối/sáng">🌙</button>
+        </div>
+        <h1>🎯 Luyện thi Toán Cao Cấp</h1>
       </div>
-    </div>
-    <div class="etb-center">
-      <div class="ex-prog-bar-wrap"><div class="ex-prog-bar" id="ex-prog-bar" style="width:0%"></div></div>
-    </div>
-    <div class="etb-right">
-      <div class="timer-box" id="ex-timer">
-        <span class="timer-icon">⏱</span>
-        <span id="timer-val">180:00</span>
+      <div id="countdown">⏳ Đang tính...</div>
+      <div class="mode-switch">
+        <button class="mode-btn active" id="btn-mode-practice" onclick="switchMode('practice')">📚 Luyện theo chủ
+          đề</button>
+        <button class="mode-btn" id="btn-mode-exam" onclick="switchMode('exam')">🎯 Thi thử 50 câu</button>
+        <button class="mode-btn wrong-mode-btn" id="btn-mode-wrong" onclick="startWrongBankSession()">
+          ❌ Luyện câu sai
+          <span class="wrong-bank-badge" id="wrong-bank-badge" style="display:none">0</span>
+        </button>
       </div>
-      <button class="btn-submit-exam" onclick="askSubmitExam()">Nộp bài</button>
-    </div>
-  </div>
-  <div class="exam-body">
-    <div class="exam-nav-panel">
-      <div class="nav-panel-hdr">
-        <span class="nav-panel-title">Câu hỏi</span>
-        <div class="nav-panel-actions">
-          <span class="nav-panel-count" id="nav-panel-count">0/70</span>
-          <button class="nav-panel-toggle" id="nav-panel-toggle" type="button" onclick="toggleExamNavPanel()" aria-expanded="false">▼ Xem câu</button>
+      <div class="toolbar">
+        <select id="type" aria-label="Chọn chuyên đề">
+          <optgroup label="I. Đại số tuyến tính">
+            <option value="matran_co_ban">Ma trận cơ bản</option>
+            <option value="dinh_thuc">⭐ Định thức</option>
+            <option value="he_pt_tuyen_tinh">⭐ Hệ phương trình tuyến tính</option>
+            <option value="gia_tri_rieng">Giá trị riêng – chéo hóa</option>
+            <option value="khong_gian_vector_ud"> Không gian vector và ứng dụng </option>
+          </optgroup>
+          <optgroup label="II. Giới hạn và đạo hàm">
+            <option value="gioi_han_day_so">Giới hạn dãy số</option>
+            <option value="gioi_han">Giới hạn hàm số</option>
+            <option value="lientuc_giandoan_khavi"> ⭐ Liên tục – gián đoạn – khả vi </option>
+            <option value="dao_ham">⭐ Đạo hàm</option>
+            <option value="tiem_can">Tiệm cận · Bổ trợ</option>
+          </optgroup>
+          <optgroup label="III. Hàm nhiều biến">
+            <option value="daohamrieng_viphan_cuctri"> ⭐ Đạo hàm riêng – vi phân – cực trị </option>
+          </optgroup>
+          <optgroup label="IV. Nguyên hàm và chuỗi">
+            <option value="nguyen_ham_tich_phan_1bien"> ⭐ Nguyên hàm – tích phân một biến </option>
+            <option value="tichphan_suy_rong"> Tích phân suy rộng </option>
+            <option value="chuoi_so">⭐ Chuỗi số</option>
+            <option value="chuoi_luy_thua">Chuỗi lũy thừa</option>
+          </optgroup>
+          <optgroup label="V. Phương trình vi phân">
+            <option value="pt_viphan_cap1"> ⭐ Phương trình vi phân cấp 1 </option>
+            <option value="pt_viphan_cap2"> ⭐ Phương trình vi phân cấp 2 </option>
+          </optgroup>
+          <optgroup label="VI. Tích phân nhiều biến">
+            <option value="tichphan_kep">Tích phân kép</option>
+            <option value="tichphan_ba">Tích phân ba</option>
+            <option value="tichphan_duong_green"> Tích phân đường – định lý Green </option>
+          </optgroup>
+        </select>
+        <select id="diff-filter">
+          <option value="all">Tất cả mức độ</option>
+          <option value="1">🟢 Biết</option>
+          <option value="2">🟡 Hiểu</option>
+          <option value="3">🔴 Vận dụng</option>
+        </select>
+        <button class="btn primary" onclick="loadData()">📂 Load đề</button>
+        <button class="btn" onclick="shuffle()">🔀 Ngẫu nhiên</button>
+        <button class="btn" onclick="resetData()">🗑 Reset</button>
+      </div>
+      <div class="stats">
+        <div class="stat-card"><span class="stat-val s-current" id="s-cur">—</span><span class="stat-lbl">Câu hiện
+            tại</span></div>
+        <div class="stat-card"><span class="stat-val s-total" id="s-tot">0</span><span class="stat-lbl">Đã làm</span>
+        </div>
+        <div class="stat-card"><span class="stat-val s-right" id="s-rig">0</span><span class="stat-lbl">✓ Đúng</span>
+        </div>
+        <div class="stat-card"><span class="stat-val s-wrong" id="s-wro">0</span><span class="stat-lbl">✗ Sai</span>
         </div>
       </div>
-      <div class="nav-legend">
-        <span class="nleg"><i class="ndot nd-done"></i>Đã làm</span>
-        <span class="nleg"><i class="ndot nd-flag"></i>Đánh dấu</span>
-        <span class="nleg"><i class="ndot nd-cur"></i>Hiện tại</span>
+      <div class="progress">
+        <div class="progress-bar" id="prog" style="width:0%"></div>
       </div>
-      <div class="nav-grid" id="ex-nav-grid"></div>
-    </div>
-    <div class="exam-q-area" id="exam-q-area">
-      <div class="center-box"><div class="spinner"></div><p>Đang tạo đề thi...</p></div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══ SCREEN: RESULTS ═══ -->
-<div id="screen-results" class="screen">
-<div class="results-outer">
-  <div id="results-inner"></div>
-</div>
-</div>
-
-<!-- ═══════════ MODALS ═══════════ -->
-
-<!-- Submit -->
-<div class="overlay hidden" id="modal-submit">
-  <div class="modal">
-    <div class="modal-emoji">📋</div>
-    <h3>Xác nhận nộp bài</h3>
-    <p>Bài thi sẽ được chấm ngay. Hành động này không thể hoàn tác.</p>
-    <div class="modal-stats">
-      <div class="mstat ok"><b id="ms-done">0</b><small>Đã trả lời</small></div>
-      <div class="mstat warn"><b id="ms-skip">70</b><small>Chưa làm</small></div>
-      <div class="mstat flag"><b id="ms-flag">0</b><small>Đánh dấu</small></div>
-    </div>
-    <div class="modal-btns">
-      <button class="btn" onclick="closeOverlay('modal-submit')">Làm tiếp</button>
-      <button class="btn danger" onclick="doSubmitExam()">Nộp bài</button>
-    </div>
-  </div>
-</div>
-
-<!-- Exit -->
-<div class="overlay hidden" id="modal-exit">
-  <div class="modal">
-    <div class="modal-emoji">💾</div>
-    <h3>Thoát bài thi?</h3>
-    <p>Tiến độ sẽ được lưu lại. Bạn có thể tiếp tục lần sau.</p>
-    <div class="modal-btns">
-      <button class="btn" onclick="closeOverlay('modal-exit')">Tiếp tục thi</button>
-      <button class="btn primary" onclick="doExitExam()">Lưu &amp; Thoát</button>
-    </div>
-  </div>
-</div>
-
-<!-- Timeout -->
-<div class="overlay hidden" id="modal-timeout">
-  <div class="modal">
-    <div class="modal-emoji">⏰</div>
-    <h3>Hết giờ!</h3>
-    <p>180 phút đã hết. Bài thi sẽ được chấm tự động.</p>
-    <div class="modal-btns">
-      <button class="btn primary" onclick="doSubmitExam()">Xem kết quả</button>
-    </div>
-  </div>
-</div>
-
-<!-- Resume -->
-<div class="overlay hidden" id="modal-resume">
-  <div class="modal">
-    <div class="modal-emoji">⚡</div>
-    <h3>Tiếp tục bài thi cũ?</h3>
-    <p id="modal-resume-info">Bạn có bài thi đang dở dang.</p>
-    <div class="modal-btns">
-      <button class="btn" onclick="startFreshExam()">Thi lại từ đầu</button>
-      <button class="btn primary" onclick="resumeSavedExam()">Tiếp tục</button>
-    </div>
-  </div>
-</div>
-
-<!-- Retake / New exam (after results) -->
-<div class="overlay hidden" id="modal-retake">
-  <div class="modal">
-    <div class="modal-emoji">🔄</div>
-    <h3>Bạn muốn làm gì tiếp theo?</h3>
-    <p>Chọn cách bạn muốn luyện tiếp.</p>
-    <div class="retake-options">
-      <button class="retake-opt" onclick="retakeExam()">
-        <div class="ro-icon">🔁</div>
-        <div class="ro-text">
-          <b>Làm lại đề này</b>
-          <span>Cùng câu hỏi, đáp án xáo trộn lại, reset thời gian</span>
+      <div class="q-card" id="q-card">
+        <div class="center-box">
+          <div class="spinner"></div>
+          <p>Chọn chủ đề và nhấn Load đề để bắt đầu...</p>
         </div>
-      </button>
-      <button class="retake-opt" onclick="newExamFromBank()">
-        <div class="ro-icon">🎲</div>
-        <div class="ro-text">
-          <b>Tạo đề mới từ ngân hàng</b>
-          <span>70 câu mới được chọn ngẫu nhiên từ kho 800+ câu</span>
+      </div>
+      <div class="nav-row">
+        <button class="btn" onclick="goPrev()">← Trước</button>
+        <div class="nav-info" id="nav-info">—</div>
+        <button class="btn primary" onclick="goNext()">Tiếp theo →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SCREEN: EXAM ═══ -->
+  <div id="screen-exam" class="screen">
+    <div class="exam-topbar">
+      <div class="etb-left">
+        <button class="btn-icon" onclick="askExitExam()" title="Thoát bài thi">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="etb-info">
+          <span class="etb-title">Đề thi thử VB2CA 2026</span>
+          <span class="etb-sub" id="ex-prog-text">0 / 50 câu đã làm</span>
         </div>
-      </button>
+      </div>
+      <div class="etb-center">
+        <div class="ex-prog-bar-wrap">
+          <div class="ex-prog-bar" id="ex-prog-bar" style="width:0%"></div>
+        </div>
+      </div>
+      <div class="etb-right">
+        <div class="timer-box" id="ex-timer">
+          <span class="timer-icon">⏱</span>
+          <span id="timer-val">180:00</span>
+        </div>
+        <button class="btn-submit-exam" onclick="askSubmitExam()">Nộp bài</button>
+      </div>
     </div>
-    <div class="modal-btns" style="margin-top:8px">
-      <button class="btn" onclick="closeOverlay('modal-retake')">Hủy</button>
+    <div class="exam-body">
+      <div class="exam-nav-panel">
+        <div class="nav-panel-hdr">
+          <span class="nav-panel-title">Câu hỏi</span>
+          <div class="nav-panel-actions">
+            <span class="nav-panel-count" id="nav-panel-count">0/50</span>
+            <button class="nav-panel-toggle" id="nav-panel-toggle" type="button" onclick="toggleExamNavPanel()"
+              aria-expanded="false">▼ Xem câu</button>
+          </div>
+        </div>
+        <div class="nav-legend">
+          <span class="nleg"><i class="ndot nd-done"></i>Đã làm</span>
+          <span class="nleg"><i class="ndot nd-flag"></i>Đánh dấu</span>
+          <span class="nleg"><i class="ndot nd-cur"></i>Hiện tại</span>
+        </div>
+        <div class="nav-grid" id="ex-nav-grid"></div>
+      </div>
+      <div class="exam-q-area" id="exam-q-area">
+        <div class="center-box">
+          <div class="spinner"></div>
+          <p>Đang tạo đề thi...</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Wrong Bank Info -->
-<div class="overlay hidden" id="modal-wrong-empty">
-  <div class="modal">
-    <div class="modal-emoji">📭</div>
-    <h3>Ngân hàng câu sai trống</h3>
-    <p>Hãy làm bài thi thử để tự động lưu câu sai vào đây. Hoặc luyện theo chủ đề — câu trả lời sai cũng được ghi nhận.</p>
-    <div class="modal-btns">
-      <button class="btn primary" onclick="closeOverlay('modal-wrong-empty');switchMode('exam')">🎯 Thi thử ngay</button>
-      <button class="btn" onclick="closeOverlay('modal-wrong-empty')">Đóng</button>
+  <!-- ═══ SCREEN: RESULTS ═══ -->
+  <div id="screen-results" class="screen">
+    <div class="results-outer">
+      <div id="results-inner"></div>
     </div>
   </div>
-</div>
 
-<script src="js/app.js"></script>
-<script src="js/exam.js"></script>
-<script>
-  // Hiển thị badge câu sai khi tải trang
-  document.addEventListener('DOMContentLoaded', () => {
-    if (typeof updateWrongBadge === 'function') updateWrongBadge();
-  });
-</script></body>
+  <!-- ═══════════ MODALS ═══════════ -->
+
+  <!-- Submit -->
+  <div class="overlay hidden" id="modal-submit">
+    <div class="modal">
+      <div class="modal-emoji">📋</div>
+      <h3>Xác nhận nộp bài</h3>
+      <p>Bài thi sẽ được chấm ngay. Hành động này không thể hoàn tác.</p>
+      <div class="modal-stats">
+        <div class="mstat ok"><b id="ms-done">0</b><small>Đã trả lời</small></div>
+        <div class="mstat warn"><b id="ms-skip">50</b><small>Chưa làm</small></div>
+        <div class="mstat flag"><b id="ms-flag">0</b><small>Đánh dấu</small></div>
+      </div>
+      <div class="modal-btns">
+        <button class="btn" onclick="closeOverlay('modal-submit')">Làm tiếp</button>
+        <button class="btn danger" onclick="doSubmitExam()">Nộp bài</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exit -->
+  <div class="overlay hidden" id="modal-exit">
+    <div class="modal">
+      <div class="modal-emoji">💾</div>
+      <h3>Thoát bài thi?</h3>
+      <p>Tiến độ sẽ được lưu lại. Bạn có thể tiếp tục lần sau.</p>
+      <div class="modal-btns">
+        <button class="btn" onclick="closeOverlay('modal-exit')">Tiếp tục thi</button>
+        <button class="btn primary" onclick="doExitExam()">Lưu &amp; Thoát</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeout -->
+  <div class="overlay hidden" id="modal-timeout">
+    <div class="modal">
+      <div class="modal-emoji">⏰</div>
+      <h3>Hết giờ!</h3>
+      <p>180 phút đã hết. Bài thi sẽ được chấm tự động.</p>
+      <div class="modal-btns">
+        <button class="btn primary" onclick="doSubmitExam()">Xem kết quả</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume -->
+  <div class="overlay hidden" id="modal-resume">
+    <div class="modal">
+      <div class="modal-emoji">⚡</div>
+      <h3>Tiếp tục bài thi cũ?</h3>
+      <p id="modal-resume-info">Bạn có bài thi đang dở dang.</p>
+      <div class="modal-btns">
+        <button class="btn" onclick="startFreshExam()">Thi lại từ đầu</button>
+        <button class="btn primary" onclick="resumeSavedExam()">Tiếp tục</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Retake / New exam (after results) -->
+  <div class="overlay hidden" id="modal-retake">
+    <div class="modal">
+      <div class="modal-emoji">🔄</div>
+      <h3>Bạn muốn làm gì tiếp theo?</h3>
+      <p>Chọn cách bạn muốn luyện tiếp.</p>
+      <div class="retake-options">
+        <button class="retake-opt" onclick="retakeExam()">
+          <div class="ro-icon">🔁</div>
+          <div class="ro-text">
+            <b>Làm lại đề này</b>
+            <span>Cùng câu hỏi, đáp án xáo trộn lại, reset thời gian</span>
+          </div>
+        </button>
+        <button class="retake-opt" onclick="newExamFromBank()">
+          <div class="ro-icon">🎲</div>
+          <div class="ro-text">
+            <b>Tạo đề mới từ ngân hàng</b>
+            <span>50 câu mới được chọn ngẫu nhiên từ kho 800+ câu</span>
+          </div>
+        </button>
+      </div>
+      <div class="modal-btns" style="margin-top:8px">
+        <button class="btn" onclick="closeOverlay('modal-retake')">Hủy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wrong Bank Info -->
+  <div class="overlay hidden" id="modal-wrong-empty">
+    <div class="modal">
+      <div class="modal-emoji">📭</div>
+      <h3>Ngân hàng câu sai trống</h3>
+      <p>Hãy làm bài thi thử để tự động lưu câu sai vào đây. Hoặc luyện theo chủ đề — câu trả lời sai cũng được ghi
+        nhận.</p>
+      <div class="modal-btns">
+        <button class="btn primary" onclick="closeOverlay('modal-wrong-empty');switchMode('exam')">🎯 Thi thử
+          ngay</button>
+        <button class="btn" onclick="closeOverlay('modal-wrong-empty')">Đóng</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/exam.js"></script>
+  <script>
+    // Hiển thị badge câu sai khi tải trang
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof updateWrongBadge === 'function') updateWrongBadge();
+    });
+  </script>
+</body>
+
 </html>

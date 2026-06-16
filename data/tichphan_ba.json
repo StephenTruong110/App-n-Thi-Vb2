@@ -14,7 +14,7 @@
     "solution": "**Ý nghĩa hình học:** \\(\\iiint_V 1\\,dV =\\) **thể tích** của miền \\(V\\).\n\nMiền \\(V\\) là khối lập phương đơn vị \\([0,1]^3\\).\n\nThể tích = cạnh³ = \\(1^3 = 1\\).\n\n**Kiểm tra bằng tích phân lặp:**\n\\(\\int_0^1\\int_0^1\\int_0^1 dz\\,dy\\,dx = \\int_0^1\\int_0^1[z]_0^1\\,dy\\,dx = \\int_0^1\\int_0^1 1\\,dy\\,dx = 1\\)",
     "quick": "Tích phân của 1 = thể tích miền = 1",
     "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "Tích phân"
   },
   {
@@ -98,7 +98,7 @@
       "\\(\\dfrac{4\\pi}{3}\\)",
       "\\(\\dfrac{2\\pi}{3}\\)",
       "\\(2\\pi\\)",
-      "\\(\\dfrac{4\\pi}{6}\\)"
+      "\\(\\dfrac{\\pi}{3}\\)"
     ],
     "correct": "\\(\\dfrac{4\\pi}{3}\\)",
     "solution": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^2 r\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot\\int_0^1 r^2\\cdot2\\,dr=4\\pi\\cdot\\dfrac{1}{3}=\\dfrac{4\\pi}{3}\\).",
@@ -164,41 +164,23 @@
   {
     "id": 10,
     "type": "triple_integral",
-    "question": "Thể tích hình cầu bán kính R tính bằng tích phân ba là?",
+    "question": "Cho \\(V=\\{(x,y,z):1\\le x\\le2,\\ 0\\le y\\le3,\\ 0\\le z\\le1\\}\\). Giá trị \\(\\iiint_V y\\,dx\\,dy\\,dz\\) bằng",
     "matrix": null,
     "options": [
-      "\\(\\dfrac{4}{3}\\pi R^3\\)",
-      "\\(\\pi R^3\\)",
-      "\\(\\dfrac{2}{3}\\pi R^3\\)",
-      "\\(4\\pi R^2\\)"
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(9\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{3}{2}\\)"
     ],
-    "correct": "\\(\\dfrac{4}{3}\\pi R^3\\)",
-    "solution": "Dùng tọa độ cầu: \\(dV=r^2\\sin\\phi\\,dr\\,d\\phi\\,d\\theta\\).\n\n\\(V=\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R r^2\\sin\\phi\\,dr\\,d\\phi\\,d\\theta\\)\n\n\\(=2\\pi\\cdot2\\cdot\\dfrac{R^3}{3}=\\dfrac{4\\pi R^3}{3}\\).",
-    "quick": "Tọa độ cầu: V=∫₀^2π dθ·∫₀^π sinφ dφ·∫₀^R r² dr=2π·2·R³/3=**4πR³/3**.",
-    "casio": "CASIO: ∫₀^πsinφ dφ=[-cosφ]₀^π=2. ∫₀^Rr²dr=R³/3. Kết quả: 2π·2·R³/3=4πR³/3.",
+    "correct": "\\(\\dfrac{9}{2}\\)",
+    "solution": "Miền là hình hộp chữ nhật nên tích phân tách được: \\(\\int_1^2dx\\cdot\\int_0^3y\\,dy\\cdot\\int_0^1dz=1\\cdot(9/2)\\cdot1=9/2\\).",
+    "quick": "Độ dài theo x và z đều bằng 1; chỉ còn \\(\\int_0^3y\\,dy=9/2\\).",
+    "casio": "CASIO: Tính \\(\\int_0^3y\\,dy=4.5\\).",
     "difficulty": 2,
     "topic": "Tích phân"
   },
   {
     "id": 11,
-    "type": "surface_integral_type1",
-    "question": "Tính tích phân mặt loại 1 \\(\\iint_S(x+y+z)\\,dS\\) trong đó S là biên hình lập phương \\([0,1]^3\\).",
-    "matrix": null,
-    "options": [
-      "\\(9\\)",
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(9\\)",
-    "solution": "6 mặt của hình lập phương \\([0,1]^3\\), mỗi mặt có diện tích = 1:\n\n- Mặt z=0: \\(\\iint(x+y)dxdy=1\\)\n- Mặt z=1: \\(\\iint(x+y+1)dxdy=2\\)\n- Mặt y=0: \\(\\iint(x+z)dxdz=1\\)\n- Mặt y=1: \\(\\iint(x+1+z)dxdz=2\\)\n- Mặt x=0: \\(\\iint(y+z)dydz=1\\)\n- Mặt x=1: \\(\\iint(1+y+z)dydz=2\\)\n\n\\(I=1+2+1+2+1+2=\\mathbf{9}\\).",
-    "quick": "6 mặt: z=0→1, y=0→2, x=0→2, z=1→2, y=1→2, x=1→2. Tổng=1+2+1+2+1+2=**9**.",
-    "casio": "CASIO: Tính ∫∫ trên từng mặt, mỗi mặt là tích phân đôi.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 12,
     "type": "triple_iterated",
     "question": "Cho \\(I=\\iiint_V f(x,y,z)\\,dV\\) với V giới hạn bởi \\(z=y, z=0, y=1-x^2\\). Tích phân lặp đúng là?",
     "matrix": null,
@@ -216,7 +198,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 13,
+    "id": 12,
     "type": "triple_iterated",
     "question": "Thể tích vật thể V giới hạn bởi \\(x+y+z=2\\), \\(x=0,y=0,z=0\\) bằng?",
     "matrix": null,
@@ -234,25 +216,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 14,
-    "type": "triple_integral",
-    "question": "\\(\\iiint_V dV\\) với V là khối lập phương \\([0,1]^3\\) bằng?",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(3\\)",
-      "\\(6\\)",
-      "\\(\\pi\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "\\(\\iiint_V dV\\) = thể tích V = 1×1×1 = **1**.",
-    "quick": "∭1 dV = thể tích khối lập phương = **1³=1**.",
-    "casio": "CASIO: ∫₀¹∫₀¹∫₀¹ dz dy dx=1.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 15,
+    "id": 13,
     "type": "triple_integral_cylindrical",
     "question": "Jacobian của tọa độ trụ (r,θ,z) là?",
     "matrix": null,
@@ -267,6 +231,204 @@
     "quick": "Trụ: dV=**r** dr dθ dz. (Cầu: r²sinφ dr dφ dθ)",
     "casio": "CASIO: J=r. dV=r dr dθ dz.",
     "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 14,
+    "type": "triple_integral_setup",
+    "question": "Cho \\(V=\\{0\\le x\\le3,\\ 0\\le y\\le1,\\ 0\\le z\\le2\\}\\). Cách viết đúng của \\(\\iiint_V xyz\\,dx\\,dy\\,dz\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^2\\int_0^1\\int_0^3 xyz\\,dx\\,dy\\,dz\\)",
+      "\\(\\int_0^3\\int_0^1\\int_0^2 xyz\\,dx\\,dy\\,dz\\)",
+      "\\(\\int_0^2\\int_0^3\\int_0^1 xyz\\,dx\\,dy\\,dz\\)",
+      "\\(\\int_0^1\\int_0^2\\int_0^3 xyz\\,dy\\,dx\\,dz\\)"
+    ],
+    "correct": "\\(\\int_0^2\\int_0^1\\int_0^3 xyz\\,dx\\,dy\\,dz\\)",
+    "solution": "Thứ tự vi phân là \\(dx\\,dy\\,dz\\): tích phân trong theo x từ 0 đến 3, tiếp theo y từ 0 đến 1, ngoài cùng z từ 0 đến 2.",
+    "quick": "Đọc vi phân từ trái sang phải, cận từ trong ra ngoài.",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 15,
+    "type": "triple_iterated",
+    "question": "Vật thể trong góc phần tám thứ nhất được giới hạn bởi \\(x=2\\), \\(y=0\\), \\(y=x\\), \\(z=0\\), \\(z=x+4y\\). Thể tích bằng",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(12\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Miền có \\(0\\le x\\le2\\), \\(0\\le y\\le x\\), \\(0\\le z\\le x+4y\\). Do đó \\(V=\\int_0^2\\int_0^x(x+4y)\\,dy\\,dx=\\int_0^2 3x^2dx=8\\).",
+    "quick": "Tích phân z trước tạo chiều cao \\(x+4y\\).",
+    "casio": "CASIO: Tính \\(\\int_0^2 3x^2dx=8\\).",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 16,
+    "type": "triple_integral",
+    "question": "Tính \\(\\iiint_V(x+y+z)\\,dV\\) với \\(V=[0,1]^3\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "Do tính đối xứng, mỗi tích phân \\(\\iiint_V x\\,dV\\), \\(\\iiint_V y\\,dV\\), \\(\\iiint_V z\\,dV\\) bằng 1/2. Tổng bằng 3/2.",
+    "quick": "Trung bình của mỗi tọa độ trên [0,1] là 1/2.",
+    "casio": "CASIO: Tính ba tích phân một biến.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 17,
+    "type": "triple_integral_cylindrical",
+    "question": "Thể tích miền \\(0\\le z\\le4-r^2\\), \\(0\\le r\\le2\\), \\(0\\le\\theta\\le2\\pi\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(8\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(\\dfrac{16\\pi}{3}\\)"
+    ],
+    "correct": "\\(8\\pi\\)",
+    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^2(4-r^2)r\\,dr\\,d\\theta=2\\pi[2r^2-r^4/4]_0^2=8\\pi\\).",
+    "quick": "Nhớ Jacobian r.",
+    "casio": "CASIO: Tính tích phân theo r rồi nhân \\(2\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 18,
+    "type": "triple_integral_spherical",
+    "question": "Thể tích phần tám của khối cầu bán kính \\(R\\) trong góc phần tám thứ nhất là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi R^3}{6}\\)",
+      "\\(\\dfrac{4\\pi R^3}{3}\\)",
+      "\\(\\dfrac{\\pi R^3}{3}\\)",
+      "\\(\\dfrac{\\pi R^3}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi R^3}{6}\\)",
+    "solution": "Khối cầu được chia thành 8 phần bằng nhau bởi ba mặt phẳng tọa độ. Do đó thể tích là \\((1/8)(4\\pi R^3/3)=\\pi R^3/6\\).",
+    "quick": "Một phần tám thể tích cầu.",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 19,
+    "type": "triple_integral_cylindrical",
+    "question": "Tính \\(\\iiint_V(x^2+y^2)\\,dV\\) với \\(V:\\ x^2+y^2\\le1,\\ 0\\le z\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\pi\\)",
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{2}\\)",
+    "solution": "Trong tọa độ trụ, tích phân là \\(\\int_0^{2\\pi}\\int_0^1\\int_0^1 r^2\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot1/4=\\pi/2\\).",
+    "quick": "Chiều cao bằng 1, còn lại là tích phân \\(r^3\\).",
+    "casio": "CASIO: Tính \\(2\\pi\\int_0^1r^3dr\\).",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 20,
+    "type": "triple_integral_setup",
+    "question": "Miền \\(V\\) nằm dưới mặt \\(z=1-x-y\\) và trên tam giác \\(x\\ge0,y\\ge0,x+y\\le1\\). Tích phân thể tích đúng là",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}dz\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_0^1\\int_0^{1-x-y}dz\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_x^1\\int_0^{1-x-y}dz\\,dy\\,dx\\)",
+      "\\(\\int_0^1\\int_0^{1-x}\\int_{1-x-y}^0dz\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}dz\\,dy\\,dx\\)",
+    "solution": "Chiếu xuống Oxy là tam giác \\(0\\le x\\le1,0\\le y\\le1-x\\); theo z, từ 0 đến mặt phẳng \\(1-x-y\\).",
+    "quick": "Xác định miền chiếu trước, rồi cận z.",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 21,
+    "type": "triple_integral_spherical",
+    "question": "Jacobian của tọa độ cầu \\((\\rho,\\varphi,\\theta)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\rho^2\\sin\\varphi\\)",
+      "\\(\\rho\\sin\\varphi\\)",
+      "\\(\\rho^2\\cos\\varphi\\)",
+      "\\(r\\)"
+    ],
+    "correct": "\\(\\rho^2\\sin\\varphi\\)",
+    "solution": "Trong tọa độ cầu, \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "quick": "Cầu: \\(\\rho^2\\sin\\varphi\\).",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 22,
+    "type": "triple_integral_spherical",
+    "question": "Tính \\(\\iiint_{x^2+y^2+z^2\\le1} z^2\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi}{15}\\)",
+      "\\(\\dfrac{4\\pi}{5}\\)",
+      "\\(\\dfrac{2\\pi}{15}\\)",
+      "\\(\\dfrac{\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi}{15}\\)",
+    "solution": "Do đối xứng, ba tích phân của \\(x^2,y^2,z^2\\) bằng nhau và tổng bằng \\(\\iiint \\rho^2dV=4\\pi/5\\). Vì vậy mỗi tích phân bằng \\(4\\pi/15\\).",
+    "quick": "Đối xứng chia đều tổng \\(x^2+y^2+z^2\\) cho 3.",
+    "casio": "CASIO: Kiểm tra \\((4\\pi/5)/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 23,
+    "type": "triple_integral",
+    "question": "Khối lượng của khối hộp \\([0,1]\\times[0,2]\\times[0,3]\\) có mật độ \\(\\rho(x,y,z)=x+y+z\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(18\\)",
+      "\\(12\\)",
+      "\\(9\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(18\\)",
+    "solution": "Khối lượng \\(M=\\iiint(x+y+z)dV\\). Các phần lần lượt: \\((1/2)\\cdot2\\cdot3=3\\), \\(1\\cdot(2^2/2)\\cdot3=6\\), \\(1\\cdot2\\cdot(3^2/2)=9\\). Tổng 18.",
+    "quick": "Tách thành ba tích phân trên hình hộp.",
+    "casio": "CASIO: Tính 3+6+9.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 24,
+    "type": "triple_integral_cylindrical",
+    "question": "Tính thể tích vật thể \\(V\\) giới hạn bởi \\(z=x^2+y^2\\) và \\(z=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(2\\pi\\)"
+    ],
+    "correct": "\\(8\\pi\\)",
+    "solution": "Trong tọa độ trụ, hai mặt cắt nhau khi \\(r^2=4\\), nên \\(0\\le r\\le2\\), \\(0\\le\\theta\\le2\\pi\\), \\(r^2\\le z\\le4\\). Do đó \\(V=\\int_0^{2\\pi}\\int_0^2(4-r^2)r\\,dr\\,d\\theta=8\\pi\\).",
+    "quick": "Chiều cao \\(4-r^2\\), Jacobian \\(r\\), miền chiếu là đĩa \\(r\\le2\\).",
+    "casio": "Tính \\(2\\pi\\int_0^2(4-r^2)r\\,dr=8\\pi\\).",
+    "difficulty": 3,
     "topic": "Tích phân"
   }
 ]

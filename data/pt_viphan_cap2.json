@@ -50,7 +50,7 @@
     "solution": "Đặt \\(p = y'\\), \\(y'' = p'\\). Phương trình thành \\(p' = p^2\\), tách biến.",
     "quick": "Dạng khuyết \\(y\\): đặt \\(p=y'\\)",
     "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "PT Vi phân"
   },
   {
@@ -86,7 +86,7 @@
     "solution": "Khuyết \\(y\\): đặt \\(p=y'\\), \\(p' + 2xp^2 = 0\\) → tách biến.",
     "quick": "Dạng khuyết y: đặt p=y'",
     "casio": "CASIO: Kiểm tra nghiệm: tính y' và y'' bằng CALC → d/dx rồi thay vào PT xác nhận.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "PT Vi phân"
   },
   {
@@ -164,18 +164,18 @@
   {
     "id": 10,
     "type": "homogeneous_constant_coeff",
-    "question": "Phương trình \\(y'' - 5y' + 6y = 0\\) có nghiệm riêng nào sau đây?",
+    "question": "Nghiệm tổng quát của \\(y''-5y'+6y=0\\) là",
     "matrix": null,
     "options": [
-      "\\(e^{2x}\\)",
-      "\\(e^{3x}\\)",
-      "Cả hai đáp án trên",
-      "\\(e^{-2x}\\)"
+      "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
+      "\\(y=C_1e^{-2x}+C_2e^{-3x}\\)",
+      "\\(y=(C_1+C_2x)e^{2x}\\)",
+      "\\(y=C_1\\cos2x+C_2\\sin3x\\)"
     ],
-    "correct": "Cả hai đáp án trên",
-    "solution": "\\(r^2-5r+6=0 \\Rightarrow r=2,3\\). Nghiệm riêng: \\(e^{2x}\\) và \\(e^{3x}\\).",
-    "quick": "Cả \\(e^{2x}\\) và \\(e^{3x}\\) đều là nghiệm",
-    "casio": "CASIO: Giải PT đặc trưng bằng MODE 5-3 (PT bậc 2). Nhập hệ số a,b,c → nghiệm k₁,k₂.",
+    "correct": "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-5r+6=(r-2)(r-3)=0\\) có hai nghiệm thực phân biệt \\(2,3\\). Vì vậy \\(y=C_1e^{2x}+C_2e^{3x}\\).",
+    "quick": "Hai nghiệm đặc trưng 2 và 3.",
+    "casio": "CASIO: Giải phương trình bậc hai \\(r^2-5r+6=0\\).",
     "difficulty": 2,
     "topic": "PT Vi phân"
   },
@@ -487,24 +487,6 @@
   },
   {
     "id": 28,
-    "type": "variation_of_parameters",
-    "question": "Cho \\(y'' + y = \\tan x\\). Dùng biến thiên hằng số, hệ phương trình tìm \\(u_1', u_2'\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\begin{cases} u_1'\\cos x + u_2'\\sin x = 0 \\\\ -u_1'\\sin x + u_2'\\cos x = \\tan x \\end{cases}\\)",
-      "\\(\\begin{cases} u_1'\\sin x + u_2'\\cos x = 0 \\\\ u_1'\\cos x - u_2'\\sin x = \\tan x \\end{cases}\\)",
-      "\\(u_1' = \\tan x, u_2' = 0\\)",
-      "\\(u_1' = 0, u_2' = \\tan x\\)"
-    ],
-    "correct": "\\(\\begin{cases} u_1'\\cos x + u_2'\\sin x = 0 \\\\ -u_1'\\sin x + u_2'\\cos x = \\tan x \\end{cases}\\)",
-    "solution": "Hệ \\(\\begin{cases} u_1'y_1 + u_2'y_2 = 0 \\\\ u_1'y_1' + u_2'y_2' = f(x) \\end{cases}\\) với \\(y_1=\\cos x, y_2=\\sin x\\).",
-    "quick": "Hệ chuẩn: \\(u_1'y_1 + u_2'y_2 = 0\\); \\(u_1'y_1' + u_2'y_2' = f\\)",
-    "casio": "CASIO: Phương pháp hàm thay đổi: y*=u₁y₁+u₂y₂. Tính Wronskian W=det[[y₁,y₂],[y₁',y₂']] bằng [MODE][6].",
-    "difficulty": 3,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 29,
     "type": "initial_value",
     "question": "Giải bài toán Cauchy: \\(y'' - 3y' + 2y = 0\\), \\(y(0)=1, y'(0)=0\\). Kết quả \\(y(1)=\\)?",
     "matrix": null,
@@ -522,7 +504,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 30,
+    "id": 29,
     "type": "initial_value",
     "question": "Bài toán Cauchy \\(y'' + y = 0\\), \\(y(0)=0, y'(0)=1\\) có nghiệm là?",
     "matrix": null,
@@ -540,7 +522,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 31,
+    "id": 30,
     "type": "application_oscillation",
     "question": "Phương trình dao động tắt dần của con lắc lò xo có dạng: \\(my'' + cy' + ky = 0\\). Nếu \\(c^2 - 4mk > 0\\), hệ sẽ?",
     "matrix": null,
@@ -558,7 +540,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 32,
+    "id": 31,
     "type": "application_oscillation",
     "question": "Phương trình \\(y'' + 4y = 0\\) mô tả dao động điều hòa với tần số góc?",
     "matrix": null,
@@ -572,11 +554,11 @@
     "solution": "\\(y'' + \\omega^2 y = 0\\) → \\(\\omega^2=4 \\Rightarrow \\omega=2\\). Tần số góc là 2.",
     "quick": "\\(\\omega = \\sqrt{4}=2\\)",
     "casio": "CASIO: Dao động điều hòa y''+ω²y=0 → y=Acos(ωt)+Bsin(ωt). ω=√(k/m). Tìm A,B từ y(0),y'(0). Dùng [MODE][5][1] giải hệ A,B.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
-    "id": 33,
+    "id": 32,
     "type": "application_oscillation",
     "question": "Phương trình \\(y'' + 2y' + 5y = 0\\) mô tả dao động tắt dần với tần số góc dao động riêng (damped frequency) là?",
     "matrix": null,
@@ -590,11 +572,11 @@
     "solution": "Phương trình đặc trưng: \\(r^2+2r+5=0 \\Rightarrow r=-1\\pm2i\\). Tần số góc riêng (phần ảo) là 2.",
     "quick": "\\(\\omega = \\sqrt{5-1^2}=2\\) hoặc nhìn trực tiếp phần ảo",
     "casio": "CASIO: Dao động điều hòa y''+ω²y=0 → y=Acos(ωt)+Bsin(ωt). ω=√(k/m). Tìm A,B từ y(0),y'(0). Dùng [MODE][5][1] giải hệ A,B.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
-    "id": 34,
+    "id": 33,
     "type": "higher_order_reduction",
     "question": "Để giảm cấp phương trình \\(y'' = f(y, y')\\) (khuyết x), ta đặt?",
     "matrix": null,
@@ -612,7 +594,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 35,
+    "id": 34,
     "type": "higher_order_reduction",
     "question": "Giải \\(y'' = 2y(y')^3\\) bằng cách đặt \\(p=y'\\), \\(y'' = p\\frac{dp}{dy}\\). Phương trình trở thành?",
     "matrix": null,
@@ -630,7 +612,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 36,
+    "id": 35,
     "type": "wronskian",
     "question": "Định thức Wronski (Wronskian) của hai hàm \\(y_1, y_2\\) được định nghĩa là?",
     "matrix": null,
@@ -644,11 +626,11 @@
     "solution": "Wronskian \\(W(y_1,y_2) = \\begin{vmatrix} y_1 & y_2 \\\\ y_1' & y_2' \\end{vmatrix} = y_1y_2' - y_1'y_2\\).",
     "quick": "\\(W = y_1y_2' - y_1'y_2\\) (khác 0 thì độc lập tuyến tính)",
     "casio": "CASIO fx-580VNX: W=|y₁ y₂; y₁' y₂'|. Vào [MODE][6] → MatA 2×2 → nhập y₁,y₂,y₁',y₂' → [OPTN][Matrix][det][MatA][EXE].",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
-    "id": 37,
+    "id": 36,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1 = e^{x}, y_2 = e^{2x}\\) là?",
     "matrix": null,
@@ -662,11 +644,11 @@
     "solution": "\\(W = e^{x}\\cdot2e^{2x} - e^{x}\\cdot e^{2x} = 2e^{3x} - e^{3x} = e^{3x} \\neq 0\\) → độc lập tuyến tính.",
     "quick": "\\(W = (1\\cdot2 - 1\\cdot1)e^{(1+2)x}=1\\cdot e^{3x}\\)",
     "casio": "CASIO fx-580VNX: W=|y₁ y₂; y₁' y₂'|. Vào [MODE][6] → MatA 2×2 → nhập y₁,y₂,y₁',y₂' → [OPTN][Matrix][det][MatA][EXE].",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
-    "id": 38,
+    "id": 37,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1 = x, y_2 = x^2\\) là?",
     "matrix": null,
@@ -680,29 +662,29 @@
     "solution": "\\(W = x\\cdot2x - 1\\cdot x^2 = 2x^2 - x^2 = x^2\\).",
     "quick": "\\(W = x\\cdot(2x) - 1\\cdot x^2 = x^2\\)",
     "casio": "CASIO fx-580VNX: W=|y₁ y₂; y₁' y₂'|. Vào [MODE][6] → MatA 2×2 → nhập y₁,y₂,y₁',y₂' → [OPTN][Matrix][det][MatA][EXE].",
+    "difficulty": 2,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 38,
+    "type": "nonhomogeneous_superposition",
+    "question": "Nếu \\(L[y_{p1}]=f_1(x)\\) và \\(L[y_{p2}]=f_2(x)\\), trong đó \\(L\\) là toán tử vi phân tuyến tính, thì",
+    "matrix": null,
+    "options": [
+      "\\(L[y_{p1}+y_{p2}]=f_1+f_2\\)",
+      "\\(L[y_{p1}y_{p2}]=f_1+f_2\\)",
+      "\\(L[y_{p1}-y_{p2}]=f_1+f_2\\)",
+      "\\(L[y_{p1}+y_{p2}]=f_1f_2\\)"
+    ],
+    "correct": "\\(L[y_{p1}+y_{p2}]=f_1+f_2\\)",
+    "solution": "Do tính tuyến tính, \\(L[y_{p1}+y_{p2}]=L[y_{p1}]+L[y_{p2}]=f_1+f_2\\). Đây là nguyên lý chồng chất.",
+    "quick": "Toán tử tuyến tính biến tổng thành tổng.",
+    "casio": "CASIO không cần thiết.",
     "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
     "id": 39,
-    "type": "nonhomogeneous_superposition",
-    "question": "Nguyên lý chồng chất (superposition) cho phương trình vi phân tuyến tính không thuần nhất phát biểu:",
-    "matrix": null,
-    "options": [
-      "Nếu \\(y_{p1}\\) là nghiệm riêng ứng với vế phải \\(f_1\\) và \\(y_{p2}\\) ứng với \\(f_2\\) thì \\(y_{p1}+y_{p2}\\) là nghiệm riêng ứng với \\(f_1+f_2\\)",
-      "Nghiệm tổng quát = nghiệm thuần nhất + nghiệm riêng",
-      "Cả A và B",
-      "Không có đáp án nào"
-    ],
-    "correct": "Cả A và B",
-    "solution": "Nguyên lý chồng chất: đúng cả hai ý A và B đều là tính chất cơ bản của PTVP tuyến tính.",
-    "quick": "Superposition: \\(y_{p1}+y_{p2}\\) ứng với \\(f_1+f_2\\); nghiệm tổng quát = \\(y_h + y_p\\)",
-    "casio": "CASIO: Nguyên lý叠加: y_p = y_p1 + y_p2 khi vế phải = f₁+f₂. Tìm từng nghiệm riêng độc lập.",
-    "difficulty": 3,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 40,
     "type": "nonhomogeneous_superposition",
     "question": "Cho \\(y'' - y = e^{x} + \\sin x\\). Nếu \\(y_{p1} = \\frac{x}{2}e^{x}\\) là nghiệm riêng ứng với \\(e^{x}\\) và \\(y_{p2} = -\\frac{1}{2}\\sin x\\) ứng với \\(\\sin x\\), thì nghiệm riêng của phương trình đã cho là?",
     "matrix": null,
@@ -720,25 +702,25 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 41,
+    "id": 40,
     "type": "cauchy_euler_nonhomogeneous",
-    "question": "Nghiệm riêng của \\(x^2y'' - 2xy' + 2y = x\\ln x\\) có thể tìm bằng phương pháp?",
+    "question": "Để giải phương trình Euler \\(x^2y''-2xy'+2y=x\\ln x\\) trên \\(x>0\\), phép đổi biến thuận tiện là",
     "matrix": null,
     "options": [
-      "Biến thiên hằng số",
-      "Hệ số bất định với dạng đặc biệt",
-      "Tách biến",
-      "Không giải được"
+      "\\(t=\\ln x\\), đưa về phương trình hệ số hằng theo \\(t\\)",
+      "\\(t=x^2\\), đưa về phương trình tách biến",
+      "\\(y=ux\\), đưa về phương trình Bernoulli",
+      "\\(z=y'\\), đưa ngay về phương trình cấp một tuyến tính"
     ],
-    "correct": "Biến thiên hằng số",
-    "solution": "Vế phải \\(x\\ln x\\) không phải dạng đặc biệt của phương pháp hệ số bất định → dùng biến thiên hằng số.",
-    "quick": "Vế phải không phải mũ, đa thức, sin, cos, tích của chúng → biến thiên hằng số",
-    "casio": "CASIO: Đặt x=eᵗ chuyển về PT hệ số hằng. Giải PT đặc trưng bằng [MODE][5][3], tìm nghiệm riêng.",
+    "correct": "\\(t=\\ln x\\), đưa về phương trình hệ số hằng theo \\(t\\)",
+    "solution": "Với phương trình Cauchy-Euler, đặt \\(t=\\ln x\\) và \\(Y(t)=y(e^t)\\). Khi đó \\(xy'=Y'\\), \\(x^2y''=Y''-Y'\\), nên phương trình trở thành phương trình tuyến tính hệ số hằng theo \\(t\\). Vế phải \\(x\\ln x=e^t t\\), có thể xử lý bằng hệ số bất định hoặc biến thiên hằng số.",
+    "quick": "Euler-Cauchy: đặt \\(t=\\ln x\\).",
+    "casio": "CASIO: Sau đổi biến, giải phương trình đặc trưng hệ số hằng.",
     "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
-    "id": 42,
+    "id": 41,
     "type": "constant_coeff_quick",
     "question": "Nghiệm tổng quát của \\(y'' - 2y' - 3y = 0\\) là?",
     "matrix": null,
@@ -756,7 +738,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 43,
+    "id": 42,
     "type": "constant_coeff_quick",
     "question": "Nghiệm tổng quát của \\(y'' + 2y' + 2y = 0\\) là?",
     "matrix": null,
@@ -774,25 +756,25 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 44,
-    "type": "constant_coeff_quick",
-    "question": "Nghiệm tổng quát của \\(y'' + 4y' + 4y = 0\\) là?",
+    "id": 43,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của \\(y''+6y'+9y=0\\) là",
     "matrix": null,
     "options": [
-      "\\(y = (C_1 + C_2x)e^{-2x}\\)",
-      "\\(y = C_1e^{2x} + C_2xe^{2x}\\)",
-      "\\(y = C_1e^{-2x} + C_2e^{2x}\\)",
-      "\\(y = C_1\\cos 2x + C_2\\sin 2x\\)"
+      "\\(y=(C_1+C_2x)e^{-3x}\\)",
+      "\\(y=C_1e^{-3x}+C_2e^{3x}\\)",
+      "\\(y=(C_1+C_2x)e^{3x}\\)",
+      "\\(y=C_1\\cos3x+C_2\\sin3x\\)"
     ],
-    "correct": "\\(y = (C_1 + C_2x)e^{-2x}\\)",
-    "solution": "\\(r^2+4r+4=0 \\Rightarrow (r+2)^2=0\\) → nghiệm kép \\(r=-2\\).",
-    "quick": "Nghiệm kép \\(r=-2\\) → \\((C_1+C_2x)e^{-2x}\\)",
-    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng k²+pk+q=0 bằng [MODE][5][3] (PT bậc 2). Nhập A=1, B=hệ số k, C=hệ số tự do → EXE → hiện k₁,k₂.",
+    "correct": "\\(y=(C_1+C_2x)e^{-3x}\\)",
+    "solution": "Phương trình đặc trưng \\((r+3)^2=0\\) có nghiệm kép \\(r=-3\\). Do đó \\(y=(C_1+C_2x)e^{-3x}\\).",
+    "quick": "Nghiệm kép \\(-3\\) nên có thêm nhân tử \\(x\\).",
+    "casio": "CASIO: Giải \\(r^2+6r+9=0\\).",
     "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
-    "id": 45,
+    "id": 44,
     "type": "reducible_second_order",
     "question": "Phương trình \\(y'' + (y')^2 = 0\\) có thể giảm cấp bằng cách đặt?",
     "matrix": null,
@@ -810,7 +792,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 46,
+    "id": 45,
     "type": "cauchy_euler",
     "question": "Phương trình Cauchy–Euler \\(x^2y'' + xy' - y = 0\\) có nghiệm tổng quát là?",
     "matrix": null,
@@ -828,7 +810,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 47,
+    "id": 46,
     "type": "initial_value",
     "question": "Giải \\(y'' - y = 0\\), \\(y(0)=1, y'(0)=1\\). Nghiệm là?",
     "matrix": null,
@@ -846,7 +828,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 48,
+    "id": 47,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm riêng của \\(y'' - 2y' + y = e^{x}\\) bằng phương pháp hệ số bất định là?",
     "matrix": null,
@@ -864,7 +846,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 49,
+    "id": 48,
     "type": "identify_roots",
     "question": "PT đặc trưng \\(k^2-5k+6=0\\) có nghiệm là?",
     "matrix": null,
@@ -882,43 +864,25 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 50,
+    "id": 49,
     "type": "identify_roots",
     "question": "PT đặc trưng \\(k^2+4=0\\) có nghiệm là?",
     "matrix": null,
     "options": [
       "\\(k=\\pm2i\\)",
       "\\(k=\\pm2\\)",
-      "\\(k=0\\pm2i\\)",
-      "Cả A và C đúng"
+      "\\(k=-2\\pm i\\)",
+      "\\(k=2\\pm i\\)"
     ],
-    "correct": "Cả A và C đúng",
-    "solution": "\\(k^2+4=0\\) → \\(k^2=-4\\) → \\(k=\\pm2i\\).\n\nViết dạng \\(\\alpha\\pm\\beta i\\): \\(\\alpha=0,\\;\\beta=2\\).\n\nNghiệm thuần nhất: \\(y_h=C_1\\cos2x+C_2\\sin2x\\).",
+    "correct": "\\(k=\\pm2i\\)",
+    "solution": "\\(k^2+4=0\\Rightarrow k^2=-4\\Rightarrow k=\\pm2i\\).",
     "quick": "\\(k²+4=0\\) → k=±2i (phức thuần ảo). Nghiệm: **C₁cos2x+C₂sin2x**.",
     "casio": "CASIO: k=√(-4)=±2i. Dạng phức α±βi với α=0, β=2.",
     "difficulty": 1,
     "topic": "PT Vi phân"
   },
   {
-    "id": 51,
-    "type": "homogeneous_constant_coeff",
-    "question": "Nghiệm tổng quát của \\(y''-5y'+6y=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(C_1e^{2x}+C_2e^{3x}\\)",
-      "\\(C_1e^{-2x}+C_2e^{-3x}\\)",
-      "\\((C_1+C_2x)e^{3x}\\)",
-      "\\(C_1\\cos3x+C_2\\sin3x\\)"
-    ],
-    "correct": "\\(C_1e^{2x}+C_2e^{3x}\\)",
-    "solution": "PT đặc trưng: \\(k^2-5k+6=0\\) → \\(k_1=2,\\;k_2=3\\) (hai nghiệm thực phân biệt).\n\nNghiệm: \\(y=C_1e^{2x}+C_2e^{3x}\\).",
-    "quick": "k²-5k+6=0 → k=2,3 (phân biệt) → **C₁e^2x+C₂e^3x**.",
-    "casio": "CASIO: PT đặc trưng k²-5k+6=0, nghiệm k=2 và k=3. Hai nghiệm thực → y=C₁e^2x+C₂e^3x.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 52,
+    "id": 50,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-2y'+y=0\\) là?",
     "matrix": null,
@@ -936,7 +900,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 53,
+    "id": 51,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''+4y=0\\) là?",
     "matrix": null,
@@ -954,7 +918,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 54,
+    "id": 52,
     "type": "undetermined_coefficients_poly",
     "question": "Dạng nghiệm riêng của \\(y''+y'+y=3x^2+1\\) là?",
     "matrix": null,
@@ -972,7 +936,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 55,
+    "id": 53,
     "type": "undetermined_coefficients_poly",
     "question": "Nghiệm riêng của \\(y''-y=2\\) là?",
     "matrix": null,
@@ -990,7 +954,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 56,
+    "id": 54,
     "type": "undetermined_coefficients_exp",
     "question": "Dạng nghiệm riêng của \\(y''-3y'+2y=e^{3x}\\) là?",
     "matrix": null,
@@ -1008,7 +972,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 57,
+    "id": 55,
     "type": "undetermined_coefficients_exp",
     "question": "Nghiệm riêng của \\(y''-3y'+2y=e^x\\) là?",
     "matrix": null,
@@ -1026,25 +990,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 58,
-    "type": "undetermined_coefficients_trig",
-    "question": "Dạng nghiệm riêng của \\(y''+y=\\sin x\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(y_p=x(A\\cos x+B\\sin x)\\)",
-      "\\(y_p=A\\cos x+B\\sin x\\)",
-      "\\(y_p=A\\sin x\\)",
-      "\\(y_p=Ax\\sin x\\)"
-    ],
-    "correct": "\\(y_p=x(A\\cos x+B\\sin x)\\)",
-    "solution": "Vế phải: \\(\\sin x\\), tức \\(e^{0\\cdot x}\\sin x\\) → \\(\\lambda=0\\pm i\\) với β=1.\n\nPT đặc trưng \\(k^2+1=0\\) → \\(k=\\pm i\\). Vậy \\(\\lambda=0\\pm i\\) **là nghiệm** (đơn).\n\nDạng (thêm x): \\(y_p=x(A\\cos x+B\\sin x)\\).",
-    "quick": "sin x → λ=±i là nghiệm PT đặc trưng → thêm x: **y_p=x(Acos x+Bsin x)**.",
-    "casio": "CASIO: Thay y_p=x(Acosx+Bsinx) vào PT. Tính y'' rồi đồng nhất hệ số với sinx.",
-    "difficulty": 3,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 59,
+    "id": 56,
     "type": "undetermined_coefficients_trig",
     "question": "Dạng nghiệm riêng của \\(y''+4y=\\cos3x\\) là?",
     "matrix": null,
@@ -1062,7 +1008,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 60,
+    "id": 57,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-5y'+6y=e^{3x}\\) là?",
     "matrix": null,
@@ -1080,7 +1026,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 61,
+    "id": 58,
     "type": "initial_value",
     "question": "Nghiệm của \\(y''-y=0\\) thỏa \\(y(0)=2,\\;y'(0)=0\\) là?",
     "matrix": null,
@@ -1098,7 +1044,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 62,
+    "id": 59,
     "type": "boundary_value",
     "question": "Nghiệm của \\(y''+y=0,\\;y(0)=0,\\;y(\\pi/2)=1\\) là?",
     "matrix": null,
@@ -1116,7 +1062,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 63,
+    "id": 60,
     "type": "reducible_second_order",
     "question": "Giải \\(y''=2x\\) bằng tích phân trực tiếp.",
     "matrix": null,
@@ -1134,7 +1080,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 64,
+    "id": 61,
     "type": "cauchy_euler",
     "question": "PT Euler-Cauchy \\(x^2y''-3xy'+4y=0\\) có PT đặc trưng nào?",
     "matrix": null,
@@ -1148,11 +1094,11 @@
     "solution": "Đặt \\(x=e^t\\) (hoặc \\(y=x^m\\)): thay vào \\(x^2y''-3xy'+4y=0\\).\n\nVới \\(y=x^m\\): \\(y'=mx^{m-1}\\), \\(y''=m(m-1)x^{m-2}\\).\n\n\\(x^2m(m-1)x^{m-2}-3xmx^{m-1}+4x^m=x^m[m(m-1)-3m+4]=0\\).\n\n\\(m^2-m-3m+4=m^2-4m+4=0\\).",
     "quick": "Thay y=x^m: hệ số → \\(m(m-1)-3m+4=m^2-4m+4=0\\). PT đặc trưng: **(m-2)²=0**.",
     "casio": "CASIO: Thay y=x^m, y'=mx^(m-1), y''=m(m-1)x^(m-2). Rút gọn x^m: m²-4m+4=0.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
-    "id": 65,
+    "id": 62,
     "type": "cauchy_euler",
     "question": "Nghiệm tổng quát của \\(x^2y''-3xy'+4y=0\\) là?",
     "matrix": null,
@@ -1160,7 +1106,7 @@
       "\\((C_1+C_2\\ln x)x^2\\)",
       "\\(C_1x^2+C_2x^{-2}\\)",
       "\\((C_1+C_2x)x^2\\)",
-      "\\(C_1x^2+C_2x^2\\ln x\\)"
+      "\\((C_1+C_2\\ln x)x^{-2}\\)"
     ],
     "correct": "\\((C_1+C_2\\ln x)x^2\\)",
     "solution": "PT đặc trưng \\(m^2-4m+4=(m-2)^2=0\\) → **nghiệm kép** \\(m=2\\).\n\nKhi Euler-Cauchy có nghiệm kép m: nghiệm là \\(x^m(C_1+C_2\\ln x)\\).\n\n\\(y=(C_1+C_2\\ln x)x^2\\).",
@@ -1170,7 +1116,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 66,
+    "id": 63,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1=e^x\\) và \\(y_2=e^{-x}\\) là?",
     "matrix": null,
@@ -1188,7 +1134,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 67,
+    "id": 64,
     "type": "application_oscillation",
     "question": "Con lắc đơn nhỏ dao động tự do: \\(y''+\\omega^2y=0\\). Tần số góc \\(\\omega=3\\). Nghiệm tổng quát là?",
     "matrix": null,
@@ -1206,7 +1152,7 @@
     "topic": "PT Vi phân"
   },
   {
-    "id": 68,
+    "id": 65,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm riêng của \\(y''+4y=2\\cos2x\\) là?",
     "matrix": null,
@@ -1217,226 +1163,28 @@
       "\\(y_p=\\dfrac{x}{4}\\sin2x\\)"
     ],
     "correct": "\\(y_p=\\dfrac{x}{2}\\sin2x\\)",
-    "solution": "PT đặc trưng: \\(k^2+4=0\\) → \\(k=\\pm2i\\).\n\nVế phải: \\(2\\cos2x\\) → \\(\\lambda=0\\pm2i\\) **là nghiệm đơn** của PT đặc trưng.\n\nDạng: \\(y_p=x(A\\cos2x+B\\sin2x)\\).\n\n\\(y_p'=A\\cos2x+B\\sin2x+x(-2A\\sin2x+2B\\cos2x)\\).\n\n\\(y_p''=-4A\\sin2x+4B\\cos2x+x(-4A\\cos2x-4B\\sin2x)-4A\\sin2x+4B\\cos2x\\).\n\nThay và đồng nhất: \\(4B\\cos2x-4A\\sin2x-4A\\sin2x+4B\\cos2x=8B\\cos2x-8A\\sin2x=2\\cos2x\\).\n\n→ \\(8B=2 \\Rightarrow B=1/4\\)... Cần tính lại cẩn thận:\n\n\\(y_p''=-4(A\\cos2x+B\\sin2x)\\cdot x + 2(-2A\\sin2x+2B\\cos2x)+(-2A\\sin2x+2B\\cos2x)\\)\n\nSau tính toán: \\(8B\\cos2x-8A\\sin2x=2\\cos2x\\) → B=1/4... Nhưng đáp án A (x/2 sin2x):\n\nThử y_p=x/2·sin2x: y_p'=sin2x/2+x·cos2x, y_p''=cos2x+cos2x-2x·sin2x=2cos2x-2x·sin2x.\ny_p''+4y_p=2cos2x-2x·sin2x+4·(x/2)sin2x=2cos2x ✓. → **y_p=x/2·sin2x**.",
-    "quick": "±2i là nghiệm → thêm x, dạng x(Acos2x+Bsin2x). Sau tính toán: **y_p=(x/2)sin2x**.",
+    "solution": "Phương trình thuần nhất có nghiệm \\(\\cos2x,\\sin2x\\), nên vế phải \\(2\\cos2x\\) cộng hưởng. Đặt \\(y_p=Bx\\sin2x\\). Khi đó \\(y_p''+4y_p=4B\\cos2x\\). So sánh với \\(2\\cos2x\\) cho \\(B=1/2\\). Vậy \\(y_p=\\dfrac{x}{2}\\sin2x\\).",
+    "quick": "Cộng hưởng; \\(L[x\\sin2x]=4\\cos2x\\), nên hệ số bằng \\(1/2\\).",
     "casio": "CASIO: Thử y_p=x/2·sin2x, tính y'' rồi kiểm tra y''+4y=2cos2x ✓.",
     "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
-    "id": 69,
-    "type": "identify_roots",
-    "question": "PT đặc trưng \\(k^2+k-6=0\\) có nghiệm là?",
+    "id": 66,
+    "type": "higher_order_reduction",
+    "question": "Với phương trình khuyết \\(x\\): \\(y''=y(y')^2\\), đặt \\(p(y)=y'\\). Với \\(p\\ne0\\), phương trình rút gọn là",
     "matrix": null,
     "options": [
-      "\\(k_1=2,\\;k_2=-3\\)",
-      "\\(k_1=-2,\\;k_2=3\\)",
-      "\\(k_1=6,\\;k_2=-1\\)",
-      "\\(k_1=1,\\;k_2=-6\\)"
+      "\\(\\dfrac{dp}{dy}=yp\\)",
+      "\\(\\dfrac{dp}{dy}=y\\)",
+      "\\(p\\dfrac{dp}{dy}=y\\)",
+      "\\(\\dfrac{dp}{dy}=p^2\\)"
     ],
-    "correct": "\\(k_1=2,\\;k_2=-3\\)",
-    "solution": "\\(k^2+k-6=(k-2)(k+3)=0\\) → \\(k_1=2,\\;k_2=-3\\).\n\nNghiệm TQ: \\(y=C_1e^{2x}+C_2e^{-3x}\\).",
-    "quick": "(k-2)(k+3)=0 → **k=2 và k=-3**. Nghiệm: C₁e²ˣ+C₂e⁻³ˣ.",
-    "casio": "CASIO: Giải bậc 2: k=(-1±√(1+24))/2=(-1±5)/2 → k=2 hoặc k=-3.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 70,
-    "type": "identify_roots",
-    "question": "PT đặc trưng \\(k^2-4=0\\) có nghiệm là?",
-    "matrix": null,
-    "options": [
-      "\\(k=\\pm2\\)",
-      "\\(k=\\pm2i\\)",
-      "\\(k=4\\)",
-      "\\(k=2\\) (kép)"
-    ],
-    "correct": "\\(k=\\pm2\\)",
-    "solution": "\\(k^2=4\\) → \\(k=\\pm2\\) (hai nghiệm thực phân biệt).\n\nNghiệm TQ: \\(y=C_1e^{2x}+C_2e^{-2x}\\).",
-    "quick": "k²=4 → **k=±2** (thực phân biệt). Nghiệm: C₁e²ˣ+C₂e⁻²ˣ.",
-    "casio": "CASIO: k²=4 → k=2 hoặc k=-2.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 71,
-    "type": "homogeneous_constant_coeff",
-    "question": "Nghiệm tổng quát của \\(y''-y=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(C_1e^x+C_2e^{-x}\\)",
-      "\\(C_1\\cos x+C_2\\sin x\\)",
-      "\\((C_1+C_2x)e^x\\)",
-      "\\(C_1e^x+C_2xe^x\\)"
-    ],
-    "correct": "\\(C_1e^x+C_2e^{-x}\\)",
-    "solution": "PT đặc trưng: \\(k^2-1=0\\) → \\(k=\\pm1\\) (phân biệt).\n\nNghiệm: \\(y=C_1e^x+C_2e^{-x}\\).",
-    "quick": "k²-1=0 → k=±1 → **C₁eˣ+C₂e⁻ˣ**.",
-    "casio": "CASIO: k²=1 → k=1,-1. Hai nghiệm thực → y=C₁e^x+C₂e^-x.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 72,
-    "type": "homogeneous_constant_coeff",
-    "question": "Nghiệm tổng quát của \\(y''+9y=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(C_1\\cos3x+C_2\\sin3x\\)",
-      "\\(C_1e^{3x}+C_2e^{-3x}\\)",
-      "\\((C_1+C_2x)e^{3x}\\)",
-      "\\(C_1\\cos9x+C_2\\sin9x\\)"
-    ],
-    "correct": "\\(C_1\\cos3x+C_2\\sin3x\\)",
-    "solution": "PT đặc trưng: \\(k^2+9=0\\) → \\(k=\\pm3i\\) (phức, α=0, β=3).\n\nNghiệm: \\(e^{0}(C_1\\cos3x+C_2\\sin3x)=C_1\\cos3x+C_2\\sin3x\\).",
-    "quick": "k=±3i → nghiệm phức → **C₁cos3x+C₂sin3x**.",
-    "casio": "CASIO: k²=-9 → k=±3i. α=0,β=3 → e⁰(C₁cos3x+C₂sin3x).",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 73,
-    "type": "homogeneous_constant_coeff",
-    "question": "Nghiệm tổng quát của \\(y''-2y'+y=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\((C_1+C_2x)e^x\\)",
-      "\\(C_1e^x+C_2e^{-x}\\)",
-      "\\(C_1\\cos x+C_2\\sin x\\)",
-      "\\((C_1+C_2x)e^{-x}\\)"
-    ],
-    "correct": "\\((C_1+C_2x)e^x\\)",
-    "solution": "PT đặc trưng: \\(k^2-2k+1=(k-1)^2=0\\) → **nghiệm kép** k=1.\n\nNghiệm: \\((C_1+C_2x)e^x\\).",
-    "quick": "(k-1)²=0 → kép k=1 → **(C₁+C₂x)eˣ**. Nghiệm kép: thêm nhân tử x.",
-    "casio": "CASIO: Δ=4-4=0 → kép k=1. Dạng (C₁+C₂x)e^x.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 74,
-    "type": "identify_roots",
-    "question": "Cho \\(y''+2y'+5y=0\\). Phương trình đặc trưng có nghiệm là?",
-    "matrix": null,
-    "options": [
-      "\\(k=-1\\pm2i\\)",
-      "\\(k=1\\pm2i\\)",
-      "\\(k=\\pm5\\)",
-      "\\(k=-2\\pm i\\)"
-    ],
-    "correct": "\\(k=-1\\pm2i\\)",
-    "solution": "\\(k^2+2k+5=0\\), Δ=4-20=-16<0.\n\n\\(k=\\dfrac{-2\\pm\\sqrt{-16}}{2}=\\dfrac{-2\\pm4i}{2}=-1\\pm2i\\).\n\nNghiệm: \\(e^{-x}(C_1\\cos2x+C_2\\sin2x)\\).",
-    "quick": "Δ<0 → phức: k=(-2±4i)/2=**-1±2i**. α=-1, β=2.",
-    "casio": "CASIO: Δ=4-20=-16<0. k=(-2±√(-16))/2=-1±2i.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 75,
-    "type": "homogeneous_constant_coeff",
-    "question": "Nghiệm TQ của \\(y''+4y'+4y=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\((C_1+C_2x)e^{-2x}\\)",
-      "\\(C_1e^{2x}+C_2e^{-2x}\\)",
-      "\\(C_1e^{-2x}+C_2e^{-2x}\\)",
-      "\\(C_1\\cos2x+C_2\\sin2x\\)"
-    ],
-    "correct": "\\((C_1+C_2x)e^{-2x}\\)",
-    "solution": "PT đặc trưng: \\(k^2+4k+4=(k+2)^2=0\\) → **kép** k=-2.\n\nNghiệm: \\((C_1+C_2x)e^{-2x}\\).",
-    "quick": "(k+2)²=0 → kép k=-2 → **(C₁+C₂x)e^{-2x}**.",
-    "casio": "CASIO: Δ=16-16=0 → kép k=-2.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 76,
-    "type": "identify_roots",
-    "question": "Ba loại nghiệm của PT đặc trưng cấp 2 và dạng nghiệm tương ứng?",
-    "matrix": null,
-    "options": [
-      "Phân biệt: C₁e^{k₁x}+C₂e^{k₂x}; Kép: (C₁+C₂x)e^{kx}; Phức: e^{αx}(C₁cosβx+C₂sinβx)",
-      "Chỉ một dạng: C₁e^{k₁x}+C₂e^{k₂x}",
-      "Kép: C₁e^{k₁x}+C₂e^{k₂x}",
-      "Phức: C₁cosαx+C₂sinβx"
-    ],
-    "correct": "Phân biệt: C₁e^{k₁x}+C₂e^{k₂x}; Kép: (C₁+C₂x)e^{kx}; Phức: e^{αx}(C₁cosβx+C₂sinβx)",
-    "solution": "Ba trường hợp:\n1. **Δ>0**: hai nghiệm thực phân biệt k₁,k₂ → \\(C_1e^{k_1x}+C_2e^{k_2x}\\)\n2. **Δ=0**: nghiệm kép k → \\((C_1+C_2x)e^{kx}\\)\n3. **Δ<0**: nghiệm phức k=α±βi → \\(e^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)\\)",
-    "quick": "Phân biệt→Ce^kx; Kép→(C₁+C₂x)e^kx; Phức→e^αx(cosβx+sinβx). **Học thuộc 3 dạng!**",
-    "casio": "CASIO: Tính Δ=b²-4ac. Δ>0 phân biệt, Δ=0 kép, Δ<0 phức.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 77,
-    "type": "reducible_second_order",
-    "question": "Giải \\(y''=6x\\) bằng tích phân trực tiếp.",
-    "matrix": null,
-    "options": [
-      "\\(y=x^3+C_1x+C_2\\)",
-      "\\(y=6x+C\\)",
-      "\\(y=3x^2+C\\)",
-      "\\(y=x^2+C\\)"
-    ],
-    "correct": "\\(y=x^3+C_1x+C_2\\)",
-    "solution": "Tích phân lần 1: \\(y'=\\int6x\\,dx=3x^2+C_1\\).\nTích phân lần 2: \\(y=\\int(3x^2+C_1)dx=x^3+C_1x+C_2\\).",
-    "quick": "y''=6x → y'=3x²+C₁ → **y=x³+C₁x+C₂**.",
-    "casio": "CASIO: ∫6x dx=3x²+C₁, rồi ∫(3x²+C₁)dx=x³+C₁x+C₂.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 78,
-    "type": "identify_roots",
-    "question": "PT đặc trưng của \\(y''-5y'+6y=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(k^2-5k+6=0\\)",
-      "\\(k^2+5k+6=0\\)",
-      "\\(k^2-5k-6=0\\)",
-      "\\(5k^2-k+6=0\\)"
-    ],
-    "correct": "\\(k^2-5k+6=0\\)",
-    "solution": "PT tuyến tính \\(y''+ay'+by=0\\) có PT đặc trưng **\\(k^2+ak+b=0\\)**.\n\nHệ số: a=-5, b=6 → \\(k^2-5k+6=0\\).",
-    "quick": "ay''+by'+cy=0 → ak²+bk+c=0. Đây: **k²-5k+6=0**.",
-    "casio": "CASIO: Thay k² cho y'', k cho y', 1 cho y: k²-5k+6=0.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 79,
-    "type": "initial_value",
-    "question": "Nghiệm của \\(y''-y=0\\) thỏa \\(y(0)=1,\\;y'(0)=1\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(y=e^x\\)",
-      "\\(y=\\cosh x\\)",
-      "\\(y=e^x+e^{-x}\\)",
-      "\\(y=\\sinh x\\)"
-    ],
-    "correct": "\\(y=e^x\\)",
-    "solution": "Nghiệm TQ: \\(y=C_1e^x+C_2e^{-x}\\).\n\n\\(y(0)=C_1+C_2=1\\) và \\(y'(0)=C_1-C_2=1\\).\n\nGiải: \\(C_1=1,\\;C_2=0\\) → \\(y=e^x\\).",
-    "quick": "y=C₁eˣ+C₂e⁻ˣ. y(0)=C₁+C₂=1, y'(0)=C₁-C₂=1 → C₁=1,C₂=0 → **y=eˣ**.",
-    "casio": "CASIO: Giải hệ {C₁+C₂=1; C₁-C₂=1} → C₁=1, C₂=0.",
-    "difficulty": 1,
-    "topic": "PT Vi phân"
-  },
-  {
-    "id": 80,
-    "type": "homogeneous_constant_coeff",
-    "question": "Nghiệm TQ của \\(y''-2y'-3y=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(C_1e^{3x}+C_2e^{-x}\\)",
-      "\\(C_1e^{-3x}+C_2e^x\\)",
-      "\\((C_1+C_2x)e^{3x}\\)",
-      "\\(C_1\\cos3x+C_2\\sin3x\\)"
-    ],
-    "correct": "\\(C_1e^{3x}+C_2e^{-x}\\)",
-    "solution": "PT đặc trưng: \\(k^2-2k-3=(k-3)(k+1)=0\\) → \\(k_1=3,\\;k_2=-1\\).\n\nNghiệm: \\(C_1e^{3x}+C_2e^{-x}\\).",
-    "quick": "(k-3)(k+1)=0 → k=3,-1 → **C₁e³ˣ+C₂e⁻ˣ**.",
-    "casio": "CASIO: k=2±√(4+12)/2=2±4/2 → k=3 hoặc k=-1.",
-    "difficulty": 1,
+    "correct": "\\(\\dfrac{dp}{dy}=yp\\)",
+    "solution": "Đặt \\(p(y)=y'\\) thì \\(y''=p\\,dp/dy\\). Phương trình thành \\(p\\,dp/dy=yp^2\\). Với \\(p\\ne0\\), chia hai vế cho \\(p\\) được \\(dp/dy=yp\\). Trường hợp \\(p=0\\) tương ứng các nghiệm hằng và phải xét riêng.",
+    "quick": "Khuyết \\(x\\): \\(y''=p\\,dp/dy\\); chỉ được chia cho \\(p\\) sau khi nêu \\(p\\ne0\\).",
+    "casio": "CASIO không thay thế bước giảm cấp; dùng để kiểm tra nghiệm sau khi tìm được.",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   }
 ]

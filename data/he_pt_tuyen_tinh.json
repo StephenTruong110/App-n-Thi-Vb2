@@ -2,7 +2,7 @@
   {
     "id": 1,
     "type": "rank",
-    "question": "Hạng của \\(A=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&0\\end{pmatrix}\\) là",
+    "question": "Hạng của $A=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&0\\end{pmatrix}$ là",
     "matrix": null,
     "options": [
       "2",
@@ -11,16 +11,16 @@
       "0"
     ],
     "correct": "2",
-    "solution": "Có 2 hàng khác 0 và độc lập tuyến tính → \\(\\text{rank}(A)=2\\)",
-    "quick": "Đếm số hàng pivot sau khử Gauss",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "solution": "Có hai hàng khác 0 độc lập nên hạng bằng 2.",
+    "quick": "Đếm pivot.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 2,
     "type": "rank",
-    "question": "Hạng của \\(A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}\\) là",
+    "question": "Hạng của $A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ là",
     "matrix": null,
     "options": [
       "1",
@@ -29,16 +29,16 @@
       "3"
     ],
     "correct": "1",
-    "solution": "Hàng 2 = 2×hàng 1 → phụ thuộc → \\(\\text{rank}(A)=1\\)",
-    "quick": "Hàng 2 tỉ lệ hàng 1 → rank=1",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "solution": "Hàng hai bằng 2 lần hàng một nên chỉ có một hàng độc lập.",
+    "quick": "Các hàng tỉ lệ → rank 1.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 3,
     "type": "rank",
-    "question": "Hạng của \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\3&6&9\\end{pmatrix}\\) là",
+    "question": "Hạng của $A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\0&1&1\\end{pmatrix}$ là",
     "matrix": null,
     "options": [
       "1",
@@ -46,518 +46,846 @@
       "3",
       "0"
     ],
-    "correct": "1",
-    "solution": "Hàng 2=2×Hàng1, Hàng 3=3×Hàng1 → tất cả phụ thuộc → rank=1",
-    "quick": "Tất cả hàng tỉ lệ nhau → rank=1",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
+    "correct": "2",
+    "solution": "Hàng hai phụ thuộc hàng một, còn hàng ba không tỉ lệ với hàng một nên có hai hàng độc lập.",
+    "quick": "Loại hàng phụ thuộc rồi đếm.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 4,
-    "type": "rank",
-    "question": "Ma trận đơn vị \\(I_n\\) có hạng là",
+    "type": "rouche_capelli",
+    "question": "Theo định lý Rouché–Capelli, hệ $AX=b$ có nghiệm khi và chỉ khi",
     "matrix": null,
     "options": [
-      "\\(n\\)",
-      "1",
-      "0",
-      "\\(n-1\\)"
+      "$\\operatorname{rank}(A)=\\operatorname{rank}(A|b)$",
+      "$\\det(A)\\ne0$",
+      "$\\operatorname{rank}(A)<\\operatorname{rank}(A|b)$",
+      "$b=0$"
     ],
-    "correct": "\\(n\\)",
-    "solution": "\\(I_n\\) có \\(n\\) hàng độc lập tuyến tính → rank\\((I_n)=n\\)",
-    "quick": "Ma trận đơn vị: rank = cỡ ma trận = \\(n\\)",
-    "casio": "CASIO: Không có chức năng rank trực tiếp. Thực hiện khử Gauss trên ma trận mở rộng, đếm số hàng không toàn 0 → đó là hạng. Kiểm tra det: det≠0 → rank=n (đủ hạng).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$\\operatorname{rank}(A)=\\operatorname{rank}(A|b)$",
+    "solution": "Điều kiện có nghiệm là hạng ma trận hệ số bằng hạng ma trận mở rộng.",
+    "quick": "Có nghiệm ⇔ hai hạng bằng nhau.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 5,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}x+y=3\\\\2x-y=0\\end{cases}\\) có nghiệm",
+    "type": "solve_2vars",
+    "question": "Hệ $\\begin{cases}x+y=3\\\\2x-y=0\\end{cases}$ có nghiệm",
     "matrix": null,
     "options": [
-      "\\(x=1,y=2\\)",
-      "\\(x=2,y=1\\)",
-      "\\(x=0,y=3\\)",
+      "$(x,y)=(1,2)$",
+      "$(2,1)$",
+      "$(0,3)$",
       "Vô nghiệm"
     ],
-    "correct": "\\(x=1,y=2\\)",
-    "solution": "Cộng 2 PT: \\(3x=3\\to x=1\\), \\(y=3-1=2\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Cộng PT1+PT2: \\(3x=3\\to x=1,y=2\\)",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
+    "correct": "$(x,y)=(1,2)$",
+    "solution": "Cộng hai phương trình được $3x=3$, suy ra $x=1,y=2$.",
+    "quick": "Cộng để khử $y$.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 6,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}2x+y=5\\\\x-y=1\\end{cases}\\) có nghiệm",
+    "type": "solve_2vars",
+    "question": "Hệ $\\begin{cases}2x+y=7\\\\x-y=2\\end{cases}$ có nghiệm",
     "matrix": null,
     "options": [
-      "\\(x=2,y=1\\)",
-      "\\(x=1,y=3\\)",
-      "\\(x=3,y=-1\\)",
-      "Vô số nghiệm"
+      "$(3,1)$",
+      "$(2,3)$",
+      "$(1,5)$",
+      "$(4,-1)$"
     ],
-    "correct": "\\(x=2,y=1\\)",
-    "solution": "Cộng 2 PT: \\(3x=6\\to x=2\\), \\(y=2-1=1\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Cộng PT: \\(3x=6\\to x=2\\)",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
+    "correct": "$(3,1)$",
+    "solution": "Cộng hai phương trình: $3x=9$, nên $x=3$, rồi $y=1$.",
+    "quick": "Khử $y$.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 7,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}x+y=1\\\\2x+2y=2\\end{cases}\\) có",
+    "type": "solve_3vars",
+    "question": "Nghiệm của hệ $\\begin{cases}x+y+z=6\\\\x-y+z=2\\\\x+y-z=0\\end{cases}$ là",
     "matrix": null,
     "options": [
-      "Vô số nghiệm",
-      "Một nghiệm",
-      "Vô nghiệm",
-      "Hai nghiệm"
+      "$(1,2,3)$",
+      "$(2,1,3)$",
+      "$(3,2,1)$",
+      "$(2,3,1)$"
     ],
-    "correct": "Vô số nghiệm",
-    "solution": "PT2 = 2×PT1 → phụ thuộc → vô số nghiệm: \\(x=t, y=1-t\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Hàng 2 tỉ lệ hàng 1 → vô số nghiệm",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
+    "correct": "$(1,2,3)$",
+    "solution": "Trừ từng cặp phương trình được $2y=4$, $2z=6$; suy ra $y=2,z=3,x=1$.",
+    "quick": "Lấy hiệu các phương trình.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 8,
-    "type": "system",
-    "question": "Hệ \\(\\begin{cases}x+y=1\\\\x+y=2\\end{cases}\\) có",
+    "type": "classification",
+    "question": "Hệ $\\begin{cases}x+y=1\\\\2x+2y=2\\end{cases}$ có",
     "matrix": null,
     "options": [
-      "Vô nghiệm",
-      "Một nghiệm",
       "Vô số nghiệm",
-      "\\(x=0\\)"
+      "Nghiệm duy nhất",
+      "Vô nghiệm",
+      "Đúng hai nghiệm"
     ],
-    "correct": "Vô nghiệm",
-    "solution": "Hai PT mâu thuẫn nhau → vô nghiệm. rank(A)≠rank(Ab)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "rank(A)≠rank(Ab) → vô nghiệm",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "Vô số nghiệm",
+    "solution": "Phương trình hai là 2 lần phương trình một, nên chỉ có một ràng buộc cho hai ẩn.",
+    "quick": "Hai phương trình trùng nhau.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 9,
-    "type": "system",
-    "question": "Số tham số tự do của hệ \\(\\begin{cases}2x-2y+z=1\\\\3x+y-2z=3\\end{cases}\\) là",
+    "type": "classification",
+    "question": "Hệ $\\begin{cases}x+y=1\\\\2x+2y=3\\end{cases}$ có",
     "matrix": null,
     "options": [
-      "1",
+      "Vô nghiệm",
+      "Vô số nghiệm",
+      "Nghiệm duy nhất",
+      "Đúng hai nghiệm"
+    ],
+    "correct": "Vô nghiệm",
+    "solution": "Vế trái phương trình hai gấp đôi phương trình một nhưng vế phải không gấp đôi, nên mâu thuẫn.",
+    "quick": "Hệ số tỉ lệ, hằng số không tỉ lệ.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 10,
+    "type": "free_parameters",
+    "question": "Hệ $\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+2y+3z=2\\end{cases}$ có bao nhiêu tham số tự do?",
+    "matrix": null,
+    "options": [
       "0",
+      "1",
       "2",
       "3"
     ],
     "correct": "1",
-    "solution": "2 PT, 3 ẩn, rank(A)=2 → tham số tự do = \\(n-\\text{rank}=3-2=1\\)\n\n**Phương pháp:** (1) Cộng/trừ PT để triệt tiêu ẩn, (2) giải từ PT đơn giản nhất, (3) thay ngược lên tìm các ẩn còn lại.",
-    "quick": "Tham số tự do = số ẩn − hạng = 3-2=1",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] cho hệ 2 ẩn, [MODE][5][2] cho hệ 3 ẩn. Nhập hệ số từng PT rồi EXE → hiện nghiệm x,y(,z). Nếu báo ERROR → vô nghiệm hoặc vô số.",
+    "solution": "Hạng ma trận hệ số bằng 2, số ẩn là 3 và hệ có nghiệm, nên số tham số tự do là $3-2=1$.",
+    "quick": "Số tham số = số ẩn − hạng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 10,
-    "type": "system_parameter",
-    "question": "Hệ phương trình \\(\\begin{cases} x + y = 1 \\\\ 2x + 2y = m \\end{cases}\\) có vô số nghiệm khi?",
-    "matrix": null,
-    "options": [
-      "\\(m=2\\)",
-      "\\(m=1\\)",
-      "\\(m=0\\)",
-      "\\(m=-2\\)"
-    ],
-    "correct": "\\(m=2\\)",
-    "solution": "Hệ \\(\\begin{cases} x+y=1 \\\\ 2x+2y=m \\end{cases}\\). PT2 = 2×PT1 khi \\(m=2\\). Khi đó hệ tương đương 1 PT → vô số nghiệm.",
-    "quick": "Hàng 2 = 2×hàng 1 ⇔ m=2. **Mẹo nhận dạng:** Nhìn tỉ số hệ số các ẩn giữa các PT: nếu bằng nhau → 2 PT song song/trùng.",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] (2 ẩn) hoặc [MODE][5][2] (3 ẩn). Nhập hệ số, EXE → nghiệm duy nhất. ERROR → vô nghiệm hoặc vô số. Kiểm tra: tính det bằng [MODE][6] → det=0 thì đặc biệt (vô số hoặc vô nghiệm).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 11,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x + my = 1 \\\\ 2x + 3y = 2 \\end{cases}\\) có **vô số nghiệm** khi?",
+    "type": "general_solution",
+    "question": "Nghiệm tổng quát của hệ $\\begin{cases}x+y-z=2\\\\x-y=0\\end{cases}$ là",
     "matrix": null,
     "options": [
-      "\\(m=\\dfrac{3}{2}\\)",
-      "\\(m=2\\)",
-      "\\(m=1\\)",
-      "\\(m=0\\)"
+      "$(x,y,z)=(t,t,2t-2)$",
+      "$(t,t,2-2t)$",
+      "$(t,-t,2t-2)$",
+      "$(2,t,t)$"
     ],
-    "correct": "\\(m=\\dfrac{3}{2}\\)",
-    "solution": "\\(\\det(A)=\\begin{vmatrix}1&m\\\\2&3\\end{vmatrix}=3-2m\\).\n\nHệ có vô số nghiệm khi \\(\\det(A)=0\\) và hai phương trình tương đương.\n\n\\(3-2m=0\\Rightarrow m=\\dfrac{3}{2}\\).\n\nThay vào hệ: \\(x+\\dfrac{3}{2}y=1\\). Nhân 2 được \\(2x+3y=2\\), đúng bằng phương trình thứ hai.\n\nVậy hệ có vô số nghiệm khi \\(m=\\dfrac{3}{2}\\).",
-    "quick": "det=3-2m=0 → m=3/2. Kiểm tra: PT2=2*PT1 → tỉ lệ → vô số nghiệm. → **m=3/2**.",
-    "casio": "m=1.5 → rank(A)=rank(Ab)=1 → vô số nghiệm",
+    "correct": "$(x,y,z)=(t,t,2t-2)$",
+    "solution": "Từ $x-y=0$ suy ra $x=y=t$. Thế vào phương trình đầu: $2t-z=2$, nên $z=2t-2$.",
+    "quick": "Đặt ẩn tự do rồi thế ngược.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 12,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x + y + z = 1 \\\\ x + 2y + 3z = 2 \\\\ x + 3y + az = 3 \\end{cases}\\) có nghiệm duy nhất khi?",
+    "type": "homogeneous",
+    "question": "Hệ thuần nhất $AX=0$ có nghiệm khác 0 khi và chỉ khi",
     "matrix": null,
     "options": [
-      "\\(a \\neq 5\\)",
-      "\\(a=5\\)",
-      "\\(a=0\\)",
-      "\\(a \\neq 0\\)"
+      "$\\operatorname{rank}(A)<n$",
+      "$\\operatorname{rank}(A)=n$",
+      "$\\det(A)\\ne0$ trong mọi trường hợp",
+      "$A=0$"
     ],
-    "correct": "\\(a \\neq 5\\)",
-    "solution": "\\(\\det(A) = \\begin{vmatrix}1&1&1\\\\1&2&3\\\\1&3&a\\end{vmatrix} = (2a-9)-(a-3)+(3-2)=2a-9-a+3+1 = a-5\\). Hệ có nghiệm duy nhất khi \\(\\det \\neq 0 \\Rightarrow a \\neq 5\\).",
-    "quick": "Định thức = a-5, khác 0 ⇔ a≠5. **3 trường hợp:** det≠0 → nghiệm duy nhất; det=0+tương thích → vô số; det=0+mâu thuẫn → vô nghiệm.",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] (2 ẩn) hoặc [MODE][5][2] (3 ẩn). Nhập hệ số, EXE → nghiệm duy nhất. ERROR → vô nghiệm hoặc vô số. Kiểm tra: tính det bằng [MODE][6] → det=0 thì đặc biệt (vô số hoặc vô nghiệm).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$\\operatorname{rank}(A)<n$",
+    "solution": "Với $n$ ẩn, hệ thuần nhất có nghiệm không tầm thường khi số ẩn lớn hơn hạng.",
+    "quick": "Nghiệm khác 0 ⇔ có ẩn tự do.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 13,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x + y = 2 \\\\ 2x + 2y = m \\end{cases}\\) vô nghiệm khi?",
+    "type": "parameter_unique",
+    "question": "Hệ $\\begin{cases}x+my=1\\\\2x+3y=2\\end{cases}$ có nghiệm duy nhất khi",
     "matrix": null,
     "options": [
-      "\\(m \\neq 4\\)",
-      "\\(m=4\\)",
-      "\\(m=2\\)",
-      "\\(m=-2\\)"
+      "$m\\ne\\frac32$",
+      "$m=\\frac32$",
+      "$m\\ne3$",
+      "Mọi $m$"
     ],
-    "correct": "\\(m \\neq 4\\)",
-    "solution": "Hệ \\(\\begin{cases} x+y=2 \\\\ 2x+2y=m \\end{cases}\\). PT2 = 2×PT1 khi \\(m=4\\). Nếu \\(m=4\\): hệ tương đương 1 PT → vô số nghiệm. Nếu \\(m \\neq 4\\): hai PT mâu thuẫn (vì 2x+2y vừa bằng 4 vừa bằng m) → vô nghiệm.",
-    "quick": "m=4 → vô số nghiệm; m≠4 → vô nghiệm",
-    "casio": "m=4: rank=1; m≠4: rank(A)=1, rank(Ab)=2 → vô nghiệm",
+    "correct": "$m\\ne\\frac32$",
+    "solution": "Định thức hệ số là $3-2m$. Hệ có nghiệm duy nhất khi $3-2m\\ne0$.",
+    "quick": "Hệ vuông: nghiệm duy nhất ⇔ det hệ số khác 0.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 14,
-    "type": "system_parameter",
-    "question": "Tìm m để hệ \\(\\begin{cases} mx + y = 1 \\\\ x + my = 1 \\end{cases}\\) có nghiệm duy nhất?",
+    "type": "parameter_infinite",
+    "question": "Hệ $\\begin{cases}x+y=1\\\\2x+2y=m\\end{cases}$ có vô số nghiệm khi",
     "matrix": null,
     "options": [
-      "\\(m \\neq \\pm1\\)",
-      "\\(m=1\\)",
-      "\\(m=-1\\)",
-      "\\(m \\neq 0\\)"
+      "$m=2$",
+      "$m=1$",
+      "$m=0$",
+      "$m\\ne2$"
     ],
-    "correct": "\\(m \\neq \\pm1\\)",
-    "solution": "\\(\\det = m^2-1\\). Nghiệm duy nhất khi \\(\\det \\neq 0 \\Rightarrow m \\neq \\pm1\\).",
-    "quick": "Định thức = m²-1, khác 0 ⇔ m≠±1",
-    "casio": "m=1 → rank=1<2 → vô số nghiệm; m=-1 → vô nghiệm",
+    "correct": "$m=2$",
+    "solution": "Để phương trình hai đúng bằng 2 lần phương trình một, cần $m=2$.",
+    "quick": "Cả hệ số và vế phải phải cùng tỉ lệ.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 15,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x + ay = 2 \\\\ ax + y = 2 \\end{cases}\\) có vô số nghiệm khi?",
+    "type": "parameter_none",
+    "question": "Hệ $\\begin{cases}x+y=2\\\\2x+2y=m\\end{cases}$ vô nghiệm khi",
     "matrix": null,
     "options": [
-      "\\(a=1\\)",
-      "\\(a=-1\\)",
-      "\\(a=0\\)",
-      "\\(a=2\\)"
+      "$m\\ne4$",
+      "$m=4$",
+      "$m=2$",
+      "Mọi $m$"
     ],
-    "correct": "\\(a=1\\)",
-    "solution": "\\(\\det = 1-a^2\\). Hệ vô số nghiệm khi \\(\\det=0\\) và các PT tương thích. \\(1-a^2=0 \\Rightarrow a=\\pm1\\). Với \\(a=1\\): hai PT giống nhau → vô số nghiệm. Với \\(a=-1\\): \\(\\begin{cases} x-y=2 \\\\ -x+y=2 \\end{cases}\\) → mâu thuẫn → vô nghiệm.",
-    "quick": "a=1: 2 PT trùng nhau → vô số nghiệm",
-    "casio": "a=1: rank=1<2; a=-1: vô nghiệm",
+    "correct": "$m\\ne4$",
+    "solution": "Vế trái phương trình hai gấp đôi phương trình một. Hệ có nghiệm khi $m=4$; còn lại vô nghiệm.",
+    "quick": "Hệ số tỉ lệ nhưng vế phải sai tỉ lệ.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 16,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} 2x - y = 3 \\\\ 4x - 2y = m \\end{cases}\\) vô số nghiệm khi?",
+    "type": "parameter_unique_3vars",
+    "question": "Hệ $\\begin{cases}x+ay+z=1\\\\ax+y+z=2\\\\x+y+az=2\\end{cases}$ có nghiệm duy nhất khi và chỉ khi",
     "matrix": null,
     "options": [
-      "\\(m=6\\)",
-      "\\(m=3\\)",
-      "\\(m=4\\)",
-      "\\(m=0\\)"
+      "$a\\ne-2$ và $a\\ne1$",
+      "$a\\ne-2$",
+      "$a\\ne1$",
+      "$a\\ne0$"
     ],
-    "correct": "\\(m=6\\)",
-    "solution": "PT2 = 2×PT1 khi \\(m=6\\). Khi đó hệ tương đương 1 PT → vô số nghiệm.\n\n**Phương pháp Rouché-Capelli:** rank(A) = rank(Ab) = n → nghiệm duy nhất; < n → vô số; rank(A) < rank(Ab) → vô nghiệm.",
-    "quick": "2×PT1: \\(4x-2y=6\\) ⇔ m=6",
-    "casio": "CASIO fx-580VNX: [MODE][5][1] (2 ẩn) hoặc [MODE][5][2] (3 ẩn). Nhập hệ số, EXE → nghiệm duy nhất. ERROR → vô nghiệm hoặc vô số. Kiểm tra: tính det bằng [MODE][6] → det=0 thì đặc biệt (vô số hoặc vô nghiệm).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$a\\ne-2$ và $a\\ne1$",
+    "solution": "Định thức ma trận hệ số bằng $-(a-1)^2(a+2)$. Hệ có nghiệm duy nhất khi định thức khác 0, tức $a\\ne1,-2$.",
+    "quick": "Tính det ma trận hệ số.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 17,
-    "type": "system_parameter",
-    "question": "Tìm a để hệ \\(\\begin{cases} x + y + z = 1 \\\\ 2x + 3y + 4z = 2 \\\\ 3x + 4y + az = 3 \\end{cases}\\) vô nghiệm?",
+    "type": "parameter_homogeneous",
+    "question": "Hệ $\\begin{cases}x+y+z=0\\\\x+2y+3z=0\\\\x+4y+mz=0\\end{cases}$ có nghiệm khác 0 khi",
     "matrix": null,
     "options": [
-      "\\(a=5\\)",
-      "\\(a=4\\)",
-      "\\(a=3\\)",
-      "\\(a=2\\)"
+      "$m=7$",
+      "$m=6$",
+      "$m=5$",
+      "$m\\ne7$"
     ],
-    "correct": "\\(a=5\\)",
-    "solution": "\\(\\det = a-5\\). Để vô nghiệm cần \\(\\det=0\\) và hệ không tương thích. \\(a=5\\): thay vào, ma trận mở rộng có hạng 3? Kiểm tra: với a=5, rank(A)=2, rank(Ab)=3 → vô nghiệm.",
-    "quick": "a=5: det=0, hệ vô nghiệm. **3 trường hợp:** det≠0 → nghiệm duy nhất; det=0+tương thích → vô số; det=0+mâu thuẫn → vô nghiệm.",
-    "casio": "a=5: rank(A)=2, rank(Ab)=3",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$m=7$",
+    "solution": "Hệ thuần nhất có nghiệm khác 0 khi định thức hệ số bằng 0. Tính được $\\det=7-m$.",
+    "quick": "Thuần nhất vuông: nghiệm khác 0 ⇔ det=0.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 18,
-    "type": "system_parameter",
-    "question": "Tìm m để hệ \\(\\begin{cases} x + 2y = 1 \\\\ 3x + my = 2 \\end{cases}\\) có nghiệm duy nhất?",
+    "type": "parameter_rank",
+    "question": "Cho $A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\1&1&m\\end{pmatrix}$. Hạng của $A$ bằng 1 khi",
     "matrix": null,
     "options": [
-      "\\(m \\neq 6\\)",
-      "\\(m=6\\)",
-      "\\(m=3\\)",
-      "\\(m \\neq 3\\)"
+      "Không có giá trị $m$",
+      "$m=3$",
+      "$m=1$",
+      "Mọi $m$"
     ],
-    "correct": "\\(m \\neq 6\\)",
-    "solution": "\\(\\det = m-6\\). Nghiệm duy nhất khi \\(\\det \\neq 0 \\Rightarrow m \\neq 6\\).",
-    "quick": "Định thức = m-6, khác 0 ⇔ m≠6. **3 trường hợp:** det≠0 → nghiệm duy nhất; det=0+tương thích → vô số; det=0+mâu thuẫn → vô nghiệm.",
-    "casio": "m=6: rank=1<2 → vô số nghiệm",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "Không có giá trị $m$",
+    "solution": "Hai hàng đầu tỉ lệ, nhưng hàng ba $(1,1,m)$ không thể tỉ lệ với $(1,2,3)$ vì hai tọa độ đầu không cùng tỉ số. Do đó hạng luôn ít nhất 2.",
+    "quick": "Kiểm tra điều kiện tất cả hàng cùng phương.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 19,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} 2x + 3y = 1 \\\\ 4x + 6y = m \\end{cases}\\) có nghiệm khi?",
+    "type": "parameter_infinite_3vars",
+    "question": "Hệ $\\begin{cases}x+y+z=1\\\\x+2y+mz=3\\\\x+3y+3z=5\\end{cases}$ có vô số nghiệm khi",
     "matrix": null,
     "options": [
-      "\\(m=2\\)",
-      "\\(m=4\\)",
-      "\\(m=6\\)",
-      "\\(m=8\\)"
+      "$m=2$",
+      "$m=3$",
+      "$m=1$",
+      "Không có $m$"
     ],
-    "correct": "\\(m=2\\)",
-    "solution": "PT2 = 2×PT1 khi \\(m=2\\). Khi đó hệ tương đương 1 PT → vô số nghiệm (có nghiệm). Với \\(m \\neq 2\\): hệ vô nghiệm. Vậy hệ có nghiệm khi \\(m=2\\).",
-    "quick": "2×PT1: \\(4x+6y=2\\) ⇔ m=2",
-    "casio": "m=2: rank=1 → vô số nghiệm; m≠2: vô nghiệm",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$m=2$",
+    "solution": "Trừ phương trình một: $y+(m-1)z=2$ và $2y+2z=4$. Hai phương trình này phụ thuộc khi $m-1=1$, tức $m=2$; khi đó hệ có một tham số.",
+    "quick": "Khử $x$ rồi so sánh hai phương trình còn lại.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 20,
-    "type": "system_parameter",
-    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases} x + 2y = m \\\\ 2x + 4y = 6 \\end{cases}\\) có vô số nghiệm.",
+    "type": "parameter_unique_3vars",
+    "question": "Hệ $\\begin{cases}2x+y-z=1\\\\x-y+z=2\\\\4x-y+az=b\\end{cases}$ có nghiệm duy nhất khi",
     "matrix": null,
     "options": [
-      "\\(m=3\\)",
-      "\\(m=6\\)",
-      "\\(m=1\\)",
-      "\\(m=2\\)"
+      "$a\\ne-1$ với mọi $b$",
+      "$a\\ne1$ với mọi $b$",
+      "$a=-1$",
+      "$b=0$"
     ],
-    "correct": "\\(m=3\\)",
-    "solution": "**Nhận xét cấu trúc:** PT2 = 2×PT1 (vì hệ số x,y của PT2 là gấp đôi PT1).\n\nĐể hệ vô số nghiệm, vế phải cũng phải tỉ lệ: \\(2m = 6 \\Rightarrow m = 3\\).\n\n**Kiểm tra:** Khi \\(m=3\\): PT1: \\(x+2y=3\\), PT2: \\(2x+4y=6 = 2\\times(x+2y=3)\\) ✓ — hai PT trùng nhau → vô số nghiệm.\n\n**Nghiệm tổng quát:** \\(x = 3-2t,\\ y = t\\) với \\(t\\in\\mathbb{R}\\).",
-    "quick": "PT2 = 2×PT1 về hệ số biến. Để vô số nghiệm: vế phải cũng tỉ lệ \\(\\Rightarrow 2m=6 \\Rightarrow m=3\\). **Nhớ:** tỉ lệ cả hai vế mới vô số, chỉ một vế thì vô nghiệm.",
-    "casio": "CASIO fx-580VNX: [MODE][5][1]. Thử m=3: nhập hệ số → EXE → hiện vô số nghiệm (ERROR hoặc nghiệm tổng quát). Kiểm tra det=0: [MODE][6] → det[[1,2],[2,4]] = 4-4 = 0 → hệ đặc biệt.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$a\\ne1$ với mọi $b$",
+    "solution": "Định thức ma trận hệ số bằng $-3(a-1)$. Nghiệm duy nhất khi $a\\ne1$, không phụ thuộc $b$.",
+    "quick": "Nghiệm duy nhất chỉ xét det ma trận hệ số.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 21,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x+2y+z=1 \\\\ 2x+(m+1)y+2z=3 \\\\ x+my+z=2 \\end{cases}\\) có nghiệm duy nhất với giá trị m nào?",
+    "type": "cramer",
+    "question": "Giải hệ $\\begin{cases}2x+y=5\\\\x+3y=10\\end{cases}$.",
     "matrix": null,
     "options": [
-      "Không có giá trị \\(m\\) nào",
-      "\\(m\\neq1\\) và \\(m\\neq-1\\)",
-      "\\(m=1\\)",
-      "Mọi \\(m\\)"
+      "$(x,y)=(1,3)$",
+      "$(2,1)$",
+      "$(3,-1)$",
+      "$(0,5)$"
     ],
-    "correct": "Không có giá trị \\(m\\) nào",
-    "solution": "Tính \\(\\det(A)\\):\n\\[\\det(A)=\\begin{vmatrix}1&2&1\\\\2&m+1&2\\\\1&m&1\\end{vmatrix}\\]\nR2←R2-2R1, R3←R3-R1:\n\\(\\begin{vmatrix}1&2&1\\\\0&m-3&0\\\\0&m-2&0\\end{vmatrix}\\)\nKhai triển cột 3: tất cả phần tử cột 3 của cofactor đều 0.\nThực ra: \\(\\det=1\\cdot[(m+1)\\cdot1-2m]-2\\cdot[2-2]+1\\cdot[2m-m-1]=(-m+1)+0+(m-1)=0\\)\n\n**\\(\\det(A)=0\\) với mọi m** → Hệ **không bao giờ** có nghiệm duy nhất.\n\nTùy m, hệ có vô số nghiệm hoặc vô nghiệm.",
-    "quick": "det(A)=0 với mọi m → hệ **không bao giờ** có nghiệm duy nhất.",
-    "casio": "CASIO: thử các giá trị m cụ thể sẽ luôn cho ma trận hệ số có det = 0, nên hệ không bao giờ có nghiệm duy nhất. Có thể rơi vào vô số nghiệm hoặc vô nghiệm tùy m.",
+    "correct": "$(x,y)=(1,3)$",
+    "solution": "Từ phương trình đầu $y=5-2x$. Thế vào phương trình hai: $x+15-6x=10$, suy ra $x=1,y=3$.",
+    "quick": "Có thể dùng Cramer hoặc máy tính hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 22,
-    "type": "system_parameter",
-    "question": "Tìm \\(a,b\\) để hệ \\(\\begin{cases} (b+1)x + 4y = a^2 \\\\ x + ay = 2 \\end{cases}\\) có vô số nghiệm.",
+    "type": "system_matrix_form",
+    "question": "Hệ $\\begin{cases}x+2y=3\\\\3x-y=4\\end{cases}$ được viết dưới dạng $AX=b$ với",
     "matrix": null,
     "options": [
-      "\\((a,b)=(-2,1)\\)",
-      "\\((a,b)=(2,-1)\\)",
-      "\\((a,b)=(2,1)\\)",
-      "\\((a,b)=(-2,-1)\\)"
+      "$A=\\begin{pmatrix}1&2\\\\3&-1\\end{pmatrix},\\ X=\\begin{pmatrix}x\\\\y\\end{pmatrix},\\ b=\\begin{pmatrix}3\\\\4\\end{pmatrix}$",
+      "$A=\\begin{pmatrix}1&3\\\\2&-1\\end{pmatrix}$",
+      "$b=\\begin{pmatrix}x\\\\y\\end{pmatrix}$",
+      "$A=\\begin{pmatrix}3&4\\\\1&2\\end{pmatrix}$"
     ],
-    "correct": "\\((a,b)=(2,1)\\)",
-    "solution": "Hệ có vô số nghiệm khi hai phương trình tỉ lệ hoàn toàn:\n\\[\n\\frac{b+1}{1}=\\frac{4}{a}=\\frac{a^2}{2}.\n\\]\nTừ \\(\\dfrac{4}{a}=\\dfrac{a^2}{2}\\Rightarrow a^3=8\\Rightarrow a=2\\).\n\nKhi đó \\(b+1=\\dfrac{4}{2}=2\\Rightarrow b=1\\).\n\nKiểm tra: với \\((a,b)=(2,1)\\), hệ là\n\\[\n\\begin{cases}\n2x+4y=4\\\\\nx+2y=2\n\\end{cases}\n\\]\nHai phương trình trùng nhau nên hệ có vô số nghiệm.",
-    "quick": "Vô số nghiệm \\(\\Leftrightarrow\\) 2 phương trình tỉ lệ hoàn toàn. Từ \\(4/a=a^2/2\\Rightarrow a=2\\), rồi \\(b+1=2\\Rightarrow b=1\\).",
-    "casio": "CASIO: thử \\((a,b)=(2,1)\\) sẽ được hai phương trình tương đương.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$A=\\begin{pmatrix}1&2\\\\3&-1\\end{pmatrix},\\ X=\\begin{pmatrix}x\\\\y\\end{pmatrix},\\ b=\\begin{pmatrix}3\\\\4\\end{pmatrix}$",
+    "solution": "Mỗi phương trình tạo một hàng của ma trận hệ số, còn vế phải tạo véc tơ $b$.",
+    "quick": "Giữ đúng thứ tự ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 23,
-    "type": "system_parameter",
-    "question": "Cho hệ \\(\\begin{cases} x - ay + (b+1)z = 3 \\\\ 2x + (b-1)y + az = 4 \\cdot 1 \\end{cases}\\). Số tham số tự do của nghiệm tổng quát khi \\(\\text{rank}(A)=2\\) là",
+    "type": "rank_solution_count",
+    "question": "Hệ tuyến tính có 4 ẩn, $\\operatorname{rank}(A)=\\operatorname{rank}(A|b)=3$. Số tham số tự do là",
     "matrix": null,
     "options": [
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(2\\)",
-      "\\(3\\)"
+      "0",
+      "1",
+      "2",
+      "3"
     ],
-    "correct": "\\(1\\)",
-    "solution": "**Định lý hạng-nghiệm:** Số tham số tự do = số ẩn − hạng ma trận = \\(n - r\\).\n\nHệ có \\(n=3\\) ẩn (x, y, z) và \\(r=\\text{rank}(A)=2\\).\n\n\\[\\text{Số tham số tự do} = n - r = 3 - 2 = 1\\]\n\nÝ nghĩa: nghiệm tổng quát có dạng \\((x,y,z) = (x_0,y_0,z_0) + t(v_1,v_2,v_3)\\) với 1 tham số \\(t\\in\\mathbb{R}\\).",
-    "quick": "Công thức: **tham số tự do = số ẩn − hạng = \\(n - r = 3-2=1\\)**. Đây là định lý cơ bản của đại số tuyến tính.",
-    "casio": "CASIO: Thực hiện khử Gauss bằng tay hoặc [MODE][6] để tính rank(A). Đếm số hàng pivot = rank. Tham số tự do = 3 - rank.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "1",
+    "solution": "Hệ có nghiệm và số tham số tự do bằng $4-3=1$.",
+    "quick": "Số ẩn − hạng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 24,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x + y + z = 0 \\\\ x + 2y + 3z = 0 \\\\ x + 4y + mz = 0 \\end{cases}\\) có nghiệm khác không khi",
+    "type": "rank_solution_count",
+    "question": "Hệ tuyến tính có $\\operatorname{rank}(A)=2$ và $\\operatorname{rank}(A|b)=3$. Hệ",
     "matrix": null,
     "options": [
-      "\\(m=7\\)",
-      "\\(m\\neq7\\)",
-      "\\(m=0\\)",
-      "\\(m=3\\)"
+      "Vô nghiệm",
+      "Có nghiệm duy nhất",
+      "Có vô số nghiệm",
+      "Luôn thuần nhất"
     ],
-    "correct": "\\(m=7\\)",
-    "solution": "Đây là hệ thuần nhất. Hệ có nghiệm khác không khi và chỉ khi \\(\\det(A)=0\\).\n\n\\[\nA=\\begin{pmatrix}1&1&1\\\\1&2&3\\\\1&4&m\\end{pmatrix}\n\\]\nTính định thức:\n\\[\n\\det(A)=1(2m-12)-1(m-3)+1(4-2)=2m-12-m+3+2=m-7.\n\\]\nVậy hệ có nghiệm khác không khi \\(m-7=0\\Rightarrow m=7\\).",
-    "quick": "Hệ thuần nhất có nghiệm khác không \\(\\Leftrightarrow \\det(A)=0\\). Ở đây \\(\\det(A)=m-7\\Rightarrow m=7\\).",
-    "casio": "CASIO [MODE][6]: nhập ma trận 3×3 và thử m=7 thì det=0.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "Vô nghiệm",
+    "solution": "Hai hạng khác nhau nên hệ vô nghiệm theo Rouché–Capelli.",
+    "quick": "Hạng mở rộng lớn hơn hạng hệ số → mâu thuẫn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 25,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x + y + z = 1 \\\\ x + 2y + 3z = 2 \\\\ x + 3y + az = 3 \\end{cases}\\) có vô số nghiệm khi",
+    "type": "parameter_consistency",
+    "question": "Hệ $\\begin{cases}x-y=a\\\\-x+y=b\\end{cases}$ có nghiệm khi",
     "matrix": null,
     "options": [
-      "\\(a=5\\)",
-      "\\(a\\neq5\\)",
-      "\\(a=0\\)",
-      "\\(a=3\\)"
+      "$a+b=0$",
+      "$a=b$",
+      "$a-b=0$",
+      "Mọi $a,b$"
     ],
-    "correct": "\\(a=5\\)",
-    "solution": "Khử Gauss:\n\\(R_2\\leftarrow R_2-R_1\\), \\(R_3\\leftarrow R_3-R_1\\):\n\\[\n\\begin{pmatrix}\n1&1&1&|&1\\\\\n0&1&2&|&1\\\\\n0&2&a-1&|&2\n\\end{pmatrix}\n\\]\nTiếp tục \\(R_3\\leftarrow R_3-2R_2\\):\n\\[\n\\begin{pmatrix}\n1&1&1&|&1\\\\\n0&1&2&|&1\\\\\n0&0&a-5&|&0\n\\end{pmatrix}\n\\]\n\n- Nếu \\(a\\neq5\\): hàng cuối cho \\(z\\) xác định → nghiệm duy nhất.\n- Nếu \\(a=5\\): hàng cuối trở thành \\((0,0,0|0)\\) → hạng bằng 2 < 3 → vô số nghiệm.\n\nVậy hệ có vô số nghiệm khi \\(a=5\\).",
-    "quick": "Khử Gauss ra hàng cuối \\((0,0,a-5|0)\\). Khi \\(a=5\\) thì thành \\(0=0\\) → vô số nghiệm.",
-    "casio": "CASIO: thử a=5 sẽ ra hệ phụ thuộc, không phải vô nghiệm.",
+    "correct": "$a+b=0$",
+    "solution": "Cộng hai phương trình được $0=a+b$, nên đây là điều kiện cần và đủ.",
+    "quick": "Cộng hai phương trình để lộ điều kiện.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 26,
-    "type": "system_parameter",
-    "question": "Nghiệm tổng quát của hệ \\(\\begin{cases} 2x - y + z = 1 \\\\ x + y - z = 2 \\end{cases}\\) là",
+    "type": "general_solution",
+    "question": "Nghiệm tổng quát của hệ $\\begin{cases}x+y-2z=-1\\\\x-y=3\\end{cases}$ là",
     "matrix": null,
     "options": [
-      "\\((x,y,z)=(1,1+t,t)\\)",
-      "\\((x,y,z)=(1+t,3-t,t)\\)",
-      "\\((x,y,z)=(1,3,0)+t(-1,1,1)\\)",
-      "Không tồn tại"
+      "$(x,y,z)=(1+t,t-2,t)$",
+      "$(2+t,t-1,t)$",
+      "$(3+t,t,t)$",
+      "$(1-t,t+2,t)$"
     ],
-    "correct": "\\((x,y,z)=(1,1+t,t)\\)",
-    "solution": "Từ phương trình thứ hai: \\(x=2-y+z\\).\nThay vào phương trình thứ nhất:\n\\[\n2(2-y+z)-y+z=1\n\\Rightarrow 4-3y+3z=1\n\\Rightarrow y-z=1.\n\\]\nĐặt \\(z=t\\), suy ra \\(y=1+t\\).\nKhi đó:\n\\[\nx=2-(1+t)+t=1.\n\\]\nVậy nghiệm tổng quát là:\n\\[\n(x,y,z)=(1,1+t,t),\\quad t\\in\\mathbb{R}.\n\\]",
-    "quick": "Đặt \\(z=t\\). Từ hệ suy ra \\(y=1+t\\), \\(x=1\\).",
-    "casio": "CASIO: hệ 2 PT 3 ẩn phải đặt 1 ẩn tự do rồi giải tay.",
+    "correct": "$(x,y,z)=(1+t,t-2,t)$",
+    "solution": "Đặt $z=t$. Từ $x-y=3$ và $x+y=2t-1$ suy ra $x=t+1$, $y=t-2$.",
+    "quick": "Đặt ẩn tự do rồi giải hệ 2×2.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 27,
-    "type": "system_parameter",
-    "question": "Tìm \\(a\\) để hệ \\(\\begin{cases} x + y = 2 \\\\ y + z = 3 \\\\ ax + z = 4 \\end{cases}\\) vô nghiệm.",
+    "type": "parameter_system",
+    "question": "Hệ $\\begin{cases}mx+y=1\\\\x+my=1\\end{cases}$ có nghiệm duy nhất khi",
     "matrix": null,
     "options": [
-      "\\(a=-1\\)",
-      "\\(a\\neq-1\\)",
-      "\\(a=0\\)",
-      "\\(a=2\\)"
+      "$m\\ne\\pm1$",
+      "$m\\ne1$",
+      "$m\\ne-1$",
+      "Mọi $m$"
     ],
-    "correct": "\\(a=-1\\)",
-    "solution": "Ma trận hệ số là\n\\[\nA=\\begin{pmatrix}1&1&0\\\\0&1&1\\\\a&0&1\\end{pmatrix}\n\\]\nTính định thức:\n\\[\n\\det(A)=1\\cdot\\begin{vmatrix}1&1\\\\0&1\\end{vmatrix}+a\\cdot\\begin{vmatrix}1&0\\\\1&1\\end{vmatrix}=1+a.\n\\]\nMuốn hệ có thể vô nghiệm thì cần \\(\\det(A)=0\\Rightarrow a=-1\\).\n\nThay \\(a=-1\\):\n\\[\n\\begin{cases}\nx+y=2\\\\\ny+z=3\\\\\n-x+z=4\n\\end{cases}\n\\]\nTừ hai phương trình đầu: \\(x=2-y\\), \\(z=3-y\\).\nThế vào phương trình ba:\n\\[\n-(2-y)+(3-y)=4\\Rightarrow 1=4,\n\\]\nmâu thuẫn. Vậy hệ vô nghiệm khi \\(a=-1\\).",
-    "quick": "\\(\\det(A)=1+a\\). Cho \\(\\det=0\\Rightarrow a=-1\\), rồi kiểm tra ra mâu thuẫn.",
-    "casio": "CASIO: thử a=-1 sẽ cho hệ vô nghiệm.",
+    "correct": "$m\\ne\\pm1$",
+    "solution": "Định thức hệ số là $m^2-1$. Nghiệm duy nhất khi $m^2-1\\ne0$.",
+    "quick": "det khác 0.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 28,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} 2x + y - z = 1 \\\\ x - y + z = 2 \\\\ 4x - y + az = b \\end{cases}\\) có nghiệm duy nhất khi",
+    "type": "parameter_infinite",
+    "question": "Hệ $\\begin{cases}x+ay=2\\\\ax+y=2\\end{cases}$ có vô số nghiệm khi",
     "matrix": null,
     "options": [
-      "\\(a \\neq 1\\)",
-      "\\(a = 1\\)",
-      "\\(a = 0\\)",
-      "\\(b \\neq 3\\)"
+      "$a=1$",
+      "$a=-1$",
+      "$a=\\pm1$",
+      "Không có $a$"
     ],
-    "correct": "\\(a \\neq 1\\)",
-    "solution": "Ma trận hệ số là\n\\[\nA=\\begin{pmatrix}2&1&-1\\\\1&-1&1\\\\4&-1&a\\end{pmatrix}.\n\\]\nKhai triển theo hàng 1:\n\\[\n\\det(A)=2\\begin{vmatrix}-1&1\\\\-1&a\\end{vmatrix}-1\\begin{vmatrix}1&1\\\\4&a\\end{vmatrix}+(-1)\\begin{vmatrix}1&-1\\\\4&-1\\end{vmatrix}\n\\]\n\\[\n=2(-a+1)-(a-4)-3= -3a+3 = 3(1-a).\n\\]\nHệ có nghiệm duy nhất khi \\(\\det(A)\\neq0\\Rightarrow a\\neq1\\).",
-    "quick": "\\(\\det(A)=3(1-a)\\). Nghiệm duy nhất khi \\(a\\neq1\\).",
-    "casio": "CASIO [MODE][6]: Nhập ma trận với a cụ thể, tính det. Thử a=0: det=3≠0 → nghiệm duy nhất. Thử a=1: det=0 → đặc biệt. [MODE][5][2] xác nhận.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$a=1$",
+    "solution": "Khi $a=1$, hai phương trình trùng nhau. Khi $a=-1$, hai phương trình là $x-y=2$ và $-x+y=2$, mâu thuẫn.",
+    "quick": "Xét riêng hai nghiệm của det=0.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 29,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases} x - y + z = 2 \\\\ 2x + y - z = 1 \\\\ 3x + my + 0\\cdot z = 3 \\end{cases}\\) vô nghiệm khi",
+    "type": "parameter_none",
+    "question": "Hệ $\\begin{cases}2x-y=3\\\\4x-2y=m\\end{cases}$ vô nghiệm khi",
     "matrix": null,
     "options": [
-      "\\(m=0\\)",
-      "\\(m=-4\\)",
-      "\\(m\\neq0\\)",
-      "\\(m=1\\)"
+      "$m\\ne6$",
+      "$m=6$",
+      "$m=3$",
+      "Mọi $m$"
     ],
-    "correct": "\\(m=0\\)",
-    "solution": "Ma trận hệ số:\n\\[\nA=\\begin{pmatrix}1&-1&1\\\\2&1&-1\\\\3&m&0\\end{pmatrix}.\n\\]\nKhử Gauss:\n\\(R_2\\leftarrow R_2-2R_1=(0,3,-3)\\),\n\\(R_3\\leftarrow R_3-3R_1=(0,m+3,-3)\\).\n\nTiếp tục khử theo hàng 2, suy ra \\(\\det(A)=3m\\).\nVậy trường hợp đặc biệt là \\(m=0\\).\n\nThay \\(m=0\\):\n\\[\n\\begin{cases}\nx-y+z=2\\\\\n2x+y-z=1\\\\\n3x=3\n\\end{cases}\n\\Rightarrow x=1.\n\\]\nKhi đó phương trình 1 cho \\(-y+z=1\\), còn phương trình 2 cho \\(y-z=-1\\), tức cùng một quan hệ. Kiểm tra đúng hơn bằng khử ma trận mở rộng sẽ cho hàng mâu thuẫn, nên hệ vô nghiệm khi \\(m=0\\).",
-    "quick": "Tính ra \\(\\det(A)=3m\\). Trường hợp đặc biệt là \\(m=0\\), khi đó hệ vô nghiệm.",
-    "casio": "CASIO: thử m=0 để kiểm tra trực tiếp."
+    "correct": "$m\\ne6$",
+    "solution": "Vế trái phương trình hai gấp đôi phương trình một. Hệ tương thích chỉ khi $m=6$.",
+    "quick": "Tỉ lệ hệ số phải đi cùng tỉ lệ vế phải.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
   },
   {
     "id": 30,
-    "type": "system_homogeneous",
-    "question": "Hệ \\(\\begin{cases}x+2y=0\\\\2x+4y=0\\end{cases}\\) có bao nhiêu nghiệm?",
+    "type": "economic_equilibrium",
+    "question": "Ba thị trường có cung và cầu: $s_1=-38+p_1-p_2+2p_3$, $s_2=-73-p_1+2p_2+p_3$, $s_3=-59+p_1+2p_2+3p_3$; $d_1=70-p_1+p_2$, $d_2=127-p_2-2p_3$, $d_3=200+p_2-p_3$. Khi cân bằng $s_i=d_i$, giá trị $p_1+p_2+p_3$ bằng",
     "matrix": null,
     "options": [
-      "Vô số nghiệm",
-      "1 nghiệm",
-      "Vô nghiệm",
-      "Đúng 2 nghiệm"
+      "112",
+      "110",
+      "114",
+      "100"
     ],
-    "correct": "Vô số nghiệm",
-    "solution": "Hệ thuần nhất (vế phải = 0) **luôn có nghiệm tầm thường** (0,0).\n\nPT2 = 2×PT1 → hai PT là bội nhau → hệ chỉ có 1 phương trình độc lập → vô số nghiệm.\n\nNghiệm tổng quát: \\(x=-2t,\\;y=t\\), \\(t\\in\\mathbb{R}\\).",
-    "quick": "Hệ thuần nhất (b=0): **luôn có nghiệm**. Nếu det=0 → vô số. Det=|1,2;2,4|=4-4=0 → vô số.",
-    "casio": "CASIO [MODE][5][1]: nhập hệ số, nếu báo lỗi hoặc không giải được → vô số nghiệm. Det=0 xác nhận.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "correct": "112",
+    "solution": "Giải hệ cân bằng được $(p_1,p_2,p_3)=(34,29,49)$. Tổng bằng 112.",
+    "quick": "Lập ba phương trình $s_i=d_i$ rồi giải hệ 3 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
     "id": 31,
-    "type": "rank_system",
-    "question": "Hạng (rank) của ma trận \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\0&1&1\\end{pmatrix}\\) là?",
-    "matrix": [
-      [
-        1,
-        2,
-        3
-      ],
-      [
-        2,
-        4,
-        6
-      ],
-      [
-        0,
-        1,
-        1
-      ]
+    "type": "economic_supply_demand",
+    "question": "Hai hàng hóa có điều kiện cân bằng $\\begin{cases}2p_1-p_2=30\\\\-p_1+3p_2=40\\end{cases}$. Tổng hai mức giá cân bằng bằng",
+    "matrix": null,
+    "options": [
+      "48",
+      "50",
+      "52",
+      "60"
     ],
+    "correct": "48",
+    "solution": "Giải hệ được $p_1=26$, $p_2=22$, tổng bằng 48.",
+    "quick": "Giải hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 32,
+    "type": "economic_production",
+    "question": "Một xưởng sản xuất hai sản phẩm $x,y$. Mỗi đơn vị $x$ dùng 2 giờ máy và 1 giờ lao động; mỗi đơn vị $y$ dùng 1 giờ máy và 3 giờ lao động. Nếu dùng hết 100 giờ máy và 90 giờ lao động thì $(x,y)$ bằng",
+    "matrix": null,
+    "options": [
+      "$(42,16)$",
+      "$(40,20)$",
+      "$(30,30)$",
+      "$(50,0)$"
+    ],
+    "correct": "$(42,16)$",
+    "solution": "Giải $2x+y=100$, $x+3y=90$ được $x=42$, $y=16$.",
+    "quick": "Lập hệ từ từng nguồn lực.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 33,
+    "type": "economic_mixture",
+    "question": "Trộn hai loại nguyên liệu A và B để được 100 kg hỗn hợp. A chứa 20% chất X, B chứa 50% chất X. Muốn hỗn hợp chứa 38 kg chất X thì lượng A, B là",
+    "matrix": null,
+    "options": [
+      "$(40,60)$",
+      "$(60,40)$",
+      "$(50,50)$",
+      "$(30,70)$"
+    ],
+    "correct": "$(40,60)$",
+    "solution": "Lập hệ $A+B=100$, $0.2A+0.5B=38$. Giải được $A=40,B=60$.",
+    "quick": "Một phương trình tổng khối lượng, một phương trình thành phần.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 34,
+    "type": "economic_investment",
+    "question": "Đầu tư tổng cộng 200 triệu vào hai kênh lãi suất 6% và 9%. Muốn tiền lãi một năm là 15 triệu thì số tiền đầu tư lần lượt là",
+    "matrix": null,
+    "options": [
+      "100 và 100",
+      "120 và 80",
+      "150 và 50",
+      "80 và 120"
+    ],
+    "correct": "100 và 100",
+    "solution": "Gọi $x,y$ là số triệu: $x+y=200$, $0.06x+0.09y=15$. Giải được $x=y=100$.",
+    "quick": "Tổng vốn và tổng lãi tạo hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 35,
+    "type": "economic_sales",
+    "question": "Một cửa hàng bán 30 sản phẩm gồm loại A giá 20 nghìn và loại B giá 35 nghìn, thu 750 nghìn. Số sản phẩm A, B lần lượt là",
+    "matrix": null,
+    "options": [
+      "20 và 10",
+      "18 và 12",
+      "15 và 15",
+      "10 và 20"
+    ],
+    "correct": "20 và 10",
+    "solution": "Hệ $x+y=30$, $20x+35y=750$ cho $y=10,x=20$.",
+    "quick": "Tổng số và tổng doanh thu.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 36,
+    "type": "economic_resource",
+    "question": "Ba sản phẩm $x,y,z$ dùng hết ba nguồn lực theo hệ $\\begin{cases}x+y+z=60\\\\2x+y+3z=100\\\\x+2y+z=90\\end{cases}$. Tổng $x+2z$ bằng",
+    "matrix": null,
+    "options": [
+      "40",
+      "50",
+      "60",
+      "70"
+    ],
+    "correct": "40",
+    "solution": "Giải hệ được $(x,y,z)=(20,30,10)$, nên $x+2z=40$.",
+    "quick": "Giải hệ 3 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 37,
+    "type": "economic_cost_allocation",
+    "question": "Tổng chi phí 120 triệu gồm chi phí nguyên liệu $x$, nhân công $y$, vận chuyển $z$. Biết $x=2y$ và $z=y/2$. Chi phí nhân công bằng",
+    "matrix": null,
+    "options": [
+      "$\\frac{240}{7}$ triệu",
+      "30 triệu",
+      "36 triệu",
+      "40 triệu"
+    ],
+    "correct": "$\\frac{240}{7}$ triệu",
+    "solution": "Ta có $2y+y+y/2=120$, tức $3.5y=120$, suy ra $y=240/7\\approx34.29$ triệu.",
+    "quick": "Thay các quan hệ vào phương trình tổng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 38,
+    "type": "economic_transport",
+    "question": "Hai kho A, B cung cấp tổng 80 tấn hàng. Kho A nhiều hơn kho B 20 tấn. Lượng hàng ở A và B là",
+    "matrix": null,
+    "options": [
+      "50 và 30",
+      "40 và 40",
+      "60 và 20",
+      "45 và 35"
+    ],
+    "correct": "50 và 30",
+    "solution": "Giải hệ $A+B=80$, $A-B=20$ được $A=50,B=30$.",
+    "quick": "Tổng và hiệu.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 39,
+    "type": "economic_leontief",
+    "question": "Mô hình Leontief hai ngành thỏa $x=0.2x+0.1y+70$, $y=0.3x+0.2y+50$. Tổng sản lượng $x+y$ bằng",
+    "matrix": null,
+    "options": [
+      "175",
+      "180",
+      "200",
+      "225"
+    ],
+    "correct": "200",
+    "solution": "Hệ tương đương $0.8x-0.1y=70$, $-0.3x+0.8y=50$. Giải được $x=100,y=100$, tổng 200.",
+    "quick": "Chuyển các phần sản lượng trung gian sang vế trái.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 40,
+    "type": "economic_break_even",
+    "question": "Doanh thu và chi phí của hai sản phẩm được mô tả bởi hệ $\\begin{cases}3x+2y=120\\\\x+4y=100\\end{cases}$. Tổng $x+y$ bằng",
+    "matrix": null,
+    "options": [
+      "46",
+      "44",
+      "48",
+      "50"
+    ],
+    "correct": "46",
+    "solution": "Giải hệ được $x=28,y=18$, nên tổng bằng 46.",
+    "quick": "Giải hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 41,
+    "type": "economic_wages",
+    "question": "Tổng tiền lương của 10 lao động bậc 1 và 6 lao động bậc 2 là 76 triệu. Lương một người bậc 2 cao hơn bậc 1 là 2 triệu. Mức lương bậc 1 là",
+    "matrix": null,
+    "options": [
+      "4 triệu",
+      "5 triệu",
+      "6 triệu",
+      "3 triệu"
+    ],
+    "correct": "4 triệu",
+    "solution": "Gọi lương bậc 1 là $x$, bậc 2 là $y$. Hệ $10x+6y=76$, $y-x=2$ cho $x=4,y=6$.",
+    "quick": "Thế $y=x+2$ vào tổng quỹ lương.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 42,
+    "type": "economic_price",
+    "question": "Hai mức giá $p_1,p_2$ thỏa điều kiện cân bằng $\\begin{cases}3p_1-p_2=40\\\\-p_1+2p_2=10\\end{cases}$. Giá $p_1$ bằng",
+    "matrix": null,
+    "options": [
+      "18",
+      "20",
+      "22",
+      "25"
+    ],
+    "correct": "18",
+    "solution": "Từ phương trình hai $p_1=2p_2-10$. Thế vào phương trình một được $5p_2=70$, nên $p_2=14,p_1=18$.",
+    "quick": "Giải hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 43,
+    "type": "economic_three_products",
+    "question": "Ba sản phẩm $x,y,z$ thỏa $\\begin{cases}x+y+z=80\\\\2x+y+z=110\\\\x+2y+3z=150\\end{cases}$. Số lượng sản phẩm $z$ bằng",
+    "matrix": null,
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "correct": "20",
+    "solution": "Trừ phương trình một khỏi phương trình hai được $x=30$. Khi đó $y+z=50$ và từ phương trình ba có $2y+3z=120$. Suy ra $z=20,y=30$.",
+    "quick": "Khử từng ẩn bằng phép trừ hai phương trình.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 44,
+    "type": "economic_purchase",
+    "question": "Một đơn vị mua 20 thiết bị gồm ba loại $x,y,z$ có giá lần lượt 5, 10 và 20 triệu đồng, tổng chi 220 triệu đồng. Biết số thiết bị loại $x$ nhiều hơn loại $z$ là 2. Số lượng $(x,y,z)$ là",
+    "matrix": null,
+    "options": [
+      "$(8,6,6)$",
+      "$(6,8,6)$",
+      "$(8,8,4)$",
+      "$(10,4,6)$"
+    ],
+    "correct": "$(8,6,6)$",
+    "solution": "Lập hệ $x+y+z=20$, $5x+10y+20z=220$, $x-z=2$. Giải được $(x,y,z)=(8,6,6)$.",
+    "quick": "Chia phương trình tiền cho 5 trước khi giải.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 45,
+    "type": "parameter_classification_3vars",
+    "question": "Xét hệ $\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+y+mz=2\\end{cases}$. Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "$m=1$: vô nghiệm; $m\\ne1$: vô số nghiệm",
+      "$m=1$: vô số nghiệm; $m\\ne1$: vô nghiệm",
+      "Mọi $m$ đều có nghiệm duy nhất",
+      "Mọi $m$ đều vô số nghiệm"
+    ],
+    "correct": "$m=1$: vô nghiệm; $m\\ne1$: vô số nghiệm",
+    "solution": "Phương trình 2 phụ thuộc phương trình 1. Nếu $m=1$, phương trình 3 có cùng vế trái với phương trình 1 nhưng vế phải khác nên vô nghiệm. Nếu $m\\ne1$, có hai phương trình độc lập với ba ẩn nên vô số nghiệm.",
+    "quick": "Phát hiện phương trình phụ thuộc trước, rồi xét trường hợp $m=1$.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 46,
+    "type": "parameter_consistency_3vars",
+    "question": "Hệ $\\begin{cases}x+y+z=1\\\\x+2y+3z=2\\\\2x+3y+4z=m\\end{cases}$ có nghiệm khi",
+    "matrix": null,
+    "options": [
+      "$m=3$",
+      "$m=2$",
+      "$m=1$",
+      "Mọi $m$"
+    ],
+    "correct": "$m=3$",
+    "solution": "Vế trái phương trình 3 bằng tổng vế trái hai phương trình đầu. Điều kiện tương thích là $m=1+2=3$. Khi đó hệ có vô số nghiệm.",
+    "quick": "So sánh quan hệ tuyến tính giữa các hàng với quan hệ ở vế phải.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
+    "difficulty": 3,
+    "topic": "Điều kiện tương thích"
+  },
+  {
+    "id": 47,
+    "type": "parameter_unique_determinant",
+    "question": "Hệ có ma trận hệ số $A=\\begin{pmatrix}1&1&1\\\\1&m&2\\\\1&2&m\\end{pmatrix}$ có nghiệm duy nhất với mọi vế phải khi",
+    "matrix": null,
+    "options": [
+      "$m\\ne0,2$",
+      "$m\\ne2$",
+      "$m\\ne0$",
+      "$m=0$ hoặc $m=2$"
+    ],
+    "correct": "$m\\ne0,2$",
+    "solution": "$\\det(A)=m(m-2)$. Hệ có nghiệm duy nhất với mọi vế phải khi và chỉ khi định thức khác 0.",
+    "quick": "Tính định thức ma trận hệ số; không cần xét vế phải khi det khác 0.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
+    "difficulty": 3,
+    "topic": "Hệ tham số & định thức"
+  },
+  {
+    "id": 48,
+    "type": "rank_free_variables",
+    "question": "Một hệ tuyến tính có 5 ẩn và $\\operatorname{rank}(A)=\\operatorname{rank}(A|b)=3$. Số tham số tự do của nghiệm là",
+    "matrix": null,
+    "options": [
+      "2",
+      "3",
+      "1",
+      "5"
+    ],
+    "correct": "2",
+    "solution": "Hệ có nghiệm và số ẩn tự do bằng $n-r=5-3=2$.",
+    "quick": "Số tham số tự do = số ẩn − hạng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
+    "difficulty": 1,
+    "topic": "Hạng & số nghiệm"
+  },
+  {
+    "id": 49,
+    "type": "cramer_combination",
+    "question": "Trong hệ hai ẩn, $\\det(A)=5$, định thức thay cột thứ nhất $D_x=-10$ và thay cột thứ hai $D_y=15$. Giá trị $x+y$ bằng",
+    "matrix": null,
+    "options": [
+      "1",
+      "5",
+      "-1",
+      "$\\dfrac12$"
+    ],
+    "correct": "1",
+    "solution": "Theo Cramer, $x=D_x/D=-2$, $y=D_y/D=3$, nên $x+y=1$.",
+    "quick": "Chia từng định thức cột cho định thức hệ số.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
+    "difficulty": 3,
+    "topic": "Quy tắc Cramer"
+  },
+  {
+    "id": 50,
+    "type": "homogeneous_nullity",
+    "question": "Hệ thuần nhất gồm 3 phương trình, 4 ẩn có ma trận hệ số hạng 2. Số chiều của không gian nghiệm bằng",
+    "matrix": null,
     "options": [
       "2",
       "1",
@@ -565,334 +893,118 @@
       "0"
     ],
     "correct": "2",
-    "solution": "Hàng 2 = 2×Hàng 1 → khử R2: \\(\\begin{pmatrix}1&2&3\\\\0&0&0\\\\0&1&1\\end{pmatrix}\\).\n\nHàng 1,3 độc lập tuyến tính → rank(A) = **2**.",
-    "quick": "R2 = 2R1 → phụ thuộc → loại. Còn R1 và R3 độc lập → **rank = 2**.",
-    "casio": "CASIO [MODE][6]: Nhập ma trận, tính det. Nếu det=0 → rank<3. Tìm hàng/cột max độc lập.",
+    "solution": "Theo định lý hạng–không gian nghiệm, $\\dim\\ker A=n-r=4-2=2$.",
+    "quick": "Số chiều nghiệm của hệ thuần nhất = số ẩn − hạng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Hệ thuần nhất"
   },
   {
-    "id": 32,
-    "type": "system_solution_form",
-    "question": "Hệ \\(\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+2y+3z=2\\end{cases}\\) có số tham số tự do của nghiệm là?",
+    "id": 51,
+    "type": "economic_three_product_plan",
+    "question": "Một xưởng sản xuất ba sản phẩm $x,y,z$ thỏa $\\begin{cases}x+y+z=100\\\\2x+y+3z=190\\\\x+3y+2z=210\\end{cases}$. Số sản phẩm loại $z$ là",
     "matrix": null,
     "options": [
-      "1",
-      "0",
-      "2",
-      "3"
+      "30",
+      "20",
+      "40",
+      "25"
     ],
-    "correct": "1",
-    "solution": "Quan sát: PT2 = 2×PT1 → chỉ còn 2 PT độc lập (PT1 và PT3).\n\nKhử: từ PT1 và PT3: \\(y+2z=1\\) → 2 ẩn, 1 PT → 1 ẩn tự do.\n\n**Công thức:** tham số tự do = n − rank(A) = 3 − 2 = **1**.",
-    "quick": "n=3 ẩn, rank(A)=2 (PT2=2×PT1) → tham số tự do = 3-2 = **1**.",
-    "casio": "CASIO: Khử Gauss → còn 2 hàng pivot → rank=2. Tham số tự do = 3-2=1.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 33,
-    "type": "system_3vars_parameter",
-    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+y+z=1\\\\x+2y+mz=3\\\\x+3y+3z=5\\end{cases}\\) có **vô số nghiệm**.",
-    "matrix": null,
-    "options": [
-      "\\(m=2\\)",
-      "\\(m\\neq2\\)",
-      "\\(m=0\\)",
-      "Mọi m"
-    ],
-    "correct": "\\(m=2\\)",
-    "solution": "Khử Gauss:\nR2←R2-R1: \\((0,1,m-1\\mid2)\\)\nR3←R3-R1: \\((0,2,2\\mid4)\\)\nR3←R3-2R2: \\((0,0,4-2m\\mid0)\\)\n\nHàng cuối \\((0,0,4-2m\\mid0)\\): luôn tương thích (0=0).\n- \\(4-2m\\neq0\\) (\\(m\\neq2\\)): rank(A)=rank(A|b)=3 → **nghiệm duy nhất**.\n- \\(4-2m=0\\) (\\(m=2\\)): rank(A)=2=rank(A|b)=2 → **vô số nghiệm**.\n\n**Kết luận:** Hệ vô số nghiệm khi \\(m=2\\); hệ **không bao giờ vô nghiệm** (do vế phải cũng=0).",
-    "quick": "Hàng cuối: (0,0,4-2m|0). m=2 → 0=0 (vô số). m≠2 → nghiệm duy nhất. Hệ không vô nghiệm.",
-    "casio": "CASIO [MODE][5][2]: thử m=2 (báo lỗi/vô số); thử m=0 (nghiệm duy nhất). Không có vô nghiệm.",
+    "correct": "30",
+    "solution": "Giải hệ được $(x,y,z)=(30,40,30)$.",
+    "quick": "Dùng phương trình đầu để khử một ẩn, sau đó giải hệ hai ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
     "difficulty": 3,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ứng dụng hệ tuyến tính trong sản xuất"
   },
   {
-    "id": 34,
-    "type": "system_homogeneous",
-    "question": "Hệ thuần nhất \\(AX=0\\) có nghiệm khác không khi và chỉ khi?",
+    "id": 52,
+    "type": "economic_tax_equilibrium",
+    "question": "Hai mức giá cân bằng thỏa $2p_1-p_2=30+t$ và $-p_1+3p_2=40$. Thuế $t$ bằng bao nhiêu để $p_1=2p_2$?",
     "matrix": null,
     "options": [
-      "\\(\\det(A)=0\\)",
-      "\\(\\det(A)\\neq0\\)",
-      "\\(A=0\\)",
-      "Không bao giờ"
+      "90",
+      "60",
+      "30",
+      "120"
     ],
-    "correct": "\\(\\det(A)=0\\)",
-    "solution": "**Định lý:** Hệ \\(AX=0\\) (thuần nhất) có:\n- **Nghiệm duy nhất** (= nghiệm tầm thường 0) khi \\(\\det(A)\\neq0\\).\n- **Vô số nghiệm** (gồm nghiệm khác không) khi \\(\\det(A)=0\\).\n\nĐây là tính chất cơ bản của đại số tuyến tính.",
-    "quick": "AX=0 có nghiệm ≠ 0 ↔ **det(A)=0** ↔ rank(A)<n. Nếu det≠0 → chỉ nghiệm X=0.",
-    "casio": "CASIO [MODE][6]: Tính det(A). Nếu det=0 → có nghiệm ≠ 0.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 35,
-    "type": "cramer",
-    "question": "Giải hệ \\(\\begin{cases}2x+y=5\\\\x+3y=10\\end{cases}\\) bằng quy tắc Cramer.",
-    "matrix": null,
-    "options": [
-      "\\(x=1,\\;y=3\\)",
-      "\\(x=3,\\;y=1\\)",
-      "\\(x=2,\\;y=1\\)",
-      "\\(x=1,\\;y=4\\)"
-    ],
-    "correct": "\\(x=1,\\;y=3\\)",
-    "solution": "\\(D=\\begin{vmatrix}2&1\\\\1&3\\end{vmatrix}=6-1=5\\).\n\n\\(D_x=\\begin{vmatrix}5&1\\\\10&3\\end{vmatrix}=15-10=5\\), \\(x=D_x/D=1\\).\n\n\\(D_y=\\begin{vmatrix}2&5\\\\1&10\\end{vmatrix}=20-5=15\\), \\(y=D_y/D=3\\).",
-    "quick": "D=5, Dx=5, Dy=15 → **x=1, y=3**. Cramer: x=Dx/D, y=Dy/D.",
-    "casio": "CASIO [MODE][5][1]: nhập hệ số → x=1, y=3. Kiểm tra: 2(1)+3=5✓, 1+3(3)=10✓.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 36,
-    "type": "system_inconsistent",
-    "question": "Hệ \\(\\begin{cases}x+2y=3\\\\2x+4y=7\\end{cases}\\) là?",
-    "matrix": null,
-    "options": [
-      "Vô nghiệm",
-      "Nghiệm duy nhất",
-      "Vô số nghiệm",
-      "Không xác định"
-    ],
-    "correct": "Vô nghiệm",
-    "solution": "Det = |1,2;2,4| = 4-4 = 0 → hệ đặc biệt.\n\nPT2 hệ số = 2×PT1 nhưng vế phải 7 ≠ 2×3 = 6 → **mâu thuẫn** → **vô nghiệm**.\n\nCách xem: chia PT2 cho 2: \\(x+2y=3.5\\neq3\\) → hai đường thẳng song song.",
-    "quick": "Det=0, vế phải không tỉ lệ (7≠2×3) → **vô nghiệm** (2 đường song song, không giao).",
-    "casio": "CASIO [MODE][5][1]: nhập hệ số → báo ERROR (vô nghiệm). Det=0 xác nhận.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 37,
-    "type": "rank_system",
-    "question": "Theo định lý Rouché-Capelli, hệ \\(AX=b\\) có nghiệm khi và chỉ khi?",
-    "matrix": null,
-    "options": [
-      "\\(\\text{rank}(A)=\\text{rank}(A|b)\\)",
-      "\\(\\det(A)\\neq0\\)",
-      "\\(\\text{rank}(A)=n\\)",
-      "\\(\\text{rank}(A|b)>\\text{rank}(A)\\)"
-    ],
-    "correct": "\\(\\text{rank}(A)=\\text{rank}(A|b)\\)",
-    "solution": "**Định lý Rouché-Capelli:** Hệ \\(AX=b\\) có nghiệm ↔ rank(A) = rank(A|b).\n\nBa trường hợp:\n- rank(A)=rank(A|b)=n: **nghiệm duy nhất**.\n- rank(A)=rank(A|b)<n: **vô số nghiệm** (n−rank tham số tự do).\n- rank(A)<rank(A|b): **vô nghiệm**.",
-    "quick": "Có nghiệm ↔ **rank(A)=rank(A|b)**. Đây là định lý cơ bản để phân tích hệ PT.",
-    "casio": "CASIO: Tính rank(A) và rank(A|b) bằng cách đưa về bậc thang. So sánh hai hạng.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 38,
-    "type": "system_3vars_parameter",
-    "question": "Hệ \\(\\begin{cases}x+y+z=0\\\\2x+3y+4z=0\\\\3x+4y+5z=0\\end{cases}\\) có bao nhiêu tham số tự do?",
-    "matrix": null,
-    "options": [
-      "1",
-      "0",
-      "2",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "Hệ thuần nhất. Khử Gauss:\nR2←R2-2R1: (0,1,2,0). R3←R3-3R1: (0,1,2,0).\nR3←R3-R2: (0,0,0,0).\n\nCòn 2 hàng pivot → rank(A)=2.\n\nTham số tự do = n − rank = 3 − 2 = **1**.",
-    "quick": "Khử → rank(A)=2. Tham số tự do = 3-2 = **1**. Một ẩn tự do.",
-    "casio": "CASIO: Khử Gauss, đếm số hàng khác 0 = rank = 2. Tham số = 3-2=1.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 39,
-    "type": "system_parameter",
-    "question": "Hệ \\(\\begin{cases}x-y=a\\\\-x+y=b\\end{cases}\\) có nghiệm khi?",
-    "matrix": null,
-    "options": [
-      "\\(a+b=0\\)",
-      "\\(a=b\\)",
-      "\\(a-b=0\\)",
-      "Mọi a,b"
-    ],
-    "correct": "\\(a+b=0\\)",
-    "solution": "Det = |1,-1;-1,1| = 1-1 = 0 → hệ đặc biệt với mọi a,b.\n\nCộng hai PT: \\(0=a+b\\). Để hệ tương thích → **a+b=0**.\n\nKhi \\(a+b=0\\): PT2 = −PT1 → vô số nghiệm: \\(x=t,\\;y=t-a\\), \\(t\\in\\mathbb{R}\\).",
-    "quick": "PT1+PT2: 0=a+b → điều kiện có nghiệm: **a+b=0**. Khi đó vô số nghiệm.",
-    "casio": "CASIO: Det=0. Thêm hai PT: 0=a+b → a=-b. Ví dụ a=1,b=-1: vô số nghiệm. a=1,b=1: vô nghiệm.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 40,
-    "type": "system_general_solution",
-    "question": "Hệ PT tuyến tính \\(\\begin{cases}x+y-2z=-1\\\\x-y=3\\end{cases}\\). Nghiệm tổng quát là?",
-    "matrix": null,
-    "options": [
-      "\\((x,y,z)=(t+1,\\,t-2,\\,t)\\)",
-      "\\((x,y,z)=(t+1,\\,t+2,\\,t)\\)",
-      "\\((x,y,z)=(-t+1,\\,t-2,\\,t)\\)",
-      "\\((x,y,z)=(t-1,\\,t-2,\\,t)\\)"
-    ],
-    "correct": "\\((x,y,z)=(t+1,\\,t-2,\\,t)\\)",
-    "solution": "Từ PT2: \\(x=y+3\\).\nThay vào PT1: \\((y+3)+y-2z=-1 \\Rightarrow 2y-2z=-4 \\Rightarrow y-z=-2 \\Rightarrow y=z-2\\).\n\nĐặt \\(z=t\\): \\(y=t-2\\), \\(x=(t-2)+3=t+1\\).\n\n**Nghiệm TQ:** \\((x,y,z)=(t+1,\\;t-2,\\;t)\\), \\(t\\in\\mathbb{R}\\).",
-    "quick": "Đặt z=t (tự do). Từ PT2: x=y+3. Từ PT1: y=t-2. → x=t+1. **NTQ: (t+1,t-2,t)**.",
-    "casio": "CASIO: Khử Gauss 2 phương trình 3 ẩn → 1 ẩn tự do. Đặt z=t, giải x,y.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 41,
-    "type": "system_general_solution",
-    "question": "Hệ PT \\(\\begin{cases}2x-2y+z=1\\\\3x+y-2z=3\\end{cases}\\). Nghiệm tổng quát là?",
-    "matrix": null,
-    "options": [
-      "\\(\\left(\\dfrac{3t+7}{8},\\;\\dfrac{7t+3}{8},\\;t\\right)\\)",
-      "\\(\\left(1+\\dfrac{3}{5}t,\\;t,\\;-1+\\dfrac{4}{5}t\\right)\\)",
-      "\\(\\left(t,\\;\\dfrac{3t+7}{8},\\;\\dfrac{7t+3}{8}\\right)\\)",
-      "\\(\\left(\\dfrac{7t-3}{8},\\;\\dfrac{3t-7}{8},\\;t\\right)\\)"
-    ],
-    "correct": "\\(\\left(\\dfrac{3t+7}{8},\\;\\dfrac{7t+3}{8},\\;t\\right)\\)",
-    "solution": "Hệ 2 PT, 3 ẩn → 1 ẩn tự do. Đặt \\(z=t\\).\n\nGauss khử:\n\\(\\begin{pmatrix}2&-2&1&1\\\\3&1&-2&3\\end{pmatrix}\\)\nR2 ← 2R2-3R1: \\(\\begin{pmatrix}2&-2&1&1\\\\0&8&-7&3\\end{pmatrix}\\)\n\nTừ R2: \\(8y=3+7t \\Rightarrow y=\\dfrac{7t+3}{8}\\).\nTừ R1: \\(2x=1+2y-t=1+\\dfrac{7t+3}{4}-t=\\dfrac{4+7t+3-4t}{4}=\\dfrac{7+3t}{4}\\)\n\\(\\Rightarrow x=\\dfrac{3t+7}{8}\\).\n\n**Kiểm tra:** \\(2\\cdot\\dfrac{3t+7}{8}-2\\cdot\\dfrac{7t+3}{8}+t=\\dfrac{6t+14-14t-6+8t}{8}=\\dfrac{8}{8}=1\\) ✓\n\\(3\\cdot\\dfrac{3t+7}{8}+\\dfrac{7t+3}{8}-2t=\\dfrac{9t+21+7t+3-16t}{8}=\\dfrac{24}{8}=3\\) ✓",
-    "quick": "z=t (tự do). Gauss: 8y=7t+3 → y=(7t+3)/8; 2x=(3t+7)/4 → x=(3t+7)/8. Kiểm tra cả 2 PT ✓.",
-    "casio": "CASIO: hệ 2 PT 3 ẩn phải đặt 1 ẩn tự do rồi giải tay.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 42,
-    "type": "system_2param",
-    "question": "Tìm \\(a,b\\) sao cho hệ \\(\\begin{cases}(b+1)x+4y=a^2\\\\x+ay=2\\end{cases}\\) có vô số nghiệm.",
-    "matrix": null,
-    "options": [
-      "\\((a,b)=(-2,1)\\)",
-      "\\((a,b)=(2,-1)\\)",
-      "\\((a,b)=(2,1)\\)",
-      "\\((a,b)=(-2,-1)\\)"
-    ],
-    "correct": "\\((a,b)=(2,1)\\)",
-    "solution": "Hệ có vô số nghiệm khi hai phương trình tỉ lệ hoàn toàn:\n\\[\n\\frac{b+1}{1}=\\frac{4}{a}=\\frac{a^2}{2}.\n\\]\nTừ \\(\\dfrac{4}{a}=\\dfrac{a^2}{2}\\Rightarrow a^3=8\\Rightarrow a=2\\).\nKhi đó \\(b+1=2\\Rightarrow b=1\\).\n\nVậy \\((a,b)=(2,1)\\).",
-    "quick": "Vô số nghiệm \\(\\Leftrightarrow\\) 2 phương trình tỉ lệ hoàn toàn. Suy ra \\(a=2, b=1\\).",
-    "casio": "CASIO: thử \\((2,1)\\) sẽ được hai phương trình tương đương.",
+    "correct": "90",
+    "solution": "Thay $p_1=2p_2$ vào phương trình hai được $p_2=40$, $p_1=80$. Phương trình một cho $160-40=30+t$, nên $t=90$.",
+    "quick": "Dùng điều kiện giá trước để giảm hệ còn một ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
     "difficulty": 3,
-    "topic": "Ma trận & Định thức"
+    "topic": "Cân bằng thị trường có tham số"
   },
   {
-    "id": 43,
-    "type": "system_2param",
-    "question": "Tìm \\(a,b\\) sao cho hệ \\(\\begin{cases}x+y+2z=4\\\\-3x+y+3z=1\\\\ax-2z=b\\end{cases}\\) có nghiệm duy nhất.",
+    "id": 53,
+    "type": "economic_leontief_advanced",
+    "question": "Mô hình Leontief hai ngành thỏa $x=0.2x+0.1y+70$, $y=0.2x+0.3y+50$. Tổng sản lượng cân bằng $x+y$ bằng",
     "matrix": null,
     "options": [
-      "\\(a\\neq8\\) (b bất kỳ)",
-      "\\(a=8\\)",
-      "\\(a\\neq18\\) (b bất kỳ)",
-      "Mọi \\(a,b\\)"
+      "200",
+      "180",
+      "220",
+      "160"
     ],
-    "correct": "\\(a\\neq8\\) (b bất kỳ)",
-    "solution": "Hệ có nghiệm duy nhất khi \\(\\det(A)\\neq0\\), với\n\\[\nA=\\begin{pmatrix}1&1&2\\\\-3&1&3\\\\a&0&-2\\end{pmatrix}.\n\\]\nKhai triển theo hàng 1:\n\\[\n\\det(A)=1\\begin{vmatrix}1&3\\\\0&-2\\end{vmatrix}-1\\begin{vmatrix}-3&3\\\\a&-2\\end{vmatrix}+2\\begin{vmatrix}-3&1\\\\a&0\\end{vmatrix}\n\\]\n\\[\n=(-2)- (6-3a) +2(-a)= -2-6+3a-2a=a-8.\n\\]\nVậy hệ có nghiệm duy nhất khi \\(a-8\\neq0\\Rightarrow a\\neq8\\). Giá trị \\(b\\) không ảnh hưởng điều kiện duy nhất.",
-    "quick": "\\(\\det(A)=a-8\\). Nghiệm duy nhất khi \\(a\\neq8\\).",
-    "casio": "CASIO [MODE][6]: tính det theo a, được \\(a-8\\).",
+    "correct": "200",
+    "solution": "Chuyển vế được $0.8x-0.1y=70$, $-0.2x+0.7y=50$. Giải ra $x=y=100$, tổng bằng 200.",
+    "quick": "Đưa mô hình về hệ tuyến tính $(I-C)X=d$.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
     "difficulty": 3,
-    "topic": "Ma trận & Định thức"
+    "topic": "Mô hình Leontief"
   },
   {
-    "id": 44,
-    "type": "system_2param",
-    "question": "Tìm \\(a,b\\) sao cho hệ \\(\\begin{cases}(b+1)x+4y=a^2\\\\x+ay=2\\end{cases}\\) có **vô số nghiệm**.",
+    "id": 54,
+    "type": "economic_three_investments",
+    "question": "Đầu tư 200 triệu đồng vào ba kênh có lãi suất 5%, 8%, 10%. Tổng lãi một năm là 13,4 triệu và số tiền ở kênh 5% nhiều hơn kênh 8% là 20 triệu. Số tiền ở kênh 10% là",
     "matrix": null,
     "options": [
-      "\\((a,b)=(2,1)\\)",
-      "\\((a,b)=(-2,1)\\)",
-      "\\((a,b)=(2,-1)\\)",
-      "\\((a,b)=(1,2)\\)"
+      "20 triệu",
+      "40 triệu",
+      "60 triệu",
+      "80 triệu"
     ],
-    "correct": "\\((a,b)=(2,1)\\)",
-    "solution": "Điều kiện vô số nghiệm: \\(\\det(A)=0\\) VÀ 2 PT tỉ lệ nhau.\n\n\\(\\det(A)=(b+1)\\cdot a-4\\cdot1=a(b+1)-4=0\\) ... (1)\n\nTỉ lệ hoàn toàn: \\(\\dfrac{b+1}{1}=\\dfrac{4}{a}=\\dfrac{a^2}{2}\\).\n\nTừ \\(\\dfrac{4}{a}=\\dfrac{a^2}{2}\\Rightarrow a^3=8\\Rightarrow a=2\\).\nTừ \\(\\dfrac{4}{a}=\\dfrac{4}{2}=2=b+1\\Rightarrow b=1\\).\n\n**Kiểm tra:** \\(\\det(A)=2\\cdot(1+1)-4=4-4=0\\) ✓\nHai PT: \\(2(2)x+4y=4\\) và \\(x+2y=2\\) → PT1=2×PT2 ✓ → vô số nghiệm.",
-    "quick": "4/a=a²/2→a³=8→a=2. b+1=4/a=2→b=1. det=2×2-4=0 ✓ → **(a,b)=(2,1)**.",
-    "casio": "CASIO: Thay a,b cụ thể, tính det của ma trận hệ số, và kiểm tra Rouché-Capelli.",
+    "correct": "20 triệu",
+    "solution": "Gọi số tiền là $x,y,z$. Hệ: $x+y+z=200$, $0.05x+0.08y+0.10z=13.4$, $x-y=20$. Giải được $(100,80,20)$.",
+    "quick": "Đổi phần trăm thành hệ số thập phân và giải hệ ba ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
     "difficulty": 3,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ứng dụng hệ tuyến tính trong tài chính"
   },
   {
-    "id": 45,
-    "type": "system_general_solution",
-    "question": "Nghiệm tổng quát của hệ \\(\\begin{cases}x+y-z=2\\\\x-y=0\\end{cases}\\) là",
+    "id": 55,
+    "type": "economic_mixture_three",
+    "question": "Trộn 100 kg ba nguyên liệu A, B, C chứa lần lượt 10%, 20%, 40% chất dinh dưỡng. Hỗn hợp cần 26 kg chất dinh dưỡng và lượng C gấp đôi lượng A. Khối lượng nguyên liệu B là",
     "matrix": null,
     "options": [
-      "\\((x,y,z)=(t,t,2t-2)\\)",
-      "\\((x,y,z)=(t,t,2-t)\\)",
-      "\\((x,y,z)=(t,2t,t-2)\\)",
-      "Hệ vô nghiệm"
+      "40 kg",
+      "20 kg",
+      "60 kg",
+      "30 kg"
     ],
-    "correct": "\\((x,y,z)=(t,t,2t-2)\\)",
-    "solution": "Từ \\(x-y=0\\Rightarrow x=y\\). Thế vào phương trình đầu: \\(2y-z=2\\Rightarrow z=2y-2\\). Đặt \\(y=t\\), suy ra \\((x,y,z)=(t,t,2t-2)\\).",
-    "quick": "\\(x=y=t\\), rồi \\(z=2t-2\\).",
-    "casio": "CASIO: đây là hệ 2 phương trình 3 ẩn nên đặt một ẩn tự do rồi giải tay.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 46,
-    "type": "rank_parameter",
-    "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\1&2&m\\end{pmatrix}\\). Hạng của A bằng 1 khi",
-    "matrix": null,
-    "options": [
-      "\\(m=3\\)",
-      "\\(m\\ne3\\)",
-      "\\(m=0\\)",
-      "Không có giá trị nào"
-    ],
-    "correct": "\\(m=3\\)",
-    "solution": "Hàng 2 luôn bằng \\(2\\) lần hàng 1. Để hạng bằng 1 thì hàng 3 cũng phải là bội của hàng 1. Vì \\((1,2,m)\\) phải cùng phương với \\((1,2,3)\\), suy ra \\(m=3\\).",
-    "quick": "Muốn rank = 1 thì hàng 3 cũng phải trùng hướng với hàng 1 \\(\\Rightarrow m=3\\).",
-    "casio": "CASIO: thử \\(m=3\\) sẽ được ba hàng phụ thuộc.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 47,
-    "type": "rank_parameter",
-    "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\1&1&m\\end{pmatrix}\\). Hạng của A là",
-    "matrix": null,
-    "options": [
-      "2 với mọi \\(m\\)",
-      "1 với mọi \\(m\\)",
-      "3 với mọi \\(m\\)",
-      "Phụ thuộc \\(m\\)"
-    ],
-    "correct": "2 với mọi \\(m\\)",
-    "solution": "Hàng 2 bằng \\(2\\) lần hàng 1 nên hạng không quá 2. Xét minor \\(\\begin{vmatrix}1&2\\\\1&1\\end{vmatrix}=-1\\ne0\\), nên luôn có ít nhất hạng 2. Vậy rank luôn bằng 2 với mọi \\(m\\).",
-    "quick": "Có một minor \\(2\\times2\\) khác 0 nên rank ≥ 2, lại có một hàng phụ thuộc nên rank = 2.",
-    "casio": "CASIO: chỉ cần tính một định thức con \\(2\\times2\\) khác 0.",
+    "correct": "40 kg",
+    "solution": "Gọi khối lượng là $x,y,z$. Có $x+y+z=100$, $0.1x+0.2y+0.4z=26$, $z=2x$. Giải được $(20,40,40)$.",
+    "quick": "Dùng $z=2x$ và phương trình tổng để thay vào phương trình dinh dưỡng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
     "difficulty": 3,
-    "topic": "Ma trận & Định thức"
+    "topic": "Bài toán phối trộn"
   },
   {
-    "id": 48,
-    "type": "rank",
-    "question": "Nếu \\(\\det(A)\\ne0\\) với A là ma trận vuông cấp 3, thì \\(\\operatorname{rank}(A)=\\)",
+    "id": 56,
+    "type": "economic_transport_cost",
+    "question": "Ba kho A, B, C có tổng 120 tấn hàng; kho A gấp đôi kho B, kho C nhiều hơn kho B 20 tấn. Chi phí vận chuyển mỗi tấn từ A, B, C lần lượt là 2, 3, 5 đơn vị. Tổng chi phí là",
     "matrix": null,
     "options": [
-      "3",
-      "2",
-      "1",
-      "0"
+      "400",
+      "360",
+      "420",
+      "380"
     ],
-    "correct": "3",
-    "solution": "Ma trận vuông có định thức khác 0 thì khả nghịch, do đó đủ hạng. Với ma trận cấp 3, suy ra \\(\\operatorname{rank}(A)=3\\).",
-    "quick": "\\(\\det(A)\\ne0\\Rightarrow\\) đủ hạng \\(\\Rightarrow \\operatorname{rank}(A)=3\\).",
-    "casio": "CASIO: det ≠ 0 thì rank bằng cấp ma trận.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 49,
-    "type": "rank_parameter",
-    "question": "Cho \\(A=\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&m\\end{pmatrix}\\). Hạng của A bằng 2 khi",
-    "matrix": null,
-    "options": [
-      "\\(m\\ne1\\)",
-      "\\(m=1\\)",
-      "Mọi \\(m\\)",
-      "Không có giá trị nào"
-    ],
-    "correct": "\\(m\\ne1\\)",
-    "solution": "Hai hàng đầu giống nhau nên rank < 3. Khi \\(m=1\\), cả ba hàng đều giống nhau nên rank = 1. Khi \\(m\\ne1\\), hàng 3 khác hàng 1 nên có đúng 2 hàng độc lập, do đó rank = 2.",
-    "quick": "\\(m=1\\) → cả 3 hàng trùng nhau; \\(m\\ne1\\) → có 2 hàng độc lập.",
-    "casio": "CASIO: xét trực tiếp sự trùng nhau của các hàng.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "400",
+    "solution": "Gọi lượng hàng là $x,y,z$. Từ $x=2y$, $z=y+20$, $x+y+z=120$ được $(50,25,45)$. Chi phí $2\\cdot50+3\\cdot25+5\\cdot45=400$.",
+    "quick": "Giải lượng hàng trước, sau đó tính tích vô hướng với véc tơ chi phí.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong vận tải"
   }
 ]

@@ -1,5 +1,7 @@
 /* ================================================================
-   exam.js  — CHẾ ĐỘ THI THỬ 70 CÂU  v2
+   exam.js  — CHẾ ĐỘ THI THỬ 50 CÂU  v2
+   ✅ Phân bố 5 Nhận biết – 22 Thông hiểu – 23 Vận dụng
+   ✅ Phân bố sát đề minh họa: 16 Đại số – 26 Giải tích – 8 PTVP
    ✅ Timer theo timestamp (không bị lệch khi tab ẩn)
    ✅ Lưu ngay khi chọn đáp án
    ✅ Random thứ tự đáp án (chống học tủ)
@@ -12,49 +14,47 @@
 
 /* ── CONFIG ── */
 const EXAM_DIST = [
-  { file:'matran_co_ban',                         n:6 },
-  { file:'dinh_thuc',                             n:8 },
-  { file:'gia_tri_rieng',                         n:5 },
-  { file:'he_pt_tuyen_tinh',                      n:6 },
-
-  { file:'gioi_han',                              n:2 },
-  { file:'tiem_can',                              n:1 },
-  { file:'lientuc_giandoan_khavi',                n:4 },
-  { file:'dao_ham',                               n:3 },
-
-  { file:'daohamrieng_viphan_cuctri',             n:8 },
-
-  { file:'chuoi_so',                              n:5 },
-  { file:'chuoi_luy_thua',                        n:1 },
-
-  { file:'pt_viphan_cap1',                        n:5 },
-  { file:'pt_viphan_cap2',                        n:3 },
-
-  { file:'tichphan_kep',                          n:4 },
-  { file:'tichphan_ba',                           n:4 },
-  { file:'tichphan_duong_green',                  n:5 },
-];
-const DIFF_RATIO = { easy: 0.30, med: 0.55, hard: 0.15 };
-const EXAM_TOTAL = 70;
-const EXAM_SECS  = 100 * 60;
-const LS_KEY     = 'vb2_exam70_v2';
+  /* I. ĐẠI SỐ TUYẾN TÍNH: 16 CÂU Nhận biết 2 – Thông hiểu 6 – Vận dụng 8 */
+  { file: 'matran_co_ban', n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
+  { file: 'dinh_thuc', n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
+  { file: 'he_pt_tuyen_tinh', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'gia_tri_rieng', n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
+  { file: 'khong_gian_vector_ud', n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
+  /* II. GIẢI TÍCH: 26 CÂU Nhận biết 1 – Thông hiểu 13 – Vận dụng 12 */
+  { file: 'gioi_han', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'lientuc_giandoan_khavi', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'dao_ham', n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
+  { file: 'daohamrieng_viphan_cuctri', n: 7, diff: { 1: 0, 2: 4, 3: 3 } },
+  { file: 'chuoi_so', n: 4, diff: { 1: 0, 2: 2, 3: 2 } },
+  { file: 'chuoi_luy_thua', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'nguyen_ham_tich_phan_1bien', n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
+  { file: 'tichphan_kep', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'tichphan_ba', n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
+  { file: 'tichphan_duong_green', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  /* III. PHƯƠNG TRÌNH VI PHÂN: 8 CÂU Nhận biết 2 – Thông hiểu 3 – Vận dụng 3 */
+  { file: 'pt_viphan_cap1', n: 6, diff: { 1: 1, 2: 3, 3: 2 } },
+  { file: 'pt_viphan_cap2', n: 2, diff: { 1: 1, 2: 0, 3: 1 } }];
+const EXAM_DIFF_COUNTS = { 1: 5, 2: 22, 3: 23 };
+const EXAM_TOTAL = EXAM_DIST.reduce((sum, spec) => sum + spec.n, 0);
+const EXAM_SECS = 100 * 60;
+const LS_KEY = 'vb2_exam50_mcq_v3';
 const WRONG_PAGE = 20;
-const EXAM_NAV_KEY = 'vb2_exam_nav_collapsed';
+const EXAM_NAV_KEY = 'vb2_exam_nav_collapsed_v3';
 
 /* ── STATE ── */
-let examQs          = [];  // [{...q, _shuffledOptions:[...], _optMap:{newIdx->origIdx}}]
-let examAnswers     = {};  // { qIdx: shuffledOptIdx }
-let examFlagged     = new Set();
-let examCurrent     = 0;
-let examTimerRAF    = null;
-let examDeadline    = 0;   // timestamp ms khi hết giờ
-let examDone        = false;
+let examQs = [];  // [{...q, _shuffledOptions:[...], _optMap:{newIdx->origIdx}}]
+let examAnswers = {};  // { qIdx: shuffledOptIdx }
+let examFlagged = new Set();
+let examCurrent = 0;
+let examTimerRAF = null;
+let examDeadline = 0;   // timestamp ms khi hết giờ
+let examDone = false;
 let examNavCollapsed = false;
-let wrongPage       = 0;   // trang hiện tại trong wrong review
+let wrongPage = 0;   // trang hiện tại trong wrong review
 
-const EX_LETTERS  = ['A','B','C','D'];
-const EX_DIFF_LBL = { 1:'Dễ', 2:'Trung bình', 3:'Khó' };
-const EX_DIFF_CLS = { 1:'diff-1', 2:'diff-2', 3:'diff-3' };
+const EX_LETTERS = ['A', 'B', 'C', 'D'];
+const EX_DIFF_LBL = { 1: 'Nhận biết', 2: 'Thông hiểu', 3: 'Vận dụng' };
+const EX_DIFF_CLS = { 1: 'diff-1', 2: 'diff-2', 3: 'diff-3' };
 
 /* ── DB CACHE ── */
 const examDB = {};
@@ -76,10 +76,10 @@ async function initExamMode() {
   if (saved) {
     const doneCount = Object.keys(saved.examAnswers || {}).length;
     const remaining = Math.max(0, saved.examDeadline - Date.now());
-    const rmSecs    = Math.round(remaining / 1000);
+    const rmSecs = Math.round(remaining / 1000);
     const el = document.getElementById('modal-resume-info');
     if (el) el.textContent =
-      `Bài thi đang dở: đã làm ${doneCount}/${(saved.examQs||[]).length} câu, còn ${fmtTime(rmSecs)}.`;
+      `Bài thi đang dở: đã làm ${doneCount}/${(saved.examQs || []).length} câu, còn ${fmtTime(rmSecs)}.`;
     openOverlay('modal-resume');
   } else {
     startFreshExam();
@@ -97,7 +97,7 @@ async function loadExamDB() {
       const r = await fetch('data/' + f + '.json');
       if (!r.ok) throw new Error(r.status);
       examDB[f] = await r.json();
-    } catch(e) {
+    } catch (e) {
       console.warn('Cannot load', f, e);
       examDB[f] = [];
     }
@@ -107,36 +107,16 @@ async function loadExamDB() {
 /* ================================================================
    BUILD — phân hóa độ khó + RANDOM đáp án
 ================================================================ */
-function buildExamQuestions() {
-  const selected = [];
-  for (const spec of EXAM_DIST) {
-    const pool   = examDB[spec.file] || [];
-    const easy   = pool.filter(q => q.difficulty === 1);
-    const medium = pool.filter(q => q.difficulty === 2);
-    const hard   = pool.filter(q => q.difficulty === 3);
-    const n  = spec.n;
-    const nE = Math.max(0, Math.round(n * DIFF_RATIO.easy));
-    const nH = Math.max(0, Math.round(n * DIFF_RATIO.hard));
-    const nM = n - nE - nH;
-    const picked = [...pickRandom(easy,nE), ...pickRandom(medium,nM), ...pickRandom(hard,nH)];
-    while (picked.length < n) {
-      const rest = pool.filter(q => !picked.includes(q));
-      if (!rest.length) break;
-      picked.push(rest[Math.floor(Math.random() * rest.length)]);
-    }
-    picked.forEach(q => selected.push({ ...q, _src: spec.file }));
-  }
-  // Shuffle câu hỏi, sau đó shuffle đáp án mỗi câu
-  return shuffleArr(selected).slice(0, EXAM_TOTAL).map(q => shuffleOptions({ ...q }));
-}
+/* ================================================================ BUILD EXAM - Đúng số câu từng chuyên đề - Đúng số câu từng mức độ - Không cắt ngẫu nhiên bằng slice(0, 50) ================================================================ */
+function buildExamQuestions() { const selected = []; for (const spec of EXAM_DIST) { const pool = examDB[spec.file] || []; const picked = []; for (const level of [1, 2, 3]) { const required = spec.diff[level] || 0; const difficultyPool = pool.filter(q => Number(q.difficulty) === level && !picked.includes(q)); picked.push(...pickRandom(difficultyPool, required)); } /* Phương án dự phòng: nếu một file thiếu câu ở mức độ yêu cầu, lấy thêm câu chưa được chọn trong chính file đó. */ if (picked.length < spec.n) { const remainingPool = pool.filter(q => !picked.includes(q)); picked.push(...pickRandom(remainingPool, spec.n - picked.length)); } if (picked.length < spec.n) { console.warn(`[EXAM] ${spec.file}.json chỉ lấy được ` + `${picked.length}/${spec.n} câu.`); } picked.slice(0, spec.n).forEach(q => { selected.push({ ...q, _src: spec.file }); }); } if (selected.length !== EXAM_TOTAL) { console.warn(`[EXAM] Đề tạo được ${selected.length}/${EXAM_TOTAL} câu.`); } /* Tất cả vẫn là câu ABCD: - xáo thứ tự 50 câu; - xáo 4 phương án của từng câu. */ return shuffleArr(selected).map(q => shuffleOptions({ ...q })); }
 
 // Tạo bản sao câu hỏi với đáp án đã xáo trộn
 // _shuffledOptions: mảng đáp án mới
 // _correctShuffledIdx: index của đáp án đúng sau khi xáo
 function shuffleOptions(q) {
   if (!q.options || q.options.length === 0) return q;
-  const origOptions  = [...q.options];
-  const correctOrig  = q.correct; // chuỗi đáp án đúng
+  const origOptions = [...q.options];
+  const correctOrig = q.correct; // chuỗi đáp án đúng
 
   // Tạo shuffle mapping
   const indices = shuffleArr([0, 1, 2, 3].slice(0, origOptions.length));
@@ -145,7 +125,7 @@ function shuffleOptions(q) {
 
   return {
     ...q,
-    _shuffledOptions:    shuffled,
+    _shuffledOptions: shuffled,
     _correctShuffledIdx: correctShuffledIdx,
     // giữ q.correct nguyên để grade vẫn đúng
   };
@@ -160,11 +140,11 @@ function pickRandom(arr, n) {
 ================================================================ */
 function startFreshExam() {
   closeOverlay('modal-resume');
-  examQs      = buildExamQuestions();
+  examQs = buildExamQuestions();
   examAnswers = {};
   examFlagged = new Set();
   examCurrent = 0;
-  examDone    = false;
+  examDone = false;
   examDeadline = Date.now() + EXAM_SECS * 1000;
   saveExamProgress();
   renderExamFull();
@@ -174,10 +154,10 @@ function startFreshExam() {
 // Làm lại đề: giữ nguyên câu hỏi + thứ tự đáp án, reset tất cả câu trả lời
 function retakeExam() {
   closeOverlay('modal-retake');
-  examAnswers  = {};
-  examFlagged  = new Set();
-  examCurrent  = 0;
-  examDone     = false;
+  examAnswers = {};
+  examFlagged = new Set();
+  examCurrent = 0;
+  examDone = false;
   examDeadline = Date.now() + EXAM_SECS * 1000;
   // Re-shuffle options để chống học thuộc vị trí
   examQs = examQs.map(q => shuffleOptions(q));
@@ -197,12 +177,12 @@ function resumeSavedExam() {
   closeOverlay('modal-resume');
   const p = loadExamProgress();
   if (!p) { startFreshExam(); return; }
-  examQs      = p.examQs;
-  examAnswers = p.examAnswers  || {};
+  examQs = p.examQs;
+  examAnswers = p.examAnswers || {};
   examFlagged = new Set(p.examFlagged || []);
-  examCurrent = p.examCurrent  || 0;
+  examCurrent = p.examCurrent || 0;
   examDeadline = p.examDeadline || (Date.now() + EXAM_SECS * 1000);
-  examDone    = false;
+  examDone = false;
   renderExamFull();
   startExamTimer();
 }
@@ -220,23 +200,23 @@ function renderExamQ() {
   const q = examQs[examCurrent];
   if (!q) return;
 
-  const done      = Object.keys(examAnswers).length;
-  const total     = examQs.length;
-  const selIdx    = examAnswers[examCurrent]; // shuffled index
+  const done = Object.keys(examAnswers).length;
+  const total = examQs.length;
+  const selIdx = examAnswers[examCurrent]; // shuffled index
   const isFlagged = examFlagged.has(examCurrent);
-  const opts      = q._shuffledOptions || q.options;
+  const opts = q._shuffledOptions || q.options;
 
   // Cập nhật topbar
   const progEl = document.getElementById('ex-prog-text');
-  const barEl  = document.getElementById('ex-prog-bar');
+  const barEl = document.getElementById('ex-prog-bar');
   if (progEl) progEl.textContent = done + ' / ' + total + ' câu đã làm';
-  if (barEl)  barEl.style.width  = (done / total * 100).toFixed(1) + '%';
+  if (barEl) barEl.style.width = (done / total * 100).toFixed(1) + '%';
 
   // Matrix HTML
   const matHtml = q.matrix
     ? '<div style="margin:10px 0">\\[\\begin{pmatrix}'
-      + q.matrix.map(r => r.join(' & ')).join(' \\\\ ')
-      + '\\end{pmatrix}\\]</div>'
+    + q.matrix.map(r => r.join(' & ')).join(' \\\\ ')
+    + '\\end{pmatrix}\\]</div>'
     : '';
 
   // Options HTML
@@ -272,8 +252,8 @@ function renderExamQ() {
         <button class="btn" onclick="exGoTo(${examCurrent - 1})" ${examCurrent === 0 ? 'disabled' : ''}>← Trước</button>
         <span class="ex-q-nav-info">Câu ${examCurrent + 1} / ${total}</span>
         ${examCurrent < total - 1
-          ? `<button class="btn primary" onclick="exGoTo(${examCurrent + 1})">Câu sau →</button>`
-          : `<button class="btn primary" onclick="askSubmitExam()">Xem lại &amp; Nộp →</button>`}
+      ? `<button class="btn primary" onclick="exGoTo(${examCurrent + 1})">Câu sau →</button>`
+      : `<button class="btn primary" onclick="askSubmitExam()">Xem lại &amp; Nộp →</button>`}
       </div>
     </div>`;
 
@@ -311,16 +291,16 @@ function updateNavGrid() {
     const cell = document.getElementById('nc-' + i);
     if (!cell) return;
     cell.className = 'nav-cell'
-      + (i === examCurrent            ? ' nc-cur'  : '')
+      + (i === examCurrent ? ' nc-cur' : '')
       + (examAnswers[i] !== undefined ? ' nc-done' : '')
-      + (examFlagged.has(i)           ? ' nc-flag' : '');
+      + (examFlagged.has(i) ? ' nc-flag' : '');
   });
 }
 
 function loadExamNavState() {
   try {
     examNavCollapsed = localStorage.getItem(EXAM_NAV_KEY) === '1';
-  } catch(e) {
+  } catch (e) {
     examNavCollapsed = false;
   }
 }
@@ -328,12 +308,12 @@ function loadExamNavState() {
 function saveExamNavState() {
   try {
     localStorage.setItem(EXAM_NAV_KEY, examNavCollapsed ? '1' : '0');
-  } catch(e) {}
+  } catch (e) { }
 }
 
 function syncExamNavPanelUI() {
   const panel = document.querySelector('.exam-nav-panel');
-  const btn   = document.getElementById('nav-panel-toggle');
+  const btn = document.getElementById('nav-panel-toggle');
   if (!panel) return;
   if (window.innerWidth <= 640) {
     const isOpen = panel.classList.contains('mob-open');
@@ -380,12 +360,12 @@ function exPickAnswer(optIdx) {
   });
   updateNavGrid();
   // Cập nhật progress bar
-  const done  = Object.keys(examAnswers).length;
+  const done = Object.keys(examAnswers).length;
   const total = examQs.length;
   const progEl = document.getElementById('ex-prog-text');
-  const barEl  = document.getElementById('ex-prog-bar');
+  const barEl = document.getElementById('ex-prog-bar');
   if (progEl) progEl.textContent = done + ' / ' + total + ' câu đã làm';
-  if (barEl)  barEl.style.width  = (done / total * 100).toFixed(1) + '%';
+  if (barEl) barEl.style.width = (done / total * 100).toFixed(1) + '%';
 }
 
 function exToggleFlag(idx) {
@@ -438,8 +418,8 @@ function updateTimerDisplay(secs) {
   const box = document.getElementById('ex-timer');
   if (!box) return;
   box.className = 'timer-box'
-    + (secs <= 300 ? ' warn'   : '')
-    + (secs <= 60  ? ' danger' : '');
+    + (secs <= 300 ? ' warn' : '')
+    + (secs <= 60 ? ' danger' : '');
 }
 
 function fmtTime(secs) {
@@ -452,7 +432,7 @@ function fmtTime(secs) {
    SUBMIT
 ================================================================ */
 function askSubmitExam() {
-  const done  = Object.keys(examAnswers).length;
+  const done = Object.keys(examAnswers).length;
   document.getElementById('ms-done').textContent = done;
   document.getElementById('ms-skip').textContent = examQs.length - done;
   document.getElementById('ms-flag').textContent = examFlagged.size;
@@ -488,37 +468,37 @@ function doSubmitExam() {
 function gradeAndShowResults(timeUsed) {
   let correct = 0;
   const details = examQs.map((q, i) => {
-    const selIdx    = examAnswers[i];
-    const opts      = q._shuffledOptions || q.options;
-    const given     = selIdx !== undefined ? opts[selIdx] : undefined;
-    const isOk      = given === q.correct;
+    const selIdx = examAnswers[i];
+    const opts = q._shuffledOptions || q.options;
+    const given = selIdx !== undefined ? opts[selIdx] : undefined;
+    const isOk = given === q.correct;
     if (isOk) correct++;
     return { q, given, isOk, i };
   });
 
   const total = examQs.length;
-  const pct   = Math.round(correct / total * 100);
-  const mm    = Math.floor(timeUsed / 60);
-  const ss    = timeUsed % 60;
+  const pct = Math.round(correct / total * 100);
+  const mm = Math.floor(timeUsed / 60);
+  const ss = timeUsed % 60;
   const grade =
-    pct >= 90 ? '🏆 Xuất sắc'    :
-    pct >= 75 ? '🥇 Giỏi'        :
-    pct >= 60 ? '🥈 Khá'         :
-    pct >= 50 ? '🥉 Trung bình'  :
-                '📚 Cần ôn thêm';
+    pct >= 90 ? '🏆 Xuất sắc' :
+      pct >= 75 ? '🥇 Giỏi' :
+        pct >= 60 ? '🥈 Khá' :
+          pct >= 50 ? '🥉 Trung bình' :
+            '📚 Cần ôn thêm';
 
   // Breakdown theo chủ đề
   const tmap = {};
   details.forEach(({ q, isOk }) => {
     const t = q.topic || q._src || 'Khác';
-    if (!tmap[t]) tmap[t] = { ok:0, tot:0 };
+    if (!tmap[t]) tmap[t] = { ok: 0, tot: 0 };
     tmap[t].tot++;
     if (isOk) tmap[t].ok++;
   });
   const breakdownHtml = Object.entries(tmap)
-    .sort((a,b) => b[1].tot - a[1].tot)
+    .sort((a, b) => b[1].tot - a[1].tot)
     .map(([t, s]) => {
-      const p   = Math.round(s.ok / s.tot * 100);
+      const p = Math.round(s.ok / s.tot * 100);
       const col = p >= 75 ? 'var(--green)' : p >= 50 ? 'var(--amber)' : 'var(--red)';
       return `<div class="breakdown-row">
         <span class="br-name">${t}</span>
@@ -597,15 +577,15 @@ function gradeAndShowResults(timeUsed) {
 
 function renderWrongPage(page) {
   wrongPage = page;
-  const all    = window._wrongDetails || [];
-  const total  = all.length;
-  const pages  = Math.ceil(total / WRONG_PAGE);
-  const start  = page * WRONG_PAGE;
-  const slice  = all.slice(start, start + WRONG_PAGE);
+  const all = window._wrongDetails || [];
+  const total = all.length;
+  const pages = Math.ceil(total / WRONG_PAGE);
+  const start = page * WRONG_PAGE;
+  const slice = all.slice(start, start + WRONG_PAGE);
 
   const listEl = document.getElementById('wr-list');
-  const pgEl   = document.getElementById('wr-page-info');
-  const pgnEl  = document.getElementById('wr-pagination');
+  const pgEl = document.getElementById('wr-page-info');
+  const pgnEl = document.getElementById('wr-pagination');
   if (!listEl) return;
 
   pgEl.textContent = `Trang ${page + 1} / ${pages} (${start + 1}–${Math.min(start + WRONG_PAGE, total)} / ${total})`;
@@ -613,7 +593,7 @@ function renderWrongPage(page) {
   listEl.innerHTML = slice.map(({ q, given, i }) => {
     const opts = q._shuffledOptions || q.options;
     return `<div class="wr-item wrong">
-      <div class="wr-num">Câu ${i+1} · ${q.topic||q._src||''} · ${EX_DIFF_LBL[q.difficulty]||''}</div>
+      <div class="wr-num">Câu ${i + 1} · ${q.topic || q._src || ''} · ${EX_DIFF_LBL[q.difficulty] || ''}</div>
       <div class="wr-q">${q.question}</div>
       <div class="wr-ans">
         <span class="ans-tag ans-your">Bạn: ${given || '(chưa trả lời)'}</span>
@@ -625,9 +605,9 @@ function renderWrongPage(page) {
   // Pagination buttons
   let pgHtml = '';
   if (pages > 1) {
-    if (page > 0)      pgHtml += `<button class="btn" onclick="renderWrongPage(${page-1})">← Trang trước</button>`;
-    pgHtml += `<span style="font-size:13px;color:var(--muted)">${page+1}/${pages}</span>`;
-    if (page < pages-1) pgHtml += `<button class="btn primary" onclick="renderWrongPage(${page+1})">Trang sau →</button>`;
+    if (page > 0) pgHtml += `<button class="btn" onclick="renderWrongPage(${page - 1})">← Trang trước</button>`;
+    pgHtml += `<span style="font-size:13px;color:var(--muted)">${page + 1}/${pages}</span>`;
+    if (page < pages - 1) pgHtml += `<button class="btn primary" onclick="renderWrongPage(${page + 1})">Trang sau →</button>`;
   }
   pgnEl.innerHTML = pgHtml;
 
@@ -657,7 +637,7 @@ function saveExamProgress() {
       examFlagged: [...examFlagged],
       examCurrent, examDeadline,
     }));
-  } catch(e) {
+  } catch (e) {
     console.warn('localStorage save failed', e);
   }
 }
@@ -680,7 +660,7 @@ function loadExamProgress() {
 /* ================================================================
    MODAL HELPERS
 ================================================================ */
-function openOverlay(id)  { document.getElementById(id)?.classList.remove('hidden'); }
+function openOverlay(id) { document.getElementById(id)?.classList.remove('hidden'); }
 function closeOverlay(id) { document.getElementById(id)?.classList.add('hidden'); }
 
 function backFromResults() {
@@ -696,10 +676,10 @@ function backFromResults() {
 document.addEventListener('keydown', e => {
   if (!document.getElementById('screen-exam')?.classList.contains('active')) return;
   if (examDone) return;
-  if (['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) return;
+  if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
   if (e.key === 'ArrowRight' || e.key === 'n') { e.preventDefault(); exGoTo(examCurrent + 1); }
-  if (e.key === 'ArrowLeft'  || e.key === 'p') { e.preventDefault(); exGoTo(examCurrent - 1); }
-  if (e.key === 'f' || e.key === 'F')           { e.preventDefault(); exToggleFlag(examCurrent); }
+  if (e.key === 'ArrowLeft' || e.key === 'p') { e.preventDefault(); exGoTo(examCurrent - 1); }
+  if (e.key === 'f' || e.key === 'F') { e.preventDefault(); exToggleFlag(examCurrent); }
   const idx = 'abcd'.indexOf(e.key.toLowerCase());
   if (idx >= 0) { e.preventDefault(); exPickAnswer(idx); }
 });
@@ -734,7 +714,7 @@ function _saveWrongBank(bank) {
   try {
     if (bank.length > WRONG_BANK_MAX) bank = bank.slice(-WRONG_BANK_MAX);
     localStorage.setItem(WRONG_BANK_KEY, JSON.stringify(bank));
-  } catch(e) { console.warn('Wrong bank save error', e); }
+  } catch (e) { console.warn('Wrong bank save error', e); }
 }
 
 // ── Thêm câu sai ─────────────────────────────────────────────
@@ -791,7 +771,7 @@ function clearWrongBank() {
 function updateWrongBadge() {
   const n = getWrongBank().length;
   const badge = document.getElementById('wrong-bank-badge');
-  const btn   = document.getElementById('btn-mode-wrong');
+  const btn = document.getElementById('btn-mode-wrong');
   if (badge) {
     badge.textContent = n;
     badge.style.display = n > 0 ? 'inline-flex' : 'none';
@@ -832,21 +812,21 @@ function loadWrongBankPractice(qs) {
   switchMode('wrong');
   setTimeout(() => {
     // Reset state
-    questions   = qs;
+    questions = qs;
     userAnswers = Array(qs.length).fill(-1);
-    grades      = Array(qs.length).fill(null);
-    current     = 0;
-    answered    = false;
+    grades = Array(qs.length).fill(null);
+    current = 0;
+    answered = false;
     selectedIdx = -1;
-    totalDone   = 0;
-    totalRight  = 0;
-    totalWrong  = 0;
+    totalDone = 0;
+    totalRight = 0;
+    totalWrong = 0;
 
     // Cập nhật UI
     const navInfo = document.getElementById('nav-info');
     if (navInfo) navInfo.textContent = `Ôn ${qs.length} câu sai`;
 
-    ['s-tot','s-rig','s-wro'].forEach(id => {
+    ['s-tot', 's-rig', 's-wro'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.textContent = '0';
     });
@@ -909,23 +889,34 @@ function _injectMobBar() {
   document.body.appendChild(bar);
   _updateMobBar();
 }
+
 function _updateMobBar() {
   const prev = document.getElementById('meb-prev');
   const next = document.getElementById('meb-next');
   const info = document.getElementById('meb-info');
+
   if (!prev || !next) return;
-  const total = examQs.length || 70, cur = examCurrent;
-  prev.disabled = (cur <= 0);
+
+  // Sửa 70 thành EXAM_TOTAL
+  const total = examQs.length || EXAM_TOTAL;
+  const cur = examCurrent;
+
+  prev.disabled = cur <= 0;
+
   const isLast = cur >= total - 1;
+
   next.textContent = isLast ? 'Nộp bài ✓' : 'Tiếp →';
   next.onclick = isLast ? askSubmitExam : _mobNext;
-  if (info) info.textContent = (cur + 1) + ' / ' + total;
+
+  if (info) {
+    info.textContent = `${cur + 1} / ${total}`;
+  }
 }
 function _mobPrev() { if (examCurrent > 0) { examCurrent--; renderExamQ(); } }
 function _mobNext() { if (examCurrent < examQs.length - 1) { examCurrent++; renderExamQ(); } }
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   clearTimeout(window._resT);
-  window._resT = setTimeout(function() {
+  window._resT = setTimeout(function () {
     const isExam = document.getElementById('screen-exam')?.classList.contains('active');
     if (isExam) _injectMobBar(); else _removeMobBar();
   }, 250);

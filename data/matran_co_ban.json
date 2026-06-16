@@ -2,415 +2,667 @@
   {
     "id": 1,
     "type": "transpose",
-    "question": "Ma trận chuyển vị \\(A^T\\) của \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\) là",
+    "question": "Cho $A=\\begin{pmatrix}3&8\\\\0&5\\\\-1&-2\\end{pmatrix}$. Ma trận $A^T$ là",
     "matrix": null,
     "options": [
-      "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}4&3\\\\2&1\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)"
+      "$\\begin{pmatrix}3&0&-1\\\\8&5&-2\\end{pmatrix}$",
+      "$\\begin{pmatrix}8&5&-2\\\\3&0&-1\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&8\\\\0&5\\\\-1&-2\\end{pmatrix}$",
+      "$\\begin{pmatrix}8&3\\\\5&0\\\\-2&-1\\end{pmatrix}$"
     ],
-    "correct": "\\(\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}\\)",
-    "solution": "Chuyển vị: đổi hàng thành cột. Hàng 1 \\((1,2)\\) → cột 1; hàng 2 \\((3,4)\\) → cột 2.",
-    "quick": "\\(a_{ij}\\to a_{ji}\\): hàng thành cột",
-    "casio": "CASIO fx-580VNX: [MODE][6] → nhập MatA → [AC] → [OPTN][F2](Matrix) → [F6](►) → [F1](Trn) → MatA → [EXE]. Kết quả là Aᵀ. Cỡ đổi chiều: m×n → n×m.",
+    "correct": "$\\begin{pmatrix}3&0&-1\\\\8&5&-2\\end{pmatrix}$",
+    "solution": "Chuyển vị đổi hàng thành cột: hàng thứ nhất của $A^T$ là cột thứ nhất của $A$.",
+    "quick": "Đổi chỉ số $a_{ij}$ thành $a_{ji}$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 2,
-    "type": "transpose",
-    "question": "Cho \\(A\\) cỡ \\(2\\times3\\). Cỡ của \\(A^T\\) là",
+    "type": "transpose_size",
+    "question": "Nếu $A$ có cỡ $3\\times4$ thì $A^T$ có cỡ",
     "matrix": null,
     "options": [
-      "\\(3\\times2\\)",
-      "\\(2\\times3\\)",
-      "\\(2\\times2\\)",
-      "\\(3\\times3\\)"
+      "$4\\times3$",
+      "$3\\times4$",
+      "$3\\times3$",
+      "$4\\times4$"
     ],
-    "correct": "\\(3\\times2\\)",
-    "solution": "\\(A\\) cỡ \\(m\\times n\\) → \\(A^T\\) cỡ \\(n\\times m\\). Vậy \\(2\\times3 \\to 3\\times2\\).",
-    "quick": "Cỡ bị đảo ngược: \\(m\\times n \\to n\\times m\\)",
-    "casio": "CASIO fx-580VNX: [MODE][6] → nhập MatA → [AC] → [OPTN][F2](Matrix) → [F6](►) → [F1](Trn) → MatA → [EXE]. Kết quả là Aᵀ. Cỡ đổi chiều: m×n → n×m.",
+    "correct": "$4\\times3$",
+    "solution": "Chuyển vị đổi số hàng và số cột.",
+    "quick": "$m\\times n\\to n\\times m$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 3,
-    "type": "transpose",
-    "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\4&5&6\\end{pmatrix}\\). Phần tử \\((A^T)_{21}\\) là",
+    "type": "transpose_element",
+    "question": "Cho $A=(a_{ij})_{2\\times3}$ với $a_{12}=5$. Khi đó $(A^T)_{21}$ bằng",
     "matrix": null,
     "options": [
       "2",
-      "4",
-      "1",
-      "5"
+      "3",
+      "5",
+      "Không xác định"
     ],
-    "correct": "2",
-    "solution": "\\((A^T)_{ij}=a_{ji}\\). Vậy \\((A^T)_{21}=a_{12}=2\\).",
-    "quick": "\\((A^T)_{21}=a_{12}=2\\)",
-    "casio": "Phần tử hàng 2 cột 1 của A^T = phần tử hàng 1 cột 2 của A = 2",
+    "correct": "5",
+    "solution": "Ta có $(A^T)_{21}=a_{12}=5$.",
+    "quick": "Đổi vị trí hai chỉ số.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 4,
-    "type": "trace",
-    "question": "Vết (trace) của ma trận \\(A=\\begin{pmatrix}3&1\\\\2&5\\end{pmatrix}\\) là",
+    "type": "matrix_add_element",
+    "question": "Cho $A=\\begin{pmatrix}1&1\\\\-1&1\\end{pmatrix}$, $B=\\begin{pmatrix}-1&2\\\\1&1\\end{pmatrix}$. Phần tử hàng 1 cột 2 của $A+B$ bằng",
     "matrix": null,
     "options": [
-      "8",
-      "15",
-      "6",
-      "2"
+      "3",
+      "2",
+      "1",
+      "0"
     ],
-    "correct": "8",
-    "solution": "\\(\\text{tr}(A)=a_{11}+a_{22}=3+5=8\\)",
-    "quick": "Tổng đường chéo chính: \\(3+5=8\\)",
-    "casio": "CASIO: Không có phím trace. Đọc các phần tử a₁₁, a₂₂, a₃₃ từ màn hình nhập ma trận rồi cộng tay.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "correct": "3",
+    "solution": "Phần tử cần tìm là $a_{12}+b_{12}=1+2=3$.",
+    "quick": "Cộng đúng vị trí tương ứng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 5,
-    "type": "trace",
-    "question": "Vết của \\(A=\\begin{pmatrix}-3&2&1\\\\0&-1&2\\\\2&2&6\\end{pmatrix}\\) là",
+    "type": "matrix_add",
+    "question": "Tính $A+B$ với $A=\\begin{pmatrix}1&-2\\\\3&0\\end{pmatrix}$, $B=\\begin{pmatrix}2&5\\\\-1&4\\end{pmatrix}$.",
     "matrix": null,
     "options": [
-      "2",
-      "-2",
-      "3",
-      "1"
+      "$\\begin{pmatrix}3&3\\\\2&4\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&3\\\\2&4\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&-7\\\\4&4\\end{pmatrix}$",
+      "$\\begin{pmatrix}2&3\\\\-3&0\\end{pmatrix}$"
     ],
-    "correct": "2",
-    "solution": "\\(\\text{tr}(A)=(-3)+(-1)+6=2\\)",
-    "quick": "\\(-3-1+6=2\\)",
-    "casio": "CASIO: Không có phím trace. Đọc các phần tử a₁₁, a₂₂, a₃₃ từ màn hình nhập ma trận rồi cộng tay.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "correct": "$\\begin{pmatrix}3&3\\\\2&4\\end{pmatrix}$",
+    "solution": "Cộng từng phần tử cùng vị trí.",
+    "quick": "Cộng theo ô.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 6,
-    "type": "multiply",
-    "question": "Cho \\(A\\) cỡ \\(3\\times4\\) và \\(B\\) cỡ \\(4\\times3\\). Cỡ của \\(AB\\) là",
+    "type": "scalar_combination",
+    "question": "Cho $A=\\begin{pmatrix}1&2\\\\0&-1\\end{pmatrix}$, $B=\\begin{pmatrix}3&0\\\\1&2\\end{pmatrix}$. Ma trận $2A-B$ là",
     "matrix": null,
     "options": [
-      "\\(3\\times3\\)",
-      "\\(4\\times4\\)",
-      "\\(3\\times4\\)",
-      "\\(4\\times3\\)"
+      "$\\begin{pmatrix}-1&4\\\\-1&-4\\end{pmatrix}$",
+      "$\\begin{pmatrix}5&4\\\\1&0\\end{pmatrix}$",
+      "$\\begin{pmatrix}-1&2\\\\-1&0\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&4\\\\1&-4\\end{pmatrix}$"
     ],
-    "correct": "\\(3\\times3\\)",
-    "solution": "\\((m\\times n)(n\\times p)=m\\times p\\): \\((3\\times4)(4\\times3)=3\\times3\\)",
-    "quick": "Số giữa triệt tiêu: \\(3\\times\\mathbf{4}\\cdot\\mathbf{4}\\times3=3\\times3\\)",
-    "casio": "Nhân MatA × MatB → kích thước 3×3",
+    "correct": "$\\begin{pmatrix}-1&4\\\\-1&-4\\end{pmatrix}$",
+    "solution": "$2A=\\begin{pmatrix}2&4\\\\0&-2\\end{pmatrix}$, trừ $B$ được ma trận đã chọn.",
+    "quick": "Nhân vô hướng trước, rồi trừ theo ô.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 7,
-    "type": "multiply",
-    "question": "Tính \\(AB\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}\\)",
+    "type": "multiply_size",
+    "question": "Cho $A$ cỡ $3\\times4$ và $B$ cỡ $4\\times3$. Ma trận $AB$ có cỡ",
     "matrix": null,
     "options": [
-      "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}0&2\\\\3&0\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)"
+      "$1\\times1$",
+      "$2\\times2$",
+      "$3\\times3$",
+      "$4\\times4$"
     ],
-    "correct": "\\(\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
-    "solution": "\\(c_{11}=0+2=2\\), \\(c_{12}=1+0=1\\), \\(c_{21}=0+4=4\\), \\(c_{22}=3+0=3\\)",
-    "quick": "Nhân hàng × cột: \\(AB=\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}\\)",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "$3\\times3$",
+    "solution": "Tích $(3\\times4)(4\\times3)$ xác định và có cỡ lấy hai kích thước ngoài: $3\\times3$.",
+    "quick": "Trong khớp, ngoài ra.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 1,
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 8,
-    "type": "multiply",
-    "question": "Tính \\(A^2\\) với \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\)",
+    "type": "multiply_size",
+    "question": "Cho $A$ cỡ $2\\times3$ và $B$ cỡ $3\\times4$. Cỡ của $BA$ là",
     "matrix": null,
     "options": [
-      "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&4\\\\9&16\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}2&4\\\\6&8\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}4&6\\\\8&10\\end{pmatrix}\\)"
+      "Không xác định",
+      "$2\\times4$",
+      "$3\\times3$",
+      "$4\\times2$"
     ],
-    "correct": "\\(\\begin{pmatrix}7&10\\\\15&22\\end{pmatrix}\\)",
-    "solution": "\\(c_{11}=1+6=7\\), \\(c_{12}=2+8=10\\), \\(c_{21}=3+12=15\\), \\(c_{22}=6+16=22\\)",
-    "quick": "Nhân \\(A\\times A\\) bình thường",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
+    "correct": "Không xác định",
+    "solution": "Để nhân $BA$, số cột của $B$ là 4 phải bằng số hàng của $A$ là 2, nhưng không bằng nhau.",
+    "quick": "Kiểm tra đúng thứ tự; $AB$ có thể xác định nhưng $BA$ có thể không.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 9,
     "type": "multiply",
-    "question": "Cho \\(A\\) cỡ \\(2\\times3\\) và \\(B\\) cỡ \\(3\\times2\\). Cỡ của \\(BA\\) là",
+    "question": "Tính $AB$ với $A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$, $B=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix}$.",
     "matrix": null,
     "options": [
-      "\\(3\\times3\\)",
-      "\\(2\\times2\\)",
-      "\\(2\\times3\\)",
-      "Không xác định"
+      "$\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&4\\\\1&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}0&2\\\\3&0\\end{pmatrix}$"
     ],
-    "correct": "\\(3\\times3\\)",
-    "solution": "\\(BA\\): \\(B\\) cỡ \\(3\\times2\\), \\(A\\) cỡ \\(2\\times3\\) → \\(BA\\) cỡ \\(3\\times3\\)",
-    "quick": "\\((3\\times2)(2\\times3)=3\\times3\\)",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
+    "correct": "$\\begin{pmatrix}2&1\\\\4&3\\end{pmatrix}$",
+    "solution": "Nhân với ma trận hoán vị này làm đổi chỗ hai cột của $A$.",
+    "quick": "Ma trận $B$ đổi cột 1 và cột 2.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 10,
-    "type": "multiply",
-    "question": "Ma trận \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) nhân với \\(B=\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\) cho kết quả là",
+    "type": "multiply_element",
+    "question": "Cho $A=\\begin{pmatrix}1&2&-1\\\\0&3&4\\end{pmatrix}$, $B=\\begin{pmatrix}2&1\\\\-1&0\\\\3&2\\end{pmatrix}$. Phần tử $(AB)_{12}$ bằng",
     "matrix": null,
     "options": [
-      "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}3&0\\\\0&7\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)"
+      "-1",
+      "-2",
+      "3",
+      "5"
     ],
-    "correct": "\\(\\begin{pmatrix}3&5\\\\2&7\\end{pmatrix}\\)",
-    "solution": "\\(I\\cdot B=B\\) — nhân với ma trận đơn vị không thay đổi kết quả",
-    "quick": "\\(IB=B\\) luôn đúng",
-    "casio": "CASIO fx-580VNX: Nhập MatA và MatB. Bấm MatA × MatB → [EXE]. Kiểm tra cỡ: (m×n)(n×p) = m×p, số cột A phải = số hàng B.",
+    "correct": "-1",
+    "solution": "Lấy hàng 1 của $A$ nhân cột 2 của $B$: $1\\cdot1+2\\cdot0+(-1)\\cdot2=-1$.",
+    "quick": "Hàng nhân cột.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 11,
-    "type": "matrix_equation",
-    "question": "Giải phương trình ma trận \\(XA=B\\) biết \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix},\\;B=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\).",
+    "type": "trace",
+    "question": "Cho $A=\\begin{pmatrix}3&-2&1\\\\0&-1&2\\\\2&2&6\\end{pmatrix}$. Vết của $A$ bằng",
     "matrix": null,
     "options": [
-      "\\(X=BA^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\)",
-      "\\(X=A^{-1}B\\)",
-      "\\(X=AB^{-1}\\)",
-      "\\(X=B\\)"
+      "2",
+      "8",
+      "10",
+      "-2"
     ],
-    "correct": "\\(X=BA^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\)",
-    "solution": "\\(XA=B \\Rightarrow X=BA^{-1}\\).\n\n\\(\\det(A)=4-6=-2\\). \\(A^{-1}=\\dfrac{1}{-2}\\begin{pmatrix}4&-2\\\\-3&1\\end{pmatrix}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\).\n\n\\(X=I\\cdot A^{-1}=A^{-1}=\\begin{pmatrix}-2&1\\\\1.5&-0.5\\end{pmatrix}\\).",
-    "quick": "XA=B → **X=BA⁻¹** (nhân A⁻¹ từ phải). Lưu ý thứ tự: XA→nhân phải; AX→nhân trái.",
-    "casio": "CASIO [MODE][6]: Tính A⁻¹, rồi nhân B×A⁻¹. Kiểm tra: X×A=B ✓.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "correct": "8",
+    "solution": "$\\operatorname{tr}(A)=3+(-1)+6=8$.",
+    "quick": "Cộng đường chéo chính.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 1,
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 12,
-    "type": "matrix_equation",
-    "question": "Giải phương trình ma trận \\(AX=B\\) biết \\(A=\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix},\\;B=\\begin{pmatrix}3&1\\\\1&0\\end{pmatrix}\\).",
+    "type": "trace_property",
+    "question": "Cho hai ma trận vuông cùng cấp $A,B$ với $\\operatorname{tr}(A)=4$, $\\operatorname{tr}(B)=-1$. Khi đó $\\operatorname{tr}(2A+B)$ bằng",
     "matrix": null,
     "options": [
-      "\\(X=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\)",
-      "\\(X=AB\\)",
-      "\\(X=BA^{-1}\\)",
-      "\\(X=\\begin{pmatrix}3&0\\\\5&0\\end{pmatrix}\\)"
+      "3",
+      "7",
+      "8",
+      "9"
     ],
-    "correct": "\\(X=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\)",
-    "solution": "\\(AX=B \\Rightarrow X=A^{-1}B\\).\n\n\\(\\det(A)=6-5=1\\). \\(A^{-1}=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\begin{pmatrix}3&1\\\\1&0\\end{pmatrix}=\\begin{pmatrix}9-1&3-0\\\\-15+2&-5+0\\end{pmatrix}=\\begin{pmatrix}8&3\\\\-13&-5\\end{pmatrix}\\).",
-    "quick": "AX=B → **X=A⁻¹B** (nhân A⁻¹ từ trái). det(A)=1 nên A⁻¹ dễ tính.",
-    "casio": "CASIO: A⁻¹=[3,-1;-5,2]. X=A⁻¹B=[3,-1;-5,2]×[3,1;1,0]=[8,3;-13,-5].",
+    "correct": "7",
+    "solution": "Vết tuyến tính: $\\operatorname{tr}(2A+B)=2\\operatorname{tr}(A)+\\operatorname{tr}(B)=8-1=7$.",
+    "quick": "Vết phân phối theo cộng và nhân vô hướng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 2,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 13,
-    "type": "matrix_equation",
-    "question": "Tìm ma trận \\(X\\) thỏa mãn \\(X+2A+3B=A^2\\) biết \\(A=\\begin{pmatrix}1&3\\\\0&2\\end{pmatrix},\\;B=\\begin{pmatrix}-2&1\\\\-1&0\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=A^2-2A-3B\\)",
-      "\\(X=A^2+2A+3B\\)",
-      "\\(X=A^2\\)",
-      "\\(X=-2A-3B\\)"
-    ],
-    "correct": "\\(X=A^2-2A-3B\\)",
-    "solution": "\\(X=A^2-2A-3B\\).\n\n\\(A^2=\\begin{pmatrix}1&9\\\\0&4\\end{pmatrix}\\), \\(2A=\\begin{pmatrix}2&6\\\\0&4\\end{pmatrix}\\), \\(3B=\\begin{pmatrix}-6&3\\\\-3&0\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}1&9\\\\0&4\\end{pmatrix}-\\begin{pmatrix}2&6\\\\0&4\\end{pmatrix}-\\begin{pmatrix}-6&3\\\\-3&0\\end{pmatrix}=\\begin{pmatrix}5&0\\\\3&0\\end{pmatrix}\\).",
-    "quick": "Chuyển vế: **X=A²-2A-3B**. Tính A²=[1,9;0,4]. Rồi X=[1,9;0,4]-[2,6;0,4]-[-6,3;-3,0]=[5,0;3,0].",
-    "casio": "CASIO [MODE][6]: Tính A²=A×A, rồi X=A²-2A-3B bằng phép tính ma trận.",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 14,
-    "type": "matrix_equation",
-    "question": "Giải phương trình ma trận \\(AX-2B-C=0\\) biết \\(A=\\begin{pmatrix}1&-1\\\\2&3\\end{pmatrix},\\;2B+C=\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=A^{-1}(2B+C)\\)",
-      "\\(X=A(2B+C)\\)",
-      "\\(X=(2B+C)A^{-1}\\)",
-      "\\(X=A^{-1}+2B+C\\)"
-    ],
-    "correct": "\\(X=A^{-1}(2B+C)\\)",
-    "solution": "\\(AX=2B+C \\Rightarrow X=A^{-1}(2B+C)\\).\n\n\\(\\det(A)=3+2=5\\). \\(A^{-1}=\\dfrac{1}{5}\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\).\n\n\\(X=\\dfrac{1}{5}\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\begin{pmatrix}3&1\\\\0&2\\end{pmatrix}=\\dfrac{1}{5}\\begin{pmatrix}9&5\\\\-6&0\\end{pmatrix}=\\begin{pmatrix}1.8&1\\\\-1.2&0\\end{pmatrix}\\).",
-    "quick": "AX=2B+C → **X=A⁻¹(2B+C)**. Tính A⁻¹ rồi nhân với vế phải.",
-    "casio": "CASIO: A⁻¹=(1/5)[3,1;-2,1]. X=A⁻¹×[3,1;0,2]=(1/5)[9,5;-6,0]=[1.8,1;-1.2,0].",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 15,
-    "type": "matrix_power",
-    "question": "Tính \\(A^{10}\\) biết \\(A=\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}\\).",
-    "matrix": [
-      [
-        2,
-        0
-      ],
-      [
-        0,
-        3
-      ]
-    ],
-    "options": [
-      "\\(\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}\\)",
-      "\\(\\begin{pmatrix}20&0\\\\0&30\\end{pmatrix}\\)",
-      "\\(10A\\)",
-      "\\(\\begin{pmatrix}2^{10}+3^{10}&0\\\\0&0\\end{pmatrix}\\)"
-    ],
-    "correct": "\\(\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}\\)",
-    "solution": "Ma trận đường chéo có luỹ thừa rất dễ:\n\n\\(A^n=\\begin{pmatrix}2^n&0\\\\0&3^n\\end{pmatrix}\\)\n\nVì phần tử (1,1)=2 nhân chính nó n lần = \\(2^n\\), tương tự (2,2)=3.\n\n\\(A^{10}=\\begin{pmatrix}2^{10}&0\\\\0&3^{10}\\end{pmatrix}=\\begin{pmatrix}1024&0\\\\0&59049\\end{pmatrix}\\)",
-    "quick": "Ma trận đường chéo: **(diag(a,b))ⁿ = diag(aⁿ,bⁿ)**. Mỗi phần tử đường chéo lũy thừa n.",
-    "casio": "CASIO [MODE][6]: Nhập A, tính A×A×...×A (10 lần) hoặc dùng A^10. Kết quả diag(1024,59049).",
-    "difficulty": 2,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 16,
-    "type": "matrix_equation",
-    "question": "Tìm ma trận \\(X\\) thỏa mãn \\(A^2-X+B=2A\\) biết \\(A=\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix},\\;B=\\begin{pmatrix}4&2\\\\1&-2\\end{pmatrix}\\).",
-    "matrix": null,
-    "options": [
-      "\\(X=A^2-2A+B\\)",
-      "\\(X=A^2+2A+B\\)",
-      "\\(X=2A-A^2-B\\)",
-      "\\(X=B\\)"
-    ],
-    "correct": "\\(X=A^2-2A+B\\)",
-    "solution": "Chuyển vế: \\(X=A^2-2A+B\\).\n\n\\(A^2=\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix}\\begin{pmatrix}-3&1\\\\-2&0\\end{pmatrix}=\\begin{pmatrix}9-2&-3+0\\\\6+0&-2+0\\end{pmatrix}=\\begin{pmatrix}7&-3\\\\6&-2\\end{pmatrix}\\).\n\n\\(2A=\\begin{pmatrix}-6&2\\\\-4&0\\end{pmatrix}\\).\n\n\\(X=\\begin{pmatrix}7&-3\\\\6&-2\\end{pmatrix}-\\begin{pmatrix}-6&2\\\\-4&0\\end{pmatrix}+\\begin{pmatrix}4&2\\\\1&-2\\end{pmatrix}=\\begin{pmatrix}17&-3\\\\11&-4\\end{pmatrix}\\).",
-    "quick": "Chuyển vế: **X=A²-2A+B**. Tính A²=[7,-3;6,-2]. Kết quả X=[17,-3;11,-4].",
-    "casio": "CASIO: A²=[7,-3;6,-2], 2A=[-6,2;-4,0], X=A²-2A+B=[7-(-6)+4,-3-2+2;6-(-4)+1,-2-0-2].",
-    "difficulty": 3,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 17,
     "type": "triangle_identify",
-  "question": "Cho ma trận \\(A\\). Ma trận \\(A\\) thuộc loại nào?",
-  "matrix": [
-    [1, 2, 3],
-    [0, 4, 5],
-    [0, 0, 6]
-  ],
-  "options": [
-    "Ma trận tam giác trên",
-    "Ma trận tam giác dưới",
-    "Ma trận đường chéo",
-    "Không có dạng đặc biệt"
-  ],
-  "correct": "Ma trận tam giác trên",
-    "solution": "**Ma trận tam giác trên:** Tất cả phần tử **dưới** đường chéo chính bằng 0.\n\nKiểm tra: \\(a_{21}=0, a_{31}=0, a_{32}=0\\) ✓ → Ma trận **tam giác trên**.\n\n**Phân biệt:**\n- Tam giác trên: các phần tử dưới đường chéo = 0\n- Tam giác dưới: các phần tử trên đường chéo = 0\n- Đường chéo: tất cả phần tử ngoài đường chéo = 0",
-    "quick": "Tam giác **trên** = 0 **dưới** đường chéo. Ở đây a₂₁=a₃₁=a₃₂=0 → **tam giác trên**.",
-    "casio": "CASIO: Nhìn ma trận — dưới đường chéo chính đều = 0 → tam giác trên. Trên đường chéo đều = 0 → tam giác dưới.",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
-  },
-  {
-    "id": 18,
-    "type": "triangle_identify",
-    "question": "Cho ma trận \\(A=\\begin{pmatrix}1&-2&3&5\\\\0&-1&7&8\\\\0&0&9&-3\\\\0&0&0&-3\\end{pmatrix}\\). Ma trận A thuộc dạng nào?",
-    "matrix": [
-      [
-        1,
-        -2,
-        3,
-        5
-      ],
-      [
-        0,
-        -1,
-        7,
-        8
-      ],
-      [
-        0,
-        0,
-        9,
-        -3
-      ],
-      [
-        0,
-        0,
-        0,
-        -3
-      ]
-    ],
+    "question": "Ma trận $A=\\begin{pmatrix}1&2&3&5\\\\0&-1&7&8\\\\0&0&9&-3\\\\0&0&0&-3\\end{pmatrix}$ thuộc dạng",
+    "matrix": null,
     "options": [
-      "Ma trận tam giác trên",
       "Ma trận đường chéo",
+      "Ma trận tam giác trên",
       "Ma trận tam giác dưới",
       "Không có dạng đặc biệt"
     ],
     "correct": "Ma trận tam giác trên",
-    "solution": "Kiểm tra các phần tử **dưới** đường chéo: \\(a_{ij}=0\\) với mọi \\(i>j\\).\n\nHàng 2: \\(a_{21}=0\\) ✓\nHàng 3: \\(a_{31}=a_{32}=0\\) ✓\nHàng 4: \\(a_{41}=a_{42}=a_{43}=0\\) ✓\n\n→ Tất cả phần tử dưới đường chéo = 0 → **Ma trận tam giác trên**.",
-    "quick": "Dưới đường chéo đều = 0 → **tam giác trên**. Đây là câu C4 dạng thật đề CA1 2025.",
-    "casio": "CASIO: Quan sát dạng bậc thang → tam giác trên.",
+    "solution": "Mọi phần tử dưới đường chéo chính đều bằng 0.",
+    "quick": "Dưới chéo bằng 0 → tam giác trên.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
   },
   {
-    "id": 19,
+    "id": 14,
     "type": "triangle_identify",
-    "question": "Ma trận \\(A=\\begin{pmatrix}5&0&0\\\\2&3&0\\\\1&4&7\\end{pmatrix}\\) thuộc loại nào?",
-    "matrix": [
-      [
-        5,
-        0,
-        0
-      ],
-      [
-        2,
-        3,
-        0
-      ],
-      [
-        1,
-        4,
-        7
-      ]
-    ],
+    "question": "Ma trận $A=\\begin{pmatrix}2&0&0\\\\-1&3&0\\\\4&5&1\\end{pmatrix}$ là",
+    "matrix": null,
     "options": [
       "Ma trận tam giác dưới",
       "Ma trận tam giác trên",
       "Ma trận đường chéo",
-      "Không có dạng đặc biệt"
+      "Ma trận đơn vị"
     ],
     "correct": "Ma trận tam giác dưới",
-    "solution": "Các phần tử **trên** đường chéo: \\(a_{12}=0, a_{13}=0, a_{23}=0\\) → tất cả bằng 0.\n\n→ **Ma trận tam giác dưới** (phần tử trên đường chéo chính = 0).",
-    "quick": "Trên đường chéo đều = 0 → **tam giác dưới**.",
-    "casio": "CASIO: a₁₂=a₁₃=a₂₃=0 → tam giác dưới.",
+    "solution": "Mọi phần tử phía trên đường chéo chính bằng 0.",
+    "quick": "Trên chéo bằng 0 → tam giác dưới.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
     "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 15,
+    "type": "identity_property",
+    "question": "Với mọi ma trận $A$ cỡ $m\\times n$, đẳng thức đúng là",
+    "matrix": null,
+    "options": [
+      "$I_mA=A$",
+      "$AI_m=A$",
+      "$I_nA=A$",
+      "$A+I_m=A$"
+    ],
+    "correct": "$I_mA=A$",
+    "solution": "Nhân bên trái cần ma trận đơn vị có cỡ bằng số hàng của $A$, tức $I_mA=A$.",
+    "quick": "Đơn vị bên trái theo số hàng, bên phải theo số cột.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 1,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 16,
+    "type": "matrix_equation",
+    "question": "Cho $A=\\begin{pmatrix}2&5\\\\1&3\\end{pmatrix}$, $B=\\begin{pmatrix}1&m\\\\-1&2\\end{pmatrix}$. Ma trận $X$ thỏa $AX=B$ là",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}8&3m-10\\\\-3&-m+4\\end{pmatrix}$",
+      "$\\begin{pmatrix}3m-10&8\\\\-3&-m+4\\end{pmatrix}$",
+      "$\\begin{pmatrix}3m-10&8\\\\-m+4&-3\\end{pmatrix}$",
+      "$\\begin{pmatrix}8&3m-10\\\\-m+4&-3\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}8&3m-10\\\\-3&-m+4\\end{pmatrix}$",
+    "solution": "Vì $\\det A=1$, $A^{-1}=\\begin{pmatrix}3&-5\\\\-1&2\\end{pmatrix}$. Do đó $X=A^{-1}B=\\begin{pmatrix}8&3m-10\\\\-3&-m+4\\end{pmatrix}$.",
+    "quick": "$AX=B\\Rightarrow X=A^{-1}B$; không đổi thứ tự.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 17,
+    "type": "matrix_equation",
+    "question": "Cho $A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$. Nghiệm của phương trình $XA=I_2$ là",
+    "matrix": null,
+    "options": [
+      "$A^{-1}=\\begin{pmatrix}-2&1\\\\\\frac32&-\\frac12\\end{pmatrix}$",
+      "$A^T$",
+      "$-A$",
+      "$I_2$"
+    ],
+    "correct": "$A^{-1}=\\begin{pmatrix}-2&1\\\\\\frac32&-\\frac12\\end{pmatrix}$",
+    "solution": "$XA=I_2$ nên $X=A^{-1}$. Tính nghịch đảo ma trận 2×2 được kết quả trên.",
+    "quick": "Phương trình định nghĩa nghịch đảo.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 18,
+    "type": "matrix_equation",
+    "question": "Tìm $X$ thỏa $2X+A=BC$, với $A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$, $B=\\begin{pmatrix}0&1\\\\4&3\\end{pmatrix}$, $C=\\begin{pmatrix}-2&3\\\\0&4\\end{pmatrix}$.",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}-\\frac12&1\\\\-\\frac{11}{2}&10\\end{pmatrix}$",
+      "$\\begin{pmatrix}\\frac12&3\\\\7&8\\end{pmatrix}$",
+      "$\\begin{pmatrix}-1&2\\\\-11&20\\end{pmatrix}$",
+      "$\\begin{pmatrix}0&1\\\\-7&6\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}-\\frac12&1\\\\-\\frac{11}{2}&10\\end{pmatrix}$",
+    "solution": "$BC=\\begin{pmatrix}0&4\\\\-8&24\\end{pmatrix}$. Suy ra $2X=BC-A=\\begin{pmatrix}-1&2\\\\-11&20\\end{pmatrix}$. Do đó $X=\\begin{pmatrix}-\\frac12&1\\\\-\\frac{11}{2}&10\\end{pmatrix}$.",
+    "quick": "Tính $BC$ trước rồi chuyển vế và chia 2.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 19,
+    "type": "matrix_equation",
+    "question": "Nếu $X+2A-B=0$ thì $X$ bằng",
+    "matrix": null,
+    "options": [
+      "$B-2A$",
+      "$2A-B$",
+      "$A+B$",
+      "$-2A-B$"
+    ],
+    "correct": "$B-2A$",
+    "solution": "Chuyển vế: $X=-2A+B=B-2A$.",
+    "quick": "Cô lập $X$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
   },
   {
     "id": 20,
-    "type": "matrix_size",
-    "question": "Cho ma trận A cỡ \\(3\\times4\\) và ma trận B cỡ \\(4\\times3\\). Ma trận \\(AB\\) có cỡ bằng bao nhiêu?",
+    "type": "matrix_vector_product",
+    "question": "Cho $A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ và $x=\\begin{pmatrix}2\\\\-1\\end{pmatrix}$. Khi đó $Ax$ bằng",
     "matrix": null,
     "options": [
-      "\\(3\\times3\\)",
-      "\\(4\\times4\\)",
-      "\\(3\\times4\\)",
-      "\\(4\\times3\\)"
+      "$\\begin{pmatrix}0\\\\2\\end{pmatrix}$",
+      "$\\begin{pmatrix}4\\\\10\\end{pmatrix}$",
+      "$\\begin{pmatrix}1\\\\-1\\end{pmatrix}$",
+      "$\\begin{pmatrix}0\\\\-2\\end{pmatrix}$"
     ],
-    "correct": "\\(3\\times3\\)",
-    "solution": "Quy tắc nhân ma trận: A cỡ \\(m\\times n\\) nhân B cỡ \\(n\\times p\\) → AB cỡ \\(m\\times p\\).\n\nA cỡ \\(3\\times4\\), B cỡ \\(4\\times3\\): cột A = hàng B = 4 (thoả mãn) → AB cỡ \\(3\\times3\\).",
-    "quick": "A(3×4) × B(4×3) → AB cỡ **3×3**. Quy tắc: [m×n]×[n×p]=[m×p].",
-    "casio": "CASIO: Số cột A=số hàng B=4. AB có số hàng=3 (theo A), số cột=3 (theo B).",
-    "difficulty": 1,
-    "topic": "Ma trận & Định thức"
+    "correct": "$\\begin{pmatrix}0\\\\2\\end{pmatrix}$",
+    "solution": "$Ax=(1\\cdot2+2\\cdot(-1),3\\cdot2+4\\cdot(-1))^T=(0,2)^T$.",
+    "quick": "Hàng nhân cột.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 21,
+    "type": "economic_materials",
+    "question": "Một hãng dùng 3 loại vật liệu để sản xuất 4 sản phẩm. Ma trận định mức $A=\\begin{pmatrix}4&2&1&4\\\\5&4&2&1\\\\6&5&3&2\\end{pmatrix}$ và kế hoạch $X=\\begin{pmatrix}3\\\\2\\\\5\\\\6\\end{pmatrix}$. Tổng số đơn vị vật liệu cần dùng là",
+    "matrix": null,
+    "options": [
+      "55",
+      "139",
+      "145",
+      "130"
+    ],
+    "correct": "139",
+    "solution": "$AX=(45,39,55)^T$. Tổng ba loại vật liệu là $45+39+55=139$.",
+    "quick": "Tính $AX$, rồi cộng các phần tử của véc tơ kết quả.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 22,
+    "type": "economic_cost",
+    "question": "Hai sản phẩm cần nguyên liệu theo ma trận $A=\\begin{pmatrix}2&1\\\\3&4\\end{pmatrix}$ (hàng là hai loại nguyên liệu). Kế hoạch sản xuất là $x=(5;2)^T$. Tổng lượng nguyên liệu từng loại là",
+    "matrix": null,
+    "options": [
+      "$(12;23)^T$",
+      "$(7;7)^T$",
+      "$(13;22)^T$",
+      "$(10;8)^T$"
+    ],
+    "correct": "$(12;23)^T$",
+    "solution": "$Ax=(2\\cdot5+1\\cdot2,3\\cdot5+4\\cdot2)^T=(12,23)^T$.",
+    "quick": "Ma trận định mức nhân véc tơ sản lượng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 23,
+    "type": "economic_revenue",
+    "question": "Một doanh nghiệp bán hai mặt hàng với véc tơ giá $p=(10;15)$ và véc tơ số lượng $q=(20;12)^T$. Doanh thu là",
+    "matrix": null,
+    "options": [
+      "320",
+      "380",
+      "400",
+      "500"
+    ],
+    "correct": "380",
+    "solution": "$pq=10\\cdot20+15\\cdot12=200+180=380$.",
+    "quick": "Giá nhân số lượng rồi cộng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 24,
+    "type": "economic_total_cost",
+    "question": "Ma trận chi phí đơn vị của 2 nguồn lực cho 3 sản phẩm là $C=\\begin{pmatrix}2&3&1\\\\4&1&2\\end{pmatrix}$, sản lượng $x=(10;5;8)^T$. Tổng chi phí hai nguồn lực lần lượt là",
+    "matrix": null,
+    "options": [
+      "$(43;61)^T$",
+      "$(35;45)^T$",
+      "$(61;43)^T$",
+      "$(33;56)^T$"
+    ],
+    "correct": "$(43;61)^T$",
+    "solution": "$Cx=(20+15+8,40+5+16)^T=(43,61)^T$.",
+    "quick": "Mỗi hàng là một loại chi phí.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 25,
+    "type": "economic_plan",
+    "question": "Ma trận định mức $A$ có cỡ $3\\times4$ và véc tơ kế hoạch sản xuất $x$ có cỡ $4\\times1$. Ý nghĩa của $Ax$ là",
+    "matrix": null,
+    "options": [
+      "Véc tơ tổng nhu cầu của 3 nguồn lực",
+      "Véc tơ giá của 4 sản phẩm",
+      "Ma trận lợi nhuận $4\\times3$",
+      "Một số vô hướng"
+    ],
+    "correct": "Véc tơ tổng nhu cầu của 3 nguồn lực",
+    "solution": "$Ax$ có cỡ $3\\times1$; mỗi phần tử là tổng nhu cầu của một nguồn lực cho toàn bộ kế hoạch sản xuất.",
+    "quick": "Hàng nguồn lực × cột sản lượng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 26,
+    "type": "rows_from_vectors",
+    "question": "Ma trận có các hàng lần lượt là $u_1=(3;2;2)$, $u_2=(2;3;2)$, $u_3=(2;2;3)$ là",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&2&2\\\\3&2&2\\\\3&2&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&2&2\\\\2&2&3\\\\2&3&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&3&3\\\\2&2&2\\\\2&2&2\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}$",
+    "solution": "Đặt từng véc tơ theo đúng thứ tự làm một hàng.",
+    "quick": "Véc tơ thứ $i$ là hàng $i$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 27,
+    "type": "matrix_from_system",
+    "question": "Ma trận hệ số của hệ $\\begin{cases}x+2y-z=1\\\\3x-y+4z=2\\end{cases}$ là",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}1&2&-1\\\\3&-1&4\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&2&-1&1\\\\3&-1&4&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&3\\\\2&-1\\\\-1&4\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&2\\\\3&-1\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}1&2&-1\\\\3&-1&4\\end{pmatrix}$",
+    "solution": "Ma trận hệ số chỉ gồm các hệ số của $x,y,z$, không gồm cột vế phải.",
+    "quick": "Mỗi phương trình là một hàng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 28,
+    "type": "matrix_order",
+    "question": "Cho $A$ cỡ $2\\times3$, $B$ cỡ $3\\times2$. Phát biểu đúng là",
+    "matrix": null,
+    "options": [
+      "$AB$ cỡ $2\\times2$ và $BA$ cỡ $3\\times3$",
+      "$AB$ và $BA$ đều cỡ $2\\times2$",
+      "$AB$ cỡ $3\\times3$",
+      "Chỉ $AB$ xác định"
+    ],
+    "correct": "$AB$ cỡ $2\\times2$ và $BA$ cỡ $3\\times3$",
+    "solution": "$(2\\times3)(3\\times2)=2\\times2$, còn $(3\\times2)(2\\times3)=3\\times3$.",
+    "quick": "Lấy hai kích thước ngoài.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 3,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 29,
+    "type": "inverse_2x2",
+    "question": "Ma trận nghịch đảo của $A=\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix}$ là",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&1\\\\5&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}2&-1\\\\-5&3\\end{pmatrix}$",
+      "$\\begin{pmatrix}-3&1\\\\5&-2\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}$",
+    "solution": "$\\det(A)=2\\cdot3-5=1$, nên $A^{-1}=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}$.",
+    "quick": "Đổi chỗ hai phần tử đường chéo, đổi dấu hai phần tử ngoài chéo, rồi chia cho det.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Ma trận nghịch đảo"
+  },
+  {
+    "id": 30,
+    "type": "inverse_product",
+    "question": "Cho $A^{-1}=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$ và $B^{-1}=\\begin{pmatrix}2&0\\\\1&1\\end{pmatrix}$. Khi đó $(AB)^{-1}$ bằng",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}2&2\\\\1&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&1\\\\1&1\\end{pmatrix}$",
+      "$\\begin{pmatrix}2&1\\\\2&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&2\\\\1&3\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}2&2\\\\1&2\\end{pmatrix}$",
+    "solution": "$(AB)^{-1}=B^{-1}A^{-1}=\\begin{pmatrix}2&0\\\\1&1\\end{pmatrix}\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}=\\begin{pmatrix}2&2\\\\1&2\\end{pmatrix}$.",
+    "quick": "Nghịch đảo tích phải đảo thứ tự.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Tính chất ma trận nghịch đảo"
+  },
+  {
+    "id": 31,
+    "type": "matrix_polynomial",
+    "question": "Cho $A=\\begin{pmatrix}1&1\\\\0&2\\end{pmatrix}$. Ma trận $A^2-3A+2I$ bằng",
+    "matrix": null,
+    "options": [
+      "$O$",
+      "$I$",
+      "$A$",
+      "$2I$"
+    ],
+    "correct": "$O$",
+    "solution": "$A^2=\\begin{pmatrix}1&3\\\\0&4\\end{pmatrix}$. Suy ra $A^2-3A+2I=O$.",
+    "quick": "Tính $A^2$ trước rồi ghép từng phần tử.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Đa thức ma trận"
+  },
+  {
+    "id": 32,
+    "type": "matrix_power_jordan",
+    "question": "Cho $A=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$. Ma trận $A^5$ là",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}1&5\\\\0&1\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&1\\\\0&5\\end{pmatrix}$",
+      "$\\begin{pmatrix}5&5\\\\0&5\\end{pmatrix}$",
+      "$I$"
+    ],
+    "correct": "$\\begin{pmatrix}1&5\\\\0&1\\end{pmatrix}$",
+    "solution": "Viết $A=I+N$ với $N^2=0$. Khi đó $A^5=(I+N)^5=I+5N=\\begin{pmatrix}1&5\\\\0&1\\end{pmatrix}$.",
+    "quick": "Nhận dạng $N^2=0$ để dùng khai triển nhị thức.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Lũy thừa ma trận"
+  },
+  {
+    "id": 33,
+    "type": "matrix_equation_AXB",
+    "question": "Cho $A=\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}$, $B=\\begin{pmatrix}1&0\\\\0&3\\end{pmatrix}$ và $C=\\begin{pmatrix}4&6\\\\2&9\\end{pmatrix}$. Nghiệm của $AXB=C$ là",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}2&1\\\\2&3\\end{pmatrix}$",
+      "$\\begin{pmatrix}2&3\\\\1&3\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&2\\\\2&3\\end{pmatrix}$",
+      "$\\begin{pmatrix}2&1\\\\6&3\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}2&1\\\\2&3\\end{pmatrix}$",
+    "solution": "$X=A^{-1}CB^{-1}$. Chia hàng đầu của $C$ cho 2 rồi chia cột thứ hai cho 3, được $X=\\begin{pmatrix}2&1\\\\2&3\\end{pmatrix}$.",
+    "quick": "Từ $AXB=C$, nhân trái bởi $A^{-1}$ và nhân phải bởi $B^{-1}$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Phương trình ma trận"
+  },
+  {
+    "id": 34,
+    "type": "commuting_matrix",
+    "question": "Cho $A=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}$ và $X=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$. Điều kiện $AX=XA$ tương đương với",
+    "matrix": null,
+    "options": [
+      "$b=c=0$",
+      "$a=d=0$",
+      "$a=d$",
+      "$b=c$"
+    ],
+    "correct": "$b=c=0$",
+    "solution": "$AX=\\begin{pmatrix}a&b\\\\2c&2d\\end{pmatrix}$, $XA=\\begin{pmatrix}a&2b\\\\c&2d\\end{pmatrix}$. So sánh cho $b=0,c=0$.",
+    "quick": "Nhân theo hai thứ tự rồi so sánh từng phần tử.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Ma trận giao hoán"
+  },
+  {
+    "id": 35,
+    "type": "economic_multistage_matrix",
+    "question": "Ma trận nguyên liệu cho ba bán thành phẩm là $A=\\begin{pmatrix}1&2&0\\\\0&1&3\\end{pmatrix}$; ma trận bán thành phẩm cho hai sản phẩm là $B=\\begin{pmatrix}1&0\\\\2&1\\\\0&1\\end{pmatrix}$. Với kế hoạch $x=(10;5)^T$, tổng lượng hai loại nguyên liệu cần dùng là",
+    "matrix": null,
+    "options": [
+      "100",
+      "90",
+      "110",
+      "80"
+    ],
+    "correct": "100",
+    "solution": "$Bx=(10,25,5)^T$, rồi $ABx=(60,40)^T$. Tổng lượng nguyên liệu bằng 100.",
+    "quick": "Tính từ phải sang trái: kế hoạch → bán thành phẩm → nguyên liệu.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận nhiều công đoạn"
+  },
+  {
+    "id": 36,
+    "type": "economic_profit_matrix",
+    "question": "Ma trận nhu cầu hai nguồn lực cho hai sản phẩm là $A=\\begin{pmatrix}1&2\\\\3&1\\end{pmatrix}$, véc tơ sản lượng $q=(10;20)^T$, véc tơ chi phí nguồn lực $c=(2;3)$ và véc tơ giá bán $p=(20;15)$. Lợi nhuận bằng",
+    "matrix": null,
+    "options": [
+      "250",
+      "200",
+      "300",
+      "150"
+    ],
+    "correct": "250",
+    "solution": "$Aq=(50,50)^T$. Chi phí $c(Aq)=2\\cdot50+3\\cdot50=250$. Doanh thu $pq=20\\cdot10+15\\cdot20=500$. Lợi nhuận $500-250=250$.",
+    "quick": "Lợi nhuận = tích giá–sản lượng trừ tích chi phí–nhu cầu nguồn lực.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 37,
+    "type": "markov_two_steps",
+    "question": "Ma trận chuyển trạng thái $P=\\begin{pmatrix}0.8&0.3\\\\0.2&0.7\\end{pmatrix}$ và trạng thái ban đầu $x_0=(100;0)^T$. Số phần tử ở trạng thái 2 sau hai bước là",
+    "matrix": null,
+    "options": [
+      "30",
+      "20",
+      "40",
+      "25"
+    ],
+    "correct": "30",
+    "solution": "$x_1=Px_0=(80,20)^T$; $x_2=Px_1=(70,30)^T$. Vậy trạng thái 2 có 30 phần tử.",
+    "quick": "Tính $x_2=P^2x_0$ hoặc nhân liên tiếp hai lần.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận Markov"
   }
 ]

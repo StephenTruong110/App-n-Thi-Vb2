@@ -14,7 +14,7 @@
     "solution": "Đa thức liên tục trên toàn bộ \\(\\mathbb{R}\\).",
     "quick": "Đa thức liên tục khắp nơi",
     "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
   },
   {
@@ -32,7 +32,7 @@
     "solution": "Hàm phân thức liên tục trên tập xác định \\(\\mathbb{R}\\setminus\\{2\\}\\).",
     "quick": "Gián đoạn tại \\(x=2\\)",
     "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
   },
   {
@@ -86,7 +86,7 @@
     "solution": "\\(\\lim_{x\\to1^-}f(x)=1^2=1\\), \\(\\lim_{x\\to1^+}f(x)=2\\cdot1-1=1\\). Vậy \\(\\lim_{x\\to1}f(x)=1\\). Cần \\(f(1)=a=1\\).",
     "quick": "Giới hạn hai phía =1 → a=1",
     "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
@@ -113,16 +113,16 @@
     "question": "Định lý giá trị trung gian (IVT) khẳng định điều gì?",
     "matrix": null,
     "options": [
-      "Nếu f liên tục trên [a,b] thì f nhận mọi giá trị giữa f(a) và f(b)",
-      "Nếu f liên tục thì f có đạo hàm",
-      "f có nghiệm nếu f(a)f(b)<0",
-      "Cả A và C"
+      "Nếu f liên tục trên [a,b] thì f nhận mọi giá trị nằm giữa f(a) và f(b)",
+      "Nếu f liên tục trên [a,b] thì f luôn đơn điệu",
+      "Nếu f liên tục trên [a,b] thì f luôn có đúng một nghiệm",
+      "Nếu f liên tục trên [a,b] thì f luôn khả vi trên (a,b)"
     ],
-    "correct": "Cả A và C",
-    "solution": "Định lý IVT: f liên tục trên [a,b] thì f nhận mọi giá trị giữa f(a) và f(b). Hệ quả: nếu f(a)f(b)<0 thì tồn tại có f(c)=0.",
-    "quick": "IVT: f liên tục → nhận mọi giá trị trung gian",
+    "correct": "Nếu f liên tục trên [a,b] thì f nhận mọi giá trị nằm giữa f(a) và f(b)",
+    "solution": "Định lý giá trị trung gian: hàm liên tục trên [a,b] nhận mọi giá trị trung gian giữa f(a) và f(b). Hệ quả: nếu f(a)f(b)<0 thì tồn tại ít nhất một nghiệm trong (a,b).",
+    "quick": "Liên tục trên đoạn → không bỏ qua các giá trị nằm giữa hai giá trị đầu mút.",
     "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
   },
   {
@@ -140,83 +140,11 @@
     "solution": "\\(f(x)=x^3+x-1\\), \\(f(0)=-1<0\\), \\(f(1)=1>0\\), f liên tục → có nghiệm trong (0,1).",
     "quick": "\\(f(0)=-1, f(1)=1\\) → đổi dấu → nghiệm trong (0,1)",
     "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 9,
-    "type": "differentiability",
-    "question": "Đạo hàm của \\(f(x)=x^3\\) tại \\(x=2\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(12\\)",
-      "\\(6\\)",
-      "\\(8\\)",
-      "\\(4\\)"
-    ],
-    "correct": "\\(12\\)",
-    "solution": "\\(f'(x)=3x^2 \\Rightarrow f'(2)=3\\cdot4=12\\).",
-    "quick": "\\((x^3)'=3x^2\\) → tại x=2 → 12",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 10,
-    "type": "differentiability",
-    "question": "Đạo hàm của \\(f(x)=\\sin x\\) tại \\(x=\\pi\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(\\pi\\)"
-    ],
-    "correct": "\\(-1\\)",
-    "solution": "\\(f'(x)=\\cos x \\Rightarrow f'(\\pi)=\\cos\\pi=-1\\).",
-    "quick": "\\(\\sin' = \\cos\\), \\(\\cos\\pi=-1\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 11,
-    "type": "differentiability",
-    "question": "Đạo hàm của \\(f(x)=e^{2x}\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(2e^{2x}\\)",
-      "\\(e^{2x}\\)",
-      "\\(2e^{x}\\)",
-      "\\(e^{x}\\)"
-    ],
-    "correct": "\\(2e^{2x}\\)",
-    "solution": "\\((e^{u})' = e^{u}u' = e^{2x}\\cdot2 = 2e^{2x}\\).",
-    "quick": "Đạo hàm hợp: \\(e^{2x}\\cdot2\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 12,
-    "type": "differentiability",
-    "question": "Đạo hàm của \\(f(x)=\\ln(x^2+1)\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{2x}{x^2+1}\\)",
-      "\\(\\dfrac{1}{x^2+1}\\)",
-      "\\(2x\\)",
-      "\\(\\dfrac{x}{x^2+1}\\)"
-    ],
-    "correct": "\\(\\dfrac{2x}{x^2+1}\\)",
-    "solution": "\\((\\ln u)' = u'/u = (2x)/(x^2+1)\\).",
-    "quick": "Đạo hàm logarit hợp",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 13,
     "type": "differentiability",
     "question": "Tính \\(\\lim_{h\\to 0} \\dfrac{f(x+h)-f(x)}{h}\\) là định nghĩa của?",
     "matrix": null,
@@ -230,11 +158,11 @@
     "solution": "Định nghĩa đạo hàm: \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
     "quick": "\\(f'(x)=\\lim_{h\\to0}\\dfrac{f(x+h)-f(x)}{h}\\) — định nghĩa đạo hàm bằng giới hạn",
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "Đạo hàm"
   },
   {
-    "id": 14,
+    "id": 10,
     "type": "differentiability",
     "question": "Hàm \\(f(x)=|x|\\) có đạo hàm tại \\(x=0\\) không?",
     "matrix": null,
@@ -252,7 +180,7 @@
     "topic": "Đạo hàm"
   },
   {
-    "id": 15,
+    "id": 11,
     "type": "differentiability",
     "question": "Hàm \\(f(x)=\\sqrt[3]{x}\\) có đạo hàm tại \\(x=0\\) không?",
     "matrix": null,
@@ -270,25 +198,7 @@
     "topic": "Đạo hàm"
   },
   {
-    "id": 16,
-    "type": "differentiability",
-    "question": "Cho \\(f(x)=\\begin{cases} x^2\\sin\\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\). Khẳng định nào đúng?",
-    "matrix": null,
-    "options": [
-      "Khả vi tại \\(x=0\\)",
-      "Liên tục nhưng không khả vi",
-      "Gián đoạn",
-      "Không liên tục"
-    ],
-    "correct": "Khả vi tại \\(x=0\\)",
-    "solution": "\\(\\lim_{x\\to0}f(x)=0=f(0)\\) liên tục. \\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=0\\) → khả vi.",
-    "quick": "Ví dụ kinh điển: khả vi tại 0 với đạo hàm =0",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 17,
+    "id": 12,
     "type": "differentiability",
     "question": "Mối liên hệ giữa khả vi và liên tục: nếu \\(f\\) khả vi tại \\(x_0\\) thì",
     "matrix": null,
@@ -302,11 +212,11 @@
     "solution": "Định lý: khả vi \\(\\Rightarrow\\) liên tục. Chiều ngược lại không đúng.",
     "quick": "Khả vi \\(\\Rightarrow\\) liên tục",
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "Đạo hàm"
   },
   {
-    "id": 18,
+    "id": 13,
     "type": "differentiability",
     "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases} x^2 & x\\le1 \\\\ ax+b & x>1 \\end{cases}\\) khả vi tại \\(x=1\\)?",
     "matrix": null,
@@ -320,227 +230,11 @@
     "solution": "Liên tục: \\(1^2=a\\cdot1+b \\Rightarrow a+b=1\\). Khả vi: \\(\\lim_{x\\to1^-}2x=2 \\Rightarrow a=2\\). Suy ra \\(b=-1\\).",
     "quick": "Đạo hàm trái =2, phải = a → a=2; liên tục → 1=a+b → b=-1",
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 19,
-    "type": "differentiability",
-    "question": "Đạo hàm cấp 2 của \\(f(x)=x^4-3x^2+5\\) tại \\(x=1\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(6\\)",
-      "\\(12\\)",
-      "\\(4\\)",
-      "\\(0\\)"
-    ],
-    "correct": "\\(6\\)",
-    "solution": "\\(f'(x)=4x^3-6x\\), \\(f''(x)=12x^2-6 \\Rightarrow f''(1)=12-6=6\\).",
-    "quick": "Đạo hàm cấp 2 rồi thay số",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 20,
-    "type": "differentiability",
-    "question": "Đạo hàm của \\(f(x)=\\cos(2x)\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(-2\\sin(2x)\\)",
-      "\\(2\\sin(2x)\\)",
-      "\\(-\\sin(2x)\\)",
-      "\\(\\sin(2x)\\)"
-    ],
-    "correct": "\\(-2\\sin(2x)\\)",
-    "solution": "\\((\\cos u)'=-\\sin u \\cdot u' = -\\sin(2x)\\cdot2 = -2\\sin(2x)\\).",
-    "quick": "Đạo hàm hợp lượng giác",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 21,
-    "type": "differentiability",
-    "question": "Đạo hàm của \\(f(x)=\\tan x\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{\\cos^2 x}\\)",
-      "\\(\\dfrac{1}{\\sin^2 x}\\)",
-      "\\(\\sec^2 x\\)",
-      "Cả A và C"
-    ],
-    "correct": "Cả A và C",
-    "solution": "\\((\\tan x)' = \\sec^2 x = \\dfrac{1}{\\cos^2 x}\\).",
-    "quick": "\\((\\tan x)' = 1/\\cos^2 x = \\sec^2 x\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 22,
-    "type": "differentiability",
-    "question": "Đạo hàm của \\(f(x)=\\arcsin x\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
-      "\\(\\dfrac{1}{1+x^2}\\)",
-      "\\(-\\dfrac{1}{\\sqrt{1-x^2}}\\)",
-      "\\(\\dfrac{1}{x}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{\\sqrt{1-x^2}}\\)",
-    "solution": "\\((\\arcsin x)' = \\dfrac{1}{\\sqrt{1-x^2}}\\), \\(|x|<1\\).",
-    "quick": "Đạo hàm hàm lượng giác ngược",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 23,
-    "type": "differentiability",
-    "question": "Đạo hàm cấp 2 của \\(f(x)=\\sin x\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(-\\sin x\\)",
-      "\\(-\\cos x\\)",
-      "\\(\\sin x\\)",
-      "\\(\\cos x\\)"
-    ],
-    "correct": "\\(-\\sin x\\)",
-    "solution": "\\(f'(x)=\\cos x\\), \\(f''(x)=-\\sin x\\).",
-    "quick": "Đạo hàm đến cấp 2 của sin",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 24,
-    "type": "differentiability",
-    "question": "Cho \\(f(x)=x\\ln x - x\\). Tính \\(f'(x)\\)?",
-    "matrix": null,
-    "options": [
-      "\\(\\ln x\\)",
-      "\\(\\ln x - 1\\)",
-      "\\(\\ln x + 1\\)",
-      "\\(x\\ln x\\)"
-    ],
-    "correct": "\\(\\ln x\\)",
-    "solution": "\\(f'(x)=1\\cdot\\ln x + x\\cdot\\frac{1}{x} - 1 = \\ln x + 1 - 1 = \\ln x\\).",
-    "quick": "Đạo hàm từng phần của \\(x\\ln x\\)",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 25,
-    "type": "differentiability",
-    "question": "Phương trình tiếp tuyến của \\(y=x^2\\) tại điểm \\(x_0=1\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(y=2x-1\\)",
-      "\\(y=2x+1\\)",
-      "\\(y=x\\)",
-      "\\(y=2x\\)"
-    ],
-    "correct": "\\(y=2x-1\\)",
-    "solution": "\\(y'=2x \\Rightarrow y'(1)=2\\). \\(y(1)=1\\). Tiếp tuyến: \\(y-1=2(x-1) \\Rightarrow y=2x-1\\).",
-    "quick": "Tiếp tuyến: \\(y=f'(x_0)(x-x_0)+f(x_0)\\)",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 26,
-    "type": "differentiability",
-    "question": "Hàm \\(f(x)=e^x\\) có đạo hàm tại mọi điểm, đạo hàm đó là?",
-    "matrix": null,
-    "options": [
-      "\\(e^x\\)",
-      "\\(x e^{x-1}\\)",
-      "\\(e^{x-1}\\)",
-      "\\(x e^x\\)"
-    ],
-    "correct": "\\(e^x\\)",
-    "solution": "\\((e^x)' = e^x\\).",
-    "quick": "Đạo hàm của \\(e^x\\) là chính nó",
-    "casio": "CASIO fx-580VNX: [SHIFT][d/dx] → nhập f(x) → dấu phẩy → nhập x₀ → [)] → [EXE]. Cho giá trị số của f'(x₀). Dùng để kiểm tra, không cho kết quả ký hiệu.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 27,
-    "type": "differentiability",
-    "question": "Hàm \\(f(x)=\\begin{cases} x^2\\sin\\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) có đạo hàm tại \\(x=0\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(\\infty\\)",
-      "Không tồn tại"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "\\(f'(0)=\\lim_{h\\to0}\\frac{h^2\\sin(1/h)}{h}=\\lim_{h\\to0}h\\sin(1/h)=0\\).",
-    "quick": "Ví dụ: đạo hàm tại 0 bằng 0",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 2,
-    "topic": "Đạo hàm"
-  },
-  {
-    "id": 28,
-    "type": "continuity_parameter",
-    "question": "Tìm \\(a\\) để hàm \\(f(x)=\\begin{cases}\\dfrac{x^2-9}{x-3} & x\\neq3 \\\\ a & x=3\\end{cases}\\) liên tục tại \\(x=3\\).",
-    "matrix": null,
-    "options": [
-      "\\(a=6\\)",
-      "\\(a=3\\)",
-      "\\(a=9\\)",
-      "\\(a=0\\)"
-    ],
-    "correct": "\\(a=6\\)",
-    "solution": "Điều kiện liên tục: \\(f(3)=\\lim_{x\\to3}f(x)\\).\n\n\\(\\lim_{x\\to3}\\dfrac{x^2-9}{x-3}=\\lim_{x\\to3}\\dfrac{(x-3)(x+3)}{x-3}=\\lim_{x\\to3}(x+3)=6\\).\n\nVậy phải đặt \\(a=6\\).",
-    "quick": "Rút gọn: \\(\\dfrac{x^2-9}{x-3}=x+3\\to6\\) khi \\(x\\to3\\). Đặt \\(a=\\) giới hạn = **6**.",
-    "casio": "CASIO: x=3.0001 → (3.0001²-9)/(3.0001-3)≈6.0001 → a=6.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 29,
-    "type": "continuity_parameter",
-    "question": "Cho \\(f(x)=\\begin{cases}x+a & x<0 \\\\ 2 & x=0 \\\\ bx+3 & x>0\\end{cases}\\). Kết luận nào đúng về tính liên tục của hàm tại \\(x=0\\)?",
-    "matrix": null,
-    "options": [
-      "Không có \\(a,b\\) nào làm \\(f\\) liên tục tại \\(x=0\\)",
-      "\\(a=2,\\;b=1\\)",
-      "\\(a=2,\\;b=-1\\)",
-      "\\(a=0,\\;b=3\\)"
-    ],
-    "correct": "Không có \\(a,b\\) nào làm \\(f\\) liên tục tại \\(x=0\\)",
-    "solution": "\\(\\lim_{x\\to0^-}f(x)=a\\). Liên tục trái: \\(a=f(0)=2\\).\n\n\\(\\lim_{x\\to0^+}f(x)=b\\cdot0+3=3\\neq2=f(0)\\) → **không thể liên tục** tại 0 dù b bằng bao nhiêu!\n\nNguyên nhân: lim phải = 3 cố định, f(0)=2 cố định, không thể điều chỉnh.",
-    "quick": "lim 0+ = 3 ≠ f(0)=2 (cố định, không phụ thuộc b) → **không có a,b nào thỏa mãn**.",
-    "casio": "CASIO: Thay x=±0.0001 vào từng nhánh, so sánh với f(0)=2.",
     "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Đạo hàm"
   },
   {
-    "id": 30,
-    "type": "differentiability",
-    "question": "Hàm \\(f(x)=|x-2|\\) tại \\(x=2\\) là?",
-    "matrix": null,
-    "options": [
-      "Liên tục nhưng không khả vi",
-      "Khả vi",
-      "Không liên tục",
-      "Không xác định"
-    ],
-    "correct": "Liên tục nhưng không khả vi",
-    "solution": "**Liên tục:** \\(\\lim_{x\\to2}|x-2|=0=f(2)\\) ✓.\n\n**Khả vi:** Đạo hàm trái: \\(\\lim_{x\\to2^-}\\dfrac{|x-2|-0}{x-2}=\\lim_{x\\to2^-}\\dfrac{2-x}{x-2}=-1\\).\n\nĐạo hàm phải: \\(\\lim_{x\\to2^+}\\dfrac{x-2}{x-2}=1\\).\n\nHai giới hạn khác nhau (−1≠1) → **không khả vi** tại \\(x=2\\).",
-    "quick": "\\(|x-2|\\) có điểm góc tại x=2 → **liên tục, không khả vi** (đạo hàm trái=-1, phải=+1).",
-    "casio": "CASIO: [x=1.9999: (|1.9999-2|-0)/(1.9999-2)=0.0001/(-0.0001)=-1]; [x=2.0001: 0.0001/0.0001=1]. Hai phía khác nhau.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 31,
+    "id": 14,
     "type": "differentiability",
     "question": "Hàm \\(f(x)=\\begin{cases}x^2\\sin\\dfrac{1}{x}&x\\neq0\\\\0&x=0\\end{cases}\\) tại \\(x=0\\) là?",
     "matrix": null,
@@ -558,7 +252,43 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 32,
+    "id": 15,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để hàm \\(f(x)=\\begin{cases}\\dfrac{x^2-9}{x-3} & x\\neq3 \\\\ a & x=3\\end{cases}\\) liên tục tại \\(x=3\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=6\\)",
+      "\\(a=3\\)",
+      "\\(a=9\\)",
+      "\\(a=0\\)"
+    ],
+    "correct": "\\(a=6\\)",
+    "solution": "Điều kiện liên tục: \\(f(3)=\\lim_{x\\to3}f(x)\\).\n\n\\(\\lim_{x\\to3}\\dfrac{x^2-9}{x-3}=\\lim_{x\\to3}\\dfrac{(x-3)(x+3)}{x-3}=\\lim_{x\\to3}(x+3)=6\\).\n\nVậy phải đặt \\(a=6\\).",
+    "quick": "Rút gọn: \\(\\dfrac{x^2-9}{x-3}=x+3\\to6\\) khi \\(x\\to3\\). Đặt \\(a=\\) giới hạn = **6**.",
+    "casio": "CASIO: x=3.0001 → (3.0001²-9)/(3.0001-3)≈6.0001 → a=6.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 16,
+    "type": "continuity_parameter",
+    "question": "Cho \\(f(x)=\\begin{cases}x+a & x<0 \\\\ 2 & x=0 \\\\ bx+3 & x>0\\end{cases}\\). Kết luận nào đúng về tính liên tục của hàm tại \\(x=0\\)?",
+    "matrix": null,
+    "options": [
+      "Không có \\(a,b\\) nào làm \\(f\\) liên tục tại \\(x=0\\)",
+      "\\(a=2,\\;b=1\\)",
+      "\\(a=2,\\;b=-1\\)",
+      "\\(a=0,\\;b=3\\)"
+    ],
+    "correct": "Không có \\(a,b\\) nào làm \\(f\\) liên tục tại \\(x=0\\)",
+    "solution": "\\(\\lim_{x\\to0^-}f(x)=a\\). Liên tục trái: \\(a=f(0)=2\\).\n\n\\(\\lim_{x\\to0^+}f(x)=b\\cdot0+3=3\\neq2=f(0)\\) → **không thể liên tục** tại 0 dù b bằng bao nhiêu!\n\nNguyên nhân: lim phải = 3 cố định, f(0)=2 cố định, không thể điều chỉnh.",
+    "quick": "lim 0+ = 3 ≠ f(0)=2 (cố định, không phụ thuộc b) → **không có a,b nào thỏa mãn**.",
+    "casio": "CASIO: Thay x=±0.0001 vào từng nhánh, so sánh với f(0)=2.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 17,
     "type": "continuity_parameter",
     "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\dfrac{1-\\cos 2x}{x^2}&x\\neq0\\\\a&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
     "matrix": null,
@@ -572,11 +302,11 @@
     "solution": "\\(\\lim_{x\\to0}\\dfrac{1-\\cos2x}{x^2}\\). Dùng \\(1-\\cos2x=2\\sin^2x\\):\n\n\\(=\\lim_{x\\to0}\\dfrac{2\\sin^2x}{x^2}=2\\left(\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\right)^2=2\\cdot1^2=2\\).\n\nĐể liên tục: \\(a=2\\).",
     "quick": "\\(1-\\cos2x=2\\sin^2x\\) → \\(\\dfrac{2\\sin^2x}{x^2}\\to2\\cdot1=2\\). Đặt **a=2**.",
     "casio": "CASIO: x=0.001 → (1-cos0.002)/0.001²≈(2sin²0.001)/0.000001≈2×0.000001/0.000001=2.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 33,
+    "id": 18,
     "type": "differentiability_param",
     "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}e^x & x\\leq0 \\\\ x^2+ax+b & x>0\\end{cases}\\) khả vi tại \\(x=0\\).",
     "matrix": null,
@@ -590,11 +320,11 @@
     "solution": "**Điều kiện khả vi tại x=0:** f liên tục VÀ đạo hàm trái = đạo hàm phải.\n\n**Liên tục:** \\(\\lim_{x\\to0^-}e^x=1=\\lim_{x\\to0^+}(x^2+ax+b)=b\\) → \\(b=1\\).\n\n**Đạo hàm trái:** \\((e^x)'|_{x=0}=e^0=1\\).\n**Đạo hàm phải:** \\((x^2+ax+b)'|_{x=0}=2\\cdot0+a=a\\).\n\nĐể bằng nhau: \\(a=1\\). Vậy \\(a=1,\\;b=1\\).",
     "quick": "**2 bước:** (1) Liên tục → b=f(0⁻)=e⁰=1. (2) f'(0⁻)=f'(0⁺) → 1=a → **a=1, b=1**.",
     "casio": "CASIO: Tính f(0-)=e⁰=1=b. f'(0-)=e⁰=1. f'(0+)=a. Đặt a=1.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 34,
+    "id": 19,
     "type": "differentiability_param",
     "question": "Xác định \\(a,b\\) để \\(f(x)=\\begin{cases}\\ln(x+1) & x>0 \\\\ ax+b+1 & x\\leq0\\end{cases}\\) khả vi trên \\(\\mathbb{R}\\).",
     "matrix": null,
@@ -612,7 +342,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 35,
+    "id": 20,
     "type": "differentiability_param",
     "question": "Cho \\(f(x)=\\begin{cases}x^2+ax+b & x\\leq1 \\\\ 2ax+b & x>1\\end{cases}\\). Tìm \\(a,b\\) để \\(f\\) khả vi tại \\(x=1\\).",
     "matrix": null,
@@ -630,133 +360,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 36,
-    "type": "differentiability_param",
-    "question": "Cho \\(f(x)=\\begin{cases}\\sin ax+b & x<0 \\\\ x^2+1 & x\\geq0\\end{cases}\\). Tìm \\(a,b\\) để \\(f\\) khả vi tại \\(x=0\\).",
-    "matrix": null,
-    "options": [
-      "\\(a=0,\\;b=1\\)",
-      "\\(a=1,\\;b=1\\)",
-      "\\(a=0,\\;b=0\\)",
-      "\\(a=1,\\;b=0\\)"
-    ],
-    "correct": "\\(a=0,\\;b=1\\)",
-    "solution": "\\(f(0)=0^2+1=1\\).\n\n**Liên tục:** \\(\\lim_{x\\to0^-}(\\sin ax+b)=\\sin0+b=b=1\\) → \\(b=1\\).\n\n**Khả vi:** \\(f'(0^+)=(2x)|_{x=0}=0\\).\n\\(f'(0^-)=(a\\cos ax)|_{x=0}=a\\cos0=a\\).\n\nĐể bằng nhau: \\(a=0\\).\n\nVậy \\(a=0,\\;b=1\\).",
-    "quick": "Liên tục: b=f(0)=1. Khả vi: a=f'(0⁺)=0 → **a=0, b=1**.",
-    "casio": "CASIO: f(0-)=sin(0)+b=b=1→b=1. f'(0-)=a·cos(0)=a. f'(0+)=0. → a=0.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 37,
-    "type": "differentiability_param",
-    "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}e^x & x\\leq0 \\\\ ax^2+bx+1 & x>0\\end{cases}\\) khả vi tại \\(x=0\\).",
-    "matrix": null,
-    "options": [
-      "Mọi \\(a\\), \\(b=1\\)",
-      "\\(a=1,\\;b=1\\)",
-      "\\(a=0,\\;b=1\\)",
-      "\\(b=1\\) và \\(a\\) tùy ý"
-    ],
-    "correct": "Mọi \\(a\\), \\(b=1\\)",
-    "solution": "\\(f(0)=e^0=1\\).\n\n**Liên tục:** \\(\\lim_{x\\to0^+}(ax^2+bx+1)=1=f(0)\\) → luôn thỏa ✓.\n\n**Khả vi:** \\(f'(0^-)=e^0=1\\).\n\\(f'(0^+)=(2ax+b)|_{x=0}=b\\).\n\nĐể bằng nhau: \\(b=1\\). Giá trị a tự do!\n\nVậy: \\(b=1\\), \\(a\\) tùy ý.",
-    "quick": "Liên tục: tự động (=1). Khả vi: b=f'(0⁻)=1. **a tự do, b=1**.",
-    "casio": "CASIO: f'(0-)=e⁰=1. f'(0+)=b=1. a không ảnh hưởng vì x²→0 khi x→0.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 38,
-    "type": "differentiability_param",
-    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{x^3-x^2-x+1}{x-1} & x\\neq1 \\\\ a & x=1\\end{cases}\\). Tìm \\(a\\) để \\(f\\) liên tục tại \\(x=1\\).",
-    "matrix": null,
-    "options": [
-      "\\(a=0\\)",
-      "\\(a=2\\)",
-      "\\(a=1\\)",
-      "\\(a=-1\\)"
-    ],
-    "correct": "\\(a=0\\)",
-    "solution": "Phân tích tử: \\(x^3-x^2-x+1=x^2(x-1)-(x-1)=(x-1)(x^2-1)=(x-1)^2(x+1)\\).\n\n\\(\\lim_{x\\to1}\\dfrac{(x-1)^2(x+1)}{x-1}=\\lim_{x\\to1}(x-1)(x+1)=0\\cdot2=0\\).\n\nĐể liên tục: \\(a=0\\).",
-    "quick": "Tử=(x-1)²(x+1) → rút gọn=(x-1)(x+1)→0 khi x→1. **a=0**.",
-    "casio": "CASIO: Thay x=1.0001 vào biểu thức, kết quả → a.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 39,
-    "type": "maclaurin",
-    "question": "Khai triển Maclaurin của \\(f(x)=\\dfrac{1}{1-x}\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=0}^{\\infty}x^n=1+x+x^2+\\ldots\\)",
-      "\\(\\sum_{n=1}^{\\infty}x^n\\)",
-      "\\(1-x+x^2-x^3+\\ldots\\)",
-      "\\(e^x\\)"
-    ],
-    "correct": "\\(\\sum_{n=0}^{\\infty}x^n=1+x+x^2+\\ldots\\)",
-    "solution": "Đây là **chuỗi hình học** với công bội \\(x\\):\n\n\\(\\dfrac{1}{1-x}=\\sum_{n=0}^{\\infty}x^n=1+x+x^2+x^3+\\ldots\\)\n\nHội tụ khi \\(|x|<1\\).\n\nChứng minh: \\(f^{(n)}(x)=\\dfrac{n!}{(1-x)^{n+1}}\\) → \\(f^{(n)}(0)=n!\\) → hệ số Maclaurin = \\(n!/n!=1\\).",
-    "quick": "\\(\\dfrac{1}{1-x}=1+x+x^2+x^3+\\ldots\\), \\(|x|<1\\). **Học thuộc công thức cơ bản này!**",
-    "casio": "CASIO: x=0.1 → 1/(1-0.1)=1/0.9≈1.111. Kiểm tra: 1+0.1+0.01+0.001+...=1.111✓.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 40,
-    "type": "maclaurin",
-    "question": "Khai triển Maclaurin của \\(f(x)=e^x\\) đến bậc 3 là?",
-    "matrix": null,
-    "options": [
-      "\\(1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\ldots\\)",
-      "\\(1+x+x^2+x^3+\\ldots\\)",
-      "\\(x+\\dfrac{x^2}{2}+\\dfrac{x^3}{3}+\\ldots\\)",
-      "\\(\\sum_{n=0}^\\infty(-1)^n\\dfrac{x^n}{n!}\\)"
-    ],
-    "correct": "\\(1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\ldots\\)",
-    "solution": "\\(e^x=\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}=1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\dfrac{x^4}{4!}+\\ldots\\)\n\nHội tụ với mọi \\(x\\in\\mathbb{R}\\).\n\nBộ công thức cần nhớ: \\(f^{(n)}(0)=e^0=1\\) với mọi n → hệ số = \\(1/n!\\).",
-    "quick": "\\(e^x=1+x+x^2/2!+x^3/3!+\\ldots\\) **Học thuộc: hệ số là 1/n!**",
-    "casio": "CASIO: e^0.1≈1+0.1+0.005+0.000167...=1.10517...",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 41,
-    "type": "maclaurin",
-    "question": "Khai triển \\(f(x)=\\ln\\dfrac{3+x}{2-x}\\) thành chuỗi lũy thừa tại \\(x=0\\)?",
-    "matrix": null,
-    "options": [
-      "\\(\\ln\\dfrac{3}{2}+\\dfrac{5}{6}x+\\ldots\\)",
-      "\\(\\ln\\dfrac{3}{2}+x+x^2+\\ldots\\)",
-      "\\(x+x^2+\\ldots\\)",
-      "\\(\\ln(3+x)-\\ln(2-x)\\)"
-    ],
-    "correct": "\\(\\ln\\dfrac{3}{2}+\\dfrac{5}{6}x+\\ldots\\)",
-    "solution": "\\(f(x)=\\ln(3+x)-\\ln(2-x)\\).\n\n\\(f(0)=\\ln3-\\ln2=\\ln\\dfrac{3}{2}\\).\n\n\\(f'(x)=\\dfrac{1}{3+x}+\\dfrac{1}{2-x}\\), \\(f'(0)=\\dfrac{1}{3}+\\dfrac{1}{2}=\\dfrac{5}{6}\\).\n\nKhai triển: \\(f(x)=\\ln\\dfrac{3}{2}+\\dfrac{5}{6}x+\\dfrac{f''(0)}{2!}x^2+\\ldots\\)",
-    "quick": "f(0)=ln(3/2), f'(0)=1/3+1/2=5/6. Chuỗi: **ln(3/2)+(5/6)x+...**",
-    "casio": "CASIO: f(0.01)=ln(3.01/1.99)≈ln(1.513)≈0.414. Kiểm tra: ln(3/2)+(5/6)(0.01)≈0.405+0.008=0.413✓.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 42,
-    "type": "differentiability_param",
-    "question": "Cho \\(f(x)=\\begin{cases}x^3-2x^2+3 & x\\leq1 \\\\ 2ax+b & x>1\\end{cases}\\). Tìm \\(a,b\\) để \\(f\\) khả vi tại \\(x=1\\).",
-    "matrix": null,
-    "options": [
-      "\\(a=-\\dfrac{1}{2},\\;b=3\\)",
-      "\\(a=\\dfrac{1}{2},\\;b=1\\)",
-      "\\(a=-1,\\;b=2\\)",
-      "\\(a=1,\\;b=0\\)"
-    ],
-    "correct": "\\(a=-\\dfrac{1}{2},\\;b=3\\)",
-    "solution": "Xét tại \\(x=1\\). Với nhánh trái: \\(f(1)=1^3-2\\cdot1^2+3=2\\). Để liên tục, cần \\(2a+b=2\\). Đạo hàm nhánh trái là \\(f'_-(x)=3x^2-4x\\), nên \\(f'_-(1)=3-4=-1\\). Đạo hàm nhánh phải của \\(2ax+b\\) là \\(f'_+(x)=2a\\), nên điều kiện khả vi cho \\(2a=-1\\Rightarrow a=-\\dfrac{1}{2}\\). Thế vào điều kiện liên tục: \\(2(-\\dfrac{1}{2})+b=2\\Rightarrow -1+b=2\\Rightarrow b=3\\). Vậy \\(a=-\\dfrac{1}{2},\\;b=3\\).",
-    "quick": "Khả vi: \\(2a=-1\\Rightarrow a=-1/2\\). Liên tục: \\(2a+b=2\\Rightarrow b=3\\).",
-    "casio": "CASIO: f(1)=1-2+3=2. f'(1-)=3-4=-1. 2a=-1→a=-0.5. b=2-2(-0.5)=3.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 43,
+    "id": 21,
     "type": "discontinuity_count",
     "question": "Hàm số \\(f(x)=\\begin{cases} \\dfrac{x^2-1}{x-1} & x\\neq1 \\\\ 2 & x=1 \\end{cases}\\) có bao nhiêu điểm gián đoạn?",
     "matrix": null,
@@ -770,11 +374,11 @@
     "solution": "Tại \\(x=1\\): Rút gọn \\(\\dfrac{x^2-1}{x-1}=x+1\\) (khi \\(x\\neq1\\)). Suy ra \\(\\lim_{x\\to1}f(x)=1+1=2=f(1)\\) → **liên tục** tại \\(x=1\\).\n\nTại các điểm khác hàm là đa thức/phân thức không có điểm đặc biệt → liên tục. Vậy **0 điểm gián đoạn**.",
     "quick": "Rút gọn: \\(\\dfrac{x^2-1}{x-1}=x+1\\) với \\(x\\neq1\\). Giới hạn = \\(f(1)=2\\) → liên tục tại \\(x=1\\) → **0 điểm gián đoạn**.",
     "casio": "CASIO: Thay x=0.9999 → (0.9999²-1)/(0.9999-1) ≈ 1.9999 ≈ 2. Thay x=1.0001 → ≈ 2.0001 ≈ 2. Cả hai giới hạn = f(1)=2 → liên tục.",
-    "difficulty": 1,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 44,
+    "id": 22,
     "type": "discontinuity_count",
     "question": "Số điểm gián đoạn của \\(f(x)=\\begin{cases} \\dfrac{x^2-1}{x-1} & x\\neq1 \\\\ 1 & x=1 \\end{cases}\\) là?",
     "matrix": null,
@@ -788,11 +392,11 @@
     "solution": "Rút gọn: \\(\\dfrac{x^2-1}{x-1}=x+1\\) với \\(x\\neq1\\). Tại \\(x=1\\): \\(\\lim_{x\\to1}f(x)=2 \\neq f(1)=1\\) → **gián đoạn bỏ được** tại \\(x=1\\).\n\nChỉ có 1 điểm gián đoạn (có thể sửa bằng cách định nghĩa lại \\(f(1)=2\\)).",
     "quick": "\\(\\lim=2 \\neq f(1)=1\\) → gián đoạn bỏ được tại \\(x=1\\). Đếm: **1 điểm**.",
     "casio": "CASIO: Thay x=0.9999 → ≈ 1.9999; x=1.0001 → ≈ 2.0001. Cả hai → 2, nhưng f(1)=1 ≠ 2 → gián đoạn 1 điểm.",
-    "difficulty": 1,
+    "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 45,
+    "id": 23,
     "type": "discontinuity_count",
     "question": "Hàm \\(f(x)=\\begin{cases} x^2 & x<0 \\\\ 0 & x=0 \\\\ \\dfrac{1}{x} & x>0 \\end{cases}\\) có bao nhiêu điểm gián đoạn?",
     "matrix": null,
@@ -806,11 +410,11 @@
     "solution": "Tại \\(x=0\\): \\(\\lim_{x\\to0^-}f(x)=0^2=0\\), \\(\\lim_{x\\to0^+}f(x)=\\dfrac{1}{0^+}=+\\infty\\).\n\nVì giới hạn một phía bằng \\(+\\infty\\) → **gián đoạn loại 2** tại \\(x=0\\). Các điểm khác hoàn toàn liên tục. Vậy **1 điểm gián đoạn**.",
     "quick": "Lim trái = 0, lim phải = +∞ → vô cực một phía → **loại 2**, chỉ có 1 điểm gián đoạn.",
     "casio": "CASIO: x=-0.0001 → (-0.0001)²≈0; x=0.0001 → 1/0.0001=10000 → rất lớn. Lim phải = ∞ → gián đoạn loại 2.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 46,
+    "id": 24,
     "type": "discontinuity_classification",
     "question": "Điểm gián đoạn của \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\) thuộc loại nào?",
     "matrix": null,
@@ -828,25 +432,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 47,
-    "type": "discontinuity_classification",
-    "question": "Hàm \\(f(x)=\\begin{cases} x+1 & x<1 \\\\ 3-x & x\\geq1 \\end{cases}\\) tại \\(x=1\\) là",
-    "matrix": null,
-    "options": [
-      "Liên tục",
-      "Bỏ được",
-      "Loại 1 (bước nhảy)",
-      "Loại 2"
-    ],
-    "correct": "Liên tục",
-    "solution": "Kiểm tra tính liên tục tại \\(x=1\\):\n\\(\\lim_{x\\to1^-}f(x)=1+1=2\\),  \\(\\lim_{x\\to1^+}f(x)=3-1=2\\), \\(f(1)=3-1=2\\).\n\nCả hai giới hạn một phía bằng nhau và bằng \\(f(1)\\) → hàm **liên tục** tại \\(x=1\\), không có gián đoạn.",
-    "quick": "Lim trái = lim phải = \\(f(1)=2\\) → **liên tục**, không gián đoạn.",
-    "casio": "CASIO: x=0.9999 → 0.9999+1=1.9999 ≈ 2; x=1.0001 → 3-1.0001=1.9999 ≈ 2; f(1)=2. Tất cả bằng 2 → liên tục.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 48,
+    "id": 25,
     "type": "discontinuity_classification",
     "question": "Điểm gián đoạn của \\(f(x)=\\begin{cases} \\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\) thuộc loại nào?",
     "matrix": null,
@@ -864,7 +450,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 49,
+    "id": 26,
     "type": "discontinuity_count",
     "question": "Hàm \\(f(x)=\\tan x\\) có bao nhiêu điểm gián đoạn trên \\([0,2\\pi]\\)?",
     "matrix": null,
@@ -882,25 +468,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 50,
-    "type": "discontinuity_count",
-    "question": "Số điểm gián đoạn của \\(f(x)=\\begin{cases} \\dfrac{x^2-4}{x-2} & x\\neq2 \\\\ 3 & x=2 \\end{cases}\\) là?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "Rút gọn: \\(\\dfrac{x^2-4}{x-2}=\\dfrac{(x-2)(x+2)}{x-2}=x+2\\) với \\(x\\neq2\\).\n\nTại \\(x=2\\): \\(\\lim_{x\\to2}f(x)=4 \\neq f(2)=3\\) → **gián đoạn bỏ được**. Các điểm khác liên tục → **1 điểm gián đoạn**.",
-    "quick": "Rút gọn → \\(x+2\\), giới hạn = 4 nhưng \\(f(2)=3\\) → bỏ được. **1 điểm**.",
-    "casio": "CASIO: x=1.9999 → (1.9999²-4)/(1.9999-2) ≈ 3.9999 ≈ 4. Nhưng f(2)=3 → gián đoạn.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 51,
+    "id": 27,
     "type": "discontinuity_count",
     "question": "Hàm \\(f(x)=\\dfrac{x^2-1}{x^2-3x+2}\\) có bao nhiêu điểm gián đoạn?",
     "matrix": null,
@@ -914,11 +482,11 @@
     "solution": "Mẫu: \\(x^2-3x+2=(x-1)(x-2)=0 \\Rightarrow x=1,\\; x=2\\).\n\n**Tại \\(x=1\\):** Tử \\(x^2-1=(x-1)(x+1)\\) cũng = 0 → rút gọn được: \\(\\dfrac{(x+1)(x-1)}{(x-1)(x-2)}=\\dfrac{x+1}{x-2}\\). Giới hạn = \\(\\dfrac{2}{-1}=-2\\) hữu hạn → **gián đoạn bỏ được**.\n\n**Tại \\(x=2\\):** Tử = \\(4-1=3\\neq0\\) → giới hạn = ±∞ → **gián đoạn loại 2**.\n\nTổng: **2 điểm gián đoạn**.",
     "quick": "Mẫu=0 tại x=1,2. Tại x=1: tử=0 → bỏ được. Tại x=2: tử=3≠0 → loại 2. Tổng: **2 điểm**.",
     "casio": "CASIO: x=1.0001 → ≈ -2.0001 (hữu hạn) → bỏ được. x=1.9999 → rất lớn → loại 2.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 52,
+    "id": 28,
     "type": "discontinuity_count",
     "question": "Hàm \\(f(x)=\\begin{cases} \\dfrac{|x|}{x} & x\\neq0 \\\\ 1 & x=0 \\end{cases}\\) có bao nhiêu điểm gián đoạn?",
     "matrix": null,
@@ -932,11 +500,11 @@
     "solution": "Tại \\(x=0\\):\n\\(\\lim_{x\\to0^+}\\dfrac{|x|}{x}=\\dfrac{x}{x}=1\\), \\(\\lim_{x\\to0^-}\\dfrac{|x|}{x}=\\dfrac{-x}{x}=-1\\).\n\nHai giới hạn một phía hữu hạn nhưng khác nhau (1 ≠ −1) → **gián đoạn loại 1 (bước nhảy)**. Vậy **1 điểm gián đoạn**.",
     "quick": "Lim phải = 1, lim trái = −1 → hai phía hữu hạn nhưng ≠ nhau → **loại 1 (bước nhảy)**, 1 điểm.",
     "casio": "CASIO: x=0.0001 → |0.0001|/0.0001=1; x=-0.0001 → |-0.0001|/(-0.0001)=-1. Hai phía ≠ nhau → loại 1.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 53,
+    "id": 29,
     "type": "discontinuity_classification",
     "question": "Loại gián đoạn tại \\(x=0\\) của \\(f(x)=\\begin{cases} x^2+1 & x>0 \\\\ -x+3 & x\\leq0 \\end{cases}\\)?",
     "matrix": null,
@@ -950,29 +518,11 @@
     "solution": "\\(\\lim_{x\\to0^+}f(x)=0^2+1=1\\), \\(\\lim_{x\\to0^-}f(x)=-0+3=3\\), \\(f(0)=-0+3=3\\).\n\nHai giới hạn một phía đều hữu hạn nhưng khác nhau: \\(1\\neq3\\) → **gián đoạn loại 1 (bước nhảy)**.\nBước nhảy = \\(|3-1|=2\\).",
     "quick": "Lim phải = 1, lim trái = 3 → khác nhau, hữu hạn → **loại 1**. Bước nhảy = |3−1| = 2.",
     "casio": "CASIO: x=0.0001 → 0.0001²+1≈1; x=-0.0001 → -(-0.0001)+3=3.0001≈3. Hai phía: 1 và 3 → loại 1.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 54,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\dfrac{x^2-9}{x^2-5x+6}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "2",
-    "solution": "Mẫu: \\(x^2-5x+6=(x-2)(x-3)=0 \\Rightarrow x=2,\\;x=3\\).\n\n**Tại \\(x=2\\):** Tử \\(x^2-9=4-9=-5\\neq0\\) → giới hạn = ±∞ → **gián đoạn loại 2**.\n\n**Tại \\(x=3\\):** Tử \\(x^2-9=(x-3)(x+3)\\) cũng = 0 → rút gọn: \\(\\dfrac{(x-3)(x+3)}{(x-2)(x-3)}=\\dfrac{x+3}{x-2}\\). Giới hạn = \\(\\dfrac{6}{1}=6\\) hữu hạn → **gián đoạn bỏ được**.\n\nTổng: **2 điểm gián đoạn**.",
-    "quick": "Mẫu=0 tại x=2,3. Tử=0 tại x=3 → bỏ được; tử≠0 tại x=2 → loại 2. **2 điểm**.",
-    "casio": "CASIO: x=2.0001 → rất lớn → loại 2. x=3.0001 → (3.0001+3)/(3.0001-2) ≈ 6.0001/1.0001 ≈ 6 hữu hạn → bỏ được.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 55,
+    "id": 30,
     "type": "discontinuity_classification",
     "question": "Hàm \\(f(x)=\\begin{cases} \\dfrac{\\tan x}{x} & x\\neq0 \\\\ 2 & x=0 \\end{cases}\\) tại \\(x=0\\) là gián đoạn loại gì?",
     "matrix": null,
@@ -986,29 +536,11 @@
     "solution": "\\(\\lim_{x\\to0}\\dfrac{\\tan x}{x}=\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\cdot\\dfrac{1}{\\cos x}=1\\cdot1=1\\).\n\nNhưng \\(f(0)=2\\neq1\\) → giới hạn tồn tại hữu hạn ≠ giá trị hàm → **gián đoạn bỏ được**.\nCó thể sửa bằng cách đặt lại \\(f(0)=1\\).",
     "quick": "\\(\\lim_{x\\to0}\\dfrac{\\tan x}{x}=1\\) nhưng \\(f(0)=2\\neq1\\) → **bỏ được**.",
     "casio": "CASIO: x=0.001 → tan(0.001)/0.001 ≈ 1.000000333 ≈ 1. Nhưng f(0)=2 → gián đoạn bỏ được.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 56,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\dfrac{x^3-8}{x^2-4}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "2",
-    "solution": "Mẫu: \\(x^2-4=(x-2)(x+2)=0 \\Rightarrow x=2,\\;x=-2\\).\n\n**Tại \\(x=2\\):** Tử \\(x^3-8=(x-2)(x^2+2x+4)\\) cũng = 0 → rút gọn: \\(\\dfrac{x^2+2x+4}{x+2}\\). Giới hạn = \\(\\dfrac{12}{4}=3\\) hữu hạn → **gián đoạn bỏ được**.\n\n**Tại \\(x=-2\\):** Tử \\((-2)^3-8=-16\\neq0\\) → giới hạn = ±∞ → **gián đoạn loại 2**.\n\nTổng: **2 điểm gián đoạn**.",
-    "quick": "Mẫu=0 tại ±2. Tại x=2: tử=0 → bỏ được; tại x=-2: tử=-16≠0 → loại 2. **2 điểm**.",
-    "casio": "CASIO: x=2.0001 → rút gọn → ≈3 hữu hạn → bỏ được. x=-1.9999 → rất lớn → loại 2.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 57,
+    "id": 31,
     "type": "discontinuity_classification",
     "question": "Hàm \\(f(x)=\\begin{cases} e^{1/x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\) gián đoạn loại gì?",
     "matrix": null,
@@ -1026,61 +558,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 58,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\dfrac{\\sin x}{x(x^2-\\pi^2)}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "correct": "3",
-    "solution": "Mẫu \\(x(x^2-\\pi^2)=x(x-\\pi)(x+\\pi)=0\\) tại \\(x=0,\\;x=\\pi,\\;x=-\\pi\\).\n\n**Tại \\(x=0\\):** \\(\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\cdot\\dfrac{1}{x^2-\\pi^2}=1\\cdot\\dfrac{1}{-\\pi^2}=-\\dfrac{1}{\\pi^2}\\) → **bỏ được**.\n\n**Tại \\(x=\\pm\\pi\\):** Tử \\(\\sin(\\pm\\pi)=0\\), mẫu cũng → 0 theo (x∓π), cần tính thêm. \\(\\lim_{x\\to\\pi}\\dfrac{\\sin x}{x(x-\\pi)(x+\\pi)}\\) dùng L'Hôpital: \\(=\\dfrac{\\cos\\pi}{\\pi(2\\pi)}=\\dfrac{-1}{2\\pi^2}\\) → **bỏ được**.\n\nTổng: **3 điểm gián đoạn** (tất cả bỏ được).",
-    "quick": "Mẫu=0 tại 3 điểm: 0, ±π. Tại mỗi điểm, tử cũng → 0 → rút gọn được (bỏ được). **3 điểm**.",
-    "casio": "CASIO: Thay x=0.001, x=π±0.001, x=-π±0.001 để kiểm tra giới hạn hữu hạn.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 59,
-    "type": "discontinuity_classification",
-    "question": "Hàm \\(f(x)=\\begin{cases} \\dfrac{x^2-4}{x-2} & x<2 \\\\ x+1 & x\\geq2 \\end{cases}\\) tại \\(x=2\\) là",
-    "matrix": null,
-    "options": [
-      "Liên tục",
-      "Bỏ được",
-      "Loại 1 (bước nhảy)",
-      "Loại 2"
-    ],
-    "correct": "Loại 1 (bước nhảy)",
-    "solution": "\\(\\lim_{x\\to2^-}f(x)=\\lim_{x\\to2^-}\\dfrac{x^2-4}{x-2}=\\lim_{x\\to2^-}(x+2)=4\\).\n\n\\(\\lim_{x\\to2^+}f(x)=2+1=3\\), \\(f(2)=2+1=3\\).\n\nHai giới hạn một phía hữu hạn nhưng: \\(4\\neq3\\) → **gián đoạn loại 1 (bước nhảy)**. Bước nhảy = \\(|4-3|=1\\).",
-    "quick": "Lim trái = 4, lim phải = f(2) = 3 → hai giá trị hữu hạn nhưng khác nhau → **loại 1**.",
-    "casio": "CASIO: x=1.9999 → (1.9999²-4)/(1.9999-2) ≈ 3.9999 ≈ 4; x=2.0001 → 3.0001. Hai phía: 4 và 3 → loại 1.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 60,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\dfrac{x^2-x-2}{|x-2|}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "Hàm không xác định tại \\(x=2\\).\n\n\\(x^2-x-2=(x-2)(x+1)\\).\n\n**Tại \\(x=2^+\\):** \\(|x-2|=x-2\\) → \\(\\dfrac{(x-2)(x+1)}{x-2}=x+1\\to3\\).\n\n**Tại \\(x=2^-\\):** \\(|x-2|=2-x\\) → \\(\\dfrac{(x-2)(x+1)}{2-x}=-(x+1)\\to-3\\).\n\nHai giới hạn hữu hạn nhưng \\(3\\neq-3\\) → **gián đoạn loại 1**. Chỉ **1 điểm** gián đoạn.",
-    "quick": "Tại x=2: lim phải = 3, lim trái = −3 → **loại 1** (bước nhảy = 6). Chỉ 1 điểm gián đoạn.",
-    "casio": "CASIO: x=2.0001 → ≈3; x=1.9999 → ≈-3. Hai phía ngược dấu → loại 1.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 61,
+    "id": 32,
     "type": "discontinuity_classification",
     "question": "Ba loại điểm gián đoạn là gì? Loại nào **có thể** làm cho hàm liên tục bằng cách định nghĩa lại?",
     "matrix": null,
@@ -1095,24 +573,6 @@
     "quick": "**Chỉ loại bỏ được** có thể sửa: định nghĩa lại \\(f(x_0)=\\lim_{x\\to x_0}f(x)\\). Loại 1 và loại 2 không sửa được.",
     "casio": "CASIO: Với loại bỏ được, tính lim bằng CALC rồi đặt lại f(x₀)=giá trị đó → hàm liên tục.",
     "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 62,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\dfrac{x^4-1}{x^4-x^3}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "correct": "2",
-    "solution": "Mẫu: \\(x^4-x^3=x^3(x-1)=0 \\Rightarrow x=0,\\;x=1\\).\n\n**Tại \\(x=0\\):** Tử \\(0^4-1=-1\\neq0\\) → giới hạn = \\(-1/0\\) → \\(\\pm\\infty\\) → **gián đoạn loại 2**.\n\n**Tại \\(x=1\\):** Tử \\(1^4-1=0\\) → rút gọn: \\(\\dfrac{x^4-1}{x^3(x-1)}=\\dfrac{(x-1)(x+1)(x^2+1)}{x^3(x-1)}=\\dfrac{(x+1)(x^2+1)}{x^3}\\). Giới hạn = \\(\\dfrac{2\\cdot2}{1}=4\\) → **gián đoạn bỏ được**.\n\nTổng: **2 điểm gián đoạn**.",
-    "quick": "Mẫu=0 tại x=0,1. Tử≠0 tại x=0 → loại 2; tử=0 tại x=1 → bỏ được. **2 điểm**.",
-    "casio": "CASIO: x=0.0001 → tử≈-1, mẫu≈0 → rất lớn → loại 2. x=1.0001 → ≈4 hữu hạn → bỏ được.",
-    "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   }
 ]

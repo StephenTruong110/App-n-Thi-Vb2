@@ -113,11 +113,11 @@
     "question": "Đổi thứ tự tích phân: \\(I=\\int_0^2\\int_{\\sqrt{y}}^2 f(x,y)\\,dx\\,dy\\) thành",
     "matrix": null,
     "options": [
-    "\\(\\int_0^{\\sqrt2}\\!\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2} f(x,y)\\,dy\\,dx\\)",
-    "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
-    "\\(\\int_0^2\\int_0^{2}f(x,y)\\,dy\\,dx\\)",
-    "\\(\\int_0^2\\int_{x^2}^{4}f(x,y)\\,dy\\,dx\\)"
-  ],
+      "\\(\\int_0^{\\sqrt2}\\!\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2} f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^2\\int_0^{x^2}f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^2\\int_0^{2}f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_0^2\\int_{x^2}^{4}f(x,y)\\,dy\\,dx\\)"
+    ],
     "correct": "\\(\\int_0^{\\sqrt2}\\!\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2} f(x,y)\\,dy\\,dx\\)",
     "solution": "Miền gốc: \\(0\\le y\\le2\\), \\(\\sqrt y\\le x\\le2\\). Điều kiện \\(\\sqrt y\\le x\\) tương đương \\(y\\le x^2\\). Khi đổi thứ tự, cần xét hai khoảng của \\(x\\):\n- Với \\(0\\le x\\le\\sqrt2\\): \\(0\\le y\\le x^2\\)\n- Với \\(\\sqrt2\\le x\\le2\\): \\(0\\le y\\le2\\)\nDo đó\n\\[I=\\int_0^{\\sqrt2}\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\int_0^{2} f(x,y)\\,dy\\,dx.\\]",
     "quick": "Miền bị cắt tại \\(x=\\sqrt2\\), nên phải tách thành 2 tích phân sau khi đổi thứ tự.",
@@ -374,7 +374,7 @@
     "solution": "Miền: \\(0\\le x\\le1\\), \\(x\\le y\\le1\\). Đổi thứ tự: \\(0\\le y\\le1\\), \\(0\\le x\\le y\\).\n\\(I=\\int_0^1\\int_0^y\\sin(y^2)\\,dx\\,dy=\\int_0^1 y\\sin(y^2)\\,dy=\\dfrac{-\\cos(y^2)}{2}\\Big|_0^1=\\dfrac{1-\\cos1}{2}\\).",
     "quick": "Đổi thứ tự: \\(I=\\int_0^1 y\\sin(y^2)dy=\\frac{1-\\cos1}{2}\\)",
     "casio": "I=∫₀¹ y·sin(y²)dy = [-cos(y²)/2]₀¹ = (1-cos1)/2",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Tích phân"
   },
   {
@@ -419,11 +419,11 @@
     "question": "Tính \\(\\iint_D y\\sqrt{x}\\,dA\\) với \\(D=\\{1\\le x\\le4,\\,0\\le y\\le\\sqrt{x}\\}\\).",
     "matrix": null,
     "options": [
-    "\\(\\dfrac{31}{5}\\)",
-    "\\(\\dfrac{63}{8}\\)",
-    "\\(\\dfrac{31}{4}\\)",
-    "\\(\\dfrac{63}{16}\\)"
-  ],
+      "\\(\\dfrac{31}{5}\\)",
+      "\\(\\dfrac{63}{8}\\)",
+      "\\(\\dfrac{31}{4}\\)",
+      "\\(\\dfrac{63}{16}\\)"
+    ],
     "correct": "\\(\\dfrac{31}{5}\\)",
     "solution": "\\(I=\\int_1^4\\sqrt{x}\\int_0^{\\sqrt{x}} y\\,dy\\,dx=\\int_1^4\\sqrt{x}\\cdot\\dfrac{x}{2}\\,dx=\\dfrac{1}{2}\\int_1^4 x^{3/2}\\,dx\\).\n\nTính tiếp:\n\\[\\dfrac{1}{2}\\int_1^4 x^{3/2}\\,dx=\\dfrac{1}{2}\\cdot\\dfrac{2}{5}[x^{5/2}]_1^4=\\dfrac{1}{5}(32-1)=\\dfrac{31}{5}.\\]\nVậy đáp án đúng là \\(\\dfrac{31}{5}\\).",
     "quick": "\\(\\int_0^{\\sqrt x} y\\,dy=x/2\\), nên \\(I=\\frac12\\int_1^4 x^{3/2}dx=\\frac{31}{5}\\).",
@@ -434,18 +434,18 @@
   {
     "id": 25,
     "type": "double_integral_setup",
-    "question": "Tích phân \\(\\iint_D f(x,y)\\,dA\\) trên miền \\(D=[0,1]\\times[0,2]\\) bằng?",
+    "question": "Theo định lý Fubini, cách viết nào sau đây đúng cho \\(\\iint_D f(x,y)\\,dA\\) với \\(D=[0,1]\\times[0,2]\\)?",
     "matrix": null,
     "options": [
-      "\\(\\int_0^1\\int_0^2 f(x,y)\\,dy\\,dx\\)",
-      "\\(\\int_0^2\\int_0^1 f(x,y)\\,dx\\,dy\\)",
+      "\\(\\int_0^1\\int_0^2 f(x,y)\\,dy\\,dx=\\int_0^2\\int_0^1 f(x,y)\\,dx\\,dy\\)",
       "\\(\\int_0^1\\int_0^2 f(x,y)\\,dx\\,dy\\)",
-      "Cả A và B đều đúng"
+      "\\(\\int_0^2\\int_0^1 f(x,y)\\,dy\\,dx\\)",
+      "\\(\\int_1^2\\int_0^1 f(x,y)\\,dx\\,dy\\)"
     ],
-    "correct": "Cả A và B đều đúng",
-    "solution": "Miền chữ nhật \\([0,1]\\times[0,2]\\) cho phép tích phân theo bất kỳ thứ tự nào (định lý Fubini):\n\nThứ tự 1: \\(\\int_0^1\\left(\\int_0^2 f\\,dy\\right)dx\\) ✓\nThứ tự 2: \\(\\int_0^2\\left(\\int_0^1 f\\,dx\\right)dy\\) ✓\n\n**Định lý Fubini:** Trên miền chữ nhật, tích phân đôi = tích phân lặp theo mọi thứ tự.",
-    "quick": "Miền chữ nhật + f liên tục → đổi thứ tự tự do (Fubini). **Cả A và B đều đúng**.",
-    "casio": "CASIO: Không tính tích phân đôi. Phải tính tay theo tích phân lặp.",
+    "correct": "\\(\\int_0^1\\int_0^2 f(x,y)\\,dy\\,dx=\\int_0^2\\int_0^1 f(x,y)\\,dx\\,dy\\)",
+    "solution": "Vì \\(D\\) là hình chữ nhật và \\(f\\) khả tích, Fubini cho phép đổi thứ tự: \\(x\\in[0,1],y\\in[0,2]\\) hoặc \\(y\\in[0,2],x\\in[0,1]\\).",
+    "quick": "Cận phải đi đúng với biến tích phân trong.",
+    "casio": "Không cần CASIO; kiểm tra thứ tự cận và biến.",
     "difficulty": 1,
     "topic": "Tích phân"
   },
@@ -536,7 +536,7 @@
     "solution": "\\(J=\\dfrac{\\partial(x,y)}{\\partial(r,\\theta)}=\\begin{vmatrix}\\cos\\theta&-r\\sin\\theta\\\\\\sin\\theta&r\\cos\\theta\\end{vmatrix}\\)\n\\(=r\\cos^2\\theta+r\\sin^2\\theta=r(\\cos^2\\theta+\\sin^2\\theta)=r\\).\n\nVì vậy: \\(dA=dx\\,dy=r\\,dr\\,d\\theta\\).",
     "quick": "Jacobian tọa độ cực = **r**. Ghi nhớ: \\(dx\\,dy=r\\,dr\\,d\\theta\\) (không quên r!).",
     "casio": "CASIO: Tính det[[cosθ,-rsinθ],[sinθ,rcosθ]]=r(cos²θ+sin²θ)=r.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Tích phân"
   },
   {
@@ -554,245 +554,47 @@
     "solution": "Tọa độ trụ: \\(x=r\\cos\\theta,\\;y=r\\sin\\theta,\\;z=z\\).\n\n\\(J=\\begin{vmatrix}\\cos\\theta&-r\\sin\\theta&0\\\\\\sin\\theta&r\\cos\\theta&0\\\\0&0&1\\end{vmatrix}=1\\cdot(r\\cos^2\\theta+r\\sin^2\\theta)=r\\).\n\n\\(dV=r\\,dr\\,d\\theta\\,dz\\).\n\n*So sánh:* Tọa độ cầu có Jacobian = \\(r^2\\sin\\phi\\).",
     "quick": "Tọa độ trụ: J=**r** (giống cực × 1 theo z). dV=r dr dθ dz.",
     "casio": "CASIO: Det 3×3 tam giác = tích đường chéo. J=1·r·1=r.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Tích phân"
   },
   {
     "id": 32,
-    "type": "double_integral_compute",
-    "question": "Tính \\(\\iint_D e^{x^2+y^2}\\,dA\\) trên \\(D: x^2+y^2\\leq1\\).",
+    "type": "double_integral_polar",
+    "question": "Cho \\(D=\\{(x,y):x^2+y^2\\le1\\}\\). Giá trị \\(\\iint_D(x^2+y^2)\\,dx\\,dy\\) bằng",
     "matrix": null,
     "options": [
-      "\\(\\pi(e-1)\\)",
-      "\\(\\pi e\\)",
-      "\\(2\\pi(e-1)\\)",
-      "\\(\\pi(e+1)\\)"
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\pi\\)",
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(\\dfrac{3\\pi}{2}\\)"
     ],
-    "correct": "\\(\\pi(e-1)\\)",
-    "solution": "Chuyển tọa độ cực: \\(e^{x^2+y^2}=e^{r^2}\\), \\(dA=r\\,dr\\,d\\theta\\).\n\n\\(\\iint_D e^{r^2}r\\,dr\\,d\\theta=\\int_0^{2\\pi}\\int_0^1 e^{r^2}r\\,dr\\,d\\theta\\).\n\nTích phân trong: \\(\\int_0^1 re^{r^2}dr=\\dfrac{1}{2}[e^{r^2}]_0^1=\\dfrac{e-1}{2}\\).\n\nTổng: \\(2\\pi\\cdot\\dfrac{e-1}{2}=\\pi(e-1)\\).",
-    "quick": "Tọa độ cực: ∫₀^2π∫₀^1 e^r²·r dr dθ=2π·[(e-1)/2]=**π(e-1)**.",
-    "casio": "CASIO: ∫₀¹r·e^(r²)dr=[(e^r²)/2]₀¹=(e-1)/2. Nhân 2π=π(e-1).",
+    "correct": "\\(\\dfrac{\\pi}{2}\\)",
+    "solution": "Đổi sang tọa độ cực: \\(x^2+y^2=r^2\\), \\(dA=r\\,dr\\,d\\theta\\). Do đó \\(I=\\int_0^{2\\pi}\\int_0^1r^3\\,dr\\,d\\theta=2\\pi\\cdot1/4=\\pi/2\\).",
+    "quick": "Nhớ Jacobian \\(r\\): tích phân theo r là \\(\\int_0^1r^3dr=1/4\\).",
+    "casio": "CASIO: Tính \\(2\\pi\\int_0^1r^3dr=\\pi/2\\).",
     "difficulty": 3,
     "topic": "Tích phân"
   },
   {
     "id": 33,
-    "type": "improper_integral_inf",
-    "question": "Xét sự hội tụ và tính \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x^2}\\).",
+    "type": "double_integral_setup",
+    "question": "Cho \\(D=\\{(x,y):0\\le x\\le3,\\ 0\\le y\\le1\\}\\) và \\(I=\\iint_D e^x\\,dx\\,dy\\). Cách viết tích phân lặp đúng là",
     "matrix": null,
     "options": [
-      "Hội tụ, \\(I=1\\)",
-      "Phân kỳ",
-      "Hội tụ, \\(I=\\infty\\)",
-      "Hội tụ, \\(I=2\\)"
+      "\\(I=\\int_0^1\\int_0^3 e^x\\,dx\\,dy\\)",
+      "\\(I=\\int_0^3\\int_0^1 e^y\\,dy\\,dx\\)",
+      "\\(I=\\int_0^1\\int_0^3 e^x\\,dy\\,dx\\)",
+      "\\(I=\\int_0^3\\int_0^1 e^y\\,dx\\,dy\\)"
     ],
-    "correct": "Hội tụ, \\(I=1\\)",
-    "solution": "\\(I=\\lim_{b\\to+\\infty}\\int_1^b\\dfrac{dx}{x^2}=\\lim_{b\\to+\\infty}\\left[-\\dfrac{1}{x}\\right]_1^b=\\lim_{b\\to+\\infty}\\left(-\\dfrac{1}{b}+1\\right)=1\\).\n\nGiới hạn hữu hạn → **hội tụ**, \\(I=1\\).",
-    "quick": "\\(\\int_1^{+\\infty}x^{-2}dx=[-x^{-1}]_1^\\infty=0-(-1)=\\mathbf{1}\\). Chuỗi \\(p>1\\) → hội tụ.",
-    "casio": "CASIO: ∫₁^1000 1/x²dx=[−1/x]₁^1000=−0.001+1=0.999≈1.",
-    "difficulty": 1,
+    "correct": "\\(I=\\int_0^1\\int_0^3 e^x\\,dx\\,dy\\)",
+    "solution": "Miền chữ nhật có \\(0\\le x\\le3\\), \\(0\\le y\\le1\\). Với thứ tự \\(dx\\,dy\\), tích phân trong theo x có cận 0 đến 3, tích phân ngoài theo y có cận 0 đến 1.",
+    "quick": "Đọc từ trong ra ngoài: \\(dx\\) dùng cận của x, rồi \\(dy\\) dùng cận của y.",
+    "casio": "CASIO: Có thể tính \\(I=(e^3-1)\\cdot1=e^3-1\\) để kiểm tra.",
+    "difficulty": 2,
     "topic": "Tích phân"
   },
   {
     "id": 34,
-    "type": "improper_integral_inf",
-    "question": "Xét sự hội tụ của \\(I=\\int_0^{+\\infty}xe^{-x}dx\\).",
-    "matrix": null,
-    "options": [
-      "Hội tụ, \\(I=1\\)",
-      "Phân kỳ",
-      "Hội tụ, \\(I=0\\)",
-      "Hội tụ, \\(I=2\\)"
-    ],
-    "correct": "Hội tụ, \\(I=1\\)",
-    "solution": "Tích phân từng phần: \\(u=x, dv=e^{-x}dx\\).\n\n\\(\\int_0^b xe^{-x}dx=[-xe^{-x}]_0^b+\\int_0^b e^{-x}dx=[-xe^{-x}-e^{-x}]_0^b\\)\n\n\\(=-(b+1)e^{-b}+1\\to0+1=1\\) khi \\(b\\to+\\infty\\) (vì \\(be^{-b}\\to0\\)).\n\nHội tụ, \\(I=1\\).",
-    "quick": "Tích phân từng phần: \\([−xe^{-x}−e^{-x}]_0^\\infty=0+0-(0-1)=\\mathbf{1}\\). (be^{-b}→0 khi b→∞)",
-    "casio": "CASIO: ∫₀^100 xe^-x dx≈1.000000 (hội tụ rất nhanh).",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 35,
-    "type": "improper_integral_inf",
-    "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{dx}{x}\\) (chuỗi điều hòa).",
-    "matrix": null,
-    "options": [
-      "Phân kỳ",
-      "Hội tụ, \\(I=1\\)",
-      "Hội tụ, \\(I=\\ln2\\)",
-      "Hội tụ, \\(I=e\\)"
-    ],
-    "correct": "Phân kỳ",
-    "solution": "\\(\\int_1^b\\dfrac{dx}{x}=[\\ln x]_1^b=\\ln b\\to+\\infty\\) khi \\(b\\to+\\infty\\).\n\nGiới hạn vô cực → **phân kỳ**.\n\n*Lưu ý:* Tích phân \\(\\int_1^{+\\infty}x^{-p}dx\\) hội tụ khi \\(p>1\\), phân kỳ khi \\(p\\leq1\\).",
-    "quick": "\\(\\int_1^{+\\infty}1/x\\,dx=[\\ln x]_1^\\infty=\\infty\\) → **phân kỳ**. Tiêu chuẩn p: p=1≤1 → phân kỳ.",
-    "casio": "CASIO: ∫₁^10000 1/x dx=ln(10000)≈9.2 → tăng không giới hạn.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 36,
-    "type": "improper_integral_inf",
-    "question": "Tính \\(I=\\int_0^{+\\infty}\\dfrac{dx}{x^2+5x+6}\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\ln 3-\\ln 2\\)",
-      "\\(\\ln 2\\)",
-      "\\(\\dfrac{1}{6}\\)",
-      "Phân kỳ"
-    ],
-    "correct": "\\(\\ln 3-\\ln 2\\)",
-    "solution": "Phân tích: \\(\\dfrac{1}{x^2+5x+6}=\\dfrac{1}{(x+2)(x+3)}=\\dfrac{1}{x+2}-\\dfrac{1}{x+3}\\).\n\n\\(I=\\int_0^{+\\infty}\\left(\\dfrac{1}{x+2}-\\dfrac{1}{x+3}\\right)dx=\\left[\\ln\\dfrac{x+2}{x+3}\\right]_0^{+\\infty}\\)\n\n\\(=\\ln1-\\ln\\dfrac{2}{3}=0+\\ln\\dfrac{3}{2}=\\ln3-\\ln2\\).",
-    "quick": "Phân tích phân số: 1/(x+2)-1/(x+3). Tích phân: ln|(x+2)/(x+3)|₀^∞ = ln1-ln(2/3)=**ln(3/2)**.",
-    "casio": "CASIO: ∫₀^1000 dx/(x²+5x+6)≈ln(3/2)=0.405...",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 37,
-    "type": "improper_integral_singular",
-    "question": "Xét sự hội tụ và tính \\(I=\\int_0^1\\dfrac{dx}{\\sqrt{x}}\\).",
-    "matrix": null,
-    "options": [
-      "Hội tụ, \\(I=2\\)",
-      "Phân kỳ",
-      "Hội tụ, \\(I=1\\)",
-      "Hội tụ, \\(I=\\infty\\)"
-    ],
-    "correct": "Hội tụ, \\(I=2\\)",
-    "solution": "Điểm kỳ dị: \\(x=0\\) (tích phân vô hạn gián đoạn).\n\n\\(I=\\lim_{\\varepsilon\\to0^+}\\int_\\varepsilon^1 x^{-1/2}dx=\\lim_{\\varepsilon\\to0^+}[2\\sqrt{x}]_\\varepsilon^1=\\lim_{\\varepsilon\\to0^+}(2-2\\sqrt{\\varepsilon})=2\\).\n\nGiới hạn hữu hạn → **hội tụ**, \\(I=2\\).",
-    "quick": "Tích phân kỳ dị tại x=0: \\(\\int_0^1 x^{-1/2}dx=[2√x]_0^1=2\\). Hội tụ vì p=1/2<1.",
-    "casio": "CASIO: ∫_{0.001}^1 dx/√x=[2√x]=[2-2√(0.001)]≈2-0.063=1.937≈2.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 38,
-    "type": "improper_integral_singular",
-    "question": "Xét sự hội tụ của \\(I=\\int_{-1}^1\\dfrac{dx}{\\sqrt{1-x^2}}\\).",
-    "matrix": null,
-    "options": [
-      "Hội tụ, \\(I=\\pi\\)",
-      "Phân kỳ",
-      "Hội tụ, \\(I=\\pi/2\\)",
-      "Hội tụ, \\(I=2\\)"
-    ],
-    "correct": "Hội tụ, \\(I=\\pi\\)",
-    "solution": "Điểm kỳ dị tại \\(x=\\pm1\\).\n\n\\(\\int_{-1}^1\\dfrac{dx}{\\sqrt{1-x^2}}=[\\arcsin x]_{-1}^1=\\arcsin1-\\arcsin(-1)=\\dfrac{\\pi}{2}-\\left(-\\dfrac{\\pi}{2}\\right)=\\pi\\).\n\nHội tụ (tích phân chuẩn \\(\\arcsin\\)), \\(I=\\pi\\).",
-    "quick": "\\(\\int 1/\\sqrt{1-x^2}dx=\\arcsin x\\). Tại x=±1: arcsin(1)-arcsin(-1)=π/2-(-π/2)=**π**.",
-    "casio": "CASIO: ∫_{-0.999}^{0.999} dx/√(1-x²)≈[arcsin x]≈π/2-(-π/2)≈3.14.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 39,
-    "type": "definite_integral",
-    "question": "Tính \\(I=\\int_0^{\\pi/2}\\dfrac{dx}{4\\sin x+3\\cos x+5}\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{6}\\)",
-      "\\(\\dfrac{\\pi}{8}\\)",
-      "\\(\\dfrac{1}{4}\\ln2\\)",
-      "\\(\\dfrac{1}{2}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{6}\\)",
-    "solution": "Weierstrass \\(t=\\tan(x/2)\\), x:0→π/2 thành t:0→1.\n\n\\(4\\sin x+3\\cos x+5=\\dfrac{2(t+2)^2}{1+t^2}\\).\n\n\\(I=\\int_0^1\\dfrac{2dt/(1+t^2)}{2(t+2)^2/(1+t^2)}=\\int_0^1\\dfrac{dt}{(t+2)^2}\\)\n\n\\(=\\left[-\\dfrac{1}{t+2}\\right]_0^1=-\\dfrac{1}{3}+\\dfrac{1}{2}=\\dfrac{1}{6}\\).",
-    "quick": "Weierstrass → ∫₀¹dt/(t+2)²=[-1/(t+2)]₀¹=-1/3+1/2=**1/6**.",
-    "casio": "CASIO: Tính tích phân số với x từ 0 đến π/2 bằng cách chia nhỏ và cộng.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 40,
-    "type": "definite_integral",
-    "question": "Tính \\(I=\\int_0^\\pi e^x\\cos^2x\\,dx\\).",
-    "matrix": null,
-    "options": [
-    "\\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
-    "\\(\\dfrac{e^\\pi-1}{2}\\)",
-    "\\(e^\\pi-1\\)",
-    "\\(\\dfrac{e^\\pi}{2}\\)"
-  ],
-    "correct": "\\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\)",
-    "solution": "Dùng \\(\\cos^2x=\\dfrac{1+\\cos2x}{2}\\):\n\\[I=\\dfrac{1}{2}\\int_0^\\pi e^x\\,dx+\\dfrac{1}{2}\\int_0^\\pi e^x\\cos2x\\,dx.\\]\n\nPhần 1:\n\\[\\dfrac12\\int_0^\\pi e^x dx=\\dfrac12(e^\\pi-1).\\]\n\nPhần 2: dùng công thức\n\\[\\int e^x\\cos2x\\,dx=\\dfrac{e^x(\\cos2x+2\\sin2x)}{5}.\\]\nNên\n\\[\\dfrac12\\int_0^\\pi e^x\\cos2x\\,dx=\\dfrac12\\cdot\\dfrac{e^\\pi-1}{5}=\\dfrac{e^\\pi-1}{10}.\\]\n\nVậy\n\\[I=\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}=\\dfrac{3}{5}(e^\\pi-1).\\]",
-    "quick": "Tách \\(\\cos^2x\\) thành \\((1+\\cos2x)/2\\). Kết quả đúng là \\(\\dfrac{e^\\pi-1}{2}+\\dfrac{e^\\pi-1}{10}\\).",
-    "casio": "CASIO: Tích phân số từ 0 đến π của e^x×cos²x.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 41,
-    "type": "area_between_curves",
-    "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=x^2-4x+5\\) và hai tiếp tuyến tại \\(x=1\\) và \\(x=4\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{9}{2}\\)",
-      "\\(3\\)",
-      "\\(\\dfrac{27}{2}\\)",
-      "\\(6\\)"
-    ],
-    "correct": "\\(\\dfrac{9}{2}\\)",
-    "solution": "\\(y'=2x-4\\). Tại \\(x=1\\): \\(y(1)=2, y'(1)=-2\\) → tiếp tuyến: \\(y_1=-2(x-1)+2=-2x+4\\).\nTại \\(x=4\\): \\(y(4)=5-16+5=1... y(4)=16-16+5=5\\), \\(y'(4)=4\\) → \\(y_2=4(x-4)+5=4x-11\\).\n\nDiện tích = \\(\\int_1^4[y_{\\text{cong}}-(y_1\\text{ hoặc }y_2)]dx\\).\n\n*Bài phức tạp — cần xác định giao điểm tiếp tuyến và vùng chứa.*",
-    "quick": "Tính y và y' tại x=1,4. Lập PT tiếp tuyến. Tính ∫(đường cong - tiếp tuyến) dx.",
-    "casio": "CASIO: y'(1)=-2, y(1)=2. TT1: y=-2x+4. y'(4)=4, y(4)=5. TT2: y=4x-11.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 42,
-    "type": "area_between_curves",
-    "question": "Tính diện tích hình phẳng giới hạn bởi \\(y=|x^2-1|\\) và \\(y=|x|+5\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{73}{3}\\)",
-      "\\(\\dfrac{38}{3}\\)",
-      "\\(12\\)",
-      "\\(\\dfrac{34}{3}\\)"
-    ],
-    "correct": "\\(\\dfrac{73}{3}\\)",
-    "solution": "Giao điểm: \\(x=\\pm3\\).\n\n**Khu vực I** \\(x\\in[-3,-1]\\): \\(|x^2-1|=x^2-1\\), \\(|x|=-x\\)\n\\(\\int_{-3}^{-1}(-x+5-(x^2-1))dx=\\int_{-3}^{-1}(-x^2-x+6)dx=\\dfrac{22}{3}\\)\n\n**Khu vực II** \\(x\\in[-1,1]\\): \\(|x^2-1|=1-x^2\\), \\(|x|\\geq0\\)\n\\(\\int_{-1}^{1}(|x|+5-(1-x^2))dx=\\int_{-1}^{1}(|x|+x^2+4)dx=\\dfrac{29}{3}\\)\n\n**Khu vực III** \\(x\\in[1,3]\\): \\(|x^2-1|=x^2-1\\), \\(|x|=x\\)\n\\(\\int_1^3(x+5-(x^2-1))dx=\\int_1^3(-x^2+x+6)dx=\\dfrac{22}{3}\\)\n\n\\(S=\\dfrac{22}{3}+\\dfrac{29}{3}+\\dfrac{22}{3}=\\dfrac{73}{3}\\).",
-    "quick": "3 khu vực: [−3,−1],[−1,1],[1,3]. Tổng=22/3+29/3+22/3=**73/3**.",
-    "casio": "CASIO: Giao x=±3. Diện tích=2∫₀³[-x²+x+6]dx=2[-9+4.5+18]=2×13.5=27.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 43,
-    "type": "improper_integral_inf",
-    "question": "Xét sự hội tụ của \\(I=\\int_1^{+\\infty}\\dfrac{x\\ln x}{(1+x^2)^2}dx\\).",
-    "matrix": null,
-    "options": [
-      "Hội tụ",
-      "Phân kỳ",
-      "Không xác định",
-      "Hội tụ về 0"
-    ],
-    "correct": "Hội tụ",
-    "solution": "So sánh: khi \\(x\\to+\\infty\\):\n\\(\\dfrac{x\\ln x}{(1+x^2)^2}\\sim\\dfrac{x\\ln x}{x^4}=\\dfrac{\\ln x}{x^3}\\).\n\nVì \\(\\dfrac{\\ln x}{x^3}\\leq\\dfrac{C}{x^2}\\) với C đủ lớn và \\(\\int_1^{+\\infty}x^{-2}dx\\) hội tụ → **hội tụ** theo tiêu chuẩn so sánh.",
-    "quick": "Ước lượng: hàm ~ ln(x)/x³ khi x→∞. Vì ln(x)=o(x^ε) → hàm = o(x^{-3+ε}) → **hội tụ** (p>1).",
-    "casio": "CASIO: ∫₁^1000 x·ln(x)/(1+x²)²dx ≈ giá trị hữu hạn → hội tụ.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 44,
-    "type": "change_order",
-    "question": "Cho tích phân lặp \\(I=\\int_0^2\\int_{\\sqrt{y}}^2 f(x,y)\\,dx\\,dy\\). Đổi thứ tự tích phân:",
-    "matrix": null,
-    "options": [
-    "\\(I=\\int_0^{\\sqrt2}\\!\\int_0^{x^2}f\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2}f\\,dy\\,dx\\)",
-    "\\(I=\\int_0^4\\int_0^{x^2}f\\,dy\\,dx\\)",
-    "\\(I=\\int_0^2\\int_0^{x}f\\,dy\\,dx\\)",
-    "\\(I=\\int_0^2\\int_{x^2}^4 f\\,dy\\,dx\\)"
-  ],
-    "correct": "\\(I=\\int_0^{\\sqrt2}\\!\\int_0^{x^2}f\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\!\\int_0^{2}f\\,dy\\,dx\\)",
-    "solution": "Miền gốc: \\(0\\le y\\le2\\), \\(\\sqrt y\\le x\\le2\\). Điều kiện \\(\\sqrt y\\le x\\) tương đương \\(y\\le x^2\\). Khi đổi thứ tự, phải xét hai khoảng của \\(x\\):\n- Với \\(0\\le x\\le\\sqrt2\\): \\(0\\le y\\le x^2\\)\n- Với \\(\\sqrt2\\le x\\le2\\): \\(0\\le y\\le2\\)\nDo đó\n\\[I=\\int_0^{\\sqrt2}\\int_0^{x^2} f(x,y)\\,dy\\,dx+\\int_{\\sqrt2}^{2}\\int_0^{2} f(x,y)\\,dy\\,dx.\\]",
-    "quick": "Miền bị cắt tại \\(x=\\sqrt2\\), nên sau khi đổi thứ tự phải tách thành 2 tích phân.",
-    "casio": "Vẽ miền: \\(x=\\sqrt y\\Leftrightarrow y=x^2\\), với \\(0\\le y\\le2\\). Khi đổi thứ tự phải tách 2 miền: \\(0\\le x\\le\\sqrt2\\) thì \\(0\\le y\\le x^2\\); còn \\(\\sqrt2\\le x\\le2\\) thì \\(0\\le y\\le2\\).",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 45,
     "type": "change_order",
     "question": "Tích phân lặp \\(I=\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\). Sau khi đổi thứ tự trở thành?",
     "matrix": null,
@@ -810,7 +612,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 46,
+    "id": 35,
     "type": "change_order",
     "question": "Đổi thứ tự tích phân: \\(I=\\int_0^4\\int_{\\sqrt{x}}^2 f(x,y)\\,dy\\,dx\\).",
     "matrix": null,
@@ -824,11 +626,11 @@
     "solution": "**Miền D:** \\(0\\leq x\\leq4\\), \\(\\sqrt{x}\\leq y\\leq2\\).\n\nViết lại: \\(y\\geq\\sqrt{x} \\Leftrightarrow y^2\\geq x\\), và \\(0\\leq y\\leq2\\).\n\nNên \\(0\\leq x\\leq y^2\\), \\(0\\leq y\\leq2\\).\n\n\\(I=\\int_0^2\\int_0^{y^2}f(x,y)\\,dx\\,dy\\).",
     "quick": "Gốc: x:0→4, y:√x→2. Đổi: **y:0→2, x:0→y²**.",
     "casio": "CASIO: Miền D là vùng bên trên y=√x, dưới y=2.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "Tích phân"
   },
   {
-    "id": 47,
+    "id": 36,
     "type": "polar_domain_complex",
     "question": "Cho \\(I=\\iint_D(x^2+y^2+1)\\,dA\\) với D trong góc phần tư 1, nằm trong \\(x^2+y^2=4x\\) và ngoài \\(x^2+y^2=4\\). Dạng tọa độ cực là?",
     "matrix": null,
@@ -846,16 +648,16 @@
     "topic": "Tích phân"
   },
   {
-    "id": 48,
+    "id": 37,
     "type": "polar_domain_complex",
     "question": "Tính \\(I=\\iint_D\\sqrt{x^2+y^2}\\,dA\\) trong đó D là đĩa \\(x^2+y^2\\leq 2x\\).",
     "matrix": null,
     "options": [
-    "\\(\\dfrac{32}{9}\\)",
-    "\\(\\dfrac{8}{3}\\)",
-    "\\(\\dfrac{4\\pi}{3}\\)",
-    "\\(\\dfrac{8\\pi}{3}\\)"
-  ],
+      "\\(\\dfrac{32}{9}\\)",
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(\\dfrac{4\\pi}{3}\\)",
+      "\\(\\dfrac{8\\pi}{3}\\)"
+    ],
     "correct": "\\(\\dfrac{32}{9}\\)",
     "solution": "\\(x^2+y^2\\le 2x\\Rightarrow r^2\\le 2r\\cos\\theta\\Rightarrow 0\\le r\\le 2\\cos\\theta\\), với \\(-\\pi/2\\le\\theta\\le\\pi/2\\).\n\nDo \\(\\sqrt{x^2+y^2}=r\\), ta có\n\\[I=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{2\\cos\\theta} r\\cdot r\\,dr\\,d\\theta=\\int_{-\\pi/2}^{\\pi/2}\\frac{(2\\cos\\theta)^3}{3}\\,d\\theta=\\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta\\,d\\theta.\\]\n\nVì\n\\[\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta\\,d\\theta=2\\int_0^{\\pi/2}\\cos^3\\theta\\,d\\theta=2\\cdot\\frac{2}{3}=\\frac{4}{3},\\]\n\nnên\n\\[I=\\frac{8}{3}\\cdot\\frac{4}{3}=\\frac{32}{9}.\\]",
     "quick": "Cực: \\(r\\le 2\\cos\\theta\\). Tính ra \\(I=\\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta d\\theta=\\frac{32}{9}\\).",
@@ -864,7 +666,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 49,
+    "id": 38,
     "type": "double_integral_setup",
     "question": "Miền D là hình vuông [0,2]×[0,2]. Tích phân \\(\\iint_D 1\\,dA\\) bằng?",
     "matrix": null,
@@ -882,7 +684,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 50,
+    "id": 39,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^1\\int_0^1 x\\,dx\\,dy\\).",
     "matrix": null,
@@ -900,7 +702,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 51,
+    "id": 40,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^2\\int_0^1(x+y)\\,dx\\,dy\\).",
     "matrix": null,
@@ -918,7 +720,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 52,
+    "id": 41,
     "type": "jacobian",
     "question": "Khi đổi sang tọa độ cực, \\(dA=dx\\,dy\\) trở thành?",
     "matrix": null,
@@ -936,7 +738,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 53,
+    "id": 42,
     "type": "double_integral_area",
     "question": "Diện tích hình tròn \\(x^2+y^2\\leq R^2\\) tính bằng tích phân đôi là?",
     "matrix": null,
@@ -954,7 +756,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 54,
+    "id": 43,
     "type": "double_integral_order",
     "question": "Miền D: \\(0\\leq x\\leq1,\\;0\\leq y\\leq x\\). Đây là miền loại?",
     "matrix": null,
@@ -972,7 +774,7 @@
     "topic": "Tích phân"
   },
   {
-    "id": 55,
+    "id": 44,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^\\pi\\int_0^1 r\\sin\\theta\\,dr\\,d\\theta\\) (tọa độ cực).",
     "matrix": null,
@@ -986,11 +788,11 @@
     "solution": "Tách biến:\n\\(\\int_0^1 r\\,dr\\cdot\\int_0^\\pi\\sin\\theta\\,d\\theta\\)\n\\(=\\dfrac{1}{2}\\cdot[-\\cos\\theta]_0^\\pi=\\dfrac{1}{2}\\cdot2=1\\).",
     "quick": "Tách: (∫₀¹r dr)·(∫₀^π sinθ dθ)=(1/2)·2=**1**.",
     "casio": "CASIO: ∫₀¹ r dr=[r²/2]₀¹=1/2. ∫₀^π sinθ dθ=[-cosθ]₀^π=2.",
-    "difficulty": 1,
+    "difficulty": 2,
     "topic": "Tích phân"
   },
   {
-    "id": 56,
+    "id": 45,
     "type": "double_integral_polar",
     "question": "Đổi sang tọa độ cực: \\(x^2+y^2=4\\) trở thành?",
     "matrix": null,
@@ -1005,6 +807,150 @@
     "quick": "x²+y²=r². Vì vậy x²+y²=4 → r²=4 → **r=2**.",
     "casio": "CASIO: r=√(x²+y²)=√4=2.",
     "difficulty": 1,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 46,
+    "type": "double_integral_compute",
+    "question": "Tính \\(\\iint_D(x-y)\\,dA\\) với \\(D=[0,2]\\times[0,1]\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(I=\\int_0^2\\int_0^1(x-y)dy\\,dx=\\int_0^2(x-1/2)dx=2-1=1\\).",
+    "quick": "Tích phân theo y trước.",
+    "casio": "CASIO: Tính \\(\\int_0^2(x-0.5)dx\\).",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 47,
+    "type": "double_integral_order",
+    "question": "Đổi thứ tự \\(\\int_0^1\\int_{x^2}^{x}f(x,y)\\,dy\\,dx\\) thành",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^1\\int_y^{\\sqrt y}f(x,y)\\,dx\\,dy\\)",
+      "\\(\\int_0^1\\int_{\\sqrt y}^{y}f(x,y)\\,dx\\,dy\\)",
+      "\\(\\int_0^1\\int_0^{\\sqrt y}f(x,y)\\,dx\\,dy\\)",
+      "\\(\\int_0^1\\int_y^1f(x,y)\\,dx\\,dy\\)"
+    ],
+    "correct": "\\(\\int_0^1\\int_y^{\\sqrt y}f(x,y)\\,dx\\,dy\\)",
+    "solution": "Miền nằm giữa \\(y=x^2\\) và \\(y=x\\) trong \\([0,1]\\). Với y cố định, điều kiện \\(x^2\\le y\\le x\\) cho \\(y\\le x\\le\\sqrt y\\).",
+    "quick": "Giữa đường x=y và x=√y.",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 48,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D1\\,dA\\) với \\(D:\\ x^2+y^2\\le4x\\).",
+    "matrix": null,
+    "options": [
+      "\\(4\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(4\\pi\\)",
+    "solution": "Miền là đường tròn tâm \\((2,0)\\), bán kính 2 nên diện tích bằng \\(4\\pi\\). Theo cực: \\(-\\pi/2\\le\\theta\\le\\pi/2\\), \\(0\\le r\\le4\\cos\\theta\\).",
+    "quick": "Hoàn thành bình phương hoặc nhận bán kính 2.",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 49,
+    "type": "double_integral_parameter",
+    "question": "Tìm \\(a\\) để \\(\\iint_{[0,1]^2}(ax+y)\\,dA=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1\\)",
+      "\\(a=2\\)",
+      "\\(a=0\\)",
+      "\\(a=-1\\)"
+    ],
+    "correct": "\\(a=1\\)",
+    "solution": "Tích phân bằng \\(a\\int_0^1x dx\\int_0^1dy+\\int_0^1dx\\int_0^1y dy=a/2+1/2\\). Đặt bằng 1 cho \\(a=1\\).",
+    "quick": "Trung bình của x và y trên hình vuông đơn vị đều là 1/2.",
+    "casio": "CASIO: Giải \\(a/2+1/2=1\\).",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 50,
+    "type": "double_integral_volume",
+    "question": "Thể tích dưới mặt \\(z=xy\\) trên hình chữ nhật \\(0\\le x\\le2,0\\le y\\le3\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(6\\)",
+      "\\(18\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "\\(V=\\int_0^2x dx\\int_0^3y dy=2\\cdot9/2=9\\).",
+    "quick": "Hàm và miền đều tách được.",
+    "casio": "CASIO: Nhân hai tích phân một biến.",
+    "difficulty": 2,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 51,
+    "type": "double_integral_symmetry",
+    "question": "Cho \\(D\\) là đĩa tâm O. Giá trị \\(\\iint_D x^3y^2\\,dA\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(\\pi\\)",
+      "\\(1\\)",
+      "Phụ thuộc bán kính nhưng khác 0"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Miền D đối xứng qua trục Oy, còn hàm \\(x^3y^2\\) lẻ theo x. Vì vậy tích phân bằng 0.",
+    "quick": "Hàm lẻ theo một biến trên miền đối xứng.",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 52,
+    "type": "jacobian",
+    "question": "Với phép đổi biến \\(u=x+y,\\ v=x-y\\), ta có \\(dx\\,dy\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac12\\,du\\,dv\\)",
+      "\\(2\\,du\\,dv\\)",
+      "\\(du\\,dv\\)",
+      "\\(\\dfrac14\\,du\\,dv\\)"
+    ],
+    "correct": "\\(\\dfrac12\\,du\\,dv\\)",
+    "solution": "Giải ngược: \\(x=(u+v)/2\\), \\(y=(u-v)/2\\). Jacobian tuyệt đối \\(|\\partial(x,y)/\\partial(u,v)|=1/2\\).",
+    "quick": "Tính Jacobian của phép đổi ngược.",
+    "casio": "CASIO: Có thể dùng định thức ma trận 2×2.",
+    "difficulty": 3,
+    "topic": "Tích phân"
+  },
+  {
+    "id": 53,
+    "type": "double_integral_polar",
+    "question": "Tính \\(\\iint_D xy\\,dA\\) với \\(D\\) là phần tư thứ nhất của đĩa \\(x^2+y^2\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac18\\)",
+      "\\(\\dfrac14\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{\\pi}{16}\\)"
+    ],
+    "correct": "\\(\\dfrac18\\)",
+    "solution": "Đổi cực: \\(xy=r^2\\cos\\theta\\sin\\theta\\), \\(dA=rdrd\\theta\\), với \\(0\\le r\\le1,0\\le\\theta\\le\\pi/2\\). Tích phân bằng \\((\\int_0^1r^3dr)(\\int_0^{\\pi/2}\\sin\\theta\\cos\\theta d\\theta)=1/4\\cdot1/2=1/8\\).",
+    "quick": "Tách tích phân theo r và θ.",
+    "casio": "CASIO: Tính hai tích phân một biến.",
+    "difficulty": 3,
     "topic": "Tích phân"
   }
 ]

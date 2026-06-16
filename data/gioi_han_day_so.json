@@ -1,6 +1,6 @@
 [
   {
-    "id": 1001,
+    "id": 1,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{3n+1}{2n-5}\\)?",
     "matrix": null,
@@ -15,10 +15,10 @@
     "quick": "Cùng bậc 1 → lấy tỉ số hệ số đầu: \\(3/2\\).",
     "casio": "CASIO fx-580VNX: Thay n rất lớn, ví dụ n=1000 hoặc 10000, giá trị tiến gần 1.5.",
     "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1002,
+    "id": 2,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{n^2+1}{2n^2-3n}\\)?",
     "matrix": null,
@@ -33,10 +33,10 @@
     "quick": "Cùng bậc 2 → lấy tỉ số hệ số đầu: \\(1/2\\).",
     "casio": "CASIO fx-580VNX: Thay n lớn, ví dụ 1000, kết quả gần 0.5.",
     "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1003,
+    "id": 3,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{2n^3-1}{n^2+5}\\)?",
     "matrix": null,
@@ -50,11 +50,11 @@
     "solution": "Tử bậc 3, mẫu bậc 2 nên biểu thức có dạng gần như \\(2n\\), do đó \\(\\to +\\infty\\).",
     "quick": "Bậc tử > bậc mẫu → xét dấu hệ số đầu, kết quả \\(+\\infty\\).",
     "casio": "CASIO fx-580VNX: Thay n=100, 1000 sẽ thấy giá trị tăng rất lớn.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
+    "difficulty": 2,
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1004,
+    "id": 4,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{\\ln n}{n}\\)?",
     "matrix": null,
@@ -69,10 +69,10 @@
     "quick": "\\(\\ln n\\) tăng chậm hơn \\(n\\) nên chia cho \\(n\\) sẽ về 0.",
     "casio": "CASIO fx-580VNX: Thay n=1000, ta có ln(1000)/1000 ≈ 0.0069.",
     "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1005,
+    "id": 5,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{n^2}{2^n}\\)?",
     "matrix": null,
@@ -86,11 +86,11 @@
     "solution": "Hàm mũ \\(2^n\\) tăng nhanh hơn mọi đa thức \\(n^k\\), nên \\(\\dfrac{n^2}{2^n}\\to 0\\).",
     "quick": "Mũ thắng đa thức → giới hạn bằng 0.",
     "casio": "CASIO fx-580VNX: Thay n=20 hoặc 30, giá trị đã rất nhỏ.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1006,
+    "id": 6,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\left(1+\\dfrac{1}{n}\\right)^n\\)?",
     "matrix": null,
@@ -105,10 +105,10 @@
     "quick": "Công thức nhớ: \\((1+1/n)^n\\to e\\).",
     "casio": "CASIO fx-580VNX: Thay n=1000, giá trị gần 2.718.",
     "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1007,
+    "id": 7,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\left(1+\\dfrac{3}{n}\\right)^n\\)?",
     "matrix": null,
@@ -123,10 +123,10 @@
     "quick": "Công thức nhớ: \\((1+a/n)^n\\to e^a\\).",
     "casio": "CASIO fx-580VNX: Thay n lớn, giá trị gần 20.0855.",
     "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1008,
+    "id": 8,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\left(\\sqrt{n^2+3n}-n\\right)\\)?",
     "matrix": null,
@@ -140,11 +140,11 @@
     "solution": "Nhân liên hợp: \\(\\sqrt{n^2+3n}-n=\\dfrac{3n}{\\sqrt{n^2+3n}+n}=\\dfrac{3}{\\sqrt{1+3/n}+1}\\to\\dfrac{3}{2}\\).",
     "quick": "Dạng căn trừ căn → nhân liên hợp.",
     "casio": "CASIO fx-580VNX: Thay n=1000, giá trị gần 1.5.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1009,
+    "id": 9,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} n\\left(\\sqrt{n^2+1}-n\\right)\\)?",
     "matrix": null,
@@ -159,10 +159,10 @@
     "quick": "Nhân liên hợp rồi chia cả tử mẫu cho \\(n\\).",
     "casio": "CASIO fx-580VNX: Thay n lớn, giá trị gần 0.5.",
     "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1010,
+    "id": 10,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{\\sqrt{n+1}}{\\sqrt{n}}\\)?",
     "matrix": null,
@@ -177,10 +177,10 @@
     "quick": "Đưa về \\(\\sqrt{1+1/n}\\to 1\\).",
     "casio": "CASIO fx-580VNX: Thay n=1000, kết quả rất gần 1.",
     "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1011,
+    "id": 11,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{(-1)^n}{n}\\)?",
     "matrix": null,
@@ -194,11 +194,11 @@
     "solution": "Ta có \\(-\\dfrac{1}{n}\\le \\dfrac{(-1)^n}{n}\\le \\dfrac{1}{n}\\), mà hai biên đều tiến về 0. Theo định lý kẹp, giới hạn bằng 0.",
     "quick": "Kẹp giữa \\(-1/n\\) và \\(1/n\\).",
     "casio": "CASIO fx-580VNX: Thay n lớn, dãy dao động nhưng tiến sát 0.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
   },
   {
-    "id": 1012,
+    "id": 12,
     "type": "limit_sequence",
     "question": "Tính \\(\\lim_{n\\to\\infty} \\dfrac{n+\\sin n}{n}\\)?",
     "matrix": null,
@@ -213,6 +213,150 @@
     "quick": "Tách thành \\(1+\\sin n/n\\), mà \\(\\sin n/n\\to 0\\).",
     "casio": "CASIO fx-580VNX: Thay n lớn, giá trị rất gần 1.",
     "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 13,
+    "type": "limit_sequence_root",
+    "question": "Tính \\(\\displaystyle\\lim_{n\\to\\infty}\\sqrt[n]{5^n+3^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(8\\)",
+      "\\(3\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Tách \\(5^n\\): \\(\\sqrt[n]{5^n[1+(3/5)^n]}=5\\sqrt[n]{1+(3/5)^n}\\to5\\).",
+    "quick": "Trong tổng các lũy thừa mũ \\(n\\), cơ số lớn nhất chi phối.",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 14,
+    "type": "limit_sequence_root",
+    "question": "Tính \\(\\displaystyle\\lim_{n\\to\\infty}\\sqrt[n]{n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(+\\infty\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Lấy logarit: \\(\\ln\\sqrt[n]{n}=\\ln n/n\\to0\\). Do đó \\(\\sqrt[n]{n}\\to e^0=1\\).",
+    "quick": "Công thức quen thuộc: \\(n^{1/n}\\to1\\).",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 2,
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 15,
+    "type": "limit_sequence_factorial",
+    "question": "Tính \\(\\displaystyle\\lim_{n\\to\\infty}\\dfrac{n!}{n^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(e^{-1}\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Ta có \\(n!/n^n=\\prod_{k=1}^n(k/n)\\). Ít nhất một nửa số thừa số không vượt quá \\(1/2\\), nên tích bị chặn bởi \\((1/2)^{n/2}\\to0\\).",
+    "quick": "So sánh tích với một lũy thừa có cơ số nhỏ hơn 1.",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 16,
+    "type": "limit_sequence_exponential",
+    "question": "Tính \\(\\displaystyle\\lim_{n\\to\\infty}\\left(1+\\dfrac{2}{n}\\right)^{3n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(e^6\\)",
+      "\\(e^2\\)",
+      "\\(e^3\\)",
+      "\\(6e\\)"
+    ],
+    "correct": "\\(e^6\\)",
+    "solution": "\\((1+2/n)^{3n}=[(1+2/n)^n]^3\\to(e^2)^3=e^6\\).",
+    "quick": "Dạng tổng quát \\((1+a/n)^{bn}\\to e^{ab}\\).",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 17,
+    "type": "limit_sequence_radical",
+    "question": "Tính \\(\\displaystyle\\lim_{n\\to\\infty}n\\left(\\sqrt{1+\\dfrac1n}-1\\right)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac12\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac12\\)",
+    "solution": "Nhân liên hợp: biểu thức bằng \\(\\dfrac{1}{\\sqrt{1+1/n}+1}\\to1/2\\).",
+    "quick": "Căn trừ 1: nhân liên hợp.",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 18,
+    "type": "limit_sequence_sum",
+    "question": "Tính \\(\\displaystyle\\lim_{n\\to\\infty}\\dfrac{1+2+\\cdots+n}{n^2}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac12\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac12\\)",
+    "solution": "\\(1+2+\\cdots+n=n(n+1)/2\\). Do đó tỉ số bằng \\((n+1)/(2n)\\to1/2\\).",
+    "quick": "Dùng công thức tổng \\(n(n+1)/2\\).",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 2,
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 19,
+    "type": "limit_sequence_oscillation",
+    "question": "Dãy \\(u_n=\\dfrac{(-1)^n n+2}{n+1}\\) có giới hạn bằng",
+    "matrix": null,
+    "options": [
+      "Không tồn tại",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "Không tồn tại",
+    "solution": "Với \\(n\\) chẵn, \\(u_n\\to1\\); với \\(n\\) lẻ, \\(u_n\\to-1\\). Hai dãy con có giới hạn khác nhau nên dãy không hội tụ.",
+    "quick": "Xét riêng dãy con chẵn và dãy con lẻ.",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 2,
+    "topic": "Giới hạn dãy số"
+  },
+  {
+    "id": 20,
+    "type": "limit_sequence_exponential",
+    "question": "Tính \\(\\displaystyle\\lim_{n\\to\\infty}\\left(\\dfrac{n}{n+1}\\right)^n\\).",
+    "matrix": null,
+    "options": [
+      "\\(e^{-1}\\)",
+      "\\(e\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(e^{-1}\\)",
+    "solution": "\\((n/(n+1))^n=(1+1/n)^{-n}\\to e^{-1}\\).",
+    "quick": "Viết thành nghịch đảo của \\((1+1/n)^n\\).",
+    "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
+    "difficulty": 3,
+    "topic": "Giới hạn dãy số"
   }
 ]

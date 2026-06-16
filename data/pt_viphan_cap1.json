@@ -38,19 +38,19 @@
   {
     "id": 3,
     "type": "separable",
-    "question": "Nghiệm của phương trình \\(\\dfrac{dy}{dx} = \\dfrac{2x}{y}\\) thỏa mãn \\(y(0)=1\\) là?",
+    "question": "Nghiệm của phương trình \\(\\dfrac{dy}{dx}=\\dfrac{2x}{y}\\) thỏa mãn \\(y(0)=1\\) là?",
     "matrix": null,
     "options": [
-      "\\(y^2 = 2x^2 + 1\\)",
-      "\\(y^2 = x^2 + 1\\)",
-      "\\(y = \\sqrt{2x^2 + 1}\\)",
-      "\\(y = \\sqrt{x^2 + 1}\\)"
+      "\\(y=\\sqrt{2x^2+1}\\)",
+      "\\(y=-\\sqrt{2x^2+1}\\)",
+      "\\(y=2x^2+1\\)",
+      "\\(y=\\sqrt{x^2+1}\\)"
     ],
-    "correct": "\\(y^2 = 2x^2 + 1\\)",
-    "solution": "Tách biến: \\(y\\,dy = 2x\\,dx\\) → \\(\\frac{y^2}{2} = x^2 + C\\). \\(y(0)=1\\) → \\(\\frac{1}{2} = 0 + C\\) → \\(C = \\frac{1}{2}\\) → \\(\\frac{y^2}{2} = x^2 + \\frac{1}{2}\\) → \\(y^2 = 2x^2 + 1\\).",
-    "quick": "Tích phân, dùng điều kiện đầu tìm C",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
-    "difficulty": 2,
+    "correct": "\\(y=\\sqrt{2x^2+1}\\)",
+    "solution": "Tách biến: \\(y\\,dy=2x\\,dx\\). Suy ra \\(\\dfrac{y^2}{2}=x^2+C\\), hay \\(y^2=2x^2+C_1\\). Điều kiện \\(y(0)=1\\) cho \\(C_1=1\\). Vì nghiệm phải thỏa \\(y(0)=1>0\\), chọn nhánh dương: \\(y=\\sqrt{2x^2+1}\\).",
+    "quick": "Tích phân được \\(y^2=2x^2+C\\); dùng \\(y(0)=1\\) rồi chọn nhánh dương.",
+    "casio": "CASIO: Kiểm tra tại vài giá trị x: tính đạo hàm số của \\(y=\\sqrt{2x^2+1}\\) và so với \\(2x/y\\).",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -59,12 +59,12 @@
     "question": "Phương trình \\(\\dfrac{dy}{dx} = e^{x-y}\\) có nghiệm tổng quát là?",
     "matrix": null,
     "options": [
-      "\\(e^y = e^x + C\\)",
-      "\\(e^{-y} = e^x + C\\)",
-      "\\(y = \\ln(e^x + C)\\)",
-      "\\(y = e^x + C\\)"
+      "\\(e^y=e^x+C\\)",
+      "\\(e^{-y}=e^x+C\\)",
+      "\\(y=e^{-x}+C\\)",
+      "\\(y=e^x+C\\)"
     ],
-    "correct": "\\(e^y = e^x + C\\)",
+    "correct": "\\(e^y=e^x+C\\)",
     "solution": "\\(\\frac{dy}{dx} = e^x e^{-y}\\) → \\(e^y dy = e^x dx\\) → \\(e^y = e^x + C\\).",
     "quick": "Tách biến: \\(e^y dy = e^x dx\\)",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
@@ -74,19 +74,19 @@
   {
     "id": 5,
     "type": "separable",
-    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = x\\sqrt{1 - y^2}\\) là?",
+    "question": "Một họ nghiệm không hằng của \\(\\dfrac{dy}{dx}=x\\sqrt{1-y^2}\\) được biểu diễn bởi",
     "matrix": null,
     "options": [
-      "\\(\\arcsin y = \\dfrac{x^2}{2} + C\\)",
-      "\\(\\arccos y = \\dfrac{x^2}{2} + C\\)",
-      "\\(y = \\sin\\left(\\dfrac{x^2}{2} + C\\right)\\)",
-      "Cả A và C"
+      "\\(\\arcsin y=\\dfrac{x^2}{2}+C\\)",
+      "\\(\\arcsin y=x^2+C\\)",
+      "\\(\\arccos y=\\dfrac{x^2}{2}+C\\)",
+      "\\(\\ln|y|=\\dfrac{x^2}{2}+C\\)"
     ],
-    "correct": "Cả A và C",
-    "solution": "Tách biến: \\(\\dfrac{dy}{\\sqrt{1-y^2}} = x\\,dx\\). Lấy tích phân hai vế: \\(\\arcsin y = \\dfrac{x^2}{2} + C\\). Suy ra tương đương \\(y = \\sin\\left(\\dfrac{x^2}{2} + C\\right)\\).",
-    "quick": "Tách biến: \\(dy/\\sqrt{1-y^2}=x\\,dx\\) nên \\(\\arcsin y=\\dfrac{x^2}{2}+C\\).",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
-    "difficulty": 2,
+    "correct": "\\(\\arcsin y=\\dfrac{x^2}{2}+C\\)",
+    "solution": "Với nghiệm không hằng và \\(|y|<1\\), tách biến: \\(\\dfrac{dy}{\\sqrt{1-y^2}}=x\\,dx\\). Lấy tích phân: \\(\\arcsin y=\\dfrac{x^2}{2}+C\\). Ngoài ra phương trình còn có hai nghiệm hằng \\(y\\equiv1\\) và \\(y\\equiv-1\\).",
+    "quick": "Tách biến; \\(\\int dy/\\sqrt{1-y^2}=\\arcsin y\\).",
+    "casio": "CASIO: Với một hằng số C cụ thể, đặt \\(y=\\sin(x^2/2+C)\\), dùng d/dx để kiểm tra trên khoảng \\(\\cos(x^2/2+C)\\ge0\\).",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -167,16 +167,16 @@
     "question": "Phương trình \\((x^2 + y^2)dx + 2xy\\,dy = 0\\) có thể đưa về dạng đẳng cấp. Đặt \\(u = y/x\\), ta được?",
     "matrix": null,
     "options": [
-    "\\(\\dfrac{2u}{1+3u^2}\\,du = -\\dfrac{dx}{x}\\)",
-    "\\(\\dfrac{dx}{x} = -\\dfrac{1+u^2}{2u}\\,du\\)",
-    "\\(\\dfrac{dx}{x} = \\dfrac{1+u^2}{2u}\\,du\\)",
-    "\\(\\dfrac{dx}{x} = -\\dfrac{2u}{1+u^2}\\,du\\)"
-  ],
+      "\\(\\dfrac{2u}{1+3u^2}\\,du = -\\dfrac{dx}{x}\\)",
+      "\\(\\dfrac{dx}{x} = -\\dfrac{1+u^2}{2u}\\,du\\)",
+      "\\(\\dfrac{dx}{x} = \\dfrac{1+u^2}{2u}\\,du\\)",
+      "\\(\\dfrac{dx}{x} = -\\dfrac{2u}{1+u^2}\\,du\\)"
+    ],
     "correct": "\\(\\dfrac{2u}{1+3u^2}\\,du = -\\dfrac{dx}{x}\\)",
     "solution": "Từ \\((x^2+y^2)dx+2xy\\,dy=0\\), chia cho \\(dx\\): \\(2xy\\,y'=-(x^2+y^2)\\). Đặt \\(u=y/x\\Rightarrow y=ux,\\; y'=u+xu'\\). Thay vào: \\(2ux^2(u+xu')=-(1+u^2)x^2\\). Rút gọn: \\(2u^2+2uxu'=-(1+u^2)\\), nên \\(2uxu'=-(1+3u^2)\\). Do đó \\(\\dfrac{2u}{1+3u^2}\\,du=-\\dfrac{dx}{x}\\).",
     "quick": "Đặt \\(u=y/x\\), thay \\(y=ux\\), \\(y'=u+xu'\\), rút gọn được \\(\\dfrac{2u}{1+3u^2}\\,du=-\\dfrac{dx}{x}\\).",
     "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -272,19 +272,19 @@
   {
     "id": 16,
     "type": "bernoulli",
-    "question": "Phương trình \\(y' + y = y^2\\) là dạng phương trình gì?",
+    "question": "Xét phương trình \\(y'+y=y^2\\) dưới dạng Bernoulli \\(y'+P(x)y=Q(x)y^n\\). Số mũ \\(n\\) bằng",
     "matrix": null,
     "options": [
-      "Bernoulli với \\(n=2\\)",
-      "Tuyến tính",
-      "Tách biến",
-      "Đẳng cấp"
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(-1\\)"
     ],
-    "correct": "Bernoulli với \\(n=2\\)",
-    "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\), ở đây \\(n=2\\).",
-    "quick": "Nhận dạng \\(y' + P(x)y = Q(x)y^n\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 3,
+    "correct": "\\(2\\)",
+    "solution": "So sánh với dạng Bernoulli \\(y'+P(x)y=Q(x)y^n\\), ta có \\(P(x)=1\\), \\(Q(x)=1\\) và \\(n=2\\).",
+    "quick": "Số mũ của \\(y\\) ở vế phải là \\(n=2\\).",
+    "casio": "CASIO không cần thiết; đây là câu nhận dạng dạng phương trình.",
+    "difficulty": 1,
     "topic": "PT Vi phân"
   },
   {
@@ -302,7 +302,7 @@
     "solution": "Bernoulli: đặt \\(z = y^{1-n} = y^{1-2} = y^{-1}\\).",
     "quick": "\\(z = y^{1-n}\\)",
     "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -320,7 +320,7 @@
     "solution": "\\(z = y^{-1} \\Rightarrow y = z^{-1}\\). \\(y' = -z^{-2}z'\\). Thay: \\(-z^{-2}z' + z^{-1} = z^{-2}\\). Nhân \\(-z^2\\): \\(z' - z = -1\\).",
     "quick": "Công thức: \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
     "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -338,7 +338,7 @@
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=2\\).",
     "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
     "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -374,7 +374,7 @@
     "solution": "Kiểm tra: \\(M_y = 2x, N_x = 2x\\) → \\(M_y = N_x\\) → phương trình vi phân toàn phần.",
     "quick": "\\(M_y = N_x\\) là điều kiện cần và đủ",
     "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -410,7 +410,7 @@
     "solution": "\\(M_y = \\frac{1}{y}, N_x = \\frac{1}{y}\\) → \\(M_y = N_x\\) → là phương trình vi phân toàn phần.",
     "quick": "Kiểm tra đạo hàm chéo",
     "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -428,7 +428,7 @@
     "solution": "\\(M=x+y,\\;N=x-y\\).\n\\(M_y=1,\\;N_x=1\\) → \\(M_y=N_x\\) → **Đã là vi phân toàn phần!**\n\nTìm hàm thế \\(F\\): \\(F_x=x+y \\Rightarrow F=x^2/2+xy+g(y)\\).\n\\(F_y=x+g'(y)=x-y \\Rightarrow g'(y)=-y \\Rightarrow g(y)=-y^2/2\\).\n\nNghiệm: \\(\\dfrac{x^2}{2}+xy-\\dfrac{y^2}{2}=C\\).",
     "quick": "My=1=Nx=1 → **đã toàn phần**. F=x²/2+xy-y²/2=C.",
     "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -452,19 +452,19 @@
   {
     "id": 26,
     "type": "separable",
-    "question": "Phương trình \\(\\dfrac{dy}{dx} = \\dfrac{1 + y^2}{1 + x^2}\\) có nghiệm tổng quát là?",
+    "question": "Phương trình \\(\\dfrac{dy}{dx}=\\dfrac{1+y^2}{1+x^2}\\) có nghiệm tổng quát dạng ẩn là",
     "matrix": null,
     "options": [
-      "\\(\\arctan y = \\arctan x + C\\)",
-      "\\(y = \\tan(\\arctan x + C)\\)",
-      "Cả A và B",
-      "\\(y = \\frac{x + C}{1 - Cx}\\)"
+      "\\(\\arctan y-\\arctan x=C\\)",
+      "\\(\\arctan y+\\arctan x=C\\)",
+      "\\(\\ln(1+y^2)-\\ln(1+x^2)=C\\)",
+      "\\(y-x=C\\)"
     ],
-    "correct": "Cả A và B",
-    "solution": "Tách biến: \\(\\frac{dy}{1+y^2} = \\frac{dx}{1+x^2}\\) → \\(\\arctan y = \\arctan x + C\\) → \\(y = \\tan(\\arctan x + C)\\).",
-    "quick": "Công thức tích phân \\(\\int \\frac{dx}{1+x^2} = \\arctan x\\)",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
-    "difficulty": 2,
+    "correct": "\\(\\arctan y-\\arctan x=C\\)",
+    "solution": "Tách biến: \\(\\dfrac{dy}{1+y^2}=\\dfrac{dx}{1+x^2}\\). Lấy tích phân: \\(\\arctan y=\\arctan x+C\\), tương đương \\(\\arctan y-\\arctan x=C\\).",
+    "quick": "Hai vế đều có nguyên hàm \\(\\arctan\\).",
+    "casio": "CASIO: Chọn C cụ thể, giải y theo x rồi dùng đạo hàm số để kiểm tra.",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -488,19 +488,19 @@
   {
     "id": 28,
     "type": "separable",
-    "question": "Giải phương trình \\(\\dfrac{dy}{dx} = \\dfrac{y^2 - 1}{x^2 - 1}\\). Nghiệm tổng quát là?",
+    "question": "Một biểu thức đúng cho nghiệm không hằng của \\(\\dfrac{dy}{dx}=\\dfrac{y^2-1}{x^2-1}\\) là",
     "matrix": null,
     "options": [
-      "\\(\\ln\\left|\\frac{y-1}{y+1}\\right| = \\ln\\left|\\frac{x-1}{x+1}\\right| + C\\)",
-      "\\(y = \\frac{x + C}{1 - Cx}\\)",
-      "\\(y = \\frac{1 + Cx}{x + C}\\)",
-      "Cả A và B"
+      "\\(\\ln\\left|\\dfrac{y-1}{y+1}\\right|=\\ln\\left|\\dfrac{x-1}{x+1}\\right|+C\\)",
+      "\\(\\ln\\left|\\dfrac{y+1}{y-1}\\right|=\\ln\\left|\\dfrac{x-1}{x+1}\\right|+C\\)",
+      "\\(\\arctan y=\\arctan x+C\\)",
+      "\\(y^2-x^2=C\\)"
     ],
-    "correct": "Cả A và B",
-    "solution": "Tách biến: \\(\\frac{dy}{y^2-1} = \\frac{dx}{x^2-1}\\). Tích phân: \\(\\frac12\\ln\\left|\\frac{y-1}{y+1}\\right| = \\frac12\\ln\\left|\\frac{x-1}{x+1}\\right| + C_1\\) → \\(\\ln\\left|\\frac{y-1}{y+1}\\right| = \\ln\\left|\\frac{x-1}{x+1}\\right| + C\\) → \\(\\frac{y-1}{y+1} = k\\frac{x-1}{x+1}\\) → giải ra \\(y = \\frac{1 + kx}{x + k}\\).",
-    "quick": "Công thức \\(\\int \\frac{dy}{y^2-1} = \\frac12\\ln\\left|\\frac{y-1}{y+1}\\right|\\)",
-    "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
-    "difficulty": 2,
+    "correct": "\\(\\ln\\left|\\dfrac{y-1}{y+1}\\right|=\\ln\\left|\\dfrac{x-1}{x+1}\\right|+C\\)",
+    "solution": "Tách biến: \\(\\dfrac{dy}{y^2-1}=\\dfrac{dx}{x^2-1}\\). Vì \\(\\int\\dfrac{du}{u^2-1}=\\dfrac12\\ln\\left|\\dfrac{u-1}{u+1}\\right|+C\\), nên sau khi nhân hai vế với 2 thu được biểu thức đã chọn. Cần xét riêng các nghiệm hằng \\(y\\equiv\\pm1\\).",
+    "quick": "Dùng phân tích \\(1/(u^2-1)\\) thành phân thức đơn.",
+    "casio": "CASIO chỉ hỗ trợ kiểm tra số sau khi chọn hằng số C và giải y theo x.",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -554,7 +554,7 @@
     "solution": "Dạng \\(y' + p(x)y = q(x)y^n\\) → \\(n=3\\).",
     "quick": "Số mũ của \\(y\\) ở vế phải là \\(n\\)",
     "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -578,18 +578,18 @@
   {
     "id": 33,
     "type": "linear_first_order",
-    "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} + y \\cot x = \\csc x\\) là?",
+    "question": "Nghiệm riêng của phương trình \\(y'+y=0\\) thỏa mãn \\(y(0)=2\\) là",
     "matrix": null,
     "options": [
-      "\\(y = (x+C)\\csc x\\)",
-      "\\(y = C\\csc x + \\cot x\\)",
-      "\\(y = C\\csc x - \\cot x\\)",
-      "\\(y = C\\sin x + \\cos x\\)"
+      "\\(y=2e^{-x}\\)",
+      "\\(y=2e^x\\)",
+      "\\(y=e^{-x}\\)",
+      "\\(y=1+e^{-x}\\)"
     ],
-    "correct": "\\(y = (x+C)\\csc x\\)",
-    "solution": "Với \\(y' + y\\cot x = \\csc x\\), ta có thừa số tích phân \\(\\mu = e^{\\int \\cot x\\,dx}=\\sin x\\). Khi đó \\((y\\sin x)' = \\csc x\\cdot\\sin x = 1\\). Lấy tích phân: \\(y\\sin x = x + C\\). Suy ra \\(y = \\dfrac{x+C}{\\sin x} = (x+C)\\csc x\\).",
-    "quick": "\\(\\mu=\\sin x\\), nên \\((y\\sin x)'=1\\Rightarrow y\\sin x=x+C\\Rightarrow y=(x+C)\\csc x\\).",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
+    "correct": "\\(y=2e^{-x}\\)",
+    "solution": "Phương trình có nghiệm tổng quát \\(y=Ce^{-x}\\). Điều kiện \\(y(0)=2\\) cho \\(C=2\\). Vậy \\(y=2e^{-x}\\).",
+    "quick": "\\(y'+y=0\\Rightarrow y=Ce^{-x}\\), thay điều kiện đầu.",
+    "casio": "CASIO: Dùng d/dx kiểm tra \\(y'= -2e^{-x}\\), do đó \\(y'+y=0\\).",
     "difficulty": 2,
     "topic": "PT Vi phân"
   },
@@ -608,12 +608,12 @@
     "solution": "Ta có \\(\\dfrac{dy}{dx}=\\dfrac{xy+y}{xy+x}=\\dfrac{y(x+1)}{x(y+1)}\\). Tách biến: \\(\\dfrac{y+1}{y}\\,dy=\\dfrac{x+1}{x}\\,dx\\). Lấy tích phân: \\(\\int\\left(1+\\dfrac1y\\right)dy=\\int\\left(1+\\dfrac1x\\right)dx\\). Suy ra \\(y+\\ln|y|=x+\\ln|x|+C\\), hay tương đương \\(y-x+\\ln\\left|\\dfrac{y}{x}\\right|=C\\).",
     "quick": "Tách biến: \\((1+1/y)dy=(1+1/x)dx\\) nên \\(y+\\ln|y|=x+\\ln|x|+C\\).",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
     "id": 35,
-    "type": "linear_first_order",
+    "type": "separable",
     "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{x + e^{-x}}{y + e^y}\\) là?",
     "matrix": null,
     "options": [
@@ -624,9 +624,9 @@
     ],
     "correct": "\\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\)",
     "solution": "Tách biến: \\((y + e^y)dy = (x + e^{-x})dx\\). Tích phân: \\(\\frac{y^2}{2} + e^y = \\frac{x^2}{2} - e^{-x} + C\\).",
-    "quick": "\\(\\int e^y dy = e^y\\), \\(\\int e^{-x} dx = -e^{-x}\\)",
+    "quick": "Tách biến: \\((y+e^y)dy=(x+e^{-x})dx\\).",
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -662,7 +662,7 @@
     "solution": "Nghiệm: \\(m(t) = m_0 e^{-\\lambda t}\\). Khi \\(t=T\\): \\(m(T) = m_0/2 \\Rightarrow e^{-\\lambda T} = 1/2 \\Rightarrow -\\lambda T = -\\ln 2 \\Rightarrow \\lambda = \\frac{\\ln 2}{T}\\).",
     "quick": "Công thức liên hệ giữa hằng số rã và chu kỳ bán rã",
     "casio": "CASIO: Phân rã N'=-kN → N=N₀·e⁻ᵏᵗ. Tìm k từ chu kỳ bán rã: k=ln2/T. Tính bằng CASIO: ln2/T.",
-    "difficulty": 2,
+    "difficulty": 1,
     "topic": "PT Vi phân"
   },
   {
@@ -761,16 +761,16 @@
     "question": "Giải phương trình đẳng cấp \\(y' = \\frac{y}{x} + \\frac{x}{y}\\). Nghiệm tổng quát là?",
     "matrix": null,
     "options": [
-      "\\(y^2 = x^2(\\ln x^2 + C)\\)",
-      "\\(y^2 = x^2(\\ln x + C)\\)",
-      "\\(y^2 = x^2(2\\ln x + C)\\)",
-      "\\(y^2 = x\\ln x + Cx\\)"
+      "\\(y^2=x^2\\bigl(2\\ln|x|+C\\bigr)\\)",
+      "\\(y^2=x^2\\bigl(\\ln|x|+C\\bigr)\\)",
+      "\\(y^2=2x\\ln|x|+C\\)",
+      "\\(y=x\\bigl(2\\ln|x|+C\\bigr)\\)"
     ],
-    "correct": "\\(y^2 = x^2(2\\ln x + C)\\)",
+    "correct": "\\(y^2=x^2\\bigl(2\\ln|x|+C\\bigr)\\)",
     "solution": "Đặt \\(u = y/x \\Rightarrow y = ux, y' = u + xu'\\). \\(u + xu' = u + \\frac{1}{u} \\Rightarrow xu' = \\frac{1}{u} \\Rightarrow u\\,du = \\frac{dx}{x}\\). Tích phân: \\(\\frac{u^2}{2} = \\ln|x| + C_1 \\Rightarrow u^2 = 2\\ln|x| + C \\Rightarrow y^2 = x^2(2\\ln|x| + C)\\).",
     "quick": "Đặt \\(u = y/x\\), đưa về tách biến",
     "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -779,16 +779,16 @@
     "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{2x}{1+x^2}y + \\dfrac{1}{1+x^2}\\) là?",
     "matrix": null,
     "options": [
-      "\\(y = (1+x^2)(\\arctan x + C)\\)",
-      "\\(y = \\frac{\\arctan x + C}{1+x^2}\\)",
-      "\\(y = \\frac{\\ln(1+x^2)}{1+x^2} + C\\)",
-      "\\(y = \\arctan x + \\frac{C}{1+x^2}\\)"
+      "\\(y=\\dfrac{x}{2}+(1+x^2)\\left(C+\\dfrac12\\arctan x\\right)\\)",
+      "\\(y=(1+x^2)(\\arctan x+C)\\)",
+      "\\(y=\\dfrac{\\arctan x+C}{1+x^2}\\)",
+      "\\(y=\\dfrac{x}{2}+C(1+x^2)\\)"
     ],
-    "correct": "\\(y = (1+x^2)(\\arctan x + C)\\)",
-    "solution": "\\(y' - \\frac{2x}{1+x^2}y = \\frac{1}{1+x^2}\\). \\(\\mu = e^{\\int -\\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\)? Tính lại: \\(\\mu = e^{-\\int \\frac{2x}{1+x^2}dx} = e^{-\\ln(1+x^2)} = \\frac{1}{1+x^2}\\). Nhân pt: \\((\\frac{y}{1+x^2})' = \\frac{1}{(1+x^2)^2}\\). Tích phân vế phải không ra \\(\\arctan x\\). Nên đáp án đúng phải là \\(y = (1+x^2)(\\arctan x + C)\\)? Kiểm tra: \\(y' = 2x\\arctan x + (1+x^2)\\frac{1}{1+x^2} + 2xC = 2x\\arctan x + 1 + 2xC\\). Thay vào pt: \\(y' - \\frac{2x}{1+x^2}y = (2x\\arctan x + 1 + 2xC) - \\frac{2x}{1+x^2}((1+x^2)(\\arctan x + C)) = 2x\\arctan x + 1 + 2xC - 2x(\\arctan x + C) = 1\\). Đúng. Vậy \\(y = (1+x^2)(\\arctan x + C)\\).",
-    "quick": "Chọn \\(\\mu = 1/(1+x^2)\\), tích phân \\(\\int \\frac{1}{(1+x^2)^2}dx\\) cần công thức",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
-    "difficulty": 2,
+    "correct": "\\(y=\\dfrac{x}{2}+(1+x^2)\\left(C+\\dfrac12\\arctan x\\right)\\)",
+    "solution": "Viết phương trình thành \\(y'-\\dfrac{2x}{1+x^2}y=\\dfrac{1}{1+x^2}\\). Nhân tử tích phân là \\(\\mu=(1+x^2)^{-1}\\), nên \\(\\left(\\dfrac{y}{1+x^2}\\right)'=\\dfrac{1}{(1+x^2)^2}\\). Dùng \\(\\int\\dfrac{dx}{(1+x^2)^2}=\\dfrac{x}{2(1+x^2)}+\\dfrac12\\arctan x\\), ta được \\(\\dfrac{y}{1+x^2}=\\dfrac{x}{2(1+x^2)}+\\dfrac12\\arctan x+C\\). Suy ra đáp án.",
+    "quick": "Nhân \\(1/(1+x^2)\\), rồi dùng nguyên hàm chuẩn của \\(1/(1+x^2)^2\\).",
+    "casio": "CASIO: Có thể kiểm tra đáp án bằng d/dx tại vài giá trị x và so sánh hai vế.",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -806,7 +806,7 @@
     "solution": "Tách biến: \\(\\frac{1+2y^2}{y}dy = \\cos x\\,dx \\Rightarrow \\left(\\frac{1}{y} + 2y\\right)dy = \\cos x\\,dx\\) → \\(\\ln|y| + y^2 = \\sin x + C\\).",
     "quick": "Chia cả hai vế, tích phân từng số hạng",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -824,7 +824,7 @@
     "solution": "\\(\\mu = e^{\\int 2x dx} = e^{x^2}\\). \\((ye^{x^2})' = 2x \\Rightarrow ye^{x^2} = x^2 + C \\Rightarrow y = (x^2 + C)e^{-x^2}\\).",
     "quick": "Thừa số \\(\\mu = e^{x^2}\\), tích phân vế phải",
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -833,16 +833,16 @@
     "question": "Phương trình \\((x^2 + y^2)dx + xy\\,dy = 0\\) có thể đưa về dạng đẳng cấp. Đặt \\(u = y/x\\), ta được?",
     "matrix": null,
     "options": [
-      "\\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\)",
-      "\\(\\frac{dx}{x} = -\\frac{u}{1+u^2}du\\)",
-      "\\(\\frac{dx}{x} = \\frac{1+u^2}{u}du\\)",
-      "\\(\\frac{dx}{x} = \\frac{u}{1+u^2}du\\)"
+      "\\(\\dfrac{u}{1+2u^2}\\,du=-\\dfrac{dx}{x}\\)",
+      "\\(\\dfrac{1+2u^2}{u}\\,du=-\\dfrac{dx}{x}\\)",
+      "\\(\\dfrac{u}{1+u^2}\\,du=-\\dfrac{dx}{x}\\)",
+      "\\(\\dfrac{u}{1+2u^2}\\,du=\\dfrac{dx}{x}\\)"
     ],
-    "correct": "\\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\)",
-    "solution": "Viết lại: \\(\\frac{dy}{dx} = -\\frac{x^2+y^2}{xy} = -\\frac{1+u^2}{u}\\). \\(y=ux \\Rightarrow y' = u + xu'\\). \\(u + xu' = -\\frac{1+u^2}{u} \\Rightarrow xu' = -\\frac{1+u^2}{u} - u = -\\frac{1+2u^2}{u}\\). Tính lại: \\(-\\frac{1+u^2}{u} - u = -\\frac{1+u^2+u^2}{u} = -\\frac{1+2u^2}{u}\\). Không phải \\(\\frac{dx}{x} = -\\frac{1+u^2}{u}du\\). Câu này có vấn đề.",
-    "quick": "Cẩn thận với dạng đẳng cấp",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
-    "difficulty": 2,
+    "correct": "\\(\\dfrac{u}{1+2u^2}\\,du=-\\dfrac{dx}{x}\\)",
+    "solution": "Từ \\((x^2+y^2)dx+xy\\,dy=0\\) suy ra \\(y'=-(x^2+y^2)/(xy)\\). Đặt \\(u=y/x\\), \\(y'=u+xu'\\): \\(u+xu'=-(1+u^2)/u\\). Do đó \\(xu'=-(1+2u^2)/u\\), hay \\(\\dfrac{u}{1+2u^2}\\,du=-\\dfrac{dx}{x}\\).",
+    "quick": "Sau khi thay \\(y=ux\\), nhớ \\(y'=u+xu'\\).",
+    "casio": "CASIO không giúp đổi biến ký hiệu; dùng để kiểm tra nghiệm sau khi tích phân.",
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -865,19 +865,19 @@
   },
   {
     "id": 49,
-    "type": "exact_differential",
-    "question": "Tìm thừa số tích phân \\(\\mu(y)\\) để phương trình \\((x + y)dx + (x\\ln x)dy = 0\\) trở thành vi phân toàn phần?",
+    "type": "integrating_factor",
+    "question": "Thừa số tích phân chỉ phụ thuộc \\(y\\) để phương trình \\(xy\\,dx+x^2\\,dy=0\\) trở thành vi phân toàn phần là",
     "matrix": null,
     "options": [
-      "\\(\\mu = \\frac{1}{y}\\)",
-      "\\(\\mu = y\\)",
-      "\\(\\mu = \\frac{1}{x}\\)",
-      "\\(\\mu = x\\)"
+      "\\(\\mu(y)=y\\)",
+      "\\(\\mu(y)=1/y\\)",
+      "\\(\\mu(y)=e^y\\)",
+      "\\(\\mu(y)=y^2\\)"
     ],
-    "correct": "\\(\\mu = \\frac{1}{y}\\)",
-    "solution": "\\(M = x+y, N = x\\ln x\\). \\(M_y=1, N_x = \\ln x + 1\\). \\(\\frac{M_y - N_x}{N} = \\frac{1 - (\\ln x + 1)}{x\\ln x} = \\frac{-\\ln x}{x\\ln x} = -\\frac{1}{x}\\) phụ thuộc x → không được. Tìm \\(\\mu(y)\\): \\(\\frac{N_x - M_y}{M} = \\frac{\\ln x + 1 - 1}{x+y} = \\frac{\\ln x}{x+y}\\) phụ thuộc x,y → không. Câu này cần sửa lại.",
-    "quick": "Kiểm tra \\(\\frac{M_y - N_x}{N}\\) chỉ phụ thuộc x hay \\(\\frac{N_x - M_y}{M}\\) chỉ phụ thuộc y",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
+    "correct": "\\(\\mu(y)=y\\)",
+    "solution": "Với \\(M=xy\\), \\(N=x^2\\): \\(M_y=x\\), \\(N_x=2x\\). Ta có \\((N_x-M_y)/M=x/(xy)=1/y\\), chỉ phụ thuộc \\(y\\). Vì vậy \\(\\mu(y)=e^{\\int(1/y)dy}=y\\) trên mỗi khoảng không chứa \\(y=0\\). Sau khi nhân, \\(M^*=xy^2\\), \\(N^*=x^2y\\) và \\(M^*_y=N^*_x=2xy\\).",
+    "quick": "Nếu \\((N_x-M_y)/M=f(y)\\) thì \\(\\mu(y)=e^{\\int f(y)dy}\\).",
+    "casio": "CASIO: Kiểm tra sau khi nhân \\(y\\): đạo hàm chéo đều bằng \\(2xy\\).",
     "difficulty": 3,
     "topic": "PT Vi phân"
   },
@@ -896,7 +896,7 @@
     "solution": "Đặt \\(u = y/x\\), \\(y' = u + xu'\\). \\(u + xu' = u + \\sin u \\Rightarrow xu' = \\sin u \\Rightarrow \\csc u\\, du = \\frac{dx}{x}\\). Tích phân: \\(\\ln|\\csc u - \\cot u| = \\ln|x| + C\\).",
     "quick": "Tích phân \\(\\int \\csc u\\, du = \\ln|\\csc u - \\cot u| + C\\)",
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -968,7 +968,7 @@
     "solution": "Phân ly biến: \\(\\dfrac{dy}{y}=x\\,dx\\).\n\nTích phân: \\(\\ln|y|=\\dfrac{x^2}{2}+C_1\\).\n\n\\(y=Ce^{x^2/2}\\) với \\(C=\\pm e^{C_1}\\).",
     "quick": "Tách: \\(dy/y=xdx\\) → \\(\\ln|y|=x^2/2+C_1\\) → **y=Ce^{x²/2}**.",
     "casio": "CASIO: Tích phân ∫dy/y=ln|y|; ∫xdx=x²/2. Nghiệm: y=Ce^(x²/2).",
-    "difficulty": 1,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -986,7 +986,7 @@
     "solution": "Phân ly biến: \\(\\dfrac{dy}{y}=\\dfrac{dx}{x}\\).\n\nTích phân: \\(\\ln|y|=\\ln|x|+C_1\\) → \\(|y|=e^{C_1}|x|\\) → \\(y=Cx\\).",
     "quick": "\\(dy/y=dx/x\\) → \\(\\ln y=\\ln x+C\\) → **y=Cx** (hàm tuyến tính qua gốc).",
     "casio": "CASIO: ∫dy/y=ln|y|; ∫dx/x=ln|x|. Nghiệm: y=Cx.",
-    "difficulty": 1,
+    "difficulty": 2,
     "topic": "PT Vi phân"
   },
   {
@@ -1013,16 +1013,16 @@
     "question": "Tìm nghiệm riêng của \\(y'-2y=4\\) thỏa \\(y(0)=0\\).",
     "matrix": null,
     "options": [
-      "\\(y=-2+2e^{2x}\\)",
       "\\(y=2e^{2x}-2\\)",
-      "\\(y=-2(1-e^{2x})\\)",
-      "\\(y=2(e^{2x}-1)\\)"
+      "\\(y=2e^{-2x}-2\\)",
+      "\\(y=e^{2x}-2\\)",
+      "\\(y=2-2e^{2x}\\)"
     ],
-    "correct": "\\(y=-2+2e^{2x}\\)",
+    "correct": "\\(y=2e^{2x}-2\\)",
     "solution": "Nghiệm tổng quát: μ=e^{-2x}. Nhân: \\((ye^{-2x})'=4e^{-2x}\\).\n\n\\(ye^{-2x}=4\\cdot\\dfrac{e^{-2x}}{-2}+C=-2e^{-2x}+C\\).\n\n\\(y=-2+Ce^{2x}\\).\n\nĐiều kiện \\(y(0)=0\\): \\(0=-2+C \\Rightarrow C=2\\).\n\n\\(y=-2+2e^{2x}\\).",
     "quick": "Nghiệm TQ: y=-2+Ce^2x. Điều kiện y(0)=0: C=2 → **y=-2+2e^2x**.",
     "casio": "CASIO: Tính nghiệm TQ, thay y(0)=0, tìm C=2.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1050,14 +1050,14 @@
     "matrix": null,
     "options": [
       "\\(S'=10-\\dfrac{S}{20}\\)",
-      "\\(S'=10-5S/100\\)",
-      "\\(S'=5\\cdot2-5\\cdot\\dfrac{S}{100}\\)",
-      "Cả B và C đều đúng"
+      "\\(S'=10+\\dfrac{S}{20}\\)",
+      "\\(S'=5-\\dfrac{S}{100}\\)",
+      "\\(S'=2-\\dfrac{S}{20}\\)"
     ],
-    "correct": "Cả B và C đều đúng",
-    "solution": "Tốc độ vào: \\(5\\text{L/ph}\\times2\\text{g/L}=10\\text{g/ph}\\).\n\nTốc độ ra: \\(5\\text{L/ph}\\times\\dfrac{S}{100}\\text{g/L}=\\dfrac{S}{20}\\text{g/ph}\\).\n\n\\(S'=10-\\dfrac{S}{20}\\).\n\nPhương án B: \\(10-5S/100=10-S/20\\) ✓. Phương án C cũng = \\(10-S/20\\) ✓.",
-    "quick": "Vào - Ra: \\(S'=(\\text{nồng độ vào})(\\text{lưu lượng vào})-(\\text{nồng độ hiện tại})(\\text{lưu lượng ra})\\).",
-    "casio": "CASIO: PT tuyến tính S'+S/20=10. Nhân tử tích hợp e^(t/20). Nghiệm: S=200+(S₀-200)e^(-t/20).",
+    "correct": "\\(S'=10-\\dfrac{S}{20}\\)",
+    "solution": "Tốc độ muối vào: \\(5\\cdot2=10\\) g/phút. Tốc độ muối ra: \\(5\\cdot S/100=S/20\\) g/phút. Do đó \\(S'=10-S/20\\).",
+    "quick": "Tốc độ biến thiên = vào - ra.",
+    "casio": "CASIO: Kiểm tra đơn vị và thay một giá trị S để so sánh các phương án.",
     "difficulty": 3,
     "topic": "PT Vi phân"
   },
@@ -1076,7 +1076,7 @@
     "solution": "\\(P'=kP\\) → \\(P(t)=P_0e^{kt}\\).\n\n\\(P(10)=1000e^{10k}=1500\\) → \\(e^{10k}=1.5\\).\n\n\\(P(20)=1000e^{20k}=1000(e^{10k})^2=1000\\times1.5^2=2250\\).",
     "quick": "Sau mỗi 10 năm nhân 1.5. Năm 2020 = 1000×1.5² = **2250**.",
     "casio": "CASIO: k=ln(1.5)/10. P(20)=1000e^(20k)=1000×(1.5)²=2250.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1094,7 +1094,7 @@
     "solution": "\\(M=2xy+1,\\;N=x^2-1\\).\n\n\\(\\dfrac{\\partial M}{\\partial y}=2x\\), \\(\\dfrac{\\partial N}{\\partial x}=2x\\).\n\nVì \\(\\dfrac{\\partial M}{\\partial y}=\\dfrac{\\partial N}{\\partial x}\\) → PT là **vi phân toàn phần**.\n\nNghiệm: \\(F(x,y)=x^2y+x-y=C\\).",
     "quick": "Kiểm tra: \\(M_y=2x=N_x=2x\\) ✓ → vi phân toàn phần. Nghiệm: x²y+x-y=C.",
     "casio": "CASIO: Tính M_y và N_x bằng tay. Nếu bằng nhau → toàn phần. Tìm F: ∂F/∂x=M, ∂F/∂y=N.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1148,7 +1148,7 @@
     "solution": "Phân ly: \\((1-y^2)dy=x^2\\,dx\\).\n\nTích phân: \\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}+C\\).\n\nĐiều kiện \\(y(0)=0\\): \\(0-0=0+C \\Rightarrow C=0\\).\n\nNghiệm: \\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}\\).",
     "quick": "Tách: \\((1-y^2)dy=x^2dx\\) → tích phân → **y-y³/3=x³/3** (vì C=0).",
     "casio": "CASIO: ∫(1-y²)dy=y-y³/3; ∫x²dx=x³/3. Điều kiện y(0)=0 → C=0.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1166,7 +1166,7 @@
     "solution": "\\(M=y^2-x,\\;N=2xy\\).\n\\(M_y=2y,\\;N_x=2y\\) → \\(M_y=N_x\\) → **PT đã là vi phân toàn phần!**\n\nTìm hàm thế \\(F\\): \\(F_y=2xy \\Rightarrow F=xy^2+g(x)\\).\n\\(F_x=y^2+g'(x)=y^2-x \\Rightarrow g'(x)=-x \\Rightarrow g(x)=-x^2/2\\).\n\nNghiệm: \\(xy^2-x^2/2=C\\).",
     "quick": "My=2y=Nx=2y → **đã toàn phần** (μ=1). Nghiệm: xy²-x²/2=C.",
     "casio": "CASIO: Tính M_y và N_x. Nếu M_y=N_x → toàn phần. Nghiệm F=xy²-x²/2=C.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1175,15 +1175,15 @@
     "question": "Chất phóng xạ phân rã theo \\(N'=-kN\\). Sau 10 năm còn 80%. Sau bao nhiêu năm còn 50%?",
     "matrix": null,
     "options": [
-      "\\(\\dfrac{10\\ln 2}{\\ln(10/8)}\\)",
-      "\\(\\dfrac{10\\ln0.5}{\\ln0.8}\\)",
-      "\\(\\dfrac{\\ln2}{k}\\)",
-      "Cả A và B đều đúng"
+      "\\(\\dfrac{10\\ln2}{\\ln(5/4)}\\)",
+      "\\(\\dfrac{10\\ln2}{\\ln(4/5)}\\)",
+      "\\(\\dfrac{\\ln2}{10\\ln(5/4)}\\)",
+      "\\(\\dfrac{10\\ln(5/4)}{\\ln2}\\)"
     ],
-    "correct": "Cả A và B đều đúng",
-    "solution": "\\(N(t)=N_0e^{-kt}\\). Sau 10 năm: \\(e^{-10k}=0.8\\) → \\(k=\\dfrac{\\ln(10/8)}{10}=\\dfrac{-\\ln0.8}{10}\\).\n\nBán chu kỳ \\(T_{1/2}\\): \\(e^{-kT}=0.5\\) → \\(T=\\dfrac{\\ln2}{k}=\\dfrac{10\\ln2}{\\ln(10/8)}=\\dfrac{10\\ln2}{-\\ln0.8}=\\dfrac{10\\ln0.5}{\\ln0.8}\\).",
-    "quick": "\\(k=-\\ln0.8/10\\). \\(T_{1/2}=\\ln2/k=10\\ln2/(-\\ln0.8)=10\\ln0.5/\\ln0.8\\). Cả A và B đúng.",
-    "casio": "CASIO: k=ln(0.8)/(-10)≈0.02231. T=ln2/k≈0.6931/0.02231≈31.07 năm.",
+    "correct": "\\(\\dfrac{10\\ln2}{\\ln(5/4)}\\)",
+    "solution": "\\(N(t)=N_0e^{-kt}\\). Từ \\(N(10)=0.8N_0\\): \\(e^{-10k}=0.8\\), nên \\(k=\\ln(5/4)/10\\). Thời gian bán rã \\(T\\) thỏa \\(e^{-kT}=1/2\\), do đó \\(T=\\ln2/k=10\\ln2/\\ln(5/4)\\).",
+    "quick": "Tìm \\(k\\) từ 80%, sau đó dùng \\(T_{1/2}=\\ln2/k\\).",
+    "casio": "CASIO: Nhập \\(10\\ln2/\\ln(1.25)\\) để được xấp xỉ 31,1 năm.",
     "difficulty": 3,
     "topic": "PT Vi phân"
   },
@@ -1202,7 +1202,7 @@
     "solution": "Nhân tử: \\(\\mu=e^{\\int(1/x)dx}=e^{\\ln x}=x\\).\n\nNhân vế: \\((xy)'=x^3\\).\n\nTích phân: \\(xy=\\dfrac{x^4}{4}+C\\).\n\n\\(y=\\dfrac{x^3}{4}+\\dfrac{C}{x}\\).",
     "quick": "μ=x, (xy)'=x³ → xy=x⁴/4+C → **y=x³/4+C/x**.",
     "casio": "CASIO: μ=e^∫(1/x)dx=x. Nhân vào: d(xy)=x³dx. Tích phân: xy=x⁴/4+C.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1211,8 +1211,8 @@
     "question": "Giải \\((x^2+1)y'=2xy^2\\).",
     "matrix": null,
     "options": [
-      "\\(y=\\dfrac{-1}{\\ln(x^2+1)+C}\\)",
       "\\(y=\\dfrac{1}{C-\\ln(x^2+1)}\\)",
+      "\\(y=\\dfrac{1}{C+\\ln(x^2+1)}\\)",
       "\\(y=C(x^2+1)\\)",
       "\\(y=\\dfrac{C}{x^2+1}\\)"
     ],
@@ -1238,7 +1238,7 @@
     "solution": "**Định luật Newton về làm nguội:** Tốc độ thay đổi nhiệt độ tỉ lệ với **hiệu nhiệt độ** vật và môi trường.\n\n\\(\\dfrac{dT}{dt}=-k(T-T_{\\text{môi trường}})=-k(T-20)\\).\n\nNghiệm: \\(T(t)=20+(T_0-20)e^{-kt}=20+80e^{-kt}\\).",
     "quick": "Newton làm nguội: \\(T'=-k(T-T_{MT})\\). Ở đây \\(T_{MT}=20\\) → **T'=-k(T-20)**.",
     "casio": "CASIO: k từ T(5)=80: 80+80e^(-5k)... Giải k=ln(60/80)/(-5)=ln(4/3)/5.",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1256,7 +1256,7 @@
     "solution": "Kiểm tra: \\(M_y=1=N_x=1\\) ✓ → toàn phần.\n\n\\(F_x=3x^2+y\\) → \\(F=x^3+xy+g(y)\\).\n\n\\(F_y=x+g'(y)=x+2y=N\\) → \\(g'(y)=2y\\) → \\(g(y)=y^2\\).\n\nNghiệm: \\(x^3+xy+y^2=C\\).",
     "quick": "M_y=1=N_x → toàn phần. ∂F/∂x=M → F=x³+xy+g(y). ∂F/∂y=x+g'=N=x+2y → g=y². Nghiệm: **x³+xy+y²=C**.",
     "casio": "CASIO: F=∫M dx=x³+xy+g(y). ∂F/∂y=x+g'=x+2y → g'=2y → g=y².",
-    "difficulty": 2,
+    "difficulty": 3,
     "topic": "PT Vi phân"
   },
   {
@@ -1460,18 +1460,18 @@
   {
     "id": 82,
     "type": "identify_type",
-    "question": "Phương trình \\(y'+y^2=0\\) là loại gì?",
+    "question": "Phương trình \\(y'+y^2=0\\) được tách biến thành",
     "matrix": null,
     "options": [
-      "Phân ly biến",
-      "Tuyến tính",
-      "Bernoulli n=2",
-      "Thuần nhất"
+      "\\(\\dfrac{dy}{y^2}=-dx\\)",
+      "\\(y\\,dy=-dx\\)",
+      "\\(\\dfrac{dy}{y}=-x\\,dx\\)",
+      "\\(dy=-y\\,dx\\)"
     ],
-    "correct": "Phân ly biến",
-    "solution": "\\(y'=-y^2\\) → \\(\\dfrac{dy}{y^2}=-dx\\) → **phân ly biến**.\n\nTích phân: \\(-1/y=-x+C\\) → \\(y=\\dfrac{1}{x+C}\\).\n\n(Lưu ý: cũng là Bernoulli với n=2, nhưng dễ nhất là phân ly biến)",
-    "quick": "y'=-y² → dy/y²=-dx → **phân ly biến**. Nghiệm: y=1/(x+C).",
-    "casio": "CASIO: ∫dy/y²=-1/y; ∫-dx=-x. Nghiệm: -1/y=-x+C → y=1/(x+C).",
+    "correct": "\\(\\dfrac{dy}{y^2}=-dx\\)",
+    "solution": "Từ \\(y'=-y^2\\), với \\(y\\ne0\\), chia hai vế cho \\(y^2\\): \\(dy/y^2=-dx\\). Nghiệm hằng \\(y\\equiv0\\) cần xét riêng.",
+    "quick": "Đưa toàn bộ biểu thức chứa y sang vế trái.",
+    "casio": "CASIO không cần thiết.",
     "difficulty": 1,
     "topic": "PT Vi phân"
   },
@@ -1508,6 +1508,222 @@
     "solution": "Phương trình \\(q'' + \\frac{1}{LC}q = 0\\) → \\(\\omega = \\frac{1}{\\sqrt{LC}}\\).",
     "quick": "Tần số cộng hưởng riêng của mạch LC: \\(\\omega_0 = 1/\\sqrt{LC}\\)",
     "casio": "CASIO: Mạch RLC: LQ''+RQ'+Q/C=E(t). Giải PT đặc trưng. Tính r=R/(2L), ω₀=1/√(LC). Phân loại: tắt dần/cộng hưởng.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 85,
+    "type": "identify_type",
+    "question": "Phương trình nào sau đây là phương trình vi phân phân ly biến số?",
+    "matrix": null,
+    "options": [
+      "\\(x\\,dx+y\\,dy=0\\)",
+      "\\(x\\,dx+(x-y)y\\,dy=0\\)",
+      "\\(x\\,dx+(x+y)y\\,dy=0\\)",
+      "\\(y\\,dx+(x+y)x\\,dy=0\\)"
+    ],
+    "correct": "\\(x\\,dx+y\\,dy=0\\)",
+    "solution": "Phương trình A viết được thành \\(x\\,dx=-y\\,dy\\), mỗi vế chỉ chứa một biến. Các phương trình còn lại chứa tích hỗn hợp x và y nên không ở dạng phân ly trực tiếp.",
+    "quick": "Dạng phân ly: gom toàn bộ x với dx và y với dy.",
+    "casio": "CASIO không cần thiết; đây là câu nhận dạng.",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 86,
+    "type": "exact_differential",
+    "question": "Nghiệm riêng của \\((y-x)\\,dx+(y+x)\\,dy=0\\) thỏa mãn \\(y(1)=1\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y^2+2xy-x^2=2\\)",
+      "\\(y^2+2xy+x^2=2\\)",
+      "\\(y^2-xy+x^2=1\\)",
+      "\\(y^2-xy-x^2=-1\\)"
+    ],
+    "correct": "\\(y^2+2xy-x^2=2\\)",
+    "solution": "Với \\(M=y-x\\), \\(N=y+x\\), ta có \\(M_y=N_x=1\\), nên phương trình toàn phần. Hàm thế là \\(F=xy-x^2/2+y^2/2\\). Nhân 2: \\(y^2+2xy-x^2=C\\). Thay \\((1,1)\\) được \\(C=2\\).",
+    "quick": "Kiểm tra đạo hàm chéo, tìm hàm thế, rồi dùng điều kiện đầu.",
+    "casio": "CASIO: Thay \\((1,1)\\) vào bốn phương án để chọn hằng số đúng.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 87,
+    "type": "separable",
+    "question": "Nghiệm tổng quát của phương trình \\(2x\\,dx-dy=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=x^2+C\\)",
+      "\\(y=2x+C\\)",
+      "\\(y=2x^2+C\\)",
+      "\\(y=\\dfrac{x^2}{2}+C\\)"
+    ],
+    "correct": "\\(y=x^2+C\\)",
+    "solution": "Từ \\(dy=2x\\,dx\\), lấy tích phân được \\(y=x^2+C\\).",
+    "quick": "Nguyên hàm của \\(2x\\) là \\(x^2\\).",
+    "casio": "CASIO: Lấy đạo hàm của \\(x^2+C\\) để được \\(2x\\).",
+    "difficulty": 1,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 88,
+    "type": "application_mixing",
+    "question": "Một bể có 1000 lít nước muối nồng độ \\(0{,}02\\) kg/lít. Nước muối nồng độ \\(0{,}01\\) kg/lít chảy vào và hỗn hợp chảy ra cùng tốc độ 10 lít/phút. Sau 40 phút, lượng muối trong bể xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(16{,}7\\) kg",
+      "\\(15{,}7\\) kg",
+      "\\(20{,}0\\) kg",
+      "\\(10{,}0\\) kg"
+    ],
+    "correct": "\\(16{,}7\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng muối (kg). Khi đó \\(S'=0{,}1-0{,}01S\\), \\(S(0)=20\\). Nghiệm là \\(S=10+10e^{-0{,}01t}\\). Tại \\(t=40\\): \\(S(40)=10+10e^{-0{,}4}\\approx16{,}7\\) kg.",
+    "quick": "Lượng cân bằng là 10 kg; nghiệm tiến dần về 10 theo hàm mũ.",
+    "casio": "CASIO: Nhập \\(10+10e^{-0.4}\\) được khoảng 16,703.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 89,
+    "type": "linear_first_order",
+    "question": "Nghiệm của \\(y'+2y=4\\), \\(y(0)=1\\), tại \\(x=\\ln2\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{7}{4}\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{5}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{7}{4}\\)",
+    "solution": "Nghiệm tổng quát \\(y=2+Ce^{-2x}\\). Từ \\(y(0)=1\\) suy ra \\(C=-1\\). Tại \\(x=\\ln2\\), \\(e^{-2x}=1/4\\), nên \\(y=2-1/4=7/4\\).",
+    "quick": "Nghiệm = trạng thái cân bằng 2 cộng phần quá độ.",
+    "casio": "CASIO: Tính \\(2-e^{-2\\ln2}=1.75\\).",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 90,
+    "type": "exact_differential",
+    "question": "Tìm \\(m\\) để \\((2xy+my)\\,dx+(x^2+mx+2y)\\,dy=0\\) là phương trình vi phân toàn phần.",
+    "matrix": null,
+    "options": [
+      "\\(m\\in\\mathbb R\\)",
+      "\\(m=0\\)",
+      "\\(m=1\\)",
+      "Không tồn tại \\(m\\)"
+    ],
+    "correct": "\\(m\\in\\mathbb R\\)",
+    "solution": "\\(M_y=2x+m\\) và \\(N_x=2x+m\\), bằng nhau với mọi \\(m\\). Vì vậy phương trình toàn phần với mọi giá trị thực của \\(m\\).",
+    "quick": "Đạo hàm chéo trùng nhau identically.",
+    "casio": "CASIO không cần thiết.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 91,
+    "type": "bernoulli",
+    "question": "Nghiệm không hằng của \\(y'+2y=2y^2\\) có dạng",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{1}{1+Ce^{2x}}\\)",
+      "\\(y=1+Ce^{-2x}\\)",
+      "\\(y=\\dfrac{1}{1+Ce^{-2x}}\\)",
+      "\\(y=Ce^{2x}\\)"
+    ],
+    "correct": "\\(y=\\dfrac{1}{1+Ce^{2x}}\\)",
+    "solution": "Đặt \\(z=1/y\\). Ta có \\(z'-2z=-2\\). Giải được \\(z=1+Ce^{2x}\\), do đó \\(y=1/(1+Ce^{2x})\\). Nghiệm hằng \\(y\\equiv0\\) cần xét riêng.",
+    "quick": "Bernoulli \\(n=2\\): đặt \\(z=1/y\\).",
+    "casio": "CASIO: Chọn C cụ thể và kiểm tra bằng đạo hàm số.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 92,
+    "type": "homogeneous",
+    "question": "Giải phương trình đẳng cấp \\(y'=1+\\dfrac{y}{x}\\). Một biểu thức nghiệm là",
+    "matrix": null,
+    "options": [
+      "\\(y=x(\\ln|x|+C)\\)",
+      "\\(y=\\ln|x|+C\\)",
+      "\\(y=x+C\\)",
+      "\\(y=x^2+C\\)"
+    ],
+    "correct": "\\(y=x(\\ln|x|+C)\\)",
+    "solution": "Đặt \\(y=ux\\), \\(y'=u+xu'\\). Khi đó \\(u+xu'=1+u\\Rightarrow xu'=1\\). Suy ra \\(u=\\ln|x|+C\\), nên \\(y=x(\\ln|x|+C)\\).",
+    "quick": "Đặt \\(u=y/x\\), phần u triệt tiêu.",
+    "casio": "CASIO: Kiểm tra đạo hàm của đáp án.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 93,
+    "type": "application_newton",
+    "question": "Một vật ở \\(100^\\circ C\\) được đặt trong phòng \\(20^\\circ C\\). Sau 10 phút vật còn \\(60^\\circ C\\). Theo định luật Newton, sau 20 phút nhiệt độ vật bằng",
+    "matrix": null,
+    "options": [
+      "\\(40^\\circ C\\)",
+      "\\(30^\\circ C\\)",
+      "\\(50^\\circ C\\)",
+      "\\(20^\\circ C\\)"
+    ],
+    "correct": "\\(40^\\circ C\\)",
+    "solution": "\\(T-20=(100-20)e^{-kt}=80e^{-kt}\\). Tại 10 phút: \\(40=80e^{-10k}\\Rightarrow e^{-10k}=1/2\\). Sau 20 phút: \\(T-20=80(1/2)^2=20\\), nên \\(T=40^\\circ C\\).",
+    "quick": "Hiệu nhiệt độ giảm một nửa sau mỗi 10 phút.",
+    "casio": "CASIO: Tính \\(20+80(0.5)^2=40\\).",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 94,
+    "type": "application_logistic",
+    "question": "Nghiệm dương của mô hình logistic \\(P'=P\\left(1-\\dfrac{P}{100}\\right)\\), \\(P(0)=50\\), là",
+    "matrix": null,
+    "options": [
+      "\\(P(t)=\\dfrac{100}{1+e^{-t}}\\)",
+      "\\(P(t)=50e^t\\)",
+      "\\(P(t)=\\dfrac{100}{1+e^t}\\)",
+      "\\(P(t)=100-50e^{-t}\\)"
+    ],
+    "correct": "\\(P(t)=\\dfrac{100}{1+e^{-t}}\\)",
+    "solution": "Nghiệm logistic có dạng \\(P=100/(1+Ce^{-t})\\). Điều kiện \\(P(0)=50\\) cho \\(50=100/(1+C)\\Rightarrow C=1\\).",
+    "quick": "Dạng chuẩn \\(K/(1+Ce^{-rt})\\).",
+    "casio": "CASIO: Kiểm tra \\(P(0)=50\\) và giới hạn khi t lớn bằng 100.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 95,
+    "type": "application_circuit",
+    "question": "Mạch RC thỏa \\(q'+2q=6\\), \\(q(0)=0\\). Điện tích giới hạn khi \\(t\\to+\\infty\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(0\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Nghiệm là \\(q=3+Ce^{-2t}\\). Điều kiện đầu cho \\(C=-3\\), nên \\(q=3(1-e^{-2t})\\). Khi \\(t\\to\\infty\\), \\(q\\to3\\).",
+    "quick": "Giá trị xác lập = vế phải/hệ số của q = 6/2.",
+    "casio": "CASIO: Tính giới hạn số với t lớn.",
+    "difficulty": 3,
+    "topic": "PT Vi phân"
+  },
+  {
+    "id": 96,
+    "type": "application_mixing",
+    "question": "Một bể 200 lít chứa 4 kg muối. Nước tinh khiết chảy vào và hỗn hợp chảy ra cùng tốc độ 5 lít/phút. Lượng muối sau \\(t\\) phút là",
+    "matrix": null,
+    "options": [
+      "\\(S(t)=4e^{-t/40}\\)",
+      "\\(S(t)=4e^{-40t}\\)",
+      "\\(S(t)=4-5t\\)",
+      "\\(S(t)=4e^{-t/200}\\)"
+    ],
+    "correct": "\\(S(t)=4e^{-t/40}\\)",
+    "solution": "Không có muối vào. Tốc độ muối ra là \\(5\\cdot S/200=S/40\\), nên \\(S'=-S/40\\), \\(S(0)=4\\). Do đó \\(S=4e^{-t/40}\\).",
+    "quick": "Hệ số rút = lưu lượng/thể tích = 5/200=1/40.",
+    "casio": "CASIO: Kiểm tra S(0)=4 và tốc độ giảm ban đầu -0,1 kg/phút.",
     "difficulty": 3,
     "topic": "PT Vi phân"
   }

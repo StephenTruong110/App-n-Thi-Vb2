@@ -1,0 +1,614 @@
+[
+  {
+    "id": 1,
+    "type": "vector_combination",
+    "question": "Trong $\\mathbb{R}^3$, cho $u_1=(2;-1;3)$, $u_2=(1;2;-3)$. Tổ hợp tuyến tính $2u_1-u_2$ bằng",
+    "matrix": null,
+    "options": [
+      "$(3;-4;9)$",
+      "$(3;0;9)$",
+      "$(1;-4;6)$",
+      "$(3;-4;6)$"
+    ],
+    "correct": "$(3;-4;9)$",
+    "solution": "$2u_1-u_2=2(2;-1;3)-(1;2;-3)=(4;-2;6)-(1;2;-3)=(3;-4;9)$.",
+    "quick": "Nhân từng tọa độ rồi trừ theo đúng vị trí.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 2,
+    "type": "vector_combination",
+    "question": "Cho $u=(1;-2;4)$ và $v=(3;1;-1)$. Véc tơ $-u+2v$ là",
+    "matrix": null,
+    "options": [
+      "$(5;4;-6)$",
+      "$(7;0;-2)$",
+      "$(5;4;-2)$",
+      "$(-5;-4;6)$"
+    ],
+    "correct": "$(5;4;-6)$",
+    "solution": "$-u+2v=(-1;2;-4)+(6;2;-2)=(5;4;-6)$.",
+    "quick": "Thực hiện theo từng tọa độ.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 3,
+    "type": "vector_combination",
+    "question": "Cho $u=(1;2)$, $v=(2;-1)$. Nếu $w=3u-2v$ thì $w$ bằng",
+    "matrix": null,
+    "options": [
+      "$(-1;8)$",
+      "$(7;4)$",
+      "$(1;8)$",
+      "$(-1;4)$"
+    ],
+    "correct": "$(-1;8)$",
+    "solution": "$3u-2v=(3;6)-(4;-2)=(-1;8)$.",
+    "quick": "Tính riêng từng tọa độ.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 4,
+    "type": "linear_independence",
+    "question": "Hai véc tơ $(1;2)$ và $(2;4)$ là",
+    "matrix": null,
+    "options": [
+      "Độc lập tuyến tính",
+      "Phụ thuộc tuyến tính",
+      "Vuông góc",
+      "Không cùng không gian"
+    ],
+    "correct": "Phụ thuộc tuyến tính",
+    "solution": "$(2;4)=2(1;2)$ nên hai véc tơ phụ thuộc tuyến tính.",
+    "quick": "Hai véc tơ khác 0 phụ thuộc khi chúng tỉ lệ.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 1,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 5,
+    "type": "count_independent_subsets",
+    "question": "Trong $\\mathbb{R}^2$, cho $S=\\{u_1=(2;-1),u_2=(2;2),u_3=(1;1)\\}$. Có bao nhiêu hệ con khác rỗng của $S$ độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "4",
+      "5",
+      "3",
+      "2"
+    ],
+    "correct": "5",
+    "solution": "Ba hệ một phần tử đều độc lập vì các véc tơ đều khác 0. Trong ba cặp, chỉ cặp $\\{u_2,u_3\\}$ phụ thuộc vì $u_2=2u_3$. Hệ ba véc tơ trong $\\mathbb{R}^2$ phụ thuộc. Tổng cộng $3+2=5$ hệ.",
+    "quick": "Đếm hệ một phần tử trước, sau đó kiểm tra từng cặp; hệ trên 2 véc tơ trong $\\mathbb{R}^2$ chắc chắn phụ thuộc.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 6,
+    "type": "count_independent_subsets",
+    "question": "Trong $\\mathbb{R}^2$, cho $S=\\{(1;0),(0;1),(1;1)\\}$. Số hệ con khác rỗng độc lập tuyến tính của $S$ là",
+    "matrix": null,
+    "options": [
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": "6",
+    "solution": "Có 3 hệ một phần tử. Cả 3 cặp đều độc lập vì không có hai véc tơ nào tỉ lệ. Hệ gồm 3 véc tơ phụ thuộc do nằm trong $\\mathbb{R}^2$. Tổng $3+3=6$.",
+    "quick": "Trong $\\mathbb{R}^2$, tối đa 2 véc tơ độc lập.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 7,
+    "type": "rank_vector_system",
+    "question": "Trong $\\mathbb{R}^2$, cho $S=\\{(1;1),(1;2),(2;3),(0;1)\\}$. Hạng của hệ véc tơ bằng",
+    "matrix": null,
+    "options": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correct": "2",
+    "solution": "Hai véc tơ $(1;1)$ và $(1;2)$ không tỉ lệ nên độc lập. Hạng không thể vượt quá 2 trong $\\mathbb{R}^2$, do đó hạng của hệ bằng 2.",
+    "quick": "Tìm hai véc tơ không tỉ lệ; trong $\\mathbb{R}^2$ khi đó hạng đã đạt tối đa 2.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 8,
+    "type": "rank_vector_system",
+    "question": "Hạng của hệ $\\{(1;0;1),(0;1;1),(1;1;2)\\}$ bằng",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correct": "2",
+    "solution": "Véc tơ thứ ba bằng tổng hai véc tơ đầu, còn hai véc tơ đầu độc lập. Vì vậy hạng bằng 2.",
+    "quick": "Nhận ra $u_3=u_1+u_2$.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 9,
+    "type": "rank_vector_system",
+    "question": "Hạng của hệ $\\{(1;0;0),(0;1;0),(0;0;1),(1;1;1)\\}$ bằng",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": "3",
+    "solution": "Ba véc tơ đầu là cơ sở chuẩn của $\\mathbb{R}^3$, nên hệ có hạng 3. Véc tơ thứ tư không làm hạng tăng thêm.",
+    "quick": "Trong $\\mathbb{R}^3$, có đủ ba véc tơ cơ sở chuẩn thì hạng bằng 3.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 1,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 10,
+    "type": "basis",
+    "question": "Hệ nào sau đây là một cơ sở của $\\mathbb{R}^2$?",
+    "matrix": null,
+    "options": [
+      "$\\{(1;0),(0;1)\\}$",
+      "$\\{(1;2),(2;4)\\}$",
+      "$\\{(0;0),(1;1)\\}$",
+      "$\\{(1;0),(0;1),(1;1)\\}$"
+    ],
+    "correct": "$\\{(1;0),(0;1)\\}$",
+    "solution": "Một cơ sở của $\\mathbb{R}^2$ phải gồm đúng hai véc tơ độc lập. Chỉ hệ $\\{(1;0),(0;1)\\}$ thỏa mãn.",
+    "quick": "Cơ sở của $\\mathbb{R}^2$: đúng 2 véc tơ không tỉ lệ.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 1,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 11,
+    "type": "basis",
+    "question": "Hệ $\\{(1;1;0),(0;1;1),(1;0;1)\\}$ có là cơ sở của $\\mathbb{R}^3$ không?",
+    "matrix": null,
+    "options": [
+      "Có",
+      "Không, vì hạng bằng 1",
+      "Không, vì hạng bằng 2",
+      "Không xác định"
+    ],
+    "correct": "Có",
+    "solution": "Định thức của ma trận có các véc tơ làm hàng là $2\\ne0$, nên ba véc tơ độc lập và tạo thành cơ sở của $\\mathbb{R}^3$.",
+    "quick": "Ba véc tơ trong $\\mathbb{R}^3$: tính định thức; khác 0 thì là cơ sở.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 12,
+    "type": "span_membership",
+    "question": "Véc tơ $w=(5;1)$ có thuộc $\\operatorname{span}\\{(1;1),(2;-1)\\}$ không?",
+    "matrix": null,
+    "options": [
+      "Có",
+      "Không",
+      "Chỉ khi nhân $w$ với 2",
+      "Không đủ dữ kiện"
+    ],
+    "correct": "Có",
+    "solution": "Giải $a(1;1)+b(2;-1)=(5;1)$ được $a=\\frac73$, $b=\\frac43$, nên $w$ thuộc không gian sinh.",
+    "quick": "Hai véc tơ sinh không tỉ lệ nên chúng sinh toàn bộ $\\mathbb{R}^2$.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 13,
+    "type": "span_membership",
+    "question": "Véc tơ nào không thuộc $\\operatorname{span}\\{(1;0;1),(0;1;1)\\}$?",
+    "matrix": null,
+    "options": [
+      "$(1;1;2)$",
+      "$(2;-1;1)$",
+      "$(0;0;1)$",
+      "$(3;2;5)$"
+    ],
+    "correct": "$(0;0;1)$",
+    "solution": "Mọi véc tơ trong không gian sinh có dạng $(a;b;a+b)$. Ba phương án đầu, hai, tư lần lượt thỏa $z=x+y$, riêng $(0;0;1)$ không thỏa.",
+    "quick": "Đặc trưng của không gian sinh là $z=x+y$.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 14,
+    "type": "coordinates_in_basis",
+    "question": "Trong cơ sở $B=\\{(1;1),(1;-1)\\}$, tọa độ của $v=(4;2)$ là",
+    "matrix": null,
+    "options": [
+      "$(3;1)_B$",
+      "$(1;3)_B$",
+      "$(2;2)_B$",
+      "$(4;2)_B$"
+    ],
+    "correct": "$(3;1)_B$",
+    "solution": "Tìm $a,b$ sao cho $a(1;1)+b(1;-1)=(4;2)$. Ta có $a+b=4$, $a-b=2$, suy ra $a=3,b=1$.",
+    "quick": "Giải hệ từ các tọa độ.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 15,
+    "type": "linear_relation",
+    "question": "Cho $u_1=(1;0;1)$, $u_2=(0;1;1)$, $u_3=(1;1;2)$. Quan hệ đúng là",
+    "matrix": null,
+    "options": [
+      "$u_3=u_1+u_2$",
+      "$u_3=u_1-u_2$",
+      "$u_1=u_2+u_3$",
+      "$u_1+u_2+u_3=0$"
+    ],
+    "correct": "$u_3=u_1+u_2$",
+    "solution": "Cộng theo tọa độ: $(1;0;1)+(0;1;1)=(1;1;2)=u_3$.",
+    "quick": "So sánh trực tiếp theo từng tọa độ.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 16,
+    "type": "rank_parameter",
+    "question": "Trong $\\mathbb{R}^3$, cho $S=\\{(1;1;m),(1;m;1),(m;1;1)\\}$. Tập các giá trị $m$ để $\\operatorname{rank}(S)\\ne2$ là",
+    "matrix": null,
+    "options": [
+      "$\\mathbb{R}\\setminus\\{-2\\}$",
+      "$\\mathbb{R}\\setminus\\{-2;1\\}$",
+      "$\\mathbb{R}\\setminus\\{1\\}$",
+      "$\\{-2;1\\}$"
+    ],
+    "correct": "$\\mathbb{R}\\setminus\\{-2\\}$",
+    "solution": "Định thức bằng $-(m-1)^2(m+2)$. Với $m\\ne-2,1$, hạng bằng 3; với $m=1$, hạng bằng 1; với $m=-2$, hạng bằng 2. Do đó hạng khác 2 khi và chỉ khi $m\\ne-2$.",
+    "quick": "Tách ba trường hợp theo nghiệm của định thức; đừng kết luận mọi nghiệm det=0 đều cho hạng 2.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 17,
+    "type": "linear_independence_parameter",
+    "question": "Hệ $\\{(1;1;0),(1;m;1),(0;1;1)\\}$ độc lập tuyến tính khi",
+    "matrix": null,
+    "options": [
+      "$m\\ne2$",
+      "$m\\ne1$",
+      "$m\\ne0$",
+      "$m=2$"
+    ],
+    "correct": "$m\\ne2$",
+    "solution": "Định thức của ma trận hàng là $m-2$. Hệ độc lập khi định thức khác 0, tức $m\\ne2$.",
+    "quick": "Ba véc tơ trong $\\mathbb{R}^3$: det khác 0.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 18,
+    "type": "linked_vector_set",
+    "question": "Cho $S=\\{u_1=(3;2;2),u_2=(2;3;2),u_3=(2;2;3)\\}$. Mệnh đề nào sai?",
+    "matrix": null,
+    "options": [
+      "Hệ $S$ phụ thuộc tuyến tính",
+      "Hệ $S$ độc lập tuyến tính",
+      "$\\{u_1,u_2\\}$ độc lập tuyến tính",
+      "$\\{u_1,u_3\\}$ độc lập tuyến tính"
+    ],
+    "correct": "Hệ $S$ phụ thuộc tuyến tính",
+    "solution": "Ma trận có ba véc tơ làm hàng có định thức bằng 7 khác 0, nên $S$ độc lập tuyến tính. Mọi hệ con của một hệ độc lập cũng độc lập.",
+    "quick": "Tính nhanh det hoặc nhận ma trận có dạng đường chéo 3, ngoài đường chéo 2.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 19,
+    "type": "count_independent_subsets",
+    "question": "Với $S=\\{(3;2;2),(2;3;2),(2;2;3)\\}$, có bao nhiêu hệ con khác rỗng độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "3",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": "7",
+    "solution": "Hệ $S$ gồm 3 véc tơ độc lập. Vì vậy mọi hệ con khác rỗng đều độc lập. Có $2^3-1=7$ hệ con.",
+    "quick": "Hệ mẹ độc lập thì mọi hệ con đều độc lập.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 20,
+    "type": "dimension",
+    "question": "Không gian nghiệm của phương trình $x+y+z=0$ trong $\\mathbb{R}^3$ có số chiều bằng",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correct": "2",
+    "solution": "Đây là một phương trình tuyến tính độc lập với 3 ẩn, nên số chiều không gian nghiệm bằng $3-1=2$.",
+    "quick": "Số chiều nghiệm thuần nhất = số ẩn − hạng.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 21,
+    "type": "subspace",
+    "question": "Tập nào sau đây là không gian con của $\\mathbb{R}^2$?",
+    "matrix": null,
+    "options": [
+      "$\\{(x,y):x+y=0\\}$",
+      "$\\{(x,y):x+y=1\\}$",
+      "$\\{(x,y):x>0\\}$",
+      "$\\{(x,y):xy=0\\}$"
+    ],
+    "correct": "$\\{(x,y):x+y=0\\}$",
+    "solution": "Tập nghiệm của phương trình tuyến tính thuần nhất $x+y=0$ chứa véc tơ 0 và đóng với cộng, nhân vô hướng. Các tập còn lại không thỏa đầy đủ.",
+    "quick": "Không gian con thường là tập nghiệm của hệ tuyến tính thuần nhất.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 22,
+    "type": "rank_add_vector",
+    "question": "Hệ $S=\\{(1;0;1),(0;1;1)\\}$ có hạng 2. Thêm véc tơ nào sau đây làm hạng tăng lên 3?",
+    "matrix": null,
+    "options": [
+      "$(1;1;2)$",
+      "$(2;-1;1)$",
+      "$(0;0;1)$",
+      "$(3;2;5)$"
+    ],
+    "correct": "$(0;0;1)$",
+    "solution": "Không gian sinh của hai véc tơ đầu gồm các véc tơ $(a;b;a+b)$. Chỉ $(0;0;1)$ không thuộc không gian này, nên khi thêm vào hạng tăng lên 3.",
+    "quick": "Kiểm tra điều kiện $z=x+y$.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 3,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 23,
+    "type": "max_independent",
+    "question": "Trong $\\mathbb{R}^4$, một hệ gồm 6 véc tơ có nhiều nhất bao nhiêu véc tơ độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "2",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": "4",
+    "solution": "Số véc tơ độc lập tuyến tính không vượt quá số chiều của không gian. $\\dim\\mathbb{R}^4=4$.",
+    "quick": "Hạng tối đa bằng số chiều.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 1,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 24,
+    "type": "det_independence",
+    "question": "Cho ma trận vuông $A$ cấp 3 có các cột là $u_1,u_2,u_3$. Nếu $\\det(A)\\ne0$ thì",
+    "matrix": null,
+    "options": [
+      "$u_1,u_2,u_3$ độc lập tuyến tính",
+      "$u_1,u_2,u_3$ phụ thuộc tuyến tính",
+      "Hạng của hệ bằng 2",
+      "Có ít nhất một cột bằng 0"
+    ],
+    "correct": "$u_1,u_2,u_3$ độc lập tuyến tính",
+    "solution": "Định thức khác 0 tương đương ma trận khả nghịch, hạng bằng 3 và các cột độc lập tuyến tính.",
+    "quick": "det khác 0 ⇔ đủ hạng ⇔ các cột độc lập.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 1,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 25,
+    "type": "rank_concept",
+    "question": "Phát biểu đúng về hạng của một hệ véc tơ là",
+    "matrix": null,
+    "options": [
+      "Số véc tơ của hệ",
+      "Số véc tơ độc lập tuyến tính nhiều nhất lấy được từ hệ",
+      "Luôn bằng số chiều không gian chứa hệ",
+      "Số véc tơ khác 0 của hệ"
+    ],
+    "correct": "Số véc tơ độc lập tuyến tính nhiều nhất lấy được từ hệ",
+    "solution": "Theo định nghĩa, hạng của hệ là số phần tử của một hệ con độc lập tuyến tính tối đại.",
+    "quick": "Hạng = kích thước lớn nhất của hệ con độc lập.",
+    "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
+    "difficulty": 1,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 26,
+    "type": "coordinates_in_basis_3d",
+    "question": "Trong cơ sở $B=\\{(1;0;1),(0;1;1),(1;1;0)\\}$ của $\\mathbb R^3$, tọa độ của $v=(3;4;5)$ là",
+    "matrix": null,
+    "options": [
+      "$(2;3;1)_B$",
+      "$(1;2;3)_B$",
+      "$(3;2;1)_B$",
+      "$(2;1;3)_B$"
+    ],
+    "correct": "$(2;3;1)_B$",
+    "solution": "Giải $v=2(1,0,1)+3(0,1,1)+1(1,1,0)$, nên $[v]_B=(2,3,1)^T$.",
+    "quick": "Lập ma trận có các véc tơ cơ sở làm cột và giải hệ $Bc=v$.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Cơ sở & tọa độ"
+  },
+  {
+    "id": 27,
+    "type": "basis_parameter_3d",
+    "question": "Hệ $S=\\{(1;0;1),(0;1;1),(1;m;0)\\}$ là cơ sở của $\\mathbb R^3$ khi",
+    "matrix": null,
+    "options": [
+      "$m\\ne-1$",
+      "$m\\ne1$",
+      "$m=-1$",
+      "Mọi $m$"
+    ],
+    "correct": "$m\\ne-1$",
+    "solution": "Định thức ma trận có ba véc tơ làm cột bằng $-(m+1)$. Hệ là cơ sở khi định thức khác 0.",
+    "quick": "Ba véc tơ trong $\\mathbb R^3$ là cơ sở iff định thức khác 0.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Cơ sở theo tham số"
+  },
+  {
+    "id": 28,
+    "type": "count_independent_subsets_4",
+    "question": "Trong $\\mathbb R^3$, cho $S=\\{e_1,e_2,e_3,e_1+e_2+e_3\\}$. Có bao nhiêu hệ con khác rỗng của $S$ độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "14",
+      "11",
+      "15",
+      "10"
+    ],
+    "correct": "14",
+    "solution": "Mọi hệ con 1 phần tử (4 hệ), 2 phần tử (6 hệ) và 3 phần tử (4 hệ) đều độc lập. Hệ 4 phần tử phụ thuộc vì nằm trong $\\mathbb R^3$. Tổng $4+6+4=14$.",
+    "quick": "Đếm theo kích thước; trong $\\mathbb R^3$ không thể có 4 véc tơ độc lập.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập"
+  },
+  {
+    "id": 29,
+    "type": "span_condition",
+    "question": "Cho $W=\\operatorname{span}\\{(1;0;1),(0;1;1)\\}$. Véc tơ $(a;b;c)$ thuộc $W$ khi và chỉ khi",
+    "matrix": null,
+    "options": [
+      "$c=a+b$",
+      "$c=a-b$",
+      "$a=b+c$",
+      "$a+b+c=0$"
+    ],
+    "correct": "$c=a+b$",
+    "solution": "Mọi véc tơ trong $W$ có dạng $a(1,0,1)+b(0,1,1)=(a,b,a+b)$.",
+    "quick": "Viết tổ hợp tuyến tính tổng quát của hai véc tơ sinh.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Không gian sinh"
+  },
+  {
+    "id": 30,
+    "type": "subspace_dimension_equations",
+    "question": "Không gian nghiệm của hai phương trình tuyến tính độc lập trong $\\mathbb R^4$ có số chiều bằng",
+    "matrix": null,
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct": "2",
+    "solution": "Ma trận hệ số có hạng 2. Theo định lý hạng–không gian nghiệm, số chiều bằng $4-2=2$.",
+    "quick": "Số chiều = số ẩn − số phương trình độc lập.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 1,
+    "topic": "Số chiều không gian con"
+  },
+  {
+    "id": 31,
+    "type": "rank_parameter_exact",
+    "question": "Hệ $S=\\{(1;1;0),(1;m;1),(0;1;1)\\}$ có hạng bằng 2 khi",
+    "matrix": null,
+    "options": [
+      "$m=2$",
+      "$m=1$",
+      "$m=0$",
+      "$m\\ne2$"
+    ],
+    "correct": "$m=2$",
+    "solution": "Định thức bằng $m-2$. Với $m=2$, định thức bằng 0 nhưng hai véc tơ đầu không tỉ lệ, nên hạng bằng 2.",
+    "quick": "Giải det=0 và kiểm tra hạng không tụt xuống 1.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ theo tham số"
+  },
+  {
+    "id": 32,
+    "type": "span_parameter_membership",
+    "question": "Véc tơ $w=(2;3;m)$ thuộc $\\operatorname{span}\\{(1;0;1),(0;1;1)\\}$ khi",
+    "matrix": null,
+    "options": [
+      "$m=5$",
+      "$m=1$",
+      "$m=6$",
+      "$m=-1$"
+    ],
+    "correct": "$m=5$",
+    "solution": "Tổ hợp tạo hai tọa độ đầu buộc hệ số là 2 và 3; tọa độ thứ ba bằng $2+3=5$.",
+    "quick": "Hai tọa độ đầu xác định ngay các hệ số tổ hợp.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Tổ hợp tuyến tính theo tham số"
+  },
+  {
+    "id": 33,
+    "type": "basis_subspace",
+    "question": "Hệ nào là một cơ sở của không gian $W=\\{(x,y,z)\\in\\mathbb R^3:x+y+z=0\\}$?",
+    "matrix": null,
+    "options": [
+      "$\\{(1;-1;0),(1;0;-1)\\}$",
+      "$\\{(1;1;1)\\}$",
+      "$\\{(1;-1;0),(2;-2;0)\\}$",
+      "$\\{(1;0;0),(0;1;0),(0;0;1)\\}$"
+    ],
+    "correct": "$\\{(1;-1;0),(1;0;-1)\\}$",
+    "solution": "Hai véc tơ đều thuộc $W$, độc lập tuyến tính và $\\dim W=2$, nên tạo thành cơ sở.",
+    "quick": "Kiểm tra thuộc không gian, độc lập và đủ số véc tơ bằng số chiều.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Cơ sở không gian nghiệm"
+  },
+  {
+    "id": 34,
+    "type": "dimension_sum_subspaces",
+    "question": "Trong $\\mathbb R^4$, cho $\\dim U=3$, $\\dim W=2$, $\\dim(U\\cap W)=1$. Khi đó $\\dim(U+W)$ bằng",
+    "matrix": null,
+    "options": [
+      "4",
+      "5",
+      "3",
+      "2"
+    ],
+    "correct": "4",
+    "solution": "Dùng công thức $\\dim(U+W)=\\dim U+\\dim W-\\dim(U\\cap W)=3+2-1=4$.",
+    "quick": "Cộng hai số chiều rồi trừ số chiều giao.",
+    "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
+    "difficulty": 3,
+    "topic": "Số chiều tổng và giao"
+  }
+]

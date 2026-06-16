@@ -1,0 +1,194 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans)}
+.wrap{padding:1rem 0}
+.header{margin-bottom:1.5rem}
+.header h2{font-size:18px;font-weight:500;color:var(--color-text-primary);margin-bottom:4px}
+.header p{font-size:13px;color:var(--color-text-secondary)}
+.topic-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1.5rem}
+.tab{padding:6px 14px;border-radius:20px;border:0.5px solid var(--color-border-secondary);font-size:13px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);transition:all 0.15s}
+.tab.active{background:var(--color-background-primary);border-color:var(--color-border-primary);color:var(--color-text-primary);font-weight:500}
+.progress-bar{background:var(--color-background-secondary);border-radius:4px;height:6px;margin-bottom:1.5rem;overflow:hidden}
+.progress-fill{height:100%;background:#5DCAA5;border-radius:4px;transition:width 0.4s}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:1.5rem}
+.stat{background:var(--color-background-secondary);border-radius:var(--border-radius-md);padding:12px;text-align:center}
+.stat-val{font-size:22px;font-weight:500;color:var(--color-text-primary)}
+.stat-label{font-size:11px;color:var(--color-text-secondary);margin-top:2px}
+.q-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem;margin-bottom:1rem}
+.q-meta{font-size:12px;color:var(--color-text-tertiary);margin-bottom:8px}
+.q-text{font-size:15px;color:var(--color-text-primary);line-height:1.6;margin-bottom:1rem}
+.q-topic-badge{display:inline-block;font-size:11px;padding:3px 10px;border-radius:12px;background:var(--color-background-info);color:var(--color-text-info);margin-bottom:10px}
+.options{display:grid;gap:8px}
+.opt{padding:10px 14px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-tertiary);font-size:14px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-primary);text-align:left;transition:all 0.15s}
+.opt:hover:not(:disabled){background:var(--color-background-secondary);border-color:var(--color-border-secondary)}
+.opt.correct{background:#EAF3DE;border-color:#639922;color:#3B6D11}
+.opt.wrong{background:#FCEBEB;border-color:#A32D2D;color:#791F1F}
+.opt.reveal-correct{background:#EAF3DE;border-color:#639922;color:#3B6D11}
+.explanation{margin-top:1rem;padding:12px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);font-size:13px;color:var(--color-text-secondary);line-height:1.6;display:none}
+.btn-row{display:flex;gap:8px;margin-top:1rem;flex-wrap:wrap}
+button{padding:8px 16px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);font-size:13px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-primary)}
+button:hover{background:var(--color-background-secondary)}
+.btn-ask{color:var(--color-text-info);border-color:var(--color-border-info)}
+.nav-row{display:flex;justify-content:space-between;align-items:center;margin-top:1rem}
+.q-counter{font-size:13px;color:var(--color-text-secondary)}
+.hint-box{display:none;margin-top:10px;padding:10px 14px;border-left:3px solid #5DCAA5;background:var(--color-background-secondary);font-size:13px;color:var(--color-text-secondary);border-radius:0 var(--border-radius-md) var(--border-radius-md) 0;line-height:1.6}
+</style>
+
+<div class="wrap">
+<h2 class="sr-only">Ôn luyện toán cao cấp - Đề minh họa Bộ Công An 2026</h2>
+<div class="header">
+  <h2>Ôn luyện toán cao cấp</h2>
+  <p>Đề minh họa Bộ Công An 2026 · Câu 1–42 (trừ phần tự luận)</p>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-val" id="s-done">0</div><div class="stat-label">Đã làm</div></div>
+  <div class="stat"><div class="stat-val" id="s-correct">0</div><div class="stat-label">Đúng</div></div>
+  <div class="stat"><div class="stat-val" id="s-pct">0%</div><div class="stat-label">Tỉ lệ</div></div>
+</div>
+
+<div class="progress-bar"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+
+<div class="topic-tabs" id="tabs"></div>
+
+<div id="q-area"></div>
+</div>
+
+<script>
+const TOPICS = ["Tất cả","Đại số tuyến tính","Giải tích hàm nhiều biến","Phương trình vi phân","Chuỗi số","Tích phân","Giới hạn & Liên tục","Ứng dụng"];
+
+const QS = [
+{id:1,topic:"Đại số tuyến tính",q:"Trong ℝ³, cho u₁=(2;−1;3), u₂=(1;2;−3). Tổ hợp tuyến tính 2u₁−u₂ bằng?",opts:["(3;−4;9)","(3;0;9)","(1;−4;6)","(3;−4;6)"],ans:0,hint:"Tính 2×(2;−1;3) − (1;2;−3) theo từng thành phần.",exp:"2u₁−u₂ = (4−1; −2−2; 6−(−3)) = (3; −4; 9). Đáp án A."},
+{id:2,topic:"Đại số tuyến tính",q:"Trong ℝ², cho S={u₁(2;−1), u₂(2;2), u₃(1;1)}. Có bao nhiêu hệ con khác rỗng của S độc lập tuyến tính?",opts:["4","5","3","2"],ans:0,hint:"Kiểm tra từng hệ con: 3 hệ 1 vector, 3 hệ 2 vector, 1 hệ 3 vector. Hạng S trong ℝ² tối đa là 2.",exp:"Mỗi vector đơn đều ≠ 0 → độc lập (3 hệ). Kiểm tra các cặp: (u₁,u₂) độc lập, (u₁,u₃) độc lập vì không tỉ lệ. Nhưng u₃ = (u₁+u₂)/... cần kiểm tra: (2;2) và (1;1) tỉ lệ → (u₂,u₃) phụ thuộc. Hệ 3 vector trong ℝ² luôn phụ thuộc. Tổng: 3+1 = 4. Đáp án A."},
+{id:3,topic:"Đại số tuyến tính",q:"Trong ℝ², cho S={u₁(1;1), u₂(1;2), u₃(2;3), u₄(0;1)}. Hạng của hệ véc tơ đã cho bằng?",opts:["4","3","2","5"],ans:2,hint:"Trong ℝ², hạng tối đa là dim(ℝ²) = 2.",exp:"Không gian ℝ² có số chiều 2, nên hạng của bất kỳ hệ vector nào trong ℝ² không thể vượt quá 2. u₁=(1;1), u₂=(1;2) độc lập tuyến tính → hạng = 2. Đáp án C."},
+{id:4,topic:"Đại số tuyến tính",q:"A=[[1,1],[−1,1]], B=[[−1,2],[1,1]]. Phần tử hàng 1, cột 2 của A+B bằng?",opts:["3","2","1","0"],ans:0,hint:"Cộng từng phần tử tương ứng: (A+B)₁₂ = a₁₂ + b₁₂.",exp:"(A+B)₁₂ = 1 + 2 = 3. Đáp án A."},
+{id:5,topic:"Đại số tuyến tính",q:"A=[[1,1],[1,m]]. Có bao nhiêu giá trị nguyên m∈(0;4) để A khả nghịch?",opts:["2","3","1","0"],ans:1,hint:"A khả nghịch ⟺ det(A)≠0. Tính det(A) = m−1.",exp:"det(A) = 1·m − 1·1 = m−1. A khả nghịch khi m≠1. Giá trị nguyên trong (0;4): {1,2,3}. Loại m=1, còn {2,3} → 2 giá trị. Đáp án A."},
+{id:6,topic:"Đại số tuyến tính",q:"Cho ma trận vuông A cấp 3. Phát biểu nào đúng?",opts:["Nếu det A≠0 thì hạng A bằng 3","Nếu det A≠0 thì hạng A nhỏ hơn 3","Nếu det A=0 thì hạng A bằng 3","Nếu det A=0 thì hạng A lớn hơn 2"],ans:0,hint:"det A≠0 ⟺ A khả nghịch ⟺ hạng A = n (cấp của ma trận).",exp:"det A≠0 ⟺ A không suy biến ⟺ hạng A = 3. Đáp án A."},
+{id:7,topic:"Đại số tuyến tính",q:"Ma trận A có det(A)=3. det(A²) bằng?",opts:["3","6","8","9"],ans:3,hint:"Dùng tính chất: det(AB) = det(A)·det(B).",exp:"det(A²) = det(A·A) = det(A)·det(A) = 3·3 = 9. Đáp án D."},
+{id:8,topic:"Giới hạn & Liên tục",q:"Giới hạn nào sau đây có dạng vô định 0/0?",opts:["lim(x→0) sinx/x","lim(x→1) sinx/x","lim(x→3) sinx/x","lim(x→2) sinx/x"],ans:0,hint:"Dạng 0/0 xảy ra khi cả tử và mẫu cùng → 0.",exp:"Khi x→0: sin(0)=0 và mẫu x→0 → dạng 0/0. Các trường hợp khác: mẫu ≠ 0. Đáp án A."},
+{id:9,topic:"Giới hạn & Liên tục",q:"f(x) = (∛(1+3x)−1−x)/x khi x≠0, a khi x=0. Tập giá trị a để f liên tục trên ℝ?",opts:["{0}","{1}","∅","{0;1}"],ans:0,hint:"f liên tục tại 0 khi lim(x→0)f(x) = a. Dùng khai triển Taylor hoặc L'Hôpital.",exp:"lim(x→0) [∛(1+3x)−1−x]/x: Tử ≈ (1+x−x²/...−1−x) = −x² chia x → 0. Vậy a=0. Đáp án A."},
+{id:10,topic:"Giới hạn & Liên tục",q:"f(x)=2sinx. Đẳng thức nào đúng với mọi x∈ℝ?",opts:["f'(x)+f(x)=2(sinx+cosx)","f'(x)+f(x)=sinx+cosx","f'(x)+f(x)=2(sinx−cosx)","f'(x)+f(x)=2(cosx−sinx)"],ans:0,hint:"Tính f'(x) = 2cosx, sau đó cộng với f(x).",exp:"f'(x) = 2cosx, f(x) = 2sinx. f'(x)+f(x) = 2cosx+2sinx = 2(sinx+cosx). Đáp án A."},
+{id:11,topic:"Giải tích hàm nhiều biến",q:"f(x,y,z)=xe^(yz). Giá trị f'_y(2;1;2) bằng?",opts:["2e","2e²","4e²","4e"],ans:2,hint:"Đạo hàm riêng theo y: ∂f/∂y = x·z·e^(yz).",exp:"∂f/∂y = x·z·e^(yz). Tại (2;1;2): 2·2·e^(1·2) = 4e². Đáp án C."},
+{id:12,topic:"Giải tích hàm nhiều biến",q:"f(x,y)=x³+y³+xy. Vi phân cấp một df bằng?",opts:["(3x²+y)dx+(3y²+x)dy","(3y²+x)dx+2dxdy+(3x²+y)dy","(3x²+y)dx+2dxdy+(3y²+x)dy","(3y²+x)dx+(3x²+y)dy"],ans:0,hint:"df = (∂f/∂x)dx + (∂f/∂y)dy. Tính từng đạo hàm riêng.",exp:"∂f/∂x = 3x²+y, ∂f/∂y = 3y²+x. df = (3x²+y)dx + (3y²+x)dy. Đáp án A."},
+{id:13,topic:"Giải tích hàm nhiều biến",q:"f(x,y)=x²+xy+y²+x−y. Hàm số có bao nhiêu điểm dừng?",opts:["1","0","1","3"],ans:0,hint:"Điểm dừng là nghiệm của hệ: ∂f/∂x=0, ∂f/∂y=0.",exp:"∂f/∂x=2x+y+1=0, ∂f/∂y=x+2y−1=0. Giải hệ: từ pt1: y=−2x−1, thay vào pt2: x+2(−2x−1)−1=0 → −3x=3 → x=−1, y=1. Có đúng 1 điểm dừng. Đáp án A (hoặc C tùy cách đếm trong đề)."},
+{id:14,topic:"Chuỗi số",q:"Có bao nhiêu chuỗi phân kỳ trong: Σ1/n, Σ1/n², Σ1/√n?",opts:["2","1","0","3"],ans:0,hint:"Dùng tiêu chuẩn chuỗi p: Σ1/nᵖ hội tụ khi p>1, phân kỳ khi p≤1.",exp:"Σ1/n (p=1): phân kỳ. Σ1/n² (p=2>1): hội tụ. Σ1/√n = Σ1/n^(1/2) (p=1/2<1): phân kỳ. → 2 chuỗi phân kỳ. Đáp án A."},
+{id:15,topic:"Chuỗi số",q:"Có bao nhiêu chuỗi hội tụ trong: Σ(−1)ⁿ/n, Σ(−1)ⁿ/n², Σ(−1)ⁿ/n³?",opts:["0","2","1","3"],ans:3,hint:"Dùng tiêu chuẩn Leibniz (chuỗi xen kẽ) và hội tụ tuyệt đối.",exp:"Σ(−1)ⁿ/n: hội tụ theo Leibniz (nhưng không tuyệt đối). Σ(−1)ⁿ/n²: hội tụ tuyệt đối (vì Σ1/n² hội tụ). Σ(−1)ⁿ/n³: hội tụ tuyệt đối. → 3 chuỗi hội tụ. Đáp án D."},
+{id:16,topic:"Phương trình vi phân",q:"Phương trình nào là phương trình vi phân dạng phân ly biến số?",opts:["xdx+ydy=0","xdx+(x−y)ydy=0","xdx+(x+y)ydy=0","ydx+(x+y)xdy=0"],ans:0,hint:"Phân ly biến số: có thể viết dưới dạng f(x)dx + g(y)dy = 0.",exp:"xdx+ydy=0 ↔ f(x)=x, g(y)=y, hoàn toàn phân ly. Đáp án A."},
+{id:17,topic:"Phương trình vi phân",q:"Nghiệm riêng của (y−x)dx+(y+x)dy=0 thỏa y(1)=1 là?",opts:["y²+2xy−x²=2","y²+2xy+x²=2","y²−xy+x²=1","y²−xy−x²=−1"],ans:0,hint:"Kiểm tra phương trình thuần nhất hoặc tìm thế năng U(x,y). Thử đáp án A với điểm (1,1).",exp:"Thử đáp án A: y²+2xy−x²=c. Tại (x,y)=(1,1): 1+2−1=2 ✓. Kiểm tra phương trình vi phân: d(y²+2xy−x²)=(2y+2x)dy+(2y−2x)dx = 2[(y−x)dx+(y+x)dy]=0 ✓. Đáp án A."},
+{id:18,topic:"Phương trình vi phân",q:"Nghiệm riêng của y'+y=0 thỏa y(0)=2 là?",opts:["y=1+e^(−x)","y=−e^(−x)","y=e^(−x)","y=2e^(−x)"],ans:3,hint:"Nghiệm tổng quát y'=−y là y=Ce^(−x). Dùng điều kiện đầu để tìm C.",exp:"y=Ce^(−x). Tại x=0: C=2 → y=2e^(−x). Đáp án D."},
+{id:19,topic:"Phương trình vi phân",q:"Nghiệm tổng quát của y''−3y'+2y=0 là?",opts:["y=C₁eˣ+C₂e²ˣ","y=C₁eˣ+C₂e^(−2x)","y=C₁e^(−x)+C₂e²ˣ","y=C₁e^(−x)+C₂e^(−2x)"],ans:0,hint:"Giải phương trình đặc trưng: k²−3k+2=0.",exp:"k²−3k+2=0 → (k−1)(k−2)=0 → k₁=1, k₂=2. Nghiệm tổng quát: y=C₁eˣ+C₂e²ˣ. Đáp án A."},
+{id:20,topic:"Tích phân",q:"I=∬_D e^x dxdy với D={(x,y): 0≤x≤3, 0≤y≤1}. Mệnh đề nào đúng?",opts:["I=∫₀³dx∫₀¹e^x dy","I=∫₀³dy∫₀¹e^x dx","I=∫₀¹dx∫₀³e^x dy","I=∫₁³dx∫₀¹e^x dy"],ans:0,hint:"Viết tích phân lặp theo thứ tự tích phân theo x trước, y sau.",exp:"I=∫₀³(∫₀¹e^x dy)dx = ∫₀³dx∫₀¹e^x dy. Đáp án A."},
+{id:21,topic:"Tích phân",q:"I=∭_V xyz dxdydz với V={(x,y,z): 0≤x≤3, 0≤y≤1, 0≤z≤2}. Mệnh đề nào đúng?",opts:["I=∫₀³dx∫₀¹dy∫₀²xyz dz","I=∫₀³dx∫₁²dy∫₀¹xyz dz","I=∫₀³dy∫₀¹dx∫₁³xyz dz","I=∫₀³dy∫₀¹dx∫₀¹xyz dz"],ans:0,hint:"Viết tích phân lặp đúng theo cận đã cho cho x, y, z.",exp:"I=∫₀³dx∫₀¹dy∫₀²xyz dz. Đáp án A."},
+{id:22,topic:"Đại số tuyến tính",q:"Ma trận A_(3×4) biểu diễn lượng vật liệu, X⁰=(3;2;5;6)ᵀ. Tổng đơn vị vật liệu vừa đủ bằng?",opts:["55","139","145","130"],ans:1,hint:"Tính A·X⁰, rồi tính tổng các phần tử của vector kết quả.",exp:"A·X⁰ = tổng theo dòng:\nDòng 1: 4·3+2·2+1·5+4·6=12+4+5+24=45\nDòng 2: 5·3+4·2+2·5+1·6=15+8+10+6=39\nDòng 3: 6·3+5·2+3·5+2·6=18+10+15+12=55\nTổng=45+39+55=139. Đáp án B."},
+{id:26,topic:"Giới hạn & Liên tục",q:"Biết lim(x→0) [√(x²+ax+9)−(x+3)]/x = −2/3. Giá trị a bằng?",opts:["2","3","1","0"],ans:0,hint:"Nhân liên hợp hoặc dùng L'Hôpital. Chú ý dạng 0/0.",exp:"Nhân liên hợp: [x²+ax+9−(x+3)²]/[x(√(x²+ax+9)+(x+3))] = [x²+ax+9−x²−6x−9]/[...] = x(a−6)/[x·(...)]. Khi x→0: (a−6)/(3+3)=(a−6)/6=−2/3 → a−6=−4 → a=2. Đáp án A."},
+{id:27,topic:"Giới hạn & Liên tục",q:"f(x)=x³−3x+1 khi x<2; m khi x≥2. Giá trị m để f liên tục tại x=2?",opts:["1","2","3","0"],ans:2,hint:"f liên tục tại 2 khi lim(x→2⁻) f(x) = m.",exp:"lim(x→2⁻) (x³−3x+1) = 8−6+1 = 3 = m. Đáp án C."},
+{id:30,topic:"Chuỗi số",q:"Tổng của chuỗi Σn/2ⁿ (n=1→∞) bằng?",opts:["1","2","0","4"],ans:1,hint:"Dùng công thức Σn·xⁿ = x/(1−x)² với |x|<1. Đặt x=1/2.",exp:"Σn·xⁿ = x/(1−x)². Với x=1/2: Σn/2ⁿ = (1/2)/(1/2)² = (1/2)/(1/4) = 2. Đáp án B."},
+{id:32,topic:"Chuỗi số",q:"Với |x|<1, tổng của chuỗi lũy thừa Σxⁿ (n=1→∞) bằng?",opts:["x/(1−x)","x/(1+x)","1/(1−x)","1/(1+x)"],ans:0,hint:"Đây là chuỗi hình học với số hạng đầu x, công bội x.",exp:"Σxⁿ (n=1→∞) = x/(1−x) (chuỗi hình học). Lưu ý khác với Σxⁿ (n=0→∞)=1/(1−x). Đáp án A."},
+{id:33,topic:"Phương trình vi phân",q:"Nghiệm tổng quát của 2xdx−dy=0 là?",opts:["y=x²+C","y=2x+C","y=2x²+C","y=½x²+C"],ans:0,hint:"Phân ly: dy=2xdx, tích phân hai vế.",exp:"dy=2xdx → y=x²+C. Đáp án A."},
+{id:34,topic:"Phương trình vi phân",q:"Nghiệm tổng quát của y'=x/y là?",opts:["y²=x²+C","y=x²+C","y=2x²+C","y²=2x²+C"],ans:0,hint:"Phân ly: y·dy = x·dx, tích phân hai vế.",exp:"y·dy=x·dx → y²/2=x²/2+C₁ → y²=x²+C. Đáp án A."},
+{id:36,topic:"Tích phân",q:"D={(x,y): x²+y²≤1}. Giá trị ∬_D (x²+y²)dxdy bằng?",opts:["3π/2","π","π/2","2π/3"],ans:2,hint:"Chuyển sang tọa độ cực: x=rcosθ, y=rsinθ, dxdy=rdrdθ.",exp:"I=∫₀²π dθ ∫₀¹ r²·r dr = 2π·[r⁴/4]₀¹ = 2π·(1/4) = π/2. Đáp án C."},
+{id:37,topic:"Tích phân",q:"V={(x,y,z): 1≤x≤2, 0≤y≤3, 0≤z≤1}. Giá trị ∭_V y dxdydz bằng?",opts:["9/2","3/2","9","3"],ans:0,hint:"Tách tích phân: ∫₁²dx · ∫₀³y·dy · ∫₀¹dz.",exp:"I=[∫₁²dx][∫₀³y dy][∫₀¹dz] = 1·(9/2)·1 = 9/2. Đáp án A."},
+{id:38,topic:"Tích phân",q:"L là đoạn thẳng từ O(0;0) đến A(2;2). Giá trị ∫_L (x+y)ds bằng?",opts:["4√2","4","2√2","3"],ans:0,hint:"Tham số hóa L: x=t, y=t, t∈[0,2]. ds=√(x'²+y'²)dt=√2 dt.",exp:"x=t, y=t, ds=√2 dt. ∫₀²(t+t)√2 dt = 2√2·[t²/2]₀² = 2√2·2 = 4√2. Đáp án A."},
+{id:39,topic:"Ứng dụng",q:"Chất điểm M chuyển động trên đường tròn C bán kính 1m ngược chiều kim đồng hồ. Lực 1N theo tiếp tuyến. Công khi M đi một vòng bằng?",opts:["2π J","4π J","2 J","4 J"],ans:0,hint:"Công = Lực × quãng đường. Chu vi đường tròn bán kính 1 là 2π.",exp:"Lực luôn song song tiếp tuyến (cùng chiều chuyển động). W = F·s = 1·(2π·1) = 2π J. Đáp án A."},
+];
+
+let currentTopic = "Tất cả";
+let answered = {};
+let correct = 0;
+let done = 0;
+let filteredQ = [];
+let currentIdx = 0;
+
+function getFiltered(){
+  return currentTopic==="Tất cả" ? QS : QS.filter(q=>q.topic===currentTopic);
+}
+
+function updateStats(){
+  const pct = done>0 ? Math.round(correct/done*100) : 0;
+  document.getElementById('s-done').textContent=done;
+  document.getElementById('s-correct').textContent=correct;
+  document.getElementById('s-pct').textContent=pct+'%';
+  document.getElementById('prog').style.width=(QS.length>0?Math.round(Object.keys(answered).length/QS.length*100):0)+'%';
+}
+
+function renderTabs(){
+  const el=document.getElementById('tabs');
+  el.innerHTML='';
+  TOPICS.forEach(t=>{
+    const btn=document.createElement('button');
+    btn.className='tab'+(t===currentTopic?' active':'');
+    const count = t==="Tất cả" ? QS.length : QS.filter(q=>q.topic===t).length;
+    btn.textContent=`${t} (${count})`;
+    btn.onclick=()=>{currentTopic=t;filteredQ=getFiltered();currentIdx=0;renderTabs();renderQ();};
+    el.appendChild(btn);
+  });
+}
+
+function renderQ(){
+  filteredQ=getFiltered();
+  const el=document.getElementById('q-area');
+  if(!filteredQ.length){el.innerHTML='<p style="color:var(--color-text-secondary);font-size:14px">Không có câu hỏi.</p>';return;}
+  if(currentIdx>=filteredQ.length)currentIdx=filteredQ.length-1;
+  const q=filteredQ[currentIdx];
+  const isAnswered=answered[q.id]!==undefined;
+  const userAns=answered[q.id];
+
+  el.innerHTML=`
+<div class="q-card">
+  <div class="q-meta">Câu ${q.id} · ${currentIdx+1}/${filteredQ.length}</div>
+  <div class="q-topic-badge">${q.topic}</div>
+  <div class="q-text">${q.q}</div>
+  <div class="hint-box" id="hint">${q.hint}</div>
+  <div class="options" id="opts">
+    ${q.opts.map((o,i)=>{
+      let cls='opt';
+      if(isAnswered){
+        if(i===q.ans) cls+=' correct';
+        else if(i===userAns && userAns!==q.ans) cls+=' wrong';
+      }
+      return `<button class="${cls}" ${isAnswered?'disabled':''} onclick="choose(${q.id},${i})">${['A','B','C','D'][i]}. ${o}</button>`;
+    }).join('')}
+  </div>
+  <div class="explanation" id="exp" style="${isAnswered?'display:block':'display:none'}">${q.exp}</div>
+  <div class="btn-row">
+    ${!isAnswered?`<button onclick="toggleHint()">💡 Gợi ý</button>`:''}
+    <button class="btn-ask" onclick="askClaude(${q.id})">Giải thích chi tiết ↗</button>
+  </div>
+</div>
+<div class="nav-row">
+  <button onclick="prev()" ${currentIdx===0?'disabled':''}>← Trước</button>
+  <span class="q-counter">${currentIdx+1} / ${filteredQ.length}</span>
+  <button onclick="next()" ${currentIdx===filteredQ.length-1?'disabled':''}>Tiếp →</button>
+</div>`;
+}
+
+function choose(id, i){
+  const q=QS.find(x=>x.id===id);
+  if(!q||answered[id]!==undefined)return;
+  answered[id]=i;
+  done++;
+  if(i===q.ans)correct++;
+  updateStats();
+  renderQ();
+}
+
+function toggleHint(){
+  const h=document.getElementById('hint');
+  if(h)h.style.display=h.style.display==='block'?'none':'block';
+}
+
+function askClaude(id){
+  const q=QS.find(x=>x.id===id);
+  if(!q)return;
+  sendPrompt(`Câu ${q.id} đề minh họa Bộ Công An 2026: "${q.q}" — Em muốn hiểu rõ lời giải chi tiết bước bước cho câu này.`);
+}
+
+function prev(){if(currentIdx>0){currentIdx--;renderQ();}}
+function next(){if(currentIdx<filteredQ.length-1){currentIdx++;renderQ();}}
+
+filteredQ=getFiltered();
+renderTabs();
+renderQ();
+updateStats();
+</script>
