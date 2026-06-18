@@ -446,9 +446,9 @@ function doExitExam() {
   saveExamProgress();
   closeOverlay('modal-exit');
   _removeMobBar();
-  showScreen('screen-practice');
-  document.getElementById('btn-mode-practice').classList.add('active');
-  document.getElementById('btn-mode-exam').classList.remove('active');
+
+  // Khôi phục đúng phiên luyện chuyên đề
+  switchMode('practice');
 }
 
 function doSubmitExam() {
@@ -665,11 +665,10 @@ function closeOverlay(id) { document.getElementById(id)?.classList.add('hidden')
 
 function backFromResults() {
   _removeMobBar();
-  showScreen('screen-practice');
-  document.getElementById('btn-mode-practice')?.classList.add('active');
-  document.getElementById('btn-mode-exam')?.classList.remove('active');
-}
 
+  // Trở về đúng phiên luyện chuyên đề đã lưu
+  switchMode('practice');
+}
 /* ================================================================
    KEYBOARD — exam screen
 ================================================================ */
@@ -716,15 +715,72 @@ function _saveWrongBank(bank) {
     localStorage.setItem(WRONG_BANK_KEY, JSON.stringify(bank));
   } catch (e) { console.warn('Wrong bank save error', e); }
 }
+function _upsertWrongQuestion(bank, q, source) {
+  const key = _wrongKey(q);
 
+  const index = bank.findIndex(
+    item => _wrongKey(item) === key
+  );
+
+  const now = Date.now();
+
+  // Câu chưa từng có trong ngân hàng
+  if (index === -1) {
+    bank.push({
+      ...q,
+
+      _wrongAt: now,
+      _lastWrongAt: now,
+
+      _wrongCount: 1,
+      _wrongSources: [source]
+    });
+
+    return;
+  }
+
+  // Câu đã có: tăng số lần sai
+  const old = bank[index];
+
+  const previousCount =
+    Number(old._wrongCount) > 0
+      ? Number(old._wrongCount)
+      : 1;
+
+  const oldSources = Array.isArray(old._wrongSources)
+    ? old._wrongSources
+    : [];
+
+  bank[index] = {
+    ...old,
+    ...q,
+
+    // Giữ thời điểm sai đầu tiên
+    _wrongAt: old._wrongAt || now,
+
+    // Cập nhật lần sai gần nhất
+    _lastWrongAt: now,
+
+    // Cộng số lần sai
+    _wrongCount: previousCount + 1,
+
+    // Ghi nhận tất cả nguồn từng làm sai
+    _wrongSources: [
+      ...new Set([
+        ...oldSources,
+        source
+      ])
+    ]
+  };
+}
 // ── Thêm câu sai ─────────────────────────────────────────────
 
-function addToWrongBank(q) {
+function addToWrongBank(q, source = 'practice') {
   const bank = getWrongBank();
-  if (!bank.find(x => _wrongKey(x) === _wrongKey(q))) {
-    bank.push({ ...q, _wrongAt: Date.now() });
-    _saveWrongBank(bank);
-  }
+
+  _upsertWrongQuestion(bank, q, source);
+
+  _saveWrongBank(bank);
   updateWrongBadge();
 }
 
@@ -740,29 +796,52 @@ function removeFromWrongBank(q) {
 
 function saveWrongToBank(details) {
   const bank = getWrongBank();
-  let added = 0;
+  let hasWrong = false;
+
   details.forEach(({ q, isOk }) => {
     if (isOk) return;
-    if (!bank.find(x => _wrongKey(x) === _wrongKey(q))) {
-      bank.push({ ...q, _wrongAt: Date.now() });
-      added++;
-    }
+
+    _upsertWrongQuestion(
+      bank,
+      q,
+      'exam'
+    );
+
+    hasWrong = true;
   });
-  if (added > 0) { _saveWrongBank(bank); updateWrongBadge(); }
+
+  if (hasWrong) {
+    _saveWrongBank(bank);
+    updateWrongBadge();
+  }
 }
 
 // ── Reset / Xóa ngân hàng ────────────────────────────────────
 
 function clearWrongBank() {
   const n = getWrongBank().length;
-  if (!n) { alert('Ngân hàng câu sai đang trống!'); return; }
-  if (!confirm(`Xóa toàn bộ ${n} câu trong ngân hàng sai?\nHành động này không thể hoàn tác.`)) return;
+
+  if (!n) {
+    alert('Ngân hàng câu sai đang trống!');
+    return;
+  }
+
+  const accepted = confirm(
+    `Xóa toàn bộ ${n} câu trong ngân hàng sai?\n` +
+    'Hành động này không thể hoàn tác.'
+  );
+
+  if (!accepted) return;
+
+  // Xóa kho câu sai chung
   localStorage.removeItem(WRONG_BANK_KEY);
-  updateWrongBadge();
-  // Cập nhật badge (không overwrite textContent vì có badge span bên trong)
+
+  // Xóa phiên đang luyện câu sai
+  localStorage.removeItem('vb2_wrong_practice');
+
   updateWrongBadge();
   hideWrongBankControls();
-  // Thông báo nhẹ không dùng alert — hiện toast
+
   showToast('✅ Đã xóa ngân hàng câu sai!');
 }
 
@@ -783,65 +862,7 @@ function updateWrongBadge() {
 
 // ── Bắt đầu phiên luyện câu sai ─────────────────────────────
 
-function startWrongBankSession() {
-  const bank = getWrongBank();
-  if (!bank.length) {
-    // Hiện modal thay vì alert
-    const modal = document.getElementById('modal-wrong-empty');
-    if (modal) { modal.classList.remove('hidden'); }
-    else { alert('Ngân hàng câu sai trống!\nHãy làm bài thi thử hoặc luyện theo chủ đề để thêm câu sai vào đây.'); }
-    return;
-  }
 
-  // Shuffle và chuẩn bị câu hỏi
-  const qs = shuffleArr([...bank]).map(q => {
-    // Shuffle đáp án và ghi nhớ đáp án đúng mới
-    const origCorrect = q.correct;
-    const opts = shuffleArr([...q.options]);
-    return { ...q, options: opts, correct: origCorrect, _wrongMode: true };
-  });
-
-  // Chuyển sang practice mode với câu từ wrong bank
-  loadWrongBankPractice(qs);
-}
-
-// ── Load câu sai vào engine practice ────────────────────────
-
-function loadWrongBankPractice(qs) {
-  _removeMobBar();
-  switchMode('wrong');
-  setTimeout(() => {
-    // Reset state
-    questions = qs;
-    userAnswers = Array(qs.length).fill(-1);
-    grades = Array(qs.length).fill(null);
-    current = 0;
-    answered = false;
-    selectedIdx = -1;
-    totalDone = 0;
-    totalRight = 0;
-    totalWrong = 0;
-
-    // Cập nhật UI
-    const navInfo = document.getElementById('nav-info');
-    if (navInfo) navInfo.textContent = `Ôn ${qs.length} câu sai`;
-
-    ['s-tot', 's-rig', 's-wro'].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.textContent = '0';
-    });
-
-    const sCur = document.getElementById('s-cur');
-    if (sCur) sCur.textContent = '1';
-
-    // Ẩn toolbar chọn chủ đề, hiện nút quản lý bank
-    showWrongBankControls(qs.length);
-
-    renderQ();
-    if (typeof updateProgress === 'function') updateProgress();
-    saveProgress();
-  }, 120);
-}
 
 // ── Hiện controls quản lý trong practice mode ───────────────
 
