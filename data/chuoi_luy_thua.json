@@ -272,24 +272,6 @@
   {
     "id": 16,
     "type": "power_series_sum",
-    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}=e^x\\) áp dụng với",
-    "matrix": null,
-    "options": [
-      "Mọi \\(x\\in\\mathbb{R}\\)",
-      "\\(|x|<1\\)",
-      "\\(x>0\\)",
-      "\\(x\\in[-1,1]\\)"
-    ],
-    "correct": "Mọi \\(x\\in\\mathbb{R}\\)",
-    "solution": "Chuỗi Taylor của \\(e^x\\) hội tụ với mọi \\(x\\in\\mathbb{R}\\) (bán kính \\(R=+\\infty\\)).",
-    "quick": "\\(e^x=\\sum x^n/n!\\) với mọi \\(x\\). Công thức cực kỳ quan trọng!",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 1,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 17,
-    "type": "power_series_sum",
     "question": "Chuỗi Taylor: \\(\\sin x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{(2n+1)!}\\) áp dụng với",
     "matrix": null,
     "options": [
@@ -306,33 +288,15 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 18,
-    "type": "power_series_sum",
-    "question": "Chuỗi Taylor: \\(\\cos x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n}}{(2n)!}\\). Tính \\(\\cos 0\\).",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(-1\\)",
-      "\\(\\pi\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "Tại \\(x=0\\): \\(\\cos0=\\sum\\dfrac{(-1)^n\\cdot0^{2n}}{(2n)!}=1+0+0+\\cdots=1\\). (Số hạng đầu \\(n=0\\): \\(0^0=1\\).)",
-    "quick": "\\(x=0\\): chỉ số hạng \\(n=0\\) còn lại: \\((-1)^0\\cdot0^0/0!=1\\)",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 1,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 19,
+    "id": 17,
     "type": "power_series_sum",
     "question": "Khai triển \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\) áp dụng với",
     "matrix": null,
     "options": [
       "\\(-1<x\\leq1\\)",
+      "\\(-1\\leq x<1\\)",
       "\\(-1<x<1\\)",
-      "\\(|x|<1\\)",
-      "Mọi \\(x\\)"
+      "\\([-1,1]\\)"
     ],
     "correct": "\\(-1<x\\leq1\\)",
     "solution": "\\(R=1\\). Tại \\(x=1\\): chuỗi \\(\\sum(-1)^{n-1}/n\\) hội tụ (Leibniz). Tại \\(x=-1\\): \\(-\\sum1/n\\) phân kỳ. Miền: \\((-1,1]\\).",
@@ -342,7 +306,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 20,
+    "id": 18,
     "type": "power_series_sum",
     "question": "Tổng của \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{2n+1}=1-\\dfrac{1}{3}+\\dfrac{1}{5}-\\cdots\\) là",
     "matrix": null,
@@ -360,7 +324,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 21,
+    "id": 19,
     "type": "power_series_sum",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{x^n}{n}\\) hội tụ tới",
     "matrix": null,
@@ -378,25 +342,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 22,
-    "type": "power_series_sum",
-    "question": "Chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\) hội tụ tới",
-    "matrix": null,
-    "options": [
-      "\\(\\arctan x\\)",
-      "\\(\\sin x\\)",
-      "\\(\\cos x\\)",
-      "\\(\\ln(1+x)\\)"
-    ],
-    "correct": "\\(\\arctan x\\)",
-    "solution": "\\(\\arctan x=x-\\dfrac{x^3}{3}+\\dfrac{x^5}{5}-\\cdots=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\), \\(|x|\\leq1\\).",
-    "quick": "\\(\\arctan x=\\sum\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\) — khai triển Taylor của arctg",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 23,
+    "id": 20,
     "type": "power_series_radius",
     "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(2x)^n}{3^n}\\) là",
     "matrix": null,
@@ -414,7 +360,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 24,
+    "id": 21,
     "type": "power_series_domain",
     "question": "Miền hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(x-3)^n}{n+1}\\) là",
     "matrix": null,
@@ -432,7 +378,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 25,
+    "id": 22,
     "type": "power_series_expansion",
     "question": "Khai triển \\(f(x)=\\dfrac{1}{1+x}\\) thành chuỗi lũy thừa và tìm miền hội tụ.",
     "matrix": null,
@@ -450,7 +396,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 26,
+    "id": 23,
     "type": "power_series_expansion",
     "question": "Khai triển \\(f(x)=\\ln(1+x)\\) thành chuỗi Maclaurin.",
     "matrix": null,
@@ -468,7 +414,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 27,
+    "id": 24,
     "type": "power_series_expansion",
     "question": "Khai triển \\(f(x)=\\dfrac{1}{3-x}\\) thành chuỗi lũy thừa tại \\(x=0\\).",
     "matrix": null,
@@ -486,7 +432,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 28,
+    "id": 25,
     "type": "power_series_expansion",
     "question": "Khai triển \\(f(x)=\\dfrac{x^2}{2-x}\\) thành chuỗi lũy thừa.",
     "matrix": null,
@@ -504,7 +450,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 29,
+    "id": 26,
     "type": "power_series_expansion",
     "question": "Khai triển \\(f(x)=\\ln(3-x)\\) tại \\(x=0\\) và tìm miền hội tụ.",
     "matrix": null,
@@ -522,7 +468,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 30,
+    "id": 27,
     "type": "power_series_expansion",
     "question": "Khai triển \\(f(x)=\\arctan x\\) thành chuỗi Maclaurin và cho biết miền hội tụ.",
     "matrix": null,
@@ -540,7 +486,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 31,
+    "id": 28,
     "type": "power_series_sum",
     "question": "Tính tổng chuỗi lũy thừa \\(S(x)=\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\) trong miền hội tụ.",
     "matrix": null,
@@ -558,7 +504,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 32,
+    "id": 29,
     "type": "power_series_radius",
     "question": "Chuỗi lũy thừa \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{(x-2)^n}{3^n}\\) có tâm và bán kính hội tụ lần lượt là",
     "matrix": null,
@@ -576,25 +522,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 33,
-    "type": "power_series_domain",
-    "question": "Với chuỗi \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}\\), khẳng định nào đúng tại \\(x=-10\\)?",
-    "matrix": null,
-    "options": [
-      "Chuỗi hội tụ tuyệt đối",
-      "Chuỗi phân kỳ",
-      "Chuỗi chỉ hội tụ có điều kiện",
-      "Không xác định được"
-    ],
-    "correct": "Chuỗi hội tụ tuyệt đối",
-    "solution": "Theo D'Alembert, \\(\\left|u_{n+1}/u_n\\right|=|x|/(n+1)\\to0<1\\) với mọi \\(x\\). Do đó tại \\(x=-10\\), chuỗi vẫn hội tụ tuyệt đối.",
-    "quick": "Có \\(n!\\) ở mẫu nên bán kính hội tụ bằng \\(+\\infty\\).",
-    "casio": "Có thể tính vài tổng riêng tại \\(x=-10\\), nhưng kết luận chuẩn dùng D'Alembert: \\(|x|/(n+1)\\to0\\).",
-    "difficulty": 1,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 34,
+    "id": 30,
     "type": "power_series_sum",
     "question": "Với \\(|x|<1\\), tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}x^n\\) bằng",
     "matrix": null,
@@ -612,8 +540,8 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 35,
-    "type": "power_series_radius",
+    "id": 31,
+    "type": "power_series_radius_short_answer_style",
     "question": "Biết chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{3^n x^n}{n+2^n}\\) có bán kính hội tụ \\(R=\\dfrac{a}{b}\\) tối giản. Tính \\(5a+3b\\).",
     "matrix": null,
     "options": [
@@ -630,7 +558,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 36,
+    "id": 32,
     "type": "power_series_radius",
     "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n^2}{4^n}(x-2)^n\\) là",
     "matrix": null,
@@ -648,7 +576,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 37,
+    "id": 33,
     "type": "power_series_domain",
     "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(x+1)^n}{n}\\) là",
     "matrix": null,
@@ -666,7 +594,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 38,
+    "id": 34,
     "type": "power_series_domain",
     "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(x-1)^n}{n^2 2^n}\\) là",
     "matrix": null,
@@ -684,7 +612,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 39,
+    "id": 35,
     "type": "power_series_expansion",
     "question": "Khai triển Maclaurin của \\(\\dfrac{1}{2+x}\\) là",
     "matrix": null,
@@ -702,7 +630,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 40,
+    "id": 36,
     "type": "power_series_coefficient",
     "question": "Hệ số của \\(x^4\\) trong khai triển Maclaurin của \\(e^{2x}\\) là",
     "matrix": null,
@@ -720,7 +648,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 41,
+    "id": 37,
     "type": "power_series_expansion",
     "question": "Khai triển Maclaurin của \\(\\ln(1-x)\\) đến bậc ba là",
     "matrix": null,
@@ -738,7 +666,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 42,
+    "id": 38,
     "type": "power_series_sum",
     "question": "Tính \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n}{2^n}\\).",
     "matrix": null,
@@ -756,7 +684,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 43,
+    "id": 39,
     "type": "power_series_sum",
     "question": "Tính \\(\\displaystyle\\sum_{n=2}^{\\infty}\\dfrac{n(n-1)}{2^n}\\).",
     "matrix": null,
@@ -774,7 +702,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 44,
+    "id": 40,
     "type": "power_series_radius",
     "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{n+1}{5^n}(x-1)^n\\) là",
     "matrix": null,
@@ -792,7 +720,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 45,
+    "id": 41,
     "type": "power_series_parameter",
     "question": "Cho \\(a\\ne0\\). Chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{a^n x^n}{n}\\) có bán kính hội tụ bằng 2. Khi đó",
     "matrix": null,
@@ -810,25 +738,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 46,
-    "type": "maclaurin",
-    "question": "Khai triển Maclaurin của \\(f(x)=\\dfrac{1}{1-x}\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=0}^{\\infty}x^n=1+x+x^2+\\ldots\\)",
-      "\\(\\sum_{n=1}^{\\infty}x^n\\)",
-      "\\(1-x+x^2-x^3+\\ldots\\)",
-      "\\(e^x\\)"
-    ],
-    "correct": "\\(\\sum_{n=0}^{\\infty}x^n=1+x+x^2+\\ldots\\)",
-    "solution": "Đây là chuỗi hình học với công bội \\(x\\):\n\n\\(\\dfrac{1}{1-x}=\\sum_{n=0}^{\\infty}x^n=1+x+x^2+x^3+\\ldots\\).\n\nChuỗi hội tụ khi \\(|x|<1\\).",
-    "quick": "\\(\\dfrac{1}{1-x}=1+x+x^2+x^3+\\ldots\\), \\(|x|<1\\).",
-    "casio": "CASIO: Chọn một giá trị như x=0.1; so sánh 1/(1-x) với tổng hữu hạn 1+x+x²+... để kiểm tra.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 47,
+    "id": 42,
     "type": "maclaurin",
     "question": "Khai triển Maclaurin của \\(f(x)=e^x\\) đến bậc 3 là?",
     "matrix": null,
@@ -842,11 +752,11 @@
     "solution": "\\(e^x=\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}=1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\dfrac{x^4}{4!}+\\ldots\\). Chuỗi hội tụ với mọi \\(x\\in\\mathbb{R}\\).",
     "quick": "\\(e^x=1+x+x^2/2!+x^3/3!+\\ldots\\).",
     "casio": "CASIO: Với x nhỏ, so sánh e^x với 1+x+x²/2!+x³/3! để kiểm tra xấp xỉ.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 48,
+    "id": 43,
     "type": "maclaurin",
     "question": "Khai triển \\(f(x)=\\ln\\dfrac{3+x}{2-x}\\) thành chuỗi lũy thừa tại \\(x=0\\) là",
     "matrix": null,

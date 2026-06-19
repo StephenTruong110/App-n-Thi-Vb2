@@ -159,7 +159,7 @@
     "quick": "\\(f'(x)=\\lim_{h\\to0}\\dfrac{f(x+h)-f(x)}{h}\\) — định nghĩa đạo hàm bằng giới hạn",
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 10,
@@ -177,7 +177,7 @@
     "quick": "Hàm |x| có điểm gãy tại 0 → không khả vi",
     "casio": "d/dx(|x|) tại 0 không xác định",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 11,
@@ -195,7 +195,7 @@
     "quick": "Đạo hàm tiến vô cùng → không khả vi (tiếp tuyến đứng)",
     "casio": "d/dx(x^(1/3)) tại 0 không xác định",
     "difficulty": 2,
-    "topic": "Đạo hàm"
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 12,
@@ -213,7 +213,7 @@
     "quick": "Khả vi \\(\\Rightarrow\\) liên tục",
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
     "difficulty": 1,
-    "topic": "Đạo hàm"
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 13,
@@ -231,7 +231,7 @@
     "quick": "Đạo hàm trái =2, phải = a → a=2; liên tục → 1=a+b → b=-1",
     "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
     "difficulty": 3,
-    "topic": "Đạo hàm"
+    "topic": "Giới hạn & Liên tục"
   },
   {
     "id": 14,

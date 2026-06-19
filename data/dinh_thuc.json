@@ -2,7 +2,7 @@
   {
     "id": 1,
     "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 2 \\\\ 3 & 4\\end{pmatrix}$.",
     "matrix": [
       [
         1,
@@ -29,7 +29,7 @@
   {
     "id": 2,
     "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}2 & -1 \\\\ 5 & 3\\end{pmatrix}$.",
     "matrix": [
       [
         2,
@@ -56,7 +56,7 @@
   {
     "id": 3,
     "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}-1 & 2 \\\\ 3 & -4\\end{pmatrix}$.",
     "matrix": [
       [
         -1,
@@ -83,7 +83,7 @@
   {
     "id": 4,
     "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}5 & 3 \\\\ 2 & 1\\end{pmatrix}$.",
     "matrix": [
       [
         5,
@@ -110,7 +110,7 @@
   {
     "id": 5,
     "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}4 & 0 \\\\ -2 & 3\\end{pmatrix}$.",
     "matrix": [
       [
         4,
@@ -137,7 +137,7 @@
   {
     "id": 6,
     "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}0 & 2 \\\\ -3 & 1\\end{pmatrix}$.",
     "matrix": [
       [
         0,
@@ -164,7 +164,7 @@
   {
     "id": 7,
     "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}7 & -1 \\\\ 2 & 5\\end{pmatrix}$.",
     "matrix": [
       [
         7,
@@ -190,35 +190,8 @@
   },
   {
     "id": 8,
-    "type": "det2",
-    "question": "Tính định thức của ma trận $A$.",
-    "matrix": [
-      [
-        3,
-        4
-      ],
-      [
-        -2,
-        1
-      ]
-    ],
-    "options": [
-      "11",
-      "-11",
-      "-5",
-      "0"
-    ],
-    "correct": "11",
-    "solution": "$\\det(A)=3\\cdot(1)-(4)\\cdot(-2)=11$.",
-    "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
-    "difficulty": 2,
-    "topic": "Định thức & khả nghịch"
-  },
-  {
-    "id": 9,
     "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 2 & 0 \\\\ 0 & 3 & 1 \\\\ 2 & 0 & 1\\end{pmatrix}$.",
     "matrix": [
       [
         1,
@@ -250,9 +223,9 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 10,
+    "id": 9,
     "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}2 & 1 & 3 \\\\ 0 & -1 & 2 \\\\ 1 & 4 & 0\\end{pmatrix}$.",
     "matrix": [
       [
         2,
@@ -284,9 +257,9 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 11,
+    "id": 10,
     "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 1 & 1 \\\\ 1 & 2 & 3 \\\\ 2 & 1 & 0\\end{pmatrix}$.",
     "matrix": [
       [
         1,
@@ -318,9 +291,9 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 12,
+    "id": 11,
     "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}3 & 2 & 1 \\\\ 2 & 5 & 3 \\\\ 3 & 4 & 3\\end{pmatrix}$.",
     "matrix": [
       [
         3,
@@ -352,9 +325,9 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 13,
+    "id": 12,
     "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 2 & 0 \\\\ 2 & 3 & 1 \\\\ 3 & 2 & 0\\end{pmatrix}$.",
     "matrix": [
       [
         1,
@@ -386,9 +359,9 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 14,
+    "id": 13,
     "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}2 & 0 & 1 \\\\ 1 & 3 & 2 \\\\ 0 & 4 & 1\\end{pmatrix}$.",
     "matrix": [
       [
         2,
@@ -420,43 +393,9 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 15,
+    "id": 14,
     "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
-    "matrix": [
-      [
-        1,
-        -1,
-        2
-      ],
-      [
-        2,
-        0,
-        3
-      ],
-      [
-        4,
-        1,
-        0
-      ]
-    ],
-    "options": [
-      "-11",
-      "11",
-      "-9",
-      "-13"
-    ],
-    "correct": "-11",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=-11$.",
-    "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
-    "difficulty": 2,
-    "topic": "Định thức & khả nghịch"
-  },
-  {
-    "id": 16,
-    "type": "det3",
-    "question": "Tính định thức của ma trận $A$.",
+    "question": "Tính định thức của $A=\\begin{pmatrix}3 & 0 & 2 \\\\ 1 & 1 & -1 \\\\ 2 & 4 & 1\\end{pmatrix}$.",
     "matrix": [
       [
         3,
@@ -488,7 +427,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 17,
+    "id": 15,
     "type": "det_triangular",
     "question": "Định thức của ma trận $A=\\begin{pmatrix}2&1&3\\\\0&-1&4\\\\0&0&5\\end{pmatrix}$ bằng",
     "matrix": null,
@@ -506,7 +445,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 18,
+    "id": 16,
     "type": "det_property",
     "question": "Cho $\\det(A)=3$. Tính $\\det(A^2)$.",
     "matrix": null,
@@ -524,7 +463,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 19,
+    "id": 17,
     "type": "det_property",
     "question": "Cho $\\det(A)=-4$. Tính $\\det(A^T)$.",
     "matrix": null,
@@ -542,7 +481,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 20,
+    "id": 18,
     "type": "det_property",
     "question": "Cho $A$ cấp 3 và $\\det(A)=2$. Tính $\\det(2A)$.",
     "matrix": null,
@@ -560,7 +499,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 21,
+    "id": 19,
     "type": "det_property",
     "question": "Cho $A$ cấp 2 và $\\det(A)=5$. Tính $\\det(3A)$.",
     "matrix": null,
@@ -578,7 +517,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 22,
+    "id": 20,
     "type": "det_property",
     "question": "Cho $\\det(A)=4$. Tính $\\det(A^{-1})$.",
     "matrix": null,
@@ -596,7 +535,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 23,
+    "id": 21,
     "type": "det_property",
     "question": "Cho $\\det(A)=2$, $\\det(B)=-3$. Tính $\\det(AB)$.",
     "matrix": null,
@@ -614,7 +553,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 24,
+    "id": 22,
     "type": "det_property",
     "question": "Cho $\\det(A)=-2$. Tính $\\det(A^3)$.",
     "matrix": null,
@@ -632,7 +571,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 25,
+    "id": 23,
     "type": "det_property",
     "question": "Cho $A$ cấp 3, $\\det(A)=2$. Tính $\\det(2A^T)$.",
     "matrix": null,
@@ -650,7 +589,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 26,
+    "id": 24,
     "type": "row_operation",
     "question": "Đổi chỗ hai hàng của ma trận vuông $A$ được ma trận $B$. Khi đó",
     "matrix": null,
@@ -668,7 +607,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 27,
+    "id": 25,
     "type": "row_operation",
     "question": "Nhân một hàng của $A$ với 3 được $B$. Nếu $\\det(A)=5$ thì $\\det(B)$ bằng",
     "matrix": null,
@@ -686,7 +625,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 28,
+    "id": 26,
     "type": "row_operation",
     "question": "Cộng 4 lần hàng 1 vào hàng 2 của $A$ để được $B$. Khi đó",
     "matrix": null,
@@ -704,7 +643,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 29,
+    "id": 27,
     "type": "det_zero",
     "question": "Nếu ma trận vuông $A$ có hai hàng bằng nhau thì",
     "matrix": null,
@@ -722,7 +661,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 30,
+    "id": 28,
     "type": "det_triangular",
     "question": "Nếu $A$ là ma trận tam giác cấp $n$ thì $\\det(A)$ bằng",
     "matrix": null,
@@ -740,7 +679,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 31,
+    "id": 29,
     "type": "invertible_count",
     "question": "Cho $A=\\begin{pmatrix}1&1\\\\1&m\\end{pmatrix}$. Có bao nhiêu giá trị nguyên $m\\in(0;4)$ để $A$ khả nghịch?",
     "matrix": null,
@@ -758,7 +697,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 32,
+    "id": 30,
     "type": "invertible_parameter",
     "question": "Ma trận $A=\\begin{pmatrix}m&2\\\\3&1\\end{pmatrix}$ khả nghịch khi",
     "matrix": null,
@@ -776,7 +715,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 33,
+    "id": 31,
     "type": "invertible_parameter",
     "question": "Ma trận $A=\\begin{pmatrix}1&1&3\\\\2&2&0\\\\2&m&1\\end{pmatrix}$ khả nghịch khi",
     "matrix": null,
@@ -794,7 +733,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 34,
+    "id": 32,
     "type": "invertible_parameter",
     "question": "Ma trận $A=\\begin{pmatrix}1&m&0\\\\0&1&m\\\\m&0&1\\end{pmatrix}$ không khả nghịch khi",
     "matrix": null,
@@ -812,7 +751,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 35,
+    "id": 33,
     "type": "rank_det",
     "question": "Cho ma trận vuông $A$ cấp 3. Phát biểu đúng là",
     "matrix": null,
@@ -830,7 +769,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 36,
+    "id": 34,
     "type": "rank_det",
     "question": "Cho ma trận vuông $A$ cấp 4 và $\\det(A)=0$. Kết luận chắc chắn là",
     "matrix": null,
@@ -848,7 +787,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 37,
+    "id": 35,
     "type": "linked_determinant",
     "question": "Cho $A=\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}$. Định thức của $A$ bằng",
     "matrix": null,
@@ -866,7 +805,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 38,
+    "id": 36,
     "type": "short_answer_style",
     "question": "Cho $A=(a_{ij})$ cấp 3 với $a_{ij}=i^2+j-\\min\\{i,j\\}$. Tính $\\det(2A^T)$.",
     "matrix": null,
@@ -884,7 +823,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 39,
+    "id": 37,
     "type": "det_from_eigenvalues",
     "question": "Ma trận cấp 3 có các trị riêng $1,2,-3$. Định thức của ma trận bằng",
     "matrix": null,
@@ -902,7 +841,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 40,
+    "id": 38,
     "type": "rank_parameter",
     "question": "Cho $A=\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&m\\end{pmatrix}$. Hạng của $A$ bằng 2 khi",
     "matrix": null,
@@ -920,7 +859,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 41,
+    "id": 39,
     "type": "inverse_scaled_determinant",
     "question": "Cho $A$ là ma trận khả nghịch cấp 3 và $\\det(A)=-2$. Đặt $B=3A^{-1}$. Khi đó $\\det(B)$ bằng",
     "matrix": null,
@@ -938,7 +877,7 @@
     "topic": "Định thức & khả nghịch"
   },
   {
-    "id": 42,
+    "id": 40,
     "type": "row_operation_chain",
     "question": "Cho ma trận vuông cấp 4 có $\\det(A)=2$. Từ $A$, nhân hàng 1 với $-2$, đổi chỗ hàng 2 và hàng 3, rồi cộng 5 lần hàng 1 vào hàng 4 để được $B$. Tính $\\det(B)$.",
     "matrix": null,
@@ -956,7 +895,7 @@
     "topic": "Định thức & biến đổi sơ cấp"
   },
   {
-    "id": 43,
+    "id": 41,
     "type": "invertible_integer_count",
     "question": "Cho $A=\\begin{pmatrix}m&1&0\\\\1&m&1\\\\0&1&m\\end{pmatrix}$. Có bao nhiêu giá trị nguyên $m\\in[-2;2]$ để $A$ khả nghịch?",
     "matrix": null,
@@ -974,7 +913,7 @@
     "topic": "Định thức & tham số"
   },
   {
-    "id": 44,
+    "id": 42,
     "type": "determinant_equation",
     "question": "Tổng các nghiệm thực của phương trình $\\det\\begin{pmatrix}x&1&1\\\\1&x&1\\\\1&1&x\\end{pmatrix}=0$ bằng",
     "matrix": null,
@@ -992,7 +931,7 @@
     "topic": "Phương trình định thức"
   },
   {
-    "id": 45,
+    "id": 43,
     "type": "adjugate_determinant",
     "question": "Cho $A$ là ma trận cấp 3 và $\\det(A)=4$. Định thức của ma trận phụ hợp $\\operatorname{adj}(A)$ bằng",
     "matrix": null,
@@ -1010,7 +949,7 @@
     "topic": "Định thức & ma trận phụ hợp"
   },
   {
-    "id": 46,
+    "id": 44,
     "type": "compound_determinant",
     "question": "Cho $A,B$ là các ma trận khả nghịch cấp 2, $\\det(A)=-3$, $\\det(B)=2$. Tính $\\det(A^TB^{-1}A)$.",
     "matrix": null,
@@ -1028,7 +967,7 @@
     "topic": "Tính chất định thức"
   },
   {
-    "id": 47,
+    "id": 45,
     "type": "rank_parameter_minor",
     "question": "Cho $A=\\begin{pmatrix}1&1&1\\\\1&m&1\\\\1&1&0\\end{pmatrix}$. Hạng của $A$ bằng 2 khi",
     "matrix": null,
@@ -1046,7 +985,7 @@
     "topic": "Định thức & hạng"
   },
   {
-    "id": 48,
+    "id": 46,
     "type": "structured_determinant",
     "question": "Tính định thức của ma trận $A$ cấp 4 có các phần tử trên đường chéo chính bằng 2 và các phần tử ngoài đường chéo bằng 1.",
     "matrix": null,
@@ -1064,7 +1003,7 @@
     "topic": "Định thức ma trận đặc biệt"
   },
   {
-    "id": 49,
+    "id": 47,
     "type": "adjugate_rank",
     "question": "Cho $A$ là ma trận cấp 3 có $\\operatorname{rank}(A)=2$. Hạng của $\\operatorname{adj}(A)$ bằng",
     "matrix": null,
@@ -1082,7 +1021,7 @@
     "topic": "Định thức & hạng"
   },
   {
-    "id": 50,
+    "id": 48,
     "type": "transpose_inverse_scaled",
     "question": "Cho $A,B$ là các ma trận khả nghịch cấp 3, $\\det(A)=3$, $\\det(B)=-4$. Tính $\\det(2A^TB^{-1})$.",
     "matrix": null,

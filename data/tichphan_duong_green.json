@@ -15,28 +15,10 @@
     "quick": "Tích phân loại 1 của \\(f=1\\) = độ dài cung = \\(\\sqrt{9+16}=5\\)",
     "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
     "id": 2,
-    "type": "line_integral_type1",
-    "question": "Tính \\(\\int_C (x+y)\\,ds\\) với \\(C\\) là đoạn thẳng \\(y=x\\) từ \\((0,0)\\) đến \\((1,1)\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\sqrt{2}\\)",
-      "\\(2\\)",
-      "\\(\\dfrac{\\sqrt{2}}{2}\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(\\sqrt{2}\\)",
-    "solution": "Tham số: \\(x=t,y=t\\), \\(t: 0\\to1\\). \\(ds=\\sqrt{1+1}\\,dt=\\sqrt{2}\\,dt\\).\n\\(I=\\int_0^1 2t\\cdot\\sqrt{2}\\,dt=2\\sqrt{2}\\cdot\\dfrac{1}{2}=\\sqrt{2}\\).",
-    "quick": "\\(I=\\int_0^1 2t\\sqrt{2}\\,dt=\\sqrt{2}\\)",
-    "casio": "CASIO: Tích phân đường loại 1: ∫_C f ds = ∫_a^b f(x(t),y(t))·√(x'²+y'²) dt. Tính √(x'²+y'²) trước rồi dùng ∫dx trên CASIO để tính tích phân theo t.",
-    "difficulty": 2,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 3,
     "type": "line_integral_type1",
     "question": "Tính \\(\\int_C \\sqrt{x^2+y^2}\\,ds\\) với \\(C\\): đường tròn \\(x^2+y^2=R^2\\).",
     "matrix": null,
@@ -51,10 +33,10 @@
     "quick": "\\(\\sqrt{x^2+y^2}=R\\) trên \\(C\\) → \\(I=R\\cdot|C|=R\\cdot2\\pi R=2\\pi R^2\\)",
     "casio": "f=R (hằng số trên C), độ dài C=2πR → I=R·2πR=2πR²",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 4,
+    "id": 3,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C P\\,dx+Q\\,dy\\) với \\(P=x\\), \\(Q=y\\), \\(C\\): \\(y=x^2\\) từ \\((0,0)\\) đến \\((1,1)\\).",
     "matrix": null,
@@ -69,10 +51,10 @@
     "quick": "\\(\\int_0^1(t+2t^3)dt=\\frac{1}{2}+\\frac{1}{2}=1\\)",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 5,
+    "id": 4,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C -y\\,dx+x\\,dy\\) với \\(C\\): đường tròn \\(x=\\cos t\\), \\(y=\\sin t\\), \\(t: 0\\to2\\pi\\) (ngược chiều kim đồng hồ).",
     "matrix": null,
@@ -87,10 +69,10 @@
     "quick": "\\(I=\\int_0^{2\\pi}1\\,dt=2\\pi\\) (dùng \\(\\sin^2+\\cos^2=1\\))",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 6,
+    "id": 5,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C y^2\\,dx-x^2\\,dy\\) với \\(C\\): đoạn thẳng từ \\((0,0)\\) đến \\((1,0)\\).",
     "matrix": null,
@@ -105,10 +87,10 @@
     "quick": "\\(y=0\\), \\(dy=0\\) → cả hai số hạng đều bằng 0 → \\(I=0\\)",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 7,
+    "id": 6,
     "type": "green_theorem",
     "question": "Công thức Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D\\left(\\dfrac{\\partial Q}{\\partial x}-\\dfrac{\\partial P}{\\partial y}\\right)dA\\) áp dụng khi \\(C\\) đi theo chiều",
     "matrix": null,
@@ -123,10 +105,10 @@
     "quick": "Green: chiều dương = ngược chiều kim đồng hồ (miền ở bên trái)",
     "casio": "Chiều dương: vùng D luôn ở phía tay trái khi đi trên C",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 8,
+    "id": 7,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C 2xy\\,dx+(x^2+y^2)\\,dy\\) với \\(C\\) là biên hình vuông \\([0,1]\\times[0,1]\\) (ngược chiều KĐH).",
     "matrix": null,
@@ -141,10 +123,10 @@
     "quick": "\\(Q'_x-P'_y=2x-2x=0\\) → \\(I=0\\) (trường thế!)",
     "casio": "Q'_x=2x=P'_y → điều kiện trường thế → I=0",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 9,
+    "id": 8,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C (x-y)\\,dx+(x+y)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH).",
     "matrix": null,
@@ -159,10 +141,10 @@
     "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa đơn vị \\(=\\pi\\). \\(I=2\\pi\\)",
     "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 10,
+    "id": 9,
     "type": "green_theorem",
     "question": "Dùng Green tính diện tích của miền \\(D\\) qua công thức \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\). Với \\(C\\) là đường tròn \\(x^2+y^2=R^2\\) (ngược KĐH), ta có",
     "matrix": null,
@@ -177,10 +159,10 @@
     "quick": "\\(P=-y\\), \\(Q=x\\): \\(Q'_x-P'_y=2\\) → \\(\\oint=2S\\) → \\(S=\\pi R^2\\)",
     "casio": "S = (1/2)·∮(xdy-ydx) = (1/2)·2·πR² = πR²",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 11,
+    "id": 10,
     "type": "potential_function",
     "question": "Trường \\(\\mathbf{F}=(2xy,x^2)\\) có thế hàm không? (Kiểm tra \\(P'_y=Q'_x\\)?)",
     "matrix": null,
@@ -195,10 +177,10 @@
     "quick": "\\(P'_y=2x=Q'_x\\) → thế hàm \\(U=x^2y\\) (kiểm tra: \\(U'_x=2xy\\), \\(U'_y=x^2\\) ✓)",
     "casio": "CASIO: Kiểm tra trường thế: P'_y = Q'_x? Dùng d/dx(P) theo y và d/dx(Q) theo x. Nếu bằng nhau → tích phân đường không phụ thuộc đường đi → I = U(B) - U(A).",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 12,
+    "id": 11,
     "type": "potential_function",
     "question": "Họ thế hàm tổng quát của \\(\\mathbf{F}=(2xy,x^2+2y)\\) là",
     "matrix": null,
@@ -213,10 +195,10 @@
     "quick": "Tích phân P theo x rồi đối chiếu với Q.",
     "casio": "CASIO: Kiểm tra hai đạo hàm riêng của đáp án.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 13,
+    "id": 12,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C 2xy\\,dx+x^2\\,dy\\) với \\(C\\) bất kỳ từ \\((0,0)\\) đến \\((2,3)\\).",
     "matrix": null,
@@ -231,10 +213,10 @@
     "quick": "Thế hàm \\(U=x^2y\\): \\(I=U(2,3)-U(0,0)=12\\)",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 14,
+    "id": 13,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C(3x^2+2y)\\,dx+(2x+3y^2)\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,2)\\).",
     "matrix": null,
@@ -249,10 +231,10 @@
     "quick": "\\(U=x^3+2xy+y^3\\). \\(I=U(1,2)-U(0,0)=1+4+8=13\\)",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 15,
+    "id": 14,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C (x^2-y)\\,dx+(y^2+x)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
     "matrix": null,
@@ -267,28 +249,10 @@
     "quick": "\\(Q'_x-P'_y=2\\). Diện tích đĩa \\(r=2\\): \\(4\\pi\\). \\(I=2\\cdot4\\pi=8\\pi\\)",
     "casio": "Q'_x-P'_y=2. Diện tích D=π·2²=4π → I=2·4π=8π",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 16,
-    "type": "line_integral_type2",
-    "question": "Tính \\(\\int_C y\\,dx+x\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((2,4)\\) theo đường thẳng \\(y=2x\\).",
-    "matrix": null,
-    "options": [
-      "\\(8\\)",
-      "\\(4\\)",
-      "\\(16\\)",
-      "\\(2\\)"
-    ],
-    "correct": "\\(8\\)",
-    "solution": "\\(P'_y=1=Q'_x\\) → thế hàm \\(U=xy\\). \\(I=U(2,4)-U(0,0)=8\\).",
-    "quick": "\\(U=xy\\): \\(I=U(2,4)-U(0,0)=2\\cdot4=8\\)",
-    "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 17,
+    "id": 15,
     "type": "line_integral_type1",
     "question": "Tính \\(\\int_C x\\,ds\\) với \\(C\\): cung \\(y=x^2\\), \\(0\\le x\\le1\\).",
     "matrix": null,
@@ -303,10 +267,10 @@
     "quick": "\\(ds=\\sqrt{1+4x^2}dx\\). Đặt \\(u=1+4x^2\\) → \\(I=\\frac{5\\sqrt{5}-1}{12}\\)",
     "casio": "u=1+4x², du=8xdx → I=(1/8)·(2/3)[u^{3/2}]₁⁵=(5√5-1)/12",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 18,
+    "id": 16,
     "type": "line_integral_type2",
     "question": "Công của lực \\(\\mathbf{F}=(y-x)\\mathbf{i}+(x+y)\\mathbf{j}\\) dọc theo đường tròn \\(x^2+y^2=1\\) từ \\((1,0)\\) đến \\((0,1)\\) (ngược KĐH) là",
     "matrix": null,
@@ -321,28 +285,10 @@
     "quick": "Tham số hóa \\(x=\\cos t, y=\\sin t\\), \\(t:0\\to\\pi/2\\). Tính ra \\(W=\\frac{\\pi}{2}-1\\).",
     "casio": "x=cost, y=sint, t:0→π/2 → W=∫₀^{π/2}(1-sin2t)dt=π/2-1",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 19,
-    "type": "green_theorem",
-    "question": "Tính \\(\\oint_C xy^2\\,dx+x^2y\\,dy\\) với \\(C\\) là hình chữ nhật \\([0,2]\\times[0,1]\\) (ngược KĐH).",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(4\\)",
-      "\\(2\\)",
-      "\\(-2\\)"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "\\(P=xy^2\\), \\(Q=x^2y\\). \\(Q'_x=2xy\\), \\(P'_y=2xy\\). \\(Q'_x-P'_y=0\\).\n\\(I=\\iint_D 0\\,dA=0\\).",
-    "quick": "\\(Q'_x=2xy=P'_y\\) → \\(I=0\\) (trường thế)",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 20,
+    "id": 17,
     "type": "line_integral_type2",
     "question": "Tính \\(\\oint_C x^2y\\,dx-xy^2\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH) dùng Green.",
     "matrix": null,
@@ -357,10 +303,10 @@
     "quick": "\\(Q'_x-P'_y=-(x^2+y^2)\\). Dùng cực: \\(I=-2\\pi\\cdot[r^4/4]_0^1=-\\pi/2\\)",
     "casio": "Q'_x-P'_y=-(x²+y²). Tọa độ cực: I=-∫₀²π dθ·∫₀¹r³dr=-2π·1/4=-π/2",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 21,
+    "id": 18,
     "type": "line_integral_type1",
     "question": "Tính \\(\\int_C(x^2+y^2)^{1/2}\\,ds\\) với \\(C\\): đoạn từ \\((1,0,0)\\) đến \\((1,0,2\\pi)\\) trên helix \\((\\cos t,\\sin t,t)\\).",
     "matrix": null,
@@ -375,10 +321,10 @@
     "quick": "Trên helix: \\(x^2+y^2=1\\), \\(ds=\\sqrt{2}dt\\) → \\(I=2\\pi\\sqrt{2}\\)",
     "casio": "x²+y²=1 trên helix, ds=√2 dt → I=√2·2π=2π√2",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 22,
+    "id": 19,
     "type": "green_theorem",
     "question": "Tính diện tích elip \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\) dùng công thức Green \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\).",
     "matrix": null,
@@ -393,10 +339,10 @@
     "quick": "\\(S=\\frac{ab}{2}\\int_0^{2\\pi}dt=\\pi ab\\)",
     "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 23,
+    "id": 20,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C e^x\\sin y\\,dx+e^x\\cos y\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,\\pi)\\).",
     "matrix": null,
@@ -411,10 +357,10 @@
     "quick": "U=e^x sin y → I=U(1,π)-U(0,0)=e·sin(π)-1·sin(0)=0-0=**0**.",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 24,
+    "id": 21,
     "type": "green_theorem",
     "question": "Tính \\(\\oint_C(e^x+y^3)\\,dx+(\\cos y+x^3)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
     "matrix": null,
@@ -429,10 +375,10 @@
     "quick": "Green: I=∬3(x²-y²)dA. Đối xứng tròn: ∬x²=∬y² → **I=0**.",
     "casio": "Đối xứng: ∬x²dA=∬y²dA trên đĩa tròn → I=0",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 25,
+    "id": 22,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C y\\,dx-x\\,dy\\) với \\(C\\) là đường tròn \\(x=R\\cos t\\), \\(y=R\\sin t\\), \\(t: 0\\to2\\pi\\).",
     "matrix": null,
@@ -447,10 +393,10 @@
     "quick": "\\(I=\\int_0^{2\\pi}-R^2(\\sin^2t+\\cos^2t)dt=-R^2\\cdot2\\pi=-2\\pi R^2\\)",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 26,
+    "id": 23,
     "type": "green_theorem",
     "question": "Khi trường \\((P,Q)\\) có thế hàm (\\(P'_y=Q'_x\\)), tích phân \\(\\oint_C P\\,dx+Q\\,dy\\) trên đường khép kín \\(C\\) bằng",
     "matrix": null,
@@ -465,10 +411,10 @@
     "quick": "Trường thế → tích phân không phụ thuộc đường đi → tích phân trên đường khép kín = 0",
     "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 27,
+    "id": 24,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C (3x^2y+y)\\,dx+(x^3+x)\\,dy\\) với \\(C\\) là tam giác đỉnh \\((0,0),(1,0),(0,1)\\) (ngược KĐH).",
     "matrix": null,
@@ -483,28 +429,10 @@
     "quick": "\\(Q'_x=3x^2+1=P'_y\\) → trường thế → \\(I=0\\)",
     "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 28,
-    "type": "line_integral_type1",
-    "question": "Tích phân đường loại 1 \\(\\int_C ds\\) trên đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\) bằng?",
-    "matrix": null,
-    "options": [
-      "\\(\\sqrt{2}\\)",
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(\\sqrt{2}/2\\)"
-    ],
-    "correct": "\\(\\sqrt{2}\\)",
-    "solution": "\\(\\int_C ds\\) = **độ dài đường cong** C.\n\nĐoạn thẳng từ (0,0) đến (1,1): độ dài = \\(\\sqrt{(1-0)^2+(1-0)^2}=\\sqrt{2}\\).\n\nKiểm tra bằng tham số: \\(x=t,y=t\\), \\(t\\in[0,1]\\). \\(ds=\\sqrt{x'^2+y'^2}dt=\\sqrt{2}dt\\). \\(\\int_0^1\\sqrt{2}dt=\\sqrt{2}\\).",
-    "quick": "\\(\\int_C ds\\) = độ dài đường. Đoạn (0,0)→(1,1) dài √[(1²+1²)]=**√2**.",
-    "casio": "CASIO: ds=√(x'²+y'²)dt. x'=1, y'=1 → ds=√2 dt. Tích phân 0 đến 1: √2.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 29,
+    "id": 25,
     "type": "line_work",
     "question": "Tính công \\(W\\) của trường vectơ \\(\\mathbf{F}=(y-x)\\mathbf{i}+x\\mathbf{j}\\) dọc theo cung \\(x^2+y^2=1\\) từ \\((1;0)\\) đến \\((0;1)\\) (ngược chiều kim đồng hồ).",
     "matrix": null,
@@ -519,10 +447,10 @@
     "quick": "Tham số hóa cung tròn đơn vị: \\(x=\\cos t, y=\\sin t\\), \\(t:0\\to\\pi/2\\). Tính ra \\(W=\\dfrac12\\).",
     "casio": "CASIO: Thay x=cost, y=sint, dx=-sindt, dy=cosdt vào ∫Mdx+Ndy.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 30,
+    "id": 26,
     "type": "line_work",
     "question": "Tính công \\(W=\\int_C\\mathbf{F}\\cdot d\\mathbf{r}\\) với \\(\\mathbf{F}=(y,x)\\) dọc đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
     "matrix": null,
@@ -537,10 +465,10 @@
     "quick": "F=(y,x): kiểm tra M_y=1=N_x=1 → toàn phần! \\(W=U(1,1)-U(0,0)=xy|_{(0,0)}^{(1,1)}=\\mathbf{1}\\).",
     "casio": "CASIO: Thế vị U=xy (vì dU=ydx+xdy). W=U(đến)-U(từ)=1-0=1.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 31,
+    "id": 27,
     "type": "line_integral_type1",
     "question": "Tích phân đường \\(\\int_C 1\\,ds\\) bằng?",
     "matrix": null,
@@ -555,10 +483,10 @@
     "quick": "∫_C ds = **độ dài** đường cong C.",
     "casio": "CASIO: ds=√(x'²+y'²)dt. ∫dt (không tích phân hàm) = độ dài.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 32,
+    "id": 28,
     "type": "green_theorem",
     "question": "Định lý Green liên hệ tích phân đường với tích phân gì?",
     "matrix": null,
@@ -573,11 +501,11 @@
     "quick": "Green: ∮Mdx+Ndy = ∬(N_x-M_y)dA. **Đường → đôi**.",
     "casio": "CASIO: Kiểm tra N_x-M_y trước. Nếu đơn giản → dùng Green.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 33,
-    "type": "line_integral_type1",
+    "id": 29,
+    "type": "line_integral_type1_official",
     "question": "Trong mặt phẳng, \\(L\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,2)\\). Giá trị \\(\\int_L(x+y)\\,ds\\) bằng",
     "matrix": null,
     "options": [
@@ -591,11 +519,11 @@
     "quick": "Đoạn y=x: ds=√2 dt.",
     "casio": "CASIO: Tính \\(\\sqrt2\\int_0^2 2t dt\\).",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 34,
-    "type": "line_work",
+    "id": 30,
+    "type": "line_work_official",
     "question": "Một chất điểm đi đúng một vòng ngược chiều kim đồng hồ trên đường tròn bán kính 1 m dưới lực tiếp tuyến cùng chiều, độ lớn không đổi 1 N. Công của lực bằng",
     "matrix": null,
     "options": [
@@ -608,11 +536,11 @@
     "solution": "Lực luôn cùng hướng chuyển động nên \\(W=\\int_C|F|ds=1\\cdot\\text{độ dài đường tròn}=2\\pi\\) J.",
     "quick": "Công = lực × quãng đường khi lực cùng hướng.",
     "casio": "CASIO: Tính chu vi \\(2\\pi R\\) với R=1.",
-    "difficulty": 2,
-    "topic": "Tích phân"
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 35,
+    "id": 31,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C(-y\\,dx+x\\,dy)\\), với \\(C\\) là biên hình chữ nhật \\([0,2]\\times[0,3]\\) theo chiều dương.",
     "matrix": null,
@@ -627,10 +555,10 @@
     "quick": "Hiệu đạo hàm bằng 2; nhân diện tích.",
     "casio": "CASIO: Tính 2×2×3.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 36,
+    "id": 32,
     "type": "potential_function",
     "question": "Tích phân \\(\\int_C(2x+y)dx+(x+2y)dy\\) từ \\((0,0)\\) đến \\((1,2)\\) bằng",
     "matrix": null,
@@ -645,10 +573,10 @@
     "quick": "Tìm hàm thế rồi lấy giá trị cuối trừ đầu.",
     "casio": "CASIO: Thay tọa độ vào U.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 37,
+    "id": 33,
     "type": "line_integral_type1",
     "question": "Tính \\(\\int_C y\\,ds\\) với \\(C\\): \\(x=t^2,y=t\\), \\(0\\le t\\le1\\).",
     "matrix": null,
@@ -663,10 +591,10 @@
     "quick": "Đổi u=4t²+1.",
     "casio": "CASIO: Tính tích phân số để đối chiếu.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 38,
+    "id": 34,
     "type": "green_theorem",
     "question": "Nếu đổi chiều đi của đường cong kín \\(C\\), giá trị \\(\\oint_C Pdx+Qdy\\) sẽ",
     "matrix": null,
@@ -681,10 +609,10 @@
     "quick": "Đảo hướng → đổi dấu.",
     "casio": "CASIO không cần thiết.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 39,
+    "id": 35,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C y\\,dx\\) với \\(C\\) là cung parabol \\(y=x^2\\) từ \\((0,0)\\) đến \\((2,4)\\).",
     "matrix": null,
@@ -699,10 +627,10 @@
     "quick": "Không cần ds; đây là tích phân loại 2 với dx.",
     "casio": "CASIO: Tính \\(\\int_0^2x^2dx\\).",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 40,
+    "id": 36,
     "type": "green_theorem",
     "question": "Cho \\(C\\) là đường tròn \\(x^2+y^2=R^2\\) chiều dương. Giá trị \\(\\oint_C x^3\\,dy\\) bằng",
     "matrix": null,
@@ -717,6 +645,42 @@
     "quick": "Green rồi dùng mômen bậc hai của đĩa.",
     "casio": "CASIO: Có thể kiểm tra bằng tọa độ cực.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 37,
+    "type": "line_integral_type1_variant",
+    "question": "Trong mặt phẳng, $L$ là đoạn thẳng từ $(0,0)$ đến $(3,3)$. Giá trị $\\int_L(x+y)\\,ds$ bằng",
+    "matrix": null,
+    "options": [
+      "$9\\sqrt2$",
+      "$6\\sqrt2$",
+      "$18$",
+      "$9$"
+    ],
+    "correct": "$9\\sqrt2$",
+    "solution": "Đặt $x=t$, $y=t$, $0\\le t\\le3$. Khi đó $ds=\\sqrt2\\,dt$ và $x+y=2t$. Do đó $I=\\int_0^32t\\sqrt2\\,dt=9\\sqrt2$.",
+    "quick": "Trên $y=x$, ta có $ds=\\sqrt2\\,dt$.",
+    "casio": "Tính $\\sqrt2\\int_0^32t\\,dt=9\\sqrt2$.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 38,
+    "type": "line_work_variant",
+    "question": "Một chất điểm đi đúng một vòng trên đường tròn bán kính 2 m. Lực luôn tiếp tuyến, cùng chiều chuyển động và có độ lớn không đổi 3 N. Công của lực bằng",
+    "matrix": null,
+    "options": [
+      "$12\\pi\\,\\mathrm{J}$",
+      "$6\\pi\\,\\mathrm{J}$",
+      "$4\\pi\\,\\mathrm{J}$",
+      "$24\\pi\\,\\mathrm{J}$"
+    ],
+    "correct": "$12\\pi\\,\\mathrm{J}$",
+    "solution": "Lực luôn cùng hướng chuyển động nên $W=F\\cdot s=3\\cdot(2\\pi\\cdot2)=12\\pi\\,\\mathrm{J}$.",
+    "quick": "Công bằng độ lớn lực nhân chu vi đường tròn.",
+    "casio": "Tính $3\\times2\\pi\\times2=12\\pi$.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
   }
 ]

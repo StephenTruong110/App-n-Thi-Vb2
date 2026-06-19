@@ -15,7 +15,7 @@
     "quick": "Tích phân của 1 = thể tích miền = 1",
     "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
     "quick": "Tứ diện \\(x+y+z\\le1\\), \\(x,y,z\\ge0\\): \\(V=\\frac{1}{6}\\)",
     "casio": "CASIO: Tích phân ba tính 3 lớp từ trong ra ngoài. Mỗi lần dùng ∫dx trên CASIO cho 1 biến. Với tọa độ trụ/cầu: Jacobian = r (trụ) hoặc ρ²sinφ (cầu).",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 3,
@@ -51,7 +51,7 @@
     "quick": "Tách: \\(\\left(\\int_0^1 x\\,dx\\right)\\cdot1\\cdot1=\\frac{1}{2}\\)",
     "casio": "(∫₀¹ x dx)·(∫₀¹dy)·(∫₀¹dz) = 1/2·1·1 = 1/2",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
     "quick": "\\(V=(\\int_0^{2\\pi}d\\theta)(\\int_0^R r\\,dr)(\\int_0^H dz)=2\\pi\\cdot\\frac{R^2}{2}\\cdot H=\\pi R^2H\\)",
     "casio": "V = 2π·R²/2·H = πR²H (công thức hình trụ)",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 5,
@@ -87,7 +87,7 @@
     "quick": "\\(V=2\\pi\\cdot[-\\cos\\varphi]_0^\\pi\\cdot\\frac{R^3}{3}=2\\pi\\cdot2\\cdot\\frac{R^3}{3}=\\frac{4\\pi R^3}{3}\\)",
     "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 6,
@@ -105,7 +105,7 @@
     "quick": "\\(I=2\\pi\\cdot2\\int_0^1 r^2\\,dr=4\\pi\\cdot\\frac{1}{3}=\\frac{4\\pi}{3}\\)",
     "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 7,
@@ -123,7 +123,7 @@
     "quick": "\\(I=4\\pi\\cdot\\frac{R^5}{5}=\\frac{4\\pi R^5}{5}\\)",
     "casio": "I = 2π·[-cosφ]₀π · R⁵/5 = 2π·2·R⁵/5 = 4πR⁵/5",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 8,
@@ -141,7 +141,7 @@
     "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}\\cdot\\frac{9}{2}=\\frac{9\\pi}{2}\\)",
     "casio": "CASIO: Tọa độ trụ: x=rcosθ, y=rsinθ, z=z, dV=r·dr·dθ·dz. Tính 3 tích phân lồng nhau từng cái một bằng ∫dx.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 9,
@@ -159,11 +159,11 @@
     "quick": "\\(I=4\\pi\\cdot\\frac{1}{3}(e-1)=\\frac{4\\pi(e-1)}{3}\\)",
     "casio": "CASIO: Tọa độ cầu: x=ρsinφcosθ, y=ρsinφsinθ, z=ρcosφ, dV=ρ²sinφ·dρ·dφ·dθ. Nhớ Jacobian = ρ²sinφ. Tính 3 tích phân riêng biệt.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 10,
-    "type": "triple_integral",
+    "type": "triple_integral_box_official",
     "question": "Cho \\(V=\\{(x,y,z):1\\le x\\le2,\\ 0\\le y\\le3,\\ 0\\le z\\le1\\}\\). Giá trị \\(\\iiint_V y\\,dx\\,dy\\,dz\\) bằng",
     "matrix": null,
     "options": [
@@ -177,7 +177,7 @@
     "quick": "Độ dài theo x và z đều bằng 1; chỉ còn \\(\\int_0^3y\\,dy=9/2\\).",
     "casio": "CASIO: Tính \\(\\int_0^3y\\,dy=4.5\\).",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 11,
@@ -192,10 +192,10 @@
     ],
     "correct": "\\(\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\)",
     "solution": "**Phân tích miền V:**\n\nMặt trên: \\(z=y\\). Mặt dưới: \\(z=0\\). → \\(0\\leq z\\leq y\\).\n\nMặt bên: \\(y=1-x^2\\) (parabol). Vì \\(z\\geq0\\) và \\(z\\leq y\\) → cần \\(y\\geq0\\). → \\(0\\leq y\\leq1-x^2\\).\n\nX: miền chiếu lên Oxy: \\(0\\leq y\\leq1-x^2\\) → \\(x\\in[-1,1]\\).\n\n\\(I=\\int_{-1}^1\\int_0^{1-x^2}\\int_0^y f\\,dz\\,dy\\,dx\\).",
-    "quick": "Thứ tự: z trong (0→y), y giữa (0→1-x²), x ngoài (-1→1). **Đây là dạng C64 CA1 2025**.",
+    "quick": "Thứ tự: z trong (0→y), y giữa (0→1-x²), x ngoài (-1→1).",
     "casio": "CASIO: Xác định giới hạn từ trong ra ngoài: z, rồi y, rồi x.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 12,
@@ -213,7 +213,7 @@
     "quick": "Tích phân ba lớp của 1 trên tứ diện x+y+z≤2, x,y,z≥0. Kết quả: **4/3**.",
     "casio": "CASIO: V=∫₀²∫₀^{2-x}(2-x-y)dy dx = ∫₀² (2-x)²/2 dx = 4/3.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 13,
@@ -231,11 +231,11 @@
     "quick": "Trụ: dV=**r** dr dθ dz. (Cầu: r²sinφ dr dφ dθ)",
     "casio": "CASIO: J=r. dV=r dr dθ dz.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 14,
-    "type": "triple_integral_setup",
+    "type": "triple_integral_setup_official",
     "question": "Cho \\(V=\\{0\\le x\\le3,\\ 0\\le y\\le1,\\ 0\\le z\\le2\\}\\). Cách viết đúng của \\(\\iiint_V xyz\\,dx\\,dy\\,dz\\) là",
     "matrix": null,
     "options": [
@@ -248,12 +248,12 @@
     "solution": "Thứ tự vi phân là \\(dx\\,dy\\,dz\\): tích phân trong theo x từ 0 đến 3, tiếp theo y từ 0 đến 1, ngoài cùng z từ 0 đến 2.",
     "quick": "Đọc vi phân từ trái sang phải, cận từ trong ra ngoài.",
     "casio": "CASIO không cần thiết.",
-    "difficulty": 1,
-    "topic": "Tích phân"
+    "difficulty": 3,
+    "topic": "Tích phân ba"
   },
   {
     "id": 15,
-    "type": "triple_iterated",
+    "type": "triple_integral_short_answer_style",
     "question": "Vật thể trong góc phần tám thứ nhất được giới hạn bởi \\(x=2\\), \\(y=0\\), \\(y=x\\), \\(z=0\\), \\(z=x+4y\\). Thể tích bằng",
     "matrix": null,
     "options": [
@@ -267,7 +267,7 @@
     "quick": "Tích phân z trước tạo chiều cao \\(x+4y\\).",
     "casio": "CASIO: Tính \\(\\int_0^2 3x^2dx=8\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 16,
@@ -285,7 +285,7 @@
     "quick": "Trung bình của mỗi tọa độ trên [0,1] là 1/2.",
     "casio": "CASIO: Tính ba tích phân một biến.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 17,
@@ -303,7 +303,7 @@
     "quick": "Nhớ Jacobian r.",
     "casio": "CASIO: Tính tích phân theo r rồi nhân \\(2\\pi\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 18,
@@ -321,7 +321,7 @@
     "quick": "Một phần tám thể tích cầu.",
     "casio": "CASIO không cần thiết.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 19,
@@ -339,7 +339,7 @@
     "quick": "Chiều cao bằng 1, còn lại là tích phân \\(r^3\\).",
     "casio": "CASIO: Tính \\(2\\pi\\int_0^1r^3dr\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 20,
@@ -357,7 +357,7 @@
     "quick": "Xác định miền chiếu trước, rồi cận z.",
     "casio": "CASIO không cần thiết.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 21,
@@ -375,7 +375,7 @@
     "quick": "Cầu: \\(\\rho^2\\sin\\varphi\\).",
     "casio": "CASIO không cần thiết.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 22,
@@ -393,7 +393,7 @@
     "quick": "Đối xứng chia đều tổng \\(x^2+y^2+z^2\\) cho 3.",
     "casio": "CASIO: Kiểm tra \\((4\\pi/5)/3\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 23,
@@ -411,7 +411,7 @@
     "quick": "Tách thành ba tích phân trên hình hộp.",
     "casio": "CASIO: Tính 3+6+9.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
   },
   {
     "id": 24,
@@ -429,6 +429,276 @@
     "quick": "Chiều cao \\(4-r^2\\), Jacobian \\(r\\), miền chiếu là đĩa \\(r\\le2\\).",
     "casio": "Tính \\(2\\pi\\int_0^2(4-r^2)r\\,dr=8\\pi\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 25,
+    "type": "triple_integral_setup_variant",
+    "question": "Cho $V=\\{0\\le x\\le2,\\ 0\\le y\\le3,\\ 0\\le z\\le1\\}$. Cách viết đúng của $\\iiint_V xz\\,dx\\,dy\\,dz$ là",
+    "matrix": null,
+    "options": [
+      "$\\displaystyle\\int_0^1\\int_0^3\\int_0^2 xz\\,dx\\,dy\\,dz$",
+      "$\\displaystyle\\int_0^2\\int_0^3\\int_0^1 xz\\,dx\\,dy\\,dz$",
+      "$\\displaystyle\\int_0^1\\int_0^2\\int_0^3 xz\\,dx\\,dy\\,dz$",
+      "$\\displaystyle\\int_0^3\\int_0^1\\int_0^2 xz\\,dy\\,dx\\,dz$"
+    ],
+    "correct": "$\\displaystyle\\int_0^1\\int_0^3\\int_0^2 xz\\,dx\\,dy\\,dz$",
+    "solution": "Vì thứ tự vi phân là $dx\\,dy\\,dz$, tích phân trong theo $x$ từ 0 đến 2, tiếp theo theo $y$ từ 0 đến 3, ngoài cùng theo $z$ từ 0 đến 1.",
+    "quick": "Đọc vi phân từ trong ra ngoài: $x$, rồi $y$, rồi $z$.",
+    "casio": "Không cần CASIO; đối chiếu đúng biến với đúng cận.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 26,
+    "type": "triple_integral_box_variant",
+    "question": "Cho $V=\\{0\\le x\\le2,\\ 0\\le y\\le1,\\ 0\\le z\\le3\\}$. Giá trị $\\iiint_V z\\,dx\\,dy\\,dz$ bằng",
+    "matrix": null,
+    "options": [
+      "$9$",
+      "$\\dfrac92$",
+      "$6$",
+      "$18$"
+    ],
+    "correct": "$9$",
+    "solution": "Tích phân tách được: $\\int_0^2dx\\cdot\\int_0^1dy\\cdot\\int_0^3z\\,dz=2\\cdot1\\cdot\\dfrac92=9$.",
+    "quick": "Độ dài theo $x$ là 2, theo $y$ là 1, còn $\\int_0^3z\\,dz=9/2$.",
+    "casio": "Tính $2\\times1\\times(3^2/2)=9$.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 27,
+    "type": "triple_integral_short_answer_style",
+    "question": "Trong góc phần tám thứ nhất, vật thể được mô tả bởi $0\\le x\\le1$, $0\\le y\\le2x$, $0\\le z\\le x+y$. Thể tích của vật thể bằng",
+    "matrix": null,
+    "options": [
+      "$\\dfrac43$",
+      "$\\dfrac23$",
+      "$2$",
+      "$\\dfrac83$"
+    ],
+    "correct": "$\\dfrac43$",
+    "solution": "$V=\\int_0^1\\int_0^{2x}\\int_0^{x+y}dz\\,dy\\,dx=\\int_0^1\\int_0^{2x}(x+y)\\,dy\\,dx=\\int_0^14x^2dx=\\dfrac43$.",
+    "quick": "Tích phân theo $z$ trước, rồi $y$, cuối cùng theo $x$.",
+    "casio": "Tính $\\int_0^14x^2dx=4/3$.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 28,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\iiint_V dV\\) với \\(V=\\{0\\le x\\le2,\\ 0\\le y\\le3,\\ 0\\le z\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(3\\)",
+      "\\(5\\)",
+      "\\(9\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "\\(\\iiint_V dV=\\) thể tích hình hộp \\(=2\\times3\\times1=6\\).",
+    "quick": "Thể tích hình hộp = tích ba cạnh.",
+    "casio": "Tính trực tiếp: ∫₀²dx·∫₀³dy·∫₀¹dz = 2·3·1 = 6.",
+    "difficulty": 1,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 29,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\iiint_V z\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le2\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(\\dfrac{1}{2}\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Tách: \\(\\int_0^1dx\\cdot\\int_0^1dy\\cdot\\int_0^2 z\\,dz=1\\cdot1\\cdot\\left[\\dfrac{z^2}{2}\\right]_0^2=2\\).",
+    "quick": "Tách 3 tích phân: \\(1\\cdot1\\cdot[z^2/2]_0^2=2\\).",
+    "casio": "(∫₀¹dx)·(∫₀¹dy)·(∫₀²z dz) = 1·1·2 = 2.",
+    "difficulty": 1,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 30,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\iiint_V xy\\,dV\\) với \\(V=\\{0\\le x\\le2,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(\\int_0^2 x\\,dx\\cdot\\int_0^1 y\\,dy\\cdot\\int_0^1 dz=2\\cdot\\dfrac{1}{2}\\cdot1=1\\).",
+    "quick": "Tách: \\([x^2/2]_0^2\\cdot[y^2/2]_0^1\\cdot1=2\\cdot\\frac12=1\\).",
+    "casio": "(∫₀²x dx)·(∫₀¹y dy)·(∫₀¹dz) = 2·0.5·1 = 1.",
+    "difficulty": 1,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 31,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\iiint_V xyz\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le2,\\ 0\\le z\\le3\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(6\\)",
+      "\\(3\\)",
+      "\\(9\\)"
+    ],
+    "correct": "\\(\\dfrac{9}{2}\\)",
+    "solution": "\\(\\int_0^1x\\,dx\\cdot\\int_0^2y\\,dy\\cdot\\int_0^3z\\,dz=\\dfrac12\\cdot2\\cdot\\dfrac92=\\dfrac92\\).",
+    "quick": "Tách: \\(\\frac12\\cdot2\\cdot\\frac92=\\frac92\\).",
+    "casio": "(∫₀¹x dx)·(∫₀²y dy)·(∫₀³z dz) = 0.5·2·4.5 = 4.5.",
+    "difficulty": 1,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 32,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\iiint_V e^x\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(e-1\\)",
+      "\\(e\\)",
+      "\\(e+1\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(e-1\\)",
+    "solution": "\\(\\int_0^1e^x\\,dx\\cdot\\int_0^1dy\\cdot\\int_0^1dz=(e-1)\\cdot1\\cdot1=e-1\\).",
+    "quick": "Chỉ có \\(e^x\\) phụ thuộc \\(x\\), hai tích phân còn lại bằng 1.",
+    "casio": "(∫₀¹eˣ dx)·1·1 = e-1 ≈ 1.718.",
+    "difficulty": 1,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 33,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\iiint_V (x^2+y^2)\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3}\\)",
+    "solution": "\\(\\iiint x^2\\,dV+\\iiint y^2\\,dV=\\dfrac13+\\dfrac13=\\dfrac23\\).",
+    "quick": "Hai tích phân đối xứng, mỗi tích phân bằng \\(1/3\\).",
+    "casio": "2·(∫₀¹x² dx) = 2/3.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 34,
+    "type": "triple_integral_first_octant",
+    "question": "Tính \\(\\iiint_V x\\,dV\\) với \\(V\\) là vật thể trong góc phần tám thứ nhất giới hạn bởi \\(x+y+z=2\\) và các mặt tọa độ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3}\\)",
+    "solution": "\\(I=\\int_0^2\\int_0^{2-x}\\int_0^{2-x-y}x\\,dz\\,dy\\,dx=\\dfrac12\\int_0^2x(2-x)^2dx=\\dfrac23\\).",
+    "quick": "Với tứ diện \\(x+y+z\\le a\\), \\(\\iiint x\\,dV=a^4/24\\). Cho \\(a=2\\) được \\(2/3\\).",
+    "casio": "Tính từng lớp hoặc dùng công thức tứ diện.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 35,
+    "type": "triple_integral_first_octant",
+    "question": "Tính \\(\\iiint_V z\\,dV\\) với \\(V:0\\le x\\le2,\\ 0\\le y\\le2,\\ 0\\le z\\le x+y\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{28}{3}\\)",
+      "\\(8\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(\\dfrac{32}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{28}{3}\\)",
+    "solution": "\\(I=\\int_0^2\\int_0^2\\int_0^{x+y}z\\,dz\\,dy\\,dx=\\dfrac12\\int_0^2\\int_0^2(x+y)^2\\,dy\\,dx.\\) Khai triển, ta có \\(\\iint x^2dA=16/3\\), \\(\\iint2xydA=8\\), \\(\\iint y^2dA=16/3\\). Vì vậy \\(I=\\frac12(16/3+8+16/3)=28/3\\).",
+    "quick": "Tích phân theo \\(z\\) trước được \\((x+y)^2/2\\), rồi tích phân trên hình vuông \\([0,2]^2\\).",
+    "casio": "Tính \\(0.5\\times(16/3+8+16/3)=28/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 36,
+    "type": "triple_integral_setup_first_octant",
+    "question": "Vật thể \\(V\\) trong góc phần tám thứ nhất giới hạn bởi \\(x=2,y=0,y=x,z=0,z=4y\\). Cách viết tích phân lặp đúng là",
+    "matrix": null,
+    "options": [
+      "\\(\\int_0^2\\int_0^x\\int_0^{4y}dz\\,dy\\,dx\\)",
+      "\\(\\int_0^2\\int_0^{4y}\\int_0^x dz\\,dy\\,dx\\)",
+      "\\(\\int_0^2\\int_0^x\\int_0^{4x}dz\\,dy\\,dx\\)",
+      "\\(\\int_0^4\\int_0^x\\int_0^{4y}dz\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\int_0^2\\int_0^x\\int_0^{4y}dz\\,dy\\,dx\\)",
+    "solution": "\\(x\\) chạy từ 0 đến 2; với \\(x\\) cố định, \\(0\\le y\\le x\\); với \\((x,y)\\) cố định, \\(0\\le z\\le4y\\).",
+    "quick": "Xác định thứ tự: \\(x\\) ngoài cùng, rồi \\(y\\), \\(z\\) trong cùng.",
+    "casio": "Không cần CASIO; đọc giới hạn theo thứ tự từ ngoài vào trong.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 37,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\iiint_V \\sin x\\,dV\\) với \\(V=\\{0\\le x\\le\\pi,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(\\pi\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "\\(\\int_0^\\pi\\sin x\\,dx\\cdot1\\cdot1=[-\\cos x]_0^\\pi=2\\).",
+    "quick": "\\(\\int_0^\\pi\\sin x\\,dx=2\\), các tích phân còn lại bằng 1.",
+    "casio": "(∫₀^π sin x dx)·1·1 = 2.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 38,
+    "type": "triple_integral_first_octant",
+    "question": "Tính thể tích vật thể \\(V\\) trong góc phần tám thứ nhất giới hạn bởi \\(x=2,y=3,z=0,z=x+y\\).",
+    "matrix": null,
+    "options": [
+      "\\(15\\)",
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(18\\)"
+    ],
+    "correct": "\\(15\\)",
+    "solution": "\\(V=\\int_0^2\\int_0^3\\int_0^{x+y}dz\\,dy\\,dx=\\int_0^2\\int_0^3(x+y)dy\\,dx=15\\).",
+    "quick": "Tích phân theo \\(z\\) trước tạo chiều cao \\(x+y\\).",
+    "casio": "Tính lần lượt từ trong ra ngoài.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 39,
+    "type": "triple_integral_first_octant",
+    "question": "Tính \\(\\iiint_V(x+y+z)\\,dV\\) với \\(V\\) là tứ diện trong góc phần tám thứ nhất giới hạn bởi \\(x+y+z=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{8}\\)",
+      "\\(\\dfrac{1}{4}\\)",
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{8}\\)",
+    "solution": "Theo đối xứng, \\(\\iiint_Vx\\,dV=\\iiint_Vy\\,dV=\\iiint_Vz\\,dV=1/24\\). Tổng bằng \\(3/24=1/8\\).",
+    "quick": "Theo đối xứng ba biến, mỗi tích phân bằng \\(1/24\\).",
+    "casio": "Tính trực tiếp hoặc dùng tính đối xứng.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
   }
 ]

@@ -145,24 +145,6 @@
   },
   {
     "id": 9,
-    "type": "classification",
-    "question": "Hệ $\\begin{cases}x+y=1\\\\2x+2y=3\\end{cases}$ có",
-    "matrix": null,
-    "options": [
-      "Vô nghiệm",
-      "Vô số nghiệm",
-      "Nghiệm duy nhất",
-      "Đúng hai nghiệm"
-    ],
-    "correct": "Vô nghiệm",
-    "solution": "Vế trái phương trình hai gấp đôi phương trình một nhưng vế phải không gấp đôi, nên mâu thuẫn.",
-    "quick": "Hệ số tỉ lệ, hằng số không tỉ lệ.",
-    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
-    "difficulty": 1,
-    "topic": "Hệ phương trình tuyến tính"
-  },
-  {
-    "id": 10,
     "type": "free_parameters",
     "question": "Hệ $\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+2y+3z=2\\end{cases}$ có bao nhiêu tham số tự do?",
     "matrix": null,
@@ -180,7 +162,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 11,
+    "id": 10,
     "type": "general_solution",
     "question": "Nghiệm tổng quát của hệ $\\begin{cases}x+y-z=2\\\\x-y=0\\end{cases}$ là",
     "matrix": null,
@@ -198,7 +180,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 12,
+    "id": 11,
     "type": "homogeneous",
     "question": "Hệ thuần nhất $AX=0$ có nghiệm khác 0 khi và chỉ khi",
     "matrix": null,
@@ -216,7 +198,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 13,
+    "id": 12,
     "type": "parameter_unique",
     "question": "Hệ $\\begin{cases}x+my=1\\\\2x+3y=2\\end{cases}$ có nghiệm duy nhất khi",
     "matrix": null,
@@ -234,7 +216,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 14,
+    "id": 13,
     "type": "parameter_infinite",
     "question": "Hệ $\\begin{cases}x+y=1\\\\2x+2y=m\\end{cases}$ có vô số nghiệm khi",
     "matrix": null,
@@ -252,7 +234,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 15,
+    "id": 14,
     "type": "parameter_none",
     "question": "Hệ $\\begin{cases}x+y=2\\\\2x+2y=m\\end{cases}$ vô nghiệm khi",
     "matrix": null,
@@ -270,7 +252,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 16,
+    "id": 15,
     "type": "parameter_unique_3vars",
     "question": "Hệ $\\begin{cases}x+ay+z=1\\\\ax+y+z=2\\\\x+y+az=2\\end{cases}$ có nghiệm duy nhất khi và chỉ khi",
     "matrix": null,
@@ -288,7 +270,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 17,
+    "id": 16,
     "type": "parameter_homogeneous",
     "question": "Hệ $\\begin{cases}x+y+z=0\\\\x+2y+3z=0\\\\x+4y+mz=0\\end{cases}$ có nghiệm khác 0 khi",
     "matrix": null,
@@ -306,7 +288,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 18,
+    "id": 17,
     "type": "parameter_rank",
     "question": "Cho $A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\1&1&m\\end{pmatrix}$. Hạng của $A$ bằng 1 khi",
     "matrix": null,
@@ -324,7 +306,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 19,
+    "id": 18,
     "type": "parameter_infinite_3vars",
     "question": "Hệ $\\begin{cases}x+y+z=1\\\\x+2y+mz=3\\\\x+3y+3z=5\\end{cases}$ có vô số nghiệm khi",
     "matrix": null,
@@ -342,7 +324,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 20,
+    "id": 19,
     "type": "parameter_unique_3vars",
     "question": "Hệ $\\begin{cases}2x+y-z=1\\\\x-y+z=2\\\\4x-y+az=b\\end{cases}$ có nghiệm duy nhất khi",
     "matrix": null,
@@ -360,7 +342,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 21,
+    "id": 20,
     "type": "cramer",
     "question": "Giải hệ $\\begin{cases}2x+y=5\\\\x+3y=10\\end{cases}$.",
     "matrix": null,
@@ -378,7 +360,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 22,
+    "id": 21,
     "type": "system_matrix_form",
     "question": "Hệ $\\begin{cases}x+2y=3\\\\3x-y=4\\end{cases}$ được viết dưới dạng $AX=b$ với",
     "matrix": null,
@@ -396,7 +378,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 23,
+    "id": 22,
     "type": "rank_solution_count",
     "question": "Hệ tuyến tính có 4 ẩn, $\\operatorname{rank}(A)=\\operatorname{rank}(A|b)=3$. Số tham số tự do là",
     "matrix": null,
@@ -414,7 +396,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 24,
+    "id": 23,
     "type": "rank_solution_count",
     "question": "Hệ tuyến tính có $\\operatorname{rank}(A)=2$ và $\\operatorname{rank}(A|b)=3$. Hệ",
     "matrix": null,
@@ -432,7 +414,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 25,
+    "id": 24,
     "type": "parameter_consistency",
     "question": "Hệ $\\begin{cases}x-y=a\\\\-x+y=b\\end{cases}$ có nghiệm khi",
     "matrix": null,
@@ -450,79 +432,7 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 26,
-    "type": "general_solution",
-    "question": "Nghiệm tổng quát của hệ $\\begin{cases}x+y-2z=-1\\\\x-y=3\\end{cases}$ là",
-    "matrix": null,
-    "options": [
-      "$(x,y,z)=(1+t,t-2,t)$",
-      "$(2+t,t-1,t)$",
-      "$(3+t,t,t)$",
-      "$(1-t,t+2,t)$"
-    ],
-    "correct": "$(x,y,z)=(1+t,t-2,t)$",
-    "solution": "Đặt $z=t$. Từ $x-y=3$ và $x+y=2t-1$ suy ra $x=t+1$, $y=t-2$.",
-    "quick": "Đặt ẩn tự do rồi giải hệ 2×2.",
-    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
-    "difficulty": 2,
-    "topic": "Hệ phương trình tuyến tính"
-  },
-  {
-    "id": 27,
-    "type": "parameter_system",
-    "question": "Hệ $\\begin{cases}mx+y=1\\\\x+my=1\\end{cases}$ có nghiệm duy nhất khi",
-    "matrix": null,
-    "options": [
-      "$m\\ne\\pm1$",
-      "$m\\ne1$",
-      "$m\\ne-1$",
-      "Mọi $m$"
-    ],
-    "correct": "$m\\ne\\pm1$",
-    "solution": "Định thức hệ số là $m^2-1$. Nghiệm duy nhất khi $m^2-1\\ne0$.",
-    "quick": "det khác 0.",
-    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
-    "difficulty": 2,
-    "topic": "Hệ phương trình tuyến tính"
-  },
-  {
-    "id": 28,
-    "type": "parameter_infinite",
-    "question": "Hệ $\\begin{cases}x+ay=2\\\\ax+y=2\\end{cases}$ có vô số nghiệm khi",
-    "matrix": null,
-    "options": [
-      "$a=1$",
-      "$a=-1$",
-      "$a=\\pm1$",
-      "Không có $a$"
-    ],
-    "correct": "$a=1$",
-    "solution": "Khi $a=1$, hai phương trình trùng nhau. Khi $a=-1$, hai phương trình là $x-y=2$ và $-x+y=2$, mâu thuẫn.",
-    "quick": "Xét riêng hai nghiệm của det=0.",
-    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
-    "difficulty": 3,
-    "topic": "Hệ phương trình tuyến tính"
-  },
-  {
-    "id": 29,
-    "type": "parameter_none",
-    "question": "Hệ $\\begin{cases}2x-y=3\\\\4x-2y=m\\end{cases}$ vô nghiệm khi",
-    "matrix": null,
-    "options": [
-      "$m\\ne6$",
-      "$m=6$",
-      "$m=3$",
-      "Mọi $m$"
-    ],
-    "correct": "$m\\ne6$",
-    "solution": "Vế trái phương trình hai gấp đôi phương trình một. Hệ tương thích chỉ khi $m=6$.",
-    "quick": "Tỉ lệ hệ số phải đi cùng tỉ lệ vế phải.",
-    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập các hệ số và vế phải → EXE để kiểm tra nghiệm.",
-    "difficulty": 2,
-    "topic": "Hệ phương trình tuyến tính"
-  },
-  {
-    "id": 30,
+    "id": 25,
     "type": "economic_equilibrium",
     "question": "Ba thị trường có cung và cầu: $s_1=-38+p_1-p_2+2p_3$, $s_2=-73-p_1+2p_2+p_3$, $s_3=-59+p_1+2p_2+3p_3$; $d_1=70-p_1+p_2$, $d_2=127-p_2-2p_3$, $d_3=200+p_2-p_3$. Khi cân bằng $s_i=d_i$, giá trị $p_1+p_2+p_3$ bằng",
     "matrix": null,
@@ -540,7 +450,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 31,
+    "id": 26,
     "type": "economic_supply_demand",
     "question": "Hai hàng hóa có điều kiện cân bằng $\\begin{cases}2p_1-p_2=30\\\\-p_1+3p_2=40\\end{cases}$. Tổng hai mức giá cân bằng bằng",
     "matrix": null,
@@ -558,7 +468,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 32,
+    "id": 27,
     "type": "economic_production",
     "question": "Một xưởng sản xuất hai sản phẩm $x,y$. Mỗi đơn vị $x$ dùng 2 giờ máy và 1 giờ lao động; mỗi đơn vị $y$ dùng 1 giờ máy và 3 giờ lao động. Nếu dùng hết 100 giờ máy và 90 giờ lao động thì $(x,y)$ bằng",
     "matrix": null,
@@ -576,7 +486,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 33,
+    "id": 28,
     "type": "economic_mixture",
     "question": "Trộn hai loại nguyên liệu A và B để được 100 kg hỗn hợp. A chứa 20% chất X, B chứa 50% chất X. Muốn hỗn hợp chứa 38 kg chất X thì lượng A, B là",
     "matrix": null,
@@ -594,7 +504,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 34,
+    "id": 29,
     "type": "economic_investment",
     "question": "Đầu tư tổng cộng 200 triệu vào hai kênh lãi suất 6% và 9%. Muốn tiền lãi một năm là 15 triệu thì số tiền đầu tư lần lượt là",
     "matrix": null,
@@ -612,7 +522,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 35,
+    "id": 30,
     "type": "economic_sales",
     "question": "Một cửa hàng bán 30 sản phẩm gồm loại A giá 20 nghìn và loại B giá 35 nghìn, thu 750 nghìn. Số sản phẩm A, B lần lượt là",
     "matrix": null,
@@ -630,7 +540,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 36,
+    "id": 31,
     "type": "economic_resource",
     "question": "Ba sản phẩm $x,y,z$ dùng hết ba nguồn lực theo hệ $\\begin{cases}x+y+z=60\\\\2x+y+3z=100\\\\x+2y+z=90\\end{cases}$. Tổng $x+2z$ bằng",
     "matrix": null,
@@ -648,7 +558,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 37,
+    "id": 32,
     "type": "economic_cost_allocation",
     "question": "Tổng chi phí 120 triệu gồm chi phí nguyên liệu $x$, nhân công $y$, vận chuyển $z$. Biết $x=2y$ và $z=y/2$. Chi phí nhân công bằng",
     "matrix": null,
@@ -666,7 +576,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 38,
+    "id": 33,
     "type": "economic_transport",
     "question": "Hai kho A, B cung cấp tổng 80 tấn hàng. Kho A nhiều hơn kho B 20 tấn. Lượng hàng ở A và B là",
     "matrix": null,
@@ -684,7 +594,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 39,
+    "id": 34,
     "type": "economic_leontief",
     "question": "Mô hình Leontief hai ngành thỏa $x=0.2x+0.1y+70$, $y=0.3x+0.2y+50$. Tổng sản lượng $x+y$ bằng",
     "matrix": null,
@@ -702,7 +612,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 40,
+    "id": 35,
     "type": "economic_break_even",
     "question": "Doanh thu và chi phí của hai sản phẩm được mô tả bởi hệ $\\begin{cases}3x+2y=120\\\\x+4y=100\\end{cases}$. Tổng $x+y$ bằng",
     "matrix": null,
@@ -720,7 +630,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 41,
+    "id": 36,
     "type": "economic_wages",
     "question": "Tổng tiền lương của 10 lao động bậc 1 và 6 lao động bậc 2 là 76 triệu. Lương một người bậc 2 cao hơn bậc 1 là 2 triệu. Mức lương bậc 1 là",
     "matrix": null,
@@ -738,7 +648,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 42,
+    "id": 37,
     "type": "economic_price",
     "question": "Hai mức giá $p_1,p_2$ thỏa điều kiện cân bằng $\\begin{cases}3p_1-p_2=40\\\\-p_1+2p_2=10\\end{cases}$. Giá $p_1$ bằng",
     "matrix": null,
@@ -756,7 +666,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 43,
+    "id": 38,
     "type": "economic_three_products",
     "question": "Ba sản phẩm $x,y,z$ thỏa $\\begin{cases}x+y+z=80\\\\2x+y+z=110\\\\x+2y+3z=150\\end{cases}$. Số lượng sản phẩm $z$ bằng",
     "matrix": null,
@@ -774,7 +684,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 44,
+    "id": 39,
     "type": "economic_purchase",
     "question": "Một đơn vị mua 20 thiết bị gồm ba loại $x,y,z$ có giá lần lượt 5, 10 và 20 triệu đồng, tổng chi 220 triệu đồng. Biết số thiết bị loại $x$ nhiều hơn loại $z$ là 2. Số lượng $(x,y,z)$ là",
     "matrix": null,
@@ -792,7 +702,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
   },
   {
-    "id": 45,
+    "id": 40,
     "type": "parameter_classification_3vars",
     "question": "Xét hệ $\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+y+mz=2\\end{cases}$. Kết luận đúng là",
     "matrix": null,
@@ -810,7 +720,7 @@
     "topic": "Biện luận hệ tham số"
   },
   {
-    "id": 46,
+    "id": 41,
     "type": "parameter_consistency_3vars",
     "question": "Hệ $\\begin{cases}x+y+z=1\\\\x+2y+3z=2\\\\2x+3y+4z=m\\end{cases}$ có nghiệm khi",
     "matrix": null,
@@ -828,7 +738,7 @@
     "topic": "Điều kiện tương thích"
   },
   {
-    "id": 47,
+    "id": 42,
     "type": "parameter_unique_determinant",
     "question": "Hệ có ma trận hệ số $A=\\begin{pmatrix}1&1&1\\\\1&m&2\\\\1&2&m\\end{pmatrix}$ có nghiệm duy nhất với mọi vế phải khi",
     "matrix": null,
@@ -846,7 +756,7 @@
     "topic": "Hệ tham số & định thức"
   },
   {
-    "id": 48,
+    "id": 43,
     "type": "rank_free_variables",
     "question": "Một hệ tuyến tính có 5 ẩn và $\\operatorname{rank}(A)=\\operatorname{rank}(A|b)=3$. Số tham số tự do của nghiệm là",
     "matrix": null,
@@ -864,7 +774,7 @@
     "topic": "Hạng & số nghiệm"
   },
   {
-    "id": 49,
+    "id": 44,
     "type": "cramer_combination",
     "question": "Trong hệ hai ẩn, $\\det(A)=5$, định thức thay cột thứ nhất $D_x=-10$ và thay cột thứ hai $D_y=15$. Giá trị $x+y$ bằng",
     "matrix": null,
@@ -882,7 +792,7 @@
     "topic": "Quy tắc Cramer"
   },
   {
-    "id": 50,
+    "id": 45,
     "type": "homogeneous_nullity",
     "question": "Hệ thuần nhất gồm 3 phương trình, 4 ẩn có ma trận hệ số hạng 2. Số chiều của không gian nghiệm bằng",
     "matrix": null,
@@ -900,7 +810,7 @@
     "topic": "Hệ thuần nhất"
   },
   {
-    "id": 51,
+    "id": 46,
     "type": "economic_three_product_plan",
     "question": "Một xưởng sản xuất ba sản phẩm $x,y,z$ thỏa $\\begin{cases}x+y+z=100\\\\2x+y+3z=190\\\\x+3y+2z=210\\end{cases}$. Số sản phẩm loại $z$ là",
     "matrix": null,
@@ -918,7 +828,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong sản xuất"
   },
   {
-    "id": 52,
+    "id": 47,
     "type": "economic_tax_equilibrium",
     "question": "Hai mức giá cân bằng thỏa $2p_1-p_2=30+t$ và $-p_1+3p_2=40$. Thuế $t$ bằng bao nhiêu để $p_1=2p_2$?",
     "matrix": null,
@@ -936,25 +846,7 @@
     "topic": "Cân bằng thị trường có tham số"
   },
   {
-    "id": 53,
-    "type": "economic_leontief_advanced",
-    "question": "Mô hình Leontief hai ngành thỏa $x=0.2x+0.1y+70$, $y=0.2x+0.3y+50$. Tổng sản lượng cân bằng $x+y$ bằng",
-    "matrix": null,
-    "options": [
-      "200",
-      "180",
-      "220",
-      "160"
-    ],
-    "correct": "200",
-    "solution": "Chuyển vế được $0.8x-0.1y=70$, $-0.2x+0.7y=50$. Giải ra $x=y=100$, tổng bằng 200.",
-    "quick": "Đưa mô hình về hệ tuyến tính $(I-C)X=d$.",
-    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải. Với tham số, biện luận bằng định thức/hạng trước khi thế số.",
-    "difficulty": 3,
-    "topic": "Mô hình Leontief"
-  },
-  {
-    "id": 54,
+    "id": 48,
     "type": "economic_three_investments",
     "question": "Đầu tư 200 triệu đồng vào ba kênh có lãi suất 5%, 8%, 10%. Tổng lãi một năm là 13,4 triệu và số tiền ở kênh 5% nhiều hơn kênh 8% là 20 triệu. Số tiền ở kênh 10% là",
     "matrix": null,
@@ -972,7 +864,7 @@
     "topic": "Ứng dụng hệ tuyến tính trong tài chính"
   },
   {
-    "id": 55,
+    "id": 49,
     "type": "economic_mixture_three",
     "question": "Trộn 100 kg ba nguyên liệu A, B, C chứa lần lượt 10%, 20%, 40% chất dinh dưỡng. Hỗn hợp cần 26 kg chất dinh dưỡng và lượng C gấp đôi lượng A. Khối lượng nguyên liệu B là",
     "matrix": null,
@@ -990,7 +882,7 @@
     "topic": "Bài toán phối trộn"
   },
   {
-    "id": 56,
+    "id": 50,
     "type": "economic_transport_cost",
     "question": "Ba kho A, B, C có tổng 120 tấn hàng; kho A gấp đôi kho B, kho C nhiều hơn kho B 20 tấn. Chi phí vận chuyển mỗi tấn từ A, B, C lần lượt là 2, 3, 5 đơn vị. Tổng chi phí là",
     "matrix": null,

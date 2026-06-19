@@ -392,32 +392,33 @@ function showAnswer() {
     grades[current] = isRight;
 
     if (isRight) {
-      totalRight++;
+  totalRight++;
 
-      // Chỉ xóa khỏi ngân hàng khi làm đúng
-      // trong chế độ Luyện câu sai
-      if (
-        practiceViewMode === 'wrong' &&
-        q &&
-        typeof removeFromWrongBank === 'function'
-      ) {
-        removeFromWrongBank(q);
-      }
-    } else {
-      totalWrong++;
+  // Chỉ khi làm đúng trong chế độ luyện câu sai
+  // mới xóa câu khỏi ngân hàng
+  if (
+    practiceViewMode === 'wrong' &&
+    q &&
+    typeof removeFromWrongBank === 'function'
+  ) {
+    removeFromWrongBank(q);
+  }
+} else {
+  totalWrong++;
 
-      if (
-        q &&
-        typeof addToWrongBank === 'function'
-      ) {
-        const source =
-          practiceViewMode === 'wrong'
-            ? 'wrong_review'
-            : 'practice';
+  // Sai ở bất kỳ chế độ nào cũng thêm hoặc cập nhật câu sai
+  if (
+    q &&
+    typeof addToWrongBank === 'function'
+  ) {
+    const source =
+      practiceViewMode === 'wrong'
+        ? 'wrong_review'
+        : 'practice';
 
-        addToWrongBank(q, source);
-      }
-    }
+    addToWrongBank(q, source);
+  }
+}
 
     totalDone++;
     saveProgress();

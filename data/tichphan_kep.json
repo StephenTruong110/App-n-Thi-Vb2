@@ -15,7 +15,7 @@
     "quick": "\\(\\iint_D 1\\,dA=\\) diện tích của \\(D=1\\times1=1\\)",
     "casio": "Tính bằng tay: ∫₀¹ [∫₀¹ 1 dy] dx = ∫₀¹ 1 dx = 1",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
     "quick": "\\(\\int_0^1 x(x-x^2)dx=\\frac{1}{3}-\\frac{1}{4}=\\frac{1}{12}\\)",
     "casio": "∫₀¹ x(x-x²)dx = [x³/3 - x⁴/4]₀¹ = 1/3-1/4 = 1/12",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 3,
@@ -51,7 +51,7 @@
     "quick": "Diện tích \\(=\\int_0^1(x-x^2)dx=\\frac{1}{6}\\)",
     "casio": "∫₀¹(x-x²)dx = [x²/2 - x³/3]₀¹ = 1/2-1/3 = 1/6",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
     "quick": "\\(\\int_0^1(x+\\frac{1}{2})dx=\\frac{1}{2}+\\frac{1}{2}=1\\)",
     "casio": "∫₀¹ (x+1/2) dx = [x²/2+x/2]₀¹ = 1/2+1/2 = 1",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 5,
@@ -87,7 +87,7 @@
     "quick": "∫₀^x x²y dy=x⁴/2. ∫₀¹x⁴/2 dx=1/10. Đáp án: **1/10**.",
     "casio": "∫₀¹ [∫₀ˣ x²y dy] dx = ∫₀¹ x⁴/2 dx = 1/10 ≈ 0.1",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 6,
@@ -105,7 +105,7 @@
     "quick": "\\(\\int_0^2 x(4-x^2)dx=[2x^2-x^4/4]_0^2=8-4=4\\)",
     "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 7,
@@ -123,7 +123,7 @@
     "quick": "Miền bị cắt tại \\(x=\\sqrt2\\), nên phải tách thành 2 tích phân sau khi đổi thứ tự.",
     "casio": "Vẽ miền: \\(x=\\sqrt y\\Leftrightarrow y=x^2\\), với \\(0\\le y\\le2\\). Khi đổi thứ tự phải tách 2 miền: \\(0\\le x\\le\\sqrt2\\) thì \\(0\\le y\\le x^2\\); còn \\(\\sqrt2\\le x\\le2\\) thì \\(0\\le y\\le2\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 8,
@@ -141,7 +141,7 @@
     "quick": "Tam giác \\(y\\le x\\le1\\): đổi thành \\(x: 0\\to1\\), \\(y: 0\\to x\\)",
     "casio": "CASIO: Đổi thứ tự: vẽ miền D, xác định lại cận. Không cần CASIO cho bước này — cần kỹ năng vẽ và phân tích miền.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 9,
@@ -159,7 +159,7 @@
     "quick": "\\(\\int_0^{2\\pi}d\\theta\\int_0^1 r^2\\,dr=2\\pi\\cdot\\dfrac{1}{3}=\\dfrac{2\\pi}{3}\\)",
     "casio": "Cực: I = ∫₀²π dθ · ∫₀¹ r²dr = 2π · 1/3 = 2π/3",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 10,
@@ -177,7 +177,7 @@
     "quick": "\\(\\int_0^{2\\pi}d\\theta\\int_0^R r\\,dr=2\\pi\\cdot\\frac{R^2}{2}=\\pi R^2\\)",
     "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 11,
@@ -195,7 +195,7 @@
     "quick": "\\(I=2\\pi\\cdot[r^4/4]_0^2=2\\pi\\cdot4=8\\pi\\)",
     "casio": "I = 2π · ∫₀² r³dr = 2π · [r⁴/4]₀² = 2π·4 = 8π",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 12,
@@ -213,7 +213,7 @@
     "quick": "\\(\\int_0^1 e^{r^2}r\\,dr=\\frac{e-1}{2}\\) → \\(I=2\\pi\\cdot\\frac{e-1}{2}=\\pi(e-1)\\)",
     "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 13,
@@ -231,7 +231,7 @@
     "quick": "Hình chữ nhật: \\(I=\\left(\\int_0^2 x\\,dx\\right)\\left(\\int_0^3 y\\,dy\\right)=2\\cdot\\frac{9}{2}=9\\)",
     "casio": "(∫₀² x dx)(∫₀³ y dy) = [x²/2]₀² · [y²/2]₀³ = 2·9/2 = 9",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 14,
@@ -249,7 +249,7 @@
     "quick": "\\(S=\\int_{-2}^1(2-x-x^2)dx=\\frac{9}{2}\\)",
     "casio": "∫₋₂¹(2-x-x²)dx=[2x-x²/2-x³/3]₋₂¹=(2-1/2-1/3)-(-4-2+8/3)=7/6+10/3=9/2",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 15,
@@ -267,7 +267,7 @@
     "quick": "\\(\\int_0^{\\sqrt{\\pi/2}}\\cos(r^2)r\\,dr=\\frac{1}{2}\\sin(\\pi/2)=\\frac{1}{2}\\) → \\(I=2\\pi\\cdot\\frac{1}{2}=\\pi\\)",
     "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 16,
@@ -285,7 +285,7 @@
     "quick": "\\(I=\\pi\\cdot[r^4/4]_0^2=\\pi\\cdot4=4\\pi\\)",
     "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 17,
@@ -303,7 +303,7 @@
     "quick": "\\(\\int_0^1(x^2+4/3)dx=1/3+4/3=5/3\\)",
     "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 18,
@@ -321,7 +321,7 @@
     "quick": "\\(I=2\\pi[-1/r]_1^2=2\\pi(1-1/2)=\\pi\\).",
     "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 19,
@@ -339,7 +339,7 @@
     "quick": "Tách: \\(I=(\\int_0^1 e^x dx)^2=(e-1)^2\\)",
     "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 20,
@@ -357,7 +357,7 @@
     "quick": "\\(S=\\pi R^2=\\pi\\cdot1^2=\\pi\\) (đường tròn bán kính 1)",
     "casio": "CASIO: Tọa độ cực: x=rcosθ, y=rsinθ, dA=r·dr·dθ. Đổi cận: r từ 0→R(θ), θ từ 0→2π (hoặc góc tương ứng). Dùng ∫dx trên CASIO để tính tích phân theo r trước, rồi theo θ.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 21,
@@ -375,7 +375,7 @@
     "quick": "Đổi thứ tự: \\(I=\\int_0^1 y\\sin(y^2)dy=\\frac{1-\\cos1}{2}\\)",
     "casio": "I=∫₀¹ y·sin(y²)dy = [-cos(y²)/2]₀¹ = (1-cos1)/2",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 22,
@@ -393,7 +393,7 @@
     "quick": "\\(I=2\\pi\\cdot\\frac{1}{2}[-\\frac{2}{3}(4-r^2)^{3/2}]_0^2=2\\pi\\cdot\\frac{8}{3}=\\frac{16\\pi}{3}\\)",
     "casio": "Đặt u=4-r²: I=2π·(1/2)·(2/3)·[u^{3/2}]₀⁴=2π·8/3=16π/3",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 23,
@@ -411,7 +411,7 @@
     "quick": "\\(y: 0\\to2\\) (vì \\(\\sqrt{4}=2\\)); với mỗi \\(y\\): \\(x: y^2\\to4\\)",
     "casio": "CASIO: Tích phân đôi tính từng lớp: trước tích phân trong (theo y), sau đó tích phân ngoài (theo x). Dùng [SHIFT][∫dx] cho từng lớp. Với tọa độ cực: nhớ nhân thêm Jacobian r.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 24,
@@ -429,7 +429,7 @@
     "quick": "\\(\\int_0^{\\sqrt x} y\\,dy=x/2\\), nên \\(I=\\frac12\\int_1^4 x^{3/2}dx=\\frac{31}{5}\\).",
     "casio": "I=(1/2)·(2/5)·[x^{5/2}]₁⁴=(1/5)(32-1)=31/5",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 25,
@@ -447,7 +447,7 @@
     "quick": "Cận phải đi đúng với biến tích phân trong.",
     "casio": "Không cần CASIO; kiểm tra thứ tự cận và biến.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 26,
@@ -465,28 +465,10 @@
     "quick": "Tích phân trong theo x: [x²/2+xy]₀¹=1/2+y. Tích phân ngoài: [y/2+y²/2]₀¹=1. **=1**.",
     "casio": "CASIO: Tính ∫₀¹(1/2+y)dy=[y/2+y²/2]₀¹=0.5+0.5=1.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
     "id": 27,
-    "type": "double_integral_compute",
-    "question": "Tính \\(\\int_0^2\\int_0^3 xy\\,dy\\,dx\\).",
-    "matrix": null,
-    "options": [
-      "\\(9\\)",
-      "\\(18\\)",
-      "\\(6\\)",
-      "\\(12\\)"
-    ],
-    "correct": "\\(9\\)",
-    "solution": "Tách biến (hàm tích): \\(\\int_0^2\\int_0^3 xy\\,dy\\,dx=\\left(\\int_0^2 x\\,dx\\right)\\left(\\int_0^3 y\\,dy\\right)\\).\n\n\\(=\\left[\\dfrac{x^2}{2}\\right]_0^2\\cdot\\left[\\dfrac{y^2}{2}\\right]_0^3=2\\cdot\\dfrac{9}{2}=9\\).",
-    "quick": "f(x,y)=x·y tách biến: \\((\\int_0^2 x\\,dx)(\\int_0^3 y\\,dy)=2\\cdot\\dfrac{9}{2}=\\mathbf{9}\\).",
-    "casio": "CASIO: ∫₀²x dx=2, ∫₀³y dy=9/2. Tích = 2×4.5=9.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 28,
     "type": "double_integral_volume",
     "question": "Thể tích khối trụ \\(x^2+y^2\\leq4,\\;0\\leq z\\leq3\\) tính bằng tích phân đôi là?",
     "matrix": null,
@@ -501,10 +483,10 @@
     "quick": "V=chiều cao×diện tích đáy=3×π×4=**12π**. Hoặc TP cực: 3×∫₀²πr dr dθ=12π.",
     "casio": "CASIO: V=∫₀²π ∫₀² 3r dr dθ = 3·[r²/2]₀²·2π = 3·2·2π = 12π.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 29,
+    "id": 28,
     "type": "double_integral_volume",
     "question": "Thể tích của vật thể nằm dưới \\(z=4-x^2-y^2\\) và trên \\(z=0\\) là?",
     "matrix": null,
@@ -519,10 +501,10 @@
     "quick": "Tọa độ cực: V=2π·∫₀²(4r-r³)dr=2π·[2r²-r⁴/4]₀²=2π·(8-4)=**8π**.",
     "casio": "CASIO: ∫₀²(4r-r³)dr=[2r²-r⁴/4]₀²=8-4=4. Nhân 2π=8π.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 30,
+    "id": 29,
     "type": "jacobian",
     "question": "Jacobian của phép đổi biến sang tọa độ cực \\(x=r\\cos\\theta,\\;y=r\\sin\\theta\\) là?",
     "matrix": null,
@@ -537,29 +519,11 @@
     "quick": "Jacobian tọa độ cực = **r**. Ghi nhớ: \\(dx\\,dy=r\\,dr\\,d\\theta\\) (không quên r!).",
     "casio": "CASIO: Tính det[[cosθ,-rsinθ],[sinθ,rcosθ]]=r(cos²θ+sin²θ)=r.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 31,
-    "type": "jacobian",
-    "question": "Jacobian của tọa độ trụ \\((r,\\theta,z)\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(r\\)",
-      "\\(r^2\\)",
-      "\\(r^2\\sin\\phi\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(r\\)",
-    "solution": "Tọa độ trụ: \\(x=r\\cos\\theta,\\;y=r\\sin\\theta,\\;z=z\\).\n\n\\(J=\\begin{vmatrix}\\cos\\theta&-r\\sin\\theta&0\\\\\\sin\\theta&r\\cos\\theta&0\\\\0&0&1\\end{vmatrix}=1\\cdot(r\\cos^2\\theta+r\\sin^2\\theta)=r\\).\n\n\\(dV=r\\,dr\\,d\\theta\\,dz\\).\n\n*So sánh:* Tọa độ cầu có Jacobian = \\(r^2\\sin\\phi\\).",
-    "quick": "Tọa độ trụ: J=**r** (giống cực × 1 theo z). dV=r dr dθ dz.",
-    "casio": "CASIO: Det 3×3 tam giác = tích đường chéo. J=1·r·1=r.",
-    "difficulty": 3,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 32,
-    "type": "double_integral_polar",
+    "id": 30,
+    "type": "double_integral_polar_official",
     "question": "Cho \\(D=\\{(x,y):x^2+y^2\\le1\\}\\). Giá trị \\(\\iint_D(x^2+y^2)\\,dx\\,dy\\) bằng",
     "matrix": null,
     "options": [
@@ -573,11 +537,11 @@
     "quick": "Nhớ Jacobian \\(r\\): tích phân theo r là \\(\\int_0^1r^3dr=1/4\\).",
     "casio": "CASIO: Tính \\(2\\pi\\int_0^1r^3dr=\\pi/2\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 33,
-    "type": "double_integral_setup",
+    "id": 31,
+    "type": "double_integral_setup_official",
     "question": "Cho \\(D=\\{(x,y):0\\le x\\le3,\\ 0\\le y\\le1\\}\\) và \\(I=\\iint_D e^x\\,dx\\,dy\\). Cách viết tích phân lặp đúng là",
     "matrix": null,
     "options": [
@@ -591,10 +555,10 @@
     "quick": "Đọc từ trong ra ngoài: \\(dx\\) dùng cận của x, rồi \\(dy\\) dùng cận của y.",
     "casio": "CASIO: Có thể tính \\(I=(e^3-1)\\cdot1=e^3-1\\) để kiểm tra.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 34,
+    "id": 32,
     "type": "change_order",
     "question": "Tích phân lặp \\(I=\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\). Sau khi đổi thứ tự trở thành?",
     "matrix": null,
@@ -609,10 +573,10 @@
     "quick": "Miền: y≥x, 0≤x≤1, 0≤y≤1. Đổi: **y:0→1, x:0→y**.",
     "casio": "CASIO: Miền là tam giác dưới đường y=x trong hình vuông [0,1]².",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 35,
+    "id": 33,
     "type": "change_order",
     "question": "Đổi thứ tự tích phân: \\(I=\\int_0^4\\int_{\\sqrt{x}}^2 f(x,y)\\,dy\\,dx\\).",
     "matrix": null,
@@ -627,10 +591,10 @@
     "quick": "Gốc: x:0→4, y:√x→2. Đổi: **y:0→2, x:0→y²**.",
     "casio": "CASIO: Miền D là vùng bên trên y=√x, dưới y=2.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 36,
+    "id": 34,
     "type": "polar_domain_complex",
     "question": "Cho \\(I=\\iint_D(x^2+y^2+1)\\,dA\\) với D trong góc phần tư 1, nằm trong \\(x^2+y^2=4x\\) và ngoài \\(x^2+y^2=4\\). Dạng tọa độ cực là?",
     "matrix": null,
@@ -642,13 +606,13 @@
     ],
     "correct": "\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\)",
     "solution": "**Đổi sang cực:** \\(x=r\\cos\\theta, y=r\\sin\\theta\\).\n\n**Đường tròn ngoài** \\(x^2+y^2=4\\) → \\(r=2\\).\n\n**Đường tròn trong** \\(x^2+y^2=4x\\) → \\(r^2=4r\\cos\\theta\\) → \\(r=4\\cos\\theta\\).\n\n**Góc phần tư 1:** Điều kiện giao nhau: \\(4\\cos\\theta=2 \\Rightarrow \\cos\\theta=1/2 \\Rightarrow \\theta=\\pi/3\\).\n\nNên \\(\\theta\\in[0,\\pi/3]\\), \\(r\\in[2,4\\cos\\theta]\\).\n\n\\(f=x^2+y^2+1=r^2+1\\), \\(dA=r\\,dr\\,d\\theta\\).\n\n\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\).",
-    "quick": "Cực: r từ 2 (vòng ngoài) đến 4cosθ (vòng trong). θ từ 0 đến π/3 (giao 2 đường tròn). **Đây là dạng C61 CA1 2025**.",
+    "quick": "Cực: r từ 2 (vòng ngoài) đến 4cosθ (vòng trong). θ từ 0 đến π/3 (giao 2 đường tròn).",
     "casio": "CASIO: Giao 2 đường tròn: r=2 và r=4cosθ tại cosθ=1/2 → θ=π/3.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 37,
+    "id": 35,
     "type": "polar_domain_complex",
     "question": "Tính \\(I=\\iint_D\\sqrt{x^2+y^2}\\,dA\\) trong đó D là đĩa \\(x^2+y^2\\leq 2x\\).",
     "matrix": null,
@@ -663,10 +627,10 @@
     "quick": "Cực: \\(r\\le 2\\cos\\theta\\). Tính ra \\(I=\\frac{8}{3}\\int_{-\\pi/2}^{\\pi/2}\\cos^3\\theta d\\theta=\\frac{32}{9}\\).",
     "casio": "CASIO: ∫_{-π/2}^{π/2} 8cos³θ/3 dθ. ∫cos³θ=sinθ-sin³θ/3.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 38,
+    "id": 36,
     "type": "double_integral_setup",
     "question": "Miền D là hình vuông [0,2]×[0,2]. Tích phân \\(\\iint_D 1\\,dA\\) bằng?",
     "matrix": null,
@@ -681,10 +645,10 @@
     "quick": "∬1 dA = diện tích D = 2×2 = **4**.",
     "casio": "CASIO: ∫₀²∫₀² dxdy = [x]₀² × [y]₀² = 2×2=4.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 39,
+    "id": 37,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^1\\int_0^1 x\\,dx\\,dy\\).",
     "matrix": null,
@@ -699,10 +663,10 @@
     "quick": "∫₀¹x dx=1/2. Rồi ∫₀¹(1/2)dy=**1/2**.",
     "casio": "CASIO: ∫₀¹x dx=[x²/2]₀¹=1/2. Nhân ∫₀¹ dy=1. Tổng: 1/2.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 40,
+    "id": 38,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^2\\int_0^1(x+y)\\,dx\\,dy\\).",
     "matrix": null,
@@ -717,46 +681,10 @@
     "quick": "∫₀¹(x+y)dx=1/2+y. Rồi ∫₀²(1/2+y)dy=1+2=**3**.",
     "casio": "CASIO: Tích phân lặp theo thứ tự x trước (0→1), y sau (0→2).",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 41,
-    "type": "jacobian",
-    "question": "Khi đổi sang tọa độ cực, \\(dA=dx\\,dy\\) trở thành?",
-    "matrix": null,
-    "options": [
-      "\\(r\\,dr\\,d\\theta\\)",
-      "\\(dr\\,d\\theta\\)",
-      "\\(r^2\\,dr\\,d\\theta\\)",
-      "\\(\\dfrac{1}{r}\\,dr\\,d\\theta\\)"
-    ],
-    "correct": "\\(r\\,dr\\,d\\theta\\)",
-    "solution": "Jacobian tọa độ cực: \\(J=r\\).\n\n\\(dA=dx\\,dy=r\\,dr\\,d\\theta\\).\n\n**Không được quên nhân tử r!** Đây là lỗi phổ biến nhất.",
-    "quick": "Cực: **dA=r dr dθ**. Nhớ r! ∫∫f dA=∫∫f(rcosθ,rsinθ)·r dr dθ.",
-    "casio": "CASIO: J=|∂(x,y)/∂(r,θ)|=r. dxdy=r dr dθ.",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 42,
-    "type": "double_integral_area",
-    "question": "Diện tích hình tròn \\(x^2+y^2\\leq R^2\\) tính bằng tích phân đôi là?",
-    "matrix": null,
-    "options": [
-      "\\(\\pi R^2\\)",
-      "\\(2\\pi R\\)",
-      "\\(\\dfrac{4}{3}\\pi R^3\\)",
-      "\\(4R^2\\)"
-    ],
-    "correct": "\\(\\pi R^2\\)",
-    "solution": "\\(S=\\iint_D 1\\,dA=\\int_0^{2\\pi}\\int_0^R r\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{R^2}{2}=\\pi R^2\\).",
-    "quick": "S=∬1 dA = ∫₀²π∫₀^R r dr dθ=2π·R²/2=**πR²**. Công thức quen thuộc!",
-    "casio": "CASIO: ∫₀^R r dr=R²/2. Nhân 2π → πR².",
-    "difficulty": 1,
-    "topic": "Tích phân"
-  },
-  {
-    "id": 43,
+    "id": 39,
     "type": "double_integral_order",
     "question": "Miền D: \\(0\\leq x\\leq1,\\;0\\leq y\\leq x\\). Đây là miền loại?",
     "matrix": null,
@@ -771,10 +699,10 @@
     "quick": "y từ 0 đến x (phụ thuộc x) → **loại 1** (tích phân trong theo y).",
     "casio": "CASIO: x cố định, y chạy từ 0 đến x → tích phân trong theo y.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 44,
+    "id": 40,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^\\pi\\int_0^1 r\\sin\\theta\\,dr\\,d\\theta\\) (tọa độ cực).",
     "matrix": null,
@@ -789,10 +717,10 @@
     "quick": "Tách: (∫₀¹r dr)·(∫₀^π sinθ dθ)=(1/2)·2=**1**.",
     "casio": "CASIO: ∫₀¹ r dr=[r²/2]₀¹=1/2. ∫₀^π sinθ dθ=[-cosθ]₀^π=2.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 45,
+    "id": 41,
     "type": "double_integral_polar",
     "question": "Đổi sang tọa độ cực: \\(x^2+y^2=4\\) trở thành?",
     "matrix": null,
@@ -807,10 +735,10 @@
     "quick": "x²+y²=r². Vì vậy x²+y²=4 → r²=4 → **r=2**.",
     "casio": "CASIO: r=√(x²+y²)=√4=2.",
     "difficulty": 1,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 46,
+    "id": 42,
     "type": "double_integral_compute",
     "question": "Tính \\(\\iint_D(x-y)\\,dA\\) với \\(D=[0,2]\\times[0,1]\\).",
     "matrix": null,
@@ -825,10 +753,10 @@
     "quick": "Tích phân theo y trước.",
     "casio": "CASIO: Tính \\(\\int_0^2(x-0.5)dx\\).",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 47,
+    "id": 43,
     "type": "double_integral_order",
     "question": "Đổi thứ tự \\(\\int_0^1\\int_{x^2}^{x}f(x,y)\\,dy\\,dx\\) thành",
     "matrix": null,
@@ -843,10 +771,10 @@
     "quick": "Giữa đường x=y và x=√y.",
     "casio": "CASIO không cần thiết.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 48,
+    "id": 44,
     "type": "double_integral_polar",
     "question": "Tính \\(\\iint_D1\\,dA\\) với \\(D:\\ x^2+y^2\\le4x\\).",
     "matrix": null,
@@ -861,10 +789,10 @@
     "quick": "Hoàn thành bình phương hoặc nhận bán kính 2.",
     "casio": "CASIO không cần thiết.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 49,
+    "id": 45,
     "type": "double_integral_parameter",
     "question": "Tìm \\(a\\) để \\(\\iint_{[0,1]^2}(ax+y)\\,dA=1\\).",
     "matrix": null,
@@ -879,10 +807,10 @@
     "quick": "Trung bình của x và y trên hình vuông đơn vị đều là 1/2.",
     "casio": "CASIO: Giải \\(a/2+1/2=1\\).",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 50,
+    "id": 46,
     "type": "double_integral_volume",
     "question": "Thể tích dưới mặt \\(z=xy\\) trên hình chữ nhật \\(0\\le x\\le2,0\\le y\\le3\\) bằng",
     "matrix": null,
@@ -897,10 +825,10 @@
     "quick": "Hàm và miền đều tách được.",
     "casio": "CASIO: Nhân hai tích phân một biến.",
     "difficulty": 2,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 51,
+    "id": 47,
     "type": "double_integral_symmetry",
     "question": "Cho \\(D\\) là đĩa tâm O. Giá trị \\(\\iint_D x^3y^2\\,dA\\) bằng",
     "matrix": null,
@@ -915,10 +843,10 @@
     "quick": "Hàm lẻ theo một biến trên miền đối xứng.",
     "casio": "CASIO không cần thiết.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 52,
+    "id": 48,
     "type": "jacobian",
     "question": "Với phép đổi biến \\(u=x+y,\\ v=x-y\\), ta có \\(dx\\,dy\\) bằng",
     "matrix": null,
@@ -933,10 +861,10 @@
     "quick": "Tính Jacobian của phép đổi ngược.",
     "casio": "CASIO: Có thể dùng định thức ma trận 2×2.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   },
   {
-    "id": 53,
+    "id": 49,
     "type": "double_integral_polar",
     "question": "Tính \\(\\iint_D xy\\,dA\\) với \\(D\\) là phần tư thứ nhất của đĩa \\(x^2+y^2\\le1\\).",
     "matrix": null,
@@ -951,6 +879,6 @@
     "quick": "Tách tích phân theo r và θ.",
     "casio": "CASIO: Tính hai tích phân một biến.",
     "difficulty": 3,
-    "topic": "Tích phân"
+    "topic": "Tích phân kép"
   }
 ]

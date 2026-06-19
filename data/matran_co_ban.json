@@ -446,7 +446,7 @@
     "solution": "$Ax$ có cỡ $3\\times1$; mỗi phần tử là tổng nhu cầu của một nguồn lực cho toàn bộ kế hoạch sản xuất.",
     "quick": "Hàng nguồn lực × cột sản lượng.",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "Ứng dụng ma trận trong kinh tế"
   },
   {
@@ -464,7 +464,7 @@
     "solution": "Đặt từng véc tơ theo đúng thứ tự làm một hàng.",
     "quick": "Véc tơ thứ $i$ là hàng $i$.",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
-    "difficulty": 3,
+    "difficulty": 1,
     "topic": "Ma trận cơ bản"
   },
   {
@@ -482,7 +482,7 @@
     "solution": "Ma trận hệ số chỉ gồm các hệ số của $x,y,z$, không gồm cột vế phải.",
     "quick": "Mỗi phương trình là một hàng.",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
-    "difficulty": 3,
+    "difficulty": 1,
     "topic": "Ma trận cơ bản"
   },
   {
@@ -500,7 +500,7 @@
     "solution": "$(2\\times3)(3\\times2)=2\\times2$, còn $(3\\times2)(2\\times3)=3\\times3$.",
     "quick": "Lấy hai kích thước ngoài.",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
-    "difficulty": 3,
+    "difficulty": 2,
     "topic": "Ma trận cơ bản"
   },
   {
@@ -664,5 +664,131 @@
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB → nhập dữ liệu → gọi ma trận và thực hiện phép cộng, nhân, nghịch đảo hoặc lũy thừa.",
     "difficulty": 3,
     "topic": "Ứng dụng ma trận Markov"
+  },
+  {
+    "type": "trace_property",
+    "question": "Cho $A=\\begin{pmatrix}2&5&-1\\\\0&-3&4\\\\1&0&6\\end{pmatrix}$. Vết của $A$ bằng",
+    "matrix": null,
+    "options": [
+      "5",
+      "10",
+      "0",
+      "-3"
+    ],
+    "correct": "5",
+    "solution": "$\\text{tr}(A)=2+(-3)+6=5$.",
+    "quick": "Cộng đường chéo chính.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 1,
+    "topic": "Ma trận cơ bản",
+    "id": 38
+  },
+  {
+    "type": "trace_property",
+    "question": "Cho $A$ và $B$ là hai ma trận vuông cùng cấp. Đẳng thức nào sau đây luôn đúng?",
+    "matrix": null,
+    "options": [
+      "$\\text{tr}(AB)=\\text{tr}(BA)$",
+      "$\\text{tr}(AB)=\\text{tr}(A)\\cdot\\text{tr}(B)$",
+      "$\\text{tr}(A+B)=\\text{tr}(A)-\\text{tr}(B)$",
+      "$\\text{tr}(A^T)=-\\text{tr}(A)$"
+    ],
+    "correct": "$\\text{tr}(AB)=\\text{tr}(BA)$",
+    "solution": "Tính chất vòng của vết: $\\text{tr}(AB)=\\text{tr}(BA)$ luôn đúng với mọi $A,B$ cùng cấp.",
+    "quick": "Vết có tính chất vòng: $\\text{tr}(AB)=\\text{tr}(BA)$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản",
+    "id": 39
+  },
+  {
+    "type": "transpose_property",
+    "question": "Cho $A$ và $B$ là hai ma trận cùng cỡ. Đẳng thức nào sau đây đúng?",
+    "matrix": null,
+    "options": [
+      "$(A+B)^T=A^T+B^T$",
+      "$(AB)^T=A^TB^T$",
+      "$(A^T)^T=-A$",
+      "$(kA)^T=kA$ với mọi $k$"
+    ],
+    "correct": "$(A+B)^T=A^T+B^T$",
+    "solution": "Tính chất chuyển vị: $(A+B)^T=A^T+B^T$. Lưu ý $(AB)^T=B^TA^T$ (đổi thứ tự), không phải $A^TB^T$.",
+    "quick": "$(A+B)^T=A^T+B^T$; $(AB)^T=B^TA^T$ (đổi thứ tự).",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản",
+    "id": 40
+  },
+  {
+    "type": "transpose_property",
+    "question": "Cho $A$ là ma trận vuông. Phát biểu nào sau đây là sai?",
+    "matrix": null,
+    "options": [
+      "$(AB)^T=A^TB^T$",
+      "$(A^T)^T=A$",
+      "$(kA)^T=kA^T$",
+      "$(A+B)^T=A^T+B^T$"
+    ],
+    "correct": "$(AB)^T=A^TB^T$",
+    "solution": "Đẳng thức đúng là $(AB)^T=B^TA^T$, không phải $A^TB^T$.",
+    "quick": "Chuyển vị tích: đảo ngược thứ tự.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản",
+    "id": 41
+  },
+  {
+    "type": "multiply_element",
+    "question": "Cho $A=\\begin{pmatrix}1&2&3\\\\4&5&6\\end{pmatrix}$, $B=\\begin{pmatrix}1&0\\\\0&1\\\\1&0\\end{pmatrix}$. Phần tử hàng 2 cột 1 của $AB$ bằng",
+    "matrix": null,
+    "options": [
+      "10",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": "10",
+    "solution": "$(AB)_{21}=4\\cdot1+5\\cdot0+6\\cdot1=10$.",
+    "quick": "Hàng $i$ của $A$ nhân với cột $j$ của $B$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản",
+    "id": 42
+  },
+  {
+    "type": "multiply_element",
+    "question": "Cho $A=\\begin{pmatrix}2&-1\\\\0&3\\end{pmatrix}$, $B=\\begin{pmatrix}1&4\\\\2&-1\\end{pmatrix}$. Phần tử hàng 1 cột 2 của $AB$ bằng",
+    "matrix": null,
+    "options": [
+      "9",
+      "10",
+      "7",
+      "-9"
+    ],
+    "correct": "9",
+    "solution": "$(AB)_{12}=2\\cdot4+(-1)\\cdot(-1)=8+1=9$.",
+    "quick": "Hàng 1 của $A$ nhân cột 2 của $B$.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA/MatB → nhập dữ liệu → gọi MatA, MatB và thực hiện phép toán cần tính.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản",
+    "id": 43
+  },
+  {
+    "type": "matrix_equation",
+    "question": "Cho $A=\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix}$ và $B=\\begin{pmatrix}1&2\\\\3&1\\end{pmatrix}$. Ma trận $X$ thỏa $AX=B$ là",
+    "matrix": null,
+    "options": [
+      "$\\begin{pmatrix}0&5\\\\1&-8\\end{pmatrix}$",
+      "$\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}$",
+      "$\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}$",
+      "$\\begin{pmatrix}5&0\\\\-8&1\\end{pmatrix}$"
+    ],
+    "correct": "$\\begin{pmatrix}0&5\\\\1&-8\\end{pmatrix}$",
+    "solution": "$X=A^{-1}B$. $\\det(A)=6-5=1$, nên $A^{-1}=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}$. $X=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}\\begin{pmatrix}1&2\\\\3&1\\end{pmatrix}=\\begin{pmatrix}0&5\\\\1&-8\\end{pmatrix}$.",
+    "quick": "$AX=B\\Rightarrow X=A^{-1}B$. Dùng CASIO tính $A^{-1}$ rồi nhân $B$.",
+    "casio": "MENU → Matrix → nhập MatA, MatB → tính MatA⁻¹×MatB.",
+    "difficulty": 3,
+    "topic": "Phương trình ma trận",
+    "id": 44
   }
 ]

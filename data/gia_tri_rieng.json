@@ -55,24 +55,6 @@
   },
   {
     "id": 4,
-    "type": "eigenvalue_symmetric",
-    "question": "Các giá trị riêng của $A=\\begin{pmatrix}5&2\\\\2&5\\end{pmatrix}$ là",
-    "matrix": null,
-    "options": [
-      "7 và 3",
-      "5 và 2",
-      "10 và 4",
-      "6 và 4"
-    ],
-    "correct": "7 và 3",
-    "solution": "$\\det(A-\\lambda I)=(5-\\lambda)^2-4=0$, suy ra $\\lambda=7,3$.",
-    "quick": "Dạng $\\begin{pmatrix}a&b\\b&a\\end{pmatrix}$ có trị riêng $a+b,a-b$.",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
-    "difficulty": 2,
-    "topic": "Trị riêng"
-  },
-  {
-    "id": 5,
     "type": "eigenvalue_sum",
     "question": "Tổng các giá trị riêng của $A=\\begin{pmatrix}1&0&0\\\\-10&-3&0\\\\4&200&6\\end{pmatrix}$ bằng",
     "matrix": null,
@@ -90,7 +72,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 6,
+    "id": 5,
     "type": "eigenvalue_product",
     "question": "Tích các giá trị riêng của $A=\\begin{pmatrix}2&3\\\\1&4\\end{pmatrix}$ bằng",
     "matrix": null,
@@ -108,7 +90,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 7,
+    "id": 6,
     "type": "eigenvalue_sum_squares",
     "question": "Ma trận $2\\times2$ có $\\operatorname{tr}(A)=6$ và $\\det(A)=5$. Tổng bình phương hai trị riêng bằng",
     "matrix": null,
@@ -126,7 +108,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 8,
+    "id": 7,
     "type": "linked_eigenvalues",
     "question": "Cho $A=\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}$. Gọi $X$ là tập các trị riêng phân biệt của $A$. Tổng bình phương các phần tử của $X$ bằng",
     "matrix": null,
@@ -144,7 +126,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 9,
+    "id": 8,
     "type": "special_matrix",
     "question": "Cho $A=\\begin{pmatrix}4&1&1\\\\1&4&1\\\\1&1&4\\end{pmatrix}$. Các trị riêng phân biệt của $A$ là",
     "matrix": null,
@@ -162,7 +144,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 10,
+    "id": 9,
     "type": "distinct_count",
     "question": "Số trị riêng phân biệt của $A=\\begin{pmatrix}-1&3&7\\\\0&2&8\\\\0&0&3\\end{pmatrix}$ là",
     "matrix": null,
@@ -180,7 +162,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 11,
+    "id": 10,
     "type": "repeated_eigenvalue",
     "question": "Ma trận $A=\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}$ có",
     "matrix": null,
@@ -198,7 +180,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 12,
+    "id": 11,
     "type": "characteristic_polynomial",
     "question": "Đa thức đặc trưng của $A=\\begin{pmatrix}2&1\\\\3&4\\end{pmatrix}$ theo dạng $\\det(\\lambda I-A)$ là",
     "matrix": null,
@@ -216,7 +198,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 13,
+    "id": 12,
     "type": "eigenvalue_parameter",
     "question": "Một trị riêng của $A=\\begin{pmatrix}m&1\\\\0&3\\end{pmatrix}$ là 2. Khi đó $m$ bằng",
     "matrix": null,
@@ -234,7 +216,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 14,
+    "id": 13,
     "type": "eigenvalue_from_trace_det",
     "question": "Ma trận $2\\times2$ có vết 7 và định thức 10. Các trị riêng là",
     "matrix": null,
@@ -252,7 +234,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 15,
+    "id": 14,
     "type": "trace_from_eigenvalues",
     "question": "Ma trận cấp 3 có các trị riêng $-1,2,5$. Vết của ma trận bằng",
     "matrix": null,
@@ -270,7 +252,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 16,
+    "id": 15,
     "type": "det_from_eigenvalues",
     "question": "Ma trận cấp 3 có các trị riêng $-1,2,5$. Định thức bằng",
     "matrix": null,
@@ -288,7 +270,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 17,
+    "id": 16,
     "type": "check_eigenvector",
     "question": "Cho $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$ và $v=(1;-1)^T$. Khẳng định đúng là",
     "matrix": null,
@@ -306,7 +288,7 @@
     "topic": "Trị riêng & véc tơ riêng"
   },
   {
-    "id": 18,
+    "id": 17,
     "type": "find_eigenvector",
     "question": "Một véc tơ riêng ứng với trị riêng $\\lambda=3$ của $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$ là",
     "matrix": null,
@@ -324,7 +306,7 @@
     "topic": "Trị riêng & véc tơ riêng"
   },
   {
-    "id": 19,
+    "id": 18,
     "type": "polynomial_eigenvalues",
     "question": "Ma trận $A$ có hai trị riêng $2$ và $-1$. Các trị riêng của $A^2-3A+I$ là",
     "matrix": null,
@@ -342,7 +324,7 @@
     "topic": "Đa thức của ma trận"
   },
   {
-    "id": 20,
+    "id": 19,
     "type": "inverse_eigenvalues",
     "question": "Ma trận khả nghịch $A$ có các trị riêng $2,-4,\\dfrac12$. Các trị riêng của $A^{-1}$ là",
     "matrix": null,
@@ -360,7 +342,7 @@
     "topic": "Trị riêng của ma trận nghịch đảo"
   },
   {
-    "id": 21,
+    "id": 20,
     "type": "largest_eigenvalue_trace_det",
     "question": "Ma trận cấp 2 có $\\operatorname{tr}(A)=8$, $\\det(A)=15$ và có hai trị riêng thực. Trị riêng lớn hơn bằng",
     "matrix": null,
@@ -378,7 +360,7 @@
     "topic": "Trị riêng từ trace–det"
   },
   {
-    "id": 22,
+    "id": 21,
     "type": "repeated_eigenvalue_parameter",
     "question": "Ma trận $A=\\begin{pmatrix}m&1\\\\-1&3\\end{pmatrix}$ có trị riêng kép khi",
     "matrix": null,
@@ -396,7 +378,7 @@
     "topic": "Trị riêng theo tham số"
   },
   {
-    "id": 23,
+    "id": 22,
     "type": "special_symmetric_eigenvalues",
     "question": "Cho $A=\\begin{pmatrix}4&-1&-1\\\\-1&4&-1\\\\-1&-1&4\\end{pmatrix}$. Các trị riêng của $A$ là",
     "matrix": null,
@@ -414,7 +396,7 @@
     "topic": "Ma trận đặc biệt"
   },
   {
-    "id": 24,
+    "id": 23,
     "type": "shifted_determinant_eigenvalues",
     "question": "Ma trận cấp 3 có các trị riêng $-1,2,3$. Giá trị $\\det(A+2I)$ bằng",
     "matrix": null,
@@ -432,7 +414,7 @@
     "topic": "Trị riêng & định thức"
   },
   {
-    "id": 25,
+    "id": 24,
     "type": "markov_stationary_vector",
     "question": "Ma trận chuyển trạng thái $P=\\begin{pmatrix}0.8&0.3\\\\0.2&0.7\\end{pmatrix}$. Véc tơ trạng thái dừng $x$ thỏa $Px=x$, $x_1+x_2=1$ là",
     "matrix": null,
@@ -450,7 +432,7 @@
     "topic": "Ứng dụng trị riêng – Markov"
   },
   {
-    "id": 26,
+    "id": 25,
     "type": "diagonalizability",
     "question": "Ma trận $A=\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}$ có tính chất nào?",
     "matrix": null,
@@ -468,7 +450,7 @@
     "topic": "Véc tơ riêng & chéo hóa"
   },
   {
-    "id": 27,
+    "id": 26,
     "type": "eigenvalue_2x2",
     "question": "Các giá trị riêng của \\(A=\\begin{pmatrix}2&-1\\\\-4&2\\end{pmatrix}\\) là",
     "matrix": null,
@@ -486,7 +468,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 28,
+    "id": 27,
     "type": "eigenvalue_sum_squares",
     "question": "Ma trận \\(A=\\operatorname{diag}(1,3,1)\\) có tổng bình phương các trị riêng, kể cả bội, bằng",
     "matrix": null,
@@ -504,25 +486,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 29,
-    "type": "eigenvalue_sum_squares",
-    "question": "Ma trận \\(A=\\operatorname{diag}(2,4,2)\\) có tổng bình phương các trị riêng, kể cả bội, bằng",
-    "matrix": null,
-    "options": [
-      "\\(24\\)",
-      "\\(20\\)",
-      "\\(16\\)",
-      "\\(12\\)"
-    ],
-    "correct": "\\(24\\)",
-    "solution": "Các trị riêng kể cả bội là \\(2,4,2\\), nên tổng bình phương bằng \\(2^2+4^2+2^2=24\\).",
-    "quick": "Cụm “kể cả bội” bắt buộc tính cả hai trị riêng bằng 2.",
-    "casio": "Tính \\(4+16+4\\).",
-    "difficulty": 3,
-    "topic": "Trị riêng"
-  },
-  {
-    "id": 30,
+    "id": 28,
     "type": "find_eigenvector",
     "question": "Một véc tơ riêng ứng với \\(\\lambda=3\\) của \\(A=\\begin{pmatrix}2&-1\\\\-1&2\\end{pmatrix}\\) là",
     "matrix": null,
@@ -538,5 +502,221 @@
     "casio": "Nhân trực tiếp \\(Av\\) để kiểm tra \\(Av=3v\\).",
     "difficulty": 3,
     "topic": "Trị riêng & véc tơ riêng"
+  },
+  {
+    "type": "eigenvalue_diagonal",
+    "question": "Giá trị riêng của $A=\\begin{pmatrix}-2&0\\\\0&7\\end{pmatrix}$ là",
+    "matrix": null,
+    "options": [
+      "-2 và 7",
+      "2 và -7",
+      "0 và 0",
+      "-14"
+    ],
+    "correct": "-2 và 7",
+    "solution": "Ma trận đường chéo có trị riêng là các phần tử trên đường chéo: $\\lambda_1=-2$, $\\lambda_2=7$.",
+    "quick": "Đường chéo → đọc thẳng.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 1,
+    "topic": "Trị riêng",
+    "id": 29
+  },
+  {
+    "type": "eigenvalue_diagonal",
+    "question": "Giá trị riêng của $A=\\begin{pmatrix}0&0&0\\\\0&4&0\\\\0&0&-1\\end{pmatrix}$ là",
+    "matrix": null,
+    "options": [
+      "0, 4 và -1",
+      "0, 0 và 0",
+      "4 và -1",
+      "1 và -4"
+    ],
+    "correct": "0, 4 và -1",
+    "solution": "Ma trận đường chéo cấp 3: trị riêng là $0, 4, -1$.",
+    "quick": "Đường chéo → đọc thẳng.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 1,
+    "topic": "Trị riêng",
+    "id": 30
+  },
+  {
+    "type": "eigenvalue_triangular",
+    "question": "Các giá trị riêng của $A=\\begin{pmatrix}5&3&-1\\\\0&2&7\\\\0&0&-4\\end{pmatrix}$ là",
+    "matrix": null,
+    "options": [
+      "5, 2 và -4",
+      "3, 7 và 0",
+      "5, 3 và -1",
+      "2, 4 và -5"
+    ],
+    "correct": "5, 2 và -4",
+    "solution": "Ma trận tam giác trên: trị riêng là các phần tử đường chéo $5, 2, -4$.",
+    "quick": "Tam giác → đường chéo.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 1,
+    "topic": "Trị riêng",
+    "id": 31
+  },
+  {
+    "type": "eigenvalue_sum_squares",
+    "question": "Cho $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$. Tổng bình phương các trị riêng của $A$ bằng",
+    "matrix": null,
+    "options": [
+      "10",
+      "8",
+      "5",
+      "9"
+    ],
+    "correct": "10",
+    "solution": "Trị riêng: $\\lambda^2-4\\lambda+3=0\\Rightarrow\\lambda_1=1,\\lambda_2=3$. Tổng bình phương: $1^2+3^2=10$.",
+    "quick": "Tìm λ, bình phương rồi cộng. Hoặc dùng: $\\lambda_1^2+\\lambda_2^2=(\\lambda_1+\\lambda_2)^2-2\\lambda_1\\lambda_2=16-6=10$.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 32
+  },
+  {
+    "type": "eigenvalue_sum_squares",
+    "question": "Cho $A=\\begin{pmatrix}3&1\\\\0&5\\end{pmatrix}$. Tổng bình phương các trị riêng của $A$ bằng",
+    "matrix": null,
+    "options": [
+      "34",
+      "64",
+      "15",
+      "28"
+    ],
+    "correct": "34",
+    "solution": "Tam giác trên: $\\lambda_1=3,\\lambda_2=5$. Tổng bình phương: $9+25=34$.",
+    "quick": "Đọc đường chéo, bình phương cộng lại.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 33
+  },
+  {
+    "type": "eigenvalue_sum_squares",
+    "question": "Ma trận $A$ cấp 3 có $\\text{tr}(A)=6$ và tổng tích hai trị riêng (lấy từng đôi) bằng 11. Tổng bình phương ba trị riêng của $A$ bằng",
+    "matrix": null,
+    "options": [
+      "14",
+      "36",
+      "22",
+      "25"
+    ],
+    "correct": "14",
+    "solution": "$\\sum\\lambda_i^2=(\\sum\\lambda_i)^2-2\\sum_{i<j}\\lambda_i\\lambda_j=36-22=14$.",
+    "quick": "Công thức: $\\sum\\lambda_i^2=\\text{tr}(A)^2-2\\cdot(\\text{tổng tích đôi})$.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 3,
+    "topic": "Trị riêng",
+    "id": 34
+  },
+  {
+    "type": "det_from_eigenvalues",
+    "question": "Ma trận $A$ cấp 3 có các trị riêng $\\lambda_1=1,\\lambda_2=2,\\lambda_3=-1$. Tính $\\det(3A^T)$.",
+    "matrix": null,
+    "options": [
+      "$-54$",
+      "$54$",
+      "$-6$",
+      "$6$"
+    ],
+    "correct": "$-54$",
+    "solution": "$\\det(A)=\\lambda_1\\lambda_2\\lambda_3=1\\cdot2\\cdot(-1)=-2$. $\\det(A^T)=\\det(A)=-2$. $\\det(3A^T)=3^3\\det(A^T)=27\\cdot(-2)=-54$.",
+    "quick": "$\\det(kA)=k^n\\det(A)$ với $A$ cấp $n$. $\\det(A^T)=\\det(A)$.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 3,
+    "topic": "Trị riêng & định thức",
+    "id": 35
+  },
+  {
+    "id": 36,
+    "type": "eigenvalue_sum_squares",
+    "question": "Cho $A=(a_{ij})_{3\\times3}$ với $a_{ij}=i^2+j-\\min\\{i,j\\}$. Tổng bình phương các trị riêng của $A$ bằng",
+    "matrix": null,
+    "options": [
+      "258",
+      "196",
+      "144",
+      "36"
+    ],
+    "correct": "258",
+    "solution": "Ta có $A=\\begin{pmatrix}1&2&3\\\\4&4&5\\\\9&9&9\\end{pmatrix}$. Vì $\\sum\\lambda_i^2=\\operatorname{tr}(A^2)$ và $A^2=\\begin{pmatrix}36&37&40\\\\65&69&77\\\\126&135&153\\end{pmatrix}$, nên $\\sum\\lambda_i^2=36+69+153=258$.",
+    "quick": "Dùng $\\sum\\lambda_i^2=\\operatorname{tr}(A^2)$.",
+    "casio": "MENU → Matrix → khai báo MatA cấp 3 → nhập ma trận → tính MatA² → cộng ba phần tử trên đường chéo chính.",
+    "difficulty": 3,
+    "topic": "Trị riêng"
+  },
+  {
+    "type": "inverse_eigenvalues",
+    "question": "Ma trận $A$ khả nghịch cấp 2 có các trị riêng $\\lambda_1=2,\\lambda_2=-3$. Các trị riêng của $A^{-1}$ là",
+    "matrix": null,
+    "options": [
+      "$\\dfrac{1}{2}$ và $-\\dfrac{1}{3}$",
+      "$-2$ và $3$",
+      "$2$ và $-3$",
+      "$\\dfrac{1}{2}$ và $\\dfrac{1}{3}$"
+    ],
+    "correct": "$\\dfrac{1}{2}$ và $-\\dfrac{1}{3}$",
+    "solution": "Nếu $Ax=\\lambda x$ thì $A^{-1}x=\\frac{1}{\\lambda}x$. Do đó trị riêng của $A^{-1}$ là $\\frac{1}{2}$ và $-\\frac{1}{3}$.",
+    "quick": "Trị riêng của $A^{-1}$ là nghịch đảo của trị riêng của $A$.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 2,
+    "topic": "Trị riêng của ma trận nghịch đảo",
+    "id": 37
+  },
+  {
+    "type": "eigenvalue_2x2",
+    "question": "Các giá trị riêng của $A=\\begin{pmatrix}0&1\\\\-6&5\\end{pmatrix}$ là",
+    "matrix": null,
+    "options": [
+      "2 và 3",
+      "1 và 5",
+      "-2 và 3",
+      "-1 và 6"
+    ],
+    "correct": "2 và 3",
+    "solution": "$\\det(A-\\lambda I)=\\lambda^2-5\\lambda+6=(\\lambda-2)(\\lambda-3)=0$.",
+    "quick": "Trace = 5, det = 6 → giải $\\lambda^2-5\\lambda+6=0$.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 38
+  },
+  {
+    "type": "characteristic_polynomial",
+    "question": "Đa thức đặc trưng của $A=\\begin{pmatrix}1&2\\\\3&2\\end{pmatrix}$ là",
+    "matrix": null,
+    "options": [
+      "$\\lambda^2-3\\lambda-4$",
+      "$\\lambda^2+3\\lambda-4$",
+      "$\\lambda^2-3\\lambda+4$",
+      "$\\lambda^2+3\\lambda+4$"
+    ],
+    "correct": "$\\lambda^2-3\\lambda-4$",
+    "solution": "$\\det(A-\\lambda I)=(1-\\lambda)(2-\\lambda)-6=\\lambda^2-3\\lambda-4$.",
+    "quick": "$\\lambda^2-\\text{tr}(A)\\lambda+\\det(A)$.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 39
+  },
+  {
+    "type": "diagonalizability",
+    "question": "Ma trận $A=\\begin{pmatrix}1&0&0\\\\2&1&0\\\\3&4&2\\end{pmatrix}$ có thể chéo hóa được không?",
+    "matrix": null,
+    "options": [
+      "Được, vì có đủ 3 véc tơ riêng độc lập tuyến tính",
+      "Không, vì có trị riêng lặp mà không đủ véc tơ riêng",
+      "Được, vì ma trận tam giác luôn chéo hóa được",
+      "Không thể xác định"
+    ],
+    "correct": "Không, vì có trị riêng lặp mà không đủ véc tơ riêng",
+    "solution": "Trị riêng: $\\lambda=1$ (bội 2), $\\lambda=2$ (bội 1). Với $\\lambda=1$: $\\ker(A-I)$ có số chiều 1 < bội đại số 2. Không đủ véc tơ riêng → không chéo hóa được.",
+    "quick": "Trị riêng lặp → kiểm tra số chiều không gian riêng.",
+    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "difficulty": 3,
+    "topic": "Véc tơ riêng & chéo hóa",
+    "id": 40
   }
 ]
