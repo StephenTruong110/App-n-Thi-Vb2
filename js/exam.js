@@ -1,6 +1,6 @@
 /* ================================================================
    exam.js  — CHẾ ĐỘ THI THỬ 50 CÂU  v2
-   ✅ Phân bố 5 Nhận biết – 22 Thông hiểu – 23 Vận dụng
+   ✅ Phân bố 10 Nhận biết – 15 Thông hiểu – 25 Vận dụng (20/30/50%)
    ✅ Phân bố sát đề minh họa: 16 Đại số – 26 Giải tích – 8 PTVP
    ✅ Timer theo timestamp (không bị lệch khi tab ẩn)
    ✅ Lưu ngay khi chọn đáp án
@@ -14,27 +14,28 @@
 
 /* ── CONFIG ── */
 const EXAM_DIST = [
-  /* I. ĐẠI SỐ TUYẾN TÍNH: 16 CÂU Nhận biết 2 – Thông hiểu 6 – Vận dụng 8 */
-  { file: 'matran_co_ban', n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
-  { file: 'dinh_thuc', n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
-  { file: 'he_pt_tuyen_tinh', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'gia_tri_rieng', n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
+  /* I. ĐẠI SỐ TUYẾN TÍNH: 16 CÂU — Nhận biết 3 – Thông hiểu 5 – Vận dụng 8 */
+  { file: 'matran_co_ban',        n: 3, diff: { 1: 1, 2: 1, 3: 1 } },
+  { file: 'dinh_thuc',            n: 5, diff: { 1: 1, 2: 1, 3: 3 } },
+  { file: 'he_pt_tuyen_tinh',     n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'gia_tri_rieng',        n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
   { file: 'khong_gian_vector_ud', n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
-  /* II. GIẢI TÍCH: 26 CÂU Nhận biết 1 – Thông hiểu 13 – Vận dụng 12 */
-  { file: 'gioi_han', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'lientuc_giandoan_khavi', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'dao_ham', n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
-  { file: 'daohamrieng_viphan_cuctri', n: 7, diff: { 1: 0, 2: 4, 3: 3 } },
-  { file: 'chuoi_so', n: 4, diff: { 1: 0, 2: 2, 3: 2 } },
-  { file: 'chuoi_luy_thua', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'nguyen_ham_tich_phan_1bien', n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
-  { file: 'tichphan_kep', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'tichphan_ba', n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
-  { file: 'tichphan_duong_green', n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  /* III. PHƯƠNG TRÌNH VI PHÂN: 8 CÂU Nhận biết 2 – Thông hiểu 3 – Vận dụng 3 */
-  { file: 'pt_viphan_cap1', n: 6, diff: { 1: 1, 2: 3, 3: 2 } },
-  { file: 'pt_viphan_cap2', n: 2, diff: { 1: 1, 2: 0, 3: 1 } }];
-const EXAM_DIFF_COUNTS = { 1: 5, 2: 22, 3: 23 };
+  /* II. GIẢI TÍCH: 26 CÂU — Nhận biết 6 – Thông hiểu 8 – Vận dụng 12 */
+  { file: 'gioi_han',                   n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+  { file: 'lientuc_giandoan_khavi',     n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+  { file: 'dao_ham',                    n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
+  { file: 'daohamrieng_viphan_cuctri',  n: 7, diff: { 1: 0, 2: 3, 3: 4 } },
+  { file: 'chuoi_so',                   n: 4, diff: { 1: 1, 2: 1, 3: 2 } },
+  { file: 'chuoi_luy_thua',             n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'nguyen_ham_tich_phan_1bien', n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
+  { file: 'tichphan_kep',               n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'tichphan_ba',                n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
+  { file: 'tichphan_duong_green',       n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  /* III. PHƯƠNG TRÌNH VI PHÂN: 8 CÂU — Nhận biết 1 – Thông hiểu 2 – Vận dụng 5 */
+  { file: 'pt_viphan_cap1',             n: 6, diff: { 1: 1, 2: 2, 3: 3 } },
+  { file: 'pt_viphan_cap2',             n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+];
+const EXAM_DIFF_COUNTS = { 1: 10, 2: 15, 3: 25 };
 const EXAM_TOTAL = EXAM_DIST.reduce((sum, spec) => sum + spec.n, 0);
 const EXAM_SECS = 100 * 60;
 const LS_KEY = 'vb2_exam50_mcq_v3';
