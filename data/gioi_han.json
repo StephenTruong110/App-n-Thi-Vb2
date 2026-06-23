@@ -12,7 +12,7 @@
     ],
     "correct": "\\(6\\)",
     "solution": "Thay trực tiếp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
-    "quick": "Hàm đa thức liên tục tại mọi điểm → **thay số trực tiếp** vào",
+    "quick": "Hàm đa thức liên tục tại mọi điểm → thay số trực tiếp vào",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
     "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
@@ -30,7 +30,7 @@
     ],
     "correct": "\\(2\\)",
     "solution": "\\(\\dfrac{(x-1)(x+1)}{x-1}=x+1\\to 2\\) khi \\(x\\to1\\).",
-    "quick": "Dạng \\(0/0\\): **phân tích nhân tử** (hoặc L'Hôpital) rồi rút gọn",
+    "quick": "Dạng \\(0/0\\): phân tích nhân tử (hoặc L'Hôpital) rồi rút gọn",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
@@ -49,7 +49,7 @@
     "correct": "\\(1\\)",
     "solution": "Giới hạn cơ bản: \\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\).",
     "quick": "Công thức đặc biệt: \\(\\lim_{x\\to0}\\dfrac{\\sin x}{x}=1\\) — học thuộc!",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
   },
@@ -67,7 +67,7 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(1-\\cos x \\sim \\dfrac{x^2}{2}\\) → \\(\\lim = \\dfrac{1}{2}\\).",
     "quick": "\\(1-\\cos x \\sim x^2/2\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
   },
@@ -85,7 +85,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\tan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\tan x/x \\to 1\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
   },
@@ -119,8 +119,8 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "\\(x\\ln x \\to 0\\) khi \\(x\\to0^+\\) (dạng 0·∞, \\(\\ln x\\) chậm hơn \\(x\\)).",
-    "quick": "\\(x\\ln x \\to 0\\) (quen thuộc)",
+    "solution": "Viết \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\), là dạng \\((-\\infty)/(+\\infty)\\) khi \\(x\\to0^+\\). Dùng L'Hôpital: \\(\\dfrac{1/x}{-1/x^2}=-x\\to0\\).",
+    "quick": "Đổi tích thành thương: \\(\\ln x/(1/x)\\), rồi L'Hôpital được \\(-x\\to0\\).",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
@@ -191,7 +191,7 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(e\\)",
-    "solution": "Đổi biến \\(t=1/x\\) → \\(\\lim_{t\\to\\infty}(1+1/t)^t=e\\).",
+    "solution": "Đặt \\(t=1/x\\). Khi \\(x\\to0\\), ta có \\(|t|\\to\\infty\\) và \\((1+x)^{1/x}=(1+1/t)^t\\to e\\).",
     "quick": "Dạng \\(1^\\infty\\) → \\(e\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
     "difficulty": 1,
@@ -211,7 +211,7 @@
     "correct": "\\(\\dfrac{2}{3}\\)",
     "solution": "\\(\\dfrac{\\sin2x}{3x}=\\dfrac{2}{3}\\cdot\\dfrac{\\sin2x}{2x}\\to\\dfrac{2}{3}\\cdot1=\\dfrac{2}{3}\\).",
     "quick": "\\(\\sin(ax)/(bx) \\to a/b\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
   },
@@ -247,7 +247,7 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(\\tan x - \\sin x = \\sin x(\\frac{1}{\\cos x}-1)=\\sin x\\cdot\\frac{1-\\cos x}{\\cos x}\\sim x\\cdot\\frac{x^2/2}{1}=\\frac{x^3}{2}\\) → \\(\\lim = 1/2\\).",
     "quick": "Khai triển Taylor: \\(\\tan x - \\sin x \\sim x^3/2\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -301,7 +301,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\arctan x \\sim x\\) khi \\(x\\to0\\) → giới hạn = 1.",
     "quick": "\\(\\arctan x/x \\to 1\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
   },
@@ -317,9 +317,9 @@
       "Không tồn tại"
     ],
     "correct": "\\(1\\)",
-    "solution": "Khi \\(x>0\\), \\(|x|=x\\) → \\(x/x=1\\).",
+    "solution": "Khi \\(x\\gt 0\\), \\(|x|=x\\) → \\(x/x=1\\).",
     "quick": "Tiến về 0 từ phải → dương → =1",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
   },
@@ -335,9 +335,9 @@
       "Không tồn tại"
     ],
     "correct": "\\(-1\\)",
-    "solution": "Khi \\(x<0\\), \\(|x|=-x\\) → \\(-x/x=-1\\).",
+    "solution": "Khi \\(x\\lt 0\\), \\(|x|=-x\\) → \\(-x/x=-1\\).",
     "quick": "Tiến về 0 từ trái → âm → =-1",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
   },
@@ -354,8 +354,8 @@
     ],
     "correct": "Không tồn tại",
     "solution": "Giới hạn trái = -1, giới hạn phải = 1, khác nhau → không tồn tại giới hạn.",
-    "quick": "Giới hạn hai phía ≠ nhau → **giới hạn không tồn tại**",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
+    "quick": "Giới hạn hai phía ≠ nhau → giới hạn không tồn tại",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -371,8 +371,8 @@
       "\\(-\\infty\\)"
     ],
     "correct": "\\(+\\infty\\)",
-    "solution": "Bậc tử = 2 > bậc mẫu = 1 → giới hạn = \\(+\\infty\\).",
-    "quick": "Bậc tử > bậc mẫu → \\(\\lim=\\pm\\infty\\) (xét dấu để biết + hay −)",
+    "solution": "Chia tử và mẫu cho \\(x\\) khi \\(x\\to+\\infty\\): \\(\\dfrac{x+1/x}{1+1/x}\\sim x\\to+\\infty\\).",
+    "quick": "Bậc tử lớn hơn bậc mẫu một đơn vị, hệ số đầu dương nên giới hạn là \\(+\\infty\\).",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
@@ -389,7 +389,7 @@
       "\\(1\\)"
     ],
     "correct": "\\(-\\infty\\)",
-    "solution": "Khi \\(x\\to1^-\\): \\(x-1<0\\) và rất nhỏ âm → phân số tiến đến \\(-\\infty\\).",
+    "solution": "Khi \\(x\\to1^-\\): \\(x-1\\lt 0\\) và rất nhỏ âm → phân số tiến đến \\(-\\infty\\).",
     "quick": "Mẫu âm, tiến về 0 → \\(-\\infty\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
     "difficulty": 2,
@@ -407,7 +407,7 @@
       "\\(1\\)"
     ],
     "correct": "\\(+\\infty\\)",
-    "solution": "Khi \\(x\\to1^+\\): \\(x-1>0\\) và rất nhỏ dương → phân số tiến đến \\(+\\infty\\).",
+    "solution": "Khi \\(x\\to1^+\\): \\(x-1\\gt 0\\) và rất nhỏ dương → phân số tiến đến \\(+\\infty\\).",
     "quick": "Mẫu dương, tiến về 0 → \\(+\\infty\\)",
     "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
     "difficulty": 2,
@@ -425,8 +425,8 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
-    "solution": "Dạng \\(0/0\\). Áp dụng L'Hôpital **lần 1:** \\(\\lim\\dfrac{e^x-1}{2x}\\) — vẫn \\(0/0\\).\n\n**Lần 2:** \\(\\lim\\dfrac{e^x}{2}=\\dfrac{e^0}{2}=\\dfrac{1}{2}\\).",
-    "quick": "L'Hôpital 2 lần: tử thành \\(e^x\\), mẫu thành 2 → **1/2**.",
+    "solution": "Dạng \\(0/0\\). Áp dụng L'Hôpital lần 1: \\(\\lim\\dfrac{e^x-1}{2x}\\) — vẫn \\(0/0\\).\n\nLần 2: \\(\\lim\\dfrac{e^x}{2}=\\dfrac{e^0}{2}=\\dfrac{1}{2}\\).",
+    "quick": "L'Hôpital 2 lần: tử thành \\(e^x\\), mẫu thành 2 → 1/2.",
     "casio": "CASIO: Thay x=0.001 → (e^0.001-1-0.001)/0.001² ≈ (0.0010005-0.001)/0.000001 ≈ 0.5. Đáp án 1/2.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -443,7 +443,7 @@
       "\\(1\\)"
     ],
     "correct": "\\(-\\dfrac{1}{2}\\)",
-    "solution": "Dạng \\(0/0\\). **L'Hôpital lần 1:** \\(\\lim\\dfrac{\\frac{1}{1+x}-1}{2x}=\\lim\\dfrac{\\frac{-x}{1+x}}{2x}=\\lim\\dfrac{-1}{2(1+x)}=\\dfrac{-1}{2}\\).",
+    "solution": "Dạng \\(0/0\\). L'Hôpital lần 1: \\(\\lim\\dfrac{\\frac{1}{1+x}-1}{2x}=\\lim\\dfrac{\\frac{-x}{1+x}}{2x}=\\lim\\dfrac{-1}{2(1+x)}=\\dfrac{-1}{2}\\).",
     "quick": "L'Hôpital → \\(\\dfrac{1/(1+x)-1}{2x}=\\dfrac{-x/(1+x)}{2x}\\to\\dfrac{-1}{2}\\).",
     "casio": "CASIO: x=0.001 → (ln(1.001)-0.001)/0.001² ≈ (0.0009995-0.001)/0.000001 ≈ -0.5.",
     "difficulty": 3,
@@ -461,8 +461,8 @@
       "\\(-\\infty\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "Dạng \\(+\\infty/+\\infty\\). **L'Hôpital:** \\(\\lim_{x\\to+\\infty}\\dfrac{1/x}{1}=\\lim_{x\\to+\\infty}\\dfrac{1}{x}=0\\).\n\n*Ý nghĩa:* hàm mũ tăng nhanh hơn logarit.",
-    "quick": "L'Hôpital: \\(\\dfrac{\\ln x}{x}\\to\\dfrac{1/x}{1}=\\dfrac{1}{x}\\to0\\). **x tăng nhanh hơn ln x**.",
+    "solution": "Dạng \\(+\\infty/+\\infty\\). L'Hôpital: \\(\\lim_{x\\to+\\infty}\\dfrac{1/x}{1}=\\lim_{x\\to+\\infty}\\dfrac{1}{x}=0\\).\n\n*Ý nghĩa:* hàm mũ tăng nhanh hơn logarit.",
+    "quick": "L'Hôpital: \\(\\dfrac{\\ln x}{x}\\to\\dfrac{1/x}{1}=\\dfrac{1}{x}\\to0\\). x tăng nhanh hơn ln x.",
     "casio": "CASIO: x=10^6 → ln(10^6)/10^6 = 6ln10/10^6 ≈ 0.0000138 → ≈ 0.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -479,7 +479,7 @@
       "\\(-1\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "Dạng \\(0\\cdot(-\\infty)\\). Đưa về \\(\\dfrac{0}{0}\\): \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\).\n\n**L'Hôpital:** \\(\\lim\\dfrac{1/x}{-1/x^2}=\\lim(-x)=0\\).",
+    "solution": "Dạng \\(0\\cdot(-\\infty)\\). Đưa về \\(\\dfrac{0}{0}\\): \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\).\n\nL'Hôpital: \\(\\lim\\dfrac{1/x}{-1/x^2}=\\lim(-x)=0\\).",
     "quick": "Viết \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\), L'Hôpital → \\(\\dfrac{1/x}{-1/x^2}=-x\\to0\\).",
     "casio": "CASIO: x=0.0001 → 0.0001×ln(0.0001)=0.0001×(-9.21)≈-0.000921≈0.",
     "difficulty": 3,
@@ -498,8 +498,8 @@
     ],
     "correct": "\\(\\dfrac{3}{5}\\)",
     "solution": "Dùng \\(\\lim_{u\\to0}\\dfrac{\\sin u}{u}=1\\):\n\\(\\dfrac{\\sin3x}{\\sin5x}=\\dfrac{\\sin3x}{3x}\\cdot\\dfrac{5x}{\\sin5x}\\cdot\\dfrac{3x}{5x}\\to1\\cdot1\\cdot\\dfrac{3}{5}=\\dfrac{3}{5}\\).",
-    "quick": "Nhân chia: \\(\\dfrac{\\sin3x/3x}{\\sin5x/5x}\\cdot\\dfrac{3}{5}\\to\\dfrac{3}{5}\\). Tỉ số giới hạn = **tỉ số hệ số**.",
-    "casio": "CASIO: x=0.001 → sin(0.003)/sin(0.005)≈0.003/0.005=0.6=3/5.",
+    "quick": "Nhân chia: \\(\\dfrac{\\sin3x/3x}{\\sin5x/5x}\\cdot\\dfrac{3}{5}\\to\\dfrac{3}{5}\\). Tỉ số giới hạn = tỉ số hệ số.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -517,7 +517,7 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "Dùng \\(1-\\cos x=2\\sin^2(x/2)\\):\n\\(\\dfrac{2\\sin^2(x/2)}{x^2}=\\dfrac{2\\sin^2(x/2)}{4(x/2)^2}=\\dfrac{1}{2}\\left(\\dfrac{\\sin(x/2)}{x/2}\\right)^2\\to\\dfrac{1}{2}\\cdot1^2=\\dfrac{1}{2}\\).",
     "quick": "Công thức nhớ: \\(\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=\\dfrac{1}{2}\\). Bằng bán góc hoặc Taylor.",
-    "casio": "CASIO: x=0.001 → (1-cos0.001)/0.001²≈(1-0.9999995)/0.000001=0.5.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
   },
@@ -534,7 +534,7 @@
     ],
     "correct": "\\(e^2\\)",
     "solution": "Dạng \\(1^\\infty\\). Đặt \\(y=\\left(1+\\dfrac{2}{x}\\right)^x\\), lấy log:\n\\(\\ln y=x\\ln\\left(1+\\dfrac{2}{x}\\right)\\to x\\cdot\\dfrac{2}{x}=2\\) (dùng \\(\\ln(1+u)\\sim u\\) khi \\(u\\to0\\)).\n\nSuy ra \\(y\\to e^2\\).",
-    "quick": "\\(1^\\infty\\) dạng: \\(\\left(1+\\dfrac{a}{x}\\right)^x\\to e^a\\). Ở đây a=2 → **e²**.",
+    "quick": "\\(1^\\infty\\) dạng: \\(\\left(1+\\dfrac{a}{x}\\right)^x\\to e^a\\). Ở đây a=2 → e².",
     "casio": "CASIO: x=10^6 → (1+2/10^6)^(10^6) ≈ e² ≈ 7.389.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -569,9 +569,9 @@
       "\\(-1\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "Dùng **định lý kẹp (squeeze theorem):**\n\n\\(-1\\leq\\sin\\dfrac{1}{x}\\leq1\\) với mọi \\(x\\neq0\\).\n\nNhân với \\(x^2>0\\): \\(-x^2\\leq x^2\\sin\\dfrac{1}{x}\\leq x^2\\).\n\nVì \\(\\lim_{x\\to0}(-x^2)=0\\) và \\(\\lim_{x\\to0}x^2=0\\) → theo kẹp: \\(\\lim_{x\\to0}x^2\\sin\\dfrac{1}{x}=0\\).",
-    "quick": "Dạng kẹp: \\(|x^2\\sin(1/x)|\\leq x^2\\to0\\). Hàm bị chặn × vô cùng bé → **0**.",
-    "casio": "CASIO: x=0.001 → 0.001²×sin(1000)=0.000001×(-0.827)≈-8.27e-7≈0.",
+    "solution": "Dùng định lý kẹp (squeeze theorem):\n\n\\(-1\\leq\\sin\\dfrac{1}{x}\\leq1\\) với mọi \\(x\\neq0\\).\n\nNhân với \\(x^2\\gt 0\\): \\(-x^2\\leq x^2\\sin\\dfrac{1}{x}\\leq x^2\\).\n\nVì \\(\\lim_{x\\to0}(-x^2)=0\\) và \\(\\lim_{x\\to0}x^2=0\\) → theo kẹp: \\(\\lim_{x\\to0}x^2\\sin\\dfrac{1}{x}=0\\).",
+    "quick": "Dạng kẹp: \\(|x^2\\sin(1/x)|\\leq x^2\\to0\\). Hàm bị chặn × vô cùng bé → 0.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -587,9 +587,9 @@
       "\\(\\dfrac{1}{2}\\)"
     ],
     "correct": "\\(\\dfrac{1}{3}\\)",
-    "solution": "Dạng \\(0/0\\). **L'Hôpital 3 lần:**\n\n\\(\\dfrac{\\sec^2x-1}{3x^2}=\\dfrac{\\tan^2x}{3x^2}\\to?\\) (vẫn \\(0/0\\)).\n\nHoặc dùng khai triển Taylor: \\(\\tan x=x+\\dfrac{x^3}{3}+O(x^5)\\) → \\(\\dfrac{\\tan x-x}{x^3}=\\dfrac{x^3/3+\\ldots}{x^3}\\to\\dfrac{1}{3}\\).",
-    "quick": "Taylor: \\(\\tan x=x+\\dfrac{x^3}{3}+\\ldots\\) → \\(\\dfrac{\\tan x-x}{x^3}\\to\\dfrac{1}{3}\\).",
-    "casio": "CASIO: x=0.01 → (tan0.01-0.01)/0.01³=(0.010001-0.01)/0.000001≈0.3333.",
+    "solution": "Dạng \\(0/0\\). Dùng L'Hôpital một lần: \\(\\dfrac{\\tan x-x}{x^3}\\to\\dfrac{\\sec^2x-1}{3x^2}=\\dfrac{\\tan^2x}{3x^2}=\\dfrac13\\left(\\dfrac{\\tan x}{x}\\right)^2\\to\\dfrac13\\).",
+    "quick": "L'Hôpital một lần rồi dùng \\(\\tan x/x\\to1\\).",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -605,7 +605,7 @@
       "\\(e\\)"
     ],
     "correct": "\\(1\\)",
-    "solution": "Dạng \\(0/0\\). **Cách 1 — L'Hôpital:** \\(\\lim_{x\\to0}\\dfrac{2e^{2x}-e^x}{1}=2\\cdot1-1=1\\).\n\n**Cách 2 — Phân tích:** \\(\\dfrac{e^{2x}-e^x}{x}=e^x\\cdot\\dfrac{e^x-1}{x}\\to1\\cdot1=1\\).",
+    "solution": "Dạng \\(0/0\\). Cách 1 — L'Hôpital: \\(\\lim_{x\\to0}\\dfrac{2e^{2x}-e^x}{1}=2\\cdot1-1=1\\).\n\nCách 2 — Phân tích: \\(\\dfrac{e^{2x}-e^x}{x}=e^x\\cdot\\dfrac{e^x-1}{x}\\to1\\cdot1=1\\).",
     "quick": "Phân tích: \\(e^x\\cdot\\dfrac{e^x-1}{x}\\to1\\cdot1=\\mathbf{1}\\). Hoặc L'Hôpital: \\(2e^0-e^0=1\\).",
     "casio": "CASIO: x=0.001 → (e^0.002-e^0.001)/0.001≈(1.002002-1.001001)/0.001≈1.001≈1.",
     "difficulty": 3,
@@ -623,7 +623,7 @@
       "\\(1\\)"
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
-    "solution": "Nhân liên hợp:\n\\(\\sqrt{x^2+x}-x=\\dfrac{(\\sqrt{x^2+x}-x)(\\sqrt{x^2+x}+x)}{\\sqrt{x^2+x}+x}=\\dfrac{x^2+x-x^2}{\\sqrt{x^2+x}+x}=\\dfrac{x}{\\sqrt{x^2+x}+x}\\).\n\nChia tử và mẫu cho \\(x\\) (\\(x>0\\)):\n\\(=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac{1}{1+1}=\\dfrac{1}{2}\\).",
+    "solution": "Nhân liên hợp:\n\\(\\sqrt{x^2+x}-x=\\dfrac{(\\sqrt{x^2+x}-x)(\\sqrt{x^2+x}+x)}{\\sqrt{x^2+x}+x}=\\dfrac{x^2+x-x^2}{\\sqrt{x^2+x}+x}=\\dfrac{x}{\\sqrt{x^2+x}+x}\\).\n\nChia tử và mẫu cho \\(x\\) (\\(x\\gt 0\\)):\n\\(=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac{1}{1+1}=\\dfrac{1}{2}\\).",
     "quick": "Nhân liên hợp → \\(\\dfrac{x}{\\sqrt{x^2+x}+x}=\\dfrac{1}{\\sqrt{1+1/x}+1}\\to\\dfrac{1}{2}\\).",
     "casio": "CASIO: x=10^6 → √(10^12+10^6)-10^6≈10^6√(1+10^-6)-10^6≈10^6(1+0.5×10^-6)-10^6=0.5.",
     "difficulty": 3,
@@ -641,7 +641,7 @@
       "\\(\\infty\\)"
     ],
     "correct": "\\(\\dfrac{3}{2}\\)",
-    "solution": "Dạng \\(0/0\\) (thay \\(x=1\\): tử=0, mẫu=0).\n\n**Phân tích nhân tử:**\nTử: \\(x^3-3x+2=(x-1)^2(x+2)\\).\nMẫu: \\(x^3-x^2-x+1=(x-1)^2(x+1)\\).\n\n→ \\(\\dfrac{(x-1)^2(x+2)}{(x-1)^2(x+1)}=\\dfrac{x+2}{x+1}\\to\\dfrac{3}{2}\\).",
+    "solution": "Dạng \\(0/0\\) (thay \\(x=1\\): tử=0, mẫu=0).\n\nPhân tích nhân tử:\nTử: \\(x^3-3x+2=(x-1)^2(x+2)\\).\nMẫu: \\(x^3-x^2-x+1=(x-1)^2(x+1)\\).\n\n→ \\(\\dfrac{(x-1)^2(x+2)}{(x-1)^2(x+1)}=\\dfrac{x+2}{x+1}\\to\\dfrac{3}{2}\\).",
     "quick": "Cả tử và mẫu đều có nhân tử \\((x-1)^2\\) → rút gọn → \\(\\dfrac{x+2}{x+1}\\to\\dfrac{3}{2}\\).",
     "casio": "CASIO: x=1.0001 → tử≈0.0000030003, mẫu≈0.0000020002 → tỉ số ≈1.5=3/2.",
     "difficulty": 3,
@@ -650,7 +650,7 @@
   {
     "id": 37,
     "type": "limit_notable",
-    "question": "\\(\\lim_{x\\to0}\\dfrac{a^x-1}{x}=?\\) với \\(a>0,\\;a\\neq1\\).",
+    "question": "\\(\\lim_{x\\to0}\\dfrac{a^x-1}{x}=?\\) với \\(a\\gt 0,\\;a\\neq1\\).",
     "matrix": null,
     "options": [
       "\\(\\ln a\\)",
@@ -677,8 +677,8 @@
       "\\(2\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "Dạng \\(\\infty\\cdot0\\). Viết \\(x^2e^{-x}=\\dfrac{x^2}{e^x}\\), dạng \\(\\infty/\\infty\\).\n\n**L'Hôpital lần 1:** \\(\\dfrac{2x}{e^x}\\) — vẫn \\(\\infty/\\infty\\).\n\n**Lần 2:** \\(\\dfrac{2}{e^x}\\to0\\).\n\n*Ý nghĩa:* Hàm mũ tăng nhanh hơn bất kỳ đa thức nào.",
-    "quick": "L'Hôpital 2 lần: \\(x^2/e^x\\to2x/e^x\\to2/e^x\\to0\\). **Mũ thắng đa thức**.",
+    "solution": "Dạng \\(\\infty\\cdot0\\). Viết \\(x^2e^{-x}=\\dfrac{x^2}{e^x}\\), dạng \\(\\infty/\\infty\\).\n\nL'Hôpital lần 1: \\(\\dfrac{2x}{e^x}\\) — vẫn \\(\\infty/\\infty\\).\n\nLần 2: \\(\\dfrac{2}{e^x}\\to0\\).\n\n*Ý nghĩa:* Hàm mũ tăng nhanh hơn bất kỳ đa thức nào.",
+    "quick": "L'Hôpital 2 lần: \\(x^2/e^x\\to2x/e^x\\to2/e^x\\to0\\). Mũ thắng đa thức.",
     "casio": "CASIO: x=100 → 10000/e^100 ≈ 10000/(2.69×10^43) ≈ 0.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -695,8 +695,8 @@
       "\\(-\\dfrac{1}{2}\\)"
     ],
     "correct": "\\(-1\\)",
-    "solution": "Khi \\(x\\to-\\infty\\): chia tử và mẫu cho \\(|x|=-x\\) (vì \\(x<0\\)).\n\n**Tử:** \\(\\dfrac{\\sqrt{x^2+x}}{-x}=\\sqrt{\\dfrac{x^2+x}{x^2}}=\\sqrt{1+\\dfrac{1}{x}}\\to1\\).\n\n**Mẫu:** \\(\\dfrac{2x+\\sqrt{x^2+1}}{-x}=-2+\\dfrac{\\sqrt{x^2+1}}{-x}=-2+\\sqrt{\\dfrac{x^2+1}{x^2}}=-2+\\sqrt{1+\\dfrac{1}{x^2}}\\to-2+1=-1\\).\n\nGiới hạn = \\(\\dfrac{1}{-1}=-1\\).",
-    "quick": "x→-∞: chia cho |x|=-x. Tử→1, mẫu→-2+1=-1. Giới hạn = **-1**. (Lưu ý: |x|=-x khi x<0!)",
+    "solution": "Khi \\(x\\to-\\infty\\): chia tử và mẫu cho \\(|x|=-x\\) (vì \\(x\\lt 0\\)).\n\nTử: \\(\\dfrac{\\sqrt{x^2+x}}{-x}=\\sqrt{\\dfrac{x^2+x}{x^2}}=\\sqrt{1+\\dfrac{1}{x}}\\to1\\).\n\nMẫu: \\(\\dfrac{2x+\\sqrt{x^2+1}}{-x}=-2+\\dfrac{\\sqrt{x^2+1}}{-x}=-2+\\sqrt{\\dfrac{x^2+1}{x^2}}=-2+\\sqrt{1+\\dfrac{1}{x^2}}\\to-2+1=-1\\).\n\nGiới hạn = \\(\\dfrac{1}{-1}=-1\\).",
+    "quick": "Khi \\(x\\to-\\infty\\), chia cho \\(|x|=-x\\): tử \\(\\to1\\), mẫu \\(\\to-2+1=-1\\), nên giới hạn bằng \\(-1\\).",
     "casio": "CASIO: x=-10^6 → tử≈10^6, mẫu≈-2×10^6+10^6=-10^6. Tỉ số≈-1.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -713,8 +713,8 @@
       "\\(\\dfrac{1}{2}\\)"
     ],
     "correct": "\\(\\dfrac{1}{3}\\)",
-    "solution": "Khi \\(x\\to+\\infty\\): chia tử và mẫu cho \\(x\\) (vì \\(x>0\\), \\(|x|=x\\)).\n\n**Tử:** \\(\\dfrac{\\sqrt{x^2+x}}{x}=\\sqrt{1+1/x}\\to1\\).\n\n**Mẫu:** \\(\\dfrac{2x+\\sqrt{x^2+1}}{x}=2+\\sqrt{1+1/x^2}\\to2+1=3\\).\n\nGiới hạn = \\(\\dfrac{1}{3}\\).",
-    "quick": "x→+∞: chia x. Tử→1, mẫu→2+1=3. Giới hạn = **1/3**.",
+    "solution": "Khi \\(x\\to+\\infty\\): chia tử và mẫu cho \\(x\\) (vì \\(x\\gt 0\\), \\(|x|=x\\)).\n\nTử: \\(\\dfrac{\\sqrt{x^2+x}}{x}=\\sqrt{1+1/x}\\to1\\).\n\nMẫu: \\(\\dfrac{2x+\\sqrt{x^2+1}}{x}=2+\\sqrt{1+1/x^2}\\to2+1=3\\).\n\nGiới hạn = \\(\\dfrac{1}{3}\\).",
+    "quick": "x→+∞: chia x. Tử→1, mẫu→2+1=3. Giới hạn = 1/3.",
     "casio": "CASIO: x=10^6 → √(10^12+10^6)/(2×10^6+√(10^12+1))≈10^6/(2×10^6+10^6)=1/3.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -731,7 +731,7 @@
       "\\(0\\)"
     ],
     "correct": "\\(\\dfrac{3}{5}\\)",
-    "solution": "Đặt \\(t=x^{1/15}\\) (hoặc dùng L'Hôpital dạng \\(0/0\\)):\n\n**L'Hôpital:**\n\\(\\lim_{x\\to1}\\dfrac{x^{1/5}-1}{x^{1/3}-1}\\)\n\nĐạo hàm tử: \\(\\dfrac{1}{5}x^{-4/5}\\to\\dfrac{1}{5}\\)\nĐạo hàm mẫu: \\(\\dfrac{1}{3}x^{-2/3}\\to\\dfrac{1}{3}\\)\n\nGiới hạn = \\(\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).\n\n**Cách khác** — dùng giới hạn cơ bản: \\(\\lim_{x\\to1}\\dfrac{x^\\alpha-1}{x-1}=\\alpha\\):\n\\(\\dfrac{x^{1/5}-1}{x^{1/3}-1}=\\dfrac{x^{1/5}-1}{x-1}\\cdot\\dfrac{x-1}{x^{1/3}-1}\\to\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).",
+    "solution": "Đặt \\(t=x^{1/15}\\) (hoặc dùng L'Hôpital dạng \\(0/0\\)):\n\nL'Hôpital:\n\\(\\lim_{x\\to1}\\dfrac{x^{1/5}-1}{x^{1/3}-1}\\)\n\nĐạo hàm tử: \\(\\dfrac{1}{5}x^{-4/5}\\to\\dfrac{1}{5}\\)\nĐạo hàm mẫu: \\(\\dfrac{1}{3}x^{-2/3}\\to\\dfrac{1}{3}\\)\n\nGiới hạn = \\(\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).\n\nCách khác — dùng giới hạn cơ bản: \\(\\lim_{x\\to1}\\dfrac{x^\\alpha-1}{x-1}=\\alpha\\):\n\\(\\dfrac{x^{1/5}-1}{x^{1/3}-1}=\\dfrac{x^{1/5}-1}{x-1}\\cdot\\dfrac{x-1}{x^{1/3}-1}\\to\\dfrac{1/5}{1/3}=\\dfrac{3}{5}\\).",
     "quick": "L'Hôpital: \\(\\dfrac{(1/5)x^{-4/5}}{(1/3)x^{-2/3}}\\Big|_{x=1}=\\dfrac{1/5}{1/3}=\\mathbf{\\dfrac{3}{5}}\\).",
     "casio": "CASIO: x=1.001 → (1.001^0.2-1)/(1.001^(1/3)-1)≈(0.0002)/(0.000333)≈0.6=3/5.",
     "difficulty": 3,
@@ -750,7 +750,7 @@
     ],
     "correct": "\\(\\dfrac{3}{4}\\)",
     "solution": "Dùng \\(\\lim_{x\\to1}\\dfrac{x^\\alpha-1}{x-1}=\\alpha\\):\n\n\\(\\dfrac{x^{1/4}-1}{x^{1/3}-1}=\\dfrac{(x^{1/4}-1)/(x-1)}{(x^{1/3}-1)/(x-1)}\\to\\dfrac{1/4}{1/3}=\\dfrac{3}{4}\\).",
-    "quick": "\\(\\dfrac{x^{1/4}-1}{x^{1/3}-1}\\to\\dfrac{1/4}{1/3}=\\dfrac{3}{4}\\). **Quy tắc:** \\(\\dfrac{x^{p/q}-1}{x^{r/s}-1}\\to\\dfrac{p/q}{r/s}\\) khi \\(x\\to1\\).",
+    "quick": "\\(\\dfrac{x^{1/4}-1}{x^{1/3}-1}\\to\\dfrac{1/4}{1/3}=\\dfrac{3}{4}\\). Quy tắc: \\(\\dfrac{x^{p/q}-1}{x^{r/s}-1}\\to\\dfrac{p/q}{r/s}\\) khi \\(x\\to1\\).",
     "casio": "CASIO: x=1.001 → (1.001^0.25-1)/(1.001^(1/3)-1)≈(0.00025)/(0.000333)≈0.75=3/4.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -767,8 +767,8 @@
       "\\(1\\)"
     ],
     "correct": "\\(-1\\)",
-    "solution": "Dạng \\(-\\infty+\\infty\\). Nhân liên hợp:\n\n\\(x+\\sqrt{x^2+2x}=\\dfrac{(x+\\sqrt{x^2+2x})(x-\\sqrt{x^2+2x})}{x-\\sqrt{x^2+2x}}=\\dfrac{x^2-(x^2+2x)}{x-\\sqrt{x^2+2x}}=\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\)\n\nKhi \\(x\\to-\\infty\\), chia cho \\(-x=|x|>0\\):\n\n\\(\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\cdot\\dfrac{-1/x}{-1/x}=\\dfrac{2}{-1+\\sqrt{1+2/x}}\\to\\dfrac{2}{-1+1}\\)... \n\nCần cẩn thận: \\(\\sqrt{x^2+2x}/(-x)=\\sqrt{1+2/x}\\to1\\). Mẫu: \\(x/(-x)+\\sqrt{x^2+2x}/(-x)=-1+1=0\\)?\n\n*Tính lại:* \\(x+\\sqrt{x^2+2x}=x+|x|\\sqrt{1+2/x}=x-x\\sqrt{1+2/x}=x(1-\\sqrt{1+2/x})\\to x\\cdot(-1/x)=-1\\).",
-    "quick": "Nhân liên hợp: \\(x+\\sqrt{x^2+2x}=\\dfrac{-2x}{x-\\sqrt{x^2+2x}}\\). Khi x→-∞: → \\(\\dfrac{-2x}{x+x}=\\dfrac{-2x}{2x}=-1\\).",
+    "solution": "Vì \\(x\\to-\\infty\\), ta có \\(\\sqrt{x^2+2x}=|x|\\sqrt{1+2/x}=-x\\sqrt{1+2/x}\\). Do đó\\n\\(x+\\sqrt{x^2+2x}=x\\left(1-\\sqrt{1+2/x}\\right)\\).\\nNhân liên hợp:\\n\\(x\\left(1-\\sqrt{1+2/x}\\right)=x\\dfrac{-2/x}{1+\\sqrt{1+2/x}}=\\dfrac{-2}{1+\\sqrt{1+2/x}}\\to-1\\).",
+    "quick": "Với \\(x\\lt0\\), \\(|x|=-x\\); đưa căn ra ngoài rồi nhân liên hợp, được giới hạn \\(-1\\).",
     "casio": "CASIO: x=-10^6 → -10^6+√(10^12-2×10^6)≈-10^6+10^6(1-10^-6)=-1.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
@@ -776,7 +776,7 @@
   {
     "id": 44,
     "type": "limit_indeterminate",
-    "question": "Giới hạn nào sau đây có dạng vô định \\(\\dfrac00\\)?",
+    "question": "Giới hạn nào sau đây có dạng vô định \\(\\dfrac{0}{0}\\)?",
     "matrix": null,
     "options": [
       "\\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\)",
@@ -787,7 +787,7 @@
     "correct": "\\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\)",
     "solution": "Khi \\(x\\to0\\), tử \\(\\sin x\\to0\\) và mẫu \\(x\\to0\\), nên có dạng \\(0/0\\). Ở các phương án còn lại, mẫu và tử đều tiến tới các giá trị hữu hạn khác 0.",
     "quick": "Muốn nhận dạng dạng vô định, chỉ cần thay giới hạn vào tử và mẫu, chưa cần tính giới hạn.",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 1,
     "topic": "Giới hạn & Liên tục"
   },
@@ -841,7 +841,7 @@
     "correct": "\\(6\\)",
     "solution": "\\(\\dfrac{\\sin(ax)}{x}=a\\dfrac{\\sin(ax)}{ax}\\to a\\). Do giới hạn bằng 6 nên \\(a=6\\).",
     "quick": "Công thức nhanh: \\(\\lim_{x\\to0}\\sin(ax)/x=a\\).",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
   },
@@ -877,7 +877,7 @@
     "correct": "\\(6\\)",
     "solution": "Khi \\(x\\to0\\), \\(e^{ax}-1\\sim ax\\) và \\(\\sin2x\\sim2x\\). Giới hạn bằng \\(a/2=3\\), nên \\(a=6\\).",
     "quick": "Thay bằng các vô cùng bé tương đương: tử \\(ax\\), mẫu \\(2x\\).",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -913,7 +913,7 @@
     "correct": "\\(-\\dfrac12\\)",
     "solution": "Khai triển: \\(\\ln(1+x)=x-x^2/2+O(x^3)\\), \\(\\sin x=x+O(x^3)\\). Hiệu bằng \\(-x^2/2+O(x^3)\\), nên giới hạn là \\(-1/2\\).",
     "quick": "Hai số hạng bậc nhất triệt tiêu; hệ số của \\(x^2\\) còn lại là \\(-1/2\\).",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -931,7 +931,7 @@
     "correct": "\\(\\dfrac94\\)",
     "solution": "Dùng \\(1-\\cos3x\\sim(3x)^2/2=9x^2/2\\) và \\(x\\sin2x\\sim x\\cdot2x=2x^2\\). Tỉ số tiến tới \\((9/2)/2=9/4\\).",
     "quick": "Nhớ \\(1-\\cos u\\sim u^2/2\\), \\(\\sin v\\sim v\\).",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -967,7 +967,7 @@
     "correct": "\\(1\\)",
     "solution": "Đặt \\(y=(\\sin x)^x\\). Khi đó \\(\\ln y=x\\ln(\\sin x)\\). Vì \\(\\sin x\\sim x\\), ta có \\(x\\ln(\\sin x)\\sim x\\ln x\\to0\\). Do đó \\(y\\to e^0=1\\).",
     "quick": "Dạng \\(0^0\\): lấy logarit, xét \\(x\\ln(\\sin x)\\).",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
@@ -985,7 +985,7 @@
     "correct": "\\(0\\)",
     "solution": "Khi \\(x\\to0^+\\), biểu thức bằng \\(1+a\\). Khi \\(x\\to0^-\\), biểu thức bằng \\(-1+a\\). Hai giới hạn không thể bằng nhau vì chênh nhau 2, nên không có giá trị \\(a\\) nào.",
     "quick": "Tách giới hạn trái và phải của \\(|x|/x\\).",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
+    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   }

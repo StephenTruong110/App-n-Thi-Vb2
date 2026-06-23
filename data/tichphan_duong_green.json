@@ -101,7 +101,7 @@
       "Theo chiều tăng \\(x\\)"
     ],
     "correct": "Ngược chiều kim đồng hồ (dương)",
-    "solution": "Công thức Green áp dụng khi \\(C\\) là biên của \\(D\\) đi theo chiều **dương** (ngược chiều kim đồng hồ — vùng \\(D\\) ở phía trái).",
+    "solution": "Công thức Green áp dụng khi \\(C\\) là biên của \\(D\\) đi theo chiều dương (ngược chiều kim đồng hồ — vùng \\(D\\) ở phía trái).",
     "quick": "Green: chiều dương = ngược chiều kim đồng hồ (miền ở bên trái)",
     "casio": "Chiều dương: vùng D luôn ở phía tay trái khi đi trên C",
     "difficulty": 1,
@@ -280,10 +280,10 @@
       "\\(1\\)",
       "\\(\\pi-1\\)"
     ],
-    "correct": "\\(\\dfrac{\\pi}{2}-1\\)",
-    "solution": "Tham số hóa cung tròn đơn vị ngược chiều kim đồng hồ từ \\((1,0)\\) đến \\((0,1)\\):\n\\[x=\\cos t,\\quad y=\\sin t,\\quad t\\in[0,\\pi/2].\\]\nKhi đó\n\\[dx=-\\sin t\\,dt,\\qquad dy=\\cos t\\,dt.\\]\n\nTa có\n\\[W=\\int_C (y-x)\\,dx+(x+y)\\,dy\\]\n\\[=\\int_0^{\\pi/2}\\big[(\\sin t-\\cos t)(-\\sin t)+(\\cos t+\\sin t)\\cos t\\big]dt\\]\n\\[=\\int_0^{\\pi/2}(1-\\sin2t)dt\\]\n\\[=\\left[t+\\frac{\\cos2t}{2}\\right]_0^{\\pi/2}=\\frac{\\pi}{2}-1.\\]\nVậy \\(W=\\dfrac{\\pi}{2}-1\\).",
-    "quick": "Tham số hóa \\(x=\\cos t, y=\\sin t\\), \\(t:0\\to\\pi/2\\). Tính ra \\(W=\\frac{\\pi}{2}-1\\).",
-    "casio": "x=cost, y=sint, t:0→π/2 → W=∫₀^{π/2}(1-sin2t)dt=π/2-1",
+    "correct": "\\(1\\)",
+    "solution": "Tham số hóa cung tròn đơn vị ngược chiều kim đồng hồ từ \\((1,0)\\) đến \\((0,1)\\):\n\\[x=\\cos t,\\qquad y=\\sin t,\\qquad 0\\le t\\le\\frac{\\pi}{2}.\\]\nKhi đó\n\\[dx=-\\sin t\\,dt,\\qquad dy=\\cos t\\,dt.\\]\n\nVới \\(P=y-x\\), \\(Q=x+y\\), ta có\n\\[W=\\int_C P\\,dx+Q\\,dy\\]\n\\[=\\int_0^{\\pi/2}\\left[(\\sin t-\\cos t)(-\\sin t)+(\\cos t+\\sin t)\\cos t\\right]dt\\]\n\\[=\\int_0^{\\pi/2}\\left(\\cos 2t+\\sin 2t\\right)dt\\]\n\\[=\\left[\\frac{\\sin 2t}{2}-\\frac{\\cos 2t}{2}\\right]_0^{\\pi/2}=1.\\]\nVậy \\(W=1\\).",
+    "quick": "Đặt \\(x=\\cos t\\), \\(y=\\sin t\\), \\(0\\le t\\le\\pi/2\\). Khi đó tích phân trở thành \\(\\int_0^{\\pi/2}(\\cos 2t+\\sin 2t)\\,dt=1\\).",
+    "casio": "CASIO: Nhập \\(\\int_0^{\\pi/2}(\\cos(2X)+\\sin(2X))\\,dX\\), máy cho kết quả \\(1\\).",
     "difficulty": 3,
     "topic": "Tích phân đường – Định lý Green"
   },
@@ -353,8 +353,8 @@
       "\\(e-1\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "\\(P=e^x\\sin y,\\;Q=e^x\\cos y\\). \\(P_y=e^x\\cos y=Q_x\\) → **toàn phần**.\n\n\\(U=e^x\\sin y\\) (kiểm tra: \\(U_x=e^x\\sin y\\) ✓, \\(U_y=e^x\\cos y\\) ✓).\n\n\\(I=U(1,\\pi)-U(0,0)=e^1\\sin\\pi-e^0\\sin0=e\\cdot0-1\\cdot0=\\mathbf{0}\\).",
-    "quick": "U=e^x sin y → I=U(1,π)-U(0,0)=e·sin(π)-1·sin(0)=0-0=**0**.",
+    "solution": "\\(P=e^x\\sin y,\\;Q=e^x\\cos y\\). \\(P_y=e^x\\cos y=Q_x\\) → toàn phần.\n\n\\(U=e^x\\sin y\\) (kiểm tra: \\(U_x=e^x\\sin y\\) ✓, \\(U_y=e^x\\cos y\\) ✓).\n\n\\(I=U(1,\\pi)-U(0,0)=e^1\\sin\\pi-e^0\\sin0=e\\cdot0-1\\cdot0=\\mathbf{0}\\).",
+    "quick": "U=e^x sin y → I=U(1,π)-U(0,0)=e·sin(π)-1·sin(0)=0-0=0.",
     "casio": "CASIO: Tích phân đường loại 2: ∫_C Pdx+Qdy = ∫_a^b [P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]dt. Thay tham số hóa vào rồi dùng ∫dx trên CASIO.",
     "difficulty": 2,
     "topic": "Tích phân đường – Định lý Green"
@@ -371,8 +371,8 @@
       "\\(-6\\pi\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "Green: \\(Q_x-P_y=3x^2-3y^2\\).\n\n\\(I=\\iint_D 3(x^2-y^2)\\,dA\\) với D: đĩa \\(x^2+y^2\\leq4\\).\n\nTheo **tính đối xứng** của đĩa tròn: \\(\\iint x^2\\,dA=\\iint y^2\\,dA\\) → \\(I=0\\).\n\n*Chứng minh:* dùng tọa độ cực: \\(\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta=\\int_0^{2\\pi}\\sin^2\\theta\\,d\\theta=\\pi\\).",
-    "quick": "Green: I=∬3(x²-y²)dA. Đối xứng tròn: ∬x²=∬y² → **I=0**.",
+    "solution": "Green: \\(Q_x-P_y=3x^2-3y^2\\).\n\n\\(I=\\iint_D 3(x^2-y^2)\\,dA\\) với D: đĩa \\(x^2+y^2\\leq4\\).\n\nTheo tính đối xứng của đĩa tròn: \\(\\iint x^2\\,dA=\\iint y^2\\,dA\\) → \\(I=0\\).\n\nChứng minh: dùng tọa độ cực: \\(\\int_0^{2\\pi}\\cos^2\\theta\\,d\\theta=\\int_0^{2\\pi}\\sin^2\\theta\\,d\\theta=\\pi\\).",
+    "quick": "Green: I=∬3(x²-y²)dA. Đối xứng tròn: ∬x²=∬y² → I=0.",
     "casio": "Đối xứng: ∬x²dA=∬y²dA trên đĩa tròn → I=0",
     "difficulty": 3,
     "topic": "Tích phân đường – Định lý Green"
@@ -402,7 +402,7 @@
     "matrix": null,
     "options": [
       "\\(0\\)",
-      "\\(\\iint_D(Q'_x-P'_y)dA\\)",
+      "Phụ thuộc vào hình dạng của \\(C\\)",
       "Diện tích \\(D\\)",
       "Không xác định"
     ],
@@ -461,7 +461,7 @@
       "\\(0\\)"
     ],
     "correct": "\\(1\\)",
-    "solution": "\\(W=\\int_C y\\,dx+x\\,dy\\).\n\nTham số: \\(x=t, y=t\\), \\(t\\in[0,1]\\). \\(dx=dt, dy=dt\\).\n\n\\(W=\\int_0^1[t\\cdot dt+t\\cdot dt]=\\int_0^1 2t\\,dt=[t^2]_0^1=1\\).\n\n*Kiểm tra nhanh:* \\(Mdx+Ndy=ydx+xdy=d(xy)\\) → thế vị \\(U=xy\\). \\(W=U(1,1)-U(0,0)=1-0=1\\).",
+    "solution": "\\(W=\\int_C y\\,dx+x\\,dy\\).\n\nTham số: \\(x=t, y=t\\), \\(t\\in[0,1]\\). \\(dx=dt, dy=dt\\).\n\n\\(W=\\int_0^1[t\\cdot dt+t\\cdot dt]=\\int_0^1 2t\\,dt=[t^2]_0^1=1\\).\n\nKiểm tra nhanh: \\(Mdx+Ndy=ydx+xdy=d(xy)\\) → thế vị \\(U=xy\\). \\(W=U(1,1)-U(0,0)=1-0=1\\).",
     "quick": "F=(y,x): kiểm tra M_y=1=N_x=1 → toàn phần! \\(W=U(1,1)-U(0,0)=xy|_{(0,0)}^{(1,1)}=\\mathbf{1}\\).",
     "casio": "CASIO: Thế vị U=xy (vì dU=ydx+xdy). W=U(đến)-U(từ)=1-0=1.",
     "difficulty": 2,
@@ -479,8 +479,8 @@
       "1"
     ],
     "correct": "Độ dài đường cong C",
-    "solution": "\\(\\int_C 1\\,ds = \\int_C ds\\) = **độ dài đường cong C**.\n\nĐây là ý nghĩa hình học của tích phân đường loại 1.",
-    "quick": "∫_C ds = **độ dài** đường cong C.",
+    "solution": "\\(\\int_C 1\\,ds = \\int_C ds\\) = độ dài đường cong C.\n\nĐây là ý nghĩa hình học của tích phân đường loại 1.",
+    "quick": "∫_C ds = độ dài đường cong C.",
     "casio": "CASIO: ds=√(x'²+y'²)dt. ∫dt (không tích phân hàm) = độ dài.",
     "difficulty": 1,
     "topic": "Tích phân đường – Định lý Green"
@@ -497,8 +497,8 @@
       "Tích phân xác định"
     ],
     "correct": "Tích phân đôi trên miền phẳng D",
-    "solution": "**Định lý Green:** \\(\\oint_L Mdx+Ndy=\\iint_D\\left(\\dfrac{\\partial N}{\\partial x}-\\dfrac{\\partial M}{\\partial y}\\right)dA\\).\n\nChuyển tích phân đường (trên biên L) → tích phân **đôi** (trên miền D).",
-    "quick": "Green: ∮Mdx+Ndy = ∬(N_x-M_y)dA. **Đường → đôi**.",
+    "solution": "Định lý Green: \\(\\oint_L Mdx+Ndy=\\iint_D\\left(\\dfrac{\\partial N}{\\partial x}-\\dfrac{\\partial M}{\\partial y}\\right)dA\\).\n\nChuyển tích phân đường (trên biên L) → tích phân đôi (trên miền D).",
+    "quick": "Green: ∮Mdx+Ndy = ∬(N_x-M_y)dA. Đường → đôi.",
     "casio": "CASIO: Kiểm tra N_x-M_y trước. Nếu đơn giản → dùng Green.",
     "difficulty": 1,
     "topic": "Tích phân đường – Định lý Green"
@@ -650,18 +650,18 @@
   {
     "id": 37,
     "type": "line_integral_type1_variant",
-    "question": "Trong mặt phẳng, $L$ là đoạn thẳng từ $(0,0)$ đến $(3,3)$. Giá trị $\\int_L(x+y)\\,ds$ bằng",
+    "question": "Trong mặt phẳng, \\(L\\) là đoạn thẳng từ \\((0,0)\\) đến \\((3,3)\\). Giá trị \\(\\int_L(x+y)\\,ds\\) bằng",
     "matrix": null,
     "options": [
-      "$9\\sqrt2$",
-      "$6\\sqrt2$",
-      "$18$",
-      "$9$"
+      "\\(9\\sqrt2\\)",
+      "\\(6\\sqrt2\\)",
+      "\\(18\\)",
+      "\\(9\\)"
     ],
-    "correct": "$9\\sqrt2$",
-    "solution": "Đặt $x=t$, $y=t$, $0\\le t\\le3$. Khi đó $ds=\\sqrt2\\,dt$ và $x+y=2t$. Do đó $I=\\int_0^32t\\sqrt2\\,dt=9\\sqrt2$.",
-    "quick": "Trên $y=x$, ta có $ds=\\sqrt2\\,dt$.",
-    "casio": "Tính $\\sqrt2\\int_0^32t\\,dt=9\\sqrt2$.",
+    "correct": "\\(9\\sqrt2\\)",
+    "solution": "Đặt \\(x=t\\), \\(y=t\\), \\(0\\le t\\le3\\). Khi đó \\(ds=\\sqrt2\\,dt\\) và \\(x+y=2t\\). Do đó \\(I=\\int_0^3 2t\\sqrt2\\,dt=9\\sqrt2\\).",
+    "quick": "Trên \\(y=x\\), ta có \\(ds=\\sqrt2\\,dt\\).",
+    "casio": "CASIO: Tính \\(\\sqrt2\\int_0^3 2t\\,dt=9\\sqrt2\\).",
     "difficulty": 2,
     "topic": "Tích phân đường – Định lý Green"
   },
@@ -671,15 +671,15 @@
     "question": "Một chất điểm đi đúng một vòng trên đường tròn bán kính 2 m. Lực luôn tiếp tuyến, cùng chiều chuyển động và có độ lớn không đổi 3 N. Công của lực bằng",
     "matrix": null,
     "options": [
-      "$12\\pi\\,\\mathrm{J}$",
-      "$6\\pi\\,\\mathrm{J}$",
-      "$4\\pi\\,\\mathrm{J}$",
-      "$24\\pi\\,\\mathrm{J}$"
+      "\\(12\\pi\\,\\mathrm{J}\\)",
+      "\\(6\\pi\\,\\mathrm{J}\\)",
+      "\\(4\\pi\\,\\mathrm{J}\\)",
+      "\\(24\\pi\\,\\mathrm{J}\\)"
     ],
-    "correct": "$12\\pi\\,\\mathrm{J}$",
-    "solution": "Lực luôn cùng hướng chuyển động nên $W=F\\cdot s=3\\cdot(2\\pi\\cdot2)=12\\pi\\,\\mathrm{J}$.",
+    "correct": "\\(12\\pi\\,\\mathrm{J}\\)",
+    "solution": "Lực luôn cùng hướng chuyển động nên \\(W=F\\cdot s=3\\cdot(2\\pi\\cdot2)=12\\pi\\,\\mathrm{J}\\).",
     "quick": "Công bằng độ lớn lực nhân chu vi đường tròn.",
-    "casio": "Tính $3\\times2\\pi\\times2=12\\pi$.",
+    "casio": "CASIO: Tính \\(3\\times2\\pi\\times2=12\\pi\\).",
     "difficulty": 3,
     "topic": "Tích phân đường – Định lý Green"
   }

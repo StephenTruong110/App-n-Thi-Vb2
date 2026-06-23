@@ -11,9 +11,9 @@
       "Phân kỳ"
     ],
     "correct": "\\(2\\)",
-    "solution": "Chuỗi hình học với \\(a=1\\), \\(q=\\dfrac{1}{2}\\), \\(|q|<1\\). Tổng \\(S=\\dfrac{a}{1-q}=\\dfrac{1}{1-1/2}=2\\).",
+    "solution": "Chuỗi hình học với \\(a=1\\), \\(q=\\dfrac{1}{2}\\), \\(|q|\\lt 1\\). Tổng \\(S=\\dfrac{a}{1-q}=\\dfrac{1}{1-1/2}=2\\).",
     "quick": "\\(S=\\dfrac{a}{1-q}=\\dfrac{1}{1/2}=2\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -31,7 +31,7 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\dfrac{1}{n(n+1)}=\\dfrac{1}{n}-\\dfrac{1}{n+1}\\). Tổng riêng \\(S_N=1-\\dfrac{1}{N+1}\\to1\\).",
     "quick": "Phân phần: \\(\\dfrac{1}{n}-\\dfrac{1}{n+1}\\) → telescope → \\(S=1\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -48,8 +48,8 @@
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)^2+1}{2^{n+1}}\\cdot\\dfrac{2^n}{n^2+1}=\\dfrac{(n+1)^2+1}{2(n^2+1)}\\to\\dfrac{1}{2}\\).",
-    "quick": "Hệ số \\(2^n\\) ở mẫu → \\(D=1/2<1\\) → hội tụ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "quick": "Hệ số \\(2^n\\) ở mẫu → \\(D=1/2\\lt 1\\) → hội tụ",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -66,8 +66,8 @@
     ],
     "correct": "\\(e^{-1}\\)",
     "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)!}{(n+1)^{n+1}}\\cdot\\dfrac{n^n}{n!}=\\left(\\dfrac{n}{n+1}\\right)^n=\\dfrac{1}{(1+1/n)^n}\\to\\dfrac{1}{e}\\).",
-    "quick": "\\(\\left(1+\\dfrac{1}{n}\\right)^n\\to e\\) → \\(D=1/e<1\\) → hội tụ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "quick": "\\(\\left(1+\\dfrac{1}{n}\\right)^n\\to e\\) → \\(D=1/e\\lt 1\\) → hội tụ",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -83,9 +83,9 @@
       "Hội tụ có điều kiện"
     ],
     "correct": "Hội tụ",
-    "solution": "\\(D=\\lim\\dfrac{3^{n+1}/(n+1)!}{3^n/n!}=\\lim\\dfrac{3}{n+1}=0<1\\) → hội tụ.",
-    "quick": "\\(D=\\lim\\dfrac{3}{n+1}=0<1\\) → hội tụ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "solution": "\\(D=\\lim\\dfrac{3^{n+1}/(n+1)!}{3^n/n!}=\\lim\\dfrac{3}{n+1}=0\\lt 1\\) → hội tụ.",
+    "quick": "\\(D=\\lim\\dfrac{3}{n+1}=0\\lt 1\\) → hội tụ",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -101,9 +101,9 @@
       "\\(3\\)"
     ],
     "correct": "\\(+\\infty\\)",
-    "solution": "\\(D=\\lim\\dfrac{(n+1)!/3^{n+1}}{n!/3^n}=\\lim\\dfrac{n+1}{3}=+\\infty>1\\) → phân kỳ.",
+    "solution": "\\(D=\\lim\\dfrac{(n+1)!/3^{n+1}}{n!/3^n}=\\lim\\dfrac{n+1}{3}=+\\infty\\gt 1\\) → phân kỳ.",
     "quick": "\\(D=\\lim(n+1)/3=+\\infty\\) → phân kỳ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -120,8 +120,8 @@
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(C=\\lim\\sqrt[n]{u_n}=\\lim\\dfrac{n}{2n+1}=\\dfrac{1}{2}\\).",
-    "quick": "\\(C=\\lim\\dfrac{n}{2n+1}=\\dfrac{1}{2}<1\\) → hội tụ",
-    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C<1: hội tụ; C>1: phân kỳ.",
+    "quick": "\\(C=\\lim\\dfrac{n}{2n+1}=\\dfrac{1}{2}\\lt 1\\) → hội tụ",
+    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C&lt;1: hội tụ; C&gt;1: phân kỳ.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -137,9 +137,9 @@
       "\\(e\\)"
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
-    "solution": "\\(\\sqrt[n]{u_n}=\\dfrac{n^{2/n}}{2+1/n}\\). Vì \\(n^{2/n}\\to1\\) và \\(2+1/n\\to2\\), nên \\(C=\\dfrac{1}{2}<1\\) → hội tụ.",
-    "quick": "\\(n^{2/n}\\to1\\), \\((2+1/n)\\to2\\) → \\(C=1/2<1\\)",
-    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C<1: hội tụ; C>1: phân kỳ.",
+    "solution": "\\(\\sqrt[n]{u_n}=\\dfrac{n^{2/n}}{2+1/n}\\). Vì \\(n^{2/n}\\to1\\) và \\(2+1/n\\to2\\), nên \\(C=\\dfrac{1}{2}\\lt 1\\) → hội tụ.",
+    "quick": "\\(n^{2/n}\\to1\\), \\((2+1/n)\\to2\\) → \\(C=1/2\\lt 1\\)",
+    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C&lt;1: hội tụ; C&gt;1: phân kỳ.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -155,9 +155,9 @@
       "Không áp dụng được"
     ],
     "correct": "Hội tụ",
-    "solution": "\\(u_n=1/n>0\\), đơn điệu giảm, \\(u_n\\to0\\). Theo Leibniz → chuỗi hội tụ (bán hội tụ, tổng \\(=\\ln2\\)).",
+    "solution": "\\(u_n=1/n\\gt 0\\), đơn điệu giảm, \\(u_n\\to0\\). Theo Leibniz → chuỗi hội tụ (bán hội tụ, tổng \\(=\\ln2\\)).",
     "quick": "Leibniz: \\(u_n\\downarrow\\to0\\) → hội tụ. Nhưng \\(\\sum1/n\\) phân kỳ → bán hội tụ.",
-    "casio": "CASIO: Kiểm tra điều kiện Leibniz: (1) u_n > 0 (hiển nhiên); (2) u_{n+1} ≤ u_n (kiểm tra bằng cách so sánh tại vài n); (3) u_n → 0 (thay n=1e6).",
+    "casio": "CASIO: Kiểm tra điều kiện Leibniz: (1) u_n &gt; 0 (hiển nhiên); (2) u_{n+1} ≤ u_n (kiểm tra bằng cách so sánh tại vài n); (3) u_n → 0 (thay n=1e6).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -191,9 +191,9 @@
       "Không xác định"
     ],
     "correct": "Hội tụ tuyệt đối",
-    "solution": "\\(\\sum|u_n|=\\sum\\dfrac{1}{n^2}\\) hội tụ (p=2>1). Vậy chuỗi hội tụ **tuyệt đối**.",
-    "quick": "\\(\\sum1/n^2\\) hội tụ (p=2>1) → hội tụ tuyệt đối",
-    "casio": "CASIO: Kiểm tra điều kiện Leibniz: (1) u_n > 0 (hiển nhiên); (2) u_{n+1} ≤ u_n (kiểm tra bằng cách so sánh tại vài n); (3) u_n → 0 (thay n=1e6).",
+    "solution": "\\(\\sum|u_n|=\\sum\\dfrac{1}{n^2}\\) hội tụ (p=2&gt;1). Vậy chuỗi hội tụ **tuyệt đối**.",
+    "quick": "\\(\\sum1/n^2\\) hội tụ (p=2&gt;1) → hội tụ tuyệt đối",
+    "casio": "CASIO: Kiểm tra điều kiện Leibniz: (1) u_n &gt; 0 (hiển nhiên); (2) u_{n+1} ≤ u_n (kiểm tra bằng cách so sánh tại vài n); (3) u_n → 0 (thay n=1e6).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -211,7 +211,7 @@
     "correct": "\\(\\dfrac{\\pi^2}{6}\\)",
     "solution": "Đây là chuỗi Basel nổi tiếng: \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2}=\\dfrac{\\pi^2}{6}\\approx1.6449\\).",
     "quick": "Công thức nổi tiếng: \\(\\sum_{n=1}^{\\infty}1/n^2=\\pi^2/6\\)",
-    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p>1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
+    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p&gt;1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
     "difficulty": 1,
     "topic": "Chuỗi số"
   },
@@ -221,15 +221,15 @@
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^p}\\) hội tụ khi và chỉ khi",
     "matrix": null,
     "options": [
-      "\\(p>1\\)",
+      "\\(p\\gt 1\\)",
       "\\(p\\geq1\\)",
-      "\\(p>0\\)",
+      "\\(p\\gt 0\\)",
       "\\(p\\geq0\\)"
     ],
-    "correct": "\\(p>1\\)",
-    "solution": "Chuỗi \\(p\\): hội tụ \\(\\Leftrightarrow p>1\\), phân kỳ \\(\\Leftrightarrow p\\leq1\\).",
-    "quick": "Chuỗi \\(p\\): \\(p>1\\) hội tụ; \\(p\\leq1\\) phân kỳ",
-    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p>1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
+    "correct": "\\(p\\gt 1\\)",
+    "solution": "Chuỗi \\(p\\): hội tụ \\(\\Leftrightarrow p\\gt 1\\), phân kỳ \\(\\Leftrightarrow p\\leq1\\).",
+    "quick": "Chuỗi \\(p\\): \\(p\\gt 1\\) hội tụ; \\(p\\leq1\\) phân kỳ",
+    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p&gt;1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
     "difficulty": 1,
     "topic": "Chuỗi số"
   },
@@ -247,7 +247,7 @@
     "correct": "Phân kỳ",
     "solution": "Chuỗi điều hòa \\(p=1\\leq1\\) → phân kỳ. Có thể chứng minh bằng so sánh nhóm.",
     "quick": "\\(p=1\\leq1\\) → phân kỳ. Đây là chuỗi điều hòa nổi tiếng!",
-    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p>1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
+    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p&gt;1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
     "difficulty": 1,
     "topic": "Chuỗi số"
   },
@@ -258,14 +258,14 @@
     "matrix": null,
     "options": [
       "Phân kỳ vì \\(p=\\dfrac{1}{2}\\leq1\\)",
-      "Hội tụ vì \\(p=2>1\\)",
+      "Hội tụ vì \\(p=2\\gt 1\\)",
       "Hội tụ tuyệt đối",
       "Không xác định"
     ],
     "correct": "Phân kỳ vì \\(p=\\dfrac{1}{2}\\leq1\\)",
     "solution": "\\(p=1/2\\leq1\\) → chuỗi \\(p\\) phân kỳ.",
-    "quick": "Chuỗi p: **p>1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
-    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p>1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
+    "quick": "Chuỗi p: **p&gt;1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
+    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p&gt;1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
     "difficulty": 1,
     "topic": "Chuỗi số"
   },
@@ -275,15 +275,15 @@
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^3}\\) thì",
     "matrix": null,
     "options": [
-      "Hội tụ vì \\(p=3>1\\)",
-      "Phân kỳ vì \\(p=3>1\\)",
+      "Hội tụ vì \\(p=3\\gt 1\\)",
+      "Phân kỳ vì \\(p=3\\gt 1\\)",
       "Hội tụ với tổng \\(\\dfrac{\\pi^3}{6}\\)",
       "Không xác định"
     ],
-    "correct": "Hội tụ vì \\(p=3>1\\)",
-    "solution": "\\(p=3>1\\) → chuỗi \\(p\\) hội tụ. (Tổng \\(=\\zeta(3)=\\) hằng số Apéry \\(\\approx1.202\\).)",
-    "quick": "Chuỗi p: **p>1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
-    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p>1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
+    "correct": "Hội tụ vì \\(p=3\\gt 1\\)",
+    "solution": "\\(p=3\\gt 1\\) → chuỗi \\(p\\) hội tụ. (Tổng \\(=\\zeta(3)=\\) hằng số Apéry \\(\\approx1.202\\).)",
+    "quick": "Chuỗi p: **p&gt;1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
+    "casio": "CASIO: Chuỗi p Σ1/nᵖ: p&gt;1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
     "difficulty": 1,
     "topic": "Chuỗi số"
   },
@@ -294,7 +294,7 @@
     "matrix": null,
     "options": [
       "\\(\\lim_{n\\to\\infty} u_n=0\\)",
-      "\\(u_n>0\\) với mọi \\(n\\)",
+      "\\(u_n\\gt 0\\) với mọi \\(n\\)",
       "\\(u_n\\) đơn điệu giảm",
       "\\(\\sum|u_n|\\) hội tụ"
     ],
@@ -331,7 +331,7 @@
     "options": [
       "Phân kỳ vì \\(u_n\\to1\\neq0\\)",
       "Hội tụ vì các số hạng nhỏ",
-      "Hội tụ vì \\(u_n<1\\)",
+      "Hội tụ vì \\(u_n\\lt 1\\)",
       "Không xác định"
     ],
     "correct": "Phân kỳ vì \\(u_n\\to1\\neq0\\)",
@@ -347,15 +347,15 @@
     "question": "So sánh \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+1}\\) với chuỗi \\(\\sum\\dfrac{1}{n^2}\\). Kết luận?",
     "matrix": null,
     "options": [
-      "Hội tụ vì \\(\\dfrac{1}{n^2+1}<\\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ",
+      "Hội tụ vì \\(\\dfrac{1}{n^2+1}\\lt \\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ",
       "Phân kỳ",
       "Không so sánh được",
       "Bán hội tụ"
     ],
-    "correct": "Hội tụ vì \\(\\dfrac{1}{n^2+1}<\\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ",
-    "solution": "\\(0<\\dfrac{1}{n^2+1}<\\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ → theo tiêu chuẩn so sánh → hội tụ.",
-    "quick": "Tiêu chuẩn so sánh: \\(0<u_n\\leq v_n\\), \\(\\sum v_n\\) hội tụ → \\(\\sum u_n\\) hội tụ",
-    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0<L<∞ → cùng tính chất.",
+    "correct": "Hội tụ vì \\(\\dfrac{1}{n^2+1}\\lt \\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ",
+    "solution": "\\(0\\lt \\dfrac{1}{n^2+1}\\lt \\dfrac{1}{n^2}\\) và \\(\\sum\\dfrac{1}{n^2}\\) hội tụ → theo tiêu chuẩn so sánh → hội tụ.",
+    "quick": "Tiêu chuẩn so sánh: \\(0\\lt u_n\\leq v_n\\), \\(\\sum v_n\\) hội tụ → \\(\\sum u_n\\) hội tụ",
+    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0&lt;L&lt;∞ → cùng tính chất.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -365,22 +365,22 @@
     "question": "So sánh \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{\\ln n}\\) (với \\(n\\geq2\\)) với \\(\\sum\\dfrac{1}{n}\\). Kết luận?",
     "matrix": null,
     "options": [
-      "Phân kỳ vì \\(\\dfrac{1}{\\ln n}>\\dfrac{1}{n}\\) và \\(\\sum\\dfrac{1}{n}\\) phân kỳ",
+      "Phân kỳ vì \\(\\dfrac{1}{\\ln n}\\gt \\dfrac{1}{n}\\) và \\(\\sum\\dfrac{1}{n}\\) phân kỳ",
       "Hội tụ",
       "Không so sánh được",
       "Bán hội tụ"
     ],
-    "correct": "Phân kỳ vì \\(\\dfrac{1}{\\ln n}>\\dfrac{1}{n}\\) và \\(\\sum\\dfrac{1}{n}\\) phân kỳ",
-    "solution": "Với \\(n\\geq2\\): \\(\\ln n<n\\) → \\(\\dfrac{1}{\\ln n}>\\dfrac{1}{n}\\). \\(\\sum\\dfrac{1}{n}\\) phân kỳ → \\(\\sum\\dfrac{1}{\\ln n}\\) phân kỳ.",
-    "quick": "\\(\\ln n<n\\) → \\(1/\\ln n>1/n\\) → so sánh với \\(\\sum1/n\\) phân kỳ",
-    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0<L<∞ → cùng tính chất.",
+    "correct": "Phân kỳ vì \\(\\dfrac{1}{\\ln n}\\gt \\dfrac{1}{n}\\) và \\(\\sum\\dfrac{1}{n}\\) phân kỳ",
+    "solution": "Với \\(n\\geq2\\): \\(\\ln n\\lt n\\) → \\(\\dfrac{1}{\\ln n}\\gt \\dfrac{1}{n}\\). \\(\\sum\\dfrac{1}{n}\\) phân kỳ → \\(\\sum\\dfrac{1}{\\ln n}\\) phân kỳ.",
+    "quick": "\\(\\ln n\\lt n\\) → \\(1/\\ln n\\gt 1/n\\) → so sánh với \\(\\sum1/n\\) phân kỳ",
+    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0&lt;L&lt;∞ → cùng tính chất.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
   {
     "id": 22,
     "type": "comparison_limit",
-    "question": "Dùng tiêu chuẩn so sánh giới hạn: \\(\\lim_{n\\to\\infty}\\dfrac{u_n}{v_n}=L\\text{ với }0<L<+\\infty\\) thì \\(\\sum u_n\\) và \\(\\sum v_n\\)",
+    "question": "Dùng tiêu chuẩn so sánh giới hạn: nếu \\(u_n,v_n\\gt0\\) từ một chỉ số đủ lớn và \\(\\lim_{n\\to\\infty}\\dfrac{u_n}{v_n}=L\\) với \\(0\\lt L\\lt+\\infty\\), thì \\(\\sum u_n\\) và \\(\\sum v_n\\)",
     "matrix": null,
     "options": [
       "Cùng hội tụ hoặc cùng phân kỳ",
@@ -389,9 +389,9 @@
       "\\(\\sum u_n\\) phân kỳ"
     ],
     "correct": "Cùng hội tụ hoặc cùng phân kỳ",
-    "solution": "Tiêu chuẩn so sánh giới hạn: nếu \\(u_n,v_n>0\\) từ một chỉ số nào đó và \\(0<L=\\lim u_n/v_n<+\\infty\\), thì \\(\\sum u_n\\) và \\(\\sum v_n\\) cùng hội tụ hoặc cùng phân kỳ.",
-    "quick": "Điều kiện đúng là \\(0<L<+\\infty\\), không chỉ \\(L\\ne0\\).",
-    "casio": "CASIO: Tính L = lim(u_n/v_n) tại n lớn (n=10000) bằng CALC. Nếu 0<L<∞: cùng hội tụ hoặc cùng phân kỳ như Σv_n.",
+    "solution": "Nếu \\(u_n,v_n\\gt0\\) từ một chỉ số đủ lớn và \\(0\\lt L=\\lim_{n\\to\\infty}\\dfrac{u_n}{v_n}\\lt+\\infty\\), thì \\(\\sum u_n\\) và \\(\\sum v_n\\) cùng hội tụ hoặc cùng phân kỳ.",
+    "quick": "Điều kiện đúng là \\(0\\lt L\\lt+\\infty\\), không chỉ \\(L\\ne0\\).",
+    "casio": "Tính gần đúng \\(u_n/v_n\\) tại \\(n\\) lớn. Nếu giới hạn là một số dương hữu hạn thì hai chuỗi cùng tính chất hội tụ.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -401,15 +401,15 @@
     "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2n+1}{n^2+n}\\). So sánh giới hạn với \\(\\sum\\dfrac{1}{n}\\).",
     "matrix": null,
     "options": [
-      "Phân kỳ vì \\(L=2>0\\)",
+      "Phân kỳ vì \\(L=2\\gt 0\\)",
       "Hội tụ",
       "Không so sánh được",
       "\\(L=0\\)"
     ],
-    "correct": "Phân kỳ vì \\(L=2>0\\)",
-    "solution": "\\(\\lim\\dfrac{u_n}{1/n}=\\lim\\dfrac{n(2n+1)}{n^2+n}=\\lim\\dfrac{2n+1}{n+1}=2>0\\). \\(\\sum1/n\\) phân kỳ → \\(\\sum u_n\\) phân kỳ.",
+    "correct": "Phân kỳ vì \\(L=2\\gt 0\\)",
+    "solution": "\\(\\lim\\dfrac{u_n}{1/n}=\\lim\\dfrac{n(2n+1)}{n^2+n}=\\lim\\dfrac{2n+1}{n+1}=2\\gt 0\\). \\(\\sum1/n\\) phân kỳ → \\(\\sum u_n\\) phân kỳ.",
     "quick": "Chọn \\(v_n=1/n\\): \\(L=\\lim nu_n=2\\neq0\\), \\(\\sum1/n\\) phân kỳ → phân kỳ",
-    "casio": "CASIO: Tính L = lim(u_n/v_n) tại n lớn (n=10000) bằng CALC. Nếu 0<L<∞: cùng hội tụ hoặc cùng phân kỳ như Σv_n.",
+    "casio": "CASIO: Tính L = lim(u_n/v_n) tại n lớn (n=10000) bằng CALC. Nếu 0&lt;L&lt;∞: cùng hội tụ hoặc cùng phân kỳ như Σv_n.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -419,22 +419,22 @@
     "question": "Xét \\(\\sum_{n=1}^{\\infty}\\dfrac{3n^2+1}{n^4+2}\\). So sánh giới hạn với \\(\\sum\\dfrac{1}{n^2}\\).",
     "matrix": null,
     "options": [
-      "Hội tụ vì \\(L=3>0\\) và \\(\\sum1/n^2\\) hội tụ",
+      "Hội tụ vì \\(L=3\\gt 0\\) và \\(\\sum1/n^2\\) hội tụ",
       "Phân kỳ",
       "\\(L=0\\)",
       "\\(L=\\infty\\)"
     ],
-    "correct": "Hội tụ vì \\(L=3>0\\) và \\(\\sum1/n^2\\) hội tụ",
-    "solution": "\\(L=\\lim\\dfrac{(3n^2+1)/( n^4+2)}{1/n^2}=\\lim\\dfrac{n^2(3n^2+1)}{n^4+2}=3>0\\). \\(\\sum1/n^2\\) hội tụ → hội tụ.",
+    "correct": "Hội tụ vì \\(L=3\\gt 0\\) và \\(\\sum1/n^2\\) hội tụ",
+    "solution": "\\(L=\\lim\\dfrac{(3n^2+1)/( n^4+2)}{1/n^2}=\\lim\\dfrac{n^2(3n^2+1)}{n^4+2}=3\\gt 0\\). \\(\\sum1/n^2\\) hội tụ → hội tụ.",
     "quick": "\\(n^2u_n\\to3\\), \\(\\sum1/n^2\\) hội tụ → hội tụ",
-    "casio": "CASIO: Tính L = lim(u_n/v_n) tại n lớn (n=10000) bằng CALC. Nếu 0<L<∞: cùng hội tụ hoặc cùng phân kỳ như Σv_n.",
+    "casio": "CASIO: Tính L = lim(u_n/v_n) tại n lớn (n=10000) bằng CALC. Nếu 0&lt;L&lt;∞: cùng hội tụ hoặc cùng phân kỳ như Σv_n.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
   {
     "id": 25,
     "type": "alternating_series",
-    "question": "Điều kiện Leibniz cho chuỗi đan dấu \\(\\sum(-1)^{n-1}u_n\\) (\\(u_n>0\\)) là",
+    "question": "Điều kiện Leibniz cho chuỗi đan dấu \\(\\sum(-1)^{n-1}u_n\\) (\\(u_n\\gt 0\\)) là",
     "matrix": null,
     "options": [
       "\\(u_n\\) đơn điệu giảm và \\(u_n\\to0\\)",
@@ -499,7 +499,7 @@
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "\\(\\dfrac{1}{4n^2-1}=\\dfrac{1}{(2n-1)(2n+1)}=\\dfrac{1}{2}\\left(\\dfrac{1}{2n-1}-\\dfrac{1}{2n+1}\\right)\\). Telescope: \\(S=\\dfrac{1}{2}\\cdot1=\\dfrac{1}{2}\\).",
     "quick": "Phân phần → telescope. \\(S=\\dfrac{1}{2}\\cdot(1-\\lim_{N}\\dfrac{1}{2N+1})=\\dfrac{1}{2}\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -516,8 +516,8 @@
     ],
     "correct": "\\(\\dfrac{3}{4}\\)",
     "solution": "Chuỗi hình học với \\(a=1\\), \\(q=-1/3\\). \\(S=\\dfrac{1}{1-(-1/3)}=\\dfrac{1}{4/3}=\\dfrac{3}{4}\\).",
-    "quick": "\\(q=-1/3\\), \\(|q|<1\\): \\(S=\\dfrac{1}{1+1/3}=\\dfrac{3}{4}\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "quick": "\\(q=-1/3\\), \\(|q|\\lt 1\\): \\(S=\\dfrac{1}{1+1/3}=\\dfrac{3}{4}\\)",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -535,7 +535,7 @@
     "correct": "\\(3\\)",
     "solution": "\\(a=2\\), \\(q=1/3\\). \\(S=\\dfrac{2}{1-1/3}=\\dfrac{2}{2/3}=3\\).",
     "quick": "\\(S=\\dfrac{a}{1-q}=\\dfrac{2}{2/3}=3\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -553,7 +553,7 @@
     "correct": "\\(\\dfrac{3}{4}\\)",
     "solution": "\\(\\dfrac{1}{n^2-1}=\\dfrac{1}{(n-1)(n+1)}=\\dfrac{1}{2}\\left(\\dfrac{1}{n-1}-\\dfrac{1}{n+1}\\right)\\). Telescope: \\(S=\\dfrac{1}{2}\\left(1+\\dfrac{1}{2}\\right)=\\dfrac{3}{4}\\).",
     "quick": "Phân phần → telescope. Cẩn thận bắt đầu từ \\(n=2\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -569,9 +569,9 @@
       "\\(n\\)"
     ],
     "correct": "\\(e\\)",
-    "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)^{n+1}}{(n+1)!}\\cdot\\dfrac{n!}{n^n}=\\left(1+\\dfrac{1}{n}\\right)^n\\to e>1\\) → phân kỳ.",
-    "quick": "\\(D=e>1\\) → phân kỳ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)^{n+1}}{(n+1)!}\\cdot\\dfrac{n!}{n^n}=\\left(1+\\dfrac{1}{n}\\right)^n\\to e\\gt 1\\) → phân kỳ.",
+    "quick": "\\(D=e\\gt 1\\) → phân kỳ",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -587,9 +587,9 @@
       "\\(+\\infty\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "\\(D=\\lim\\dfrac{(n+1)!}{(2n+2)!}\\cdot\\dfrac{(2n)!}{n!}=\\lim\\dfrac{n+1}{(2n+2)(2n+1)}=\\lim\\dfrac{1}{2(2n+1)}=0<1\\) → hội tụ.",
-    "quick": "\\((2n+2)!=(2n+2)(2n+1)(2n)!\\) → \\(D=0<1\\) → hội tụ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "solution": "\\(D=\\lim\\dfrac{(n+1)!}{(2n+2)!}\\cdot\\dfrac{(2n)!}{n!}=\\lim\\dfrac{n+1}{(2n+2)(2n+1)}=\\lim\\dfrac{1}{2(2n+1)}=0\\lt 1\\) → hội tụ.",
+    "quick": "\\((2n+2)!=(2n+2)(2n+1)(2n)!\\) → \\(D=0\\lt 1\\) → hội tụ",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -599,15 +599,15 @@
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{4^n}{n^2}\\) theo D'Alembert",
     "matrix": null,
     "options": [
-      "Phân kỳ vì \\(D=4>1\\)",
-      "Hội tụ vì \\(D=1/4<1\\)",
+      "Phân kỳ vì \\(D=4\\gt 1\\)",
+      "Hội tụ vì \\(D=1/4\\lt 1\\)",
       "Không kết luận vì \\(D=1\\)",
       "Hội tụ điều kiện"
     ],
-    "correct": "Phân kỳ vì \\(D=4>1\\)",
-    "solution": "\\(D=\\lim\\dfrac{4^{n+1}/(n+1)^2}{4^n/n^2}=\\lim\\dfrac{4n^2}{(n+1)^2}=4>1\\) → phân kỳ.",
-    "quick": "\\(D=4>1\\) → phân kỳ — **Nhớ:** cần kiểm tra u_n→0 trước (điều kiện cần). Nếu u_n↛0 → phân kỳ ngay!",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "correct": "Phân kỳ vì \\(D=4\\gt 1\\)",
+    "solution": "\\(D=\\lim\\dfrac{4^{n+1}/(n+1)^2}{4^n/n^2}=\\lim\\dfrac{4n^2}{(n+1)^2}=4\\gt 1\\) → phân kỳ.",
+    "quick": "\\(D=4\\gt 1\\) → phân kỳ — **Nhớ:** cần kiểm tra u_n→0 trước (điều kiện cần). Nếu u_n↛0 → phân kỳ ngay!",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -623,9 +623,9 @@
       "\\(\\dfrac{4}{3}\\)"
     ],
     "correct": "\\(\\dfrac{3}{4}\\)",
-    "solution": "\\(C=\\lim\\sqrt[n]{u_n}=\\lim\\dfrac{3n}{4n+1}=\\dfrac{3}{4}<1\\) → hội tụ.",
-    "quick": "\\(C=\\lim\\dfrac{3n}{4n+1}=\\dfrac{3}{4}<1\\) → hội tụ",
-    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C<1: hội tụ; C>1: phân kỳ.",
+    "solution": "\\(C=\\lim\\sqrt[n]{u_n}=\\lim\\dfrac{3n}{4n+1}=\\dfrac{3}{4}\\lt 1\\) → hội tụ.",
+    "quick": "\\(C=\\lim\\dfrac{3n}{4n+1}=\\dfrac{3}{4}\\lt 1\\) → hội tụ",
+    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C&lt;1: hội tụ; C&gt;1: phân kỳ.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -641,9 +641,9 @@
       "\\(0\\)"
     ],
     "correct": "\\(2\\)",
-    "solution": "\\(C=\\lim\\dfrac{2n}{n+1}=2>1\\) → phân kỳ.",
-    "quick": "\\(C=\\lim2n/(n+1)=2>1\\) → phân kỳ",
-    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C<1: hội tụ; C>1: phân kỳ.",
+    "solution": "\\(C=\\lim\\dfrac{2n}{n+1}=2\\gt 1\\) → phân kỳ.",
+    "quick": "\\(C=\\lim2n/(n+1)=2\\gt 1\\) → phân kỳ",
+    "casio": "CASIO: Tính C = ⁿ√u_n = u_n^(1/n) tại n lớn bằng CALC. Nhập u_n^(1/n) với n=1000. Nếu C&lt;1: hội tụ; C&gt;1: phân kỳ.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -695,8 +695,8 @@
       "Không kết luận"
     ],
     "correct": "Hội tụ",
-    "solution": "\\(\\int_1^{\\infty}\\dfrac{dx}{x^2+1}=\\arctan x\\Big|_1^{\\infty}=\\dfrac{\\pi}{2}-\\dfrac{\\pi}{4}=\\dfrac{\\pi}{4}<+\\infty\\) → hội tụ.",
-    "quick": "\\(\\int_1^{\\infty}1/(x^2+1)\\,dx=\\pi/4<\\infty\\) → hội tụ",
+    "solution": "\\(\\int_1^{\\infty}\\dfrac{dx}{x^2+1}=\\arctan x\\Big|_1^{\\infty}=\\dfrac{\\pi}{2}-\\dfrac{\\pi}{4}=\\dfrac{\\pi}{4}\\lt +\\infty\\) → hội tụ.",
+    "quick": "\\(\\int_1^{\\infty}1/(x^2+1)\\,dx=\\pi/4\\lt \\infty\\) → hội tụ",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 3,
     "topic": "Chuỗi số"
@@ -715,7 +715,7 @@
     "correct": "\\(\\dfrac{11}{6}\\)",
     "solution": "\\(\\dfrac{3}{n(n+3)}=\\dfrac{1}{n}-\\dfrac{1}{n+3}\\). Telescope với bước 3:\n\\(S=\\left(1+\\dfrac{1}{2}+\\dfrac{1}{3}\\right)=\\dfrac{11}{6}\\).",
     "quick": "Phân phần → \\(S=\\sum_{n=1}^{3}\\dfrac{1}{n}=1+\\frac{1}{2}+\\frac{1}{3}=\\frac{11}{6}\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -731,7 +731,7 @@
       "Không xác định"
     ],
     "correct": "Phân kỳ",
-    "solution": "\\(\\sin(1/n)\\sim1/n\\) khi \\(n\\to\\infty\\). So sánh giới hạn với \\(\\sum1/n\\): \\(L=\\lim\\dfrac{\\sin(1/n)}{1/n}=1>0\\). \\(\\sum1/n\\) phân kỳ → phân kỳ.",
+    "solution": "\\(\\sin(1/n)\\sim1/n\\) khi \\(n\\to\\infty\\). So sánh giới hạn với \\(\\sum1/n\\): \\(L=\\lim\\dfrac{\\sin(1/n)}{1/n}=1\\gt 0\\). \\(\\sum1/n\\) phân kỳ → phân kỳ.",
     "quick": "\\(\\sin(1/n)\\sim1/n\\) → so sánh với \\(\\sum1/n\\) phân kỳ → phân kỳ",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 3,
@@ -803,8 +803,8 @@
       "Không xác định"
     ],
     "correct": "Hội tụ tuyệt đối",
-    "solution": "\\(\\sum|u_n|=\\sum1/n^{3/2}\\): chuỗi \\(p\\) với \\(p=3/2>1\\) → hội tụ → tuyệt đối.",
-    "quick": "\\(\\sum1/n^{3/2}\\) hội tụ (p=3/2>1) → hội tụ tuyệt đối",
+    "solution": "\\(\\sum|u_n|=\\sum1/n^{3/2}\\): chuỗi \\(p\\) với \\(p=3/2\\gt 1\\) → hội tụ → tuyệt đối.",
+    "quick": "\\(\\sum1/n^{3/2}\\) hội tụ (p=3/2&gt;1) → hội tụ tuyệt đối",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 3,
     "topic": "Chuỗi số"
@@ -816,13 +816,13 @@
     "matrix": null,
     "options": [
       "\\(\\sum|u_n|\\) hội tụ",
-      "\\(\\sum u_n\\) hội tụ và \\(u_n>0\\)",
+      "\\(\\sum u_n\\) hội tụ và \\(u_n\\gt 0\\)",
       "\\(\\lim u_n=0\\)",
       "\\(\\sum u_n\\) hội tụ theo Leibniz"
     ],
     "correct": "\\(\\sum|u_n|\\) hội tụ",
     "solution": "\\(\\sum u_n\\) hội tụ tuyệt đối \\(\\Leftrightarrow\\sum|u_n|\\) hội tụ.",
-    "quick": "Tuyệt đối: \\(\\sum|u_n|<\\infty\\)",
+    "quick": "Tuyệt đối: \\(\\sum|u_n|\\lt \\infty\\)",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 1,
     "topic": "Chuỗi số"
@@ -875,9 +875,9 @@
       "\\(\\ln\\dfrac{1}{2}\\)"
     ],
     "correct": "\\(\\ln 2\\)",
-    "solution": "Từ \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\), tại \\(x=1/2>0\\): \\(\\sum_{n=1}^{\\infty}\\dfrac{(1/2)^n}{n}\\cdot(-1)^{n-1}\\)... Thực ra \\(\\ln2=-\\ln(1/2)\\)... Dùng \\(-\\ln(1-x)=\\sum x^n/n\\) tại \\(x=1/2\\): \\(\\ln2\\).",
+    "solution": "Từ \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\), tại \\(x=1/2\\gt 0\\): \\(\\sum_{n=1}^{\\infty}\\dfrac{(1/2)^n}{n}\\cdot(-1)^{n-1}\\)... Thực ra \\(\\ln2=-\\ln(1/2)\\)... Dùng \\(-\\ln(1-x)=\\sum x^n/n\\) tại \\(x=1/2\\): \\(\\ln2\\).",
     "quick": "\\(-\\ln(1-1/2)=\\ln2=\\sum_{n=1}^{\\infty}\\dfrac{(1/2)^n}{n}=\\sum\\dfrac{1}{n\\cdot2^n}\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
@@ -893,9 +893,9 @@
       "\\(0\\)"
     ],
     "correct": "\\(2\\)",
-    "solution": "\\(D=\\lim\\left|\\dfrac{u_{n+1}}{u_n}\\right|=\\lim\\dfrac{2^{n+1}/(n+1)^2}{2^n/n^2}=\\lim\\dfrac{2n^2}{(n+1)^2}=2>1\\) → phân kỳ.",
-    "quick": "\\(D=2>1\\) → phân kỳ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả < 1: hội tụ; > 1: phân kỳ; = 1: không kết luận.",
+    "solution": "\\(D=\\lim\\left|\\dfrac{u_{n+1}}{u_n}\\right|=\\lim\\dfrac{2^{n+1}/(n+1)^2}{2^n/n^2}=\\lim\\dfrac{2n^2}{(n+1)^2}=2\\gt 1\\) → phân kỳ.",
+    "quick": "\\(D=2\\gt 1\\) → phân kỳ",
+    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -911,7 +911,7 @@
       "Không xác định"
     ],
     "correct": "Hội tụ",
-    "solution": "\\(\\dfrac{1}{n(n+1)(n+2)}\\sim\\dfrac{1}{n^3}\\) khi \\(n\\to\\infty\\). So sánh với \\(\\sum1/n^3\\) (p=3>1) → hội tụ.",
+    "solution": "\\(\\dfrac{1}{n(n+1)(n+2)}\\sim\\dfrac{1}{n^3}\\) khi \\(n\\to\\infty\\). So sánh với \\(\\sum1/n^3\\) (p=3&gt;1) → hội tụ.",
     "quick": "\\(u_n\\sim1/n^3\\) → so sánh với \\(\\sum1/n^3\\) hội tụ → hội tụ",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 3,
@@ -949,7 +949,7 @@
     "correct": "\\(0.368\\)",
     "solution": "\\(e^{-1}=1-1+\\dfrac{1}{2}-\\dfrac{1}{6}+\\dfrac{1}{24}-\\cdots\\approx0.3679\\approx0.368\\).",
     "quick": "\\(e^{-1}\\approx0.368\\). Từ chuỗi Taylor: \\(\\sum(-1)^n/n!=e^{-1}\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -965,8 +965,8 @@
       "Không kết luận"
     ],
     "correct": "Phân kỳ",
-    "solution": "D'Alembert: \\(D=\\lim\\dfrac{(n+1)!/100^{n+1}}{n!/100^n}=\\lim\\dfrac{n+1}{100}=+\\infty>1\\) → phân kỳ.",
-    "quick": "\\(D=\\lim(n+1)/100=+\\infty>1\\) → phân kỳ. Giai thừa luôn thắng lũy thừa hữu hạn!",
+    "solution": "D'Alembert: \\(D=\\lim\\dfrac{(n+1)!/100^{n+1}}{n!/100^n}=\\lim\\dfrac{n+1}{100}=+\\infty\\gt 1\\) → phân kỳ.",
+    "quick": "\\(D=\\lim(n+1)/100=+\\infty\\gt 1\\) → phân kỳ. Giai thừa luôn thắng lũy thừa hữu hạn!",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 3,
     "topic": "Chuỗi số"
@@ -985,7 +985,7 @@
     "correct": "Phân kỳ",
     "solution": "\\(\\dfrac{1}{\\sqrt{n^2-1}}\\sim\\dfrac{1}{n}\\) khi \\(n\\to\\infty\\) (so sánh giới hạn). \\(\\sum1/n\\) phân kỳ → phân kỳ.",
     "quick": "\\(1/\\sqrt{n^2-1}\\sim1/n\\) → phân kỳ như \\(\\sum1/n\\)",
-    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0<L<∞ → cùng tính chất.",
+    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0&lt;L&lt;∞ → cùng tính chất.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -1001,9 +1001,9 @@
       "Không kết luận"
     ],
     "correct": "Hội tụ",
-    "solution": "\\(\\dfrac{1}{n^2+n+1}\\sim\\dfrac{1}{n^2}\\). So sánh giới hạn: \\(L=1>0\\). \\(\\sum1/n^2\\) hội tụ → hội tụ.",
+    "solution": "\\(\\dfrac{1}{n^2+n+1}\\sim\\dfrac{1}{n^2}\\). So sánh giới hạn: \\(L=1\\gt 0\\). \\(\\sum1/n^2\\) hội tụ → hội tụ.",
     "quick": "\\(u_n\\sim1/n^2\\) → so sánh \\(\\sum1/n^2\\) hội tụ → hội tụ",
-    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0<L<∞ → cùng tính chất.",
+    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0&lt;L&lt;∞ → cùng tính chất.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -1020,8 +1020,8 @@
     ],
     "correct": "Hội tụ",
     "solution": "\\(\\dfrac{2^n+1}{3^n-1}\\sim\\dfrac{2^n}{3^n}=\\left(\\dfrac{2}{3}\\right)^n\\). So sánh với chuỗi hình học \\(\\sum(2/3)^n\\) hội tụ → hội tụ.",
-    "quick": "\\(u_n\\sim(2/3)^n\\) → hình học với \\(q=2/3<1\\) → hội tụ",
-    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0<L<∞ → cùng tính chất.",
+    "quick": "\\(u_n\\sim(2/3)^n\\) → hình học với \\(q=2/3\\lt 1\\) → hội tụ",
+    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0&lt;L&lt;∞ → cùng tính chất.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -1039,7 +1039,7 @@
     "correct": "\\(\\dfrac{7}{2}\\)",
     "solution": "\\(\\sum\\dfrac{1}{2^n}=\\dfrac{1}{1-1/2}=2\\) và \\(\\sum\\dfrac{1}{3^n}=\\dfrac{1}{1-1/3}=\\dfrac{3}{2}\\). Tổng: \\(2+3/2=7/2\\).",
     "quick": "\\(\\sum(a_n+b_n)=\\sum a_n+\\sum b_n=2+3/2=7/2\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|<1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
+    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -1055,9 +1055,9 @@
       "Không kết luận"
     ],
     "correct": "Hội tụ",
-    "solution": "\\(\\ln n<n^{1/2}\\) với \\(n\\) đủ lớn. Vậy \\(\\dfrac{\\ln n}{n^2}<\\dfrac{n^{1/2}}{n^2}=\\dfrac{1}{n^{3/2}}\\). \\(\\sum1/n^{3/2}\\) hội tụ → hội tụ.",
-    "quick": "\\(\\ln n\\ll n^{1/2}\\) → \\(\\ln n/n^2<1/n^{3/2}\\) → so sánh hội tụ",
-    "casio": "ln(n)/n² < n^{1/2}/n² = 1/n^{3/2}. Σ1/n^{3/2} hội tụ (p=3/2>1)",
+    "solution": "\\(\\ln n\\lt n^{1/2}\\) với \\(n\\) đủ lớn. Vậy \\(\\dfrac{\\ln n}{n^2}\\lt \\dfrac{n^{1/2}}{n^2}=\\dfrac{1}{n^{3/2}}\\). \\(\\sum1/n^{3/2}\\) hội tụ → hội tụ.",
+    "quick": "\\(\\ln n\\ll n^{1/2}\\) → \\(\\ln n/n^2\\lt 1/n^{3/2}\\) → so sánh hội tụ",
+    "casio": "ln(n)/n² &lt; n^{1/2}/n² = 1/n^{3/2}. Σ1/n^{3/2} hội tụ (p=3/2&gt;1)",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -1075,7 +1075,7 @@
     "correct": "Hội tụ",
     "solution": "\\(1+2+\\cdots+n=n(n+1)/2\\). Vậy \\(u_n=\\dfrac{2}{n(n+1)}\\sim\\dfrac{2}{n^2}\\). So sánh \\(\\sum1/n^2\\) → hội tụ.",
     "quick": "\\(u_n=2/(n(n+1))\\sim2/n^2\\) → hội tụ",
-    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0<L<∞ → cùng tính chất.",
+    "casio": "CASIO: So sánh: u_n ≤ v_n và Σv_n hội tụ → Σu_n hội tụ. Tính L = lim(u_n/v_n) tại n=1e6 bằng CASIO; 0&lt;L&lt;∞ → cùng tính chất.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
@@ -1091,8 +1091,8 @@
       "Tích phân Cauchy"
     ],
     "correct": "D'Alembert (tỉ số)",
-    "solution": "Khi có \\(a^n\\) hoặc \\(n!\\) → dùng D'Alembert. \\(D=\\lim(n+1)^2/2^{n+1}\\cdot2^n/n^2=\\lim(n+1)^2/(2n^2)=1/2<1\\) → hội tụ.",
-    "quick": "Thấy \\(2^n\\) → dùng D'Alembert: \\(D=1/2<1\\) → hội tụ",
+    "solution": "Khi có \\(a^n\\) hoặc \\(n!\\) → dùng D'Alembert. \\(D=\\lim(n+1)^2/2^{n+1}\\cdot2^n/n^2=\\lim(n+1)^2/(2n^2)=1/2\\lt 1\\) → hội tụ.",
+    "quick": "Thấy \\(2^n\\) → dùng D'Alembert: \\(D=1/2\\lt 1\\) → hội tụ",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 3,
     "topic": "Chuỗi số"
@@ -1110,7 +1110,7 @@
     ],
     "correct": "Phân kỳ",
     "solution": "Dùng tiêu chuẩn Stirling hoặc d'Alembert:\n\n\\(a_n=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}\\).\n\nDùng công thức Stirling: \\(n!\\approx\\sqrt{2\\pi n}(n/e)^n\\):\n\n\\(a_n\\approx\\dfrac{\\sqrt{4\\pi n}(2n/e)^{2n}}{2\\pi n(n/e)^{2n}\\cdot4^n}=\\dfrac{\\sqrt{4\\pi n}\\cdot2^{2n}}{2\\pi n\\cdot4^n}=\\dfrac{1}{\\sqrt{\\pi n}}\\)\n\n\\(\\sum\\dfrac{1}{\\sqrt{n}}\\) phân kỳ (chuỗi p với p=1/2≤1) → **phân kỳ**.",
-    "quick": "a_n ~ 1/√(πn) (Stirling). Chuỗi ~ ∑1/√n là chuỗi p với p=1/2<1 → **phân kỳ**.",
+    "quick": "a_n ~ 1/√(πn) (Stirling). Chuỗi ~ ∑1/√n là chuỗi p với p=1/2&lt;1 → **phân kỳ**.",
     "casio": "CASIO: Tính a_1=0.5, a_2=3/8=0.375, a_3=5/16=0.3125... → a_n không → 0 đủ nhanh.",
     "difficulty": 3,
     "topic": "Chuỗi số"
@@ -1157,13 +1157,13 @@
     "question": "Chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}\\frac{1}{n(\\ln n)^p}\\) hội tụ khi và chỉ khi",
     "matrix": null,
     "options": [
-      "\\(p>1\\)",
+      "\\(p\\gt 1\\)",
       "\\(p\\ge1\\)",
-      "\\(p>0\\)",
+      "\\(p\\gt 0\\)",
       "Mọi \\(p\\in\\mathbb R\\)"
     ],
-    "correct": "\\(p>1\\)",
-    "solution": "Tiêu chuẩn tích phân: \\(\\int_2^{\\infty}dx/[x(\\ln x)^p]\\). Đặt t=ln x, ta được \\(\\int_{\\ln2}^{\\infty}t^{-p}dt\\), hội tụ khi và chỉ khi p>1.",
+    "correct": "\\(p\\gt 1\\)",
+    "solution": "Tiêu chuẩn tích phân: \\(\\int_2^{\\infty}dx/[x(\\ln x)^p]\\). Đặt t=ln x, ta được \\(\\int_{\\ln2}^{\\infty}t^{-p}dt\\), hội tụ khi và chỉ khi p&gt;1.",
     "quick": "Đổi biến t=ln x đưa về tích phân p.",
     "casio": "Không cần CASIO; đây là tiêu chuẩn tích phân chuẩn.",
     "difficulty": 3,
@@ -1217,7 +1217,7 @@
       "\\(50\\)"
     ],
     "correct": "\\(100\\)",
-    "solution": "Sai số sau N số hạng không vượt quá \\(1/(N+1)\\). Muốn \\(1/(N+1)<0.01=1/100\\), cần N+1>100, nên N≥100.",
+    "solution": "Sai số sau N số hạng không vượt quá \\(1/(N+1)\\). Muốn \\(1/(N+1)\\lt 0.01=1/100\\), cần N+1&gt;100, nên N≥100.",
     "quick": "Sai số Leibniz ≤ số hạng đầu tiên bị bỏ.",
     "casio": "CASIO chỉ hỗ trợ kiểm tra số; bất đẳng thức cho N được giải trực tiếp.",
     "difficulty": 3,
@@ -1253,8 +1253,8 @@
       "$3$"
     ],
     "correct": "$2$",
-    "solution": "Đây là các chuỗi $p$. Chuỗi $\\sum1/n$ có $p=1$ nên phân kỳ; $\\sum1/n^2$ có $p=2>1$ nên hội tụ; $\\sum1/\\sqrt n$ có $p=1/2\\le1$ nên phân kỳ. Có đúng 2 chuỗi phân kỳ.",
-    "quick": "Chuỗi $p$ hội tụ khi và chỉ khi $p>1$.",
+    "solution": "Đây là các chuỗi $p$. Chuỗi $\\sum1/n$ có $p=1$ nên phân kỳ; $\\sum1/n^2$ có $p=2&gt;1$ nên hội tụ; $\\sum1/\\sqrt n$ có $p=1/2\\le1$ nên phân kỳ. Có đúng 2 chuỗi phân kỳ.",
+    "quick": "Chuỗi $p$ hội tụ khi và chỉ khi $p&gt;1$.",
     "casio": "Không cần CASIO; dùng tiêu chuẩn chuỗi $p$.",
     "difficulty": 2,
     "topic": "Chuỗi số"

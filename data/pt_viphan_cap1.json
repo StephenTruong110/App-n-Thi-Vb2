@@ -29,8 +29,8 @@
       "PT Bernoulli"
     ],
     "correct": "PT tuyến tính cấp 1",
-    "solution": "Dạng chuẩn **PT tuyến tính cấp 1**: \\(y'+P(x)y=Q(x)\\).\n\nĐặc điểm: y và y' đều bậc 1, không có tích y·y' hay luỹ thừa.\n\nNghiệm: \\(y=e^{-\\int P\\,dx}\\left[\\int Q\\,e^{\\int P\\,dx}\\,dx+C\\right]\\).",
-    "quick": "Dạng: y' + P(x)y = Q(x) → **tuyến tính bậc 1**. Nhận dạng: y và y' xuất hiện bậc 1.",
+    "solution": "Dạng chuẩn của phương trình tuyến tính cấp 1 là \\(y'+P(x)y=Q(x)\\). Nghiệm tổng quát có dạng \\[y=e^{-\\int P(x)\\,dx}\\left[\\int Q(x)e^{\\int P(x)\\,dx}\\,dx+C\\right].\\]",
+    "quick": "Nhận dạng: \\(y\\) và \\(y'\\) chỉ xuất hiện ở lũy thừa một; dạng chuẩn là \\(y'+P(x)y=Q(x)\\).",
     "casio": "CASIO: Không giải trực tiếp. Tìm nhân tử tích hợp μ=e^∫P dx, nhân cả vế, rồi tích phân.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 1"
@@ -47,8 +47,8 @@
       "PT Bernoulli"
     ],
     "correct": "PT thuần nhất",
-    "solution": "Dạng chuẩn **PT thuần nhất**: \\(y'=f(y/x)\\) hoặc \\(M(x,y)dx+N(x,y)dy=0\\) trong đó M, N là hàm thuần nhất cùng bậc.\n\nGiải bằng đặt \\(u=y/x\\) → \\(y=ux\\) → \\(y'=u+xu'\\).",
-    "quick": "Dạng \\(y'=f(y/x)\\) → **thuần nhất**. Đặt \\(u=y/x\\) để đưa về phân ly biến.",
+    "solution": "Đây là phương trình thuần nhất dạng \\(y'=f(y/x)\\). Đặt \\(u=y/x\\), tức \\(y=ux\\), thì \\(y'=u+xu'\\) và phương trình được đưa về dạng phân ly biến.",
+    "quick": "Gặp \\(y'=f(y/x)\\), đặt \\(u=y/x\\).",
     "casio": "CASIO: Đặt u=y/x, y=ux, y'=u+xu'. Thay vào, phân ly biến theo u và x.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 1"
@@ -65,8 +65,8 @@
       "PT thuần nhất"
     ],
     "correct": "PT Bernoulli",
-    "solution": "Đây là **PT Bernoulli** với đặc trưng có \\(y^n\\) (n ≠ 0, 1) ở vế phải.\n\nGiải: đặt \\(z=y^{1-n}\\) → \\(z'=(1-n)y^{-n}y'\\) → biến về PT tuyến tính theo z.\n\nKhi n=0: PT tuyến tính. Khi n=1: PT phân ly biến.",
-    "quick": "\\(y'+Py=Qy^n\\), n≠0,1 → **Bernoulli**. Đặt \\(z=y^{1-n}\\) → tuyến tính.",
+    "solution": "Đây là phương trình Bernoulli. Với \\(n\\ne0,1\\), đặt \\(z=y^{1-n}\\), khi đó \\(z'=(1-n)y^{-n}y'\\) và phương trình trở thành tuyến tính theo \\(z\\).",
+    "quick": "\\(y'+P(x)y=Q(x)y^n\\), \\(n\\ne0,1\\): đặt \\(z=y^{1-n}\\).",
     "casio": "CASIO: Nhận dạng: có y^n ở vế phải với n≥2 → Bernoulli. Đặt z=y^(1-n).",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 1"
@@ -83,8 +83,8 @@
       "Phân ly biến"
     ],
     "correct": "Thuần nhất",
-    "solution": "Kiểm tra: M=x²+y², N=-2xy đều là hàm thuần nhất bậc 2 → **PT thuần nhất**.\n\nGiải bằng đặt \\(u=y/x\\).",
-    "quick": "M,N thuần nhất cùng bậc → **thuần nhất**. Đặt u=y/x.",
+    "solution": "Với \\(M=x^2+y^2\\) và \\(N=-2xy\\), cả \\(M,N\\) đều là hàm thuần nhất bậc \\(2\\). Vì vậy đây là phương trình thuần nhất; có thể đặt \\(u=y/x\\).",
+    "quick": "\\(M,N\\) thuần nhất cùng bậc \\(\\Rightarrow\\) phương trình thuần nhất.",
     "casio": "CASIO: Thử M(tx,ty)=t²M(x,y) ✓ → thuần nhất.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 1"
@@ -110,7 +110,7 @@
   {
     "id": 7,
     "type": "separable",
-    "question": "Phương trình \\(\\dfrac{dy}{dx} = y^2\\) có nghiệm tổng quát là?",
+    "question": "Một họ nghiệm không hằng của phương trình \\(\\dfrac{dy}{dx}=y^2\\) là?",
     "matrix": null,
     "options": [
       "\\(y = \\dfrac{1}{C - x}\\)",
@@ -119,8 +119,8 @@
       "\\(y = Cx\\)"
     ],
     "correct": "\\(y = \\dfrac{1}{C - x}\\)",
-    "solution": "\\(\\frac{dy}{y^2} = dx\\) → \\(-\\frac{1}{y} = x + C_1\\) → \\(y = -\\frac{1}{x + C_1} = \\frac{1}{C - x}\\).",
-    "quick": "Tách biến, lấy tích phân",
+    "solution": "Với \\(y\\ne0\\), tách biến: \\(\\dfrac{dy}{y^2}=dx\\). Suy ra \\(-\\dfrac1y=x+C_1\\), nên \\(y=\\dfrac1{C-x}\\). Ngoài ra, phương trình còn có nghiệm hằng \\(y\\equiv0\\).",
+    "quick": "Với \\(y\\ne0\\): \\(\\displaystyle y^{-2}dy=dx\\Rightarrow y=\\frac1{C-x}\\); nhớ nghiệm hằng \\(y\\equiv0\\).",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
@@ -137,7 +137,7 @@
       "\\(y=\\sqrt{x^2+1}\\)"
     ],
     "correct": "\\(y=\\sqrt{2x^2+1}\\)",
-    "solution": "Tách biến: \\(y\\,dy=2x\\,dx\\). Suy ra \\(\\dfrac{y^2}{2}=x^2+C\\), hay \\(y^2=2x^2+C_1\\). Điều kiện \\(y(0)=1\\) cho \\(C_1=1\\). Vì nghiệm phải thỏa \\(y(0)=1>0\\), chọn nhánh dương: \\(y=\\sqrt{2x^2+1}\\).",
+    "solution": "Tách biến: \\(y\\,dy=2x\\,dx\\). Suy ra \\(\\dfrac{y^2}{2}=x^2+C\\), hay \\(y^2=2x^2+C_1\\). Điều kiện \\(y(0)=1\\) cho \\(C_1=1\\). Vì nghiệm phải thỏa \\(y(0)=1\\gt0\\), chọn nhánh dương: \\(y=\\sqrt{2x^2+1}\\).",
     "quick": "Tích phân được \\(y^2=2x^2+C\\); dùng \\(y(0)=1\\) rồi chọn nhánh dương.",
     "casio": "CASIO: Kiểm tra tại vài giá trị x: tính đạo hàm số của \\(y=\\sqrt{2x^2+1}\\) và so với \\(2x/y\\).",
     "difficulty": 3,
@@ -173,7 +173,7 @@
       "\\(\\ln|y|=\\dfrac{x^2}{2}+C\\)"
     ],
     "correct": "\\(\\arcsin y=\\dfrac{x^2}{2}+C\\)",
-    "solution": "Với nghiệm không hằng và \\(|y|<1\\), tách biến: \\(\\dfrac{dy}{\\sqrt{1-y^2}}=x\\,dx\\). Lấy tích phân: \\(\\arcsin y=\\dfrac{x^2}{2}+C\\). Ngoài ra phương trình còn có hai nghiệm hằng \\(y\\equiv1\\) và \\(y\\equiv-1\\).",
+    "solution": "Với nghiệm không hằng và \\(|y|\\lt1\\), tách biến: \\(\\dfrac{dy}{\\sqrt{1-y^2}}=x\\,dx\\). Lấy tích phân: \\(\\arcsin y=\\dfrac{x^2}{2}+C\\). Ngoài ra phương trình còn có hai nghiệm hằng \\(y\\equiv1\\) và \\(y\\equiv-1\\).",
     "quick": "Tách biến; \\(\\int dy/\\sqrt{1-y^2}=\\arcsin y\\).",
     "casio": "CASIO: Với một hằng số C cụ thể, đặt \\(y=\\sin(x^2/2+C)\\), dùng d/dx để kiểm tra trên khoảng \\(\\cos(x^2/2+C)\\ge0\\).",
     "difficulty": 3,
@@ -200,7 +200,7 @@
   {
     "id": 12,
     "type": "separable",
-    "question": "Giải \\(\\dfrac{dy}{dx} = \\dfrac{xy + y}{xy + x}\\). Nghiệm tổng quát là?",
+    "question": "Một họ nghiệm không hằng của \\(\\dfrac{dy}{dx}=\\dfrac{xy+y}{xy+x}\\), trên miền \\(x\\ne0,\\;y\\ne0,-1\\), là?",
     "matrix": null,
     "options": [
       "\\(y - x + \\ln\\left|\\dfrac{y}{x}\\right| = C\\)",
@@ -209,8 +209,8 @@
       "\\(y - x + \\ln|xy| = C\\)"
     ],
     "correct": "\\(y - x + \\ln\\left|\\dfrac{y}{x}\\right| = C\\)",
-    "solution": "Ta có \\(\\dfrac{dy}{dx}=\\dfrac{xy+y}{xy+x}=\\dfrac{y(x+1)}{x(y+1)}\\). Tách biến: \\(\\dfrac{y+1}{y}\\,dy=\\dfrac{x+1}{x}\\,dx\\). Lấy tích phân: \\(\\int\\left(1+\\dfrac1y\\right)dy=\\int\\left(1+\\dfrac1x\\right)dx\\). Suy ra \\(y+\\ln|y|=x+\\ln|x|+C\\), hay tương đương \\(y-x+\\ln\\left|\\dfrac{y}{x}\\right|=C\\).",
-    "quick": "Tách biến: \\((1+1/y)dy=(1+1/x)dx\\) nên \\(y+\\ln|y|=x+\\ln|x|+C\\).",
+    "solution": "Ta có \\(\\dfrac{dy}{dx}=\\dfrac{y(x+1)}{x(y+1)}\\). Với \\(x\\ne0,\\;y\\ne0,-1\\), tách biến: \\(\\dfrac{y+1}{y}\\,dy=\\dfrac{x+1}{x}\\,dx\\). Do đó \\[y+\\ln|y|=x+\\ln|x|+C,\\] hay \\[y-x+\\ln\\left|\\frac{y}{x}\\right|=C.\\] Ngoài họ nghiệm trên, \\(y\\equiv0\\) cũng là một nghiệm của phương trình trên các khoảng không chứa \\(x=0\\).",
+    "quick": "Tách thành \\(\\left(1+\\frac1y\\right)dy=\\left(1+\\frac1x\\right)dx\\); xét riêng nghiệm \\(y\\equiv0\\).",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -218,7 +218,7 @@
   {
     "id": 13,
     "type": "separable",
-    "question": "Giải \\(\\dfrac{dy}{dx} = \\dfrac{y\\cos x}{1 + 2y^2}\\). Nghiệm tổng quát là?",
+    "question": "Một họ nghiệm không hằng của \\(\\dfrac{dy}{dx}=\\dfrac{y\\cos x}{1+2y^2}\\), với \\(y\\ne0\\), là?",
     "matrix": null,
     "options": [
       "\\(\\ln|y| + y^2 = \\sin x + C\\)",
@@ -227,8 +227,8 @@
       "\\(\\ln|y| + \\frac{y^2}{2} = \\sin x + C\\)"
     ],
     "correct": "\\(\\ln|y| + y^2 = \\sin x + C\\)",
-    "solution": "Tách biến: \\(\\frac{1+2y^2}{y}dy = \\cos x\\,dx \\Rightarrow \\left(\\frac{1}{y} + 2y\\right)dy = \\cos x\\,dx\\) → \\(\\ln|y| + y^2 = \\sin x + C\\).",
-    "quick": "Chia cả hai vế, tích phân từng số hạng",
+    "solution": "Với \\(y\\ne0\\), tách biến: \\(\\left(\\dfrac1y+2y\\right)dy=\\cos x\\,dx\\). Lấy tích phân được \\(\\ln|y|+y^2=\\sin x+C\\). Ngoài ra, \\(y\\equiv0\\) là nghiệm hằng của phương trình.",
+    "quick": "Với \\(y\\ne0\\): \\(\\left(\\frac1y+2y\\right)dy=\\cos x\\,dx\\); nhớ xét riêng \\(y\\equiv0\\).",
     "casio": "CASIO: Không giải PTVP trực tiếp. Kiểm tra nghiệm: thay y vào PT, tính y' bằng CALC → d/dx rồi so sánh 2 vế.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -246,7 +246,7 @@
     ],
     "correct": "\\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}\\)",
     "solution": "Phân ly: \\((1-y^2)dy=x^2\\,dx\\).\n\nTích phân: \\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}+C\\).\n\nĐiều kiện \\(y(0)=0\\): \\(0-0=0+C \\Rightarrow C=0\\).\n\nNghiệm: \\(y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}\\).",
-    "quick": "Tách: \\((1-y^2)dy=x^2dx\\) → tích phân → **y-y³/3=x³/3** (vì C=0).",
+    "quick": "\\((1-y^2)dy=x^2dx\\Rightarrow y-\\dfrac{y^3}{3}=\\dfrac{x^3}{3}\\) vì \\(y(0)=0\\).",
     "casio": "CASIO: ∫(1-y²)dy=y-y³/3; ∫x²dx=x³/3. Điều kiện y(0)=0 → C=0.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -264,7 +264,7 @@
     ],
     "correct": "\\(y=x^2+C\\)",
     "solution": "Tích phân trực tiếp: \\(y=\\int2x\\,dx=x^2+C\\).",
-    "quick": "y'=2x → tích phân → **y=x²+C**.",
+    "quick": "\\(y'=2x\\Rightarrow y=x^2+C\\).",
     "casio": "CASIO: ∫2x dx=x²+C.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 1"
@@ -282,7 +282,7 @@
     ],
     "correct": "\\(y=Ce^{3x}\\)",
     "solution": "Phân ly biến: \\(\\dfrac{dy}{y}=3dx\\) → \\(\\ln|y|=3x+C_1\\) → \\(y=Ce^{3x}\\).",
-    "quick": "y'=3y → dy/y=3dx → ln|y|=3x → **y=Ce^3x**.",
+    "quick": "\\(y'=3y\\Rightarrow \\dfrac{dy}{y}=3dx\\Rightarrow y=Ce^{3x}\\), với \\(C\\in\\mathbb R\\).",
     "casio": "CASIO: dy/y=3dx → ∫dy/y=3∫dx → lny=3x+C.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 1"
@@ -318,7 +318,7 @@
     ],
     "correct": "\\(e^{-3x}\\)",
     "solution": "Dạng \\(y'+P(x)y=Q(x)\\) với P=-3.\n\nNhân tử tích hợp: \\(\\mu=e^{\\int P\\,dx}=e^{\\int(-3)dx}=e^{-3x}\\).",
-    "quick": "P=-3 → μ=e^∫(-3)dx=**e^{-3x}**. Nhân vào PT → (ye^{-3x})'=e^x·e^{-3x}.",
+    "quick": "\\(P(x)=-3\\Rightarrow\\mu=e^{\\int-3\\,dx}=e^{-3x}\\), nên \\((ye^{-3x})'=e^{-2x}\\).",
     "casio": "CASIO: P=-3, μ=e^(-3x). Nhân vào: d(ye^-3x)=e^-2x dx.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 1"
@@ -344,7 +344,7 @@
   {
     "id": 20,
     "type": "linear_first_order",
-    "question": "Thừa số tích phân của phương trình \\(y' + \\dfrac{2}{x}y = \\sin x\\) (với \\(x>0\\)) là?",
+    "question": "Thừa số tích phân của phương trình \\(y'+\\dfrac{2}{x}y=\\sin x\\) (với \\(x\\gt0\\)) là?",
     "matrix": null,
     "options": [
       "\\(x^2\\)",
@@ -371,7 +371,7 @@
       "\\(y = \\frac{x^3}{3} + Cx\\)"
     ],
     "correct": "\\(y = \\frac{x^2}{3} + \\frac{C}{x}\\)",
-    "solution": "Viết lại: \\(y' + \\frac{1}{x}y = x\\). \\(\\mu = e^{\\int \\frac{1}{x}dx}=x\\). \\((xy)' = x^2 \\Rightarrow xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\\).",
+    "solution": "Viết lại: \\(y' + \\frac{1}{x}y = x\\). \\(\\mu = e^{\\int \\frac{1}{x}dx}=x\\). \\((xy)' = x^2 \\Rightarrow xy = \\frac{x^3}{3} + C \\Rightarrow y = \\frac{x^2}{3} + \\frac{C}{x}\\). Công thức được xét trên một khoảng không chứa \\(x=0\\).",
     "quick": "Đưa về dạng chuẩn, tìm thừa số tích phân",
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
     "difficulty": 2,
@@ -407,8 +407,8 @@
       "\\(y = C\\sin x + \\cos x\\)"
     ],
     "correct": "\\(y = (x+C)\\csc x\\)",
-    "solution": "\\(P=\\cot x,\\;Q=\\csc x\\).\n\\(\\mu=e^{\\int\\cot x\\,dx}=\\sin x\\).\n\n\\((y\\sin x)'=\\csc x\\cdot\\sin x=1\\).\n\n\\(y\\sin x=x+C \\Rightarrow y=\\dfrac{x+C}{\\sin x}=(x+C)\\csc x\\).",
-    "quick": "μ=sinx. (y sinx)'=1 → y sinx=x+C → **y=(x+C)cscx**.",
+    "solution": "\\(P=\\cot x,\\;Q=\\csc x\\).\n\\(\\mu=e^{\\int\\cot x\\,dx}=\\sin x\\).\n\n\\((y\\sin x)'=\\csc x\\cdot\\sin x=1\\).\n\n\\(y\\sin x=x+C \\Rightarrow y=\\dfrac{x+C}{\\sin x}=(x+C)\\csc x\\). Công thức có nghĩa trên các khoảng mà \\(\\sin x\\ne0\\).",
+    "quick": "\\(\\mu=\\sin x\\), nên \\((y\\sin x)'=1\\Rightarrow y=(x+C)\\csc x\\).",
     "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
@@ -480,7 +480,7 @@
     ],
     "correct": "\\(y=2e^{2x}-2\\)",
     "solution": "Nghiệm tổng quát: μ=e^{-2x}. Nhân: \\((ye^{-2x})'=4e^{-2x}\\).\n\n\\(ye^{-2x}=4\\cdot\\dfrac{e^{-2x}}{-2}+C=-2e^{-2x}+C\\).\n\n\\(y=-2+Ce^{2x}\\).\n\nĐiều kiện \\(y(0)=0\\): \\(0=-2+C \\Rightarrow C=2\\).\n\n\\(y=-2+2e^{2x}\\).",
-    "quick": "Nghiệm TQ: y=-2+Ce^2x. Điều kiện y(0)=0: C=2 → **y=-2+2e^2x**.",
+    "quick": "Nghiệm tổng quát là \\(y=-2+Ce^{2x}\\); từ \\(y(0)=0\\) suy ra \\(C=2\\).",
     "casio": "CASIO: Tính nghiệm TQ, thay y(0)=0, tìm C=2.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -498,7 +498,7 @@
     ],
     "correct": "\\(y=\\dfrac{x^3}{4}+\\dfrac{C}{x}\\)",
     "solution": "Nhân tử: \\(\\mu=e^{\\int(1/x)dx}=e^{\\ln x}=x\\).\n\nNhân vế: \\((xy)'=x^3\\).\n\nTích phân: \\(xy=\\dfrac{x^4}{4}+C\\).\n\n\\(y=\\dfrac{x^3}{4}+\\dfrac{C}{x}\\).",
-    "quick": "μ=x, (xy)'=x³ → xy=x⁴/4+C → **y=x³/4+C/x**.",
+    "quick": "\\(\\mu=x\\), nên \\((xy)'=x^3\\Rightarrow y=\\dfrac{x^3}{4}+\\dfrac{C}{x}\\), trên khoảng \\(x\\ne0\\).",
     "casio": "CASIO: μ=e^∫(1/x)dx=x. Nhân vào: d(xy)=x³dx. Tích phân: xy=x⁴/4+C.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -560,7 +560,7 @@
   {
     "id": 32,
     "type": "exact_differential",
-    "question": "Phương trình \\((\\cos x + \\ln y)dx + \\left(\\frac{x}{y} + e^y\\right)dy = 0\\) có phải là phương trình vi phân toàn phần không?",
+    "question": "Phương trình \\((\\cos x+\\ln y)\\,dx+\\left(\\dfrac{x}{y}+e^y\\right)\\,dy=0\\) (với \\(y\\gt0\\)) có phải là phương trình vi phân toàn phần không?",
     "matrix": null,
     "options": [
       "Có",
@@ -587,8 +587,8 @@
       "Không, không có thừa số"
     ],
     "correct": "Có",
-    "solution": "\\(M=x+y,\\;N=x-y\\).\n\\(M_y=1,\\;N_x=1\\) → \\(M_y=N_x\\) → **Đã là vi phân toàn phần!**\n\nTìm hàm thế \\(F\\): \\(F_x=x+y \\Rightarrow F=x^2/2+xy+g(y)\\).\n\\(F_y=x+g'(y)=x-y \\Rightarrow g'(y)=-y \\Rightarrow g(y)=-y^2/2\\).\n\nNghiệm: \\(\\dfrac{x^2}{2}+xy-\\dfrac{y^2}{2}=C\\).",
-    "quick": "My=1=Nx=1 → **đã toàn phần**. F=x²/2+xy-y²/2=C.",
+    "solution": "\\(M=x+y,\\;N=x-y\\). Ta có \\(M_y=1=N_x\\), nên phương trình đã là vi phân toàn phần. Tìm hàm thế: \\[F_x=x+y\\Rightarrow F=\\frac{x^2}{2}+xy+g(y).\\] Từ \\(F_y=x+g'(y)=x-y\\) suy ra \\(g(y)=-y^2/2\\). Vì vậy nghiệm là \\(\\dfrac{x^2}{2}+xy-\\dfrac{y^2}{2}=C\\).",
+    "quick": "\\(M_y=N_x=1\\Rightarrow\\) toàn phần; hàm thế là \\(F=\\dfrac{x^2}{2}+xy-\\dfrac{y^2}{2}\\).",
     "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
@@ -623,7 +623,7 @@
       "\\(M+N=0\\)"
     ],
     "correct": "\\(\\partial M/\\partial y=\\partial N/\\partial x=2x\\)",
-    "solution": "\\(M=2xy+1,\\;N=x^2-1\\).\n\n\\(\\dfrac{\\partial M}{\\partial y}=2x\\), \\(\\dfrac{\\partial N}{\\partial x}=2x\\).\n\nVì \\(\\dfrac{\\partial M}{\\partial y}=\\dfrac{\\partial N}{\\partial x}\\) → PT là **vi phân toàn phần**.\n\nNghiệm: \\(F(x,y)=x^2y+x-y=C\\).",
+    "solution": "\\(M=2xy+1,\\;N=x^2-1\\). Ta có \\(\\dfrac{\\partial M}{\\partial y}=2x=\\dfrac{\\partial N}{\\partial x}\\), nên phương trình là vi phân toàn phần. Hàm thế là \\(F=x^2y+x-y\\), do đó nghiệm \\(x^2y+x-y=C\\).",
     "quick": "Kiểm tra: \\(M_y=2x=N_x=2x\\) ✓ → vi phân toàn phần. Nghiệm: x²y+x-y=C.",
     "casio": "CASIO: Tính M_y và N_x bằng tay. Nếu bằng nhau → toàn phần. Tìm F: ∂F/∂x=M, ∂F/∂y=N.",
     "difficulty": 3,
@@ -642,7 +642,7 @@
     ],
     "correct": "\\(x^3+xy+y^2=C\\)",
     "solution": "Kiểm tra: \\(M_y=1=N_x=1\\) ✓ → toàn phần.\n\n\\(F_x=3x^2+y\\) → \\(F=x^3+xy+g(y)\\).\n\n\\(F_y=x+g'(y)=x+2y=N\\) → \\(g'(y)=2y\\) → \\(g(y)=y^2\\).\n\nNghiệm: \\(x^3+xy+y^2=C\\).",
-    "quick": "M_y=1=N_x → toàn phần. ∂F/∂x=M → F=x³+xy+g(y). ∂F/∂y=x+g'=N=x+2y → g=y². Nghiệm: **x³+xy+y²=C**.",
+    "quick": "\\(M_y=N_x=1\\). Tích phân \\(M\\) theo \\(x\\), rồi đối chiếu với \\(N\\), được \\(F=x^3+xy+y^2\\).",
     "casio": "CASIO: F=∫M dx=x³+xy+g(y). ∂F/∂y=x+g'=x+2y → g'=2y → g=y².",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -689,14 +689,14 @@
     "question": "Phương trình \\(y' = \\dfrac{y}{x} + \\dfrac{x}{y}\\) là dạng phương trình gì?",
     "matrix": null,
     "options": [
-      "Đẳng cấp cấp 0",
+      "Phương trình thuần nhất (đẳng cấp)",
       "Tách biến",
       "Tuyến tính",
       "Bernoulli"
     ],
-    "correct": "Đẳng cấp cấp 0",
-    "solution": "\\(y' = f\\left(\\frac{y}{x}\\right)\\) với \\(f(t)=t + \\frac{1}{t}\\) → phương trình đẳng cấp.",
-    "quick": "Kiểm tra \\(f(\\lambda x, \\lambda y) = \\lambda^0 f(x,y)\\) → đẳng cấp bậc 0",
+    "correct": "Phương trình thuần nhất (đẳng cấp)",
+    "solution": "Vế phải chỉ phụ thuộc vào tỉ số \\(y/x\\): \\(\\dfrac{y}{x}+\\dfrac{x}{y}=u+\\dfrac1u\\) với \\(u=y/x\\). Vì vậy đây là phương trình thuần nhất (đẳng cấp).",
+    "quick": "Vế phải có dạng \\(f(y/x)\\Rightarrow\\) phương trình thuần nhất.",
     "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
@@ -779,15 +779,15 @@
     "question": "Giải \\(y'=\\dfrac{y-x}{y+x}\\) bằng đặt \\(u=y/x\\).",
     "matrix": null,
     "options": [
-      "\\(\\arctan(y/x)-\\dfrac{1}{2}\\ln(x^2+y^2)=C\\)",
+      "\\(\\arctan(y/x)+\\dfrac{1}{2}\\ln(x^2+y^2)=C\\)",
       "\\(\\arctan(y/x)=C\\)",
       "\\(y^2-x^2=C\\)",
       "\\(\\ln|x|+y/x=C\\)"
     ],
-    "correct": "\\(\\arctan(y/x)-\\dfrac{1}{2}\\ln(x^2+y^2)=C\\)",
-    "solution": "\\(y'=\\dfrac{y/x-1}{y/x+1}=f(u)\\) với \\(u=y/x\\).\n\nĐặt \\(y=ux\\): \\(u+xu'=\\dfrac{u-1}{u+1}\\) → \\(xu'=\\dfrac{u-1}{u+1}-u=\\dfrac{-1-u^2}{u+1}\\).\n\nPhân ly: \\(\\dfrac{u+1}{1+u^2}du=-\\dfrac{dx}{x}\\).\n\nTích phân: \\(\\arctan u+\\dfrac{1}{2}\\ln(1+u^2)=-\\ln|x|+C_1\\).\n\nĐặt lại \\(u=y/x\\): \\(\\arctan(y/x)-\\dfrac{1}{2}\\ln(x^2+y^2)=C\\).",
-    "quick": "Đặt u=y/x → phân ly biến → \\(\\int\\dfrac{u+1}{1+u^2}du=\\arctan u+\\frac{1}{2}\\ln(1+u^2)\\).",
-    "casio": "CASIO: Phương pháp ẩn u=y/x, không tính được trực tiếp. Xác nhận nghiệm bằng vi phân toàn phần.",
+    "correct": "\\(\\arctan(y/x)+\\dfrac{1}{2}\\ln(x^2+y^2)=C\\)",
+    "solution": "Đặt \\(u=y/x\\), tức \\(y=ux\\), \\(y'=u+xu'\\). Khi đó \\[u+xu'=\\frac{u-1}{u+1}\\Rightarrow xu'=-\\frac{1+u^2}{u+1}.\\] Phân ly: \\[\\frac{u+1}{1+u^2}\\,du=-\\frac{dx}{x}.\\] Lấy tích phân: \\[\\arctan u+\\frac12\\ln(1+u^2)=-\\ln|x|+C.\\] Vì \\(\\frac12\\ln(1+u^2)+\\ln|x|=\\frac12\\ln(x^2+y^2)\\), nên \\[\\boxed{\\arctan\\left(\\frac yx\\right)+\\frac12\\ln(x^2+y^2)=C}.\\]",
+    "quick": "Đặt \\(u=y/x\\), rồi tích phân \\(\\dfrac{u+1}{1+u^2}\\); kết quả có dấu cộng trước \\(\\dfrac12\\ln(x^2+y^2)\\).",
+    "casio": "CASIO không giải trực tiếp dạng ẩn này; có thể kiểm tra bằng cách vi phân hai vế của đáp án.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
   },
@@ -866,7 +866,7 @@
   {
     "id": 49,
     "type": "bernoulli",
-    "question": "Giải phương trình Bernoulli \\(y' + \\frac{1}{x}y = y^2\\) với \\(x>0\\). Nghiệm tổng quát là?",
+    "question": "Một họ nghiệm không hằng của phương trình Bernoulli \\(y'+\\dfrac1x y=y^2\\) với \\(x\\gt0\\) là?",
     "matrix": null,
     "options": [
       "\\(\\dfrac{1}{y} = Cx - x\\ln x\\)",
@@ -875,8 +875,8 @@
       "\\(y = \\dfrac{2}{x^2 + C}\\)"
     ],
     "correct": "\\(\\dfrac{1}{y} = Cx - x\\ln x\\)",
-    "solution": "Bernoulli n=2. Đặt \\(z=1/y\\): \\(z'-\\frac{1}{x}z=-1\\).\n\n\\(\\mu=e^{-\\int1/x\\,dx}=1/x\\). \\((z/x)'=-1/x\\).\n\n\\(z/x=-\\ln x+C \\Rightarrow z=Cx-x\\ln x\\).\n\n\\(\\dfrac{1}{y}=Cx-x\\ln x\\).",
-    "quick": "z=1/y: z'-(1/x)z=-1. μ=1/x. (z/x)'=-1/x → z/x=-lnx+C → **1/y=Cx-x ln x**.",
+    "solution": "Với \\(y\\ne0\\), đặt \\(z=1/y\\). Khi đó \\(z'-\\dfrac1x z=-1\\). Nhân tử tích phân là \\(\\mu=1/x\\), nên \\((z/x)'=-1/x\\). Suy ra \\(z/x=-\\ln x+C\\), tức \\(\\dfrac1y=Cx-x\\ln x\\). Ngoài ra, \\(y\\equiv0\\) là nghiệm hằng.",
+    "quick": "Đặt \\(z=1/y\\): \\((z/x)'=-1/x\\Rightarrow \\dfrac1y=Cx-x\\ln x\\); xét riêng \\(y\\equiv0\\).",
     "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -893,7 +893,7 @@
       "\\(z' + \\frac{3}{x}z = -3x^2\\)"
     ],
     "correct": "\\(z' - \\frac{3}{x}z = -3x^2\\)",
-    "solution": "Với \\(n=4\\), \\(z = y^{1-n} = y^{-3}\\). \\(z' = -3y^{-4}y'\\). Nhân pt với \\(-3y^{-4}\\): \\(-3y^{-4}y' - \\frac{3}{x}y^{-3} = -3x^2 \\Rightarrow z' - \\frac{3}{x}z = -3x^2\\).",
+    "solution": "Với \\(n=4\\), \\(z = y^{1-n} = y^{-3}\\). \\(z' = -3y^{-4}y'\\). Nhân pt với \\(-3y^{-4}\\): \\(-3y^{-4}y' - \\frac{3}{x}y^{-3} = -3x^2 \\Rightarrow z' - \\frac{3}{x}z = -3x^2\\). Phép đặt này áp dụng cho \\(y\\ne0\\); nghiệm hằng \\(y\\equiv0\\) cần được xét riêng.",
     "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
     "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
     "difficulty": 3,
@@ -911,8 +911,8 @@
       "\\(y=Ce^{2x}\\)"
     ],
     "correct": "\\(y=\\dfrac{1}{1+Ce^{2x}}\\)",
-    "solution": "Đặt \\(z=1/y\\). Ta có \\(z'-2z=-2\\). Giải được \\(z=1+Ce^{2x}\\), do đó \\(y=1/(1+Ce^{2x})\\). Nghiệm hằng \\(y\\equiv0\\) cần xét riêng.",
-    "quick": "Bernoulli \\(n=2\\): đặt \\(z=1/y\\).",
+    "solution": "Với \\(y\\ne0\\), đặt \\(z=1/y\\). Khi đó \\(z'-2z=-2\\), nên \\(z=1+Ce^{2x}\\) và \\(y=\\dfrac1{1+Ce^{2x}}\\). Để nghiệm không hằng, lấy \\(C\\ne0\\). Các nghiệm hằng của phương trình là \\(y\\equiv0\\) và \\(y\\equiv1\\).",
+    "quick": "Đặt \\(z=1/y\\Rightarrow z'-2z=-2\\); nghiệm không hằng có \\(y=\\dfrac1{1+Ce^{2x}}\\), \\(C\\ne0\\).",
     "casio": "CASIO: Chọn C cụ thể và kiểm tra bằng đạo hàm số.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -956,7 +956,7 @@
   {
     "id": 54,
     "type": "application_newton",
-    "question": "Định luật làm mát Newton: \\(\\frac{dT}{dt} = k(T - T_m)\\). Nếu \\(T_m\\) là nhiệt độ môi trường và \\(k<0\\), thì nghiệm tổng quát là?",
+    "question": "Định luật làm mát Newton: \\(\\dfrac{dT}{dt}=k(T-T_m)\\). Nếu \\(T_m\\) là nhiệt độ môi trường và \\(k\\lt0\\), thì nghiệm tổng quát là?",
     "matrix": null,
     "options": [
       "\\(T = T_m + Ce^{kt}\\)",
@@ -967,7 +967,7 @@
     "correct": "\\(T = T_m + Ce^{kt}\\)",
     "solution": "\\(\\frac{dT}{dt} - kT = -kT_m\\), thừa số \\(\\mu = e^{-kt}\\). \\((Te^{-kt})' = -kT_m e^{-kt} \\Rightarrow Te^{-kt} = T_m e^{-kt} + C \\Rightarrow T = T_m + Ce^{kt}\\).",
     "quick": "PT tuyến tính cấp 1 với hằng số",
-    "casio": "CASIO: Định luật Newton làm lạnh: T(t)=T_env+(T₀-T_env)e^{-kt}. Tìm k từ dữ kiện nhiệt độ tại t₁. Dùng CASIO tính ln và e^x.",
+    "casio": "Với quy ước \\(k\\lt0\\), dùng \\(T(t)=T_m+(T_0-T_m)e^{kt}\\). Từ một dữ kiện nhiệt độ, lấy logarit để tìm \\(k\\).",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
   },
@@ -983,8 +983,8 @@
       "\\(S'=2-\\dfrac{S}{20}\\)"
     ],
     "correct": "\\(S'=10-\\dfrac{S}{20}\\)",
-    "solution": "Tốc độ muối vào: \\(5\\cdot2=10\\) g/phút. Tốc độ muối ra: \\(5\\cdot S/100=S/20\\) g/phút. Do đó \\(S'=10-S/20\\).",
-    "quick": "Tốc độ biến thiên = vào - ra.",
+    "solution": "Tốc độ muối vào là \\(5\\cdot2=10\\) g/phút. Vì thể tích luôn bằng \\(100\\) lít, nồng độ trong bể là \\(S/100\\) g/lít và tốc độ muối ra là \\(5S/100=S/20\\) g/phút. Do đó \\[S'=10-\\frac{S}{20},\\qquad S(0)=100\\text{ g}.\\]",
+    "quick": "\\(S'=\\text{tốc độ vào}-\\text{tốc độ ra}=10-\\dfrac{S}{20}\\).",
     "casio": "CASIO: Kiểm tra đơn vị và thay một giá trị S để so sánh các phương án.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
@@ -1002,7 +1002,7 @@
     ],
     "correct": "\\(2250\\)",
     "solution": "\\(P'=kP\\) → \\(P(t)=P_0e^{kt}\\).\n\n\\(P(10)=1000e^{10k}=1500\\) → \\(e^{10k}=1.5\\).\n\n\\(P(20)=1000e^{20k}=1000(e^{10k})^2=1000\\times1.5^2=2250\\).",
-    "quick": "Sau mỗi 10 năm nhân 1.5. Năm 2020 = 1000×1.5² = **2250**.",
+    "quick": "Sau mỗi 10 năm nhân 1.5. Năm 2020 = 1000×1.5² = 2250.",
     "casio": "CASIO: k=ln(1.5)/10. P(20)=1000e^(20k)=1000×(1.5)²=2250.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"

@@ -48,7 +48,7 @@
     ],
     "correct": "\\(+\\infty\\)",
     "solution": "Tử bậc 3, mẫu bậc 2 nên biểu thức có dạng gần như \\(2n\\), do đó \\(\\to +\\infty\\).",
-    "quick": "Bậc tử > bậc mẫu → xét dấu hệ số đầu, kết quả \\(+\\infty\\).",
+    "quick": "Bậc tử \\(\\gt\\) bậc mẫu; biểu thức tương đương \\(2n\\), nên tiến tới \\(+\\infty\\).",
     "casio": "CASIO fx-580VNX: Thay n=100, 1000 sẽ thấy giá trị tăng rất lớn.",
     "difficulty": 2,
     "topic": "Giới hạn dãy số"
@@ -83,8 +83,8 @@
       "\\(2\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "Hàm mũ \\(2^n\\) tăng nhanh hơn mọi đa thức \\(n^k\\), nên \\(\\dfrac{n^2}{2^n}\\to 0\\).",
-    "quick": "Mũ thắng đa thức → giới hạn bằng 0.",
+    "solution": "Đặt \\(u_n=n^2/2^n\\). Khi đó \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)^2}{2n^2}\\to\\dfrac12\\lt1\\), nên \\(u_n\\to0\\).",
+    "quick": "Hàm mũ \\(2^n\\) tăng nhanh hơn đa thức \\(n^2\\), nên tỉ số về \\(0\\).",
     "casio": "CASIO fx-580VNX: Thay n=20 hoặc 30, giá trị đã rất nhỏ.",
     "difficulty": 3,
     "topic": "Giới hạn dãy số"
@@ -263,8 +263,8 @@
       "\\(+\\infty\\)"
     ],
     "correct": "\\(0\\)",
-    "solution": "Ta có \\(n!/n^n=\\prod_{k=1}^n(k/n)\\). Ít nhất một nửa số thừa số không vượt quá \\(1/2\\), nên tích bị chặn bởi \\((1/2)^{n/2}\\to0\\).",
-    "quick": "So sánh tích với một lũy thừa có cơ số nhỏ hơn 1.",
+    "solution": "Ta có \\(\\dfrac{n!}{n^n}=\\prod_{k=1}^n\\dfrac{k}{n}\\). Với \\(1\\le k\\le\\lfloor n/2\\rfloor\\), \\(\\dfrac{k}{n}\\le\\dfrac12\\); các thừa số còn lại không vượt quá \\(1\\). Vì vậy \\(0\\le\\dfrac{n!}{n^n}\\le(1/2)^{\\lfloor n/2\\rfloor}\\to0\\).",
+    "quick": "Ít nhất \\(\\lfloor n/2\\rfloor\\) thừa số không vượt quá \\(1/2\\), nên tích bị kẹp về \\(0\\).",
     "casio": "CASIO: thay các giá trị n lớn như 100, 1000 hoặc dùng TABLE để quan sát xu hướng của dãy.",
     "difficulty": 3,
     "topic": "Giới hạn dãy số"

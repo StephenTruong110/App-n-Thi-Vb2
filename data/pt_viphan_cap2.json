@@ -308,7 +308,7 @@
   {
     "id": 18,
     "type": "application_oscillation",
-    "question": "Phương trình dao động tắt dần của con lắc lò xo có dạng: \\(my'' + cy' + ky = 0\\). Nếu \\(c^2 - 4mk > 0\\), hệ sẽ?",
+    "question": "Phương trình dao động tắt dần có dạng \\(my''+cy'+ky=0\\), với \\(m,c,k\\gt0\\). Nếu \\(c^2-4mk\\gt0\\), hệ sẽ?",
     "matrix": null,
     "options": [
       "Dao động tắt dần mạnh (quá tắt)",
@@ -318,7 +318,7 @@
     ],
     "correct": "Dao động tắt dần mạnh (quá tắt)",
     "solution": "Nghiệm của pt đặc trưng là hai nghiệm thực âm phân biệt → hệ trở về vị trí cân bằng mà không dao động.",
-    "quick": "\\(\\Delta>0\\) → quá tắt (overdamped)",
+    "quick": "\\(\\Delta=c^2-4mk\\gt0\\Rightarrow\\) hệ quá tắt, không dao động.",
     "casio": "CASIO: Dao động điều hòa y''+ω²y=0 → y=Acos(ωt)+Bsin(ωt). ω=√(k/m). Tìm A,B từ y(0),y'(0). Dùng [MODE][5][1] giải hệ A,B.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
@@ -344,7 +344,7 @@
   {
     "id": 20,
     "type": "application_oscillation",
-    "question": "Phương trình \\(y'' + 2y' + 5y = 0\\) mô tả dao động tắt dần với tần số góc dao động riêng (damped frequency) là?",
+    "question": "Phương trình \\(y''+2y'+5y=0\\) mô tả dao động tắt dần. Tần số góc tắt dần \\(\\omega_d\\) bằng?",
     "matrix": null,
     "options": [
       "\\(2\\)",
@@ -353,9 +353,9 @@
       "\\(\\sqrt{3}\\)"
     ],
     "correct": "\\(2\\)",
-    "solution": "Phương trình đặc trưng: \\(r^2+2r+5=0 \\Rightarrow r=-1\\pm2i\\). Tần số góc riêng (phần ảo) là 2.",
-    "quick": "\\(\\omega = \\sqrt{5-1^2}=2\\) hoặc nhìn trực tiếp phần ảo",
-    "casio": "CASIO: Dao động điều hòa y''+ω²y=0 → y=Acos(ωt)+Bsin(ωt). ω=√(k/m). Tìm A,B từ y(0),y'(0). Dùng [MODE][5][1] giải hệ A,B.",
+    "solution": "Phương trình đặc trưng \\(r^2+2r+5=0\\) có nghiệm \\(r=-1\\pm2i\\). Vì nghiệm có dạng \\(e^{-x}(C_1\\cos2x+C_2\\sin2x)\\), tần số góc tắt dần là \\(\\omega_d=2\\). Tần số riêng không tắt dần tương ứng là \\(\\omega_0=\\sqrt5\\).",
+    "quick": "Phần ảo của nghiệm đặc trưng là \\(2\\), nên \\(\\omega_d=2\\); không nhầm với \\(\\omega_0=\\sqrt5\\).",
+    "casio": "Giải \\(r^2+2r+5=0\\) được \\(r=-1\\pm2i\\). Phần ảo \\(2\\) chính là \\(\\omega_d\\).",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 2"
   },
@@ -445,7 +445,7 @@
     "correct": "\\(\\frac{x}{2}e^{x} - \\frac{1}{2}\\sin x\\)",
     "solution": "Nguyên lý chồng chất: nghiệm riêng ứng với tổng vế phải = tổng các nghiệm riêng tương ứng.",
     "quick": "\\(y_p = y_{p1} + y_{p2}\\)",
-    "casio": "CASIO: Nguyên lý叠加: y_p = y_p1 + y_p2 khi vế phải = f₁+f₂. Tìm từng nghiệm riêng độc lập.",
+    "casio": "Nguyên lý chồng chất: nếu vế phải là \\(f_1+f_2\\), có thể lấy \\(y_p=y_{p1}+y_{p2}\\).",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
   },
@@ -552,7 +552,7 @@
     ],
     "correct": "\\(k_1=2,\\;k_2=3\\)",
     "solution": "\\(k^2-5k+6=0\\) → \\((k-2)(k-3)=0\\) → \\(k_1=2,\\;k_2=3\\).\n\nNghiệm thuần nhất: \\(y_h=C_1e^{2x}+C_2e^{3x}\\).",
-    "quick": "Phân tích: \\(k²-5k+6=(k-2)(k-3)\\) → **k=2 và k=3**. Nghiệm: Ce^2x+De^3x.",
+    "quick": "\\(k^2-5k+6=(k-2)(k-3)\\Rightarrow k=2,3\\).",
     "casio": "CASIO: Giải bậc 2: k=(5±√(25-24))/2=(5±1)/2 → k=3 hoặc k=2.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 2"
@@ -570,7 +570,7 @@
     ],
     "correct": "\\(k=\\pm2i\\)",
     "solution": "\\(k^2+4=0\\Rightarrow k^2=-4\\Rightarrow k=\\pm2i\\).",
-    "quick": "\\(k²+4=0\\) → k=±2i (phức thuần ảo). Nghiệm: **C₁cos2x+C₂sin2x**.",
+    "quick": "\\(k^2+4=0\\Rightarrow k=\\pm2i\\), nên nghiệm thuần nhất là \\(C_1\\cos2x+C_2\\sin2x\\).",
     "casio": "CASIO: k=√(-4)=±2i. Dạng phức α±βi với α=0, β=2.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 2"
@@ -587,8 +587,8 @@
       "\\((C_1+C_2x)e^{-x}\\)"
     ],
     "correct": "\\((C_1+C_2x)e^x\\)",
-    "solution": "PT đặc trưng: \\(k^2-2k+1=(k-1)^2=0\\) → **nghiệm kép** \\(k=1\\).\n\nKhi nghiệm kép k=a: nghiệm là \\((C_1+C_2x)e^{ax}\\).\n\nNghiệm: \\(y=(C_1+C_2x)e^x\\).",
-    "quick": "k=1 (kép) → dạng **nghiệm kép**: \\((C_1+C_2x)e^x\\). Ghi nhớ thêm nhân tử x.",
+    "solution": "Phương trình đặc trưng \\(k^2-2k+1=(k-1)^2=0\\) có nghiệm kép \\(k=1\\). Vì vậy \\[y=(C_1+C_2x)e^x.\\]",
+    "quick": "Nghiệm kép \\(k=1\\Rightarrow y=(C_1+C_2x)e^x\\).",
     "casio": "CASIO: PT đặc trưng: k²-2k+1=0. Δ=4-4=0 → nghiệm kép k=1. Dạng (C₁+C₂x)e^x.",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 2"
@@ -606,7 +606,7 @@
     ],
     "correct": "\\(C_1\\cos2x+C_2\\sin2x\\)",
     "solution": "PT đặc trưng: \\(k^2+4=0\\) → \\(k=\\pm2i\\) (nghiệm phức \\(\\alpha\\pm\\beta i\\) với \\(\\alpha=0,\\beta=2\\)).\n\nNghiệm: \\(y=e^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)=C_1\\cos2x+C_2\\sin2x\\).",
-    "quick": "k=±2i → nghiệm phức → **C₁cos2x+C₂sin2x** (α=0, β=2).",
+    "quick": "\\(k=\\pm2i\\Rightarrow y=C_1\\cos2x+C_2\\sin2x\\).",
     "casio": "CASIO: k²+4=0 → k=±2i. Phần thực α=0, phần ảo β=2. Dạng e^0·(C₁cos2x+C₂sin2x).",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 2"
@@ -623,8 +623,8 @@
       "\\(y_p=A\\)"
     ],
     "correct": "\\(y_p=Ax^2+Bx+D\\)",
-    "solution": "Vế phải là đa thức bậc 2. Kiểm tra \\(k=0\\) có là nghiệm PT đặc trưng không?\n\nPT đặc trưng: \\(k^2+k+1=0\\), \\(k=0\\) không là nghiệm (\\(0+0+1=1\\neq0\\)).\n\nDạng nghiệm riêng: **đa thức cùng bậc** = \\(Ax^2+Bx+D\\) (3 hệ số).",
-    "quick": "f(x) là đa thức bậc 2, k=0 không là nghiệm → **y_p = Ax²+Bx+D** (cùng bậc).",
+    "solution": "Vế phải là đa thức bậc \\(2\\). Vì \\(k=0\\) không là nghiệm của phương trình đặc trưng \\(k^2+k+1=0\\), chọn nghiệm riêng là đa thức cùng bậc: \\(y_p=Ax^2+Bx+D\\).",
+    "quick": "Đa thức bậc \\(2\\), không cộng hưởng tại \\(k=0\\Rightarrow y_p=Ax^2+Bx+D\\).",
     "casio": "CASIO: Xác định dạng, thay vào PT, đồng nhất hệ số để tìm A,B,D.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
@@ -641,8 +641,8 @@
       "\\(y_p=-2x\\)"
     ],
     "correct": "\\(y_p=-2\\)",
-    "solution": "Vế phải = 2 (hằng số = đa thức bậc 0). k=0 không là nghiệm của \\(k^2-1=0\\) (\\(k=\\pm1\\)).\n\nĐặt \\(y_p=A\\). Thay vào: \\(A''−A=−A=2\\) → \\(A=-2\\).\n\n\\(y_p=-2\\).",
-    "quick": "f=2 (hằng), k=0 không là nghiệm → y_p=A. Thay: -A=2 → **A=-2**, y_p=-2.",
+    "solution": "Vế phải là hằng số và \\(k=0\\) không là nghiệm của phương trình đặc trưng \\(k^2-1=0\\). Đặt \\(y_p=A\\). Khi đó \\(y_p'=y_p''=0\\), nên \\(0-A=2\\Rightarrow A=-2\\). Vì vậy \\(y_p=-2\\).",
+    "quick": "Đặt \\(y_p=A\\). Thay vào \\(y''-y=2\\) được \\(-A=2\\Rightarrow A=-2\\).",
     "casio": "CASIO: y_p=A, y_p''=0, y_p'=0. PT: 0-A=2 → A=-2.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 2"
@@ -659,8 +659,8 @@
       "\\(y_p=Ae^x\\)"
     ],
     "correct": "\\(y_p=Ae^{3x}\\)",
-    "solution": "Vế phải: \\(e^{3x}\\), dạng \\(e^{\\lambda x}\\) với \\(\\lambda=3\\).\n\nKiểm tra \\(\\lambda=3\\) có là nghiệm PT đặc trưng \\(k^2-3k+2=0\\) không?\n\\(9-9+2=2\\neq0\\) → **không phải nghiệm**.\n\nDạng nghiệm riêng: \\(y_p=Ae^{3x}\\) (không thêm nhân tử x).",
-    "quick": "λ=3 không là nghiệm PT đặc trưng → **y_p=Ae^3x** (dạng cơ bản).",
+    "solution": "Vế phải là \\(e^{3x}\\). Vì \\(3\\) không là nghiệm của \\(k^2-3k+2=0\\), chọn \\(y_p=Ae^{3x}\\), không cần nhân thêm \\(x\\).",
+    "quick": "\\(3\\) không là nghiệm đặc trưng \\(\\Rightarrow y_p=Ae^{3x}\\).",
     "casio": "CASIO: Thay y_p=Ae^3x, y_p'=3Ae^3x, y_p''=9Ae^3x. PT: (9-9+2)Ae^3x=e^3x → 2A=1 → A=1/2.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
@@ -678,7 +678,7 @@
     ],
     "correct": "\\(y_p=-xe^x\\)",
     "solution": "Vế phải: \\(e^x\\), \\(\\lambda=1\\). PT đặc trưng: \\(k^2-3k+2=(k-1)(k-2)=0\\). \\(k=1\\) là nghiệm đơn.\n\nDạng: \\(y_p=Axe^x\\) (thêm nhân tử x vì λ là nghiệm đơn).\n\n\\(y_p'=A(1+x)e^x,\\;y_p''=A(2+x)e^x\\).\n\nThay: \\(A(2+x)-3A(1+x)+2Ax=Ae^x(2+x-3-3x+2x)=Ae^x(-1)=-Ae^x=e^x\\).\n\n\\(A=-1\\), \\(y_p=-xe^x\\).",
-    "quick": "λ=1 là nghiệm đơn → dạng y_p=**Axe^x** (nhân thêm x). Thay vào → A=-1.",
+    "quick": "\\(1\\) là nghiệm đặc trưng đơn, nên đặt \\(y_p=Axe^x\\); thay vào được \\(A=-1\\).",
     "casio": "CASIO: y_p=Axe^x. Tính y'=(1+x)Ae^x, y''=(2+x)Ae^x. Thay → -A=1 → A=-1.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
@@ -695,8 +695,8 @@
       "\\(y_p=Ax\\cos3x\\)"
     ],
     "correct": "\\(y_p=A\\cos3x+B\\sin3x\\)",
-    "solution": "Vế phải: \\(\\cos3x\\) → \\(\\lambda=0\\pm3i\\).\n\nPT đặc trưng \\(k^2+4=0\\) → \\(k=\\pm2i\\). \\(\\lambda=\\pm3i\\) **không là nghiệm**.\n\nDạng (không thêm x): \\(y_p=A\\cos3x+B\\sin3x\\).",
-    "quick": "±3i ≠ ±2i (nghiệm PT đặc trưng) → **y_p=Acos3x+Bsin3x** (dạng cơ bản).",
+    "solution": "Vế phải là \\(\\cos3x\\), tương ứng với \\(\\pm3i\\), trong khi nghiệm đặc trưng là \\(\\pm2i\\). Không có cộng hưởng, nên chọn \\(y_p=A\\cos3x+B\\sin3x\\).",
+    "quick": "\\(\\pm3i\\ne\\pm2i\\Rightarrow y_p=A\\cos3x+B\\sin3x\\).",
     "casio": "CASIO: y_p=Acos3x+Bsin3x. Thay vào, đồng nhất: (-9A+4A)cos3x+(-9B+4B)sin3x=cos3x → -5A=1, -5B=0.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 2"
@@ -714,7 +714,7 @@
     ],
     "correct": "\\(C_1e^{2x}+C_2e^{3x}+xe^{3x}\\)",
     "solution": "\\(y_h=C_1e^{2x}+C_2e^{3x}\\) (k=2,3).\n\nVế phải \\(e^{3x}\\), λ=3 là nghiệm đơn → \\(y_p=Axe^{3x}\\).\n\n\\(y_p'=A(1+3x)e^{3x},\\;y_p''=A(6+9x)e^{3x}\\).\n\nThay: \\(A(6+9x)-5A(1+3x)+6Ax=Ae^{3x}(6+9x-5-15x+6x)=Ae^{3x}(1)=Ae^{3x}=e^{3x}\\).\n\n\\(A=1\\), \\(y_p=xe^{3x}\\).\n\n\\(y=C_1e^{2x}+C_2e^{3x}+xe^{3x}\\).",
-    "quick": "λ=3 là nghiệm đơn → y_p=Axe^3x, thay → A=1. Tổng quát: **C₁e^2x+C₂e^3x+xe^3x**.",
+    "quick": "\\(3\\) là nghiệm đặc trưng đơn, nên \\(y_p=Axe^{3x}\\); thay vào được \\(A=1\\).",
     "casio": "CASIO: Xác định y_h (PT đặc trưng), tìm y_p (hệ số bất định), ghép lại.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
@@ -728,11 +728,11 @@
       "\\(y=e^x+e^{-x}\\)",
       "\\(y=2e^x\\)",
       "\\(y=e^x-e^{-x}\\)",
-      "\\(y=2\\cosh x\\)"
+      "\\(y=2\\sinh x\\)"
     ],
     "correct": "\\(y=e^x+e^{-x}\\)",
-    "solution": "PT đặc trưng: \\(k^2-1=0\\) → \\(k=\\pm1\\).\n\nNghiệm TQ: \\(y=C_1e^x+C_2e^{-x}\\).\n\nĐiều kiện: \\(y(0)=C_1+C_2=2\\), \\(y'(0)=C_1-C_2=0\\) → \\(C_1=C_2=1\\).\n\n\\(y=e^x+e^{-x}=2\\cosh x\\).\n\n*Lưu ý:* Phương án A và D đều đúng.",
-    "quick": "k=±1, y=C₁e^x+C₂e^-x. y(0)=C₁+C₂=2, y'(0)=C₁-C₂=0 → C₁=C₂=1. **y=e^x+e^-x=2coshx**.",
+    "solution": "Phương trình đặc trưng \\(k^2-1=0\\) cho \\(k=\\pm1\\). Nghiệm tổng quát là \\(y=C_1e^x+C_2e^{-x}\\). Từ \\(C_1+C_2=2\\) và \\(C_1-C_2=0\\), suy ra \\(C_1=C_2=1\\). Do đó \\(y=e^x+e^{-x}\\).",
+    "quick": "\\(C_1+C_2=2,\\;C_1-C_2=0\\Rightarrow C_1=C_2=1\\).",
     "casio": "CASIO: Giải hệ C₁+C₂=2, C₁-C₂=0 → C₁=1, C₂=1. y=e^x+e^-x.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 2"
@@ -750,7 +750,7 @@
     ],
     "correct": "\\(y=\\sin x\\)",
     "solution": "k=±i → \\(y=C_1\\cos x+C_2\\sin x\\).\n\n\\(y(0)=C_1=0\\) → \\(C_1=0\\).\n\n\\(y(\\pi/2)=C_2\\sin(\\pi/2)=C_2=1\\) → \\(C_2=1\\).\n\n\\(y=\\sin x\\).",
-    "quick": "k=±i → y=C₁cosx+C₂sinx. y(0)=C₁=0, y(π/2)=C₂=1 → **y=sinx**.",
+    "quick": "\\(y=C_1\\cos x+C_2\\sin x\\); hai điều kiện biên cho \\(C_1=0,\\;C_2=1\\).",
     "casio": "CASIO: Từ y(0)=0 → C₁=0. Từ y(π/2)=C₂=1. y=sinx.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 2"
@@ -767,8 +767,8 @@
       "\\(e^{2x}\\)"
     ],
     "correct": "\\(-2\\)",
-    "solution": "\\(W(y_1,y_2)=\\begin{vmatrix}y_1&y_2\\\\y_1'&y_2'\\end{vmatrix}=\\begin{vmatrix}e^x&e^{-x}\\\\e^x&-e^{-x}\\end{vmatrix}\\)\n\n\\(=e^x\\cdot(-e^{-x})-e^{-x}\\cdot e^x=-1-1=-2\\neq0\\).\n\nVì \\(W\\neq0\\) → \\(y_1,y_2\\) **độc lập tuyến tính**.",
-    "quick": "W=det|e^x, e^-x; e^x, -e^-x|=(-1)-(1)=**-2**. W≠0 → độc lập tuyến tính.",
+    "solution": "\\[W(y_1,y_2)=\\begin{vmatrix}e^x&e^{-x}\\\\ e^x&-e^{-x}\\end{vmatrix}=e^x(-e^{-x})-e^{-x}e^x=-2.\\] Vì \\(W\\ne0\\), hai hàm độc lập tuyến tính.",
+    "quick": "\\(W=e^x(-e^{-x})-e^{-x}e^x=-2\\).",
     "casio": "CASIO [MODE][6]: Det[[e^x, e^-x],[e^x, -e^-x]] = -e^x·e^-x-e^-x·e^x = -1-1=-2.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 2"
@@ -785,8 +785,8 @@
       "\\(C_1\\cos t+C_2\\sin t\\)"
     ],
     "correct": "\\(C_1\\cos3t+C_2\\sin3t\\)",
-    "solution": "PT đặc trưng: \\(k^2+9=0\\) → \\(k=\\pm3i\\).\n\nNghiệm: \\(y=C_1\\cos3t+C_2\\sin3t\\).\n\n*Ý nghĩa vật lý:* Dao động điều hòa, chu kỳ \\(T=2\\pi/3\\), biên độ \\(A=\\sqrt{C_1^2+C_2^2}\\).",
-    "quick": "ω=3 → k=±3i → **C₁cos3t+C₂sin3t**. Dao động điều hòa.",
+    "solution": "Phương trình đặc trưng \\(k^2+9=0\\) có nghiệm \\(k=\\pm3i\\). Vì vậy \\[y=C_1\\cos3t+C_2\\sin3t.\\] Chu kỳ dao động là \\(2\\pi/3\\).",
+    "quick": "\\(\\omega=3\\Rightarrow y=C_1\\cos3t+C_2\\sin3t\\).",
     "casio": "CASIO: k²+9=0 → k=±3i. Phần thực α=0, phần ảo β=3 → e^0(C₁cos3t+C₂sin3t).",
     "difficulty": 1,
     "topic": "Phương trình vi phân cấp 2"
@@ -848,18 +848,18 @@
   {
     "id": 48,
     "type": "initial_value_short_answer_style",
-    "question": "Gọi $y=y(x)$ là nghiệm của bài toán $y''-5y'+6y=0$, $y(0)=1$, $y'(0)=2$. Giá trị $y(3)$ làm tròn đến hàng đơn vị bằng",
+    "question": "Gọi \\(y=y(x)\\) là nghiệm của bài toán \\(y''-5y'+6y=0\\), \\(y(0)=1\\), \\(y'(0)=2\\). Giá trị \\(y(3)\\) làm tròn đến hàng đơn vị bằng",
     "matrix": null,
     "options": [
-      "$403$",
-      "$404$",
-      "$148$",
-      "$8103$"
+      "\\(403\\)",
+      "\\(404\\)",
+      "\\(148\\)",
+      "\\(8103\\)"
     ],
-    "correct": "$403$",
-    "solution": "Phương trình đặc trưng có hai nghiệm $2$ và $3$, nên $y=C_1e^{2x}+C_2e^{3x}$. Từ $C_1+C_2=1$ và $2C_1+3C_2=2$ suy ra $C_1=1$, $C_2=0$. Do đó $y(3)=e^6\\approx403{,}43$, làm tròn được 403.",
-    "quick": "Hai điều kiện đầu cho $C_1=1$, $C_2=0$; tính $e^6$.",
-    "casio": "Nhập $e^6$, nhận khoảng 403,4288 rồi làm tròn đến hàng đơn vị.",
+    "correct": "\\(403\\)",
+    "solution": "Phương trình đặc trưng có hai nghiệm \\(2\\) và \\(3\\), nên \\(y=C_1e^{2x}+C_2e^{3x}\\). Từ \\(C_1+C_2=1\\) và \\(2C_1+3C_2=2\\), suy ra \\(C_1=1,\\;C_2=0\\). Do đó \\(y(3)=e^6\\approx403{,}43\\), làm tròn được \\(403\\).",
+    "quick": "Hai điều kiện đầu cho \\(C_1=1,\\;C_2=0\\), nên chỉ cần tính \\(e^6\\).",
+    "casio": "Nhập \\(e^6\\), nhận \\(403{,}4288\\ldots\\), rồi làm tròn đến hàng đơn vị.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
   }

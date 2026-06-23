@@ -84,7 +84,7 @@
     ],
     "correct": "\\(\\dfrac{1}{10}\\)",
     "solution": "Tích phân trong (theo y, 0→x): \\(x^2\\cdot\\dfrac{y^2}{2}\\Big|_0^x=\\dfrac{x^4}{2}\\).\n\nTích phân ngoài: \\(\\int_0^1\\dfrac{x^4}{2}dx=\\dfrac{1}{2}\\cdot\\dfrac{1}{5}=\\dfrac{1}{10}\\).",
-    "quick": "∫₀^x x²y dy=x⁴/2. ∫₀¹x⁴/2 dx=1/10. Đáp án: **1/10**.",
+    "quick": "∫₀^x x²y dy=x⁴/2. ∫₀¹x⁴/2 dx=1/10. Đáp án: 1/10.",
     "casio": "∫₀¹ [∫₀ˣ x²y dy] dx = ∫₀¹ x⁴/2 dx = 1/10 ≈ 0.1",
     "difficulty": 2,
     "topic": "Tích phân kép"
@@ -462,7 +462,7 @@
     ],
     "correct": "\\(1\\)",
     "solution": "Tích phân trong (theo x): \\(\\int_0^1(x+y)dx=\\left[\\dfrac{x^2}{2}+xy\\right]_0^1=\\dfrac{1}{2}+y\\).\n\nTích phân ngoài: \\(\\int_0^1\\left(\\dfrac{1}{2}+y\\right)dy=\\left[\\dfrac{y}{2}+\\dfrac{y^2}{2}\\right]_0^1=\\dfrac{1}{2}+\\dfrac{1}{2}=1\\).",
-    "quick": "Tích phân trong theo x: [x²/2+xy]₀¹=1/2+y. Tích phân ngoài: [y/2+y²/2]₀¹=1. **=1**.",
+    "quick": "Tích phân trong theo x: [x²/2+xy]₀¹=1/2+y. Tích phân ngoài: [y/2+y²/2]₀¹=1. =1.",
     "casio": "CASIO: Tính ∫₀¹(1/2+y)dy=[y/2+y²/2]₀¹=0.5+0.5=1.",
     "difficulty": 1,
     "topic": "Tích phân kép"
@@ -480,7 +480,7 @@
     ],
     "correct": "\\(12\\pi\\)",
     "solution": "Thể tích = \\(\\iint_D h(x,y)\\,dA\\) trong đó h=3 (chiều cao không đổi), D là đĩa \\(x^2+y^2\\leq4\\).\n\n\\(V=3\\cdot\\text{Diện tích}(D)=3\\cdot\\pi\\cdot2^2=12\\pi\\).\n\nHoặc tọa độ cực: \\(V=\\int_0^{2\\pi}\\int_0^2 3r\\,dr\\,d\\theta=3\\cdot2\\pi\\cdot2=12\\pi\\).",
-    "quick": "V=chiều cao×diện tích đáy=3×π×4=**12π**. Hoặc TP cực: 3×∫₀²πr dr dθ=12π.",
+    "quick": "V=chiều cao×diện tích đáy=3×π×4=12π. Hoặc TP cực: 3×∫₀²πr dr dθ=12π.",
     "casio": "CASIO: V=∫₀²π ∫₀² 3r dr dθ = 3·[r²/2]₀²·2π = 3·2·2π = 12π.",
     "difficulty": 1,
     "topic": "Tích phân kép"
@@ -498,7 +498,7 @@
     ],
     "correct": "\\(8\\pi\\)",
     "solution": "Miền chiếu: \\(z=4-x^2-y^2\\geq0\\) → \\(x^2+y^2\\leq4\\).\n\nChuyển tọa độ cực \\((r,\\theta)\\):\n\\(V=\\int_0^{2\\pi}\\int_0^2(4-r^2)r\\,dr\\,d\\theta=2\\pi\\int_0^2(4r-r^3)dr\\)\n\\(=2\\pi\\left[2r^2-\\dfrac{r^4}{4}\\right]_0^2=2\\pi(8-4)=8\\pi\\).",
-    "quick": "Tọa độ cực: V=2π·∫₀²(4r-r³)dr=2π·[2r²-r⁴/4]₀²=2π·(8-4)=**8π**.",
+    "quick": "Tọa độ cực: V=2π·∫₀²(4r-r³)dr=2π·[2r²-r⁴/4]₀²=2π·(8-4)=8π.",
     "casio": "CASIO: ∫₀²(4r-r³)dr=[2r²-r⁴/4]₀²=8-4=4. Nhân 2π=8π.",
     "difficulty": 2,
     "topic": "Tích phân kép"
@@ -516,7 +516,7 @@
     ],
     "correct": "\\(r\\)",
     "solution": "\\(J=\\dfrac{\\partial(x,y)}{\\partial(r,\\theta)}=\\begin{vmatrix}\\cos\\theta&-r\\sin\\theta\\\\\\sin\\theta&r\\cos\\theta\\end{vmatrix}\\)\n\\(=r\\cos^2\\theta+r\\sin^2\\theta=r(\\cos^2\\theta+\\sin^2\\theta)=r\\).\n\nVì vậy: \\(dA=dx\\,dy=r\\,dr\\,d\\theta\\).",
-    "quick": "Jacobian tọa độ cực = **r**. Ghi nhớ: \\(dx\\,dy=r\\,dr\\,d\\theta\\) (không quên r!).",
+    "quick": "Jacobian tọa độ cực = r. Ghi nhớ: \\(dx\\,dy=r\\,dr\\,d\\theta\\) (không quên r!).",
     "casio": "CASIO: Tính det[[cosθ,-rsinθ],[sinθ,rcosθ]]=r(cos²θ+sin²θ)=r.",
     "difficulty": 3,
     "topic": "Tích phân kép"
@@ -569,9 +569,9 @@
       "\\(\\int_0^1\\int_x^1 f\\,dy\\,dx\\)"
     ],
     "correct": "\\(\\int_0^1\\int_0^y f\\,dx\\,dy\\)",
-    "solution": "**Miền D:** \\(0\\leq x\\leq1\\), \\(x\\leq y\\leq1\\).\n\nHệ bất phương trình: \\(0\\leq x\\leq y\\), \\(0\\leq y\\leq1\\).\n\n**Đổi thứ tự:** y ngoài (0→1), x trong (0→y):\n\\(I=\\int_0^1\\int_0^y f(x,y)\\,dx\\,dy\\).",
-    "quick": "Miền: y≥x, 0≤x≤1, 0≤y≤1. Đổi: **y:0→1, x:0→y**.",
-    "casio": "CASIO: Miền là tam giác dưới đường y=x trong hình vuông [0,1]².",
+    "solution": "Miền D: \\(0\\leq x\\leq1\\), \\(x\\leq y\\leq1\\).\n\nHệ bất phương trình: \\(0\\leq x\\leq y\\), \\(0\\leq y\\leq1\\).\n\nĐổi thứ tự: y ngoài (0→1), x trong (0→y):\n\\(I=\\int_0^1\\int_0^y f(x,y)\\,dx\\,dy\\).",
+    "quick": "Miền: y≥x, 0≤x≤1, 0≤y≤1. Đổi: y:0→1, x:0→y.",
+    "casio": "CASIO không cần thiết. Miền là tam giác phía trên đường \\(y=x\\) trong hình vuông \\([0,1]^2\\).",
     "difficulty": 1,
     "topic": "Tích phân kép"
   },
@@ -587,8 +587,8 @@
       "\\(\\int_0^2\\int_{y^2}^4 f\\,dx\\,dy\\)"
     ],
     "correct": "\\(\\int_0^2\\int_0^{y^2}f\\,dx\\,dy\\)",
-    "solution": "**Miền D:** \\(0\\leq x\\leq4\\), \\(\\sqrt{x}\\leq y\\leq2\\).\n\nViết lại: \\(y\\geq\\sqrt{x} \\Leftrightarrow y^2\\geq x\\), và \\(0\\leq y\\leq2\\).\n\nNên \\(0\\leq x\\leq y^2\\), \\(0\\leq y\\leq2\\).\n\n\\(I=\\int_0^2\\int_0^{y^2}f(x,y)\\,dx\\,dy\\).",
-    "quick": "Gốc: x:0→4, y:√x→2. Đổi: **y:0→2, x:0→y²**.",
+    "solution": "Miền D: \\(0\\leq x\\leq4\\), \\(\\sqrt{x}\\leq y\\leq2\\).\n\nViết lại: \\(y\\geq\\sqrt{x} \\Leftrightarrow y^2\\geq x\\), và \\(0\\leq y\\leq2\\).\n\nNên \\(0\\leq x\\leq y^2\\), \\(0\\leq y\\leq2\\).\n\n\\(I=\\int_0^2\\int_0^{y^2}f(x,y)\\,dx\\,dy\\).",
+    "quick": "Gốc: x:0→4, y:√x→2. Đổi: y:0→2, x:0→y².",
     "casio": "CASIO: Miền D là vùng bên trên y=√x, dưới y=2.",
     "difficulty": 3,
     "topic": "Tích phân kép"
@@ -605,7 +605,7 @@
       "\\(I=\\int_0^{\\pi/2}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\)"
     ],
     "correct": "\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\)",
-    "solution": "**Đổi sang cực:** \\(x=r\\cos\\theta, y=r\\sin\\theta\\).\n\n**Đường tròn ngoài** \\(x^2+y^2=4\\) → \\(r=2\\).\n\n**Đường tròn trong** \\(x^2+y^2=4x\\) → \\(r^2=4r\\cos\\theta\\) → \\(r=4\\cos\\theta\\).\n\n**Góc phần tư 1:** Điều kiện giao nhau: \\(4\\cos\\theta=2 \\Rightarrow \\cos\\theta=1/2 \\Rightarrow \\theta=\\pi/3\\).\n\nNên \\(\\theta\\in[0,\\pi/3]\\), \\(r\\in[2,4\\cos\\theta]\\).\n\n\\(f=x^2+y^2+1=r^2+1\\), \\(dA=r\\,dr\\,d\\theta\\).\n\n\\(I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta\\).",
+    "solution": "Đổi sang cực: \\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\).\n\nĐiều kiện nằm ngoài \\(x^2+y^2=4\\) cho biên trong theo bán kính: \\(r=2\\).\n\nĐiều kiện nằm trong \\(x^2+y^2=4x\\) cho biên ngoài theo bán kính:\n\\[r^2=4r\\cos\\theta\\quad\\Rightarrow\\quad r=4\\cos\\theta.\\]\n\nTrong góc phần tư thứ nhất, miền tồn tại khi \\(4\\cos\\theta\\ge2\\), tức \\(0\\le\\theta\\le\\pi/3\\).\n\nDo \\(x^2+y^2+1=r^2+1\\) và \\(dA=r\\,dr\\,d\\theta\\), ta được\n\\[I=\\int_0^{\\pi/3}\\int_2^{4\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta.\\]",
     "quick": "Cực: r từ 2 (vòng ngoài) đến 4cosθ (vòng trong). θ từ 0 đến π/3 (giao 2 đường tròn).",
     "casio": "CASIO: Giao 2 đường tròn: r=2 và r=4cosθ tại cosθ=1/2 → θ=π/3.",
     "difficulty": 3,
@@ -641,8 +641,8 @@
       "\\(1\\)"
     ],
     "correct": "\\(4\\)",
-    "solution": "\\(\\iint_D 1\\,dA\\) = diện tích miền D = 2×2 = **4**.\n\nHoặc: \\(\\int_0^2\\int_0^2 1\\,dx\\,dy=2\\times2=4\\).",
-    "quick": "∬1 dA = diện tích D = 2×2 = **4**.",
+    "solution": "\\(\\iint_D 1\\,dA\\) = diện tích miền D = 2×2 = 4.\n\nHoặc: \\(\\int_0^2\\int_0^2 1\\,dx\\,dy=2\\times2=4\\).",
+    "quick": "∬1 dA = diện tích D = 2×2 = 4.",
     "casio": "CASIO: ∫₀²∫₀² dxdy = [x]₀² × [y]₀² = 2×2=4.",
     "difficulty": 1,
     "topic": "Tích phân kép"
@@ -660,7 +660,7 @@
     ],
     "correct": "\\(\\dfrac{1}{2}\\)",
     "solution": "Tích phân trong (theo x): \\(\\int_0^1 x\\,dx=\\dfrac{1}{2}\\).\nTích phân ngoài: \\(\\int_0^1\\dfrac{1}{2}\\,dy=\\dfrac{1}{2}\\).",
-    "quick": "∫₀¹x dx=1/2. Rồi ∫₀¹(1/2)dy=**1/2**.",
+    "quick": "∫₀¹x dx=1/2. Rồi ∫₀¹(1/2)dy=1/2.",
     "casio": "CASIO: ∫₀¹x dx=[x²/2]₀¹=1/2. Nhân ∫₀¹ dy=1. Tổng: 1/2.",
     "difficulty": 1,
     "topic": "Tích phân kép"
@@ -678,7 +678,7 @@
     ],
     "correct": "\\(3\\)",
     "solution": "Tích phân trong (theo x): \\(\\int_0^1(x+y)dx=[x^2/2+xy]_0^1=1/2+y\\).\nTích phân ngoài: \\(\\int_0^2(1/2+y)dy=[y/2+y^2/2]_0^2=1+2=3\\).",
-    "quick": "∫₀¹(x+y)dx=1/2+y. Rồi ∫₀²(1/2+y)dy=1+2=**3**.",
+    "quick": "∫₀¹(x+y)dx=1/2+y. Rồi ∫₀²(1/2+y)dy=1+2=3.",
     "casio": "CASIO: Tích phân lặp theo thứ tự x trước (0→1), y sau (0→2).",
     "difficulty": 1,
     "topic": "Tích phân kép"
@@ -695,8 +695,8 @@
       "Hình tròn"
     ],
     "correct": "Loại 1 (giới hạn bởi 2 đường theo y)",
-    "solution": "Miền **loại 1** (tích phân theo y trước): với mỗi x∈[0,1], y chạy từ 0 đến x.\n\n\\(I=\\int_0^1\\left(\\int_0^x f(x,y)dy\\right)dx\\).",
-    "quick": "y từ 0 đến x (phụ thuộc x) → **loại 1** (tích phân trong theo y).",
+    "solution": "Miền loại 1 (tích phân theo y trước): với mỗi x∈[0,1], y chạy từ 0 đến x.\n\n\\(I=\\int_0^1\\left(\\int_0^x f(x,y)dy\\right)dx\\).",
+    "quick": "y từ 0 đến x (phụ thuộc x) → loại 1 (tích phân trong theo y).",
     "casio": "CASIO: x cố định, y chạy từ 0 đến x → tích phân trong theo y.",
     "difficulty": 1,
     "topic": "Tích phân kép"
@@ -714,7 +714,7 @@
     ],
     "correct": "\\(1\\)",
     "solution": "Tách biến:\n\\(\\int_0^1 r\\,dr\\cdot\\int_0^\\pi\\sin\\theta\\,d\\theta\\)\n\\(=\\dfrac{1}{2}\\cdot[-\\cos\\theta]_0^\\pi=\\dfrac{1}{2}\\cdot2=1\\).",
-    "quick": "Tách: (∫₀¹r dr)·(∫₀^π sinθ dθ)=(1/2)·2=**1**.",
+    "quick": "Tách: (∫₀¹r dr)·(∫₀^π sinθ dθ)=(1/2)·2=1.",
     "casio": "CASIO: ∫₀¹ r dr=[r²/2]₀¹=1/2. ∫₀^π sinθ dθ=[-cosθ]₀^π=2.",
     "difficulty": 2,
     "topic": "Tích phân kép"
@@ -726,14 +726,14 @@
     "matrix": null,
     "options": [
       "\\(r=2\\)",
-      "\\(r^2=4\\)",
+      "\\(r=\\sqrt2\\)",
       "\\(r=4\\)",
       "\\(\\theta=2\\)"
     ],
     "correct": "\\(r=2\\)",
-    "solution": "\\(x^2+y^2=r^2\\). Phương trình \\(x^2+y^2=4\\) → \\(r^2=4\\) → \\(r=2\\) (đường tròn bán kính 2).",
-    "quick": "x²+y²=r². Vì vậy x²+y²=4 → r²=4 → **r=2**.",
-    "casio": "CASIO: r=√(x²+y²)=√4=2.",
+    "solution": "\\(x^2+y^2=r^2\\). Vì quy ước \\(r\\ge0\\), phương trình \\(x^2+y^2=4\\) tương đương \\(r^2=4\\), suy ra \\(r=2\\).",
+    "quick": "\\(x^2+y^2=r^2\\). Do \\(r\\ge0\\), từ \\(r^2=4\\) suy ra \\(r=2\\).",
+    "casio": "CASIO: \\(r=\\sqrt{x^2+y^2}=\\sqrt4=2\\).",
     "difficulty": 1,
     "topic": "Tích phân kép"
   },

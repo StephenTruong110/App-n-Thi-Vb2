@@ -2,7 +2,7 @@
   {
     "id": 1,
     "type": "det2",
-    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 2 \\\\ 3 & 4\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}1 & 2 \\\\ 3 & 4\\end{pmatrix}\\).",
     "matrix": [
       [
         1,
@@ -20,16 +20,16 @@
       "0"
     ],
     "correct": "-2",
-    "solution": "$\\det(A)=1\\cdot(4)-(2)\\cdot(3)=-2$.",
+    "solution": "\\(\\det(A)=1\\cdot(4)-(2)\\cdot(3)=-2\\).",
     "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 2,
     "type": "det2",
-    "question": "Tính định thức của $A=\\begin{pmatrix}2 & -1 \\\\ 5 & 3\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}2 & -1 \\\\ 5 & 3\\end{pmatrix}\\).",
     "matrix": [
       [
         2,
@@ -47,16 +47,16 @@
       "0"
     ],
     "correct": "11",
-    "solution": "$\\det(A)=2\\cdot(3)-(-1)\\cdot(5)=11$.",
+    "solution": "\\(\\det(A)=2\\cdot(3)-(-1)\\cdot(5)=11\\).",
     "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 3,
     "type": "det2",
-    "question": "Tính định thức của $A=\\begin{pmatrix}-1 & 2 \\\\ 3 & -4\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}-1 & 2 \\\\ 3 & -4\\end{pmatrix}\\).",
     "matrix": [
       [
         -1,
@@ -74,16 +74,16 @@
       "0"
     ],
     "correct": "-2",
-    "solution": "$\\det(A)=-1\\cdot(-4)-(2)\\cdot(3)=-2$.",
+    "solution": "\\(\\det(A)=-1\\cdot(-4)-(2)\\cdot(3)=-2\\).",
     "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 4,
     "type": "det2",
-    "question": "Tính định thức của $A=\\begin{pmatrix}5 & 3 \\\\ 2 & 1\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}5 & 3 \\\\ 2 & 1\\end{pmatrix}\\).",
     "matrix": [
       [
         5,
@@ -101,16 +101,16 @@
       "0"
     ],
     "correct": "-1",
-    "solution": "$\\det(A)=5\\cdot(1)-(3)\\cdot(2)=-1$.",
+    "solution": "\\(\\det(A)=5\\cdot(1)-(3)\\cdot(2)=-1\\).",
     "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 5,
     "type": "det2",
-    "question": "Tính định thức của $A=\\begin{pmatrix}4 & 0 \\\\ -2 & 3\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}4 & 0 \\\\ -2 & 3\\end{pmatrix}\\).",
     "matrix": [
       [
         4,
@@ -128,16 +128,16 @@
       "13"
     ],
     "correct": "12",
-    "solution": "$\\det(A)=4\\cdot(3)-(0)\\cdot(-2)=12$.",
+    "solution": "\\(\\det(A)=4\\cdot(3)-(0)\\cdot(-2)=12\\).",
     "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 6,
     "type": "det2",
-    "question": "Tính định thức của $A=\\begin{pmatrix}0 & 2 \\\\ -3 & 1\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}0 & 2 \\\\ -3 & 1\\end{pmatrix}\\).",
     "matrix": [
       [
         0,
@@ -155,16 +155,16 @@
       "7"
     ],
     "correct": "6",
-    "solution": "$\\det(A)=0\\cdot(1)-(2)\\cdot(-3)=6$.",
+    "solution": "\\(\\det(A)=0\\cdot(1)-(2)\\cdot(-3)=6\\).",
     "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 7,
     "type": "det2",
-    "question": "Tính định thức của $A=\\begin{pmatrix}7 & -1 \\\\ 2 & 5\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}7 & -1 \\\\ 2 & 5\\end{pmatrix}\\).",
     "matrix": [
       [
         7,
@@ -182,16 +182,16 @@
       "0"
     ],
     "correct": "37",
-    "solution": "$\\det(A)=7\\cdot(5)-(-1)\\cdot(2)=37$.",
+    "solution": "\\(\\det(A)=7\\cdot(5)-(-1)\\cdot(2)=37\\).",
     "quick": "Định thức 2×2: chéo chính trừ chéo phụ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 8,
     "type": "det3",
-    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 2 & 0 \\\\ 0 & 3 & 1 \\\\ 2 & 0 & 1\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}1 & 2 & 0 \\\\ 0 & 3 & 1 \\\\ 2 & 0 & 1\\end{pmatrix}\\).",
     "matrix": [
       [
         1,
@@ -216,16 +216,16 @@
       "5"
     ],
     "correct": "7",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=7$.",
+    "solution": "\\(\\det(A)=1(3\\cdot1-1\\cdot0)-2(0\\cdot1-1\\cdot2)=3+4=7\\).",
     "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 9,
     "type": "det3",
-    "question": "Tính định thức của $A=\\begin{pmatrix}2 & 1 & 3 \\\\ 0 & -1 & 2 \\\\ 1 & 4 & 0\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}2 & 1 & 3 \\\\ 0 & -1 & 2 \\\\ 1 & 4 & 0\\end{pmatrix}\\).",
     "matrix": [
       [
         2,
@@ -250,16 +250,16 @@
       "-13"
     ],
     "correct": "-11",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=-11$.",
+    "solution": "\\(\\det(A)=2[(-1)\\cdot0-2\\cdot4]-1(0\\cdot0-2\\cdot1)+3[0\\cdot4-(-1)\\cdot1]=-16+2+3=-11\\).",
     "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 10,
     "type": "det3",
-    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 1 & 1 \\\\ 1 & 2 & 3 \\\\ 2 & 1 & 0\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}1 & 1 & 1 \\\\ 1 & 2 & 3 \\\\ 2 & 1 & 0\\end{pmatrix}\\).",
     "matrix": [
       [
         1,
@@ -284,16 +284,16 @@
       "1"
     ],
     "correct": "0",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=0$.",
+    "solution": "\\(\\det(A)=1(2\\cdot0-3\\cdot1)-1(1\\cdot0-3\\cdot2)+1(1\\cdot1-2\\cdot2)=-3+6-3=0\\).",
     "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 11,
     "type": "det3",
-    "question": "Tính định thức của $A=\\begin{pmatrix}3 & 2 & 1 \\\\ 2 & 5 & 3 \\\\ 3 & 4 & 3\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}3 & 2 & 1 \\\\ 2 & 5 & 3 \\\\ 3 & 4 & 3\\end{pmatrix}\\).",
     "matrix": [
       [
         3,
@@ -318,16 +318,16 @@
       "6"
     ],
     "correct": "8",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=8$.",
+    "solution": "\\(\\det(A)=3(5\\cdot3-3\\cdot4)-2(2\\cdot3-3\\cdot3)+1(2\\cdot4-5\\cdot3)=9+6-7=8\\).",
     "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 12,
     "type": "det3",
-    "question": "Tính định thức của $A=\\begin{pmatrix}1 & 2 & 0 \\\\ 2 & 3 & 1 \\\\ 3 & 2 & 0\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}1 & 2 & 0 \\\\ 2 & 3 & 1 \\\\ 3 & 2 & 0\\end{pmatrix}\\).",
     "matrix": [
       [
         1,
@@ -352,16 +352,16 @@
       "2"
     ],
     "correct": "4",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=4$.",
+    "solution": "Khai triển theo cột 3: \\(\\det(A)=(-1)^{2+3}\\det\\begin{pmatrix}1&2\\\\3&2\\end{pmatrix}=-(2-6)=4\\).",
     "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 13,
     "type": "det3",
-    "question": "Tính định thức của $A=\\begin{pmatrix}2 & 0 & 1 \\\\ 1 & 3 & 2 \\\\ 0 & 4 & 1\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}2 & 0 & 1 \\\\ 1 & 3 & 2 \\\\ 0 & 4 & 1\\end{pmatrix}\\).",
     "matrix": [
       [
         2,
@@ -386,16 +386,16 @@
       "-8"
     ],
     "correct": "-6",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=-6$.",
+    "solution": "\\(\\det(A)=2(3\\cdot1-2\\cdot4)+1(1\\cdot4-3\\cdot0)=-10+4=-6\\).",
     "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 14,
     "type": "det3",
-    "question": "Tính định thức của $A=\\begin{pmatrix}3 & 0 & 2 \\\\ 1 & 1 & -1 \\\\ 2 & 4 & 1\\end{pmatrix}$.",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}3 & 0 & 2 \\\\ 1 & 1 & -1 \\\\ 2 & 4 & 1\\end{pmatrix}\\).",
     "matrix": [
       [
         3,
@@ -420,16 +420,16 @@
       "17"
     ],
     "correct": "19",
-    "solution": "Khai triển hoặc khử Gauss cho $\\det(A)=19$.",
+    "solution": "\\(\\det(A)=3[1\\cdot1-(-1)\\cdot4]+2(1\\cdot4-1\\cdot2)=15+4=19\\).",
     "quick": "Ưu tiên hàng/cột có nhiều số 0 hoặc đưa về tam giác.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 15,
     "type": "det_triangular",
-    "question": "Định thức của ma trận $A=\\begin{pmatrix}2&1&3\\\\0&-1&4\\\\0&0&5\\end{pmatrix}$ bằng",
+    "question": "Định thức của ma trận \\(A=\\begin{pmatrix}2&1&3\\\\0&-1&4\\\\0&0&5\\end{pmatrix}\\) bằng",
     "matrix": null,
     "options": [
       "-10",
@@ -438,16 +438,16 @@
       "5"
     ],
     "correct": "-10",
-    "solution": "Ma trận tam giác nên định thức bằng tích đường chéo: $2\\cdot(-1)\\cdot5=-10$.",
+    "solution": "Ma trận tam giác nên định thức bằng tích đường chéo: \\(2\\cdot(-1)\\cdot5=-10\\).",
     "quick": "Tam giác → nhân đường chéo.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 16,
     "type": "det_property",
-    "question": "Cho $\\det(A)=3$. Tính $\\det(A^2)$.",
+    "question": "Cho \\(\\det(A)=3\\). Tính \\(\\det(A^2)\\).",
     "matrix": null,
     "options": [
       "3",
@@ -456,16 +456,16 @@
       "9"
     ],
     "correct": "9",
-    "solution": "$\\det(A^2)=\\det(A)\\det(A)=3^2=9$.",
+    "solution": "\\(\\det(A^2)=\\det(A)\\det(A)=3^2=9\\).",
     "quick": "Định thức của lũy thừa là lũy thừa của định thức.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 17,
     "type": "det_property",
-    "question": "Cho $\\det(A)=-4$. Tính $\\det(A^T)$.",
+    "question": "Cho \\(\\det(A)=-4\\). Tính \\(\\det(A^T)\\).",
     "matrix": null,
     "options": [
       "-4",
@@ -474,16 +474,16 @@
       "0"
     ],
     "correct": "-4",
-    "solution": "$\\det(A^T)=\\det(A)=-4$.",
+    "solution": "\\(\\det(A^T)=\\det(A)=-4\\).",
     "quick": "Chuyển vị không đổi định thức.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 18,
     "type": "det_property",
-    "question": "Cho $A$ cấp 3 và $\\det(A)=2$. Tính $\\det(2A)$.",
+    "question": "Cho \\(A\\) cấp 3 và \\(\\det(A)=2\\). Tính \\(\\det(2A)\\).",
     "matrix": null,
     "options": [
       "4",
@@ -492,16 +492,16 @@
       "2"
     ],
     "correct": "16",
-    "solution": "Với ma trận cấp 3, $\\det(2A)=2^3\\det(A)=8\\cdot2=16$.",
-    "quick": "$\\det(kA)=k^n\\det(A)$.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "solution": "Với ma trận cấp 3, \\(\\det(2A)=2^3\\det(A)=8\\cdot2=16\\).",
+    "quick": "\\(\\det(kA)=k^n\\det(A)\\).",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 19,
     "type": "det_property",
-    "question": "Cho $A$ cấp 2 và $\\det(A)=5$. Tính $\\det(3A)$.",
+    "question": "Cho \\(A\\) cấp 2 và \\(\\det(A)=5\\). Tính \\(\\det(3A)\\).",
     "matrix": null,
     "options": [
       "15",
@@ -510,34 +510,34 @@
       "75"
     ],
     "correct": "45",
-    "solution": "$\\det(3A)=3^2\\det(A)=9\\cdot5=45$.",
+    "solution": "\\(\\det(3A)=3^2\\det(A)=9\\cdot5=45\\).",
     "quick": "Số mũ là cấp ma trận.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 20,
     "type": "det_property",
-    "question": "Cho $\\det(A)=4$. Tính $\\det(A^{-1})$.",
+    "question": "Cho \\(\\det(A)=4\\). Tính \\(\\det(A^{-1})\\).",
     "matrix": null,
     "options": [
-      "$\\frac14$",
+      "\\(\\frac14\\)",
       "4",
       "-4",
       "16"
     ],
-    "correct": "$\\frac14$",
-    "solution": "$\\det(A^{-1})=1/\\det(A)=1/4$.",
+    "correct": "\\(\\frac14\\)",
+    "solution": "\\(\\det(A^{-1})=1/\\det(A)=1/4\\).",
     "quick": "Nghịch đảo → nghịch đảo định thức.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 21,
     "type": "det_property",
-    "question": "Cho $\\det(A)=2$, $\\det(B)=-3$. Tính $\\det(AB)$.",
+    "question": "Cho \\(\\det(A)=2\\), \\(\\det(B)=-3\\). Tính \\(\\det(AB)\\).",
     "matrix": null,
     "options": [
       "-6",
@@ -546,16 +546,16 @@
       "5"
     ],
     "correct": "-6",
-    "solution": "$\\det(AB)=\\det(A)\\det(B)=2(-3)=-6$.",
+    "solution": "\\(\\det(AB)=\\det(A)\\det(B)=2(-3)=-6\\).",
     "quick": "Định thức của tích bằng tích định thức.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 22,
     "type": "det_property",
-    "question": "Cho $\\det(A)=-2$. Tính $\\det(A^3)$.",
+    "question": "Cho \\(\\det(A)=-2\\). Tính \\(\\det(A^3)\\).",
     "matrix": null,
     "options": [
       "-8",
@@ -564,16 +564,16 @@
       "6"
     ],
     "correct": "-8",
-    "solution": "$\\det(A^3)=(-2)^3=-8$.",
+    "solution": "\\(\\det(A^3)=(-2)^3=-8\\).",
     "quick": "Lũy thừa giữ nguyên số mũ.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 23,
     "type": "det_property",
-    "question": "Cho $A$ cấp 3, $\\det(A)=2$. Tính $\\det(2A^T)$.",
+    "question": "Cho \\(A\\) cấp 3, \\(\\det(A)=2\\). Tính \\(\\det(2A^T)\\).",
     "matrix": null,
     "options": [
       "4",
@@ -582,34 +582,34 @@
       "32"
     ],
     "correct": "16",
-    "solution": "$\\det(2A^T)=2^3\\det(A^T)=8\\cdot2=16$.",
-    "quick": "Chuyển vị không đổi det; nhân toàn ma trận dùng $2^3$.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "solution": "\\(\\det(2A^T)=2^3\\det(A^T)=8\\cdot2=16\\).",
+    "quick": "Chuyển vị không đổi det; nhân toàn ma trận dùng \\(2^3\\).",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 24,
     "type": "row_operation",
-    "question": "Đổi chỗ hai hàng của ma trận vuông $A$ được ma trận $B$. Khi đó",
+    "question": "Đổi chỗ hai hàng của ma trận vuông \\(A\\) được ma trận \\(B\\). Khi đó",
     "matrix": null,
     "options": [
-      "$\\det(B)=-\\det(A)$",
-      "$\\det(B)=\\det(A)$",
-      "$\\det(B)=2\\det(A)$",
-      "$\\det(B)=0$"
+      "\\(\\det(B)=-\\det(A)\\)",
+      "\\(\\det(B)=\\det(A)\\)",
+      "\\(\\det(B)=2\\det(A)\\)",
+      "\\(\\det(B)=0\\)"
     ],
-    "correct": "$\\det(B)=-\\det(A)$",
+    "correct": "\\(\\det(B)=-\\det(A)\\)",
     "solution": "Đổi chỗ hai hàng làm định thức đổi dấu.",
     "quick": "Một lần đổi hàng → đổi dấu.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 25,
     "type": "row_operation",
-    "question": "Nhân một hàng của $A$ với 3 được $B$. Nếu $\\det(A)=5$ thì $\\det(B)$ bằng",
+    "question": "Nhân một hàng của \\(A\\) với 3 được \\(B\\). Nếu \\(\\det(A)=5\\) thì \\(\\det(B)\\) bằng",
     "matrix": null,
     "options": [
       "15",
@@ -618,52 +618,52 @@
       "8"
     ],
     "correct": "15",
-    "solution": "Nhân một hàng với 3 làm định thức nhân 3: $\\det(B)=15$.",
+    "solution": "Nhân một hàng với 3 làm định thức nhân 3: \\(\\det(B)=15\\).",
     "quick": "Chỉ một hàng → nhân đúng một lần.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 26,
     "type": "row_operation",
-    "question": "Cộng 4 lần hàng 1 vào hàng 2 của $A$ để được $B$. Khi đó",
+    "question": "Cộng 4 lần hàng 1 vào hàng 2 của \\(A\\) để được \\(B\\). Khi đó",
     "matrix": null,
     "options": [
-      "$\\det(B)=\\det(A)$",
-      "$\\det(B)=4\\det(A)$",
-      "$\\det(B)=-\\det(A)$",
-      "$\\det(B)=0$"
+      "\\(\\det(B)=\\det(A)\\)",
+      "\\(\\det(B)=4\\det(A)\\)",
+      "\\(\\det(B)=-\\det(A)\\)",
+      "\\(\\det(B)=0\\)"
     ],
-    "correct": "$\\det(B)=\\det(A)$",
+    "correct": "\\(\\det(B)=\\det(A)\\)",
     "solution": "Cộng bội của một hàng vào hàng khác không làm thay đổi định thức.",
-    "quick": "Phép cộng hàng kiểu $R_j\\leftarrow R_j+kR_i$ giữ nguyên det.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "quick": "Phép cộng hàng kiểu \\(R_j\\leftarrow R_j+kR_i\\) giữ nguyên det.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 2,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 27,
     "type": "det_zero",
-    "question": "Nếu ma trận vuông $A$ có hai hàng bằng nhau thì",
+    "question": "Nếu ma trận vuông \\(A\\) có hai hàng bằng nhau thì",
     "matrix": null,
     "options": [
-      "$\\det(A)=0$",
-      "$\\det(A)=1$",
-      "$\\det(A)=-1$",
+      "\\(\\det(A)=0\\)",
+      "\\(\\det(A)=1\\)",
+      "\\(\\det(A)=-1\\)",
       "Không kết luận được"
     ],
-    "correct": "$\\det(A)=0$",
+    "correct": "\\(\\det(A)=0\\)",
     "solution": "Hai hàng bằng nhau làm các hàng phụ thuộc tuyến tính nên định thức bằng 0.",
     "quick": "Hai hàng trùng/tỉ lệ → det 0.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 28,
     "type": "det_triangular",
-    "question": "Nếu $A$ là ma trận tam giác cấp $n$ thì $\\det(A)$ bằng",
+    "question": "Nếu \\(A\\) là ma trận tam giác cấp \\(n\\) thì \\(\\det(A)\\) bằng",
     "matrix": null,
     "options": [
       "Tích các phần tử đường chéo chính",
@@ -674,14 +674,14 @@
     "correct": "Tích các phần tử đường chéo chính",
     "solution": "Định thức ma trận tam giác bằng tích các phần tử trên đường chéo chính.",
     "quick": "Tam giác → tích đường chéo.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 29,
     "type": "invertible_count",
-    "question": "Cho $A=\\begin{pmatrix}1&1\\\\1&m\\end{pmatrix}$. Có bao nhiêu giá trị nguyên $m\\in(0;4)$ để $A$ khả nghịch?",
+    "question": "Cho \\(A=\\begin{pmatrix}1&1\\\\1&m\\end{pmatrix}\\). Có bao nhiêu giá trị nguyên \\(m\\in(0;4)\\) để \\(A\\) khả nghịch?",
     "matrix": null,
     "options": [
       "2",
@@ -690,106 +690,106 @@
       "0"
     ],
     "correct": "2",
-    "solution": "$\\det(A)=m-1$. Các số nguyên trong $(0,4)$ là 1,2,3; loại $m=1$, còn 2 giá trị.",
+    "solution": "\\(\\det(A)=m-1\\). Các số nguyên trong \\((0,4)\\) là 1,2,3; loại \\(m=1\\), còn 2 giá trị.",
     "quick": "Liệt kê số nguyên rồi loại nghiệm làm det bằng 0.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 30,
     "type": "invertible_parameter",
-    "question": "Ma trận $A=\\begin{pmatrix}m&2\\\\3&1\\end{pmatrix}$ khả nghịch khi",
+    "question": "Ma trận \\(A=\\begin{pmatrix}m&2\\\\3&1\\end{pmatrix}\\) khả nghịch khi",
     "matrix": null,
     "options": [
-      "$m\\ne6$",
-      "$m\\ne-6$",
-      "$m=6$",
-      "$m\\ne0$"
+      "\\(m\\ne6\\)",
+      "\\(m\\ne-6\\)",
+      "\\(m=6\\)",
+      "\\(m\\ne0\\)"
     ],
-    "correct": "$m\\ne6$",
-    "solution": "$\\det(A)=m-6$. Ma trận khả nghịch khi $m-6\\ne0$.",
+    "correct": "\\(m\\ne6\\)",
+    "solution": "\\(\\det(A)=m-6\\). Ma trận khả nghịch khi \\(m-6\\ne0\\).",
     "quick": "Khả nghịch ⇔ det khác 0.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 31,
     "type": "invertible_parameter",
-    "question": "Ma trận $A=\\begin{pmatrix}1&1&3\\\\2&2&0\\\\2&m&1\\end{pmatrix}$ khả nghịch khi",
+    "question": "Ma trận \\(A=\\begin{pmatrix}1&1&3\\\\2&2&0\\\\2&m&1\\end{pmatrix}\\) khả nghịch khi",
     "matrix": null,
     "options": [
-      "$m\\ne2$",
-      "$m\\ne-2$",
-      "$m\\ne0$",
-      "Mọi $m$"
+      "\\(m\\ne2\\)",
+      "\\(m\\ne-2\\)",
+      "\\(m\\ne0\\)",
+      "Mọi \\(m\\)"
     ],
-    "correct": "$m\\ne2$",
-    "solution": "Tính được $\\det(A)=6(m-2)$. Vì vậy $A$ khả nghịch khi $m\\ne2$.",
+    "correct": "\\(m\\ne2\\)",
+    "solution": "Tính được \\(\\det(A)=6(m-2)\\). Vì vậy \\(A\\) khả nghịch khi \\(m\\ne2\\).",
     "quick": "Tính det theo tham số rồi giải det≠0.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 32,
     "type": "invertible_parameter",
-    "question": "Ma trận $A=\\begin{pmatrix}1&m&0\\\\0&1&m\\\\m&0&1\\end{pmatrix}$ không khả nghịch khi",
+    "question": "Ma trận \\(A=\\begin{pmatrix}1&m&0\\\\0&1&m\\\\m&0&1\\end{pmatrix}\\) không khả nghịch khi",
     "matrix": null,
     "options": [
-      "$m=-1$",
-      "$m=1$",
-      "$m=0$",
-      "$m=\\pm1$"
+      "\\(m=-1\\)",
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m=\\pm1\\)"
     ],
-    "correct": "$m=-1$",
-    "solution": "$\\det(A)=1+m^3=(m+1)(m^2-m+1)$. Trên $\\mathbb{R}$ chỉ có nghiệm $m=-1$.",
+    "correct": "\\(m=-1\\)",
+    "solution": "\\(\\det(A)=1+m^3=(m+1)(m^2-m+1)\\). Trên \\(\\mathbb{R}\\) chỉ có nghiệm \\(m=-1\\).",
     "quick": "Giải det=0.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 33,
     "type": "rank_det",
-    "question": "Cho ma trận vuông $A$ cấp 3. Phát biểu đúng là",
+    "question": "Cho ma trận vuông \\(A\\) cấp 3. Phát biểu đúng là",
     "matrix": null,
     "options": [
-      "Nếu $\\det(A)\\ne0$ thì $\\operatorname{rank}(A)=3$",
-      "Nếu $\\det(A)\\ne0$ thì $\\operatorname{rank}(A)<3$",
-      "Nếu $\\det(A)=0$ thì $\\operatorname{rank}(A)=3$",
-      "Nếu $\\det(A)=0$ thì $\\operatorname{rank}(A)>2$"
+      "Nếu \\(\\det(A)\\ne0\\) thì \\(\\operatorname{rank}(A)=3\\)",
+      "Nếu \\(\\det(A)\\ne0\\) thì \\(\\operatorname{rank}(A)\\lt3\\)",
+      "Nếu \\(\\det(A)=0\\) thì \\(\\operatorname{rank}(A)=3\\)",
+      "Nếu \\(\\det(A)=0\\) thì \\(\\operatorname{rank}(A)\\gt2\\)"
     ],
-    "correct": "Nếu $\\det(A)\\ne0$ thì $\\operatorname{rank}(A)=3$",
+    "correct": "Nếu \\(\\det(A)\\ne0\\) thì \\(\\operatorname{rank}(A)=3\\)",
     "solution": "Định thức khác 0 tương đương ma trận khả nghịch và có hạng đầy đủ bằng 3.",
     "quick": "det≠0 ⇔ rank=n.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 1,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 34,
     "type": "rank_det",
-    "question": "Cho ma trận vuông $A$ cấp 4 và $\\det(A)=0$. Kết luận chắc chắn là",
+    "question": "Cho ma trận vuông \\(A\\) cấp 4 và \\(\\det(A)=0\\). Kết luận chắc chắn là",
     "matrix": null,
     "options": [
-      "$\\operatorname{rank}(A)\\le3$",
-      "$\\operatorname{rank}(A)=3$",
-      "$\\operatorname{rank}(A)=0$",
-      "$\\operatorname{rank}(A)=4$"
+      "\\(\\operatorname{rank}(A)\\le3\\)",
+      "\\(\\operatorname{rank}(A)=3\\)",
+      "\\(\\operatorname{rank}(A)=0\\)",
+      "\\(\\operatorname{rank}(A)=4\\)"
     ],
-    "correct": "$\\operatorname{rank}(A)\\le3$",
+    "correct": "\\(\\operatorname{rank}(A)\\le3\\)",
     "solution": "Định thức bằng 0 chỉ cho biết ma trận không đủ hạng, nên hạng nhỏ hơn 4.",
-    "quick": "det=0 ⇒ rank<n, chưa biết chính xác bao nhiêu.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "quick": "det=0 ⇒ rank&lt;n, chưa biết chính xác bao nhiêu.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 35,
     "type": "linked_determinant",
-    "question": "Cho $A=\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}$. Định thức của $A$ bằng",
+    "question": "Cho \\(A=\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}\\). Định thức của \\(A\\) bằng",
     "matrix": null,
     "options": [
       "5",
@@ -798,16 +798,16 @@
       "15"
     ],
     "correct": "7",
-    "solution": "Ma trận có các trị riêng $7,1,1$ nên định thức bằng $7$. Hoặc khử hàng trực tiếp được 7.",
-    "quick": "Ma trận có dạng $I+2J$ với kích thước 3.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "solution": "Ma trận có các trị riêng \\(7,1,1\\) nên định thức bằng \\(7\\). Hoặc khử hàng trực tiếp được 7.",
+    "quick": "Ma trận có dạng \\(I+2J\\) với kích thước 3.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 36,
     "type": "short_answer_style",
-    "question": "Cho $A=(a_{ij})$ cấp 3 với $a_{ij}=i^2+j-\\min\\{i,j\\}$. Tính $\\det(2A^T)$.",
+    "question": "Cho \\(A=(a_{ij})\\) cấp 3 với \\(a_{ij}=i^2+j-\\min\\{i,j\\}\\). Tính \\(\\det(2A^T)\\).",
     "matrix": null,
     "options": [
       "18",
@@ -816,16 +816,16 @@
       "144"
     ],
     "correct": "72",
-    "solution": "Ta có $A=\\begin{pmatrix}1&2&3\\\\4&4&5\\\\9&9&9\\end{pmatrix}$ và $\\det(A)=9$. Do đó $\\det(2A^T)=2^3\\det(A)=8\\cdot9=72$.",
+    "solution": "Ta có \\(A=\\begin{pmatrix}1&2&3\\\\4&4&5\\\\9&9&9\\end{pmatrix}\\) và \\(\\det(A)=9\\). Do đó \\(\\det(2A^T)=2^3\\det(A)=8\\cdot9=72\\).",
     "quick": "Lập đúng ma trận, tính det(A), rồi dùng det(2A^T)=8det(A).",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 37,
     "type": "det_from_eigenvalues",
-    "question": "Ma trận cấp 3 có các trị riêng $1,2,-3$. Định thức của ma trận bằng",
+    "question": "Ma trận cấp 3 có các trị riêng \\(1,2,-3\\). Định thức của ma trận bằng",
     "matrix": null,
     "options": [
       "-6",
@@ -834,52 +834,52 @@
       "-4"
     ],
     "correct": "-6",
-    "solution": "Định thức bằng tích các trị riêng: $1\\cdot2\\cdot(-3)=-6$.",
+    "solution": "Định thức bằng tích các trị riêng: \\(1\\cdot2\\cdot(-3)=-6\\).",
     "quick": "Tích trị riêng = det.",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp. Với ma trận 2×2, lập phương trình đặc trưng λ²−tr(A)λ+det(A)=0 rồi dùng MENU → Equation/Func → Polynomial bậc 2.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 38,
     "type": "rank_parameter",
-    "question": "Cho $A=\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&m\\end{pmatrix}$. Hạng của $A$ bằng 2 khi",
+    "question": "Cho \\(A=\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&m\\end{pmatrix}\\). Hạng của \\(A\\) bằng 2 khi",
     "matrix": null,
     "options": [
-      "$m\\ne1$",
-      "$m=1$",
-      "$m\\ne0$",
-      "Mọi $m$"
+      "\\(m\\ne1\\)",
+      "\\(m=1\\)",
+      "\\(m\\ne0\\)",
+      "Mọi \\(m\\)"
     ],
-    "correct": "$m\\ne1$",
-    "solution": "Hai hàng đầu trùng nhau nên hạng không quá 2. Nếu $m\\ne1$, hàng ba không tỉ lệ với hàng một nên hạng bằng 2; nếu $m=1$, hạng bằng 1.",
+    "correct": "\\(m\\ne1\\)",
+    "solution": "Hai hàng đầu trùng nhau nên hạng không quá 2. Nếu \\(m\\ne1\\), hàng ba không tỉ lệ với hàng một nên hạng bằng 2; nếu \\(m=1\\), hạng bằng 1.",
     "quick": "So sánh hàng ba với hàng một.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA và nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 39,
     "type": "inverse_scaled_determinant",
-    "question": "Cho $A$ là ma trận khả nghịch cấp 3 và $\\det(A)=-2$. Đặt $B=3A^{-1}$. Khi đó $\\det(B)$ bằng",
+    "question": "Cho \\(A\\) là ma trận khả nghịch cấp 3 và \\(\\det(A)=-2\\). Đặt \\(B=3A^{-1}\\). Khi đó \\(\\det(B)\\) bằng",
     "matrix": null,
     "options": [
-      "$-\\dfrac{27}{2}$",
-      "$\\dfrac{27}{2}$",
-      "$-\\dfrac{9}{2}$",
-      "$-54$"
+      "\\(-\\dfrac{27}{2}\\)",
+      "\\(\\dfrac{27}{2}\\)",
+      "\\(-\\dfrac{9}{2}\\)",
+      "\\(-54\\)"
     ],
-    "correct": "$-\\dfrac{27}{2}$",
-    "solution": "$\\det(B)=\\det(3A^{-1})=3^3\\det(A^{-1})=27/(-2)=-27/2$.",
+    "correct": "\\(-\\dfrac{27}{2}\\)",
+    "solution": "\\(\\det(B)=\\det(3A^{-1})=3^3\\det(A^{-1})=27/(-2)=-27/2\\).",
     "quick": "Cấp 3 nên hệ số 3 được nâng lũy thừa 3; nghịch đảo làm định thức thành nghịch đảo.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
   },
   {
     "id": 40,
     "type": "row_operation_chain",
-    "question": "Cho ma trận vuông cấp 4 có $\\det(A)=2$. Từ $A$, nhân hàng 1 với $-2$, đổi chỗ hàng 2 và hàng 3, rồi cộng 5 lần hàng 1 vào hàng 4 để được $B$. Tính $\\det(B)$.",
+    "question": "Cho ma trận vuông cấp 4 có \\(\\det(A)=2\\). Từ \\(A\\), nhân hàng 1 với \\(-2\\), đổi chỗ hàng 2 và hàng 3, rồi cộng 5 lần hàng 1 vào hàng 4 để được \\(B\\). Tính \\(\\det(B)\\).",
     "matrix": null,
     "options": [
       "4",
@@ -888,16 +888,16 @@
       "-20"
     ],
     "correct": "4",
-    "solution": "Nhân một hàng với $-2$ làm định thức nhân $-2$; đổi hai hàng làm đổi dấu; phép cộng bội hàng không đổi định thức. Vậy $\\det(B)=(-2)(-1)\\cdot2=4$.",
+    "solution": "Nhân một hàng với \\(-2\\) làm định thức nhân \\(-2\\); đổi hai hàng làm đổi dấu; phép cộng bội hàng không đổi định thức. Vậy \\(\\det(B)=(-2)(-1)\\cdot2=4\\).",
     "quick": "Chỉ hai thao tác đầu làm thay đổi định thức.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & biến đổi sơ cấp"
   },
   {
     "id": 41,
     "type": "invertible_integer_count",
-    "question": "Cho $A=\\begin{pmatrix}m&1&0\\\\1&m&1\\\\0&1&m\\end{pmatrix}$. Có bao nhiêu giá trị nguyên $m\\in[-2;2]$ để $A$ khả nghịch?",
+    "question": "Cho \\(A=\\begin{pmatrix}m&1&0\\\\1&m&1\\\\0&1&m\\end{pmatrix}\\). Có bao nhiêu giá trị nguyên \\(m\\in[-2;2]\\) để \\(A\\) khả nghịch?",
     "matrix": null,
     "options": [
       "4",
@@ -906,16 +906,16 @@
       "5"
     ],
     "correct": "4",
-    "solution": "$\\det(A)=m(m^2-2)$. Trong các số nguyên $-2,-1,0,1,2$, chỉ $m=0$ làm định thức bằng 0. Có 4 giá trị thỏa mãn.",
+    "solution": "\\(\\det(A)=m(m^2-2)\\). Trong các số nguyên \\(-2,-1,0,1,2\\), chỉ \\(m=0\\) làm định thức bằng 0. Có 4 giá trị thỏa mãn.",
     "quick": "Tính định thức theo hàng đầu rồi kiểm tra các số nguyên trong đoạn.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Định thức & tham số"
   },
   {
     "id": 42,
     "type": "determinant_equation",
-    "question": "Tổng các nghiệm thực của phương trình $\\det\\begin{pmatrix}x&1&1\\\\1&x&1\\\\1&1&x\\end{pmatrix}=0$ bằng",
+    "question": "Tổng các nghiệm thực phân biệt của phương trình \\(\\det\\begin{pmatrix}x&1&1\\\\1&x&1\\\\1&1&x\\end{pmatrix}=0\\) bằng",
     "matrix": null,
     "options": [
       "-1",
@@ -924,70 +924,70 @@
       "3"
     ],
     "correct": "-1",
-    "solution": "Định thức bằng $(x-1)^2(x+2)$. Các nghiệm phân biệt là $x=1$ và $x=-2$, tổng bằng $-1$.",
-    "quick": "Ma trận có đường chéo $x$, ngoài đường chéo 1: các nhân tử là $x+2$ và $x-1$.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "solution": "Ta có \\(\\det\\begin{pmatrix}x&1&1\\\\1&x&1\\\\1&1&x\\end{pmatrix}=(x-1)^2(x+2)\\). Các nghiệm thực phân biệt là \\(x=1\\) và \\(x=-2\\), nên tổng bằng \\(-1\\).",
+    "quick": "Dạng đường chéo \\(x\\), ngoài đường chéo \\(1\\): các trị riêng là \\(x+2\\) và \\(x-1\\); giải \\((x-1)^2(x+2)=0\\).",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Phương trình định thức"
   },
   {
     "id": 43,
     "type": "adjugate_determinant",
-    "question": "Cho $A$ là ma trận cấp 3 và $\\det(A)=4$. Định thức của ma trận phụ hợp $\\operatorname{adj}(A)$ bằng",
+    "question": "Cho \\(A\\) là ma trận cấp 3 và \\(\\det(A)=4\\). Định thức của ma trận phụ hợp \\(\\operatorname{adj}(A)\\) bằng",
     "matrix": null,
     "options": [
       "16",
       "64",
       "4",
-      "$\\dfrac14$"
+      "\\(\\dfrac14\\)"
     ],
     "correct": "16",
-    "solution": "Với ma trận cấp $n$, $\\det(\\operatorname{adj}A)=\\det(A)^{n-1}$. Do đó kết quả là $4^2=16$.",
-    "quick": "Nhớ số mũ là $n-1$, không phải $n$.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "solution": "Với ma trận cấp \\(n\\), \\(\\det(\\operatorname{adj}A)=\\det(A)^{n-1}\\). Do đó kết quả là \\(4^2=16\\).",
+    "quick": "Nhớ số mũ là \\(n-1\\), không phải \\(n\\).",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & ma trận phụ hợp"
   },
   {
     "id": 44,
     "type": "compound_determinant",
-    "question": "Cho $A,B$ là các ma trận khả nghịch cấp 2, $\\det(A)=-3$, $\\det(B)=2$. Tính $\\det(A^TB^{-1}A)$.",
+    "question": "Cho \\(A,B\\) là các ma trận khả nghịch cấp 2, \\(\\det(A)=-3\\), \\(\\det(B)=2\\). Tính \\(\\det(A^TB^{-1}A)\\).",
     "matrix": null,
     "options": [
-      "$\\dfrac92$",
-      "$-\\dfrac92$",
+      "\\(\\dfrac92\\)",
+      "\\(-\\dfrac92\\)",
       "3",
       "18"
     ],
-    "correct": "$\\dfrac92$",
-    "solution": "$\\det(A^TB^{-1}A)=\\det(A^T)\\det(B^{-1})\\det(A)=(-3)\\cdot(1/2)\\cdot(-3)=9/2$.",
+    "correct": "\\(\\dfrac92\\)",
+    "solution": "\\(\\det(A^TB^{-1}A)=\\det(A^T)\\det(B^{-1})\\det(A)=(-3)\\cdot(1/2)\\cdot(-3)=9/2\\).",
     "quick": "Chuyển vị giữ nguyên định thức; nghịch đảo lấy nghịch đảo định thức.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Tính chất định thức"
   },
   {
     "id": 45,
     "type": "rank_parameter_minor",
-    "question": "Cho $A=\\begin{pmatrix}1&1&1\\\\1&m&1\\\\1&1&0\\end{pmatrix}$. Hạng của $A$ bằng 2 khi",
+    "question": "Cho \\(A=\\begin{pmatrix}1&1&1\\\\1&m&1\\\\1&1&0\\end{pmatrix}\\). Hạng của \\(A\\) bằng 2 khi",
     "matrix": null,
     "options": [
-      "$m=1$",
-      "$m=0$",
-      "$m=-1$",
-      "$m\\ne1$"
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m=-1\\)",
+      "\\(m\\ne1\\)"
     ],
-    "correct": "$m=1$",
-    "solution": "$\\det(A)=1-m$, nên chỉ cần xét $m=1$. Khi đó hai hàng đầu trùng nhau nhưng hàng thứ ba không tỉ lệ với hàng đầu, vì vậy hạng bằng 2.",
+    "correct": "\\(m=1\\)",
+    "solution": "\\(\\det(A)=1-m\\), nên chỉ cần xét \\(m=1\\). Khi đó hai hàng đầu trùng nhau nhưng hàng thứ ba không tỉ lệ với hàng đầu, vì vậy hạng bằng 2.",
     "quick": "Giải det=0 rồi kiểm tra một định thức con cấp 2 khác 0.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; cần lập định thức theo tham số bằng tay. Có thể dùng chế độ Matrix để kiểm tra lại tại một giá trị cụ thể.",
     "difficulty": 3,
     "topic": "Định thức & hạng"
   },
   {
     "id": 46,
     "type": "structured_determinant",
-    "question": "Tính định thức của ma trận $A$ cấp 4 có các phần tử trên đường chéo chính bằng 2 và các phần tử ngoài đường chéo bằng 1.",
+    "question": "Tính định thức của ma trận \\(A\\) cấp 4 có các phần tử trên đường chéo chính bằng 2 và các phần tử ngoài đường chéo bằng 1.",
     "matrix": null,
     "options": [
       "5",
@@ -996,16 +996,16 @@
       "0"
     ],
     "correct": "5",
-    "solution": "Với ma trận cấp $n$ có đường chéo $a$, ngoài chéo $b$, định thức là $(a-b)^{n-1}[a+(n-1)b]$. Ở đây $(2-1)^3(2+3)=5$.",
-    "quick": "Tách $A=I_4+J_4$ hoặc dùng công thức ma trận đường chéo–ngoài chéo.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "solution": "Với ma trận cấp \\(n\\) có đường chéo \\(a\\), ngoài chéo \\(b\\), định thức là \\((a-b)^{n-1}[a+(n-1)b]\\). Ở đây \\((2-1)^3(2+3)=5\\).",
+    "quick": "Tách \\(A=I_4+J_4\\) hoặc dùng công thức ma trận đường chéo–ngoài chéo.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập các phần tử → OPTN → Matrix → det(MatA) → EXE.",
     "difficulty": 3,
     "topic": "Định thức ma trận đặc biệt"
   },
   {
     "id": 47,
     "type": "adjugate_rank",
-    "question": "Cho $A$ là ma trận cấp 3 có $\\operatorname{rank}(A)=2$. Hạng của $\\operatorname{adj}(A)$ bằng",
+    "question": "Cho \\(A\\) là ma trận cấp 3 có \\(\\operatorname{rank}(A)=2\\). Hạng của \\(\\operatorname{adj}(A)\\) bằng",
     "matrix": null,
     "options": [
       "1",
@@ -1014,27 +1014,27 @@
       "0"
     ],
     "correct": "1",
-    "solution": "Với ma trận cấp $n$, nếu $\\operatorname{rank}(A)=n-1$ thì $\\operatorname{rank}(\\operatorname{adj}A)=1$. Ở đây $n=3$.",
+    "solution": "Với ma trận cấp \\(n\\), nếu \\(\\operatorname{rank}(A)=n-1\\) thì \\(\\operatorname{rank}(\\operatorname{adj}A)=1\\). Ở đây \\(n=3\\).",
     "quick": "Hạng thiếu đúng 1 thì ma trận phụ hợp có hạng 1.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & hạng"
   },
   {
     "id": 48,
     "type": "transpose_inverse_scaled",
-    "question": "Cho $A,B$ là các ma trận khả nghịch cấp 3, $\\det(A)=3$, $\\det(B)=-4$. Tính $\\det(2A^TB^{-1})$.",
+    "question": "Cho \\(A,B\\) là các ma trận khả nghịch cấp 3, \\(\\det(A)=3\\), \\(\\det(B)=-4\\). Tính \\(\\det(2A^TB^{-1})\\).",
     "matrix": null,
     "options": [
       "-6",
       "6",
       "-24",
-      "$-\\dfrac32$"
+      "\\(-\\dfrac32\\)"
     ],
     "correct": "-6",
-    "solution": "$\\det(2A^TB^{-1})=2^3\\det(A^T)\\det(B^{-1})=8\\cdot3\\cdot(-1/4)=-6$.",
-    "quick": "Cấp 3: $\\det(2M)=8\\det(M)$.",
-    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo ma trận → nhập dữ liệu → OPTN → Matrix → det(MatA) → EXE. Với bài tham số, nên biến đổi đại số trước.",
+    "solution": "\\(\\det(2A^TB^{-1})=2^3\\det(A^T)\\det(B^{-1})=8\\cdot3\\cdot(-1/4)=-6\\).",
+    "quick": "Cấp 3: \\(\\det(2M)=8\\det(M)\\).",
+    "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Tính chất định thức"
   }
