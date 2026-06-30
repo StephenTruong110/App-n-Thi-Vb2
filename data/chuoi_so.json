@@ -191,7 +191,7 @@
       "Không xác định"
     ],
     "correct": "Hội tụ tuyệt đối",
-    "solution": "\\(\\sum|u_n|=\\sum\\dfrac{1}{n^2}\\) hội tụ (p=2&gt;1). Vậy chuỗi hội tụ **tuyệt đối**.",
+    "solution": "\\(\\sum|u_n|=\\sum\\dfrac{1}{n^2}\\) hội tụ (p=2&gt;1). Vậy chuỗi hội tụ tuyệt đối.",
     "quick": "\\(\\sum1/n^2\\) hội tụ (p=2&gt;1) → hội tụ tuyệt đối",
     "casio": "CASIO: Kiểm tra điều kiện Leibniz: (1) u_n &gt; 0 (hiển nhiên); (2) u_{n+1} ≤ u_n (kiểm tra bằng cách so sánh tại vài n); (3) u_n → 0 (thay n=1e6).",
     "difficulty": 2,
@@ -264,7 +264,7 @@
     ],
     "correct": "Phân kỳ vì \\(p=\\dfrac{1}{2}\\leq1\\)",
     "solution": "\\(p=1/2\\leq1\\) → chuỗi \\(p\\) phân kỳ.",
-    "quick": "Chuỗi p: **p&gt;1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
+    "quick": "Chuỗi p: p&gt;1 → hội tụ; p≤1 → phân kỳ. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
     "casio": "CASIO: Chuỗi p Σ1/nᵖ: p&gt;1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
     "difficulty": 1,
     "topic": "Chuỗi số"
@@ -282,7 +282,7 @@
     ],
     "correct": "Hội tụ vì \\(p=3\\gt 1\\)",
     "solution": "\\(p=3\\gt 1\\) → chuỗi \\(p\\) hội tụ. (Tổng \\(=\\zeta(3)=\\) hằng số Apéry \\(\\approx1.202\\).)",
-    "quick": "Chuỗi p: **p&gt;1 → hội tụ; p≤1 → phân kỳ**. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
+    "quick": "Chuỗi p: p&gt;1 → hội tụ; p≤1 → phân kỳ. Nhớ: p=1 (điều hòa) phân kỳ dù u_n→0!",
     "casio": "CASIO: Chuỗi p Σ1/nᵖ: p&gt;1 → hội tụ; p≤1 → phân kỳ. Không cần tính. Nhớ: p=1 (điều hòa) phân kỳ, p=2 hội tụ với S=π²/6 ≈ 1.6449.",
     "difficulty": 1,
     "topic": "Chuỗi số"
@@ -317,7 +317,7 @@
       "Chưa kết luận được"
     ],
     "correct": "Phân kỳ",
-    "solution": "Nếu \\(u_n\\not\\to0\\), chuỗi **chắc chắn phân kỳ** (tiêu chuẩn phân kỳ tất yếu).",
+    "solution": "Nếu \\(u_n\\not\\to0\\), chuỗi chắc chắn phân kỳ (tiêu chuẩn phân kỳ tất yếu).",
     "quick": "\\(u_n\\not\\to0\\) → phân kỳ chắc chắn",
     "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
     "difficulty": 1,
@@ -362,7 +362,7 @@
   {
     "id": 21,
     "type": "comparison",
-    "question": "So sánh \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{\\ln n}\\) (với \\(n\\geq2\\)) với \\(\\sum\\dfrac{1}{n}\\). Kết luận?",
+    "question": "So sánh \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{\\ln n}\\) với \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n}\\). Kết luận?",
     "matrix": null,
     "options": [
       "Phân kỳ vì \\(\\dfrac{1}{\\ln n}\\gt \\dfrac{1}{n}\\) và \\(\\sum\\dfrac{1}{n}\\) phân kỳ",
@@ -408,7 +408,7 @@
     ],
     "correct": "Phân kỳ vì \\(L=2\\gt 0\\)",
     "solution": "\\(\\lim\\dfrac{u_n}{1/n}=\\lim\\dfrac{n(2n+1)}{n^2+n}=\\lim\\dfrac{2n+1}{n+1}=2\\gt 0\\). \\(\\sum1/n\\) phân kỳ → \\(\\sum u_n\\) phân kỳ.",
-    "quick": "Chọn \\(v_n=1/n\\): \\(L=\\lim nu_n=2\\neq0\\), \\(\\sum1/n\\) phân kỳ → phân kỳ",
+    "quick": "Chọn \\(v_n=1/n\\): \\(L=\\lim nu_n=2\\), là số dương hữu hạn; hai chuỗi cùng tính chất nên chuỗi đã cho phân kỳ.",
     "casio": "CASIO: Tính L = lim(u_n/v_n) tại n lớn (n=10000) bằng CALC. Nếu 0&lt;L&lt;∞: cùng hội tụ hoặc cùng phân kỳ như Σv_n.",
     "difficulty": 3,
     "topic": "Chuỗi số"
@@ -606,7 +606,7 @@
     ],
     "correct": "Phân kỳ vì \\(D=4\\gt 1\\)",
     "solution": "\\(D=\\lim\\dfrac{4^{n+1}/(n+1)^2}{4^n/n^2}=\\lim\\dfrac{4n^2}{(n+1)^2}=4\\gt 1\\) → phân kỳ.",
-    "quick": "\\(D=4\\gt 1\\) → phân kỳ — **Nhớ:** cần kiểm tra u_n→0 trước (điều kiện cần). Nếu u_n↛0 → phân kỳ ngay!",
+    "quick": "\\(D=4\\gt 1\\) → phân kỳ — Nhớ: cần kiểm tra u_n→0 trước (điều kiện cần). Nếu u_n↛0 → phân kỳ ngay!",
     "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả &lt; 1: hội tụ; &gt; 1: phân kỳ; = 1: không kết luận.",
     "difficulty": 3,
     "topic": "Chuỗi số"
@@ -649,60 +649,6 @@
   },
   {
     "id": 37,
-    "type": "convergence_test",
-    "question": "Tiêu chuẩn tích phân Cauchy: nếu \\(f(x)\\geq0\\) giảm liên tục trên \\([1,\\infty)\\) thì \\(\\sum f(n)\\) và \\(\\int_1^{\\infty}f(x)\\,dx\\)",
-    "matrix": null,
-    "options": [
-      "Cùng hội tụ hoặc cùng phân kỳ",
-      "Chuỗi hội tụ khi tích phân phân kỳ",
-      "Không liên quan",
-      "Tích phân hội tụ khi chuỗi phân kỳ"
-    ],
-    "correct": "Cùng hội tụ hoặc cùng phân kỳ",
-    "solution": "Tiêu chuẩn tích phân Cauchy: \\(\\sum_{n=1}^{\\infty}f(n)\\) và \\(\\int_1^{\\infty}f(x)\\,dx\\) cùng hội tụ hoặc cùng phân kỳ.",
-    "quick": "Tích phân và chuỗi tương ứng cùng tính chất hội tụ",
-    "casio": "Kiểm tra tích phân: ∫₁^∞ f(x)dx và Σf(n) cùng tính chất",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 38,
-    "type": "convergence_test",
-    "question": "Dùng tiêu chuẩn tích phân, chuỗi \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n\\ln n}\\) thì",
-    "matrix": null,
-    "options": [
-      "Phân kỳ",
-      "Hội tụ",
-      "Bán hội tụ",
-      "Không áp dụng được"
-    ],
-    "correct": "Phân kỳ",
-    "solution": "\\(\\int_2^{\\infty}\\dfrac{dx}{x\\ln x}=\\ln(\\ln x)\\Big|_2^{\\infty}=+\\infty\\) → phân kỳ.",
-    "quick": "\\(\\int\\dfrac{dx}{x\\ln x}=\\ln|\\ln x|\\to+\\infty\\) → phân kỳ",
-    "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 39,
-    "type": "convergence_test",
-    "question": "Dùng tiêu chuẩn tích phân, chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+1}\\) thì",
-    "matrix": null,
-    "options": [
-      "Hội tụ",
-      "Phân kỳ",
-      "Bán hội tụ",
-      "Không kết luận"
-    ],
-    "correct": "Hội tụ",
-    "solution": "\\(\\int_1^{\\infty}\\dfrac{dx}{x^2+1}=\\arctan x\\Big|_1^{\\infty}=\\dfrac{\\pi}{2}-\\dfrac{\\pi}{4}=\\dfrac{\\pi}{4}\\lt +\\infty\\) → hội tụ.",
-    "quick": "\\(\\int_1^{\\infty}1/(x^2+1)\\,dx=\\pi/4\\lt \\infty\\) → hội tụ",
-    "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 40,
     "type": "series_sum",
     "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{3}{n(n+3)}\\) là",
     "matrix": null,
@@ -720,7 +666,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 41,
+    "id": 38,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\sin\\dfrac{1}{n}\\) thì",
     "matrix": null,
@@ -738,7 +684,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 42,
+    "id": 39,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\ln\\left(1+\\dfrac{1}{n}\\right)\\) thì",
     "matrix": null,
@@ -756,7 +702,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 43,
+    "id": 40,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(1-\\cos\\dfrac{1}{n}\\right)\\) thì",
     "matrix": null,
@@ -774,7 +720,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 44,
+    "id": 41,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n n}{n^2+1}\\) là",
     "matrix": null,
@@ -792,7 +738,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 45,
+    "id": 42,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n^{3/2}}\\) là",
     "matrix": null,
@@ -810,7 +756,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 46,
+    "id": 43,
     "type": "convergence_test",
     "question": "Hội tụ tuyệt đối có nghĩa là",
     "matrix": null,
@@ -828,7 +774,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 47,
+    "id": 44,
     "type": "convergence_test",
     "question": "Bán hội tụ (hội tụ có điều kiện) nghĩa là",
     "matrix": null,
@@ -846,7 +792,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 48,
+    "id": 45,
     "type": "convergence_test",
     "question": "Hội tụ tuyệt đối kéo theo",
     "matrix": null,
@@ -864,7 +810,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 49,
+    "id": 46,
     "type": "series_sum",
     "question": "Tổng của \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n\\cdot2^n}\\) là",
     "matrix": null,
@@ -875,14 +821,14 @@
       "\\(\\ln\\dfrac{1}{2}\\)"
     ],
     "correct": "\\(\\ln 2\\)",
-    "solution": "Từ \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\), tại \\(x=1/2\\gt 0\\): \\(\\sum_{n=1}^{\\infty}\\dfrac{(1/2)^n}{n}\\cdot(-1)^{n-1}\\)... Thực ra \\(\\ln2=-\\ln(1/2)\\)... Dùng \\(-\\ln(1-x)=\\sum x^n/n\\) tại \\(x=1/2\\): \\(\\ln2\\).",
-    "quick": "\\(-\\ln(1-1/2)=\\ln2=\\sum_{n=1}^{\\infty}\\dfrac{(1/2)^n}{n}=\\sum\\dfrac{1}{n\\cdot2^n}\\)",
+    "solution": "Dùng công thức \\(-\\ln(1-x)=\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n}\\) với \\(|x|\\lt1\\). Thay \\(x=1/2\\):\n\\[\\sum_{n=1}^{\\infty}\\dfrac{1}{n2^n}=-\\ln\\left(1-\\dfrac12\\right)=\\ln2.\\]",
+    "quick": "Nhận ra \\(1/(n2^n)=(1/2)^n/n\\), rồi dùng \\(-\\ln(1-x)=\\sum x^n/n\\).",
     "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|&lt;1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
   {
-    "id": 50,
+    "id": 47,
     "type": "dalembert",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-2)^n}{n^2}\\). Theo D'Alembert, \\(D=\\)?",
     "matrix": null,
@@ -900,7 +846,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 51,
+    "id": 48,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n(n+1)(n+2)}\\) thì",
     "matrix": null,
@@ -918,7 +864,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 52,
+    "id": 49,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\sqrt{n+1}-\\sqrt{n}}{\\sqrt{n}}\\) thì",
     "matrix": null,
@@ -936,7 +882,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 53,
+    "id": 50,
     "type": "series_sum",
     "question": "Giá trị của \\(e^{-1}=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{n!}\\) xấp xỉ bằng",
     "matrix": null,
@@ -954,7 +900,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 54,
+    "id": 51,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{100^n}\\) thì",
     "matrix": null,
@@ -972,7 +918,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 55,
+    "id": 52,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{\\sqrt{n^2-1}}\\) thì",
     "matrix": null,
@@ -990,7 +936,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 56,
+    "id": 53,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+n+1}\\) thì",
     "matrix": null,
@@ -1008,7 +954,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 57,
+    "id": 54,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2^n+1}{3^n-1}\\) thì",
     "matrix": null,
@@ -1026,7 +972,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 58,
+    "id": 55,
     "type": "series_sum",
     "question": "Tổng của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\left(\\dfrac{1}{2^n}+\\dfrac{1}{3^n}\\right)\\) bằng",
     "matrix": null,
@@ -1044,7 +990,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 59,
+    "id": 56,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\ln n}{n^2}\\) thì",
     "matrix": null,
@@ -1062,7 +1008,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 60,
+    "id": 57,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{1+2+\\cdots+n}\\) thì",
     "matrix": null,
@@ -1080,7 +1026,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 61,
+    "id": 58,
     "type": "convergence_test",
     "question": "Tiêu chuẩn nào phù hợp nhất để kiểm tra \\(\\sum\\dfrac{n^2}{2^n}\\)?",
     "matrix": null,
@@ -1098,7 +1044,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 62,
+    "id": 59,
     "type": "convergence_test",
     "question": "Xét sự hội tụ của chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{(2n)!}{(n!)^2}\\cdot\\left(\\dfrac{1}{4}\\right)^n\\).",
     "matrix": null,
@@ -1109,14 +1055,14 @@
       "Hội tụ có điều kiện"
     ],
     "correct": "Phân kỳ",
-    "solution": "Dùng tiêu chuẩn Stirling hoặc d'Alembert:\n\n\\(a_n=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}\\).\n\nDùng công thức Stirling: \\(n!\\approx\\sqrt{2\\pi n}(n/e)^n\\):\n\n\\(a_n\\approx\\dfrac{\\sqrt{4\\pi n}(2n/e)^{2n}}{2\\pi n(n/e)^{2n}\\cdot4^n}=\\dfrac{\\sqrt{4\\pi n}\\cdot2^{2n}}{2\\pi n\\cdot4^n}=\\dfrac{1}{\\sqrt{\\pi n}}\\)\n\n\\(\\sum\\dfrac{1}{\\sqrt{n}}\\) phân kỳ (chuỗi p với p=1/2≤1) → **phân kỳ**.",
-    "quick": "a_n ~ 1/√(πn) (Stirling). Chuỗi ~ ∑1/√n là chuỗi p với p=1/2&lt;1 → **phân kỳ**.",
+    "solution": "Dùng tiêu chuẩn Stirling hoặc d'Alembert:\n\n\\(a_n=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}=\\dfrac{(2n)!}{(n!)^2\\cdot4^n}\\).\n\nDùng công thức Stirling: \\(n!\\approx\\sqrt{2\\pi n}(n/e)^n\\):\n\n\\(a_n\\approx\\dfrac{\\sqrt{4\\pi n}(2n/e)^{2n}}{2\\pi n(n/e)^{2n}\\cdot4^n}=\\dfrac{\\sqrt{4\\pi n}\\cdot2^{2n}}{2\\pi n\\cdot4^n}=\\dfrac{1}{\\sqrt{\\pi n}}\\)\n\n\\(\\sum\\dfrac{1}{\\sqrt{n}}\\) phân kỳ (chuỗi p với p=1/2≤1) → phân kỳ.",
+    "quick": "a_n ~ 1/√(πn) (Stirling). Chuỗi ~ ∑1/√n là chuỗi p với p=1/2&lt;1 → phân kỳ.",
     "casio": "CASIO: Tính a_1=0.5, a_2=3/8=0.375, a_3=5/16=0.3125... → a_n không → 0 đủ nhanh.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
   {
-    "id": 63,
+    "id": 60,
     "type": "series_sum_official",
     "question": "Tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{n}{2^n}\\) bằng",
     "matrix": null,
@@ -1134,7 +1080,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 64,
+    "id": 61,
     "type": "series_sum_official",
     "question": "Biết \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\frac{4^n}{5^n}-\\frac{3^n}{5^n}\\right)=\\frac ab\\) tối giản. Giá trị \\(a-b\\) bằng",
     "matrix": null,
@@ -1152,25 +1098,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 65,
-    "type": "integral_test",
-    "question": "Chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}\\frac{1}{n(\\ln n)^p}\\) hội tụ khi và chỉ khi",
-    "matrix": null,
-    "options": [
-      "\\(p\\gt 1\\)",
-      "\\(p\\ge1\\)",
-      "\\(p\\gt 0\\)",
-      "Mọi \\(p\\in\\mathbb R\\)"
-    ],
-    "correct": "\\(p\\gt 1\\)",
-    "solution": "Tiêu chuẩn tích phân: \\(\\int_2^{\\infty}dx/[x(\\ln x)^p]\\). Đặt t=ln x, ta được \\(\\int_{\\ln2}^{\\infty}t^{-p}dt\\), hội tụ khi và chỉ khi p&gt;1.",
-    "quick": "Đổi biến t=ln x đưa về tích phân p.",
-    "casio": "Không cần CASIO; đây là tiêu chuẩn tích phân chuẩn.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 66,
+    "id": 62,
     "type": "conditional_convergence",
     "question": "Chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}(-1)^n\\frac{\\ln n}{n}\\) là",
     "matrix": null,
@@ -1181,14 +1109,14 @@
       "Phân kỳ vì không đan dấu"
     ],
     "correct": "Hội tụ có điều kiện",
-    "solution": "\\(a_n=\\ln n/n\\to0\\) và giảm từ một chỉ số đủ lớn, nên chuỗi hội tụ theo Leibniz. Chuỗi trị tuyệt đối \\(\\sum\\ln n/n\\) phân kỳ theo tiêu chuẩn tích phân. Vì vậy chuỗi hội tụ có điều kiện.",
-    "quick": "Leibniz cho chuỗi có dấu; tích phân cho chuỗi trị tuyệt đối.",
+    "solution": "Đặt \\(a_n=\\ln n/n\\). Ta có \\(a_n\\to0\\) và \\(a_n\\) giảm từ một chỉ số đủ lớn, nên chuỗi đan dấu hội tụ theo Leibniz. Mặt khác, với \\(n\\ge3\\), \\(\\ln n\\ge1\\), do đó \\(\\ln n/n\\ge1/n\\). Vì chuỗi điều hòa phân kỳ nên chuỗi trị tuyệt đối \\(\\sum\\ln n/n\\) phân kỳ. Vậy chuỗi hội tụ có điều kiện.",
+    "quick": "Leibniz cho hội tụ; trị tuyệt đối phân kỳ vì \\(\\ln n/n\\ge1/n\\) khi \\(n\\ge3\\).",
     "casio": "Thay n lớn để kiểm tra a_n về 0; chứng minh vẫn cần Leibniz.",
     "difficulty": 3,
     "topic": "Chuỗi số"
   },
   {
-    "id": 67,
+    "id": 63,
     "type": "series_sum_telescope",
     "question": "Tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{n(n+2)}\\) bằng",
     "matrix": null,
@@ -1206,7 +1134,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 68,
+    "id": 64,
     "type": "alternating_error",
     "question": "Dùng chuỗi Leibniz của \\(\\ln2=1-\\frac12+\\frac13-\\cdots\\). Để sai số được bảo đảm nhỏ hơn \\(0{,}01\\), cần lấy ít nhất bao nhiêu số hạng?",
     "matrix": null,
@@ -1224,7 +1152,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 69,
+    "id": 65,
     "type": "series_sum",
     "question": "Tính \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{n^2}{3^n}\\).",
     "matrix": null,
@@ -1242,39 +1170,183 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 70,
+    "id": 66,
     "type": "series_count_divergent_official",
-    "question": "Có bao nhiêu chuỗi phân kỳ trong ba chuỗi $\\displaystyle\\sum_{n=1}^{\\infty}\\frac1n$, $\\displaystyle\\sum_{n=1}^{\\infty}\\frac1{n^2}$ và $\\displaystyle\\sum_{n=1}^{\\infty}\\frac1{\\sqrt n}$?",
+    "question": "Có bao nhiêu chuỗi phân kỳ trong ba chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac1n\\), \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac1{n^2}\\) và \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac1{\\sqrt n}\\)?",
     "matrix": null,
     "options": [
-      "$2$",
-      "$1$",
-      "$0$",
-      "$3$"
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(3\\)"
     ],
-    "correct": "$2$",
-    "solution": "Đây là các chuỗi $p$. Chuỗi $\\sum1/n$ có $p=1$ nên phân kỳ; $\\sum1/n^2$ có $p=2&gt;1$ nên hội tụ; $\\sum1/\\sqrt n$ có $p=1/2\\le1$ nên phân kỳ. Có đúng 2 chuỗi phân kỳ.",
-    "quick": "Chuỗi $p$ hội tụ khi và chỉ khi $p&gt;1$.",
-    "casio": "Không cần CASIO; dùng tiêu chuẩn chuỗi $p$.",
+    "correct": "\\(2\\)",
+    "solution": "Đây là các chuỗi \\(p\\). Chuỗi \\(\\sum1/n\\) có \\(p=1\\) nên phân kỳ; \\(\\sum1/n^2\\) có \\(p=2\\gt1\\) nên hội tụ; \\(\\sum1/\\sqrt n\\) có \\(p=1/2\\le1\\) nên phân kỳ. Có đúng 2 chuỗi phân kỳ.",
+    "quick": "Chuỗi \\(p\\) hội tụ khi và chỉ khi \\(p\\gt1\\).",
+    "casio": "Không cần CASIO; dùng tiêu chuẩn chuỗi \\(p\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 67,
+    "type": "series_count_convergent_official",
+    "question": "Có bao nhiêu chuỗi hội tụ trong ba chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n}\\), \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^2}\\) và \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^3}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Chuỗi thứ nhất hội tụ theo Leibniz. Hai chuỗi còn lại hội tụ tuyệt đối vì \\(\\sum1/n^2\\) và \\(\\sum1/n^3\\) đều hội tụ. Vậy cả 3 chuỗi đều hội tụ.",
+    "quick": "\\((-1)^n/n\\) hội tụ có điều kiện; hai chuỗi còn lại hội tụ tuyệt đối.",
+    "casio": "Không cần CASIO; dùng Leibniz và tiêu chuẩn chuỗi \\(p\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 68,
+    "type": "comparison_limit",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{4n^2+3}{n^4+1}\\). So sánh giới hạn với \\(\\sum 1/n^2\\), kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(L=4\\)",
+      "Phân kỳ vì \\(L=4\\)",
+      "Không kết luận được vì \\(L=0\\)",
+      "Phân kỳ vì số hạng không tiến về 0"
+    ],
+    "correct": "Hội tụ vì \\(L=4\\)",
+    "solution": "Đặt \\(u_n=(4n^2+3)/(n^4+1)\\), \\(v_n=1/n^2\\). Khi đó\n\\[L=\\lim_{n\\to\\infty}\\frac{u_n}{v_n}=\\lim\\frac{n^2(4n^2+3)}{n^4+1}=4.\\]\nVì \\(0\\lt L\\lt+\\infty\\) và \\(\\sum1/n^2\\) hội tụ nên chuỗi đã cho hội tụ.",
+    "quick": "Bậc tử kém bậc mẫu 2 nên so sánh với \\(1/n^2\\).",
+    "casio": "CASIO: tính \\(n^2u_n\\) tại \\(n\\) lớn; giá trị tiến gần 4.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 69,
+    "type": "dalembert",
+    "question": "Cho \\(u_n=\\dfrac{(n!)^2}{(2n)!}\\). Với chuỗi \\(\\sum u_n\\), giới hạn D’Alembert \\(D=\\lim\\dfrac{u_{n+1}}{u_n}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac14\\)",
+      "\\(\\dfrac12\\)",
+      "\\(1\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(\\dfrac14\\)",
+    "solution": "\\[\\frac{u_{n+1}}{u_n}=\\frac{((n+1)!)^2}{(2n+2)!}\\frac{(2n)!}{(n!)^2}=\\frac{(n+1)^2}{(2n+2)(2n+1)}=\\frac{n+1}{2(2n+1)}\\to\\frac14.\\]\nVì \\(D\\lt1\\), chuỗi hội tụ.",
+    "quick": "Rút gọn giai thừa trước khi lấy giới hạn.",
+    "casio": "CASIO: nhập \\((n+1)/(2(2n+1))\\) với \\(n=1000\\), kết quả gần 0,25.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 70,
+    "type": "cauchy",
+    "question": "Cho chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\dfrac{2n+3}{5n+1}\\right)^n\\). Theo tiêu chuẩn Cauchy, \\(C=\\lim\\sqrt[n]{u_n}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac25\\)",
+      "\\(\\dfrac52\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac25\\)",
+    "solution": "\\[C=\\lim_{n\\to\\infty}\\frac{2n+3}{5n+1}=\\frac25\\lt1.\\]\nDo đó chuỗi hội tụ.",
+    "quick": "Với số hạng dạng \\(a_n^n\\), lấy căn bậc \\(n\\) sẽ còn \\(a_n\\).",
+    "casio": "CASIO: thay \\(n=1000\\) vào \\((2n+3)/(5n+1)\\), kết quả gần 0,4.",
     "difficulty": 2,
     "topic": "Chuỗi số"
   },
   {
     "id": 71,
-    "type": "series_count_convergent_official",
-    "question": "Có bao nhiêu chuỗi hội tụ trong ba chuỗi $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n}$, $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^2}$ và $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^3}$?",
+    "type": "convergence_test",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\sqrt{n^2+1}-n\\right)\\). Chuỗi này",
     "matrix": null,
     "options": [
-      "$3$",
-      "$2$",
-      "$1$",
-      "$0$"
+      "Phân kỳ",
+      "Hội tụ",
+      "Hội tụ tuyệt đối với tổng bằng 1",
+      "Không xét được bằng tương đương"
     ],
-    "correct": "$3$",
-    "solution": "Chuỗi thứ nhất hội tụ theo Leibniz. Hai chuỗi còn lại hội tụ tuyệt đối vì $\\sum1/n^2$ và $\\sum1/n^3$ đều hội tụ. Vậy cả 3 chuỗi đều hội tụ.",
-    "quick": "$(-1)^n/n$ hội tụ có điều kiện; hai chuỗi còn lại hội tụ tuyệt đối.",
-    "casio": "Không cần CASIO; dùng Leibniz và tiêu chuẩn chuỗi $p$.",
+    "correct": "Phân kỳ",
+    "solution": "Nhân liên hợp:\n\\[\\sqrt{n^2+1}-n=\\frac{1}{\\sqrt{n^2+1}+n}\\sim\\frac{1}{2n}.\\]\nVì \\(\\sum1/(2n)\\) phân kỳ nên chuỗi đã cho phân kỳ.",
+    "quick": "Căn trừ căn: nhân liên hợp rồi so sánh với chuỗi điều hòa.",
+    "casio": "CASIO: tính \\(n(\\sqrt{n^2+1}-n)\\) tại \\(n\\) lớn; kết quả gần \\(1/2\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 72,
+    "type": "convergence_test",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\ln\\left(1+\\dfrac{1}{n^2}\\right)\\). Chuỗi này",
+    "matrix": null,
+    "options": [
+      "Hội tụ",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Phân kỳ vì số hạng tiến về 1"
+    ],
+    "correct": "Hội tụ",
+    "solution": "Khi \\(n\\to\\infty\\), đặt \\(t=1/n^2\\to0\\). Vì \\(\\ln(1+t)\\sim t\\), ta có\n\\[\\ln\\left(1+\\frac1{n^2}\\right)\\sim\\frac1{n^2}.\\]\nChuỗi \\(\\sum1/n^2\\) hội tụ nên chuỗi đã cho hội tụ.",
+    "quick": "Dùng tương đương \\(\\ln(1+t)\\sim t\\) khi \\(t\\to0\\).",
+    "casio": "CASIO: tính tỉ số \\(\\ln(1+1/n^2)/(1/n^2)\\) với \\(n\\) lớn; kết quả gần 1.",
     "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 73,
+    "type": "alternating_series",
+    "question": "Chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{n+1}{n^2+2}\\) là",
+    "matrix": null,
+    "options": [
+      "Hội tụ có điều kiện",
+      "Hội tụ tuyệt đối",
+      "Phân kỳ",
+      "Không phải chuỗi đan dấu"
+    ],
+    "correct": "Hội tụ có điều kiện",
+    "solution": "Đặt \\(a_n=(n+1)/(n^2+2)\\). Ta có \\(a_n\\to0\\) và \\(a_n\\) giảm từ một chỉ số đủ lớn, nên chuỗi hội tụ theo Leibniz. Đồng thời\n\\[\\frac{a_n}{1/n}=\\frac{n(n+1)}{n^2+2}\\to1,\\]\nnên \\(\\sum a_n\\) phân kỳ như chuỗi điều hòa. Vì vậy chuỗi hội tụ có điều kiện.",
+    "quick": "Leibniz cho hội tụ; bỏ dấu thì số hạng tương đương \\(1/n\\).",
+    "casio": "CASIO chỉ hỗ trợ kiểm tra số: tính \\(a_n\\) và \\(na_n\\) tại \\(n\\) lớn.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 74,
+    "type": "series_sum_telescope",
+    "question": "Tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{2}{n(n+2)}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac32\\)",
+      "\\(\\dfrac34\\)",
+      "\\(1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac32\\)",
+    "solution": "Ta có\n\\[\\frac{2}{n(n+2)}=\\frac1n-\\frac1{n+2}.\\]\nTổng riêng rút gọn còn \\(1+1/2-1/(N+1)-1/(N+2)\\). Cho \\(N\\to\\infty\\), thu được \\(S=3/2\\).",
+    "quick": "Phân tích thành \\(1/n-1/(n+2)\\), rồi rút gọn.",
+    "casio": "CASIO: tính tổng riêng với \\(N\\) lớn để kiểm tra giá trị gần 1,5.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 75,
+    "type": "series_count_convergent",
+    "question": "Có bao nhiêu chuỗi hội tụ trong bốn chuỗi sau? \\(\\displaystyle\\sum\\dfrac1{n^2+2}\\), \\(\\displaystyle\\sum\\dfrac{n}{n^2+1}\\), \\(\\displaystyle\\sum\\dfrac{(-1)^{n-1}}{\\sqrt n}\\), \\(\\displaystyle\\sum\\left(\\dfrac23\\right)^n\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Chuỗi thứ nhất hội tụ vì tương đương \\(1/n^2\\). Chuỗi thứ hai phân kỳ vì tương đương \\(1/n\\). Chuỗi thứ ba hội tụ theo Leibniz. Chuỗi thứ tư là chuỗi hình học có \\(|q|=2/3\\lt1\\), nên hội tụ. Vậy có 3 chuỗi hội tụ.",
+    "quick": "Phân loại lần lượt: \\(p=2\\), điều hòa, Leibniz, hình học.",
+    "casio": "CASIO không thay thế việc chọn tiêu chuẩn; có thể tính vài số hạng để kiểm tra xu hướng.",
+    "difficulty": 3,
     "topic": "Chuỗi số"
   }
 ]

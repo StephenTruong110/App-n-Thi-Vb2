@@ -271,78 +271,6 @@
   },
   {
     "id": 16,
-    "type": "power_series_sum",
-    "question": "Chuỗi Taylor: \\(\\sin x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{(2n+1)!}\\) áp dụng với",
-    "matrix": null,
-    "options": [
-      "Mọi \\(x\\in\\mathbb{R}\\)",
-      "\\(|x|\\lt 1\\)",
-      "\\(|x|\\leq\\pi\\)",
-      "\\(x\\gt 0\\)"
-    ],
-    "correct": "Mọi \\(x\\in\\mathbb{R}\\)",
-    "solution": "Chuỗi Taylor của \\(\\sin x\\) hội tụ với mọi \\(x\\in\\mathbb{R}\\).",
-    "quick": "\\(\\sin x=x-x^3/3!+x^5/5!-\\cdots\\) với mọi \\(x\\)",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 1,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 17,
-    "type": "power_series_sum",
-    "question": "Khai triển \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}x^n}{n}\\) áp dụng với",
-    "matrix": null,
-    "options": [
-      "\\(-1\\lt x\\leq1\\)",
-      "\\(-1\\leq x\\lt 1\\)",
-      "\\(-1\\lt x\\lt 1\\)",
-      "\\([-1,1]\\)"
-    ],
-    "correct": "\\(-1\\lt x\\leq1\\)",
-    "solution": "\\(R=1\\). Tại \\(x=1\\): chuỗi \\(\\sum(-1)^{n-1}/n\\) hội tụ (Leibniz). Tại \\(x=-1\\): \\(-\\sum1/n\\) phân kỳ. Miền: \\((-1,1]\\).",
-    "quick": "\\(-1\\lt x\\leq1\\). Tại \\(x=1\\): \\(\\ln2=1-1/2+1/3-\\cdots\\)",
-    "casio": "R=1. x=1: hội tụ (Leibniz). x=-1: phân kỳ → (-1,1]",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 18,
-    "type": "power_series_sum",
-    "question": "Tổng của \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{2n+1}=1-\\dfrac{1}{3}+\\dfrac{1}{5}-\\cdots\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{\\pi}{4}\\)",
-      "\\(1\\)",
-      "\\(\\ln 2\\)",
-      "\\(\\dfrac{\\pi}{2}\\)"
-    ],
-    "correct": "\\(\\dfrac{\\pi}{4}\\)",
-    "solution": "Từ khai triển \\(\\arctan x=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^{2n+1}}{2n+1}\\), tại \\(x=1\\): \\(\\arctan 1=\\pi/4\\).",
-    "quick": "\\(\\arctan(1)=\\pi/4=1-1/3+1/5-\\cdots\\) (công thức Leibniz)",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 19,
-    "type": "power_series_sum",
-    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{x^n}{n}\\) hội tụ tới",
-    "matrix": null,
-    "options": [
-      "\\(\\ln(1+x)\\)",
-      "\\(\\ln(1-x)\\)",
-      "\\(e^x-1\\)",
-      "\\(\\arctan x\\)"
-    ],
-    "correct": "\\(\\ln(1+x)\\)",
-    "solution": "Đây chính là khai triển Taylor: \\(\\ln(1+x)=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\cdots=\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{x^n}{n}\\).",
-    "quick": "\\(\\ln(1+x)=\\sum\\dfrac{(-1)^{n-1}x^n}{n}\\) — công thức cần nhớ!",
-    "casio": "CASIO: Dùng công thức chuẩn: Σxⁿ=1/(1-x), Σxⁿ/n!= eˣ, Σ(-1)ⁿxⁿ/(2n+1)=arctanx. Kiểm tra bằng cách tính chuỗi hữu hạn tại x cụ thể với CALC.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 20,
     "type": "power_series_radius",
     "question": "Bán kính hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(2x)^n}{3^n}\\) là",
     "matrix": null,
@@ -360,7 +288,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 21,
+    "id": 17,
     "type": "power_series_domain",
     "question": "Miền hội tụ của \\(\\sum_{n=0}^{\\infty}\\dfrac{(x-3)^n}{n+1}\\) là",
     "matrix": null,
@@ -378,133 +306,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 22,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\dfrac{1}{1+x}\\) thành chuỗi lũy thừa và tìm miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\), \\(|x|\\lt 1\\)",
-      "\\(\\sum_{n=0}^\\infty x^n\\), \\(|x|\\lt 1\\)",
-      "\\(\\sum_{n=1}^\\infty(-1)^nx^n\\), \\(|x|\\lt 1\\)",
-      "\\(e^{-x}\\)"
-    ],
-    "correct": "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\), \\(|x|\\lt 1\\)",
-    "solution": "\\(\\dfrac{1}{1+x}=\\dfrac{1}{1-(-x)}=\\sum_{n=0}^\\infty(-x)^n=\\sum_{n=0}^\\infty(-1)^nx^n\\)\n\n\\(=1-x+x^2-x^3+\\ldots\\)\n\nHội tụ khi \\(|-x|\\lt 1\\), tức \\(|x|\\lt 1\\).",
-    "quick": "Thay x bằng (-x) trong \\(1/(1-x)=\\sum x^n\\) → \\(\\sum(-1)^nx^n\\), \\(|x|\\lt 1\\).",
-    "casio": "CASIO: f(0.5)=1/1.5=0.667. Kiểm tra: 1-0.5+0.25-0.125+...=0.667✓.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 23,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\ln(1+x)\\) thành chuỗi Maclaurin.",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n\\)",
-      "\\(\\sum_{n=0}^\\infty(-1)^nx^n\\)",
-      "\\(\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\)",
-      "\\(x-x^2+x^3-\\ldots\\)"
-    ],
-    "correct": "\\(\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n\\)",
-    "solution": "Tích phân chuỗi \\(1/(1+x)\\):\n\n\\(\\ln(1+x)=\\int_0^x\\dfrac{dt}{1+t}=\\int_0^x\\sum_{n=0}^\\infty(-1)^nt^n\\,dt=\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{n+1}x^{n+1}\\)\n\n\\(=\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}}{n}x^n=x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\ldots\\)\n\nHội tụ với \\(-1\\lt x\\leq1\\).",
-    "quick": "Tích phân chuỗi 1/(1+x): \\(\\ln(1+x)=x-x^2/2+x^3/3-\\ldots=\\sum_{n=1}^\\infty\\dfrac{(-1)^{n+1}x^n}{n}\\).",
-    "casio": "CASIO: ln(1.5)=0.405. Kiểm tra: 0.5-0.125+0.0417-0.0156+...≈0.405✓.",
-    "difficulty": 2,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 24,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\dfrac{1}{3-x}\\) thành chuỗi lũy thừa tại \\(x=0\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3}\\)",
-      "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty(-1)^n\\dfrac{x^n}{3^n}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}\\)",
-    "solution": "\\(\\dfrac{1}{3-x}=\\dfrac{1}{3}\\cdot\\dfrac{1}{1-x/3}=\\dfrac{1}{3}\\sum_{n=0}^\\infty\\left(\\dfrac{x}{3}\\right)^n=\\dfrac{1}{3}\\sum_{n=0}^\\infty\\dfrac{x^n}{3^n}=\\sum_{n=0}^\\infty\\dfrac{x^n}{3^{n+1}}\\)\n\nHội tụ khi \\(|x/3|\\lt 1\\), tức \\(|x|\\lt 3\\).",
-    "quick": "\\(1/(3-x)=(1/3)\\cdot1/(1-x/3)=(1/3)\\sum(x/3)^n=\\sum x^n/3^{n+1}\\), \\(|x|\\lt 3\\).",
-    "casio": "CASIO: f(1)=1/2=0.5. Kiểm tra: (1/3)(1+1/3+1/9+...)=(1/3)·(3/2)=1/2✓.",
-    "difficulty": 2,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 25,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\dfrac{x^2}{2-x}\\) thành chuỗi lũy thừa.",
-    "matrix": null,
-    "options": [
-      "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^{n+2}}{2^{n+1}},\\ |x|\\lt 2\\)",
-      "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^n}{2^n},\\ |x|\\lt 2\\)",
-      "\\(\\displaystyle\\frac{x^2}{2}\\sum_{n=0}^{\\infty}x^n,\\ |x|\\lt 1\\)",
-      "\\(\\displaystyle\\sum_{n=2}^{\\infty}\\dfrac{x^n}{2^n},\\ |x|\\lt 2\\)"
-    ],
-    "correct": "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^{n+2}}{2^{n+1}},\\ |x|\\lt 2\\)",
-    "solution": "\\(\\dfrac{x^2}{2-x}=\\dfrac{x^2}{2}\\cdot\\dfrac{1}{1-x/2}=\\dfrac{x^2}{2}\\sum_{n=0}^{\\infty}(x/2)^n=\\sum_{n=0}^{\\infty}\\dfrac{x^{n+2}}{2^{n+1}}\\), hội tụ khi \\(|x|\\lt 2\\).",
-    "quick": "Tách \\(2-x=2(1-x/2)\\), rồi dùng chuỗi hình học.",
-    "casio": "CASIO: f(1)=1/1=1. Kiểm tra: Σ1/2^(n+1) n=0,1,...=1✓.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 26,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\ln(3-x)\\) tại \\(x=0\\) và tìm miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\displaystyle\\ln3-\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n3^n},\\quad -3\\le x\\lt 3\\)",
-      "\\(\\displaystyle\\ln3+\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n3^n},\\quad |x|\\lt 3\\)",
-      "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^n}{3^n},\\quad |x|\\lt 3\\)",
-      "\\(\\displaystyle\\ln3-\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n3^n},\\quad -3\\lt x\\le3\\)"
-    ],
-    "correct": "\\(\\displaystyle\\ln3-\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n3^n},\\quad -3\\le x\\lt 3\\)",
-    "solution": "\\(\\ln(3-x)=\\ln3+\\ln(1-x/3)=\\ln3-\\sum_{n=1}^{\\infty}x^n/(n3^n)\\). Bán kính là 3. Tại \\(x=3\\), chuỗi trở thành \\(-\\sum1/n\\) nên phân kỳ; tại \\(x=-3\\), chuỗi trở thành \\(-\\sum(-1)^n/n\\) nên hội tụ. Vì vậy miền hội tụ là \\([-3,3)\\).",
-    "quick": "R=3; biên trái cho chuỗi đan dấu, biên phải cho chuỗi điều hòa.",
-    "casio": "CASIO: ln(2)=0.693. Kiểm tra: ln3-Σ(1^n)/(n×3^n)=ln3-(1/3+1/18+1/81+...)≈0.693✓.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 27,
-    "type": "power_series_expansion",
-    "question": "Khai triển \\(f(x)=\\arctan x\\) thành chuỗi Maclaurin và cho biết miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\), \\(|x|\\leq1\\)",
-      "\\(\\sum_{n=0}^\\infty(-1)^nx^{2n}\\)",
-      "\\(\\sum_{n=0}^\\infty\\dfrac{x^{2n}}{(2n)!}\\)",
-      "\\(\\arctan x=x-x^2/2+x^3/3-\\ldots\\)"
-    ],
-    "correct": "\\(\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\), \\(|x|\\leq1\\)",
-    "solution": "Tích phân chuỗi \\(1/(1+x^2)\\):\n\n\\(\\dfrac{1}{1+x^2}=\\sum_{n=0}^\\infty(-1)^nx^{2n}\\)\n\n\\(\\arctan x=\\int_0^x\\dfrac{dt}{1+t^2}=\\sum_{n=0}^\\infty\\dfrac{(-1)^n}{2n+1}x^{2n+1}\\)\n\n\\(=x-\\dfrac{x^3}{3}+\\dfrac{x^5}{5}-\\ldots\\)\n\nHội tụ với \\(|x|\\leq1\\) (kể cả biên).",
-    "quick": "Tích phân: arctan x=∫1/(1+x²)dx. Chuỗi: ∑(-1)^n x^(2n+1)/(2n+1), \\(|x|\\leq1\\).",
-    "casio": "CASIO: arctan(1)=π/4≈0.785. Kiểm tra: 1-1/3+1/5-1/7+...≈π/4✓ (Leibniz).",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 28,
-    "type": "power_series_sum",
-    "question": "Tính tổng chuỗi lũy thừa \\(S(x)=\\sum_{n=1}^\\infty\\dfrac{x^n}{n}\\) trong miền hội tụ.",
-    "matrix": null,
-    "options": [
-      "\\(-\\ln(1-x)\\)",
-      "\\(\\ln(1+x)\\)",
-      "\\(-\\ln(1+x)\\)",
-      "\\(\\dfrac{x}{1-x}\\)"
-    ],
-    "correct": "\\(-\\ln(1-x)\\)",
-    "solution": "Đạo hàm chuỗi: \\(S'(x)=\\sum_{n=1}^\\infty x^{n-1}=\\dfrac{1}{1-x}\\) với \\(|x|\\lt 1\\).\n\nTích phân: \\(S(x)=\\int_0^x\\dfrac{dt}{1-t}=[-\\ln(1-t)]_0^x=-\\ln(1-x)\\).\n\nMiền hội tụ: \\(-1\\leq x\\lt 1\\) (từ tiêu chuẩn d'Alembert).",
-    "quick": "S'(x)=∑x^(n-1)=1/(1-x) → S(x)=∫dt/(1-t)=-ln(1-x). (Kỹ thuật vi-tích phân chuỗi)",
-    "casio": "CASIO: S(0.5)=0.5+0.125+0.0417+...≈0.693=-ln(0.5)=ln2✓.",
-    "difficulty": 3,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 29,
+    "id": 18,
     "type": "power_series_radius",
     "question": "Chuỗi lũy thừa \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{(x-2)^n}{3^n}\\) có tâm và bán kính hội tụ lần lượt là",
     "matrix": null,
@@ -522,7 +324,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 30,
+    "id": 19,
     "type": "power_series_sum",
     "question": "Với \\(|x|\\lt 1\\), tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}x^n\\) bằng",
     "matrix": null,
@@ -540,7 +342,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 31,
+    "id": 20,
     "type": "power_series_radius_short_answer_style",
     "question": "Biết chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{3^n x^n}{n+2^n}\\) có bán kính hội tụ \\(R=\\dfrac{a}{b}\\) tối giản. Tính \\(5a+3b\\).",
     "matrix": null,
@@ -558,7 +360,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 32,
+    "id": 21,
     "type": "power_series_radius",
     "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n^2}{4^n}(x-2)^n\\) là",
     "matrix": null,
@@ -576,7 +378,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 33,
+    "id": 22,
     "type": "power_series_domain",
     "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(x+1)^n}{n}\\) là",
     "matrix": null,
@@ -594,7 +396,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 34,
+    "id": 23,
     "type": "power_series_domain",
     "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(x-1)^n}{n^2 2^n}\\) là",
     "matrix": null,
@@ -612,61 +414,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 35,
-    "type": "power_series_expansion",
-    "question": "Khai triển Maclaurin của \\(\\dfrac{1}{2+x}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^n}{2^{n+1}},\\ |x|\\lt 2\\)",
-      "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^n}{2^{n+1}},\\ |x|\\lt 2\\)",
-      "\\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n x^n}{2^n},\\ |x|\\lt 1\\)",
-      "\\(\\displaystyle e^{-x}/2\\)"
-    ],
-    "correct": "\\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n x^n}{2^{n+1}},\\ |x|\\lt 2\\)",
-    "solution": "\\(1/(2+x)=\\frac12\\cdot1/(1+x/2)=\\frac12\\sum_{n=0}^{\\infty}(-x/2)^n\\), hội tụ khi \\(|x/2|\\lt 1\\).",
-    "quick": "Đưa về dạng \\(1/(1-t)=\\sum t^n\\) với \\(t=-x/2\\).",
-    "casio": "Thử x=1: chuỗi bắt đầu 1/2-1/4+1/8-...=1/3.",
-    "difficulty": 2,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 36,
-    "type": "power_series_coefficient",
-    "question": "Hệ số của \\(x^4\\) trong khai triển Maclaurin của \\(e^{2x}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac23\\)",
-      "\\(\\dfrac16\\)",
-      "\\(\\dfrac43\\)",
-      "\\(2\\)"
-    ],
-    "correct": "\\(\\dfrac23\\)",
-    "solution": "\\(e^{2x}=\\sum_{n=0}^{\\infty}(2x)^n/n!\\). Hệ số của \\(x^4\\) là \\(2^4/4!=16/24=2/3\\).",
-    "quick": "Hệ số xⁿ của e^{ax} là aⁿ/n!.",
-    "casio": "CASIO có thể tính 16/24=2/3; phần nhận dạng hệ số làm bằng công thức.",
-    "difficulty": 2,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 37,
-    "type": "power_series_expansion",
-    "question": "Khai triển Maclaurin của \\(\\ln(1-x)\\) đến bậc ba là",
-    "matrix": null,
-    "options": [
-      "\\(-x-\\dfrac{x^2}{2}-\\dfrac{x^3}{3}+O(x^4)\\)",
-      "\\(x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}+O(x^4)\\)",
-      "\\(-x+\\dfrac{x^2}{2}-\\dfrac{x^3}{3}+O(x^4)\\)",
-      "\\(1-x-\\dfrac{x^2}{2}-\\dfrac{x^3}{3}+O(x^4)\\)"
-    ],
-    "correct": "\\(-x-\\dfrac{x^2}{2}-\\dfrac{x^3}{3}+O(x^4)\\)",
-    "solution": "Dùng \\(\\ln(1-t)=-\\sum_{n=1}^{\\infty}t^n/n\\). Với \\(t=x\\), lấy ba số hạng đầu.",
-    "quick": "Nhớ: \\(-\\ln(1-x)=x+x^2/2+x^3/3+\\cdots\\).",
-    "casio": "Thử x nhỏ như 0.1 để so sánh giá trị xấp xỉ với ln(0.9).",
-    "difficulty": 1,
-    "topic": "Chuỗi lũy thừa"
-  },
-  {
-    "id": 38,
+    "id": 24,
     "type": "power_series_sum",
     "question": "Tính \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n}{2^n}\\).",
     "matrix": null,
@@ -684,7 +432,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 39,
+    "id": 25,
     "type": "power_series_sum",
     "question": "Tính \\(\\displaystyle\\sum_{n=2}^{\\infty}\\dfrac{n(n-1)}{2^n}\\).",
     "matrix": null,
@@ -702,7 +450,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 40,
+    "id": 26,
     "type": "power_series_radius",
     "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{n+1}{5^n}(x-1)^n\\) là",
     "matrix": null,
@@ -720,7 +468,7 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 41,
+    "id": 27,
     "type": "power_series_parameter",
     "question": "Cho \\(a\\ne0\\). Chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{a^n x^n}{n}\\) có bán kính hội tụ bằng 2. Khi đó",
     "matrix": null,
@@ -738,39 +486,363 @@
     "topic": "Chuỗi lũy thừa"
   },
   {
-    "id": 42,
-    "type": "maclaurin",
-    "question": "Khai triển Maclaurin của \\(f(x)=e^x\\) đến bậc 3 là?",
+    "id": 28,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{n+2}{6^n}(x+2)^n\\) là",
     "matrix": null,
     "options": [
-      "\\(1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\ldots\\)",
-      "\\(1+x+x^2+x^3+\\ldots\\)",
-      "\\(x+\\dfrac{x^2}{2}+\\dfrac{x^3}{3}+\\ldots\\)",
-      "\\(\\sum_{n=0}^\\infty(-1)^n\\dfrac{x^n}{n!}\\)"
+      "\\(6\\)",
+      "\\(\\dfrac16\\)",
+      "\\(2\\)",
+      "\\(+\\infty\\)"
     ],
-    "correct": "\\(1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\ldots\\)",
-    "solution": "\\(e^x=\\sum_{n=0}^{\\infty}\\dfrac{x^n}{n!}=1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\dfrac{x^4}{4!}+\\ldots\\). Chuỗi hội tụ với mọi \\(x\\in\\mathbb{R}\\).",
-    "quick": "\\(e^x=1+x+x^2/2!+x^3/3!+\\ldots\\).",
-    "casio": "CASIO: Với x nhỏ, so sánh e^x với 1+x+x²/2!+x³/3! để kiểm tra xấp xỉ.",
+    "correct": "\\(6\\)",
+    "solution": "Với \\(a_n=(n+2)/6^n\\), ta có \\(\\sqrt[n]{n+2}\\to1\\), nên \\(\\limsup\\sqrt[n]{|a_n|}=1/6\\). Do đó \\(R=6\\).",
+    "quick": "Phần đa thức theo \\(n\\) không ảnh hưởng; \\(6^n\\) quyết định bán kính.",
+    "casio": "CASIO: tính \\(6/(n+3)\\cdot(n+2)\\) theo công thức tỉ số hoặc dùng căn bậc \\(n\\) tại \\(n\\) lớn.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 29,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{3^n}{n^2+1}(x-4)^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac13\\)",
+      "\\(3\\)",
+      "\\(1\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(\\dfrac13\\)",
+    "solution": "Vì \\(\\sqrt[n]{n^2+1}\\to1\\), nên \\(\\limsup\\sqrt[n]{3^n/(n^2+1)}=3\\). Do đó \\(R=1/3\\).",
+    "quick": "Hệ số mũ \\(3^n\\) quyết định \\(R=1/3\\).",
+    "casio": "CASIO: tính \\(\\sqrt[n]{3^n/(n^2+1)}\\) tại \\(n\\) lớn; kết quả gần 3.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 30,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{n!}{(2n)!}(x-1)^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(+\\infty\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(+\\infty\\)",
+    "solution": "Đặt \\(a_n=n!/(2n)!\\). Khi đó\n\\[\\left|\\frac{a_n}{a_{n+1}}\\right|=\\frac{(2n+2)(2n+1)}{n+1}=2(2n+1)\\to+\\infty.\\]\nVì vậy \\(R=+\\infty\\).",
+    "quick": "Tính \\(a_n/a_{n+1}\\); giới hạn vô cực nên bán kính vô cực.",
+    "casio": "CASIO: thay \\(n\\) lớn vào \\(2(2n+1)\\), giá trị tăng không bị chặn.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 31,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{(2n)!}{(n!)^2}(x+1)^n\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac14\\)",
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(\\dfrac14\\)",
+    "solution": "Với \\(a_n=(2n)!/(n!)^2\\),\n\\[\\frac{a_n}{a_{n+1}}=\\frac{(n+1)^2}{(2n+2)(2n+1)}=\\frac{n+1}{2(2n+1)}\\to\\frac14.\\]\nDo đó \\(R=1/4\\).",
+    "quick": "Rút gọn giai thừa trong \\(a_n/a_{n+1}\\).",
+    "casio": "CASIO: tính \\((n+1)/(2(2n+1))\\) tại \\(n\\) lớn; kết quả gần 0,25.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 32,
+    "type": "power_series_radius",
+    "question": "Bán kính hội tụ theo biến \\(x\\) của chuỗi \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{x^{2n}}{5^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\sqrt5\\)",
+      "\\(5\\)",
+      "\\(\\dfrac15\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(\\sqrt5\\)",
+    "solution": "Đây là chuỗi hình học với công bội \\(q=x^2/5\\). Chuỗi hội tụ khi \\(|x^2/5|\\lt1\\), tức \\(|x|\\lt\\sqrt5\\). Vì vậy bán kính là \\(R=\\sqrt5\\).",
+    "quick": "Chuỗi chỉ có lũy thừa chẵn: xét công bội \\(x^2/5\\).",
+    "casio": "CASIO: kiểm tra tại các giá trị \\(|x|\\) nhỏ hơn và lớn hơn \\(\\sqrt5\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 33,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n3^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([-1,5)\\)",
+      "\\((-1,5)\\)",
+      "\\([-1,5]\\)",
+      "\\((-1,5]\\)"
+    ],
+    "correct": "\\([-1,5)\\)",
+    "solution": "Bán kính \\(R=3\\), tâm \\(2\\). Tại \\(x=5\\), chuỗi thành \\(\\sum1/n\\) nên phân kỳ. Tại \\(x=-1\\), chuỗi thành \\(\\sum(-1)^n/n\\) nên hội tụ theo Leibniz. Vậy miền là \\([-1,5)\\).",
+    "quick": "Tìm khoảng mở trước, rồi kiểm tra riêng hai đầu.",
+    "casio": "CASIO không kết luận được đầu mút; phải nhận dạng chuỗi điều hòa và Leibniz.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 34,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(x+3)^n}{n^2 2^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([-5,-1]\\)",
+      "\\((-5,-1)\\)",
+      "\\([-5,-1)\\)",
+      "\\((-5,-1]\\)"
+    ],
+    "correct": "\\([-5,-1]\\)",
+    "solution": "Tâm \\(-3\\), bán kính \\(R=2\\). Tại hai đầu \\(x=-5\\) và \\(x=-1\\), chuỗi trị tuyệt đối đều trở thành \\(\\sum1/n^2\\), nên đều hội tụ.",
+    "quick": "Hai đầu đều cho chuỗi \\(p\\) với \\(p=2\\).",
+    "casio": "CASIO: sau khi có \\(R=2\\), kiểm tra hai đầu bằng lý thuyết chuỗi \\(p\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 35,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n(x-1)^n}{4^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((-3,5)\\)",
+      "\\([-3,5]\\)",
+      "\\([-3,5)\\)",
+      "\\((-3,5]\\)"
+    ],
+    "correct": "\\((-3,5)\\)",
+    "solution": "Bán kính \\(R=4\\), tâm \\(1\\). Tại \\(x=5\\), số hạng là \\(n\\); tại \\(x=-3\\), số hạng là \\(n(-1)^n\\). Cả hai đều không tiến về 0 nên hai đầu đều bị loại.",
+    "quick": "Đầu mút: kiểm tra điều kiện cần \\(u_n\\to0\\) trước.",
+    "casio": "CASIO: thay hai đầu vào số hạng tổng quát; độ lớn bằng \\(n\\), không tiến về 0.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 36,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(x-4)^n}{\\sqrt n\\,2^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([2,6)\\)",
+      "\\((2,6)\\)",
+      "\\([2,6]\\)",
+      "\\((2,6]\\)"
+    ],
+    "correct": "\\([2,6)\\)",
+    "solution": "Tâm \\(4\\), bán kính \\(R=2\\). Tại \\(x=6\\), chuỗi là \\(\\sum1/\\sqrt n\\), phân kỳ. Tại \\(x=2\\), chuỗi là \\(\\sum(-1)^n/\\sqrt n\\), hội tụ theo Leibniz. Vậy miền là \\([2,6)\\).",
+    "quick": "Biên trái Leibniz, biên phải là chuỗi \\(p\\) với \\(p=1/2\\).",
+    "casio": "CASIO không thay thế việc kiểm tra đầu mút bằng Leibniz và chuỗi \\(p\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 37,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n(x+1)^n}{n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((-2,0]\\)",
+      "\\([-2,0)\\)",
+      "\\((-2,0)\\)",
+      "\\([-2,0]\\)"
+    ],
+    "correct": "\\((-2,0]\\)",
+    "solution": "Tâm \\(-1\\), bán kính \\(R=1\\). Tại \\(x=0\\), chuỗi thành \\(\\sum(-1)^n/n\\), hội tụ. Tại \\(x=-2\\), hai dấu âm triệt tiêu và được \\(\\sum1/n\\), phân kỳ.",
+    "quick": "Chú ý dấu \\((-1)^n\\) có thể đổi tính chất hai đầu.",
+    "casio": "CASIO: thay từng đầu vào số hạng rồi nhận dạng chuỗi thu được.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 38,
+    "type": "power_series_radius",
+    "question": "Chuỗi \\(\\displaystyle\\sum_{n=0}^{\\infty}\\left(\\dfrac{2x+6}{5}\\right)^n\\) có tâm và bán kính hội tụ lần lượt là",
+    "matrix": null,
+    "options": [
+      "\\(x_0=-3,\\ R=\\dfrac52\\)",
+      "\\(x_0=3,\\ R=\\dfrac52\\)",
+      "\\(x_0=-3,\\ R=5\\)",
+      "\\(x_0=-6,\\ R=\\dfrac52\\)"
+    ],
+    "correct": "\\(x_0=-3,\\ R=\\dfrac52\\)",
+    "solution": "Ta có \\(2x+6=2(x+3)\\). Chuỗi hình học hội tụ khi \\(|2(x+3)/5|\\lt1\\), tức \\(|x+3|\\lt5/2\\).",
+    "quick": "Đưa biểu thức về dạng \\(c(x-x_0)\\).",
+    "casio": "CASIO: giải bất phương trình \\(|2(x+3)/5|\\lt1\\) bằng tay.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 39,
+    "type": "power_series_parameter",
+    "question": "Cho \\(a\\ne0\\). Chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{a^n(x-2)^n}{n^2}\\) có bán kính hội tụ bằng 4. Khi đó",
+    "matrix": null,
+    "options": [
+      "\\(|a|=\\dfrac14\\)",
+      "\\(|a|=4\\)",
+      "\\(a=\\dfrac14\\) duy nhất",
+      "\\(a=4\\) duy nhất"
+    ],
+    "correct": "\\(|a|=\\dfrac14\\)",
+    "solution": "Ta có \\(\\limsup\\sqrt[n]{|a^n/n^2|}=|a|\\), nên \\(R=1/|a|\\). Điều kiện \\(R=4\\) cho \\(|a|=1/4\\).",
+    "quick": "Với hệ số \\(a^n/n^p\\), bán kính là \\(1/|a|\\).",
+    "casio": "CASIO không giải ký hiệu; dùng trực tiếp công thức \\(R=1/|a|\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 40,
+    "type": "power_series_radius_short_answer_style",
+    "question": "Biết chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{2^n(x-1)^n}{3^n(n+1)}\\) có bán kính hội tụ \\(R=\\dfrac ab\\) tối giản. Giá trị \\(2a+3b\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(12\\)",
+      "\\(8\\)",
+      "\\(10\\)",
+      "\\(15\\)"
+    ],
+    "correct": "\\(12\\)",
+    "solution": "Hệ số là \\(a_n=(2/3)^n/(n+1)\\). Vì \\(\\sqrt[n]{n+1}\\to1\\), ta có \\(\\limsup\\sqrt[n]{|a_n|}=2/3\\), nên \\(R=3/2\\). Do đó \\(a=3,b=2\\), suy ra \\(2a+3b=6+6=12\\).",
+    "quick": "Phần \\(1/(n+1)\\) không ảnh hưởng bán kính.",
+    "casio": "CASIO: tính căn bậc \\(n\\) của hệ số tại \\(n\\) lớn; giá trị gần \\(2/3\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 41,
+    "type": "power_series_domain",
+    "question": "Miền hội tụ của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\dfrac{(n+1)(x+5)^n}{n!}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((-\\infty,+\\infty)\\)",
+      "\\((-6,-4)\\)",
+      "\\{ -5 \\}",
+      "\\([-6,-4]\\)"
+    ],
+    "correct": "\\((-\\infty,+\\infty)\\)",
+    "solution": "Với \\(a_n=(n+1)/n!\\),\n\\[\\left|\\frac{a_n}{a_{n+1}}\\right|=\\frac{(n+1)/n!}{(n+2)/(n+1)!}=\\frac{(n+1)^2}{n+2}\\to+\\infty.\\]\nDo đó \\(R=+\\infty\\), chuỗi hội tụ với mọi \\(x\\in\\mathbb R\\).",
+    "quick": "Có giai thừa ở mẫu nên bán kính thường là vô cực; vẫn cần tính tỉ số để khẳng định.",
+    "casio": "CASIO: thay \\(n\\) lớn vào \\((n+1)^2/(n+2)\\); giá trị tăng không bị chặn.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 42,
+    "type": "power_series_sum",
+    "question": "Với \\(|x-1|\\lt2\\), tổng của chuỗi \\(\\displaystyle\\sum_{n=0}^{\\infty}\\left(\\dfrac{x-1}{2}\\right)^n\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{3-x}\\)",
+      "\\(\\dfrac{2}{x+1}\\)",
+      "\\(\\dfrac{1}{3-x}\\)",
+      "\\(\\dfrac{x-1}{3-x}\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3-x}\\)",
+    "solution": "Đây là chuỗi hình học với \\(q=(x-1)/2\\). Vì vậy\n\\[S=\\frac1{1-q}=\\frac1{1-(x-1)/2}=\\frac{2}{3-x}.\\]",
+    "quick": "Dùng \\(S=1/(1-q)\\).",
+    "casio": "CASIO: chọn một giá trị trong miền, tính tổng riêng và so với \\(2/(3-x)\\).",
     "difficulty": 2,
     "topic": "Chuỗi lũy thừa"
   },
   {
     "id": 43,
-    "type": "maclaurin",
-    "question": "Khai triển \\(f(x)=\\ln\\dfrac{3+x}{2-x}\\) thành chuỗi lũy thừa tại \\(x=0\\) là",
+    "type": "power_series_sum",
+    "question": "Với \\(|x+2|\\lt4\\), tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}3\\left(\\dfrac{x+2}{4}\\right)^n\\) bằng",
     "matrix": null,
     "options": [
-      "\\(\\displaystyle \\ln\\dfrac32+\\sum_{n=1}^{\\infty}\\left[\\dfrac{(-1)^{n+1}}{n3^n}+\\dfrac{1}{n2^n}\\right]x^n,\\ -2\\le x\\lt 2\\)",
-      "\\(\\displaystyle \\ln\\dfrac32+\\sum_{n=1}^{\\infty}\\left[\\dfrac{1}{n3^n}-\\dfrac{1}{n2^n}\\right]x^n,\\ |x|\\lt 2\\)",
-      "\\(\\displaystyle \\ln\\dfrac32+\\sum_{n=0}^{\\infty}\\dfrac{x^n}{6^n}\\)",
-      "\\(\\displaystyle \\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n+1}x^n}{n}\\)"
+      "\\(\\dfrac{3(x+2)}{2-x}\\)",
+      "\\(\\dfrac{3}{2-x}\\)",
+      "\\(\\dfrac{x+2}{2-x}\\)",
+      "\\(\\dfrac{12}{2-x}\\)"
     ],
-    "correct": "\\(\\displaystyle \\ln\\dfrac32+\\sum_{n=1}^{\\infty}\\left[\\dfrac{(-1)^{n+1}}{n3^n}+\\dfrac{1}{n2^n}\\right]x^n,\\ -2\\le x\\lt 2\\)",
-    "solution": "Ta viết \\(f(x)=\\ln\\dfrac32+\\ln(1+x/3)-\\ln(1-x/2)\\). Dùng \\(\\ln(1+t)=\\sum_{n\\ge1}(-1)^{n+1}t^n/n\\) và \\(-\\ln(1-t)=\\sum_{n\\ge1}t^n/n\\), thu được biểu thức đã cho. Giao bán kính hội tụ là \\(|x|\\lt 2\\); tại \\(x=-2\\) chuỗi hội tụ, còn \\(x=2\\) phân kỳ, nên miền hội tụ là \\([-2,2)\\).",
-    "quick": "Tách thành \\(\\ln(1+x/3)-\\ln(1-x/2)\\), rồi giao hai miền hội tụ và kiểm tra hai đầu mút.",
-    "casio": "CASIO: Thử một giá trị như x=0.5, cộng vài số hạng rồi so với ln((3.5)/(1.5)).",
+    "correct": "\\(\\dfrac{3(x+2)}{2-x}\\)",
+    "solution": "Đặt \\(q=(x+2)/4\\). Vì chuỗi bắt đầu từ \\(n=1\\),\n\\[S=3\\frac{q}{1-q}=3\\frac{(x+2)/4}{1-(x+2)/4}=\\frac{3(x+2)}{2-x}.\\]",
+    "quick": "Chuỗi từ \\(n=1\\): \\(\\sum q^n=q/(1-q)\\).",
+    "casio": "CASIO: kiểm tra tại một giá trị như \\(x=-1\\), khi đó \\(q=1/4\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 44,
+    "type": "power_series_sum",
+    "question": "Với \\(|x|\\lt3\\), tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}n\\left(\\dfrac{x}{3}\\right)^n\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3x}{(3-x)^2}\\)",
+      "\\(\\dfrac{x}{(3-x)^2}\\)",
+      "\\(\\dfrac{3}{3-x}\\)",
+      "\\(\\dfrac{x}{3-x}\\)"
+    ],
+    "correct": "\\(\\dfrac{3x}{(3-x)^2}\\)",
+    "solution": "Dùng \\(\\sum_{n=1}^{\\infty}nq^n=q/(1-q)^2\\) với \\(q=x/3\\):\n\\[S=\\frac{x/3}{(1-x/3)^2}=\\frac{3x}{(3-x)^2}.\\]",
+    "quick": "Nhớ công thức \\(\\sum nq^n=q/(1-q)^2\\).",
+    "casio": "CASIO: chọn \\(x=1\\), tính tổng riêng và so với \\(3/4\\).",
     "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 45,
+    "type": "power_series_sum",
+    "question": "Với \\(|x-1|\\lt2\\), tổng của chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}n(n-1)\\left(\\dfrac{x-1}{2}\\right)^n\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4(x-1)^2}{(3-x)^3}\\)",
+      "\\(\\dfrac{2(x-1)^2}{(3-x)^2}\\)",
+      "\\(\\dfrac{(x-1)^2}{(3-x)^3}\\)",
+      "\\(\\dfrac{4(x-1)}{(3-x)^3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4(x-1)^2}{(3-x)^3}\\)",
+    "solution": "Dùng \\(\\sum_{n=2}^{\\infty}n(n-1)q^n=2q^2/(1-q)^3\\), với \\(q=(x-1)/2\\). Khi đó\n\\[S=\\frac{2((x-1)/2)^2}{(1-(x-1)/2)^3}=\\frac{4(x-1)^2}{(3-x)^3}.\\]",
+    "quick": "Nhớ công thức sau khi đạo hàm chuỗi hình học hai lần.",
+    "casio": "CASIO: chọn một giá trị đơn giản trong miền để kiểm tra bằng tổng riêng.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 46,
+    "type": "power_series_radius",
+    "question": "Nếu chuỗi \\(\\sum_{n=0}^{\\infty}a_n(x-x_0)^n\\) có bán kính hội tụ \\(R=5\\), thì chuỗi đạo hàm \\(\\sum_{n=1}^{\\infty}n a_n(x-x_0)^{n-1}\\) có bán kính hội tụ bằng",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(4\\)",
+      "\\(1/5\\)",
+      "Không xác định được"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Đạo hàm từng số hạng của một chuỗi lũy thừa không làm thay đổi bán kính hội tụ. Vì chuỗi ban đầu có \\(R=5\\), chuỗi đạo hàm cũng có \\(R=5\\).",
+    "quick": "Chuỗi lũy thừa và chuỗi đạo hàm có cùng bán kính hội tụ.",
+    "casio": "CASIO không cần thiết; đây là tính chất lý thuyết.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 47,
+    "type": "power_series_domain",
+    "question": "Cho chuỗi lũy thừa tâm \\(x_0\\) có bán kính hội tụ \\(R\\). Khẳng định luôn đúng là",
+    "matrix": null,
+    "options": [
+      "Chuỗi hội tụ tuyệt đối khi \\(|x-x_0|\\lt R\\) và phân kỳ khi \\(|x-x_0|\\gt R\\)",
+      "Chuỗi luôn hội tụ tại cả hai đầu mút",
+      "Chuỗi luôn phân kỳ tại cả hai đầu mút",
+      "Chuỗi hội tụ khi \\(|x-x_0|\\gt R\\)"
+    ],
+    "correct": "Chuỗi hội tụ tuyệt đối khi \\(|x-x_0|\\lt R\\) và phân kỳ khi \\(|x-x_0|\\gt R\\)",
+    "solution": "Định lý cơ bản của chuỗi lũy thừa: bên trong bán kính thì hội tụ tuyệt đối, bên ngoài bán kính thì phân kỳ. Hai đầu mút \\(|x-x_0|=R\\) phải được kiểm tra riêng.",
+    "quick": "Trong: hội tụ tuyệt đối; ngoài: phân kỳ; biên: xét riêng.",
+    "casio": "CASIO không cần thiết; đây là câu lý thuyết.",
+    "difficulty": 1,
     "topic": "Chuỗi lũy thừa"
   }
 ]
