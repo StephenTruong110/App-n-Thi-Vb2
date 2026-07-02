@@ -119,7 +119,7 @@
       "Nếu f liên tục trên [a,b] thì f luôn khả vi trên (a,b)"
     ],
     "correct": "Nếu f liên tục trên [a,b] thì f nhận mọi giá trị nằm giữa f(a) và f(b)",
-    "solution": "Định lý giá trị trung gian: hàm liên tục trên [a,b] nhận mọi giá trị trung gian giữa f(a) và f(b). Hệ quả: nếu f(a)f(b)&lt;0 thì tồn tại ít nhất một nghiệm trong (a,b).",
+    "solution": "Định lý giá trị trung gian: nếu \\(f\\) liên tục trên \\([a,b]\\), thì \\(f\\) nhận mọi giá trị nằm giữa \\(f(a)\\) và \\(f(b)\\). Hệ quả: nếu \\(f(a)f(b)\\lt 0\\), thì tồn tại ít nhất một \\(c\\in(a,b)\\) sao cho \\(f(c)=0\\).",
     "quick": "Liên tục trên đoạn → không bỏ qua các giá trị nằm giữa hai giá trị đầu mút.",
     "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
     "difficulty": 1,
@@ -551,8 +551,8 @@
       "Liên tục"
     ],
     "correct": "Loại 2",
-    "solution": "\\(\\lim_{x\\to0^+}e^{1/x}=+\\infty\\), \\(\\lim_{x\\to0^-}e^{1/x}=0\\).\n\nÍt nhất một giới hạn một phía bằng \\(\\pm\\infty\\) → gián đoạn loại 2 (vô cực).\n\n*(Phân biệt: Loại 1 = hai giới hạn hữu hạn nhưng khác nhau. Loại 2 = ít nhất một = ±∞)*",
-    "quick": "lim 0+ = +∞ (vô cực) → Loại 2. Loại 1 chỉ khi CẢ HAI phía hữu hạn nhưng ≠ nhau.",
+    "solution": "\\(\\lim_{x\\to0^+}e^{1/x}=+\\infty\\), còn \\(\\lim_{x\\to0^-}e^{1/x}=0\\). Vì ít nhất một giới hạn một phía không hữu hạn, hàm gián đoạn loại 2 tại \\(x=0\\). Gián đoạn loại 1 có hai giới hạn một phía hữu hạn nhưng khác nhau.",
+    "quick": "\\(\\lim_{x\\to0^+}e^{1/x}=+\\infty\\), nên hàm gián đoạn loại 2 tại \\(x=0\\).",
     "casio": "CASIO: x=-0.001 → e^(-1000) ≈ 0; x=0.001 → e^(1000) cực lớn. Hai phía rất khác nhau.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"

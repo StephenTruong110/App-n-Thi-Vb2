@@ -163,21 +163,21 @@
   },
   {
     "id": 10,
-    "type": "repeated_eigenvalue",
-    "question": "Ma trận \\(A=\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}\\) có",
+    "type": "eigenvalue_multiplicity",
+    "question": "Cho \\(A=\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}\\). Với trị riêng \\(\\lambda=2\\), bội đại số và bội hình học lần lượt là",
     "matrix": null,
     "options": [
-      "Một trị riêng phân biệt là 2",
-      "Hai trị riêng phân biệt 1 và 2",
-      "Một trị riêng là 1",
-      "Không có trị riêng thực"
+      "2 và 1",
+      "1 và 2",
+      "2 và 2",
+      "1 và 1"
     ],
-    "correct": "Một trị riêng phân biệt là 2",
-    "solution": "Ma trận tam giác có hai trị riêng kể cả bội đều bằng 2; tập trị riêng phân biệt chỉ có \\(\\{2\\}\\).",
-    "quick": "Đọc đường chéo, chú ý 'phân biệt'.",
-    "casio": "CASIO không cần thiết; dùng trực tiếp đường chéo, vết hoặc định thức như trong lời giải.",
-    "difficulty": 2,
-    "topic": "Trị riêng"
+    "correct": "2 và 1",
+    "solution": "Ta có \\(p_A(\\lambda)=\\det(\\lambda I-A)=(\\lambda-2)^2\\), nên \\(\\lambda=2\\) có bội đại số bằng 2. Mặt khác, \\(A-2I=\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}\\), nên \\((A-2I)v=0\\) cho \\(y=0\\), còn \\(x\\) tự do. Vì vậy \\(\\dim E_2=1\\), tức bội hình học bằng 1.",
+    "quick": "Bội đại số đọc từ đa thức đặc trưng; bội hình học là \\(\\dim\\ker(A-\\lambda I)\\).",
+    "casio": "CASIO không cho bội hình học trực tiếp. Lập đa thức đặc trưng để tìm bội đại số, rồi giải hệ \\((A-\\lambda I)v=0\\) để tìm số chiều không gian riêng.",
+    "difficulty": 3,
+    "topic": "Trị riêng & véc tơ riêng"
   },
   {
     "id": 11,
@@ -314,7 +314,7 @@
       "\\(-1\\) và \\(5\\)",
       "\\(1\\) và \\(-5\\)",
       "\\(2\\) và \\(-1\\)",
-      "\\(-5\\) và \\(1\\)"
+      "\\(4\\) và \\(2\\)"
     ],
     "correct": "\\(-1\\) và \\(5\\)",
     "solution": "Nếu \\(p(t)=t^2-3t+1\\) thì trị riêng của \\(p(A)\\) là \\(p(2)=-1\\) và \\(p(-1)=5\\).",
@@ -469,21 +469,21 @@
   },
   {
     "id": 27,
-    "type": "eigenvalue_sum_squares",
-    "question": "Ma trận \\(A=\\operatorname{diag}(1,3,1)\\) có tổng bình phương các trị riêng, kể cả bội, bằng",
+    "type": "power_eigenvalues",
+    "question": "Ma trận \\(A\\) có các trị riêng \\(-2,1,3\\). Các trị riêng của \\(A^3\\) là",
     "matrix": null,
     "options": [
-      "\\(11\\)",
-      "\\(14\\)",
-      "\\(10\\)",
-      "\\(9\\)"
+      "\\(-8,1,27\\)",
+      "\\(8,1,27\\)",
+      "\\(-6,1,9\\)",
+      "\\(-2,1,3\\)"
     ],
-    "correct": "\\(11\\)",
-    "solution": "Các trị riêng là \\(1,3,1\\). Do đó tổng bình phương là \\(1^2+3^2+1^2=11\\).",
-    "quick": "Ma trận đường chéo: đọc trị riêng trên đường chéo.",
-    "casio": "CASIO không cần thiết; dùng trực tiếp đường chéo, vết hoặc định thức như trong lời giải.",
+    "correct": "\\(-8,1,27\\)",
+    "solution": "Nếu \\(Av=\\lambda v\\) thì \\(A^3v=\\lambda^3v\\). Do đó các trị riêng của \\(A^3\\) là \\((-2)^3=-8\\), \\(1^3=1\\) và \\(3^3=27\\).",
+    "quick": "Trị riêng của \\(A^k\\) là \\(\\lambda^k\\).",
+    "casio": "CASIO không cần thiết; nâng từng trị riêng của \\(A\\) lên lũy thừa 3.",
     "difficulty": 2,
-    "topic": "Trị riêng"
+    "topic": "Ứng dụng trị riêng"
   },
   {
     "id": 28,
@@ -504,112 +504,112 @@
     "topic": "Trị riêng & véc tơ riêng"
   },
   {
-    "type": "eigenvalue_diagonal",
-    "question": "Giá trị riêng của \\(A=\\begin{pmatrix}-2&0\\\\0&7\\end{pmatrix}\\) là",
+    "id": 29,
+    "type": "eigenspace_basis",
+    "question": "Cho \\(A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}\\). Một cơ sở của không gian riêng \\(E_1=\\ker(A-I)\\) là",
     "matrix": null,
     "options": [
-      "-2 và 7",
-      "2 và -7",
-      "0 và 0",
-      "-14"
+      "\\(\\{(1;-1)^T\\}\\)",
+      "\\(\\{(1;1)^T\\}\\)",
+      "\\(\\{(1;0)^T\\}\\)",
+      "\\(\\{(0;1)^T\\}\\)"
     ],
-    "correct": "-2 và 7",
-    "solution": "Ma trận đường chéo có trị riêng là các phần tử trên đường chéo: \\(\\lambda_1=-2\\), \\(\\lambda_2=7\\).",
-    "quick": "Đường chéo → đọc thẳng.",
-    "casio": "CASIO không cần thiết; dùng trực tiếp đường chéo, vết hoặc định thức như trong lời giải.",
-    "difficulty": 1,
-    "topic": "Trị riêng",
-    "id": 29
-  },
-  {
-    "type": "eigenvalue_diagonal",
-    "question": "Giá trị riêng của \\(A=\\begin{pmatrix}0&0&0\\\\0&4&0\\\\0&0&-1\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "0, 4 và -1",
-      "0, 0 và 0",
-      "4 và -1",
-      "1 và -4"
-    ],
-    "correct": "0, 4 và -1",
-    "solution": "Ma trận đường chéo cấp 3: trị riêng là \\(0, 4, -1\\).",
-    "quick": "Đường chéo → đọc thẳng.",
-    "casio": "CASIO không cần thiết; dùng trực tiếp đường chéo, vết hoặc định thức như trong lời giải.",
-    "difficulty": 1,
-    "topic": "Trị riêng",
-    "id": 30
-  },
-  {
-    "type": "eigenvalue_triangular",
-    "question": "Các giá trị riêng của \\(A=\\begin{pmatrix}5&3&-1\\\\0&2&7\\\\0&0&-4\\end{pmatrix}\\) là",
-    "matrix": null,
-    "options": [
-      "5, 2 và -4",
-      "3, 7 và 0",
-      "5, 3 và -1",
-      "2, 4 và -5"
-    ],
-    "correct": "5, 2 và -4",
-    "solution": "Ma trận tam giác trên: trị riêng là các phần tử đường chéo \\(5, 2, -4\\).",
-    "quick": "Tam giác → đường chéo.",
-    "casio": "CASIO không cần thiết; dùng trực tiếp đường chéo, vết hoặc định thức như trong lời giải.",
-    "difficulty": 1,
-    "topic": "Trị riêng",
-    "id": 31
-  },
-  {
-    "type": "eigenvalue_sum_squares",
-    "question": "Cho \\(A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}\\). Tổng bình phương các trị riêng của \\(A\\) bằng",
-    "matrix": null,
-    "options": [
-      "10",
-      "8",
-      "5",
-      "9"
-    ],
-    "correct": "10",
-    "solution": "Trị riêng: \\(\\lambda^2-4\\lambda+3=0\\Rightarrow\\lambda_1=1,\\lambda_2=3\\). Tổng bình phương: \\(1^2+3^2=10\\).",
-    "quick": "Tìm λ, bình phương rồi cộng. Hoặc dùng: \\(\\lambda_1^2+\\lambda_2^2=(\\lambda_1+\\lambda_2)^2-2\\lambda_1\\lambda_2=16-6=10\\).",
-    "casio": "CASIO fx-580VNX: lập phương trình đặc trưng bậc hai, rồi vào MENU → Equation/Func → Polynomial → bậc 2 để tìm nghiệm.",
-    "difficulty": 2,
-    "topic": "Trị riêng",
-    "id": 32
-  },
-  {
-    "type": "eigenvalue_sum_squares",
-    "question": "Cho \\(A=\\begin{pmatrix}3&1\\\\0&5\\end{pmatrix}\\). Tổng bình phương các trị riêng của \\(A\\) bằng",
-    "matrix": null,
-    "options": [
-      "34",
-      "64",
-      "15",
-      "28"
-    ],
-    "correct": "34",
-    "solution": "Tam giác trên: \\(\\lambda_1=3,\\lambda_2=5\\). Tổng bình phương: \\(9+25=34\\).",
-    "quick": "Đọc đường chéo, bình phương cộng lại.",
-    "casio": "CASIO không cần thiết; dùng trực tiếp đường chéo, vết hoặc định thức như trong lời giải.",
-    "difficulty": 2,
-    "topic": "Trị riêng",
-    "id": 33
-  },
-  {
-    "type": "eigenvalue_sum_squares",
-    "question": "Ma trận \\(A\\) cấp 3 có \\(\\operatorname{tr}(A)=6\\) và tổng tích hai trị riêng (lấy từng đôi) bằng 11. Tổng bình phương ba trị riêng của \\(A\\) bằng",
-    "matrix": null,
-    "options": [
-      "14",
-      "36",
-      "22",
-      "25"
-    ],
-    "correct": "14",
-    "solution": "\\(\\sum\\lambda_i^2=(\\sum\\lambda_i)^2-2\\sum_{i\\ltj}\\lambda_i\\lambda_j=36-22=14\\).",
-    "quick": "Công thức: \\(\\sum\\lambda_i^2=\\operatorname{tr}(A)^2-2\\cdot(\\text{tổng tích đôi})\\).",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
+    "correct": "\\(\\{(1;-1)^T\\}\\)",
+    "solution": "\\(A-I=\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}\\). Hệ \\((A-I)v=0\\) cho \\(x+y=0\\), tức \\(v=t(1;-1)^T\\). Vì vậy một cơ sở của \\(E_1\\) là \\(\\{(1;-1)^T\\}\\).",
+    "quick": "Giải \\((A-\\lambda I)v=0\\), rồi lấy một hệ sinh độc lập của nghiệm.",
+    "casio": "fx-580VNX không tìm không gian riêng trực tiếp; lập \\(A-I\\) và giải hệ thuần nhất bằng biến đổi hàng.",
     "difficulty": 3,
-    "topic": "Trị riêng",
-    "id": 34
+    "topic": "Không gian riêng"
+  },
+  {
+    "id": 30,
+    "type": "eigenspace_basis_3x3",
+    "question": "Cho \\(A=\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}\\). Một cơ sở của không gian riêng ứng với \\(\\lambda=1\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\{(1;-1;0)^T,(1;0;-1)^T\\}\\)",
+      "\\(\\{(1;1;1)^T\\}\\)",
+      "\\(\\{(1;-1;0)^T\\}\\)",
+      "\\(\\{(1;1;0)^T,(0;1;1)^T\\}\\)"
+    ],
+    "correct": "\\(\\{(1;-1;0)^T,(1;0;-1)^T\\}\\)",
+    "solution": "Ta có \\(A-I=2\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}\\). Vì vậy \\((A-I)v=0\\) tương đương \\(x+y+z=0\\). Không gian nghiệm có số chiều 2 và được sinh bởi \\((1;-1;0)^T\\), \\((1;0;-1)^T\\).",
+    "quick": "Với \\(\\lambda=1\\), giải \\(x+y+z=0\\) và chọn hai nghiệm độc lập.",
+    "casio": "CASIO không tìm cơ sở không gian riêng trực tiếp; lập \\(A-I\\), khử Gauss rồi chọn các véc tơ nghiệm độc lập.",
+    "difficulty": 3,
+    "topic": "Không gian riêng"
+  },
+  {
+    "id": 31,
+    "type": "zero_eigenvalue_invertibility",
+    "question": "Cho \\(A\\) là ma trận vuông và \\(0\\) là một trị riêng của \\(A\\). Kết luận nào đúng?",
+    "matrix": null,
+    "options": [
+      "\\(A\\) không khả nghịch và \\(\\det(A)=0\\)",
+      "\\(A\\) khả nghịch và \\(\\det(A)\\ne0\\)",
+      "\\(\\operatorname{tr}(A)=0\\)",
+      "Mọi trị riêng của \\(A\\) đều bằng 0"
+    ],
+    "correct": "\\(A\\) không khả nghịch và \\(\\det(A)=0\\)",
+    "solution": "Vì \\(0\\) là trị riêng nên tồn tại \\(v\\ne0\\) sao cho \\(Av=0\\). Do đó hệ thuần nhất \\(Av=0\\) có nghiệm không tầm thường, suy ra \\(A\\) không khả nghịch. Tương đương, tích các trị riêng bằng \\(\\det(A)\\) có một thừa số bằng 0, nên \\(\\det(A)=0\\).",
+    "quick": "\\(0\\) là trị riêng \\(\\Leftrightarrow\\det(A)=0\\Leftrightarrow A\\) không khả nghịch.",
+    "casio": "CASIO không cần thiết; dùng quan hệ giữa trị riêng 0, định thức và tính khả nghịch.",
+    "difficulty": 2,
+    "topic": "Trị riêng & khả nghịch"
+  },
+  {
+    "id": 32,
+    "type": "linked_eigenvalue_determinant",
+    "question": "Cho \\(B=\\begin{pmatrix}5&2&2\\\\2&5&2\\\\2&2&5\\end{pmatrix}\\). Định thức của \\(B\\) bằng",
+    "matrix": null,
+    "options": [
+      "81",
+      "54",
+      "90",
+      "27"
+    ],
+    "correct": "81",
+    "solution": "Ma trận có đường chéo \\(a=5\\), ngoài đường chéo \\(b=2\\). Các trị riêng là \\(a+2b=9\\) và \\(a-b=3\\) với bội 2. Vì vậy \\(\\det(B)=9\\cdot3\\cdot3=81\\).",
+    "quick": "Dạng đường chéo–ngoài chéo cấp 3: trị riêng \\(a+2b\\) và \\(a-b\\) bội 2; định thức là tích các trị riêng.",
+    "casio": "Có thể kiểm tra bằng MENU → Matrix → nhập MatB → det(MatB). Cách lý thuyết nhanh hơn là dùng tích các trị riêng.",
+    "difficulty": 3,
+    "topic": "Trị riêng & định thức"
+  },
+  {
+    "id": 33,
+    "type": "linked_eigenvector",
+    "question": "Cho \\(B=\\begin{pmatrix}5&2&2\\\\2&5&2\\\\2&2&5\\end{pmatrix}\\). Véc tơ \\(v=(1;1;1)^T\\) là véc tơ riêng ứng với trị riêng nào?",
+    "matrix": null,
+    "options": [
+      "\\(\\lambda=9\\)",
+      "\\(\\lambda=3\\)",
+      "\\(\\lambda=5\\)",
+      "\\(\\lambda=2\\)"
+    ],
+    "correct": "\\(\\lambda=9\\)",
+    "solution": "\\(Bv=(9;9;9)^T=9v\\), nên \\(v=(1;1;1)^T\\) là véc tơ riêng ứng với \\(\\lambda=9\\).",
+    "quick": "Nhân trực tiếp \\(B(1;1;1)^T\\); mỗi hàng có tổng bằng 9.",
+    "casio": "fx-580VNX không có lệnh véc tơ riêng trực tiếp; nhân ma trận \\(B\\) với véc tơ \\(v\\) rồi so sánh với \\(v\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng & véc tơ riêng"
+  },
+  {
+    "id": 34,
+    "type": "linked_eigenvalue_sum_squares",
+    "question": "Cho \\(B=\\begin{pmatrix}5&2&2\\\\2&5&2\\\\2&2&5\\end{pmatrix}\\). Gọi \\(X\\) là tập các trị riêng phân biệt của \\(B\\). Tổng bình phương các phần tử của \\(X\\) bằng",
+    "matrix": null,
+    "options": [
+      "90",
+      "99",
+      "81",
+      "18"
+    ],
+    "correct": "90",
+    "solution": "Các trị riêng phân biệt của \\(B\\) là \\(9\\) và \\(3\\). Do đó \\(\\sum_{\\lambda\\in X}\\lambda^2=9^2+3^2=81+9=90\\).",
+    "quick": "Phân biệt nghĩa là không tính lặp: \\(X=\\{9,3\\}\\).",
+    "casio": "CASIO không tìm trị riêng trực tiếp; nhận dạng ma trận đường chéo \\(a=5\\), ngoài chéo \\(b=2\\).",
+    "difficulty": 3,
+    "topic": "Trị riêng"
   },
   {
     "type": "det_from_eigenvalues",
@@ -712,7 +712,7 @@
       "Không thể xác định"
     ],
     "correct": "Không, vì có trị riêng lặp mà không đủ véc tơ riêng",
-    "solution": "Trị riêng: \\(\\lambda=1\\) (bội 2), \\(\\lambda=2\\) (bội 1). Với \\(\\lambda=1\\): \\(\\ker(A-I)\\) có số chiều 1 &lt; bội đại số 2. Không đủ véc tơ riêng → không chéo hóa được.",
+    "solution": "Trị riêng: \\(\\lambda=1\\) (bội 2), \\(\\lambda=2\\) (bội 1). Với \\(\\lambda=1\\): \\(\\ker(A-I)\\) có số chiều \\(1\\lt2\\), nhỏ hơn bội đại số 2. Không đủ véc tơ riêng → không chéo hóa được.",
     "quick": "Trị riêng lặp → kiểm tra số chiều không gian riêng.",
     "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
     "difficulty": 3,
