@@ -826,5 +826,437 @@
     "casio": "CASIO: tính 1-2+3-14=-12.",
     "difficulty": 3,
     "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 47,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=x^3+2x^2y-y^4\\). Tính \\(f_x(1,2)\\).",
+    "matrix": null,
+    "options": [
+      "11",
+      "3",
+      "7",
+      "14"
+    ],
+    "correct": "11",
+    "solution": "\\(f_x=3x^2+4xy\\). Tại \\((1,2)\\), \\(f_x=3+8=11\\).",
+    "quick": "Đạo hàm theo \\(x\\), coi \\(y\\) là hằng số.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 48,
+    "type": "second_total_differential",
+    "question": "Tìm vi phân toàn phần cấp hai của \\(f(x,y)=x^3+y^3\\).",
+    "matrix": null,
+    "options": [
+      "\\(d^2f=6x\\,dx^2+6y\\,dy^2\\)",
+      "\\(d^2f=6x\\,dx^2+12xy\\,dxdy+6y\\,dy^2\\)",
+      "\\(d^2f=3x^2dx^2+3y^2dy^2\\)",
+      "\\(d^2f=6dx^2+6dy^2\\)"
+    ],
+    "correct": "\\(d^2f=6x\\,dx^2+6y\\,dy^2\\)",
+    "solution": "Ta có \\(f_{xx}=6x\\), \\(f_{xy}=0\\), \\(f_{yy}=6y\\). Vậy \\(d^2f=f_{xx}dx^2+2f_{xy}dxdy+f_{yy}dy^2=6x\\,dx^2+6y\\,dy^2\\).",
+    "quick": "Tính các đạo hàm riêng cấp hai.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Vi phân toàn phần"
+  },
+  {
+    "id": 49,
+    "type": "stationary_point",
+    "question": "Tìm điểm dừng của \\(f(x,y)=x^2+xy+y^2-3x-3y\\).",
+    "matrix": null,
+    "options": [
+      "\\((1,1)\\)",
+      "\\((0,0)\\)",
+      "\\((3,3)\\)",
+      "\\((-1,-1)\\)"
+    ],
+    "correct": "\\((1,1)\\)",
+    "solution": "Giải hệ \\(2x+y-3=0\\), \\(x+2y-3=0\\) được \\(x=y=1\\).",
+    "quick": "Điểm dừng thỏa \\(f_x=f_y=0\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 50,
+    "type": "stationary_parameter",
+    "question": "Cho \\(f(x,y)=x^2-2xy+2y^2+mx\\). Tìm \\(m\\) để hàm số đạt cực trị tại \\((-2,-1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=4\\)",
+      "\\(m=-2\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "\\(f_x=2x-2y+m\\), \\(f_y=-2x+4y\\). Tại \\((-2,-1)\\), \\(f_y=0\\) và \\(f_x=m-2\\). Do đó cần \\(m=2\\).",
+    "quick": "Điểm cực trị trước hết phải là điểm dừng.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 51,
+    "type": "profit_maximum",
+    "question": "Tìm điểm cực đại của \\(\\pi(x,y)=-x^2-2y^2+2x+8y+50\\).",
+    "matrix": null,
+    "options": [
+      "\\((1,2)\\)",
+      "\\((1,4)\\)",
+      "\\((2,1)\\)",
+      "\\((2,4)\\)"
+    ],
+    "correct": "\\((1,2)\\)",
+    "solution": "\\(\\pi_x=-2x+2=0\\Rightarrow x=1\\). \\(\\pi_y=-4y+8=0\\Rightarrow y=2\\). Hessian âm xác định nên đây là điểm cực đại.",
+    "quick": "Giải hệ đạo hàm riêng bằng 0.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 52,
+    "type": "partial_from_common_data",
+    "question": "Cho \\(f(x,y)=x^3+y^3-12x-3y\\). Tính \\(f_x(1,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-9\\)",
+      "\\(-12\\)",
+      "0",
+      "9"
+    ],
+    "correct": "\\(-9\\)",
+    "solution": "\\(f_x=3x^2-12\\). Tại \\((1,2)\\), \\(f_x=3-12=-9\\).",
+    "quick": "Đạo hàm theo \\(x\\), phần theo \\(y\\) mất.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 53,
+    "type": "mixed_derivative",
+    "question": "Cho \\(f(x,y)=x^3+y^3-12x-3y\\). Tính \\(f_{xy}(1,2)\\).",
+    "matrix": null,
+    "options": [
+      "0",
+      "6",
+      "\\(-3\\)",
+      "12"
+    ],
+    "correct": "0",
+    "solution": "Vì \\(f_x=3x^2-12\\) không chứa \\(y\\), nên \\(f_{xy}=0\\).",
+    "quick": "Không có hạng tử chứa đồng thời \\(x,y\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 1,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 54,
+    "type": "critical_points_count",
+    "question": "Cho \\(f(x,y)=x^3+y^3-12x-3y\\). Số điểm cực trị của hàm số là",
+    "matrix": null,
+    "options": [
+      "2",
+      "4",
+      "1",
+      "0"
+    ],
+    "correct": "2",
+    "solution": "Điểm dừng thỏa \\(x=\\pm2\\), \\(y=\\pm1\\). Hessian có \\(f_{xx}=6x\\), \\(f_{yy}=6y\\). Chỉ \\((2,1)\\) là cực tiểu và \\((-2,-1)\\) là cực đại, nên có 2 điểm cực trị.",
+    "quick": "Có 4 điểm dừng nhưng chỉ 2 điểm là cực trị.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 55,
+    "type": "short_extrema",
+    "question": "Cho \\(f(x,y)=x^3+y^3-3x-12y\\). Hàm đạt cực tiểu tại \\(M(a,b)\\). Tính \\(a^2+b^2\\).",
+    "matrix": null,
+    "options": [
+      "5",
+      "2",
+      "10",
+      "13"
+    ],
+    "correct": "5",
+    "solution": "Giải \\(f_x=3x^2-3=0\\), \\(f_y=3y^2-12=0\\). Điểm cực tiểu là \\((1,2)\\), nên \\(a^2+b^2=1+4=5\\).",
+    "quick": "Hessian dương tại \\((1,2)\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 56,
+    "type": "partial_derivative_chain",
+    "question": "Tìm \\(f_x(x,y)\\) của \\(f(x,y)=\\sin(xy^2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(y^2\\cos(xy^2)\\)",
+      "\\(\\cos(xy^2)\\)",
+      "\\(x\\cos(xy^2)\\)",
+      "\\(2xy\\cos(xy^2)\\)"
+    ],
+    "correct": "\\(y^2\\cos(xy^2)\\)",
+    "solution": "Đạo hàm theo \\(x\\): \\(f_x=\\cos(xy^2)\\cdot y^2\\).",
+    "quick": "Coi \\(y\\) là hằng số.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 57,
+    "type": "partial_parameter_log",
+    "question": "Cho hàm số \\(f(x,y)=\\ln(x^2+my)\\). Tìm tham số \\(m\\) để đạo hàm riêng \\(f_y(2,1)=\\dfrac{1}{2}\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=-8\\)",
+      "\\(m=8\\)",
+      "\\(m=4\\)",
+      "\\(m=2\\)"
+    ],
+    "correct": "\\(m=4\\)",
+    "solution": "Ta có \\(f_y(x,y)=\\dfrac{m}{x^2+my}\\). Tại \\((2,1)\\), điều kiện \\(f_y(2,1)=\\dfrac{1}{2}\\) cho \\(\\dfrac{m}{4+m}=\\dfrac{1}{2}\\). Suy ra \\(2m=4+m\\), nên \\(m=4\\). Khi đó \\(x^2+my=4+4=8\\gt0\\), vì vậy hàm số xác định tại \\((2,1)\\).",
+    "quick": "\\(f_y=\\dfrac{m}{x^2+my}\\). Tại \\((2,1)\\): \\(\\dfrac{m}{4+m}=\\dfrac12\\Rightarrow m=4\\).",
+    "casio": "CASIO: Thay thử các đáp án vào \\(m/(4+m)\\). Với \\(m=4\\), được \\(4/(4+4)=1/2\\). Đồng thời \\(4+m=8\\gt0\\), nên \\(\\ln(x^2+my)\\) xác định tại \\((2,1)\\).",
+    "difficulty": 3,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 58,
+    "type": "total_differential_parameter",
+    "question": "Cho \\(f(x,y)=mx^2+4xy\\). Biết \\(df(1,1)=6dx+4dy\\). Tìm \\(m\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\)",
+      "\\(m=3\\)",
+      "\\(m=2\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=1\\)",
+    "solution": "\\(f_x=2mx+4y\\), nên \\(f_x(1,1)=2m+4=6\\), suy ra \\(m=1\\). Đồng thời \\(f_y=4x\\), \\(f_y(1,1)=4\\).",
+    "quick": "Hệ số của \\(dx\\) là \\(f_x\\), hệ số của \\(dy\\) là \\(f_y\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Vi phân toàn phần"
+  },
+  {
+    "id": 59,
+    "type": "second_differential_exp",
+    "question": "Tìm \\(d^2f\\) của \\(f(x,y)=e^{x+y}\\).",
+    "matrix": null,
+    "options": [
+      "\\(e^{x+y}(dx^2+2dxdy+dy^2)\\)",
+      "\\(e^{x+y}(dx^2+dy^2)\\)",
+      "\\(e^{x+y}dx^2+e^{x+y}dy^2\\)",
+      "\\(e^{x+y}dxdy\\)"
+    ],
+    "correct": "\\(e^{x+y}(dx^2+2dxdy+dy^2)\\)",
+    "solution": "Các đạo hàm riêng cấp hai \\(f_{xx}=f_{xy}=f_{yy}=e^{x+y}\\). Vậy \\(d^2f=e^{x+y}(dx^2+2dxdy+dy^2)\\).",
+    "quick": "Công thức \\(d^2f=f_{xx}dx^2+2f_{xy}dxdy+f_{yy}dy^2\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Vi phân toàn phần"
+  },
+  {
+    "id": 60,
+    "type": "stationary_count_cubic",
+    "question": "Hàm \\(f(x,y)=x^3+y^3-3xy\\) có bao nhiêu điểm dừng?",
+    "matrix": null,
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct": "2",
+    "solution": "\\(f_x=3x^2-3y=0\\Rightarrow y=x^2\\). \\(f_y=3y^2-3x=0\\Rightarrow x=y^2\\). Suy ra \\((x,y)=(0,0)\\) hoặc \\((1,1)\\), nên có 2 điểm dừng.",
+    "quick": "Giải hệ \\(y=x^2\\), \\(x=y^2\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 61,
+    "type": "hessian_delta_zero",
+    "question": "Khi xét cực trị tại điểm dừng \\(M\\), nếu \\(\\Delta=AC-B^2=0\\) thì kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Chưa thể kết luận, cần xét thêm",
+      "Chắc chắn cực đại",
+      "Chắc chắn cực tiểu",
+      "Chắc chắn không cực trị"
+    ],
+    "correct": "Chưa thể kết luận, cần xét thêm",
+    "solution": "Trong tiêu chuẩn đạo hàm cấp hai cho hàm hai biến, trường hợp \\(\\Delta=0\\) là trường hợp suy biến, chưa thể kết luận bằng tiêu chuẩn này.",
+    "quick": "Nhớ: \\(\\Delta=0\\) không kết luận.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 1,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 62,
+    "type": "three_variable_min",
+    "question": "Gọi \\(M(a,b,c)\\) là điểm cực tiểu của \\(f=x^2+y^2+z^2-xy-yz-2x\\). Tính \\(a+b+c\\).",
+    "matrix": null,
+    "options": [
+      "3",
+      "4",
+      "2",
+      "5"
+    ],
+    "correct": "3",
+    "solution": "Giải hệ \\(f_x=2x-y-2=0\\), \\(f_y=2y-x-z=0\\), \\(f_z=2z-y=0\\). Từ \\(y=2z\\) và \\(x=3z\\), thay vào \\(2x-y-2=0\\) được \\(4z=2\\), nên \\(z=1/2\\), \\(y=1\\), \\(x=3/2\\). Vậy \\(a+b+c=3\\).",
+    "quick": "Giải hệ đạo hàm riêng bằng 0.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 63,
+    "type": "partial_y_exp",
+    "question": "Tính đạo hàm riêng theo \\(y\\) của \\(f(x,y)=e^{x^2+3y}\\).",
+    "matrix": null,
+    "options": [
+      "\\(3e^{x^2+3y}\\)",
+      "\\(2xe^{x^2+3y}\\)",
+      "\\(e^{x^2+3y}\\)",
+      "\\((2x+3)e^{x^2+3y}\\)"
+    ],
+    "correct": "\\(3e^{x^2+3y}\\)",
+    "solution": "Đạo hàm theo \\(y\\): nhân với đạo hàm của \\(x^2+3y\\) theo \\(y\\), bằng 3.",
+    "quick": "Coi \\(x\\) là hằng số.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 1,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 64,
+    "type": "second_partial_cos",
+    "question": "Cho \\(f(x,y)=\\cos(x+2y)\\). Tính \\(f_{yy}(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-4\\cos(x+2y)\\)",
+      "\\(4\\cos(x+2y)\\)",
+      "\\(-2\\sin(x+2y)\\)",
+      "\\(-\\cos(x+2y)\\)"
+    ],
+    "correct": "\\(-4\\cos(x+2y)\\)",
+    "solution": "\\(f_y=-2\\sin(x+2y)\\), nên \\(f_{yy}=-4\\cos(x+2y)\\).",
+    "quick": "Đạo hàm theo \\(y\\) hai lần, mỗi lần nhân hệ số 2.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 65,
+    "type": "total_differential_arctan",
+    "question": "Tính vi phân toàn phần của \\(f(x,y)=\\arctan(x+y)\\) tại \\((0,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(df(0,0)=dx+dy\\)",
+      "\\(df(0,0)=dx-dy\\)",
+      "\\(df(0,0)=0\\)",
+      "\\(df(0,0)=2dx+2dy\\)"
+    ],
+    "correct": "\\(df(0,0)=dx+dy\\)",
+    "solution": "\\(f_x=f_y=\\dfrac{1}{1+(x+y)^2}\\). Tại \\((0,0)\\), cả hai đều bằng 1, nên \\(df=dx+dy\\).",
+    "quick": "Hệ số của \\(dx,dy\\) là \\(f_x,f_y\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Vi phân toàn phần"
+  },
+  {
+    "id": 66,
+    "type": "second_differential_parameter",
+    "question": "Cho \\(f(x,y)=mx^2y^2\\). Biết \\(d^2f(1,1)=4dx^2+16dxdy+4dy^2\\). Tìm \\(m\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=4\\)",
+      "\\(m=1\\)",
+      "\\(m=-2\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "\\(f_{xx}=2my^2\\), nên tại \\((1,1)\\) hệ số của \\(dx^2\\) là \\(2m=4\\). Do đó \\(m=2\\). Kiểm tra hệ số \\(dxdy\\): \\(2f_{xy}=2\\cdot4m=16\\), đúng.",
+    "quick": "So hệ số trong công thức \\(d^2f\\).",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Vi phân toàn phần"
+  },
+  {
+    "id": 67,
+    "type": "quadratic_form_min",
+    "question": "Cho \\(f(x,y)=x^2+mxy+y^2\\). Tìm \\(m\\) để hàm luôn đạt cực tiểu tự do tại điểm dừng \\((0,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-2\\lt m\\lt2\\)",
+      "\\(m\\gt0\\)",
+      "\\(m\\gt2\\) hoặc \\(m\\lt-2\\)",
+      "Với mọi \\(m\\)"
+    ],
+    "correct": "\\(-2\\lt m\\lt2\\)",
+    "solution": "Hessian là \\(\\begin{pmatrix}2&m\\\\m&2\\end{pmatrix}\\). Để dương xác định cần \\(2\\gt0\\) và \\(4-m^2\\gt0\\), tức \\(-2\\lt m\\lt2\\).",
+    "quick": "Dạng toàn phương dương xác định.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 68,
+    "type": "cobb_douglas_budget",
+    "question": "Tối đa hóa \\(Q(L,K)=LK\\) với ràng buộc ngân sách \\(2L+4K=80\\). Phương án tối ưu là",
+    "matrix": null,
+    "options": [
+      "\\((L,K)=(20,10)\\)",
+      "\\((10,15)\\)",
+      "\\((30,5)\\)",
+      "\\((15,12)\\)"
+    ],
+    "correct": "\\((L,K)=(20,10)\\)",
+    "solution": "Với \\(Q=LK\\), điều kiện tối ưu nội bộ cho \\(MP_L/w=MP_K/r\\): \\(K/2=L/4\\), nên \\(L=2K\\). Thay vào \\(2L+4K=80\\) được \\(K=10,L=20\\).",
+    "quick": "Với Cobb-Douglas \\(LK\\), chi tiêu tối ưu chia đều cho hai yếu tố.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 69,
+    "type": "max_two_variable_value",
+    "question": "Tìm giá trị cực đại của \\(f(x,y)=4x+6y-x^2-y^2\\).",
+    "matrix": null,
+    "options": [
+      "13",
+      "12",
+      "10",
+      "25"
+    ],
+    "correct": "13",
+    "solution": "Hoàn thành bình phương: \\(f=-(x-2)^2-(y-3)^2+13\\). Giá trị cực đại là 13.",
+    "quick": "Hoàn thành bình phương.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 70,
+    "type": "critical_difference",
+    "question": "Cho \\(f(x,y)=x^2+xy+y^2-3x-6y\\) đạt cực trị tại \\(M(a,b)\\). Tính \\(a-b\\).",
+    "matrix": null,
+    "options": [
+      "\\(-3\\)",
+      "3",
+      "0",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(-3\\)",
+    "solution": "Giải hệ \\(2x+y-3=0\\), \\(x+2y-6=0\\) được \\((a,b)=(0,3)\\). Do đó \\(a-b=-3\\).",
+    "quick": "Giải hệ đạo hàm riêng bằng 0.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
   }
 ]

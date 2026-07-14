@@ -790,5 +790,95 @@
     "difficulty": 3,
     "topic": "Phương trình ma trận",
     "id": 44
+  },
+  {
+    "id": 45,
+    "type": "matrix_linear_combination",
+    "question": "Cho \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}2&0\\\\1&-1\\end{pmatrix}\\). Tính \\(C=2A-B\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}0&4\\\\5&9\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0&4\\\\-1&9\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0&4\\\\5&7\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}-1&4\\\\2&6\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}0&4\\\\5&9\\end{pmatrix}\\)",
+    "solution": "\\(2A=\\begin{pmatrix}2&4\\\\6&8\\end{pmatrix}\\), nên \\(2A-B=\\begin{pmatrix}0&4\\\\5&9\\end{pmatrix}\\).",
+    "quick": "Nhân ma trận theo từng phần tử rồi trừ tương ứng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 1,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 46,
+    "type": "inverse_2x2",
+    "question": "Tìm ma trận nghịch đảo của \\(A=\\begin{pmatrix}2&5\\\\1&3\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}3&-5\\\\-1&2\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}2&-1\\\\-5&3\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}-2&5\\\\1&-3\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}3&5\\\\1&2\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}3&-5\\\\-1&2\\end{pmatrix}\\)",
+    "solution": "\\(\\det A=2\\cdot3-5\\cdot1=1\\). Do đó \\(A^{-1}=\\begin{pmatrix}3&-5\\\\-1&2\\end{pmatrix}\\).",
+    "quick": "Nghịch đảo 2x2: đổi chéo, đổi dấu hai phần tử ngoài chéo, chia cho det.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 47,
+    "type": "matrix_material_change",
+    "question": "Ma trận định mức \\(A=\\begin{pmatrix}4&2&1&4\\\\5&4&2&1\\\\6&5&3&2\\end{pmatrix}\\). Nếu tăng sản phẩm 1 thêm 2 đơn vị và giảm sản phẩm 4 đi 1 đơn vị, tổng vật liệu cần tăng thêm là",
+    "matrix": null,
+    "options": [
+      "23",
+      "15",
+      "30",
+      "7"
+    ],
+    "correct": "23",
+    "solution": "Vector thay đổi sản lượng là \\(\\Delta X=(2,0,0,-1)^T\\). Khi đó \\(A\\Delta X=(4,9,10)^T\\). Tổng tăng thêm là \\(4+9+10=23\\).",
+    "quick": "Lấy cột 1 nhân 2 rồi trừ cột 4.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận"
+  },
+  {
+    "id": 48,
+    "type": "matrix_diag_expression",
+    "question": "Cho \\(A=\\operatorname{diag}(1,2,3,4)\\). Tính \\(X=A^2-2I_4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\operatorname{diag}(-1,2,7,14)\\)",
+      "\\(\\operatorname{diag}(1,4,9,16)\\)",
+      "\\(\\operatorname{diag}(-1,0,1,2)\\)",
+      "\\(\\operatorname{diag}(1,2,3,4)\\)"
+    ],
+    "correct": "\\(\\operatorname{diag}(-1,2,7,14)\\)",
+    "solution": "\\(A^2=\\operatorname{diag}(1,4,9,16)\\). Trừ \\(2I_4\\) được \\(\\operatorname{diag}(-1,2,7,14)\\).",
+    "quick": "Với ma trận đường chéo, tính từng phần tử đường chéo.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 49,
+    "type": "production_k",
+    "question": "Ma trận định mức có hàng vật liệu 1 là \\((4,2,1,4)\\). Nếu sản phẩm 1,2,3 đều bằng \\(k\\), sản phẩm 4 bằng 10 và tổng vật liệu loại 1 là 110, tìm \\(k\\).",
+    "matrix": null,
+    "options": [
+      "10",
+      "15",
+      "12",
+      "8"
+    ],
+    "correct": "10",
+    "solution": "Vật liệu loại 1 cần dùng là \\(4k+2k+k+4\\cdot10=7k+40\\). Điều kiện \\(7k+40=110\\) cho \\(k=10\\).",
+    "quick": "Lấy hàng 1 nhân vector sản lượng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận"
   }
 ]

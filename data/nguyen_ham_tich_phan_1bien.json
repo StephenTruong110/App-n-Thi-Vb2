@@ -46,7 +46,7 @@
       "\\(x^{-1}+C\\)"
     ],
     "correct": "\\(\\ln x+C\\)",
-    "solution": "\\(\\int \\frac{1}{x} dx = \\ln|x| + C\\). Với x&gt;0 thì \\(\\ln x + C\\).",
+    "solution": "\\(\\int \\frac{1}{x} dx = \\ln|x| + C\\). Với x\\gt0 thì \\(\\ln x + C\\).",
     "quick": "Nguyên hàm của 1/x là ln|x|",
     "casio": "Đạo hàm của ln x = 1/x",
     "difficulty": 1,
@@ -200,7 +200,7 @@
   {
     "id": 12,
     "type": "indefinite_parts",
-    "question": "Tính \\(\\int x \\ln x \\, dx\\) (với x&gt;0).",
+    "question": "Tính \\(\\int x \\ln x \\, dx\\) (với x\\gt0).",
     "options": [
       "\\(\\dfrac{x^2}{2}\\ln x - \\dfrac{x^2}{4} + C\\)",
       "\\(\\dfrac{x^2}{2}\\ln x + \\dfrac{x^2}{4} + C\\)",
@@ -218,7 +218,7 @@
   {
     "id": 13,
     "type": "indefinite_parts",
-    "question": "Tính \\(\\int \\ln x \\, dx\\) (x&gt;0).",
+    "question": "Tính \\(\\int \\ln x \\, dx\\) (x\\gt0).",
     "options": [
       "\\(x\\ln x - x + C\\)",
       "\\(x\\ln x + x + C\\)",
@@ -988,5 +988,23 @@
     "casio": "Tính \\(1000\\times9{,}8\\times3\\times4=117600\\) J.",
     "difficulty": 2,
     "topic": "Nguyên hàm & Tích phân một biến"
+  },
+  {
+    "id": 56,
+    "type": "area_between_curves",
+    "question": "Tính diện tích miền giới hạn bởi \\(y=x^2\\) và \\(y=x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac16\\)",
+      "\\(\\dfrac13\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac56\\)"
+    ],
+    "correct": "\\(\\dfrac16\\)",
+    "solution": "Hai đường cắt nhau tại \\(x=0,1\\). Diện tích \\(S=\\int_0^1(x-x^2)dx=1/2-1/3=1/6\\).",
+    "quick": "Trên \\([0,1]\\), đường trên là \\(y=x\\).",
+    "casio": "CASIO fx-580VNX: Dùng phím ∫ để tính tích phân xác định kiểm tra số. Với diện tích, nhập hàm trên trừ hàm dưới trên khoảng giao điểm.",
+    "difficulty": 2,
+    "topic": "Tích phân một biến"
   }
 ]

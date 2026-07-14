@@ -898,5 +898,77 @@
     "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
     "difficulty": 3,
     "topic": "Ứng dụng hệ tuyến tính trong vận tải"
+  },
+  {
+    "id": 51,
+    "type": "linear_system_sum",
+    "question": "Giải hệ \\(\\begin{cases}x+y+z+t=10\\\\x-y+2z-t=2\\\\2x+y-z+t=7\\\\-x+2y+z+2t=13\\end{cases}\\). Tính \\(P=x+y+z+t\\).",
+    "matrix": null,
+    "options": [
+      "10",
+      "12",
+      "5",
+      "7"
+    ],
+    "correct": "10",
+    "solution": "Phương trình đầu tiên đã cho trực tiếp \\(x+y+z+t=10\\), nên \\(P=10\\).",
+    "quick": "Nhìn đúng biểu thức cần tính trước khi giải hệ.",
+    "casio": "CASIO fx-580VNX: Dùng Equation/Func → Simul để giải hệ số nhỏ. Với hệ tham số, xét det ma trận hệ số trước; det≠0 thì nghiệm duy nhất, det=0 thì xét riêng.",
+    "difficulty": 1,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 52,
+    "type": "linear_system_no_solution_param",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}mx+2y=1\\\\2x+my=m\\end{cases}\\) vô nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m=\\pm2\\)",
+      "\\(m=2\\)",
+      "\\(m=-2\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=\\pm2\\)",
+    "solution": "Định thức hệ là \\(m^2-4\\). Với \\(m=2\\), hai phương trình có cùng vế trái nhưng vế phải khác nhau; với \\(m=-2\\), hai phương trình cũng mâu thuẫn. Vậy hệ vô nghiệm khi \\(m=\\pm2\\).",
+    "quick": "Xét các giá trị làm định thức hệ bằng 0.",
+    "casio": "CASIO fx-580VNX: Dùng Equation/Func → Simul để giải hệ số nhỏ. Với hệ tham số, xét det ma trận hệ số trước; det≠0 thì nghiệm duy nhất, det=0 thì xét riêng.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 53,
+    "type": "linear_system_unique_parameter",
+    "question": "Hệ tuyến tính có ma trận hệ số phụ thuộc \\(m\\) với định thức bằng \\(-2(m+2)\\). Điều kiện có nghiệm duy nhất là",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne-2\\)",
+      "\\(m\\ne0\\)",
+      "\\(m=-2\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m\\ne-2\\)",
+    "solution": "Hệ có nghiệm duy nhất khi định thức ma trận hệ số khác 0. Vì \\(-2(m+2)\\ne0\\), suy ra \\(m\\ne-2\\).",
+    "quick": "Nghiệm duy nhất khi det khác 0.",
+    "casio": "CASIO fx-580VNX: Dùng Equation/Func → Simul để giải hệ số nhỏ. Với hệ tham số, xét det ma trận hệ số trước; det≠0 thì nghiệm duy nhất, det=0 thì xét riêng.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 54,
+    "type": "linear_system_symmetric_unique",
+    "question": "Hệ \\(\\begin{cases}x+y+mz=1\\\\x+my+z=1\\\\mx+y+z=1\\end{cases}\\) có nghiệm duy nhất khi và chỉ khi",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne1\\) và \\(m\\ne-2\\)",
+      "\\(m\\ne1\\)",
+      "\\(m\\ne-2\\)",
+      "Với mọi \\(m\\)"
+    ],
+    "correct": "\\(m\\ne1\\) và \\(m\\ne-2\\)",
+    "solution": "Định thức ma trận hệ số bằng \\(-(m-1)^2(m+2)\\). Hệ có nghiệm duy nhất khi định thức khác 0.",
+    "quick": "Ma trận dạng đường chéo \\(m\\), ngoài chéo 1.",
+    "casio": "CASIO fx-580VNX: Dùng Equation/Func → Simul để giải hệ số nhỏ. Với hệ tham số, xét det ma trận hệ số trước; det≠0 thì nghiệm duy nhất, det=0 thì xét riêng.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
   }
 ]

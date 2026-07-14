@@ -862,5 +862,149 @@
     "casio": "Nhập \\(e^6\\), nhận \\(403{,}4288\\ldots\\), rồi làm tròn đến hàng đơn vị.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 49,
+    "type": "ode_second_order_cauchy",
+    "question": "Giải bài toán \\(y''-y'-2y=0\\), \\(y(0)=3\\), \\(y'(0)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=e^{2x}+2e^{-x}\\)",
+      "\\(y=2e^{2x}+e^{-x}\\)",
+      "\\(y=3e^{-x}\\)",
+      "\\(y=2e^x+e^{-2x}\\)"
+    ],
+    "correct": "\\(y=e^{2x}+2e^{-x}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-r-2=0\\) có nghiệm \\(r=2,-1\\). Nên \\(y=C_1e^{2x}+C_2e^{-x}\\). Điều kiện đầu cho \\(C_1=1,C_2=2\\).",
+    "quick": "Giải đặc trưng rồi dùng hai điều kiện đầu.",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 50,
+    "type": "ode_particular_resonance",
+    "question": "Biết \\(y''-2y'+y=2e^x\\) có nghiệm riêng dạng \\(y_r=A x^2 e^x\\). Tìm \\(A\\).",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "\\(\\dfrac12\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "1",
+    "solution": "Ta có \\(y''-2y'+y=(D-1)^2y\\). Với \\(y=e^xv\\), kết quả là \\(e^xv''\\). Lấy \\(v=Ax^2\\), \\(v''=2A\\). Do đó \\(2Ae^x=2e^x\\), suy ra \\(A=1\\).",
+    "quick": "Nghiệm cộng hưởng bậc 2.",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 51,
+    "type": "ode_second_general",
+    "question": "Tìm nghiệm tổng quát của \\(y''-5y'+6y=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
+      "\\(y=(C_1+C_2x)e^{2x}\\)",
+      "\\(y=C_1e^{-2x}+C_2e^{-3x}\\)",
+      "\\(y=C_1\\cos2x+C_2\\sin3x\\)"
+    ],
+    "correct": "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-5r+6=0\\) có nghiệm \\(r=2,3\\).",
+    "quick": "Hai nghiệm thực phân biệt.",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 52,
+    "type": "ode_second_cauchy_forced",
+    "question": "Giải \\(y''+4y=4x\\), \\(y(0)=0\\), \\(y'(0)=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=x\\)",
+      "\\(y=x+\\sin2x\\)",
+      "\\(y=x+\\cos2x\\)",
+      "\\(y=2x\\)"
+    ],
+    "correct": "\\(y=x\\)",
+    "solution": "Dễ kiểm tra \\(y=x\\) thỏa \\(y''+4y=4x\\), \\(y(0)=0\\), \\(y'(0)=1\\). Nghiệm duy nhất của bài toán Cauchy là \\(y=x\\).",
+    "quick": "Thử nghiệm riêng tuyến tính và kiểm tra điều kiện đầu.",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 53,
+    "type": "ode_particular_linear",
+    "question": "Cho \\(y''-5y'+6y=12x\\). Nghiệm riêng dạng \\(y_r=ax+b\\). Tính \\(a+b\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{11}{3}\\)",
+      "3",
+      "2",
+      "\\(\\dfrac53\\)"
+    ],
+    "correct": "\\(\\dfrac{11}{3}\\)",
+    "solution": "Thay \\(y_r=ax+b\\) vào phương trình: \\(-5a+6(ax+b)=12x\\). So sánh hệ số: \\(6a=12\\Rightarrow a=2\\), \\(-5a+6b=0\\Rightarrow b=5/3\\). Vậy \\(a+b=11/3\\).",
+    "quick": "Thay dạng nghiệm riêng vào phương trình.",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 54,
+    "type": "ode_second_sin_cauchy",
+    "question": "Giải \\(y''+y=0\\), \\(y(0)=1\\), \\(y'(0)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\cos x+2\\sin x\\)",
+      "\\(y=2\\cos x+\\sin x\\)",
+      "\\(y=e^x+2e^{-x}\\)",
+      "\\(y=\\cos2x+\\sin2x\\)"
+    ],
+    "correct": "\\(y=\\cos x+2\\sin x\\)",
+    "solution": "Nghiệm tổng quát \\(y=C_1\\cos x+C_2\\sin x\\). Điều kiện \\(y(0)=1\\) cho \\(C_1=1\\), \\(y'(0)=2\\) cho \\(C_2=2\\).",
+    "quick": "Nghiệm của \\(y''+y=0\\).",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 55,
+    "type": "ode_particular_resonance_choice",
+    "question": "Dạng nghiệm riêng của \\(y''-4y'+3y=e^{3x}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y_r=Axe^{3x}\\)",
+      "\\(y_r=Ae^{3x}\\)",
+      "\\(y_r=Ax^2e^{3x}\\)",
+      "\\(y_r=(Ax+B)e^{3x}\\)"
+    ],
+    "correct": "\\(y_r=Axe^{3x}\\)",
+    "solution": "Phương trình đặc trưng có nghiệm \\(r=1,3\\). Vì vế phải là \\(e^{3x}\\) trùng nghiệm đơn \\(r=3\\), phải nhân thêm \\(x\\).",
+    "quick": "Cộng hưởng nghiệm đơn thì nhân thêm \\(x\\).",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 56,
+    "type": "ode_value_at_one",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''-4y'+3y=0\\), \\(y(0)=2\\), \\(y'(0)=4\\). Tính gần đúng \\(y(1)\\).",
+    "matrix": null,
+    "options": [
+      "22.8",
+      "20.1",
+      "17.4",
+      "10.9"
+    ],
+    "correct": "22.8",
+    "solution": "Nghiệm \\(y=C_1e^x+C_2e^{3x}\\). Từ \\(C_1+C_2=2\\), \\(C_1+3C_2=4\\), suy ra \\(C_1=C_2=1\\). Do đó \\(y(1)=e+e^3\\approx22.8\\).",
+    "quick": "Giải phương trình đặc trưng rồi thay \\(x=1\\).",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
   }
 ]

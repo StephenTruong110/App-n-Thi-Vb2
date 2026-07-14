@@ -682,5 +682,77 @@
     "casio": "CASIO: Tính \\(3\\times2\\pi\\times2=12\\pi\\).",
     "difficulty": 3,
     "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 39,
+    "type": "line_integral_type1",
+    "question": "Tính \\(I=\\int_C(x+y)ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\sqrt2\\)",
+      "\\(\\dfrac{\\sqrt2}{2}\\)",
+      "\\(2\\sqrt2\\)",
+      "1"
+    ],
+    "correct": "\\(\\sqrt2\\)",
+    "solution": "Tham số hóa \\(x=t,y=t\\), \\(0\\le t\\le1\\), \\(ds=\\sqrt2dt\\). Khi đó \\(I=\\int_0^1 2t\\sqrt2\\,dt=\\sqrt2\\).",
+    "quick": "Tham số hóa đoạn thẳng.",
+    "casio": "CASIO fx-580VNX: Tham số hóa đường cong để đưa về tích phân một biến rồi dùng phím ∫ kiểm tra. Với Green, tính Q_x-P_y trước rồi chuyển sang tích phân kép.",
+    "difficulty": 3,
+    "topic": "Tích phân đường"
+  },
+  {
+    "id": 40,
+    "type": "green_formula",
+    "question": "Với \\(C\\) kín, phẳng, định hướng dương, công thức Green đúng là",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dxdy\\)",
+      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial P}{\\partial y}-\\frac{\\partial Q}{\\partial x}\\right)dxdy\\)",
+      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial y}-\\frac{\\partial P}{\\partial x}\\right)dxdy\\)",
+      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial x}+\\frac{\\partial P}{\\partial y}\\right)dxdy\\)"
+    ],
+    "correct": "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dxdy\\)",
+    "solution": "Đây là công thức Green dạng lưu thông cho đường cong kín định hướng dương.",
+    "quick": "Nhớ thứ tự: \\(Q_x-P_y\\).",
+    "casio": "CASIO fx-580VNX: Tham số hóa đường cong để đưa về tích phân một biến rồi dùng phím ∫ kiểm tra. Với Green, tính Q_x-P_y trước rồi chuyển sang tích phân kép.",
+    "difficulty": 1,
+    "topic": "Tích phân đường & Green"
+  },
+  {
+    "id": 41,
+    "type": "line_integral_semicircle",
+    "question": "Tính \\(I=\\int_C y^2ds\\), với \\(C\\) là nửa trên đường tròn \\(x^2+y^2=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac\\pi2\\)",
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\dfrac\\pi4\\)"
+    ],
+    "correct": "\\(\\dfrac\\pi2\\)",
+    "solution": "Đặt \\(x=\\cos t,y=\\sin t\\), \\(0\\le t\\le\\pi\\), \\(ds=dt\\). Khi đó \\(I=\\int_0^\\pi\\sin^2t\\,dt=\\pi/2\\).",
+    "quick": "Trên đường tròn đơn vị, \\(ds=dt\\).",
+    "casio": "CASIO fx-580VNX: Tham số hóa đường cong để đưa về tích phân một biến rồi dùng phím ∫ kiểm tra. Với Green, tính Q_x-P_y trước rồi chuyển sang tích phân kép.",
+    "difficulty": 3,
+    "topic": "Tích phân đường"
+  },
+  {
+    "id": 42,
+    "type": "line_integral_exact_dxdy",
+    "question": "Tính \\(\\int_C dx+dy\\), với \\(C\\) là đoạn thẳng từ \\((1,2)\\) đến \\((3,5)\\).",
+    "matrix": null,
+    "options": [
+      "5",
+      "3",
+      "2",
+      "4"
+    ],
+    "correct": "5",
+    "solution": "\\(\\int_C dx=x_N-x_M=2\\), \\(\\int_C dy=y_N-y_M=3\\). Tổng bằng 5.",
+    "quick": "Tích phân của vi phân toàn phần chỉ phụ thuộc hai đầu mút.",
+    "casio": "CASIO fx-580VNX: Tham số hóa đường cong để đưa về tích phân một biến rồi dùng phím ∫ kiểm tra. Với Green, tính Q_x-P_y trước rồi chuyển sang tích phân kép.",
+    "difficulty": 2,
+    "topic": "Tích phân đường"
   }
 ]

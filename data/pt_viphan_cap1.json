@@ -1078,5 +1078,185 @@
     "casio": "CASIO: Kiểm tra S(0)=4 và tốc độ giảm ban đầu -0,1 kg/phút.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 61,
+    "type": "ode_separable_cauchy",
+    "question": "Giải bài toán Cauchy \\(y'=\\dfrac{1}{2y}\\), \\(y(1)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y^2=x+3\\)",
+      "\\(y=x+1\\)",
+      "\\(y^2=x^2+1\\)",
+      "\\(y=2x+2\\)"
+    ],
+    "correct": "\\(y^2=x+3\\)",
+    "solution": "Từ \\(2y\\,dy=dx\\), suy ra \\(y^2=x+C\\). Dùng \\(y(1)=2\\) được \\(4=1+C\\), nên \\(C=3\\).",
+    "quick": "Phân ly biến rồi dùng điều kiện đầu.",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 62,
+    "type": "ode_homogeneous_substitution",
+    "question": "Với phương trình đẳng cấp \\(y'=\\dfrac{x+y}{x}\\), đặt \\(y=ux\\). Phương trình theo \\(u,x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(x\\dfrac{du}{dx}=1\\)",
+      "\\(x\\dfrac{du}{dx}=u\\)",
+      "\\(x\\dfrac{du}{dx}=1+2u\\)",
+      "\\(\\dfrac{du}{dx}=1\\)"
+    ],
+    "correct": "\\(x\\dfrac{du}{dx}=1\\)",
+    "solution": "Vì \\(y=ux\\) nên \\(y'=u+xu'\\). Thay vào: \\(u+xu'=1+u\\), suy ra \\(xu'=1\\).",
+    "quick": "Nhớ \\(y'=u+xu'\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 63,
+    "type": "exact_ode",
+    "question": "Tìm nghiệm tổng quát của \\((2x+y)dx+(x+2y)dy=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^2+xy+y^2=C\\)",
+      "\\(x^2+y^2=C\\)",
+      "\\((x+y)^2=C\\)",
+      "\\(2x^2+2xy+2y^2=C\\)"
+    ],
+    "correct": "\\(x^2+xy+y^2=C\\)",
+    "solution": "Tìm \\(F\\) sao cho \\(F_x=2x+y\\), \\(F_y=x+2y\\). Ta được \\(F=x^2+xy+y^2\\), nên nghiệm là \\(x^2+xy+y^2=C\\).",
+    "quick": "Tích phân \\(2x+y\\) theo \\(x\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 64,
+    "type": "ode_separable_exp",
+    "question": "Giải bài toán \\(y'=y\\cos x\\), \\(y(0)=e\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=e^{1+\\sin x}\\)",
+      "\\(y=e^{\\sin x}\\)",
+      "\\(y=\\sin x+e\\)",
+      "\\(y=e^{\\cos x}\\)"
+    ],
+    "correct": "\\(y=e^{1+\\sin x}\\)",
+    "solution": "Phân ly: \\(dy/y=\\cos x\\,dx\\). Suy ra \\(\\ln y=\\sin x+C\\). Dùng \\(y(0)=e\\) được \\(C=1\\).",
+    "quick": "Nghiệm có dạng \\(y=Ce^{\\sin x}\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 65,
+    "type": "ode_linear_first",
+    "question": "Giải bài toán \\(y'+y=2e^{-x}\\), \\(y(0)=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=(2x+1)e^{-x}\\)",
+      "\\(y=2xe^{-x}\\)",
+      "\\(y=e^{-x}+1\\)",
+      "\\(y=(x+1)e^{-x}\\)"
+    ],
+    "correct": "\\(y=(2x+1)e^{-x}\\)",
+    "solution": "Nhân với \\(e^x\\): \\((e^xy)'=2\\). Suy ra \\(e^xy=2x+C\\). Dùng \\(y(0)=1\\), được \\(C=1\\).",
+    "quick": "Nhân tử tích phân là \\(e^x\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 66,
+    "type": "exact_ode_cauchy",
+    "question": "Giải phương trình toàn phần \\((3x^2+2y)dx+(2x+6y^2)dy=0\\), biết \\(y(0)=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^3+2xy+2y^3=2\\)",
+      "\\(x^3+2xy+2y^3=0\\)",
+      "\\(3x^2+2xy+6y^2=6\\)",
+      "\\(x^3+xy+y^3=1\\)"
+    ],
+    "correct": "\\(x^3+2xy+2y^3=2\\)",
+    "solution": "Tích phân theo \\(x\\): \\(F=x^3+2xy+g(y)\\). So với \\(F_y=2x+6y^2\\), được \\(g(y)=2y^3\\). Dùng \\((0,1)\\): \\(C=2\\).",
+    "quick": "Tìm hàm thế \\(F(x,y)\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 67,
+    "type": "exact_ode_coefficient",
+    "question": "Giải \\((2x+y)dx+(x+2y)dy=0\\). Nếu tích phân tổng quát có dạng \\(x^2+a xy+y^2=C\\), tìm \\(a\\).",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "0",
+      "\\(-1\\)"
+    ],
+    "correct": "1",
+    "solution": "Hàm thế là \\(F=x^2+xy+y^2\\). Do đó hệ số của \\(xy\\) là \\(a=1\\).",
+    "quick": "So khớp với hàm thế.",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 68,
+    "type": "ode_separable_tangent",
+    "question": "Tìm nghiệm tổng quát của \\(y'=x(1+y^2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\arctan y=\\dfrac{x^2}{2}+C\\)",
+      "\\(\\ln(1+y^2)=x^2+C\\)",
+      "\\(y=\\tan(x+C)\\)",
+      "\\(y^2=e^{x^2}+C\\)"
+    ],
+    "correct": "\\(\\arctan y=\\dfrac{x^2}{2}+C\\)",
+    "solution": "Phân ly: \\(\\dfrac{dy}{1+y^2}=x\\,dx\\). Lấy tích phân được \\(\\arctan y=x^2/2+C\\).",
+    "quick": "Nhớ \\(\\int dy/(1+y^2)=\\arctan y\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 69,
+    "type": "ode_linear_cauchy_simple",
+    "question": "Giải \\(y'-\\dfrac1x y=x\\), \\(y(1)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=x^2+x\\)",
+      "\\(y=2x^2\\)",
+      "\\(y=x^2+1\\)",
+      "\\(y=x^2-x+2\\)"
+    ],
+    "correct": "\\(y=x^2+x\\)",
+    "solution": "Nhân tử tích phân là \\(1/x\\). Khi đó \\((y/x)'=1\\). Suy ra \\(y/x=x+C\\), nên \\(y=x^2+Cx\\). Dùng \\(y(1)=2\\) được \\(C=1\\).",
+    "quick": "Đưa về \\((y/x)'\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 70,
+    "type": "exact_ode_exp_sin",
+    "question": "Tích phân tổng quát của \\((e^x+y)dx+(x+\\cos y)dy=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(e^x+xy+\\sin y=C\\)",
+      "\\(xe^x+y\\cos x=C\\)",
+      "\\(e^x+xy-\\sin y=C\\)",
+      "\\(e^x+\\sin y=C\\)"
+    ],
+    "correct": "\\(e^x+xy+\\sin y=C\\)",
+    "solution": "Tìm hàm thế \\(F\\) sao cho \\(F_x=e^x+y\\). Suy ra \\(F=e^x+xy+g(y)\\). So với \\(F_y=x+g'(y)=x+\\cos y\\), được \\(g(y)=\\sin y\\).",
+    "quick": "Tích phân theo \\(x\\), rồi so với hệ số của \\(dy\\).",
+    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
   }
 ]

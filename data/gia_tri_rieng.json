@@ -718,5 +718,95 @@
     "difficulty": 3,
     "topic": "Véc tơ riêng & chéo hóa",
     "id": 40
+  },
+  {
+    "id": 41,
+    "type": "eigenvalue_2x2",
+    "question": "Tìm các trị riêng của \\(A=\\begin{pmatrix}3&1\\\\1&3\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "2 và 4",
+      "1 và 3",
+      "0 và 6",
+      "3 và 3"
+    ],
+    "correct": "2 và 4",
+    "solution": "\\(\\det(\\lambda I-A)=(\\lambda-3)^2-1=0\\), nên \\(\\lambda=2\\) hoặc \\(\\lambda=4\\).",
+    "quick": "Ma trận \\(\\begin{pmatrix}a&b\\\\b&a\\end{pmatrix}\\) có trị riêng \\(a+b\\), \\(a-b\\).",
+    "casio": "CASIO fx-580VNX: Ma trận tam giác đọc trị riêng trên đường chéo. Với ma trận 2×2, lập phương trình đặc trưng rồi dùng Equation/Polynomial bậc 2. Với vector riêng, kiểm tra MatA×v có bằng λv không.",
+    "difficulty": 2,
+    "topic": "Trị riêng"
+  },
+  {
+    "id": 42,
+    "type": "check_eigenvector",
+    "question": "Cho \\(A=\\begin{pmatrix}3&0&0\\\\1&2&0\\\\0&1&1\\end{pmatrix}\\). Vector nào là vector riêng ứng với \\(\\lambda=3\\)?",
+    "matrix": null,
+    "options": [
+      "\\((2,2,1)^T\\)",
+      "\\((1,0,0)^T\\)",
+      "\\((0,0,1)^T\\)",
+      "\\((1,1,1)^T\\)"
+    ],
+    "correct": "\\((2,2,1)^T\\)",
+    "solution": "Giải \\((A-3I)v=0\\) được \\(x=y\\), \\(y=2z\\). Chọn \\(z=1\\) thì \\(v=(2,2,1)^T\\).",
+    "quick": "Thay từng vector vào điều kiện \\(Av=3v\\).",
+    "casio": "CASIO fx-580VNX: Ma trận tam giác đọc trị riêng trên đường chéo. Với ma trận 2×2, lập phương trình đặc trưng rồi dùng Equation/Polynomial bậc 2. Với vector riêng, kiểm tra MatA×v có bằng λv không.",
+    "difficulty": 3,
+    "topic": "Trị riêng & véc tơ riêng"
+  },
+  {
+    "id": 43,
+    "type": "triangular_eigenvalues_parameter",
+    "question": "Cho ma trận tam giác dưới có đường chéo \\(m,2,1,-1\\). Tập trị riêng của ma trận là",
+    "matrix": null,
+    "options": [
+      "\\(\\{m,2,1,-1\\}\\)",
+      "\\(\\{m,1,3,5\\}\\)",
+      "\\(\\{0,2,1,-1\\}\\)",
+      "Không xác định được"
+    ],
+    "correct": "\\(\\{m,2,1,-1\\}\\)",
+    "solution": "Ma trận tam giác có các trị riêng là các phần tử trên đường chéo chính.",
+    "quick": "Tam giác: đọc đường chéo.",
+    "casio": "CASIO fx-580VNX: Ma trận tam giác đọc trị riêng trên đường chéo. Với ma trận 2×2, lập phương trình đặc trưng rồi dùng Equation/Polynomial bậc 2. Với vector riêng, kiểm tra MatA×v có bằng λv không.",
+    "difficulty": 1,
+    "topic": "Trị riêng"
+  },
+  {
+    "id": 44,
+    "type": "eigen_sum_squares_real",
+    "question": "Với \\(A=\\begin{pmatrix}2&1&0\\\\1&2&1\\\\0&1&2\\end{pmatrix}\\), tổng bình phương các trị riêng thực bằng",
+    "matrix": null,
+    "options": [
+      "14",
+      "9",
+      "12",
+      "16"
+    ],
+    "correct": "16",
+    "solution": "Ma trận đối xứng nên tổng bình phương các trị riêng bằng \\(\\operatorname{tr}(A^2)\\). Tính \\(A^2\\) có đường chéo lần lượt \\(5,6,5\\), nên tổng là \\(5+6+5=16\\).",
+    "quick": "Dùng \\(\\sum\\lambda_i^2=\\operatorname{tr}(A^2)\\).",
+    "casio": "CASIO fx-580VNX: Ma trận tam giác đọc trị riêng trên đường chéo. Với ma trận 2×2, lập phương trình đặc trưng rồi dùng Equation/Polynomial bậc 2. Với vector riêng, kiểm tra MatA×v có bằng λv không.",
+    "difficulty": 3,
+    "topic": "Trị riêng"
+  },
+  {
+    "id": 45,
+    "type": "eigen_triangular_parameter",
+    "question": "Cho \\(A=\\begin{pmatrix}2&0&0\\\\0&m&1\\\\0&0&4\\end{pmatrix}\\). Các trị riêng của \\(A\\) là",
+    "matrix": null,
+    "options": [
+      "2, \\(m\\), 4",
+      "2, 1, 4",
+      "2, 0, 4",
+      "\\(m\\), 1"
+    ],
+    "correct": "2, \\(m\\), 4",
+    "solution": "Ma trận tam giác trên nên các trị riêng chính là các phần tử trên đường chéo: \\(2,m,4\\).",
+    "quick": "Tam giác: đọc đường chéo.",
+    "casio": "CASIO fx-580VNX: Ma trận tam giác đọc trị riêng trên đường chéo. Với ma trận 2×2, lập phương trình đặc trưng rồi dùng Equation/Polynomial bậc 2. Với vector riêng, kiểm tra MatA×v có bằng λv không.",
+    "difficulty": 1,
+    "topic": "Trị riêng"
   }
 ]

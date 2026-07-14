@@ -880,5 +880,113 @@
     "casio": "CASIO: Tính hai tích phân một biến.",
     "difficulty": 3,
     "topic": "Tích phân kép"
+  },
+  {
+    "id": 50,
+    "type": "double_integral_annulus",
+    "question": "Tính \\(I=\\iint_D(x^2+y^2)\\,dxdy\\), với \\(D:1\\le x^2+y^2\\le4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{15\\pi}{2}\\)",
+      "\\(\\dfrac{7\\pi}{2}\\)",
+      "\\(15\\pi\\)",
+      "\\(8\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{15\\pi}{2}\\)",
+    "solution": "Đổi sang cực: \\(I=\\int_0^{2\\pi}\\int_1^2 r^2\\cdot r\\,drd\\varphi=2\\pi\\cdot\\dfrac{2^4-1^4}{4}=15\\pi/2\\).",
+    "quick": "Trong cực: \\(x^2+y^2=r^2\\), Jacobian là \\(r\\).",
+    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 51,
+    "type": "polar_integrand",
+    "question": "Với \\(I=\\iint_D xy\\,dxdy\\), khi đổi sang cực \\(x=r\\cos\\varphi\\), \\(y=r\\sin\\varphi\\), biểu thức dưới dấu tích phân gồm cả Jacobian là",
+    "matrix": null,
+    "options": [
+      "\\(r^3\\cos\\varphi\\sin\\varphi\\)",
+      "\\(r^2\\cos^2\\varphi\\)",
+      "\\(r^2\\cos\\varphi\\sin\\varphi\\)",
+      "\\(r^3\\)"
+    ],
+    "correct": "\\(r^3\\cos\\varphi\\sin\\varphi\\)",
+    "solution": "\\(xy=r^2\\cos\\varphi\\sin\\varphi\\), còn \\(dxdy=r\\,drd\\varphi\\). Nhân lại được \\(r^3\\cos\\varphi\\sin\\varphi\\).",
+    "quick": "Đừng quên Jacobian \\(r\\).",
+    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 52,
+    "type": "quarter_disk_integral",
+    "question": "Tính \\(I=\\iint_D xy\\,dxdy\\), với \\(D\\) là phần tư thứ nhất của hình tròn \\(x^2+y^2\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac18\\)",
+      "\\(\\dfrac14\\)",
+      "\\(\\dfrac{\\pi}{8}\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(\\dfrac18\\)",
+    "solution": "Trong cực: \\(0\\le r\\le1\\), \\(0\\le\\varphi\\le\\pi/2\\). \\(I=\\int_0^{\\pi/2}\\int_0^1 r^3\\cos\\varphi\\sin\\varphi\\,drd\\varphi=1/8\\).",
+    "quick": "Tách tích phân theo \\(r\\) và \\(\\varphi\\).",
+    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 53,
+    "type": "rect_double_integral",
+    "question": "Tính \\(I=\\iint_D(2x+1)\\,dxdy\\), với \\(D:0\\le x\\le2,\\ 0\\le y\\le3\\).",
+    "matrix": null,
+    "options": [
+      "18",
+      "9",
+      "12",
+      "6"
+    ],
+    "correct": "18",
+    "solution": "\\(I=\\int_0^3\\int_0^2(2x+1)dxdy=3[x^2+x]_0^2=3\\cdot6=18\\).",
+    "quick": "Tích phân theo \\(x\\) trước rồi nhân chiều dài theo \\(y\\).",
+    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 54,
+    "type": "double_integral_radial_exp",
+    "question": "Tính \\(I=\\iint_D e^{x^2+y^2}dxdy\\), với \\(D:x^2+y^2\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\pi(e-1)\\)",
+      "\\(\\pi e\\)",
+      "\\(2\\pi(e-1)\\)",
+      "\\(\\dfrac{\\pi(e-1)}{2}\\)"
+    ],
+    "correct": "\\(\\pi(e-1)\\)",
+    "solution": "Đổi sang cực: \\(I=\\int_0^{2\\pi}\\int_0^1 e^{r^2}rdrd\\varphi=2\\pi\\cdot\\dfrac{e-1}{2}=\\pi(e-1)\\).",
+    "quick": "Đặt \\(u=r^2\\).",
+    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 55,
+    "type": "polar_bounds_disk",
+    "question": "Miền \\(D:x^2+y^2\\le4\\). Cận trong tọa độ cực là",
+    "matrix": null,
+    "options": [
+      "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le2\\)",
+      "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le4\\)",
+      "\\(0\\le\\varphi\\le\\pi,\\ 0\\le r\\le2\\)",
+      "\\(-\\pi\\le\\varphi\\le\\pi,\\ 0\\le r\\le4\\)"
+    ],
+    "correct": "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le2\\)",
+    "solution": "Đây là hình tròn tâm O bán kính 2. Do đó \\(0\\le r\\le2\\), \\(0\\le\\varphi\\le2\\pi\\).",
+    "quick": "Bán kính là 2, không phải 4.",
+    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
+    "difficulty": 1,
+    "topic": "Tích phân kép"
   }
 ]

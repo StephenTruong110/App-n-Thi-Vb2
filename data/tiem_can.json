@@ -11,8 +11,8 @@
       "\\(x=-1\\)"
     ],
     "correct": "\\(x=2\\)",
-    "solution": "**Tìm TCĐ:** Cho mẫu = 0: \\(x-2=0 \\Rightarrow x=2\\).\nTử tại \\(x=2\\): \\(2+1=3\\neq0\\) → **TCĐ: \\(x=2\\)**.\n\n\\(\\lim_{x\\to2^\\pm}\\dfrac{x+1}{x-2}=\\pm\\infty\\) xác nhận.",
-    "quick": "**Quy tắc TCĐ:** mẫu=0 VÀ tử≠0 tại điểm đó. Ở đây mẫu=0 tại x=2, tử=3≠0 → **x=2**.",
+    "solution": "Tìm TCĐ: Cho mẫu = 0: \\(x-2=0 \\Rightarrow x=2\\).\nTử tại \\(x=2\\): \\(2+1=3\\neq0\\) → TCĐ: \\(x=2\\).\n\n\\(\\lim_{x\\to2^\\pm}\\dfrac{x+1}{x-2}=\\pm\\infty\\) xác nhận.",
+    "quick": "Quy tắc TCĐ: mẫu=0 VÀ tử≠0 tại điểm đó. Ở đây mẫu=0 tại x=2, tử=3≠0 → x=2.",
     "casio": "CASIO: x=2.0001 → (3.0001)/(0.0001)=30001 rất lớn → TCĐ x=2. x=1.9999 → 2.9999/(-0.0001)=-29999 rất lớn âm.",
     "difficulty": 1,
     "topic": "Tiệm cận"
@@ -29,8 +29,8 @@
       "3"
     ],
     "correct": "1",
-    "solution": "Mẫu: \\(x^2+x-2=(x-1)(x+2)=0 \\Rightarrow x=1,\\;x=-2\\).\n\n**Tại \\(x=1\\):** Tử \\(x-1=0\\) tại \\(x=1\\) → có thể rút gọn: \\(\\dfrac{x-1}{(x-1)(x+2)}=\\dfrac{1}{x+2}\\). Giới hạn = \\(\\dfrac{1}{3}\\) hữu hạn → **không phải TCĐ**.\n\n**Tại \\(x=-2\\):** Tử \\(-2-1=-3\\neq0\\) → giới hạn = ±∞ → **TCĐ: \\(x=-2\\)**.\n\nChỉ có **1 đường TCĐ**.",
-    "quick": "Mẫu=0 tại x=1 và x=-2. Tại x=1: tử=0 → rút gọn (không TCĐ). Tại x=-2: tử=-3≠0 → **1 TCĐ**.",
+    "solution": "Mẫu: \\(x^2+x-2=(x-1)(x+2)=0 \\Rightarrow x=1,\\;x=-2\\).\n\nTại \\(x=1\\): Tử \\(x-1=0\\) tại \\(x=1\\) → có thể rút gọn: \\(\\dfrac{x-1}{(x-1)(x+2)}=\\dfrac{1}{x+2}\\). Giới hạn = \\(\\dfrac{1}{3}\\) hữu hạn → không phải TCĐ.\n\nTại \\(x=-2\\): Tử \\(-2-1=-3\\neq0\\) → giới hạn = ±∞ → TCĐ: \\(x=-2\\).\n\nChỉ có 1 đường TCĐ.",
+    "quick": "Mẫu=0 tại x=1 và x=-2. Tại x=1: tử=0 → rút gọn (không TCĐ). Tại x=-2: tử=-3≠0 → 1 TCĐ.",
     "casio": "CASIO: x=-2.0001 → (-3.0001)/((−3.0001)(−0.0001))=(-3.0001)/(0.00030001) rất lớn → TCĐ. x=1.0001 → 0.0001/(0.0001·3.0001)≈1/3 hữu hạn → không TCĐ.",
     "difficulty": 2,
     "topic": "Tiệm cận"
@@ -47,8 +47,8 @@
       "\\(y=2\\)"
     ],
     "correct": "\\(y=3\\)",
-    "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{3x^2+2x+1}{x^2-5}=\\lim_{x\\to\\pm\\infty}\\dfrac{3+2/x+1/x^2}{1-5/x^2}=\\dfrac{3}{1}=3\\)\n\n**Quy tắc:** Bậc tử = bậc mẫu = 2 → TCN = tỉ số hệ số bậc cao nhất = 3/1 = **y = 3**.",
-    "quick": "Bậc tử = bậc mẫu → TCN = hệ số cao nhất tử / hệ số cao nhất mẫu = **3/1 = y=3**.",
+    "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{3x^2+2x+1}{x^2-5}=\\lim_{x\\to\\pm\\infty}\\dfrac{3+2/x+1/x^2}{1-5/x^2}=\\dfrac{3}{1}=3\\)\n\nQuy tắc: Bậc tử = bậc mẫu = 2 → TCN = tỉ số hệ số bậc cao nhất = 3/1 = y = 3.",
+    "quick": "Bậc tử = bậc mẫu → TCN = hệ số cao nhất tử / hệ số cao nhất mẫu = 3/1 = y=3.",
     "casio": "CASIO: x=10^6 → (3·10^12+...)/(10^12-5) ≈ 3. x=-10^6 → cũng ≈ 3. Cả hai phía → 3.",
     "difficulty": 1,
     "topic": "Tiệm cận"
@@ -65,8 +65,8 @@
       "Không có TCN"
     ],
     "correct": "\\(y=0\\)",
-    "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{2x+1}{x^2+1}=\\lim_{x\\to\\pm\\infty}\\dfrac{2/x+1/x^2}{1+1/x^2}=\\dfrac{0}{1}=0\\)\n\n**Quy tắc:** Bậc tử (1) < bậc mẫu (2) → \\(y=0\\) là TCN.",
-    "quick": "Bậc tử < bậc mẫu → TCN **y=0** (hàm → 0 khi x→±∞).",
+    "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{2x+1}{x^2+1}=\\lim_{x\\to\\pm\\infty}\\dfrac{2/x+1/x^2}{1+1/x^2}=\\dfrac{0}{1}=0\\)\n\nQuy tắc: Bậc tử (1) \\lt bậc mẫu (2) → \\(y=0\\) là TCN.",
+    "quick": "Bậc tử \\lt bậc mẫu → TCN y=0 (hàm → 0 khi x→±∞).",
     "casio": "CASIO: x=10^6 → (2·10^6+1)/(10^12+1) ≈ 2·10^(-6) ≈ 0. TCN y=0.",
     "difficulty": 1,
     "topic": "Tiệm cận"
@@ -83,8 +83,8 @@
       "\\(y=x-1\\)"
     ],
     "correct": "Không có TCN",
-    "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{x^2+1}{x+1}=\\pm\\infty\\) (vì bậc tử > bậc mẫu).\n\nKhông có giá trị hữu hạn nào → **không có TCN**.\n\nTuy nhiên, chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\) → có **tiệm cận xiên** \\(y=x-1\\).",
-    "quick": "Bậc tử (2) > bậc mẫu (1) → **không có TCN** (nhưng có TCX).",
+    "solution": "\\(\\lim_{x\\to\\pm\\infty}\\dfrac{x^2+1}{x+1}=\\pm\\infty\\) (vì bậc tử \\gt bậc mẫu).\n\nKhông có giá trị hữu hạn nào → không có TCN.\n\nTuy nhiên, chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\) → có tiệm cận xiên \\(y=x-1\\).",
+    "quick": "Bậc tử (2) \\gt bậc mẫu (1) → không có TCN (nhưng có TCX).",
     "casio": "CASIO: x=10^6 → (10^12+1)/(10^6+1) ≈ 10^6 → ∞. Không có TCN, nhưng có TCX y=x-1.",
     "difficulty": 1,
     "topic": "Tiệm cận"
@@ -101,8 +101,8 @@
       "\\(y=-x+1\\)"
     ],
     "correct": "\\(y=x-1\\)",
-    "solution": "**Tìm TCX \\(y=ax+b\\):**\n\n\\(a=\\lim_{x\\to\\infty}\\dfrac{f(x)}{x}=\\lim_{x\\to\\infty}\\dfrac{x^2+1}{x(x+1)}=\\lim_{x\\to\\infty}\\dfrac{x^2+1}{x^2+x}=1\\)\n\n\\(b=\\lim_{x\\to\\infty}[f(x)-ax]=\\lim_{x\\to\\infty}\\left[\\dfrac{x^2+1}{x+1}-x\\right]=\\lim_{x\\to\\infty}\\dfrac{x^2+1-x(x+1)}{x+1}=\\lim_{x\\to\\infty}\\dfrac{-x+1}{x+1}=-1\\)\n\nTCX: **\\(y=x-1\\)**.\n\n*Cách nhanh:* Chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\) → phần nguyên = \\(x-1\\) = TCX.",
-    "quick": "Chia tử cho mẫu: \\(x^2+1 = (x+1)(x-1)+2\\) → \\(y=x-1+\\dfrac{2}{x+1}\\) → TCX: **y=x-1**.",
+    "solution": "Tìm TCX \\(y=ax+b\\):\n\n\\(a=\\lim_{x\\to\\infty}\\dfrac{f(x)}{x}=\\lim_{x\\to\\infty}\\dfrac{x^2+1}{x(x+1)}=\\lim_{x\\to\\infty}\\dfrac{x^2+1}{x^2+x}=1\\)\n\n\\(b=\\lim_{x\\to\\infty}[f(x)-ax]=\\lim_{x\\to\\infty}\\left[\\dfrac{x^2+1}{x+1}-x\\right]=\\lim_{x\\to\\infty}\\dfrac{x^2+1-x(x+1)}{x+1}=\\lim_{x\\to\\infty}\\dfrac{-x+1}{x+1}=-1\\)\n\nTCX: \\(y=x-1\\).\n\n*Cách nhanh:* Chia đa thức: \\(\\dfrac{x^2+1}{x+1}=x-1+\\dfrac{2}{x+1}\\) → phần nguyên = \\(x-1\\) = TCX.",
+    "quick": "Chia tử cho mẫu: \\(x^2+1 = (x+1)(x-1)+2\\) → \\(y=x-1+\\dfrac{2}{x+1}\\) → TCX: y=x-1.",
     "casio": "CASIO: x=10^6 → y≈10^6-1. So sánh với y=x-1=10^6-1 → đúng → TCX y=x-1.",
     "difficulty": 2,
     "topic": "Tiệm cận"
@@ -119,8 +119,8 @@
       "0"
     ],
     "correct": "2",
-    "solution": "**TCĐ:** Mẫu \\(x^2-4=(x-2)(x+2)=0\\) tại \\(x=2,\\;x=-2\\).\n\nTử \\(x^2-3x+2=(x-1)(x-2)\\).\n- Tại \\(x=2\\): Tử = 0 → rút gọn: \\(\\dfrac{(x-2)(x-1)}{(x-2)(x+2)}=\\dfrac{x-1}{x+2}\\) → giới hạn = 1/4 hữu hạn → **không TCĐ**.\n- Tại \\(x=-2\\): Tử = 12 ≠ 0 → **TCĐ: \\(x=-2\\)**.\n\n**TCN:** Bậc tử = bậc mẫu → TCN = 1/1 = **\\(y=1\\)**.\n\nTổng: TCĐ (1) + TCN (1) = **2 đường tiệm cận**.",
-    "quick": "TCĐ: chỉ x=-2 (x=2 rút gọn được). TCN: y=1 (bậc bằng nhau). Tổng: **2 đường**.",
+    "solution": "TCĐ: Mẫu \\(x^2-4=(x-2)(x+2)=0\\) tại \\(x=2,\\;x=-2\\).\n\nTử \\(x^2-3x+2=(x-1)(x-2)\\).\n- Tại \\(x=2\\): Tử = 0 → rút gọn: \\(\\dfrac{(x-2)(x-1)}{(x-2)(x+2)}=\\dfrac{x-1}{x+2}\\) → giới hạn = 1/4 hữu hạn → không TCĐ.\n- Tại \\(x=-2\\): Tử = 12 ≠ 0 → TCĐ: \\(x=-2\\).\n\nTCN: Bậc tử = bậc mẫu → TCN = 1/1 = \\(y=1\\).\n\nTổng: TCĐ (1) + TCN (1) = 2 đường tiệm cận.",
+    "quick": "TCĐ: chỉ x=-2 (x=2 rút gọn được). TCN: y=1 (bậc bằng nhau). Tổng: 2 đường.",
     "casio": "CASIO: x=-2.0001 → rất lớn → TCĐ x=-2. x=10^6 → ≈1 → TCN y=1.",
     "difficulty": 3,
     "topic": "Tiệm cận"
@@ -137,8 +137,8 @@
       "3"
     ],
     "correct": "1",
-    "solution": "Mẫu: \\(x^2-3x+2=(x-1)(x-2)=0\\) tại \\(x=1,\\;x=2\\).\n\nTử: \\(x^2-1=(x-1)(x+1)\\).\n- Tại \\(x=1\\): Tử = 0 → rút gọn: \\(\\dfrac{(x-1)(x+1)}{(x-1)(x-2)}=\\dfrac{x+1}{x-2}\\) → hữu hạn → **không TCĐ**.\n- Tại \\(x=2\\): Tử = 3 ≠ 0 → **TCĐ: \\(x=2\\)**.\n\nCó **1 đường TCĐ**.",
-    "quick": "Mẫu=0 tại x=1,2. Tại x=1: tử=0 → rút gọn. Tại x=2: tử=3≠0 → **1 TCĐ**.",
+    "solution": "Mẫu: \\(x^2-3x+2=(x-1)(x-2)=0\\) tại \\(x=1,\\;x=2\\).\n\nTử: \\(x^2-1=(x-1)(x+1)\\).\n- Tại \\(x=1\\): Tử = 0 → rút gọn: \\(\\dfrac{(x-1)(x+1)}{(x-1)(x-2)}=\\dfrac{x+1}{x-2}\\) → hữu hạn → không TCĐ.\n- Tại \\(x=2\\): Tử = 3 ≠ 0 → TCĐ: \\(x=2\\).\n\nCó 1 đường TCĐ.",
+    "quick": "Mẫu=0 tại x=1,2. Tại x=1: tử=0 → rút gọn. Tại x=2: tử=3≠0 → 1 TCĐ.",
     "casio": "CASIO: x=2.0001 → tử=3.0001≠0, mẫu→0 → rất lớn → TCĐ. x=1.0001 → (0.0001)(2.0001)/((0.0001)(-0.9999)) ≈ -2 hữu hạn → không TCĐ.",
     "difficulty": 2,
     "topic": "Tiệm cận"
@@ -155,8 +155,8 @@
       "Không có TCN"
     ],
     "correct": "\\(y=1\\) và \\(y=-1\\)",
-    "solution": "**Khi \\(x\\to+\\infty\\):** \\(\\sqrt{x^2+1}\\sim|x|=x\\) (vì \\(x>0\\)) → \\(y=\\dfrac{x}{x}=1\\) → **TCN: \\(y=1\\)**.\n\n**Khi \\(x\\to-\\infty\\):** \\(\\sqrt{x^2+1}\\sim|x|=-x\\) (vì \\(x<0\\)) → \\(y=\\dfrac{-x}{x}=-1\\) → **TCN: \\(y=-1\\)**.\n\nCó **2 đường TCN**: \\(y=1\\) và \\(y=-1\\).",
-    "quick": "Với \\(\\sqrt{x^2}=|x|\\): phía +∞ → y=1; phía −∞ → y=−1. **Luôn xét 2 phía với giá trị tuyệt đối!**",
+    "solution": "Khi \\(x\\to+\\infty\\): \\(\\sqrt{x^2+1}\\sim|x|=x\\) (vì \\(x\\gt0\\)) → \\(y=\\dfrac{x}{x}=1\\) → TCN: \\(y=1\\).\n\nKhi \\(x\\to-\\infty\\): \\(\\sqrt{x^2+1}\\sim|x|=-x\\) (vì \\(x\\lt0\\)) → \\(y=\\dfrac{-x}{x}=-1\\) → TCN: \\(y=-1\\).\n\nCó 2 đường TCN: \\(y=1\\) và \\(y=-1\\).",
+    "quick": "Với \\(\\sqrt{x^2}=|x|\\): phía +∞ → y=1; phía −∞ → y=−1. Luôn xét 2 phía với giá trị tuyệt đối!",
     "casio": "CASIO: x=10^6 → √(10^12+1)/10^6 ≈ 1 → y=1. x=-10^6 → √(10^12+1)/(-10^6) ≈ -1 → y=-1.",
     "difficulty": 3,
     "topic": "Tiệm cận"
@@ -173,8 +173,8 @@
       "1"
     ],
     "correct": "3",
-    "solution": "TXĐ: \\(x>1\\) hoặc \\(x<-1\\).\n\n**TCĐ:** \\(\\lim_{x\\to1^+}\\dfrac{x+1}{\\sqrt{x^2-1}}=+\\infty\\) → **TCĐ: \\(x=1\\)**.\n\nTại \\(x=-1\\): \\(\\lim_{x\\to-1^-}\\dfrac{x+1}{\\sqrt{x^2-1}}=\\dfrac{0}{0^+}=0\\) (hữu hạn) → **không phải TCĐ**.\n\n**TCN:** \\(\\lim_{x\\to+\\infty}=1\\) → \\(y=1\\); \\(\\lim_{x\\to-\\infty}=-1\\) → \\(y=-1\\).\n\n**Tổng: 1 TCĐ + 2 TCN = 3 đường tiệm cận.**",
-    "quick": "x=1 (TCĐ, lim=∞). x=-1: lim=0 (hữu hạn, không TCĐ). y=±1 (TCN). Tổng: **3**.",
+    "solution": "TXĐ: \\(x\\gt1\\) hoặc \\(x\\lt-1\\).\n\nTCĐ: \\(\\lim_{x\\to1^+}\\dfrac{x+1}{\\sqrt{x^2-1}}=+\\infty\\) → TCĐ: \\(x=1\\).\n\nTại \\(x=-1\\): \\(\\lim_{x\\to-1^-}\\dfrac{x+1}{\\sqrt{x^2-1}}=\\dfrac{0}{0^+}=0\\) (hữu hạn) → không phải TCĐ.\n\nTCN: \\(\\lim_{x\\to+\\infty}=1\\) → \\(y=1\\); \\(\\lim_{x\\to-\\infty}=-1\\) → \\(y=-1\\).\n\nTổng: 1 TCĐ + 2 TCN = 3 đường tiệm cận.",
+    "quick": "x=1 (TCĐ, lim=∞). x=-1: lim=0 (hữu hạn, không TCĐ). y=±1 (TCN). Tổng: 3.",
     "casio": "CASIO: x=1.0001 cho giá trị rất lớn nên x=1 là TCĐ; x=-1.0001 cho giá trị gần 0 nên x=-1 không phải TCĐ; x=±10^6 cho các giá trị gần ±1.",
     "difficulty": 3,
     "topic": "Tiệm cận"
@@ -191,8 +191,8 @@
       "\\(y=x+3\\)"
     ],
     "correct": "\\(y=2x+3\\)",
-    "solution": "Chia đa thức:\n\\(2x^2-x+3 \\div (x-2)\\):\n\\(2x^2-x+3 = (x-2)(2x+3)+9\\)\n\nKiểm tra: \\((x-2)(2x+3)=2x^2+3x-4x-6=2x^2-x-6\\). Vậy \\(2x^2-x+3-(2x^2-x-6)=9\\) ✓\n\n\\(y=\\dfrac{(x-2)(2x+3)+9}{x-2}=2x+3+\\dfrac{9}{x-2}\\)\n\nKhi \\(x\\to\\infty\\): \\(y\\to2x+3\\) → **TCX: \\(y=2x+3\\)**.",
-    "quick": "Chia đa thức: \\(2x^2-x+3=(x-2)(2x+3)+9\\) → phần nguyên = **y=2x+3**.",
+    "solution": "Chia đa thức:\n\\(2x^2-x+3 \\div (x-2)\\):\n\\(2x^2-x+3 = (x-2)(2x+3)+9\\)\n\nKiểm tra: \\((x-2)(2x+3)=2x^2+3x-4x-6=2x^2-x-6\\). Vậy \\(2x^2-x+3-(2x^2-x-6)=9\\) ✓\n\n\\(y=\\dfrac{(x-2)(2x+3)+9}{x-2}=2x+3+\\dfrac{9}{x-2}\\)\n\nKhi \\(x\\to\\infty\\): \\(y\\to2x+3\\) → TCX: \\(y=2x+3\\).",
+    "quick": "Chia đa thức: \\(2x^2-x+3=(x-2)(2x+3)+9\\) → phần nguyên = y=2x+3.",
     "casio": "CASIO: x=10^6 → y≈2·10^6+3. So với y=2x+3 → trùng. x=10^6+9/(10^6-2) → y≈2x+3.",
     "difficulty": 2,
     "topic": "Tiệm cận"
@@ -209,8 +209,8 @@
       "4"
     ],
     "correct": "3",
-    "solution": "**TCĐ:** Mẫu \\(x^2-x-2=(x-2)(x+1)=0\\) tại \\(x=2,\\;x=-1\\).\n\nTử \\(x^2+x-2=(x+2)(x-1)\\).\n- Tại \\(x=2\\): Tử = \\((2+2)(2-1)=4\\neq0\\) → **TCĐ: \\(x=2\\)**.\n- Tại \\(x=-1\\): Tử = \\((-1+2)(-1-1)=-2\\neq0\\) → **TCĐ: \\(x=-1\\)**.\n\n**TCN:** Bậc tử = bậc mẫu = 2 → TCN = \\(\\dfrac{1}{1}=1\\) → **TCN: \\(y=1\\)**.\n\nTổng: 2 TCĐ + 1 TCN = **3 đường tiệm cận**.",
-    "quick": "2 TCĐ (x=2 và x=-1, cả hai tử≠0) + 1 TCN (y=1) = **3 đường**.",
+    "solution": "TCĐ: Mẫu \\(x^2-x-2=(x-2)(x+1)=0\\) tại \\(x=2,\\;x=-1\\).\n\nTử \\(x^2+x-2=(x+2)(x-1)\\).\n- Tại \\(x=2\\): Tử = \\((2+2)(2-1)=4\\neq0\\) → TCĐ: \\(x=2\\).\n- Tại \\(x=-1\\): Tử = \\((-1+2)(-1-1)=-2\\neq0\\) → TCĐ: \\(x=-1\\).\n\nTCN: Bậc tử = bậc mẫu = 2 → TCN = \\(\\dfrac{1}{1}=1\\) → TCN: \\(y=1\\).\n\nTổng: 2 TCĐ + 1 TCN = 3 đường tiệm cận.",
+    "quick": "2 TCĐ (x=2 và x=-1, cả hai tử≠0) + 1 TCN (y=1) = 3 đường.",
     "casio": "CASIO: x=2.0001 → rất lớn → TCĐ. x=-0.9999 → rất lớn → TCĐ. x=10^6 → ≈1 → TCN y=1.",
     "difficulty": 3,
     "topic": "Tiệm cận"
@@ -227,8 +227,8 @@
       "\\(x=3\\)"
     ],
     "correct": "\\(x=1\\) và \\(x=3\\)",
-    "solution": "Mẫu: \\(x^2-4x+3=(x-1)(x-3)=0 \\Rightarrow x=1,\\;x=3\\).\n\nTử = 1 ≠ 0 tại cả hai điểm → cả hai đều là **TCĐ**.\n\n**TCĐ: \\(x=1\\) và \\(x=3\\)**.",
-    "quick": "Mẫu=0 tại x=1 và x=3; tử=1≠0 → **cả hai đều là TCĐ**.",
+    "solution": "Mẫu: \\(x^2-4x+3=(x-1)(x-3)=0 \\Rightarrow x=1,\\;x=3\\).\n\nTử = 1 ≠ 0 tại cả hai điểm → cả hai đều là TCĐ.\n\nTCĐ: \\(x=1\\) và \\(x=3\\).",
+    "quick": "Mẫu=0 tại x=1 và x=3; tử=1≠0 → cả hai đều là TCĐ.",
     "casio": "CASIO: x=1.0001 → 1/(0.0001·(-1.9999)) rất lớn âm → TCĐ. x=3.0001 → 1/(2.0001·0.0001) rất lớn → TCĐ.",
     "difficulty": 1,
     "topic": "Tiệm cận"
@@ -245,8 +245,8 @@
       "\\(y=x\\)"
     ],
     "correct": "\\(y=x-1\\)",
-    "solution": "Chia đa thức:\n\\(x^2-3x+5=(x-2)(x-1)+3\\)\n\nKiểm tra: \\((x-2)(x-1)=x^2-3x+2\\). Vậy \\(x^2-3x+5-(x^2-3x+2)=3\\) ✓\n\n\\(y=x-1+\\dfrac{3}{x-2}\\)\n\nKhi \\(x\\to\\infty\\): \\(y\\to x-1\\) → **TCX: \\(y=x-1\\)**.",
-    "quick": "Chia: \\(x^2-3x+5=(x-2)(x-1)+3\\) → phần nguyên = **y=x-1**.",
+    "solution": "Chia đa thức:\n\\(x^2-3x+5=(x-2)(x-1)+3\\)\n\nKiểm tra: \\((x-2)(x-1)=x^2-3x+2\\). Vậy \\(x^2-3x+5-(x^2-3x+2)=3\\) ✓\n\n\\(y=x-1+\\dfrac{3}{x-2}\\)\n\nKhi \\(x\\to\\infty\\): \\(y\\to x-1\\) → TCX: \\(y=x-1\\).",
+    "quick": "Chia: \\(x^2-3x+5=(x-2)(x-1)+3\\) → phần nguyên = y=x-1.",
     "casio": "CASIO: x=10^6 → y ≈ 10^6-1. TCX y=x-1.",
     "difficulty": 2,
     "topic": "Tiệm cận"
@@ -263,8 +263,8 @@
       "\\(y=0\\)"
     ],
     "correct": "\\(y=\\dfrac{3}{2}\\) và \\(y=-\\dfrac{3}{2}\\)",
-    "solution": "**Khi \\(x\\to+\\infty\\):** \\(\\sqrt{4x^2+2}\\sim\\sqrt{4x^2}=2x\\) (\\(x>0\\)) → \\(y\\sim\\dfrac{3x}{2x}=\\dfrac{3}{2}\\).\n\n**Khi \\(x\\to-\\infty\\):** \\(\\sqrt{4x^2+2}\\sim2|x|=-2x\\) (\\(x<0\\)) → \\(y\\sim\\dfrac{3x}{-2x}=-\\dfrac{3}{2}\\).\n\n**Hai TCN:** \\(y=\\dfrac{3}{2}\\) và \\(y=-\\dfrac{3}{2}\\).",
-    "quick": "\\(\\sqrt{4x^2}=2|x|\\): phía +∞ → y=3/2; phía −∞ → y=−3/2. **2 TCN** (lưu ý |x| thay đổi dấu).",
+    "solution": "Khi \\(x\\to+\\infty\\): \\(\\sqrt{4x^2+2}\\sim\\sqrt{4x^2}=2x\\) (\\(x\\gt0\\)) → \\(y\\sim\\dfrac{3x}{2x}=\\dfrac{3}{2}\\).\n\nKhi \\(x\\to-\\infty\\): \\(\\sqrt{4x^2+2}\\sim2|x|=-2x\\) (\\(x\\lt0\\)) → \\(y\\sim\\dfrac{3x}{-2x}=-\\dfrac{3}{2}\\).\n\nHai TCN: \\(y=\\dfrac{3}{2}\\) và \\(y=-\\dfrac{3}{2}\\).",
+    "quick": "\\(\\sqrt{4x^2}=2|x|\\): phía +∞ → y=3/2; phía −∞ → y=−3/2. 2 TCN (lưu ý |x| thay đổi dấu).",
     "casio": "CASIO: x=10^6 → (3·10^6-1)/√(4·10^12+2) ≈ 3·10^6/(2·10^6) = 3/2. x=-10^6 → 3·(-10^6)/(2·10^6) = -3/2.",
     "difficulty": 2,
     "topic": "Tiệm cận"
@@ -281,7 +281,7 @@
       "TCĐ x=1, TCX y=x"
     ],
     "correct": "TCĐ x=−1, TCX y=x",
-    "solution": "Mẫu: \\(x^2-1=(x-1)(x+1)=0\\) tại \\(x=1,\\;x=-1\\).\n\nTử: \\(x^3-1=(x-1)(x^2+x+1)\\).\n\n**Tại \\(x=1\\):** Tử = 0 → rút gọn: \\(\\dfrac{(x-1)(x^2+x+1)}{(x-1)(x+1)}=\\dfrac{x^2+x+1}{x+1}\\) → giới hạn = 3/2 hữu hạn → **không TCĐ**.\n\n**Tại \\(x=-1\\):** Tử = \\(-2\\neq0\\) → **TCĐ: \\(x=-1\\)**.\n\n**TCX:** Sau khi rút gọn \\(y=\\dfrac{x^2+x+1}{x+1}=x+\\dfrac{1}{x+1}\\) → **TCX: \\(y=x\\)**.\n\nTổng: **TCĐ: \\(x=-1\\)** và **TCX: \\(y=x\\)**.",
+    "solution": "Mẫu: \\(x^2-1=(x-1)(x+1)=0\\) tại \\(x=1,\\;x=-1\\).\n\nTử: \\(x^3-1=(x-1)(x^2+x+1)\\).\n\nTại \\(x=1\\): Tử = 0 → rút gọn: \\(\\dfrac{(x-1)(x^2+x+1)}{(x-1)(x+1)}=\\dfrac{x^2+x+1}{x+1}\\) → giới hạn = 3/2 hữu hạn → không TCĐ.\n\nTại \\(x=-1\\): Tử = \\(-2\\neq0\\) → TCĐ: \\(x=-1\\).\n\nTCX: Sau khi rút gọn \\(y=\\dfrac{x^2+x+1}{x+1}=x+\\dfrac{1}{x+1}\\) → TCX: \\(y=x\\).\n\nTổng: TCĐ: \\(x=-1\\) và TCX: \\(y=x\\).",
     "quick": "Rút gọn: \\(y=\\dfrac{x^2+x+1}{x+1}=x+\\dfrac{1}{x+1}\\) → TCĐ x=-1, TCX y=x.",
     "casio": "CASIO: x=-0.9999 → rất lớn → TCĐ x=-1. x=10^6 → y≈10^6 ≈ x → TCX y=x.",
     "difficulty": 3,
@@ -299,8 +299,8 @@
       "Không có TCĐ"
     ],
     "correct": "\\(x=3\\)",
-    "solution": "Hàm \\(\\ln u\\) không xác định khi \\(u\\leq0\\).\n\nTại \\(x=3^+\\): \\(x-3\\to0^+\\) → \\(\\ln(x-3)\\to-\\infty\\).\n\n→ **TCĐ: \\(x=3\\)** (tiệm cận đứng của hàm logarit).\n\nMiền xác định: \\(x>3\\).",
-    "quick": "\\(\\ln u\\to-\\infty\\) khi \\(u\\to0^+\\) → TCĐ tại điểm làm đối số = 0: **x=3**.",
+    "solution": "Hàm \\(\\ln u\\) không xác định khi \\(u\\leq0\\).\n\nTại \\(x=3^+\\): \\(x-3\\to0^+\\) → \\(\\ln(x-3)\\to-\\infty\\).\n\n→ TCĐ: \\(x=3\\) (tiệm cận đứng của hàm logarit).\n\nMiền xác định: \\(x\\gt3\\).",
+    "quick": "\\(\\ln u\\to-\\infty\\) khi \\(u\\to0^+\\) → TCĐ tại điểm làm đối số = 0: x=3.",
     "casio": "CASIO: x=3.0001 → ln(0.0001)=-9.2... (lớn âm); x=3.000001 → ln(0.000001)=-13.8... → TCĐ.",
     "difficulty": 1,
     "topic": "Tiệm cận"
@@ -317,8 +317,8 @@
       "\\(y=2\\) và \\(y=0\\)"
     ],
     "correct": "\\(y=2\\)",
-    "solution": "**Khi \\(x\\to+\\infty\\):** \\(e^{-x}\\to0\\) → \\(y\\to2-0=2\\) → **TCN: \\(y=2\\)**.\n\n**Khi \\(x\\to-\\infty\\):** \\(e^{-x}\\to+\\infty\\) → \\(y\\to2-\\infty=-\\infty\\) → không có TCN.\n\nChỉ có **1 TCN: \\(y=2\\)**.",
-    "quick": "\\(x\\to+\\infty\\): \\(e^{-x}\\to0\\) → y→2. \\(x\\to-\\infty\\): y→−∞. Chỉ **y=2** là TCN.",
+    "solution": "Khi \\(x\\to+\\infty\\): \\(e^{-x}\\to0\\) → \\(y\\to2-0=2\\) → TCN: \\(y=2\\).\n\nKhi \\(x\\to-\\infty\\): \\(e^{-x}\\to+\\infty\\) → \\(y\\to2-\\infty=-\\infty\\) → không có TCN.\n\nChỉ có 1 TCN: \\(y=2\\).",
+    "quick": "\\(x\\to+\\infty\\): \\(e^{-x}\\to0\\) → y→2. \\(x\\to-\\infty\\): y→−∞. Chỉ y=2 là TCN.",
     "casio": "CASIO: x=100 → 2-e^(-100) ≈ 2. x=-100 → 2-e^100 cực lớn âm → không TCN.",
     "difficulty": 1,
     "topic": "Tiệm cận"
@@ -335,8 +335,8 @@
       "4"
     ],
     "correct": "3",
-    "solution": "**TCĐ:** Mẫu \\(x^2-1=(x-1)(x+1)=0\\) tại \\(x=\\pm1\\).\n\nTử tại \\(x=1\\): \\(2+3-1=4\\neq0\\) → **TCĐ: \\(x=1\\)**.\nTử tại \\(x=-1\\): \\(2-3-1=-2\\neq0\\) → **TCĐ: \\(x=-1\\)**.\n\n**TCN:** Bậc tử = bậc mẫu = 2 → TCN = \\(\\dfrac{2}{1}=2\\) → **TCN: \\(y=2\\)**.\n\nTổng: 2 TCĐ + 1 TCN = **3 đường tiệm cận**.",
-    "quick": "2 TCĐ (x=±1, tử≠0 ở cả hai) + 1 TCN (y=2) = **3 đường**.",
+    "solution": "TCĐ: Mẫu \\(x^2-1=(x-1)(x+1)=0\\) tại \\(x=\\pm1\\).\n\nTử tại \\(x=1\\): \\(2+3-1=4\\neq0\\) → TCĐ: \\(x=1\\).\nTử tại \\(x=-1\\): \\(2-3-1=-2\\neq0\\) → TCĐ: \\(x=-1\\).\n\nTCN: Bậc tử = bậc mẫu = 2 → TCN = \\(\\dfrac{2}{1}=2\\) → TCN: \\(y=2\\).\n\nTổng: 2 TCĐ + 1 TCN = 3 đường tiệm cận.",
+    "quick": "2 TCĐ (x=±1, tử≠0 ở cả hai) + 1 TCN (y=2) = 3 đường.",
     "casio": "CASIO: x=±1.0001 → rất lớn → 2 TCĐ. x=10^6 → ≈2 → TCN y=2.",
     "difficulty": 2,
     "topic": "Tiệm cận"
@@ -353,8 +353,8 @@
       "\\(y=x^2\\)"
     ],
     "correct": "\\(y=x\\)",
-    "solution": "Chia đa thức:\n\\(x^3 \\div (x^2+1)\\):\n\\(x^3 = (x^2+1)\\cdot x - x\\)\n\n\\(y=\\dfrac{(x^2+1)x-x}{x^2+1}=x-\\dfrac{x}{x^2+1}\\)\n\nKhi \\(x\\to\\infty\\): \\(\\dfrac{x}{x^2+1}\\to0\\) → \\(y\\to x\\) → **TCX: \\(y=x\\)**.\n\nKiểm tra bằng công thức: \\(a=\\lim\\dfrac{f(x)}{x}=\\lim\\dfrac{x^2}{x^2+1}=1\\), \\(b=\\lim(f(x)-x)=\\lim\\dfrac{-x}{x^2+1}=0\\) → \\(y=x\\).",
-    "quick": "Chia: \\(x^3=(x^2+1)\\cdot x-x\\) → \\(y=x-\\dfrac{x}{x^2+1}\\) → TCX: **y=x**.",
+    "solution": "Chia đa thức:\n\\(x^3 \\div (x^2+1)\\):\n\\(x^3 = (x^2+1)\\cdot x - x\\)\n\n\\(y=\\dfrac{(x^2+1)x-x}{x^2+1}=x-\\dfrac{x}{x^2+1}\\)\n\nKhi \\(x\\to\\infty\\): \\(\\dfrac{x}{x^2+1}\\to0\\) → \\(y\\to x\\) → TCX: \\(y=x\\).\n\nKiểm tra bằng công thức: \\(a=\\lim\\dfrac{f(x)}{x}=\\lim\\dfrac{x^2}{x^2+1}=1\\), \\(b=\\lim(f(x)-x)=\\lim\\dfrac{-x}{x^2+1}=0\\) → \\(y=x\\).",
+    "quick": "Chia: \\(x^3=(x^2+1)\\cdot x-x\\) → \\(y=x-\\dfrac{x}{x^2+1}\\) → TCX: y=x.",
     "casio": "CASIO: x=10^6 → y=10^18/(10^12+1)≈10^6=x. TCX y=x xác nhận.",
     "difficulty": 3,
     "topic": "Tiệm cận"
@@ -425,7 +425,7 @@
       "4"
     ],
     "correct": "3",
-    "solution": "Miền xác định là \\(x<-1\\) hoặc \\(x>1\\). Khi tiến tới \\(-1^-\\) hoặc \\(1^+\\), logarit tiến tới vô cực nên có hai TCĐ \\(x=-1, x=1\\). Khi \\(x\\to\\pm\\infty\\), tỉ số tiến tới 1 và logarit tiến tới 0, nên có TCN \\(y=0\\). Tổng cộng 3.",
+    "solution": "Miền xác định là \\(x\\lt-1\\) hoặc \\(x\\gt1\\). Khi tiến tới \\(-1^-\\) hoặc \\(1^+\\), logarit tiến tới vô cực nên có hai TCĐ \\(x=-1, x=1\\). Khi \\(x\\to\\pm\\infty\\), tỉ số tiến tới 1 và logarit tiến tới 0, nên có TCN \\(y=0\\). Tổng cộng 3.",
     "quick": "Hai biên miền xác định cho TCĐ; ở vô cực, log của tỉ số tiến về 1 nên TCN là 0.",
     "casio": "CASIO: kiểm tra gần nghiệm của mẫu để nhận biết tiệm cận đứng và thay x rất lớn dương/âm để kiểm tra tiệm cận ngang hoặc xiên.",
     "difficulty": 3,
@@ -500,6 +500,24 @@
     "solution": "Vì \\(\\arctan x\\to\\pi/2\\) khi \\(x\\to+\\infty\\) và \\(\\arctan x\\to-\\pi/2\\) khi \\(x\\to-\\infty\\), hiệu giữa hàm và hai đường thẳng tương ứng tiến tới 0.",
     "quick": "Tiệm cận xiên có thể khác nhau ở hai phía vô cực.",
     "casio": "CASIO: kiểm tra gần nghiệm của mẫu để nhận biết tiệm cận đứng và thay x rất lớn dương/âm để kiểm tra tiệm cận ngang hoặc xiên.",
+    "difficulty": 3,
+    "topic": "Tiệm cận"
+  },
+  {
+    "id": 29,
+    "type": "vertical_asymptotes",
+    "question": "Tìm các tiệm cận đứng của \\(y=\\dfrac{x^2-1}{x^2-3x+2}\\).",
+    "matrix": null,
+    "options": [
+      "\\(x=2\\)",
+      "\\(x=1\\) và \\(x=2\\)",
+      "\\(x=1\\)",
+      "\\(y=1\\)"
+    ],
+    "correct": "\\(x=2\\)",
+    "solution": "\\(x^2-1=(x-1)(x+1)\\), \\(x^2-3x+2=(x-1)(x-2)\\). Rút gọn còn \\((x+1)/(x-2)\\). Tại \\(x=1\\) là gián đoạn bỏ được, còn \\(x=2\\) là tiệm cận đứng.",
+    "quick": "Rút gọn trước khi kết luận tiệm cận đứng.",
+    "casio": "CASIO fx-580VNX: Thay X rất gần nghiệm của mẫu, ví dụ x₀±0.0001. Nếu giá trị tăng rất lớn về ±∞ sau khi đã rút gọn, đó là tiệm cận đứng.",
     "difficulty": 3,
     "topic": "Tiệm cận"
   }

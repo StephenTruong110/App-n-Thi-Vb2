@@ -988,5 +988,113 @@
     "casio": "CASIO fx-580VNX: đặt đơn vị góc RAD khi kiểm tra hàm lượng giác. Dùng [SHIFT][d/dx] để tính đạo hàm số tại một giá trị cụ thể; máy không trả đạo hàm ký hiệu.",
     "difficulty": 1,
     "topic": "Đạo hàm"
+  },
+  {
+    "id": 56,
+    "type": "second_derivative",
+    "question": "Tìm đạo hàm cấp hai của \\(y=\\ln x\\).",
+    "matrix": null,
+    "options": [
+      "\\(y''=-\\dfrac{1}{x^2}\\)",
+      "\\(y''=\\dfrac{1}{x^2}\\)",
+      "\\(y''=\\dfrac{1}{x}\\)",
+      "\\(y''=-\\dfrac{2}{x^2}\\)"
+    ],
+    "correct": "\\(y''=-\\dfrac{1}{x^2}\\)",
+    "solution": "\\(y'=1/x\\), nên \\(y''=-1/x^2\\).",
+    "quick": "Đạo hàm của \\(x^{-1}\\) là \\(-x^{-2}\\).",
+    "casio": "CASIO fx-580VNX: Dùng SHIFT → d/dx để kiểm tra đạo hàm tại một điểm cụ thể. Với cực trị, dùng đạo hàm để tìm điểm tới hạn rồi thử giá trị bằng CALC.",
+    "difficulty": 1,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 57,
+    "type": "max_on_interval",
+    "question": "Tìm giá trị lớn nhất của \\(y=x^3-3x+2\\) trên đoạn \\([0,2]\\).",
+    "matrix": null,
+    "options": [
+      "4",
+      "0",
+      "2",
+      "6"
+    ],
+    "correct": "4",
+    "solution": "\\(y'=3x^2-3\\), điểm tới hạn trong đoạn là \\(x=1\\). Tính \\(y(0)=2\\), \\(y(1)=0\\), \\(y(2)=4\\). Vậy giá trị lớn nhất là 4.",
+    "quick": "So sánh giá trị tại hai đầu mút và điểm tới hạn.",
+    "casio": "CASIO fx-580VNX: Dùng SHIFT → d/dx để kiểm tra đạo hàm tại một điểm cụ thể. Với cực trị, dùng đạo hàm để tìm điểm tới hạn rồi thử giá trị bằng CALC.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 58,
+    "type": "derivative_trig_log",
+    "question": "Tính đạo hàm của \\(y=\\ln(\\tan x)\\) tại \\(x=\\pi/4\\).",
+    "matrix": null,
+    "options": [
+      "2",
+      "0",
+      "1",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "2",
+    "solution": "\\(y'=\\dfrac{1}{\\tan x}\\sec^2x=\\dfrac{1}{\\sin x\\cos x}\\). Tại \\(x=\\pi/4\\), \\(y'=2\\).",
+    "quick": "Đạo hàm \\(\\ln u\\) là \\(u'/u\\).",
+    "casio": "CASIO fx-580VNX: Dùng SHIFT → d/dx để kiểm tra đạo hàm tại một điểm cụ thể. Với cực trị, dùng đạo hàm để tìm điểm tới hạn rồi thử giá trị bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 59,
+    "type": "onevar_extremum",
+    "question": "Hàm \\(y=-x^3+3x^2-1\\) đạt cực đại tại điểm nào?",
+    "matrix": null,
+    "options": [
+      "\\(x=2\\)",
+      "\\(x=0\\)",
+      "\\(x=1\\)",
+      "\\(x=3\\)"
+    ],
+    "correct": "\\(x=2\\)",
+    "solution": "\\(y'=-3x^2+6x=-3x(x-2)\\). \\(y''=-6x+6\\). Tại \\(x=2\\), \\(y''=-6\\lt0\\), nên là cực đại.",
+    "quick": "Dùng đạo hàm bậc hai để phân loại.",
+    "casio": "CASIO fx-580VNX: Dùng SHIFT → d/dx để kiểm tra đạo hàm tại một điểm cụ thể. Với cực trị, dùng đạo hàm để tìm điểm tới hạn rồi thử giá trị bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 60,
+    "type": "min_one_variable",
+    "question": "Tìm giá trị nhỏ nhất của \\(y=x+\\dfrac4x\\) trên \\((0,+\\infty)\\).",
+    "matrix": null,
+    "options": [
+      "4",
+      "2",
+      "0",
+      "5"
+    ],
+    "correct": "4",
+    "solution": "Theo AM-GM, \\(x+4/x\\ge2\\sqrt{x\\cdot4/x}=4\\). Dấu bằng khi \\(x=2\\).",
+    "quick": "Dạng \\(x+a/x\\) với \\(x\\gt0\\).",
+    "casio": "CASIO fx-580VNX: Dùng SHIFT → d/dx để kiểm tra đạo hàm tại một điểm cụ thể. Với cực trị, dùng đạo hàm để tìm điểm tới hạn rồi thử giá trị bằng CALC.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 61,
+    "type": "onevar_extreme_parameter",
+    "question": "Tìm \\(m\\) để \\(y=x^3-3mx^2+3(m^2-1)x+1\\) đạt cực đại tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=0\\)",
+      "\\(m=0\\) hoặc \\(m=2\\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "\\(y'=3x^2-6mx+3(m^2-1)\\). Điều kiện \\(y'(1)=0\\) cho \\(m=0\\) hoặc \\(m=2\\). \\(y''(1)=6-6m\\). Cực đại cần \\(y''(1)\\lt0\\), nên \\(m=2\\).",
+    "quick": "Có điểm dừng rồi xét dấu đạo hàm bậc hai.",
+    "casio": "CASIO fx-580VNX: Dùng SHIFT → d/dx để kiểm tra đạo hàm tại một điểm cụ thể. Với cực trị, dùng đạo hàm để tìm điểm tới hạn rồi thử giá trị bằng CALC.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
   }
 ]

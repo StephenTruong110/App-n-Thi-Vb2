@@ -844,5 +844,203 @@
     "casio": "CASIO không cần thiết; đây là câu lý thuyết.",
     "difficulty": 1,
     "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 48,
+    "type": "power_series_radius",
+    "question": "Tìm bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n3^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(R=3\\)",
+      "\\(R=\\dfrac13\\)",
+      "\\(R=1\\)",
+      "\\(R=+\\infty\\)"
+    ],
+    "correct": "\\(R=3\\)",
+    "solution": "Hệ số \\(a_n=1/(n3^n)\\). \\(R=\\lim|a_n/a_{n+1}|=\\lim 3(n+1)/n=3\\).",
+    "quick": "Hệ số có \\(3^n\\) ở mẫu nên bán kính là 3.",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 49,
+    "type": "power_series_domain_geom",
+    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{x^n}{3^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((-3,3)\\)",
+      "\\([-3,3]\\)",
+      "\\([-3,3)\\)",
+      "\\((-3,3]\\)"
+    ],
+    "correct": "\\((-3,3)\\)",
+    "solution": "Đây là chuỗi hình học với công bội \\(-x/3\\). Hội tụ khi \\(|x/3|\\lt1\\), tức \\(-3\\lt x\\lt3\\). Hai đầu mút đều cho chuỗi không có giới hạn số hạng bằng 0 nên phân kỳ.",
+    "quick": "Chuỗi hình học: \\(|q|\\lt1\\).",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 50,
+    "type": "short_power_radius",
+    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{4^n x^n}{n+3}\\) có bán kính hội tụ \\(R=\\dfrac ab\\) tối giản. Tính \\(4a+b\\).",
+    "matrix": null,
+    "options": [
+      "8",
+      "5",
+      "17",
+      "4"
+    ],
+    "correct": "8",
+    "solution": "Với hệ số \\(a_n=4^n/(n+3)\\), \\(\\lim |a_n/a_{n+1}|=1/4\\). Vậy \\(R=1/4\\), nên \\(a=1,b=4\\). Do đó \\(4a+b=8\\).",
+    "quick": "Hệ số có \\(4^n\\) nên bán kính là \\(1/4\\).",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 51,
+    "type": "power_radius_cauchy",
+    "question": "Tìm bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{2n+1}{n+3}\\right)^n x^n\\).",
+    "matrix": null,
+    "options": [
+      "\\(R=\\dfrac12\\)",
+      "\\(R=2\\)",
+      "\\(R=1\\)",
+      "\\(R=+\\infty\\)"
+    ],
+    "correct": "\\(R=\\dfrac12\\)",
+    "solution": "Với hệ số \\(a_n=\\left(\\dfrac{2n+1}{n+3}\\right)^n\\), ta có \\(\\sqrt[n]{|a_n|}\\to2\\). Do đó \\(R=1/2\\).",
+    "quick": "Dùng Cauchy cho hệ số dạng lũy thừa bậc \\(n\\).",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 52,
+    "type": "power_domain_shift",
+    "question": "Tìm miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n2^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\([0,4)\\)",
+      "\\((0,4)\\)",
+      "\\([0,4]\\)",
+      "\\((0,4]\\)"
+    ],
+    "correct": "\\([0,4)\\)",
+    "solution": "Bán kính \\(R=2\\), tâm \\(2\\), nên xét \\(0\\lt x\\lt4\\). Tại \\(x=0\\), chuỗi thành \\(\\sum(-1)^n/n\\) hội tụ. Tại \\(x=4\\), chuỗi thành \\(\\sum1/n\\) phân kỳ. Miền là \\([0,4)\\).",
+    "quick": "Kiểm tra riêng hai đầu mút.",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 53,
+    "type": "power_interval_length",
+    "question": "Tìm độ dài khoảng hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(2x-3)^n}{n}\\).",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": "1",
+    "solution": "Hội tụ khi \\(|2x-3|\\lt1\\), tức \\(1\\lt x\\lt2\\). Độ dài khoảng là \\(2-1=1\\).",
+    "quick": "Biến đổi về \\(|2x-3|\\lt1\\).",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 54,
+    "type": "power_radius_factorial",
+    "question": "Tìm bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{2^n}x^n\\).",
+    "matrix": null,
+    "options": [
+      "\\(R=0\\)",
+      "\\(R=+\\infty\\)",
+      "\\(R=2\\)",
+      "\\(R=\\dfrac12\\)"
+    ],
+    "correct": "\\(R=0\\)",
+    "solution": "Với \\(a_n=n!/2^n\\), \\(R=\\lim|a_n/a_{n+1}|=\\lim\\dfrac{n!/2^n}{(n+1)!/2^{n+1}}=\\lim\\dfrac{2}{n+1}=0\\).",
+    "quick": "Giai thừa ở tử làm bán kính bằng 0.",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 55,
+    "type": "power_domain_shift_harmonic",
+    "question": "Tìm miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(x+1)^n}{n+2}\\).",
+    "matrix": null,
+    "options": [
+      "\\([-2,0)\\)",
+      "\\((-2,0)\\)",
+      "\\([-2,0]\\)",
+      "\\((-2,0]\\)"
+    ],
+    "correct": "\\([-2,0)\\)",
+    "solution": "Bán kính \\(R=1\\), tâm \\(-1\\). Tại \\(x=-2\\), chuỗi thành \\(\\sum(-1)^n/(n+2)\\) hội tụ. Tại \\(x=0\\), chuỗi thành \\(\\sum1/(n+2)\\) phân kỳ.",
+    "quick": "Kiểm tra hai đầu mút.",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 56,
+    "type": "power_radius_group",
+    "question": "Tìm bán kính hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n2^n}\\).",
+    "matrix": null,
+    "options": [
+      "2",
+      "1",
+      "\\(\\dfrac12\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "2",
+    "solution": "Đây là chuỗi lũy thừa tâm 2 với hệ số \\(1/(n2^n)\\), nên bán kính hội tụ là 2.",
+    "quick": "So với biến \\((x-2)/2\\).",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 57,
+    "type": "power_open_interval_group",
+    "question": "Khoảng hội tụ chưa xét đầu mút của \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n2^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((0,4)\\)",
+      "\\((-4,0)\\)",
+      "\\((-2,2)\\)",
+      "\\((1,3)\\)"
+    ],
+    "correct": "\\((0,4)\\)",
+    "solution": "Tâm là 2, bán kính là 2 nên khoảng hội tụ ban đầu là \\((2-2,2+2)=(0,4)\\).",
+    "quick": "Tâm 2, bán kính 2.",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 58,
+    "type": "power_domain_group",
+    "question": "Miền hội tụ của \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n2^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([0,4)\\)",
+      "\\((0,4]\\)",
+      "\\([0,4]\\)",
+      "\\((0,4)\\)"
+    ],
+    "correct": "\\([0,4)\\)",
+    "solution": "Tại \\(x=0\\), chuỗi thành \\(\\sum(-1)^n/n\\), hội tụ. Tại \\(x=4\\), chuỗi thành \\(\\sum1/n\\), phân kỳ. Vậy miền hội tụ là \\([0,4)\\).",
+    "quick": "Kiểm tra hai đầu mút.",
+    "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
   }
 ]

@@ -781,7 +781,7 @@
     ],
     "correct": "\\(\\operatorname{rank}(A)\\le3\\)",
     "solution": "Định thức bằng 0 chỉ cho biết ma trận không đủ hạng, nên hạng nhỏ hơn 4.",
-    "quick": "det=0 ⇒ rank&lt;n, chưa biết chính xác bao nhiêu.",
+    "quick": "det=0 ⇒ rank\\ltn, chưa biết chính xác bao nhiêu.",
     "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Định thức & khả nghịch"
@@ -1037,5 +1037,167 @@
     "casio": "CASIO không cần thiết; áp dụng trực tiếp tính chất của định thức nêu trong lời giải.",
     "difficulty": 3,
     "topic": "Tính chất định thức"
+  },
+  {
+    "id": 49,
+    "type": "det_triangular_parameter",
+    "question": "Tìm \\(m\\) để định thức của \\(A=\\begin{pmatrix}1&2&3\\\\0&m&1\\\\0&0&2\\end{pmatrix}\\) bằng 6.",
+    "matrix": null,
+    "options": [
+      "\\(m=3\\)",
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=6\\)"
+    ],
+    "correct": "\\(m=3\\)",
+    "solution": "Ma trận tam giác trên nên \\(\\det A=1\\cdot m\\cdot2=2m\\). Điều kiện \\(2m=6\\) cho \\(m=3\\).",
+    "quick": "Tam giác: định thức bằng tích đường chéo.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 2,
+    "topic": "Định thức"
+  },
+  {
+    "id": 50,
+    "type": "det_special_parameter",
+    "question": "Cho \\(A=\\begin{pmatrix}m&1&1\\\\1&m&1\\\\1&1&m\\end{pmatrix}\\). Tìm \\(m\\) để \\(\\det A=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\) hoặc \\(m=-2\\)",
+      "\\(m=-1\\) hoặc \\(m=2\\)",
+      "\\(m=1\\) hoặc \\(m=2\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=1\\) hoặc \\(m=-2\\)",
+    "solution": "Ma trận có đường chéo \\(m\\), ngoài đường chéo 1. Các trị riêng là \\(m+2\\) và \\(m-1\\) bội 2. Do đó \\(\\det A=(m+2)(m-1)^2\\), bằng 0 khi \\(m=-2\\) hoặc \\(m=1\\).",
+    "quick": "Dạng đường chéo đều: \\((m+2)(m-1)^2\\).",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 3,
+    "topic": "Định thức"
+  },
+  {
+    "id": 51,
+    "type": "rank_matrix",
+    "question": "Tìm hạng của \\(A=\\begin{pmatrix}1&-2&3\\\\2&-4&6\\\\-3&6&-9\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correct": "1",
+    "solution": "Hàng 2 bằng 2 lần hàng 1, hàng 3 bằng \\(-3\\) lần hàng 1. Chỉ có một hàng độc lập khác 0 nên \\(\\operatorname{rank}(A)=1\\).",
+    "quick": "Tất cả các hàng đều tỉ lệ với hàng đầu.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 2,
+    "topic": "Định thức & hạng"
+  },
+  {
+    "id": 52,
+    "type": "short_det_parameter",
+    "question": "Cho \\(A=\\begin{pmatrix}1&m&2\\\\0&2&1\\\\1&1&3\\end{pmatrix}\\). Tìm \\(m\\) nguyên để \\(\\det(A^2)=25\\) và \\(\\det(A)\\lt0\\).",
+    "matrix": null,
+    "options": [
+      "\\(-6\\)",
+      "4",
+      "\\(-4\\)",
+      "6"
+    ],
+    "correct": "\\(-6\\)",
+    "solution": "\\(\\det A=m+1\\). Vì \\(\\det(A^2)=\\det(A)^2=25\\) và \\(\\det(A)\\lt0\\), suy ra \\(\\det(A)=-5\\). Do đó \\(m+1=-5\\), nên \\(m=-6\\).",
+    "quick": "Dùng \\(\\det(A^2)=\\det(A)^2\\).",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 3,
+    "topic": "Định thức"
+  },
+  {
+    "id": 53,
+    "type": "rank_parameter_matrix",
+    "question": "Xác định \\(m\\) để \\(A=\\begin{pmatrix}1&1&2\\\\2&3&m\\\\3&4&7\\end{pmatrix}\\) có hạng bằng 2.",
+    "matrix": null,
+    "options": [
+      "\\(m=5\\)",
+      "\\(m\\ne5\\)",
+      "\\(m=0\\)",
+      "Với mọi \\(m\\)"
+    ],
+    "correct": "\\(m=5\\)",
+    "solution": "Tính được \\(\\det A=5-m\\). Hạng bằng 2 khi định thức bằng 0 nhưng ma trận không về hạng 1. Với \\(m=5\\), hạng của ma trận là 2.",
+    "quick": "Ma trận vuông cấp 3: hạng nhỏ hơn 3 khi det bằng 0; ở đây \\(5-m=0\\).",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 3,
+    "topic": "Định thức & hạng"
+  },
+  {
+    "id": 54,
+    "type": "det_vector_matrix",
+    "question": "Cho \\(A=\\begin{pmatrix}2&1&0\\\\1&2&1\\\\0&1&2\\end{pmatrix}\\). Tính \\(\\det A\\).",
+    "matrix": null,
+    "options": [
+      "4",
+      "0",
+      "6",
+      "2"
+    ],
+    "correct": "4",
+    "solution": "\\(\\det A=2(4-1)-1(2-0)=6-2=4\\).",
+    "quick": "Khai triển theo hàng đầu.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 2,
+    "topic": "Định thức"
+  },
+  {
+    "id": 55,
+    "type": "det2_parameter",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}m+1&2\\\\m-1&m\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(m^2-m+2\\)",
+      "\\(m^2+3m-2\\)",
+      "\\(m^2+m+2\\)",
+      "\\(m^2-m-2\\)"
+    ],
+    "correct": "\\(m^2-m+2\\)",
+    "solution": "\\(\\det A=m(m+1)-2(m-1)=m^2+m-2m+2=m^2-m+2\\).",
+    "quick": "Định thức 2x2: chéo chính trừ chéo phụ.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 2,
+    "topic": "Định thức"
+  },
+  {
+    "id": 56,
+    "type": "det_lower_triangular",
+    "question": "Tính định thức của ma trận tam giác dưới có đường chéo \\(2,m-1,3,m\\).",
+    "matrix": null,
+    "options": [
+      "\\(6m(m-1)\\)",
+      "\\(2(m-1)\\)",
+      "\\(5m\\)",
+      "\\(6(m^2-1)\\)"
+    ],
+    "correct": "\\(6m(m-1)\\)",
+    "solution": "Ma trận tam giác nên định thức bằng tích đường chéo: \\(2(m-1)3m=6m(m-1)\\).",
+    "quick": "Tam giác: nhân các phần tử đường chéo.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 1,
+    "topic": "Định thức"
+  },
+  {
+    "id": 57,
+    "type": "det_dependent_group",
+    "question": "Cho ma trận có các hàng \\((1,-1,2),(2,1,1),(3,0,3)\\). Định thức của ma trận bằng",
+    "matrix": null,
+    "options": [
+      "0",
+      "6",
+      "\\(-4\\)",
+      "12"
+    ],
+    "correct": "0",
+    "solution": "Hàng 3 bằng hàng 1 cộng hàng 2, nên các hàng phụ thuộc tuyến tính. Do đó định thức bằng 0.",
+    "quick": "Hàng phụ thuộc tuyến tính thì det bằng 0.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
+    "difficulty": 1,
+    "topic": "Định thức"
   }
 ]
