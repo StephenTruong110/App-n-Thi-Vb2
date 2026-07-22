@@ -754,5 +754,689 @@
     "casio": "CASIO fx-580VNX: Tham số hóa đường cong để đưa về tích phân một biến rồi dùng phím ∫ kiểm tra. Với Green, tính Q_x-P_y trước rồi chuyển sang tích phân kép.",
     "difficulty": 2,
     "topic": "Tích phân đường"
+  },
+  {
+    "type": "line_integral_type1_official",
+    "question": "Trong mặt phẳng, \\(L\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,2)\\). Giá trị \\(\\int_L(x+2y)\\,ds\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{5\\sqrt5}{2}\\)",
+      "\\(5\\sqrt5\\)",
+      "\\(3\\sqrt5\\)",
+      "\\(10\\)"
+    ],
+    "correct": "\\(\\dfrac{5\\sqrt5}{2}\\)",
+    "solution": "Tham số hóa đoạn thẳng: \\(x=t,\\ y=2t\\), với \\(0\\leq t\\leq1\\). Khi đó \\(ds=\\sqrt{1^2+2^2}\\,dt=\\sqrt5\\,dt\\), còn \\(x+2y=t+4t=5t\\). Vậy \\(I=\\int_0^1 5t\\sqrt5\\,dt=\\dfrac{5\\sqrt5}{2}\\).",
+    "quick": "Đặt \\(x=t,y=2t\\). Khi đó \\(ds=\\sqrt5dt\\), \\(x+2y=5t\\), nên \\(I=5\\sqrt5/2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 43
+  },
+  {
+    "type": "line_integral_type1",
+    "question": "Tính \\(I=\\int_C x\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Trên đoạn này, đặt \\(x=t, y=0\\), \\(0\\leq t\\leq2\\). Khi đó \\(ds=dt\\). Vậy \\(I=\\int_0^2 t\\,dt=2\\).",
+    "quick": "Đoạn nằm trên trục Ox nên \\(ds=dx\\). \\(I=\\int_0^2x\\,dx=2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 1,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 44
+  },
+  {
+    "type": "line_integral_type1",
+    "question": "Tính \\(\\int_C y\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((0,3)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(3\\)",
+      "\\(9\\)",
+      "\\(\\dfrac{3}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{9}{2}\\)",
+    "solution": "Trên đoạn này, đặt \\(x=0, y=t\\), \\(0\\leq t\\leq3\\). Khi đó \\(ds=dt\\). Vậy \\(I=\\int_0^3 t\\,dt=\\dfrac{9}{2}\\).",
+    "quick": "Đoạn thẳng đứng nên \\(ds=dy\\). \\(I=\\int_0^3y\\,dy=9/2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 1,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 45
+  },
+  {
+    "type": "line_integral_type1",
+    "question": "Tính \\(\\int_C (x^2+y^2)\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(16\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(32\\pi\\)"
+    ],
+    "correct": "\\(16\\pi\\)",
+    "solution": "Trên \\(C\\), ta có \\(x^2+y^2=4\\). Độ dài đường tròn bán kính 2 là \\(2\\pi\\cdot2=4\\pi\\). Do đó \\(I=4\\cdot4\\pi=16\\pi\\).",
+    "quick": "Trên đường tròn bán kính 2: \\(x^2+y^2=4\\), độ dài \\(=4\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 46
+  },
+  {
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C x\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Tham số hóa \\(x=t, y=t\\), \\(0\\leq t\\leq2\\). Khi đó \\(dy=dt\\). Vậy \\(I=\\int_0^2 t\\,dt=2\\).",
+    "quick": "Đặt \\(x=y=t\\), \\(dy=dt\\), nên \\(I=\\int_0^2t\\,dt=2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Thay tham số hóa rồi dùng phím tích phân để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 47
+  },
+  {
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C y\\,dx+x\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((1,1)\\) đến \\((2,3)\\).",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Ta có \\(y\\,dx+x\\,dy=d(xy)\\). Vì vậy tích phân bằng \\(xy\\big|_{(1,1)}^{(2,3)}=2\\cdot3-1\\cdot1=5\\).",
+    "quick": "Nhận ra \\(y\\,dx+x\\,dy=d(xy)\\), nên lấy cuối trừ đầu.",
+    "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 48
+  },
+  {
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C (x-y)\\,dx+(x+y)\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Tham số hóa \\(x=t,y=t\\), \\(0\\leq t\\leq1\\). Khi đó \\(dx=dy=dt\\). Ta có \\(x-y=0\\), \\(x+y=2t\\). Do đó \\(I=\\int_0^1 2t\\,dt=1\\).",
+    "quick": "Trên đường \\(y=x\\): \\(x-y=0\\), \\(x+y=2t\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Thay tham số hóa rồi dùng phím tích phân để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 49
+  },
+  {
+    "type": "line_work",
+    "question": "Tính công \\(W=\\int_C\\mathbf F\\cdot d\\mathbf r\\), với \\(\\mathbf F=(2x,2y)\\), dọc theo đường bất kỳ từ \\((0,0)\\) đến \\((1,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(3\\)",
+      "\\(10\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "\\(\\mathbf F=(2x,2y)\\) có thế hàm \\(U=x^2+y^2\\). Tích phân không phụ thuộc đường đi. Vậy \\(W=U(1,2)-U(0,0)=1^2+2^2=5\\).",
+    "quick": "Thế hàm \\(U=x^2+y^2\\). Công bằng \\(U(B)-U(A)=5\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 50
+  },
+  {
+    "type": "potential_function",
+    "question": "Trường \\(\\mathbf F=(y+2x, x+2y)\\) có thế hàm nào sau đây?",
+    "matrix": null,
+    "options": [
+      "\\(U=xy+x^2+y^2+C\\)",
+      "\\(U=x^2y+y^2+C\\)",
+      "\\(U=xy+x+y+C\\)",
+      "\\(U=x^2-y^2+C\\)"
+    ],
+    "correct": "\\(U=xy+x^2+y^2+C\\)",
+    "solution": "Cần \\(U'_x=y+2x\\) và \\(U'_y=x+2y\\). Lấy \\(U=xy+x^2+y^2+C\\), ta có \\(U'_x=y+2x\\), \\(U'_y=x+2y\\), đúng với trường đã cho.",
+    "quick": "Đạo hàm \\(xy+x^2+y^2\\) theo \\(x\\) và \\(y\\) sẽ ra đúng hai thành phần.",
+    "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 51
+  },
+  {
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C -y\\,dx+x\\,dy\\), với \\(C\\) là biên tam giác có các đỉnh \\((0,0),(2,0),(0,1)\\) theo chiều dương.",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(-2\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Ở đây \\(P=-y\\), \\(Q=x\\). Khi đó \\(Q'_x-P'_y=1-(-1)=2\\). Diện tích tam giác là \\(S=\\dfrac{1}{2}\\cdot2\\cdot1=1\\). Theo Green, \\(I=2S=2\\).",
+    "quick": "\\(Q'_x-P'_y=2\\), diện tích tam giác bằng 1, nên \\(I=2\\).",
+    "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 52
+  },
+  {
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C (x-2y)\\,dx+(3x+y)\\,dy\\), với \\(C\\) là biên hình chữ nhật \\([0,2]\\times[0,1]\\) theo chiều dương.",
+    "matrix": null,
+    "options": [
+      "\\(10\\)",
+      "\\(5\\)",
+      "\\(4\\)",
+      "\\(-10\\)"
+    ],
+    "correct": "\\(10\\)",
+    "solution": "\\(P=x-2y\\), \\(Q=3x+y\\). Ta có \\(Q'_x=3\\), \\(P'_y=-2\\), nên \\(Q'_x-P'_y=5\\). Diện tích hình chữ nhật là 2. Vậy \\(I=5\\cdot2=10\\).",
+    "quick": "Hiệu Green bằng 5; diện tích hình chữ nhật bằng 2.",
+    "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 53
+  },
+  {
+    "type": "green_theorem_orientation",
+    "question": "Dùng Green tính \\(\\oint_C -y\\,dx+x\\,dy\\), với \\(C\\) là đường tròn \\(x^2+y^2=9\\) theo chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(-18\\pi\\)",
+      "\\(18\\pi\\)",
+      "\\(-9\\pi\\)",
+      "\\(9\\pi\\)"
+    ],
+    "correct": "\\(-18\\pi\\)",
+    "solution": "Nếu \\(C\\) đi ngược chiều kim đồng hồ thì \\(Q'_x-P'_y=2\\), diện tích đĩa là \\(9\\pi\\), nên tích phân bằng \\(18\\pi\\). Nhưng đề cho chiều kim đồng hồ, tức ngược chiều dương, nên kết quả đổi dấu: \\(-18\\pi\\).",
+    "quick": "Chiều dương cho \\(18\\pi\\); chiều kim đồng hồ đổi dấu thành \\(-18\\pi\\).",
+    "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 54
+  },
+  {
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C y^2\\,dx+x^2\\,dy\\), với \\(C\\) là biên hình chữ nhật \\([0,1]\\times[0,2]\\) theo chiều dương.",
+    "matrix": null,
+    "options": [
+      "\\(-2\\)",
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(-2\\)",
+    "solution": "\\(P=y^2\\), \\(Q=x^2\\). Do đó \\(Q'_x-P'_y=2x-2y\\). Trên hình chữ nhật \\([0,1]\\times[0,2]\\), \\(I=\\int_0^1\\int_0^2(2x-2y)\\,dy\\,dx\\). Tính được \\(\\int_0^1(4x-4)dx=2-4=-2\\).",
+    "quick": "Green: tích phân kép của \\(2x-2y\\) trên hình chữ nhật.",
+    "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 55
+  },
+  {
+    "type": "green_area",
+    "question": "Dùng công thức \\(S=\\dfrac12\\oint_C x\\,dy-y\\,dx\\), diện tích miền tam giác đỉnh \\((0,0),(4,0),(0,3)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(12\\)",
+      "\\(7\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Diện tích tam giác vuông có hai cạnh góc vuông dài 4 và 3 là \\(S=\\dfrac12\\cdot4\\cdot3=6\\). Công thức Green \\(S=\\dfrac12\\oint_C x\\,dy-y\\,dx\\) cũng cho cùng kết quả khi \\(C\\) định hướng dương.",
+    "quick": "Tam giác vuông: \\(S=\\frac12\\cdot4\\cdot3=6\\).",
+    "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 56
+  },
+  {
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C y\\,dx-x\\,dy\\), với \\(C\\) là cung tròn đơn vị từ \\((1,0)\\) đến \\((0,1)\\) theo chiều ngược kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(-1\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-\\dfrac{\\pi}{2}\\)",
+    "solution": "Tham số hóa cung tròn: \\(x=\\cos t, y=\\sin t\\), \\(0\\leq t\\leq\\dfrac{\\pi}{2}\\). Khi đó \\(dx=-\\sin t\\,dt\\), \\(dy=\\cos t\\,dt\\). Suy ra \\(y\\,dx-x\\,dy=\\sin t(-\\sin t)dt-\\cos t\\cos tdt=-(\\sin^2t+\\cos^2t)dt=-dt\\). Vậy \\(I=-\\dfrac{\\pi}{2}\\).",
+    "quick": "Trên cung tròn đơn vị, biểu thức trở thành \\(-dt\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Thay tham số hóa rồi dùng phím tích phân để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 57
+  },
+  {
+    "type": "line_integral_type2",
+    "question": "Tính \\(\\int_C x^2\\,dx+y^2\\,dy\\), với \\(C\\) từ \\((0,0)\\) đến \\((1,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(1\\)",
+      "\\(9\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Ta có \\(x^2\\,dx+y^2\\,dy=d\\left(\\dfrac{x^3}{3}+\\dfrac{y^3}{3}\\right)\\). Vì vậy tích phân bằng \\(\\dfrac{1^3}{3}+\\dfrac{2^3}{3}-0=\\dfrac{1+8}{3}=3\\).",
+    "quick": "Thế hàm \\(U=(x^3+y^3)/3\\), lấy cuối trừ đầu.",
+    "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 58
+  },
+  {
+    "type": "line_integral_type1",
+    "question": "Tính \\(\\int_C ds\\), với \\(C\\) là nửa trên đường tròn \\(x^2+y^2=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(8\\pi\\)"
+    ],
+    "correct": "\\(2\\pi\\)",
+    "solution": "\\(\\int_C ds\\) là độ dài cung. Nửa đường tròn bán kính 2 có độ dài \\(\\dfrac12\\cdot2\\pi\\cdot2=2\\pi\\).",
+    "quick": "Nửa chu vi đường tròn bán kính 2 là \\(2\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 1,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 59
+  },
+  {
+    "type": "green_theorem",
+    "question": "Dùng Green tính \\(\\oint_C x\\,dy\\), với \\(C\\) là biên hình tròn \\(x^2+y^2\\leq4\\) theo chiều dương.",
+    "matrix": null,
+    "options": [
+      "\\(4\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(4\\pi\\)",
+    "solution": "Với \\(P=0\\), \\(Q=x\\), ta có \\(Q'_x-P'_y=1\\). Theo Green, \\(\\oint_C x\\,dy=\\iint_D1\\,dA=\\text{diện tích}(D)=\\pi\\cdot2^2=4\\pi\\).",
+    "quick": "\\(\\oint_C x\\,dy\\) bằng diện tích miền khi chiều dương.",
+    "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green",
+    "id": 60
+  },
+  {
+    "type": "line_integral_type1_segment",
+    "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((4,3)\\).",
+    "matrix": null,
+    "options": [
+      "\\(10\\)",
+      "\\(5\\)",
+      "\\(20\\)",
+      "\\(\\dfrac{25}{2}\\)"
+    ],
+    "correct": "\\(10\\)",
+    "solution": "Tham số hóa \\(x=4t,\\ y=3t,\\ 0\\le t\\le1\\). Khi đó \\(ds=\\sqrt{4^2+3^2}\\,dt=5dt\\). Do đó \\(I=\\int_0^1 4t\\cdot5\\,dt=20\\cdot\\dfrac12=10\\).",
+    "quick": "Đoạn thẳng: \\(ds=5dt\\), \\(x=4t\\), nên \\(I=\\int_0^1 20t\\,dt=10\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 61
+  },
+  {
+    "type": "line_integral_type1_segment",
+    "question": "Tính \\(\\displaystyle\\int_C (x+y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{35}{2}\\)",
+      "\\(10\\)",
+      "\\(20\\)",
+      "\\(35\\)"
+    ],
+    "correct": "\\(\\dfrac{35}{2}\\)",
+    "solution": "Tham số hóa \\(x=3t,\\ y=4t,\\ 0\\le t\\le1\\). Khi đó \\(ds=\\sqrt{3^2+4^2}\\,dt=5dt\\), còn \\(x+y=7t\\). Vậy \\(I=\\int_0^1 7t\\cdot5\\,dt=\\dfrac{35}{2}\\).",
+    "quick": "Đoạn thẳng \\(3-4-5\\): \\(ds=5dt\\), \\(x+y=7t\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 62
+  },
+  {
+    "type": "line_integral_type1_parabola",
+    "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C: x=t,\\ y=t^2,\\ 0\\le t\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{5\\sqrt5-1}{12}\\)",
+      "\\(\\dfrac{5\\sqrt5+1}{12}\\)",
+      "\\(\\dfrac{\\sqrt5-1}{4}\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(\\dfrac{5\\sqrt5-1}{12}\\)",
+    "solution": "Ta có \\(x'=1,\\ y'=2t\\), nên \\(ds=\\sqrt{1+4t^2}\\,dt\\). Do đó \\(I=\\int_0^1 t\\sqrt{1+4t^2}\\,dt\\). Đặt \\(u=1+4t^2\\), \\(du=8t\\,dt\\). Suy ra \\(I=\\dfrac18\\int_1^5u^{1/2}du=\\dfrac{1}{12}(5\\sqrt5-1)\\).",
+    "quick": "\\(ds=\\sqrt{1+4t^2}dt\\), đặt \\(u=1+4t^2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 3,
+    "topic": "Tích phân đường",
+    "id": 63
+  },
+  {
+    "type": "line_integral_type1_circle",
+    "question": "Tính \\(\\displaystyle\\int_C (x^2+y^2)\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=9\\).",
+    "matrix": null,
+    "options": [
+      "\\(54\\pi\\)",
+      "\\(18\\pi\\)",
+      "\\(27\\pi\\)",
+      "\\(9\\pi\\)"
+    ],
+    "correct": "\\(54\\pi\\)",
+    "solution": "Trên \\(C\\), ta có \\(x^2+y^2=9\\). Độ dài đường tròn bán kính \\(3\\) là \\(6\\pi\\). Do đó \\(I=9\\cdot6\\pi=54\\pi\\).",
+    "quick": "Trên đường tròn bán kính 3, hàm bằng 9 và độ dài bằng \\(6\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 64
+  },
+  {
+    "type": "line_integral_type1_semicircle",
+    "question": "Tính \\(\\displaystyle\\int_C y\\,ds\\), với \\(C\\) là nửa trên đường tròn \\(x^2+y^2=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(2\\pi\\)",
+      "\\(4\\pi\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Tham số hóa \\(x=2\\cos t,\\ y=2\\sin t,\\ 0\\le t\\le\\pi\\). Khi đó \\(ds=2dt\\). Do đó \\(I=\\int_0^\\pi 2\\sin t\\cdot2\\,dt=4\\int_0^\\pi\\sin t\\,dt=8\\).",
+    "quick": "Nửa trên: \\(y=2\\sin t,\\ ds=2dt,\\ t:0\\to\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 3,
+    "topic": "Tích phân đường",
+    "id": 65
+  },
+  {
+    "type": "line_integral_type1_arc",
+    "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C\\) là cung phần tư đường tròn \\(x^2+y^2=1\\) từ \\((1,0)\\) đến \\((0,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Tham số hóa \\(x=\\cos t,\\ y=\\sin t,\\ 0\\le t\\le\\pi/2\\). Trên đường tròn đơn vị, \\(ds=dt\\). Do đó \\(I=\\int_0^{\\pi/2}\\cos t\\,dt=1\\).",
+    "quick": "Trên cung tròn đơn vị, \\(ds=dt\\), nên tích phân là \\(\\int_0^{\\pi/2}\\cos tdt\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 66
+  },
+  {
+    "type": "line_integral_type1_parametric",
+    "question": "Tính \\(\\displaystyle\\int_C y\\,ds\\), với \\(C: x=3t,\\ y=4t,\\ 0\\le t\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(10\\)",
+      "\\(5\\)",
+      "\\(20\\)",
+      "\\(\\dfrac{15}{2}\\)"
+    ],
+    "correct": "\\(10\\)",
+    "solution": "Ta có \\(x'=3,\\ y'=4\\), nên \\(ds=5dt\\). Vì \\(y=4t\\), nên \\(I=\\int_0^1 4t\\cdot5\\,dt=10\\).",
+    "quick": "\\(ds=5dt\\), \\(y=4t\\), nên \\(I=20\\int_0^1tdt=10\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 67
+  },
+  {
+    "type": "line_integral_type1_helix",
+    "question": "Tính \\(\\displaystyle\\int_C z\\,ds\\), với \\(C: x=\\cos t,\\ y=\\sin t,\\ z=t,\\ 0\\le t\\le2\\pi\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi^2\\sqrt2\\)",
+      "\\(\\pi^2\\sqrt2\\)",
+      "\\(2\\pi\\sqrt2\\)",
+      "\\(4\\pi^2\\)"
+    ],
+    "correct": "\\(2\\pi^2\\sqrt2\\)",
+    "solution": "Ta có \\(x'=-\\sin t,\\ y'=\\cos t,\\ z'=1\\), nên \\(ds=\\sqrt{\\sin^2t+\\cos^2t+1}\\,dt=\\sqrt2dt\\). Vì \\(z=t\\), nên \\(I=\\int_0^{2\\pi}t\\sqrt2\\,dt=2\\pi^2\\sqrt2\\).",
+    "quick": "Helix này có \\(ds=\\sqrt2dt\\), nên \\(I=\\sqrt2\\int_0^{2\\pi}t\\,dt\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 3,
+    "topic": "Tích phân đường",
+    "id": 68
+  },
+  {
+    "type": "line_integral_type1_length",
+    "question": "Tính \\(\\displaystyle\\int_C 1\\,ds\\), với \\(C: x=2\\cos t,\\ y=2\\sin t,\\ 0\\le t\\le\\pi\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(2\\pi\\)",
+    "solution": "Đây là độ dài nửa đường tròn bán kính \\(2\\). Do đó \\(\\int_C1\\,ds=\\pi R=2\\pi\\).",
+    "quick": "\\(\\int_Cds\\) là độ dài cung. Nửa đường tròn bán kính 2 có độ dài \\(2\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 1,
+    "topic": "Tích phân đường",
+    "id": 69
+  },
+  {
+    "type": "line_integral_type1_segment",
+    "question": "Tính \\(\\displaystyle\\int_C (2x-y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(\\sqrt5\\)",
+      "\\(2\\sqrt5\\)",
+      "\\(-\\sqrt5\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Tham số hóa \\(x=t,\\ y=2t,\\ 0\\le t\\le1\\). Khi đó \\(2x-y=2t-2t=0\\), còn \\(ds=\\sqrt5dt\\). Do đó tích phân bằng \\(0\\).",
+    "quick": "Trên đoạn này \\(y=2x\\), nên \\(2x-y=0\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 70
+  },
+  {
+    "type": "line_integral_type2_segment",
+    "question": "Tính \\(\\displaystyle\\int_C x\\,dy-y\\,dx\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Tham số hóa \\(x=2t,\\ y=t,\\ 0\\le t\\le1\\). Khi đó \\(dx=2dt,\\ dy=dt\\). Tích phân bằng \\(\\int_0^1(2t\\cdot1-t\\cdot2)dt=0\\).",
+    "quick": "Trên đoạn thẳng qua gốc, \\(x\\,dy-y\\,dx=0\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 71
+  },
+  {
+    "type": "line_integral_type2_parabola",
+    "question": "Tính \\(\\displaystyle\\int_C y\\,dx+x\\,dy\\), với \\(C: y=x^2\\) từ \\((0,0)\\) đến \\((2,4)\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Ta có \\(y\\,dx+x\\,dy=d(xy)\\). Vì vậy tích phân bằng \\(xy\\big|_{(0,0)}^{(2,4)}=2\\cdot4-0=8\\).",
+    "quick": "Nhận ra vi phân toàn phần \\(d(xy)\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 72
+  },
+  {
+    "type": "line_integral_type2_parabola",
+    "question": "Tính \\(\\displaystyle\\int_C y\\,dx\\), với \\(C: y=x^2\\) từ \\((0,0)\\) đến \\((3,9)\\).",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(27\\)",
+      "\\(\\dfrac{27}{2}\\)",
+      "\\(18\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "Dùng \\(x\\) làm tham số. Khi \\(0\\le x\\le3\\), \\(y=x^2\\), \\(dx=dx\\). Do đó \\(I=\\int_0^3x^2dx=9\\).",
+    "quick": "Đây là loại 2 với \\(dx\\), không có \\(ds\\): \\(I=\\int_0^3x^2dx\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 73
+  },
+  {
+    "type": "line_integral_type2_circle",
+    "question": "Tính \\(\\displaystyle\\int_C -y\\,dx+x\\,dy\\), với \\(C: x=2\\cos t,\\ y=2\\sin t,\\ 0\\le t\\le2\\pi\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(-8\\pi\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(8\\pi\\)",
+    "solution": "Ta có \\(dx=-2\\sin tdt,\\ dy=2\\cos tdt\\). Khi đó \\(-y\\,dx+x\\,dy=-(2\\sin t)(-2\\sin t)dt+(2\\cos t)(2\\cos t)dt=4dt\\). Vậy \\(I=\\int_0^{2\\pi}4dt=8\\pi\\).",
+    "quick": "Với đường tròn bán kính \\(R\\), \\(\\oint -y\\,dx+x\\,dy=2\\pi R^2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 3,
+    "topic": "Tích phân đường",
+    "id": 74
+  },
+  {
+    "type": "line_integral_type2_arc",
+    "question": "Tính \\(\\displaystyle\\int_C y\\,dx-x\\,dy\\), với \\(C\\) là cung phần tư đường tròn đơn vị từ \\((1,0)\\) đến \\((0,1)\\) ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(-1\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(-\\dfrac{\\pi}{2}\\)",
+    "solution": "Tham số hóa \\(x=\\cos t,\\ y=\\sin t,\\ 0\\le t\\le\\pi/2\\). Khi đó \\(dx=-\\sin tdt,\\ dy=\\cos tdt\\). Tích phân bằng \\(\\int_0^{\\pi/2}[\\sin t(-\\sin t)-\\cos t(\\cos t)]dt=\\int_0^{\\pi/2}-1dt=-\\dfrac{\\pi}{2}\\).",
+    "quick": "Trên cung tròn đơn vị, \\(y\\,dx-x\\,dy=-dt\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 3,
+    "topic": "Tích phân đường",
+    "id": 75
+  },
+  {
+    "type": "line_integral_type2_exact",
+    "question": "Tính \\(\\displaystyle\\int_C (2x+y)\\,dx+(x+2y)\\,dy\\), với \\(C\\) bất kỳ từ \\((0,0)\\) đến \\((2,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(7\\)",
+      "\\(5\\)",
+      "\\(9\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(7\\)",
+    "solution": "Vì \\(P_y=1=Q_x\\), trường có thế. Tìm được hàm thế \\(U=x^2+xy+y^2\\). Do đó \\(I=U(2,1)-U(0,0)=4+2+1=7\\).",
+    "quick": "Hàm thế \\(U=x^2+xy+y^2\\), lấy cuối trừ đầu.",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 3,
+    "topic": "Tích phân đường",
+    "id": 76
+  },
+  {
+    "type": "line_integral_type2_segment",
+    "question": "Tính \\(\\displaystyle\\int_C x\\,dx+y\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{5}{2}\\)",
+      "\\(5\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{3}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{5}{2}\\)",
+    "solution": "Ta có \\(x\\,dx+y\\,dy=d\\left(\\dfrac{x^2+y^2}{2}\\right)\\). Do đó tích phân bằng \\(\\dfrac{2^2+1^2}{2}-0=\\dfrac52\\).",
+    "quick": "Nhận ra vi phân toàn phần của \\((x^2+y^2)/2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 77
+  },
+  {
+    "type": "line_integral_type2_vertical",
+    "question": "Tính \\(\\displaystyle\\int_C x^2\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((2,0)\\) đến \\((2,3)\\).",
+    "matrix": null,
+    "options": [
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(9\\)"
+    ],
+    "correct": "\\(12\\)",
+    "solution": "Trên đoạn thẳng đứng này, \\(x=2\\), \\(0\\le y\\le3\\), nên \\(dy=dy\\). Do đó \\(I=\\int_0^3 2^2dy=12\\).",
+    "quick": "Đoạn thẳng đứng: \\(x=2\\), nên \\(x^2=4\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 78
+  },
+  {
+    "type": "line_integral_type2_horizontal",
+    "question": "Tính \\(\\displaystyle\\int_C y^2\\,dx\\), với \\(C\\) là đoạn thẳng từ \\((0,3)\\) đến \\((2,3)\\).",
+    "matrix": null,
+    "options": [
+      "\\(18\\)",
+      "\\(9\\)",
+      "\\(6\\)",
+      "\\(12\\)"
+    ],
+    "correct": "\\(18\\)",
+    "solution": "Trên đoạn thẳng ngang này, \\(y=3\\), \\(0\\le x\\le2\\). Do đó \\(I=\\int_0^2 3^2dx=18\\).",
+    "quick": "Đoạn ngang: \\(y=3\\), \\(dx\\) chạy từ 0 đến 2.",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 79
+  },
+  {
+    "type": "line_integral_type2_parametric",
+    "question": "Tính \\(\\displaystyle\\int_C (x^2\\,dx+y^2\\,dy)\\), với \\(C: x=t,\\ y=2t,\\ 0\\le t\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(1\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(5\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Ta có \\(dx=dt,\\ dy=2dt\\). Khi đó \\(x^2=t^2\\), \\(y^2=4t^2\\). Do đó \\(I=\\int_0^1(t^2\\cdot1+4t^2\\cdot2)dt=\\int_0^19t^2dt=3\\).",
+    "quick": "Thay tham số trực tiếp: \\(x^2dx+y^2dy=9t^2dt\\).",
+    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "difficulty": 2,
+    "topic": "Tích phân đường",
+    "id": 80
   }
 ]

@@ -808,5 +808,365 @@
     "casio": "CASIO fx-580VNX: Với 2 hoặc 3 vector vuông, nhập các vector làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính, lập hệ theo từng tọa độ rồi dùng Equation/Simul để kiểm tra hệ số.",
     "difficulty": 2,
     "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 46,
+    "type": "linear_dependence",
+    "question": "Trong \\(\\mathbb R^3\\), hệ \\(S=\\{(1;2;3),(2;4;6),(0;1;1)\\}\\) là",
+    "matrix": null,
+    "options": [
+      "Phụ thuộc tuyến tính",
+      "Độc lập tuyến tính",
+      "Một cơ sở của \\(\\mathbb R^3\\)",
+      "Có hạng bằng 3"
+    ],
+    "correct": "Phụ thuộc tuyến tính",
+    "solution": "Ta có \\((2;4;6)=2(1;2;3)\\). Vì trong hệ có một véc tơ là bội của véc tơ khác nên hệ phụ thuộc tuyến tính.",
+    "quick": "Chỉ cần thấy hai véc tơ tỉ lệ là kết luận hệ phụ thuộc.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 47,
+    "type": "rank_vector_system",
+    "question": "Trong \\(\\mathbb R^3\\), hạng của hệ \\(S=\\{(1;0;1),(0;1;1),(1;1;1)\\}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Xét ma trận có ba véc tơ làm hàng: \\(\\begin{pmatrix}1&0&1\\\\0&1&1\\\\1&1&1\\end{pmatrix}\\). Định thức bằng \\(-1\\ne0\\), nên ba véc tơ độc lập tuyến tính. Vì vậy hạng của hệ bằng \\(3\\).",
+    "quick": "Ba véc tơ trong \\(\\mathbb R^3\\): det khác 0 thì hạng bằng 3.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 48,
+    "type": "span_membership",
+    "question": "Véc tơ \\(w=(2;5;1)\\) có thuộc \\(\\operatorname{span}\\{(1;2;0),(0;1;1)\\}\\) không?",
+    "matrix": null,
+    "options": [
+      "Có",
+      "Không",
+      "Chỉ khi nhân \\(w\\) với 2",
+      "Không đủ dữ kiện"
+    ],
+    "correct": "Có",
+    "solution": "Ta cần \\(a(1;2;0)+b(0;1;1)=(2;5;1)\\). Từ tọa độ thứ nhất được \\(a=2\\), từ tọa độ thứ ba được \\(b=1\\). Khi đó tọa độ thứ hai là \\(2a+b=4+1=5\\), đúng với \\(w\\). Vậy \\(w\\) thuộc không gian sinh.",
+    "quick": "Với \\(a=2,b=1\\), ta có \\(2(1;2;0)+(0;1;1)=(2;5;1)\\).",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 2,
+    "topic": "Không gian sinh"
+  },
+  {
+    "id": 49,
+    "type": "span_condition",
+    "question": "Cho \\(W=\\operatorname{span}\\{(1;0;2),(0;1;-1)\\}\\). Véc tơ \\((x;y;z)\\) thuộc \\(W\\) khi và chỉ khi",
+    "matrix": null,
+    "options": [
+      "\\(z=2x-y\\)",
+      "\\(z=x+y\\)",
+      "\\(x=2y-z\\)",
+      "\\(x+y+z=0\\)"
+    ],
+    "correct": "\\(z=2x-y\\)",
+    "solution": "Mọi véc tơ trong \\(W\\) có dạng \\(a(1;0;2)+b(0;1;-1)=(a;b;2a-b)\\). Đặt \\(x=a,\\ y=b\\), ta được \\(z=2x-y\\).",
+    "quick": "Viết tổ hợp tuyến tính tổng quát rồi rút ra điều kiện giữa \\(x,y,z\\).",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Không gian sinh"
+  },
+  {
+    "id": 50,
+    "type": "basis",
+    "question": "Hệ nào sau đây là một cơ sở của \\(\\mathbb R^3\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\{(1;0;0),(1;1;0),(1;1;1)\\}\\)",
+      "\\(\\{(1;0;0),(2;0;0),(0;1;0)\\}\\)",
+      "\\(\\{(1;1;1),(2;2;2),(3;3;3)\\}\\)",
+      "\\(\\{(1;0;0),(0;1;0)\\}\\)"
+    ],
+    "correct": "\\(\\{(1;0;0),(1;1;0),(1;1;1)\\}\\)",
+    "solution": "Một cơ sở của \\(\\mathbb R^3\\) phải gồm đúng ba véc tơ độc lập tuyến tính. Với hệ \\(\\{(1;0;0),(1;1;0),(1;1;1)\\}\\), ma trận có định thức bằng \\(1\\ne0\\), nên là cơ sở. Các hệ còn lại hoặc phụ thuộc tuyến tính, hoặc thiếu véc tơ.",
+    "quick": "Cơ sở của \\(\\mathbb R^3\\): đúng 3 véc tơ và det khác 0.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 2,
+    "topic": "Cơ sở"
+  },
+  {
+    "id": 51,
+    "type": "basis_subspace",
+    "question": "Hệ nào là một cơ sở của không gian \\(W=\\{(x;y;z)\\in\\mathbb R^3:x-2y+z=0\\}\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\{(2;1;0),(-1;0;1)\\}\\)",
+      "\\(\\{(1;0;0),(0;1;0)\\}\\)",
+      "\\(\\{(1;1;1)\\}\\)",
+      "\\(\\{(2;1;0),(4;2;0)\\}\\)"
+    ],
+    "correct": "\\(\\{(2;1;0),(-1;0;1)\\}\\)",
+    "solution": "Từ \\(x-2y+z=0\\) suy ra \\(x=2y-z\\). Do đó \\((x;y;z)=y(2;1;0)+z(-1;0;1)\\). Hai véc tơ \\((2;1;0)\\) và \\((-1;0;1)\\) độc lập tuyến tính, nên chúng tạo thành một cơ sở của \\(W\\).",
+    "quick": "Giải phương trình thuần nhất để viết nghiệm theo hai tham số tự do.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Cơ sở không gian con"
+  },
+  {
+    "id": 52,
+    "type": "subspace",
+    "question": "Tập nào sau đây là không gian con của \\(\\mathbb R^3\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\{(x;y;z):x-y+z=0\\}\\)",
+      "\\(\\{(x;y;z):x-y+z=1\\}\\)",
+      "\\(\\{(x;y;z):x\\gt0\\}\\)",
+      "\\(\\{(x;y;z):x^2+y^2=1\\}\\)"
+    ],
+    "correct": "\\(\\{(x;y;z):x-y+z=0\\}\\)",
+    "solution": "Tập nghiệm của phương trình tuyến tính thuần nhất \\(x-y+z=0\\) là một không gian con. Các tập còn lại không chứa véc tơ không hoặc không đóng với phép cộng, nhân vô hướng.",
+    "quick": "Không gian con thường xuất hiện dưới dạng hệ tuyến tính thuần nhất.",
+    "casio": "Không cần CASIO; kiểm tra chứa véc tơ không và đóng với phép toán tuyến tính.",
+    "difficulty": 2,
+    "topic": "Không gian con"
+  },
+  {
+    "id": 53,
+    "type": "not_subspace",
+    "question": "Tập nào sau đây không phải là không gian con của \\(\\mathbb R^3\\)?",
+    "matrix": null,
+    "options": [
+      "\\(\\{(x;y;z):x+y+z=1\\}\\)",
+      "\\(\\{(x;y;z):x=0\\}\\)",
+      "\\(\\{(x;y;z):x-y=0\\}\\)",
+      "\\(\\{(x;y;z):x+y+z=0\\}\\)"
+    ],
+    "correct": "\\(\\{(x;y;z):x+y+z=1\\}\\)",
+    "solution": "Tập \\(x+y+z=1\\) không chứa véc tơ không \\((0;0;0)\\), nên không phải là không gian con. Ba tập còn lại đều là nghiệm của phương trình tuyến tính thuần nhất.",
+    "quick": "Muốn là không gian con thì trước hết phải chứa véc tơ không.",
+    "casio": "Không cần CASIO; thay véc tơ không vào điều kiện.",
+    "difficulty": 1,
+    "topic": "Không gian con"
+  },
+  {
+    "id": 54,
+    "type": "linear_independence_parameter",
+    "question": "Hệ \\(S=\\{(1;0;1),(0;1;1),(1;m;2)\\}\\) độc lập tuyến tính khi",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne1\\)",
+      "\\(m=1\\)",
+      "\\(m\\ne2\\)",
+      "Mọi \\(m\\)"
+    ],
+    "correct": "\\(m\\ne1\\)",
+    "solution": "Xét ma trận có ba véc tơ làm hàng: \\(\\begin{pmatrix}1&0&1\\\\0&1&1\\\\1&m&2\\end{pmatrix}\\). Định thức bằng \\(1-m\\). Hệ độc lập tuyến tính khi định thức khác 0, tức \\(m\\ne1\\).",
+    "quick": "Ba véc tơ trong \\(\\mathbb R^3\\): độc lập khi det khác 0.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Độc lập tuyến tính theo tham số"
+  },
+  {
+    "id": 55,
+    "type": "rank_parameter_exact",
+    "question": "Hệ \\(S=\\{(1;0;1),(0;1;1),(1;m;2)\\}\\) có hạng bằng \\(2\\) khi",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m=2\\)",
+      "\\(m\\ne1\\)"
+    ],
+    "correct": "\\(m=1\\)",
+    "solution": "Ở câu trên, định thức bằng \\(1-m\\). Khi \\(m=1\\), véc tơ thứ ba là \\((1;1;2)=(1;0;1)+(0;1;1)\\), còn hai véc tơ đầu độc lập tuyến tính. Vì vậy hạng của hệ bằng \\(2\\).",
+    "quick": "Cho det bằng 0, rồi kiểm tra hệ không tụt xuống hạng 1.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ theo tham số"
+  },
+  {
+    "id": 56,
+    "type": "coordinates_in_basis",
+    "question": "Trong cơ sở \\(B=\\{(1;0),(1;1)\\}\\) của \\(\\mathbb R^2\\), tọa độ của \\(v=(5;2)\\) là",
+    "matrix": null,
+    "options": [
+      "\\((3;2)_B\\)",
+      "\\((2;3)_B\\)",
+      "\\((5;2)_B\\)",
+      "\\((1;4)_B\\)"
+    ],
+    "correct": "\\((3;2)_B\\)",
+    "solution": "Cần tìm \\(a,b\\) sao cho \\(a(1;0)+b(1;1)=(5;2)\\). Khi đó \\((a+b;b)=(5;2)\\), suy ra \\(b=2\\), \\(a=3\\). Vậy \\([v]_B=(3;2)_B\\).",
+    "quick": "Lập \\(a(1;0)+b(1;1)=(5;2)\\).",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Cơ sở & tọa độ"
+  },
+  {
+    "id": 57,
+    "type": "extend_basis",
+    "question": "Trong \\(\\mathbb R^3\\), hệ \\(\\{(1;0;0),(0;1;0)\\}\\) cần thêm véc tơ nào để được một cơ sở của \\(\\mathbb R^3\\)?",
+    "matrix": null,
+    "options": [
+      "\\((0;0;1)\\)",
+      "\\((1;1;0)\\)",
+      "\\((2;0;0)\\)",
+      "\\((0;3;0)\\)"
+    ],
+    "correct": "\\((0;0;1)\\)",
+    "solution": "Hai véc tơ đã cho sinh mặt phẳng \\(z=0\\). Cần thêm một véc tơ không nằm trong mặt phẳng đó để đủ ba véc tơ độc lập trong \\(\\mathbb R^3\\). Véc tơ \\((0;0;1)\\) thỏa mãn.",
+    "quick": "Thêm véc tơ không thuộc span của hai véc tơ ban đầu.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 2,
+    "topic": "Cơ sở"
+  },
+  {
+    "id": 58,
+    "type": "count_independent_subsets",
+    "question": "Trong \\(\\mathbb R^2\\), cho \\(S=\\{(1;0),(0;1),(1;1),(2;2)\\}\\). Có bao nhiêu hệ con khác rỗng độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(8\\)",
+      "\\(10\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "Có 4 hệ một phần tử, tất cả đều độc lập vì không có véc tơ không. Có \\(6\\) cặp, trong đó chỉ cặp \\(\\{(1;1),(2;2)\\}\\) phụ thuộc do hai véc tơ tỉ lệ, nên có \\(5\\) cặp độc lập. Mọi hệ có từ 3 véc tơ trở lên trong \\(\\mathbb R^2\\) đều phụ thuộc. Tổng số hệ con độc lập là \\(4+5=9\\).",
+    "quick": "Đếm hệ 1 phần tử và 2 phần tử; trong \\(\\mathbb R^2\\) không thể có 3 véc tơ độc lập.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập"
+  },
+  {
+    "id": 59,
+    "type": "basis_from_span",
+    "question": "Cho \\(S=\\{u_1=(1;0;1),u_2=(0;1;1),u_3=(1;1;2),u_4=(0;0;1)\\}\\). Một cơ sở của \\(\\operatorname{span}(S)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\{u_1,u_2,u_4\\}\\)",
+      "\\(\\{u_1,u_2,u_3\\}\\)",
+      "\\(\\{u_3\\}\\)",
+      "\\(\\{u_1,u_3\\}\\)"
+    ],
+    "correct": "\\(\\{u_1,u_2,u_4\\}\\)",
+    "solution": "Ta có \\(u_3=u_1+u_2\\), nên \\(u_3\\) không cần giữ trong cơ sở. Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính vì ma trận có các véc tơ này làm hàng có định thức khác 0. Vì vậy \\(\\{u_1,u_2,u_4\\}\\) là một cơ sở của \\(\\operatorname{span}(S)\\).",
+    "quick": "Loại véc tơ phụ thuộc \\(u_3=u_1+u_2\\), rồi giữ một hệ độc lập tối đại.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Cơ sở không gian sinh"
+  },
+  {
+    "id": 60,
+    "type": "rank_add_vector",
+    "question": "Cho \\(S=\\{(1;2;0),(0;1;1)\\}\\). Thêm véc tơ nào sau đây vào \\(S\\) không làm hạng tăng?",
+    "matrix": null,
+    "options": [
+      "\\((1;3;1)\\)",
+      "\\((1;0;0)\\)",
+      "\\((0;0;1)\\)",
+      "\\((2;1;1)\\)"
+    ],
+    "correct": "\\((1;3;1)\\)",
+    "solution": "Mọi tổ hợp của hai véc tơ trong \\(S\\) có dạng \\(a(1;2;0)+b(0;1;1)=(a;2a+b;b)\\). Do đó điều kiện thuộc span là \\(y=2x+z\\). Véc tơ \\((1;3;1)\\) thỏa \\(3=2\\cdot1+1\\), nên thuộc span của \\(S\\) và không làm hạng tăng.",
+    "quick": "Thêm véc tơ nằm trong span cũ thì hạng không tăng.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ"
+  },
+  {
+    "id": 61,
+    "type": "linear_relation",
+    "question": "Cho \\(u_1=(1;1;0)\\), \\(u_2=(2;1;1)\\), \\(u_3=(3;2;1)\\). Quan hệ đúng là",
+    "matrix": null,
+    "options": [
+      "\\(u_3=u_1+u_2\\)",
+      "\\(u_3=u_1-u_2\\)",
+      "\\(u_1=u_2+u_3\\)",
+      "\\(u_1+u_2+u_3=0\\)"
+    ],
+    "correct": "\\(u_3=u_1+u_2\\)",
+    "solution": "Cộng theo tọa độ: \\((1;1;0)+(2;1;1)=(3;2;1)=u_3\\).",
+    "quick": "So sánh từng tọa độ.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Phụ thuộc tuyến tính"
+  },
+  {
+    "id": 62,
+    "type": "span_dimension",
+    "question": "Tìm số chiều của không gian sinh bởi \\(S=\\{(1;0;1;0),(0;1;0;1),(1;1;1;1),(0;0;1;1)\\}\\subset\\mathbb R^4\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Gọi \\(u_1=(1;0;1;0)\\), \\(u_2=(0;1;0;1)\\), \\(u_3=(1;1;1;1)\\), \\(u_4=(0;0;1;1)\\). Ta có \\(u_3=u_1+u_2\\). Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính, nên \\(\\dim\\operatorname{span}(S)=3\\).",
+    "quick": "Loại \\(u_3=u_1+u_2\\), còn lại \\(u_1,u_2,u_4\\) độc lập.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 3,
+    "topic": "Không gian sinh"
+  },
+  {
+    "id": 63,
+    "type": "subspace_membership",
+    "question": "Cho \\(W=\\{(x;y;z)\\in\\mathbb R^3:x-2y+z=0\\}\\). Véc tơ nào sau đây thuộc \\(W\\)?",
+    "matrix": null,
+    "options": [
+      "\\((2;1;0)\\)",
+      "\\((1;1;0)\\)",
+      "\\((0;1;0)\\)",
+      "\\((1;0;1)\\)"
+    ],
+    "correct": "\\((2;1;0)\\)",
+    "solution": "Thay \\((2;1;0)\\) vào điều kiện \\(x-2y+z=0\\), ta được \\(2-2\\cdot1+0=0\\). Vậy \\((2;1;0)\\in W\\). Các phương án còn lại không thỏa điều kiện.",
+    "quick": "Thay từng véc tơ vào phương trình xác định không gian con.",
+    "casio": "Không cần CASIO; thay tọa độ vào điều kiện.",
+    "difficulty": 1,
+    "topic": "Không gian con"
+  },
+  {
+    "id": 64,
+    "type": "det_independence",
+    "question": "Cho \\(u_1,u_2,u_3\\in\\mathbb R^3\\) là các cột của ma trận \\(A\\). Nếu \\(\\det(A)=0\\) thì kết luận nào chắc chắn đúng?",
+    "matrix": null,
+    "options": [
+      "\\(u_1,u_2,u_3\\) phụ thuộc tuyến tính",
+      "\\(u_1,u_2,u_3\\) độc lập tuyến tính",
+      "\\(u_1,u_2,u_3\\) là cơ sở của \\(\\mathbb R^3\\)",
+      "Hạng của hệ luôn bằng \\(1\\)"
+    ],
+    "correct": "\\(u_1,u_2,u_3\\) phụ thuộc tuyến tính",
+    "solution": "Với ba véc tơ trong \\(\\mathbb R^3\\), định thức của ma trận cột bằng 0 nghĩa là ma trận không khả nghịch, các cột không độc lập tuyến tính. Do đó hệ phụ thuộc tuyến tính.",
+    "quick": "det bằng 0 ⇔ các cột phụ thuộc tuyến tính.",
+    "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
+    "difficulty": 1,
+    "topic": "Độc lập tuyến tính"
+  },
+  {
+    "id": 65,
+    "type": "max_independent",
+    "question": "Trong \\(\\mathbb R^3\\), một hệ gồm \\(4\\) véc tơ thì chắc chắn",
+    "matrix": null,
+    "options": [
+      "Phụ thuộc tuyến tính",
+      "Độc lập tuyến tính",
+      "Là cơ sở của \\(\\mathbb R^3\\)",
+      "Có hạng bằng \\(4\\)"
+    ],
+    "correct": "Phụ thuộc tuyến tính",
+    "solution": "Trong \\(\\mathbb R^3\\), số véc tơ độc lập tuyến tính tối đa là \\(3\\). Vì vậy mọi hệ gồm \\(4\\) véc tơ trong \\(\\mathbb R^3\\) đều phụ thuộc tuyến tính.",
+    "quick": "Số véc tơ lớn hơn số chiều thì chắc chắn phụ thuộc.",
+    "casio": "Không cần CASIO; dùng định lý về số véc tơ và số chiều.",
+    "difficulty": 1,
+    "topic": "Độc lập tuyến tính"
   }
 ]

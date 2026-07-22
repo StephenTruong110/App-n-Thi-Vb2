@@ -23,7 +23,7 @@ const EXAM_DIST = [
   /* II. GIẢI TÍCH: 26 CÂU — Nhận biết 6 – Thông hiểu 8 – Vận dụng 12 */
   { file: 'gioi_han', n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
   { file: 'tiem_can', n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
-  { file: 'lientuc_giandoan_khavi',     n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+  { file: 'lientuc_giandoan_khavi',     n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
   { file: 'dao_ham',                    n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
   { file: 'daohamrieng_viphan_cuctri',  n: 7, diff: { 1: 0, 2: 3, 3: 4 } },
   { file: 'chuoi_so',                   n: 4, diff: { 1: 1, 2: 1, 3: 2 } },

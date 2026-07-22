@@ -988,5 +988,275 @@
     "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
     "difficulty": 1,
     "topic": "Tích phân kép"
+  },
+  {
+    "type": "double_integral_box_compute",
+    "question": "Tính \\(\\displaystyle\\int_0^2\\int_0^3(2x+y)\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(21\\)",
+      "\\(18\\)",
+      "\\(12\\)",
+      "\\(9\\)"
+    ],
+    "correct": "\\(21\\)",
+    "solution": "Tích phân trong theo \\(y\\): \\(\\int_0^3(2x+y)\\,dy=6x+\\dfrac92\\). Do đó \\(I=\\int_0^2(6x+\\dfrac92)dx=12+9=21\\).",
+    "quick": "Tích phân trong cho \\(6x+9/2\\), rồi tích phân theo \\(x\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 56
+  },
+  {
+    "type": "double_integral_triangle_compute",
+    "question": "Tính \\(\\displaystyle\\int_0^1\\int_0^{1-x}(x+y)\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac13\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac16\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac13\\)",
+    "solution": "Tích phân theo \\(y\\): \\(\\int_0^{1-x}(x+y)dy=x(1-x)+\\dfrac{(1-x)^2}{2}=\\dfrac{1-x^2}{2}\\). Vậy \\(I=\\int_0^1\\dfrac{1-x^2}{2}dx=\\dfrac13\\).",
+    "quick": "Tích phân trong rút gọn thành \\((1-x^2)/2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 57
+  },
+  {
+    "type": "double_integral_setup_triangle",
+    "question": "Miền \\(D\\) được cho bởi \\(x\\ge0,\\ y\\ge0,\\ x+y\\le2\\). Cách viết \\(\\iint_D f(x,y)\\,dA\\) đúng là",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^2\\int_0^{2-x}f(x,y)\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^2\\int_0^2f(x,y)\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^2\\int_{2-x}^{0}f(x,y)\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_0^{1-x}f(x,y)\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^2\\int_0^{2-x}f(x,y)\\,dy\\,dx\\)",
+    "solution": "Từ \\(x+y\\le2\\) và \\(x,y\\ge0\\), lấy \\(0\\le x\\le2\\). Với mỗi \\(x\\), \\(0\\le y\\le2-x\\).",
+    "quick": "Tam giác góc phần tư I: \\(x:0\\to2,\\ y:0\\to2-x\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 58
+  },
+  {
+    "type": "change_order_triangle",
+    "question": "Đổi thứ tự tích phân \\(\\displaystyle I=\\int_0^2\\int_0^{2-x}f(x,y)\\,dy\\,dx\\) thành",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^2\\int_0^{2-y}f(x,y)\\,dx\\,dy\\)",
+      "\\(\\displaystyle\\int_0^2\\int_0^{2-x}f(x,y)\\,dx\\,dy\\)",
+      "\\(\\displaystyle\\int_0^2\\int_y^2f(x,y)\\,dx\\,dy\\)",
+      "\\(\\displaystyle\\int_0^2\\int_{2-y}^{0}f(x,y)\\,dx\\,dy\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^2\\int_0^{2-y}f(x,y)\\,dx\\,dy\\)",
+    "solution": "Miền là tam giác \\(x\\ge0,\\ y\\ge0,\\ x+y\\le2\\). Khi đổi thứ tự: \\(0\\le y\\le2\\), \\(0\\le x\\le2-y\\).",
+    "quick": "Đổi vai trò \\(x,y\\): \\(y:0\\to2,\\ x:0\\to2-y\\).",
+    "casio": "Không cần CASIO; vẽ tam giác hoặc đổi trực tiếp từ \\(x+y\\le2\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 59
+  },
+  {
+    "type": "double_integral_area_parabola",
+    "question": "Diện tích miền \\(D\\) giới hạn bởi \\(y=4-x^2\\) và trục \\(Ox\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{32}{3}\\)",
+      "\\(8\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(\\dfrac{32}{3}\\)",
+    "solution": "Giao với trục \\(Ox\\): \\(4-x^2=0\\Rightarrow x=\\pm2\\). Diện tích \\(S=\\int_{-2}^{2}(4-x^2)dx=\\dfrac{32}{3}\\).",
+    "quick": "Tính \\(\\int_{-2}^{2}(4-x^2)dx\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 60
+  },
+  {
+    "type": "double_integral_parabola_compute",
+    "question": "Tính \\(\\displaystyle\\iint_D x\\,dA\\), với \\(D\\) là miền \\(0\\le x\\le2,\\ 0\\le y\\le4-x^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(8\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "\\(I=\\int_0^2\\int_0^{4-x^2}x\\,dy\\,dx=\\int_0^2x(4-x^2)dx=\\left[2x^2-\\dfrac{x^4}{4}\\right]_0^2=4\\).",
+    "quick": "Tích phân theo \\(y\\) trước cho \\(x(4-x^2)\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 61
+  },
+  {
+    "type": "double_integral_polar_bounds",
+    "question": "Miền \\(D:x^2+y^2\\le9\\). Trong tọa độ cực, cận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(0\\le r\\le3,\\ 0\\le\\theta\\le2\\pi\\)",
+      "\\(0\\le r\\le9,\\ 0\\le\\theta\\le2\\pi\\)",
+      "\\(0\\le r\\le3,\\ 0\\le\\theta\\le\\pi\\)",
+      "\\(0\\le r\\le2\\pi,\\ 0\\le\\theta\\le3\\)"
+    ],
+    "correct": "\\(0\\le r\\le3,\\ 0\\le\\theta\\le2\\pi\\)",
+    "solution": "Vì \\(x^2+y^2=r^2\\), điều kiện \\(x^2+y^2\\le9\\) cho \\(0\\le r\\le3\\). Đĩa tròn đầy đủ nên \\(0\\le\\theta\\le2\\pi\\).",
+    "quick": "Đĩa bán kính 3: \\(r:0\\to3,\\ \\theta:0\\to2\\pi\\).",
+    "casio": "Không cần CASIO; đây là nhận dạng miền cực.",
+    "difficulty": 1,
+    "topic": "Tích phân kép",
+    "id": 62
+  },
+  {
+    "type": "double_integral_polar_compute",
+    "question": "Tính \\(\\displaystyle\\iint_{x^2+y^2\\le9}(x^2+y^2)\\,dA\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{81\\pi}{2}\\)",
+      "\\(81\\pi\\)",
+      "\\(\\dfrac{27\\pi}{2}\\)",
+      "\\(18\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{81\\pi}{2}\\)",
+    "solution": "Đổi sang cực: \\(x^2+y^2=r^2\\), \\(dA=r\\,dr\\,d\\theta\\). \\(I=\\int_0^{2\\pi}\\int_0^3r^3\\,dr\\,d\\theta=2\\pi\\cdot\\dfrac{81}{4}=\\dfrac{81\\pi}{2}\\).",
+    "quick": "Cực: \\(2\\pi\\int_0^3r^3dr=81\\pi/2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 3,
+    "topic": "Tích phân kép",
+    "id": 63
+  },
+  {
+    "type": "double_integral_volume_paraboloid",
+    "question": "Thể tích vật thể nằm dưới \\(z=9-x^2-y^2\\) và trên \\(z=0\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{81\\pi}{2}\\)",
+      "\\(81\\pi\\)",
+      "\\(18\\pi\\)",
+      "\\(\\dfrac{27\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{81\\pi}{2}\\)",
+    "solution": "Miền chiếu thỏa \\(9-x^2-y^2\\ge0\\), tức \\(r\\le3\\). Thể tích \\(V=\\int_0^{2\\pi}\\int_0^3(9-r^2)r\\,dr\\,d\\theta=\\dfrac{81\\pi}{2}\\).",
+    "quick": "Chiều cao \\(9-r^2\\), miền chiếu là đĩa bán kính 3.",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 3,
+    "topic": "Tích phân kép",
+    "id": 64
+  },
+  {
+    "type": "double_integral_polar_quarter_disk",
+    "question": "Tính \\(\\displaystyle\\iint_D 1\\,dA\\), với \\(D\\) là phần tư thứ nhất của đĩa \\(x^2+y^2\\le4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(4\\pi\\)"
+    ],
+    "correct": "\\(\\pi\\)",
+    "solution": "Dùng cực: \\(0\\le r\\le2,\\ 0\\le\\theta\\le\\pi/2\\). Diện tích \\(S=\\int_0^{\\pi/2}\\int_0^2r\\,dr\\,d\\theta=\\pi\\).",
+    "quick": "Một phần tư diện tích đĩa bán kính 2: \\(4\\pi/4=\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 65
+  },
+  {
+    "type": "double_integral_polar_quarter_compute",
+    "question": "Tính \\(\\displaystyle\\iint_D y\\,dA\\), với \\(D\\) là phần tư thứ nhất của đĩa \\(x^2+y^2\\le4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(2\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{8}{3}\\)",
+    "solution": "Trong cực, \\(y=r\\sin\\theta\\), \\(dA=r\\,dr\\,d\\theta\\). Miền: \\(0\\le r\\le2,\\ 0\\le\\theta\\le\\pi/2\\). Vậy \\(I=\\int_0^{\\pi/2}\\int_0^2r^2\\sin\\theta\\,dr\\,d\\theta=\\dfrac{8}{3}\\).",
+    "quick": "Cực: \\(\\int_0^{\\pi/2}\\sin\\theta d\\theta\\int_0^2r^2dr=8/3\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 3,
+    "topic": "Tích phân kép",
+    "id": 66
+  },
+  {
+    "type": "change_order_simple",
+    "question": "Đổi thứ tự tích phân \\(\\displaystyle I=\\int_0^1\\int_y^1f(x,y)\\,dx\\,dy\\) thành",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_0^y f(x,y)\\,dx\\,dy\\)",
+      "\\(\\displaystyle\\int_0^1\\int_y^1 f(x,y)\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
+    "solution": "Miền gốc là \\(0\\le y\\le1,\\ y\\le x\\le1\\). Khi đổi thứ tự: \\(0\\le x\\le1,\\ 0\\le y\\le x\\).",
+    "quick": "Tam giác dưới đường \\(y=x\\) trong hình vuông đơn vị.",
+    "casio": "Không cần CASIO; vẽ miền tam giác.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 67
+  },
+  {
+    "type": "double_integral_order_compute",
+    "question": "Tính \\(\\displaystyle\\int_0^1\\int_x^1 y^2\\,dy\\,dx\\) bằng cách đổi thứ tự tích phân.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac14\\)",
+      "\\(\\dfrac13\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac16\\)"
+    ],
+    "correct": "\\(\\dfrac14\\)",
+    "solution": "Miền: \\(0\\le x\\le1,\\ x\\le y\\le1\\). Đổi thứ tự: \\(0\\le y\\le1,\\ 0\\le x\\le y\\). Do đó \\(I=\\int_0^1\\int_0^y y^2\\,dx\\,dy=\\int_0^1y^3dy=\\dfrac14\\).",
+    "quick": "Đổi thứ tự để được \\(I=\\int_0^1y^3dy\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 3,
+    "topic": "Tích phân kép",
+    "id": 68
+  },
+  {
+    "type": "double_integral_parameter",
+    "question": "Tìm \\(a\\) để \\(\\displaystyle\\iint_{[0,1]\\times[0,2]}(ax+y)\\,dA=3\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1\\)",
+      "\\(a=2\\)",
+      "\\(a=0\\)",
+      "\\(a=-1\\)"
+    ],
+    "correct": "\\(a=1\\)",
+    "solution": "Tích phân bằng \\(a\\int_0^1x\\,dx\\int_0^2dy+\\int_0^1dx\\int_0^2y\\,dy=a+2\\). Đặt \\(a+2=3\\), suy ra \\(a=1\\).",
+    "quick": "Tính được tích phân \\(=a+2\\), nên \\(a=1\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 3,
+    "topic": "Tích phân kép",
+    "id": 69
+  },
+  {
+    "type": "double_integral_polar_annulus",
+    "question": "Tính diện tích miền vành khăn \\(D:1\\le x^2+y^2\\le4\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)"
+    ],
+    "correct": "\\(3\\pi\\)",
+    "solution": "Trong cực: \\(1\\le r\\le2,\\ 0\\le\\theta\\le2\\pi\\). Diện tích \\(S=\\int_0^{2\\pi}\\int_1^2r\\,dr\\,d\\theta=3\\pi\\).",
+    "quick": "Diện tích vành khăn: \\(\\pi(2^2-1^2)=3\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
+    "difficulty": 2,
+    "topic": "Tích phân kép",
+    "id": 70
   }
 ]

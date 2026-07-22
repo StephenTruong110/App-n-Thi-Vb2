@@ -1,79 +1,7 @@
 [
   {
     "id": 1,
-    "type": "continuity",
-    "question": "Hàm \\(f(x)=x^2+3x-4\\) liên tục tại điểm nào?",
-    "matrix": null,
-    "options": [
-      "Tại mọi \\(x\\in\\mathbb{R}\\)",
-      "Chỉ tại \\(x=2\\)",
-      "Chỉ tại \\(x=0\\)",
-      "Không liên tục tại điểm nào"
-    ],
-    "correct": "Tại mọi \\(x\\in\\mathbb{R}\\)",
-    "solution": "Đa thức liên tục trên toàn bộ \\(\\mathbb{R}\\).",
-    "quick": "Đa thức liên tục khắp nơi",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 2,
-    "type": "continuity",
-    "question": "Hàm \\(f(x)=\\dfrac{1}{x-2}\\) liên tục trên khoảng nào?",
-    "matrix": null,
-    "options": [
-      "\\((-\\infty,2)\\cup(2,+\\infty)\\)",
-      "\\((-\\infty,+\\infty)\\)",
-      "\\((2,+\\infty)\\)",
-      "\\((-\\infty,2)\\)"
-    ],
-    "correct": "\\((-\\infty,2)\\cup(2,+\\infty)\\)",
-    "solution": "Hàm phân thức liên tục trên tập xác định \\(\\mathbb{R}\\setminus\\{2\\}\\).",
-    "quick": "Gián đoạn tại \\(x=2\\)",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 3,
-    "type": "continuity",
-    "question": "Xét tính liên tục của \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 1 & x=0 \\end{cases}\\) tại \\(x=0\\)?",
-    "matrix": null,
-    "options": [
-      "Liên tục",
-      "Gián đoạn bỏ được",
-      "Gián đoạn loại 1",
-      "Gián đoạn loại 2"
-    ],
-    "correct": "Liên tục",
-    "solution": "\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1=f(0)\\) → hàm liên tục tại \\(x=0\\).",
-    "quick": "Giới hạn = giá trị hàm → liên tục",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 4,
-    "type": "continuity",
-    "question": "Xét tính liên tục của \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\)?",
-    "matrix": null,
-    "options": [
-      "Gián đoạn bỏ được",
-      "Liên tục",
-      "Gián đoạn loại 2",
-      "Gián đoạn loại 1"
-    ],
-    "correct": "Gián đoạn bỏ được",
-    "solution": "\\(\\lim_{x\\to0}f(x)=1\\neq0=f(0)\\) → gián đoạn. Có thể bổ sung để liên tục (bỏ được).",
-    "quick": "Giới hạn tồn tại hữu hạn nhưng khác giá trị hàm → bỏ được",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 5,
-    "type": "continuity",
+    "type": "continuity_parameter_piecewise",
     "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases} x^2 & x\\lt 1 \\\\ a & x=1 \\\\ 2x-1 & x\\gt 1 \\end{cases}\\) liên tục tại \\(x=1\\)?",
     "matrix": null,
     "options": [
@@ -85,138 +13,12 @@
     "correct": "\\(1\\)",
     "solution": "\\(\\lim_{x\\to1^-}f(x)=1^2=1\\), \\(\\lim_{x\\to1^+}f(x)=2\\cdot1-1=1\\). Vậy \\(\\lim_{x\\to1}f(x)=1\\). Cần \\(f(1)=a=1\\).",
     "quick": "Giới hạn hai phía =1 → a=1",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 6,
-    "type": "continuity",
-    "question": "Hàm \\(f(x)=\\dfrac{x^2-4}{x-2}\\) có thể được định nghĩa lại tại \\(x=2\\) bằng giá trị nào để liên tục?",
-    "matrix": null,
-    "options": [
-      "\\(4\\)",
-      "\\(2\\)",
-      "\\(0\\)",
-      "\\(\\infty\\)"
-    ],
-    "correct": "\\(4\\)",
-    "solution": "\\(\\dfrac{x^2-4}{x-2}=x+2\\) với \\(x\\neq2\\). \\(\\lim_{x\\to2}f(x)=4\\). Đặt \\(f(2)=4\\) để liên tục.",
-    "quick": "Rút gọn \\(x+2\\) → giới hạn =4",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 7,
-    "type": "continuity",
-    "question": "Định lý giá trị trung gian (IVT) khẳng định điều gì?",
-    "matrix": null,
-    "options": [
-      "Nếu f liên tục trên [a,b] thì f nhận mọi giá trị nằm giữa f(a) và f(b)",
-      "Nếu f liên tục trên [a,b] thì f luôn đơn điệu",
-      "Nếu f liên tục trên [a,b] thì f luôn có đúng một nghiệm",
-      "Nếu f liên tục trên [a,b] thì f luôn khả vi trên (a,b)"
-    ],
-    "correct": "Nếu f liên tục trên [a,b] thì f nhận mọi giá trị nằm giữa f(a) và f(b)",
-    "solution": "Định lý giá trị trung gian: nếu \\(f\\) liên tục trên \\([a,b]\\), thì \\(f\\) nhận mọi giá trị nằm giữa \\(f(a)\\) và \\(f(b)\\). Hệ quả: nếu \\(f(a)f(b)\\lt 0\\), thì tồn tại ít nhất một \\(c\\in(a,b)\\) sao cho \\(f(c)=0\\).",
-    "quick": "Liên tục trên đoạn → không bỏ qua các giá trị nằm giữa hai giá trị đầu mút.",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 8,
-    "type": "continuity",
-    "question": "Ứng dụng định lý giá trị trung gian, chứng minh phương trình \\(x^3+x-1=0\\) có nghiệm trong khoảng nào?",
-    "matrix": null,
-    "options": [
-      "\\((0,1)\\)",
-      "\\((1,2)\\)",
-      "\\((-1,0)\\)",
-      "\\((2,3)\\)"
-    ],
-    "correct": "\\((0,1)\\)",
-    "solution": "\\(f(x)=x^3+x-1\\), \\(f(0)=-1\\lt 0\\), \\(f(1)=1\\gt 0\\), f liên tục → có nghiệm trong (0,1).",
-    "quick": "\\(f(0)=-1, f(1)=1\\) → đổi dấu → nghiệm trong (0,1)",
-    "casio": "CASIO: Thay x → điểm kiểm tra bằng CALC. Nếu kết quả khớp f(x₀) → liên tục.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 9,
-    "type": "differentiability",
-    "question": "Tính \\(\\lim_{h\\to 0} \\dfrac{f(x+h)-f(x)}{h}\\) là định nghĩa của?",
-    "matrix": null,
-    "options": [
-      "Đạo hàm tại \\(x\\)",
-      "Giới hạn tại \\(x\\)",
-      "Tính liên tục",
-      "Vi phân"
-    ],
-    "correct": "Đạo hàm tại \\(x\\)",
-    "solution": "Định nghĩa đạo hàm: \\(f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}\\).",
-    "quick": "\\(f'(x)=\\lim_{h\\to0}\\dfrac{f(x+h)-f(x)}{h}\\) — định nghĩa đạo hàm bằng giới hạn",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 10,
-    "type": "differentiability",
-    "question": "Hàm \\(f(x)=|x|\\) có đạo hàm tại \\(x=0\\) không?",
-    "matrix": null,
-    "options": [
-      "Không",
-      "Có, bằng 0",
-      "Có, bằng 1",
-      "Có, bằng -1"
-    ],
-    "correct": "Không",
-    "solution": "Đạo hàm trái = -1, phải = 1, khác nhau → không khả vi tại 0.",
-    "quick": "Hàm |x| có điểm gãy tại 0 → không khả vi",
-    "casio": "d/dx(|x|) tại 0 không xác định",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 11,
-    "type": "differentiability",
-    "question": "Hàm \\(f(x)=\\sqrt[3]{x}\\) có đạo hàm hữu hạn tại \\(x=0\\) không?",
-    "matrix": null,
-    "options": [
-      "Không, vì thương sai phân tiến tới \\(+\\infty\\)",
-      "Có, bằng \\(0\\)",
-      "Có, bằng \\(1\\)",
-      "Có, bằng \\(+\\infty\\)"
-    ],
-    "correct": "Không, vì thương sai phân tiến tới \\(+\\infty\\)",
-    "solution": "\\[f'(0)=\\lim_{h\\to0}\\frac{\\sqrt[3]{h}-0}{h}=\\lim_{h\\to0}\\frac{1}{|h|^{2/3}}=+\\infty.\\]\nĐạo hàm theo nghĩa thông thường phải là một số hữu hạn, nên hàm không khả vi tại \\(0\\); đồ thị có tiếp tuyến đứng.",
-    "quick": "Thương sai phân bằng \\(1/|h|^{2/3}\\to+\\infty\\), nên không có đạo hàm hữu hạn.",
-    "casio": "d/dx(x^(1/3)) tại 0 không xác định",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 12,
-    "type": "differentiability",
-    "question": "Mối liên hệ giữa khả vi và liên tục: nếu \\(f\\) khả vi tại \\(x_0\\) thì",
-    "matrix": null,
-    "options": [
-      "Liên tục tại \\(x_0\\)",
-      "Chắc chắn có đạo hàm cấp 2",
-      "Gián đoạn tại \\(x_0\\)",
-      "Không liên quan"
-    ],
-    "correct": "Liên tục tại \\(x_0\\)",
-    "solution": "Định lý: khả vi \\(\\Rightarrow\\) liên tục. Chiều ngược lại không đúng.",
-    "quick": "Khả vi \\(\\Rightarrow\\) liên tục",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 13,
+    "id": 2,
     "type": "differentiability",
     "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases} x^2 & x\\le1 \\\\ ax+b & x\\gt 1 \\end{cases}\\) khả vi tại \\(x=1\\)?",
     "matrix": null,
@@ -229,30 +31,12 @@
     "correct": "\\(a=2,b=-1\\)",
     "solution": "Liên tục: \\(1^2=a\\cdot1+b \\Rightarrow a+b=1\\). Khả vi: \\(\\lim_{x\\to1^-}2x=2 \\Rightarrow a=2\\). Suy ra \\(b=-1\\).",
     "quick": "Đạo hàm trái =2, phải = a → a=2; liên tục → 1=a+b → b=-1",
-    "casio": "CASIO: Tính giới hạn [f(x₀+h)-f(x₀)]/h với h rất nhỏ (h=0.0001) bằng CALC.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 14,
-    "type": "differentiability",
-    "question": "Hàm \\(f(x)=\\begin{cases}x^2\\sin\\dfrac{1}{x}&x\\neq0\\\\0&x=0\\end{cases}\\) tại \\(x=0\\) là?",
-    "matrix": null,
-    "options": [
-      "Khả vi với \\(f'(0)=0\\)",
-      "Liên tục nhưng không khả vi",
-      "Không liên tục",
-      "Khả vi với \\(f'(0)=1\\)"
-    ],
-    "correct": "Khả vi với \\(f'(0)=0\\)",
-    "solution": "Khả vi theo định nghĩa:\n\\(f'(0)=\\lim_{x\\to0}\\dfrac{x^2\\sin(1/x)-0}{x-0}=\\lim_{x\\to0}x\\sin\\dfrac{1}{x}\\).\n\nVì \\(|x\\sin(1/x)|\\leq|x|\\to0\\) → bằng kẹp: \\(f'(0)=0\\).\n\nHàm khả vi tại \\(x=0\\) với \\(f'(0)=0\\).",
-    "quick": "\\(f'(0)=\\lim\\dfrac{f(x)-f(0)}{x}=\\lim x\\sin(1/x)\\). Dùng kẹp → 0. Hàm khả vi.",
-    "casio": "CASIO: x=0.001 → 0.001×sin(1000)≈0.001×(-0.827)≈-0.000827 ≈ 0.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 15,
+    "id": 3,
     "type": "continuity_parameter",
     "question": "Tìm \\(a\\) để hàm \\(f(x)=\\begin{cases}\\dfrac{x^2-9}{x-3} & x\\neq3 \\\\ a & x=3\\end{cases}\\) liên tục tại \\(x=3\\).",
     "matrix": null,
@@ -265,12 +49,12 @@
     "correct": "\\(a=6\\)",
     "solution": "Điều kiện liên tục: \\(f(3)=\\lim_{x\\to3}f(x)\\).\n\n\\(\\lim_{x\\to3}\\dfrac{x^2-9}{x-3}=\\lim_{x\\to3}\\dfrac{(x-3)(x+3)}{x-3}=\\lim_{x\\to3}(x+3)=6\\).\n\nVậy phải đặt \\(a=6\\).",
     "quick": "Rút gọn: \\(\\dfrac{x^2-9}{x-3}=x+3\\to6\\) khi \\(x\\to3\\). Đặt \\(a=\\) giới hạn = 6.",
-    "casio": "CASIO: x=3.0001 → (3.0001²-9)/(3.0001-3)≈6.0001 → a=6.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 16,
+    "id": 4,
     "type": "continuity_parameter",
     "question": "Cho \\(f(x)=\\begin{cases}x+a & x\\lt 0 \\\\ 2 & x=0 \\\\ bx+3 & x\\gt 0\\end{cases}\\). Kết luận nào đúng về tính liên tục của hàm tại \\(x=0\\)?",
     "matrix": null,
@@ -283,12 +67,12 @@
     "correct": "Không có \\(a,b\\) nào làm \\(f\\) liên tục tại \\(x=0\\)",
     "solution": "\\(\\lim_{x\\to0^-}f(x)=a\\). Liên tục trái: \\(a=f(0)=2\\).\n\n\\(\\lim_{x\\to0^+}f(x)=b\\cdot0+3=3\\neq2=f(0)\\) → không thể liên tục tại 0 dù b bằng bao nhiêu!\n\nNguyên nhân: lim phải = 3 cố định, f(0)=2 cố định, không thể điều chỉnh.",
     "quick": "lim 0+ = 3 ≠ f(0)=2 (cố định, không phụ thuộc b) → không có a,b nào thỏa mãn.",
-    "casio": "CASIO: Thay x=±0.0001 vào từng nhánh, so sánh với f(0)=2.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 17,
+    "id": 5,
     "type": "continuity_parameter",
     "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\dfrac{1-\\cos 2x}{x^2}&x\\neq0\\\\a&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
     "matrix": null,
@@ -301,12 +85,12 @@
     "correct": "\\(a=2\\)",
     "solution": "\\(\\lim_{x\\to0}\\dfrac{1-\\cos2x}{x^2}\\). Dùng \\(1-\\cos2x=2\\sin^2x\\):\n\n\\(=\\lim_{x\\to0}\\dfrac{2\\sin^2x}{x^2}=2\\left(\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\right)^2=2\\cdot1^2=2\\).\n\nĐể liên tục: \\(a=2\\).",
     "quick": "\\(1-\\cos2x=2\\sin^2x\\) → \\(\\dfrac{2\\sin^2x}{x^2}\\to2\\cdot1=2\\). Đặt a=2.",
-    "casio": "CASIO: x=0.001 → (1-cos0.002)/0.001²≈(2sin²0.001)/0.000001≈2×0.000001/0.000001=2.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 18,
+    "id": 6,
     "type": "differentiability_param",
     "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}e^x & x\\leq0 \\\\ x^2+ax+b & x\\gt 0\\end{cases}\\) khả vi tại \\(x=0\\).",
     "matrix": null,
@@ -319,12 +103,12 @@
     "correct": "\\(a=1,\\;b=1\\)",
     "solution": "Điều kiện khả vi tại x=0: f liên tục VÀ đạo hàm trái = đạo hàm phải.\n\nLiên tục: \\(\\lim_{x\\to0^-}e^x=1=\\lim_{x\\to0^+}(x^2+ax+b)=b\\) → \\(b=1\\).\n\nĐạo hàm trái: \\((e^x)'|_{x=0}=e^0=1\\).\nĐạo hàm phải: \\((x^2+ax+b)'|_{x=0}=2\\cdot0+a=a\\).\n\nĐể bằng nhau: \\(a=1\\). Vậy \\(a=1,\\;b=1\\).",
     "quick": "2 bước: (1) Liên tục → b=f(0⁻)=e⁰=1. (2) f'(0⁻)=f'(0⁺) → 1=a → a=1, b=1.",
-    "casio": "CASIO: Tính f(0-)=e⁰=1=b. f'(0-)=e⁰=1. f'(0+)=a. Đặt a=1.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 19,
+    "id": 7,
     "type": "differentiability_param",
     "question": "Xác định \\(a,b\\) để \\(f(x)=\\begin{cases}\\ln(x+1) & x\\gt 0 \\\\ ax+b+1 & x\\leq0\\end{cases}\\) khả vi trên \\(\\mathbb{R}\\).",
     "matrix": null,
@@ -337,12 +121,12 @@
     "correct": "\\(a=1,\\;b=-1\\)",
     "solution": "Tại \\(x=0\\):\n\nLiên tục: \\(\\lim_{x\\to0^+}\\ln(x+1)=0\\) và \\(f(0)=b+1\\) → \\(b+1=0\\) → \\(b=-1\\).\n\nKhả vi: \\(f'(0^+)=\\dfrac{1}{1+0}=1\\) và \\(f'(0^-)=a\\) → \\(a=1\\).\n\n→ \\(a=1,\\;b=-1\\).",
     "quick": "Liên tục: b+1=0→b=-1. Khả vi: f'(0+)=1=a → a=1, b=-1.",
-    "casio": "CASIO: f(0+)=ln1=0, f(0-)=b+1=0→b=-1. f'(0+)=1, f'(0-)=a=1.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 20,
+    "id": 8,
     "type": "differentiability_param",
     "question": "Cho \\(f(x)=\\begin{cases}x^2+ax+b & x\\leq1 \\\\ 2ax+b & x\\gt 1\\end{cases}\\). Tìm \\(a,b\\) để \\(f\\) khả vi tại \\(x=1\\).",
     "matrix": null,
@@ -355,228 +139,12 @@
     "correct": "Không tồn tại \\(a,b\\)",
     "solution": "Xét tính khả vi tại \\(x=1\\). Trước hết cần liên tục: \\(f(1^-)=1^2+a+b=1+a+b\\), còn \\(f(1^+)=2a+b\\). Điều kiện liên tục cho \\(1+a+b=2a+b\\Rightarrow a=1\\). Tiếp theo, đạo hàm trái là \\((x^2+ax+b)'=2x+a\\), nên tại \\(x=1\\): \\(f'_-(1)=2+a\\). Đạo hàm phải của \\(2ax+b\\) là \\(2a\\), nên \\(f'_+(1)=2a\\). Điều kiện khả vi cho \\(2+a=2a\\Rightarrow a=2\\). Mâu thuẫn với điều kiện liên tục \\(a=1\\). Vậy không tồn tại cặp \\((a,b)\\) nào làm hàm khả vi tại \\(x=1\\).",
     "quick": "Liên tục cho \\(a=1\\), còn khả vi cho \\(a=2\\). Mâu thuẫn nên không tồn tại \\(a,b\\).",
-    "casio": "CASIO: Giải hệ từ LT và KV: {1+a+b=2a+b; 2+a=2a} → {a=1; a=2} mâu thuẫn. Kiểm tra lại đề.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 21,
-    "type": "discontinuity_count",
-    "question": "Hàm số \\(f(x)=\\begin{cases} \\dfrac{x^2-1}{x-1} & x\\neq1 \\\\ 2 & x=1 \\end{cases}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "0",
-    "solution": "Tại \\(x=1\\): Rút gọn \\(\\dfrac{x^2-1}{x-1}=x+1\\) (khi \\(x\\neq1\\)). Suy ra \\(\\lim_{x\\to1}f(x)=1+1=2=f(1)\\) → liên tục tại \\(x=1\\).\n\nTại các điểm khác hàm là đa thức/phân thức không có điểm đặc biệt → liên tục. Vậy 0 điểm gián đoạn.",
-    "quick": "Rút gọn: \\(\\dfrac{x^2-1}{x-1}=x+1\\) với \\(x\\neq1\\). Giới hạn = \\(f(1)=2\\) → liên tục tại \\(x=1\\) → 0 điểm gián đoạn.",
-    "casio": "CASIO: Thay x=0.9999 → (0.9999²-1)/(0.9999-1) ≈ 1.9999 ≈ 2. Thay x=1.0001 → ≈ 2.0001 ≈ 2. Cả hai giới hạn = f(1)=2 → liên tục.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 22,
-    "type": "discontinuity_count",
-    "question": "Số điểm gián đoạn của \\(f(x)=\\begin{cases} \\dfrac{x^2-1}{x-1} & x\\neq1 \\\\ 1 & x=1 \\end{cases}\\) là?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "Rút gọn: \\(\\dfrac{x^2-1}{x-1}=x+1\\) với \\(x\\neq1\\). Tại \\(x=1\\): \\(\\lim_{x\\to1}f(x)=2 \\neq f(1)=1\\) → gián đoạn bỏ được tại \\(x=1\\).\n\nChỉ có 1 điểm gián đoạn (có thể sửa bằng cách định nghĩa lại \\(f(1)=2\\)).",
-    "quick": "\\(\\lim=2 \\neq f(1)=1\\) → gián đoạn bỏ được tại \\(x=1\\). Đếm: 1 điểm.",
-    "casio": "CASIO: Thay x=0.9999 → ≈ 1.9999; x=1.0001 → ≈ 2.0001. Cả hai → 2, nhưng f(1)=1 ≠ 2 → gián đoạn 1 điểm.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 23,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\begin{cases} x^2 & x\\lt 0 \\\\ 0 & x=0 \\\\ \\dfrac{1}{x} & x\\gt 0 \\end{cases}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "Tại \\(x=0\\): \\(\\lim_{x\\to0^-}f(x)=0^2=0\\), \\(\\lim_{x\\to0^+}f(x)=\\dfrac{1}{0^+}=+\\infty\\).\n\nVì giới hạn một phía bằng \\(+\\infty\\) → gián đoạn loại 2 tại \\(x=0\\). Các điểm khác hoàn toàn liên tục. Vậy 1 điểm gián đoạn.",
-    "quick": "Lim trái = 0, lim phải = +∞ → vô cực một phía → loại 2, chỉ có 1 điểm gián đoạn.",
-    "casio": "CASIO: x=-0.0001 → (-0.0001)²≈0; x=0.0001 → 1/0.0001=10000 → rất lớn. Lim phải = ∞ → gián đoạn loại 2.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 24,
-    "type": "discontinuity_classification",
-    "question": "Điểm gián đoạn của \\(f(x)=\\begin{cases} \\dfrac{\\sin x}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\) thuộc loại nào?",
-    "matrix": null,
-    "options": [
-      "Bỏ được",
-      "Loại 1 (bước nhảy)",
-      "Loại 2",
-      "Liên tục"
-    ],
-    "correct": "Bỏ được",
-    "solution": "\\(\\lim_{x\\to0}\\dfrac{\\sin x}{x}=1\\) (giới hạn cơ bản). Nhưng \\(f(0)=0\\neq1\\) → gián đoạn bỏ được.\n\nCó thể \"sửa\" bằng cách định nghĩa lại \\(f(0)=1\\) thì hàm sẽ liên tục.",
-    "quick": "Giới hạn = 1 (hữu hạn), \\(f(0)=0\\neq1\\) → bỏ được (giới hạn tồn tại ≠ giá trị hàm).",
-    "casio": "CASIO: x=0.001 → sin(0.001)/0.001 ≈ 0.9999999983 ≈ 1. Giới hạn = 1 nhưng f(0)=0 → gián đoạn bỏ được.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 25,
-    "type": "discontinuity_classification",
-    "question": "Điểm gián đoạn của \\(f(x)=\\begin{cases} \\dfrac{1}{x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\) thuộc loại nào?",
-    "matrix": null,
-    "options": [
-      "Bỏ được",
-      "Loại 1",
-      "Loại 2",
-      "Liên tục"
-    ],
-    "correct": "Loại 2",
-    "solution": "\\(\\lim_{x\\to0^+}\\dfrac{1}{x}=+\\infty\\), \\(\\lim_{x\\to0^-}\\dfrac{1}{x}=-\\infty\\).\n\nCó ít nhất một giới hạn một phía bằng \\(\\pm\\infty\\) → gián đoạn loại 2 (vô cực).",
-    "quick": "Giới hạn một phía = ±∞ → loại 2. Phân biệt: loại 2 khi ∞, loại 1 khi 2 giới hạn hữu hạn nhưng khác nhau.",
-    "casio": "CASIO: x=0.0001 → 1/0.0001=10000; x=-0.0001 → -10000. Cả hai → ±∞ → loại 2.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 26,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\tan x\\) có bao nhiêu điểm gián đoạn trên \\([0,2\\pi]\\)?",
-    "matrix": null,
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "correct": "2",
-    "solution": "\\(\\tan x = \\dfrac{\\sin x}{\\cos x}\\) gián đoạn khi \\(\\cos x = 0\\).\n\nTrên \\([0,2\\pi]\\): \\(\\cos x=0\\) tại \\(x=\\dfrac{\\pi}{2}\\) và \\(x=\\dfrac{3\\pi}{2}\\). Cả hai đều là gián đoạn loại 2 (vô cực). Vậy có 2 điểm gián đoạn.",
-    "quick": "\\(\\cos x=0\\) trên \\([0,2\\pi]\\) tại \\(x=\\pi/2\\) và \\(x=3\\pi/2\\) → 2 điểm.",
-    "casio": "CASIO: tan(π/2 - 0.0001) rất lớn dương, tan(π/2 + 0.0001) rất lớn âm → gián đoạn loại 2. Tương tự tại 3π/2.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 27,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\dfrac{x^2-1}{x^2-3x+2}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "2",
-    "solution": "Mẫu: \\(x^2-3x+2=(x-1)(x-2)=0 \\Rightarrow x=1,\\; x=2\\).\n\nTại \\(x=1\\): Tử \\(x^2-1=(x-1)(x+1)\\) cũng = 0 → rút gọn được: \\(\\dfrac{(x+1)(x-1)}{(x-1)(x-2)}=\\dfrac{x+1}{x-2}\\). Giới hạn = \\(\\dfrac{2}{-1}=-2\\) hữu hạn → gián đoạn bỏ được.\n\nTại \\(x=2\\): Tử = \\(4-1=3\\neq0\\) → giới hạn = ±∞ → gián đoạn loại 2.\n\nTổng: 2 điểm gián đoạn.",
-    "quick": "Mẫu=0 tại x=1,2. Tại x=1: tử=0 → bỏ được. Tại x=2: tử=3≠0 → loại 2. Tổng: 2 điểm.",
-    "casio": "CASIO: x=1.0001 → ≈ -2.0001 (hữu hạn) → bỏ được. x=1.9999 → rất lớn → loại 2.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 28,
-    "type": "discontinuity_count",
-    "question": "Hàm \\(f(x)=\\begin{cases} \\dfrac{|x|}{x} & x\\neq0 \\\\ 1 & x=0 \\end{cases}\\) có bao nhiêu điểm gián đoạn?",
-    "matrix": null,
-    "options": [
-      "0",
-      "1",
-      "2",
-      "3"
-    ],
-    "correct": "1",
-    "solution": "Tại \\(x=0\\):\n\\(\\lim_{x\\to0^+}\\dfrac{|x|}{x}=\\dfrac{x}{x}=1\\), \\(\\lim_{x\\to0^-}\\dfrac{|x|}{x}=\\dfrac{-x}{x}=-1\\).\n\nHai giới hạn một phía hữu hạn nhưng khác nhau (1 ≠ −1) → gián đoạn loại 1 (bước nhảy). Vậy 1 điểm gián đoạn.",
-    "quick": "Lim phải = 1, lim trái = −1 → hai phía hữu hạn nhưng ≠ nhau → loại 1 (bước nhảy), 1 điểm.",
-    "casio": "CASIO: x=0.0001 → |0.0001|/0.0001=1; x=-0.0001 → |-0.0001|/(-0.0001)=-1. Hai phía ≠ nhau → loại 1.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 29,
-    "type": "discontinuity_classification",
-    "question": "Loại gián đoạn tại \\(x=0\\) của \\(f(x)=\\begin{cases} x^2+1 & x\\gt 0 \\\\ -x+3 & x\\leq0 \\end{cases}\\)?",
-    "matrix": null,
-    "options": [
-      "Liên tục",
-      "Bỏ được",
-      "Loại 1 (bước nhảy)",
-      "Loại 2"
-    ],
-    "correct": "Loại 1 (bước nhảy)",
-    "solution": "\\(\\lim_{x\\to0^+}f(x)=0^2+1=1\\), \\(\\lim_{x\\to0^-}f(x)=-0+3=3\\), \\(f(0)=-0+3=3\\).\n\nHai giới hạn một phía đều hữu hạn nhưng khác nhau: \\(1\\neq3\\) → gián đoạn loại 1 (bước nhảy).\nBước nhảy = \\(|3-1|=2\\).",
-    "quick": "Lim phải = 1, lim trái = 3 → khác nhau, hữu hạn → loại 1. Bước nhảy = |3−1| = 2.",
-    "casio": "CASIO: x=0.0001 → 0.0001²+1≈1; x=-0.0001 → -(-0.0001)+3=3.0001≈3. Hai phía: 1 và 3 → loại 1.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 30,
-    "type": "discontinuity_classification",
-    "question": "Hàm \\(f(x)=\\begin{cases} \\dfrac{\\tan x}{x} & x\\neq0 \\\\ 2 & x=0 \\end{cases}\\) tại \\(x=0\\) là gián đoạn loại gì?",
-    "matrix": null,
-    "options": [
-      "Bỏ được",
-      "Loại 1",
-      "Loại 2",
-      "Liên tục"
-    ],
-    "correct": "Bỏ được",
-    "solution": "\\(\\lim_{x\\to0}\\dfrac{\\tan x}{x}=\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\cdot\\dfrac{1}{\\cos x}=1\\cdot1=1\\).\n\nNhưng \\(f(0)=2\\neq1\\) → giới hạn tồn tại hữu hạn ≠ giá trị hàm → gián đoạn bỏ được.\nCó thể sửa bằng cách đặt lại \\(f(0)=1\\).",
-    "quick": "\\(\\lim_{x\\to0}\\dfrac{\\tan x}{x}=1\\) nhưng \\(f(0)=2\\neq1\\) → bỏ được.",
-    "casio": "CASIO: x=0.001 → tan(0.001)/0.001 ≈ 1.000000333 ≈ 1. Nhưng f(0)=2 → gián đoạn bỏ được.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 31,
-    "type": "discontinuity_classification",
-    "question": "Hàm \\(f(x)=\\begin{cases} e^{1/x} & x\\neq0 \\\\ 0 & x=0 \\end{cases}\\) tại \\(x=0\\) gián đoạn loại gì?",
-    "matrix": null,
-    "options": [
-      "Bỏ được",
-      "Loại 1 (bước nhảy)",
-      "Loại 2",
-      "Liên tục"
-    ],
-    "correct": "Loại 2",
-    "solution": "\\(\\lim_{x\\to0^+}e^{1/x}=+\\infty\\), còn \\(\\lim_{x\\to0^-}e^{1/x}=0\\). Vì ít nhất một giới hạn một phía không hữu hạn, hàm gián đoạn loại 2 tại \\(x=0\\). Gián đoạn loại 1 có hai giới hạn một phía hữu hạn nhưng khác nhau.",
-    "quick": "\\(\\lim_{x\\to0^+}e^{1/x}=+\\infty\\), nên hàm gián đoạn loại 2 tại \\(x=0\\).",
-    "casio": "CASIO: x=-0.001 → e^(-1000) ≈ 0; x=0.001 → e^(1000) cực lớn. Hai phía rất khác nhau.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 32,
-    "type": "discontinuity_classification",
-    "question": "Ba loại điểm gián đoạn là gì? Loại nào có thể làm cho hàm liên tục bằng cách định nghĩa lại?",
-    "matrix": null,
-    "options": [
-      "Loại bỏ được",
-      "Loại 1 (bước nhảy)",
-      "Loại 2 (vô cực)",
-      "Cả ba đều bỏ được"
-    ],
-    "correct": "Loại bỏ được",
-    "solution": "Ba loại điểm gián đoạn:\n\nBỏ được: Giới hạn tồn tại hữu hạn nhưng ≠ giá trị hàm (hoặc hàm không xác định tại đó). Có thể \"sửa\" bằng cách định nghĩa lại \\(f(x_0)=\\lim f(x)\\).\n\nLoại 1 (bước nhảy): Cả hai giới hạn một phía tồn tại hữu hạn nhưng không bằng nhau. Không thể sửa.\n\nLoại 2 (vô cực/dao động): Ít nhất một giới hạn một phía = ±∞ hoặc không tồn tại. Không thể sửa.",
-    "quick": "Chỉ loại bỏ được có thể sửa: định nghĩa lại \\(f(x_0)=\\lim_{x\\to x_0}f(x)\\). Loại 1 và loại 2 không sửa được.",
-    "casio": "CASIO: Với loại bỏ được, tính lim bằng CALC rồi đặt lại f(x₀)=giá trị đó → hàm liên tục.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 33,
+    "id": 9,
     "type": "continuity_parameter",
     "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{\\sin 2x}{x},&x\\gt0\\\\m+x,&x\\le0\\end{cases}\\) liên tục tại \\(x=0\\).",
     "matrix": null,
@@ -589,12 +157,12 @@
     "correct": "\\(m=2\\)",
     "solution": "\\(\\lim_{x\\to0^+}\\dfrac{\\sin2x}{x}=2\\). Vì \\(f(0)=m\\), điều kiện liên tục là \\(m=2\\).",
     "quick": "\\(\\sin 2x/x\\to2\\).",
-    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng CALC với X tiến gần điểm từ trái/phải, rồi so với giá trị f(x₀). Với tham số, nên giải giới hạn bằng tay trước rồi đặt bằng f(x₀).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 34,
+    "id": 10,
     "type": "continuity_parameter_exp",
     "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{e^{3x}-1}{x},&x\\ne0\\\\m^2-1,&x=0\\end{cases}\\) liên tục tại 0.",
     "matrix": null,
@@ -607,12 +175,12 @@
     "correct": "\\(m=\\pm2\\)",
     "solution": "\\(\\lim_{x\\to0}\\dfrac{e^{3x}-1}{x}=3\\). Điều kiện liên tục: \\(m^2-1=3\\), nên \\(m^2=4\\), \\(m=\\pm2\\).",
     "quick": "\\(e^{3x}-1\\sim3x\\).",
-    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng CALC với X tiến gần điểm từ trái/phải, rồi so với giá trị f(x₀). Với tham số, nên giải giới hạn bằng tay trước rồi đặt bằng f(x₀).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 35,
+    "id": 11,
     "type": "differentiability_piecewise",
     "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}x^2,&x\\le1\\\\ax+b,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
     "matrix": null,
@@ -625,26 +193,746 @@
     "correct": "\\(a=2,b=-1\\)",
     "solution": "Liên tục: \\(1=a+b\\). Đạo hàm trái tại 1 là 2, đạo hàm phải là \\(a\\), nên \\(a=2\\). Suy ra \\(b=-1\\).",
     "quick": "Khả vi tại điểm ghép: liên tục và đạo hàm hai phía bằng nhau.",
-    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng CALC với X tiến gần điểm từ trái/phải, rồi so với giá trị f(x₀). Với tham số, nên giải giới hạn bằng tay trước rồi đặt bằng f(x₀).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 36,
-    "type": "continuity_removable",
-    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{x^2-x}{x},&x\\ne0\\\\-1,&x=0\\end{cases}\\). Khẳng định đúng tại \\(x=0\\) là",
+    "id": 12,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để hàm \\(f(x)=\\begin{cases} \\dfrac{x^2-4}{x-2},&x\\ne2\\\\ a,&x=2\\end{cases}\\) liên tục tại \\(x=2\\).",
     "matrix": null,
     "options": [
-      "Hàm số liên tục tại \\(x=0\\)",
-      "Gián đoạn vô hạn",
-      "Gián đoạn bỏ được",
-      "Liên tục trái nhưng không liên tục phải"
+      "\\(a=4\\)",
+      "\\(a=2\\)",
+      "\\(a=0\\)",
+      "\\(a=-4\\)"
     ],
-    "correct": "Hàm số liên tục tại \\(x=0\\)",
-    "solution": "Với \\(x\\ne0\\), \\(f(x)=x-1\\). Do đó \\(\\lim_{x\\to0}f(x)=-1=f(0)\\), nên hàm liên tục tại 0.",
-    "quick": "Rút gọn biểu thức trước khi xét liên tục.",
-    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng CALC với X tiến gần điểm từ trái/phải, rồi so với giá trị f(x₀). Với tham số, nên giải giới hạn bằng tay trước rồi đặt bằng f(x₀).",
+    "correct": "\\(a=4\\)",
+    "solution": "Với \\(x\\ne2\\), ta có \\(\\dfrac{x^2-4}{x-2}=x+2\\). Do đó \\(\\lim_{x\\to2}f(x)=4\\). Muốn liên tục tại \\(x=2\\), cần \\(a=f(2)=4\\).",
+    "quick": "Rút gọn \\(x^2-4=(x-2)(x+2)\\), giới hạn bằng \\(2+2=4\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
     "difficulty": 2,
     "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 13,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases} \\dfrac{\\sqrt{x+4}-2}{x},&x\\ne0\\\\ a,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=\\dfrac14\\)",
+      "\\(a=\\dfrac12\\)",
+      "\\(a=1\\)",
+      "\\(a=0\\)"
+    ],
+    "correct": "\\(a=\\dfrac14\\)",
+    "solution": "Nhân liên hợp: \\(\\dfrac{\\sqrt{x+4}-2}{x}\\cdot\\dfrac{\\sqrt{x+4}+2}{\\sqrt{x+4}+2}=\\dfrac{1}{\\sqrt{x+4}+2}\\). Khi \\(x\\to0\\), giới hạn bằng \\(\\dfrac{1}{2+2}=\\dfrac14\\). Vậy \\(a=\\dfrac14\\).",
+    "quick": "Dạng căn: nhân liên hợp, được \\(1/(\\sqrt{x+4}+2)\\to1/4\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 14,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\dfrac{e^{2x}-1}{x},&x\\ne0\\\\a,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2\\)",
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=4\\)"
+    ],
+    "correct": "\\(a=2\\)",
+    "solution": "Dùng giới hạn cơ bản \\(e^u-1\\sim u\\) khi \\(u\\to0\\). Với \\(u=2x\\), ta có \\(\\dfrac{e^{2x}-1}{x}\\to2\\). Do đó để liên tục tại \\(0\\), cần \\(a=2\\).",
+    "quick": "\\(e^{2x}-1\\sim2x\\), nên giới hạn bằng \\(2\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 15,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\dfrac{\\ln(1+3x)}{x},&x\\ne0\\\\a,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=3\\)",
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=\\dfrac13\\)"
+    ],
+    "correct": "\\(a=3\\)",
+    "solution": "Dùng giới hạn cơ bản \\(\\ln(1+u)\\sim u\\) khi \\(u\\to0\\). Với \\(u=3x\\), ta có \\(\\dfrac{\\ln(1+3x)}{x}\\to3\\). Vậy \\(a=3\\).",
+    "quick": "\\(\\ln(1+3x)\\sim3x\\), nên giới hạn bằng \\(3\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 16,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\dfrac{1-\\cos 4x}{x^2},&x\\ne0\\\\a,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=8\\)",
+      "\\(a=4\\)",
+      "\\(a=2\\)",
+      "\\(a=16\\)"
+    ],
+    "correct": "\\(a=8\\)",
+    "solution": "Ta có \\(1-\\cos4x=2\\sin^2 2x\\). Do đó \\(\\dfrac{1-\\cos4x}{x^2}=2\\left(\\dfrac{\\sin2x}{x}\\right)^2\\to2\\cdot2^2=8\\). Vậy \\(a=8\\).",
+    "quick": "\\(1-\\cos4x=2\\sin^2 2x\\), nên giới hạn \\(=2\\cdot2^2=8\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 17,
+    "type": "continuity_parameter",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}ax+1,&x\\lt2\\\\5,&x=2\\\\x^2+a,&x\\gt2\\end{cases}\\) liên tục tại \\(x=2\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(a\\)",
+      "\\(a=2\\)",
+      "\\(a=1\\)",
+      "\\(a=3\\)"
+    ],
+    "correct": "Không tồn tại \\(a\\)",
+    "solution": "Điều kiện liên tục trái: \\(\\lim_{x\\to2^-}(ax+1)=2a+1=f(2)=5\\), nên \\(a=2\\). Điều kiện liên tục phải: \\(\\lim_{x\\to2^+}(x^2+a)=4+a=f(2)=5\\), nên \\(a=1\\). Hai điều kiện mâu thuẫn, nên không tồn tại \\(a\\).",
+    "quick": "Trái cho \\(a=2\\), phải cho \\(a=1\\); mâu thuẫn.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 18,
+    "type": "differentiability_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}x^2+1,&x\\le0\\\\ax+b,&x\\gt0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=0,b=1\\)",
+      "\\(a=1,b=0\\)",
+      "\\(a=2,b=1\\)",
+      "\\(a=0,b=0\\)"
+    ],
+    "correct": "\\(a=0,b=1\\)",
+    "solution": "Muốn khả vi thì trước hết phải liên tục tại \\(0\\). Ta có \\(f(0)=1\\), còn \\(\\lim_{x\\to0^+}(ax+b)=b\\), nên \\(b=1\\). Đạo hàm trái của \\(x^2+1\\) tại 0 bằng 0, đạo hàm phải của \\(ax+b\\) bằng \\(a\\), nên \\(a=0\\).",
+    "quick": "Liên tục cho \\(b=1\\); đạo hàm trái = 0, phải = \\(a\\), nên \\(a=0\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 19,
+    "type": "differentiability_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}e^x,&x\\le0\\\\ax+b,&x\\gt0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1,b=1\\)",
+      "\\(a=0,b=1\\)",
+      "\\(a=1,b=0\\)",
+      "\\(a=-1,b=1\\)"
+    ],
+    "correct": "\\(a=1,b=1\\)",
+    "solution": "Liên tục tại \\(0\\): \\(e^0=1=b\\), nên \\(b=1\\). Đạo hàm trái tại \\(0\\) là \\((e^x)'|_{x=0}=1\\), đạo hàm phải của \\(ax+b\\) là \\(a\\), nên \\(a=1\\).",
+    "quick": "Liên tục: \\(b=1\\). Đạo hàm hai phía: \\(1=a\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 20,
+    "type": "differentiability_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}x^2,&x\\le1\\\\a(x-1)+1,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2\\)",
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=-2\\)"
+    ],
+    "correct": "\\(a=2\\)",
+    "solution": "Hàm đã liên tục tại \\(x=1\\) vì hai nhánh đều cho giá trị 1. Đạo hàm trái của \\(x^2\\) tại 1 là 2. Đạo hàm phải của \\(a(x-1)+1\\) là \\(a\\). Điều kiện khả vi là \\(a=2\\).",
+    "quick": "Liên tục sẵn; so đạo hàm: trái = 2, phải = \\(a\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 21,
+    "type": "differentiability_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\sin x,&x\\le0\\\\ax,&x\\gt0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=-1\\)",
+      "\\(a=2\\)"
+    ],
+    "correct": "\\(a=1\\)",
+    "solution": "Hàm liên tục tại \\(0\\) với mọi \\(a\\) vì \\(\\sin0=0\\) và \\(a\\cdot0=0\\). Đạo hàm trái của \\(\\sin x\\) tại 0 là \\(\\cos0=1\\). Đạo hàm phải của \\(ax\\) là \\(a\\). Do đó \\(a=1\\).",
+    "quick": "Liên tục tự động; đạo hàm trái = 1, phải = \\(a\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 22,
+    "type": "differentiability_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}\\ln(1+x),&x\\gt0\\\\ax,&x\\le0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=-1\\)",
+      "\\(a=2\\)"
+    ],
+    "correct": "\\(a=1\\)",
+    "solution": "Hàm liên tục tại \\(0\\) vì \\(\\lim_{x\\to0^+}\\ln(1+x)=0=f(0)\\). Đạo hàm phải là \\(\\dfrac{1}{1+0}=1\\), đạo hàm trái của \\(ax\\) là \\(a\\). Điều kiện khả vi là \\(a=1\\).",
+    "quick": "Đạo hàm phải của \\(\\ln(1+x)\\) tại 0 là 1, nên \\(a=1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 23,
+    "type": "differentiability_piecewise",
+    "question": "Cho \\(f(x)=\\begin{cases}ax^2+b,&x\\le1\\\\3x-1,&x\\gt1\\end{cases}\\). Tìm \\((a,b)\\) để \\(f\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=\\dfrac32,b=\\dfrac12\\)",
+      "\\(a=1,b=1\\)",
+      "\\(a=3,b=-1\\)",
+      "\\(a=\\dfrac12,b=\\dfrac32\\)"
+    ],
+    "correct": "\\(a=\\dfrac32,b=\\dfrac12\\)",
+    "solution": "Liên tục tại \\(x=1\\): \\(a+b=3\\cdot1-1=2\\). Đạo hàm trái của \\(ax^2+b\\) là \\(2ax\\), tại \\(1\\) bằng \\(2a\\). Đạo hàm phải của \\(3x-1\\) là 3. Điều kiện khả vi cho \\(2a=3\\), nên \\(a=\\dfrac32\\). Từ \\(a+b=2\\), suy ra \\(b=\\dfrac12\\).",
+    "quick": "Khả vi: liên tục \\(a+b=2\\), đạo hàm \\(2a=3\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 24,
+    "type": "continuity_parameter_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}x^2+a,&x\\lt1\\\\3,&x=1\\\\2x+a,&x\\gt1\\end{cases}\\) liên tục tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(a\\)",
+      "\\(a=2\\)",
+      "\\(a=1\\)",
+      "\\(a=0\\)"
+    ],
+    "correct": "Không tồn tại \\(a\\)",
+    "solution": "Giới hạn trái là \\(1+a\\), muốn bằng \\(f(1)=3\\) thì \\(a=2\\). Giới hạn phải là \\(2+a\\), muốn bằng \\(3\\) thì \\(a=1\\). Hai điều kiện mâu thuẫn, nên không tồn tại \\(a\\).",
+    "quick": "Trái cho \\(a=2\\), phải cho \\(a=1\\) → mâu thuẫn.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 25,
+    "type": "continuity_parameter_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}ax+2,&x\\lt0\\\\1,&x=0\\\\x^2+a,&x\\gt0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(a\\)",
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=-1\\)"
+    ],
+    "correct": "Không tồn tại \\(a\\)",
+    "solution": "Giới hạn trái là \\(\\lim_{x\\to0^-}(ax+2)=2\\), trong khi \\(f(0)=1\\). Vì giới hạn trái đã khác giá trị hàm và không phụ thuộc \\(a\\), không có \\(a\\) nào làm hàm liên tục tại 0.",
+    "quick": "Lim trái luôn bằng 2, nhưng \\(f(0)=1\\) → không thể liên tục.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 26,
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{e^{mx}-1}{x},&x\\ne0\\\\3,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=3\\)",
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m=-3\\)"
+    ],
+    "correct": "\\(m=3\\)",
+    "solution": "Vì \\(e^{mx}-1\\sim mx\\) khi \\(x\\to0\\), nên \\(\\lim_{x\\to0}\\dfrac{e^{mx}-1}{x}=m\\). Điều kiện liên tục tại 0 là \\(m=f(0)=3\\).",
+    "quick": "\\((e^{mx}-1)/x\\to m\\), đặt bằng 3.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 27,
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{\\sin mx}{x},&x\\ne0\\\\4,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=4\\)",
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=4\\)",
+    "solution": "Ta có \\(\\dfrac{\\sin mx}{x}=m\\dfrac{\\sin mx}{mx}\\to m\\). Để liên tục tại 0 cần \\(m=4\\).",
+    "quick": "\\(\\sin(mx)/x\\to m\\), đặt bằng 4.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 28,
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{1-\\cos mx}{x^2},&x\\ne0\\\\8,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=\\pm4\\)",
+      "\\(m=4\\)",
+      "\\(m=2\\)",
+      "\\(m=\\pm2\\)"
+    ],
+    "correct": "\\(m=\\pm4\\)",
+    "solution": "Dùng \\(1-\\cos u\\sim \\dfrac{u^2}{2}\\). Với \\(u=mx\\), giới hạn bằng \\(\\dfrac{m^2}{2}\\). Điều kiện liên tục: \\(\\dfrac{m^2}{2}=8\\Rightarrow m^2=16\\Rightarrow m=\\pm4\\).",
+    "quick": "Giới hạn bằng \\(m^2/2\\). Đặt \\(m^2/2=8\\Rightarrow m=\\pm4\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 29,
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{\\ln(1+mx)}{x},&x\\ne0\\\\5,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=5\\)",
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m=-5\\)"
+    ],
+    "correct": "\\(m=5\\)",
+    "solution": "Dùng \\(\\ln(1+u)\\sim u\\). Với \\(u=mx\\), ta có \\(\\dfrac{\\ln(1+mx)}{x}\\to m\\). Liên tục tại 0 khi \\(m=5\\).",
+    "quick": "\\(\\ln(1+mx)/x\\to m\\), đặt bằng 5.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 30,
+    "type": "continuity_parameter_piecewise",
+    "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}ax+b,&x\\lt1\\\\3,&x=1\\\\x^2+a,&x\\gt1\\end{cases}\\) liên tục tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2,b=1\\)",
+      "\\(a=1,b=2\\)",
+      "\\(a=2,b=-1\\)",
+      "\\(a=0,b=3\\)"
+    ],
+    "correct": "\\(a=2,b=1\\)",
+    "solution": "Từ bên phải: \\(\\lim_{x\\to1^+}(x^2+a)=1+a\\). Để bằng \\(f(1)=3\\), cần \\(a=2\\). Từ bên trái: \\(\\lim_{x\\to1^-}(ax+b)=a+b=3\\). Thay \\(a=2\\), được \\(b=1\\).",
+    "quick": "Phải cho \\(a=2\\), trái cho \\(a+b=3\\Rightarrow b=1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với bài có tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 31,
+    "type": "differentiability_parameter_limit",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{e^{kx}-1}{x},&x\\ne0\\\\a,&x=0\\end{cases}\\). Biết \\(f\\) khả vi tại \\(0\\) và \\(f'(0)=2\\). Tính \\(a^2+k^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(10\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Vì \\(f\\) khả vi tại 0 nên trước hết phải liên tục tại 0. Ta có \\(\\lim_{x\\to0}\\dfrac{e^{kx}-1}{x}=k\\), nên \\(a=k\\). Tiếp theo, \\(f'(0)=\\lim_{x\\to0}\\dfrac{\\dfrac{e^{kx}-1}{x}-k}{x}=\\lim_{x\\to0}\\dfrac{e^{kx}-1-kx}{x^2}=\\dfrac{k^2}{2}\\). Theo đề \\(f'(0)=2\\), nên \\(k^2=4\\). Do \\(a=k\\), suy ra \\(a^2=4\\). Vậy \\(a^2+k^2=8\\).",
+    "quick": "Khả vi → liên tục → \\(a=k\\). Đạo hàm tại 0 bằng \\(k^2/2\\). Đặt \\(k^2/2=2\\Rightarrow a^2+k^2=8\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 32,
+    "type": "differentiability_parameter_limit",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{\\sin kx}{x},&x\\ne0\\\\a,&x=0\\end{cases}\\). Biết \\(f\\) khả vi tại \\(0\\). Khẳng định nào đúng?",
+    "matrix": null,
+    "options": [
+      "\\(a=k\\) và \\(f'(0)=0\\)",
+      "\\(a=0\\) và \\(f'(0)=k\\)",
+      "\\(a=k^2\\) và \\(f'(0)=1\\)",
+      "\\(a=1\\) và \\(f'(0)=k\\)"
+    ],
+    "correct": "\\(a=k\\) và \\(f'(0)=0\\)",
+    "solution": "Vì \\(\\dfrac{\\sin kx}{x}=k\\dfrac{\\sin kx}{kx}\\to k\\), liên tục tại 0 cho \\(a=k\\). Khai triển \\(\\sin kx=kx-\\dfrac{k^3x^3}{6}+o(x^3)\\), nên \\(\\dfrac{\\sin kx}{x}=k-\\dfrac{k^3x^2}{6}+o(x^2)\\). Do đó \\(f'(0)=\\lim_{x\\to0}\\dfrac{f(x)-f(0)}{x}=0\\).",
+    "quick": "Liên tục cho \\(a=k\\). Vì \\(\\sin kx/x=k+O(x^2)\\), đạo hàm tại 0 bằng 0.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 33,
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}x^2+ax+b,&x\\le0\\\\e^x,&x\\gt0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1,b=1\\)",
+      "\\(a=0,b=1\\)",
+      "\\(a=1,b=0\\)",
+      "\\(a=-1,b=1\\)"
+    ],
+    "correct": "\\(a=1,b=1\\)",
+    "solution": "Liên tục tại 0: \\(f(0)=b\\), còn \\(\\lim_{x\\to0^+}e^x=1\\), nên \\(b=1\\). Đạo hàm trái của \\(x^2+ax+b\\) tại 0 là \\(a\\). Đạo hàm phải của \\(e^x\\) tại 0 là 1. Do đó \\(a=1\\).",
+    "quick": "Liên tục → \\(b=1\\). Đạo hàm trái/phải → \\(a=1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 34,
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}ax+b,&x\\le1\\\\x^2,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2,b=-1\\)",
+      "\\(a=1,b=0\\)",
+      "\\(a=2,b=1\\)",
+      "\\(a=-2,b=3\\)"
+    ],
+    "correct": "\\(a=2,b=-1\\)",
+    "solution": "Liên tục tại 1: \\(a+b=1\\). Đạo hàm trái của \\(ax+b\\) là \\(a\\), đạo hàm phải của \\(x^2\\) tại 1 là 2, nên \\(a=2\\). Suy ra \\(b=-1\\).",
+    "quick": "Đạo hàm cho \\(a=2\\), liên tục cho \\(a+b=1\\Rightarrow b=-1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 35,
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}x^2+a,&x\\le1\\\\2x,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1\\)",
+      "\\(a=0\\)",
+      "\\(a=-1\\)",
+      "Không tồn tại \\(a\\)"
+    ],
+    "correct": "\\(a=1\\)",
+    "solution": "Liên tục tại 1: \\(1+a=2\\Rightarrow a=1\\). Đạo hàm trái của \\(x^2+a\\) tại 1 bằng 2, đạo hàm phải của \\(2x\\) bằng 2. Điều kiện đạo hàm tự thỏa mãn, nên \\(a=1\\).",
+    "quick": "Đạo hàm hai phía đều bằng 2; chỉ cần liên tục: \\(1+a=2\\Rightarrow a=1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 36,
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}ax^2,&x\\le1\\\\x+a,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(a\\)",
+      "\\(a=1\\)",
+      "\\(a=\\dfrac12\\)",
+      "\\(a=2\\)"
+    ],
+    "correct": "Không tồn tại \\(a\\)",
+    "solution": "Khả vi thì trước hết phải liên tục. Tại 1, nhánh trái cho \\(a\\), nhánh phải cho \\(1+a\\). Điều kiện liên tục là \\(a=1+a\\), vô lý. Do đó không tồn tại \\(a\\).",
+    "quick": "Liên tục đã vô lý: \\(a=1+a\\). Vậy không khả vi.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 37,
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\(a,b\\) để \\(f(x)=\\begin{cases}x^3+ax,&x\\le1\\\\bx+1,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(a,b\\)",
+      "\\(a=1,b=4\\)",
+      "\\(a=0,b=3\\)",
+      "\\(a=2,b=5\\)"
+    ],
+    "correct": "Không tồn tại \\(a,b\\)",
+    "solution": "Liên tục tại 1: \\(1+a=b+1\\Rightarrow a=b\\). Đạo hàm trái là \\(3x^2+a\\), tại 1 bằng \\(3+a\\). Đạo hàm phải là \\(b\\). Điều kiện khả vi: \\(3+a=b\\). Kết hợp với \\(a=b\\) cho \\(3+a=a\\), vô lý. Vậy không tồn tại \\(a,b\\).",
+    "quick": "Liên tục cho \\(a=b\\), đạo hàm cho \\(b=3+a\\); mâu thuẫn.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: trước hết kiểm tra liên tục, sau đó đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{\\sin 5x}{mx},&x\\ne0\\\\1,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=5\\)",
+      "\\(m=1\\)",
+      "\\(m=-5\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=5\\)",
+    "solution": "Khi \\(x\\to0\\), \\(\\dfrac{\\sin5x}{mx}=\\dfrac{5}{m}\\cdot\\dfrac{\\sin5x}{5x}\\to\\dfrac{5}{m}\\). Để liên tục tại 0, cần \\(\\dfrac{5}{m}=f(0)=1\\), suy ra \\(m=5\\).",
+    "quick": "\\(\\sin5x\\sim5x\\), nên giới hạn bằng \\(5/m\\). Đặt \\(5/m=1\\Rightarrow m=5\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 38
+  },
+  {
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{e^{2x}-1}{mx},&x\\ne0\\\\4,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=\\dfrac12\\)",
+      "\\(m=2\\)",
+      "\\(m=4\\)",
+      "\\(m=1\\)"
+    ],
+    "correct": "\\(m=\\dfrac12\\)",
+    "solution": "Ta có \\(e^{2x}-1\\sim2x\\) khi \\(x\\to0\\). Do đó \\(\\dfrac{e^{2x}-1}{mx}\\to\\dfrac{2}{m}\\). Điều kiện liên tục là \\(\\dfrac{2}{m}=4\\), nên \\(m=\\dfrac12\\).",
+    "quick": "Giới hạn bằng \\(2/m\\). Đặt \\(2/m=4\\Rightarrow m=1/2\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 39
+  },
+  {
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{\\ln(1+2x)}{mx},&x\\ne0\\\\1,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=\\dfrac12\\)",
+      "\\(m=-2\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Dùng \\(\\ln(1+2x)\\sim2x\\). Khi đó \\(\\dfrac{\\ln(1+2x)}{mx}\\to\\dfrac{2}{m}\\). Để liên tục tại 0, cần \\(\\dfrac{2}{m}=1\\), suy ra \\(m=2\\).",
+    "quick": "\\(\\ln(1+2x)\\sim2x\\), giới hạn bằng \\(2/m\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 40
+  },
+  {
+    "type": "continuity_parameter_limit",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\dfrac{1-\\cos 3x}{mx^2},&x\\ne0\\\\\\dfrac32,&x=0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=3\\)",
+      "\\(m=\\dfrac32\\)",
+      "\\(m=9\\)",
+      "\\(m=1\\)"
+    ],
+    "correct": "\\(m=3\\)",
+    "solution": "Ta có \\(1-\\cos3x\\sim\\dfrac{(3x)^2}{2}=\\dfrac{9x^2}{2}\\). Do đó \\(\\dfrac{1-\\cos3x}{mx^2}\\to\\dfrac{9}{2m}\\). Điều kiện liên tục là \\(\\dfrac{9}{2m}=\\dfrac32\\), suy ra \\(9=3m\\), nên \\(m=3\\).",
+    "quick": "Giới hạn bằng \\(9/(2m)\\). Đặt \\(9/(2m)=3/2\\Rightarrow m=3\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 41
+  },
+  {
+    "type": "continuity_parameter_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}ax+b,&x\\lt0\\\\2,&x=0\\\\x^2+a,&x\\gt0\\end{cases}\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2,b=2\\)",
+      "\\(a=2,b=0\\)",
+      "\\(a=0,b=2\\)",
+      "\\(a=1,b=2\\)"
+    ],
+    "correct": "\\(a=2,b=2\\)",
+    "solution": "Giới hạn trái tại 0 là \\(b\\), giới hạn phải tại 0 là \\(a\\), còn \\(f(0)=2\\). Muốn liên tục tại 0 cần \\(b=2\\) và \\(a=2\\).",
+    "quick": "Trái cho \\(b=2\\), phải cho \\(a=2\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 42
+  },
+  {
+    "type": "continuity_parameter_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}x+a,&x\\lt1\\\\b,&x=1\\\\2x-1,&x\\gt1\\end{cases}\\) liên tục tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=0,b=1\\)",
+      "\\(a=1,b=2\\)",
+      "\\(a=0,b=2\\)",
+      "\\(a=-1,b=1\\)"
+    ],
+    "correct": "\\(a=0,b=1\\)",
+    "solution": "Giới hạn trái tại 1 là \\(1+a\\). Giới hạn phải tại 1 là \\(2\\cdot1-1=1\\). Để liên tục, cần \\(1+a=1\\) và \\(b=1\\). Suy ra \\(a=0,b=1\\).",
+    "quick": "Phải = 1. Trái \\(1+a=1\\Rightarrow a=0\\). Giá trị tại điểm \\(b=1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 43
+  },
+  {
+    "type": "continuity_parameter_piecewise",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}mx+1,&x\\lt2\\\\5,&x=2\\\\x^2+m,&x\\gt2\\end{cases}\\) liên tục tại \\(x=2\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(m\\)",
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=3\\)"
+    ],
+    "correct": "Không tồn tại \\(m\\)",
+    "solution": "Điều kiện từ bên trái: \\(2m+1=5\\Rightarrow m=2\\). Điều kiện từ bên phải: \\(4+m=5\\Rightarrow m=1\\). Hai điều kiện cho hai giá trị khác nhau, nên không tồn tại \\(m\\) làm hàm liên tục tại \\(x=2\\).",
+    "quick": "Trái cho \\(m=2\\), phải cho \\(m=1\\), mâu thuẫn.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh bằng cách thay \\(X\\) rất gần điểm ghép từ hai phía, ví dụ \\(x_0-0.0001\\) và \\(x_0+0.0001\\), rồi so sánh với \\(f(x_0)\\). Với tham số, lời giải chính xác vẫn là lập giới hạn trái, giới hạn phải và giá trị tại điểm ghép.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 44
+  },
+  {
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}x^2+ax+b,&x\\le0\\\\3x+1,&x\\gt0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=3,b=1\\)",
+      "\\(a=1,b=3\\)",
+      "\\(a=0,b=1\\)",
+      "\\(a=3,b=0\\)"
+    ],
+    "correct": "\\(a=3,b=1\\)",
+    "solution": "Liên tục tại 0: \\(f(0)=b\\), còn giới hạn phải là \\(1\\), nên \\(b=1\\). Đạo hàm trái của \\(x^2+ax+b\\) tại 0 là \\(a\\). Đạo hàm phải của \\(3x+1\\) là 3. Điều kiện khả vi cho \\(a=3\\).",
+    "quick": "Liên tục cho \\(b=1\\); đạo hàm trái/phải cho \\(a=3\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 45
+  },
+  {
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\(a\\) để \\(f(x)=\\begin{cases}ax^2+1,&x\\le1\\\\3x-1,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(a\\)",
+      "\\(a=1\\)",
+      "\\(a=2\\)",
+      "\\(a=\\dfrac32\\)"
+    ],
+    "correct": "Không tồn tại \\(a\\)",
+    "solution": "Điều kiện liên tục tại 1: \\(a+1=3\\cdot1-1=2\\), nên \\(a=1\\). Điều kiện đạo hàm: đạo hàm trái là \\(2ax\\), tại 1 bằng \\(2a\\); đạo hàm phải của \\(3x-1\\) là 3. Do đó \\(2a=3\\), nên \\(a=\\dfrac32\\). Hai điều kiện mâu thuẫn, nên không tồn tại \\(a\\).",
+    "quick": "Liên tục cho \\(a=1\\), đạo hàm cho \\(a=3/2\\), mâu thuẫn.",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 46
+  },
+  {
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}x^2+ax+b,&x\\le1\\\\4x-2,&x\\gt1\\end{cases}\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=2,b=-1\\)",
+      "\\(a=1,b=0\\)",
+      "\\(a=2,b=1\\)",
+      "\\(a=3,b=-2\\)"
+    ],
+    "correct": "\\(a=2,b=-1\\)",
+    "solution": "Liên tục tại 1: \\(1+a+b=4\\cdot1-2=2\\), nên \\(a+b=1\\). Đạo hàm trái là \\(2x+a\\), tại 1 bằng \\(2+a\\). Đạo hàm phải của \\(4x-2\\) là 4. Điều kiện khả vi cho \\(2+a=4\\), nên \\(a=2\\). Từ \\(a+b=1\\), suy ra \\(b=-1\\).",
+    "quick": "Đạo hàm cho \\(a=2\\); liên tục \\(a+b=1\\Rightarrow b=-1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 47
+  },
+  {
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}\\ln(1+x),&x\\gt0\\\\ax+b,&x\\le0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1,b=0\\)",
+      "\\(a=0,b=1\\)",
+      "\\(a=1,b=1\\)",
+      "\\(a=-1,b=0\\)"
+    ],
+    "correct": "\\(a=1,b=0\\)",
+    "solution": "Liên tục tại 0: giới hạn phải \\(\\ln(1+0)=0\\), còn \\(f(0)=b\\), nên \\(b=0\\). Đạo hàm phải của \\(\\ln(1+x)\\) tại 0 là 1. Đạo hàm trái của \\(ax+b\\) là \\(a\\), nên \\(a=1\\).",
+    "quick": "Liên tục cho \\(b=0\\); đạo hàm phải của \\(\\ln(1+x)\\) tại 0 là 1 nên \\(a=1\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 48
+  },
+  {
+    "type": "differentiability_parameter_piecewise",
+    "question": "Tìm \\((a,b)\\) để \\(f(x)=\\begin{cases}\\cos x+a,&x\\le0\\\\bx+2,&x\\gt0\\end{cases}\\) khả vi tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=1,b=0\\)",
+      "\\(a=0,b=1\\)",
+      "\\(a=1,b=1\\)",
+      "\\(a=-1,b=0\\)"
+    ],
+    "correct": "\\(a=1,b=0\\)",
+    "solution": "Liên tục tại 0: \\(f(0)=\\cos0+a=1+a\\), còn giới hạn phải là 2. Do đó \\(1+a=2\\Rightarrow a=1\\). Đạo hàm trái của \\(\\cos x+a\\) tại 0 là \\(-\\sin0=0\\). Đạo hàm phải của \\(bx+2\\) là \\(b\\), nên \\(b=0\\).",
+    "quick": "Liên tục cho \\(a=1\\); đạo hàm trái bằng 0 nên \\(b=0\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 49
+  },
+  {
+    "type": "differentiability_parameter_limit",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{e^{kx}-1}{x},&x\\ne0\\\\a,&x=0\\end{cases}\\). Biết \\(f\\) khả vi tại \\(0\\) và \\(f'(0)=\\dfrac12\\). Tính \\(a^2+k^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Khả vi tại 0 suy ra liên tục tại 0, nên \\(a=\\lim_{x\\to0}\\dfrac{e^{kx}-1}{x}=k\\). Khi đó \\(f'(0)=\\lim_{x\\to0}\\dfrac{\\dfrac{e^{kx}-1}{x}-k}{x}=\\lim_{x\\to0}\\dfrac{e^{kx}-1-kx}{x^2}=\\dfrac{k^2}{2}\\). Theo đề \\(\\dfrac{k^2}{2}=\\dfrac12\\), nên \\(k^2=1\\). Vì \\(a=k\\), \\(a^2=1\\). Do đó \\(a^2+k^2=2\\).",
+    "quick": "Khả vi → \\(a=k\\). Đạo hàm tại 0 bằng \\(k^2/2\\). Đặt \\(k^2/2=1/2\\Rightarrow a^2+k^2=2\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 50
+  },
+  {
+    "type": "differentiability_parameter_limit",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{\\ln(1+kx)}{x},&x\\ne0\\\\a,&x=0\\end{cases}\\). Biết \\(f\\) khả vi tại \\(0\\) và \\(f'(0)=-2\\). Tính \\(a^2+k^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(16\\)",
+      "\\(4\\)",
+      "\\(12\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Khả vi tại 0 suy ra liên tục tại 0. Ta có \\(\\ln(1+kx)\\sim kx\\), nên \\(a=k\\). Khai triển \\(\\ln(1+kx)=kx-\\dfrac{k^2x^2}{2}+o(x^2)\\). Do đó \\(\\dfrac{\\ln(1+kx)}{x}=k-\\dfrac{k^2}{2}x+o(x)\\), nên \\(f'(0)=-\\dfrac{k^2}{2}\\). Theo đề \\(-\\dfrac{k^2}{2}=-2\\), suy ra \\(k^2=4\\). Vì \\(a=k\\), nên \\(a^2=4\\). Vậy \\(a^2+k^2=8\\).",
+    "quick": "Với \\(\\ln(1+kx)/x\\): \\(a=k\\), \\(f'(0)=-k^2/2\\). Đặt \\(-k^2/2=-2\\Rightarrow a^2+k^2=8\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 51
+  },
+  {
+    "type": "differentiability_parameter_limit",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{\\sin kx}{x},&x\\ne0\\\\a,&x=0\\end{cases}\\). Biết \\(f\\) khả vi tại \\(0\\) và \\(a=3\\). Tính \\(k^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "Khả vi tại 0 suy ra liên tục tại 0. Ta có \\(\\lim_{x\\to0}\\dfrac{\\sin kx}{x}=k\\), nên \\(a=k\\). Vì \\(a=3\\), suy ra \\(k=3\\). Do đó \\(k^2=9\\).",
+    "quick": "Liên tục trước: \\(a=k\\). Cho \\(a=3\\), nên \\(k=3\\), \\(k^2=9\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra nhanh đạo hàm một phía bằng thương sai phân \\(\\dfrac{f(x_0+h)-f(x_0)}{h}\\) với \\(h\\) rất nhỏ dương và âm. Lời giải chính xác: kiểm tra liên tục trước, rồi đặt đạo hàm trái bằng đạo hàm phải.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục",
+    "id": 52
   }
 ]

@@ -307,42 +307,6 @@
   },
   {
     "id": 18,
-    "type": "polynomial_eigenvalues",
-    "question": "Ma trận \\(A\\) có hai trị riêng \\(2\\) và \\(-1\\). Các trị riêng của \\(A^2-3A+I\\) là",
-    "matrix": null,
-    "options": [
-      "\\(-1\\) và \\(5\\)",
-      "\\(1\\) và \\(-5\\)",
-      "\\(2\\) và \\(-1\\)",
-      "\\(4\\) và \\(2\\)"
-    ],
-    "correct": "\\(-1\\) và \\(5\\)",
-    "solution": "Nếu \\(p(t)=t^2-3t+1\\) thì trị riêng của \\(p(A)\\) là \\(p(2)=-1\\) và \\(p(-1)=5\\).",
-    "quick": "Thay từng trị riêng vào đa thức \\(p(t)\\).",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
-    "difficulty": 3,
-    "topic": "Đa thức của ma trận"
-  },
-  {
-    "id": 19,
-    "type": "inverse_eigenvalues",
-    "question": "Ma trận khả nghịch \\(A\\) có các trị riêng \\(2,-4,\\dfrac12\\). Các trị riêng của \\(A^{-1}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac12,-\\dfrac14,2\\)",
-      "\\(-2,4,-\\dfrac12\\)",
-      "\\(2,-4,\\dfrac12\\)",
-      "\\(\\dfrac14,-\\dfrac12,2\\)"
-    ],
-    "correct": "\\(\\dfrac12,-\\dfrac14,2\\)",
-    "solution": "Nếu \\(Av=\\lambda v\\) và \\(\\lambda\\ne0\\) thì \\(A^{-1}v=\\lambda^{-1}v\\). Lấy nghịch đảo từng trị riêng.",
-    "quick": "Trị riêng của ma trận nghịch đảo là nghịch đảo các trị riêng.",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
-    "difficulty": 2,
-    "topic": "Trị riêng của ma trận nghịch đảo"
-  },
-  {
-    "id": 20,
     "type": "largest_eigenvalue_trace_det",
     "question": "Ma trận cấp 2 có \\(\\operatorname{tr}(A)=8\\), \\(\\det(A)=15\\) và có hai trị riêng thực. Trị riêng lớn hơn bằng",
     "matrix": null,
@@ -360,7 +324,7 @@
     "topic": "Trị riêng từ trace–det"
   },
   {
-    "id": 21,
+    "id": 19,
     "type": "repeated_eigenvalue_parameter",
     "question": "Ma trận \\(A=\\begin{pmatrix}m&1\\\\-1&3\\end{pmatrix}\\) có trị riêng kép khi",
     "matrix": null,
@@ -378,7 +342,7 @@
     "topic": "Trị riêng theo tham số"
   },
   {
-    "id": 22,
+    "id": 20,
     "type": "special_symmetric_eigenvalues",
     "question": "Cho \\(A=\\begin{pmatrix}4&-1&-1\\\\-1&4&-1\\\\-1&-1&4\\end{pmatrix}\\). Các trị riêng của \\(A\\) là",
     "matrix": null,
@@ -396,7 +360,7 @@
     "topic": "Ma trận đặc biệt"
   },
   {
-    "id": 23,
+    "id": 21,
     "type": "shifted_determinant_eigenvalues",
     "question": "Ma trận cấp 3 có các trị riêng \\(-1,2,3\\). Giá trị \\(\\det(A+2I)\\) bằng",
     "matrix": null,
@@ -414,25 +378,7 @@
     "topic": "Trị riêng & định thức"
   },
   {
-    "id": 24,
-    "type": "markov_stationary_vector",
-    "question": "Ma trận chuyển trạng thái \\(P=\\begin{pmatrix}0.8&0.3\\\\0.2&0.7\\end{pmatrix}\\). Véc tơ trạng thái dừng \\(x\\) thỏa \\(Px=x\\), \\(x_1+x_2=1\\) là",
-    "matrix": null,
-    "options": [
-      "\\((0.6;0.4)^T\\)",
-      "\\((0.4;0.6)^T\\)",
-      "\\((0.8;0.2)^T\\)",
-      "\\((0.5;0.5)^T\\)"
-    ],
-    "correct": "\\((0.6;0.4)^T\\)",
-    "solution": "Từ \\(Px=x\\) suy ra \\(-0.2x_1+0.3x_2=0\\), nên \\(x_2=\\dfrac{2}{3}x_1\\). Kết hợp \\(x_1+x_2=1\\) được \\(x_1=\\dfrac35=0.6\\), \\(x_2=\\dfrac25=0.4\\).",
-    "quick": "Trạng thái dừng là véc tơ riêng ứng với \\(\\lambda=1\\); giải \\(Px=x\\) rồi chuẩn hóa \\(x_1+x_2=1\\).",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
-    "difficulty": 3,
-    "topic": "Ứng dụng trị riêng – Markov"
-  },
-  {
-    "id": 25,
+    "id": 22,
     "type": "diagonalizability",
     "question": "Ma trận \\(A=\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}\\) có tính chất nào?",
     "matrix": null,
@@ -450,7 +396,7 @@
     "topic": "Véc tơ riêng & chéo hóa"
   },
   {
-    "id": 26,
+    "id": 23,
     "type": "eigenvalue_2x2",
     "question": "Các giá trị riêng của \\(A=\\begin{pmatrix}2&-1\\\\-4&2\\end{pmatrix}\\) là",
     "matrix": null,
@@ -468,7 +414,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 27,
+    "id": 24,
     "type": "power_eigenvalues",
     "question": "Ma trận \\(A\\) có các trị riêng \\(-2,1,3\\). Các trị riêng của \\(A^3\\) là",
     "matrix": null,
@@ -486,7 +432,7 @@
     "topic": "Ứng dụng trị riêng"
   },
   {
-    "id": 28,
+    "id": 25,
     "type": "find_eigenvector",
     "question": "Một véc tơ riêng ứng với \\(\\lambda=3\\) của \\(A=\\begin{pmatrix}2&-1\\\\-1&2\\end{pmatrix}\\) là",
     "matrix": null,
@@ -504,7 +450,7 @@
     "topic": "Trị riêng & véc tơ riêng"
   },
   {
-    "id": 29,
+    "id": 26,
     "type": "eigenspace_basis",
     "question": "Cho \\(A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}\\). Một cơ sở của không gian riêng \\(E_1=\\ker(A-I)\\) là",
     "matrix": null,
@@ -522,7 +468,7 @@
     "topic": "Không gian riêng"
   },
   {
-    "id": 30,
+    "id": 27,
     "type": "eigenspace_basis_3x3",
     "question": "Cho \\(A=\\begin{pmatrix}3&2&2\\\\2&3&2\\\\2&2&3\\end{pmatrix}\\). Một cơ sở của không gian riêng ứng với \\(\\lambda=1\\) là",
     "matrix": null,
@@ -540,7 +486,7 @@
     "topic": "Không gian riêng"
   },
   {
-    "id": 31,
+    "id": 28,
     "type": "zero_eigenvalue_invertibility",
     "question": "Cho \\(A\\) là ma trận vuông và \\(0\\) là một trị riêng của \\(A\\). Kết luận nào đúng?",
     "matrix": null,
@@ -558,7 +504,7 @@
     "topic": "Trị riêng & khả nghịch"
   },
   {
-    "id": 32,
+    "id": 29,
     "type": "linked_eigenvalue_determinant",
     "question": "Cho \\(B=\\begin{pmatrix}5&2&2\\\\2&5&2\\\\2&2&5\\end{pmatrix}\\). Định thức của \\(B\\) bằng",
     "matrix": null,
@@ -576,7 +522,7 @@
     "topic": "Trị riêng & định thức"
   },
   {
-    "id": 33,
+    "id": 30,
     "type": "linked_eigenvector",
     "question": "Cho \\(B=\\begin{pmatrix}5&2&2\\\\2&5&2\\\\2&2&5\\end{pmatrix}\\). Véc tơ \\(v=(1;1;1)^T\\) là véc tơ riêng ứng với trị riêng nào?",
     "matrix": null,
@@ -594,7 +540,7 @@
     "topic": "Trị riêng & véc tơ riêng"
   },
   {
-    "id": 34,
+    "id": 31,
     "type": "linked_eigenvalue_sum_squares",
     "question": "Cho \\(B=\\begin{pmatrix}5&2&2\\\\2&5&2\\\\2&2&5\\end{pmatrix}\\). Gọi \\(X\\) là tập các trị riêng phân biệt của \\(B\\). Tổng bình phương các phần tử của \\(X\\) bằng",
     "matrix": null,
@@ -627,25 +573,7 @@
     "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
     "difficulty": 3,
     "topic": "Trị riêng & định thức",
-    "id": 35
-  },
-  {
-    "id": 36,
-    "type": "eigenvalue_sum_squares",
-    "question": "Cho \\(A=(a_{ij})_{3\\times3}\\) với \\(a_{ij}=i^2+j-\\min\\{i,j\\}\\). Tổng bình phương các trị riêng của \\(A\\) bằng",
-    "matrix": null,
-    "options": [
-      "258",
-      "196",
-      "144",
-      "36"
-    ],
-    "correct": "258",
-    "solution": "Ta có \\(A=\\begin{pmatrix}1&2&3\\\\4&4&5\\\\9&9&9\\end{pmatrix}\\). Vì \\(\\sum\\lambda_i^2=\\operatorname{tr}(A^2)\\) và \\(A^2=\\begin{pmatrix}36&37&40\\\\65&69&77\\\\126&135&153\\end{pmatrix}\\), nên \\(\\sum\\lambda_i^2=36+69+153=258\\).",
-    "quick": "Dùng \\(\\sum\\lambda_i^2=\\operatorname{tr}(A^2)\\).",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
-    "difficulty": 3,
-    "topic": "Trị riêng"
+    "id": 32
   },
   {
     "type": "inverse_eigenvalues",
@@ -663,7 +591,7 @@
     "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
     "difficulty": 2,
     "topic": "Trị riêng của ma trận nghịch đảo",
-    "id": 37
+    "id": 33
   },
   {
     "type": "eigenvalue_2x2",
@@ -681,7 +609,7 @@
     "casio": "CASIO fx-580VNX: lập phương trình đặc trưng bậc hai, rồi vào MENU → Equation/Func → Polynomial → bậc 2 để tìm nghiệm.",
     "difficulty": 2,
     "topic": "Trị riêng",
-    "id": 38
+    "id": 34
   },
   {
     "type": "characteristic_polynomial",
@@ -699,28 +627,10 @@
     "casio": "CASIO fx-580VNX: lập phương trình đặc trưng bậc hai, rồi vào MENU → Equation/Func → Polynomial → bậc 2 để tìm nghiệm.",
     "difficulty": 2,
     "topic": "Trị riêng",
-    "id": 39
+    "id": 35
   },
   {
-    "type": "diagonalizability",
-    "question": "Ma trận \\(A=\\begin{pmatrix}1&0&0\\\\2&1&0\\\\3&4&2\\end{pmatrix}\\) có thể chéo hóa được không?",
-    "matrix": null,
-    "options": [
-      "Được, vì có đủ 3 véc tơ riêng độc lập tuyến tính",
-      "Không, vì có trị riêng lặp mà không đủ véc tơ riêng",
-      "Được, vì ma trận tam giác luôn chéo hóa được",
-      "Không thể xác định"
-    ],
-    "correct": "Không, vì có trị riêng lặp mà không đủ véc tơ riêng",
-    "solution": "Trị riêng: \\(\\lambda=1\\) (bội 2), \\(\\lambda=2\\) (bội 1). Với \\(\\lambda=1\\): \\(\\ker(A-I)\\) có số chiều \\(1\\lt2\\), nhỏ hơn bội đại số 2. Không đủ véc tơ riêng → không chéo hóa được.",
-    "quick": "Trị riêng lặp → kiểm tra số chiều không gian riêng.",
-    "casio": "fx-580VNX không có lệnh trị riêng trực tiếp; thực hiện phép biến đổi hoặc kiểm tra \\(Av=\\lambda v\\) theo lời giải.",
-    "difficulty": 3,
-    "topic": "Véc tơ riêng & chéo hóa",
-    "id": 40
-  },
-  {
-    "id": 41,
+    "id": 36,
     "type": "eigenvalue_2x2",
     "question": "Tìm các trị riêng của \\(A=\\begin{pmatrix}3&1\\\\1&3\\end{pmatrix}\\).",
     "matrix": null,
@@ -738,7 +648,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 42,
+    "id": 37,
     "type": "check_eigenvector",
     "question": "Cho \\(A=\\begin{pmatrix}3&0&0\\\\1&2&0\\\\0&1&1\\end{pmatrix}\\). Vector nào là vector riêng ứng với \\(\\lambda=3\\)?",
     "matrix": null,
@@ -756,7 +666,7 @@
     "topic": "Trị riêng & véc tơ riêng"
   },
   {
-    "id": 43,
+    "id": 38,
     "type": "triangular_eigenvalues_parameter",
     "question": "Cho ma trận tam giác dưới có đường chéo \\(m,2,1,-1\\). Tập trị riêng của ma trận là",
     "matrix": null,
@@ -774,7 +684,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 44,
+    "id": 39,
     "type": "eigen_sum_squares_real",
     "question": "Với \\(A=\\begin{pmatrix}2&1&0\\\\1&2&1\\\\0&1&2\\end{pmatrix}\\), tổng bình phương các trị riêng thực bằng",
     "matrix": null,
@@ -792,7 +702,7 @@
     "topic": "Trị riêng"
   },
   {
-    "id": 45,
+    "id": 40,
     "type": "eigen_triangular_parameter",
     "question": "Cho \\(A=\\begin{pmatrix}2&0&0\\\\0&m&1\\\\0&0&4\\end{pmatrix}\\). Các trị riêng của \\(A\\) là",
     "matrix": null,
@@ -808,5 +718,365 @@
     "casio": "CASIO fx-580VNX: Ma trận tam giác đọc trị riêng trên đường chéo. Với ma trận 2×2, lập phương trình đặc trưng rồi dùng Equation/Polynomial bậc 2. Với vector riêng, kiểm tra MatA×v có bằng λv không.",
     "difficulty": 1,
     "topic": "Trị riêng"
+  },
+  {
+    "type": "eigenvalue_2x2",
+    "question": "Các trị riêng của \\(A=\\begin{pmatrix}1&4\\\\2&3\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(5\\) và \\(-1\\)",
+      "\\(1\\) và \\(3\\)",
+      "\\(4\\) và \\(2\\)",
+      "\\(0\\) và \\(4\\)"
+    ],
+    "correct": "\\(5\\) và \\(-1\\)",
+    "solution": "\\(\\operatorname{tr}(A)=4\\), \\(\\det(A)=1\\cdot3-4\\cdot2=-5\\). Đa thức đặc trưng là \\(\\lambda^2-4\\lambda-5=(\\lambda-5)(\\lambda+1)\\). Vậy các trị riêng là \\(5\\) và \\(-1\\).",
+    "quick": "Trace \\(=4\\), det \\(=-5\\) nên nghiệm là \\(5,-1\\).",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 41
+  },
+  {
+    "type": "check_eigenvector",
+    "question": "Cho \\(A=\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\). Véc tơ \\(v=(1;1)^T\\) là véc tơ riêng ứng với trị riêng nào?",
+    "matrix": null,
+    "options": [
+      "\\(\\lambda=5\\)",
+      "\\(\\lambda=2\\)",
+      "\\(\\lambda=4\\)",
+      "\\(\\lambda=1\\)"
+    ],
+    "correct": "\\(\\lambda=5\\)",
+    "solution": "\\(Av=\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\begin{pmatrix}1\\\\1\\end{pmatrix}=\\begin{pmatrix}5\\\\5\\end{pmatrix}=5v\\). Do đó \\(v\\) là véc tơ riêng ứng với \\(\\lambda=5\\).",
+    "quick": "Nhân \\(Av\\); nếu kết quả là bội của \\(v\\), hệ số bội là trị riêng.",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng & véc tơ riêng",
+    "id": 42
+  },
+  {
+    "type": "find_eigenvector",
+    "question": "Một véc tơ riêng ứng với \\(\\lambda=2\\) của \\(A=\\begin{pmatrix}4&1\\\\2&3\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((1;-2)^T\\)",
+      "\\((1;1)^T\\)",
+      "\\((2;1)^T\\)",
+      "\\((0;1)^T\\)"
+    ],
+    "correct": "\\((1;-2)^T\\)",
+    "solution": "Giải \\((A-2I)v=0\\). Ta có \\(A-2I=\\begin{pmatrix}2&1\\\\2&1\\end{pmatrix}\\), nên \\(2x+y=0\\), tức \\(y=-2x\\). Chọn \\(x=1\\), được \\(v=(1;-2)^T\\).",
+    "quick": "Giải \\((A-\\lambda I)v=0\\), chọn nghiệm khác 0.",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 3,
+    "topic": "Trị riêng & véc tơ riêng",
+    "id": 43
+  },
+  {
+    "type": "characteristic_polynomial",
+    "question": "Đa thức đặc trưng của \\(A=\\begin{pmatrix}0&-2\\\\1&3\\end{pmatrix}\\), theo \\(p_A(\\lambda)=\\det(\\lambda I-A)\\), là",
+    "matrix": null,
+    "options": [
+      "\\(\\lambda^2-3\\lambda+2\\)",
+      "\\(\\lambda^2+3\\lambda+2\\)",
+      "\\(\\lambda^2-2\\lambda+3\\)",
+      "\\(\\lambda^2-3\\lambda-2\\)"
+    ],
+    "correct": "\\(\\lambda^2-3\\lambda+2\\)",
+    "solution": "\\(p_A(\\lambda)=\\det\\begin{pmatrix}\\lambda&2\\\\-1&\\lambda-3\\end{pmatrix}=\\lambda(\\lambda-3)+2=\\lambda^2-3\\lambda+2\\).",
+    "quick": "Dùng công thức \\(\\lambda^2-\\operatorname{tr}(A)\\lambda+\\det(A)\\).",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 44
+  },
+  {
+    "type": "eigenvalue_from_trace_det",
+    "question": "Ma trận \\(2\\times2\\) có \\(\\operatorname{tr}(A)=1\\) và \\(\\det(A)=-6\\). Các trị riêng của \\(A\\) là",
+    "matrix": null,
+    "options": [
+      "\\(3\\) và \\(-2\\)",
+      "\\(2\\) và \\(-3\\)",
+      "\\(1\\) và \\(-6\\)",
+      "\\(6\\) và \\(-1\\)"
+    ],
+    "correct": "\\(3\\) và \\(-2\\)",
+    "solution": "Hai trị riêng \\(\\lambda_1,\\lambda_2\\) thỏa \\(\\lambda_1+\\lambda_2=1\\), \\(\\lambda_1\\lambda_2=-6\\). Do đó chúng là nghiệm của \\(\\lambda^2-\\lambda-6=0\\), tức \\(\\lambda=3\\) hoặc \\(\\lambda=-2\\).",
+    "quick": "Lập \\(\\lambda^2-tr\\lambda+det=0\\).",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 3,
+    "topic": "Trị riêng",
+    "id": 45
+  },
+  {
+    "type": "eigenspace_basis",
+    "question": "Cho \\(A=\\begin{pmatrix}3&1\\\\1&3\\end{pmatrix}\\). Một cơ sở của không gian riêng ứng với \\(\\lambda=4\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\{(1;1)^T\\}\\)",
+      "\\(\\{(1;-1)^T\\}\\)",
+      "\\(\\{(1;0)^T\\}\\)",
+      "\\(\\{(0;1)^T\\}\\)"
+    ],
+    "correct": "\\(\\{(1;1)^T\\}\\)",
+    "solution": "\\(A-4I=\\begin{pmatrix}-1&1\\\\1&-1\\end{pmatrix}\\). Hệ \\((A-4I)v=0\\) cho \\(-x+y=0\\), tức \\(y=x\\). Vì vậy một cơ sở là \\(\\{(1;1)^T\\}\\).",
+    "quick": "Với \\(\\lambda=4\\), nghiệm có dạng \\(t(1;1)^T\\).",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 3,
+    "topic": "Không gian riêng",
+    "id": 46
+  },
+  {
+    "type": "eigenvalue_parameter_2x2",
+    "question": "Cho \\(A=\\begin{pmatrix}m&1\\\\0&4\\end{pmatrix}\\). Biết \\(2\\) là một trị riêng của \\(A\\). Khi đó \\(m\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(-2\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Ma trận tam giác có các trị riêng là các phần tử trên đường chéo, tức \\(m\\) và \\(4\\). Để \\(2\\) là trị riêng thì \\(m=2\\).",
+    "quick": "Tam giác: đọc đường chéo.",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng theo tham số",
+    "id": 47
+  },
+  {
+    "type": "check_not_eigenvector",
+    "question": "Cho \\(A=\\begin{pmatrix}1&2\\\\0&3\\end{pmatrix}\\). Véc tơ nào sau đây không phải là véc tơ riêng của \\(A\\)?",
+    "matrix": null,
+    "options": [
+      "\\((0;1)^T\\)",
+      "\\((1;0)^T\\)",
+      "\\((1;1)^T\\)",
+      "\\((2;2)^T\\)"
+    ],
+    "correct": "\\((0;1)^T\\)",
+    "solution": "\\(A(0;1)^T=(2;3)^T\\), không phải bội của \\((0;1)^T\\), nên \\((0;1)^T\\) không phải là véc tơ riêng. Trong khi đó \\((1;0)^T\\) ứng với \\(\\lambda=1\\), còn \\((1;1)^T\\) và \\((2;2)^T\\) ứng với \\(\\lambda=3\\).",
+    "quick": "Kiểm tra từng phương án bằng \\(Av=\\lambda v\\).",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 3,
+    "topic": "Trị riêng & véc tơ riêng",
+    "id": 48
+  },
+  {
+    "type": "eigenvalue_sum_product",
+    "question": "Ma trận cấp 2 có hai trị riêng \\(\\lambda_1=4\\), \\(\\lambda_2=-1\\). Khi đó \\(\\operatorname{tr}(A)+\\det(A)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(3\\)",
+      "\\(7\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(-1\\)",
+    "solution": "\\(\\operatorname{tr}(A)=\\lambda_1+\\lambda_2=4+(-1)=3\\). \\(\\det(A)=\\lambda_1\\lambda_2=4\\cdot(-1)=-4\\). Vậy \\(\\operatorname{tr}(A)+\\det(A)=3-4=-1\\).",
+    "quick": "Trace là tổng, det là tích các trị riêng.",
+    "casio": "Không cần CASIO; dùng trực tiếp quan hệ trace–det.",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 49
+  },
+  {
+    "type": "eigenvalue_shift",
+    "question": "Ma trận \\(A\\) có các trị riêng \\(1,3,5\\). Các trị riêng của \\(A-2I\\) là",
+    "matrix": null,
+    "options": [
+      "\\(-1,1,3\\)",
+      "\\(3,5,7\\)",
+      "\\(2,6,10\\)",
+      "\\(1,3,5\\)"
+    ],
+    "correct": "\\(-1,1,3\\)",
+    "solution": "Nếu \\(A\\) có trị riêng \\(\\lambda\\), thì \\(A-2I\\) có trị riêng \\(\\lambda-2\\). Do đó các trị riêng là \\(1-2=-1\\), \\(3-2=1\\), \\(5-2=3\\).",
+    "quick": "Trừ \\(2I\\) làm mỗi trị riêng giảm 2.",
+    "casio": "Không cần CASIO; biến đổi từng trị riêng.",
+    "difficulty": 2,
+    "topic": "Trị riêng",
+    "id": 50
+  },
+  {
+    "type": "eigenvalue_power",
+    "question": "Ma trận \\(A\\) có các trị riêng \\(2\\) và \\(-3\\). Các trị riêng của \\(A^2\\) là",
+    "matrix": null,
+    "options": [
+      "\\(4\\) và \\(9\\)",
+      "\\(2\\) và \\(3\\)",
+      "\\(-4\\) và \\(9\\)",
+      "\\(4\\) và \\(-9\\)"
+    ],
+    "correct": "\\(4\\) và \\(9\\)",
+    "solution": "Nếu \\(Av=\\lambda v\\), thì \\(A^2v=\\lambda^2v\\). Vì vậy trị riêng của \\(A^2\\) là \\(2^2=4\\) và \\((-3)^2=9\\).",
+    "quick": "Trị riêng của \\(A^k\\) là \\(\\lambda^k\\).",
+    "casio": "Không cần CASIO; bình phương từng trị riêng.",
+    "difficulty": 2,
+    "topic": "Ứng dụng trị riêng",
+    "id": 51
+  },
+  {
+    "type": "eigenvalue_determinant_shift",
+    "question": "Ma trận cấp 3 có các trị riêng \\(0,2,4\\). Giá trị \\(\\det(A+I)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(15\\)",
+      "\\(0\\)",
+      "\\(8\\)",
+      "\\(24\\)"
+    ],
+    "correct": "\\(15\\)",
+    "solution": "Các trị riêng của \\(A+I\\) là \\(1,3,5\\). Do đó \\(\\det(A+I)=1\\cdot3\\cdot5=15\\).",
+    "quick": "Cộng \\(I\\) làm mỗi trị riêng tăng 1, rồi lấy tích.",
+    "casio": "Không cần CASIO; dùng trị riêng của \\(A+I\\).",
+    "difficulty": 3,
+    "topic": "Trị riêng & định thức",
+    "id": 52
+  },
+  {
+    "type": "eigenvalue_zero_det",
+    "question": "Ma trận \\(A\\) cấp 3 có \\(\\det(A)=0\\). Khẳng định nào chắc chắn đúng?",
+    "matrix": null,
+    "options": [
+      "\\(0\\) là một trị riêng của \\(A\\)",
+      "Mọi trị riêng đều bằng \\(0\\)",
+      "\\(A\\) có đúng ba trị riêng phân biệt",
+      "\\(\\operatorname{tr}(A)=0\\)"
+    ],
+    "correct": "\\(0\\) là một trị riêng của \\(A\\)",
+    "solution": "\\(\\det(A)=0\\) nghĩa là \\(A\\) không khả nghịch. Khi đó phương trình \\(Av=0\\) có nghiệm khác không, nên \\(0\\) là một trị riêng của \\(A\\).",
+    "quick": "\\(\\det(A)=0\\Leftrightarrow 0\\) là trị riêng.",
+    "casio": "Không cần CASIO; dùng liên hệ giữa định thức và trị riêng 0.",
+    "difficulty": 2,
+    "topic": "Trị riêng & khả nghịch",
+    "id": 53
+  },
+  {
+    "type": "eigenvector_scalar_multiple",
+    "question": "Nếu \\(v=(1;2)^T\\) là véc tơ riêng của \\(A\\) ứng với \\(\\lambda=3\\), thì véc tơ nào sau đây cũng là véc tơ riêng ứng với \\(\\lambda=3\\)?",
+    "matrix": null,
+    "options": [
+      "\\((2;4)^T\\)",
+      "\\((2;1)^T\\)",
+      "\\((1;-2)^T\\)",
+      "\\((0;0)^T\\)"
+    ],
+    "correct": "\\((2;4)^T\\)",
+    "solution": "Mọi bội khác không của một véc tơ riêng vẫn là véc tơ riêng ứng với cùng trị riêng. Vì \\((2;4)^T=2(1;2)^T\\), nên đây là véc tơ riêng ứng với \\(\\lambda=3\\). Véc tơ không không được xem là véc tơ riêng.",
+    "quick": "Bội khác không của véc tơ riêng vẫn là véc tơ riêng.",
+    "casio": "Không cần CASIO; dùng định nghĩa véc tơ riêng.",
+    "difficulty": 1,
+    "topic": "Trị riêng & véc tơ riêng",
+    "id": 54
+  },
+  {
+    "type": "find_eigenvector_3x3_triangular",
+    "question": "Cho \\(A=\\begin{pmatrix}2&0&0\\\\1&3&0\\\\0&1&4\\end{pmatrix}\\). Một véc tơ riêng ứng với \\(\\lambda=2\\) là",
+    "matrix": null,
+    "options": [
+      "\\((2;-2;1)^T\\)",
+      "\\((1;0;0)^T\\)",
+      "\\((0;1;0)^T\\)",
+      "\\((0;0;1)^T\\)"
+    ],
+    "correct": "\\((2;-2;1)^T\\)",
+    "solution": "Giải \\((A-2I)v=0\\). Ta có \\(A-2I=\\begin{pmatrix}0&0&0\\\\1&1&0\\\\0&1&2\\end{pmatrix}\\). Hệ cho \\(x+y=0\\), \\(y+2z=0\\). Chọn \\(z=1\\), suy ra \\(y=-2\\), \\(x=2\\). Vậy một véc tơ riêng là \\((2;-2;1)^T\\).",
+    "quick": "Giải hệ \\(x+y=0,\\ y+2z=0\\).",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 3,
+    "topic": "Trị riêng & véc tơ riêng",
+    "id": 55
+  },
+  {
+    "type": "eigenvalue_3x3_triangular",
+    "question": "Các trị riêng của \\(A=\\begin{pmatrix}-1&2&3\\\\0&4&5\\\\0&0&4\\end{pmatrix}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(-1,4,4\\)",
+      "\\(-1,2,3\\)",
+      "\\(0,4,5\\)",
+      "\\(4,4,5\\)"
+    ],
+    "correct": "\\(-1,4,4\\)",
+    "solution": "Ma trận tam giác trên nên các trị riêng là các phần tử trên đường chéo chính: \\(-1,4,4\\).",
+    "quick": "Ma trận tam giác: đọc đường chéo.",
+    "casio": "Không cần CASIO; đọc đường chéo.",
+    "difficulty": 1,
+    "topic": "Trị riêng",
+    "id": 56
+  },
+  {
+    "type": "eigenvalue_parameter_trace_det",
+    "question": "Ma trận \\(2\\times2\\) có hai trị riêng \\(m\\) và \\(2\\). Biết \\(\\operatorname{tr}(A)=7\\). Khi đó \\(m\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(7\\)",
+      "\\(2\\)",
+      "\\(-5\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Trace bằng tổng các trị riêng, nên \\(m+2=7\\). Do đó \\(m=5\\).",
+    "quick": "Trace = tổng trị riêng.",
+    "casio": "Không cần CASIO; giải \\(m+2=7\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng theo tham số",
+    "id": 57
+  },
+  {
+    "type": "eigenvalue_parameter_det",
+    "question": "Ma trận \\(2\\times2\\) có hai trị riêng \\(m\\) và \\(-3\\). Biết \\(\\det(A)=12\\). Khi đó \\(m\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-4\\)",
+      "\\(4\\)",
+      "\\(-9\\)",
+      "\\(12\\)"
+    ],
+    "correct": "\\(-4\\)",
+    "solution": "Định thức bằng tích các trị riêng, nên \\(-3m=12\\). Suy ra \\(m=-4\\).",
+    "quick": "Det = tích trị riêng.",
+    "casio": "Không cần CASIO; giải \\(-3m=12\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng theo tham số",
+    "id": 58
+  },
+  {
+    "type": "special_matrix_eigenvector",
+    "question": "Cho \\(A=\\begin{pmatrix}6&1&1\\\\1&6&1\\\\1&1&6\\end{pmatrix}\\). Véc tơ \\((1;1;1)^T\\) là véc tơ riêng ứng với trị riêng nào?",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Mỗi hàng của \\(A\\) có tổng bằng \\(8\\). Do đó \\(A(1;1;1)^T=(8;8;8)^T=8(1;1;1)^T\\).",
+    "quick": "Véc tơ toàn 1 ứng với tổng mỗi hàng.",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 2,
+    "topic": "Trị riêng & véc tơ riêng",
+    "id": 59
+  },
+  {
+    "type": "special_matrix_eigenvalues",
+    "question": "Cho \\(A=\\begin{pmatrix}6&1&1\\\\1&6&1\\\\1&1&6\\end{pmatrix}\\). Các trị riêng phân biệt của \\(A\\) là",
+    "matrix": null,
+    "options": [
+      "\\(8\\) và \\(5\\)",
+      "\\(6\\) và \\(1\\)",
+      "\\(8\\) và \\(6\\)",
+      "\\(5\\) và \\(1\\)"
+    ],
+    "correct": "\\(8\\) và \\(5\\)",
+    "solution": "Ma trận cấp 3 có đường chéo \\(a=6\\), ngoài chéo \\(b=1\\). Các trị riêng là \\(a+2b=8\\) và \\(a-b=5\\) với bội 2. Vậy các trị riêng phân biệt là \\(8\\) và \\(5\\).",
+    "quick": "Dạng đường chéo–ngoài chéo: \\(a+2b\\), \\(a-b\\).",
+    "casio": "CASIO fx-580VNX: Với ma trận \\(2\\times2\\), lập \\(p_A(\\lambda)=\\det(\\lambda I-A)\\) rồi dùng MENU → Equation/Func → Polynomial bậc 2 để kiểm tra nghiệm. Với véc tơ riêng, nhân trực tiếp \\(Av\\) và so sánh với \\(\\lambda v\\).",
+    "difficulty": 3,
+    "topic": "Trị riêng",
+    "id": 60
   }
 ]

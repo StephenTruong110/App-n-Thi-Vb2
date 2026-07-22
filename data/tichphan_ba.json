@@ -844,5 +844,275 @@
     "casio": "CASIO fx-580VNX: Lập cận và tính lần lượt từng lớp bằng phím ∫. Với trụ/cầu, nhớ Jacobian: trụ là r, cầu là ρ²sinφ.",
     "difficulty": 3,
     "topic": "Tích phân bội ba"
+  },
+  {
+    "id": 48,
+    "type": "triple_integral_box",
+    "question": "Tính \\(\\displaystyle\\int_0^2\\int_0^1\\int_0^3 (x+y)\\,dz\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(6\\)",
+      "\\(12\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "Tích phân trong theo \\(z\\) cho \\(3(x+y)\\). Do đó \\(I=3\\int_0^2\\int_0^1(x+y)\\,dy\\,dx\\). Ta có \\(\\int_0^2\\int_0^1x\\,dy\\,dx=2\\), và \\(\\int_0^2\\int_0^1y\\,dy\\,dx=1\\). Vậy \\(I=3(2+1)=9\\).",
+    "quick": "Tích phân theo \\(z\\) trước: nhân thêm chiều dài 3.",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 49,
+    "type": "triple_integral_setup_first_octant",
+    "question": "Vật thể \\(V\\) được mô tả bởi \\(0\\le x\\le1\\), \\(0\\le y\\le2x\\), \\(0\\le z\\le3x-y\\). Cách viết tích phân thể tích đúng là",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^1\\int_0^{2x}\\int_0^{3x-y}dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_0^{3x-y}\\int_0^{2x}dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_0^{2x}\\int_{3x-y}^{0}dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^2\\int_0^x\\int_0^{3x-y}dz\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^1\\int_0^{2x}\\int_0^{3x-y}dz\\,dy\\,dx\\)",
+    "solution": "Đọc miền theo thứ tự ngoài vào trong: \\(0\\le x\\le1\\), \\(0\\le y\\le2x\\), \\(0\\le z\\le3x-y\\). Do đó tích phân thể tích là \\(\\int_0^1\\int_0^{2x}\\int_0^{3x-y}dz\\,dy\\,dx\\).",
+    "quick": "Cận trong cùng ứng với biến \\(z\\), tiếp theo là \\(y\\), ngoài cùng là \\(x\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 50,
+    "type": "triple_integral_first_octant",
+    "question": "Tính thể tích vật thể \\(V:0\\le x\\le1,\\ 0\\le y\\le2x,\\ 0\\le z\\le3x-y\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac{8}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "\\(V=\\int_0^1\\int_0^{2x}\\int_0^{3x-y}dz\\,dy\\,dx=\\int_0^1\\int_0^{2x}(3x-y)\\,dy\\,dx\\). Tích phân trong bằng \\([3xy-y^2/2]_0^{2x}=4x^2\\). Vậy \\(V=\\int_0^1 4x^2dx=\\dfrac{4}{3}\\).",
+    "quick": "Tích phân theo \\(z\\) trước cho chiều cao \\(3x-y\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 51,
+    "type": "cylindrical_bounds",
+    "question": "Miền \\(V: x^2+y^2\\le4,\\ 0\\le z\\le4-x^2-y^2\\). Trong tọa độ trụ, cận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(0\\le\\theta\\le2\\pi,\\ 0\\le r\\le2,\\ 0\\le z\\le4-r^2\\)",
+      "\\(0\\le\\theta\\le\\pi,\\ 0\\le r\\le2,\\ 0\\le z\\le4-r^2\\)",
+      "\\(0\\le\\theta\\le2\\pi,\\ 0\\le r\\le4,\\ 0\\le z\\le4-r\\)",
+      "\\(0\\le\\theta\\le2\\pi,\\ 0\\le r\\le2,\\ r^2\\le z\\le4\\)"
+    ],
+    "correct": "\\(0\\le\\theta\\le2\\pi,\\ 0\\le r\\le2,\\ 0\\le z\\le4-r^2\\)",
+    "solution": "Đổi sang tọa độ trụ: \\(x^2+y^2=r^2\\). Miền chiếu là đĩa \\(r\\le2\\), nên \\(0\\le r\\le2\\), \\(0\\le\\theta\\le2\\pi\\). Mặt trên là \\(z=4-r^2\\), mặt dưới là \\(z=0\\).",
+    "quick": "Đĩa bán kính 2 và chiều cao \\(4-r^2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 52,
+    "type": "triple_integral_cylindrical",
+    "question": "Tính \\(\\iiint_V (x^2+y^2)\\,dV\\), với \\(V:x^2+y^2\\le4,\\ 0\\le z\\le3\\).",
+    "matrix": null,
+    "options": [
+      "\\(24\\pi\\)",
+      "\\(12\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(16\\pi\\)"
+    ],
+    "correct": "\\(24\\pi\\)",
+    "solution": "Trong tọa độ trụ, \\(x^2+y^2=r^2\\), \\(dV=r\\,dz\\,dr\\,d\\theta\\). Do đó \\(I=\\int_0^{2\\pi}\\int_0^2\\int_0^3 r^2\\cdot r\\,dz\\,dr\\,d\\theta=2\\pi\\cdot3\\int_0^2r^3dr=24\\pi\\).",
+    "quick": "Đổi sang trụ: \\(2\\pi\\cdot3\\int_0^2r^3dr\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 53,
+    "type": "projection_region",
+    "question": "Khối \\(V\\) nằm giữa \\(z=0\\) và \\(z=9-x^2-y^2\\). Hình chiếu của \\(V\\) xuống mặt phẳng \\(Oxy\\) là",
+    "matrix": null,
+    "options": [
+      "\\(x^2+y^2\\le9\\)",
+      "\\(x^2+y^2\\le3\\)",
+      "\\(x+y\\le9\\)",
+      "\\([-3,3]\\times[-3,3]\\)"
+    ],
+    "correct": "\\(x^2+y^2\\le9\\)",
+    "solution": "Để có điểm trong khối, cần \\(9-x^2-y^2\\ge0\\). Suy ra \\(x^2+y^2\\le9\\). Vậy hình chiếu là hình tròn bán kính 3.",
+    "quick": "Cho mặt trên không âm: \\(9-x^2-y^2\\ge0\\).",
+    "casio": "Không cần CASIO; xét điều kiện mặt trên không âm.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 54,
+    "type": "volume_paraboloid",
+    "question": "Tính thể tích khối \\(0\\le z\\le9-x^2-y^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{81\\pi}{2}\\)",
+      "\\(81\\pi\\)",
+      "\\(\\dfrac{27\\pi}{2}\\)",
+      "\\(18\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{81\\pi}{2}\\)",
+    "solution": "Dùng tọa độ trụ. Miền chiếu: \\(0\\le r\\le3\\), \\(0\\le\\theta\\le2\\pi\\). Chiều cao là \\(9-r^2\\). Vậy \\(V=\\int_0^{2\\pi}\\int_0^3(9-r^2)r\\,dr\\,d\\theta=\\dfrac{81\\pi}{2}\\).",
+    "quick": "Thể tích bằng \\(2\\pi\\int_0^3(9-r^2)rdr\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 55,
+    "type": "spherical_bounds",
+    "question": "Khối cầu \\(x^2+y^2+z^2\\le4\\) trong góc phần tám thứ nhất có cận tọa độ cầu đúng là",
+    "matrix": null,
+    "options": [
+      "\\(0\\le\\rho\\le2,\\ 0\\le\\varphi\\le\\dfrac{\\pi}{2},\\ 0\\le\\theta\\le\\dfrac{\\pi}{2}\\)",
+      "\\(0\\le\\rho\\le4,\\ 0\\le\\varphi\\le\\pi,\\ 0\\le\\theta\\le2\\pi\\)",
+      "\\(0\\le\\rho\\le2,\\ 0\\le\\varphi\\le\\pi,\\ 0\\le\\theta\\le\\dfrac{\\pi}{2}\\)",
+      "\\(0\\le\\rho\\le2,\\ 0\\le\\varphi\\le\\dfrac{\\pi}{2},\\ 0\\le\\theta\\le2\\pi\\)"
+    ],
+    "correct": "\\(0\\le\\rho\\le2,\\ 0\\le\\varphi\\le\\dfrac{\\pi}{2},\\ 0\\le\\theta\\le\\dfrac{\\pi}{2}\\)",
+    "solution": "Khối cầu bán kính 2 nên \\(0\\le\\rho\\le2\\). Góc phần tám thứ nhất có \\(x,y,z\\ge0\\), nên \\(0\\le\\theta\\le\\pi/2\\) và \\(0\\le\\varphi\\le\\pi/2\\).",
+    "quick": "Góc phần tám thứ nhất: cả \\(\\theta\\) và \\(\\varphi\\) đều chạy từ 0 đến \\(\\pi/2\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 56,
+    "type": "triple_integral_spherical",
+    "question": "Thể tích phần khối cầu \\(x^2+y^2+z^2\\le4\\) nằm trong góc phần tám thứ nhất bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi}{3}\\)",
+      "\\(\\dfrac{8\\pi}{3}\\)",
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(\\dfrac{16\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi}{3}\\)",
+    "solution": "Khối cầu bán kính 2 có thể tích \\(\\dfrac43\\pi 2^3=\\dfrac{32\\pi}{3}\\). Góc phần tám thứ nhất chiếm \\(1/8\\) khối cầu, nên thể tích bằng \\(\\dfrac18\\cdot\\dfrac{32\\pi}{3}=\\dfrac{4\\pi}{3}\\).",
+    "quick": "Lấy \\(1/8\\) thể tích khối cầu bán kính 2.",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 57,
+    "type": "triple_integral_spherical",
+    "question": "Tính \\(\\displaystyle\\iiint_{x^2+y^2+z^2\\le4}(x^2+y^2+z^2)\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{128\\pi}{5}\\)",
+      "\\(\\dfrac{32\\pi}{5}\\)",
+      "\\(\\dfrac{64\\pi}{5}\\)",
+      "\\(\\dfrac{128\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{128\\pi}{5}\\)",
+    "solution": "Trong tọa độ cầu, \\(x^2+y^2+z^2=\\rho^2\\), \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\). Do đó \\(I=\\int_0^{2\\pi}\\int_0^{\\pi}\\int_0^2\\rho^4\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=2\\pi\\cdot2\\cdot\\dfrac{2^5}{5}=\\dfrac{128\\pi}{5}\\).",
+    "quick": "Dùng cầu: \\(4\\pi\\int_0^2\\rho^4d\\rho=128\\pi/5\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 58,
+    "type": "triple_integral_mass_cylindrical",
+    "question": "Khối trụ \\(x^2+y^2\\le1,\\ 0\\le z\\le2\\) có mật độ \\(\\rho(x,y,z)=2+z\\). Khối lượng bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(8\\pi\\)"
+    ],
+    "correct": "\\(6\\pi\\)",
+    "solution": "Khối lượng \\(M=\\iiint_V(2+z)dV\\). Trong tọa độ trụ: \\(M=\\int_0^{2\\pi}\\int_0^1\\int_0^2(2+z)r\\,dz\\,dr\\,d\\theta\\). Tính được \\(2\\pi\\cdot\\dfrac12\\cdot[2z+z^2/2]_0^2=6\\pi\\).",
+    "quick": "Tách theo \\(r,\\theta,z\\): \\(2\\pi\\cdot1/2\\cdot6=6\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 59,
+    "type": "triple_integral_setup_first_octant",
+    "question": "Vật thể \\(V\\) được mô tả bởi \\(0\\le x\\le1\\), \\(0\\le y\\le x\\), \\(0\\le z\\le y\\). Tích phân thể tích đúng là",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^1\\int_0^x\\int_0^y dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_0^y\\int_0^x dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_0^x\\int_y^0 dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^x\\int_0^1\\int_0^y dz\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^1\\int_0^x\\int_0^y dz\\,dy\\,dx\\)",
+    "solution": "Từ mô tả miền: ngoài cùng \\(0\\le x\\le1\\), tiếp theo \\(0\\le y\\le x\\), trong cùng \\(0\\le z\\le y\\). Vì vậy tích phân thể tích là \\(\\int_0^1\\int_0^x\\int_0^y dz\\,dy\\,dx\\).",
+    "quick": "Đọc đúng thứ tự cận: \\(z\\) trong cùng, rồi \\(y\\), rồi \\(x\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 60,
+    "type": "triple_integral_first_octant",
+    "question": "Tính thể tích vật thể \\(V:0\\le x\\le1,\\ 0\\le y\\le x,\\ 0\\le z\\le y\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{6}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{6}\\)",
+    "solution": "\\(V=\\int_0^1\\int_0^x\\int_0^y dz\\,dy\\,dx=\\int_0^1\\int_0^x y\\,dy\\,dx=\\int_0^1\\dfrac{x^2}{2}dx=\\dfrac{1}{6}\\).",
+    "quick": "Tích phân theo \\(z\\) trước cho \\(y\\), rồi tính \\(\\int_0^1x^2/2dx\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 61,
+    "type": "triple_integral_iterated",
+    "question": "Tính \\(\\displaystyle\\int_0^1\\int_0^{1-x}\\int_0^{2-x-y} dz\\,dy\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3}\\)",
+    "solution": "Tích phân theo \\(z\\) trước được \\(2-x-y\\). Vậy \\(I=\\int_0^1\\int_0^{1-x}(2-x-y)\\,dy\\,dx\\). Đặt \\(t=1-x\\), phần trong bằng \\(t+t^2/2\\). Do đó \\(I=\\int_0^1(t+t^2/2)dt=\\dfrac12+\\dfrac16=\\dfrac23\\).",
+    "quick": "Tích phân theo \\(z\\) trước, sau đó tính trên tam giác.",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 62,
+    "type": "triple_integral_setup_tetrahedron",
+    "question": "Miền tứ diện \\(V:x\\ge0,\\ y\\ge0,\\ z\\ge0,\\ x+y+z\\le3\\). Cách viết tích phân thể tích đúng là",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^3\\int_0^{3-x}\\int_0^{3-x-y}dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^3\\int_0^3\\int_0^{3-x-y}dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^3\\int_0^{3-x}\\int_{3-x-y}^{0}dz\\,dy\\,dx\\)",
+      "\\(\\displaystyle\\int_0^1\\int_0^{1-x}\\int_0^{1-x-y}dz\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^3\\int_0^{3-x}\\int_0^{3-x-y}dz\\,dy\\,dx\\)",
+    "solution": "Từ \\(x+y+z\\le3\\), với \\(x,y,z\\ge0\\), ta lấy \\(0\\le x\\le3\\), \\(0\\le y\\le3-x\\), và \\(0\\le z\\le3-x-y\\).",
+    "quick": "Tứ diện trong góc phần tám thứ nhất: cận sau phụ thuộc vào tổng còn lại.",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
   }
 ]

@@ -74,24 +74,6 @@
   {
     "id": 5,
     "type": "dalembert",
-    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{3^n}{n!}\\). Theo D'Alembert, chuỗi",
-    "matrix": null,
-    "options": [
-      "Hội tụ",
-      "Phân kỳ",
-      "Không kết luận",
-      "Hội tụ có điều kiện"
-    ],
-    "correct": "Hội tụ",
-    "solution": "\\(D=\\lim\\dfrac{3^{n+1}/(n+1)!}{3^n/n!}=\\lim\\dfrac{3}{n+1}=0\\lt 1\\) → hội tụ.",
-    "quick": "\\(D=\\lim\\dfrac{3}{n+1}=0\\lt 1\\) → hội tụ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả \\lt 1: hội tụ; \\gt 1: phân kỳ; = 1: không kết luận.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 6,
-    "type": "dalembert",
     "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{3^n}\\). Theo D'Alembert, \\(D=\\)?",
     "matrix": null,
     "options": [
@@ -108,7 +90,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 7,
+    "id": 6,
     "type": "cauchy",
     "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{n}{2n+1}\\right)^n\\). Tiêu chuẩn Cauchy: \\(C=\\lim\\sqrt[n]{u_n}=\\)?",
     "matrix": null,
@@ -126,7 +108,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 8,
+    "id": 7,
     "type": "cauchy",
     "question": "Cho chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n^2}{\\left(2+\\dfrac{1}{n}\\right)^n}\\). Tính \\(C=\\lim_{n\\to\\infty}\\sqrt[n]{u_n}\\).",
     "matrix": null,
@@ -144,25 +126,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 9,
-    "type": "leibniz",
-    "question": "Chuỗi đan dấu \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{n}=1-\\dfrac{1}{2}+\\dfrac{1}{3}-\\cdots\\) theo tiêu chuẩn Leibniz",
-    "matrix": null,
-    "options": [
-      "Hội tụ",
-      "Phân kỳ",
-      "Hội tụ tuyệt đối",
-      "Không áp dụng được"
-    ],
-    "correct": "Hội tụ",
-    "solution": "\\(u_n=1/n\\gt 0\\), đơn điệu giảm, \\(u_n\\to0\\). Theo Leibniz → chuỗi hội tụ (bán hội tụ, tổng \\(=\\ln2\\)).",
-    "quick": "Leibniz: \\(u_n\\downarrow\\to0\\) → hội tụ. Nhưng \\(\\sum1/n\\) phân kỳ → bán hội tụ.",
-    "casio": "CASIO: Kiểm tra điều kiện Leibniz: (1) u_n \\gt 0 (hiển nhiên); (2) u_{n+1} ≤ u_n (kiểm tra bằng cách so sánh tại vài n); (3) u_n → 0 (thay n=1e6).",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 10,
+    "id": 8,
     "type": "leibniz",
     "question": "Cho chuỗi đan dấu \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{\\sqrt{n}}\\). Chuỗi này",
     "matrix": null,
@@ -180,7 +144,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 11,
+    "id": 9,
     "type": "leibniz",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n^2}\\) là",
     "matrix": null,
@@ -198,7 +162,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 12,
+    "id": 10,
     "type": "p_series",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2}\\) có tổng bằng",
     "matrix": null,
@@ -216,7 +180,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 13,
+    "id": 11,
     "type": "p_series",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^p}\\) hội tụ khi và chỉ khi",
     "matrix": null,
@@ -234,7 +198,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 14,
+    "id": 12,
     "type": "p_series",
     "question": "Chuỗi điều hòa \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n}\\)",
     "matrix": null,
@@ -252,7 +216,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 15,
+    "id": 13,
     "type": "p_series",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{\\sqrt{n}}\\)",
     "matrix": null,
@@ -270,7 +234,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 16,
+    "id": 14,
     "type": "p_series",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^3}\\) thì",
     "matrix": null,
@@ -288,7 +252,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 17,
+    "id": 15,
     "type": "convergence_test",
     "question": "Điều kiện cần để chuỗi \\(\\sum u_n\\) hội tụ là",
     "matrix": null,
@@ -306,7 +270,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 18,
+    "id": 16,
     "type": "convergence_test",
     "question": "Nếu \\(\\lim_{n\\to\\infty} u_n\\neq 0\\) thì chuỗi \\(\\sum u_n\\)",
     "matrix": null,
@@ -324,7 +288,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 19,
+    "id": 17,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n}{n+1}\\)",
     "matrix": null,
@@ -342,7 +306,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 20,
+    "id": 18,
     "type": "comparison",
     "question": "So sánh \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+1}\\) với chuỗi \\(\\sum\\dfrac{1}{n^2}\\). Kết luận?",
     "matrix": null,
@@ -360,7 +324,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 21,
+    "id": 19,
     "type": "comparison",
     "question": "So sánh \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{\\ln n}\\) với \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n}\\). Kết luận?",
     "matrix": null,
@@ -378,7 +342,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 22,
+    "id": 20,
     "type": "comparison_limit",
     "question": "Dùng tiêu chuẩn so sánh giới hạn: nếu \\(u_n,v_n\\gt0\\) từ một chỉ số đủ lớn và \\(\\lim_{n\\to\\infty}\\dfrac{u_n}{v_n}=L\\) với \\(0\\lt L\\lt+\\infty\\), thì \\(\\sum u_n\\) và \\(\\sum v_n\\)",
     "matrix": null,
@@ -396,7 +360,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 23,
+    "id": 21,
     "type": "comparison_limit",
     "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2n+1}{n^2+n}\\). So sánh giới hạn với \\(\\sum\\dfrac{1}{n}\\).",
     "matrix": null,
@@ -414,25 +378,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 24,
-    "type": "comparison_limit",
-    "question": "Xét \\(\\sum_{n=1}^{\\infty}\\dfrac{3n^2+1}{n^4+2}\\). So sánh giới hạn với \\(\\sum\\dfrac{1}{n^2}\\).",
-    "matrix": null,
-    "options": [
-      "Hội tụ vì \\(L=3\\gt 0\\) và \\(\\sum1/n^2\\) hội tụ",
-      "Phân kỳ",
-      "\\(L=0\\)",
-      "\\(L=\\infty\\)"
-    ],
-    "correct": "Hội tụ vì \\(L=3\\gt 0\\) và \\(\\sum1/n^2\\) hội tụ",
-    "solution": "\\(L=\\lim\\dfrac{(3n^2+1)/( n^4+2)}{1/n^2}=\\lim\\dfrac{n^2(3n^2+1)}{n^4+2}=3\\gt 0\\). \\(\\sum1/n^2\\) hội tụ → hội tụ.",
-    "quick": "\\(n^2u_n\\to3\\), \\(\\sum1/n^2\\) hội tụ → hội tụ",
-    "casio": "CASIO: Tính L = lim(u_n/v_n) tại n lớn (n=10000) bằng CALC. Nếu 0\\ltL\\lt∞: cùng hội tụ hoặc cùng phân kỳ như Σv_n.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 25,
+    "id": 22,
     "type": "alternating_series",
     "question": "Điều kiện Leibniz cho chuỗi đan dấu \\(\\sum(-1)^{n-1}u_n\\) (\\(u_n\\gt 0\\)) là",
     "matrix": null,
@@ -450,7 +396,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 26,
+    "id": 23,
     "type": "alternating_series",
     "question": "Chuỗi đan dấu \\(\\sum_{n=3}^{\\infty}(-1)^n\\dfrac{3n+1}{n(n-2)}\\) là",
     "matrix": null,
@@ -468,7 +414,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 27,
+    "id": 24,
     "type": "alternating_series",
     "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}(-1)^n\\dfrac{1}{n+(-1)^n}\\) là",
     "matrix": null,
@@ -486,25 +432,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 28,
-    "type": "series_sum",
-    "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{4n^2-1}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(1\\)",
-      "\\(\\dfrac{1}{4}\\)",
-      "Phân kỳ"
-    ],
-    "correct": "\\(\\dfrac{1}{2}\\)",
-    "solution": "\\(\\dfrac{1}{4n^2-1}=\\dfrac{1}{(2n-1)(2n+1)}=\\dfrac{1}{2}\\left(\\dfrac{1}{2n-1}-\\dfrac{1}{2n+1}\\right)\\). Telescope: \\(S=\\dfrac{1}{2}\\cdot1=\\dfrac{1}{2}\\).",
-    "quick": "Phân phần → telescope. \\(S=\\dfrac{1}{2}\\cdot(1-\\lim_{N}\\dfrac{1}{2N+1})=\\dfrac{1}{2}\\)",
-    "casio": "CASIO: Tổng chuỗi hình học S=a/(1-q) khi |q|\\lt1. Telescope: viết phân phần rồi rút gọn. Tính tổng S_N = (phần tử đầu - phần tử cuối còn lại).",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 29,
+    "id": 25,
     "type": "series_sum",
     "question": "Tổng của chuỗi \\(\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{3^n}\\) là",
     "matrix": null,
@@ -522,7 +450,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 30,
+    "id": 26,
     "type": "series_sum",
     "question": "Tổng của chuỗi hình học \\(\\sum_{n=0}^{\\infty}\\dfrac{2}{3^n}\\) là",
     "matrix": null,
@@ -540,7 +468,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 31,
+    "id": 27,
     "type": "series_sum",
     "question": "Tổng \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{n^2-1}\\) là",
     "matrix": null,
@@ -558,25 +486,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 32,
-    "type": "dalembert",
-    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^n}{n!}\\). Theo D'Alembert, \\(D=\\)?",
-    "matrix": null,
-    "options": [
-      "\\(e\\)",
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(n\\)"
-    ],
-    "correct": "\\(e\\)",
-    "solution": "\\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(n+1)^{n+1}}{(n+1)!}\\cdot\\dfrac{n!}{n^n}=\\left(1+\\dfrac{1}{n}\\right)^n\\to e\\gt 1\\) → phân kỳ.",
-    "quick": "\\(D=e\\gt 1\\) → phân kỳ",
-    "casio": "CASIO fx-580VNX: Tính D = u_{n+1}/u_n tại n lớn (VD n=1000) bằng CALC. Nhập biểu thức với n=1000 → nếu kết quả \\lt 1: hội tụ; \\gt 1: phân kỳ; = 1: không kết luận.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 33,
+    "id": 28,
     "type": "dalembert",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{(2n)!}\\). Tính \\(D=\\lim u_{n+1}/u_n\\).",
     "matrix": null,
@@ -594,7 +504,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 34,
+    "id": 29,
     "type": "dalembert",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{4^n}{n^2}\\) theo D'Alembert",
     "matrix": null,
@@ -612,7 +522,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 35,
+    "id": 30,
     "type": "cauchy",
     "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{3n}{4n+1}\\right)^n\\). Tiêu chuẩn Cauchy cho \\(C=\\)?",
     "matrix": null,
@@ -630,7 +540,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 36,
+    "id": 31,
     "type": "cauchy",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{2n}{n+1}\\right)^n\\). Cauchy: \\(C=\\)?",
     "matrix": null,
@@ -648,7 +558,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 37,
+    "id": 32,
     "type": "series_sum",
     "question": "Tổng của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{3}{n(n+3)}\\) là",
     "matrix": null,
@@ -666,7 +576,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 38,
+    "id": 33,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\sin\\dfrac{1}{n}\\) thì",
     "matrix": null,
@@ -684,7 +594,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 39,
+    "id": 34,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\ln\\left(1+\\dfrac{1}{n}\\right)\\) thì",
     "matrix": null,
@@ -702,7 +612,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 40,
+    "id": 35,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\left(1-\\cos\\dfrac{1}{n}\\right)\\) thì",
     "matrix": null,
@@ -720,7 +630,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 41,
+    "id": 36,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n n}{n^2+1}\\) là",
     "matrix": null,
@@ -738,7 +648,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 42,
+    "id": 37,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n^{3/2}}\\) là",
     "matrix": null,
@@ -756,7 +666,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 43,
+    "id": 38,
     "type": "convergence_test",
     "question": "Hội tụ tuyệt đối có nghĩa là",
     "matrix": null,
@@ -774,7 +684,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 44,
+    "id": 39,
     "type": "convergence_test",
     "question": "Bán hội tụ (hội tụ có điều kiện) nghĩa là",
     "matrix": null,
@@ -792,7 +702,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 45,
+    "id": 40,
     "type": "convergence_test",
     "question": "Hội tụ tuyệt đối kéo theo",
     "matrix": null,
@@ -810,7 +720,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 46,
+    "id": 41,
     "type": "series_sum",
     "question": "Tổng của \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n\\cdot2^n}\\) là",
     "matrix": null,
@@ -828,7 +738,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 47,
+    "id": 42,
     "type": "dalembert",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-2)^n}{n^2}\\). Theo D'Alembert, \\(D=\\)?",
     "matrix": null,
@@ -846,7 +756,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 48,
+    "id": 43,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n(n+1)(n+2)}\\) thì",
     "matrix": null,
@@ -864,25 +774,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 49,
-    "type": "convergence_test",
-    "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\sqrt{n+1}-\\sqrt{n}}{\\sqrt{n}}\\) thì",
-    "matrix": null,
-    "options": [
-      "Phân kỳ",
-      "Hội tụ",
-      "Bán hội tụ",
-      "Không kết luận"
-    ],
-    "correct": "Phân kỳ",
-    "solution": "\\(\\sqrt{n+1}-\\sqrt{n}=\\dfrac{1}{\\sqrt{n+1}+\\sqrt{n}}\\sim\\dfrac{1}{2\\sqrt{n}}\\). Vậy \\(u_n\\sim\\dfrac{1}{2n}\\sim1/n\\). \\(\\sum1/n\\) phân kỳ → phân kỳ.",
-    "quick": "\\(u_n\\sim1/(2n)\\) → so sánh \\(\\sum1/n\\) phân kỳ → phân kỳ",
-    "casio": "CASIO: Tùy theo dạng: dùng D'Alembert (có aⁿ hay n!), Cauchy (có Aⁿ trong căn), So sánh (đa thức/chuỗi p). CASIO hỗ trợ tính giới hạn u_n tại n lớn để kiểm tra.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 50,
+    "id": 44,
     "type": "series_sum",
     "question": "Giá trị của \\(e^{-1}=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n}{n!}\\) xấp xỉ bằng",
     "matrix": null,
@@ -900,7 +792,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 51,
+    "id": 45,
     "type": "convergence_test",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n!}{100^n}\\) thì",
     "matrix": null,
@@ -918,7 +810,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 52,
+    "id": 46,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=2}^{\\infty}\\dfrac{1}{\\sqrt{n^2-1}}\\) thì",
     "matrix": null,
@@ -936,7 +828,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 53,
+    "id": 47,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+n+1}\\) thì",
     "matrix": null,
@@ -954,7 +846,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 54,
+    "id": 48,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2^n+1}{3^n-1}\\) thì",
     "matrix": null,
@@ -972,7 +864,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 55,
+    "id": 49,
     "type": "series_sum",
     "question": "Tổng của \\(\\displaystyle\\sum_{n=0}^{\\infty}\\left(\\dfrac{1}{2^n}+\\dfrac{1}{3^n}\\right)\\) bằng",
     "matrix": null,
@@ -990,7 +882,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 56,
+    "id": 50,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\ln n}{n^2}\\) thì",
     "matrix": null,
@@ -1008,7 +900,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 57,
+    "id": 51,
     "type": "comparison",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{1+2+\\cdots+n}\\) thì",
     "matrix": null,
@@ -1026,7 +918,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 58,
+    "id": 52,
     "type": "convergence_test",
     "question": "Tiêu chuẩn nào phù hợp nhất để kiểm tra \\(\\sum\\dfrac{n^2}{2^n}\\)?",
     "matrix": null,
@@ -1044,7 +936,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 59,
+    "id": 53,
     "type": "convergence_test",
     "question": "Xét sự hội tụ của chuỗi \\(\\sum_{n=1}^\\infty\\dfrac{(2n)!}{(n!)^2}\\cdot\\left(\\dfrac{1}{4}\\right)^n\\).",
     "matrix": null,
@@ -1062,7 +954,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 60,
+    "id": 54,
     "type": "series_sum_official",
     "question": "Tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{n}{2^n}\\) bằng",
     "matrix": null,
@@ -1080,7 +972,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 61,
+    "id": 55,
     "type": "series_sum_official",
     "question": "Biết \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\frac{4^n}{5^n}-\\frac{3^n}{5^n}\\right)=\\frac ab\\) tối giản. Giá trị \\(a-b\\) bằng",
     "matrix": null,
@@ -1098,7 +990,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 62,
+    "id": 56,
     "type": "conditional_convergence",
     "question": "Chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}(-1)^n\\frac{\\ln n}{n}\\) là",
     "matrix": null,
@@ -1116,25 +1008,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 63,
-    "type": "series_sum_telescope",
-    "question": "Tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{n(n+2)}\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac34\\)",
-      "\\(1\\)",
-      "\\(\\dfrac12\\)",
-      "\\(\\dfrac32\\)"
-    ],
-    "correct": "\\(\\dfrac34\\)",
-    "solution": "\\(1/[n(n+2)]=\\frac12(1/n-1/(n+2))\\). Tổng rút gọn còn \\(\\frac12(1+1/2)=3/4\\).",
-    "quick": "Phân phần với bước nhảy 2.",
-    "casio": "Tính tổng đến N lớn để kiểm tra gần 0.75.",
-    "difficulty": 2,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 64,
+    "id": 57,
     "type": "alternating_error",
     "question": "Dùng chuỗi Leibniz của \\(\\ln2=1-\\frac12+\\frac13-\\cdots\\). Để sai số được bảo đảm nhỏ hơn \\(0{,}01\\), cần lấy ít nhất bao nhiêu số hạng?",
     "matrix": null,
@@ -1152,7 +1026,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 65,
+    "id": 58,
     "type": "series_sum",
     "question": "Tính \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{n^2}{3^n}\\).",
     "matrix": null,
@@ -1170,7 +1044,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 66,
+    "id": 59,
     "type": "series_count_divergent_official",
     "question": "Có bao nhiêu chuỗi phân kỳ trong ba chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac1n\\), \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac1{n^2}\\) và \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac1{\\sqrt n}\\)?",
     "matrix": null,
@@ -1188,7 +1062,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 67,
+    "id": 60,
     "type": "series_count_convergent_official",
     "question": "Có bao nhiêu chuỗi hội tụ trong ba chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n}\\), \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^2}\\) và \\(\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^n}{n^3}\\)?",
     "matrix": null,
@@ -1206,7 +1080,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 68,
+    "id": 61,
     "type": "comparison_limit",
     "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{4n^2+3}{n^4+1}\\). So sánh giới hạn với \\(\\sum 1/n^2\\), kết luận đúng là",
     "matrix": null,
@@ -1224,25 +1098,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 69,
-    "type": "dalembert",
-    "question": "Cho \\(u_n=\\dfrac{(n!)^2}{(2n)!}\\). Với chuỗi \\(\\sum u_n\\), giới hạn D’Alembert \\(D=\\lim\\dfrac{u_{n+1}}{u_n}\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac14\\)",
-      "\\(\\dfrac12\\)",
-      "\\(1\\)",
-      "\\(4\\)"
-    ],
-    "correct": "\\(\\dfrac14\\)",
-    "solution": "\\[\\frac{u_{n+1}}{u_n}=\\frac{((n+1)!)^2}{(2n+2)!}\\frac{(2n)!}{(n!)^2}=\\frac{(n+1)^2}{(2n+2)(2n+1)}=\\frac{n+1}{2(2n+1)}\\to\\frac14.\\]\nVì \\(D\\lt1\\), chuỗi hội tụ.",
-    "quick": "Rút gọn giai thừa trước khi lấy giới hạn.",
-    "casio": "CASIO: nhập \\((n+1)/(2(2n+1))\\) với \\(n=1000\\), kết quả gần 0,25.",
-    "difficulty": 3,
-    "topic": "Chuỗi số"
-  },
-  {
-    "id": 70,
+    "id": 62,
     "type": "cauchy",
     "question": "Cho chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\dfrac{2n+3}{5n+1}\\right)^n\\). Theo tiêu chuẩn Cauchy, \\(C=\\lim\\sqrt[n]{u_n}\\) bằng",
     "matrix": null,
@@ -1260,7 +1116,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 71,
+    "id": 63,
     "type": "convergence_test",
     "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\sqrt{n^2+1}-n\\right)\\). Chuỗi này",
     "matrix": null,
@@ -1278,7 +1134,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 72,
+    "id": 64,
     "type": "convergence_test",
     "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\ln\\left(1+\\dfrac{1}{n^2}\\right)\\). Chuỗi này",
     "matrix": null,
@@ -1296,7 +1152,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 73,
+    "id": 65,
     "type": "alternating_series",
     "question": "Chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^{n-1}\\dfrac{n+1}{n^2+2}\\) là",
     "matrix": null,
@@ -1314,7 +1170,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 74,
+    "id": 66,
     "type": "series_sum_telescope",
     "question": "Tổng của chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{2}{n(n+2)}\\) bằng",
     "matrix": null,
@@ -1332,7 +1188,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 75,
+    "id": 67,
     "type": "series_count_convergent",
     "question": "Có bao nhiêu chuỗi hội tụ trong bốn chuỗi sau? \\(\\displaystyle\\sum\\dfrac1{n^2+2}\\), \\(\\displaystyle\\sum\\dfrac{n}{n^2+1}\\), \\(\\displaystyle\\sum\\dfrac{(-1)^{n-1}}{\\sqrt n}\\), \\(\\displaystyle\\sum\\left(\\dfrac23\\right)^n\\).",
     "matrix": null,
@@ -1350,7 +1206,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 76,
+    "id": 68,
     "type": "series_sum_telescoping",
     "question": "Tính tổng \\(S=\\sum_{n=1}^{\\infty}\\dfrac{1}{4n^2-1}\\).",
     "matrix": null,
@@ -1368,7 +1224,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 77,
+    "id": 69,
     "type": "series_divergence_term",
     "question": "Xét \\(\\sum_{n=1}^{\\infty}\\dfrac{2n+1}{3n-2}\\). Kết luận đúng là",
     "matrix": null,
@@ -1386,7 +1242,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 78,
+    "id": 70,
     "type": "series_dalembert",
     "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{3^n}{n!}\\). Theo D'Alembert, kết luận đúng là",
     "matrix": null,
@@ -1404,7 +1260,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 79,
+    "id": 71,
     "type": "series_cauchy",
     "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{2n+1}{3n-1}\\right)^n\\). Kết luận đúng là",
     "matrix": null,
@@ -1422,7 +1278,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 80,
+    "id": 72,
     "type": "p_series",
     "question": "Xét \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^{3/2}}\\). Kết luận đúng là",
     "matrix": null,
@@ -1440,7 +1296,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 81,
+    "id": 73,
     "type": "series_ratio_factorial_square",
     "question": "Với \\(u_n=\\dfrac{(n!)^2}{(2n)!}\\), giới hạn D'Alembert \\(D=\\lim\\dfrac{u_{n+1}}{u_n}\\) bằng",
     "matrix": null,
@@ -1458,7 +1314,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 82,
+    "id": 74,
     "type": "series_term_test_cos",
     "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\cos\\dfrac1n\\). Kết luận đúng là",
     "matrix": null,
@@ -1476,7 +1332,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 83,
+    "id": 75,
     "type": "comparison_equivalent",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n+2}{n^3+n+1}\\) có cùng tính chất với chuỗi Riemann nào?",
     "matrix": null,
@@ -1494,7 +1350,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 84,
+    "id": 76,
     "type": "series_exp_sum",
     "question": "Tính \\(S=\\sum_{n=0}^{\\infty}\\dfrac{2^n}{n!}\\).",
     "matrix": null,
@@ -1512,7 +1368,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 85,
+    "id": 77,
     "type": "series_factorial_divergence",
     "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^n}{n!}\\). Kết luận đúng là",
     "matrix": null,
@@ -1530,7 +1386,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 86,
+    "id": 78,
     "type": "alternating_harmonic",
     "question": "Chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{n}\\) là",
     "matrix": null,
@@ -1548,7 +1404,7 @@
     "topic": "Chuỗi số"
   },
   {
-    "id": 87,
+    "id": 79,
     "type": "series_p_min_integer",
     "question": "Tìm giá trị nhỏ nhất của \\(p\\in\\mathbb Z\\) để chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{1}{n^p+n}\\) hội tụ.",
     "matrix": null,

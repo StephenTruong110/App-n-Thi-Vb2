@@ -2,42 +2,6 @@
   {
     "id": 1,
     "type": "limit_basic",
-    "question": "Tính \\(\\lim_{x\\to 2} (x^2+3x-4)\\)?",
-    "matrix": null,
-    "options": [
-      "\\(6\\)",
-      "\\(5\\)",
-      "\\(4\\)",
-      "\\(7\\)"
-    ],
-    "correct": "\\(6\\)",
-    "solution": "Thay trực tiếp \\(x=2\\): \\(2^2+3\\cdot2-4=4+6-4=6\\).",
-    "quick": "Hàm đa thức liên tục tại mọi điểm → thay số trực tiếp vào",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 2,
-    "type": "limit_basic",
-    "question": "Tính \\(\\lim_{x\\to 1} \\dfrac{x^2-1}{x-1}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(2\\)",
-      "\\(0\\)",
-      "\\(1\\)",
-      "Không tồn tại"
-    ],
-    "correct": "\\(2\\)",
-    "solution": "\\(\\dfrac{(x-1)(x+1)}{x-1}=x+1\\to 2\\) khi \\(x\\to1\\).",
-    "quick": "Dạng \\(0/0\\): phân tích nhân tử (hoặc L'Hôpital) rồi rút gọn",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 3,
-    "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sin x}{x}\\)?",
     "matrix": null,
     "options": [
@@ -54,7 +18,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 4,
+    "id": 2,
     "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{1-\\cos x}{x^2}\\)?",
     "matrix": null,
@@ -72,7 +36,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 5,
+    "id": 3,
     "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\tan x}{x}\\)?",
     "matrix": null,
@@ -90,25 +54,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 6,
-    "type": "limit_basic",
-    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{3x^2+2x+1}{x^2-5}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(3\\)",
-      "\\(0\\)",
-      "\\(\\infty\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(3\\)",
-    "solution": "Chia tử và mẫu cho \\(x^2\\): \\(\\dfrac{3+2/x+1/x^2}{1-5/x^2}\\to3\\).",
-    "quick": "Hệ số bậc cao nhất: \\(3/1=3\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 7,
+    "id": 4,
     "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to 0^+} x \\ln x\\)?",
     "matrix": null,
@@ -126,7 +72,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 8,
+    "id": 5,
     "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{e^x-1}{x}\\)?",
     "matrix": null,
@@ -144,7 +90,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 9,
+    "id": 6,
     "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\ln(1+x)}{x}\\)?",
     "matrix": null,
@@ -162,7 +108,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 10,
+    "id": 7,
     "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to \\infty} \\left(1+\\dfrac{1}{x}\\right)^x\\)?",
     "matrix": null,
@@ -180,7 +126,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 11,
+    "id": 8,
     "type": "limit_basic",
     "question": "Tính \\(\\lim_{x\\to 0} (1+x)^{1/x}\\)?",
     "matrix": null,
@@ -198,7 +144,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 12,
+    "id": 9,
     "type": "limit_advanced",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sin 2x}{3x}\\)?",
     "matrix": null,
@@ -216,7 +162,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 13,
+    "id": 10,
     "type": "limit_advanced",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\sqrt{1+x}-1}{x}\\)?",
     "matrix": null,
@@ -234,7 +180,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 14,
+    "id": 11,
     "type": "limit_advanced",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\tan x - \\sin x}{x^3}\\)?",
     "matrix": null,
@@ -252,7 +198,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 15,
+    "id": 12,
     "type": "limit_advanced",
     "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{\\ln x}{x}\\)?",
     "matrix": null,
@@ -270,7 +216,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 16,
+    "id": 13,
     "type": "limit_advanced",
     "question": "Tính \\(\\lim_{x\\to 0^+} x^x\\)?",
     "matrix": null,
@@ -288,7 +234,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 17,
+    "id": 14,
     "type": "limit_advanced",
     "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{\\arctan x}{x}\\)?",
     "matrix": null,
@@ -306,115 +252,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 18,
-    "type": "limit_one_sided",
-    "question": "Tính \\(\\lim_{x\\to 0^+} \\dfrac{|x|}{x}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(0\\)",
-      "Không tồn tại"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "Khi \\(x\\gt 0\\), \\(|x|=x\\) → \\(x/x=1\\).",
-    "quick": "Tiến về 0 từ phải → dương → =1",
-    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 19,
-    "type": "limit_one_sided",
-    "question": "Tính \\(\\lim_{x\\to 0^-} \\dfrac{|x|}{x}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(-1\\)",
-      "\\(1\\)",
-      "\\(0\\)",
-      "Không tồn tại"
-    ],
-    "correct": "\\(-1\\)",
-    "solution": "Khi \\(x\\lt 0\\), \\(|x|=-x\\) → \\(-x/x=-1\\).",
-    "quick": "Tiến về 0 từ trái → âm → =-1",
-    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 20,
-    "type": "limit_one_sided",
-    "question": "Tính \\(\\lim_{x\\to 0} \\dfrac{|x|}{x}\\)?",
-    "matrix": null,
-    "options": [
-      "Không tồn tại",
-      "\\(1\\)",
-      "\\(-1\\)",
-      "\\(0\\)"
-    ],
-    "correct": "Không tồn tại",
-    "solution": "Giới hạn trái = -1, giới hạn phải = 1, khác nhau → không tồn tại giới hạn.",
-    "quick": "Giới hạn hai phía ≠ nhau → giới hạn không tồn tại",
-    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 21,
-    "type": "limit_infinite",
-    "question": "Tính \\(\\lim_{x\\to \\infty} \\dfrac{x^2+1}{x+1}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(+\\infty\\)",
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(-\\infty\\)"
-    ],
-    "correct": "\\(+\\infty\\)",
-    "solution": "Chia tử và mẫu cho \\(x\\) khi \\(x\\to+\\infty\\): \\(\\dfrac{x+1/x}{1+1/x}\\sim x\\to+\\infty\\).",
-    "quick": "Bậc tử lớn hơn bậc mẫu một đơn vị, hệ số đầu dương nên giới hạn là \\(+\\infty\\).",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 22,
-    "type": "limit_infinite",
-    "question": "Tính \\(\\lim_{x\\to 1^-} \\dfrac{1}{x-1}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(-\\infty\\)",
-      "\\(+\\infty\\)",
-      "\\(0\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(-\\infty\\)",
-    "solution": "Khi \\(x\\to1^-\\): \\(x-1\\lt 0\\) và rất nhỏ âm → phân số tiến đến \\(-\\infty\\).",
-    "quick": "Mẫu âm, tiến về 0 → \\(-\\infty\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 23,
-    "type": "limit_infinite",
-    "question": "Tính \\(\\lim_{x\\to 1^+} \\dfrac{1}{x-1}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(+\\infty\\)",
-      "\\(-\\infty\\)",
-      "\\(0\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(+\\infty\\)",
-    "solution": "Khi \\(x\\to1^+\\): \\(x-1\\gt 0\\) và rất nhỏ dương → phân số tiến đến \\(+\\infty\\).",
-    "quick": "Mẫu dương, tiến về 0 → \\(+\\infty\\)",
-    "casio": "CASIO fx-580VNX: Bấm [SHIFT][CALC] → nhập biểu thức với X → bấm [=] → nhập giá trị X → [=]. Để tính giới hạn: thay x = giá trị tiến gần (VD: x=1.999999 thay vì x=2).",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 24,
+    "id": 15,
     "type": "limit_lhopital",
     "question": "Tính \\(\\lim_{x\\to0}\\dfrac{e^x - 1 - x}{x^2}\\) bằng quy tắc L'Hôpital.",
     "matrix": null,
@@ -432,7 +270,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 25,
+    "id": 16,
     "type": "limit_lhopital",
     "question": "\\(\\lim_{x\\to0}\\dfrac{\\ln(1+x)-x}{x^2}=?\\)",
     "matrix": null,
@@ -450,43 +288,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 26,
-    "type": "limit_lhopital",
-    "question": "\\(\\lim_{x\\to+\\infty}\\dfrac{\\ln x}{x}=?\\)",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(+\\infty\\)",
-      "\\(-\\infty\\)"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "Dạng \\(+\\infty/+\\infty\\). L'Hôpital: \\(\\lim_{x\\to+\\infty}\\dfrac{1/x}{1}=\\lim_{x\\to+\\infty}\\dfrac{1}{x}=0\\).\n\n*Ý nghĩa:* hàm mũ tăng nhanh hơn logarit.",
-    "quick": "L'Hôpital: \\(\\dfrac{\\ln x}{x}\\to\\dfrac{1/x}{1}=\\dfrac{1}{x}\\to0\\). x tăng nhanh hơn ln x.",
-    "casio": "CASIO: x=10^6 → ln(10^6)/10^6 = 6ln10/10^6 ≈ 0.0000138 → ≈ 0.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 27,
-    "type": "limit_lhopital",
-    "question": "\\(\\lim_{x\\to0^+}x\\ln x=?\\)",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "\\(-\\infty\\)",
-      "\\(1\\)",
-      "\\(-1\\)"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "Dạng \\(0\\cdot(-\\infty)\\). Đưa về \\(\\dfrac{0}{0}\\): \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\).\n\nL'Hôpital: \\(\\lim\\dfrac{1/x}{-1/x^2}=\\lim(-x)=0\\).",
-    "quick": "Viết \\(x\\ln x=\\dfrac{\\ln x}{1/x}\\), L'Hôpital → \\(\\dfrac{1/x}{-1/x^2}=-x\\to0\\).",
-    "casio": "CASIO: x=0.0001 → 0.0001×ln(0.0001)=0.0001×(-9.21)≈-0.000921≈0.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 28,
+    "id": 17,
     "type": "limit_notable",
     "question": "\\(\\lim_{x\\to0}\\dfrac{\\sin 3x}{\\sin 5x}=?\\)",
     "matrix": null,
@@ -504,25 +306,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 29,
-    "type": "limit_notable",
-    "question": "\\(\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=?\\)",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{1}{2}\\)",
-      "\\(0\\)",
-      "\\(1\\)",
-      "\\(2\\)"
-    ],
-    "correct": "\\(\\dfrac{1}{2}\\)",
-    "solution": "Dùng \\(1-\\cos x=2\\sin^2(x/2)\\):\n\\(\\dfrac{2\\sin^2(x/2)}{x^2}=\\dfrac{2\\sin^2(x/2)}{4(x/2)^2}=\\dfrac{1}{2}\\left(\\dfrac{\\sin(x/2)}{x/2}\\right)^2\\to\\dfrac{1}{2}\\cdot1^2=\\dfrac{1}{2}\\).",
-    "quick": "Công thức nhớ: \\(\\lim_{x\\to0}\\dfrac{1-\\cos x}{x^2}=\\dfrac{1}{2}\\). Bằng bán góc hoặc Taylor.",
-    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 30,
+    "id": 18,
     "type": "limit_infinity_form",
     "question": "\\(\\lim_{x\\to+\\infty}\\left(1+\\dfrac{2}{x}\\right)^x=?\\)",
     "matrix": null,
@@ -540,25 +324,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 31,
-    "type": "limit_infinity_form",
-    "question": "\\(\\lim_{x\\to0^+}x^x=?\\)",
-    "matrix": null,
-    "options": [
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(e\\)",
-      "\\(+\\infty\\)"
-    ],
-    "correct": "\\(1\\)",
-    "solution": "Dạng \\(0^0\\). Đặt \\(y=x^x=e^{x\\ln x}\\).\n\n\\(\\lim_{x\\to0^+}x\\ln x=0\\) (đã biết — dạng \\(0\\cdot(-\\infty)\\), L'Hôpital → 0).\n\n→ \\(\\lim y=e^0=1\\).",
-    "quick": "\\(0^0\\) dạng: xét \\(e^{x\\ln x}\\). Giới hạn \\(x\\ln x\\to0\\) → \\(e^0=\\mathbf{1}\\).",
-    "casio": "CASIO: x=0.0001 → 0.0001^0.0001=e^(0.0001×ln0.0001)=e^(-0.000921)≈0.9991≈1.",
-    "difficulty": 3,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 32,
+    "id": 19,
     "type": "limit_squeeze",
     "question": "Tính \\(\\lim_{x\\to0}x^2\\sin\\dfrac{1}{x}\\).",
     "matrix": null,
@@ -576,7 +342,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 33,
+    "id": 20,
     "type": "limit_lhopital",
     "question": "\\(\\lim_{x\\to0}\\dfrac{\\tan x - x}{x^3}=?\\)",
     "matrix": null,
@@ -594,7 +360,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 34,
+    "id": 21,
     "type": "limit_lhopital",
     "question": "\\(\\lim_{x\\to0}\\dfrac{e^{2x}-e^x}{x}=?\\)",
     "matrix": null,
@@ -612,7 +378,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 35,
+    "id": 22,
     "type": "limit_infinite",
     "question": "\\(\\lim_{x\\to+\\infty}\\left(\\sqrt{x^2+x}-x\\right)=?\\)",
     "matrix": null,
@@ -630,7 +396,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 36,
+    "id": 23,
     "type": "limit_lhopital",
     "question": "\\(\\lim_{x\\to1}\\dfrac{x^3-3x+2}{x^3-x^2-x+1}=?\\)",
     "matrix": null,
@@ -648,7 +414,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 37,
+    "id": 24,
     "type": "limit_notable",
     "question": "\\(\\lim_{x\\to0}\\dfrac{a^x-1}{x}=?\\) với \\(a\\gt 0,\\;a\\neq1\\).",
     "matrix": null,
@@ -666,7 +432,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 38,
+    "id": 25,
     "type": "limit_lhopital",
     "question": "\\(\\lim_{x\\to+\\infty}x^2 e^{-x}=?\\)",
     "matrix": null,
@@ -684,7 +450,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 39,
+    "id": 26,
     "type": "limit_inf_sqrt",
     "question": "Tìm \\(\\lim_{x\\to-\\infty}\\dfrac{\\sqrt{x^2+x}}{2x+\\sqrt{x^2+1}}\\).",
     "matrix": null,
@@ -702,7 +468,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 40,
+    "id": 27,
     "type": "limit_inf_sqrt",
     "question": "Tính \\(\\lim_{x\\to+\\infty}\\dfrac{\\sqrt{x^2+x}}{2x+\\sqrt{x^2+1}}\\).",
     "matrix": null,
@@ -720,7 +486,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 41,
+    "id": 28,
     "type": "limit_ratio_roots",
     "question": "Tính \\(\\lim_{x\\to1}\\dfrac{\\sqrt[5]{x}-1}{\\sqrt[3]{x}-1}\\).",
     "matrix": null,
@@ -738,7 +504,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 42,
+    "id": 29,
     "type": "limit_ratio_roots",
     "question": "Tính \\(\\lim_{x\\to1}\\dfrac{\\sqrt[4]{x}-1}{\\sqrt[3]{x}-1}\\).",
     "matrix": null,
@@ -756,7 +522,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 43,
+    "id": 30,
     "type": "limit_inf_sqrt",
     "question": "Tính \\(\\lim_{x\\to-\\infty}\\left(x+\\sqrt{x^2+2x}\\right)\\).",
     "matrix": null,
@@ -774,25 +540,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 44,
-    "type": "limit_indeterminate",
-    "question": "Giới hạn nào sau đây có dạng vô định \\(\\dfrac{0}{0}\\)?",
-    "matrix": null,
-    "options": [
-      "\\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\)",
-      "\\(\\displaystyle\\lim_{x\\to1}\\dfrac{\\sin x}{x}\\)",
-      "\\(\\displaystyle\\lim_{x\\to3}\\dfrac{\\sin x}{x}\\)",
-      "\\(\\displaystyle\\lim_{x\\to2}\\dfrac{\\sin x}{x}\\)"
-    ],
-    "correct": "\\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\)",
-    "solution": "Khi \\(x\\to0\\), tử \\(\\sin x\\to0\\) và mẫu \\(x\\to0\\), nên có dạng \\(0/0\\). Ở các phương án còn lại, mẫu và tử đều tiến tới các giá trị hữu hạn khác 0.",
-    "quick": "Muốn nhận dạng dạng vô định, chỉ cần thay giới hạn vào tử và mẫu, chưa cần tính giới hạn.",
-    "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
-    "difficulty": 1,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 45,
+    "id": 31,
     "type": "limit_parameter",
     "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt{x^2+ax+9}-(x+3)}{x}=-\\dfrac23\\). Giá trị của \\(a\\) bằng",
     "matrix": null,
@@ -810,25 +558,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 46,
-    "type": "limit_indeterminate",
-    "question": "Giới hạn nào sau đây có dạng vô định \\(\\infty-\\infty\\)?",
-    "matrix": null,
-    "options": [
-      "\\(\\displaystyle\\lim_{x\\to+\\infty}(\\sqrt{x^2+x}-x)\\)",
-      "\\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\)",
-      "\\(\\displaystyle\\lim_{x\\to+\\infty}\\dfrac{1}{x}\\)",
-      "\\(\\displaystyle\\lim_{x\\to0^+}x\\ln x\\)"
-    ],
-    "correct": "\\(\\displaystyle\\lim_{x\\to+\\infty}(\\sqrt{x^2+x}-x)\\)",
-    "solution": "Khi \\(x\\to+\\infty\\), cả \\(\\sqrt{x^2+x}\\) và \\(x\\) đều tiến tới \\(+\\infty\\), nên hiệu có dạng \\(\\infty-\\infty\\).",
-    "quick": "Nhận dạng dạng vô định bằng cách xét riêng từng thành phần.",
-    "casio": "CASIO: thay các giá trị rất gần điểm giới hạn ở cả hai phía để kiểm tra xu hướng. Đây chỉ là cách kiểm tra số, không thay thế biến đổi giải tích.",
-    "difficulty": 2,
-    "topic": "Giới hạn & Liên tục"
-  },
-  {
-    "id": 47,
+    "id": 32,
     "type": "limit_parameter",
     "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin(ax)}{x}=6\\). Giá trị của \\(a\\) bằng",
     "matrix": null,
@@ -846,7 +576,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 48,
+    "id": 33,
     "type": "limit_notable",
     "question": "Tính \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt[3]{1+2x}-1}{x}\\).",
     "matrix": null,
@@ -864,7 +594,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 49,
+    "id": 34,
     "type": "limit_parameter",
     "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{e^{ax}-1}{\\sin2x}=3\\). Giá trị \\(a\\) bằng",
     "matrix": null,
@@ -882,7 +612,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 50,
+    "id": 35,
     "type": "limit_infinite",
     "question": "Tính \\(\\displaystyle\\lim_{x\\to+\\infty}x\\left(\\sqrt{x^2+1}-x\\right)\\).",
     "matrix": null,
@@ -900,7 +630,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 51,
+    "id": 36,
     "type": "limit_taylor",
     "question": "Tính \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\ln(1+x)-\\sin x}{x^2}\\).",
     "matrix": null,
@@ -918,7 +648,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 52,
+    "id": 37,
     "type": "limit_notable",
     "question": "Tính \\(\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos3x}{x\\sin2x}\\).",
     "matrix": null,
@@ -936,7 +666,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 53,
+    "id": 38,
     "type": "limit_infinity_form",
     "question": "Tính \\(\\displaystyle\\lim_{x\\to+\\infty}\\left(\\dfrac{x+1}{x-1}\\right)^x\\).",
     "matrix": null,
@@ -954,7 +684,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 54,
+    "id": 39,
     "type": "limit_infinity_form",
     "question": "Tính \\(\\displaystyle\\lim_{x\\to0^+}(\\sin x)^x\\).",
     "matrix": null,
@@ -972,7 +702,7 @@
     "topic": "Giới hạn & Liên tục"
   },
   {
-    "id": 55,
+    "id": 40,
     "type": "limit_two_sided",
     "question": "Có bao nhiêu giá trị thực của \\(a\\) để \\(\\displaystyle\\lim_{x\\to0}\\dfrac{|x|+ax}{x}\\) tồn tại?",
     "matrix": null,
@@ -986,6 +716,366 @@
     "solution": "Khi \\(x\\to0^+\\), biểu thức bằng \\(1+a\\). Khi \\(x\\to0^-\\), biểu thức bằng \\(-1+a\\). Hai giới hạn không thể bằng nhau vì chênh nhau 2, nên không có giá trị \\(a\\) nào.",
     "quick": "Tách giới hạn trái và phải của \\(|x|/x\\).",
     "casio": "CASIO chỉ dùng để kiểm tra số: đặt đơn vị góc RAD, thay các giá trị rất gần điểm giới hạn ở cả hai phía khi cần. Kết luận chính xác vẫn dựa trên biến đổi toán học.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "type": "limit_parameter_trig",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin ax}{\\sin4x}=\\dfrac32\\). Giá trị của \\(a\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(4\\)",
+      "\\(\\dfrac32\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Khi \\(x\\to0\\), \\(\\sin ax\\sim ax\\) và \\(\\sin4x\\sim4x\\). Do đó giới hạn bằng \\(\\dfrac{a}{4}\\). Theo đề \\(\\dfrac{a}{4}=\\dfrac32\\), suy ra \\(a=6\\).",
+    "quick": "\\(\\sin ax/\\sin bx\\to a/b\\). Ở đây \\(a/4=3/2\\Rightarrow a=6\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 41
+  },
+  {
+    "type": "limit_parameter_cos",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos ax}{x^2}=8\\). Tập giá trị của \\(a\\) là",
+    "matrix": null,
+    "options": [
+      "\\(a=\\pm4\\)",
+      "\\(a=4\\)",
+      "\\(a=\\pm2\\)",
+      "\\(a=8\\)"
+    ],
+    "correct": "\\(a=\\pm4\\)",
+    "solution": "Dùng \\(1-\\cos ax\\sim\\dfrac{a^2x^2}{2}\\). Vì vậy giới hạn bằng \\(\\dfrac{a^2}{2}\\). Theo đề \\(\\dfrac{a^2}{2}=8\\Rightarrow a^2=16\\Rightarrow a=\\pm4\\).",
+    "quick": "\\(1-\\cos ax\\sim a^2x^2/2\\). Đặt \\(a^2/2=8\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 42
+  },
+  {
+    "type": "limit_parameter_log",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\ln(1+ax)}{\\sin3x}=2\\). Giá trị của \\(a\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(\\dfrac23\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Khi \\(x\\to0\\), \\(\\ln(1+ax)\\sim ax\\) và \\(\\sin3x\\sim3x\\). Giới hạn bằng \\(\\dfrac{a}{3}\\). Theo đề \\(\\dfrac{a}{3}=2\\), nên \\(a=6\\).",
+    "quick": "\\(\\ln(1+ax)\\sim ax\\), \\(\\sin3x\\sim3x\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 43
+  },
+  {
+    "type": "limit_parameter_exp",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{e^{2x}-1}{\\sin ax}=\\dfrac12\\). Giá trị của \\(a\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Khi \\(x\\to0\\), \\(e^{2x}-1\\sim2x\\), còn \\(\\sin ax\\sim ax\\). Giới hạn bằng \\(\\dfrac{2}{a}\\). Theo đề \\(\\dfrac{2}{a}=\\dfrac12\\), suy ra \\(a=4\\).",
+    "quick": "Tử \\(\\sim2x\\), mẫu \\(\\sim ax\\), nên giới hạn \\(=2/a\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 44
+  },
+  {
+    "type": "limit_parameter_power",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{(1+x)^a-1}{x}=5\\). Giá trị của \\(a\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(1\\)",
+      "\\(\\dfrac15\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Dùng công thức \\((1+x)^a-1\\sim ax\\) khi \\(x\\to0\\). Do đó giới hạn bằng \\(a\\). Theo đề, \\(a=5\\).",
+    "quick": "\\((1+x)^a-1\\sim ax\\), nên giới hạn bằng \\(a\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục",
+    "id": 45
+  },
+  {
+    "type": "limit_parameter_root",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt{1+ax}-1}{x}=2\\). Giá trị của \\(a\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Dùng \\(\\sqrt{1+u}-1\\sim\\dfrac{u}{2}\\). Với \\(u=ax\\), ta có \\(\\sqrt{1+ax}-1\\sim\\dfrac{ax}{2}\\), nên giới hạn bằng \\(\\dfrac{a}{2}\\). Đặt \\(\\dfrac{a}{2}=2\\), suy ra \\(a=4\\).",
+    "quick": "\\(\\sqrt{1+ax}-1\\sim ax/2\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 46
+  },
+  {
+    "type": "limit_parameter_root",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt[3]{1+ax}-1}{x}=3\\). Giá trị của \\(a\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(9\\)",
+      "\\(3\\)",
+      "\\(1\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "Dùng \\((1+u)^{1/3}-1\\sim\\dfrac{u}{3}\\). Với \\(u=ax\\), giới hạn bằng \\(\\dfrac{a}{3}\\). Đặt \\(\\dfrac{a}{3}=3\\), suy ra \\(a=9\\).",
+    "quick": "\\(\\sqrt[3]{1+ax}-1\\sim ax/3\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 47
+  },
+  {
+    "type": "limit_parameter_trig",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\tan ax}{\\sin2x}=4\\). Giá trị của \\(a\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Khi \\(x\\to0\\), \\(\\tan ax\\sim ax\\), \\(\\sin2x\\sim2x\\). Giới hạn bằng \\(\\dfrac{a}{2}\\). Đặt \\(\\dfrac{a}{2}=4\\), được \\(a=8\\).",
+    "quick": "\\(\\tan ax/\\sin2x\\to a/2\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Kết luận chính xác vẫn dựa trên vô cùng bé tương đương, biến đổi đại số hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục",
+    "id": 48
+  },
+  {
+    "id": 49,
+    "type": "limit_parameter_ab_sqrt_second_order",
+    "question": "Với \\(a,b\\in\\mathbb R\\), nếu \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt{1+ax+3x^2}-1-bx}{x^2}=\\dfrac{11}{8}\\) thì giá trị của \\(a^2+4b^2\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Dùng \\(\\sqrt{1+u}=1+\\dfrac{u}{2}-\\dfrac{u^2}{8}+o(u^2)\\), với \\(u=ax+3x^2\\). Khi đó \\(\\sqrt{1+ax+3x^2}=1+\\dfrac{a}{2}x+\\left(\\dfrac32-\\dfrac{a^2}{8}\\right)x^2+o(x^2)\\). Tử số bằng \\(\\left(\\dfrac{a}{2}-b\\right)x+\\left(\\dfrac32-\\dfrac{a^2}{8}\\right)x^2+o(x^2)\\). Để giới hạn hữu hạn cần \\(b=\\dfrac{a}{2}\\). Tiếp theo \\(\\dfrac32-\\dfrac{a^2}{8}=\\dfrac{11}{8}\\), suy ra \\(a^2=1\\). Do đó \\(b^2=\\dfrac14\\), nên \\(a^2+4b^2=1+1=2\\).",
+    "quick": "Triệt tiêu bậc 1: \\(b=a/2\\). Hệ số bậc 2: \\(3/2-a^2/8=11/8\\Rightarrow a^2=1\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 50,
+    "type": "limit_parameter_ab_log_second_order",
+    "question": "Với \\(a,b\\in\\mathbb R\\), nếu \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\ln(1+ax+4x^2)-bx}{x^2}=\\dfrac72\\) thì giá trị của \\(a^2+b^2\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Dùng \\(\\ln(1+u)=u-\\dfrac{u^2}{2}+o(u^2)\\), với \\(u=ax+4x^2\\). Suy ra \\(\\ln(1+ax+4x^2)=ax+\\left(4-\\dfrac{a^2}{2}\\right)x^2+o(x^2)\\). Tử số là \\((a-b)x+\\left(4-\\dfrac{a^2}{2}\\right)x^2+o(x^2)\\). Để giới hạn hữu hạn cần \\(b=a\\). Sau đó \\(4-\\dfrac{a^2}{2}=\\dfrac72\\Rightarrow a^2=1\\). Vì \\(b=a\\), ta có \\(a^2+b^2=2\\).",
+    "quick": "Triệt tiêu bậc 1: \\(b=a\\). Hệ số bậc 2: \\(4-a^2/2=7/2\\Rightarrow a^2=1\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 51,
+    "type": "limit_parameter_ab_exp_second_order",
+    "question": "Với \\(a,b\\in\\mathbb R\\), nếu \\(\\displaystyle\\lim_{x\\to0}\\dfrac{e^{ax+2x^2}-1-bx}{x^2}=5\\) thì giá trị của \\(a^2+b^2\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(8\\)",
+      "\\(10\\)"
+    ],
+    "correct": "\\(12\\)",
+    "solution": "Đặt \\(u=ax+2x^2\\). Ta có \\(e^u=1+u+\\dfrac{u^2}{2}+o(x^2)\\). Do đó \\(e^{ax+2x^2}=1+ax+\\left(2+\\dfrac{a^2}{2}\\right)x^2+o(x^2)\\). Tử số là \\((a-b)x+\\left(2+\\dfrac{a^2}{2}\\right)x^2+o(x^2)\\). Để giới hạn hữu hạn cần \\(b=a\\). Tiếp theo \\(2+\\dfrac{a^2}{2}=5\\Rightarrow a^2=6\\). Vậy \\(b^2=6\\) và \\(a^2+b^2=12\\).",
+    "quick": "Triệt tiêu bậc 1: \\(b=a\\). Hệ số bậc 2: \\(2+a^2/2=5\\Rightarrow a^2=6\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 52,
+    "type": "limit_parameter_ab_sqrt_diff",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt{1+ax}-\\sqrt{1+bx}}{x}=3\\). Giá trị của \\(a-b\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(3\\)",
+      "\\(\\dfrac32\\)",
+      "\\(-6\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Dùng \\(\\sqrt{1+u}=1+\\dfrac{u}{2}+o(u)\\). Khi đó \\(\\sqrt{1+ax}-\\sqrt{1+bx}\\sim\\dfrac{ax}{2}-\\dfrac{bx}{2}=\\dfrac{a-b}{2}x\\). Giới hạn bằng \\(\\dfrac{a-b}{2}\\). Theo đề \\(\\dfrac{a-b}{2}=3\\), suy ra \\(a-b=6\\).",
+    "quick": "Căn bậc hai tạo hệ số \\(1/2\\), nên giới hạn bằng \\((a-b)/2\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 53,
+    "type": "limit_parameter_ab_log_diff",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\ln(1+ax)-\\ln(1+bx)}{x}=4\\) và \\(a+b=10\\). Giá trị của \\(ab\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(21\\)",
+      "\\(24\\)",
+      "\\(25\\)",
+      "\\(18\\)"
+    ],
+    "correct": "\\(21\\)",
+    "solution": "Vì \\(\\ln(1+ax)\\sim ax\\) và \\(\\ln(1+bx)\\sim bx\\), giới hạn đã cho bằng \\(a-b\\). Do đó \\(a-b=4\\). Kết hợp với \\(a+b=10\\), ta được \\(a=7,\\ b=3\\). Vậy \\(ab=21\\).",
+    "quick": "Giới hạn cho \\(a-b=4\\); cộng với \\(a+b=10\\) suy ra \\(a=7,b=3\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 54,
+    "type": "limit_parameter_ab_exp_diff",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{e^{ax}-e^{bx}}{x}=6\\) và \\(a+b=8\\). Giá trị của \\(a^2+b^2\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(50\\)",
+      "\\(64\\)",
+      "\\(36\\)",
+      "\\(40\\)"
+    ],
+    "correct": "\\(50\\)",
+    "solution": "Khai triển \\(e^{ax}=1+ax+o(x)\\), \\(e^{bx}=1+bx+o(x)\\). Do đó giới hạn bằng \\(a-b\\). Ta có hệ \\(a-b=6\\), \\(a+b=8\\). Suy ra \\(a=7,\\ b=1\\). Vậy \\(a^2+b^2=49+1=50\\).",
+    "quick": "Giới hạn cho \\(a-b=6\\); cùng \\(a+b=8\\) suy ra \\(a=7,b=1\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 55,
+    "type": "limit_parameter_ab_infinity_form",
+    "question": "Biết \\(b=2\\) và \\(\\displaystyle\\lim_{x\\to+\\infty}\\left(1+\\dfrac{a}{x}\\right)^{bx}=e^6\\). Giá trị của \\(a+b\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(8\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Dùng công thức \\(\\left(1+\\dfrac{a}{x}\\right)^{bx}\\to e^{ab}\\) khi \\(x\\to+\\infty\\). Theo đề \\(e^{ab}=e^6\\), nên \\(ab=6\\). Vì \\(b=2\\), suy ra \\(a=3\\). Do đó \\(a+b=5\\).",
+    "quick": "Dạng \\(1^\\infty\\): giới hạn là \\(e^{ab}\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 56,
+    "type": "limit_parameter_ab_cuberoot_diff",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt[3]{1+ax}-\\sqrt[3]{1+bx}}{x}=1\\) và \\(a+b=9\\). Giá trị của \\(ab\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(18\\)",
+      "\\(12\\)",
+      "\\(20\\)",
+      "\\(15\\)"
+    ],
+    "correct": "\\(18\\)",
+    "solution": "Dùng \\((1+u)^{1/3}=1+\\dfrac{u}{3}+o(u)\\). Khi đó giới hạn bằng \\(\\dfrac{a-b}{3}\\). Theo đề \\(\\dfrac{a-b}{3}=1\\), nên \\(a-b=3\\). Kết hợp với \\(a+b=9\\), suy ra \\(a=6,\\ b=3\\). Vậy \\(ab=18\\).",
+    "quick": "Căn bậc ba tạo hệ số \\(1/3\\): \\((a-b)/3=1\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 57,
+    "type": "limit_parameter_ab_log_value",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\ln(1+2x)-ax}{x^2}=b\\). Giá trị của \\(a+b\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Khai triển \\(\\ln(1+2x)=2x-2x^2+o(x^2)\\). Tử số bằng \\((2-a)x-2x^2+o(x^2)\\). Để giới hạn hữu hạn cần \\(a=2\\). Khi đó giới hạn bằng \\(b=-2\\). Vậy \\(a+b=2-2=0\\).",
+    "quick": "Triệt tiêu bậc 1: \\(a=2\\). Hệ số bậc 2 còn lại là \\(-2\\), nên \\(b=-2\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 58,
+    "type": "limit_parameter_ab_exp_value",
+    "question": "Biết \\(\\displaystyle\\lim_{x\\to0}\\dfrac{e^{3x}-1-ax}{x^2}=b\\). Giá trị của \\(a+b\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{15}{2}\\)",
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(6\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(\\dfrac{15}{2}\\)",
+    "solution": "Khai triển \\(e^{3x}=1+3x+\\dfrac{9}{2}x^2+o(x^2)\\). Tử số bằng \\((3-a)x+\\dfrac{9}{2}x^2+o(x^2)\\). Để giới hạn hữu hạn cần \\(a=3\\). Khi đó \\(b=\\dfrac{9}{2}\\). Vậy \\(a+b=3+\\dfrac{9}{2}=\\dfrac{15}{2}\\).",
+    "quick": "Triệt tiêu bậc 1: \\(a=3\\). Hệ số bậc 2 là \\(9/2\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 59,
+    "type": "limit_parameter_ab_sqrt_infinity",
+    "question": "Biết \\(b=8\\) và \\(\\displaystyle\\lim_{x\\to+\\infty}\\left(\\sqrt{x^2+ax+b}-x\\right)=3\\). Giá trị của \\(a+b\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(14\\)",
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(14\\)",
+    "solution": "Nhân liên hợp: \\(\\sqrt{x^2+ax+b}-x=\\dfrac{ax+b}{\\sqrt{x^2+ax+b}+x}\\). Khi \\(x\\to+\\infty\\), tử tương đương \\(ax\\), mẫu tương đương \\(2x\\), nên giới hạn bằng \\(\\dfrac{a}{2}\\). Theo đề \\(\\dfrac{a}{2}=3\\), suy ra \\(a=6\\). Vì \\(b=8\\), nên \\(a+b=14\\).",
+    "quick": "Dạng nhớ: \\(\\sqrt{x^2+ax+b}-x\\to a/2\\) khi \\(x\\to+\\infty\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 60,
+    "type": "limit_parameter_ab_sqrt_second_order",
+    "question": "Với \\(a,b\\in\\mathbb R\\), nếu \\(\\displaystyle\\lim_{x\\to0}\\dfrac{\\sqrt{1+ax+5x^2}-1-bx}{x^2}=\\dfrac{17}{8}\\) thì giá trị của \\(a^2+4b^2\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Dùng \\(\\sqrt{1+u}=1+\\dfrac{u}{2}-\\dfrac{u^2}{8}+o(u^2)\\), với \\(u=ax+5x^2\\). Ta có \\(\\sqrt{1+ax+5x^2}=1+\\dfrac{a}{2}x+\\left(\\dfrac52-\\dfrac{a^2}{8}\\right)x^2+o(x^2)\\). Tử số bằng \\(\\left(\\dfrac{a}{2}-b\\right)x+\\left(\\dfrac52-\\dfrac{a^2}{8}\\right)x^2+o(x^2)\\). Để giới hạn hữu hạn cần \\(b=\\dfrac{a}{2}\\). Sau đó \\(\\dfrac52-\\dfrac{a^2}{8}=\\dfrac{17}{8}\\Rightarrow a^2=3\\). Do \\(b^2=a^2/4=3/4\\), nên \\(a^2+4b^2=3+3=6\\).",
+    "quick": "Triệt tiêu bậc 1: \\(b=a/2\\). Hệ số bậc 2: \\(5/2-a^2/8=17/8\\Rightarrow a^2=3\\).",
+    "casio": "CASIO fx-580VNX: Chỉ dùng để kiểm tra số. Đặt máy ở RAD nếu có lượng giác, thay \\(X\\) rất gần điểm giới hạn từ hai phía khi cần. Với bài có tham số, lời giải chính xác vẫn là dùng vô cùng bé tương đương, khai triển hoặc L'Hôpital.",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
   }
