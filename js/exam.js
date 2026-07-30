@@ -31,7 +31,8 @@ const EXAM_DIST = [
   { file: 'nguyen_ham_tich_phan_1bien', n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
   { file: 'tichphan_kep',               n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
   { file: 'tichphan_ba',                n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
-  { file: 'tichphan_duong_green',       n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'tichphan_duong_loai1',       n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
+  { file: 'tichphan_duong_loai2',       n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
   /* III. PHƯƠNG TRÌNH VI PHÂN: 8 CÂU — Nhận biết 1 – Thông hiểu 2 – Vận dụng 5 */
   { file: 'pt_viphan_cap1',             n: 6, diff: { 1: 1, 2: 2, 3: 3 } },
   { file: 'pt_viphan_cap2',             n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
@@ -53,6 +54,8 @@ let examDeadline = 0;   // timestamp ms khi hết giờ
 let examDone = false;
 let examNavCollapsed = false;
 let wrongPage = 0;   // trang hiện tại trong wrong review
+let allPage = 0;      // trang hiện tại trong review toàn bộ (đúng + sai)
+let allFilter = 'all'; // 'all' | 'ok' | 'wrong' — bộ lọc trong review toàn bộ
 
 const EX_LETTERS = ['A', 'B', 'C', 'D'];
 const EX_DIFF_LBL = { 1: 'Nhận biết', 2: 'Thông hiểu', 3: 'Vận dụng' };
@@ -511,7 +514,11 @@ function gradeAndShowResults(timeUsed) {
 
   // Lưu tất cả câu sai vào window để dùng cho phân trang
   window._wrongDetails = details.filter(d => !d.isOk);
+  // Lưu toàn bộ câu (đúng + sai) để xem lại đầy đủ
+  window._allDetails = details;
   wrongPage = 0;
+  allPage = 0;
+  allFilter = 'all';
   saveWrongToBank(details);
 
   // Save last result
@@ -558,6 +565,7 @@ function gradeAndShowResults(timeUsed) {
       <button class="btn" onclick="toggleWrongReview()">
         📖 ${window._wrongDetails.length > 0 ? `Xem ${window._wrongDetails.length} câu sai` : 'Không có câu sai 🎉'}
       </button>
+      <button class="btn" onclick="toggleAllReview()">📋 Xem lại toàn bộ ${total} câu</button>
       <button class="btn" onclick="switchMode('practice')">📚 Luyện theo chủ đề</button>
       ${getWrongBank().length > 0 ? `<button class="btn wrong-bank-action-btn" onclick="startWrongBankSession()">❌ Ôn ${getWrongBank().length} câu sai tích lũy</button>` : ''}
     </div>
@@ -571,6 +579,20 @@ function gradeAndShowResults(timeUsed) {
       <div id="wr-list"></div>
       <div class="wr-pagination" id="wr-pagination"></div>
     </div>` : ''}
+
+    <div class="wrong-review" id="all-review" style="display:none">
+      <div class="wr-header">
+        <div class="wr-title">📋 Toàn bộ ${total} câu (đúng + sai)</div>
+        <div class="wr-page-info" id="all-page-info"></div>
+      </div>
+      <div class="wr-filter" id="all-filter-row" style="display:flex;gap:8px;margin-bottom:10px">
+        <button class="btn primary" id="all-filter-all" onclick="setAllFilter('all')">Tất cả</button>
+        <button class="btn" id="all-filter-ok" onclick="setAllFilter('ok')">✅ Chỉ đúng</button>
+        <button class="btn" id="all-filter-wrong" onclick="setAllFilter('wrong')">❌ Chỉ sai</button>
+      </div>
+      <div id="all-list"></div>
+      <div class="wr-pagination" id="all-pagination"></div>
+    </div>
   `;
 
   if (window._wrongDetails.length > 0) renderWrongPage(0);
@@ -621,7 +643,74 @@ function toggleWrongReview() {
   if (!el) return;
   const isHidden = el.style.display === 'none';
   el.style.display = isHidden ? 'block' : 'none';
-  if (isHidden) renderWrongPage(0);
+  if (isHidden) {
+    renderWrongPage(0);
+    setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+  }
+}
+
+function setAllFilter(filter) {
+  allFilter = filter;
+  ['all', 'ok', 'wrong'].forEach(f => {
+    const btn = document.getElementById(`all-filter-${f}`);
+    if (btn) btn.className = f === filter ? 'btn primary' : 'btn';
+  });
+  renderAllPage(0);
+}
+
+function renderAllPage(page) {
+  allPage = page;
+  const full = window._allDetails || [];
+  const all = allFilter === 'ok' ? full.filter(d => d.isOk)
+    : allFilter === 'wrong' ? full.filter(d => !d.isOk)
+      : full;
+  const total = all.length;
+  const pages = Math.max(1, Math.ceil(total / WRONG_PAGE));
+  const start = page * WRONG_PAGE;
+  const slice = all.slice(start, start + WRONG_PAGE);
+
+  const listEl = document.getElementById('all-list');
+  const pgEl = document.getElementById('all-page-info');
+  const pgnEl = document.getElementById('all-pagination');
+  if (!listEl) return;
+
+  pgEl.textContent = total === 0
+    ? 'Không có câu nào phù hợp'
+    : `Trang ${page + 1} / ${pages} (${start + 1}–${Math.min(start + WRONG_PAGE, total)} / ${total})`;
+
+  listEl.innerHTML = slice.map(({ q, given, isOk, i }) => {
+    return `<div class="wr-item ${isOk ? 'right' : 'wrong'}" style="border-left:3px solid ${isOk ? 'var(--green)' : 'var(--red)'}">
+      <div class="wr-num">Câu ${i + 1} · ${q.topic || q._src || ''} · ${EX_DIFF_LBL[q.difficulty] || ''} · ${isOk ? '✅ Đúng' : '❌ Sai'}</div>
+      <div class="wr-q">${q.question}</div>
+      <div class="wr-ans">
+        <span class="ans-tag ans-your">Bạn: ${given || '(chưa trả lời)'}</span>
+        ${isOk ? '' : `<span class="ans-tag ans-correct">Đúng: ${q.correct}</span>`}
+      </div>
+    </div>`;
+  }).join('');
+
+  // Pagination buttons
+  let pgHtml = '';
+  if (pages > 1) {
+    if (page > 0) pgHtml += `<button class="btn" onclick="renderAllPage(${page - 1})">← Trang trước</button>`;
+    pgHtml += `<span style="font-size:13px;color:var(--muted)">${page + 1}/${pages}</span>`;
+    if (page < pages - 1) pgHtml += `<button class="btn primary" onclick="renderAllPage(${page + 1})">Trang sau →</button>`;
+  }
+  pgnEl.innerHTML = pgHtml;
+
+  typesetDebounced(listEl, 150);
+}
+
+function toggleAllReview() {
+  const el = document.getElementById('all-review');
+  if (!el) return;
+  const isHidden = el.style.display === 'none';
+  el.style.display = isHidden ? 'block' : 'none';
+  if (isHidden) {
+    allFilter = 'all';
+    renderAllPage(0);
+    setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+  }
 }
 
 /* ================================================================
