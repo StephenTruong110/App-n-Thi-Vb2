@@ -199,8 +199,8 @@
   },
   {
     "id": 12,
-    "type": "span_membership",
-    "question": "Véc tơ \\(w=(5;1)\\) có thuộc \\(\\operatorname{span}\\{(1;1),(2;-1)\\}\\) không?",
+    "type": "generated_space_membership",
+    "question": "Véc tơ \\(w=(5;1)\\) có biểu diễn được dưới dạng tổ hợp tuyến tính của \\(\\{(1;1),(2;-1)\\}\\) không?",
     "matrix": null,
     "options": [
       "Có",
@@ -209,16 +209,16 @@
       "Không đủ dữ kiện"
     ],
     "correct": "Có",
-    "solution": "Giải \\(a(1;1)+b(2;-1)=(5;1)\\) được \\(a=\\frac73\\), \\(b=\\frac43\\), nên \\(w\\) thuộc không gian sinh.",
-    "quick": "Hai véc tơ sinh không tỉ lệ nên chúng sinh toàn bộ \\(\\mathbb{R}^2\\).",
+    "solution": "Giải \\(a(1;1)+b(2;-1)=(5;1)\\) được \\(a=\\dfrac73\\), \\(b=\\dfrac43\\). Vậy \\(w\\) biểu diễn được dưới dạng tổ hợp tuyến tính của hai véc tơ đã cho.",
+    "quick": "Hai véc tơ \\((1;1)\\) và \\((2;-1)\\) không tỉ lệ nên sinh ra toàn bộ \\(\\mathbb R^2\\).",
     "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
     "difficulty": 2,
     "topic": "Không gian véc tơ"
   },
   {
     "id": 13,
-    "type": "span_membership",
-    "question": "Véc tơ nào không thuộc \\(\\operatorname{span}\\{(1;0;1),(0;1;1)\\}\\)?",
+    "type": "generated_space_membership",
+    "question": "Véc tơ nào không biểu diễn được dưới dạng tổ hợp tuyến tính của \\(\\{(1;0;1),(0;1;1)\\}\\)?",
     "matrix": null,
     "options": [
       "\\((1;1;2)\\)",
@@ -227,8 +227,8 @@
       "\\((3;2;5)\\)"
     ],
     "correct": "\\((0;0;1)\\)",
-    "solution": "Mọi véc tơ trong không gian sinh có dạng \\((a;b;a+b)\\). Ba phương án đầu, hai, tư lần lượt thỏa \\(z=x+y\\), riêng \\((0;0;1)\\) không thỏa.",
-    "quick": "Đặc trưng của không gian sinh là \\(z=x+y\\).",
+    "solution": "Mọi tổ hợp tuyến tính của hai véc tơ đã cho có dạng \\((a;b;a+b)\\). Do đó điều kiện cần thỏa là \\(z=x+y\\). Riêng \\((0;0;1)\\) không thỏa điều kiện này.",
+    "quick": "Điều kiện biểu diễn được là \\(z=x+y\\).",
     "casio": "Có thể nhập các véc tơ làm hàng/cột của một ma trận. Với hệ 2 hoặc 3 véc tơ vuông, kiểm tra định thức: det≠0 thì độc lập tuyến tính; det=0 thì xét tiếp hạng.",
     "difficulty": 3,
     "topic": "Không gian véc tơ"
@@ -505,8 +505,8 @@
   },
   {
     "id": 29,
-    "type": "span_condition",
-    "question": "Cho \\(W=\\operatorname{span}\\{(1;0;1),(0;1;1)\\}\\). Véc tơ \\((a;b;c)\\) thuộc \\(W\\) khi và chỉ khi",
+    "type": "generated_space_condition",
+    "question": "Cho \\(W\\) là không gian sinh bởi hai véc tơ \\((1;0;1)\\) và \\((0;1;1)\\). Véc tơ \\((a;b;c)\\) thuộc \\(W\\) khi và chỉ khi",
     "matrix": null,
     "options": [
       "\\(c=a+b\\)",
@@ -515,7 +515,7 @@
       "\\(a+b+c=0\\)"
     ],
     "correct": "\\(c=a+b\\)",
-    "solution": "Mọi véc tơ trong \\(W\\) có dạng \\(a(1,0,1)+b(0,1,1)=(a,b,a+b)\\).",
+    "solution": "Mọi véc tơ trong \\(W\\) có dạng \\(\\alpha(1;0;1)+\\beta(0;1;1)=(\\alpha;\\beta;\\alpha+\\beta)\\). Vì vậy \\(c=a+b\\).",
     "quick": "Viết tổ hợp tuyến tính tổng quát của hai véc tơ sinh.",
     "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
     "difficulty": 3,
@@ -559,8 +559,8 @@
   },
   {
     "id": 32,
-    "type": "span_parameter_membership",
-    "question": "Véc tơ \\(w=(2;3;m)\\) thuộc \\(\\operatorname{span}\\{(1;0;1),(0;1;1)\\}\\) khi",
+    "type": "generated_space_parameter_membership",
+    "question": "Véc tơ \\(w=(2;3;m)\\) biểu diễn được dưới dạng tổ hợp tuyến tính của \\(\\{(1;0;1),(0;1;1)\\}\\) khi",
     "matrix": null,
     "options": [
       "\\(m=5\\)",
@@ -569,7 +569,7 @@
       "\\(m=-1\\)"
     ],
     "correct": "\\(m=5\\)",
-    "solution": "Tổ hợp tạo hai tọa độ đầu buộc hệ số là 2 và 3; tọa độ thứ ba bằng \\(2+3=5\\).",
+    "solution": "Hai tọa độ đầu buộc hệ số lần lượt là \\(2\\) và \\(3\\). Khi đó tọa độ thứ ba phải bằng \\(2+3=5\\). Vì vậy \\(m=5\\).",
     "quick": "Hai tọa độ đầu xác định ngay các hệ số tổ hợp.",
     "casio": "Đưa các véc tơ thành cột của ma trận. Nếu là ma trận vuông, det≠0 thì độc lập; det=0 phải xét tiếp hạng hoặc giải hệ hệ số.",
     "difficulty": 3,
@@ -649,8 +649,8 @@
   },
   {
     "id": 37,
-    "type": "span_dimension",
-    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{(1,2,1,2),(2,4,2,4),(1,1,0,m)\\}\\). Tìm \\(m\\) để \\(\\dim\\operatorname{span}(S)=2\\).",
+    "type": "generated_space_dimension",
+    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{(1,2,1,2),(2,4,2,4),(1,1,0,m)\\}\\). Tìm \\(m\\) để không gian sinh bởi \\(S\\) có số chiều bằng \\(2\\).",
     "matrix": null,
     "options": [
       "Với mọi \\(m\\)",
@@ -659,8 +659,8 @@
       "Không tồn tại \\(m\\)"
     ],
     "correct": "Với mọi \\(m\\)",
-    "solution": "Vector thứ hai bằng 2 lần vector thứ nhất. Vector thứ ba không thể là bội của vector thứ nhất vì tọa độ thứ hai không phù hợp. Do đó hạng của hệ luôn bằng 2 với mọi \\(m\\).",
-    "quick": "Một vector là bội của vector khác; vector còn lại không cùng phương.",
+    "solution": "Véc tơ thứ hai bằng \\(2\\) lần véc tơ thứ nhất. Véc tơ thứ ba không thể là bội của véc tơ thứ nhất vì tọa độ thứ hai không phù hợp. Do đó hạng của hệ luôn bằng \\(2\\), nên không gian sinh bởi \\(S\\) luôn có số chiều bằng \\(2\\).",
+    "quick": "Một véc tơ là bội của véc tơ khác; véc tơ còn lại không cùng phương.",
     "casio": "CASIO fx-580VNX: Với 2 hoặc 3 vector vuông, nhập các vector làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính, lập hệ theo từng tọa độ rồi dùng Equation/Simul để kiểm tra hệ số.",
     "difficulty": 3,
     "topic": "Không gian véc tơ"
@@ -685,7 +685,7 @@
   },
   {
     "id": 39,
-    "type": "span_dimension_2",
+    "type": "generated_space_dimension",
     "question": "Tìm số chiều của không gian con sinh bởi \\(S=\\{(1,1,1,1),(1,2,3,4),(2,3,4,5)\\}\\subset\\mathbb R^4\\).",
     "matrix": null,
     "options": [
@@ -793,8 +793,8 @@
   },
   {
     "id": 45,
-    "type": "span_dimension_group",
-    "question": "Với \\(S=\\{(1,-1,2),(2,1,1),(3,0,3)\\}\\), số chiều của \\(\\operatorname{span}(S)\\) bằng",
+    "type": "generated_space_dimension_group",
+    "question": "Với \\(S=\\{(1,-1,2),(2,1,1),(3,0,3)\\}\\), số chiều của không gian sinh bởi \\(S\\) bằng",
     "matrix": null,
     "options": [
       "2",
@@ -803,8 +803,8 @@
       "0"
     ],
     "correct": "2",
-    "solution": "Hai vector đầu không tỉ lệ nên độc lập. Vector thứ ba bằng tổng hai vector đầu, nên không làm tăng hạng. Vì vậy \\(\\dim\\operatorname{span}(S)=2\\).",
-    "quick": "Hạng của hệ là số vector độc lập nhiều nhất.",
+    "solution": "Hai véc tơ đầu không tỉ lệ nên độc lập. Véc tơ thứ ba bằng tổng hai véc tơ đầu, nên không làm tăng hạng. Vì vậy không gian sinh bởi \\(S\\) có số chiều bằng \\(2\\).",
+    "quick": "Số chiều của không gian sinh bằng hạng của hệ véc tơ.",
     "casio": "CASIO fx-580VNX: Với 2 hoặc 3 vector vuông, nhập các vector làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính, lập hệ theo từng tọa độ rồi dùng Equation/Simul để kiểm tra hệ số.",
     "difficulty": 2,
     "topic": "Không gian véc tơ"
@@ -847,8 +847,8 @@
   },
   {
     "id": 48,
-    "type": "span_membership",
-    "question": "Véc tơ \\(w=(2;5;1)\\) có thuộc \\(\\operatorname{span}\\{(1;2;0),(0;1;1)\\}\\) không?",
+    "type": "generated_space_membership",
+    "question": "Véc tơ \\(w=(2;5;1)\\) có biểu diễn được dưới dạng tổ hợp tuyến tính của \\(\\{(1;2;0),(0;1;1)\\}\\) không?",
     "matrix": null,
     "options": [
       "Có",
@@ -857,7 +857,7 @@
       "Không đủ dữ kiện"
     ],
     "correct": "Có",
-    "solution": "Ta cần \\(a(1;2;0)+b(0;1;1)=(2;5;1)\\). Từ tọa độ thứ nhất được \\(a=2\\), từ tọa độ thứ ba được \\(b=1\\). Khi đó tọa độ thứ hai là \\(2a+b=4+1=5\\), đúng với \\(w\\). Vậy \\(w\\) thuộc không gian sinh.",
+    "solution": "Ta cần \\(a(1;2;0)+b(0;1;1)=(2;5;1)\\). Từ tọa độ thứ nhất được \\(a=2\\), từ tọa độ thứ ba được \\(b=1\\). Khi đó tọa độ thứ hai là \\(2a+b=4+1=5\\), đúng với \\(w\\). Vậy \\(w\\) biểu diễn được dưới dạng tổ hợp tuyến tính của hai véc tơ đã cho.",
     "quick": "Với \\(a=2,b=1\\), ta có \\(2(1;2;0)+(0;1;1)=(2;5;1)\\).",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 2,
@@ -865,8 +865,8 @@
   },
   {
     "id": 49,
-    "type": "span_condition",
-    "question": "Cho \\(W=\\operatorname{span}\\{(1;0;2),(0;1;-1)\\}\\). Véc tơ \\((x;y;z)\\) thuộc \\(W\\) khi và chỉ khi",
+    "type": "generated_space_condition",
+    "question": "Cho \\(W\\) là không gian sinh bởi hai véc tơ \\((1;0;2)\\) và \\((0;1;-1)\\). Véc tơ \\((x;y;z)\\) thuộc \\(W\\) khi và chỉ khi",
     "matrix": null,
     "options": [
       "\\(z=2x-y\\)",
@@ -1020,7 +1020,7 @@
     ],
     "correct": "\\((0;0;1)\\)",
     "solution": "Hai véc tơ đã cho sinh mặt phẳng \\(z=0\\). Cần thêm một véc tơ không nằm trong mặt phẳng đó để đủ ba véc tơ độc lập trong \\(\\mathbb R^3\\). Véc tơ \\((0;0;1)\\) thỏa mãn.",
-    "quick": "Thêm véc tơ không thuộc span của hai véc tơ ban đầu.",
+    "quick": "Thêm véc tơ không biểu diễn được từ hệ của hai véc tơ ban đầu.",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 2,
     "topic": "Cơ sở"
@@ -1045,8 +1045,8 @@
   },
   {
     "id": 59,
-    "type": "basis_from_span",
-    "question": "Cho \\(S=\\{u_1=(1;0;1),u_2=(0;1;1),u_3=(1;1;2),u_4=(0;0;1)\\}\\). Một cơ sở của \\(\\operatorname{span}(S)\\) là",
+    "type": "basis_from_generated_system",
+    "question": "Cho \\(S=\\{u_1=(1;0;1),u_2=(0;1;1),u_3=(1;1;2),u_4=(0;0;1)\\}\\). Một cơ sở của không gian sinh bởi \\(S\\) là",
     "matrix": null,
     "options": [
       "\\(\\{u_1,u_2,u_4\\}\\)",
@@ -1055,7 +1055,7 @@
       "\\(\\{u_1,u_3\\}\\)"
     ],
     "correct": "\\(\\{u_1,u_2,u_4\\}\\)",
-    "solution": "Ta có \\(u_3=u_1+u_2\\), nên \\(u_3\\) không cần giữ trong cơ sở. Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính vì ma trận có các véc tơ này làm hàng có định thức khác 0. Vì vậy \\(\\{u_1,u_2,u_4\\}\\) là một cơ sở của \\(\\operatorname{span}(S)\\).",
+    "solution": "Ta có \\(u_3=u_1+u_2\\), nên \\(u_3\\) không cần giữ trong cơ sở. Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính vì ma trận có các véc tơ này làm hàng có định thức khác \\(0\\). Vì vậy \\(\\{u_1,u_2,u_4\\}\\) là một cơ sở của không gian sinh bởi \\(S\\).",
     "quick": "Loại véc tơ phụ thuộc \\(u_3=u_1+u_2\\), rồi giữ một hệ độc lập tối đại.",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 3,
@@ -1073,8 +1073,8 @@
       "\\((2;1;1)\\)"
     ],
     "correct": "\\((1;3;1)\\)",
-    "solution": "Mọi tổ hợp của hai véc tơ trong \\(S\\) có dạng \\(a(1;2;0)+b(0;1;1)=(a;2a+b;b)\\). Do đó điều kiện thuộc span là \\(y=2x+z\\). Véc tơ \\((1;3;1)\\) thỏa \\(3=2\\cdot1+1\\), nên thuộc span của \\(S\\) và không làm hạng tăng.",
-    "quick": "Thêm véc tơ nằm trong span cũ thì hạng không tăng.",
+    "solution": "Mọi tổ hợp của hai véc tơ trong \\(S\\) có dạng \\(a(1;2;0)+b(0;1;1)=(a;2a+b;b)\\). Do đó điều kiện biểu diễn được từ hai véc tơ ban đầu là \\(y=2x+z\\). Véc tơ \\((1;3;1)\\) thỏa \\(3=2\\cdot1+1\\), nên thêm véc tơ này không làm hạng tăng.",
+    "quick": "Thêm véc tơ biểu diễn được từ hệ cũ thì hạng không tăng.",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 3,
     "topic": "Hạng hệ véc tơ"
@@ -1099,7 +1099,7 @@
   },
   {
     "id": 62,
-    "type": "span_dimension",
+    "type": "generated_space_dimension",
     "question": "Tìm số chiều của không gian sinh bởi \\(S=\\{(1;0;1;0),(0;1;0;1),(1;1;1;1),(0;0;1;1)\\}\\subset\\mathbb R^4\\).",
     "matrix": null,
     "options": [
@@ -1109,7 +1109,7 @@
       "\\(1\\)"
     ],
     "correct": "\\(3\\)",
-    "solution": "Gọi \\(u_1=(1;0;1;0)\\), \\(u_2=(0;1;0;1)\\), \\(u_3=(1;1;1;1)\\), \\(u_4=(0;0;1;1)\\). Ta có \\(u_3=u_1+u_2\\). Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính, nên \\(\\dim\\operatorname{span}(S)=3\\).",
+    "solution": "Gọi \\(u_1=(1;0;1;0)\\), \\(u_2=(0;1;0;1)\\), \\(u_3=(1;1;1;1)\\), \\(u_4=(0;0;1;1)\\). Ta có \\(u_3=u_1+u_2\\). Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính, nên không gian sinh bởi \\(S\\) có số chiều bằng \\(3\\).",
     "quick": "Loại \\(u_3=u_1+u_2\\), còn lại \\(u_1,u_2,u_4\\) độc lập.",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập. Với tổ hợp tuyến tính hoặc tọa độ theo cơ sở, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 3,
@@ -1206,8 +1206,8 @@
     "id": 67
   },
   {
-    "type": "span_membership",
-    "question": "Véc tơ \\(w=(1;2;1)\\) có thuộc \\(\\operatorname{span}\\{(1;2;0),(0;1;1)\\}\\) không?",
+    "type": "generated_space_membership",
+    "question": "Véc tơ \\(w=(1;2;1)\\) có biểu diễn được dưới dạng tổ hợp tuyến tính của \\(\\{(1;2;0),(0;1;1)\\}\\) không?",
     "matrix": null,
     "options": [
       "Không",
@@ -1216,16 +1216,16 @@
       "Không đủ dữ kiện"
     ],
     "correct": "Không",
-    "solution": "Mọi véc tơ trong không gian sinh có dạng \\(a(1;2;0)+b(0;1;1)=(a;2a+b;b)\\). Với \\(w=(1;2;1)\\), từ tọa độ thứ nhất \\(a=1\\), từ tọa độ thứ ba \\(b=1\\), khi đó tọa độ thứ hai phải là \\(2a+b=3\\), không phải \\(2\\). Vậy \\(w\\) không thuộc span đã cho.",
-    "quick": "Điều kiện thuộc span là \\(y=2x+z\\). Với \\(w\\), \\(2\\ne2\\cdot1+1\\).",
+    "solution": "Mọi tổ hợp tuyến tính của hai véc tơ đã cho có dạng \\(a(1;2;0)+b(0;1;1)=(a;2a+b;b)\\). Với \\(w=(1;2;1)\\), từ tọa độ thứ nhất \\(a=1\\), từ tọa độ thứ ba \\(b=1\\), khi đó tọa độ thứ hai phải là \\(2a+b=3\\), không phải \\(2\\). Vậy \\(w\\) không biểu diễn được từ hai véc tơ đã cho.",
+    "quick": "Điều kiện biểu diễn được là \\(y=2x+z\\). Với \\(w\\), \\(2\\ne2\\cdot1+1\\).",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập tuyến tính. Với tọa độ hoặc tổ hợp tuyến tính, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 2,
     "topic": "Không gian sinh",
     "id": 68
   },
   {
-    "type": "span_condition",
-    "question": "Cho \\(W=\\operatorname{span}\\{(1;1;0),(0;1;2)\\}\\). Véc tơ \\((x;y;z)\\) thuộc \\(W\\) khi và chỉ khi",
+    "type": "generated_space_condition",
+    "question": "Cho \\(W\\) là không gian sinh bởi hai véc tơ \\((1;1;0)\\) và \\((0;1;2)\\). Véc tơ \\((x;y;z)\\) thuộc \\(W\\) khi và chỉ khi",
     "matrix": null,
     "options": [
       "\\(z=2(y-x)\\)",
@@ -1433,7 +1433,7 @@
     ],
     "correct": "\\((0;0;1)\\)",
     "solution": "Hai véc tơ đã cho đều có tọa độ thứ ba bằng 0, nên chúng sinh một phần của mặt phẳng \\(z=0\\). Để tạo cơ sở của \\(\\mathbb R^3\\), cần thêm một véc tơ không nằm trong mặt phẳng đó. Véc tơ \\((0;0;1)\\) thỏa mãn.",
-    "quick": "Thêm véc tơ không thuộc span của hệ ban đầu.",
+    "quick": "Thêm véc tơ không biểu diễn được từ hệ của hệ ban đầu.",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập tuyến tính. Với tọa độ hoặc tổ hợp tuyến tính, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 2,
     "topic": "Cơ sở",
@@ -1458,8 +1458,8 @@
     "id": 81
   },
   {
-    "type": "span_dimension",
-    "question": "Tìm số chiều của \\(\\operatorname{span}(S)\\), với \\(S=\\{(1;0;1;0),(0;1;0;1),(1;1;1;1),(0;0;1;1)\\}\\subset\\mathbb R^4\\).",
+    "type": "generated_space_dimension",
+    "question": "Với \\(S=\\{(1;0;1;0),(0;1;0;1),(1;1;1;1),(0;0;1;1)\\}\\subset\\mathbb R^4\\), hạng của hệ véc tơ \\(S\\) bằng",
     "matrix": null,
     "options": [
       "\\(3\\)",
@@ -1468,8 +1468,8 @@
       "\\(1\\)"
     ],
     "correct": "\\(3\\)",
-    "solution": "Gọi \\(u_1=(1;0;1;0)\\), \\(u_2=(0;1;0;1)\\), \\(u_3=(1;1;1;1)\\), \\(u_4=(0;0;1;1)\\). Ta có \\(u_3=u_1+u_2\\). Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính, nên \\(\\dim\\operatorname{span}(S)=3\\).",
-    "quick": "Loại \\(u_3=u_1+u_2\\); còn \\(u_1,u_2,u_4\\) độc lập.",
+    "solution": "Gọi \\(u_1=(1;0;1;0)\\), \\(u_2=(0;1;0;1)\\), \\(u_3=(1;1;1;1)\\), \\(u_4=(0;0;1;1)\\). Ta có \\(u_3=u_1+u_2\\). Ba véc tơ \\(u_1,u_2,u_4\\) độc lập tuyến tính, nên hạng của hệ \\(S\\) bằng \\(3\\).",
+    "quick": "Hạng của hệ bằng số véc tơ độc lập tuyến tính nhiều nhất lấy được từ hệ.",
     "casio": "CASIO fx-580VNX: Với hệ 2 hoặc 3 véc tơ vuông, nhập các véc tơ làm cột của MatA rồi dùng det(MatA) để kiểm tra độc lập tuyến tính. Với tọa độ hoặc tổ hợp tuyến tính, lập hệ theo từng tọa độ rồi dùng Equation/Simultaneous để kiểm tra nghiệm.",
     "difficulty": 3,
     "topic": "Số chiều không gian sinh",
@@ -1528,5 +1528,365 @@
     "difficulty": 3,
     "topic": "Cơ sở không gian con",
     "id": 85
+  },
+  {
+    "type": "count_independent_subsets_advanced",
+    "question": "Trong \\(\\mathbb R^3\\), cho \\(S=\\{e_1,e_2,e_3,e_1+e_2\\}\\). Có bao nhiêu hệ con khác rỗng của \\(S\\) độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "13",
+      "14",
+      "12",
+      "15"
+    ],
+    "correct": "13",
+    "solution": "Có \\(4\\) hệ một phần tử và \\(6\\) hệ hai phần tử đều độc lập. Với hệ ba phần tử, chỉ \\(\\{e_1,e_2,e_1+e_2\\}\\) phụ thuộc; ba hệ ba phần tử còn lại độc lập. Hệ bốn phần tử phụ thuộc vì nằm trong \\(\\mathbb R^3\\). Tổng số hệ con khác rỗng độc lập tuyến tính là \\(4+6+3=13\\).",
+    "quick": "Đếm \\(1\\) phần tử, \\(2\\) phần tử, rồi xét các bộ ba.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 86
+  },
+  {
+    "id": 87,
+    "type": "count_independent_subsets_advanced",
+    "question": "Trong \\(\\mathbb R^3\\), cho \\(S=\\{e_1,e_2,e_3,e_1+e_2-e_3\\}\\). Có bao nhiêu hệ con khác rỗng của \\(S\\) độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "14",
+      "13",
+      "15",
+      "11"
+    ],
+    "correct": "14",
+    "solution": "Có \\(4\\) hệ một phần tử và \\(6\\) hệ hai phần tử đều độc lập. Mọi hệ ba phần tử cũng độc lập vì nếu chọn véc tơ \\(e_1+e_2-e_3\\) cùng hai véc tơ cơ sở thì vẫn còn một thành phần theo véc tơ cơ sở bị thiếu. Hệ bốn phần tử phụ thuộc vì có \\(4\\) véc tơ trong \\(\\mathbb R^3\\). Vậy số hệ con độc lập là \\(4+6+4=14\\).",
+    "quick": "Mọi bộ ba đều độc lập; chỉ bộ bốn phụ thuộc.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập"
+  },
+  {
+    "type": "count_independent_subsets_advanced",
+    "question": "Cho \\(u_1,u_2,u_3\\) độc lập tuyến tính trong \\(\\mathbb R^3\\). Với \\(S=\\{u_1,u_2,u_3,u_1+u_2,u_1+u_2+u_3\\}\\), số hệ con khác rỗng độc lập tuyến tính của \\(S\\) là",
+    "matrix": null,
+    "options": [
+      "23",
+      "24",
+      "22",
+      "25"
+    ],
+    "correct": "23",
+    "solution": "Có \\(5\\) hệ một phần tử và \\(10\\) hệ hai phần tử đều độc lập. Trong \\(10\\) hệ ba phần tử, có hai hệ phụ thuộc là \\(\\{u_1,u_2,u_1+u_2\\}\\) và \\(\\{u_3,u_1+u_2,u_1+u_2+u_3\\}\\). Do đó có \\(8\\) hệ ba phần tử độc lập. Các hệ có từ \\(4\\) véc tơ trở lên đều phụ thuộc trong \\(\\mathbb R^3\\). Tổng là \\(5+10+8=23\\).",
+    "quick": "Tổng \\(5+10+8=23\\). Cẩn thận hai bộ ba phụ thuộc.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 88
+  },
+  {
+    "type": "count_independent_subsets_advanced",
+    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{e_1,e_2,e_3,e_4,e_1+e_2\\}\\). Có bao nhiêu hệ con khác rỗng độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "27",
+      "28",
+      "26",
+      "30"
+    ],
+    "correct": "27",
+    "solution": "Có \\(5\\) hệ một phần tử và \\(10\\) hệ hai phần tử. Với hệ ba phần tử, chỉ \\(\\{e_1,e_2,e_1+e_2\\}\\) phụ thuộc, nên có \\(9\\) hệ độc lập. Với hệ bốn phần tử, có \\(3\\) hệ độc lập. Hệ năm phần tử phụ thuộc. Tổng là \\(5+10+9+3=27\\).",
+    "quick": "Trong các bộ ba chỉ loại \\(\\{e_1,e_2,e_1+e_2\\}\\); xét tiếp các bộ bốn.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 89
+  },
+  {
+    "type": "count_independent_subsets_with_zero",
+    "question": "Trong \\(\\mathbb R^2\\), cho \\(S=\\{0,e_1,e_2,e_1+e_2\\}\\). Có bao nhiêu hệ con khác rỗng độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "6",
+      "7",
+      "5",
+      "4"
+    ],
+    "correct": "6",
+    "solution": "Mọi hệ con chứa véc tơ \\(0\\) đều phụ thuộc. Trong ba véc tơ khác \\(0\\), có \\(3\\) hệ một phần tử và \\(3\\) cặp độc lập. Bộ ba \\(\\{e_1,e_2,e_1+e_2\\}\\) phụ thuộc trong \\(\\mathbb R^2\\). Vậy có \\(3+3=6\\) hệ con độc lập.",
+    "quick": "Loại tất cả hệ con chứa véc tơ \\(0\\).",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 90
+  },
+  {
+    "type": "count_independent_subsets_rank2",
+    "question": "Trong \\(\\mathbb R^3\\), cho \\(S=\\{(1;0;0),(0;1;0),(1;1;0),(1;-1;0)\\}\\). Có bao nhiêu hệ con khác rỗng độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "10",
+      "9",
+      "11",
+      "12"
+    ],
+    "correct": "10",
+    "solution": "Cả bốn véc tơ đều nằm trong mặt phẳng \\(z=0\\), nên không có hệ ba véc tơ độc lập. Có \\(4\\) hệ một phần tử và \\(6\\) cặp; không có cặp nào gồm hai véc tơ tỉ lệ. Vậy có \\(4+6=10\\) hệ con độc lập.",
+    "quick": "Hạng của hệ bằng \\(2\\), nên chỉ đếm hệ một phần tử và hai phần tử.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 91
+  },
+  {
+    "type": "count_independent_subsets_proportional_pair",
+    "question": "Trong \\(\\mathbb R^3\\), cho \\(S=\\{e_1,e_2,e_3,2e_1\\}\\). Có bao nhiêu hệ con khác rỗng độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "11",
+      "12",
+      "10",
+      "13"
+    ],
+    "correct": "11",
+    "solution": "Có \\(4\\) hệ một phần tử. Trong \\(6\\) cặp, chỉ cặp \\(\\{e_1,2e_1\\}\\) phụ thuộc, nên có \\(5\\) cặp độc lập. Trong \\(4\\) bộ ba, hai bộ độc lập là \\(\\{e_1,e_2,e_3\\}\\) và \\(\\{2e_1,e_2,e_3\\}\\). Hệ bốn phần tử phụ thuộc. Tổng là \\(4+5+2=11\\).",
+    "quick": "Cặp tỉ lệ làm mất một cặp và hai bộ ba.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 92
+  },
+  {
+    "type": "count_independent_subsets_r4_full",
+    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{e_1,e_2,e_3,e_4,e_1+e_2+e_3+e_4\\}\\). Có bao nhiêu hệ con khác rỗng độc lập tuyến tính?",
+    "matrix": null,
+    "options": [
+      "30",
+      "31",
+      "29",
+      "26"
+    ],
+    "correct": "30",
+    "solution": "Mọi hệ con có từ \\(1\\) đến \\(4\\) véc tơ đều độc lập tuyến tính. Chỉ hệ \\(5\\) véc tơ phụ thuộc vì nằm trong \\(\\mathbb R^4\\). Do đó số hệ con độc lập là \\(2^5-1-1=30\\).",
+    "quick": "Tất cả hệ con khác rỗng trừ hệ gồm đủ \\(5\\) véc tơ.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 93
+  },
+  {
+    "type": "rank_vector_system_advanced",
+    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{(1;2;0;1),(2;4;0;2),(0;1;1;0),(1;3;1;1)\\}\\). Hạng của hệ véc tơ \\(S\\) bằng",
+    "matrix": null,
+    "options": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "correct": "2",
+    "solution": "Gọi các véc tơ lần lượt là \\(u_1,u_2,u_3,u_4\\). Ta có \\(u_2=2u_1\\) và \\(u_4=u_1+u_3\\). Hai véc tơ \\(u_1,u_3\\) độc lập tuyến tính, nên hạng của hệ bằng \\(2\\).",
+    "quick": "Giữ \\(u_1,u_3\\); các véc tơ còn lại biểu diễn được từ hai véc tơ này.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ",
+    "id": 94
+  },
+  {
+    "type": "rank_vector_system_advanced",
+    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{(1;0;1;0),(0;1;1;0),(1;1;2;0),(0;0;0;1)\\}\\). Hạng của hệ véc tơ \\(S\\) bằng",
+    "matrix": null,
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correct": "3",
+    "solution": "Véc tơ thứ ba bằng tổng hai véc tơ đầu. Ba véc tơ \\((1;0;1;0),(0;1;1;0),(0;0;0;1)\\) độc lập tuyến tính. Vì vậy hạng của hệ bằng \\(3\\).",
+    "quick": "Loại véc tơ thứ ba; ba véc tơ còn lại độc lập.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ",
+    "id": 95
+  },
+  {
+    "type": "rank_vector_system_advanced",
+    "question": "Trong \\(\\mathbb R^3\\), cho \\(S=\\{(1;1;1),(1;2;3),(2;3;4),(0;1;2)\\}\\). Hạng của hệ véc tơ \\(S\\) bằng",
+    "matrix": null,
+    "options": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "correct": "2",
+    "solution": "Ta có \\((2;3;4)=(1;1;1)+(1;2;3)\\) và \\((0;1;2)=(1;2;3)-(1;1;1)\\). Hai véc tơ đầu không tỉ lệ nên độc lập tuyến tính. Vì vậy hạng của hệ bằng \\(2\\).",
+    "quick": "Mọi véc tơ trong hệ biểu diễn được qua hai véc tơ đầu.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ",
+    "id": 96
+  },
+  {
+    "type": "rank_vector_system_advanced",
+    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{(1;0;0;1),(0;1;0;1),(0;0;1;1),(1;1;1;3)\\}\\). Hạng của hệ véc tơ \\(S\\) bằng",
+    "matrix": null,
+    "options": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correct": "3",
+    "solution": "Véc tơ thứ tư bằng tổng ba véc tơ đầu. Ba véc tơ đầu độc lập tuyến tính, nên hạng của hệ bằng \\(3\\).",
+    "quick": "Nhận ra \\(u_4=u_1+u_2+u_3\\).",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Hạng hệ véc tơ",
+    "id": 97
+  },
+  {
+    "type": "rank_parameter_advanced",
+    "question": "Với \\(S=\\{(1;1;m),(1;m;1),(m;1;1)\\}\\), hạng của hệ véc tơ \\(S\\) khi \\(m=-2\\) bằng",
+    "matrix": null,
+    "options": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ],
+    "correct": "2",
+    "solution": "Định thức của ma trận có các véc tơ làm hàng là \\(-(m-1)^2(m+2)\\). Khi \\(m=-2\\), định thức bằng \\(0\\), nhưng hai véc tơ đầu không tỉ lệ. Khi đó hạng của hệ bằng \\(2\\).",
+    "quick": "Với \\(m=-2\\), hệ phụ thuộc nhưng không tụt xuống hạng \\(1\\).",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ theo tham số",
+    "id": 98
+  },
+  {
+    "type": "rank_parameter_advanced",
+    "question": "Với \\(S=\\{(1;1;m),(1;m;1),(m;1;1)\\}\\), hạng của hệ véc tơ \\(S\\) khi \\(m=1\\) bằng",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correct": "1",
+    "solution": "Khi \\(m=1\\), ba véc tơ đều bằng \\((1;1;1)\\). Do đó hệ chỉ có một véc tơ độc lập tuyến tính tối đại, nên hạng bằng \\(1\\).",
+    "quick": "Ba véc tơ trùng nhau nên hạng bằng \\(1\\).",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 2,
+    "topic": "Hạng hệ véc tơ theo tham số",
+    "id": 99
+  },
+  {
+    "type": "rank_parameter_condition_advanced",
+    "question": "Với \\(S=\\{(1;1;m),(1;m;1),(m;1;1)\\}\\), hệ \\(S\\) có hạng bằng \\(3\\) khi",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne1\\) và \\(m\\ne-2\\)",
+      "\\(m\\ne1\\)",
+      "\\(m\\ne-2\\)",
+      "Mọi \\(m\\)"
+    ],
+    "correct": "\\(m\\ne1\\) và \\(m\\ne-2\\)",
+    "solution": "Định thức của ma trận có các véc tơ làm hàng là \\(-(m-1)^2(m+2)\\). Hạng bằng \\(3\\) khi định thức khác \\(0\\), tức là \\(m\\ne1\\) và \\(m\\ne-2\\).",
+    "quick": "Hạng \\(3\\) tương đương det khác \\(0\\).",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ theo tham số",
+    "id": 100
+  },
+  {
+    "type": "count_independent_subsets_parameter",
+    "question": "Với \\(S=\\{(1;1;m),(1;m;1),(m;1;1)\\}\\), khi \\(m=1\\), số hệ con khác rỗng độc lập tuyến tính của \\(S\\) là",
+    "matrix": null,
+    "options": [
+      "3",
+      "6",
+      "7",
+      "1"
+    ],
+    "correct": "3",
+    "solution": "Khi \\(m=1\\), ba véc tơ trong \\(S\\) đều bằng \\((1;1;1)\\). Mỗi hệ một phần tử đều độc lập tuyến tính, nhưng mọi hệ có từ hai véc tơ trở lên đều phụ thuộc. Vậy có \\(3\\) hệ con độc lập.",
+    "quick": "Ba véc tơ trùng nhau: chỉ các hệ một phần tử độc lập.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 101
+  },
+  {
+    "type": "count_independent_subsets_parameter",
+    "question": "Với \\(S=\\{(1;1;m),(1;m;1),(m;1;1)\\}\\), khi \\(m=-2\\), số hệ con khác rỗng độc lập tuyến tính của \\(S\\) là",
+    "matrix": null,
+    "options": [
+      "6",
+      "3",
+      "7",
+      "5"
+    ],
+    "correct": "6",
+    "solution": "Khi \\(m=-2\\), hệ có hạng \\(2\\), ba véc tơ không có cặp nào tỉ lệ. Do đó có \\(3\\) hệ một phần tử và \\(3\\) cặp độc lập tuyến tính. Hệ ba véc tơ phụ thuộc. Tổng là \\(6\\).",
+    "quick": "Hạng \\(2\\), không có cặp tỉ lệ: \\(3+3=6\\).",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 102
+  },
+  {
+    "type": "rank_add_vectors_advanced",
+    "question": "Cho \\(S=\\{u_1=(1;0;1;0),u_2=(0;1;1;0)\\}\\). Thêm \\(u_3=(1;1;2;0)\\) và \\(u_4=(0;0;0;1)\\) vào \\(S\\). Hạng của hệ mới bằng",
+    "matrix": null,
+    "options": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ],
+    "correct": "3",
+    "solution": "Ta có \\(u_3=u_1+u_2\\), nên \\(u_3\\) không làm hạng tăng. Véc tơ \\(u_4=(0;0;0;1)\\) không biểu diễn được từ \\(u_1,u_2\\), nên làm hạng tăng thêm \\(1\\). Hệ mới có hạng \\(3\\).",
+    "quick": "\\(u_3\\) phụ thuộc, \\(u_4\\) độc lập với hệ cũ.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ",
+    "id": 103
+  },
+  {
+    "type": "rank_vector_system_advanced",
+    "question": "Trong \\(\\mathbb R^4\\), cho \\(S=\\{(1;2;1;0),(2;4;2;0),(0;1;0;1),(1;3;1;1),(0;0;1;0)\\}\\). Hạng của hệ véc tơ \\(S\\) bằng",
+    "matrix": null,
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "correct": "3",
+    "solution": "Gọi các véc tơ lần lượt là \\(u_1,u_2,u_3,u_4,u_5\\). Ta có \\(u_2=2u_1\\) và \\(u_4=u_1+u_3\\). Ba véc tơ \\(u_1,u_3,u_5\\) độc lập tuyến tính, nên hạng của hệ bằng \\(3\\).",
+    "quick": "Giữ \\(u_1,u_3,u_5\\); các véc tơ còn lại phụ thuộc vào chúng.",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Hạng hệ véc tơ",
+    "id": 104
+  },
+  {
+    "type": "count_independent_subsets_advanced",
+    "question": "Cho \\(u_1,u_2,u_3\\) độc lập tuyến tính trong \\(\\mathbb R^3\\). Với \\(S=\\{u_1,u_2,u_3,u_1+u_2,u_2+u_3\\}\\), số hệ con khác rỗng độc lập tuyến tính của \\(S\\) là",
+    "matrix": null,
+    "options": [
+      "23",
+      "24",
+      "22",
+      "25"
+    ],
+    "correct": "23",
+    "solution": "Có \\(5\\) hệ một phần tử và \\(10\\) hệ hai phần tử đều độc lập. Trong \\(10\\) bộ ba, có hai bộ phụ thuộc là \\(\\{u_1,u_2,u_1+u_2\\}\\) và \\(\\{u_2,u_3,u_2+u_3\\}\\). Do đó có \\(8\\) bộ ba độc lập. Các hệ có từ \\(4\\) véc tơ trở lên đều phụ thuộc trong \\(\\mathbb R^3\\). Tổng là \\(5+10+8=23\\).",
+    "quick": "Đếm \\(5+10+8=23\\).",
+    "casio": "CASIO fx-580VNX: Có thể nhập các véc tơ làm cột của ma trận rồi dùng rref/hạng hoặc det nếu là ma trận vuông. Với bài đếm hệ con độc lập, cần đếm theo kích thước hệ con và loại các hệ con phụ thuộc do có quan hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Đếm hệ con độc lập",
+    "id": 105
   }
 ]
