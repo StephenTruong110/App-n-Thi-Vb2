@@ -433,24 +433,6 @@
   },
   {
     "id": 25,
-    "type": "double_integral_setup",
-    "question": "Theo định lý Fubini, cách viết nào sau đây đúng cho \\(\\iint_D f(x,y)\\,dA\\) với \\(D=[0,1]\\times[0,2]\\)?",
-    "matrix": null,
-    "options": [
-      "\\(\\int_0^1\\int_0^2 f(x,y)\\,dy\\,dx=\\int_0^2\\int_0^1 f(x,y)\\,dx\\,dy\\)",
-      "\\(\\int_0^1\\int_0^2 f(x,y)\\,dx\\,dy\\)",
-      "\\(\\int_0^2\\int_0^1 f(x,y)\\,dy\\,dx\\)",
-      "\\(\\int_1^2\\int_0^1 f(x,y)\\,dx\\,dy\\)"
-    ],
-    "correct": "\\(\\int_0^1\\int_0^2 f(x,y)\\,dy\\,dx=\\int_0^2\\int_0^1 f(x,y)\\,dx\\,dy\\)",
-    "solution": "Vì \\(D\\) là hình chữ nhật và \\(f\\) khả tích, Fubini cho phép đổi thứ tự: \\(x\\in[0,1],y\\in[0,2]\\) hoặc \\(y\\in[0,2],x\\in[0,1]\\).",
-    "quick": "Cận phải đi đúng với biến tích phân trong.",
-    "casio": "Không cần CASIO; kiểm tra thứ tự cận và biến.",
-    "difficulty": 1,
-    "topic": "Tích phân kép"
-  },
-  {
-    "id": 26,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^1\\int_0^1(x+y)\\,dx\\,dy\\).",
     "matrix": null,
@@ -468,7 +450,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 27,
+    "id": 26,
     "type": "double_integral_volume",
     "question": "Thể tích khối trụ \\(x^2+y^2\\leq4,\\;0\\leq z\\leq3\\) tính bằng tích phân đôi là?",
     "matrix": null,
@@ -486,7 +468,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 28,
+    "id": 27,
     "type": "double_integral_volume",
     "question": "Thể tích của vật thể nằm dưới \\(z=4-x^2-y^2\\) và trên \\(z=0\\) là?",
     "matrix": null,
@@ -504,25 +486,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 29,
-    "type": "jacobian",
-    "question": "Jacobian của phép đổi biến sang tọa độ cực \\(x=r\\cos\\theta,\\;y=r\\sin\\theta\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(r\\)",
-      "\\(r^2\\)",
-      "\\(1\\)",
-      "\\(\\sin\\theta\\cos\\theta\\)"
-    ],
-    "correct": "\\(r\\)",
-    "solution": "\\(J=\\dfrac{\\partial(x,y)}{\\partial(r,\\theta)}=\\begin{vmatrix}\\cos\\theta&-r\\sin\\theta\\\\\\sin\\theta&r\\cos\\theta\\end{vmatrix}\\)\n\\(=r\\cos^2\\theta+r\\sin^2\\theta=r(\\cos^2\\theta+\\sin^2\\theta)=r\\).\n\nVì vậy: \\(dA=dx\\,dy=r\\,dr\\,d\\theta\\).",
-    "quick": "Jacobian tọa độ cực = r. Ghi nhớ: \\(dx\\,dy=r\\,dr\\,d\\theta\\) (không quên r!).",
-    "casio": "CASIO: Tính det[[cosθ,-rsinθ],[sinθ,rcosθ]]=r(cos²θ+sin²θ)=r.",
-    "difficulty": 3,
-    "topic": "Tích phân kép"
-  },
-  {
-    "id": 30,
+    "id": 28,
     "type": "double_integral_polar_official",
     "question": "Cho \\(D=\\{(x,y):x^2+y^2\\le1\\}\\). Giá trị \\(\\iint_D(x^2+y^2)\\,dx\\,dy\\) bằng",
     "matrix": null,
@@ -540,7 +504,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 31,
+    "id": 29,
     "type": "double_integral_setup_official",
     "question": "Cho \\(D=\\{(x,y):0\\le x\\le3,\\ 0\\le y\\le1\\}\\) và \\(I=\\iint_D e^x\\,dx\\,dy\\). Cách viết tích phân lặp đúng là",
     "matrix": null,
@@ -558,7 +522,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 32,
+    "id": 30,
     "type": "change_order",
     "question": "Tích phân lặp \\(I=\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\). Sau khi đổi thứ tự trở thành?",
     "matrix": null,
@@ -576,7 +540,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 33,
+    "id": 31,
     "type": "change_order",
     "question": "Đổi thứ tự tích phân: \\(I=\\int_0^4\\int_{\\sqrt{x}}^2 f(x,y)\\,dy\\,dx\\).",
     "matrix": null,
@@ -594,7 +558,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 34,
+    "id": 32,
     "type": "polar_domain_complex",
     "question": "Cho \\(I=\\iint_D(x^2+y^2+1)\\,dA\\) với D trong góc phần tư 1, nằm trong \\(x^2+y^2=4x\\) và ngoài \\(x^2+y^2=4\\). Dạng tọa độ cực là?",
     "matrix": null,
@@ -612,7 +576,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 35,
+    "id": 33,
     "type": "polar_domain_complex",
     "question": "Tính \\(I=\\iint_D\\sqrt{x^2+y^2}\\,dA\\) trong đó D là đĩa \\(x^2+y^2\\leq 2x\\).",
     "matrix": null,
@@ -630,7 +594,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 36,
+    "id": 34,
     "type": "double_integral_setup",
     "question": "Miền D là hình vuông [0,2]×[0,2]. Tích phân \\(\\iint_D 1\\,dA\\) bằng?",
     "matrix": null,
@@ -648,7 +612,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 37,
+    "id": 35,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^1\\int_0^1 x\\,dx\\,dy\\).",
     "matrix": null,
@@ -666,7 +630,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 38,
+    "id": 36,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^2\\int_0^1(x+y)\\,dx\\,dy\\).",
     "matrix": null,
@@ -684,25 +648,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 39,
-    "type": "double_integral_order",
-    "question": "Miền D: \\(0\\leq x\\leq1,\\;0\\leq y\\leq x\\). Đây là miền loại?",
-    "matrix": null,
-    "options": [
-      "Loại 1 (giới hạn bởi 2 đường theo y)",
-      "Loại 2 (giới hạn bởi 2 đường theo x)",
-      "Hình chữ nhật",
-      "Hình tròn"
-    ],
-    "correct": "Loại 1 (giới hạn bởi 2 đường theo y)",
-    "solution": "Miền loại 1 (tích phân theo y trước): với mỗi x∈[0,1], y chạy từ 0 đến x.\n\n\\(I=\\int_0^1\\left(\\int_0^x f(x,y)dy\\right)dx\\).",
-    "quick": "y từ 0 đến x (phụ thuộc x) → loại 1 (tích phân trong theo y).",
-    "casio": "CASIO: x cố định, y chạy từ 0 đến x → tích phân trong theo y.",
-    "difficulty": 1,
-    "topic": "Tích phân kép"
-  },
-  {
-    "id": 40,
+    "id": 37,
     "type": "double_integral_compute",
     "question": "Tính \\(\\int_0^\\pi\\int_0^1 r\\sin\\theta\\,dr\\,d\\theta\\) (tọa độ cực).",
     "matrix": null,
@@ -720,25 +666,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 41,
-    "type": "double_integral_polar",
-    "question": "Đổi sang tọa độ cực: \\(x^2+y^2=4\\) trở thành?",
-    "matrix": null,
-    "options": [
-      "\\(r=2\\)",
-      "\\(r=\\sqrt2\\)",
-      "\\(r=4\\)",
-      "\\(\\theta=2\\)"
-    ],
-    "correct": "\\(r=2\\)",
-    "solution": "\\(x^2+y^2=r^2\\). Vì quy ước \\(r\\ge0\\), phương trình \\(x^2+y^2=4\\) tương đương \\(r^2=4\\), suy ra \\(r=2\\).",
-    "quick": "\\(x^2+y^2=r^2\\). Do \\(r\\ge0\\), từ \\(r^2=4\\) suy ra \\(r=2\\).",
-    "casio": "CASIO: \\(r=\\sqrt{x^2+y^2}=\\sqrt4=2\\).",
-    "difficulty": 1,
-    "topic": "Tích phân kép"
-  },
-  {
-    "id": 42,
+    "id": 38,
     "type": "double_integral_compute",
     "question": "Tính \\(\\iint_D(x-y)\\,dA\\) với \\(D=[0,2]\\times[0,1]\\).",
     "matrix": null,
@@ -756,7 +684,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 43,
+    "id": 39,
     "type": "double_integral_order",
     "question": "Đổi thứ tự \\(\\int_0^1\\int_{x^2}^{x}f(x,y)\\,dy\\,dx\\) thành",
     "matrix": null,
@@ -774,7 +702,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 44,
+    "id": 40,
     "type": "double_integral_polar",
     "question": "Tính \\(\\iint_D1\\,dA\\) với \\(D:\\ x^2+y^2\\le4x\\).",
     "matrix": null,
@@ -792,7 +720,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 45,
+    "id": 41,
     "type": "double_integral_parameter",
     "question": "Tìm \\(a\\) để \\(\\iint_{[0,1]^2}(ax+y)\\,dA=1\\).",
     "matrix": null,
@@ -810,7 +738,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 46,
+    "id": 42,
     "type": "double_integral_volume",
     "question": "Thể tích dưới mặt \\(z=xy\\) trên hình chữ nhật \\(0\\le x\\le2,0\\le y\\le3\\) bằng",
     "matrix": null,
@@ -828,7 +756,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 47,
+    "id": 43,
     "type": "double_integral_symmetry",
     "question": "Cho \\(D\\) là đĩa tâm O. Giá trị \\(\\iint_D x^3y^2\\,dA\\) bằng",
     "matrix": null,
@@ -846,25 +774,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 48,
-    "type": "jacobian",
-    "question": "Với phép đổi biến \\(u=x+y,\\ v=x-y\\), ta có \\(dx\\,dy\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac12\\,du\\,dv\\)",
-      "\\(2\\,du\\,dv\\)",
-      "\\(du\\,dv\\)",
-      "\\(\\dfrac14\\,du\\,dv\\)"
-    ],
-    "correct": "\\(\\dfrac12\\,du\\,dv\\)",
-    "solution": "Giải ngược: \\(x=(u+v)/2\\), \\(y=(u-v)/2\\). Jacobian tuyệt đối \\(|\\partial(x,y)/\\partial(u,v)|=1/2\\).",
-    "quick": "Tính Jacobian của phép đổi ngược.",
-    "casio": "CASIO: Có thể dùng định thức ma trận 2×2.",
-    "difficulty": 3,
-    "topic": "Tích phân kép"
-  },
-  {
-    "id": 49,
+    "id": 44,
     "type": "double_integral_polar",
     "question": "Tính \\(\\iint_D xy\\,dA\\) với \\(D\\) là phần tư thứ nhất của đĩa \\(x^2+y^2\\le1\\).",
     "matrix": null,
@@ -882,7 +792,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 50,
+    "id": 45,
     "type": "double_integral_annulus",
     "question": "Tính \\(I=\\iint_D(x^2+y^2)\\,dxdy\\), với \\(D:1\\le x^2+y^2\\le4\\).",
     "matrix": null,
@@ -900,7 +810,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 51,
+    "id": 46,
     "type": "polar_integrand",
     "question": "Với \\(I=\\iint_D xy\\,dxdy\\), khi đổi sang cực \\(x=r\\cos\\varphi\\), \\(y=r\\sin\\varphi\\), biểu thức dưới dấu tích phân gồm cả Jacobian là",
     "matrix": null,
@@ -918,25 +828,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 52,
-    "type": "quarter_disk_integral",
-    "question": "Tính \\(I=\\iint_D xy\\,dxdy\\), với \\(D\\) là phần tư thứ nhất của hình tròn \\(x^2+y^2\\le1\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac18\\)",
-      "\\(\\dfrac14\\)",
-      "\\(\\dfrac{\\pi}{8}\\)",
-      "\\(\\dfrac12\\)"
-    ],
-    "correct": "\\(\\dfrac18\\)",
-    "solution": "Trong cực: \\(0\\le r\\le1\\), \\(0\\le\\varphi\\le\\pi/2\\). \\(I=\\int_0^{\\pi/2}\\int_0^1 r^3\\cos\\varphi\\sin\\varphi\\,drd\\varphi=1/8\\).",
-    "quick": "Tách tích phân theo \\(r\\) và \\(\\varphi\\).",
-    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
-    "difficulty": 3,
-    "topic": "Tích phân kép"
-  },
-  {
-    "id": 53,
+    "id": 47,
     "type": "rect_double_integral",
     "question": "Tính \\(I=\\iint_D(2x+1)\\,dxdy\\), với \\(D:0\\le x\\le2,\\ 0\\le y\\le3\\).",
     "matrix": null,
@@ -954,42 +846,7 @@
     "topic": "Tích phân kép"
   },
   {
-    "id": 54,
-    "type": "double_integral_radial_exp",
-    "question": "Tính \\(I=\\iint_D e^{x^2+y^2}dxdy\\), với \\(D:x^2+y^2\\le1\\).",
-    "matrix": null,
-    "options": [
-      "\\(\\pi(e-1)\\)",
-      "\\(\\pi e\\)",
-      "\\(2\\pi(e-1)\\)",
-      "\\(\\dfrac{\\pi(e-1)}{2}\\)"
-    ],
-    "correct": "\\(\\pi(e-1)\\)",
-    "solution": "Đổi sang cực: \\(I=\\int_0^{2\\pi}\\int_0^1 e^{r^2}rdrd\\varphi=2\\pi\\cdot\\dfrac{e-1}{2}=\\pi(e-1)\\).",
-    "quick": "Đặt \\(u=r^2\\).",
-    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
-    "difficulty": 3,
-    "topic": "Tích phân kép"
-  },
-  {
-    "id": 55,
-    "type": "polar_bounds_disk",
-    "question": "Miền \\(D:x^2+y^2\\le4\\). Cận trong tọa độ cực là",
-    "matrix": null,
-    "options": [
-      "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le2\\)",
-      "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le4\\)",
-      "\\(0\\le\\varphi\\le\\pi,\\ 0\\le r\\le2\\)",
-      "\\(-\\pi\\le\\varphi\\le\\pi,\\ 0\\le r\\le4\\)"
-    ],
-    "correct": "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le2\\)",
-    "solution": "Đây là hình tròn tâm O bán kính 2. Do đó \\(0\\le r\\le2\\), \\(0\\le\\varphi\\le2\\pi\\).",
-    "quick": "Bán kính là 2, không phải 4.",
-    "casio": "CASIO fx-580VNX: Sau khi đổi về tích phân một biến hoặc tọa độ cực, dùng phím ∫ từng lớp để kiểm tra. Nhớ Jacobian trong cực là r.",
-    "difficulty": 1,
-    "topic": "Tích phân kép"
-  },
-  {
+    "id": 48,
     "type": "double_integral_box_compute",
     "question": "Tính \\(\\displaystyle\\int_0^2\\int_0^3(2x+y)\\,dy\\,dx\\).",
     "matrix": null,
@@ -1004,10 +861,10 @@
     "quick": "Tích phân trong cho \\(6x+9/2\\), rồi tích phân theo \\(x\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 56
+    "topic": "Tích phân kép"
   },
   {
+    "id": 49,
     "type": "double_integral_triangle_compute",
     "question": "Tính \\(\\displaystyle\\int_0^1\\int_0^{1-x}(x+y)\\,dy\\,dx\\).",
     "matrix": null,
@@ -1022,10 +879,10 @@
     "quick": "Tích phân trong rút gọn thành \\((1-x^2)/2\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 57
+    "topic": "Tích phân kép"
   },
   {
+    "id": 50,
     "type": "double_integral_setup_triangle",
     "question": "Miền \\(D\\) được cho bởi \\(x\\ge0,\\ y\\ge0,\\ x+y\\le2\\). Cách viết \\(\\iint_D f(x,y)\\,dA\\) đúng là",
     "matrix": null,
@@ -1040,10 +897,10 @@
     "quick": "Tam giác góc phần tư I: \\(x:0\\to2,\\ y:0\\to2-x\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 58
+    "topic": "Tích phân kép"
   },
   {
+    "id": 51,
     "type": "change_order_triangle",
     "question": "Đổi thứ tự tích phân \\(\\displaystyle I=\\int_0^2\\int_0^{2-x}f(x,y)\\,dy\\,dx\\) thành",
     "matrix": null,
@@ -1058,10 +915,10 @@
     "quick": "Đổi vai trò \\(x,y\\): \\(y:0\\to2,\\ x:0\\to2-y\\).",
     "casio": "Không cần CASIO; vẽ tam giác hoặc đổi trực tiếp từ \\(x+y\\le2\\).",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 59
+    "topic": "Tích phân kép"
   },
   {
+    "id": 52,
     "type": "double_integral_area_parabola",
     "question": "Diện tích miền \\(D\\) giới hạn bởi \\(y=4-x^2\\) và trục \\(Ox\\) bằng",
     "matrix": null,
@@ -1076,10 +933,10 @@
     "quick": "Tính \\(\\int_{-2}^{2}(4-x^2)dx\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 60
+    "topic": "Tích phân kép"
   },
   {
+    "id": 53,
     "type": "double_integral_parabola_compute",
     "question": "Tính \\(\\displaystyle\\iint_D x\\,dA\\), với \\(D\\) là miền \\(0\\le x\\le2,\\ 0\\le y\\le4-x^2\\).",
     "matrix": null,
@@ -1094,28 +951,10 @@
     "quick": "Tích phân theo \\(y\\) trước cho \\(x(4-x^2)\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 61
+    "topic": "Tích phân kép"
   },
   {
-    "type": "double_integral_polar_bounds",
-    "question": "Miền \\(D:x^2+y^2\\le9\\). Trong tọa độ cực, cận đúng là",
-    "matrix": null,
-    "options": [
-      "\\(0\\le r\\le3,\\ 0\\le\\theta\\le2\\pi\\)",
-      "\\(0\\le r\\le9,\\ 0\\le\\theta\\le2\\pi\\)",
-      "\\(0\\le r\\le3,\\ 0\\le\\theta\\le\\pi\\)",
-      "\\(0\\le r\\le2\\pi,\\ 0\\le\\theta\\le3\\)"
-    ],
-    "correct": "\\(0\\le r\\le3,\\ 0\\le\\theta\\le2\\pi\\)",
-    "solution": "Vì \\(x^2+y^2=r^2\\), điều kiện \\(x^2+y^2\\le9\\) cho \\(0\\le r\\le3\\). Đĩa tròn đầy đủ nên \\(0\\le\\theta\\le2\\pi\\).",
-    "quick": "Đĩa bán kính 3: \\(r:0\\to3,\\ \\theta:0\\to2\\pi\\).",
-    "casio": "Không cần CASIO; đây là nhận dạng miền cực.",
-    "difficulty": 1,
-    "topic": "Tích phân kép",
-    "id": 62
-  },
-  {
+    "id": 54,
     "type": "double_integral_polar_compute",
     "question": "Tính \\(\\displaystyle\\iint_{x^2+y^2\\le9}(x^2+y^2)\\,dA\\).",
     "matrix": null,
@@ -1130,10 +969,10 @@
     "quick": "Cực: \\(2\\pi\\int_0^3r^3dr=81\\pi/2\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 3,
-    "topic": "Tích phân kép",
-    "id": 63
+    "topic": "Tích phân kép"
   },
   {
+    "id": 55,
     "type": "double_integral_volume_paraboloid",
     "question": "Thể tích vật thể nằm dưới \\(z=9-x^2-y^2\\) và trên \\(z=0\\) bằng",
     "matrix": null,
@@ -1148,10 +987,10 @@
     "quick": "Chiều cao \\(9-r^2\\), miền chiếu là đĩa bán kính 3.",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 3,
-    "topic": "Tích phân kép",
-    "id": 64
+    "topic": "Tích phân kép"
   },
   {
+    "id": 56,
     "type": "double_integral_polar_quarter_disk",
     "question": "Tính \\(\\displaystyle\\iint_D 1\\,dA\\), với \\(D\\) là phần tư thứ nhất của đĩa \\(x^2+y^2\\le4\\).",
     "matrix": null,
@@ -1166,10 +1005,10 @@
     "quick": "Một phần tư diện tích đĩa bán kính 2: \\(4\\pi/4=\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 65
+    "topic": "Tích phân kép"
   },
   {
+    "id": 57,
     "type": "double_integral_polar_quarter_compute",
     "question": "Tính \\(\\displaystyle\\iint_D y\\,dA\\), với \\(D\\) là phần tư thứ nhất của đĩa \\(x^2+y^2\\le4\\).",
     "matrix": null,
@@ -1184,28 +1023,10 @@
     "quick": "Cực: \\(\\int_0^{\\pi/2}\\sin\\theta d\\theta\\int_0^2r^2dr=8/3\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 3,
-    "topic": "Tích phân kép",
-    "id": 66
+    "topic": "Tích phân kép"
   },
   {
-    "type": "change_order_simple",
-    "question": "Đổi thứ tự tích phân \\(\\displaystyle I=\\int_0^1\\int_y^1f(x,y)\\,dx\\,dy\\) thành",
-    "matrix": null,
-    "options": [
-      "\\(\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
-      "\\(\\displaystyle\\int_0^1\\int_x^1 f(x,y)\\,dy\\,dx\\)",
-      "\\(\\displaystyle\\int_0^1\\int_0^y f(x,y)\\,dx\\,dy\\)",
-      "\\(\\displaystyle\\int_0^1\\int_y^1 f(x,y)\\,dy\\,dx\\)"
-    ],
-    "correct": "\\(\\displaystyle\\int_0^1\\int_0^x f(x,y)\\,dy\\,dx\\)",
-    "solution": "Miền gốc là \\(0\\le y\\le1,\\ y\\le x\\le1\\). Khi đổi thứ tự: \\(0\\le x\\le1,\\ 0\\le y\\le x\\).",
-    "quick": "Tam giác dưới đường \\(y=x\\) trong hình vuông đơn vị.",
-    "casio": "Không cần CASIO; vẽ miền tam giác.",
-    "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 67
-  },
-  {
+    "id": 58,
     "type": "double_integral_order_compute",
     "question": "Tính \\(\\displaystyle\\int_0^1\\int_x^1 y^2\\,dy\\,dx\\) bằng cách đổi thứ tự tích phân.",
     "matrix": null,
@@ -1220,10 +1041,10 @@
     "quick": "Đổi thứ tự để được \\(I=\\int_0^1y^3dy\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 3,
-    "topic": "Tích phân kép",
-    "id": 68
+    "topic": "Tích phân kép"
   },
   {
+    "id": 59,
     "type": "double_integral_parameter",
     "question": "Tìm \\(a\\) để \\(\\displaystyle\\iint_{[0,1]\\times[0,2]}(ax+y)\\,dA=3\\).",
     "matrix": null,
@@ -1238,10 +1059,10 @@
     "quick": "Tính được tích phân \\(=a+2\\), nên \\(a=1\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 3,
-    "topic": "Tích phân kép",
-    "id": 69
+    "topic": "Tích phân kép"
   },
   {
+    "id": 60,
     "type": "double_integral_polar_annulus",
     "question": "Tính diện tích miền vành khăn \\(D:1\\le x^2+y^2\\le4\\).",
     "matrix": null,
@@ -1256,7 +1077,384 @@
     "quick": "Diện tích vành khăn: \\(\\pi(2^2-1^2)=3\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân kép tính từng lớp từ trong ra ngoài. Với tọa độ cực, thay \\(x=r\\cos\\theta,\\ y=r\\sin\\theta\\) và nhớ \\(dA=r\\,dr\\,d\\theta\\). CASIO chỉ dùng để kiểm tra số; phần lập cận phải làm bằng phân tích miền.",
     "difficulty": 2,
-    "topic": "Tích phân kép",
-    "id": 70
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 61,
+    "type": "double_integral_compute_official",
+    "question": "Tính tích phân \\(I=\\iint_D (xy+y)\\,dx\\,dy\\), trong đó \\(D\\) được giới hạn bởi các đường \\(x=y^2\\), \\(y=2\\), \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{28}{3}\\)",
+      "\\(\\dfrac{20}{3}\\)",
+      "\\(8\\)",
+      "\\(\\dfrac{32}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{28}{3}\\)",
+    "solution": "Miền \\(D\\) được mô tả bởi \\(0\\le y\\le2\\), \\(0\\le x\\le y^2\\). Do đó\n\\[\nI=\\int_0^2\\int_0^{y^2}(xy+y)\\,dx\\,dy.\n\\]\nTích phân theo \\(x\\):\n\\[\n\\int_0^{y^2}(xy+y)\\,dx=\\left(\\frac{y x^2}{2}+yx\\right)_0^{y^2}=\\frac{y^5}{2}+y^3.\n\\]\nSuy ra\n\\[\nI=\\int_0^2\\left(\\frac{y^5}{2}+y^3\\right)dy=\\left(\\frac{y^6}{12}+\\frac{y^4}{4}\\right)_0^2=\\frac{16}{3}+4=\\frac{28}{3}.\n\\]",
+    "quick": "Viết miền: \\(0\\le y\\le2\\), \\(0\\le x\\le y^2\\), rồi tính \\(\\int_0^2(\\frac{y^5}{2}+y^3)dy\\).",
+    "casio": "CASIO: nhập trực tiếp \\(\\int_0^2\\int_0^{Y^2}(XY+Y)\\,dX\\,dY\\), hoặc rút gọn về \\(\\int_0^2(0.5Y^5+Y^3)dY\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 62,
+    "type": "double_integral_setup_official",
+    "question": "Xác định cận lấy tích phân \\(I=\\iint_D f(x,y)\\,dx\\,dy\\), trong đó \\(D\\) là miền giới hạn bởi các đường \\(y=x^2\\), \\(y=3x\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^9\\!dy\\int_{y/3}^{\\sqrt y} f(x,y)\\,dx\\)",
+      "\\(I=\\int_0^3\\!dy\\int_{y/3}^{\\sqrt y} f(x,y)\\,dx\\)",
+      "\\(I=\\int_0^9\\!dx\\int_{x^2}^{3x} f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^3\\!dx\\int_{3x}^{x^2} f(x,y)\\,dy\\)"
+    ],
+    "correct": "\\(I=\\int_0^9\\!dy\\int_{y/3}^{\\sqrt y} f(x,y)\\,dx\\)",
+    "solution": "Hai đường cắt nhau khi \\(x^2=3x\\Rightarrow x=0,3\\), nên \\(y\\) chạy từ \\(0\\) đến \\(9\\). Với \\(y\\) cố định, ta có \\(y=x^2\\Rightarrow x=\\sqrt y\\) và \\(y=3x\\Rightarrow x=y/3\\). Trên miền này, \\(x\\) chạy từ \\(y/3\\) đến \\(\\sqrt y\\). Vì thứ tự vi phân là \\(dx\\,dy\\), ta được\n\\[\nI=\\int_0^9\\!dy\\int_{y/3}^{\\sqrt y} f(x,y)\\,dx.\n\\]",
+    "quick": "Giao điểm: \\((0,0)\\), \\((3,9)\\). Với \\(dx\\,dy\\): \\(0\\le y\\le9\\), \\(y/3\\le x\\le\\sqrt y\\).",
+    "casio": "CASIO không cần thiết; cần vẽ miền và đọc cận theo đúng thứ tự \\(dx\\,dy\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 63,
+    "type": "double_integral_setup_official",
+    "question": "Xác định cận lấy tích phân \\(I=\\iint_D f(x,y)\\,dx\\,dy\\), trong đó \\(D\\) là miền giới hạn bởi các đường \\(y=3x\\), \\(y=x^2+2\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_1^2\\!dx\\int_{x^2+2}^{3x} f(x,y)\\,dy\\)",
+      "\\(I=\\int_1^2\\!dx\\int_{3x}^{x^2+2} f(x,y)\\,dy\\)",
+      "\\(I=\\int_2^1\\!dx\\int_{x^2+2}^{3x} f(x,y)\\,dy\\)",
+      "\\(I=\\int_2^1\\!dx\\int_{3x}^{x^2+2} f(x,y)\\,dy\\)"
+    ],
+    "correct": "\\(I=\\int_1^2\\!dx\\int_{x^2+2}^{3x} f(x,y)\\,dy\\)",
+    "solution": "Giao điểm của hai đường thỏa \\(3x=x^2+2\\Rightarrow x^2-3x+2=0\\Rightarrow x=1,2\\). Trên đoạn \\([1,2]\\), ta có \\(3x\\ge x^2+2\\), nên đường trên là \\(y=3x\\), đường dưới là \\(y=x^2+2\\). Vì vậy\n\\[\nI=\\int_1^2\\!dx\\int_{x^2+2}^{3x} f(x,y)\\,dy.\n\\]",
+    "quick": "Giao điểm: \\(x=1,2\\). Trên \\([1,2]\\): dưới là \\(x^2+2\\), trên là \\(3x\\).",
+    "casio": "CASIO không cần thiết; chỉ cần giải giao điểm rồi so sánh hai đồ thị trên đoạn \\([1,2]\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 64,
+    "type": "double_integral_setup_official",
+    "question": "Xác định cận lấy tích phân \\(I=\\iint_D f(x,y)\\,dx\\,dy\\), trong đó \\(D\\) là miền giới hạn bởi các đường \\(x^2+y^2\\le1\\), \\(x\\ge0\\), \\(y\\ge0\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^1\\!dx\\int_0^{\\sqrt{1-x^2}} f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^1\\!dx\\int_0^{\\sqrt{1-y^2}} f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^1\\!dx\\int_0^1 f(x,y)\\,dy\\)",
+      "Các kết quả trên đều sai"
+    ],
+    "correct": "\\(I=\\int_0^1\\!dx\\int_0^{\\sqrt{1-x^2}} f(x,y)\\,dy\\)",
+    "solution": "Miền \\(D\\) là phần tư hình tròn đơn vị trong góc phần tư thứ nhất. Với \\(x\\) chạy từ \\(0\\) đến \\(1\\), ta có \\(y\\) chạy từ trục hoành \\(y=0\\) đến cung tròn \\(y=\\sqrt{1-x^2}\\). Do đó\n\\[\nI=\\int_0^1\\!dx\\int_0^{\\sqrt{1-x^2}} f(x,y)\\,dy.\n\\]",
+    "quick": "Phần tư đĩa đơn vị góc phần tư I: \\(0\\le x\\le1\\), \\(0\\le y\\le\\sqrt{1-x^2}\\).",
+    "casio": "CASIO không cần thiết; nên vẽ nhanh phần tư đường tròn bán kính 1.",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 65,
+    "type": "double_integral_setup_official",
+    "question": "Xác định cận lấy tích phân \\(I=\\iint_D f(x,y)\\,dx\\,dy\\), trong đó \\(D\\) là miền giới hạn bởi các đường \\(x^2+y^2\\le1\\), \\(x\\ge0\\), \\(y\\le0\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^1\\!dx\\int_{-\\sqrt{1-x^2}}^{0} f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^1\\!dx\\int_0^{\\sqrt{1-x^2}} f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^1\\!dx\\int_0^{1} f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^1\\!dy\\int_{-\\sqrt{1-y^2}}^{0} f(x,y)\\,dx\\)"
+    ],
+    "correct": "\\(I=\\int_0^1\\!dx\\int_{-\\sqrt{1-x^2}}^{0} f(x,y)\\,dy\\)",
+    "solution": "Miền \\(D\\) là phần tư hình tròn đơn vị trong góc phần tư thứ tư. Với \\(x\\in[0,1]\\), tung độ chạy từ cung tròn dưới \\(y=-\\sqrt{1-x^2}\\) lên đến trục hoành \\(y=0\\). Vì vậy\n\\[\nI=\\int_0^1\\!dx\\int_{-\\sqrt{1-x^2}}^{0} f(x,y)\\,dy.\n\\]",
+    "quick": "Phần tư đĩa đơn vị góc phần tư IV: \\(0\\le x\\le1\\), \\(-\\sqrt{1-x^2}\\le y\\le0\\).",
+    "casio": "CASIO không cần thiết; chỉ cần đọc đúng dấu âm của cung tròn dưới.",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 66,
+    "type": "double_integral_setup_official",
+    "question": "Xác định cận lấy tích phân \\(I=\\iint_D f(x,y)\\,dx\\,dy\\), trong đó \\(D\\) là miền giới hạn bởi các đường \\(y=x^2\\), \\(x=2\\), \\(y=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^2\\!dx\\int_0^{x^2} f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^2\\!dy\\int_0^{x^2} f(x,y)\\,dx\\)",
+      "\\(I=\\int_0^2\\!dx\\int_0^{4} f(x,y)\\,dy\\)",
+      "\\(I=\\int_2^{\\sqrt y}\\!dx\\int_0^{x^2} f(x,y)\\,dy\\)"
+    ],
+    "correct": "\\(I=\\int_0^2\\!dx\\int_0^{x^2} f(x,y)\\,dy\\)",
+    "solution": "Miền \\(D\\) được giới hạn bởi trục hoành \\(y=0\\), parabol \\(y=x^2\\) và đường thẳng \\(x=2\\). Vì vậy với mỗi \\(x\\in[0,2]\\), ta có \\(0\\le y\\le x^2\\). Do đó\n\\[\nI=\\int_0^2\\!dx\\int_0^{x^2} f(x,y)\\,dy.\n\\]",
+    "quick": "Dưới: \\(y=0\\), trên: \\(y=x^2\\), ngoài: \\(0\\le x\\le2\\).",
+    "casio": "CASIO không cần thiết; dạng này chỉ cần vẽ miền theo đúng thứ tự \\(dx\\,dy\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 67,
+    "type": "double_integral_change_variables_official",
+    "question": "Tính tích phân \\(I=\\iint_D 4(x+y)\\,dx\\,dy\\), trong đó \\(D\\) là miền bị chặn bởi \\(x+y=2\\), \\(x+y=5\\), \\(2x+3y=3\\), \\(2x+3y=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(42\\)",
+      "\\(84\\)",
+      "\\(\\dfrac{21}{2}\\)",
+      "\\(21\\)"
+    ],
+    "correct": "\\(42\\)",
+    "solution": "Đặt \\(u=x+y\\), \\(v=2x+3y\\). Khi đó miền \\(D\\) biến thành hình chữ nhật \\(2\\le u\\le5\\), \\(3\\le v\\le4\\). Ta có\n\\[\n\\frac{\\partial(u,v)}{\\partial(x,y)}=\n\\begin{vmatrix}\n1&1\\\\\n2&3\n\\end{vmatrix}=1\n\\Rightarrow dx\\,dy=du\\,dv.\n\\]\nMặt khác, \\(4(x+y)=4u\\). Do đó\n\\[\nI=\\int_2^5\\int_3^4 4u\\,dv\\,du=\\int_2^5 4u\\,du=2u^2\\Big|_2^5=42.\n\\]",
+    "quick": "Đặt \\(u=x+y\\), \\(v=2x+3y\\), Jacobian bằng 1. Khi đó \\(I=\\int_2^5\\int_3^4 4u\\,dv\\,du=42\\).",
+    "casio": "CASIO: sau đổi biến, nhập \\(\\int_2^5\\int_3^4 4U\\,dV\\,dU\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 68,
+    "type": "double_integral_change_variables_official",
+    "question": "Tính tích phân \\(I=\\iint_D (x+y)\\,dx\\,dy\\), trong đó \\(D\\) là miền bị chặn bởi \\(x+y=1\\), \\(x+y=2\\), \\(2x+3y=3\\), \\(2x+3y=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{7}{2}\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "Đặt \\(u=x+y\\), \\(v=2x+3y\\). Khi đó miền \\(D\\) trở thành \\(1\\le u\\le2\\), \\(3\\le v\\le4\\), và \\(dx\\,dy=du\\,dv\\) vì Jacobian bằng 1. Do đó\n\\[\nI=\\int_1^2\\int_3^4 u\\,dv\\,du=\\int_1^2 u\\,du=\\frac{u^2}{2}\\Big|_1^2=\\frac{3}{2}.\n\\]",
+    "quick": "Đổi biến \\(u=x+y\\), \\(v=2x+3y\\): tích phân còn \\(\\int_1^2u\\,du\\).",
+    "casio": "CASIO: sau đổi biến, tính \\(\\int_1^2\\int_3^4 U\\,dV\\,dU\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 69,
+    "type": "double_integral_change_variables_official",
+    "question": "Tính tích phân \\(I=\\iint_D (2x+3y)\\,dx\\,dy\\), trong đó \\(D\\) là miền bị chặn bởi \\(x+y=1\\), \\(x+y=2\\), \\(2x+3y=3\\), \\(2x+3y=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{7}{2}\\)",
+      "\\(\\dfrac{7}{4}\\)",
+      "\\(\\dfrac{2}{7}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{7}{2}\\)",
+    "solution": "Tiếp tục đặt \\(u=x+y\\), \\(v=2x+3y\\). Miền đổi thành hình chữ nhật \\(1\\le u\\le2\\), \\(3\\le v\\le4\\), Jacobian bằng 1 nên \\(dx\\,dy=du\\,dv\\). Vì tích phân có hạt nhân \\(2x+3y=v\\), nên\n\\[\nI=\\int_1^2\\int_3^4 v\\,dv\\,du=(2-1)\\cdot\\frac{v^2}{2}\\Big|_3^4=\\frac{16-9}{2}=\\frac72.\n\\]",
+    "quick": "Sau đổi biến, tích phân là \\(\\int_1^2\\int_3^4 v\\,dv\\,du=7/2\\).",
+    "casio": "CASIO: nhập \\(\\int_1^2\\int_3^4 V\\,dV\\,dU\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 70,
+    "type": "double_integral_change_variables_official",
+    "question": "Tính tích phân \\(I=\\iint_D 2(x+y)\\,dx\\,dy\\), trong đó \\(D\\) là miền bị chặn bởi \\(x+y=0\\), \\(x+y=1\\), \\(2x+5y=3\\), \\(2x+5y=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{3}\\)",
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(1\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{3}\\)",
+    "solution": "Đặt \\(u=x+y\\), \\(v=2x+5y\\). Khi đó miền \\(D\\) đổi thành hình chữ nhật \\(0\\le u\\le1\\), \\(3\\le v\\le4\\). Ta có\n\\[\n\\frac{\\partial(u,v)}{\\partial(x,y)}=\n\\begin{vmatrix}\n1&1\\\\\n2&5\n\\end{vmatrix}=3\n\\Rightarrow dx\\,dy=\\frac{1}{3}\\,du\\,dv.\n\\]\nVì \\(2(x+y)=2u\\), nên\n\\[\nI=\\int_0^1\\int_3^4 2u\\cdot\\frac13\\,dv\\,du=\\frac13\\int_0^1 2u\\,du=\\frac13.\n\\]",
+    "quick": "Đặt \\(u=x+y\\), \\(v=2x+5y\\), chú ý \\(dxdy=\\frac13 dudv\\).",
+    "casio": "CASIO: sau đổi biến, nhập \\(\\int_0^1\\int_3^4 \\frac{2U}{3}\\,dV\\,dU\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 71,
+    "type": "double_integral_change_variables_official",
+    "question": "Tính tích phân \\(I=\\iint_D (x+y)\\,dx\\,dy\\), trong đó \\(D\\) là miền bị chặn bởi \\(x+y=0\\), \\(x+y=6\\), \\(2x+3y=3\\), \\(2x+3y=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(18\\)",
+      "\\(36\\)",
+      "\\(12\\)",
+      "\\(9\\)"
+    ],
+    "correct": "\\(18\\)",
+    "solution": "Đặt \\(u=x+y\\), \\(v=2x+3y\\). Miền \\(D\\) thành hình chữ nhật \\(0\\le u\\le6\\), \\(3\\le v\\le4\\), và Jacobian bằng 1 nên \\(dx\\,dy=du\\,dv\\). Khi đó\n\\[\nI=\\int_0^6\\int_3^4 u\\,dv\\,du=\\int_0^6 u\\,du=\\frac{u^2}{2}\\Big|_0^6=18.\n\\]",
+    "quick": "Đổi biến \\(u=x+y\\), \\(v=2x+3y\\), được \\(I=\\int_0^6 u\\,du=18\\).",
+    "casio": "CASIO: nhập \\(\\int_0^6\\int_3^4 U\\,dV\\,dU\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 72,
+    "type": "double_integral_compute_official",
+    "question": "Tính tích phân \\(I=\\iint_D(x+y)\\,dx\\,dy\\), trong đó \\(D\\) được giới hạn bởi các đường \\(y=x+2\\), \\(x+y=2\\), \\(y=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(8\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{8}{3}\\)",
+    "solution": "Ba đường tạo thành tam giác có các đỉnh \\((-2,0)\\), \\((2,0)\\), \\((0,2)\\). Miền đối xứng qua trục \\(Oy\\), nên \\(\\iint_Dx\\,dA=0\\). Diện tích tam giác là \\(4\\), tung độ trọng tâm là \\(2/3\\), do đó \\(\\iint_Dy\\,dA=4\\cdot2/3=8/3\\). Vậy \\(I=8/3\\).",
+    "quick": "Dùng đối xứng: phần \\(x\\) triệt tiêu; \\(\\iint_Dy\\,dA=S_D\\,\\bar y=4\\cdot2/3\\).",
+    "casio": "CASIO: có thể tính \\(2\\int_0^2\\int_0^{2-x}(x+y)\\,dy\\,dx\\) sau khi khai thác đối xứng phù hợp, hoặc chia miền tại \\(x=0\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 73,
+    "type": "double_integral_compute_official",
+    "question": "Tính tích phân \\(I=\\iint_D(x+y+3)\\,dx\\,dy\\), trong đó \\(D\\) được giới hạn bởi các đường \\(y=x+2\\), \\(x+y=2\\), \\(y=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{44}{3}\\)",
+      "\\(\\dfrac{76}{3}\\)",
+      "\\(\\dfrac{68}{3}\\)",
+      "\\(\\dfrac{100}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{44}{3}\\)",
+    "solution": "Trên cùng miền tam giác, ta đã có \\(\\iint_D(x+y)\\,dA=8/3\\). Diện tích miền là \\(4\\), nên \\(\\iint_D3\\,dA=12\\). Vì vậy \\(I=8/3+12=44/3\\).",
+    "quick": "Lấy kết quả câu trước cộng \\(3S_D=12\\).",
+    "casio": "CASIO: tính \\(8/3+3\\cdot4=44/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 74,
+    "type": "double_integral_compute_official",
+    "question": "Tính tích phân \\(I=\\iint_Dxy\\,dx\\,dy\\), trong đó \\(D\\) được giới hạn bởi các đường \\(x=y^2\\), \\(y=x^2\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{12}\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{24}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{12}\\)",
+    "solution": "Hai đường cắt nhau tại \\((0,0)\\) và \\((1,1)\\). Viết miền theo \\(x\\): \\(0\\le x\\le1\\), \\(x^2\\le y\\le\\sqrt x\\). Do đó \\[I=\\int_0^1\\int_{x^2}^{\\sqrt x}xy\\,dy\\,dx=\\frac12\\int_0^1(x^2-x^5)\\,dx=\\frac12\\left(\\frac13-\\frac16\\right)=\\frac1{12}.\\]",
+    "quick": "Miền: \\(x^2\\le y\\le\\sqrt x\\), \\(0\\le x\\le1\\).",
+    "casio": "CASIO: nhập \\(\\int_0^1 \\frac{X}{2}(X-X^4)\\,dX\\), được \\(1/12\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 75,
+    "type": "double_integral_polar_official",
+    "question": "Tính tích phân \\(I=\\iint_D\\sqrt{4-x^2-y^2}\\,dx\\,dy\\), trong đó \\(D\\) được giới hạn bởi \\(x^2+y^2\\le2x\\), \\(y\\ge0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{8}{3}\\left(\\dfrac{\\pi}{2}-\\dfrac{2}{3}\\right)\\)",
+      "\\(\\dfrac{1}{3}\\left(\\dfrac{\\pi}{2}-\\dfrac{2}{3}\\right)\\)",
+      "\\(\\dfrac{8}{3}\\left(\\dfrac{2}{3}-\\dfrac{\\pi}{2}\\right)\\)",
+      "\\(\\dfrac{3}{8}\\left(\\dfrac{\\pi}{2}-\\dfrac{2}{3}\\right)\\)"
+    ],
+    "correct": "\\(\\dfrac{8}{3}\\left(\\dfrac{\\pi}{2}-\\dfrac{2}{3}\\right)\\)",
+    "solution": "Đổi sang tọa độ cực: miền thỏa \\(0\\le\\theta\\le\\pi/2\\), \\(0\\le r\\le2\\cos\\theta\\). Khi đó \\[I=\\int_0^{\\pi/2}\\int_0^{2\\cos\\theta}\\sqrt{4-r^2}\\,r\\,dr\\,d\\theta.\\] Tích phân theo \\(r\\) bằng \\(\\dfrac83(1-\\sin^3\\theta)\\). Vì \\(\\int_0^{\\pi/2}\\sin^3\\theta\\,d\\theta=2/3\\), suy ra \\[I=\\frac83\\left(\\frac\\pi2-\\frac23\\right).\\]",
+    "quick": "Cực: \\(0\\le r\\le2\\cos\\theta\\), \\(0\\le\\theta\\le\\pi/2\\).",
+    "casio": "CASIO: tính \\(\\frac83\\left(\\frac\\pi2-\\int_0^{\\pi/2}\\sin^3X\\,dX\\right)\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 76,
+    "type": "double_integral_polar_official",
+    "question": "Tính tích phân \\(I=\\iint_D\\sqrt{x^2+y^2}\\,dx\\,dy\\), trong đó \\(D\\) được giới hạn bởi \\(x^2+y^2=a^2\\), \\(x^2+y^2=4a^2\\), với \\(a\\ge0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{14\\pi a^3}{3}\\)",
+      "\\(\\dfrac{56\\pi a^3}{3}\\)",
+      "\\(\\dfrac{7\\pi a^3}{3}\\)",
+      "\\(\\dfrac{14\\pi^3a}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{14\\pi a^3}{3}\\)",
+    "solution": "Miền \\(D\\) là vành khăn \\(a\\le r\\le2a\\), \\(0\\le\\theta\\le2\\pi\\). Vì \\(\\sqrt{x^2+y^2}=r\\) và \\(dA=r\\,dr\\,d\\theta\\), ta có \\[I=\\int_0^{2\\pi}\\int_a^{2a}r^2\\,dr\\,d\\theta=2\\pi\\left[\\frac{r^3}{3}\\right]_a^{2a}=\\frac{14\\pi a^3}{3}.\\]",
+    "quick": "Cực: tích phân thành \\(2\\pi\\int_a^{2a}r^2dr\\).",
+    "casio": "CASIO: tính \\(2\\pi\\cdot((2a)^3-a^3)/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 77,
+    "type": "double_integral_change_order_official",
+    "question": "Đổi thứ tự tính tích phân \\(I=\\int_0^2\\!dy\\int_{-\\sqrt{4-y^2}}^{2-y}f(x,y)\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_{-2}^{0}\\!dx\\int_0^{\\sqrt{4-x^2}}f(x,y)\\,dy+\\int_0^2\\!dx\\int_0^{2-x}f(x,y)\\,dy\\)",
+      "\\(I=\\int_{-2}^{2}\\!dx\\int_0^{\\sqrt{4-x^2}}f(x,y)\\,dy+\\int_{-2}^{2}\\!dx\\int_0^{2-x}f(x,y)\\,dy\\)",
+      "\\(I=\\int_{-2}^{2}\\!dx\\int_{2-x}^{\\sqrt{4-x^2}}f(x,y)\\,dy\\)",
+      "\\(I=\\int_{-2}^{2}\\!dx\\int_{\\sqrt{4-x^2}}^{2-x}f(x,y)\\,dy\\)"
+    ],
+    "correct": "\\(I=\\int_{-2}^{0}\\!dx\\int_0^{\\sqrt{4-x^2}}f(x,y)\\,dy+\\int_0^2\\!dx\\int_0^{2-x}f(x,y)\\,dy\\)",
+    "solution": "Miền nằm trong nửa trên của đường tròn \\(x^2+y^2=4\\) và phía dưới đường thẳng \\(y=2-x\\). Khi quét theo phương thẳng đứng, cần tách tại \\(x=0\\): với \\(-2\\le x\\le0\\), cận trên là cung tròn; với \\(0\\le x\\le2\\), cận trên là đường thẳng. Do đó đáp án đúng là tổng hai tích phân đã cho.",
+    "quick": "Tách miền tại \\(x=0\\): bên trái dùng cung tròn, bên phải dùng đường thẳng.",
+    "casio": "CASIO không cần thiết; nên vẽ cung tròn bán kính 2 và đường thẳng \\(y=2-x\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 78,
+    "type": "double_integral_change_order_official",
+    "question": "Đổi thứ tự tính tích phân \\(I=\\int_1^3\\!dy\\int_0^{2y}f(x,y)\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^2\\!dx\\int_1^3f(x,y)\\,dy+\\int_2^6\\!dx\\int_{x/2}^{3}f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^6\\!dx\\int_1^3f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^2\\!dx\\int_1^3f(x,y)\\,dy+\\int_2^6\\!dx\\int_1^{x/2}f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^6\\!dx\\int_{x/2}^{3}f(x,y)\\,dy\\)"
+    ],
+    "correct": "\\(I=\\int_0^2\\!dx\\int_1^3f(x,y)\\,dy+\\int_2^6\\!dx\\int_{x/2}^{3}f(x,y)\\,dy\\)",
+    "solution": "Miền được cho bởi \\(1\\le y\\le3\\), \\(0\\le x\\le2y\\). Khi đổi thứ tự, \\(x\\) chạy từ \\(0\\) đến \\(6\\). Với \\(0\\le x\\le2\\), điều kiện \\(y\\ge x/2\\) yếu hơn \\(y\\ge1\\), nên \\(1\\le y\\le3\\). Với \\(2\\le x\\le6\\), ta có \\(x/2\\le y\\le3\\).",
+    "quick": "Tách tại \\(x=2\\), vì \\(x/2=1\\) tại đó.",
+    "casio": "CASIO không cần thiết; vẽ hình thang giới hạn bởi \\(y=1\\), \\(y=3\\), \\(x=0\\), \\(x=2y\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 79,
+    "type": "double_integral_change_order_official",
+    "question": "Đổi thứ tự tính tích phân \\(I=\\int_0^2\\!dy\\int_{y-2}^{\\sqrt{4-y^2}}f(x,y)\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_{-2}^{0}\\!dx\\int_0^{x+2}f(x,y)\\,dy+\\int_0^2\\!dx\\int_0^{\\sqrt{4-x^2}}f(x,y)\\,dy\\)",
+      "\\(I=\\int_{-2}^{2}\\!dx\\int_0^{\\sqrt{4-x^2}}f(x,y)\\,dy+\\int_{-2}^{0}\\!dx\\int_0^{x+2}f(x,y)\\,dy\\)",
+      "\\(I=\\int_{-2}^{2}\\!dx\\int_{x+2}^{\\sqrt{4-x^2}}f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^2\\!dx\\int_0^{\\sqrt{4-x^2}}f(x,y)\\,dy\\)"
+    ],
+    "correct": "\\(I=\\int_{-2}^{0}\\!dx\\int_0^{x+2}f(x,y)\\,dy+\\int_0^2\\!dx\\int_0^{\\sqrt{4-x^2}}f(x,y)\\,dy\\)",
+    "solution": "Miền nằm trong nửa trên của đĩa \\(x^2+y^2\\le4\\) và bên phải đường thẳng \\(x=y-2\\), tức \\(y=x+2\\). Khi quét theo \\(x\\), với \\(-2\\le x\\le0\\), cận trên là \\(y=x+2\\); với \\(0\\le x\\le2\\), cận trên là cung tròn \\(y=\\sqrt{4-x^2}\\).",
+    "quick": "Tách tại \\(x=0\\): bên trái dùng đường thẳng, bên phải dùng cung tròn.",
+    "casio": "CASIO không cần thiết; vẽ nửa đường tròn bán kính 2 và đường thẳng \\(y=x+2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 80,
+    "type": "double_integral_change_order_official",
+    "question": "Đổi thứ tự tính tích phân \\(I=\\int_0^1\\!dx\\int_{\\sqrt{4x-x^2}}^{\\sqrt{4-x^2}}f(x,y)\\,dy\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{\\sqrt3}\\!dy\\int_0^{2-\\sqrt{4-y^2}}f(x,y)\\,dx+\\int_{\\sqrt3}^{2}\\!dy\\int_0^{\\sqrt{4-y^2}}f(x,y)\\,dx\\)",
+      "\\(I=\\int_0^2\\!dy\\int_{2-\\sqrt{4-y^2}}^{\\sqrt{4-y^2}}f(x,y)\\,dx\\)",
+      "\\(I=\\int_0^{\\sqrt3}\\!dy\\int_0^{2+\\sqrt{4-y^2}}f(x,y)\\,dx+\\int_{\\sqrt3}^{2}\\!dy\\int_0^{\\sqrt{4-y^2}}f(x,y)\\,dx\\)",
+      "\\(I=\\int_{-2}^{0}\\!dy\\int_{2-\\sqrt{4-y^2}}^{\\sqrt{4-y^2}}f(x,y)\\,dx\\)"
+    ],
+    "correct": "\\(I=\\int_0^{\\sqrt3}\\!dy\\int_0^{2-\\sqrt{4-y^2}}f(x,y)\\,dx+\\int_{\\sqrt3}^{2}\\!dy\\int_0^{\\sqrt{4-y^2}}f(x,y)\\,dx\\)",
+    "solution": "Hai biên là nửa đường tròn \\(x^2+y^2=4\\) và \\((x-2)^2+y^2=4\\), cắt nhau tại \\((1,\\sqrt3)\\). Khi quét ngang, với \\(0\\le y\\le\\sqrt3\\), biên phải là \\(x=2-\\sqrt{4-y^2}\\). Với \\(\\sqrt3\\le y\\le2\\), biên phải là \\(x=\\sqrt{4-y^2}\\). Biên trái luôn là \\(x=0\\).",
+    "quick": "Tách tại tung độ giao điểm \\(y=\\sqrt3\\).",
+    "casio": "CASIO không cần thiết; nhận dạng hai đường tròn tâm \\((0,0)\\) và \\((2,0)\\), cùng bán kính 2.",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 81,
+    "type": "double_integral_change_order_official",
+    "question": "Đổi thứ tự tính tích phân \\(I=\\int_0^1\\!dy\\int_{y^2/2}^{\\sqrt{3-y^2}}f(x,y)\\,dx\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{1/2}\\!dx\\int_0^{\\sqrt{2x}}f(x,y)\\,dy+\\int_{1/2}^{\\sqrt2}\\!dx\\int_0^1f(x,y)\\,dy+\\int_{\\sqrt2}^{\\sqrt3}\\!dx\\int_0^{\\sqrt{3-x^2}}f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^{\\sqrt3}\\!dx\\int_0^{\\sqrt{3-x^2}}f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^{1/2}\\!dx\\int_{\\sqrt{2x}}^1f(x,y)\\,dy+\\int_{1/2}^{\\sqrt3}\\!dx\\int_0^{\\sqrt{3-x^2}}f(x,y)\\,dy\\)",
+      "\\(I=\\int_0^{\\sqrt2}\\!dx\\int_0^1f(x,y)\\,dy+\\int_{\\sqrt2}^{\\sqrt3}\\!dx\\int_0^{\\sqrt{3-x^2}}f(x,y)\\,dy\\)"
+    ],
+    "correct": "\\(I=\\int_0^{1/2}\\!dx\\int_0^{\\sqrt{2x}}f(x,y)\\,dy+\\int_{1/2}^{\\sqrt2}\\!dx\\int_0^1f(x,y)\\,dy+\\int_{\\sqrt2}^{\\sqrt3}\\!dx\\int_0^{\\sqrt{3-x^2}}f(x,y)\\,dy\\)",
+    "solution": "Miền thỏa \\(0\\le y\\le1\\), \\(y^2/2\\le x\\le\\sqrt{3-y^2}\\). Khi đổi thứ tự, cận trên của \\(y\\) là giá trị nhỏ nhất trong \\(\\sqrt{2x}\\), \\(1\\), \\(\\sqrt{3-x^2}\\). Các điểm đổi biên xảy ra tại \\(x=1/2\\) và \\(x=\\sqrt2\\). Vì vậy phải tách thành ba tích phân như đáp án.",
+    "quick": "Ba khoảng: \\([0,1/2]\\), \\([1/2,\\sqrt2]\\), \\([\\sqrt2,\\sqrt3]\\).",
+    "casio": "CASIO không cần thiết; vẽ parabol \\(x=y^2/2\\), cung tròn \\(x^2+y^2=3\\) và đường \\(y=1\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
   }
 ]

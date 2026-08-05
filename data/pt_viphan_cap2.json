@@ -92,150 +92,6 @@
   {
     "id": 6,
     "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' - 3y' + 2y = e^{x}\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(Axe^{x}\\)",
-      "\\(Ae^{x}\\)",
-      "\\(Ae^{2x}\\)",
-      "\\(Axe^{2x}\\)"
-    ],
-    "correct": "\\(Axe^{x}\\)",
-    "solution": "Vế phải \\(e^{x}\\), \\(r=1\\) là nghiệm đơn của pt đặc trưng (r=1,2) → nghiệm riêng dạng \\(Axe^{x}\\).",
-    "quick": "Trùng nghiệm đơn → nhân thêm x",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 7,
-    "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' - 4y' + 4y = e^{2x}\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(Ax^2e^{2x}\\)",
-      "\\(Ae^{2x}\\)",
-      "\\(Axe^{2x}\\)",
-      "\\(Ae^{x}\\)"
-    ],
-    "correct": "\\(Ax^2e^{2x}\\)",
-    "solution": "Phương trình đặc trưng: \\(r^2-4r+4=0 \\Rightarrow r=2\\) (kép). Vế phải \\(e^{2x}\\) trùng nghiệm kép → nhân \\(x^2\\).",
-    "quick": "Trùng nghiệm kép → nhân \\(x^2\\)",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 8,
-    "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' + y = \\sin x\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(A\\sin x\\)",
-      "\\(A\\cos x\\)",
-      "\\(x(A\\cos x + B\\sin x)\\)",
-      "\\(A\\cos x + B\\sin x\\)"
-    ],
-    "correct": "\\(x(A\\cos x + B\\sin x)\\)",
-    "solution": "Phương trình đặc trưng: \\(r^2+1=0 \\Rightarrow r=\\pm i\\). Vế phải \\(\\sin x\\) (hay \\(e^{ix}\\)) trùng nghiệm phức → nhân x.",
-    "quick": "Trùng nghiệm phức \\(\\pm i\\) → nhân x",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 9,
-    "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' + 3y' + 2y = \\cos 2x\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(A\\cos 2x + B\\sin 2x\\)",
-      "\\(A\\cos 2x\\)",
-      "\\(x(A\\cos 2x + B\\sin 2x)\\)",
-      "\\(Ae^{2x}\\)"
-    ],
-    "correct": "\\(A\\cos 2x + B\\sin 2x\\)",
-    "solution": "Vế phải \\(\\cos 2x\\), \\(\\pm2i\\) không là nghiệm của pt đặc trưng (r=-1,-2) → dạng \\(A\\cos 2x + B\\sin 2x\\).",
-    "quick": "Không trùng nghiệm → dạng tổ hợp sin/cos",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 10,
-    "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' - 2y' + y = e^{x}\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(Ax^2e^{x}\\)",
-      "\\(Ae^{x}\\)",
-      "\\(Axe^{x}\\)",
-      "\\(Ae^{2x}\\)"
-    ],
-    "correct": "\\(Ax^2e^{x}\\)",
-    "solution": "Phương trình đặc trưng: \\(r^2-2r+1=0 \\Rightarrow r=1\\) (kép). Vế phải \\(e^{x}\\) trùng nghiệm kép → nhân \\(x^2\\).",
-    "quick": "Trùng nghiệm kép → \\(x^2e^x\\)",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 11,
-    "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' + 4y = \\sin 2x\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(x(A\\cos 2x + B\\sin 2x)\\)",
-      "\\(A\\cos 2x + B\\sin 2x\\)",
-      "\\(A\\sin 2x\\)",
-      "\\(A\\cos 2x\\)"
-    ],
-    "correct": "\\(x(A\\cos 2x + B\\sin 2x)\\)",
-    "solution": "Phương trình đặc trưng: \\(r^2+4=0 \\Rightarrow r=\\pm2i\\). Vế phải \\(\\sin 2x\\) trùng nghiệm phức → nhân x.",
-    "quick": "Trùng nghiệm phức \\(\\pm2i\\) → nhân x",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 12,
-    "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' - y' - 2y = x^2\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(Ax^2 + Bx + C\\)",
-      "\\(Ax^2\\)",
-      "\\(Ax^2e^{x}\\)",
-      "\\(Axe^{2x}\\)"
-    ],
-    "correct": "\\(Ax^2 + Bx + C\\)",
-    "solution": "Vế phải là đa thức bậc 2, \\(r=0\\) không là nghiệm của pt đặc trưng (r=-1,2) → dạng đa thức cùng bậc.",
-    "quick": "Đa thức, không trùng nghiệm 0 → dạng đa thức bậc 2",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 13,
-    "type": "nonhomogeneous_constant_coeff",
-    "question": "Nghiệm riêng của \\(y'' - 3y' + 2y = e^{2x}\\) dạng?",
-    "matrix": null,
-    "options": [
-      "\\(Axe^{2x}\\)",
-      "\\(Ae^{2x}\\)",
-      "\\(Ax^2e^{2x}\\)",
-      "\\(Ae^{x}\\)"
-    ],
-    "correct": "\\(Axe^{2x}\\)",
-    "solution": "Phương trình đặc trưng: \\(r^2-3r+2=0 \\Rightarrow r=1,2\\). Vế phải \\(e^{2x}\\) trùng nghiệm đơn \\(r=2\\) → nhân x.",
-    "quick": "Trùng nghiệm đơn → \\(Axe^{2x}\\)",
-    "casio": "CASIO: 1) Giải PT đặc trưng bằng [MODE][5][3]. 2) Đoán nghiệm riêng y* theo vế phải (đa thức/exp/trig). 3) Nghiệm tổng quát = y_h + y*.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 14,
-    "type": "nonhomogeneous_constant_coeff",
     "question": "Giải \\(y'' + y = \\cos x\\). Nghiệm tổng quát là?",
     "matrix": null,
     "options": [
@@ -252,7 +108,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 15,
+    "id": 7,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Tìm nghiệm riêng của \\(y'' + 4y = 8\\sin 2x\\) bằng phương pháp hệ số bất định?",
     "matrix": null,
@@ -270,7 +126,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 16,
+    "id": 8,
     "type": "initial_value",
     "question": "Giải bài toán Cauchy: \\(y'' - 3y' + 2y = 0\\), \\(y(0)=1, y'(0)=0\\). Kết quả \\(y(1)=\\)?",
     "matrix": null,
@@ -288,7 +144,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 17,
+    "id": 9,
     "type": "initial_value",
     "question": "Bài toán Cauchy \\(y'' + y = 0\\), \\(y(0)=0, y'(0)=1\\) có nghiệm là?",
     "matrix": null,
@@ -306,25 +162,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 18,
-    "type": "application_oscillation",
-    "question": "Phương trình dao động tắt dần có dạng \\(my''+cy'+ky=0\\), với \\(m,c,k\\gt0\\). Nếu \\(c^2-4mk\\gt0\\), hệ sẽ?",
-    "matrix": null,
-    "options": [
-      "Dao động tắt dần mạnh (quá tắt)",
-      "Dao động điều hòa",
-      "Dao động tắt dần yếu",
-      "Cộng hưởng"
-    ],
-    "correct": "Dao động tắt dần mạnh (quá tắt)",
-    "solution": "Nghiệm của pt đặc trưng là hai nghiệm thực âm phân biệt → hệ trở về vị trí cân bằng mà không dao động.",
-    "quick": "\\(\\Delta=c^2-4mk\\gt0\\Rightarrow\\) hệ quá tắt, không dao động.",
-    "casio": "CASIO: Dao động điều hòa y''+ω²y=0 → y=Acos(ωt)+Bsin(ωt). ω=√(k/m). Tìm A,B từ y(0),y'(0). Dùng [MODE][5][1] giải hệ A,B.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 19,
+    "id": 10,
     "type": "application_oscillation",
     "question": "Phương trình \\(y'' + 4y = 0\\) mô tả dao động điều hòa với tần số góc?",
     "matrix": null,
@@ -342,7 +180,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 20,
+    "id": 11,
     "type": "application_oscillation",
     "question": "Phương trình \\(y''+2y'+5y=0\\) mô tả dao động tắt dần. Tần số góc tắt dần \\(\\omega_d\\) bằng?",
     "matrix": null,
@@ -360,25 +198,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 21,
-    "type": "wronskian",
-    "question": "Định thức Wronski (Wronskian) của hai hàm \\(y_1, y_2\\) được định nghĩa là?",
-    "matrix": null,
-    "options": [
-      "\\(W = y_1y_2' - y_1'y_2\\)",
-      "\\(W = y_1y_2 + y_1'y_2'\\)",
-      "\\(W = y_1y_2' + y_1'y_2\\)",
-      "\\(W = y_1'y_2' - y_1y_2\\)"
-    ],
-    "correct": "\\(W = y_1y_2' - y_1'y_2\\)",
-    "solution": "Wronskian \\(W(y_1,y_2) = \\begin{vmatrix} y_1 & y_2 \\\\ y_1' & y_2' \\end{vmatrix} = y_1y_2' - y_1'y_2\\).",
-    "quick": "\\(W = y_1y_2' - y_1'y_2\\) (khác 0 thì độc lập tuyến tính)",
-    "casio": "CASIO fx-580VNX: W=|y₁ y₂; y₁' y₂'|. Vào [MODE][6] → MatA 2×2 → nhập y₁,y₂,y₁',y₂' → [OPTN][Matrix][det][MatA][EXE].",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 22,
+    "id": 12,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1 = e^{x}, y_2 = e^{2x}\\) là?",
     "matrix": null,
@@ -396,7 +216,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 23,
+    "id": 13,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1 = x, y_2 = x^2\\) là?",
     "matrix": null,
@@ -414,25 +234,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 24,
-    "type": "nonhomogeneous_superposition",
-    "question": "Nếu \\(L[y_{p1}]=f_1(x)\\) và \\(L[y_{p2}]=f_2(x)\\), trong đó \\(L\\) là toán tử vi phân tuyến tính, thì",
-    "matrix": null,
-    "options": [
-      "\\(L[y_{p1}+y_{p2}]=f_1+f_2\\)",
-      "\\(L[y_{p1}y_{p2}]=f_1+f_2\\)",
-      "\\(L[y_{p1}-y_{p2}]=f_1+f_2\\)",
-      "\\(L[y_{p1}+y_{p2}]=f_1f_2\\)"
-    ],
-    "correct": "\\(L[y_{p1}+y_{p2}]=f_1+f_2\\)",
-    "solution": "Do tính tuyến tính, \\(L[y_{p1}+y_{p2}]=L[y_{p1}]+L[y_{p2}]=f_1+f_2\\). Đây là nguyên lý chồng chất.",
-    "quick": "Toán tử tuyến tính biến tổng thành tổng.",
-    "casio": "CASIO không cần thiết.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 25,
+    "id": 14,
     "type": "nonhomogeneous_superposition",
     "question": "Cho \\(y'' - y = e^{x} + \\sin x\\). Nếu \\(y_{p1} = \\frac{x}{2}e^{x}\\) là nghiệm riêng ứng với \\(e^{x}\\) và \\(y_{p2} = -\\frac{1}{2}\\sin x\\) ứng với \\(\\sin x\\), thì nghiệm riêng của phương trình đã cho là?",
     "matrix": null,
@@ -450,7 +252,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 26,
+    "id": 15,
     "type": "constant_coeff_quick",
     "question": "Nghiệm tổng quát của \\(y'' - 2y' - 3y = 0\\) là?",
     "matrix": null,
@@ -468,7 +270,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 27,
+    "id": 16,
     "type": "constant_coeff_quick",
     "question": "Nghiệm tổng quát của \\(y'' + 2y' + 2y = 0\\) là?",
     "matrix": null,
@@ -486,7 +288,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 28,
+    "id": 17,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''+6y'+9y=0\\) là",
     "matrix": null,
@@ -504,7 +306,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 29,
+    "id": 18,
     "type": "initial_value",
     "question": "Giải \\(y'' - y = 0\\), \\(y(0)=1, y'(0)=1\\). Nghiệm là?",
     "matrix": null,
@@ -522,7 +324,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 30,
+    "id": 19,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm riêng của \\(y'' - 2y' + y = e^{x}\\) bằng phương pháp hệ số bất định là?",
     "matrix": null,
@@ -540,43 +342,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 31,
-    "type": "identify_roots",
-    "question": "PT đặc trưng \\(k^2-5k+6=0\\) có nghiệm là?",
-    "matrix": null,
-    "options": [
-      "\\(k_1=2,\\;k_2=3\\)",
-      "\\(k_1=1,\\;k_2=6\\)",
-      "\\(k_1=-2,\\;k_2=-3\\)",
-      "\\(k_1=5,\\;k_2=1\\)"
-    ],
-    "correct": "\\(k_1=2,\\;k_2=3\\)",
-    "solution": "\\(k^2-5k+6=0\\) → \\((k-2)(k-3)=0\\) → \\(k_1=2,\\;k_2=3\\).\n\nNghiệm thuần nhất: \\(y_h=C_1e^{2x}+C_2e^{3x}\\).",
-    "quick": "\\(k^2-5k+6=(k-2)(k-3)\\Rightarrow k=2,3\\).",
-    "casio": "CASIO: Giải bậc 2: k=(5±√(25-24))/2=(5±1)/2 → k=3 hoặc k=2.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 32,
-    "type": "identify_roots",
-    "question": "PT đặc trưng \\(k^2+4=0\\) có nghiệm là?",
-    "matrix": null,
-    "options": [
-      "\\(k=\\pm2i\\)",
-      "\\(k=\\pm2\\)",
-      "\\(k=-2\\pm i\\)",
-      "\\(k=2\\pm i\\)"
-    ],
-    "correct": "\\(k=\\pm2i\\)",
-    "solution": "\\(k^2+4=0\\Rightarrow k^2=-4\\Rightarrow k=\\pm2i\\).",
-    "quick": "\\(k^2+4=0\\Rightarrow k=\\pm2i\\), nên nghiệm thuần nhất là \\(C_1\\cos2x+C_2\\sin2x\\).",
-    "casio": "CASIO: k=√(-4)=±2i. Dạng phức α±βi với α=0, β=2.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 33,
+    "id": 20,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-2y'+y=0\\) là?",
     "matrix": null,
@@ -594,7 +360,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 34,
+    "id": 21,
     "type": "homogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''+4y=0\\) là?",
     "matrix": null,
@@ -612,25 +378,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 35,
-    "type": "undetermined_coefficients_poly",
-    "question": "Dạng nghiệm riêng của \\(y''+y'+y=3x^2+1\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(y_p=Ax^2+Bx+D\\)",
-      "\\(y_p=Ax^2\\)",
-      "\\(y_p=Ax^2+Bx\\)",
-      "\\(y_p=A\\)"
-    ],
-    "correct": "\\(y_p=Ax^2+Bx+D\\)",
-    "solution": "Vế phải là đa thức bậc \\(2\\). Vì \\(k=0\\) không là nghiệm của phương trình đặc trưng \\(k^2+k+1=0\\), chọn nghiệm riêng là đa thức cùng bậc: \\(y_p=Ax^2+Bx+D\\).",
-    "quick": "Đa thức bậc \\(2\\), không cộng hưởng tại \\(k=0\\Rightarrow y_p=Ax^2+Bx+D\\).",
-    "casio": "CASIO: Xác định dạng, thay vào PT, đồng nhất hệ số để tìm A,B,D.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 36,
+    "id": 22,
     "type": "undetermined_coefficients_poly",
     "question": "Nghiệm riêng của \\(y''-y=2\\) là?",
     "matrix": null,
@@ -648,25 +396,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 37,
-    "type": "undetermined_coefficients_exp",
-    "question": "Dạng nghiệm riêng của \\(y''-3y'+2y=e^{3x}\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(y_p=Ae^{3x}\\)",
-      "\\(y_p=Axe^{3x}\\)",
-      "\\(y_p=Ax^2e^{3x}\\)",
-      "\\(y_p=Ae^x\\)"
-    ],
-    "correct": "\\(y_p=Ae^{3x}\\)",
-    "solution": "Vế phải là \\(e^{3x}\\). Vì \\(3\\) không là nghiệm của \\(k^2-3k+2=0\\), chọn \\(y_p=Ae^{3x}\\), không cần nhân thêm \\(x\\).",
-    "quick": "\\(3\\) không là nghiệm đặc trưng \\(\\Rightarrow y_p=Ae^{3x}\\).",
-    "casio": "CASIO: Thay y_p=Ae^3x, y_p'=3Ae^3x, y_p''=9Ae^3x. PT: (9-9+2)Ae^3x=e^3x → 2A=1 → A=1/2.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 38,
+    "id": 23,
     "type": "undetermined_coefficients_exp",
     "question": "Nghiệm riêng của \\(y''-3y'+2y=e^x\\) là?",
     "matrix": null,
@@ -684,25 +414,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 39,
-    "type": "undetermined_coefficients_trig",
-    "question": "Dạng nghiệm riêng của \\(y''+4y=\\cos3x\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(y_p=A\\cos3x+B\\sin3x\\)",
-      "\\(y_p=x(A\\cos3x+B\\sin3x)\\)",
-      "\\(y_p=A\\cos3x\\)",
-      "\\(y_p=Ax\\cos3x\\)"
-    ],
-    "correct": "\\(y_p=A\\cos3x+B\\sin3x\\)",
-    "solution": "Vế phải là \\(\\cos3x\\), tương ứng với \\(\\pm3i\\), trong khi nghiệm đặc trưng là \\(\\pm2i\\). Không có cộng hưởng, nên chọn \\(y_p=A\\cos3x+B\\sin3x\\).",
-    "quick": "\\(\\pm3i\\ne\\pm2i\\Rightarrow y_p=A\\cos3x+B\\sin3x\\).",
-    "casio": "CASIO: y_p=Acos3x+Bsin3x. Thay vào, đồng nhất: (-9A+4A)cos3x+(-9B+4B)sin3x=cos3x → -5A=1, -5B=0.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 40,
+    "id": 24,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm tổng quát của \\(y''-5y'+6y=e^{3x}\\) là?",
     "matrix": null,
@@ -720,7 +432,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 41,
+    "id": 25,
     "type": "initial_value",
     "question": "Nghiệm của \\(y''-y=0\\) thỏa \\(y(0)=2,\\;y'(0)=0\\) là?",
     "matrix": null,
@@ -738,7 +450,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 42,
+    "id": 26,
     "type": "boundary_value",
     "question": "Nghiệm của \\(y''+y=0,\\;y(0)=0,\\;y(\\pi/2)=1\\) là?",
     "matrix": null,
@@ -756,7 +468,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 43,
+    "id": 27,
     "type": "wronskian",
     "question": "Wronskian của \\(y_1=e^x\\) và \\(y_2=e^{-x}\\) là?",
     "matrix": null,
@@ -774,7 +486,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 44,
+    "id": 28,
     "type": "application_oscillation",
     "question": "Con lắc đơn nhỏ dao động tự do: \\(y''+\\omega^2y=0\\). Tần số góc \\(\\omega=3\\). Nghiệm tổng quát là?",
     "matrix": null,
@@ -792,7 +504,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 45,
+    "id": 29,
     "type": "nonhomogeneous_constant_coeff",
     "question": "Nghiệm riêng của \\(y''+4y=2\\cos2x\\) là?",
     "matrix": null,
@@ -810,43 +522,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 46,
-    "type": "application_rlc",
-    "question": "Mạch RLC nối tiếp được mô tả bởi phương trình vi phân cấp 2 nào đối với điện tích \\(q(t)\\)?",
-    "matrix": null,
-    "options": [
-      "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
-      "\\(Lq'' + Cq' + Rq = E(t)\\)",
-      "\\(Rq'' + Lq' + \\frac{1}{C}q = E(t)\\)",
-      "\\(\\frac{1}{C}q'' + Rq' + Lq = E(t)\\)"
-    ],
-    "correct": "\\(Lq'' + Rq' + \\frac{1}{C}q = E(t)\\)",
-    "solution": "Định luật Kirchhoff: \\(L\\frac{d^2q}{dt^2} + R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)\\).",
-    "quick": "Mạch RLC nối tiếp: \\(Lq'' + Rq' + q/C = E(t)\\)",
-    "casio": "CASIO: Mạch RLC: LQ''+RQ'+Q/C=E(t). Giải PT đặc trưng. Tính r=R/(2L), ω₀=1/√(LC). Phân loại: tắt dần/cộng hưởng.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 47,
-    "type": "application_rlc",
-    "question": "Trong mạch RLC, nếu \\(R=0\\), phương trình trở thành \\(Lq'' + \\frac{1}{C}q = 0\\). Tần số góc riêng của mạch là?",
-    "matrix": null,
-    "options": [
-      "\\(\\frac{1}{\\sqrt{LC}}\\)",
-      "\\(\\sqrt{LC}\\)",
-      "\\(\\frac{1}{LC}\\)",
-      "\\(\\frac{R}{L}\\)"
-    ],
-    "correct": "\\(\\frac{1}{\\sqrt{LC}}\\)",
-    "solution": "Phương trình \\(q'' + \\frac{1}{LC}q = 0\\) → \\(\\omega = \\frac{1}{\\sqrt{LC}}\\).",
-    "quick": "Tần số cộng hưởng riêng của mạch LC: \\(\\omega_0 = 1/\\sqrt{LC}\\)",
-    "casio": "CASIO: Mạch RLC: LQ''+RQ'+Q/C=E(t). Giải PT đặc trưng. Tính r=R/(2L), ω₀=1/√(LC). Phân loại: tắt dần/cộng hưởng.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 48,
+    "id": 30,
     "type": "initial_value_short_answer_style",
     "question": "Gọi \\(y=y(x)\\) là nghiệm của bài toán \\(y''-5y'+6y=0\\), \\(y(0)=1\\), \\(y'(0)=2\\). Giá trị \\(y(3)\\) làm tròn đến hàng đơn vị bằng",
     "matrix": null,
@@ -864,7 +540,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 49,
+    "id": 31,
     "type": "ode_second_order_cauchy",
     "question": "Giải bài toán \\(y''-y'-2y=0\\), \\(y(0)=3\\), \\(y'(0)=0\\).",
     "matrix": null,
@@ -882,7 +558,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 50,
+    "id": 32,
     "type": "ode_particular_resonance",
     "question": "Biết \\(y''-2y'+y=2e^x\\) có nghiệm riêng dạng \\(y_r=A x^2 e^x\\). Tìm \\(A\\).",
     "matrix": null,
@@ -900,25 +576,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 51,
-    "type": "ode_second_general",
-    "question": "Tìm nghiệm tổng quát của \\(y''-5y'+6y=0\\).",
-    "matrix": null,
-    "options": [
-      "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
-      "\\(y=(C_1+C_2x)e^{2x}\\)",
-      "\\(y=C_1e^{-2x}+C_2e^{-3x}\\)",
-      "\\(y=C_1\\cos2x+C_2\\sin3x\\)"
-    ],
-    "correct": "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
-    "solution": "Phương trình đặc trưng \\(r^2-5r+6=0\\) có nghiệm \\(r=2,3\\).",
-    "quick": "Hai nghiệm thực phân biệt.",
-    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 52,
+    "id": 33,
     "type": "ode_second_cauchy_forced",
     "question": "Giải \\(y''+4y=4x\\), \\(y(0)=0\\), \\(y'(0)=1\\).",
     "matrix": null,
@@ -936,7 +594,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 53,
+    "id": 34,
     "type": "ode_particular_linear",
     "question": "Cho \\(y''-5y'+6y=12x\\). Nghiệm riêng dạng \\(y_r=ax+b\\). Tính \\(a+b\\).",
     "matrix": null,
@@ -954,7 +612,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 54,
+    "id": 35,
     "type": "ode_second_sin_cauchy",
     "question": "Giải \\(y''+y=0\\), \\(y(0)=1\\), \\(y'(0)=2\\).",
     "matrix": null,
@@ -972,25 +630,7 @@
     "topic": "Phương trình vi phân cấp 2"
   },
   {
-    "id": 55,
-    "type": "ode_particular_resonance_choice",
-    "question": "Dạng nghiệm riêng của \\(y''-4y'+3y=e^{3x}\\) là",
-    "matrix": null,
-    "options": [
-      "\\(y_r=Axe^{3x}\\)",
-      "\\(y_r=Ae^{3x}\\)",
-      "\\(y_r=Ax^2e^{3x}\\)",
-      "\\(y_r=(Ax+B)e^{3x}\\)"
-    ],
-    "correct": "\\(y_r=Axe^{3x}\\)",
-    "solution": "Phương trình đặc trưng có nghiệm \\(r=1,3\\). Vì vế phải là \\(e^{3x}\\) trùng nghiệm đơn \\(r=3\\), phải nhân thêm \\(x\\).",
-    "quick": "Cộng hưởng nghiệm đơn thì nhân thêm \\(x\\).",
-    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 2"
-  },
-  {
-    "id": 56,
+    "id": 36,
     "type": "ode_value_at_one",
     "question": "Gọi \\(y\\) là nghiệm của \\(y''-4y'+3y=0\\), \\(y(0)=2\\), \\(y'(0)=4\\). Tính gần đúng \\(y(1)\\).",
     "matrix": null,
@@ -1004,6 +644,24 @@
     "solution": "Nghiệm \\(y=C_1e^x+C_2e^{3x}\\). Từ \\(C_1+C_2=2\\), \\(C_1+3C_2=4\\), suy ra \\(C_1=C_2=1\\). Do đó \\(y(1)=e+e^3\\approx22.8\\).",
     "quick": "Giải phương trình đặc trưng rồi thay \\(x=1\\).",
     "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bằng Equation/Polynomial bậc 2. Với đáp án Cauchy, kiểm tra y(0), y'(0) và thay nghiệm vào phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 37,
+    "type": "nonhomogeneous_constant_coeff_cep",
+    "question": "Nghiệm tổng quát của phương trình vi phân \\(y''-3y'+2y=x+1\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=C_1e^{-x}+C_2e^{-2x}+\\dfrac{x}{2}+\\dfrac54\\)",
+      "\\(y=C_1e^x+C_2e^{2x}+\\dfrac{x}{2}-\\dfrac54\\)",
+      "\\(y=C_1e^x+C_2e^{2x}+\\dfrac{x}{2}+\\dfrac54\\)",
+      "\\(y=C_1e^x+C_2e^{-2x}+x+1\\)"
+    ],
+    "correct": "\\(y=C_1e^x+C_2e^{2x}+\\dfrac{x}{2}+\\dfrac54\\)",
+    "solution": "Phương trình thuần nhất có phương trình đặc trưng \\(r^2-3r+2=0\\), nên \\(y_h=C_1e^x+C_2e^{2x}\\). Đặt nghiệm riêng \\(y_p=ax+b\\). Thay vào phương trình được \\(2ax-3a+2b=x+1\\). So sánh hệ số: \\(2a=1\\Rightarrow a=1/2\\), và \\(-3a+2b=1\\Rightarrow b=5/4\\). Do đó \\(y=C_1e^x+C_2e^{2x}+\\dfrac{x}{2}+\\dfrac54\\).",
+    "quick": "Giải phần thuần nhất, rồi đặt \\(y_p=ax+b\\).",
+    "casio": "CASIO: giải phương trình đặc trưng bằng chức năng phương trình bậc hai; sau đó kiểm tra phần riêng \\(x/2+5/4\\) bằng cách thay vào vế trái.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
   }

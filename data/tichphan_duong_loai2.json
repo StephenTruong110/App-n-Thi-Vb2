@@ -56,24 +56,6 @@
   {
     "id": 4,
     "type": "green_theorem",
-    "question": "Công thức Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D\\left(\\dfrac{\\partial Q}{\\partial x}-\\dfrac{\\partial P}{\\partial y}\\right)dA\\) áp dụng khi \\(C\\) đi theo chiều",
-    "matrix": null,
-    "options": [
-      "Ngược chiều kim đồng hồ (dương)",
-      "Cùng chiều kim đồng hồ",
-      "Bất kỳ",
-      "Theo chiều tăng \\(x\\)"
-    ],
-    "correct": "Ngược chiều kim đồng hồ (dương)",
-    "solution": "Công thức Green áp dụng khi \\(C\\) là biên của \\(D\\) đi theo chiều dương (ngược chiều kim đồng hồ — vùng \\(D\\) ở phía trái).",
-    "quick": "Green: chiều dương = ngược chiều kim đồng hồ (miền ở bên trái)",
-    "casio": "Chiều dương: vùng D luôn ở phía tay trái khi đi trên C",
-    "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green"
-  },
-  {
-    "id": 5,
-    "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C 2xy\\,dx+(x^2+y^2)\\,dy\\) với \\(C\\) là biên hình vuông \\([0,1]\\times[0,1]\\) (ngược chiều KĐH).",
     "matrix": null,
     "options": [
@@ -90,7 +72,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 6,
+    "id": 5,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C (x-y)\\,dx+(x+y)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH).",
     "matrix": null,
@@ -108,7 +90,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 7,
+    "id": 6,
     "type": "green_theorem",
     "question": "Dùng Green tính diện tích của miền \\(D\\) qua công thức \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\). Với \\(C\\) là đường tròn \\(x^2+y^2=R^2\\) (ngược KĐH), ta có",
     "matrix": null,
@@ -126,25 +108,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 8,
-    "type": "potential_function",
-    "question": "Trường \\(\\mathbf{F}=(2xy,x^2)\\) có thế hàm không? (Kiểm tra \\(P'_y=Q'_x\\)?)",
-    "matrix": null,
-    "options": [
-      "Có, vì \\(P'_y=Q'_x=2x\\)",
-      "Không, vì \\(P'_y\\neq Q'_x\\)",
-      "Chỉ trên đường thẳng",
-      "Không đủ điều kiện"
-    ],
-    "correct": "Có, vì \\(P'_y=Q'_x=2x\\)",
-    "solution": "\\(P=2xy\\), \\(Q=x^2\\). \\(P'_y=2x\\), \\(Q'_x=2x\\). Vì \\(P'_y=Q'_x\\) → trường có thế hàm (bảo toàn).",
-    "quick": "\\(P'_y=2x=Q'_x\\) → thế hàm \\(U=x^2y\\) (kiểm tra: \\(U'_x=2xy\\), \\(U'_y=x^2\\) ✓)",
-    "casio": "CASIO: Kiểm tra trường thế: P'_y = Q'_x? Dùng d/dx(P) theo y và d/dx(Q) theo x. Nếu bằng nhau → tích phân đường không phụ thuộc đường đi → I = U(B) - U(A).",
-    "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green"
-  },
-  {
-    "id": 9,
+    "id": 7,
     "type": "potential_function",
     "question": "Họ thế hàm tổng quát của \\(\\mathbf{F}=(2xy,x^2+2y)\\) là",
     "matrix": null,
@@ -162,7 +126,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 10,
+    "id": 8,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C 2xy\\,dx+x^2\\,dy\\) với \\(C\\) bất kỳ từ \\((0,0)\\) đến \\((2,3)\\).",
     "matrix": null,
@@ -180,7 +144,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 11,
+    "id": 9,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C(3x^2+2y)\\,dx+(2x+3y^2)\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,2)\\).",
     "matrix": null,
@@ -198,7 +162,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 12,
+    "id": 10,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C (x^2-y)\\,dx+(y^2+x)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
     "matrix": null,
@@ -216,7 +180,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 13,
+    "id": 11,
     "type": "line_integral_type2",
     "question": "Công của lực \\(\\mathbf{F}=(y-x)\\mathbf{i}+(x+y)\\mathbf{j}\\) dọc theo đường tròn \\(x^2+y^2=1\\) từ \\((1,0)\\) đến \\((0,1)\\) (ngược KĐH) là",
     "matrix": null,
@@ -234,7 +198,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 14,
+    "id": 12,
     "type": "line_integral_type2",
     "question": "Tính \\(\\oint_C x^2y\\,dx-xy^2\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=1\\) (ngược KĐH) dùng Green.",
     "matrix": null,
@@ -252,7 +216,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 15,
+    "id": 13,
     "type": "green_theorem",
     "question": "Tính diện tích elip \\(\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1\\) dùng công thức Green \\(S=\\dfrac{1}{2}\\oint_C x\\,dy-y\\,dx\\).",
     "matrix": null,
@@ -270,7 +234,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 16,
+    "id": 14,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C e^x\\sin y\\,dx+e^x\\cos y\\,dy\\) với \\(C\\) từ \\((0,0)\\) đến \\((1,\\pi)\\).",
     "matrix": null,
@@ -288,7 +252,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 17,
+    "id": 15,
     "type": "green_theorem",
     "question": "Tính \\(\\oint_C(e^x+y^3)\\,dx+(\\cos y+x^3)\\,dy\\) với \\(C\\) là đường tròn \\(x^2+y^2=4\\) (ngược KĐH).",
     "matrix": null,
@@ -306,7 +270,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 18,
+    "id": 16,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C y\\,dx-x\\,dy\\) với \\(C\\) là đường tròn \\(x=R\\cos t\\), \\(y=R\\sin t\\), \\(t: 0\\to2\\pi\\).",
     "matrix": null,
@@ -324,25 +288,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 19,
-    "type": "green_theorem",
-    "question": "Khi trường \\((P,Q)\\) có thế hàm (\\(P'_y=Q'_x\\)), tích phân \\(\\oint_C P\\,dx+Q\\,dy\\) trên đường khép kín \\(C\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(0\\)",
-      "Phụ thuộc vào hình dạng của \\(C\\)",
-      "Diện tích \\(D\\)",
-      "Không xác định"
-    ],
-    "correct": "\\(0\\)",
-    "solution": "Nếu \\(P'_y=Q'_x\\) thì \\(Q'_x-P'_y=0\\). Theo Green: \\(\\oint_C=\\iint_D 0\\,dA=0\\).",
-    "quick": "Trường thế → tích phân không phụ thuộc đường đi → tích phân trên đường khép kín = 0",
-    "casio": "CASIO: Định lý Green: ∮_C Pdx+Qdy = ∬_D (Q'_x-P'_y)dA. Tính Q'_x và P'_y (dùng d/dx), lấy hiệu, rồi tích phân trên D. Rất tiện khi miền D đơn giản (hình tròn, hình chữ nhật).",
-    "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green"
-  },
-  {
-    "id": 20,
+    "id": 17,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C (3x^2y+y)\\,dx+(x^3+x)\\,dy\\) với \\(C\\) là tam giác đỉnh \\((0,0),(1,0),(0,1)\\) (ngược KĐH).",
     "matrix": null,
@@ -360,7 +306,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 21,
+    "id": 18,
     "type": "line_work",
     "question": "Tính công \\(W\\) của trường vectơ \\(\\mathbf{F}=(y-x)\\mathbf{i}+x\\mathbf{j}\\) dọc theo cung \\(x^2+y^2=1\\) từ \\((1;0)\\) đến \\((0;1)\\) (ngược chiều kim đồng hồ).",
     "matrix": null,
@@ -378,7 +324,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 22,
+    "id": 19,
     "type": "line_work",
     "question": "Tính công \\(W=\\int_C\\mathbf{F}\\cdot d\\mathbf{r}\\) với \\(\\mathbf{F}=(y,x)\\) dọc đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
     "matrix": null,
@@ -396,25 +342,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 23,
-    "type": "green_theorem",
-    "question": "Định lý Green liên hệ tích phân đường với tích phân gì?",
-    "matrix": null,
-    "options": [
-      "Tích phân đôi trên miền phẳng D",
-      "Tích phân ba",
-      "Tích phân mặt",
-      "Tích phân xác định"
-    ],
-    "correct": "Tích phân đôi trên miền phẳng D",
-    "solution": "Định lý Green: \\(\\oint_L Mdx+Ndy=\\iint_D\\left(\\dfrac{\\partial N}{\\partial x}-\\dfrac{\\partial M}{\\partial y}\\right)dA\\).\n\nChuyển tích phân đường (trên biên L) → tích phân đôi (trên miền D).",
-    "quick": "Green: ∮Mdx+Ndy = ∬(N_x-M_y)dA. Đường → đôi.",
-    "casio": "CASIO: Kiểm tra N_x-M_y trước. Nếu đơn giản → dùng Green.",
-    "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green"
-  },
-  {
-    "id": 24,
+    "id": 20,
     "type": "line_work_official",
     "question": "Một chất điểm đi đúng một vòng ngược chiều kim đồng hồ trên đường tròn bán kính 1 m dưới lực tiếp tuyến cùng chiều, độ lớn không đổi 1 N. Công của lực bằng",
     "matrix": null,
@@ -432,7 +360,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 25,
+    "id": 21,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C(-y\\,dx+x\\,dy)\\), với \\(C\\) là biên hình chữ nhật \\([0,2]\\times[0,3]\\) theo chiều dương.",
     "matrix": null,
@@ -450,7 +378,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 26,
+    "id": 22,
     "type": "potential_function",
     "question": "Tích phân \\(\\int_C(2x+y)dx+(x+2y)dy\\) từ \\((0,0)\\) đến \\((1,2)\\) bằng",
     "matrix": null,
@@ -468,25 +396,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 27,
-    "type": "green_theorem",
-    "question": "Nếu đổi chiều đi của đường cong kín \\(C\\), giá trị \\(\\oint_C Pdx+Qdy\\) sẽ",
-    "matrix": null,
-    "options": [
-      "Đổi dấu",
-      "Không đổi",
-      "Gấp đôi",
-      "Bằng 0"
-    ],
-    "correct": "Đổi dấu",
-    "solution": "Tích phân đường loại 2 phụ thuộc hướng. Đảo hướng làm \\(dx,dy\\) đổi dấu, nên toàn bộ tích phân đổi dấu.",
-    "quick": "Đảo hướng → đổi dấu.",
-    "casio": "CASIO không cần thiết.",
-    "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green"
-  },
-  {
-    "id": 28,
+    "id": 23,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C y\\,dx\\) với \\(C\\) là cung parabol \\(y=x^2\\) từ \\((0,0)\\) đến \\((2,4)\\).",
     "matrix": null,
@@ -504,7 +414,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 29,
+    "id": 24,
     "type": "green_theorem",
     "question": "Cho \\(C\\) là đường tròn \\(x^2+y^2=R^2\\) chiều dương. Giá trị \\(\\oint_C x^3\\,dy\\) bằng",
     "matrix": null,
@@ -522,7 +432,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 30,
+    "id": 25,
     "type": "line_work_variant",
     "question": "Một chất điểm đi đúng một vòng trên đường tròn bán kính 2 m. Lực luôn tiếp tuyến, cùng chiều chuyển động và có độ lớn không đổi 3 N. Công của lực bằng",
     "matrix": null,
@@ -540,25 +450,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
-    "id": 31,
-    "type": "green_formula",
-    "question": "Với \\(C\\) kín, phẳng, định hướng dương, công thức Green đúng là",
-    "matrix": null,
-    "options": [
-      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dxdy\\)",
-      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial P}{\\partial y}-\\frac{\\partial Q}{\\partial x}\\right)dxdy\\)",
-      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial y}-\\frac{\\partial P}{\\partial x}\\right)dxdy\\)",
-      "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial x}+\\frac{\\partial P}{\\partial y}\\right)dxdy\\)"
-    ],
-    "correct": "\\(\\displaystyle\\oint_C Pdx+Qdy=\\iint_D\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dxdy\\)",
-    "solution": "Đây là công thức Green dạng lưu thông cho đường cong kín định hướng dương.",
-    "quick": "Nhớ thứ tự: \\(Q_x-P_y\\).",
-    "casio": "CASIO fx-580VNX: Tham số hóa đường cong để đưa về tích phân một biến rồi dùng phím ∫ kiểm tra. Với Green, tính Q_x-P_y trước rồi chuyển sang tích phân kép.",
-    "difficulty": 1,
-    "topic": "Tích phân đường & Green"
-  },
-  {
-    "id": 32,
+    "id": 26,
     "type": "line_integral_exact_dxdy",
     "question": "Tính \\(\\int_C dx+dy\\), với \\(C\\) là đoạn thẳng từ \\((1,2)\\) đến \\((3,5)\\).",
     "matrix": null,
@@ -576,6 +468,7 @@
     "topic": "Tích phân đường"
   },
   {
+    "id": 27,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C x\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,2)\\).",
     "matrix": null,
@@ -590,10 +483,10 @@
     "quick": "Đặt \\(x=y=t\\), \\(dy=dt\\), nên \\(I=\\int_0^2t\\,dt=2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Thay tham số hóa rồi dùng phím tích phân để kiểm tra.",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 33
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 28,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C y\\,dx+x\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((1,1)\\) đến \\((2,3)\\).",
     "matrix": null,
@@ -608,10 +501,10 @@
     "quick": "Nhận ra \\(y\\,dx+x\\,dy=d(xy)\\), nên lấy cuối trừ đầu.",
     "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 34
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 29,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C (x-y)\\,dx+(x+y)\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
     "matrix": null,
@@ -626,10 +519,10 @@
     "quick": "Trên đường \\(y=x\\): \\(x-y=0\\), \\(x+y=2t\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Thay tham số hóa rồi dùng phím tích phân để kiểm tra.",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 35
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 30,
     "type": "line_work",
     "question": "Tính công \\(W=\\int_C\\mathbf F\\cdot d\\mathbf r\\), với \\(\\mathbf F=(2x,2y)\\), dọc theo đường bất kỳ từ \\((0,0)\\) đến \\((1,2)\\).",
     "matrix": null,
@@ -644,10 +537,10 @@
     "quick": "Thế hàm \\(U=x^2+y^2\\). Công bằng \\(U(B)-U(A)=5\\).",
     "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 36
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 31,
     "type": "potential_function",
     "question": "Trường \\(\\mathbf F=(y+2x, x+2y)\\) có thế hàm nào sau đây?",
     "matrix": null,
@@ -662,10 +555,10 @@
     "quick": "Đạo hàm \\(xy+x^2+y^2\\) theo \\(x\\) và \\(y\\) sẽ ra đúng hai thành phần.",
     "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 37
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 32,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C -y\\,dx+x\\,dy\\), với \\(C\\) là biên tam giác có các đỉnh \\((0,0),(2,0),(0,1)\\) theo chiều dương.",
     "matrix": null,
@@ -680,10 +573,10 @@
     "quick": "\\(Q'_x-P'_y=2\\), diện tích tam giác bằng 1, nên \\(I=2\\).",
     "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
     "difficulty": 3,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 38
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 33,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C (x-2y)\\,dx+(3x+y)\\,dy\\), với \\(C\\) là biên hình chữ nhật \\([0,2]\\times[0,1]\\) theo chiều dương.",
     "matrix": null,
@@ -698,10 +591,10 @@
     "quick": "Hiệu Green bằng 5; diện tích hình chữ nhật bằng 2.",
     "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
     "difficulty": 3,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 39
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 34,
     "type": "green_theorem_orientation",
     "question": "Dùng Green tính \\(\\oint_C -y\\,dx+x\\,dy\\), với \\(C\\) là đường tròn \\(x^2+y^2=9\\) theo chiều kim đồng hồ.",
     "matrix": null,
@@ -716,10 +609,10 @@
     "quick": "Chiều dương cho \\(18\\pi\\); chiều kim đồng hồ đổi dấu thành \\(-18\\pi\\).",
     "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
     "difficulty": 3,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 40
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 35,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C y^2\\,dx+x^2\\,dy\\), với \\(C\\) là biên hình chữ nhật \\([0,1]\\times[0,2]\\) theo chiều dương.",
     "matrix": null,
@@ -734,10 +627,10 @@
     "quick": "Green: tích phân kép của \\(2x-2y\\) trên hình chữ nhật.",
     "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
     "difficulty": 3,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 41
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 36,
     "type": "green_area",
     "question": "Dùng công thức \\(S=\\dfrac12\\oint_C x\\,dy-y\\,dx\\), diện tích miền tam giác đỉnh \\((0,0),(4,0),(0,3)\\) bằng",
     "matrix": null,
@@ -752,10 +645,10 @@
     "quick": "Tam giác vuông: \\(S=\\frac12\\cdot4\\cdot3=6\\).",
     "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 42
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 37,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C y\\,dx-x\\,dy\\), với \\(C\\) là cung tròn đơn vị từ \\((1,0)\\) đến \\((0,1)\\) theo chiều ngược kim đồng hồ.",
     "matrix": null,
@@ -770,10 +663,10 @@
     "quick": "Trên cung tròn đơn vị, biểu thức trở thành \\(-dt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Thay tham số hóa rồi dùng phím tích phân để kiểm tra.",
     "difficulty": 3,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 43
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 38,
     "type": "line_integral_type2",
     "question": "Tính \\(\\int_C x^2\\,dx+y^2\\,dy\\), với \\(C\\) từ \\((0,0)\\) đến \\((1,2)\\).",
     "matrix": null,
@@ -788,10 +681,10 @@
     "quick": "Thế hàm \\(U=(x^3+y^3)/3\\), lấy cuối trừ đầu.",
     "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 44
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 39,
     "type": "green_theorem",
     "question": "Dùng Green tính \\(\\oint_C x\\,dy\\), với \\(C\\) là biên hình tròn \\(x^2+y^2\\leq4\\) theo chiều dương.",
     "matrix": null,
@@ -806,10 +699,10 @@
     "quick": "\\(\\oint_C x\\,dy\\) bằng diện tích miền khi chiều dương.",
     "casio": "CASIO fx-580VNX: Với đường kín định hướng dương, dùng Green: \\(\\oint_C P\\,dx+Q\\,dy=\\iint_D(Q'_x-P'_y)dA\\). Tính \\(Q'_x-P'_y\\), sau đó nhân diện tích hoặc tính tích phân kép nếu miền đơn giản.",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 45
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 40,
     "type": "line_integral_type2_segment",
     "question": "Tính \\(\\displaystyle\\int_C x\\,dy-y\\,dx\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,1)\\).",
     "matrix": null,
@@ -824,10 +717,10 @@
     "quick": "Trên đoạn thẳng qua gốc, \\(x\\,dy-y\\,dx=0\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 46
+    "topic": "Tích phân đường"
   },
   {
+    "id": 41,
     "type": "line_integral_type2_parabola",
     "question": "Tính \\(\\displaystyle\\int_C y\\,dx+x\\,dy\\), với \\(C: y=x^2\\) từ \\((0,0)\\) đến \\((2,4)\\).",
     "matrix": null,
@@ -842,10 +735,10 @@
     "quick": "Nhận ra vi phân toàn phần \\(d(xy)\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 47
+    "topic": "Tích phân đường"
   },
   {
+    "id": 42,
     "type": "line_integral_type2_parabola",
     "question": "Tính \\(\\displaystyle\\int_C y\\,dx\\), với \\(C: y=x^2\\) từ \\((0,0)\\) đến \\((3,9)\\).",
     "matrix": null,
@@ -860,10 +753,10 @@
     "quick": "Đây là loại 2 với \\(dx\\), không có \\(ds\\): \\(I=\\int_0^3x^2dx\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 48
+    "topic": "Tích phân đường"
   },
   {
+    "id": 43,
     "type": "line_integral_type2_circle",
     "question": "Tính \\(\\displaystyle\\int_C -y\\,dx+x\\,dy\\), với \\(C: x=2\\cos t,\\ y=2\\sin t,\\ 0\\le t\\le2\\pi\\).",
     "matrix": null,
@@ -878,28 +771,10 @@
     "quick": "Với đường tròn bán kính \\(R\\), \\(\\oint -y\\,dx+x\\,dy=2\\pi R^2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 3,
-    "topic": "Tích phân đường",
-    "id": 49
+    "topic": "Tích phân đường"
   },
   {
-    "type": "line_integral_type2_arc",
-    "question": "Tính \\(\\displaystyle\\int_C y\\,dx-x\\,dy\\), với \\(C\\) là cung phần tư đường tròn đơn vị từ \\((1,0)\\) đến \\((0,1)\\) ngược chiều kim đồng hồ.",
-    "matrix": null,
-    "options": [
-      "\\(-\\dfrac{\\pi}{2}\\)",
-      "\\(\\dfrac{\\pi}{2}\\)",
-      "\\(-1\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(-\\dfrac{\\pi}{2}\\)",
-    "solution": "Tham số hóa \\(x=\\cos t,\\ y=\\sin t,\\ 0\\le t\\le\\pi/2\\). Khi đó \\(dx=-\\sin tdt,\\ dy=\\cos tdt\\). Tích phân bằng \\(\\int_0^{\\pi/2}[\\sin t(-\\sin t)-\\cos t(\\cos t)]dt=\\int_0^{\\pi/2}-1dt=-\\dfrac{\\pi}{2}\\).",
-    "quick": "Trên cung tròn đơn vị, \\(y\\,dx-x\\,dy=-dt\\).",
-    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
-    "difficulty": 3,
-    "topic": "Tích phân đường",
-    "id": 50
-  },
-  {
+    "id": 44,
     "type": "line_integral_type2_exact",
     "question": "Tính \\(\\displaystyle\\int_C (2x+y)\\,dx+(x+2y)\\,dy\\), với \\(C\\) bất kỳ từ \\((0,0)\\) đến \\((2,1)\\).",
     "matrix": null,
@@ -914,10 +789,10 @@
     "quick": "Hàm thế \\(U=x^2+xy+y^2\\), lấy cuối trừ đầu.",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 3,
-    "topic": "Tích phân đường",
-    "id": 51
+    "topic": "Tích phân đường"
   },
   {
+    "id": 45,
     "type": "line_integral_type2_segment",
     "question": "Tính \\(\\displaystyle\\int_C x\\,dx+y\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,1)\\).",
     "matrix": null,
@@ -932,10 +807,10 @@
     "quick": "Nhận ra vi phân toàn phần của \\((x^2+y^2)/2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 52
+    "topic": "Tích phân đường"
   },
   {
+    "id": 46,
     "type": "line_integral_type2_vertical",
     "question": "Tính \\(\\displaystyle\\int_C x^2\\,dy\\), với \\(C\\) là đoạn thẳng từ \\((2,0)\\) đến \\((2,3)\\).",
     "matrix": null,
@@ -950,10 +825,10 @@
     "quick": "Đoạn thẳng đứng: \\(x=2\\), nên \\(x^2=4\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 53
+    "topic": "Tích phân đường"
   },
   {
+    "id": 47,
     "type": "line_integral_type2_horizontal",
     "question": "Tính \\(\\displaystyle\\int_C y^2\\,dx\\), với \\(C\\) là đoạn thẳng từ \\((0,3)\\) đến \\((2,3)\\).",
     "matrix": null,
@@ -968,25 +843,366 @@
     "quick": "Đoạn ngang: \\(y=3\\), \\(dx\\) chạy từ 0 đến 2.",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 54
+    "topic": "Tích phân đường"
   },
   {
-    "type": "line_integral_type2_parametric",
-    "question": "Tính \\(\\displaystyle\\int_C (x^2\\,dx+y^2\\,dy)\\), với \\(C: x=t,\\ y=2t,\\ 0\\le t\\le1\\).",
+    "id": 48,
+    "type": "green_theorem_polygon_official",
+    "question": "Tính \\(I=\\oint_{OBCO}(2x^2+2y^2+xy)\\,dx+(4xy+3x+\\cos y)\\,dy\\), trong đó \\(O(0,0)\\), \\(B(1,1)\\), \\(C(0,2)\\) và đường gấp khúc được định hướng ngược chiều kim đồng hồ.",
     "matrix": null,
     "options": [
-      "\\(3\\)",
-      "\\(1\\)",
-      "\\(\\dfrac{5}{3}\\)",
-      "\\(5\\)"
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{2}{3}\\)",
+      "\\(4\\)"
     ],
-    "correct": "\\(3\\)",
-    "solution": "Ta có \\(dx=dt,\\ dy=2dt\\). Khi đó \\(x^2=t^2\\), \\(y^2=4t^2\\). Do đó \\(I=\\int_0^1(t^2\\cdot1+4t^2\\cdot2)dt=\\int_0^19t^2dt=3\\).",
-    "quick": "Thay tham số trực tiếp: \\(x^2dx+y^2dy=9t^2dt\\).",
-    "casio": "CASIO fx-580VNX: Tích phân đường loại 2 dùng \\(\\int_C P\\,dx+Q\\,dy=\\int_a^b[P(x(t),y(t))x'(t)+Q(x(t),y(t))y'(t)]\\,dt\\). Nếu nhận ra vi phân toàn phần thì dùng hàm thế để lấy giá trị cuối trừ đầu.",
+    "correct": "\\(\\dfrac{8}{3}\\)",
+    "solution": "Đặt \\(P=2x^2+2y^2+xy\\), \\(Q=4xy+3x+\\cos y\\). Theo Green, \\[I=\\iint_D(Q_x-P_y)\\,dA=\\iint_D(3-x)\\,dA.\\] Tam giác \\(OBC\\) có diện tích \\(1\\), hoành độ trọng tâm bằng \\(\\dfrac{0+1+0}{3}=\\dfrac13\\). Do đó \\[I=3\\cdot1-1\\cdot\\frac13=\\frac83.\\]",
+    "quick": "Green cho \\(Q_x-P_y=3-x\\); dùng diện tích và trọng tâm tam giác.",
+    "casio": "CASIO: có thể tính trực tiếp \\(\\int_0^1\\int_x^{2-x}(3-x)\\,dy\\,dx\\), được \\(8/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 49,
+    "type": "green_theorem_triangle_official",
+    "question": "Tính \\(I=\\oint_L(2025y-e^{9x}\\cos5x)\\,dx+(2026x+e^{7y})\\,dy\\), trong đó \\(L\\) là biên tam giác có các đỉnh \\(A(1,1)\\), \\(B(4,1)\\), \\(C(3,5)\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(12\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Ta có \\(P=2025y-e^{9x}\\cos5x\\), \\(Q=2026x+e^{7y}\\). Vì \\(Q_x-P_y=2026-2025=1\\), theo Green \\[I=\\iint_D1\\,dA=S_D.\\] Tam giác có đáy \\(AB=3\\) và chiều cao bằng \\(4\\), nên \\(S_D=\\dfrac12\\cdot3\\cdot4=6\\).",
+    "quick": "Hiệu Green bằng \\(1\\), nên tích phân bằng diện tích tam giác.",
+    "casio": "CASIO: tính diện tích tam giác bằng \\(3\\times4/2=6\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 50,
+    "type": "green_theorem_triangle_official",
+    "question": "Tính \\(I=\\oint_L(4y-e^{2x}\\cos x)\\,dx+\\left(7x-\\sqrt[3]{\\sin^2\\dfrac{y}{4}}\\right)\\,dy\\), trong đó \\(L\\) là biên tam giác có các đỉnh \\(A(1,1)\\), \\(B(4,1)\\), \\(C(3,5)\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(18\\)",
+      "\\(9\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(18\\)",
+    "solution": "Với \\(P=4y-e^{2x}\\cos x\\), \\(Q=7x-\\sqrt[3]{\\sin^2(y/4)}\\), ta có \\(Q_x-P_y=7-4=3\\). Diện tích tam giác là \\(6\\). Theo Green, \\[I=\\iint_D3\\,dA=3\\cdot6=18.\\]",
+    "quick": "Hiệu Green bằng \\(3\\); nhân với diện tích tam giác \\(6\\).",
+    "casio": "CASIO: tính \\(3\\times(3\\times4/2)=18\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 51,
+    "type": "green_theorem_triangle_variable_official",
+    "question": "Tính \\(I=\\oint_L(-y-e^{3x^2})\\,dx+(x^2-\\sin y^2)\\,dy\\), trong đó \\(L\\) là biên tam giác có các đỉnh \\(A(1,1)\\), \\(B(3,1)\\), \\(C(3,3)\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{34}{3}\\)",
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(2\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(\\dfrac{34}{3}\\)",
+    "solution": "Đặt \\(P=-y-e^{3x^2}\\), \\(Q=x^2-\\sin y^2\\). Khi đó \\(Q_x-P_y=2x+1\\). Miền tam giác được mô tả bởi \\(1\\le x\\le3\\), \\(1\\le y\\le x\\). Do đó \\[I=\\int_1^3\\int_1^x(2x+1)\\,dy\\,dx=\\int_1^3(2x+1)(x-1)\\,dx=\\frac{34}{3}.\\]",
+    "quick": "Green cho \\(2x+1\\); miền tam giác: \\(1\\le y\\le x\\), \\(1\\le x\\le3\\).",
+    "casio": "CASIO: nhập \\(\\int_1^3(2X+1)(X-1)\\,dX\\), được \\(34/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 52,
+    "type": "green_theorem_shifted_circle_official",
+    "question": "Tính \\(I=\\oint_L(xy+x+y+2^x)\\,dx+(xy+x-y+\\cos^3y)\\,dy\\), trong đó \\(L\\) là đường tròn \\(x^2+y^2=2x\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(-\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(-\\pi\\)",
+    "solution": "Ta có \\(Q_x-P_y=(y+1)-(x+1)=y-x\\). Đường tròn có tâm \\((1,0)\\), bán kính \\(1\\), diện tích \\(\\pi\\). Do đối xứng, \\(\\iint_D y\\,dA=0\\), còn \\(\\iint_D x\\,dA=1\\cdot\\pi=\\pi\\). Vì vậy \\[I=\\iint_D(y-x)\\,dA=-\\pi.\\]",
+    "quick": "Hiệu Green là \\(y-x\\); dùng tọa độ trọng tâm của đĩa \\((1,0)\\).",
+    "casio": "CASIO không cần thiết; tích phân của hàm tuyến tính trên đĩa bằng diện tích nhân giá trị tại tâm.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 53,
+    "type": "green_theorem_shifted_circle_official",
+    "question": "Tính \\(I=\\oint_L(xy+x+y+\\sin^3x)\\,dx+(xy+x-y+2^y)\\,dy\\), trong đó \\(L\\) là đường tròn \\(x^2+y^2=2x+2y\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Ta có \\(Q_x-P_y=(y+1)-(x+1)=y-x\\). Đường tròn có tâm \\((1,1)\\), bán kính \\(\\sqrt2\\). Trên đĩa này, \\(\\iint_Dx\\,dA=\\iint_Dy\\,dA\\) vì hoành độ và tung độ của tâm đều bằng \\(1\\). Do đó \\[I=\\iint_D(y-x)\\,dA=0.\\]",
+    "quick": "Hiệu Green là \\(y-x\\); tâm đĩa có \\(x_0=y_0=1\\), nên tích phân bằng \\(0\\).",
+    "casio": "CASIO không cần thiết; dùng tính đối xứng của đĩa tâm \\((1,1)\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 54,
+    "type": "green_theorem_circle_area_official",
+    "question": "Tính \\(I=\\oint_L(2025y+e^{3x}\\cos x)\\,dx+\\left(2026x+\\sqrt[6]{y^4+1}\\right)\\,dy\\), trong đó \\(L\\) là đường tròn tâm \\(I(1,2)\\), bán kính \\(3\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(9\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(9\\pi\\)",
+    "solution": "Với \\(P=2025y+e^{3x}\\cos x\\), \\(Q=2026x+\\sqrt[6]{y^4+1}\\), ta có \\(Q_x-P_y=2026-2025=1\\). Theo Green, tích phân bằng diện tích đĩa bán kính \\(3\\): \\[I=\\iint_D1\\,dA=\\pi\\cdot3^2=9\\pi.\\]",
+    "quick": "Hiệu Green bằng \\(1\\), nên kết quả là diện tích đĩa.",
+    "casio": "CASIO: tính \\(\\pi\\times3^2=9\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 55,
+    "type": "green_theorem_circle_area_official",
+    "question": "Tính \\(I=\\oint_L(2025y-e^{3x^2})\\,dx+\\left(2027x-\\sqrt[6]{y^4+1}\\right)\\,dy\\), trong đó \\(L\\) là đường tròn \\(x^2+y^2=9\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(18\\pi\\)",
+      "\\(9\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(18\\pi\\)",
+    "solution": "Ta có \\(Q_x-P_y=2027-2025=2\\). Đĩa tròn có bán kính \\(3\\), diện tích \\(9\\pi\\). Theo Green, \\[I=\\iint_D2\\,dA=2\\cdot9\\pi=18\\pi.\\]",
+    "quick": "Hiệu Green bằng \\(2\\); nhân diện tích đĩa \\(9\\pi\\).",
+    "casio": "CASIO: tính \\(2\\times\\pi\\times3^2=18\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 56,
+    "type": "green_theorem_radial_official",
+    "question": "Tính \\(I=\\oint_L(-4y^3-e^{3x^2})\\,dx+(4x^3-\\sin y^2)\\,dy\\), trong đó \\(L\\) là đường tròn \\(x^2+y^2=4\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(96\\pi\\)",
+      "\\(48\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(24\\pi\\)"
+    ],
+    "correct": "\\(96\\pi\\)",
+    "solution": "Ta có \\(Q_x-P_y=12x^2-(-12y^2)=12(x^2+y^2)\\). Dùng tọa độ cực trên đĩa \\(0\\le r\\le2\\): \\[I=12\\int_0^{2\\pi}\\int_0^2r^2\\,r\\,dr\\,d\\theta=12\\cdot2\\pi\\cdot\\frac{2^4}{4}=96\\pi.\\]",
+    "quick": "Hiệu Green là \\(12r^2\\); tích phân cực cho \\(96\\pi\\).",
+    "casio": "CASIO: tính \\(12\\times2\\pi\\times\\int_0^2r^3\\,dr=96\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 57,
+    "type": "green_theorem_shifted_circle_constant_official",
+    "question": "Tính \\(I=\\oint_L(-4y-e^{3x^2})\\,dx+(4x-\\sin y^2)\\,dy\\), trong đó \\(L\\) là đường tròn \\(x^2+y^2=4x\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(32\\pi\\)",
+      "\\(48\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(24\\pi\\)"
+    ],
+    "correct": "\\(32\\pi\\)",
+    "solution": "Ta có \\(Q_x-P_y=4-(-4)=8\\). Đường tròn \\(x^2+y^2=4x\\) có tâm \\((2,0)\\), bán kính \\(2\\), diện tích \\(4\\pi\\). Theo Green, \\[I=8\\cdot4\\pi=32\\pi.\\]",
+    "quick": "Hiệu Green bằng \\(8\\); diện tích đĩa bán kính \\(2\\) bằng \\(4\\pi\\).",
+    "casio": "CASIO: tính \\(8\\times\\pi\\times2^2=32\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 58,
+    "type": "green_theorem_circle_constant_official",
+    "question": "Tính \\(I=\\oint_L(y-e^{3x^2})\\,dx+\\left(2x^2-\\sqrt[6]{y^4+1}\\right)\\,dy\\), trong đó \\(L\\) là đường tròn \\(x^2+y^2=4\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(-4\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(-4\\pi\\)",
+    "solution": "Đặt \\(P=y-e^{3x^2}\\), \\(Q=2x^2-\\sqrt[6]{y^4+1}\\). Theo Green, \\[I=\\iint_D(Q_x-P_y)\\,dA=\\iint_D(4x-1)\\,dA.\\] Trên đĩa tròn tâm gốc tọa độ, \\(\\iint_Dx\\,dA=0\\) do đối xứng, còn \\(\\iint_D1\\,dA=S_D=\\pi\\cdot2^2=4\\pi\\). Vậy \\(I=-4\\pi\\).",
+    "quick": "Green cho \\(Q_x-P_y=4x-1\\); phần \\(4x\\) triệt tiêu do đối xứng, còn lại \\(-\\)diện tích đĩa.",
+    "casio": "CASIO: dùng Green, nhận ra \\(\\iint_D x\\,dA=0\\) trên đĩa tâm gốc. Kết quả còn \\(-\\pi\\cdot2^2=-4\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 59,
+    "type": "green_theorem_semidisk_official",
+    "question": "Tính \\(I=\\oint_L(2025y-x^4e^{3x^2})\\,dx+\\left(2027x-\\sqrt[8]{y^4+1}\\right)\\,dy\\), trong đó \\(L\\) là biên của miền đóng \\(D=\\{(x,y)\\in\\mathbb{R}^2\\mid x^2+y^2\\le 9,\\ y\\ge 0\\}\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(9\\pi\\)",
+      "\\(18\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(6\\pi\\)"
+    ],
+    "correct": "\\(9\\pi\\)",
+    "solution": "Ta có \\(P=2025y-x^4e^{3x^2}\\), \\(Q=2027x-\\sqrt[8]{y^4+1}\\), nên \\(Q_x-P_y=2027-2025=2\\). Theo Green, \\[I=\\iint_D2\\,dA=2S_D.\\] Miền \\(D\\) là nửa hình tròn bán kính \\(3\\), nên \\(S_D=\\dfrac12\\pi\\cdot3^2=\\dfrac{9\\pi}{2}\\). Suy ra \\(I=2\\cdot\\dfrac{9\\pi}{2}=9\\pi\\).",
+    "quick": "Hiệu Green bằng \\(2\\); nhân với diện tích nửa đĩa bán kính \\(3\\).",
+    "casio": "CASIO: diện tích nửa đĩa bán kính \\(3\\) là \\(9\\pi/2\\), rồi nhân \\(2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 60,
+    "type": "green_theorem_ellipse_official",
+    "question": "Tính \\(I=\\oint_L(2025y-e^{3x^2})\\,dx+\\left(2026x-\\sqrt[6]{y^8+1}\\right)\\,dy\\), trong đó \\(L\\) là đường elip \\(\\dfrac{x^2}{4}+\\dfrac{y^2}{9}=1\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(6\\pi\\)",
+      "\\(9\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(6\\pi\\)",
+    "solution": "Với \\(P=2025y-e^{3x^2}\\), \\(Q=2026x-\\sqrt[6]{y^8+1}\\), ta có \\(Q_x-P_y=2026-2025=1\\). Theo Green, \\[I=\\iint_D1\\,dA=S_D.\\] Miền \\(D\\) là elip có nửa trục \\(a=2\\), \\(b=3\\), nên \\(S_D=\\pi ab=6\\pi\\).",
+    "quick": "Hiệu Green bằng \\(1\\), nên kết quả là diện tích elip \\(\\pi\\cdot2\\cdot3\\).",
+    "casio": "CASIO: tính diện tích elip \\(\\pi ab=\\pi\\times2\\times3=6\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 61,
+    "type": "green_theorem_ellipse_official",
+    "question": "Tính \\(I=\\oint_L(2025y-e^{3x^2})\\,dx+\\left(2028x-\\sqrt[6]{y^4+1}\\right)\\,dy\\), trong đó \\(L\\) là đường elip \\(\\dfrac{x^2}{4}+y^2=1\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(6\\pi\\)",
+      "\\(9\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(6\\pi\\)",
+    "solution": "Ta có \\(Q_x-P_y=2028-2025=3\\). Miền \\(D\\) là elip có nửa trục \\(a=2\\), \\(b=1\\), nên diện tích là \\(S_D=2\\pi\\). Do đó, theo Green, \\[I=\\iint_D3\\,dA=3\\cdot2\\pi=6\\pi.\\]",
+    "quick": "Hiệu Green bằng \\(3\\); nhân với diện tích elip \\(2\\pi\\).",
+    "casio": "CASIO: diện tích elip \\(\\pi\\times2\\times1=2\\pi\\), rồi nhân \\(3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 62,
+    "type": "green_theorem_parabola_line_official",
+    "question": "Tính \\(I=\\oint_L(xy+x^6\\cos x+y)\\,dx+(x+3^y)\\,dy\\), trong đó \\(L\\) là biên của miền \\(D\\) giới hạn bởi \\(y=3x^2\\) và \\(y=6-3x\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{27}{4}\\)",
+      "\\(-4\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac{27}{4}\\)",
+    "solution": "Đặt \\(P=xy+x^6\\cos x+y\\), \\(Q=x+3^y\\). Khi đó \\(Q_x-P_y=1-(x+1)=-x\\). Miền được chặn bởi \\(y=3x^2\\) và \\(y=6-3x\\), giao điểm khi \\(3x^2=6-3x\\) là \\(x=-2\\) và \\(x=1\\). Do đó \\[I=\\int_{-2}^1\\int_{3x^2}^{6-3x}(-x)\\,dy\\,dx=\\int_{-2}^1-x(6-3x-3x^2)\\,dx=\\frac{27}{4}.\\]",
+    "quick": "Green cho \\(-x\\); lấy tích phân đôi giữa đường thẳng và parabol trên đoạn \\([-2,1]\\).",
+    "casio": "CASIO: nhập trực tiếp \\(\\int_{-2}^1 -X(6-3X-3X^2)\\,dX\\), được \\(27/4\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 63,
+    "type": "green_theorem_parabola_line_official",
+    "question": "Tính \\(I=\\oint_L(xy+x^6\\sin x)\\,dx+(x+2026^y)\\,dy\\), trong đó \\(L\\) là biên của miền \\(D\\) giới hạn bởi \\(y=3x^2\\) và \\(y=x+2\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{625}{324}\\)",
+      "\\(\\dfrac{25}{24}\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac{625}{324}\\)",
+    "solution": "Ta có \\(P=xy+x^6\\sin x\\), \\(Q=x+2026^y\\), nên \\(Q_x-P_y=1-x\\). Giao điểm của \\(y=3x^2\\) và \\(y=x+2\\) thỏa \\(3x^2=x+2\\), suy ra \\(x=-\\dfrac23\\) và \\(x=1\\). Do đó \\[I=\\int_{-2/3}^1\\int_{3x^2}^{x+2}(1-x)\\,dy\\,dx=\\int_{-2/3}^1(1-x)(x+2-3x^2)\\,dx=\\frac{625}{324}.\\]",
+    "quick": "Green cho \\(1-x\\); lấy tích phân đôi giữa đường thẳng và parabol trên đoạn \\([-2/3,1]\\).",
+    "casio": "CASIO: nhập \\(\\int_{-2/3}^1 (1-X)(X+2-3X^2)\\,dX\\), được \\(625/324\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 64,
+    "type": "green_theorem_rectangle_official",
+    "question": "Tính \\(I=\\oint_L(8y+e^x\\cos x)\\,dx+\\left(9x+\\sqrt[8]{y^4+1}\\right)\\,dy\\), trong đó \\(L\\) là biên của hình chữ nhật \\(ABCD\\) với \\(A(1,1)\\), \\(B(3,1)\\), \\(C(3,2)\\), \\(D(1,2)\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Đặt \\(P=8y+e^x\\cos x\\), \\(Q=9x+\\sqrt[8]{y^4+1}\\). Khi đó \\(Q_x-P_y=9-8=1\\). Theo Green, \\(I\\) bằng diện tích hình chữ nhật. Ta có \\(AB=2\\), \\(BC=1\\), nên \\(S_D=2\\). Vậy \\(I=2\\).",
+    "quick": "Hiệu Green bằng \\(1\\); kết quả bằng diện tích hình chữ nhật \\(2\\cdot1\\).",
+    "casio": "CASIO: chỉ cần tính diện tích hình chữ nhật \\(=2\\).",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 55
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 65,
+    "type": "green_theorem_trapezoid_official",
+    "question": "Tính \\(I=\\oint_L(2025y-e^{9x}\\cos5x)\\,dx+(2026x+e^{7y})\\,dy\\), trong đó \\(L\\) là biên của hình thang \\(ABCD\\) với \\(A(1,1)\\), \\(B(4,1)\\), \\(C(3,2)\\), \\(D(2,2)\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Ta có \\(Q_x-P_y=2026-2025=1\\). Do đó theo Green, \\(I\\) bằng diện tích hình thang. Hai đáy song song là \\(AB=3\\), \\(CD=1\\), chiều cao bằng \\(1\\). Vì vậy \\[S_D=\\frac{(3+1)\\cdot1}{2}=2.\\] Suy ra \\(I=2\\).",
+    "quick": "Hiệu Green bằng \\(1\\); tính diện tích hình thang.",
+    "casio": "CASIO: diện tích hình thang \\(((3+1)\\times1)/2=2\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 66,
+    "type": "green_theorem_quadrilateral_official",
+    "question": "Tính \\(I=\\oint_L(2025y-e^{9x}\\cos5x)\\,dx+(2027x+e^{7y})\\,dy\\), trong đó \\(L\\) là đường biên của tứ giác \\(ABCD\\) với \\(A(-1,0)\\), \\(B(0,-2)\\), \\(C(1,0)\\), \\(D(0,2)\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(8\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(8\\)",
+    "solution": "Đặt \\(P=2025y-e^{9x}\\cos5x\\), \\(Q=2027x+e^{7y}\\). Ta có \\(Q_x-P_y=2027-2025=2\\). Miền là hình thoi có hai đường chéo dài \\(2\\) và \\(4\\), nên diện tích \\(S_D=\\dfrac{2\\cdot4}{2}=4\\). Theo Green, \\(I=2\\cdot4=8\\).",
+    "quick": "Hiệu Green bằng \\(2\\); diện tích hình thoi bằng \\(4\\).",
+    "casio": "CASIO: diện tích hình thoi bằng nửa tích hai đường chéo: \\((2\\times4)/2=4\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 67,
+    "type": "green_theorem_quadrilateral_official",
+    "question": "Tính \\(I=\\oint_L(y-e^{3x^2})\\,dx+\\left(8x-\\sqrt[6]{y^4+1}\\right)\\,dy\\), trong đó \\(L\\) là đường biên của tứ giác \\(ABCD\\) với \\(A(-1,0)\\), \\(B(0,-2)\\), \\(C(3,0)\\), \\(D(0,1)\\), định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(42\\)",
+      "\\(7\\)",
+      "\\(21\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(42\\)",
+    "solution": "Ta có \\(P=y-e^{3x^2}\\), \\(Q=8x-\\sqrt[6]{y^4+1}\\), nên \\(Q_x-P_y=8-1=7\\). Do đó \\(I=7S_D\\). Diện tích tứ giác tính theo công thức hình dây giày: \\[S_D=\\frac12|(-1)(-2)+0\\cdot0+3\\cdot1+0\\cdot0-[0\\cdot0+(-2)\\cdot3+0\\cdot0+1(-1)]|=6.\\] Vậy \\(I=7\\cdot6=42\\).",
+    "quick": "Hiệu Green bằng \\(7\\); diện tích tứ giác bằng \\(6\\) theo công thức dây giày.",
+    "casio": "CASIO: tính diện tích tứ giác bằng công thức shoelace rồi nhân \\(7\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
   }
 ]

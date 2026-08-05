@@ -217,24 +217,6 @@
   },
   {
     "id": 13,
-    "type": "triple_integral_cylindrical",
-    "question": "Jacobian của tọa độ trụ (r,θ,z) là?",
-    "matrix": null,
-    "options": [
-      "\\(r\\)",
-      "\\(r^2\\)",
-      "\\(r^2\\sin\\phi\\)",
-      "\\(1\\)"
-    ],
-    "correct": "\\(r\\)",
-    "solution": "Tọa độ trụ: x=rcosθ, y=rsinθ, z=z.\n\nJacobian = r (giống tọa độ cực × 1 theo z).\n\n\\(dV=dx\\,dy\\,dz=r\\,dr\\,d\\theta\\,dz\\).",
-    "quick": "Trụ: dV=r dr dθ dz. (Cầu: r²sinφ dr dφ dθ)",
-    "casio": "CASIO: J=r. dV=r dr dθ dz.",
-    "difficulty": 1,
-    "topic": "Tích phân ba"
-  },
-  {
-    "id": 14,
     "type": "triple_integral_setup_official",
     "question": "Cho \\(V=\\{0\\le x\\le3,\\ 0\\le y\\le1,\\ 0\\le z\\le2\\}\\). Cách viết đúng của \\(\\iiint_V xyz\\,dx\\,dy\\,dz\\) là",
     "matrix": null,
@@ -252,7 +234,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 15,
+    "id": 14,
     "type": "triple_integral_short_answer_style",
     "question": "Vật thể trong góc phần tám thứ nhất được giới hạn bởi \\(x=2\\), \\(y=0\\), \\(y=x\\), \\(z=0\\), \\(z=x+4y\\). Thể tích bằng",
     "matrix": null,
@@ -270,7 +252,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 16,
+    "id": 15,
     "type": "triple_integral",
     "question": "Tính \\(\\iiint_V(x+y+z)\\,dV\\) với \\(V=[0,1]^3\\).",
     "matrix": null,
@@ -288,25 +270,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 17,
-    "type": "triple_integral_cylindrical",
-    "question": "Thể tích miền \\(0\\le z\\le4-r^2\\), \\(0\\le r\\le2\\), \\(0\\le\\theta\\le2\\pi\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(8\\pi\\)",
-      "\\(16\\pi\\)",
-      "\\(4\\pi\\)",
-      "\\(\\dfrac{16\\pi}{3}\\)"
-    ],
-    "correct": "\\(8\\pi\\)",
-    "solution": "\\(V=\\int_0^{2\\pi}\\int_0^2(4-r^2)r\\,dr\\,d\\theta=2\\pi[2r^2-r^4/4]_0^2=8\\pi\\).",
-    "quick": "Nhớ Jacobian r.",
-    "casio": "CASIO: Tính tích phân theo r rồi nhân \\(2\\pi\\).",
-    "difficulty": 3,
-    "topic": "Tích phân ba"
-  },
-  {
-    "id": 18,
+    "id": 16,
     "type": "triple_integral_spherical",
     "question": "Thể tích phần tám của khối cầu bán kính \\(R\\) trong góc phần tám thứ nhất là",
     "matrix": null,
@@ -324,7 +288,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 19,
+    "id": 17,
     "type": "triple_integral_cylindrical",
     "question": "Tính \\(\\iiint_V(x^2+y^2)\\,dV\\) với \\(V:\\ x^2+y^2\\le1,\\ 0\\le z\\le1\\).",
     "matrix": null,
@@ -342,7 +306,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 20,
+    "id": 18,
     "type": "triple_integral_setup",
     "question": "Miền \\(V\\) nằm dưới mặt \\(z=1-x-y\\) và trên tam giác \\(x\\ge0,y\\ge0,x+y\\le1\\). Tích phân thể tích đúng là",
     "matrix": null,
@@ -360,25 +324,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 21,
-    "type": "triple_integral_spherical",
-    "question": "Jacobian của tọa độ cầu \\((\\rho,\\varphi,\\theta)\\) là",
-    "matrix": null,
-    "options": [
-      "\\(\\rho^2\\sin\\varphi\\)",
-      "\\(\\rho\\sin\\varphi\\)",
-      "\\(\\rho^2\\cos\\varphi\\)",
-      "\\(r\\)"
-    ],
-    "correct": "\\(\\rho^2\\sin\\varphi\\)",
-    "solution": "Trong tọa độ cầu, \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
-    "quick": "Cầu: \\(\\rho^2\\sin\\varphi\\).",
-    "casio": "CASIO không cần thiết.",
-    "difficulty": 1,
-    "topic": "Tích phân ba"
-  },
-  {
-    "id": 22,
+    "id": 19,
     "type": "triple_integral_spherical",
     "question": "Tính \\(\\iiint_{x^2+y^2+z^2\\le1} z^2\\,dV\\).",
     "matrix": null,
@@ -396,7 +342,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 23,
+    "id": 20,
     "type": "triple_integral",
     "question": "Khối lượng của khối hộp \\([0,1]\\times[0,2]\\times[0,3]\\) có mật độ \\(\\rho(x,y,z)=x+y+z\\) bằng",
     "matrix": null,
@@ -414,7 +360,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 24,
+    "id": 21,
     "type": "triple_integral_cylindrical",
     "question": "Tính thể tích vật thể \\(V\\) giới hạn bởi \\(z=x^2+y^2\\) và \\(z=4\\).",
     "matrix": null,
@@ -432,7 +378,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 25,
+    "id": 22,
     "type": "triple_integral_setup_variant",
     "question": "Cho \\(V=\\{0\\le x\\le2,\\ 0\\le y\\le3,\\ 0\\le z\\le1\\}\\). Cách viết đúng của \\(\\iiint_V xz\\,dx\\,dy\\,dz\\) là",
     "matrix": null,
@@ -450,7 +396,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 26,
+    "id": 23,
     "type": "triple_integral_box_variant",
     "question": "Cho \\(V=\\{0\\le x\\le2,\\ 0\\le y\\le1,\\ 0\\le z\\le3\\}\\). Giá trị \\(\\iiint_V z\\,dx\\,dy\\,dz\\) bằng",
     "matrix": null,
@@ -468,7 +414,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 27,
+    "id": 24,
     "type": "triple_integral_short_answer_style",
     "question": "Trong góc phần tám thứ nhất, vật thể được mô tả bởi \\(0\\le x\\le1\\), \\(0\\le y\\le2x\\), \\(0\\le z\\le x+y\\). Thể tích của vật thể bằng",
     "matrix": null,
@@ -486,7 +432,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 28,
+    "id": 25,
     "type": "triple_integral_box",
     "question": "Tính \\(\\iiint_V dV\\) với \\(V=\\{0\\le x\\le2,\\ 0\\le y\\le3,\\ 0\\le z\\le1\\}\\).",
     "matrix": null,
@@ -504,7 +450,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 29,
+    "id": 26,
     "type": "triple_integral_box",
     "question": "Tính \\(\\iiint_V z\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le2\\}\\).",
     "matrix": null,
@@ -522,7 +468,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 30,
+    "id": 27,
     "type": "triple_integral_box",
     "question": "Tính \\(\\iiint_V xy\\,dV\\) với \\(V=\\{0\\le x\\le2,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
     "matrix": null,
@@ -540,7 +486,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 31,
+    "id": 28,
     "type": "triple_integral_box",
     "question": "Tính \\(\\iiint_V xyz\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le2,\\ 0\\le z\\le3\\}\\).",
     "matrix": null,
@@ -558,7 +504,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 32,
+    "id": 29,
     "type": "triple_integral_box",
     "question": "Tính \\(\\iiint_V e^x\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
     "matrix": null,
@@ -576,7 +522,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 33,
+    "id": 30,
     "type": "triple_integral_box",
     "question": "Tính \\(\\iiint_V (x^2+y^2)\\,dV\\) với \\(V=\\{0\\le x\\le1,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
     "matrix": null,
@@ -594,7 +540,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 34,
+    "id": 31,
     "type": "triple_integral_first_octant",
     "question": "Tính \\(\\iiint_V x\\,dV\\) với \\(V\\) là vật thể trong góc phần tám thứ nhất giới hạn bởi \\(x+y+z=2\\) và các mặt tọa độ.",
     "matrix": null,
@@ -612,7 +558,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 35,
+    "id": 32,
     "type": "triple_integral_first_octant",
     "question": "Tính \\(\\iiint_V z\\,dV\\) với \\(V:0\\le x\\le2,\\ 0\\le y\\le2,\\ 0\\le z\\le x+y\\).",
     "matrix": null,
@@ -630,7 +576,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 36,
+    "id": 33,
     "type": "triple_integral_setup_first_octant",
     "question": "Vật thể \\(V\\) trong góc phần tám thứ nhất giới hạn bởi \\(x=2,y=0,y=x,z=0,z=4y\\). Cách viết tích phân lặp đúng là",
     "matrix": null,
@@ -648,7 +594,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 37,
+    "id": 34,
     "type": "triple_integral_box",
     "question": "Tính \\(\\iiint_V \\sin x\\,dV\\) với \\(V=\\{0\\le x\\le\\pi,\\ 0\\le y\\le1,\\ 0\\le z\\le1\\}\\).",
     "matrix": null,
@@ -666,7 +612,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 38,
+    "id": 35,
     "type": "triple_integral_first_octant",
     "question": "Tính thể tích vật thể \\(V\\) trong góc phần tám thứ nhất giới hạn bởi \\(x=2,y=3,z=0,z=x+y\\).",
     "matrix": null,
@@ -684,7 +630,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 39,
+    "id": 36,
     "type": "triple_integral_first_octant",
     "question": "Tính \\(\\iiint_V(x+y+z)\\,dV\\) với \\(V\\) là tứ diện trong góc phần tám thứ nhất giới hạn bởi \\(x+y+z=1\\).",
     "matrix": null,
@@ -702,7 +648,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 40,
+    "id": 37,
     "type": "cylindrical_bounds",
     "question": "Miền \\(V: x^2+y^2\\le1,\\ 0\\le z\\le2\\). Trong tọa độ trụ, cận đúng là",
     "matrix": null,
@@ -720,25 +666,7 @@
     "topic": "Tích phân bội ba"
   },
   {
-    "id": 41,
-    "type": "triple_integral_paraboloid_volume",
-    "question": "Tính thể tích miền giới hạn bởi \\(z=x^2+y^2\\) và mặt phẳng \\(z=4\\).",
-    "matrix": null,
-    "options": [
-      "\\(8\\pi\\)",
-      "\\(16\\pi\\)",
-      "\\(4\\pi\\)",
-      "\\(2\\pi\\)"
-    ],
-    "correct": "\\(8\\pi\\)",
-    "solution": "Dùng tọa độ trụ: \\(0\\le r\\le2\\), \\(r^2\\le z\\le4\\). Thể tích \\(V=\\int_0^{2\\pi}\\int_0^2(4-r^2)r\\,drd\\varphi=8\\pi\\).",
-    "quick": "Lấy chiều cao \\(4-r^2\\).",
-    "casio": "CASIO fx-580VNX: Lập cận và tính lần lượt từng lớp bằng phím ∫. Với trụ/cầu, nhớ Jacobian: trụ là r, cầu là ρ²sinφ.",
-    "difficulty": 3,
-    "topic": "Tích phân bội ba"
-  },
-  {
-    "id": 42,
+    "id": 38,
     "type": "projection_region",
     "question": "Khối \\(V\\) được giới hạn phía dưới bởi \\(z=0\\), phía trên bởi \\(z=1-x^2-y^2\\). Hình chiếu xuống mặt phẳng \\(Oxy\\) là",
     "matrix": null,
@@ -756,7 +684,7 @@
     "topic": "Tích phân bội ba"
   },
   {
-    "id": 43,
+    "id": 39,
     "type": "volume_paraboloid",
     "question": "Tính thể tích khối \\(0\\le z\\le1-x^2-y^2\\).",
     "matrix": null,
@@ -774,7 +702,7 @@
     "topic": "Tích phân bội ba"
   },
   {
-    "id": 44,
+    "id": 40,
     "type": "sphere_volume",
     "question": "Tính thể tích khối cầu \\(x^2+y^2+z^2\\le3\\), làm tròn đến một chữ số thập phân.",
     "matrix": null,
@@ -792,7 +720,7 @@
     "topic": "Tích phân bội ba"
   },
   {
-    "id": 45,
+    "id": 41,
     "type": "triple_box_volume",
     "question": "Tính \\(\\iiint_V dxdydz\\), với \\(V:0\\le x\\le1,0\\le y\\le2,0\\le z\\le3\\).",
     "matrix": null,
@@ -810,7 +738,7 @@
     "topic": "Tích phân bội ba"
   },
   {
-    "id": 46,
+    "id": 42,
     "type": "triple_tetra_x",
     "question": "Tính \\(\\iiint_V x\\,dxdydz\\), với \\(V\\) giới hạn bởi \\(x,y,z\\ge0\\) và \\(x+y+z=1\\).",
     "matrix": null,
@@ -828,7 +756,7 @@
     "topic": "Tích phân bội ba"
   },
   {
-    "id": 47,
+    "id": 43,
     "type": "triple_volume_plane",
     "question": "Tính thể tích miền trong góc phần tám thứ nhất giới hạn bởi \\(x=1\\), \\(y=0\\), \\(y=x\\), \\(z=0\\), \\(z=x+2y\\).",
     "matrix": null,
@@ -846,7 +774,7 @@
     "topic": "Tích phân bội ba"
   },
   {
-    "id": 48,
+    "id": 44,
     "type": "triple_integral_box",
     "question": "Tính \\(\\displaystyle\\int_0^2\\int_0^1\\int_0^3 (x+y)\\,dz\\,dy\\,dx\\).",
     "matrix": null,
@@ -864,7 +792,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 49,
+    "id": 45,
     "type": "triple_integral_setup_first_octant",
     "question": "Vật thể \\(V\\) được mô tả bởi \\(0\\le x\\le1\\), \\(0\\le y\\le2x\\), \\(0\\le z\\le3x-y\\). Cách viết tích phân thể tích đúng là",
     "matrix": null,
@@ -882,7 +810,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 50,
+    "id": 46,
     "type": "triple_integral_first_octant",
     "question": "Tính thể tích vật thể \\(V:0\\le x\\le1,\\ 0\\le y\\le2x,\\ 0\\le z\\le3x-y\\).",
     "matrix": null,
@@ -900,7 +828,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 51,
+    "id": 47,
     "type": "cylindrical_bounds",
     "question": "Miền \\(V: x^2+y^2\\le4,\\ 0\\le z\\le4-x^2-y^2\\). Trong tọa độ trụ, cận đúng là",
     "matrix": null,
@@ -918,7 +846,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 52,
+    "id": 48,
     "type": "triple_integral_cylindrical",
     "question": "Tính \\(\\iiint_V (x^2+y^2)\\,dV\\), với \\(V:x^2+y^2\\le4,\\ 0\\le z\\le3\\).",
     "matrix": null,
@@ -936,7 +864,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 53,
+    "id": 49,
     "type": "projection_region",
     "question": "Khối \\(V\\) nằm giữa \\(z=0\\) và \\(z=9-x^2-y^2\\). Hình chiếu của \\(V\\) xuống mặt phẳng \\(Oxy\\) là",
     "matrix": null,
@@ -954,7 +882,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 54,
+    "id": 50,
     "type": "volume_paraboloid",
     "question": "Tính thể tích khối \\(0\\le z\\le9-x^2-y^2\\).",
     "matrix": null,
@@ -972,7 +900,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 55,
+    "id": 51,
     "type": "spherical_bounds",
     "question": "Khối cầu \\(x^2+y^2+z^2\\le4\\) trong góc phần tám thứ nhất có cận tọa độ cầu đúng là",
     "matrix": null,
@@ -990,7 +918,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 56,
+    "id": 52,
     "type": "triple_integral_spherical",
     "question": "Thể tích phần khối cầu \\(x^2+y^2+z^2\\le4\\) nằm trong góc phần tám thứ nhất bằng",
     "matrix": null,
@@ -1008,7 +936,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 57,
+    "id": 53,
     "type": "triple_integral_spherical",
     "question": "Tính \\(\\displaystyle\\iiint_{x^2+y^2+z^2\\le4}(x^2+y^2+z^2)\\,dV\\).",
     "matrix": null,
@@ -1026,7 +954,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 58,
+    "id": 54,
     "type": "triple_integral_mass_cylindrical",
     "question": "Khối trụ \\(x^2+y^2\\le1,\\ 0\\le z\\le2\\) có mật độ \\(\\rho(x,y,z)=2+z\\). Khối lượng bằng",
     "matrix": null,
@@ -1044,7 +972,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 59,
+    "id": 55,
     "type": "triple_integral_setup_first_octant",
     "question": "Vật thể \\(V\\) được mô tả bởi \\(0\\le x\\le1\\), \\(0\\le y\\le x\\), \\(0\\le z\\le y\\). Tích phân thể tích đúng là",
     "matrix": null,
@@ -1062,7 +990,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 60,
+    "id": 56,
     "type": "triple_integral_first_octant",
     "question": "Tính thể tích vật thể \\(V:0\\le x\\le1,\\ 0\\le y\\le x,\\ 0\\le z\\le y\\).",
     "matrix": null,
@@ -1080,7 +1008,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 61,
+    "id": 57,
     "type": "triple_integral_iterated",
     "question": "Tính \\(\\displaystyle\\int_0^1\\int_0^{1-x}\\int_0^{2-x-y} dz\\,dy\\,dx\\).",
     "matrix": null,
@@ -1098,7 +1026,7 @@
     "topic": "Tích phân ba"
   },
   {
-    "id": 62,
+    "id": 58,
     "type": "triple_integral_setup_tetrahedron",
     "question": "Miền tứ diện \\(V:x\\ge0,\\ y\\ge0,\\ z\\ge0,\\ x+y+z\\le3\\). Cách viết tích phân thể tích đúng là",
     "matrix": null,
@@ -1113,6 +1041,366 @@
     "quick": "Tứ diện trong góc phần tám thứ nhất: cận sau phụ thuộc vào tổng còn lại.",
     "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
     "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 59,
+    "type": "triple_integral_cylindrical_setup_official",
+    "question": "Cho \\(E\\) là vật thể giới hạn bởi \\(z=x^2+y^2\\), \\(z=2+x^2+y^2\\), \\(x^2+y^2=1\\). Biểu diễn đúng của \\(I=\\iiint_E z\\,dV\\) trong tọa độ trụ là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{2+r^2}zr\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_1^3zr\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_1^3zr\\,d\\varphi\\,dr\\,dz\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{2+r^2}zr\\,d\\varphi\\,dr\\,dz\\)"
+    ],
+    "correct": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{2+r^2}zr\\,dz\\,dr\\,d\\varphi\\)",
+    "solution": "Trong tọa độ trụ, \\(x^2+y^2=r^2\\) và \\(dV=r\\,dz\\,dr\\,d\\varphi\\). Mặt trụ cho \\(0\\le r\\le1\\), còn hai mặt giới hạn theo phương \\(z\\) cho \\(r^2\\le z\\le2+r^2\\). Góc quay đủ một vòng nên \\(0\\le\\varphi\\le2\\pi\\). Vì vậy biểu diễn đúng là \\[I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{2+r^2}zr\\,dz\\,dr\\,d\\varphi.\\]",
+    "quick": "Thay \\(x^2+y^2=r^2\\), nhớ Jacobian \\(r\\); cận \\(z\\) là \\(r^2\\) đến \\(2+r^2\\).",
+    "casio": "CASIO không cần thiết ở bước lập tích phân; cần xác định đúng cận và Jacobian.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 60,
+    "type": "triple_integral_hemisphere_official",
+    "question": "Cho \\(E\\) là nửa khối cầu giới hạn bởi \\(z=0\\) và \\(z=\\sqrt{R^2-x^2-y^2}\\), với \\(R\\gt0\\). Tính \\(I=\\iiint_E z\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi R^4}{4}\\)",
+      "\\(\\dfrac{\\pi R^4}{8}\\)",
+      "\\(-\\dfrac{\\pi R^4}{4}\\)",
+      "\\(-\\dfrac{\\pi R^4}{8}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi R^4}{4}\\)",
+    "solution": "Dùng tọa độ trụ: \\(0\\le r\\le R\\), \\(0\\le\\varphi\\le2\\pi\\), \\(0\\le z\\le\\sqrt{R^2-r^2}\\). Khi đó \\[I=\\int_0^{2\\pi}\\int_0^R\\int_0^{\\sqrt{R^2-r^2}}zr\\,dz\\,dr\\,d\\varphi.\\] Tích phân theo \\(z\\) cho \\(\\dfrac12(R^2-r^2)r\\). Do đó \\[I=\\pi\\int_0^R(R^2-r^2)r\\,dr=\\frac{\\pi R^4}{4}.\\]",
+    "quick": "Nửa cầu trên: \\(I=\\pi\\int_0^R(R^2-r^2)r\\,dr\\).",
+    "casio": "CASIO: tính \\(\\pi\\int_0^R(R^2-X^2)X\\,dX\\), được \\(\\pi R^4/4\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 61,
+    "type": "triple_integral_hemisphere_official",
+    "question": "Cho \\(E\\) là nửa khối cầu giới hạn bởi \\(z=0\\) và \\(z=-\\sqrt{R^2-x^2-y^2}\\), với \\(R\\gt0\\). Tính \\(I=\\iiint_E z\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{\\pi R^4}{4}\\)",
+      "\\(\\dfrac{\\pi R^4}{8}\\)",
+      "\\(\\dfrac{\\pi R^4}{4}\\)",
+      "\\(-\\dfrac{\\pi R^4}{8}\\)"
+    ],
+    "correct": "\\(-\\dfrac{\\pi R^4}{4}\\)",
+    "solution": "Miền là nửa khối cầu phía dưới, nên \\(-\\sqrt{R^2-r^2}\\le z\\le0\\). Do đó \\[I=\\int_0^{2\\pi}\\int_0^R\\int_{-\\sqrt{R^2-r^2}}^0zr\\,dz\\,dr\\,d\\varphi.\\] Tích phân theo \\(z\\) bằng \\(-\\dfrac12(R^2-r^2)r\\), suy ra \\[I=-\\pi\\int_0^R(R^2-r^2)r\\,dr=-\\frac{\\pi R^4}{4}.\\]",
+    "quick": "Đối xứng với nửa cầu trên nhưng \\(z\\le0\\), nên kết quả đổi dấu.",
+    "casio": "CASIO: lấy đối của kết quả nửa cầu trên, được \\(-\\pi R^4/4\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 62,
+    "type": "triple_integral_quarter_hemisphere_official",
+    "question": "Cho \\(E\\) là phần của nửa khối cầu giới hạn bởi \\(z=0\\), \\(z=-\\sqrt{R^2-x^2-y^2}\\), \\(x\\ge0\\), \\(y\\le0\\), với \\(R\\gt0\\). Tính \\(I=\\iiint_E z\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{\\pi R^4}{16}\\)",
+      "\\(\\dfrac{\\pi R^4}{16}\\)",
+      "\\(\\dfrac{\\pi R^4}{8}\\)",
+      "\\(-\\dfrac{\\pi R^4}{8}\\)"
+    ],
+    "correct": "\\(-\\dfrac{\\pi R^4}{16}\\)",
+    "solution": "Điều kiện \\(x\\ge0\\), \\(y\\le0\\) chọn một phần tư theo góc của nửa khối cầu phía dưới. Tích phân trên toàn nửa khối cầu dưới bằng \\(-\\pi R^4/4\\). Do tính đối xứng theo góc, tích phân trên phần đã cho bằng một phần tư giá trị đó: \\[I=\\frac14\\left(-\\frac{\\pi R^4}{4}\\right)=-\\frac{\\pi R^4}{16}.\\]",
+    "quick": "Miền bằng một phần tư nửa cầu dưới, nên lấy \\(1/4\\) của \\(-\\pi R^4/4\\).",
+    "casio": "CASIO: tính \\((-\\pi R^4/4)/4=-\\pi R^4/16\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 63,
+    "type": "triple_integral_symmetry_official",
+    "question": "Cho \\(E\\) là khối cầu \\(x^2+y^2+z^2\\le R^2\\), với \\(R\\gt0\\). Tính \\(I=\\iiint_E z(y^2+x)\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(\\dfrac{\\pi R^4}{2}\\)",
+      "\\(\\dfrac{\\pi R^4}{4}\\)",
+      "Đáp án khác"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Ta có \\(z(y^2+x)=zy^2+zx\\). Miền khối cầu đối xứng qua mặt phẳng \\(z=0\\). Cả hai hàm \\(zy^2\\) và \\(zx\\) đều là hàm lẻ theo \\(z\\), nên tích phân của từng hạng trên miền đối xứng bằng \\(0\\). Do đó \\(I=0\\).",
+    "quick": "Hàm dưới dấu tích phân lẻ theo \\(z\\), còn miền đối xứng qua \\(z=0\\).",
+    "casio": "CASIO không cần thiết; dùng tính đối xứng của miền.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 64,
+    "type": "triple_integral_shifted_cylinder_official",
+    "question": "Cho \\(E=\\{(x,y,z):x^2+y^2\\le2x,\\ 0\\le z\\le4\\}\\). Tính \\(I=\\iiint_E(x+y+2z)\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(20\\pi\\)",
+      "\\(10\\pi\\)",
+      "\\(20\\)",
+      "\\(10\\)"
+    ],
+    "correct": "\\(20\\pi\\)",
+    "solution": "Miền chiếu là đĩa \\((x-1)^2+y^2\\le1\\), có diện tích \\(\\pi\\) và trọng tâm \\((1,0)\\). Vì chiều cao theo \\(z\\) bằng \\(4\\), ta có \\[\\iiint_E x\\,dV=4\\iint_Dx\\,dA=4\\pi,\\qquad \\iiint_Ey\\,dV=0.\\] Ngoài ra \\[\\iiint_E2z\\,dV=\\iint_D\\left(\\int_0^4 2z\\,dz\\right)dA=16\\pi.\\] Vậy \\(I=4\\pi+16\\pi=20\\pi\\).",
+    "quick": "Đĩa tâm \\((1,0)\\), diện tích \\(\\pi\\); phần \\(x\\) cho \\(4\\pi\\), phần \\(2z\\) cho \\(16\\pi\\).",
+    "casio": "CASIO: tính \\(4\\pi+\\pi\\int_0^4 2Z\\,dZ=20\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 65,
+    "type": "triple_integral_shifted_hemisphere_official",
+    "question": "Cho \\(E=\\{(x,y,z):x^2+y^2+z^2+2x\\le0,\\ z\\ge0\\}\\). Tính \\(I=\\iiint_E(x+y+z)\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{5\\pi}{12}\\)",
+      "\\(\\dfrac{5\\pi}{12}\\)",
+      "\\(\\dfrac{5}{12}\\)",
+      "\\(-\\dfrac{5\\pi}{24}\\)"
+    ],
+    "correct": "\\(-\\dfrac{5\\pi}{12}\\)",
+    "solution": "Miền là nửa khối cầu bán kính \\(1\\), tâm \\((-1,0,0)\\), nằm phía trên mặt phẳng \\(z=0\\). Thể tích nửa cầu là \\(2\\pi/3\\), nên \\[\\iiint_E x\\,dV=-1\\cdot\\frac{2\\pi}{3}=-\\frac{2\\pi}{3}.\\] Do đối xứng, \\(\\iiint_Ey\\,dV=0\\). Phần \\(z\\) bằng tích phân của \\(z\\) trên nửa cầu trên bán kính \\(1\\), tức \\(\\pi/4\\). Vì vậy \\[I=-\\frac{2\\pi}{3}+\\frac{\\pi}{4}=-\\frac{5\\pi}{12}.\\]",
+    "quick": "Tách ba phần: \\(x\\) dùng trọng tâm, \\(y\\) triệt tiêu, \\(z\\) cho \\(\\pi/4\\).",
+    "casio": "CASIO: tính \\(-2\\pi/3+\\pi/4=-5\\pi/12\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 66,
+    "type": "triple_integral_spherical_setup_official",
+    "question": "Cho quy ước tọa độ cầu \\(x=\\rho\\sin\\theta\\cos\\varphi\\), \\(y=\\rho\\sin\\theta\\sin\\varphi\\), \\(z=\\rho\\cos\\theta\\). Vật thể \\(E\\) thỏa \\(x^2+y^2+z^2\\le4y\\), \\(x\\ge0\\), \\(y\\ge0\\), \\(z\\ge0\\). Công thức đúng để tính \\(I=\\iiint_E1\\,dV\\) là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{\\pi/2}\\int_0^{\\pi/2}\\int_0^{4\\sin\\theta\\sin\\varphi}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_0^{\\pi/2}\\int_0^{\\pi/2}\\int_0^{4\\sin\\theta\\cos\\varphi}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_0^{\\pi/2}\\int_0^{\\pi/2}\\int_0^{2}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{\\pi/2}\\int_0^{4\\sin\\theta\\sin\\varphi}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)"
+    ],
+    "correct": "\\(I=\\int_0^{\\pi/2}\\int_0^{\\pi/2}\\int_0^{4\\sin\\theta\\sin\\varphi}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+    "solution": "Phương trình miền cho \\(\\rho^2\\le4\\rho\\sin\\theta\\sin\\varphi\\), nên \\(0\\le\\rho\\le4\\sin\\theta\\sin\\varphi\\). Ba điều kiện \\(x\\ge0\\), \\(y\\ge0\\), \\(z\\ge0\\) cho \\(0\\le\\theta\\le\\pi/2\\), \\(0\\le\\varphi\\le\\pi/2\\). Jacobian tọa độ cầu là \\(\\rho^2\\sin\\theta\\).",
+    "quick": "Biên cầu cho \\(\\rho=4\\sin\\theta\\sin\\varphi\\); góc đều chạy từ \\(0\\) đến \\(\\pi/2\\).",
+    "casio": "CASIO không cần thiết; cần thay đúng biểu thức của \\(y\\) trong tọa độ cầu.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 67,
+    "type": "triple_integral_ellipsoid_setup_official",
+    "question": "Đặt \\(x=\\dfrac{2}{3}\\rho\\sin\\theta\\cos\\varphi\\), \\(y=\\rho\\sin\\theta\\sin\\varphi\\), \\(z=2\\rho\\cos\\theta\\). Vật thể \\(E\\) thỏa \\(9x^2+4y^2+z^2\\le4\\), \\(x\\ge0\\), \\(y\\ge0\\), \\(z\\le0\\). Công thức đúng để tính thể tích \\(I=\\iiint_E1\\,dV\\) là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{\\pi/2}\\int_{\\pi/2}^{\\pi}\\int_0^1\\dfrac{4}{3}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_0^{\\pi/2}\\int_0^{\\pi/2}\\int_0^1\\dfrac{4}{3}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_0^{\\pi/2}\\int_{\\pi/2}^{\\pi}\\int_0^2\\dfrac{1}{6}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "Cả ba công thức trên đều sai"
+    ],
+    "correct": "\\(I=\\int_0^{\\pi/2}\\int_{\\pi/2}^{\\pi}\\int_0^1\\dfrac{4}{3}\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+    "solution": "Phép đổi biến đưa ellipsoid về quả cầu đơn vị \\(0\\le\\rho\\le1\\). Điều kiện \\(x\\ge0\\), \\(y\\ge0\\) cho \\(0\\le\\varphi\\le\\pi/2\\); điều kiện \\(z\\le0\\) cho \\(\\pi/2\\le\\theta\\le\\pi\\). Tích ba hệ số co giãn là \\((2/3)\\cdot1\\cdot2=4/3\\), nên Jacobian bằng \\(\\dfrac43\\rho^2\\sin\\theta\\).",
+    "quick": "Nửa dưới theo \\(z\\): \\(\\theta\\in[\\pi/2,\\pi]\\); một phần tư theo \\(x,y\\): \\(\\varphi\\in[0,\\pi/2]\\).",
+    "casio": "CASIO không cần thiết; chú ý Jacobian của phép co giãn là \\(4/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 68,
+    "type": "triple_integral_symmetry_official",
+    "question": "Cho \\(E=\\{(x,y,z):x^2+y^2\\le4z\\le16\\}\\). Tính \\(I=\\iiint_E(2xy^3+yx^3)\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Miền \\(E\\) có thể viết là \\(0\\le z\\le4\\), \\(x^2+y^2\\le4z\\), nên đối xứng qua mặt phẳng \\(x=0\\). Hàm dưới dấu tích phân là \\(2xy^3+yx^3=x(2y^3+yx^2)\\), là hàm lẻ theo \\(x\\). Vì vậy tích phân trên miền đối xứng theo \\(x\\) bằng \\(0\\).",
+    "quick": "Miền đối xứng qua \\(x=0\\), còn hàm tích phân lẻ theo \\(x\\).",
+    "casio": "CASIO không cần thiết; dùng tính đối xứng.",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 69,
+    "type": "triple_integral_cylindrical_setup_official",
+    "question": "Cho \\(E\\) là vật thể giới hạn bởi \\(\\dfrac{x^2+y^2}{4}\\le z\\le4\\). Biểu diễn đúng của thể tích \\(I=\\iiint_E1\\,dV\\) trong tọa độ trụ là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{2\\pi}\\int_0^4\\int_{r^2/4}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^4\\int_{r^2}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^2\\int_{r^2/4}^{4}r\\,dz\\,dr\\,d\\varphi\\)"
+    ],
+    "correct": "\\(I=\\int_0^{2\\pi}\\int_0^4\\int_{r^2/4}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+    "solution": "Trong tọa độ trụ, \\(x^2+y^2=r^2\\), nên mặt dưới là \\(z=r^2/4\\). Hai mặt cắt nhau khi \\(r^2/4=4\\), suy ra \\(r=4\\). Vì miền quay đủ một vòng và \\(dV=r\\,dz\\,dr\\,d\\varphi\\), ta được \\[I=\\int_0^{2\\pi}\\int_0^4\\int_{r^2/4}^{4}r\\,dz\\,dr\\,d\\varphi.\\]",
+    "quick": "Mặt dưới \\(z=r^2/4\\); giao với \\(z=4\\) cho \\(r=4\\).",
+    "casio": "CASIO không cần thiết ở bước lập tích phân; cần xác định đúng cận và Jacobian \\(r\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 70,
+    "type": "triple_integral_elliptic_cylindrical_setup_official",
+    "question": "Dùng phép đổi biến \\(x=r\\cos\\varphi\\), \\(y=2r\\sin\\varphi\\). Cho \\(E\\) là vật thể thỏa \\(4x^2+y^2\\le4z\\le4\\). Biểu diễn đúng của thể tích \\(I=\\iiint_E1\\,dV\\) là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{1}2r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{1}\\dfrac{r}{2}\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{1}2r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_{0}^{r^2}2r\\,dz\\,dr\\,d\\varphi\\)"
+    ],
+    "correct": "\\(I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{1}2r\\,dz\\,dr\\,d\\varphi\\)",
+    "solution": "Theo phép đổi biến đã cho, \\(4x^2+y^2=4r^2\\), nên điều kiện miền trở thành \\(r^2\\le z\\le1\\). Từ đó \\(0\\le r\\le1\\). Jacobian phẳng là \\[\\left|\\frac{\\partial(x,y)}{\\partial(r,\\varphi)}\\right|=2r.\\] Vì vậy \\[I=\\int_0^{2\\pi}\\int_0^1\\int_{r^2}^{1}2r\\,dz\\,dr\\,d\\varphi.\\]",
+    "quick": "Sau đổi biến: \\(r^2\\le z\\le1\\), \\(0\\le r\\le1\\), Jacobian bằng \\(2r\\).",
+    "casio": "CASIO không cần thiết; kiểm tra phép đổi biến và Jacobian trước khi lập cận.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 71,
+    "type": "triple_integral_shifted_cylindrical_setup_official",
+    "question": "Dùng phép đổi biến \\(x=1+r\\cos\\varphi\\), \\(y=r\\sin\\varphi\\). Cho \\(E\\) là vật thể thỏa \\(x^2+y^2-2x-4\\le z\\le4\\). Biểu diễn đúng của thể tích \\(I=\\iiint_E1\\,dV\\) là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{2\\pi}\\int_0^3\\int_{r^2-5}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^{\\sqrt5}\\int_{r^2-5}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^3\\int_{r^2-4}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_{-\\pi/2}^{\\pi/2}\\int_0^3\\int_{r^2-5}^{4}r\\,dz\\,dr\\,d\\varphi\\)"
+    ],
+    "correct": "\\(I=\\int_0^{2\\pi}\\int_0^3\\int_{r^2-5}^{4}r\\,dz\\,dr\\,d\\varphi\\)",
+    "solution": "Với \\(x=1+r\\cos\\varphi\\), \\(y=r\\sin\\varphi\\), ta có \\[x^2+y^2-2x-4=r^2-5.\\] Mặt dưới cắt mặt \\(z=4\\) khi \\(r^2-5=4\\), tức \\(r=3\\). Jacobian là \\(r\\), còn góc chạy đủ một vòng. Do đó đáp án đúng là \\[I=\\int_0^{2\\pi}\\int_0^3\\int_{r^2-5}^{4}r\\,dz\\,dr\\,d\\varphi.\\]",
+    "quick": "Tịnh tiến tâm sang \\((1,0)\\): mặt dưới thành \\(z=r^2-5\\), bán kính chiếu bằng \\(3\\).",
+    "casio": "CASIO không cần thiết; cần hoàn thành bình phương hoặc dùng trực tiếp phép tịnh tiến đã cho.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 72,
+    "type": "triple_integral_between_surfaces_official",
+    "question": "Cho \\(E\\) là vật thể giới hạn bởi \\(z=\\sqrt{x^2+y^2}\\) và \\(z=2-x^2-y^2\\). Tính \\(I=\\iiint_E z\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{11\\pi}{12}\\)",
+      "\\(\\dfrac{11\\pi}{24}\\)",
+      "\\(\\dfrac{\\pi}{12}\\)",
+      "\\(\\dfrac{\\pi}{24}\\)"
+    ],
+    "correct": "\\(\\dfrac{11\\pi}{12}\\)",
+    "solution": "Trong tọa độ trụ, hai mặt là \\(z=r\\) và \\(z=2-r^2\\). Giao tuyến thỏa \\(r=2-r^2\\), suy ra \\(r=1\\). Do đó \\[I=\\int_0^{2\\pi}\\int_0^1\\int_r^{2-r^2}zr\\,dz\\,dr\\,d\\varphi.\\] Tính tích phân theo \\(z\\) và \\(r\\): \\[I=2\\pi\\int_0^1\\frac{(2-r^2)^2-r^2}{2}r\\,dr=\\frac{11\\pi}{12}.\\]",
+    "quick": "Giao tuyến cho \\(r=1\\); tích phân là \\(2\\pi\\int_0^1\\frac{(2-r^2)^2-r^2}{2}r\\,dr\\).",
+    "casio": "CASIO: nhập \\(2\\pi\\int_0^1 0.5((2-X^2)^2-X^2)X\\,dX\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 73,
+    "type": "triple_integral_shifted_region_official",
+    "question": "Cho \\(E\\) là vật thể thỏa \\(x^2+y^2-2x-4\\le z\\le4\\). Tính \\(I=\\iiint_E z\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{81\\pi}{2}\\)",
+      "\\(\\dfrac{81\\pi}{4}\\)",
+      "\\(\\dfrac{27\\pi}{4}\\)",
+      "\\(\\dfrac{27\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{81\\pi}{2}\\)",
+    "solution": "Đặt \\(x=1+r\\cos\\varphi\\), \\(y=r\\sin\\varphi\\). Khi đó \\(0\\le r\\le3\\), \\(r^2-5\\le z\\le4\\), và \\(dV=r\\,dz\\,dr\\,d\\varphi\\). Suy ra \\[I=\\int_0^{2\\pi}\\int_0^3\\int_{r^2-5}^{4}zr\\,dz\\,dr\\,d\\varphi.\\] Tính toán cho \\[I=2\\pi\\int_0^3\\frac{16-(r^2-5)^2}{2}r\\,dr=\\frac{81\\pi}{2}.\\]",
+    "quick": "Tịnh tiến sang tâm \\((1,0)\\), rồi tính \\(2\\pi\\int_0^3\\frac{16-(r^2-5)^2}{2}r\\,dr\\).",
+    "casio": "CASIO: nhập \\(2\\pi\\int_0^3 0.5(16-(X^2-5)^2)X\\,dX\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 74,
+    "type": "triple_integral_cone_corrected",
+    "question": "Tính thể tích của vật thể thỏa \\(z\\ge\\sqrt{x^2+y^2}\\), \\(z\\le2\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{8\\pi}{3}\\)",
+      "\\(4\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(\\dfrac{16\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{8\\pi}{3}\\)",
+    "solution": "Miền là khối nón tròn xoay có chiều cao \\(2\\) và bán kính đáy \\(2\\). Trong tọa độ trụ, \\[V=\\int_0^{2\\pi}\\int_0^2\\int_r^2 r\\,dz\\,dr\\,d\\varphi=2\\pi\\int_0^2(2-r)r\\,dr=\\frac{8\\pi}{3}.\\]",
+    "quick": "Khối nón có \\(R=2\\), \\(h=2\\): \\(V=\\frac13\\pi R^2h=8\\pi/3\\).",
+    "casio": "CASIO: tính \\(2\\pi\\int_0^2(2-X)X\\,dX\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 75,
+    "type": "triple_integral_cone_cylinder_setup_official",
+    "question": "Cho \\(E\\) là vật thể thỏa \\(z^2\\ge x^2+y^2\\), \\(x^2+y^2\\le2y\\), \\(0\\le z\\le2\\). Biểu diễn đúng của thể tích \\(I=\\iiint_E1\\,dV\\) trong tọa độ trụ là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{\\pi}\\int_0^{2\\sin\\varphi}\\int_r^2 r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^2\\int_r^2 r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{\\pi}\\int_0^2\\int_r^2 r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^{2\\sin\\varphi}\\int_0^r r\\,dz\\,dr\\,d\\varphi\\)"
+    ],
+    "correct": "\\(I=\\int_0^{\\pi}\\int_0^{2\\sin\\varphi}\\int_r^2 r\\,dz\\,dr\\,d\\varphi\\)",
+    "solution": "Trong tọa độ trụ, \\(x^2+y^2=r^2\\). Điều kiện hình trụ \\(r^2\\le2r\\sin\\varphi\\) cho \\(0\\le\\varphi\\le\\pi\\), \\(0\\le r\\le2\\sin\\varphi\\). Vì \\(z\\ge0\\), điều kiện \\(z^2\\ge r^2\\) trở thành \\(z\\ge r\\). Kết hợp với \\(z\\le2\\), ta có \\(r\\le z\\le2\\).",
+    "quick": "Hình trụ lệch tâm cho \\(r\\le2\\sin\\varphi\\); nón cho \\(z\\ge r\\).",
+    "casio": "CASIO không cần thiết; cần chuyển đúng từng điều kiện sang tọa độ trụ.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 76,
+    "type": "triple_integral_paraboloid_setup_corrected",
+    "question": "Cho \\(E\\) là vật thể giới hạn bởi \\(z=x^2+y^2\\) và \\(z=h\\), với \\(h\\gt0\\). Biểu diễn đúng của thể tích \\(I=\\iiint_E1\\,dV\\) trong tọa độ trụ là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{2\\pi}\\int_0^{\\sqrt h}\\int_{r^2}^{h}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^{h}\\int_{r^2}^{h}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^{\\sqrt h}\\int_0^{r^2}r\\,dz\\,dr\\,d\\varphi\\)",
+      "\\(I=\\int_0^{\\pi/2}\\int_0^{\\sqrt h}\\int_{r^2}^{h}r\\,dz\\,dr\\,d\\varphi\\)"
+    ],
+    "correct": "\\(I=\\int_0^{2\\pi}\\int_0^{\\sqrt h}\\int_{r^2}^{h}r\\,dz\\,dr\\,d\\varphi\\)",
+    "solution": "Hai mặt cắt nhau khi \\(r^2=h\\), nên \\(0\\le r\\le\\sqrt h\\). Theo phương \\(z\\), miền chạy từ paraboloid \\(z=r^2\\) đến mặt phẳng \\(z=h\\). Góc chạy đủ một vòng và Jacobian bằng \\(r\\). Vì vậy công thức đúng là \\[I=\\int_0^{2\\pi}\\int_0^{\\sqrt h}\\int_{r^2}^{h}r\\,dz\\,dr\\,d\\varphi.\\]",
+    "quick": "Giao tuyến cho \\(r=\\sqrt h\\); cận \\(z\\) là \\(r^2\\) đến \\(h\\).",
+    "casio": "CASIO không cần thiết ở bước lập tích phân.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 77,
+    "type": "triple_integral_cone_sphere_official",
+    "question": "Cho \\(V\\) là phần khối cầu \\(x^2+y^2+z^2\\le1\\) nằm trong mặt nón \\(z^2\\ge x^2+y^2\\), \\(z\\ge0\\). Tính \\(I=\\iiint_V z\\,dV\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{8}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{8}\\)",
+    "solution": "Dùng tọa độ cầu với \\(z=\\rho\\cos\\theta\\). Miền nằm trong nón trên nên \\(0\\le\\theta\\le\\pi/4\\), \\(0\\le\\rho\\le1\\), \\(0\\le\\varphi\\le2\\pi\\). Khi đó \\[I=\\int_0^{2\\pi}\\int_0^{\\pi/4}\\int_0^1 \\rho\\cos\\theta\\cdot\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi.\\] Suy ra \\[I=2\\pi\\cdot\\frac14\\cdot\\frac14=\\frac\\pi8.\\]",
+    "quick": "Trong nón trên: \\(0\\le\\theta\\le\\pi/4\\); tích phân tách thành ba thừa số.",
+    "casio": "CASIO: tính \\(2\\pi\\left(\\int_0^1R^3dR\\right)\\left(\\int_0^{\\pi/4}\\sin X\\cos X\\,dX\\right)\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 78,
+    "type": "triple_integral_shifted_sphere_setup_corrected",
+    "question": "Dùng tọa độ cầu tịnh tiến \\(x=\\rho\\sin\\theta\\cos\\varphi\\), \\(y=\\rho\\sin\\theta\\sin\\varphi\\), \\(z=1+\\rho\\cos\\theta\\). Cho \\(V\\) là phần khối cầu \\(x^2+y^2+z^2\\le2z\\) thỏa \\(z\\le1\\). Biểu diễn đúng của \\(I=\\iiint_V z\\,dV\\) là",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_0^{2\\pi}\\int_{\\pi/2}^{\\pi}\\int_0^1(1+\\rho\\cos\\theta)\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^{\\pi/2}\\int_0^1(1+\\rho\\cos\\theta)\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_{\\pi/2}^{\\pi}\\int_0^1\\rho^3\\cos\\theta\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+      "\\(I=\\int_0^{2\\pi}\\int_0^{\\pi/2}\\int_0^{2\\cos\\theta}\\rho^3\\cos\\theta\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)"
+    ],
+    "correct": "\\(I=\\int_0^{2\\pi}\\int_{\\pi/2}^{\\pi}\\int_0^1(1+\\rho\\cos\\theta)\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\)",
+    "solution": "Phương trình \\(x^2+y^2+z^2\\le2z\\) tương đương \\(x^2+y^2+(z-1)^2\\le1\\), là khối cầu tâm \\((0,0,1)\\), bán kính \\(1\\). Với tọa độ cầu tịnh tiến đã cho, \\(0\\le\\rho\\le1\\). Điều kiện \\(z\\le1\\) trở thành \\(\\rho\\cos\\theta\\le0\\), nên \\(\\pi/2\\le\\theta\\le\\pi\\). Đồng thời \\(z=1+\\rho\\cos\\theta\\) và \\(dV=\\rho^2\\sin\\theta\\,d\\rho\\,d\\theta\\,d\\varphi\\).",
+    "quick": "Đây là nửa dưới của cầu tâm \\((0,0,1)\\): \\(\\theta\\in[\\pi/2,\\pi]\\), \\(0\\le\\rho\\le1\\).",
+    "casio": "CASIO không cần thiết ở bước lập tích phân; chú ý tọa độ đã được tịnh tiến theo trục \\(z\\).",
+    "difficulty": 3,
     "topic": "Tích phân ba"
   }
 ]

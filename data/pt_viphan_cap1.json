@@ -1,96 +1,6 @@
 [
   {
     "id": 1,
-    "type": "separable_identify_official",
-    "question": "Phương trình nào sau đây là phương trình vi phân phân ly biến số?",
-    "matrix": null,
-    "options": [
-      "\\(x\\,dx+y\\,dy=0\\)",
-      "\\(x\\,dx+(x-y)y\\,dy=0\\)",
-      "\\(x\\,dx+(x+y)y\\,dy=0\\)",
-      "\\(y\\,dx+(x+y)x\\,dy=0\\)"
-    ],
-    "correct": "\\(x\\,dx+y\\,dy=0\\)",
-    "solution": "Phương trình A viết được thành \\(x\\,dx=-y\\,dy\\), mỗi vế chỉ chứa một biến. Các phương trình còn lại chứa tích hỗn hợp x và y nên không ở dạng phân ly trực tiếp.",
-    "quick": "Dạng phân ly: gom toàn bộ x với dx và y với dy.",
-    "casio": "CASIO không cần thiết; đây là câu nhận dạng.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 2,
-    "type": "identify_type",
-    "question": "Phương trình \\(y' + P(x)y = Q(x)\\) thuộc loại nào?",
-    "matrix": null,
-    "options": [
-      "PT tuyến tính cấp 1",
-      "PT phân ly biến số",
-      "PT thuần nhất",
-      "PT Bernoulli"
-    ],
-    "correct": "PT tuyến tính cấp 1",
-    "solution": "Dạng chuẩn của phương trình tuyến tính cấp 1 là \\(y'+P(x)y=Q(x)\\). Nghiệm tổng quát có dạng \\[y=e^{-\\int P(x)\\,dx}\\left[\\int Q(x)e^{\\int P(x)\\,dx}\\,dx+C\\right].\\]",
-    "quick": "Nhận dạng: \\(y\\) và \\(y'\\) chỉ xuất hiện ở lũy thừa một; dạng chuẩn là \\(y'+P(x)y=Q(x)\\).",
-    "casio": "CASIO: Không giải trực tiếp. Tìm nhân tử tích hợp μ=e^∫P dx, nhân cả vế, rồi tích phân.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 3,
-    "type": "identify_type",
-    "question": "Phương trình \\(y'=f(y/x)\\) thuộc loại nào?",
-    "matrix": null,
-    "options": [
-      "PT thuần nhất",
-      "PT tuyến tính",
-      "PT phân ly biến",
-      "PT Bernoulli"
-    ],
-    "correct": "PT thuần nhất",
-    "solution": "Đây là phương trình thuần nhất dạng \\(y'=f(y/x)\\). Đặt \\(u=y/x\\), tức \\(y=ux\\), thì \\(y'=u+xu'\\) và phương trình được đưa về dạng phân ly biến.",
-    "quick": "Gặp \\(y'=f(y/x)\\), đặt \\(u=y/x\\).",
-    "casio": "CASIO: Đặt u=y/x, y=ux, y'=u+xu'. Thay vào, phân ly biến theo u và x.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 4,
-    "type": "identify_type",
-    "question": "Phương trình \\(y'+P(x)y=Q(x)y^n\\) (\\(n\\neq0,1\\)) thuộc loại nào?",
-    "matrix": null,
-    "options": [
-      "PT Bernoulli",
-      "PT tuyến tính",
-      "PT phân ly biến",
-      "PT thuần nhất"
-    ],
-    "correct": "PT Bernoulli",
-    "solution": "Đây là phương trình Bernoulli. Với \\(n\\ne0,1\\), đặt \\(z=y^{1-n}\\), khi đó \\(z'=(1-n)y^{-n}y'\\) và phương trình trở thành tuyến tính theo \\(z\\).",
-    "quick": "\\(y'+P(x)y=Q(x)y^n\\), \\(n\\ne0,1\\): đặt \\(z=y^{1-n}\\).",
-    "casio": "CASIO: Nhận dạng: có y^n ở vế phải với n≥2 → Bernoulli. Đặt z=y^(1-n).",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 5,
-    "type": "identify_type",
-    "question": "Phương trình \\((x^2+y^2)dx-2xy\\,dy=0\\) thuộc loại nào?",
-    "matrix": null,
-    "options": [
-      "Thuần nhất",
-      "Tuyến tính",
-      "Toàn phần",
-      "Phân ly biến"
-    ],
-    "correct": "Thuần nhất",
-    "solution": "Với \\(M=x^2+y^2\\) và \\(N=-2xy\\), cả \\(M,N\\) đều là hàm thuần nhất bậc \\(2\\). Vì vậy đây là phương trình thuần nhất; có thể đặt \\(u=y/x\\).",
-    "quick": "\\(M,N\\) thuần nhất cùng bậc \\(\\Rightarrow\\) phương trình thuần nhất.",
-    "casio": "CASIO: Thử M(tx,ty)=t²M(x,y) ✓ → thuần nhất.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 6,
     "type": "separable_official",
     "question": "Phương trình vi phân \\(\\dfrac{dy}{dx} = \\dfrac{x}{y}\\) có nghiệm tổng quát là?",
     "matrix": null,
@@ -108,7 +18,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 7,
+    "id": 2,
     "type": "separable",
     "question": "Một họ nghiệm không hằng của phương trình \\(\\dfrac{dy}{dx}=y^2\\) là?",
     "matrix": null,
@@ -126,7 +36,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 8,
+    "id": 3,
     "type": "separable",
     "question": "Nghiệm của phương trình \\(\\dfrac{dy}{dx}=\\dfrac{2x}{y}\\) thỏa mãn \\(y(0)=1\\) là?",
     "matrix": null,
@@ -144,7 +54,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 9,
+    "id": 4,
     "type": "separable",
     "question": "Phương trình \\(\\dfrac{dy}{dx} = e^{x-y}\\) có nghiệm tổng quát là?",
     "matrix": null,
@@ -162,7 +72,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 10,
+    "id": 5,
     "type": "separable",
     "question": "Một họ nghiệm không hằng của \\(\\dfrac{dy}{dx}=x\\sqrt{1-y^2}\\) được biểu diễn bởi",
     "matrix": null,
@@ -180,7 +90,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 11,
+    "id": 6,
     "type": "separable",
     "question": "Phương trình \\(\\dfrac{dy}{dx}=\\dfrac{1+y^2}{1+x^2}\\) có nghiệm tổng quát dạng ẩn là",
     "matrix": null,
@@ -198,7 +108,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 12,
+    "id": 7,
     "type": "separable",
     "question": "Một họ nghiệm không hằng của \\(\\dfrac{dy}{dx}=\\dfrac{xy+y}{xy+x}\\), trên miền \\(x\\ne0,\\;y\\ne0,-1\\), là?",
     "matrix": null,
@@ -216,7 +126,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 13,
+    "id": 8,
     "type": "separable",
     "question": "Một họ nghiệm không hằng của \\(\\dfrac{dy}{dx}=\\dfrac{y\\cos x}{1+2y^2}\\), với \\(y\\ne0\\), là?",
     "matrix": null,
@@ -234,7 +144,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 14,
+    "id": 9,
     "type": "separable",
     "question": "Giải \\(\\dfrac{dy}{dx}=\\dfrac{x^2}{1-y^2}\\) với điều kiện \\(y(0)=0\\).",
     "matrix": null,
@@ -252,7 +162,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 15,
+    "id": 10,
     "type": "separable",
     "question": "Nghiệm tổng quát của \\(y'=2x\\) là?",
     "matrix": null,
@@ -270,7 +180,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 16,
+    "id": 11,
     "type": "separable",
     "question": "Giải \\(y'=3y\\). Nghiệm tổng quát là?",
     "matrix": null,
@@ -288,7 +198,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 17,
+    "id": 12,
     "type": "separable_official",
     "question": "Nghiệm tổng quát của phương trình \\(2x\\,dx-dy=0\\) là",
     "matrix": null,
@@ -306,25 +216,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 18,
-    "type": "linear_first_order",
-    "question": "Nhân tử tích hợp của \\(y'-3y=e^x\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(e^{-3x}\\)",
-      "\\(e^{3x}\\)",
-      "\\(e^x\\)",
-      "\\(3x\\)"
-    ],
-    "correct": "\\(e^{-3x}\\)",
-    "solution": "Dạng \\(y'+P(x)y=Q(x)\\) với P=-3.\n\nNhân tử tích hợp: \\(\\mu=e^{\\int P\\,dx}=e^{\\int(-3)dx}=e^{-3x}\\).",
-    "quick": "\\(P(x)=-3\\Rightarrow\\mu=e^{\\int-3\\,dx}=e^{-3x}\\), nên \\((ye^{-3x})'=e^{-2x}\\).",
-    "casio": "CASIO: P=-3, μ=e^(-3x). Nhân vào: d(ye^-3x)=e^-2x dx.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 19,
+    "id": 13,
     "type": "linear_first_order",
     "question": "Nghiệm tổng quát của \\(y' + y = e^{x}\\) là?",
     "matrix": null,
@@ -342,25 +234,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 20,
-    "type": "linear_first_order",
-    "question": "Thừa số tích phân của phương trình \\(y'+\\dfrac{2}{x}y=\\sin x\\) (với \\(x\\gt0\\)) là?",
-    "matrix": null,
-    "options": [
-      "\\(x^2\\)",
-      "\\(x\\)",
-      "\\(e^{x^2}\\)",
-      "\\(\\ln x\\)"
-    ],
-    "correct": "\\(x^2\\)",
-    "solution": "\\(\\mu = e^{\\int \\frac{2}{x} dx} = e^{2\\ln x} = x^2\\).",
-    "quick": "\\(\\mu = e^{\\int p dx}\\) với \\(p(x)=2/x\\) → \\(\\mu = x^2\\)",
-    "casio": "CASIO: Kiểm tra nghiệm: thay y(x) vào PT, tính y' bằng d/dx, xác nhận y'+P(x)y=Q(x).",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 21,
+    "id": 14,
     "type": "linear_first_order",
     "question": "Nghiệm tổng quát của \\(xy' + y = x^2\\) là?",
     "matrix": null,
@@ -378,7 +252,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 22,
+    "id": 15,
     "type": "linear_first_order",
     "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} + 2xy = 2x\\) là?",
     "matrix": null,
@@ -396,7 +270,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 23,
+    "id": 16,
     "type": "linear_first_order",
     "question": "Phương trình \\(y' + \\cot x \\cdot y = \\csc x\\) có nghiệm tổng quát là?",
     "matrix": null,
@@ -414,7 +288,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 24,
+    "id": 17,
     "type": "linear_first_order_official",
     "question": "Nghiệm riêng của phương trình \\(y'+y=0\\) thỏa mãn \\(y(0)=2\\) là",
     "matrix": null,
@@ -432,7 +306,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 25,
+    "id": 18,
     "type": "linear_first_order",
     "question": "Nghiệm của bài toán Cauchy \\(y' + \\frac{1}{x}y = 1, y(1)=0\\) là?",
     "matrix": null,
@@ -450,7 +324,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 26,
+    "id": 19,
     "type": "linear_first_order",
     "question": "Nghiệm tổng quát của \\(\\dfrac{dy}{dx} = \\dfrac{2x}{1+x^2}y + \\dfrac{1}{1+x^2}\\) là?",
     "matrix": null,
@@ -468,7 +342,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 27,
+    "id": 20,
     "type": "linear_first_order",
     "question": "Tìm nghiệm riêng của \\(y'-2y=4\\) thỏa \\(y(0)=0\\).",
     "matrix": null,
@@ -486,7 +360,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 28,
+    "id": 21,
     "type": "linear_first_order",
     "question": "Nghiệm tổng quát của \\(y'+\\dfrac{1}{x}y=x^2\\) là?",
     "matrix": null,
@@ -504,7 +378,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 29,
+    "id": 22,
     "type": "linear_first_order",
     "question": "Nghiệm của \\(y'+2y=4\\), \\(y(0)=1\\), tại \\(x=\\ln2\\) bằng",
     "matrix": null,
@@ -522,25 +396,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 30,
-    "type": "exact_differential",
-    "question": "Phương trình \\((2xy + 1)dx + (x^2 + 2y)dy = 0\\) là phương trình gì?",
-    "matrix": null,
-    "options": [
-      "Vi phân toàn phần",
-      "Tách biến",
-      "Tuyến tính",
-      "Bernoulli"
-    ],
-    "correct": "Vi phân toàn phần",
-    "solution": "Kiểm tra: \\(M_y = 2x, N_x = 2x\\) → \\(M_y = N_x\\) → phương trình vi phân toàn phần.",
-    "quick": "\\(M_y = N_x\\) là điều kiện cần và đủ",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 31,
+    "id": 23,
     "type": "exact_differential",
     "question": "Tìm hàm \\(F(x,y)\\) sao cho \\(dF = (2xy + 1)dx + (x^2 + 2y)dy\\)?",
     "matrix": null,
@@ -558,43 +414,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 32,
-    "type": "exact_differential",
-    "question": "Phương trình \\((\\cos x+\\ln y)\\,dx+\\left(\\dfrac{x}{y}+e^y\\right)\\,dy=0\\) (với \\(y\\gt0\\)) có phải là phương trình vi phân toàn phần không?",
-    "matrix": null,
-    "options": [
-      "Có",
-      "Không",
-      "Chỉ khi \\(x=0\\)",
-      "Chỉ khi \\(y=1\\)"
-    ],
-    "correct": "Có",
-    "solution": "\\(M_y = \\frac{1}{y}, N_x = \\frac{1}{y}\\) → \\(M_y = N_x\\) → là phương trình vi phân toàn phần.",
-    "quick": "Kiểm tra đạo hàm chéo",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 33,
-    "type": "exact_differential",
-    "question": "Phương trình \\((x+y)\\,dx+(x-y)\\,dy=0\\) có phải vi phân toàn phần không?",
-    "matrix": null,
-    "options": [
-      "Có",
-      "Không, thừa số \\(\\mu = 1/x\\)",
-      "Không, thừa số \\(\\mu = 1/y\\)",
-      "Không, không có thừa số"
-    ],
-    "correct": "Có",
-    "solution": "\\(M=x+y,\\;N=x-y\\). Ta có \\(M_y=1=N_x\\), nên phương trình đã là vi phân toàn phần. Tìm hàm thế: \\[F_x=x+y\\Rightarrow F=\\frac{x^2}{2}+xy+g(y).\\] Từ \\(F_y=x+g'(y)=x-y\\) suy ra \\(g(y)=-y^2/2\\). Vì vậy nghiệm là \\(\\dfrac{x^2}{2}+xy-\\dfrac{y^2}{2}=C\\).",
-    "quick": "\\(M_y=N_x=1\\Rightarrow\\) toàn phần; hàm thế là \\(F=\\dfrac{x^2}{2}+xy-\\dfrac{y^2}{2}\\).",
-    "casio": "CASIO: Kiểm tra P'_y=Q'_x bằng d/dx. Xác nhận thế hàm U bằng cách tính U'_x và U'_y.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 34,
+    "id": 24,
     "type": "exact_differential",
     "question": "Tìm hằng số \\(a\\) để phương trình \\((x^2 + ay^2)dx + (bxy)dy = 0\\) là vi phân toàn phần?",
     "matrix": null,
@@ -612,25 +432,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 35,
-    "type": "exact_differential",
-    "question": "Phương trình \\((2xy+1)dx+(x^2-1)dy=0\\) là PT vi phân toàn phần vì?",
-    "matrix": null,
-    "options": [
-      "\\(\\partial M/\\partial y=\\partial N/\\partial x=2x\\)",
-      "\\(M=N\\)",
-      "\\(MN=\\text{const}\\)",
-      "\\(M+N=0\\)"
-    ],
-    "correct": "\\(\\partial M/\\partial y=\\partial N/\\partial x=2x\\)",
-    "solution": "\\(M=2xy+1,\\;N=x^2-1\\). Ta có \\(\\dfrac{\\partial M}{\\partial y}=2x=\\dfrac{\\partial N}{\\partial x}\\), nên phương trình là vi phân toàn phần. Hàm thế là \\(F=x^2y+x-y\\), do đó nghiệm \\(x^2y+x-y=C\\).",
-    "quick": "Kiểm tra: \\(M_y=2x=N_x=2x\\) ✓ → vi phân toàn phần. Nghiệm: x²y+x-y=C.",
-    "casio": "CASIO: Tính M_y và N_x bằng tay. Nếu bằng nhau → toàn phần. Tìm F: ∂F/∂x=M, ∂F/∂y=N.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 36,
+    "id": 25,
     "type": "exact_differential",
     "question": "Nghiệm của PT vi phân toàn phần \\((3x^2+y)dx+(x+2y)dy=0\\) là?",
     "matrix": null,
@@ -648,7 +450,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 37,
+    "id": 26,
     "type": "exact_ivp_official",
     "question": "Nghiệm riêng của \\((y-x)\\,dx+(y+x)\\,dy=0\\) thỏa mãn \\(y(1)=1\\) là",
     "matrix": null,
@@ -666,7 +468,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 38,
+    "id": 27,
     "type": "exact_differential",
     "question": "Tìm \\(m\\) để \\((2xy+my)\\,dx+(x^2+mx+2y)\\,dy=0\\) là phương trình vi phân toàn phần.",
     "matrix": null,
@@ -684,79 +486,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 39,
-    "type": "homogeneous",
-    "question": "Phương trình \\(y' = \\dfrac{y}{x} + \\dfrac{x}{y}\\) là dạng phương trình gì?",
-    "matrix": null,
-    "options": [
-      "Phương trình thuần nhất (đẳng cấp)",
-      "Tách biến",
-      "Tuyến tính",
-      "Bernoulli"
-    ],
-    "correct": "Phương trình thuần nhất (đẳng cấp)",
-    "solution": "Vế phải chỉ phụ thuộc vào tỉ số \\(y/x\\): \\(\\dfrac{y}{x}+\\dfrac{x}{y}=u+\\dfrac1u\\) với \\(u=y/x\\). Vì vậy đây là phương trình thuần nhất (đẳng cấp).",
-    "quick": "Vế phải có dạng \\(f(y/x)\\Rightarrow\\) phương trình thuần nhất.",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 40,
-    "type": "homogeneous",
-    "question": "Giải phương trình đẳng cấp \\(y' = \\dfrac{y}{x} + \\tan\\dfrac{y}{x}\\) bằng cách đặt?",
-    "matrix": null,
-    "options": [
-      "\\(u = \\dfrac{y}{x}\\)",
-      "\\(u = \\dfrac{x}{y}\\)",
-      "\\(u = xy\\)",
-      "\\(u = y - x\\)"
-    ],
-    "correct": "\\(u = \\dfrac{y}{x}\\)",
-    "solution": "Đặt \\(u = y/x \\Rightarrow y = ux \\Rightarrow y' = u + xu'\\), thay vào phương trình để tách biến.",
-    "quick": "Phương trình đẳng cấp đặt \\(u = y/x\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 41,
-    "type": "homogeneous",
-    "question": "Sau khi đặt \\(u = y/x\\), phương trình \\(y' = \\dfrac{y}{x} + \\left(\\dfrac{y}{x}\\right)^2\\) trở thành?",
-    "matrix": null,
-    "options": [
-      "\\(xu' = u^2\\)",
-      "\\(xu' = u + u^2\\)",
-      "\\(u' = u^2\\)",
-      "\\(xu' = 2u\\)"
-    ],
-    "correct": "\\(xu' = u^2\\)",
-    "solution": "\\(y = ux \\Rightarrow y' = u + xu'\\). Thay: \\(u + xu' = u + u^2\\) → \\(xu' = u^2\\).",
-    "quick": "\\(u + xu' = u + u^2 \\Rightarrow xu' = u^2\\)",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 42,
-    "type": "homogeneous",
-    "question": "Phương trình \\((x^2 + y^2)dx + 2xy\\,dy = 0\\) có thể đưa về dạng đẳng cấp. Đặt \\(u = y/x\\), ta được?",
-    "matrix": null,
-    "options": [
-      "\\(\\dfrac{2u}{1+3u^2}\\,du = -\\dfrac{dx}{x}\\)",
-      "\\(\\dfrac{dx}{x} = -\\dfrac{1+u^2}{2u}\\,du\\)",
-      "\\(\\dfrac{dx}{x} = \\dfrac{1+u^2}{2u}\\,du\\)",
-      "\\(\\dfrac{dx}{x} = -\\dfrac{2u}{1+u^2}\\,du\\)"
-    ],
-    "correct": "\\(\\dfrac{2u}{1+3u^2}\\,du = -\\dfrac{dx}{x}\\)",
-    "solution": "Từ \\((x^2+y^2)dx+2xy\\,dy=0\\), chia cho \\(dx\\): \\(2xy\\,y'=-(x^2+y^2)\\). Đặt \\(u=y/x\\Rightarrow y=ux,\\; y'=u+xu'\\). Thay vào: \\(2ux^2(u+xu')=-(1+u^2)x^2\\). Rút gọn: \\(2u^2+2uxu'=-(1+u^2)\\), nên \\(2uxu'=-(1+3u^2)\\). Do đó \\(\\dfrac{2u}{1+3u^2}\\,du=-\\dfrac{dx}{x}\\).",
-    "quick": "Đặt \\(u=y/x\\), thay \\(y=ux\\), \\(y'=u+xu'\\), rút gọn được \\(\\dfrac{2u}{1+3u^2}\\,du=-\\dfrac{dx}{x}\\).",
-    "casio": "CASIO: Kiểm tra nghiệm bằng cách thay y vào PT và tính y' để xác nhận 2 vế bằng nhau.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 43,
+    "id": 28,
     "type": "homogeneous",
     "question": "Giải phương trình đẳng cấp \\(y' = \\frac{y}{x} + \\frac{x}{y}\\). Nghiệm tổng quát là?",
     "matrix": null,
@@ -774,7 +504,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 44,
+    "id": 29,
     "type": "homogeneous",
     "question": "Giải \\(y'=\\dfrac{y-x}{y+x}\\) bằng đặt \\(u=y/x\\).",
     "matrix": null,
@@ -792,7 +522,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 45,
+    "id": 30,
     "type": "homogeneous",
     "question": "Giải phương trình đẳng cấp \\(y'=1+\\dfrac{y}{x}\\). Một biểu thức nghiệm là",
     "matrix": null,
@@ -810,61 +540,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 46,
-    "type": "bernoulli",
-    "question": "Xét phương trình \\(y'+y=y^2\\) dưới dạng Bernoulli \\(y'+P(x)y=Q(x)y^n\\). Số mũ \\(n\\) bằng",
-    "matrix": null,
-    "options": [
-      "\\(2\\)",
-      "\\(1\\)",
-      "\\(0\\)",
-      "\\(-1\\)"
-    ],
-    "correct": "\\(2\\)",
-    "solution": "So sánh với dạng Bernoulli \\(y'+P(x)y=Q(x)y^n\\), ta có \\(P(x)=1\\), \\(Q(x)=1\\) và \\(n=2\\).",
-    "quick": "Số mũ của \\(y\\) ở vế phải là \\(n=2\\).",
-    "casio": "CASIO không cần thiết; đây là câu nhận dạng dạng phương trình.",
-    "difficulty": 1,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 47,
-    "type": "bernoulli",
-    "question": "Để giải phương trình Bernoulli \\(y' + y = y^2\\), ta đặt \\(z = y^{1-n}\\) với \\(n=2\\). Vậy \\(z = ?\\)",
-    "matrix": null,
-    "options": [
-      "\\(z = y^{-1}\\)",
-      "\\(z = y\\)",
-      "\\(z = y^2\\)",
-      "\\(z = y^{-2}\\)"
-    ],
-    "correct": "\\(z = y^{-1}\\)",
-    "solution": "Bernoulli: đặt \\(z = y^{1-n} = y^{1-2} = y^{-1}\\).",
-    "quick": "\\(z = y^{1-n}\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 48,
-    "type": "bernoulli",
-    "question": "Sau khi đặt \\(z = y^{-1}\\), phương trình Bernoulli \\(y' + y = y^2\\) trở thành phương trình tuyến tính nào đối với \\(z\\)?",
-    "matrix": null,
-    "options": [
-      "\\(z' - z = -1\\)",
-      "\\(z' + z = 1\\)",
-      "\\(z' - z = 1\\)",
-      "\\(z' + z = -1\\)"
-    ],
-    "correct": "\\(z' - z = -1\\)",
-    "solution": "\\(z = y^{-1} \\Rightarrow y = z^{-1}\\). \\(y' = -z^{-2}z'\\). Thay: \\(-z^{-2}z' + z^{-1} = z^{-2}\\). Nhân \\(-z^2\\): \\(z' - z = -1\\).",
-    "quick": "Công thức: \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 2,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 49,
+    "id": 31,
     "type": "bernoulli",
     "question": "Một họ nghiệm không hằng của phương trình Bernoulli \\(y'+\\dfrac1x y=y^2\\) với \\(x\\gt0\\) là?",
     "matrix": null,
@@ -882,25 +558,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 50,
-    "type": "bernoulli",
-    "question": "Giải phương trình Bernoulli \\(y' + \\frac{1}{x}y = x^2 y^4\\) bằng cách đặt \\(z = y^{-3}\\). Khi đó phương trình đối với \\(z\\) là?",
-    "matrix": null,
-    "options": [
-      "\\(z' - \\frac{3}{x}z = -3x^2\\)",
-      "\\(z' + \\frac{3}{x}z = 3x^2\\)",
-      "\\(z' - \\frac{3}{x}z = 3x^2\\)",
-      "\\(z' + \\frac{3}{x}z = -3x^2\\)"
-    ],
-    "correct": "\\(z' - \\frac{3}{x}z = -3x^2\\)",
-    "solution": "Với \\(n=4\\), \\(z = y^{1-n} = y^{-3}\\). \\(z' = -3y^{-4}y'\\). Nhân pt với \\(-3y^{-4}\\): \\(-3y^{-4}y' - \\frac{3}{x}y^{-3} = -3x^2 \\Rightarrow z' - \\frac{3}{x}z = -3x^2\\). Phép đặt này áp dụng cho \\(y\\ne0\\); nghiệm hằng \\(y\\equiv0\\) cần được xét riêng.",
-    "quick": "Công thức \\(z' + (1-n)p(x)z = (1-n)q(x)\\)",
-    "casio": "CASIO: PT Bernoulli y'+P(x)y=Q(x)yⁿ. Đặt z=y^{1-n} → PT tuyến tính theo z. Giải bình thường rồi đổi lại y. Kiểm tra nghiệm bằng d/dx.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 51,
+    "id": 32,
     "type": "bernoulli",
     "question": "Nghiệm không hằng của \\(y'+2y=2y^2\\) có dạng",
     "matrix": null,
@@ -918,7 +576,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 52,
+    "id": 33,
     "type": "application_growth",
     "question": "Mô hình tăng trưởng dân số Malthus: \\(\\frac{dP}{dt} = kP\\), với \\(P(0)=P_0\\). Nghiệm là?",
     "matrix": null,
@@ -936,7 +594,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 53,
+    "id": 34,
     "type": "application_decay",
     "question": "Chu kỳ bán rã của một chất phóng xạ là \\(T\\). Phương trình \\(\\frac{dm}{dt} = -\\lambda m\\). Hằng số \\(\\lambda\\) liên hệ với \\(T\\) bởi?",
     "matrix": null,
@@ -954,7 +612,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 54,
+    "id": 35,
     "type": "application_newton",
     "question": "Định luật làm mát Newton: \\(\\dfrac{dT}{dt}=k(T-T_m)\\). Nếu \\(T_m\\) là nhiệt độ môi trường và \\(k\\lt0\\), thì nghiệm tổng quát là?",
     "matrix": null,
@@ -972,7 +630,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 55,
+    "id": 36,
     "type": "application_mixing",
     "question": "Bể chứa 100L nước muối 1g/L. Nước muối 2g/L chảy vào với tốc độ 5L/phút, đồng thời hỗn hợp chảy ra 5L/phút. Lượng muối S(t) sau t phút thỏa PT nào?",
     "matrix": null,
@@ -990,7 +648,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 56,
+    "id": 37,
     "type": "application_population",
     "question": "Dân số tăng tỉ lệ với chính nó. Năm 2000 có 1000 người, năm 2010 có 1500 người. Dự báo năm 2020 có bao nhiêu người?",
     "matrix": null,
@@ -1008,7 +666,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 57,
+    "id": 38,
     "type": "application_decay",
     "question": "Chất phóng xạ phân rã theo \\(N'=-kN\\). Sau 10 năm còn 80%. Sau bao nhiêu năm còn 50%?",
     "matrix": null,
@@ -1026,7 +684,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 58,
+    "id": 39,
     "type": "application_mixing_official",
     "question": "Một bể có 1000 lít nước muối nồng độ \\(0{,}02\\) kg/lít. Nước muối nồng độ \\(0{,}01\\) kg/lít chảy vào và hỗn hợp chảy ra cùng tốc độ 10 lít/phút. Sau 40 phút, lượng muối trong bể xấp xỉ bằng",
     "matrix": null,
@@ -1044,7 +702,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 59,
+    "id": 40,
     "type": "application_newton",
     "question": "Một vật ở \\(100^\\circ C\\) được đặt trong phòng \\(20^\\circ C\\). Sau 10 phút vật còn \\(60^\\circ C\\). Theo định luật Newton, sau 20 phút nhiệt độ vật bằng",
     "matrix": null,
@@ -1062,7 +720,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 60,
+    "id": 41,
     "type": "application_mixing",
     "question": "Một bể 200 lít chứa 4 kg muối. Nước tinh khiết chảy vào và hỗn hợp chảy ra cùng tốc độ 5 lít/phút. Lượng muối sau \\(t\\) phút là",
     "matrix": null,
@@ -1080,7 +738,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 61,
+    "id": 42,
     "type": "ode_separable_cauchy",
     "question": "Giải bài toán Cauchy \\(y'=\\dfrac{1}{2y}\\), \\(y(1)=2\\).",
     "matrix": null,
@@ -1098,25 +756,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 62,
-    "type": "ode_homogeneous_substitution",
-    "question": "Với phương trình đẳng cấp \\(y'=\\dfrac{x+y}{x}\\), đặt \\(y=ux\\). Phương trình theo \\(u,x\\) là",
-    "matrix": null,
-    "options": [
-      "\\(x\\dfrac{du}{dx}=1\\)",
-      "\\(x\\dfrac{du}{dx}=u\\)",
-      "\\(x\\dfrac{du}{dx}=1+2u\\)",
-      "\\(\\dfrac{du}{dx}=1\\)"
-    ],
-    "correct": "\\(x\\dfrac{du}{dx}=1\\)",
-    "solution": "Vì \\(y=ux\\) nên \\(y'=u+xu'\\). Thay vào: \\(u+xu'=1+u\\), suy ra \\(xu'=1\\).",
-    "quick": "Nhớ \\(y'=u+xu'\\).",
-    "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
-    "difficulty": 3,
-    "topic": "Phương trình vi phân cấp 1"
-  },
-  {
-    "id": 63,
+    "id": 43,
     "type": "exact_ode",
     "question": "Tìm nghiệm tổng quát của \\((2x+y)dx+(x+2y)dy=0\\).",
     "matrix": null,
@@ -1134,7 +774,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 64,
+    "id": 44,
     "type": "ode_separable_exp",
     "question": "Giải bài toán \\(y'=y\\cos x\\), \\(y(0)=e\\).",
     "matrix": null,
@@ -1152,7 +792,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 65,
+    "id": 45,
     "type": "ode_linear_first",
     "question": "Giải bài toán \\(y'+y=2e^{-x}\\), \\(y(0)=1\\).",
     "matrix": null,
@@ -1170,7 +810,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 66,
+    "id": 46,
     "type": "exact_ode_cauchy",
     "question": "Giải phương trình toàn phần \\((3x^2+2y)dx+(2x+6y^2)dy=0\\), biết \\(y(0)=1\\).",
     "matrix": null,
@@ -1188,7 +828,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 67,
+    "id": 47,
     "type": "exact_ode_coefficient",
     "question": "Giải \\((2x+y)dx+(x+2y)dy=0\\). Nếu tích phân tổng quát có dạng \\(x^2+a xy+y^2=C\\), tìm \\(a\\).",
     "matrix": null,
@@ -1206,7 +846,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 68,
+    "id": 48,
     "type": "ode_separable_tangent",
     "question": "Tìm nghiệm tổng quát của \\(y'=x(1+y^2)\\).",
     "matrix": null,
@@ -1224,7 +864,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 69,
+    "id": 49,
     "type": "ode_linear_cauchy_simple",
     "question": "Giải \\(y'-\\dfrac1x y=x\\), \\(y(1)=2\\).",
     "matrix": null,
@@ -1242,7 +882,7 @@
     "topic": "Phương trình vi phân cấp 1"
   },
   {
-    "id": 70,
+    "id": 50,
     "type": "exact_ode_exp_sin",
     "question": "Tích phân tổng quát của \\((e^x+y)dx+(x+\\cos y)dy=0\\) là",
     "matrix": null,
@@ -1257,6 +897,438 @@
     "quick": "Tích phân theo \\(x\\), rồi so với hệ số của \\(dy\\).",
     "casio": "CASIO fx-580VNX: Không giải ODE ký hiệu trực tiếp. Sau khi tìm nghiệm, kiểm tra bằng cách đạo hàm đáp án và thay vào phương trình; với điều kiện đầu, dùng CALC tại x₀.",
     "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 51,
+    "type": "separable_cauchy_official",
+    "question": "Tìm nghiệm riêng của phương trình vi phân \\((1+x^2)\\,dy+y\\,dx=0\\) với điều kiện đầu \\(y(1)=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=e^{\\frac{\\pi}{4}-\\arctan x}\\)",
+      "\\(y=xe^{\\frac{\\pi}{4}-\\arctan x}\\)",
+      "\\(y=e^{\\frac{\\pi}{4}-x\\arctan x}\\)",
+      "\\(y=e^{-\\arctan x}\\)"
+    ],
+    "correct": "\\(y=e^{\\frac{\\pi}{4}-\\arctan x}\\)",
+    "solution": "Ta có \\((1+x^2)y'+y=0\\), nên \\(\\dfrac{y'}{y}=-\\dfrac{1}{1+x^2}\\). Lấy tích phân: \\(\\ln|y|=-\\arctan x+C\\), do đó \\(y=Ce^{-\\arctan x}\\). Điều kiện \\(y(1)=1\\) cho \\(C=e^{\\pi/4}\\). Vậy \\(y=e^{\\frac{\\pi}{4}-\\arctan x}\\).",
+    "quick": "Tách biến: \\(\\dfrac{dy}{y}=-\\dfrac{dx}{1+x^2}\\), rồi dùng \\(\\arctan 1=\\dfrac{\\pi}{4}\\).",
+    "casio": "CASIO: Có thể kiểm tra điều kiện đầu bằng CALC tại \\(x=1\\) và dùng d/dx để so sánh \\((1+x^2)y'+y\\) với 0.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 52,
+    "type": "exact_differential_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân toàn phần \\((1+\\cos y)\\,dx-(x\\sin y+1)\\,dy=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(x-y+x\\cos y=C\\)",
+      "\\(xy-x\\cos y=C\\)",
+      "\\(xy+x\\cos y=C\\)",
+      "\\(y-x+x\\cos y=C\\)"
+    ],
+    "correct": "\\(x-y+x\\cos y=C\\)",
+    "solution": "Đặt \\(M=1+\\cos y\\), \\(N=-(x\\sin y+1)\\). Ta có \\(M_y=-\\sin y=N_x\\), nên phương trình là toàn phần. Tích phân \\(M\\) theo \\(x\\): \\(F=x+x\\cos y+g(y)\\). So sánh \\(F_y=-x\\sin y+g'(y)=N=-x\\sin y-1\\), suy ra \\(g'(y)=-1\\), nên \\(g(y)=-y\\). Do đó \\(x-y+x\\cos y=C\\).",
+    "quick": "Tích phân \\(1+\\cos y\\) theo \\(x\\), rồi bổ sung \\(-y\\).",
+    "casio": "CASIO không cần thiết; kiểm tra nhanh bằng cách lấy \\(F_x\\) và \\(F_y\\) từ \\(F=x-y+x\\cos y\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 53,
+    "type": "bernoulli_implicit_official",
+    "question": "Tìm một họ nghiệm không hằng của phương trình vi phân \\(xy'-y=y^3\\).",
+    "matrix": null,
+    "options": [
+      "\\(x=\\dfrac{Cy}{\\sqrt{1+y^2}}\\)",
+      "\\(x=\\dfrac{C\\sqrt{y}}{1+y^2}\\)",
+      "\\(x=\\dfrac{C\\sqrt{1+y^2}}{y+1}\\)",
+      "\\(x=\\dfrac{C\\sqrt{1+y^2}}{\\sqrt{y}}\\)"
+    ],
+    "correct": "\\(x=\\dfrac{Cy}{\\sqrt{1+y^2}}\\)",
+    "solution": "Với \\(y\\ne0\\), viết phương trình thành \\(y'-\\dfrac1x y=\\dfrac1x y^3\\), là phương trình Bernoulli. Đặt \\(z=y^{-2}\\), ta được \\(z'+\\dfrac{2}{x}z=-\\dfrac{2}{x}\\). Nhân với \\(x^2\\): \\((x^2z)'=-2x\\). Suy ra \\(x^2y^{-2}=-x^2+C_1\\), hay \\(x^2(1+y^2)=C_1y^2\\). Đổi hằng số, ta được \\(x=\\dfrac{Cy}{\\sqrt{1+y^2}}\\). Ngoài ra \\(y\\equiv0\\) là một nghiệm riêng.",
+    "quick": "Bernoulli với \\(n=3\\): đặt \\(z=y^{-2}\\), rồi đưa về phương trình tuyến tính.",
+    "casio": "CASIO không giải trực tiếp dạng ẩn; có thể bình phương đáp án và biến đổi thành \\(x^2(1+y^2)=C^2y^2\\) để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 54,
+    "type": "separable_cauchy_official",
+    "question": "Tìm nghiệm của phương trình vi phân \\((y^2-1)\\,dx=x\\,dy\\) thỏa mãn điều kiện ban đầu \\(y(1)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{3+x^2}{3-x^2}\\)",
+      "\\(y=\\dfrac{3+2x^2}{3-2x^2}\\)",
+      "\\(y=\\dfrac{3-x^2}{3+x^2}\\)",
+      "\\(y=\\dfrac{3+x^2}{\\sqrt{3-x^2}}\\)"
+    ],
+    "correct": "\\(y=\\dfrac{3+x^2}{3-x^2}\\)",
+    "solution": "Ta có \\(\\dfrac{dy}{y^2-1}=\\dfrac{dx}{x}\\). Lấy tích phân: \\(\\dfrac12\\ln\\left|\\dfrac{y-1}{y+1}\\right|=\\ln|x|+C\\), nên \\(\\dfrac{y-1}{y+1}=Cx^2\\). Từ \\(y(1)=2\\) suy ra \\(C=\\dfrac13\\). Do đó \\(3(y-1)=x^2(y+1)\\), hay \\(y=\\dfrac{3+x^2}{3-x^2}\\).",
+    "quick": "Tách \\(\\dfrac{dy}{y^2-1}=\\dfrac{dx}{x}\\), dùng điều kiện đầu để được \\(C=\\dfrac13\\).",
+    "casio": "CASIO: Dùng CALC tại \\(x=1\\) để kiểm tra \\(y(1)=2\\); có thể dùng d/dx kiểm tra \\(x y'=y^2-1\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 55,
+    "type": "separable_cauchy_official",
+    "question": "Tìm nghiệm của phương trình vi phân \\(\\dfrac{dy}{dx}=1+x^2+y^2+x^2y^2\\) thỏa mãn điều kiện ban đầu \\(y(0)=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\tan\\left(x+\\dfrac{x^3}{3}+\\dfrac{\\pi}{4}\\right)\\)",
+      "\\(y=\\tan\\left(x-\\dfrac{x^3}{3}+\\dfrac{\\pi}{4}\\right)\\)",
+      "\\(y=\\tan\\left(-x+\\dfrac{x^3}{3}+\\dfrac{\\pi}{4}\\right)\\)",
+      "\\(y=\\tan\\left(\\dfrac{x}{3}+x^3+\\dfrac{\\pi}{4}\\right)\\)"
+    ],
+    "correct": "\\(y=\\tan\\left(x+\\dfrac{x^3}{3}+\\dfrac{\\pi}{4}\\right)\\)",
+    "solution": "Nhận thấy \\(1+x^2+y^2+x^2y^2=(1+x^2)(1+y^2)\\). Do đó \\(\\dfrac{dy}{1+y^2}=(1+x^2)\\,dx\\). Lấy tích phân: \\(\\arctan y=x+\\dfrac{x^3}{3}+C\\). Điều kiện \\(y(0)=1\\) cho \\(C=\\dfrac{\\pi}{4}\\). Vậy \\(y=\\tan\\left(x+\\dfrac{x^3}{3}+\\dfrac{\\pi}{4}\\right)\\).",
+    "quick": "Phân tích vế phải thành \\((1+x^2)(1+y^2)\\), rồi lấy \\(\\arctan\\) hai vế sau tích phân.",
+    "casio": "CASIO: Dùng d/dx để kiểm tra đạo hàm của đáp án và CALC tại \\(x=0\\) để kiểm tra điều kiện đầu.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 56,
+    "type": "homogeneous_implicit_official",
+    "question": "Tìm một họ nghiệm không hằng của phương trình vi phân \\((x^3+xy^2)y'=y^3\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=Ce^{-\\frac{y^2}{2x^2}}\\)",
+      "\\(y=Ce^{\\frac{y^2}{2x^2}}\\)",
+      "\\(y=Cxe^{-\\frac{y^2}{2x^2}}\\)",
+      "\\(y=xe^{-\\frac{Cy^2}{2x^2}}\\)"
+    ],
+    "correct": "\\(y=Ce^{-\\frac{y^2}{2x^2}}\\)",
+    "solution": "Phương trình có dạng thuần nhất: \\(y'=\\dfrac{(y/x)^3}{1+(y/x)^2}\\). Đặt \\(u=y/x\\), tức \\(y=ux\\), \\(y'=u+xu'\\). Khi đó \\(u+xu'=\\dfrac{u^3}{1+u^2}\\), suy ra \\(\\dfrac{1+u^2}{u}\\,du=-\\dfrac{dx}{x}\\). Tích phân được \\(\\ln|u|+\\dfrac{u^2}{2}=-\\ln|x|+C\\). Thay \\(u=y/x\\): \\(\\ln|y|+\\dfrac{y^2}{2x^2}=C\\), tương đương \\(y=Ce^{-\\frac{y^2}{2x^2}}\\). Ngoài ra \\(y\\equiv0\\) là một nghiệm.",
+    "quick": "Đặt \\(u=y/x\\); sau tích phân thu được \\(\\ln|y|+\\dfrac{y^2}{2x^2}=C\\).",
+    "casio": "CASIO không thuận tiện cho nghiệm ẩn; kiểm tra bằng cách lấy đạo hàm ẩn của \\(\\ln|y|+\\dfrac{y^2}{2x^2}=C\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 57,
+    "type": "reducible_separable_cauchy_official",
+    "question": "Tìm nghiệm của phương trình vi phân \\(y'=(4x-y+1)^2\\) thỏa mãn điều kiện ban đầu \\(y(0)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=4x-\\dfrac{1-9e^{-4x}}{1+3e^{-4x}}\\)",
+      "\\(y=4x+\\dfrac{1-9e^{-4x}}{1+3e^{-4x}}\\)",
+      "\\(y=4x-\\dfrac{9e^{-4x}-1}{1+3e^{-4x}}\\)",
+      "\\(y=-4x-\\dfrac{1-9e^{-4x}}{1+3e^{-4x}}\\)"
+    ],
+    "correct": "\\(y=4x-\\dfrac{1-9e^{-4x}}{1+3e^{-4x}}\\)",
+    "solution": "Đặt \\(u=4x-y+1\\), khi đó \\(u'=4-y'=4-u^2\\). Ta có \\(\\dfrac{du}{4-u^2}=dx\\), nên \\(\\dfrac14\\ln\\left|\\dfrac{2+u}{2-u}\\right|=x+C\\). Vì \\(u(0)=4\\cdot0-2+1=-1\\), suy ra \\(\\dfrac{2+u}{2-u}=\\dfrac13e^{4x}\\). Giải theo \\(u\\) rồi dùng \\(y=4x+1-u\\), thu được \\(y=4x-\\dfrac{1-9e^{-4x}}{1+3e^{-4x}}\\).",
+    "quick": "Đặt \\(u=4x-y+1\\) để được phương trình phân ly \\(u'=4-u^2\\).",
+    "casio": "CASIO: Trước hết kiểm tra đáp án tại \\(x=0\\); sau đó dùng d/dx để so sánh \\(y'\\) với \\((4x-y+1)^2\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 58,
+    "type": "homogeneous_substitution_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân \\(xy'=y+xe^{y/x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=-x\\ln\\left(C-\\ln|x|\\right)\\)",
+      "\\(y=x\\ln\\left(C-\\ln|x|\\right)\\)",
+      "\\(y=-x\\ln\\left(C+\\ln|x|\\right)\\)",
+      "\\(y=C\\ln\\left(x-\\ln|x|\\right)\\)"
+    ],
+    "correct": "\\(y=-x\\ln\\left(C-\\ln|x|\\right)\\)",
+    "solution": "Đặt \\(u=y/x\\), nên \\(y=ux\\), \\(y'=u+xu'\\). Thay vào phương trình: \\(x(u+xu')=ux+xe^u\\), suy ra \\(xu'=e^u\\). Do đó \\(e^{-u}\\,du=\\dfrac{dx}{x}\\), nên \\(-e^{-u}=\\ln|x|+C_1\\), hay \\(e^{-u}=C-\\ln|x|\\). Suy ra \\(u=-\\ln\\left(C-\\ln|x|\\right)\\), và \\(y=-x\\ln\\left(C-\\ln|x|\\right)\\).",
+    "quick": "Đặt \\(u=y/x\\), phương trình rút gọn thành \\(xu'=e^u\\).",
+    "casio": "CASIO không giải trực tiếp; có thể chọn một giá trị \\(C\\) phù hợp miền xác định rồi dùng d/dx kiểm tra.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 59,
+    "type": "linear_first_order_cauchy_official",
+    "question": "Tìm nghiệm của phương trình vi phân \\(y'+y\\cos x=\\sin x\\cos x\\) thỏa mãn điều kiện ban đầu \\(y(0)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\sin x-1+e^{-\\sin x}\\)",
+      "\\(y=\\sin x+1+e^{-\\sin x}\\)",
+      "\\(y=\\sin x-1+e^{\\sin x}\\)",
+      "\\(y=\\sin x-1-e^{-\\sin x}\\)"
+    ],
+    "correct": "\\(y=\\sin x-1+e^{-\\sin x}\\)",
+    "solution": "Đây là phương trình tuyến tính với nhân tử tích phân \\(\\mu=e^{\\int\\cos x\\,dx}=e^{\\sin x}\\). Khi đó \\((ye^{\\sin x})'=\\sin x\\cos x\\,e^{\\sin x}\\). Đặt \\(t=\\sin x\\), ta có \\(\\int te^t\\,dt=(t-1)e^t\\). Vì vậy \\(y=\\sin x-1+Ce^{-\\sin x}\\). Điều kiện \\(y(0)=0\\) cho \\(C=1\\).",
+    "quick": "Nhân với \\(e^{\\sin x}\\); nguyên hàm \\(\\int te^t\\,dt=(t-1)e^t\\).",
+    "casio": "CASIO: Dùng CALC tại \\(x=0\\) để kiểm tra điều kiện đầu và d/dx để kiểm tra phương trình.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 60,
+    "type": "linear_first_order_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân \\(y'-\\dfrac1x y=x^2\\sin x\\), với \\(x\\ne0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=x\\left(-x\\cos x+\\sin x+C\\right)\\)",
+      "\\(y=x\\left(x\\cos x+\\sin x+C\\right)\\)",
+      "\\(y=x\\left(x\\cos x-\\sin x+C\\right)\\)",
+      "\\(y=-x\\left(-x\\cos x+\\sin x+C\\right)\\)"
+    ],
+    "correct": "\\(y=x\\left(-x\\cos x+\\sin x+C\\right)\\)",
+    "solution": "Phương trình tuyến tính có \\(P(x)=-1/x\\), nên nhân tử tích phân là \\(\\mu=e^{\\int-1/x\\,dx}=1/x\\) trên mỗi khoảng không chứa 0. Nhân cả hai vế với \\(1/x\\): \\(\\left(\\dfrac{y}{x}\\right)'=x\\sin x\\). Lấy tích phân: \\(\\dfrac{y}{x}=-x\\cos x+\\sin x+C\\). Do đó \\(y=x\\left(-x\\cos x+\\sin x+C\\right)\\).",
+    "quick": "Nhân với \\(1/x\\), được \\((y/x)'=x\\sin x\\); dùng tích phân từng phần.",
+    "casio": "CASIO: Tính \\(\\int x\\sin x\\,dx=-x\\cos x+\\sin x\\), rồi dùng d/dx để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 61,
+    "type": "linear_first_order_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân \\(y'+y\\cos x=\\sin x\\cos x\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\sin x-1+Ce^{-\\sin x}\\)",
+      "\\(y=\\sin x+1+Ce^{-\\sin x}\\)",
+      "\\(y=\\sin x-1-Ce^{\\sin x}\\)",
+      "\\(y=\\sin x+1+Ce^{\\sin x}\\)"
+    ],
+    "correct": "\\(y=\\sin x-1+Ce^{-\\sin x}\\)",
+    "solution": "Đây là phương trình tuyến tính cấp 1. Nhân tử tích hợp là \\(\\mu=e^{\\int\\cos x\\,dx}=e^{\\sin x}\\). Khi đó \\[(ye^{\\sin x})'=\\sin x\\cos x\\,e^{\\sin x}.\\] Đặt \\(u=\\sin x\\), ta có \\(\\int ue^u\\,du=e^u(u-1)\\). Vì vậy \\(ye^{\\sin x}=e^{\\sin x}(\\sin x-1)+C\\), suy ra \\(y=\\sin x-1+Ce^{-\\sin x}\\).",
+    "quick": "Nhân với \\(e^{\\sin x}\\), rồi đặt \\(u=\\sin x\\) khi tính tích phân.",
+    "casio": "CASIO không giải trực tiếp phương trình. Có thể dùng chức năng đạo hàm số để kiểm tra từng đáp án tại một vài giá trị của \\(x\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 62,
+    "type": "homogeneous_log_cauchy_official",
+    "question": "Tìm nghiệm của phương trình vi phân \\(xy'=y(1+\\ln y-\\ln x)\\), với \\(y(1)=e\\) và \\(x,y\\gt0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=xe^x\\)",
+      "\\(y=-xe^x\\)",
+      "\\(y=xe^{2x}\\)",
+      "\\(y=2xe^x\\)"
+    ],
+    "correct": "\\(y=xe^x\\)",
+    "solution": "Đặt \\(u=\\ln\\dfrac{y}{x}\\), khi đó \\(y=xe^u\\) và \\(\\dfrac{y'}{y}=\\dfrac1x+u'\\). Chia phương trình cho \\(xy\\) được \\[\\frac{y'}{y}=\\frac{1+u}{x}.\\] Do đó \\(u'=u/x\\), suy ra \\(u=Cx\\). Điều kiện \\(y(1)=e\\) cho \\(u(1)=\\ln e=1\\), nên \\(C=1\\). Vậy \\(y=xe^x\\).",
+    "quick": "Đặt \\(u=\\ln(y/x)\\), phương trình trở thành \\(u'=u/x\\).",
+    "casio": "CASIO: thay trực tiếp \\(y=xe^x\\), tính \\(y'\\) bằng chức năng đạo hàm số và đối chiếu hai vế.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 63,
+    "type": "separable_log_cauchy_official",
+    "question": "Tìm nghiệm của phương trình vi phân \\(y'\\sin x=y\\ln y\\) thỏa mãn \\(y\\left(\\dfrac{\\pi}{2}\\right)=e\\), xét trên khoảng \\(0\\lt x\\lt\\pi\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=e^{\\tan\\frac{x}{2}}\\)",
+      "\\(y=e^{-\\tan\\frac{x}{2}}\\)",
+      "\\(y=-e^{\\tan\\frac{x}{2}}\\)",
+      "\\(y=-e^{-\\tan\\frac{x}{2}}\\)"
+    ],
+    "correct": "\\(y=e^{\\tan\\frac{x}{2}}\\)",
+    "solution": "Vì \\(y\\gt0\\), đặt \\(u=\\ln y\\), nên \\(u'=y'/y\\). Phương trình trở thành \\(u'\\sin x=u\\), hay \\(du/u=dx/\\sin x\\). Trên \\(0\\lt x\\lt\\pi\\), \\[\\ln|u|=\\ln\\tan\\frac{x}{2}+C_1,\\] nên \\(u=C\\tan\\dfrac{x}{2}\\). Điều kiện \\(y(\\pi/2)=e\\) cho \\(u(\\pi/2)=1\\), do đó \\(C=1\\). Vậy \\(y=e^{\\tan(x/2)}\\).",
+    "quick": "Đặt \\(u=\\ln y\\), rồi dùng \\(\\int\\csc x\\,dx=\\ln\\tan(x/2)+C\\) trên \\((0,\\pi)\\).",
+    "casio": "CASIO: tại một vài giá trị \\(x\\), tính đạo hàm số của \\(e^{\\tan(x/2)}\\) rồi kiểm tra \\(y'\\sin x=y\\ln y\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 64,
+    "type": "linear_first_order_cauchy_official",
+    "question": "Tìm nghiệm của phương trình vi phân \\(y'+3y\\tan 3x=\\sin 6x\\) thỏa mãn \\(y(0)=\\dfrac13\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\cos 3x\\left(1-\\dfrac23\\cos 3x\\right)\\)",
+      "\\(y=\\cos 3x\\left(1+\\dfrac13\\cos 3x\\right)\\)",
+      "\\(y=-\\cos 3x\\left(1+\\dfrac23\\cos 3x\\right)\\)",
+      "\\(y=\\cos 3x\\left(1-\\dfrac13\\cos 3x\\right)\\)"
+    ],
+    "correct": "\\(y=\\cos 3x\\left(1-\\dfrac23\\cos 3x\\right)\\)",
+    "solution": "Trên khoảng chứa \\(0\\) mà \\(\\cos 3x\\ne0\\), nhân tử tích hợp là \\[\\mu=e^{\\int3\\tan3x\\,dx}=\\sec3x.\\] Do \\(\\sin6x\\sec3x=2\\sin3x\\), ta có \\((y\\sec3x)'=2\\sin3x\\). Suy ra \\(y\\sec3x=-\\dfrac23\\cos3x+C\\), hay \\(y=-\\dfrac23\\cos^2 3x+C\\cos3x\\). Điều kiện \\(y(0)=1/3\\) cho \\(C=1\\).",
+    "quick": "Nhân với \\(\\sec3x\\); khi đó vế phải rút gọn thành \\(2\\sin3x\\).",
+    "casio": "CASIO: dùng đạo hàm số để kiểm tra đáp án và thay \\(x=0\\) để kiểm tra điều kiện đầu.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 65,
+    "type": "bernoulli_official",
+    "question": "Tìm nghiệm tổng quát khác \\(y\\equiv0\\) của phương trình vi phân \\(y'+\\dfrac2x y=\\dfrac{y^3}{x^2}\\), với \\(x\\ne0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\pm\\left(Cx^4+\\dfrac{2}{5x}\\right)^{-\\frac12}\\)",
+      "\\(y=\\pm\\left(Cx^4+\\dfrac{1}{5x}\\right)^{-\\frac12}\\)",
+      "\\(y=\\pm\\left(Cx^4+\\dfrac{2}{5x}\\right)^{\\frac12}\\)",
+      "\\(y=\\pm\\left(x^4+\\dfrac{2C}{5x}\\right)^{-\\frac12}\\)"
+    ],
+    "correct": "\\(y=\\pm\\left(Cx^4+\\dfrac{2}{5x}\\right)^{-\\frac12}\\)",
+    "solution": "Đây là phương trình Bernoulli với số mũ \\(3\\). Đặt \\(z=y^{-2}\\), khi đó \\(z'=-2y^{-3}y'\\). Nhân phương trình với \\(-2y^{-3}\\) được \\[z'-\\frac4x z=-\\frac2{x^2}.\\] Nhân tử tích hợp là \\(x^{-4}\\), nên \\((zx^{-4})'=-2x^{-6}\\). Tích phân cho \\(zx^{-4}=\\dfrac25x^{-5}+C\\), tức \\(z=Cx^4+\\dfrac{2}{5x}\\). Vì \\(z=y^{-2}\\), suy ra đáp án. Ngoài ra \\(y\\equiv0\\) cũng là nghiệm.",
+    "quick": "Đặt \\(z=y^{-2}\\), giải phương trình tuyến tính \\(z'-4z/x=-2/x^2\\).",
+    "casio": "CASIO không thuận tiện để giải trực tiếp. Có thể thay một giá trị cụ thể của \\(C\\) và dùng đạo hàm số để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 66,
+    "type": "bernoulli_official",
+    "question": "Tìm nghiệm tổng quát khác \\(y\\equiv0\\) của phương trình vi phân \\(y'+\\dfrac{2}{x+1}y+(x+1)^3y^2=0\\), với \\(x\\ne-1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{2}{(x+1)^4+C(x+1)^2}\\)",
+      "\\(y=\\dfrac{2}{(x-1)^4+C(x-1)^2}\\)",
+      "\\(y=\\dfrac{1}{(x+1)^2+C(x+1)^4}\\)",
+      "\\(y=\\dfrac{4}{(x-1)^4+C(x+1)^2}\\)"
+    ],
+    "correct": "\\(y=\\dfrac{2}{(x+1)^4+C(x+1)^2}\\)",
+    "solution": "Đặt \\(z=1/y\\). Chia phương trình cho \\(y^2\\) rồi đổi dấu được \\[z'-\\frac{2}{x+1}z=(x+1)^3.\\] Nhân tử tích hợp là \\((x+1)^{-2}\\), do đó \\[\\left(\\frac{z}{(x+1)^2}\\right)'=x+1.\\] Suy ra \\(z=\\dfrac12(x+1)^4+C_1(x+1)^2\\). Đổi tên hằng số, ta được \\(y=\\dfrac{2}{(x+1)^4+C(x+1)^2}\\). Ngoài ra \\(y\\equiv0\\) là nghiệm.",
+    "quick": "Đặt \\(z=1/y\\), giải phương trình tuyến tính theo \\(z\\).",
+    "casio": "CASIO: có thể thay một hằng số cụ thể vào đáp án rồi dùng đạo hàm số để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 67,
+    "type": "bernoulli_square_root_corrected",
+    "question": "Với \\(x\\ne0\\) và \\(y\\gt0\\), tìm nghiệm tổng quát của phương trình vi phân \\(xy'-2x^2\\sqrt y=4y\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=x^4\\left(C+\\ln|x|\\right)^2\\)",
+      "\\(y=x^4\\left(C-\\ln|x|\\right)^2\\)",
+      "\\(y=x^2\\left(C+\\ln|x|\\right)^2\\)",
+      "\\(y=x^4\\left(C+\\ln|x|\\right)\\)"
+    ],
+    "correct": "\\(y=x^4\\left(C+\\ln|x|\\right)^2\\)",
+    "solution": "Đặt \\(z=\\sqrt y\\), với \\(z\\gt0\\). Khi đó \\(y'=2zz'\\). Thay vào phương trình và chia cho \\(2z\\) được \\[z'-\\frac2x z=x.\\] Nhân tử tích hợp là \\(x^{-2}\\), nên \\((zx^{-2})'=1/x\\). Do đó \\(z=x^2(C+\\ln|x|)\\), suy ra \\(y=x^4(C+\\ln|x|)^2\\), xét trên các khoảng mà \\(C+\\ln|x|\\gt0\\). Ngoài ra \\(y\\equiv0\\) là nghiệm riêng. Các đáp án trong ảnh nguồn không phù hợp với phương trình nên đã được sửa lại.",
+    "quick": "Đặt \\(z=\\sqrt y\\), thu được \\(z'-2z/x=x\\).",
+    "casio": "CASIO: chọn một giá trị của \\(C\\) và một khoảng thỏa \\(C+\\ln|x|\\gt0\\), rồi dùng đạo hàm số để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 68,
+    "type": "exact_differential_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân toàn phần \\((y+e^x\\sin y)\\,dx+(x+e^x\\cos y)\\,dy=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(xy+e^x\\sin y=C\\)",
+      "\\(xy-e^x\\sin y=C\\)",
+      "\\(xy+e^{-x}\\sin y=C\\)",
+      "\\(xy+e^x\\cos y=C\\)"
+    ],
+    "correct": "\\(xy+e^x\\sin y=C\\)",
+    "solution": "Đặt \\(M=y+e^x\\sin y\\), \\(N=x+e^x\\cos y\\). Ta có \\(M_y=1+e^x\\cos y=N_x\\), nên phương trình là toàn phần. Tích phân \\(M\\) theo \\(x\\): \\[F=xy+e^x\\sin y+g(y).\\] So sánh \\(F_y=N\\) cho \\(g'(y)=0\\). Vậy \\(xy+e^x\\sin y=C\\).",
+    "quick": "Nhận ngay \\(d(xy+e^x\\sin y)=0\\).",
+    "casio": "CASIO không cần thiết; lấy đạo hàm riêng của hàm thế để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 69,
+    "type": "exact_differential_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân toàn phần \\((x+\\sin y)\\,dx+(x\\cos y+\\sin y)\\,dy=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^2+2(x\\sin y-\\cos y)=C\\)",
+      "\\(x^2-2(x\\sin y-\\cos y)=C\\)",
+      "\\(x^2+2(x\\sin y+\\cos y)=C\\)",
+      "\\(x^2+2(\\sin y-x\\cos y)=C\\)"
+    ],
+    "correct": "\\(x^2+2(x\\sin y-\\cos y)=C\\)",
+    "solution": "Với \\(M=x+\\sin y\\), \\(N=x\\cos y+\\sin y\\), ta có \\(M_y=\\cos y=N_x\\). Tích phân \\(M\\) theo \\(x\\): \\[F=\\frac{x^2}{2}+x\\sin y+g(y).\\] So sánh \\(F_y=x\\cos y+g'(y)=N\\) cho \\(g'(y)=\\sin y\\), nên \\(g(y)=-\\cos y\\). Vì vậy \\(\\dfrac{x^2}{2}+x\\sin y-\\cos y=C\\), tương đương đáp án đã cho.",
+    "quick": "Hàm thế là \\(F=x^2/2+x\\sin y-\\cos y\\).",
+    "casio": "CASIO không cần thiết; kiểm tra bằng cách lấy hai đạo hàm riêng của hàm thế.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 70,
+    "type": "bernoulli_square_root_official",
+    "question": "Với \\(y\\gt0\\), tìm nghiệm tổng quát của phương trình vi phân \\(y'-y=x\\sqrt y\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\sqrt y=Ce^{\\frac{x}{2}}-x-2\\)",
+      "\\(\\sqrt y=Ce^{\\frac{x}{2}}+x+2\\)",
+      "\\(\\sqrt y=Ce^{-\\frac{x}{2}}+x-2\\)",
+      "\\(\\sqrt y=Ce^{-\\frac{x}{2}}-x+2\\)"
+    ],
+    "correct": "\\(\\sqrt y=Ce^{\\frac{x}{2}}-x-2\\)",
+    "solution": "Đặt \\(z=\\sqrt y\\), khi đó \\(y'=2zz'\\). Chia phương trình cho \\(z\\gt0\\) được \\[2z'-z=x,\\] hay \\(z'-\\dfrac12z=\\dfrac{x}{2}\\). Nghiệm của phương trình tuyến tính này là \\(z=Ce^{x/2}-x-2\\). Vì \\(z=\\sqrt y\\), ta được đáp án trên các khoảng mà vế phải không âm. Ngoài ra \\(y\\equiv0\\) cũng là nghiệm.",
+    "quick": "Đặt \\(z=\\sqrt y\\), rồi giải \\(z'-z/2=x/2\\).",
+    "casio": "CASIO: thay một giá trị cụ thể của \\(C\\), tính đạo hàm số và kiểm tra trên khoảng mà \\(Ce^{x/2}-x-2\\ge0\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 71,
+    "type": "separable_cauchy_cep",
+    "question": "Nghiệm riêng của phương trình \\(y'=x(1+y^2)\\), \\(y(0)=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=\\tan\\dfrac{x^2}{2}\\)",
+      "\\(y=\\tan x\\)",
+      "\\(y=\\arctan\\dfrac{x^2}{2}\\)",
+      "\\(y=e^{x^2/2}\\)"
+    ],
+    "correct": "\\(y=\\tan\\dfrac{x^2}{2}\\)",
+    "solution": "Tách biến: \\(\\dfrac{dy}{1+y^2}=x\\,dx\\). Lấy tích phân được \\(\\arctan y=\\dfrac{x^2}{2}+C\\). Điều kiện \\(y(0)=0\\) cho \\(C=0\\). Do đó \\(y=\\tan\\dfrac{x^2}{2}\\).",
+    "quick": "Tách biến rồi dùng \\(\\int\\dfrac{dy}{1+y^2}=\\arctan y\\).",
+    "casio": "CASIO: dùng chức năng đạo hàm số để kiểm tra \\(y'=x(1+y^2)\\) tại một vài giá trị của \\(x\\), đồng thời kiểm tra \\(y(0)=0\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 72,
+    "type": "linear_first_order_cep",
+    "question": "Nghiệm tổng quát của phương trình vi phân \\(y'+2y=e^x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=e^x+Ce^{-2x}\\)",
+      "\\(y=\\dfrac13e^x+Ce^{-2x}\\)",
+      "\\(y=\\dfrac12e^x+Ce^{-x}\\)",
+      "\\(y=Ce^{2x}+e^x\\)"
+    ],
+    "correct": "\\(y=\\dfrac13e^x+Ce^{-2x}\\)",
+    "solution": "Nhân tử tích hợp là \\(\\mu=e^{\\int2\\,dx}=e^{2x}\\). Khi đó \\((ye^{2x})'=e^{3x}\\). Suy ra \\(ye^{2x}=\\dfrac13e^{3x}+C\\), nên \\(y=\\dfrac13e^x+Ce^{-2x}\\).",
+    "quick": "Nhân với \\(e^{2x}\\), rồi lấy nguyên hàm \\(e^{3x}\\).",
+    "casio": "CASIO: có thể lấy đạo hàm số của từng đáp án rồi kiểm tra biểu thức \\(y'+2y\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 73,
+    "type": "bernoulli_cep",
+    "question": "Nghiệm tổng quát khác không của phương trình Bernoulli \\(y'-y=xy^2\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{1}{1-x+Ce^{-x}}\\)",
+      "\\(y=\\dfrac{1}{x-1+Ce^x}\\)",
+      "\\(y=1-x+Ce^{-x}\\)",
+      "\\(y=\\dfrac{1}{1+x+Ce^{-x}}\\)"
+    ],
+    "correct": "\\(y=\\dfrac{1}{1-x+Ce^{-x}}\\)",
+    "solution": "Với \\(y\\ne0\\), đặt \\(z=1/y\\). Khi đó \\(z'=-y'/y^2\\). Chia phương trình cho \\(y^2\\) rồi đổi dấu được \\(z'+z=-x\\). Nhân với \\(e^x\\): \\((ze^x)'=-xe^x\\). Tích phân cho \\(z=1-x+Ce^{-x}\\). Vì \\(z=1/y\\), suy ra \\(y=\\dfrac{1}{1-x+Ce^{-x}}\\).",
+    "quick": "Đặt \\(z=1/y\\), giải phương trình tuyến tính \\(z'+z=-x\\).",
+    "casio": "CASIO: chọn một giá trị cụ thể của \\(C\\), dùng đạo hàm số để kiểm tra \\(y'-y=xy^2\\) tại các điểm mà mẫu khác không.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 74,
+    "type": "exact_differential_cep",
+    "question": "Phương trình vi phân toàn phần \\((2xy+y^2)\\,dx+(x^2+2xy+3y^2)\\,dy=0\\) có nghiệm tổng quát là",
+    "matrix": null,
+    "options": [
+      "\\(x^2y+xy^2+y^3=C\\)",
+      "\\(x^2y+xy^2=C\\)",
+      "\\(x^2y+y^3=C\\)",
+      "\\(2xy+y^2+x^2+2xy+3y^2=C\\)"
+    ],
+    "correct": "\\(x^2y+xy^2+y^3=C\\)",
+    "solution": "Đặt \\(M=2xy+y^2\\), \\(N=x^2+2xy+3y^2\\). Ta có \\(M_y=2x+2y=N_x\\), nên phương trình là toàn phần. Tích phân \\(M\\) theo \\(x\\): \\(F=x^2y+xy^2+g(y)\\). So sánh \\(F_y=x^2+2xy+g'(y)\\) với \\(N\\) cho \\(g'(y)=3y^2\\), do đó \\(g(y)=y^3\\). Vậy \\(x^2y+xy^2+y^3=C\\).",
+    "quick": "Tìm hàm thế \\(F=x^2y+xy^2+y^3\\).",
+    "casio": "CASIO không cần thiết; kiểm tra bằng cách lấy \\(F_x\\) và \\(F_y\\) rồi so sánh với hai hệ số của phương trình.",
+    "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
   }
 ]
