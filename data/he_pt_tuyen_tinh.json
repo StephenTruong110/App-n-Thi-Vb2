@@ -185,12 +185,12 @@
     "question": "Hệ thuần nhất \\(AX=0\\) có nghiệm khác 0 khi và chỉ khi",
     "matrix": null,
     "options": [
-      "\\(\\operatorname{rank}(A)\\ltn\\)",
+      "\\(\\operatorname{rank}(A)\\lt n\\)",
       "\\(\\operatorname{rank}(A)=n\\)",
       "\\(\\det(A)\\ne0\\) trong mọi trường hợp",
       "\\(A=0\\)"
     ],
-    "correct": "\\(\\operatorname{rank}(A)\\ltn\\)",
+    "correct": "\\(\\operatorname{rank}(A)\\lt n\\)",
     "solution": "Với \\(n\\) ẩn, hệ thuần nhất có nghiệm không tầm thường khi số ẩn lớn hơn hạng.",
     "quick": "Nghiệm khác 0 ⇔ có ẩn tự do.",
     "casio": "CASIO không cần thiết; dùng định lý hạng, Rouché–Capelli hoặc phép biến đổi đại số như trong lời giải.",
@@ -970,5 +970,365 @@
     "casio": "CASIO fx-580VNX: Dùng Equation/Func → Simul để giải hệ số nhỏ. Với hệ tham số, xét det ma trận hệ số trước; det≠0 thì nghiệm duy nhất, det=0 thì xét riêng.",
     "difficulty": 3,
     "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 55,
+    "type": "parameter_unique_2vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}(m-1)x+y=2\\\\2x+(m-1)y=3\\end{cases}\\) có nghiệm duy nhất.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne1-\\sqrt2\\) và \\(m\\ne1+\\sqrt2\\)",
+      "\\(m\\ne1\\)",
+      "\\(m\\ne\\sqrt2\\)",
+      "\\(m=1\\pm\\sqrt2\\)"
+    ],
+    "correct": "\\(m\\ne1-\\sqrt2\\) và \\(m\\ne1+\\sqrt2\\)",
+    "solution": "Định thức ma trận hệ số là \\(\\Delta=(m-1)^2-2\\). Hệ có nghiệm duy nhất khi \\(\\Delta\\ne0\\), tức \\(m\\ne1-\\sqrt2\\) và \\(m\\ne1+\\sqrt2\\).",
+    "quick": "Tính định thức hệ số rồi cho khác 0.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; giải \\((m-1)^2-2=0\\) để tìm các giá trị cần loại.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 56,
+    "type": "parameter_unique_2vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}(m+1)x+2y=1\\\\3x+(m-1)y=2\\end{cases}\\) có nghiệm duy nhất.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne\\pm\\sqrt7\\)",
+      "\\(m\\ne1\\)",
+      "\\(m\\ne-1\\)",
+      "\\(m\\ne7\\)"
+    ],
+    "correct": "\\(m\\ne\\pm\\sqrt7\\)",
+    "solution": "Định thức hệ số là \\(\\Delta=(m+1)(m-1)-6=m^2-7\\). Hệ có nghiệm duy nhất khi \\(m^2-7\\ne0\\), tức \\(m\\ne\\pm\\sqrt7\\).",
+    "quick": "Nghiệm duy nhất khi \\(m^2-7\\ne0\\).",
+    "casio": "CASIO: giải phương trình \\(m^2-7=0\\) để tìm hai giá trị làm hệ suy biến.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 57,
+    "type": "parameter_infinite_2vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}mx+y=2\\\\4x+2y=4\\end{cases}\\) có vô số nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=4\\)",
+      "\\(m=1\\)",
+      "\\(m\\ne2\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Để hai phương trình trùng nhau, phương trình hai phải bằng \\(2\\) lần phương trình một. Do đó \\(2m=4\\), suy ra \\(m=2\\). Khi đó cả hệ số và vế phải đều cùng tỉ lệ.",
+    "quick": "So sánh tỉ lệ cả hệ số lẫn vế phải.",
+    "casio": "CASIO không cần thiết; so sánh trực tiếp hai phương trình.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 58,
+    "type": "parameter_none_2vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}2x+my=1\\\\4x+2my=3\\end{cases}\\) vô nghiệm.",
+    "matrix": null,
+    "options": [
+      "Mọi \\(m\\)",
+      "\\(m=0\\)",
+      "\\(m\\ne0\\)",
+      "Không có giá trị \\(m\\)"
+    ],
+    "correct": "Mọi \\(m\\)",
+    "solution": "Vế trái phương trình hai luôn bằng \\(2\\) lần vế trái phương trình một, nhưng vế phải tương ứng phải bằng \\(2\\), trong khi đề cho \\(3\\). Vì vậy hệ vô nghiệm với mọi \\(m\\).",
+    "quick": "Vế trái luôn phụ thuộc nhưng vế phải luôn mâu thuẫn.",
+    "casio": "CASIO không cần thiết; nhận ra quan hệ giữa hai phương trình.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 59,
+    "type": "parameter_classification_2vars",
+    "question": "Biện luận theo \\(m\\) hệ \\(\\begin{cases}x+my=1\\\\2x+2my=m\\end{cases}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\): vô số nghiệm; \\(m\\ne2\\): vô nghiệm",
+      "\\(m=2\\): vô nghiệm; \\(m\\ne2\\): vô số nghiệm",
+      "Mọi \\(m\\) đều có nghiệm duy nhất",
+      "Mọi \\(m\\) đều vô nghiệm"
+    ],
+    "correct": "\\(m=2\\): vô số nghiệm; \\(m\\ne2\\): vô nghiệm",
+    "solution": "Vế trái phương trình hai luôn bằng \\(2\\) lần vế trái phương trình một. Hệ tương thích khi vế phải cũng cùng tỉ lệ, tức \\(m=2\\). Khi đó có vô số nghiệm; nếu \\(m\\ne2\\) thì vô nghiệm.",
+    "quick": "Vế trái đã tỉ lệ sẵn; chỉ xét vế phải.",
+    "casio": "CASIO không cần thiết; biện luận trực tiếp bằng tỉ lệ hai phương trình.",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 60,
+    "type": "parameter_homogeneous_3vars",
+    "question": "Tìm \\(m\\) để hệ thuần nhất \\(\\begin{cases}x+y+z=0\\\\x+2y+3z=0\\\\2x+3y+mz=0\\end{cases}\\) có nghiệm khác \\((0,0,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=4\\)",
+      "\\(m=5\\)",
+      "\\(m=6\\)",
+      "\\(m\\ne4\\)"
+    ],
+    "correct": "\\(m=4\\)",
+    "solution": "Hệ thuần nhất vuông có nghiệm khác 0 khi định thức hệ số bằng 0. Ta có \\(\\det\\begin{pmatrix}1&1&1\\\\1&2&3\\\\2&3&m\\end{pmatrix}=m-4\\). Do đó \\(m=4\\).",
+    "quick": "Hệ thuần nhất: cho \\(\\det A=0\\).",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; khai triển định thức theo \\(m\\), rồi giải phương trình bằng 0.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 61,
+    "type": "parameter_unique_3vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+2y=1\\\\2x+my+z=2\\\\x+y+mz=3\\end{cases}\\) có nghiệm duy nhất.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne2-\\sqrt3\\) và \\(m\\ne2+\\sqrt3\\)",
+      "\\(m\\ne2\\)",
+      "\\(m\\ne1\\)",
+      "\\(m=2\\pm\\sqrt3\\)"
+    ],
+    "correct": "\\(m\\ne2-\\sqrt3\\) và \\(m\\ne2+\\sqrt3\\)",
+    "solution": "Định thức ma trận hệ số là \\(\\Delta=m^2-4m+1\\). Phương trình \\(\\Delta=0\\) có nghiệm \\(m=2\\pm\\sqrt3\\). Vì vậy hệ có nghiệm duy nhất khi \\(m\\ne2\\pm\\sqrt3\\).",
+    "quick": "Tính định thức, giải \\(m^2-4m+1=0\\).",
+    "casio": "CASIO: giải phương trình bậc hai \\(m^2-4m+1=0\\), rồi loại hai nghiệm.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 62,
+    "type": "parameter_infinite_3vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+y+z=2\\\\2x-y+z=1\\\\3x+mz=3\\end{cases}\\) có vô số nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=3\\)",
+      "Không có giá trị \\(m\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Cộng hai phương trình đầu được \\(3x+2z=3\\). Để phương trình ba phụ thuộc đúng với quan hệ này cần \\(m=2\\). Khi đó chỉ còn hai phương trình độc lập với ba ẩn nên hệ có vô số nghiệm.",
+    "quick": "Cộng hai phương trình đầu rồi so với phương trình ba.",
+    "casio": "CASIO không cần thiết; dùng phép cộng hai phương trình để tìm điều kiện của \\(m\\).",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 63,
+    "type": "parameter_none_3vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+y+z=m\\end{cases}\\) vô nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne1\\)",
+      "\\(m=1\\)",
+      "\\(m\\ne2\\)",
+      "Mọi \\(m\\)"
+    ],
+    "correct": "\\(m\\ne1\\)",
+    "solution": "Hai phương trình đầu tương đương với \\(x+y+z=1\\). Phương trình ba có cùng vế trái, nên hệ tương thích chỉ khi \\(m=1\\). Vì vậy hệ vô nghiệm khi \\(m\\ne1\\).",
+    "quick": "Cùng vế trái thì vế phải phải bằng nhau.",
+    "casio": "CASIO không cần thiết; nhận ra ngay điều kiện tương thích.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 64,
+    "type": "parameter_classification_3vars",
+    "question": "Biện luận hệ \\(\\begin{cases}x+y+z=1\\\\x+2y+3z=2\\\\2x+3y+(m+4)z=3\\end{cases}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(m=0\\): vô số nghiệm; \\(m\\ne0\\): nghiệm duy nhất",
+      "\\(m=0\\): vô nghiệm; \\(m\\ne0\\): nghiệm duy nhất",
+      "\\(m=0\\): nghiệm duy nhất; \\(m\\ne0\\): vô số nghiệm",
+      "Mọi \\(m\\) đều vô số nghiệm"
+    ],
+    "correct": "\\(m=0\\): vô số nghiệm; \\(m\\ne0\\): nghiệm duy nhất",
+    "solution": "Tổng hai phương trình đầu có vế trái \\(2x+3y+4z\\) và vế phải \\(3\\). Nếu \\(m=0\\), phương trình ba phụ thuộc nên hệ có vô số nghiệm. Nếu \\(m\\ne0\\), phép khử cho \\(mz=0\\), từ đó xác định duy nhất \\(z,y,x\\).",
+    "quick": "So sánh phương trình ba với tổng hai phương trình đầu.",
+    "casio": "CASIO: thế \\(m=0\\) để kiểm tra trường hợp suy biến; trường hợp còn lại xét định thức.",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 65,
+    "type": "parameter_solution_condition",
+    "question": "Tìm \\(m\\) để \\((x,y)=(1,2)\\) là nghiệm của hệ \\(\\begin{cases}mx+y=5\\\\x+(m-1)y=3\\end{cases}\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=3\\)",
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "Không có giá trị \\(m\\)"
+    ],
+    "correct": "Không có giá trị \\(m\\)",
+    "solution": "Thế \\((1,2)\\) vào phương trình đầu được \\(m+2=5\\Rightarrow m=3\\). Thế vào phương trình hai được \\(1+2(m-1)=3\\Rightarrow m=2\\). Hai điều kiện không thể đồng thời xảy ra, nên không có giá trị \\(m\\).",
+    "quick": "Thế bộ nghiệm vào cả hai phương trình rồi lấy giao điều kiện.",
+    "casio": "CASIO không cần thiết; thay trực tiếp \\(x=1,y=2\\).",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 66,
+    "type": "parameter_solution_condition",
+    "question": "Tìm \\(m\\) để \\((x,y,z)=(1,1,1)\\) là nghiệm của hệ \\(\\begin{cases}x+y+mz=4\\\\mx+y+z=4\\\\x+my+z=4\\end{cases}\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=3\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Thế \\((1,1,1)\\) vào cả ba phương trình đều được \\(2+m=4\\). Do đó \\(m=2\\).",
+    "quick": "Thế bộ nghiệm đã cho vào hệ.",
+    "casio": "CASIO không cần thiết; thay trực tiếp các giá trị của \\(x,y,z\\).",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 67,
+    "type": "parameter_free_variable",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+y+z=1\\\\2x+2y+2z=2\\\\x+my+z=1\\end{cases}\\) có đúng một tham số tự do.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne1\\)",
+      "\\(m=1\\)",
+      "Mọi \\(m\\)",
+      "Không có giá trị \\(m\\)"
+    ],
+    "correct": "\\(m\\ne1\\)",
+    "solution": "Phương trình hai phụ thuộc phương trình một. Nếu \\(m\\ne1\\), phương trình ba độc lập với phương trình một nên hạng bằng 2; với 3 ẩn, hệ có \\(3-2=1\\) tham số tự do. Nếu \\(m=1\\), hạng bằng 1 và có hai tham số tự do.",
+    "quick": "Số tham số tự do bằng số ẩn trừ hạng.",
+    "casio": "CASIO không cần thiết; xét số phương trình độc lập theo \\(m\\).",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 68,
+    "type": "parameter_homogeneous_2vars",
+    "question": "Tìm \\(m\\) để hệ thuần nhất \\(\\begin{cases}(m+1)x+2y=0\\\\3x+(m-1)y=0\\end{cases}\\) có nghiệm khác \\((0,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=\\pm\\sqrt7\\)",
+      "\\(m=\\pm\\sqrt5\\)",
+      "\\(m=1\\)",
+      "\\(m=-1\\)"
+    ],
+    "correct": "\\(m=\\pm\\sqrt7\\)",
+    "solution": "Hệ thuần nhất có nghiệm khác 0 khi định thức bằng 0: \\((m+1)(m-1)-6=m^2-7=0\\). Suy ra \\(m=\\pm\\sqrt7\\).",
+    "quick": "Thuần nhất hai ẩn: cho định thức bằng 0.",
+    "casio": "CASIO: giải phương trình \\(m^2-7=0\\).",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 69,
+    "type": "parameter_unique_3vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}mx+y=1\\\\x+my+z=2\\\\y+mz=3\\end{cases}\\) có nghiệm duy nhất.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne0\\), \\(m\\ne\\sqrt2\\), \\(m\\ne-\\sqrt2\\)",
+      "\\(m\\ne0\\)",
+      "\\(m\\ne\\pm1\\)",
+      "\\(m\\ne\\pm\\sqrt2\\)"
+    ],
+    "correct": "\\(m\\ne0\\), \\(m\\ne\\sqrt2\\), \\(m\\ne-\\sqrt2\\)",
+    "solution": "Định thức ma trận hệ số \\(\\begin{pmatrix}m&1&0\\\\1&m&1\\\\0&1&m\\end{pmatrix}\\) bằng \\(m(m^2-2)\\). Do đó hệ có nghiệm duy nhất khi \\(m\\ne0\\) và \\(m\\ne\\pm\\sqrt2\\).",
+    "quick": "Tính định thức ma trận ba đường chéo.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; khai triển định thức rồi giải \\(m(m^2-2)=0\\).",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 70,
+    "type": "parameter_classification_free_variables",
+    "question": "Xét hệ \\(\\begin{cases}x+y+z=2\\\\2x+2y+2z=4\\\\x+my+z=2m\\end{cases}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\): hai tham số tự do; \\(m\\ne1\\): một tham số tự do",
+      "\\(m=1\\): một tham số tự do; \\(m\\ne1\\): hai tham số tự do",
+      "\\(m=1\\): vô nghiệm; \\(m\\ne1\\): nghiệm duy nhất",
+      "Mọi \\(m\\) đều có hai tham số tự do"
+    ],
+    "correct": "\\(m=1\\): hai tham số tự do; \\(m\\ne1\\): một tham số tự do",
+    "solution": "Phương trình hai phụ thuộc phương trình một. Nếu \\(m=1\\), phương trình ba cũng trùng phương trình một nên hạng bằng 1, có hai tham số tự do. Nếu \\(m\\ne1\\), trừ phương trình một khỏi phương trình ba được \\((m-1)y=2(m-1)\\), suy ra \\(y=2\\); khi đó còn một tham số tự do.",
+    "quick": "Xét riêng \\(m=1\\), sau đó khử phương trình ba với phương trình một.",
+    "casio": "CASIO không cần thiết; biện luận bằng phép khử Gauss.",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 71,
+    "type": "parameter_none_3vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+y+z=1\\\\2x-y+z=2\\\\3x+2z=m\\end{cases}\\) vô nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne3\\)",
+      "\\(m=3\\)",
+      "\\(m\\ne1\\)",
+      "Mọi \\(m\\)"
+    ],
+    "correct": "\\(m\\ne3\\)",
+    "solution": "Cộng hai phương trình đầu được \\(3x+2z=3\\). Phương trình ba có cùng vế trái, nên hệ tương thích chỉ khi \\(m=3\\). Vì vậy hệ vô nghiệm khi \\(m\\ne3\\).",
+    "quick": "Cộng hai phương trình đầu rồi so với phương trình ba.",
+    "casio": "CASIO không cần thiết; dùng quan hệ tuyến tính giữa các phương trình.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 72,
+    "type": "parameter_infinite_3vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}x+y+z=2\\\\x-y+z=0\\\\2x+mz=2\\end{cases}\\) có vô số nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "Không có giá trị \\(m\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Cộng hai phương trình đầu được \\(2x+2z=2\\). Để phương trình ba phụ thuộc với quan hệ này cần \\(m=2\\). Khi đó hệ có hai phương trình độc lập với ba ẩn nên có vô số nghiệm.",
+    "quick": "Cộng hai phương trình đầu và so hệ số của \\(z\\).",
+    "casio": "CASIO không cần thiết; xét phụ thuộc tuyến tính giữa các phương trình.",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 73,
+    "type": "parameter_unique_2vars",
+    "question": "Tìm \\(m\\) để hệ \\(\\begin{cases}(m+2)x+(m-1)y=1\\\\x+2y=3\\end{cases}\\) có nghiệm duy nhất.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ne-5\\)",
+      "\\(m\\ne5\\)",
+      "\\(m\\ne4\\)",
+      "Mọi \\(m\\)"
+    ],
+    "correct": "\\(m\\ne-5\\)",
+    "solution": "Định thức hệ số là \\(\\Delta=2(m+2)-(m-1)=m+5\\). Hệ có nghiệm duy nhất khi \\(m+5\\ne0\\), tức \\(m\\ne-5\\).",
+    "quick": "Định thức \\(2\\times2\\) bằng \\(m+5\\).",
+    "casio": "CASIO: lập định thức theo \\(m\\), rồi tìm giá trị làm định thức bằng 0.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 74,
+    "type": "parameter_classification_2vars",
+    "question": "Xét hệ \\(\\begin{cases}mx+y=1\\\\4x+2y=2\\end{cases}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\): vô số nghiệm; \\(m\\ne2\\): nghiệm duy nhất",
+      "\\(m=2\\): vô nghiệm; \\(m\\ne2\\): nghiệm duy nhất",
+      "\\(m=2\\): nghiệm duy nhất; \\(m\\ne2\\): vô số nghiệm",
+      "Mọi \\(m\\) đều vô số nghiệm"
+    ],
+    "correct": "\\(m=2\\): vô số nghiệm; \\(m\\ne2\\): nghiệm duy nhất",
+    "solution": "Định thức hệ số là \\(2m-4=2(m-2)\\). Nếu \\(m\\ne2\\), định thức khác 0 nên hệ có nghiệm duy nhất. Nếu \\(m=2\\), phương trình hai bằng \\(2\\) lần phương trình một nên hệ có vô số nghiệm.",
+    "quick": "Xét định thức trước; tại \\(m=2\\) kiểm tra tỉ lệ vế phải.",
+    "casio": "CASIO: có thể thế \\(m=2\\) để kiểm tra trường hợp suy biến.",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
   }
 ]
