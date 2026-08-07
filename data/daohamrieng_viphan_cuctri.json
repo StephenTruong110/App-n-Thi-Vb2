@@ -1258,5 +1258,725 @@
     "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
     "difficulty": 3,
     "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 71,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=x^2e^{xy}\\). Tính \\(f'_x(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(x(2+xy)e^{xy}\\)",
+      "\\(2xe^{xy}\\)",
+      "\\(x^2ye^{xy}\\)",
+      "\\(x(2+y)e^{xy}\\)"
+    ],
+    "correct": "\\(x(2+xy)e^{xy}\\)",
+    "solution": "Dùng quy tắc đạo hàm tích, coi \\(y\\) là hằng số: \\[f'_x=2xe^{xy}+x^2\\cdot ye^{xy}=x(2+xy)e^{xy}.\\]",
+    "quick": "Đạo hàm cả \\(x^2\\) và \\(e^{xy}\\): \\((e^{xy})_x=ye^{xy}\\).",
+    "casio": "CASIO: cố định một giá trị của \\(y\\), dùng chức năng đạo hàm số để kiểm tra đáp án tại một vài giá trị của \\(x\\).",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 72,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=\\ln(x+y^2)\\), với \\(x+y^2\\gt0\\). Tính \\(f'_y(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2y}{x+y^2}\\)",
+      "\\(\\dfrac{1}{x+y^2}\\)",
+      "\\(\\dfrac{2x}{x+y^2}\\)",
+      "\\(\\dfrac{y}{x+y^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{2y}{x+y^2}\\)",
+    "solution": "Đặt \\(u=x+y^2\\). Khi lấy đạo hàm theo \\(y\\), \\(u'_y=2y\\). Do đó \\[f'_y=\\frac{u'_y}{u}=\\frac{2y}{x+y^2}.\\]",
+    "quick": "Dùng \\((\\ln u)_y=u'_y/u\\), với \\(u'_y=2y\\).",
+    "casio": "CASIO: cố định \\(x\\), dùng đạo hàm số theo biến \\(y\\) tại một điểm thuộc miền xác định.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 73,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=(x^2+y^2)^{3/2}\\). Tính \\(f'_x(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(3x\\sqrt{x^2+y^2}\\)",
+      "\\(3y\\sqrt{x^2+y^2}\\)",
+      "\\(\\dfrac{3x}{\\sqrt{x^2+y^2}}\\)",
+      "\\(2x\\sqrt{x^2+y^2}\\)"
+    ],
+    "correct": "\\(3x\\sqrt{x^2+y^2}\\)",
+    "solution": "Dùng quy tắc dây chuyền: \\[f'_x=\\frac32(x^2+y^2)^{1/2}\\cdot2x=3x\\sqrt{x^2+y^2}.\\]",
+    "quick": "Hạ số mũ \\(3/2\\), rồi nhân với \\((x^2+y^2)'_x=2x\\).",
+    "casio": "CASIO: cố định \\(y\\), dùng đạo hàm số để kiểm tra tại một giá trị của \\(x\\).",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 74,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=\\arctan(xy)\\). Tính \\(f'_y(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{x}{1+x^2y^2}\\)",
+      "\\(\\dfrac{y}{1+x^2y^2}\\)",
+      "\\(\\dfrac{x}{1+xy}\\)",
+      "\\(-\\dfrac{x}{1+x^2y^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{x}{1+x^2y^2}\\)",
+    "solution": "Đặt \\(u=xy\\). Khi lấy đạo hàm theo \\(y\\), \\(u'_y=x\\). Vì \\((\\arctan u)'=u'/(1+u^2)\\), nên \\[f'_y=\\frac{x}{1+x^2y^2}.\\]",
+    "quick": "Theo \\(y\\): \\((xy)'_y=x\\), mẫu là \\(1+(xy)^2\\).",
+    "casio": "CASIO: cố định \\(x\\), dùng đạo hàm số theo \\(y\\) để kiểm tra tại một điểm.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 75,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=\\dfrac{x}{y}+\\dfrac{y}{x}\\), với \\(xy\\ne0\\). Tính \\(f'_x(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{y}-\\dfrac{y}{x^2}\\)",
+      "\\(\\dfrac{1}{y}+\\dfrac{y}{x^2}\\)",
+      "\\(-\\dfrac{x}{y^2}+\\dfrac{1}{x}\\)",
+      "\\(\\dfrac{1}{x}-\\dfrac{x}{y^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{y}-\\dfrac{y}{x^2}\\)",
+    "solution": "Coi \\(y\\) là hằng số. Ta có \\[\\left(\\frac{x}{y}\\right)'_x=\\frac1y,\\qquad \\left(\\frac{y}{x}\\right)'_x=-\\frac{y}{x^2}.\\] Vậy \\(f'_x=\\dfrac1y-\\dfrac{y}{x^2}\\).",
+    "quick": "Viết \\(y/x=yx^{-1}\\) trước khi đạo hàm theo \\(x\\).",
+    "casio": "CASIO: chọn một giá trị khác \\(0\\) cho \\(y\\), rồi dùng đạo hàm số theo \\(x\\).",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 76,
+    "type": "partial_derivative_higher_order",
+    "question": "Cho \\(f(x,y)=e^{x^2+y^2}\\). Tính \\(f''_{xy}(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(4xye^{x^2+y^2}\\)",
+      "\\(2ye^{x^2+y^2}\\)",
+      "\\(4x^2ye^{x^2+y^2}\\)",
+      "\\((2+4xy)e^{x^2+y^2}\\)"
+    ],
+    "correct": "\\(4xye^{x^2+y^2}\\)",
+    "solution": "Trước hết \\(f'_x=2xe^{x^2+y^2}\\). Lấy tiếp đạo hàm theo \\(y\\): \\[f''_{xy}=2x\\cdot2ye^{x^2+y^2}=4xye^{x^2+y^2}.\\]",
+    "quick": "Tính \\(f'_x\\) trước, rồi dùng \\((e^{x^2+y^2})_y=2ye^{x^2+y^2}\\).",
+    "casio": "CASIO: kiểm tra số bằng cách cố định một biến và lấy đạo hàm liên tiếp tại một điểm.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 77,
+    "type": "partial_derivative_higher_order",
+    "question": "Cho \\(f(x,y)=\\ln(1+x^2y)\\), với \\(1+x^2y\\gt0\\). Tính \\(f''_{xy}(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2x}{(1+x^2y)^2}\\)",
+      "\\(\\dfrac{2xy}{1+x^2y}\\)",
+      "\\(\\dfrac{2x}{1+x^2y}\\)",
+      "\\(-\\dfrac{2x}{(1+x^2y)^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{2x}{(1+x^2y)^2}\\)",
+    "solution": "Ta có \\[f'_x=\\frac{2xy}{1+x^2y}.\\] Lấy đạo hàm theo \\(y\\) và dùng quy tắc thương: \\[f''_{xy}=\\frac{2x(1+x^2y)-2xy\\cdot x^2}{(1+x^2y)^2}=\\frac{2x}{(1+x^2y)^2}.\\]",
+    "quick": "Sau quy tắc thương, các hạng chứa \\(x^3y\\) triệt tiêu.",
+    "casio": "CASIO: kiểm tra tại một điểm thuộc miền xác định bằng đạo hàm số hai bước.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 78,
+    "type": "partial_derivative_higher_order",
+    "question": "Cho \\(f(x,y)=\\sin(x^2+y^2)\\). Tính \\(f''_{xx}(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\cos(x^2+y^2)-4x^2\\sin(x^2+y^2)\\)",
+      "\\(2\\cos(x^2+y^2)+4x^2\\sin(x^2+y^2)\\)",
+      "\\(-4x^2\\sin(x^2+y^2)\\)",
+      "\\(2x\\cos(x^2+y^2)\\)"
+    ],
+    "correct": "\\(2\\cos(x^2+y^2)-4x^2\\sin(x^2+y^2)\\)",
+    "solution": "Trước hết \\(f'_x=2x\\cos(x^2+y^2)\\). Lấy tiếp đạo hàm theo \\(x\\): \\[f''_{xx}=2\\cos(x^2+y^2)-4x^2\\sin(x^2+y^2).\\]",
+    "quick": "Dùng quy tắc tích cho \\(2x\\cos(x^2+y^2)\\).",
+    "casio": "CASIO: cố định \\(y\\), lấy đạo hàm số hai lần theo \\(x\\) tại một điểm.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 79,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=x^2y^3e^z\\). Giá trị của \\(f'''_{xyz}(1,1,0)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\)",
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(6e\\)"
+    ],
+    "correct": "\\(6\\)",
+    "solution": "Lấy lần lượt theo \\(x,y,z\\): \\[f'_x=2xy^3e^z,\\qquad f''_{xy}=6xy^2e^z,\\qquad f'''_{xyz}=6xy^2e^z.\\] Tại \\((1,1,0)\\), giá trị bằng \\(6\\).",
+    "quick": "Sau ba lần đạo hàm được \\(6xy^2e^z\\), rồi thay điểm.",
+    "casio": "CASIO: phần đạo hàm làm thủ công; sau đó thay \\((1,1,0)\\) để tính giá trị.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 80,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=xz^2+y^2e^{xz}\\). Giá trị của \\(f'_z(1,2,0)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Ta có \\[f'_z=2xz+xy^2e^{xz}.\\] Thay \\((x,y,z)=(1,2,0)\\): \\[f'_z=2\\cdot1\\cdot0+1\\cdot4\\cdot e^0=4.\\]",
+    "quick": "Đạo hàm theo \\(z\\), sau đó mới thay điểm.",
+    "casio": "CASIO: tính trực tiếp biểu thức \\(2xz+xy^2e^{xz}\\) tại điểm đã cho.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 81,
+    "type": "partial_derivative_implicit",
+    "question": "Cho \\(z=z(x,y)\\gt0\\) xác định bởi \\(x^2+y^2+z^2=6\\). Tính \\(z'_x(1,1)\\), biết \\(z(1,1)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac12\\)",
+      "\\(\\dfrac12\\)",
+      "\\(-2\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(-\\dfrac12\\)",
+    "solution": "Lấy đạo hàm hai vế theo \\(x\\), coi \\(y\\) là hằng số: \\[2x+2zz'_x=0\\Rightarrow z'_x=-\\frac{x}{z}.\\] Tại \\((x,y,z)=(1,1,2)\\), ta được \\(z'_x=-1/2\\).",
+    "quick": "Đạo hàm ẩn: \\(2x+2zz'_x=0\\).",
+    "casio": "CASIO không giải đạo hàm ẩn trực tiếp; sau khi tìm công thức \\(-x/z\\), thay số để kiểm tra.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 82,
+    "type": "partial_derivative_implicit",
+    "question": "Cho \\(z=z(x,y)\\) xác định bởi \\(e^z+xz-y=0\\). Tính \\(z'_y(0,1)\\), biết \\(z(0,1)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(e\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Lấy đạo hàm hai vế theo \\(y\\): \\[e^zz'_y+xz'_y-1=0.\\] Do đó \\[z'_y=\\frac{1}{e^z+x}.\\] Tại \\((x,y,z)=(0,1,0)\\), ta được \\(z'_y=1\\).",
+    "quick": "Gom các hạng chứa \\(z'_y\\): \\((e^z+x)z'_y=1\\).",
+    "casio": "CASIO: sau khi có công thức, thay \\(x=0\\), \\(z=0\\) để được \\(1\\).",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 83,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=\\dfrac{x+y}{x-y}\\), với \\(x\\ne y\\). Tính \\(f'_x(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{2y}{(x-y)^2}\\)",
+      "\\(\\dfrac{2x}{(x-y)^2}\\)",
+      "\\(\\dfrac{2y}{(x-y)^2}\\)",
+      "\\(-\\dfrac{2x}{(x-y)^2}\\)"
+    ],
+    "correct": "\\(-\\dfrac{2y}{(x-y)^2}\\)",
+    "solution": "Dùng quy tắc thương: \\[f'_x=\\frac{(x-y)-(x+y)}{(x-y)^2}=-\\frac{2y}{(x-y)^2}.\\]",
+    "quick": "Tử mới là \\((x-y)-(x+y)=-2y\\).",
+    "casio": "CASIO: cố định \\(y\\) khác \\(x\\), dùng đạo hàm số theo \\(x\\) để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 84,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=x^y\\), với \\(x\\gt0\\). Tính \\(f'_y(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^y\\ln x\\)",
+      "\\(yx^{y-1}\\)",
+      "\\(x^{y-1}\\)",
+      "\\(y x^y\\ln x\\)"
+    ],
+    "correct": "\\(x^y\\ln x\\)",
+    "solution": "Viết \\(x^y=e^{y\\ln x}\\). Khi lấy đạo hàm theo \\(y\\), \\(x\\) là hằng số, nên \\[f'_y=e^{y\\ln x}\\ln x=x^y\\ln x.\\]",
+    "quick": "Đổi \\(x^y\\) thành \\(e^{y\\ln x}\\) trước khi đạo hàm theo \\(y\\).",
+    "casio": "CASIO: cố định \\(x\\gt0\\), dùng đạo hàm số theo \\(y\\) tại một điểm.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 85,
+    "type": "partial_derivative_higher_order",
+    "question": "Cho \\(f(x,y)=\\ln(x^2+y^2)\\), với \\((x,y)\\ne(0,0)\\). Giá trị của \\(f''_{xx}+f''_{yy}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(\\dfrac{2}{x^2+y^2}\\)",
+      "\\(-\\dfrac{2}{x^2+y^2}\\)",
+      "\\(\\dfrac{4}{(x^2+y^2)^2}\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Ta có \\[f''_{xx}=\\frac{2(y^2-x^2)}{(x^2+y^2)^2},\\qquad f''_{yy}=\\frac{2(x^2-y^2)}{(x^2+y^2)^2}.\\] Cộng hai biểu thức, các hạng triệt tiêu nên \\(f''_{xx}+f''_{yy}=0\\).",
+    "quick": "Hai đạo hàm cấp hai có tử số đối nhau.",
+    "casio": "CASIO: có thể kiểm tra tại vài điểm khác gốc bằng đạo hàm số theo từng biến.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 86,
+    "type": "partial_derivative_higher_order",
+    "question": "Cho \\(f(x,y)=x^3y^2+e^{xy}\\). Tính \\(f'''_{xxy}(1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(12+3e\\)",
+      "\\(12+2e\\)",
+      "\\(6+3e\\)",
+      "\\(12+e\\)"
+    ],
+    "correct": "\\(12+3e\\)",
+    "solution": "Ta có \\[f'_x=3x^2y^2+ye^{xy},\\] \\[f''_{xx}=6xy^2+y^2e^{xy}.\\] Lấy tiếp đạo hàm theo \\(y\\): \\[f'''_{xxy}=12xy+2ye^{xy}+xy^2e^{xy}.\\] Tại \\((1,1)\\), giá trị là \\(12+3e\\).",
+    "quick": "Tính theo thứ tự \\(x,x,y\\), rồi mới thay \\((1,1)\\).",
+    "casio": "CASIO: phần đạo hàm làm thủ công; dùng máy để tính giá trị số của \\(12+3e\\) khi cần.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 87,
+    "type": "partial_derivative_higher_order",
+    "question": "Cho \\(f(x,y)=\\cos(xy^2)\\). Tính \\(f''_{yy}(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-2x\\sin(xy^2)-4x^2y^2\\cos(xy^2)\\)",
+      "\\(-2x\\sin(xy^2)+4x^2y^2\\cos(xy^2)\\)",
+      "\\(-4x^2y^2\\cos(xy^2)\\)",
+      "\\(-2xy\\sin(xy^2)\\)"
+    ],
+    "correct": "\\(-2x\\sin(xy^2)-4x^2y^2\\cos(xy^2)\\)",
+    "solution": "Trước hết \\[f'_y=-2xy\\sin(xy^2).\\] Lấy tiếp đạo hàm theo \\(y\\) và dùng quy tắc tích: \\[f''_{yy}=-2x\\sin(xy^2)-4x^2y^2\\cos(xy^2).\\]",
+    "quick": "Đạo hàm cả thừa số \\(y\\) và \\(\\sin(xy^2)\\).",
+    "casio": "CASIO: cố định \\(x\\), lấy đạo hàm số hai lần theo \\(y\\) để kiểm tra tại một điểm.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 88,
+    "type": "partial_derivative",
+    "question": "Cho \\(f(x,y)=e^{x/y}\\), với \\(y\\ne0\\). Tính \\(f'_y(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{x}{y^2}e^{x/y}\\)",
+      "\\(\\dfrac{1}{y}e^{x/y}\\)",
+      "\\(\\dfrac{x}{y^2}e^{x/y}\\)",
+      "\\(-\\dfrac{1}{y}e^{x/y}\\)"
+    ],
+    "correct": "\\(-\\dfrac{x}{y^2}e^{x/y}\\)",
+    "solution": "Dùng quy tắc dây chuyền. Vì \\[\\left(\\frac{x}{y}\\right)'_y=-\\frac{x}{y^2},\\] nên \\[f'_y=-\\frac{x}{y^2}e^{x/y}.\\]",
+    "quick": "Theo \\(y\\), coi \\(x\\) là hằng và đạo hàm \\(x/y\\) bằng \\(-x/y^2\\).",
+    "casio": "CASIO: cố định \\(x\\), chọn \\(y\\ne0\\), rồi dùng đạo hàm số để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 89,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=\\ln(x+y+z)\\), với \\(x+y+z\\gt0\\). Tính \\(f''_{xz}(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{1}{(x+y+z)^2}\\)",
+      "\\(\\dfrac{1}{x+y+z}\\)",
+      "\\(\\dfrac{1}{(x+y+z)^2}\\)",
+      "\\(-\\dfrac{2}{(x+y+z)^3}\\)"
+    ],
+    "correct": "\\(-\\dfrac{1}{(x+y+z)^2}\\)",
+    "solution": "Trước hết \\[f'_x=\\frac{1}{x+y+z}.\\] Lấy tiếp đạo hàm theo \\(z\\): \\[f''_{xz}=-\\frac{1}{(x+y+z)^2}.\\]",
+    "quick": "Đạo hàm của \\(u^{-1}\\) là \\(-u^{-2}u'\\), ở đây \\(u'_z=1\\).",
+    "casio": "CASIO: cố định hai biến còn lại và kiểm tra đạo hàm số tại một điểm thuộc miền xác định.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 90,
+    "type": "partial_derivative_chain",
+    "question": "Cho \\(z=\\sin(xy)\\), trong đó \\(x=t^2+s\\), \\(y=t-s\\). Tính \\(\\dfrac{\\partial z}{\\partial t}\\) tại \\((t,s)=(1,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\cos1\\)",
+      "\\(2\\cos1\\)",
+      "\\(\\cos1\\)",
+      "\\(3\\sin1\\)"
+    ],
+    "correct": "\\(3\\cos1\\)",
+    "solution": "Theo quy tắc chuỗi, \\[\\frac{\\partial z}{\\partial t}=z'_x\\frac{\\partial x}{\\partial t}+z'_y\\frac{\\partial y}{\\partial t}.\\] Ta có \\(z'_x=y\\cos(xy)\\), \\(z'_y=x\\cos(xy)\\), \\(x_t=2t\\), \\(y_t=1\\). Tại \\((t,s)=(1,0)\\), \\(x=y=1\\), nên \\[\\frac{\\partial z}{\\partial t}=\\cos1\\cdot2+\\cos1\\cdot1=3\\cos1.\\]",
+    "quick": "Tại điểm đã cho: \\(x=y=1\\), \\(x_t=2\\), \\(y_t=1\\).",
+    "casio": "CASIO: sau khi lập công thức quy tắc chuỗi, tính \\(3\\cos1\\) ở chế độ radian.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 91,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=x^2yz+e^{yz}\\). Tính \\(f'_x(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(2xyz\\)",
+      "\\(2xyz+ze^{yz}\\)",
+      "\\(x^2z+ze^{yz}\\)",
+      "\\(2xy+e^{yz}\\)"
+    ],
+    "correct": "\\(2xyz\\)",
+    "solution": "Khi lấy đạo hàm theo \\(x\\), coi \\(y,z\\) là hằng số. Ta có \\((x^2yz)'_x=2xyz\\), còn \\(e^{yz}\\) không phụ thuộc \\(x\\). Vì vậy \\(f'_x=2xyz\\).",
+    "quick": "Theo \\(x\\), hạng \\(e^{yz}\\) là hằng số.",
+    "casio": "CASIO: cố định \\(y,z\\), dùng chức năng đạo hàm số theo \\(x\\) tại một điểm để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 92,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=\\sin(xyz)\\). Tính \\(f'_z(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(xy\\cos(xyz)\\)",
+      "\\(yz\\cos(xyz)\\)",
+      "\\(xz\\cos(xyz)\\)",
+      "\\(-xy\\sin(xyz)\\)"
+    ],
+    "correct": "\\(xy\\cos(xyz)\\)",
+    "solution": "Dùng quy tắc dây chuyền: \\[f'_z=\\cos(xyz)\\cdot\\frac{\\partial(xyz)}{\\partial z}=xy\\cos(xyz).\\]",
+    "quick": "Theo \\(z\\): \\((xyz)'_z=xy\\).",
+    "casio": "CASIO: cố định \\(x,y\\), dùng đạo hàm số theo \\(z\\) tại một điểm.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 93,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=\\ln(x^2+y^2+z^2)\\), với \\(x^2+y^2+z^2\\gt0\\). Tính \\(f'_y(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2y}{x^2+y^2+z^2}\\)",
+      "\\(\\dfrac{2x}{x^2+y^2+z^2}\\)",
+      "\\(\\dfrac{y}{x^2+y^2+z^2}\\)",
+      "\\(\\dfrac{2z}{x^2+y^2+z^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{2y}{x^2+y^2+z^2}\\)",
+    "solution": "Đặt \\(u=x^2+y^2+z^2\\). Khi lấy đạo hàm theo \\(y\\), \\(u'_y=2y\\). Do đó \\[f'_y=\\frac{u'_y}{u}=\\frac{2y}{x^2+y^2+z^2}.\\]",
+    "quick": "Dùng \\((\\ln u)'_y=u'_y/u\\).",
+    "casio": "CASIO: cố định \\(x,z\\), dùng đạo hàm số theo \\(y\\) để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 94,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=e^{xy+z}\\). Tính \\(f'_x(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(ye^{xy+z}\\)",
+      "\\(xe^{xy+z}\\)",
+      "\\(e^{xy+z}\\)",
+      "\\((y+1)e^{xy+z}\\)"
+    ],
+    "correct": "\\(ye^{xy+z}\\)",
+    "solution": "Theo quy tắc dây chuyền, \\[(xy+z)'_x=y.\\] Vì vậy \\[f'_x=ye^{xy+z}.\\]",
+    "quick": "Theo \\(x\\), đạo hàm của số mũ \\(xy+z\\) bằng \\(y\\).",
+    "casio": "CASIO: cố định \\(y,z\\), lấy đạo hàm số theo \\(x\\) tại một điểm.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 95,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=zx^y\\), với \\(x\\gt0\\). Tính \\(f'_y(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(zx^y\\ln x\\)",
+      "\\(zyx^{y-1}\\)",
+      "\\(x^y\\ln z\\)",
+      "\\(z x^{y-1}\\)"
+    ],
+    "correct": "\\(zx^y\\ln x\\)",
+    "solution": "Viết \\(x^y=e^{y\\ln x}\\). Khi lấy đạo hàm theo \\(y\\), \\(x,z\\) là hằng số, nên \\[f'_y=z e^{y\\ln x}\\ln x=zx^y\\ln x.\\]",
+    "quick": "Dùng \\((x^y)'_y=x^y\\ln x\\).",
+    "casio": "CASIO: cố định \\(x\\gt0,z\\), dùng đạo hàm số theo \\(y\\).",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 96,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=\\sqrt{x+y+z}\\), với \\(x+y+z\\gt0\\). Tính \\(f'_z(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2\\sqrt{x+y+z}}\\)",
+      "\\(\\dfrac{1}{\\sqrt{x+y+z}}\\)",
+      "\\(2\\sqrt{x+y+z}\\)",
+      "\\(-\\dfrac{1}{2\\sqrt{x+y+z}}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2\\sqrt{x+y+z}}\\)",
+    "solution": "Viết \\(f=(x+y+z)^{1/2}\\). Dùng quy tắc dây chuyền: \\[f'_z=\\frac12(x+y+z)^{-1/2}=\\frac{1}{2\\sqrt{x+y+z}}.\\]",
+    "quick": "Hạ số mũ \\(1/2\\), còn \\((x+y+z)'_z=1\\).",
+    "casio": "CASIO: cố định \\(x,y\\), dùng đạo hàm số theo \\(z\\) tại điểm thuộc miền xác định.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 97,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=\\dfrac{1}{\\sqrt{x^2+y^2+z^2}}\\), với \\(x^2+y^2+z^2\\gt0\\). Tính \\(f'_x(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{x}{(x^2+y^2+z^2)^{3/2}}\\)",
+      "\\(\\dfrac{x}{(x^2+y^2+z^2)^{3/2}}\\)",
+      "\\(-\\dfrac{2x}{\\sqrt{x^2+y^2+z^2}}\\)",
+      "\\(-\\dfrac{x}{x^2+y^2+z^2}\\)"
+    ],
+    "correct": "\\(-\\dfrac{x}{(x^2+y^2+z^2)^{3/2}}\\)",
+    "solution": "Viết \\(f=(x^2+y^2+z^2)^{-1/2}\\). Khi đó \\[f'_x=-\\frac12(x^2+y^2+z^2)^{-3/2}\\cdot2x=-\\frac{x}{(x^2+y^2+z^2)^{3/2}}.\\]",
+    "quick": "Dùng quy tắc dây chuyền với số mũ \\(-1/2\\).",
+    "casio": "CASIO: cố định \\(y,z\\), lấy đạo hàm số theo \\(x\\) tại một điểm khác gốc.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 98,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=\\arctan(x+yz)\\). Tính \\(f'_y(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{z}{1+(x+yz)^2}\\)",
+      "\\(\\dfrac{y}{1+(x+yz)^2}\\)",
+      "\\(\\dfrac{z}{1+x+yz}\\)",
+      "\\(-\\dfrac{z}{1+(x+yz)^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{z}{1+(x+yz)^2}\\)",
+    "solution": "Đặt \\(u=x+yz\\). Ta có \\(u'_y=z\\). Vì \\((\\arctan u)'=u'/(1+u^2)\\), nên \\[f'_y=\\frac{z}{1+(x+yz)^2}.\\]",
+    "quick": "Theo \\(y\\), \\((x+yz)'_y=z\\).",
+    "casio": "CASIO: cố định \\(x,z\\), dùng đạo hàm số theo \\(y\\).",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 99,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=\\dfrac{xy}{z}+z^2\\), với \\(z\\ne0\\). Tính \\(f'_z(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{xy}{z^2}+2z\\)",
+      "\\(\\dfrac{xy}{z^2}+2z\\)",
+      "\\(\\dfrac{x}{z}+2z\\)",
+      "\\(-\\dfrac{xy}{z}+z\\)"
+    ],
+    "correct": "\\(-\\dfrac{xy}{z^2}+2z\\)",
+    "solution": "Coi \\(x,y\\) là hằng số. Viết \\(xy/z=xy z^{-1}\\), nên \\[f'_z=-xy z^{-2}+2z=-\\frac{xy}{z^2}+2z.\\]",
+    "quick": "Đạo hàm \\(z^{-1}\\) là \\(-z^{-2}\\).",
+    "casio": "CASIO: cố định \\(x,y\\), chọn \\(z\\ne0\\), rồi dùng đạo hàm số.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 100,
+    "type": "partial_derivative_3var",
+    "question": "Cho \\(f(x,y,z)=x^2e^{yz}\\). Tính \\(f'_y(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^2ze^{yz}\\)",
+      "\\(2xe^{yz}\\)",
+      "\\(x^2ye^{yz}\\)",
+      "\\(xze^{yz}\\)"
+    ],
+    "correct": "\\(x^2ze^{yz}\\)",
+    "solution": "Khi lấy đạo hàm theo \\(y\\), \\(x,z\\) là hằng số và \\((yz)'_y=z\\). Do đó \\[f'_y=x^2ze^{yz}.\\]",
+    "quick": "Giữ nguyên \\(x^2\\), nhân thêm \\(z\\) do đạo hàm số mũ.",
+    "casio": "CASIO: cố định \\(x,z\\), dùng đạo hàm số theo \\(y\\) tại một điểm.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 101,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=x^2y^3z^4\\). Tính \\(f'''_{xyz}(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(24xy^2z^3\\)",
+      "\\(12xy^2z^4\\)",
+      "\\(24x^2yz^3\\)",
+      "\\(6xy^2z^3\\)"
+    ],
+    "correct": "\\(24xy^2z^3\\)",
+    "solution": "Lấy lần lượt theo \\(x,y,z\\): \\[f'_x=2xy^3z^4,\\qquad f''_{xy}=6xy^2z^4,\\qquad f'''_{xyz}=24xy^2z^3.\\]",
+    "quick": "Mỗi lần đạo hàm làm giảm một số mũ tương ứng.",
+    "casio": "CASIO: đạo hàm ký hiệu làm thủ công; có thể thay một điểm để kiểm tra giá trị.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 102,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=e^{xyz}\\). Giá trị của \\(f''_{xy}(1,1,1)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(2e\\)",
+      "\\(e\\)",
+      "\\(3e\\)",
+      "\\(2e^2\\)"
+    ],
+    "correct": "\\(2e\\)",
+    "solution": "Ta có \\[f'_x=yz e^{xyz}.\\] Lấy tiếp đạo hàm theo \\(y\\): \\[f''_{xy}=z e^{xyz}+xyz^2e^{xyz}=z(1+xyz)e^{xyz}.\\] Tại \\((1,1,1)\\), giá trị bằng \\(2e\\).",
+    "quick": "Dùng quy tắc tích khi đạo hàm \\(yz e^{xyz}\\) theo \\(y\\).",
+    "casio": "CASIO: sau khi có công thức, thay \\((1,1,1)\\) để được \\(2e\\).",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 103,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=\\sin(xy+z)\\). Giá trị của \\(f''_{xz}(1,2,0)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-2\\sin2\\)",
+      "\\(2\\cos2\\)",
+      "\\(-2\\cos2\\)",
+      "\\(\\sin2\\)"
+    ],
+    "correct": "\\(-2\\sin2\\)",
+    "solution": "Trước hết \\(f'_x=y\\cos(xy+z)\\). Lấy tiếp đạo hàm theo \\(z\\): \\[f''_{xz}=-y\\sin(xy+z).\\] Tại \\((1,2,0)\\), ta được \\(-2\\sin2\\).",
+    "quick": "Sau khi tính \\(f'_x\\), đạo hàm \\(\\cos(xy+z)\\) theo \\(z\\).",
+    "casio": "CASIO: tính \\(-2\\sin2\\) ở chế độ radian để kiểm tra giá trị số.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 104,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=\\ln(x+y+z)\\), với \\(x+y+z\\gt0\\). Tính \\(f'''_{xxz}(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{(x+y+z)^3}\\)",
+      "\\(-\\dfrac{2}{(x+y+z)^3}\\)",
+      "\\(-\\dfrac{1}{(x+y+z)^2}\\)",
+      "\\(\\dfrac{6}{(x+y+z)^4}\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{(x+y+z)^3}\\)",
+    "solution": "Ta có \\[f'_x=\\frac1{x+y+z},\\qquad f''_{xx}=-\\frac1{(x+y+z)^2}.\\] Lấy tiếp đạo hàm theo \\(z\\): \\[f'''_{xxz}=\\frac{2}{(x+y+z)^3}.\\]",
+    "quick": "Đạo hàm lần lượt các lũy thừa \\((x+y+z)^{-1}\\), \\((x+y+z)^{-2}\\).",
+    "casio": "CASIO: có thể kiểm tra tại một điểm thuộc miền xác định bằng đạo hàm số liên tiếp.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 105,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=(x^2+y^2+z^2)^2\\). Tính \\(f''_{xx}+f''_{yy}+f''_{zz}\\).",
+    "matrix": null,
+    "options": [
+      "\\(20(x^2+y^2+z^2)\\)",
+      "\\(12(x^2+y^2+z^2)\\)",
+      "\\(8(x^2+y^2+z^2)\\)",
+      "\\(20\\)"
+    ],
+    "correct": "\\(20(x^2+y^2+z^2)\\)",
+    "solution": "Đặt \\(S=x^2+y^2+z^2\\). Ta có \\[f''_{xx}=4S+8x^2,\\quad f''_{yy}=4S+8y^2,\\quad f''_{zz}=4S+8z^2.\\] Cộng lại: \\[12S+8S=20S=20(x^2+y^2+z^2).\\]",
+    "quick": "Mỗi đạo hàm cấp hai có dạng \\(4S+8\\) lần bình phương biến tương ứng.",
+    "casio": "CASIO: phần đạo hàm làm thủ công; có thể thay một điểm để kiểm tra tổng.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 106,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=\\cos(xyz)\\). Tính \\(f''_{zz}(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-x^2y^2\\cos(xyz)\\)",
+      "\\(-xy\\sin(xyz)\\)",
+      "\\(x^2y^2\\cos(xyz)\\)",
+      "\\(-xyz\\cos(xyz)\\)"
+    ],
+    "correct": "\\(-x^2y^2\\cos(xyz)\\)",
+    "solution": "Ta có \\[f'_z=-xy\\sin(xyz).\\] Lấy tiếp đạo hàm theo \\(z\\): \\[f''_{zz}=-xy\\cdot xy\\cos(xyz)=-x^2y^2\\cos(xyz).\\]",
+    "quick": "Theo \\(z\\), hệ số bên trong \\(xyz\\) là \\(xy\\).",
+    "casio": "CASIO: cố định \\(x,y\\), lấy đạo hàm số hai lần theo \\(z\\).",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 107,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=x^2ye^z\\). Giá trị của \\(f'''_{xxz}(1,2,0)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(4e\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Ta có \\[f'_x=2xye^z,\\qquad f''_{xx}=2ye^z,\\qquad f'''_{xxz}=2ye^z.\\] Tại \\((1,2,0)\\), giá trị bằng \\(2\\cdot2\\cdot e^0=4\\).",
+    "quick": "Sau hai lần theo \\(x\\), biểu thức còn \\(2ye^z\\).",
+    "casio": "CASIO: thay trực tiếp \\(y=2,z=0\\) vào \\(2ye^z\\).",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 108,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=\\ln(1+xyz)\\), với \\(1+xyz\\gt0\\). Tính \\(f''_{xy}(x,y,z)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{z}{(1+xyz)^2}\\)",
+      "\\(\\dfrac{z}{1+xyz}\\)",
+      "\\(-\\dfrac{z}{(1+xyz)^2}\\)",
+      "\\(\\dfrac{xyz}{(1+xyz)^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{z}{(1+xyz)^2}\\)",
+    "solution": "Trước hết \\[f'_x=\\frac{yz}{1+xyz}.\\] Lấy đạo hàm theo \\(y\\): \\[f''_{xy}=\\frac{z(1+xyz)-yz\\cdot xz}{(1+xyz)^2}=\\frac{z}{(1+xyz)^2}.\\]",
+    "quick": "Trong quy tắc thương, hai hạng chứa \\(xyz^2\\) triệt tiêu.",
+    "casio": "CASIO: kiểm tra tại một điểm thuộc miền xác định bằng đạo hàm số hai bước.",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 109,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=\\dfrac{x+y}{z-x}\\), với \\(z\\ne x\\). Giá trị của \\(f''_{xz}(1,1,3)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac34\\)",
+      "\\(\\dfrac34\\)",
+      "\\(-\\dfrac32\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(-\\dfrac34\\)",
+    "solution": "Ta có \\[f'_x=\\frac{z+y}{(z-x)^2}.\\] Lấy tiếp đạo hàm theo \\(z\\): \\[f''_{xz}=\\frac{-x-z-2y}{(z-x)^3}.\\] Tại \\((1,1,3)\\), \\[f''_{xz}=\\frac{-1-3-2}{(3-1)^3}=-\\frac68=-\\frac34.\\]",
+    "quick": "Tính \\(f'_x\\) bằng quy tắc thương, rồi đạo hàm theo \\(z\\).",
+    "casio": "CASIO: sau khi có công thức, thay \\((1,1,3)\\) để được \\(-3/4\\).",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 110,
+    "type": "partial_derivative_3var_higher_order",
+    "question": "Cho \\(f(x,y,z)=e^{x^2y+z^3}\\). Giá trị của \\(f''_{xz}(1,1,1)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(6e^2\\)",
+      "\\(3e^2\\)",
+      "\\(6e\\)",
+      "\\(2e^2\\)"
+    ],
+    "correct": "\\(6e^2\\)",
+    "solution": "Trước hết \\[f'_x=2xye^{x^2y+z^3}.\\] Lấy tiếp đạo hàm theo \\(z\\): \\[f''_{xz}=2xy\\cdot3z^2e^{x^2y+z^3}=6xyz^2e^{x^2y+z^3}.\\] Tại \\((1,1,1)\\), giá trị bằng \\(6e^2\\).",
+    "quick": "Đạo hàm số mũ theo \\(z\\) tạo thêm thừa số \\(3z^2\\).",
+    "casio": "CASIO: sau khi lập công thức, thay điểm để tính \\(6e^2\\).",
+    "difficulty": 3,
+    "topic": "Hàm nhiều biến"
   }
 ]
