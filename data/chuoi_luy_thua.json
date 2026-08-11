@@ -1042,5 +1042,167 @@
     "casio": "CASIO fx-580VNX: Tính nhanh tỉ số |a_n/a_{n+1}| hoặc căn bậc n của |a_n| tại n lớn để đoán R. Sau đó bắt buộc xét riêng hai đầu mút bằng chuỗi số.",
     "difficulty": 3,
     "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 59,
+    "type": "power_series_interval_official",
+    "question": "Tìm miền hội tụ của chuỗi lũy thừa \\(\\sum_{n=1}^{\\infty}\\dfrac{n+1}{n+2}(x+1)^n\\).",
+    "matrix": null,
+    "options": [
+      "\\((-2;0)\\)",
+      "\\([-2;0]\\)",
+      "\\((-2;0]\\)",
+      "\\([-2;0)\\)"
+    ],
+    "correct": "\\((-2;0)\\)",
+    "solution": "Vì \\(a_n=(n+1)/(n+2)\\) nên \\(\\lim |a_n/a_{n+1}|=1\\), do đó \\(R=1\\) và khoảng mở là \\((-2,0)\\). Tại \\(x=0\\), số hạng tổng quát tiến tới 1 nên phân kỳ. Tại \\(x=-2\\), số hạng có độ lớn tiến tới 1 nên cũng phân kỳ. Vậy miền hội tụ là \\((-2;0)\\).",
+    "quick": "Tâm \\(-1\\), bán kính \\(1\\); hai đầu mút đều có số hạng không tiến về 0.",
+    "casio": "CASIO chỉ hỗ trợ kiểm tra số. Tính tỉ số hệ số ở \\(n\\) lớn để nhận \\(R\\approx1\\), sau đó xét riêng hai đầu mút bằng lý thuyết.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 60,
+    "type": "power_series_radius_official",
+    "question": "Bán kính hội tụ của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n x^n}{n^2}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(R=1\\)",
+      "\\(R=2\\)",
+      "\\(R=0\\)",
+      "\\(R=+\\infty\\)"
+    ],
+    "correct": "\\(R=1\\)",
+    "solution": "Với \\(a_n=(-1)^n/n^2\\), ta có \\(R=1/\\limsup\\sqrt[n]{|a_n|}=1/1=1\\).",
+    "quick": "\\(\\sqrt[n]{1/n^2}\\to1\\) nên \\(R=1\\).",
+    "casio": "CASIO có thể kiểm tra \\(\\sqrt[n]{1/n^2}\\) tại \\(n\\) lớn, giá trị tiến gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 61,
+    "type": "power_series_radius_official",
+    "question": "Bán kính hội tụ của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-1)^n}{n^2 5^n}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(R=5\\)",
+      "\\(R=1\\)",
+      "\\(R=\\dfrac15\\)",
+      "\\(R=+\\infty\\)"
+    ],
+    "correct": "\\(R=5\\)",
+    "solution": "Viết hệ số \\(a_n=1/(n^2 5^n)\\). Khi đó \\(\\sqrt[n]{|a_n|}=1/(5n^{2/n})\\to1/5\\), nên \\(R=5\\).",
+    "quick": "Nhìn phần \\(5^n\\) ở mẫu: \\(R=5\\); \\(n^2\\) không làm đổi bán kính.",
+    "casio": "CASIO: tính \\(1/(5n^{2/n})\\) với \\(n\\) lớn, rồi lấy nghịch đảo giới hạn.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 62,
+    "type": "power_series_sum_official",
+    "question": "Với \\(|x|\\lt1\\), tổng \\(S(x)=\\sum_{n=1}^{\\infty}n x^{n-1}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{(1-x)^2}\\)",
+      "\\(\\dfrac{x}{(1-x)^2}\\)",
+      "\\(\\dfrac{1}{1-x}\\)",
+      "\\(\\dfrac{x}{1-x}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{(1-x)^2}\\)",
+    "solution": "Từ \\(\\sum_{n=0}^{\\infty}x^n=1/(1-x)\\), lấy đạo hàm hai vế trên \\(|x|\\lt1\\): \\(\\sum_{n=1}^{\\infty}n x^{n-1}=1/(1-x)^2\\).",
+    "quick": "Lấy đạo hàm chuỗi hình học cơ bản.",
+    "casio": "CASIO có thể tính tổng riêng với một giá trị \\(x\\) cụ thể để kiểm tra, nhưng công thức chính xác lấy từ đạo hàm chuỗi hình học.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 63,
+    "type": "power_series_interval_official",
+    "question": "Tìm miền hội tụ của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{x^n}{n2^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\([-2;2)\\)",
+      "\\((-2;2)\\)",
+      "\\((-2;2]\\)",
+      "\\([-2;2]\\)"
+    ],
+    "correct": "\\([-2;2)\\)",
+    "solution": "Chuỗi có bán kính \\(R=2\\). Tại \\(x=2\\) được \\(\\sum 1/n\\), phân kỳ. Tại \\(x=-2\\) được \\(\\sum(-1)^n/n\\), hội tụ theo Leibniz. Vậy miền hội tụ là \\([-2;2)\\).",
+    "quick": "\\(R=2\\); đầu \\(-2\\) là Leibniz, đầu \\(2\\) là điều hòa.",
+    "casio": "CASIO chỉ kiểm tra tổng riêng; việc nhận miền hội tụ cần xét riêng hai đầu mút.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 64,
+    "type": "power_series_radius_official",
+    "question": "Cho chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n3^n}\\). Bán kính hội tụ \\(R\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Hệ số là \\(a_n=1/(n3^n)\\). Ta có \\(\\sqrt[n]{a_n}=1/(3n^{1/n})\\to1/3\\), nên \\(R=3\\).",
+    "quick": "Mẫu có \\(3^n\\), còn \\(n\\) không đổi bán kính: \\(R=3\\).",
+    "casio": "CASIO: tính \\(1/(3n^{1/n})\\) tại \\(n\\) lớn để kiểm tra giới hạn \\(1/3\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 65,
+    "type": "power_series_endpoints_official",
+    "question": "Với chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n3^n}\\), kết luận đúng tại hai đầu mút của khoảng hội tụ mở là",
+    "matrix": null,
+    "options": [
+      "Tại \\(x=-1\\) hội tụ, tại \\(x=5\\) phân kỳ",
+      "Cả hai đầu mút đều hội tụ",
+      "Cả hai đầu mút đều phân kỳ",
+      "Tại \\(x=-1\\) phân kỳ, tại \\(x=5\\) hội tụ"
+    ],
+    "correct": "Tại \\(x=-1\\) hội tụ, tại \\(x=5\\) phân kỳ",
+    "solution": "Tại \\(x=-1\\): chuỗi trở thành \\(\\sum(-1)^n/n\\), hội tụ theo Leibniz. Tại \\(x=5\\): chuỗi trở thành \\(\\sum1/n\\), phân kỳ.",
+    "quick": "Trái: Leibniz; phải: điều hòa.",
+    "casio": "CASIO có thể xem tổng riêng để kiểm tra xu hướng, nhưng kết luận hội tụ dựa trên tiêu chuẩn Leibniz và chuỗi điều hòa.",
+    "difficulty": 2,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 66,
+    "type": "power_series_interval_official",
+    "question": "Miền hội tụ của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(x-2)^n}{n3^n}\\) là",
+    "matrix": null,
+    "options": [
+      "\\([-1;5)\\)",
+      "\\((-1;5)\\)",
+      "\\((-1;5]\\)",
+      "\\([-1;5]\\)"
+    ],
+    "correct": "\\([-1;5)\\)",
+    "solution": "Bán kính \\(R=3\\) nên khoảng mở là \\((-1,5)\\). Tại \\(-1\\) chuỗi là \\(\\sum(-1)^n/n\\) nên hội tụ; tại \\(5\\) là \\(\\sum1/n\\) nên phân kỳ. Do đó miền hội tụ là \\([-1;5)\\).",
+    "quick": "Tâm 2, bán kính 3; lấy đầu trái, bỏ đầu phải.",
+    "casio": "CASIO chỉ dùng kiểm tra tổng riêng tại các đầu mút; kết luận chính xác dùng các tiêu chuẩn hội tụ.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
+  },
+  {
+    "id": 67,
+    "type": "power_series_interval_length_official",
+    "question": "Khoảng hội tụ mở của chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{(2x-4)^n}{n3^n}\\) có độ dài bằng",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(6\\)",
+      "\\(\\dfrac32\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Điều kiện hội tụ tuyệt đối trong khoảng mở là \\(|(2x-4)/3|\\lt1\\), tức \\(|x-2|\\lt3/2\\). Khoảng mở là \\((1/2,7/2)\\), có độ dài \\(7/2-1/2=3\\).",
+    "quick": "\\(|2x-4|\\lt3\\) rồi lấy cận trên trừ cận dưới.",
+    "casio": "CASIO: giải hai bất phương trình biên \\(2x-4=\\pm3\\) để tìm hai đầu mút rồi lấy hiệu.",
+    "difficulty": 3,
+    "topic": "Chuỗi lũy thừa"
   }
 ]

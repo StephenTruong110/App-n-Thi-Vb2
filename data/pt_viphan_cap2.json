@@ -664,5 +664,491 @@
     "casio": "CASIO: giải phương trình đặc trưng bằng chức năng phương trình bậc hai; sau đó kiểm tra phần riêng \\(x/2+5/4\\) bằng cách thay vào vế trái.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 38,
+    "type": "particular_form_resonance_official",
+    "question": "Dạng nghiệm riêng của phương trình \\(y''-4y'+3y=e^{3x}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y_p=Axe^{3x}\\)",
+      "\\(y_p=Ae^{3x}\\)",
+      "\\(y_p=Ax^2e^{3x}\\)",
+      "\\(y_p=(Ax+B)e^{3x}\\)"
+    ],
+    "correct": "\\(y_p=Axe^{3x}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-4r+3=(r-1)(r-3)\\) có nghiệm \\(r=3\\) trùng với số mũ của vế phải, bội 1. Vì vậy dạng thử \\(Ae^{3x}\\) phải nhân thêm \\(x\\): \\(y_p=Axe^{3x}\\).",
+    "quick": "Vế phải \\(e^{3x}\\) cộng hưởng bội 1 nên nhân thêm \\(x\\).",
+    "casio": "CASIO: giải phương trình đặc trưng bậc 2 để thấy nghiệm \\(1,3\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 39,
+    "type": "nonhomogeneous_ivp_resonance_official",
+    "question": "Giải bài toán \\(y''-2y'+y=2e^x\\), \\(y(0)=0\\), \\(y'(0)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=x^2e^x\\)",
+      "\\(y=xe^x\\)",
+      "\\(y=2x^2e^x\\)",
+      "\\(y=(x^2+x)e^x\\)"
+    ],
+    "correct": "\\(y=x^2e^x\\)",
+    "solution": "Vì toán tử vế trái là \\((D-1)^2\\), đặt \\(y=e^xv\\) thì \\(y''-2y'+y=e^xv''\\). Suy ra \\(v''=2\\), nên \\(v=x^2+C_1x+C_2\\). Điều kiện đầu cho \\(C_1=C_2=0\\), do đó \\(y=x^2e^x\\).",
+    "quick": "Đặt \\(y=e^xv\\) vì nghiệm đặc trưng kép là 1.",
+    "casio": "CASIO: kiểm tra đáp án bằng đạo hàm số và điều kiện đầu.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 40,
+    "type": "homogeneous_ivp_official",
+    "question": "Giải \\(y''+9y=0\\), \\(y(0)=0\\), \\(y'(0)=9\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=3\\sin3x\\)",
+      "\\(y=9\\sin3x\\)",
+      "\\(y=3\\cos3x\\)",
+      "\\(y=\\sin3x\\)"
+    ],
+    "correct": "\\(y=3\\sin3x\\)",
+    "solution": "Nghiệm tổng quát \\(y=C_1\\cos3x+C_2\\sin3x\\). Điều kiện \\(y(0)=0\\Rightarrow C_1=0\\). Ta có \\(y'(0)=3C_2=9\\Rightarrow C_2=3\\).",
+    "quick": "Điều kiện đầu xác định nhanh hai hằng số.",
+    "casio": "CASIO: kiểm tra \\(y'(0)\\) của đáp án bằng d/dx.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 41,
+    "type": "particular_form_official",
+    "question": "Dạng nghiệm riêng của \\(y''-3y'+2y=4e^{3x}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y_p=Ae^{3x}\\)",
+      "\\(y_p=Axe^{3x}\\)",
+      "\\(y_p=Ax^2e^{3x}\\)",
+      "\\(y_p=(Ax+B)e^{3x}\\)"
+    ],
+    "correct": "\\(y_p=Ae^{3x}\\)",
+    "solution": "Phương trình đặc trưng có nghiệm \\(1,2\\); số \\(3\\) không phải nghiệm đặc trưng. Vì vậy không có cộng hưởng và chọn \\(y_p=Ae^{3x}\\).",
+    "quick": "Kiểm tra 3 có thuộc tập nghiệm đặc trưng hay không; không thuộc nên giữ dạng \\(Ae^{3x}\\).",
+    "casio": "CASIO: Polynomial bậc 2 cho nghiệm \\(1,2\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 42,
+    "type": "homogeneous_part_official",
+    "question": "Phần nghiệm của phương trình thuần nhất tương ứng với \\(y''-4y'+3y=3x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y_h=C_1e^x+C_2e^{3x}\\)",
+      "\\(y_h=C_1e^{-x}+C_2e^{-3x}\\)",
+      "\\(y_h=(C_1+C_2x)e^x\\)",
+      "\\(y_h=C_1\\cos x+C_2\\sin x\\)"
+    ],
+    "correct": "\\(y_h=C_1e^x+C_2e^{3x}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-4r+3=(r-1)(r-3)=0\\), nên \\(y_h=C_1e^x+C_2e^{3x}\\).",
+    "quick": "Giải phương trình đặc trưng trước.",
+    "casio": "CASIO: Polynomial bậc 2, hệ số \\(1,-4,3\\), nhận nghiệm \\(1,3\\).",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 43,
+    "type": "particular_polynomial_official",
+    "question": "Một nghiệm riêng của \\(y''-4y'+3y=3x\\) có dạng \\(y_p=Ax+B\\). Giá trị \\((A,B)\\) là",
+    "matrix": null,
+    "options": [
+      "\\((1;4/3)\\)",
+      "\\((1;-4/3)\\)",
+      "\\((3;4)\\)",
+      "\\((1;1)\\)"
+    ],
+    "correct": "\\((1;4/3)\\)",
+    "solution": "Với \\(y_p=Ax+B\\), ta có \\(y'_p=A\\), \\(y''_p=0\\). Thế vào: \\(-4A+3(Ax+B)=3x\\). So hệ số: \\(3A=3\\Rightarrow A=1\\); \\(-4+3B=0\\Rightarrow B=4/3\\).",
+    "quick": "So hệ số của \\(x\\) và hằng số sau khi thế dạng \\(Ax+B\\).",
+    "casio": "CASIO không cần thiết; giải hệ hai phương trình hệ số.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 44,
+    "type": "nonhomogeneous_general_solution_official",
+    "question": "Nghiệm tổng quát của \\(y''-4y'+3y=3x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=C_1e^x+C_2e^{3x}+x+\\dfrac43\\)",
+      "\\(y=C_1e^x+C_2e^{3x}+3x+4\\)",
+      "\\(y=C_1e^{-x}+C_2e^{-3x}+x+\\dfrac43\\)",
+      "\\(y=C_1e^x+C_2e^{3x}+x-\\dfrac43\\)"
+    ],
+    "correct": "\\(y=C_1e^x+C_2e^{3x}+x+\\dfrac43\\)",
+    "solution": "Nghiệm thuần nhất là \\(C_1e^x+C_2e^{3x}\\). Một nghiệm riêng là \\(x+4/3\\). Cộng hai phần được nghiệm tổng quát đã nêu.",
+    "quick": "\\(y=y_h+y_p\\).",
+    "casio": "CASIO có thể kiểm tra một nghiệm cụ thể bằng cách chọn \\(C_1=C_2=0\\) rồi thay vào phương trình.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 45,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của phương trình \\(y''-5y'+6y=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
+      "\\(y=C_1e^{-2x}+C_2e^{-3x}\\)",
+      "\\(y=(C_1+C_2x)e^{2x}\\)",
+      "\\(y=C_1\\cos x+C_2\\sin x\\)"
+    ],
+    "correct": "\\(y=C_1e^{2x}+C_2e^{3x}\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2-5r+6=0\\), suy ra \\(r=2,3\\). Vì có hai nghiệm thực phân biệt nên \\(y=C_1e^{2x}+C_2e^{3x}\\).",
+    "quick": "\\(r^2-5r+6=(r-2)(r-3)\\) nên lấy hai hàm mũ \\(e^{2x},e^{3x}\\).",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Polynomial → bậc 2, nhập 1; -5; 6 để tìm hai nghiệm đặc trưng 2 và 3.",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 46,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của phương trình \\(y''-6y'+9y=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=(C_1+C_2x)e^{3x}\\)",
+      "\\(y=C_1e^{3x}+C_2e^{-3x}\\)",
+      "\\(y=(C_1+C_2x)e^{-3x}\\)",
+      "\\(y=C_1\\cos3x+C_2\\sin3x\\)"
+    ],
+    "correct": "\\(y=(C_1+C_2x)e^{3x}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-6r+9=(r-3)^2=0\\) có nghiệm kép \\(r=3\\). Do đó \\(y=(C_1+C_2x)e^{3x}\\).",
+    "quick": "Nghiệm kép \\(r=3\\) → \\(e^{3x}\\) và \\(xe^{3x}\\).",
+    "casio": "CASIO fx-580VNX: Giải phương trình đặc trưng bậc 2 với hệ số 1; -6; 9. Máy cho nghiệm kép 3.",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 47,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của phương trình \\(y''+4y=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=C_1\\cos2x+C_2\\sin2x\\)",
+      "\\(y=C_1e^{2x}+C_2e^{-2x}\\)",
+      "\\(y=(C_1+C_2x)e^{2x}\\)",
+      "\\(y=C_1\\cos4x+C_2\\sin4x\\)"
+    ],
+    "correct": "\\(y=C_1\\cos2x+C_2\\sin2x\\)",
+    "solution": "Phương trình đặc trưng \\(r^2+4=0\\) có nghiệm \\(r=\\pm2i\\). Vì vậy \\(y=C_1\\cos2x+C_2\\sin2x\\).",
+    "quick": "\\(r=\\pm2i\\) → \\(\\cos2x,\\sin2x\\).",
+    "casio": "CASIO không cần thiết. Nhận dạng \\(r^2+4=0\\) có cặp nghiệm thuần ảo \\(\\pm2i\\).",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 48,
+    "type": "characteristic_equation",
+    "question": "Phương trình đặc trưng của \\(2y''-y'-3y=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(2r^2-r-3=0\\)",
+      "\\(2r^2+r-3=0\\)",
+      "\\(r^2-r-3=0\\)",
+      "\\(2r^2-r+3=0\\)"
+    ],
+    "correct": "\\(2r^2-r-3=0\\)",
+    "solution": "Thay \\(y=e^{rx}\\) vào phương trình, ta được \\(2r^2-r-3=0\\).",
+    "quick": "Giữ nguyên thứ tự hệ số của \\(y'',y',y\\): \\(2,-1,-3\\).",
+    "casio": "CASIO chưa cần dùng ở bước lập phương trình đặc trưng; nếu cần tìm nghiệm, dùng Equation/Func → Polynomial → bậc 2.",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 49,
+    "type": "homogeneous_constant_coeff",
+    "question": "Nghiệm tổng quát của phương trình \\(y''+2y'+5y=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y=e^{-x}(C_1\\cos2x+C_2\\sin2x)\\)",
+      "\\(y=e^{x}(C_1\\cos2x+C_2\\sin2x)\\)",
+      "\\(y=C_1e^{-x}+C_2e^{-5x}\\)",
+      "\\(y=(C_1+C_2x)e^{-x}\\)"
+    ],
+    "correct": "\\(y=e^{-x}(C_1\\cos2x+C_2\\sin2x)\\)",
+    "solution": "Phương trình đặc trưng \\(r^2+2r+5=0\\) có nghiệm \\(r=-1\\pm2i\\). Suy ra \\(y=e^{-x}(C_1\\cos2x+C_2\\sin2x)\\).",
+    "quick": "Với \\(r=\\alpha\\pm\\beta i\\), nghiệm là \\(e^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)\\).",
+    "casio": "CASIO fx-580VNX: dùng Polynomial bậc 2 cho \\(r^2+2r+5=0\\); máy hiển thị nghiệm phức \\(-1\\pm2i\\) khi thiết lập phù hợp.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 50,
+    "type": "characteristic_equation_reverse",
+    "question": "Phương trình vi phân thuần nhất có phương trình đặc trưng với hai nghiệm \\(r=-2\\) và \\(r=1\\) là",
+    "matrix": null,
+    "options": [
+      "\\(y''+y'-2y=0\\)",
+      "\\(y''-y'-2y=0\\)",
+      "\\(y''+y'+2y=0\\)",
+      "\\(y''-3y'+2y=0\\)"
+    ],
+    "correct": "\\(y''+y'-2y=0\\)",
+    "solution": "Từ hai nghiệm \\(-2,1\\), phương trình đặc trưng là \\((r+2)(r-1)=r^2+r-2=0\\). Vì vậy phương trình là \\(y''+y'-2y=0\\).",
+    "quick": "Tổng nghiệm \\(-1\\), tích \\(-2\\) → \\(r^2+r-2=0\\).",
+    "casio": "CASIO không cần thiết; nhân trực tiếp \\((r+2)(r-1)\\) hoặc dùng tổng và tích hai nghiệm.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 51,
+    "type": "initial_value",
+    "question": "Giải bài toán \\(y''-3y'+2y=0\\), \\(y(0)=3\\), \\(y'(0)=4\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=2e^x+e^{2x}\\)",
+      "\\(y=e^x+2e^{2x}\\)",
+      "\\(y=2e^{-x}+e^{-2x}\\)",
+      "\\(y=3e^x+e^{2x}\\)"
+    ],
+    "correct": "\\(y=2e^x+e^{2x}\\)",
+    "solution": "Nghiệm tổng quát là \\(y=C_1e^x+C_2e^{2x}\\). Điều kiện đầu cho \\(C_1+C_2=3\\), \\(C_1+2C_2=4\\), suy ra \\(C_2=1,C_1=2\\).",
+    "quick": "Lập hệ \\(C_1+C_2=3\\), \\(C_1+2C_2=4\\) → \\((C_1,C_2)=(2,1)\\).",
+    "casio": "CASIO: tìm nghiệm đặc trưng 1,2 bằng Polynomial; sau đó giải hệ hai ẩn \\(C_1,C_2\\) bằng Simultaneous Equation.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 52,
+    "type": "initial_value",
+    "question": "Giải bài toán \\(y''+y=0\\), \\(y(0)=2\\), \\(y'(0)=-1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=2\\cos x-\\sin x\\)",
+      "\\(y=2\\cos x+\\sin x\\)",
+      "\\(y=\\cos x-2\\sin x\\)",
+      "\\(y=2e^{-x}-e^x\\)"
+    ],
+    "correct": "\\(y=2\\cos x-\\sin x\\)",
+    "solution": "Nghiệm tổng quát \\(y=C_1\\cos x+C_2\\sin x\\). Từ \\(y(0)=2\\) suy ra \\(C_1=2\\). Vì \\(y'(0)=C_2=-1\\), ta được \\(y=2\\cos x-\\sin x\\).",
+    "quick": "Với \\(y=C_1\\cos x+C_2\\sin x\\), ta có ngay \\(C_1=y(0)=2\\), \\(C_2=y'(0)=-1\\).",
+    "casio": "CASIO có thể dùng để kiểm tra số tại vài giá trị x sau khi đã tìm được nghiệm; phần xác định hằng số làm nhanh bằng điều kiện tại x=0.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 53,
+    "type": "initial_value",
+    "question": "Giải bài toán \\(y''-4y=0\\), \\(y(0)=0\\), \\(y'(0)=6\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{3}{2}(e^{2x}-e^{-2x})\\)",
+      "\\(y=3(e^{2x}-e^{-2x})\\)",
+      "\\(y=\\dfrac{3}{2}(e^{2x}+e^{-2x})\\)",
+      "\\(y=e^{2x}-e^{-2x}\\)"
+    ],
+    "correct": "\\(y=\\dfrac{3}{2}(e^{2x}-e^{-2x})\\)",
+    "solution": "Nghiệm tổng quát \\(y=C_1e^{2x}+C_2e^{-2x}\\). Từ \\(y(0)=0\\): \\(C_1+C_2=0\\). Từ \\(y'(0)=6\\): \\(2C_1-2C_2=6\\). Suy ra \\(C_1=3/2,C_2=-3/2\\).",
+    "quick": "Hai hệ số đối nhau; \\(4C_1=6\\) nên \\(C_1=3/2\\).",
+    "casio": "CASIO: giải phương trình đặc trưng \\(r^2-4=0\\), rồi dùng hệ hai ẩn để tìm \\(C_1,C_2\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 54,
+    "type": "initial_value",
+    "question": "Giải bài toán \\(y''+6y'+9y=0\\), \\(y(0)=1\\), \\(y'(0)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=(1+3x)e^{-3x}\\)",
+      "\\(y=(1-3x)e^{-3x}\\)",
+      "\\(y=(1+3x)e^{3x}\\)",
+      "\\(y=e^{-3x}\\)"
+    ],
+    "correct": "\\(y=(1+3x)e^{-3x}\\)",
+    "solution": "Nghiệm kép \\(r=-3\\) nên \\(y=(C_1+C_2x)e^{-3x}\\). Từ \\(y(0)=1\\) có \\(C_1=1\\). Ta có \\(y'(0)=C_2-3C_1=0\\), nên \\(C_2=3\\).",
+    "quick": "Nghiệm kép \\(-3\\); tại x=0: \\(C_1=1\\), rồi \\(C_2-3=0\\).",
+    "casio": "CASIO giúp kiểm tra nghiệm kép \\(r=-3\\); các hằng số đầu được tìm bằng thay trực tiếp điều kiện đầu.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 55,
+    "type": "initial_value",
+    "question": "Giải bài toán \\(y''-2y'+5y=0\\), \\(y(0)=1\\), \\(y'(0)=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=e^x\\cos2x\\)",
+      "\\(y=e^{-x}\\cos2x\\)",
+      "\\(y=e^x\\sin2x\\)",
+      "\\(y=e^x(\\cos2x+\\sin2x)\\)"
+    ],
+    "correct": "\\(y=e^x\\cos2x\\)",
+    "solution": "Phương trình đặc trưng có nghiệm \\(r=1\\pm2i\\), nên \\(y=e^x(C_1\\cos2x+C_2\\sin2x)\\). Từ \\(y(0)=1\\) có \\(C_1=1\\). Mặt khác \\(y'(0)=C_1+2C_2=1\\), suy ra \\(C_2=0\\).",
+    "quick": "Sau khi có \\(r=1\\pm2i\\): \\(C_1=1\\), \\(1+2C_2=1\\) → \\(C_2=0\\).",
+    "casio": "CASIO: dùng Polynomial để kiểm tra nghiệm đặc trưng \\(1\\pm2i\\); sau đó thay điều kiện đầu để xác định hai hằng số.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 56,
+    "type": "initial_value",
+    "question": "Giải bài toán \\(y''-5y'+6y=0\\), \\(y(0)=1\\), \\(y'(0)=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=3e^{2x}-2e^{3x}\\)",
+      "\\(y=2e^{2x}-e^{3x}\\)",
+      "\\(y=-2e^{2x}+3e^{3x}\\)",
+      "\\(y=3e^{-2x}-2e^{-3x}\\)"
+    ],
+    "correct": "\\(y=3e^{2x}-2e^{3x}\\)",
+    "solution": "Nghiệm tổng quát \\(y=C_1e^{2x}+C_2e^{3x}\\). Điều kiện đầu cho \\(C_1+C_2=1\\), \\(2C_1+3C_2=0\\). Suy ra \\(C_2=-2,C_1=3\\).",
+    "quick": "Lấy phương trình thứ hai trừ 2 lần phương trình thứ nhất: \\(C_2=-2\\), rồi \\(C_1=3\\).",
+    "casio": "CASIO: dùng Polynomial tìm 2,3; dùng Simultaneous Equation giải hệ \\(C_1+C_2=1\\), \\(2C_1+3C_2=0\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 57,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''-3y'+2y=0\\), \\(y(0)=0\\), \\(y'(0)=1\\). Giá trị \\(y(\\ln2)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Ta có \\(y=C_1e^x+C_2e^{2x}\\). Điều kiện đầu: \\(C_1+C_2=0\\), \\(C_1+2C_2=1\\), nên \\(C_1=-1,C_2=1\\). Vậy \\(y=e^{2x}-e^x\\). Tại \\(x=\\ln2\\): \\(y=4-2=2\\).",
+    "quick": "Nghiệm là \\(e^{2x}-e^x\\); thay \\(e^{\\ln2}=2\\) được \\(4-2=2\\).",
+    "casio": "CASIO: sau khi tìm nghiệm, nhập \\(e^{2X}-e^X\\) và CALC tại \\(X=\\ln2\\) để kiểm tra kết quả 2.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 58,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''+4y=0\\), \\(y(0)=1\\), \\(y'(0)=2\\). Giá trị \\(y(\\pi/4)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(2\\)",
+      "\\(-1\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Nghiệm có dạng \\(y=C_1\\cos2x+C_2\\sin2x\\). Từ điều kiện đầu suy ra \\(C_1=1\\), \\(2C_2=2\\) nên \\(C_2=1\\). Do đó \\(y=\\cos2x+\\sin2x\\). Tại \\(x=\\pi/4\\), giá trị bằng \\(0+1=1\\).",
+    "quick": "\\(y=\\cos2x+\\sin2x\\); tại \\(x=\\pi/4\\) thì \\(2x=\\pi/2\\).",
+    "casio": "Đặt máy ở RAD. Sau khi có nghiệm, nhập cos(2X)+sin(2X), CALC tại \\(X=\\pi/4\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 59,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''-4y'+4y=0\\), \\(y(0)=0\\), \\(y'(0)=1\\). Giá trị \\(y(1)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(e^2\\)",
+      "\\(2e^2\\)",
+      "\\(e\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(e^2\\)",
+    "solution": "Phương trình đặc trưng có nghiệm kép \\(r=2\\), nên \\(y=(C_1+C_2x)e^{2x}\\). Từ \\(y(0)=0\\) có \\(C_1=0\\); từ \\(y'(0)=1\\) có \\(C_2=1\\). Vậy \\(y=xe^{2x}\\), suy ra \\(y(1)=e^2\\).",
+    "quick": "Nghiệm kép 2; điều kiện đầu cho ngay \\(y=xe^{2x}\\).",
+    "casio": "Sau khi có \\(y=xe^{2x}\\), dùng CALC tại x=1 để kiểm tra giá trị \\(e^2\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 60,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''+2y'+2y=0\\), \\(y(0)=0\\), \\(y'(0)=2\\). Giá trị \\(y(\\pi)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(2e^{-\\pi}\\)",
+      "\\(-2e^{-\\pi}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Phương trình đặc trưng có nghiệm \\(r=-1\\pm i\\). Suy ra \\(y=e^{-x}(C_1\\cos x+C_2\\sin x)\\). Điều kiện đầu cho \\(C_1=0\\), \\(C_2=2\\). Vì vậy \\(y=2e^{-x}\\sin x\\), nên \\(y(\\pi)=0\\).",
+    "quick": "\\(y=2e^{-x}\\sin x\\) và \\(\\sin\\pi=0\\).",
+    "casio": "Đặt RAD; nhập \\(2e^{-X}\\sin X\\), CALC tại \\(X=\\pi\\) để kiểm tra giá trị 0.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 61,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''+9y=0\\), \\(y(0)=2\\), \\(y'(0)=3\\). Giá trị \\(y(\\pi/6)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Nghiệm tổng quát \\(y=C_1\\cos3x+C_2\\sin3x\\). Từ \\(y(0)=2\\) có \\(C_1=2\\); từ \\(y'(0)=3C_2=3\\) có \\(C_2=1\\). Tại \\(x=\\pi/6\\), ta có \\(3x=\\pi/2\\), nên \\(y=1\\).",
+    "quick": "\\(y=2\\cos3x+\\sin3x\\); thay \\(3x=\\pi/2\\) được 1.",
+    "casio": "Đặt RAD; nhập 2cos(3X)+sin(3X), CALC tại \\(X=\\pi/6\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 62,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''-6y'+9y=0\\), \\(y(0)=2\\), \\(y'(0)=3\\). Giá trị \\(y(1)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-e^3\\)",
+      "\\(e^3\\)",
+      "\\(-2e^3\\)",
+      "\\(2e^3\\)"
+    ],
+    "correct": "\\(-e^3\\)",
+    "solution": "Nghiệm tổng quát \\(y=(C_1+C_2x)e^{3x}\\). Điều kiện \\(y(0)=2\\) cho \\(C_1=2\\). Vì \\(y'(0)=C_2+3C_1=3\\), suy ra \\(C_2=-3\\). Do đó \\(y=(2-3x)e^{3x}\\), nên \\(y(1)=-e^3\\).",
+    "quick": "\\(C_1=2\\), \\(C_2+6=3\\) → \\(C_2=-3\\); thay x=1.",
+    "casio": "Sau khi tìm \\(y=(2-3x)e^{3x}\\), dùng CALC tại x=1 để kiểm tra \\(-e^3\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 63,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''-y'-2y=0\\), \\(y(0)=1\\), \\(y'(0)=5\\). Giá trị \\(y(\\ln2)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{15}{2}\\)",
+      "\\(\\dfrac{9}{2}\\)",
+      "\\(6\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(\\dfrac{15}{2}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-r-2=0\\) có nghiệm \\(2,-1\\). Do đó \\(y=C_1e^{2x}+C_2e^{-x}\\). Điều kiện đầu cho \\(C_1+C_2=1\\), \\(2C_1-C_2=5\\), suy ra \\(C_1=2,C_2=-1\\). Tại \\(x=\\ln2\\): \\(y=2\\cdot4-\\dfrac12=\\dfrac{15}{2}\\).",
+    "quick": "\\(y=2e^{2x}-e^{-x}\\); tại \\(x=\\ln2\\): \\(8-1/2=15/2\\).",
+    "casio": "Nhập \\(2e^{2X}-e^{-X}\\), CALC tại \\(X=\\ln2\\) để kiểm tra 7.5, tương ứng \\(15/2\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 64,
+    "type": "initial_value_short_answer_style",
+    "question": "Gọi \\(y\\) là nghiệm của \\(y''+4y'+13y=0\\), \\(y(0)=1\\), \\(y'(0)=-2\\). Giá trị \\(y(\\pi/3)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-e^{-2\\pi/3}\\)",
+      "\\(e^{-2\\pi/3}\\)",
+      "\\(-e^{-\\pi/3}\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(-e^{-2\\pi/3}\\)",
+    "solution": "Phương trình đặc trưng có nghiệm \\(r=-2\\pm3i\\), nên \\(y=e^{-2x}(C_1\\cos3x+C_2\\sin3x)\\). Từ \\(y(0)=1\\) có \\(C_1=1\\). Vì \\(y'(0)=-2C_1+3C_2=-2\\), suy ra \\(C_2=0\\). Do đó \\(y=e^{-2x}\\cos3x\\). Tại \\(x=\\pi/3\\), \\(\\cos\\pi=-1\\), nên kết quả là \\(-e^{-2\\pi/3}\\).",
+    "quick": "Điều kiện đầu làm mất thành phần sin: \\(y=e^{-2x}\\cos3x\\); thay \\(x=\\pi/3\\).",
+    "casio": "Đặt RAD; nhập \\(e^{-2X}\\cos(3X)\\), CALC tại \\(X=\\pi/3\\) để kiểm tra giá trị âm tương ứng.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2"
   }
 ]

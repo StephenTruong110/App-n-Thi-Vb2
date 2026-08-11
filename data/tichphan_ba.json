@@ -1402,5 +1402,95 @@
     "casio": "CASIO không cần thiết ở bước lập tích phân; chú ý tọa độ đã được tịnh tiến theo trục \\(z\\).",
     "difficulty": 3,
     "topic": "Tích phân ba"
+  },
+  {
+    "id": 79,
+    "type": "triple_integral_cylinder_official",
+    "question": "Tính \\(I=\\iiint_V z\\,dV\\), với \\(V=\\{(x,y,z):x^2+y^2\\le1,\\ 0\\le z\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\dfrac{\\pi}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{2}\\)",
+    "solution": "Dùng tọa độ trụ: \\(0\\le r\\le1\\), \\(0\\le\\varphi\\le2\\pi\\), \\(0\\le z\\le1\\), \\(dV=r\\,dz\\,dr\\,d\\varphi\\). Do đó \\(I=\\int_0^{2\\pi}\\int_0^1\\int_0^1 zr\\,dz\\,dr\\,d\\varphi=(2\\pi)(1/2)(1/2)=\\pi/2\\).",
+    "quick": "Tách tích: \\(\\int z dz=1/2\\), diện tích đáy \\(=\\pi\\).",
+    "casio": "CASIO: tính các tích phân một biến lần lượt; nhớ Jacobian tọa độ trụ là \\(r\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 80,
+    "type": "spherical_jacobian_official",
+    "question": "Trong tọa độ cầu \\(x=r\\sin\\theta\\cos\\varphi\\), \\(y=r\\sin\\theta\\sin\\varphi\\), \\(z=r\\cos\\theta\\), trị tuyệt đối Jacobian bằng",
+    "matrix": null,
+    "options": [
+      "\\(r^2\\sin\\theta\\)",
+      "\\(r\\sin\\theta\\)",
+      "\\(r^2\\cos\\theta\\)",
+      "\\(r\\cos\\theta\\)"
+    ],
+    "correct": "\\(r^2\\sin\\theta\\)",
+    "solution": "Công thức đổi biến chuẩn trong tọa độ cầu là \\(dV=r^2\\sin\\theta\\,dr\\,d\\theta\\,d\\varphi\\). Vì vậy \\(|J|=r^2\\sin\\theta\\).",
+    "quick": "Tọa độ cầu: Jacobian luôn là \\(r^2\\sin\\theta\\) theo quy ước góc cực \\(\\theta\\).",
+    "casio": "CASIO không cần thiết; đây là công thức đổi biến cơ bản.",
+    "difficulty": 1,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 81,
+    "type": "volume_cone_official",
+    "question": "Tính thể tích khối nón giới hạn bởi \\(z=\\sqrt{x^2+y^2}\\) và mặt phẳng \\(z=3\\).",
+    "matrix": null,
+    "options": [
+      "\\(9\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(27\\pi\\)",
+      "\\(18\\pi\\)"
+    ],
+    "correct": "\\(9\\pi\\)",
+    "solution": "Trong tọa độ trụ, mặt nón là \\(z=r\\). Giao với \\(z=3\\) cho bán kính đáy \\(r=3\\); chiều cao bằng 3. Do đó \\(V=(1/3)\\pi r^2h=(1/3)\\pi\\cdot9\\cdot3=9\\pi\\).",
+    "quick": "Nhận hình nón bán kính 3, cao 3.",
+    "casio": "CASIO: dùng công thức thể tích hình nón \\(V=\\pi R^2h/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 82,
+    "type": "volume_cone_cylinder_official",
+    "question": "Thể tích vật thể giới hạn phía trên bởi \\(z=\\sqrt{x^2+y^2}\\), phía dưới bởi \\(z=0\\), và nằm trong hình trụ \\(x^2+y^2\\le1\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2\\pi}{3}\\)",
+      "\\(\\pi\\)",
+      "\\(\\dfrac{\\pi}{3}\\)",
+      "\\(\\dfrac{4\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{2\\pi}{3}\\)",
+    "solution": "Dùng tọa độ trụ: \\(0\\le r\\le1\\), \\(0\\le\\varphi\\le2\\pi\\), \\(0\\le z\\le r\\). Khi đó \\(V=\\int_0^{2\\pi}\\int_0^1\\int_0^r r\\,dz\\,dr\\,d\\varphi=2\\pi\\int_0^1r^2dr=2\\pi/3\\).",
+    "quick": "Chiều cao tại bán kính \\(r\\) là \\(r\\), nên tích phân diện tích là \\(2\\pi\\int_0^1r^2dr\\).",
+    "casio": "CASIO: tính \\(2\\pi\\int_0^1r^2dr\\) được \\(2\\pi/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 83,
+    "type": "tetrahedron_volume_official",
+    "question": "Tính \\(\\iiint_V 1\\,dV\\), với \\(V=\\{x\\ge0,y\\ge0,z\\ge0,x+y+z\\le2\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac43\\)",
+      "\\(\\dfrac23\\)",
+      "\\(\\dfrac83\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac43\\)",
+    "solution": "Đây là tứ diện có các đoạn chắn trên ba trục đều bằng 2. Thể tích \\(V=abc/6=2\\cdot2\\cdot2/6=4/3\\).",
+    "quick": "Tứ diện tọa độ: thể tích bằng tích ba đoạn chắn chia 6.",
+    "casio": "CASIO: tính \\(8/6=4/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
   }
 ]

@@ -1978,5 +1978,257 @@
     "casio": "CASIO: sau khi lập công thức, thay điểm để tính \\(6e^2\\).",
     "difficulty": 3,
     "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 111,
+    "type": "partial_derivative_official",
+    "question": "Cho \\(f(x,y)=x/y\\). Tính đạo hàm riêng \\(f'_y(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{x}{y^2}\\)",
+      "\\(\\dfrac1y\\)",
+      "\\(\\dfrac{x}{y^2}\\)",
+      "\\(-\\dfrac1{y^2}\\)"
+    ],
+    "correct": "\\(-\\dfrac{x}{y^2}\\)",
+    "solution": "Coi \\(x\\) là hằng số: \\(f=x y^{-1}\\), nên \\(f'_y=-xy^{-2}=-x/y^2\\).",
+    "quick": "Theo \\(y\\): \\(x\\) là hằng, đạo hàm \\(y^{-1}\\) là \\(-y^{-2}\\).",
+    "casio": "CASIO chỉ kiểm tra tại điểm cụ thể bằng đạo hàm số sau khi cố định \\(x\\).",
+    "difficulty": 1,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 112,
+    "type": "mixed_partial_official",
+    "question": "Cho \\(f(x,y)=x^4-2x^2y^3+y^2\\). Tính \\(f''_{xy}(x,y)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-12xy^2\\)",
+      "\\(-4xy^3\\)",
+      "\\(-12x^2y\\)",
+      "\\(12xy^2\\)"
+    ],
+    "correct": "\\(-12xy^2\\)",
+    "solution": "Trước hết \\(f'_x=4x^3-4xy^3\\). Lấy tiếp theo \\(y\\): \\(f''_{xy}=-12xy^2\\).",
+    "quick": "Đạo hàm theo \\(x\\) trước, rồi theo \\(y\\).",
+    "casio": "CASIO không tính đạo hàm riêng ký hiệu; có thể thế một biến bằng số để kiểm tra tại điểm cụ thể.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 113,
+    "type": "total_differential_official",
+    "question": "Tìm vi phân toàn phần cấp một của \\(f(x,y)=\\ln(x^2+y^2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(df=\\dfrac{2x}{x^2+y^2}dx+\\dfrac{2y}{x^2+y^2}dy\\)",
+      "\\(df=\\dfrac{x}{x^2+y^2}dx+\\dfrac{y}{x^2+y^2}dy\\)",
+      "\\(df=2x\\,dx+2y\\,dy\\)",
+      "\\(df=\\dfrac{2}{x^2+y^2}(dx+dy)\\)"
+    ],
+    "correct": "\\(df=\\dfrac{2x}{x^2+y^2}dx+\\dfrac{2y}{x^2+y^2}dy\\)",
+    "solution": "Ta có \\(f'_x=2x/(x^2+y^2)\\), \\(f'_y=2y/(x^2+y^2)\\). Vì vậy \\(df=f'_x dx+f'_y dy\\).",
+    "quick": "Tính hai đạo hàm riêng rồi ghép \\(df=f_xdx+f_ydy\\).",
+    "casio": "CASIO chỉ hỗ trợ kiểm tra các đạo hàm riêng tại điểm số cụ thể.",
+    "difficulty": 2,
+    "topic": "Vi phân hàm nhiều biến"
+  },
+  {
+    "id": 114,
+    "type": "gradient_official",
+    "question": "Cho \\(f(x,y)=2x^2+xy+y^2-3x\\). Vector gradient của hàm số tại \\(O(0,0)\\) là",
+    "matrix": null,
+    "options": [
+      "\\((-3;0)\\)",
+      "\\((-3;1)\\)",
+      "\\((0;0)\\)",
+      "\\((4;1)\\)"
+    ],
+    "correct": "\\((-3;0)\\)",
+    "solution": "\\(f'_x=4x+y-3\\), \\(f'_y=x+2y\\). Tại \\(O(0,0)\\): \\(\\nabla f=(-3,0)\\).",
+    "quick": "Lập \\(\\nabla f=(f_x,f_y)\\) rồi thế \\((0,0)\\).",
+    "casio": "CASIO có thể kiểm tra từng đạo hàm riêng tại \\((0,0)\\) bằng đạo hàm số.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 115,
+    "type": "stationary_point_official",
+    "question": "Cho \\(f(x,y)=2x^2+xy+y^2-3x\\) đạt cực trị tại điểm dừng \\(M_0(x_0,y_0)\\). Tính \\(x_0+y_0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac37\\)",
+      "\\(\\dfrac67\\)",
+      "\\(-\\dfrac37\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac37\\)",
+    "solution": "Điểm dừng thỏa \\(4x+y-3=0\\), \\(x+2y=0\\). Từ phương trình hai \\(x=-2y\\). Thế vào phương trình một: \\(-7y=3\\), nên \\(y_0=-3/7\\), \\(x_0=6/7\\). Do đó \\(x_0+y_0=3/7\\).",
+    "quick": "Giải hệ \\(f_x=f_y=0\\).",
+    "casio": "CASIO: Equation/Func → Simultaneous → 2 ẩn, nhập hệ \\(4x+y=3\\), \\(x+2y=0\\).",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 116,
+    "type": "extremum_value_official",
+    "question": "Giá trị cực tiểu của \\(f(x,y)=2x^2+xy+y^2-3x\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac97\\)",
+      "\\(\\dfrac97\\)",
+      "\\(-\\dfrac37\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(-\\dfrac97\\)",
+    "solution": "Điểm dừng là \\((6/7,-3/7)\\). Hessian có \\(A=f_{xx}=4\\), \\(B=f_{xy}=1\\), \\(C=f_{yy}=2\\), nên \\(AC-B^2=7\\gt0\\) và \\(A\\gt0\\): đó là cực tiểu. Thế điểm dừng vào hàm được \\(-9/7\\).",
+    "quick": "Tìm điểm dừng rồi thế vào hàm; Hessian dương xác nhận cực tiểu.",
+    "casio": "CASIO: giải hệ điểm dừng rồi nhập \\(f(6/7,-3/7)\\) để kiểm tra \\(-9/7\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 117,
+    "type": "partial_derivative_3vars_stationary_official",
+    "question": "Cho \\(f(x,y,z)=x^2+2y^2+z^2-4x+8y-6z+2026\\). Nếu \\(M(x_0,y_0,z_0)\\) là điểm dừng thì \\(x_0+y_0+z_0\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(7\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "\\(f_x=2x-4=0\\Rightarrow x_0=2\\); \\(f_y=4y+8=0\\Rightarrow y_0=-2\\); \\(f_z=2z-6=0\\Rightarrow z_0=3\\). Tổng bằng \\(3\\).",
+    "quick": "Ba phương trình đạo hàm riêng tách rời, giải từng ẩn.",
+    "casio": "CASIO không cần thiết; các phương trình điểm dừng đều bậc nhất một ẩn.",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến ba ẩn"
+  },
+  {
+    "id": 118,
+    "type": "partial_derivative_value_official",
+    "question": "Cho \\(f(x,y)=x^3y^2-2x^2y+5y-1\\). Giá trị \\(f'_x(1,2)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(8\\)",
+      "\\(12\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "\\(f'_x=3x^2y^2-4xy\\). Tại \\((1,2)\\): \\(3\\cdot1\\cdot4-4\\cdot1\\cdot2=12-8=4\\).",
+    "quick": "Đạo hàm theo \\(x\\) trước rồi mới thế điểm.",
+    "casio": "CASIO: cố định \\(y=2\\), dùng d/dx cho \\(4x^3-4x^2+9\\) tại \\(x=1\\).",
+    "difficulty": 2,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 119,
+    "type": "second_partial_official",
+    "question": "Cho \\(z=e^{2x+3y}\\). Đạo hàm riêng cấp hai \\(z''_{yy}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(9e^{2x+3y}\\)",
+      "\\(6e^{2x+3y}\\)",
+      "\\(3e^{2x+3y}\\)",
+      "\\(4e^{2x+3y}\\)"
+    ],
+    "correct": "\\(9e^{2x+3y}\\)",
+    "solution": "\\(z_y=3e^{2x+3y}\\), nên \\(z_{yy}=9e^{2x+3y}\\).",
+    "quick": "Mỗi lần đạo hàm theo \\(y\\) nhân thêm hệ số 3.",
+    "casio": "CASIO chỉ kiểm tra tại điểm cụ thể sau khi cố định \\(x\\).",
+    "difficulty": 1,
+    "topic": "Hàm nhiều biến"
+  },
+  {
+    "id": 120,
+    "type": "stationary_point_official",
+    "question": "Tìm điểm dừng của hàm \\(z=x^2+y^2-2x+4y+5\\).",
+    "matrix": null,
+    "options": [
+      "\\((1;-2)\\)",
+      "\\((-1;2)\\)",
+      "\\((1;2)\\)",
+      "\\((-1;-2)\\)"
+    ],
+    "correct": "\\((1;-2)\\)",
+    "solution": "\\(z_x=2x-2=0\\Rightarrow x=1\\); \\(z_y=2y+4=0\\Rightarrow y=-2\\).",
+    "quick": "Cho hai đạo hàm riêng bằng 0.",
+    "casio": "CASIO không cần thiết; giải hai phương trình bậc nhất.",
+    "difficulty": 1,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 121,
+    "type": "extremum_value_official",
+    "question": "Giá trị cực tiểu của hàm \\(z=x^2+y^2-4x+6y+10\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-3\\)",
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(10\\)"
+    ],
+    "correct": "\\(-3\\)",
+    "solution": "Hoàn thành bình phương: \\(z=(x-2)^2+(y+3)^2-3\\). Do đó giá trị nhỏ nhất là \\(-3\\), đạt tại \\((2,-3)\\).",
+    "quick": "Hoàn thành bình phương là nhanh nhất.",
+    "casio": "CASIO: sau khi tìm điểm \\((2,-3)\\), thế vào hàm được \\(-3\\).",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 122,
+    "type": "extremum_parameter_official",
+    "question": "Cho \\(z=x^2+my^2-2xy+4x\\). Điều kiện của \\(m\\) để hàm đạt cực tiểu tự do tại điểm dừng là",
+    "matrix": null,
+    "options": [
+      "\\(m\\gt1\\)",
+      "\\(m\\lt1\\)",
+      "\\(m=1\\)",
+      "Mọi \\(m\\in\\mathbb R\\)"
+    ],
+    "correct": "\\(m\\gt1\\)",
+    "solution": "Hessian có \\(A=2\\), \\(B=-2\\), \\(C=2m\\). Điều kiện cực tiểu nghiêm ngặt là \\(A\\gt0\\) và \\(AC-B^2=4m-4\\gt0\\). Suy ra \\(m\\gt1\\).",
+    "quick": "Dùng \\(A\\gt0\\), \\(AC-B^2\\gt0\\).",
+    "casio": "CASIO không cần thiết; giải bất phương trình \\(4m-4\\gt0\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 123,
+    "type": "second_total_differential_official",
+    "question": "Vi phân toàn phần cấp hai của \\(z=e^{2x-y}\\) tại \\(O(0,0)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(d^2z=4dx^2-4dx\\,dy+dy^2\\)",
+      "\\(d^2z=2dx^2-2dx\\,dy+dy^2\\)",
+      "\\(d^2z=4dx^2+4dx\\,dy+dy^2\\)",
+      "\\(d^2z=4dx^2-2dx\\,dy+dy^2\\)"
+    ],
+    "correct": "\\(d^2z=4dx^2-4dx\\,dy+dy^2\\)",
+    "solution": "Ta có \\(z_{xx}=4e^{2x-y}\\), \\(z_{xy}=-2e^{2x-y}\\), \\(z_{yy}=e^{2x-y}\\). Tại gốc tọa độ, \\(d^2z=z_{xx}dx^2+2z_{xy}dxdy+z_{yy}dy^2=4dx^2-4dxdy+dy^2\\).",
+    "quick": "Nhớ hệ số \\(2z_{xy}dxdy\\) trong \\(d^2z\\).",
+    "casio": "CASIO không thuận tiện cho biểu thức vi phân ký hiệu; có thể kiểm tra riêng các đạo hàm tại gốc.",
+    "difficulty": 3,
+    "topic": "Vi phân hàm nhiều biến"
+  },
+  {
+    "id": 124,
+    "type": "chain_rule_official",
+    "question": "Cho \\(z=u^2+v^3\\), trong đó \\(u=xe^y\\), \\(v=x+2y\\). Giá trị \\(\\dfrac{\\partial z}{\\partial x}\\) tại \\((x,y)=(1,0)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(3\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Theo quy tắc dây chuyền, \\(z_x=2u\\,u_x+3v^2v_x\\). Tại \\((1,0)\\): \\(u=1\\), \\(u_x=e^0=1\\), \\(v=1\\), \\(v_x=1\\). Do đó \\(z_x=2+3=5\\).",
+    "quick": "Tính \\(u,v,u_x,v_x\\) tại điểm rồi thế vào dây chuyền.",
+    "casio": "CASIO có thể thay trực tiếp \\(y=0\\), thu được \\(z=x^2+x^3\\), rồi dùng d/dx tại \\(x=1\\).",
+    "difficulty": 3,
+    "topic": "Hàm hợp nhiều biến"
   }
 ]

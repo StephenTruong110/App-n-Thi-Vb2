@@ -666,6 +666,7 @@
     "topic": "Ứng dụng ma trận Markov"
   },
   {
+    "id": 38,
     "type": "trace_property",
     "question": "Cho \\(A=\\begin{pmatrix}2&5&-1\\\\0&-3&4\\\\1&0&6\\end{pmatrix}\\). Vết của \\(A\\) bằng",
     "matrix": null,
@@ -680,10 +681,10 @@
     "quick": "Cộng đường chéo chính.",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
     "difficulty": 1,
-    "topic": "Ma trận cơ bản",
-    "id": 38
+    "topic": "Ma trận cơ bản"
   },
   {
+    "id": 39,
     "type": "trace_property",
     "question": "Cho \\(A\\) và \\(B\\) là hai ma trận vuông cùng cấp. Đẳng thức nào sau đây luôn đúng?",
     "matrix": null,
@@ -698,10 +699,10 @@
     "quick": "Vết có tính chất vòng: \\(\\operatorname{tr}(AB)=\\operatorname{tr}(BA)\\).",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
     "difficulty": 3,
-    "topic": "Ma trận cơ bản",
-    "id": 39
+    "topic": "Ma trận cơ bản"
   },
   {
+    "id": 40,
     "type": "transpose_property",
     "question": "Cho \\(A\\) và \\(B\\) là hai ma trận cùng cỡ. Đẳng thức nào sau đây đúng?",
     "matrix": null,
@@ -716,10 +717,10 @@
     "quick": "\\((A+B)^T=A^T+B^T\\); \\((AB)^T=B^TA^T\\) (đổi thứ tự).",
     "casio": "CASIO không cần thiết; đây là câu nhận dạng hoặc tính chất ma trận.",
     "difficulty": 2,
-    "topic": "Ma trận cơ bản",
-    "id": 40
+    "topic": "Ma trận cơ bản"
   },
   {
+    "id": 41,
     "type": "transpose_property",
     "question": "Cho \\(A,B\\) là hai ma trận vuông cùng cấp. Phát biểu nào sau đây là sai?",
     "matrix": null,
@@ -734,10 +735,10 @@
     "quick": "Chuyển vị của tích phải đảo ngược thứ tự: \\((AB)^T=B^TA^T\\).",
     "casio": "CASIO không cần thiết; đây là câu nhận dạng hoặc tính chất ma trận.",
     "difficulty": 2,
-    "topic": "Ma trận cơ bản",
-    "id": 41
+    "topic": "Ma trận cơ bản"
   },
   {
+    "id": 42,
     "type": "multiply_element",
     "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\4&5&6\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1&0\\\\0&1\\\\1&0\\end{pmatrix}\\). Phần tử hàng 2 cột 1 của \\(AB\\) bằng",
     "matrix": null,
@@ -752,10 +753,10 @@
     "quick": "Hàng \\(i\\) của \\(A\\) nhân với cột \\(j\\) của \\(B\\).",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
     "difficulty": 2,
-    "topic": "Ma trận cơ bản",
-    "id": 42
+    "topic": "Ma trận cơ bản"
   },
   {
+    "id": 43,
     "type": "multiply_element",
     "question": "Cho \\(A=\\begin{pmatrix}2&-1\\\\0&3\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1&4\\\\2&-1\\end{pmatrix}\\). Phần tử hàng 1 cột 2 của \\(AB\\) bằng",
     "matrix": null,
@@ -770,10 +771,10 @@
     "quick": "Hàng 1 của \\(A\\) nhân cột 2 của \\(B\\).",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
     "difficulty": 3,
-    "topic": "Ma trận cơ bản",
-    "id": 43
+    "topic": "Ma trận cơ bản"
   },
   {
+    "id": 44,
     "type": "matrix_equation",
     "question": "Cho \\(A=\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix}\\) và \\(B=\\begin{pmatrix}1&2\\\\3&1\\end{pmatrix}\\). Ma trận \\(X\\) thỏa \\(AX=B\\) là",
     "matrix": null,
@@ -788,8 +789,7 @@
     "quick": "\\(AX=B\\Rightarrow X=A^{-1}B\\). Dùng CASIO tính \\(A^{-1}\\) rồi nhân \\(B\\).",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
     "difficulty": 3,
-    "topic": "Phương trình ma trận",
-    "id": 44
+    "topic": "Phương trình ma trận"
   },
   {
     "id": 45,
@@ -878,6 +878,114 @@
     "solution": "Vật liệu loại 1 cần dùng là \\(4k+2k+k+4\\cdot10=7k+40\\). Điều kiện \\(7k+40=110\\) cho \\(k=10\\).",
     "quick": "Lấy hàng 1 nhân vector sản lượng.",
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận"
+  },
+  {
+    "id": 50,
+    "type": "matrix_application_official",
+    "question": "Cho \\(A=\\begin{pmatrix}4&2&1&4\\\\5&4&2&1\\\\6&5&3&2\\end{pmatrix}\\), \\(X_0=\\begin{pmatrix}3\\\\2\\\\5\\\\6\\end{pmatrix}\\), và \\(Y=AX_0=\\begin{pmatrix}y_1\\\\y_2\\\\y_3\\end{pmatrix}\\). Khẳng định đúng là",
+    "matrix": null,
+    "options": [
+      "\\(y_3=55\\)",
+      "\\(y_1=39\\)",
+      "\\(y_2=45\\)",
+      "\\(y_3=139\\)"
+    ],
+    "correct": "\\(y_3=55\\)",
+    "solution": "Nhân ma trận với vector: \\(Y=(45,39,55)^T\\). Vì vậy \\(y_3=55\\).",
+    "quick": "Chỉ cần lấy hàng 3 nhân cột \\(X_0\\): \\(6\\cdot3+5\\cdot2+3\\cdot5+2\\cdot6=55\\).",
+    "casio": "CASIO: Matrix → nhập \\(A\\), nhập \\(X_0\\) dạng ma trận \\(4\\times1\\), tính \\(AX_0\\).",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 51,
+    "type": "matrix_power_element_official",
+    "question": "Cho \\(A=\\begin{pmatrix}1&0&2\\\\0&1&1\\\\2&0&3\\end{pmatrix}\\). Phần tử ở dòng 3 cột 1 của \\(A^2\\) bằng",
+    "matrix": null,
+    "options": [
+      "8",
+      "2",
+      "4",
+      "6"
+    ],
+    "correct": "8",
+    "solution": "Phần tử \\((3,1)\\) của \\(A^2\\) là tích hàng 3 của \\(A\\) với cột 1 của \\(A\\): \\(2\\cdot1+0\\cdot0+3\\cdot2=8\\).",
+    "quick": "Không cần tính cả \\(A^2\\); lấy đúng hàng 3 nhân cột 1.",
+    "casio": "CASIO: Matrix → nhập \\(A\\) → tính \\(A^2\\), đọc phần tử \\((3,1)\\).",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 52,
+    "type": "matrix_power_official",
+    "question": "Cho \\(A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}\\). Công thức đúng của \\(A^n\\) với \\(n\\in\\mathbb N^*\\) là",
+    "matrix": null,
+    "options": [
+      "\\(A^n=\\begin{pmatrix}1&2n\\\\0&1\\end{pmatrix}\\)",
+      "\\(A^n=\\begin{pmatrix}1&2^n\\\\0&1\\end{pmatrix}\\)",
+      "\\(A^n=\\begin{pmatrix}n&2n\\\\0&n\\end{pmatrix}\\)",
+      "\\(A^n=\\begin{pmatrix}1&n\\\\0&1\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(A^n=\\begin{pmatrix}1&2n\\\\0&1\\end{pmatrix}\\)",
+    "solution": "Viết \\(A=I+N\\) với \\(N=\\begin{pmatrix}0&2\\\\0&0\\end{pmatrix}\\) và \\(N^2=0\\). Do đó \\(A^n=(I+N)^n=I+nN=\\begin{pmatrix}1&2n\\\\0&1\\end{pmatrix}\\).",
+    "quick": "Dạng Jordan đơn giản: \\(N^2=0\\Rightarrow(I+N)^n=I+nN\\).",
+    "casio": "CASIO có thể tính \\(A^2,A^3\\) để nhận quy luật, nhưng công thức tổng quát cần chứng minh đại số.",
+    "difficulty": 3,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 53,
+    "type": "matrix_rank_official",
+    "question": "Hạng của ma trận \\(A=\\begin{pmatrix}1&-1&2&3\\\\2&-2&4&6\\\\-1&1&-2&-3\\end{pmatrix}\\) bằng",
+    "matrix": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": "1",
+    "solution": "Hàng 2 bằng \\(2\\) lần hàng 1 và hàng 3 bằng \\(-1\\) lần hàng 1. Hàng 1 khác 0 nên hạng của ma trận bằng 1.",
+    "quick": "Tất cả các hàng là bội của một hàng khác 0.",
+    "casio": "CASIO: dùng RREF nếu máy hỗ trợ hoặc kiểm tra trực tiếp các hàng tỉ lệ.",
+    "difficulty": 1,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 54,
+    "type": "matrix_inverse_official",
+    "question": "Cho \\(A=\\begin{pmatrix}1&2&3\\\\0&1&4\\\\0&0&1\\end{pmatrix}\\). Ma trận nghịch đảo \\(A^{-1}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}1&-2&5\\\\0&1&-4\\\\0&0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&2&5\\\\0&1&4\\\\0&0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&-2&-5\\\\0&1&-4\\\\0&0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}1&0&0\\\\-2&1&0\\\\5&-4&1\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}1&-2&5\\\\0&1&-4\\\\0&0&1\\end{pmatrix}\\)",
+    "solution": "Giải \\(AA^{-1}=I\\) hoặc khử Gauss-Jordan. Kết quả \\(A^{-1}=\\begin{pmatrix}1&-2&5\\\\0&1&-4\\\\0&0&1\\end{pmatrix}\\). Có thể kiểm tra bằng phép nhân cho ra \\(I\\).",
+    "quick": "Với ma trận tam giác trên đơn vị, tìm nghịch đảo cũng là tam giác trên rồi nhân kiểm tra.",
+    "casio": "CASIO: Matrix → nhập \\(A\\) → dùng \\(A^{-1}\\), máy trả ma trận nghịch đảo.",
+    "difficulty": 2,
+    "topic": "Ma trận nghịch đảo"
+  },
+  {
+    "id": 55,
+    "type": "matrix_application_official",
+    "question": "Một xí nghiệp có ma trận định mức \\(A=\\begin{pmatrix}2&1&3\\\\3&2&1\\\\1&4&2\\end{pmatrix}\\) và kế hoạch sản xuất \\(X_0=(10,5,8)^T\\). Tổng số đơn vị nguyên liệu của tất cả các loại cần dùng là",
+    "matrix": null,
+    "options": [
+      "143",
+      "135",
+      "150",
+      "128"
+    ],
+    "correct": "143",
+    "solution": "Tính \\(Y=AX_0=(49,48,46)^T\\). Tổng nguyên liệu là \\(49+48+46=143\\).",
+    "quick": "Nhân ma trận định mức với vector sản lượng rồi cộng ba thành phần.",
+    "casio": "CASIO: Matrix → nhập \\(A\\), \\(X_0\\) → tính \\(AX_0\\), rồi cộng các phần tử.",
     "difficulty": 3,
     "topic": "Ứng dụng ma trận"
   }

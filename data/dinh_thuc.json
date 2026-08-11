@@ -1199,5 +1199,113 @@
     "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA → nhập ma trận → OPTN → Matrix → det(MatA). Với hạng, kiểm tra det cấp lớn trước; nếu det=0 thì xét định thức con hoặc khử Gauss.",
     "difficulty": 1,
     "topic": "Định thức"
+  },
+  {
+    "id": 58,
+    "type": "det3_official",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\5&1&9\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "0",
+      "12",
+      "-6",
+      "24"
+    ],
+    "correct": "0",
+    "solution": "Hàng 2 bằng \\(2\\) lần hàng 1 nên các hàng phụ thuộc tuyến tính. Vì vậy \\(\\det A=0\\).",
+    "quick": "Hai hàng tỉ lệ thì định thức bằng 0.",
+    "casio": "CASIO: Matrix → nhập \\(A\\) → det(MatA) → EXE, nhận 0.",
+    "difficulty": 1,
+    "topic": "Định thức & khả nghịch"
+  },
+  {
+    "id": 59,
+    "type": "rank_parameter_det_official",
+    "question": "Tìm \\(m\\) để ma trận \\(A=\\begin{pmatrix}1&m\\\\3&6\\end{pmatrix}\\) có hạng bằng 1.",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=6\\)",
+      "\\(m\\ne2\\)",
+      "Không tồn tại \\(m\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Ma trận cấp \\(2\\) có hạng 1 khi định thức bằng 0 nhưng ma trận không phải ma trận 0. \\(\\det A=6-3m=0\\Rightarrow m=2\\).",
+    "quick": "Hạng 1 của ma trận \\(2\\times2\\): det bằng 0 và có phần tử khác 0.",
+    "casio": "CASIO: nhập vài giá trị sau khi giải \\(6-3m=0\\); với \\(m=2\\), det bằng 0.",
+    "difficulty": 2,
+    "topic": "Định thức & hạng"
+  },
+  {
+    "id": 60,
+    "type": "det3_official",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}1&1&2\\\\1&2&1\\\\2&1&1\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(-4\\)",
+      "\\(4\\)",
+      "\\(0\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(-4\\)",
+    "solution": "Khai triển theo hàng đầu: \\(\\det A=1(2-1)-1(1-2)+2(1-4)=1+1-6=-4\\).",
+    "quick": "Khai triển Laplace hoặc dùng biến đổi hàng.",
+    "casio": "CASIO: Matrix → MatA → det(MatA) → EXE, được \\(-4\\).",
+    "difficulty": 2,
+    "topic": "Định thức & khả nghịch"
+  },
+  {
+    "id": 61,
+    "type": "det_transpose_scalar_official",
+    "question": "Cho ma trận \\(A=(a_{ij})_{3\\times3}\\) với \\(a_{ij}=ij-\\min(i,j)\\). Tính \\(\\det(3A^T)\\).",
+    "matrix": null,
+    "options": [
+      "\\(54\\)",
+      "\\(18\\)",
+      "\\(6\\)",
+      "\\(27\\)"
+    ],
+    "correct": "\\(54\\)",
+    "solution": "Từ công thức suy ra \\(A=\\begin{pmatrix}0&1&2\\\\1&2&4\\\\2&4&6\\end{pmatrix}\\), và \\(\\det A=2\\). Vì \\(\\det A^T=\\det A\\) và với ma trận cấp 3, \\(\\det(3A^T)=3^3\\det(A^T)=27\\cdot2=54\\).",
+    "quick": "Cấp 3: nhân toàn ma trận với 3 thì định thức nhân \\(3^3\\).",
+    "casio": "CASIO: nhập ma trận \\(A\\), tính det được 2; sau đó nhân với 27.",
+    "difficulty": 3,
+    "topic": "Định thức & tính chất"
+  },
+  {
+    "id": 62,
+    "type": "det_parameter_official",
+    "question": "Tính định thức của \\(A=\\begin{pmatrix}1&1&1\\\\1&m&1\\\\1&1&m\\end{pmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\((m-1)^2\\)",
+      "\\(m^2-1\\)",
+      "\\((m+1)^2\\)",
+      "\\(m(m-1)\\)"
+    ],
+    "correct": "\\((m-1)^2\\)",
+    "solution": "Trừ hàng 1 khỏi hàng 2 và hàng 3: \\(\\det A=\\det\\begin{pmatrix}1&1&1\\\\0&m-1&0\\\\0&0&m-1\\end{pmatrix}=(m-1)^2\\).",
+    "quick": "Trừ hàng đầu khỏi hai hàng dưới để đưa về tam giác.",
+    "casio": "CASIO không xử lý tham số ký hiệu trực tiếp; có thể thế vài giá trị \\(m\\) để kiểm tra công thức.",
+    "difficulty": 2,
+    "topic": "Định thức & tham số"
+  },
+  {
+    "id": 63,
+    "type": "rank_parameter_official",
+    "question": "Cho \\(A=\\begin{pmatrix}1&2&-1&3\\\\2&5&1&4\\\\3&7&0&m\\end{pmatrix}\\). Giá trị của \\(m\\) để hạng của \\(A\\) nhỏ nhất là",
+    "matrix": null,
+    "options": [
+      "\\(m=7\\)",
+      "\\(m=6\\)",
+      "\\(m=5\\)",
+      "\\(m=4\\)"
+    ],
+    "correct": "\\(m=7\\)",
+    "solution": "Hai hàng đầu độc lập. Hạng nhỏ nhất có thể là 2, xảy ra khi hàng 3 là tổ hợp của hai hàng đầu. Ba phần tử đầu của hàng 3 đúng bằng tổng hai hàng đầu, nên cần phần tử cuối cũng thỏa \\(m=3+4=7\\). Khi đó hạng bằng 2.",
+    "quick": "Nhìn hàng 3: ba cột đầu bằng hàng 1 cộng hàng 2, nên ép cột cuối cũng bằng \\(3+4\\).",
+    "casio": "CASIO: với \\(m=7\\), nhập ma trận và dùng RREF hoặc kiểm tra các định thức con cấp 3 đều bằng 0.",
+    "difficulty": 3,
+    "topic": "Định thức & hạng"
   }
 ]

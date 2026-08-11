@@ -14,29 +14,38 @@
 
 /* ── CONFIG ── */
 const EXAM_DIST = [
-  /* I. ĐẠI SỐ TUYẾN TÍNH: 16 CÂU — Nhận biết 3 – Thông hiểu 5 – Vận dụng 8 */
-  { file: 'matran_co_ban',        n: 3, diff: { 1: 1, 2: 1, 3: 1 } },
-  { file: 'dinh_thuc',            n: 5, diff: { 1: 1, 2: 1, 3: 3 } },
-  { file: 'he_pt_tuyen_tinh',     n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'gia_tri_rieng',        n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
-  { file: 'khong_gian_vector_ud', n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
-  /* II. GIẢI TÍCH: 26 CÂU — Nhận biết 6 – Thông hiểu 8 – Vận dụng 12 */
-  { file: 'gioi_han', n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
-  { file: 'tiem_can', n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
-  { file: 'lientuc_giandoan_khavi',     n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'dao_ham',                    n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
-  { file: 'daohamrieng_viphan_cuctri',  n: 7, diff: { 1: 0, 2: 3, 3: 4 } },
-  { file: 'chuoi_so',                   n: 4, diff: { 1: 1, 2: 1, 3: 2 } },
-  { file: 'chuoi_luy_thua',             n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'nguyen_ham_tich_phan_1bien', n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
-  { file: 'tichphan_kep',               n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-  { file: 'tichphan_ba',                n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
-  { file: 'tichphan_duong_loai1',       n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
-  { file: 'tichphan_duong_loai2',       n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
-  /* III. PHƯƠNG TRÌNH VI PHÂN: 8 CÂU — Nhận biết 1 – Thông hiểu 2 – Vận dụng 5 */
-  { file: 'pt_viphan_cap1',             n: 6, diff: { 1: 1, 2: 2, 3: 3 } },
-  { file: 'pt_viphan_cap2',             n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+
+/* I. ĐẠI SỐ TUYẾN TÍNH: 16 — 3 / 5 / 8 */
+
+{ file: 'matran_co_ban',         n: 3, diff: { 1: 1, 2: 1, 3: 1 } },
+{ file: 'dinh_thuc',             n: 5, diff: { 1: 1, 2: 1, 3: 3 } },
+{ file: 'he_pt_tuyen_tinh',      n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+{ file: 'gia_tri_rieng',         n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
+{ file: 'khong_gian_vector_ud',  n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
+
+/* II. GIẢI TÍCH: 26 — 5 / 8 / 13 */
+
+{ file: 'gioi_han',                    n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+{ file: 'lientuc_giandoan_khavi',      n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+{ file: 'dao_ham',                     n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
+
+{ file: 'daohamrieng_viphan_cuctri',   n: 7, diff: { 1: 1, 2: 2, 3: 4 } },
+
+{ file: 'chuoi_so',                    n: 4, diff: { 1: 1, 2: 1, 3: 2 } },
+{ file: 'chuoi_luy_thua',              n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+{ file: 'nguyen_ham_tich_phan_1bien',  n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
+{ file: 'tichphan_kep',                n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+{ file: 'tichphan_ba',                 n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
+{ file: 'tichphan_duong_loai1',        n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
+{ file: 'tichphan_duong_loai2',        n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
+
+/* III. PTVP: 8 — 2 / 2 / 4 */
+
+{ file: 'pt_viphan_cap1', n: 6, diff: { 1: 1, 2: 2, 3: 3 } },
+{ file: 'pt_viphan_cap2', n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+
 ];
+
 const EXAM_DIFF_COUNTS = { 1: 10, 2: 15, 3: 25 };
 const EXAM_TOTAL = EXAM_DIST.reduce((sum, spec) => sum + spec.n, 0);
 const EXAM_SECS = 100 * 60;

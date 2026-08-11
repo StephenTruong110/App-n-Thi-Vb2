@@ -54,6 +54,7 @@
     "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 4,
     "type": "line_integral_type1_circle",
     "question": "Tính \\(\\displaystyle\\int_C (x^2+y^2)\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=1\\).",
     "matrix": null,
@@ -68,8 +69,7 @@
     "quick": "Trên \\(C\\), hàm bằng \\(1\\), độ dài \\(C\\) bằng \\(2\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 4
+    "topic": "Tích phân đường"
   },
   {
     "id": 5,
@@ -180,6 +180,7 @@
     "topic": "Tích phân đường"
   },
   {
+    "id": 11,
     "type": "line_integral_type1_official",
     "question": "Trong mặt phẳng, \\(L\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,2)\\). Giá trị \\(\\int_L(x+2y)\\,ds\\) bằng",
     "matrix": null,
@@ -194,10 +195,10 @@
     "quick": "Đặt \\(x=t,y=2t\\). Khi đó \\(ds=\\sqrt5dt\\), \\(x+2y=5t\\), nên \\(I=5\\sqrt5/2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 11
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 12,
     "type": "line_integral_type1",
     "question": "Tính \\(I=\\int_C x\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,0)\\).",
     "matrix": null,
@@ -212,10 +213,10 @@
     "quick": "Đoạn nằm trên trục Ox nên \\(ds=dx\\). \\(I=\\int_0^2x\\,dx=2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 12
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 13,
     "type": "line_integral_type1",
     "question": "Tính \\(\\int_C y\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((0,3)\\).",
     "matrix": null,
@@ -230,10 +231,10 @@
     "quick": "Đoạn thẳng đứng nên \\(ds=dy\\). \\(I=\\int_0^3y\\,dy=9/2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 13
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 14,
     "type": "line_integral_type1",
     "question": "Tính \\(\\int_C (x^2+y^2)\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=4\\).",
     "matrix": null,
@@ -248,10 +249,10 @@
     "quick": "Trên đường tròn bán kính 2: \\(x^2+y^2=4\\), độ dài \\(=4\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 14
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 15,
     "type": "line_integral_type1",
     "question": "Tính \\(\\int_C ds\\), với \\(C\\) là nửa trên đường tròn \\(x^2+y^2=4\\).",
     "matrix": null,
@@ -266,10 +267,10 @@
     "quick": "Nửa chu vi đường tròn bán kính 2 là \\(2\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng công thức \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 1,
-    "topic": "Tích phân đường – Định lý Green",
-    "id": 15
+    "topic": "Tích phân đường – Định lý Green"
   },
   {
+    "id": 16,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((4,3)\\).",
     "matrix": null,
@@ -284,10 +285,10 @@
     "quick": "Đoạn thẳng: \\(ds=5dt\\), \\(x=4t\\), nên \\(I=\\int_0^1 20t\\,dt=10\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 16
+    "topic": "Tích phân đường"
   },
   {
+    "id": 17,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C (x+y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((3,4)\\).",
     "matrix": null,
@@ -302,10 +303,10 @@
     "quick": "Đoạn thẳng \\(3-4-5\\): \\(ds=5dt\\), \\(x+y=7t\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 17
+    "topic": "Tích phân đường"
   },
   {
+    "id": 18,
     "type": "line_integral_type1_parabola",
     "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C: x=t,\\ y=t^2,\\ 0\\le t\\le1\\).",
     "matrix": null,
@@ -320,10 +321,10 @@
     "quick": "\\(ds=\\sqrt{1+4t^2}dt\\), đặt \\(u=1+4t^2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 3,
-    "topic": "Tích phân đường",
-    "id": 18
+    "topic": "Tích phân đường"
   },
   {
+    "id": 19,
     "type": "line_integral_type1_circle",
     "question": "Tính \\(\\displaystyle\\int_C (x^2+y^2)\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=9\\).",
     "matrix": null,
@@ -338,10 +339,10 @@
     "quick": "Trên đường tròn bán kính 3, hàm bằng 9 và độ dài bằng \\(6\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 19
+    "topic": "Tích phân đường"
   },
   {
+    "id": 20,
     "type": "line_integral_type1_semicircle",
     "question": "Tính \\(\\displaystyle\\int_C y\\,ds\\), với \\(C\\) là nửa trên đường tròn \\(x^2+y^2=4\\).",
     "matrix": null,
@@ -356,10 +357,10 @@
     "quick": "Nửa trên: \\(y=2\\sin t,\\ ds=2dt,\\ t:0\\to\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 3,
-    "topic": "Tích phân đường",
-    "id": 20
+    "topic": "Tích phân đường"
   },
   {
+    "id": 21,
     "type": "line_integral_type1_arc",
     "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C\\) là cung phần tư đường tròn \\(x^2+y^2=1\\) từ \\((1,0)\\) đến \\((0,1)\\).",
     "matrix": null,
@@ -374,10 +375,10 @@
     "quick": "Trên cung tròn đơn vị, \\(ds=dt\\), nên tích phân là \\(\\int_0^{\\pi/2}\\cos tdt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 21
+    "topic": "Tích phân đường"
   },
   {
+    "id": 22,
     "type": "line_integral_type1_parametric",
     "question": "Tính \\(\\displaystyle\\int_C y\\,ds\\), với \\(C: x=3t,\\ y=4t,\\ 0\\le t\\le1\\).",
     "matrix": null,
@@ -392,10 +393,10 @@
     "quick": "\\(ds=5dt\\), \\(y=4t\\), nên \\(I=20\\int_0^1tdt=10\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 22
+    "topic": "Tích phân đường"
   },
   {
+    "id": 23,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C (x+2y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,2)\\).",
     "matrix": null,
@@ -410,10 +411,10 @@
     "quick": "Đoạn \\(y=x\\): \\(ds=\\sqrt2dt\\), \\(x+2y=3t\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 23
+    "topic": "Tích phân đường"
   },
   {
+    "id": 24,
     "type": "line_integral_type1_length",
     "question": "Tính \\(\\displaystyle\\int_C 1\\,ds\\), với \\(C: x=2\\cos t,\\ y=2\\sin t,\\ 0\\le t\\le\\pi\\).",
     "matrix": null,
@@ -428,10 +429,10 @@
     "quick": "\\(\\int_Cds\\) là độ dài cung. Nửa đường tròn bán kính 2 có độ dài \\(2\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 1,
-    "topic": "Tích phân đường",
-    "id": 24
+    "topic": "Tích phân đường"
   },
   {
+    "id": 25,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C (2x-y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,2)\\).",
     "matrix": null,
@@ -446,10 +447,10 @@
     "quick": "Trên đoạn này \\(y=2x\\), nên \\(2x-y=0\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 25
+    "topic": "Tích phân đường"
   },
   {
+    "id": 26,
     "type": "line_integral_type1_length",
     "question": "Tính \\(\\displaystyle\\int_C 1\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((1,2)\\) đến \\((4,6)\\).",
     "matrix": null,
@@ -464,10 +465,10 @@
     "quick": "Loại 1 với \\(f=1\\) là độ dài cung.",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 1,
-    "topic": "Tích phân đường",
-    "id": 26
+    "topic": "Tích phân đường"
   },
   {
+    "id": 27,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((1,0)\\) đến \\((3,0)\\).",
     "matrix": null,
@@ -482,10 +483,10 @@
     "quick": "Trên trục \\(Ox\\), \\(ds=dx\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 1,
-    "topic": "Tích phân đường",
-    "id": 27
+    "topic": "Tích phân đường"
   },
   {
+    "id": 28,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C (x+y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((2,0)\\) đến \\((2,3)\\).",
     "matrix": null,
@@ -500,10 +501,10 @@
     "quick": "Đoạn thẳng đứng: \\(ds=dy\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 28
+    "topic": "Tích phân đường"
   },
   {
+    "id": 29,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C (2x+y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((2,1)\\).",
     "matrix": null,
@@ -518,10 +519,10 @@
     "quick": "Đặt \\(x=2t,\\ y=t\\), \\(ds=\\sqrt5dt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 29
+    "topic": "Tích phân đường"
   },
   {
+    "id": 30,
     "type": "line_integral_type1_arc",
     "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C\\) là cung phần tư thứ nhất của đường tròn \\(x^2+y^2=4\\).",
     "matrix": null,
@@ -536,10 +537,10 @@
     "quick": "Cung tròn bán kính 2: \\(ds=2dt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 30
+    "topic": "Tích phân đường"
   },
   {
+    "id": 31,
     "type": "line_integral_type1_semicircle",
     "question": "Tính \\(\\displaystyle\\int_C y\\,ds\\), với \\(C\\) là nửa trên đường tròn \\(x^2+y^2=1\\).",
     "matrix": null,
@@ -554,10 +555,10 @@
     "quick": "Trên đường tròn đơn vị, \\(ds=dt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 31
+    "topic": "Tích phân đường"
   },
   {
+    "id": 32,
     "type": "line_integral_type1_semicircle",
     "question": "Tính \\(\\displaystyle\\int_C (x^2+y^2)\\,ds\\), với \\(C\\) là nửa trên đường tròn \\(x^2+y^2=9\\).",
     "matrix": null,
@@ -572,10 +573,10 @@
     "quick": "Hàm bằng \\(9\\), độ dài nửa đường tròn bán kính \\(3\\) là \\(3\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 32
+    "topic": "Tích phân đường"
   },
   {
+    "id": 33,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C x^2\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
     "matrix": null,
@@ -590,10 +591,10 @@
     "quick": "Đoạn \\(y=x\\): \\(ds=\\sqrt2dt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 33
+    "topic": "Tích phân đường"
   },
   {
+    "id": 34,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C (x+y)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,1)\\) đến \\((2,3)\\).",
     "matrix": null,
@@ -608,10 +609,10 @@
     "quick": "\\(ds=2\\sqrt2dt\\), \\(x+y=1+4t\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 34
+    "topic": "Tích phân đường"
   },
   {
+    "id": 35,
     "type": "line_integral_type1_parabola",
     "question": "Tính \\(\\displaystyle\\int_C y\\,ds\\), với \\(C: x=t^2,\\ y=t,\\ 0\\le t\\le2\\).",
     "matrix": null,
@@ -626,10 +627,10 @@
     "quick": "\\(ds=\\sqrt{4t^2+1}dt\\), đặt \\(u=4t^2+1\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 3,
-    "topic": "Tích phân đường",
-    "id": 35
+    "topic": "Tích phân đường"
   },
   {
+    "id": 36,
     "type": "line_integral_type1_circle",
     "question": "Tính \\(\\displaystyle\\int_C \\sqrt{x^2+y^2}\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=9\\).",
     "matrix": null,
@@ -644,10 +645,10 @@
     "quick": "Trên đường tròn bán kính \\(3\\), hàm bằng \\(3\\), độ dài bằng \\(6\\pi\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 36
+    "topic": "Tích phân đường"
   },
   {
+    "id": 37,
     "type": "line_integral_type1_arc",
     "question": "Tính \\(\\displaystyle\\int_C (x+y)\\,ds\\), với \\(C\\) là cung phần tư thứ nhất của đường tròn \\(x^2+y^2=1\\).",
     "matrix": null,
@@ -662,10 +663,10 @@
     "quick": "\\(\\int_0^{\\pi/2}(\\cos t+\\sin t)dt=2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 37
+    "topic": "Tích phân đường"
   },
   {
+    "id": 38,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C xy\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,2)\\).",
     "matrix": null,
@@ -680,10 +681,10 @@
     "quick": "Đặt \\(x=t,\\ y=2t\\), \\(ds=\\sqrt5dt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 38
+    "topic": "Tích phân đường"
   },
   {
+    "id": 39,
     "type": "line_integral_type1_segment",
     "question": "Tính \\(\\displaystyle\\int_C (x^2+y^2)\\,ds\\), với \\(C\\) là đoạn thẳng từ \\((0,0)\\) đến \\((1,2)\\).",
     "matrix": null,
@@ -698,10 +699,10 @@
     "quick": "\\(x^2+y^2=5t^2\\), \\(ds=\\sqrt5dt\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 2,
-    "topic": "Tích phân đường",
-    "id": 39
+    "topic": "Tích phân đường"
   },
   {
+    "id": 40,
     "type": "line_integral_type1_parabola",
     "question": "Tính \\(\\displaystyle\\int_C x\\,ds\\), với \\(C: y=x^2,\\ 0\\le x\\le2\\).",
     "matrix": null,
@@ -716,8 +717,7 @@
     "quick": "Đặt \\(u=1+4x^2\\).",
     "casio": "CASIO fx-580VNX: Tích phân đường loại 1 dùng \\(\\int_C f\\,ds=\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Sau khi tham số hóa, dùng phím tích phân để kiểm tra giá trị số.",
     "difficulty": 3,
-    "topic": "Tích phân đường",
-    "id": 40
+    "topic": "Tích phân đường"
   },
   {
     "id": 41,

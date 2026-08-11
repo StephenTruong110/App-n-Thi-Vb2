@@ -1456,5 +1456,95 @@
     "casio": "CASIO không cần thiết; vẽ parabol \\(x=y^2/2\\), cung tròn \\(x^2+y^2=3\\) và đường \\(y=1\\).",
     "difficulty": 3,
     "topic": "Tích phân kép"
+  },
+  {
+    "id": 82,
+    "type": "double_integral_polar_setup_official",
+    "question": "Cho \\(D=\\{(x,y):x^2+y^2\\le4\\}\\). Khi chuyển sang tọa độ cực \\(x=r\\cos\\varphi,y=r\\sin\\varphi\\), cận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le2\\)",
+      "\\(0\\le\\varphi\\le\\pi,\\ 0\\le r\\le2\\)",
+      "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le4\\)",
+      "\\(0\\le\\varphi\\le\\pi/2,\\ 0\\le r\\le2\\)"
+    ],
+    "correct": "\\(0\\le\\varphi\\le2\\pi,\\ 0\\le r\\le2\\)",
+    "solution": "Miền \\(D\\) là hình tròn tâm gốc bán kính 2. Vì vậy góc quét đủ một vòng \\(0\\le\\varphi\\le2\\pi\\), còn bán kính \\(0\\le r\\le2\\).",
+    "quick": "Hình tròn tâm O bán kính 2: góc đủ \\(2\\pi\\), bán kính từ 0 đến 2.",
+    "casio": "CASIO không cần thiết; xác định hình học của miền trước khi đổi biến.",
+    "difficulty": 1,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 83,
+    "type": "double_integral_setup_official",
+    "question": "Viết \\(I=\\iint_D f(x,y)\\,dxdy\\) dưới dạng tích phân lặp, với \\(D=\\{x^2+y^2\\le1,\\ y\\ge0\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(I=\\int_{-1}^{1}\\int_0^{\\sqrt{1-x^2}}f(x,y)\\,dy\\,dx\\)",
+      "\\(I=\\int_0^1\\int_{-\\sqrt{1-x^2}}^{\\sqrt{1-x^2}}f(x,y)\\,dy\\,dx\\)",
+      "\\(I=\\int_{-1}^{1}\\int_{-\\sqrt{1-x^2}}^0f(x,y)\\,dy\\,dx\\)",
+      "\\(I=\\int_0^1\\int_0^{1-x^2}f(x,y)\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(I=\\int_{-1}^{1}\\int_0^{\\sqrt{1-x^2}}f(x,y)\\,dy\\,dx\\)",
+    "solution": "Miền là nửa hình tròn phía trên bán kính 1. Với mỗi \\(x\\in[-1,1]\\), biến \\(y\\) chạy từ \\(0\\) đến \\(\\sqrt{1-x^2}\\).",
+    "quick": "Vẽ nửa đường tròn trên: \\(x\\) từ -1 đến 1, \\(y\\) từ 0 đến cung tròn.",
+    "casio": "CASIO không cần thiết; đây là bài xác định miền và cận.",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 84,
+    "type": "double_integral_compute_official",
+    "question": "Tính \\(I=\\iint_{[0,1]\\times[0,1]}\\dfrac{dxdy}{1+x+y}\\).",
+    "matrix": null,
+    "options": [
+      "\\(3\\ln3-4\\ln2\\)",
+      "\\(\\ln3-\\ln2\\)",
+      "\\(3\\ln3+4\\ln2\\)",
+      "\\(2\\ln2\\)"
+    ],
+    "correct": "\\(3\\ln3-4\\ln2\\)",
+    "solution": "Tích phân theo \\(y\\): \\(I=\\int_0^1[\\ln(1+x+y)]_{0}^{1}dx=\\int_0^1(\\ln(x+2)-\\ln(x+1))dx\\). Dùng nguyên hàm \\((x+a)\\ln(x+a)-(x+a)\\), rút gọn được \\(3\\ln3-4\\ln2\\).",
+    "quick": "Tích phân trong cho hiệu hai log, sau đó tính trên \\([0,1]\\).",
+    "casio": "CASIO: có thể nhập tích phân một biến \\(\\int_0^1(\\ln(x+2)-\\ln(x+1))dx\\) để kiểm tra giá trị số.",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 85,
+    "type": "double_integral_area_official",
+    "question": "Diện tích miền giới hạn bởi hai đường \\(y=x\\) và \\(y=x^2-2x\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac92\\)",
+      "\\(3\\)",
+      "\\(\\dfrac32\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(\\dfrac92\\)",
+    "solution": "Giao điểm thỏa \\(x=x^2-2x\\Rightarrow x(x-3)=0\\), nên \\(x=0,3\\). Trên \\([0,3]\\), đường thẳng \\(y=x\\) nằm trên. Diện tích \\(S=\\int_0^3[x-(x^2-2x)]dx=\\int_0^3(3x-x^2)dx=9/2\\).",
+    "quick": "Giao điểm 0 và 3; lấy trên trừ dưới.",
+    "casio": "CASIO: tính \\(\\int_0^3(3x-x^2)dx\\) được \\(4.5\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 86,
+    "type": "double_integral_area_official",
+    "question": "Diện tích miền giới hạn bởi \\(y=x^2\\) và \\(y=2x\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac43\\)",
+      "\\(\\dfrac23\\)",
+      "\\(2\\)",
+      "\\(\\dfrac83\\)"
+    ],
+    "correct": "\\(\\dfrac43\\)",
+    "solution": "Giao điểm: \\(x^2=2x\\Rightarrow x=0,2\\). Trên \\([0,2]\\), \\(2x\\) nằm trên \\(x^2\\). Do đó \\(S=\\int_0^2(2x-x^2)dx=[x^2-x^3/3]_0^2=4/3\\).",
+    "quick": "Giao 0,2; lấy \\(2x-x^2\\) rồi tích phân.",
+    "casio": "CASIO: tính \\(\\int_0^2(2x-x^2)dx\\) được \\(4/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
   }
 ]

@@ -1330,5 +1330,167 @@
     "casio": "CASIO không cần thiết; kiểm tra bằng cách lấy \\(F_x\\) và \\(F_y\\) rồi so sánh với hai hệ số của phương trình.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 75,
+    "type": "linear_ivp_official",
+    "question": "Giải bài toán Cauchy \\(y'+2y=4\\), \\(y(0)=3\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=2+e^{-2x}\\)",
+      "\\(y=4-e^{-2x}\\)",
+      "\\(y=2+3e^{-2x}\\)",
+      "\\(y=3e^{-2x}\\)"
+    ],
+    "correct": "\\(y=2+e^{-2x}\\)",
+    "solution": "Nghiệm tổng quát của phương trình tuyến tính là \\(y=2+Ce^{-2x}\\). Điều kiện \\(y(0)=3\\) cho \\(C=1\\).",
+    "quick": "Nghiệm cân bằng là 2, phần thuần nhất là \\(Ce^{-2x}\\).",
+    "casio": "CASIO: kiểm tra đáp án bằng đạo hàm số và thay vào phương trình tại vài giá trị \\(x\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 76,
+    "type": "homogeneous_ivp_official",
+    "question": "Giải bài toán Cauchy \\(y'=\\dfrac{x^2+y^2}{xy}\\), \\(y(1)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=x\\sqrt{2\\ln x+4}\\)",
+      "\\(y=\\sqrt{2\\ln x+4}\\)",
+      "\\(y=x(2\\ln x+4)\\)",
+      "\\(y=x\\sqrt{\\ln x+4}\\)"
+    ],
+    "correct": "\\(y=x\\sqrt{2\\ln x+4}\\)",
+    "solution": "Đặt \\(v=y/x\\), nên \\(y'=v+xv'\\). Phương trình trở thành \\(v+xv'=1/v+v\\), tức \\(v\\,dv=dx/x\\). Suy ra \\(v^2=2\\ln x+C\\). Với \\(y(1)=2\\), ta có \\(v(1)=2\\Rightarrow C=4\\). Gần \\(x=1\\), chọn nhánh dương: \\(y=x\\sqrt{2\\ln x+4}\\).",
+    "quick": "Đẳng cấp: đặt \\(v=y/x\\), sau đó tách biến.",
+    "casio": "CASIO không giải PTVP ký hiệu; có thể kiểm tra đáp án bằng đạo hàm số tại các điểm \\(x\\gt0\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 77,
+    "type": "exact_equation_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân toàn phần \\((2xy+1)dx+x^2dy=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^2y+x=C\\)",
+      "\\(x^2y=C\\)",
+      "\\(xy+x^2=C\\)",
+      "\\(2x^2y+x=C\\)"
+    ],
+    "correct": "\\(x^2y+x=C\\)",
+    "solution": "Đặt \\(M=2xy+1\\), \\(N=x^2\\). Ta có \\(M_y=2x=N_x\\), nên phương trình toàn phần. Tích phân \\(M\\) theo \\(x\\): \\(F=x^2y+x+g(y)\\). So với \\(F_y=x^2\\) suy ra \\(g'(y)=0\\). Vậy \\(x^2y+x=C\\).",
+    "quick": "Nhận ra ngay \\(d(x^2y+x)=0\\).",
+    "casio": "CASIO không cần thiết; kiểm tra bằng cách lấy vi phân của \\(x^2y+x\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 78,
+    "type": "application_mixing_official",
+    "question": "Một bể chứa 150 lít dung dịch đường nồng độ \\(0{,}4\\) kg/lít. Dung dịch nồng độ \\(0{,}8\\) kg/lít chảy vào với tốc độ 3 lít/phút và hỗn hợp chảy ra với tốc độ 5 lít/phút. Lượng đường sau 50 phút gần nhất là",
+    "matrix": null,
+    "options": [
+      "\\(36{,}15\\) kg",
+      "\\(28{,}80\\) kg",
+      "\\(42{,}30\\) kg",
+      "\\(35{,}40\\) kg"
+    ],
+    "correct": "\\(36{,}15\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng đường, thể tích \\(V(t)=150-2t\\). Khi đó \\(S'=2{,}4-5S/(150-2t)\\), \\(S(0)=60\\). Giải phương trình tuyến tính được \\(S(t)=0{,}8(150-2t)-60((150-2t)/150)^{5/2}\\). Tại \\(t=50\\): \\(S(50)\\approx36{,}15\\) kg.",
+    "quick": "Lập phương trình 'vào trừ ra', nhớ thể tích giảm \\(2\\) lít mỗi phút.",
+    "casio": "CASIO: sau khi có công thức, nhập \\(0.8\\cdot50-60(1/3)^{5/2}\\) để được xấp xỉ \\(36.15\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng phương trình vi phân cấp 1"
+  },
+  {
+    "id": 79,
+    "type": "application_mixing_official",
+    "question": "Một phòng kín thể tích \\(100\\,m^3\\) ban đầu có nồng độ CO là \\(0{,}05\\%\\). Không khí sạch vào và hỗn hợp ra cùng tốc độ \\(2\\,m^3\\)/phút. Sau 30 phút, lượng CO còn lại gần nhất là",
+    "matrix": null,
+    "options": [
+      "\\(0{,}03\\,m^3\\)",
+      "\\(0{,}05\\,m^3\\)",
+      "\\(0{,}01\\,m^3\\)",
+      "\\(0{,}04\\,m^3\\)"
+    ],
+    "correct": "\\(0{,}03\\,m^3\\)",
+    "solution": "Ban đầu lượng CO là \\(S(0)=100\\cdot0{,}0005=0{,}05\\,m^3\\). Vì khí vào sạch, \\(S'=-2S/100=-S/50\\). Do đó \\(S(t)=0{,}05e^{-t/50}\\). Tại 30 phút: \\(S(30)\\approx0{,}0274\\,m^3\\), làm tròn được \\(0{,}03\\,m^3\\).",
+    "quick": "Thể tích không đổi, chỉ có chất ô nhiễm đi ra: \\(S'=-S/50\\).",
+    "casio": "CASIO: nhập \\(0.05e^{-30/50}\\) được khoảng \\(0.02744\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng phương trình vi phân cấp 1"
+  },
+  {
+    "id": 80,
+    "type": "separable_ivp_official",
+    "question": "Giải bài toán Cauchy \\(y'=x/y\\), \\(y(0)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\sqrt{x^2+4}\\)",
+      "\\(y=x^2+4\\)",
+      "\\(y=\\sqrt{x^2+2}\\)",
+      "\\(y=x+2\\)"
+    ],
+    "correct": "\\(y=\\sqrt{x^2+4}\\)",
+    "solution": "Tách biến \\(y\\,dy=x\\,dx\\), suy ra \\(y^2=x^2+C\\). Điều kiện \\(y(0)=2\\) cho \\(C=4\\). Vì nghiệm qua điểm có \\(y\\gt0\\), chọn \\(y=\\sqrt{x^2+4}\\).",
+    "quick": "Tách biến rồi chọn nhánh dương theo điều kiện đầu.",
+    "casio": "CASIO: kiểm tra \\(y(0)=2\\) và đạo hàm của đáp án tại vài điểm.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 81,
+    "type": "exact_equation_official",
+    "question": "Tìm nghiệm tổng quát của phương trình vi phân toàn phần \\((2x+y)dx+(x+3y^2)dy=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(x^2+xy+y^3=C\\)",
+      "\\(2x^2+xy+y^3=C\\)",
+      "\\(x^2+3xy+y^3=C\\)",
+      "\\(x^2+xy+3y^3=C\\)"
+    ],
+    "correct": "\\(x^2+xy+y^3=C\\)",
+    "solution": "Với \\(M=2x+y\\), \\(N=x+3y^2\\), ta có \\(M_y=N_x=1\\). Tích phân \\(M\\) theo \\(x\\): \\(F=x^2+xy+g(y)\\). So với \\(F_y=x+g'(y)=x+3y^2\\) suy ra \\(g(y)=y^3\\).",
+    "quick": "Nhận ra \\(d(x^2+xy+y^3)=0\\).",
+    "casio": "CASIO không cần thiết; kiểm tra bằng đạo hàm riêng của hàm thế \\(F\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 82,
+    "type": "linear_first_order_official",
+    "question": "Tìm nghiệm tổng quát của \\(y'+\\dfrac1x y=x\\), với \\(x\\gt0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{x^2}{3}+\\dfrac{C}{x}\\)",
+      "\\(y=\\dfrac{x^3}{3}+C\\)",
+      "\\(y=x^2+\\dfrac{C}{x}\\)",
+      "\\(y=\\dfrac{x^2}{2}+Cx\\)"
+    ],
+    "correct": "\\(y=\\dfrac{x^2}{3}+\\dfrac{C}{x}\\)",
+    "solution": "Hệ số nhân là \\(\\mu=e^{\\int dx/x}=x\\). Nhân phương trình với \\(x\\): \\((xy)'=x^2\\). Tích phân: \\(xy=x^3/3+C\\), nên \\(y=x^2/3+C/x\\).",
+    "quick": "Nhân cả phương trình với \\(x\\) để thấy ngay \\((xy)'=x^2\\).",
+    "casio": "CASIO: có thể kiểm tra đạo hàm của từng đáp án tại một giá trị \\(C\\) cụ thể.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 83,
+    "type": "separable_ivp_official",
+    "question": "Giải \\(y'=2xy\\), \\(y(0)=3\\), rồi tính \\(y(1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(3e\\)",
+      "\\(e\\)",
+      "\\(3e^2\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(3e\\)",
+    "solution": "Tách biến \\(dy/y=2x\\,dx\\), suy ra \\(\\ln|y|=x^2+C\\), nên \\(y=Ce^{x^2}\\). Điều kiện \\(y(0)=3\\) cho \\(C=3\\). Vậy \\(y(1)=3e\\).",
+    "quick": "Tách biến: \\(y=Ce^{x^2}\\).",
+    "casio": "CASIO: nhập \\(3e\\) để tính giá trị số nếu cần.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
   }
 ]

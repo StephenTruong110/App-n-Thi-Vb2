@@ -1204,5 +1204,23 @@
     "casio": "CASIO: tính diện tích tứ giác bằng công thức shoelace rồi nhân \\(7\\).",
     "difficulty": 3,
     "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 68,
+    "type": "line_integral_type2_official",
+    "question": "Tính \\(I=\\int_C x\\,dx+y\\,dy\\), trong đó \\(C\\) là cung parabol \\(y=x^2\\) đi từ \\(A(0,0)\\) đến \\(B(1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac32\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Ta có \\(x\\,dx+y\\,dy=d((x^2+y^2)/2)\\). Do đó tích phân không phụ thuộc đường đi: \\(I=[(x^2+y^2)/2]_A^B=(1+1)/2=1\\).",
+    "quick": "Nhận vi phân toàn phần của \\((x^2+y^2)/2\\).",
+    "casio": "CASIO không cần tham số hóa; chỉ tính thế năng tại hai đầu mút.",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 2"
   }
 ]

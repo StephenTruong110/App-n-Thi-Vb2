@@ -1420,5 +1420,167 @@
     "casio": "CASIO fx-580VNX: Kiểm tra nhanh u_n hoặc tỉ số u_{n+1}/u_n tại n lớn như 1000. Với tổng đặc biệt, dùng công thức hình học/telescope/mũ; CASIO chỉ hỗ trợ kiểm tra số gần đúng.",
     "difficulty": 3,
     "topic": "Chuỗi số"
+  },
+  {
+    "id": 80,
+    "type": "series_sum_taylor_official",
+    "question": "Tính tổng \\(S=\\sum_{n=0}^{\\infty}\\dfrac{(-1)^n\\pi^{2n+1}}{(2n+1)!2^{2n+1}}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac32\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Nhận ra khai triển \\(\\sin x=\\sum_{n=0}^{\\infty}(-1)^n x^{2n+1}/(2n+1)!\\). Với \\(x=\\pi/2\\), chuỗi đã cho bằng \\(\\sin(\\pi/2)=1\\).",
+    "quick": "Nhận dạng ngay chuỗi Taylor của \\(\\sin(\\pi/2)\\).",
+    "casio": "CASIO: nhập \\(\\sin(\\pi/2)\\) ở chế độ RAD để kiểm tra được 1.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 81,
+    "type": "cauchy_root_official",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n}{2^n}\\left(1+\\dfrac1n\\right)^{n^2}\\). Theo tiêu chuẩn Cauchy, giới hạn \\(C=\\lim_{n\\to\\infty}\\sqrt[n]{u_n}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac e2\\), chuỗi phân kỳ",
+      "\\(\\dfrac1e\\), chuỗi hội tụ",
+      "\\(\\dfrac12\\), chuỗi hội tụ",
+      "\\(1\\), chưa kết luận"
+    ],
+    "correct": "\\(\\dfrac e2\\), chuỗi phân kỳ",
+    "solution": "Ta có \\(\\sqrt[n]{u_n}=n^{1/n}\\cdot\\dfrac12\\left(1+1/n\\right)^n\\to e/2\\). Vì \\(e/2\\gt1\\), chuỗi phân kỳ theo Cauchy.",
+    "quick": "\\(n^{1/n}\\to1\\), \\((1+1/n)^n\\to e\\), nên \\(C=e/2\\gt1\\).",
+    "casio": "CASIO: tính \\(n^{1/n}(1+1/n)^n/2\\) tại \\(n\\) lớn để thấy giá trị gần \\(e/2\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 82,
+    "type": "nth_term_test_official",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{n^2+2}{n^2+1}\\right)^{n^2}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Chuỗi phân kỳ vì \\(u_n\\to e\\ne0\\)",
+      "Chuỗi hội tụ vì \\(u_n\\to e\\)",
+      "Chuỗi hội tụ tuyệt đối",
+      "Chuỗi phân kỳ vì \\(u_n\\to+\\infty\\)"
+    ],
+    "correct": "Chuỗi phân kỳ vì \\(u_n\\to e\\ne0\\)",
+    "solution": "Viết \\(u_n=(1+1/(n^2+1))^{n^2}\\). Do \\(n^2/(n^2+1)\\to1\\), suy ra \\(u_n\\to e\\). Điều kiện cần để chuỗi hội tụ là \\(u_n\\to0\\), nên chuỗi phân kỳ.",
+    "quick": "Kiểm tra số hạng tổng quát trước: \\(u_n\\to e\\ne0\\) là đủ kết luận phân kỳ.",
+    "casio": "CASIO: thay \\(n=100,1000\\) để thấy \\(u_n\\) tiến gần \\(e\\), không tiến về 0.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 83,
+    "type": "series_sum_geometric_official",
+    "question": "Tính tổng \\(S=\\sum_{n=1}^{\\infty}\\dfrac{3^n+2^n}{5^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(2\\)",
+      "\\(\\dfrac76\\)",
+      "\\(\\dfrac56\\)"
+    ],
+    "correct": "\\(\\dfrac{13}{6}\\)",
+    "solution": "Tách thành hai chuỗi hình học: \\(\\sum(3/5)^n=3/2\\) và \\(\\sum(2/5)^n=2/3\\). Do đó \\(S=3/2+2/3=13/6\\).",
+    "quick": "Tách thành hai cấp số nhân rồi cộng tổng.",
+    "casio": "CASIO: dùng công thức \\(q/(1-q)\\) cho từng chuỗi bắt đầu từ \\(n=1\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 84,
+    "type": "dalembert_official",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{n^3}{2^n}\\). Theo tiêu chuẩn D'Alembert, \\(D=\\lim_{n\\to\\infty}u_{n+1}/u_n\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac12\\), chuỗi hội tụ",
+      "\\(2\\), chuỗi phân kỳ",
+      "\\(1\\), chưa kết luận",
+      "\\(0\\), chuỗi hội tụ"
+    ],
+    "correct": "\\(\\dfrac12\\), chuỗi hội tụ",
+    "solution": "\\(u_{n+1}/u_n=((n+1)^3/2^{n+1})(2^n/n^3)=\\frac12(1+1/n)^3\\to1/2\\). Vì \\(D\\lt1\\), chuỗi hội tụ.",
+    "quick": "Đa thức không thắng được \\(2^n\\): tỉ số tiến tới \\(1/2\\).",
+    "casio": "CASIO: tính \\(0.5(1+1/n)^3\\) với \\(n\\) lớn để kiểm tra.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 85,
+    "type": "cauchy_root_official",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\left(\\dfrac{n}{n+1}\\right)^{n^2}\\). Theo tiêu chuẩn Cauchy, giới hạn \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac1e\\), chuỗi hội tụ",
+      "\\(e\\), chuỗi phân kỳ",
+      "\\(1\\), chưa kết luận",
+      "\\(0\\), chuỗi hội tụ"
+    ],
+    "correct": "\\(\\dfrac1e\\), chuỗi hội tụ",
+    "solution": "\\(\\sqrt[n]{u_n}=(n/(n+1))^n=(1+1/n)^{-n}\\to e^{-1}\\). Vì \\(1/e\\lt1\\), chuỗi hội tụ.",
+    "quick": "Dạng chuẩn \\((1+1/n)^{-n}\\to1/e\\).",
+    "casio": "CASIO: tính \\((n/(n+1))^n\\) với \\(n\\) lớn, được gần \\(0.367879\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 86,
+    "type": "alternating_series_official",
+    "question": "Xét chuỗi đan dấu \\(\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{2n+1}{n^2+2}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Chuỗi hội tụ theo tiêu chuẩn Leibniz nhưng không hội tụ tuyệt đối",
+      "Chuỗi hội tụ tuyệt đối",
+      "Chuỗi phân kỳ vì số hạng không tiến về 0",
+      "Chuỗi phân kỳ theo Leibniz"
+    ],
+    "correct": "Chuỗi hội tụ theo tiêu chuẩn Leibniz nhưng không hội tụ tuyệt đối",
+    "solution": "Đặt \\(a_n=(2n+1)/(n^2+2)\\). Ta có \\(a_n\\to0\\) và từ một chỉ số đủ lớn, \\(a_n\\) giảm nên chuỗi đan dấu hội tụ theo Leibniz. Mặt khác \\(a_n\\sim2/n\\), nên chuỗi trị tuyệt đối phân kỳ. Vì vậy chuỗi bán hội tụ.",
+    "quick": "Leibniz hội tụ; trị tuyệt đối tương đương \\(2/n\\) nên phân kỳ.",
+    "casio": "CASIO có thể kiểm tra \\(a_n\\) giảm và tiến về 0 ở \\(n\\) lớn; kết luận tuyệt đối dùng so sánh với \\(1/n\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 87,
+    "type": "comparison_equivalent_official",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{\\sqrt n+1}{n^2+3}\\). Chuỗi có cùng tính hội tụ với chuỗi Riemann nào?",
+    "matrix": null,
+    "options": [
+      "\\(\\sum 1/n^{3/2}\\), nên hội tụ",
+      "\\(\\sum1/n^{1/2}\\), nên phân kỳ",
+      "\\(\\sum1/n\\), nên phân kỳ",
+      "\\(\\sum1/n^2\\), nên hội tụ"
+    ],
+    "correct": "\\(\\sum 1/n^{3/2}\\), nên hội tụ",
+    "solution": "Khi \\(n\\to\\infty\\), \\(\\dfrac{\\sqrt n+1}{n^2+3}\\sim\\dfrac{\\sqrt n}{n^2}=1/n^{3/2}\\). Vì chuỗi Riemann với \\(p=3/2\\gt1\\) hội tụ, chuỗi đã cho hội tụ.",
+    "quick": "Giữ bậc trội: \\(\\sqrt n/n^2=1/n^{3/2}\\).",
+    "casio": "CASIO chỉ dùng kiểm tra tỉ số \\(u_n/(1/n^{3/2})\\) tại \\(n\\) lớn, giá trị tiến gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 88,
+    "type": "dalembert_official",
+    "question": "Xét chuỗi \\(\\sum_{n=1}^{\\infty}\\dfrac{2^n}{n!}\\). Theo tiêu chuẩn D'Alembert, kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Chuỗi hội tụ vì \\(D=0\\lt1\\)",
+      "Chuỗi phân kỳ vì \\(D=2\\gt1\\)",
+      "Không kết luận được vì \\(D=1\\)",
+      "Chuỗi phân kỳ vì số hạng không tiến về 0"
+    ],
+    "correct": "Chuỗi hội tụ vì \\(D=0\\lt1\\)",
+    "solution": "\\(u_{n+1}/u_n=2/(n+1)\\to0\\). Vì \\(D=0\\lt1\\), chuỗi hội tụ.",
+    "quick": "Giai thừa ở mẫu làm tỉ số còn \\(2/(n+1)\\to0\\).",
+    "casio": "CASIO: thay \\(n\\) lớn vào \\(2/(n+1)\\) để thấy tỉ số tiến về 0.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
   }
 ]
