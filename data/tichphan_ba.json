@@ -1492,5 +1492,23 @@
     "casio": "CASIO: tính \\(8/6=4/3\\).",
     "difficulty": 2,
     "topic": "Tích phân ba"
+  },
+  {
+    "id": 84,
+    "type": "triple_integral_cylindrical_mass_official",
+    "question": "Một vật thể chiếm miền nằm phía trên paraboloid \\(z=x^2+y^2\\) và phía dưới mặt nón \\(z=2\\sqrt{x^2+y^2}\\). Mật độ tại điểm \\((x,y,z)\\) bằng \\(\\rho(x,y,z)=z\\). Trong tọa độ trụ, khối lượng của vật thể được biểu diễn bởi tích phân nào sau đây?",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{2r}zr\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{\\pi}\\int_0^2\\int_{r^2}^{2r}z\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{2r}z\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{2r}^{r^2}zr\\,dz\\,dr\\,d\\theta\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{2r}zr\\,dz\\,dr\\,d\\theta\\)",
+    "solution": "Trong tọa độ trụ, paraboloid là \\(z=r^2\\), mặt nón là \\(z=2r\\). Giao tuyến thỏa \\(r^2=2r\\), nên \\(0\\le r\\le2\\). Miền quay trọn quanh trục \\(Oz\\), do đó \\(0\\le\\theta\\le2\\pi\\). Vì \\(dV=r\\,dz\\,dr\\,d\\theta\\) và \\(\\rho=z\\), tích phân khối lượng có hạt nhân \\(zr\\).",
+    "quick": "Giao tuyến: \\(r^2=2r\\Rightarrow r=2\\). Tọa độ trụ luôn nhớ Jacobian \\(r\\), nên mật độ \\(z\\) trở thành \\(zr\\).",
+    "casio": "CASIO không cần thiết; câu hỏi kiểm tra cận tích phân và Jacobian của tọa độ trụ.",
+    "difficulty": 3,
+    "topic": "Tích phân ba – Tọa độ trụ"
   }
 ]

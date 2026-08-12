@@ -790,5 +790,131 @@
     "casio": "CASIO fx-580VNX: Với tích phân đường loại 1, tham số hóa đường cong \\(C\\), tính \\(ds=\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\), rồi đưa về tích phân một biến \\(\\int_a^b f(x(t),y(t))\\,ds\\). Với đường gấp khúc/biên đa giác, tách thành các cạnh.",
     "difficulty": 3,
     "topic": "Tích phân đường"
+  },
+  {
+    "id": 45,
+    "type": "line_integral_type1_3d_parametric",
+    "question": "Cho đường cong \\(C\\) có phương trình tham số \\(x=2\\cos t,\\ y=2\\sin t,\\ z=t\\), với \\(0\\le t\\le\\pi\\). Giá trị của tích phân đường loại I \\(\\int_C z\\,ds\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi^2\\sqrt2}{2}\\)",
+      "\\(\\pi^2\\sqrt5\\)",
+      "\\(\\dfrac{5\\pi^2}{2}\\)",
+      "\\(\\dfrac{\\pi^2\\sqrt5}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi^2\\sqrt5}{2}\\)",
+    "solution": "Ta có \\(\\mathbf r(t)=(2\\cos t,2\\sin t,t)\\), nên \\(\\mathbf r'(t)=(-2\\sin t,2\\cos t,1)\\) và \\(\\|\\mathbf r'(t)\\|=\\sqrt{4\\sin^2t+4\\cos^2t+1}=\\sqrt5\\). Vì \\(z=t\\), nên \\(\\int_C z\\,ds=\\int_0^\\pi t\\sqrt5\\,dt=\\dfrac{\\pi^2\\sqrt5}{2}\\).",
+    "quick": "Tính tốc độ \\(\\|\\mathbf r'(t)\\|=\\sqrt5\\), rồi dùng \\(z=t\\).",
+    "casio": "CASIO: sau khi có \\(ds=\\sqrt5\\,dt\\), tính \\(\\sqrt5\\int_0^\\pi t\\,dt\\), được \\(\\pi^2\\sqrt5/2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 1"
+  },
+  {
+    "id": 46,
+    "type": "arc_length_graph_application",
+    "question": "Tính độ dài cung của đồ thị \\(y=\\dfrac{2}{3}x^{3/2}\\) trên đoạn \\(0\\le x\\le3\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{14}{3}\\)",
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(\\dfrac{14}{3}\\)",
+    "solution": "Với \\(y=\\dfrac{2}{3}x^{3/2}\\), ta có \\(y'=\\sqrt{x}\\). Độ dài cung là \\(L=\\int_0^3\\sqrt{1+(y')^2}\\,dx=\\int_0^3\\sqrt{1+x}\\,dx=\\dfrac{2}{3}\\left[(1+x)^{3/2}\\right]_0^3=\\dfrac{14}{3}\\).",
+    "quick": "Dùng \\(L=\\int_a^b\\sqrt{1+(y')^2}\\,dx\\); ở đây \\(y'=\\sqrt{x}\\).",
+    "casio": "CASIO: nhập \\(\\int_0^3\\sqrt{1+x}\\,dx\\), được xấp xỉ \\(4{,}6667\\), tức \\(14/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 47,
+    "type": "arc_length_parametric_application",
+    "question": "Cho đường cong \\(C\\) có phương trình tham số \\(x=t-\\dfrac{t^3}{3},\\ y=t^2\\), với \\(0\\le t\\le1\\). Độ dài của \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "Ta có \\(x'=1-t^2\\), \\(y'=2t\\). Do đó \\((x')^2+(y')^2=(1-t^2)^2+4t^2=(1+t^2)^2\\). Vì \\(0\\le t\\le1\\), \\(ds=(1+t^2)dt\\). Suy ra \\(L=\\int_0^1(1+t^2)dt=\\dfrac{4}{3}\\).",
+    "quick": "Nhận ra \\((1-t^2)^2+4t^2=(1+t^2)^2\\).",
+    "casio": "CASIO: sau khi rút gọn tốc độ thành \\(1+t^2\\), tính \\(\\int_0^1(1+t^2)dt\\), được \\(4/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 48,
+    "type": "arc_length_parametric_application",
+    "question": "Cho đường cong \\(C\\): \\(x=t^2,\\ y=\\dfrac{2}{3}t^3\\), \\(0\\le t\\le1\\). Độ dài của \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{3}(2\\sqrt2-1)\\)",
+      "\\(\\dfrac{2}{3}(\\sqrt2-1)\\)",
+      "\\(\\dfrac{4\\sqrt2}{3}\\)",
+      "\\(2\\sqrt2-1\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3}(2\\sqrt2-1)\\)",
+    "solution": "Ta có \\(x'=2t\\), \\(y'=2t^2\\). Với \\(t\\ge0\\), \\(ds=\\sqrt{4t^2+4t^4}\\,dt=2t\\sqrt{1+t^2}\\,dt\\). Vì vậy \\(L=\\int_0^1 2t\\sqrt{1+t^2}\\,dt=\\dfrac{2}{3}\\left[(1+t^2)^{3/2}\\right]_0^1=\\dfrac{2}{3}(2\\sqrt2-1)\\).",
+    "quick": "Đặt \\(u=1+t^2\\) sau khi có \\(ds=2t\\sqrt{1+t^2}\\,dt\\).",
+    "casio": "CASIO: tính \\(\\int_0^1 2t\\sqrt{1+t^2}\\,dt\\) để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 49,
+    "type": "arc_length_cycloid_application",
+    "question": "Cho đường cong \\(C\\): \\(x=t-\\sin t,\\ y=1-\\cos t\\), \\(0\\le t\\le\\pi\\). Độ dài của \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(2\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Ta có \\(x'=1-\\cos t\\), \\(y'=\\sin t\\). Do đó \\((x')^2+(y')^2=(1-\\cos t)^2+\\sin^2t=2-2\\cos t=4\\sin^2(t/2)\\). Trên \\([0,\\pi]\\), \\(\\sin(t/2)\\ge0\\), nên \\(ds=2\\sin(t/2)dt\\). Vậy \\(L=\\int_0^\\pi2\\sin(t/2)dt=4\\).",
+    "quick": "Dùng \\(2-2\\cos t=4\\sin^2(t/2)\\).",
+    "casio": "CASIO: tính \\(\\int_0^\\pi2\\sin(t/2)dt\\) ở chế độ RAD, được 4.",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 50,
+    "type": "arc_length_astroid_application",
+    "question": "Cho cung đường cong \\(C\\): \\(x=\\cos^3t,\\ y=\\sin^3t\\), \\(0\\le t\\le\\dfrac{\\pi}{2}\\). Độ dài của cung \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{3\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "Ta có \\(x'=-3\\cos^2t\\sin t\\), \\(y'=3\\sin^2t\\cos t\\). Suy ra \\((x')^2+(y')^2=9\\sin^2t\\cos^2t(\\cos^2t+\\sin^2t)=9\\sin^2t\\cos^2t\\). Trên \\([0,\\pi/2]\\), \\(ds=3\\sin t\\cos t\\,dt\\). Vậy \\(L=3\\int_0^{\\pi/2}\\sin t\\cos t\\,dt=\\dfrac{3}{2}\\).",
+    "quick": "Tách \\(9\\sin^2t\\cos^2t(\\sin^2t+\\cos^2t)\\).",
+    "casio": "CASIO: ở chế độ RAD, tính \\(3\\int_0^{\\pi/2}\\sin t\\cos t\\,dt\\), được \\(1{,}5\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 51,
+    "type": "arc_length_x_as_function_of_y",
+    "question": "Cho đường cong \\(C\\) có phương trình \\(x=\\dfrac{1}{3}(y^2+2)^{3/2}\\), với \\(0\\le y\\le1\\). Độ dài của cung \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(\\sqrt2\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "Với \\(x=x(y)\\), độ dài cung là \\(L=\\int_0^1\\sqrt{1+(dx/dy)^2}\\,dy\\). Ta có \\(\\dfrac{dx}{dy}=y\\sqrt{y^2+2}\\). Vì vậy \\(1+(dx/dy)^2=1+y^2(y^2+2)=(y^2+1)^2\\). Trên \\([0,1]\\), suy ra \\(L=\\int_0^1(y^2+1)\\,dy=\\dfrac{4}{3}\\).",
+    "quick": "Theo \\(y\\): \\(L=\\int\\sqrt{1+(dx/dy)^2}\\,dy\\). Nhận ra \\(1+y^2(y^2+2)=(y^2+1)^2\\).",
+    "casio": "CASIO: sau khi rút gọn căn thành \\(y^2+1\\), tính \\(\\int_0^1(y^2+1)dy\\), được \\(4/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
   }
 ]

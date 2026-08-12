@@ -1582,5 +1582,41 @@
     "casio": "CASIO: thay \\(n\\) lớn vào \\(2/(n+1)\\) để thấy tỉ số tiến về 0.",
     "difficulty": 2,
     "topic": "Chuỗi số"
+  },
+  {
+    "id": 89,
+    "type": "geometric_series_application",
+    "question": "Chi phí bảo trì trong năm đầu là 18 triệu đồng. Từ năm thứ hai, chi phí mỗi năm bằng 90% chi phí của năm trước. Tổng chi phí bảo trì trong dài hạn là",
+    "matrix": null,
+    "options": [
+      "90 triệu đồng",
+      "120 triệu đồng",
+      "162 triệu đồng",
+      "180 triệu đồng"
+    ],
+    "correct": "180 triệu đồng",
+    "solution": "Chi phí qua các năm tạo thành cấp số nhân vô hạn với số hạng đầu \\(a_1=18\\) và công bội \\(q=0{,}9\\). Vì \\(|q|\\lt1\\), tổng dài hạn là \\(S=\\dfrac{18}{1-0{,}9}=180\\) triệu đồng.",
+    "quick": "Cấp số nhân vô hạn: \\(S=\\dfrac{a_1}{1-q}=\\dfrac{18}{0{,}1}=180\\).",
+    "casio": "CASIO: nhập \\(18\\div(1-0{,}9)\\), được 180.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Ứng dụng cấp số nhân"
+  },
+  {
+    "id": 90,
+    "type": "arithmetico_geometric_series_application",
+    "question": "Chi phí khắc phục sự cố trong năm thứ \\(n\\) được dự báo là \\(5n(0{,}8)^{n-1}\\) triệu đồng. Tổng chi phí khắc phục trong dài hạn là",
+    "matrix": null,
+    "options": [
+      "100 triệu đồng",
+      "125 triệu đồng",
+      "150 triệu đồng",
+      "175 triệu đồng"
+    ],
+    "correct": "125 triệu đồng",
+    "solution": "Ta cần tính \\(S=5\\sum_{n=1}^{\\infty}n(0{,}8)^{n-1}\\). Với \\(|r|\\lt1\\), có \\(\\sum_{n=1}^{\\infty}nr^{n-1}=\\dfrac{1}{(1-r)^2}\\). Do đó \\(S=\\dfrac{5}{(1-0{,}8)^2}=\\dfrac{5}{0{,}04}=125\\) triệu đồng.",
+    "quick": "Nhớ \\(\\sum nr^{n-1}=1/(1-r)^2\\). Thay \\(r=0{,}8\\): \\(S=5/0{,}2^2=125\\).",
+    "casio": "CASIO: sau khi nhận dạng công thức, nhập \\(5\\div(1-0{,}8)^2\\), được 125.",
+    "difficulty": 3,
+    "topic": "Chuỗi số – Ứng dụng chuỗi lũy thừa hình học"
   }
 ]

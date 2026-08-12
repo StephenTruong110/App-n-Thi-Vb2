@@ -1492,5 +1492,77 @@
     "casio": "CASIO: nhập \\(3e\\) để tính giá trị số nếu cần.",
     "difficulty": 2,
     "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 84,
+    "type": "application_mixing_model",
+    "question": "Một bể chứa \\(300\\) lít dung dịch có \\(6\\) kg muối. Dung dịch muối nồng độ \\(0{,}03\\) kg/lít chảy vào với tốc độ \\(4\\) lít/phút và hỗn hợp chảy ra cùng tốc độ. Nếu \\(S(t)\\) là lượng muối trong bể, phương trình vi phân đúng là",
+    "matrix": null,
+    "options": [
+      "\\(S'=0{,}12-\\dfrac{S}{75}\\)",
+      "\\(S'=0{,}03-\\dfrac{S}{75}\\)",
+      "\\(S'=0{,}12-\\dfrac{S}{300}\\)",
+      "\\(S'=4-\\dfrac{S}{75}\\)"
+    ],
+    "correct": "\\(S'=0{,}12-\\dfrac{S}{75}\\)",
+    "solution": "Tốc độ muối vào là \\(4\\cdot0{,}03=0{,}12\\) kg/phút. Thể tích luôn bằng \\(300\\) lít nên nồng độ trong bể là \\(S/300\\), tốc độ muối ra là \\(4S/300=S/75\\). Do đó \\[S'=0{,}12-\\frac{S}{75},\\qquad S(0)=6.\\]",
+    "quick": "Vào = lưu lượng nhân nồng độ \\(=0{,}12\\); ra = \\(4S/300=S/75\\).",
+    "casio": "CASIO không cần thiết ở bước lập mô hình; kiểm tra riêng tốc độ vào \\(4\\times0{,}03=0{,}12\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 85,
+    "type": "application_mixing_decay",
+    "question": "Một bể \\(200\\) lít chứa \\(10\\) kg muối. Nước tinh khiết chảy vào và hỗn hợp chảy ra cùng tốc độ \\(5\\) lít/phút. Sau \\(20\\) phút, lượng muối trong bể xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(6{,}07\\) kg",
+      "\\(7{,}79\\) kg",
+      "\\(3{,}68\\) kg",
+      "\\(8{,}82\\) kg"
+    ],
+    "correct": "\\(6{,}07\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng muối. Không có muối vào, còn tốc độ muối ra là \\(5S/200=S/40\\), nên \\(S'=-S/40\\), \\(S(0)=10\\). Suy ra \\(S(t)=10e^{-t/40}\\). Do đó \\(S(20)=10e^{-1/2}\\approx6{,}07\\) kg.",
+    "quick": "Nước tinh khiết vào nên \\(S(t)=S_0e^{-qt/V}=10e^{-t/40}\\).",
+    "casio": "CASIO: nhập \\(10\\times e^{-20/40}\\) để được xấp xỉ \\(6{,}07\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 86,
+    "type": "application_newton_constant",
+    "question": "Một vật ở \\(100^\\circ C\\) được đặt trong phòng \\(20^\\circ C\\). Sau \\(10\\) phút vật còn \\(60^\\circ C\\). Với mô hình \\(T'=-k(T-20)\\), \\(k\\) dương, giá trị của \\(k\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\ln2}{10}\\)",
+      "\\(\\dfrac{\\ln2}{20}\\)",
+      "\\(\\dfrac{\\ln4}{10}\\)",
+      "\\(\\dfrac{1}{10}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\ln2}{10}\\)",
+    "solution": "Nghiệm có dạng \\(T-20=80e^{-kt}\\). Tại \\(t=10\\): \\(60-20=80e^{-10k}\\), nên \\(e^{-10k}=1/2\\). Suy ra \\(10k=\\ln2\\), tức \\(k=\\dfrac{\\ln2}{10}\\).",
+    "quick": "Độ chênh nhiệt giảm từ \\(80\\) xuống \\(40\\) sau 10 phút, nên hệ số suy giảm là \\(1/2\\).",
+    "casio": "CASIO: nhập \\(\\ln2/10\\) nếu cần giá trị thập phân.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 87,
+    "type": "application_newton_time",
+    "question": "Một cốc cà phê ở \\(90^\\circ C\\) đặt trong phòng \\(20^\\circ C\\). Sau \\(10\\) phút cà phê còn \\(55^\\circ C\\). Theo định luật làm lạnh Newton, sau khoảng bao lâu kể từ lúc bắt đầu thì cà phê còn \\(30^\\circ C\\)?",
+    "matrix": null,
+    "options": [
+      "\\(28{,}1\\) phút",
+      "\\(20\\) phút",
+      "\\(35\\) phút",
+      "\\(40{,}0\\) phút"
+    ],
+    "correct": "\\(28{,}1\\) phút",
+    "solution": "Ta có \\(T-20=70e^{-kt}\\). Sau 10 phút: \\(35=70e^{-10k}\\), nên \\(e^{-10k}=1/2\\). Khi \\(T=30\\), ta cần \\(10=70(1/2)^{t/10}\\), hay \\((1/2)^{t/10}=1/7\\). Do đó \\(t=10\\log_2 7=10\\dfrac{\\ln7}{\\ln2}\\approx28{,}1\\) phút.",
+    "quick": "Mỗi 10 phút độ chênh với môi trường giảm một nửa; giải \\(70(1/2)^{t/10}=10\\).",
+    "casio": "CASIO: nhập \\(10\\ln7/\\ln2\\), được khoảng \\(28{,}1\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
   }
 ]

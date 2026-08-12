@@ -1546,5 +1546,59 @@
     "casio": "CASIO: tính \\(\\int_0^2(2x-x^2)dx\\) được \\(4/3\\).",
     "difficulty": 2,
     "topic": "Tích phân kép"
+  },
+  {
+    "id": 87,
+    "type": "double_integral_polar_setup_official",
+    "question": "Cho miền \\(D=\\{(x,y):1\\le x^2+y^2\\le4,\\ y\\ge |x|\\}\\). Trong tọa độ cực, tích phân \\(\\iint_D(x^2+y^2)\\,dA\\) được viết thành",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_{-\\pi/4}^{\\pi/4}\\int_1^2 r^3\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_{\\pi/4}^{3\\pi/4}\\int_1^2 r^3\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_{\\pi/4}^{3\\pi/4}\\int_1^2 r^2\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^\\pi\\int_0^2 r^3\\,dr\\,d\\theta\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_{\\pi/4}^{3\\pi/4}\\int_1^2 r^3\\,dr\\,d\\theta\\)",
+    "solution": "Trong tọa độ cực, \\(x^2+y^2=r^2\\) và \\(dA=r\\,dr\\,d\\theta\\), nên tích phân có hạt nhân \\(r^3\\). Điều kiện \\(1\\le x^2+y^2\\le4\\) cho \\(1\\le r\\le2\\). Điều kiện \\(y\\ge|x|\\) là miền góc phía trên giữa hai tia \\(y=x\\) và \\(y=-x\\), nên \\(\\pi/4\\le\\theta\\le3\\pi/4\\).",
+    "quick": "Nhớ Jacobian cực: \\(dA=r\\,dr\\,d\\theta\\). Miền \\(y\\ge|x|\\) cho \\(\\theta\\in[\\pi/4,3\\pi/4]\\).",
+    "casio": "CASIO không cần thiết; câu hỏi chủ yếu kiểm tra đổi miền và Jacobian trong tọa độ cực.",
+    "difficulty": 3,
+    "topic": "Tích phân kép – Tọa độ cực"
+  },
+  {
+    "id": 88,
+    "type": "double_integral_lamina_mass_official",
+    "question": "Một bản mỏng chiếm miền hình chữ nhật \\(D=\\{(x,y):0\\le x\\le2,\\ 0\\le y\\le1\\}\\) và có mật độ \\(\\rho(x,y)=1+x+2y\\). Khối lượng của bản mỏng bằng",
+    "matrix": null,
+    "options": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "correct": "6",
+    "solution": "Khối lượng là \\(M=\\iint_D\\rho(x,y)\\,dA\\). Do đó \\(M=\\int_0^2\\int_0^1(1+x+2y)\\,dy\\,dx=\\int_0^2(x+2)\\,dx=6\\).",
+    "quick": "Khối lượng bản mỏng: \\(M=\\iint_D\\rho\\,dA\\). Tích phân trên hình chữ nhật cho ngay \\(6\\).",
+    "casio": "CASIO: tính tích phân trong theo \\(y\\) trước được \\(x+2\\), rồi nhập \\(\\int_0^2(x+2)\\,dx\\) để kiểm tra, được 6.",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Khối lượng bản mỏng"
+  },
+  {
+    "id": 89,
+    "type": "double_integral_volume_triangular_base_official",
+    "question": "Một vật thể nằm phía trên miền tam giác \\(D=\\{(x,y):x\\ge0,\\ y\\ge0,\\ x+2y\\le4\\}\\) và phía dưới mặt phẳng \\(z=6-x-y\\). Thể tích của vật thể bằng",
+    "matrix": null,
+    "options": [
+      "16",
+      "14",
+      "18",
+      "20"
+    ],
+    "correct": "16",
+    "solution": "Trên miền \\(D\\), ta có \\(0\\le x\\le4\\) và \\(0\\le y\\le(4-x)/2\\). Vì đáy nằm trên mặt phẳng \\(z=0\\), thể tích là \\(V=\\iint_D(6-x-y)\\,dA=\\int_0^4\\int_0^{(4-x)/2}(6-x-y)\\,dy\\,dx=16\\).",
+    "quick": "Viết miền tam giác thành \\(0\\le x\\le4\\), \\(0\\le y\\le(4-x)/2\\), rồi tích phân chiều cao \\(6-x-y\\).",
+    "casio": "CASIO: sau khi tính tích phân trong theo \\(y\\), đưa về tích phân một biến theo \\(x\\) trên đoạn \\([0,4]\\) để kiểm tra kết quả 16.",
+    "difficulty": 3,
+    "topic": "Tích phân kép – Thể tích"
   }
 ]

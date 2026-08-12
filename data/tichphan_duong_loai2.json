@@ -1222,5 +1222,41 @@
     "casio": "CASIO không cần tham số hóa; chỉ tính thế năng tại hai đầu mút.",
     "difficulty": 2,
     "topic": "Tích phân đường loại 2"
+  },
+  {
+    "id": 69,
+    "type": "line_integral_type2_conservative_work",
+    "question": "Một chất điểm chuyển động theo đoạn thẳng từ \\(O(0,0)\\) đến \\(A(1,2)\\) dưới tác dụng của trường lực \\(\\mathbf F(x,y)=(2x+y,\\ x+2y)\\). Công của lực bằng",
+    "matrix": null,
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": "7",
+    "solution": "Đặt \\(P=2x+y\\), \\(Q=x+2y\\). Ta có \\(P_y=1=Q_x\\), nên trường lực là trường thế. Một thế hàm là \\(U=x^2+xy+y^2\\). Do đó công bằng \\(U(1,2)-U(0,0)=1+2+4=7\\).",
+    "quick": "Nhận ra trường thế với \\(U=x^2+xy+y^2\\); chỉ cần lấy \\(U(A)-U(O)\\).",
+    "casio": "CASIO không cần thiết; thay \\((1,2)\\) vào \\(x^2+xy+y^2\\) được 7.",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 2 – Công của trường lực"
+  },
+  {
+    "id": 70,
+    "type": "green_theorem_annulus_work",
+    "question": "Một chất điểm chuyển động một vòng theo biên \\(C\\), định hướng dương, của miền vành khăn \\(D=\\{(x,y):1\\le x^2+y^2\\le4\\}\\) dưới tác dụng của trường lực \\(\\mathbf F(x,y)=(-y(1+x^2),\\ x(1+y^2))\\). Công của lực bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{27\\pi}{2}\\)",
+      "\\(9\\pi\\)",
+      "\\(12\\pi\\)",
+      "\\(15\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{27\\pi}{2}\\)",
+    "solution": "Đặt \\(P=-y(1+x^2)\\), \\(Q=x(1+y^2)\\). Khi đó \\(Q_x=1+y^2\\), \\(P_y=-(1+x^2)\\), nên \\(Q_x-P_y=2+x^2+y^2=2+r^2\\). Theo định lý Green, với biên định hướng dương, \\(W=\\iint_D(2+r^2)\\,dA=\\int_0^{2\\pi}\\int_1^2(2+r^2)r\\,dr\\,d\\theta=\\dfrac{27\\pi}{2}\\).",
+    "quick": "Green trên vành khăn: \\(Q_x-P_y=2+r^2\\), rồi tích phân với \\(1\\le r\\le2\\).",
+    "casio": "CASIO: tính \\(2\\pi\\int_1^2(2+r^2)r\\,dr\\), được \\(27\\pi/2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 2 – Định lý Green"
   }
 ]
