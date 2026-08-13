@@ -1150,5 +1150,59 @@
     "casio": "Đặt RAD; nhập \\(e^{-2X}\\cos(3X)\\), CALC tại \\(X=\\pi/3\\) để kiểm tra giá trị âm tương ứng.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 65,
+    "type": "homogeneous_ivp_amplitude_application",
+    "question": "Một con lắc lò xo dao động tự do theo phương trình vi phân \\(y''+16y=0\\). Nếu \\(y(0)=0\\) và \\(y'(0)=12\\), biên độ dao động của con lắc bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(12\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2+16=0\\), có nghiệm \\(r=\\pm4i\\). Do đó \\(y=C_1\\cos4x+C_2\\sin4x\\). Từ \\(y(0)=0\\) suy ra \\(C_1=0\\). Ta có \\(y'=-4C_1\\sin4x+4C_2\\cos4x\\), nên \\(y'(0)=4C_2=12\\Rightarrow C_2=3\\). Vậy \\(y=3\\sin4x\\), nên biên độ dao động là \\(A=3\\).",
+    "quick": "Giải được \\(y=C_1\\cos4x+C_2\\sin4x\\). Điều kiện đầu cho \\(C_1=0,C_2=3\\), nên \\(A=3\\).",
+    "casio": "CASIO không cần thiết; giải phương trình đặc trưng và hệ điều kiện đầu. Sau khi có \\(C_1=0,C_2=3\\), tính \\(A=\\sqrt{C_1^2+C_2^2}=3\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dao động điều hòa"
+  },
+  {
+    "id": 66,
+    "type": "homogeneous_ivp_amplitude_application",
+    "question": "Một vật dao động tự do theo phương trình vi phân \\(y''+16y=0\\). Biết vị trí ban đầu \\(y(0)=3\\) và vận tốc ban đầu \\(y'(0)=16\\). Biên độ dao động của vật bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(5\\)",
+      "\\(7\\)",
+      "\\(\\sqrt{17}\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Phương trình đặc trưng \\(r^2+16=0\\) cho nghiệm \\(r=\\pm4i\\), nên \\(y=C_1\\cos4x+C_2\\sin4x\\). Từ \\(y(0)=3\\) có \\(C_1=3\\). Mặt khác \\(y'(0)=4C_2=16\\), nên \\(C_2=4\\). Do đó \\(y=3\\cos4x+4\\sin4x\\). Viết dưới dạng \\(y=A\\cos(4x-\\varphi)\\) thì \\(A=\\sqrt{C_1^2+C_2^2}=\\sqrt{3^2+4^2}=5\\).",
+    "quick": "Tìm được \\(C_1=3,C_2=4\\). Biên độ \\(A=\\sqrt{3^2+4^2}=5\\).",
+    "casio": "CASIO: sau khi tìm \\(C_1=3,C_2=4\\), nhập \\(\\sqrt{3^2+4^2}\\), được 5.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dao động điều hòa"
+  },
+  {
+    "id": 67,
+    "type": "homogeneous_ivp_amplitude_application",
+    "question": "Một con lắc dao động tự do theo phương trình vi phân \\(y''+25y=0\\). Biết \\(y(0)=-5\\) và \\(y'(0)=60\\). Biên độ dao động của con lắc bằng",
+    "matrix": null,
+    "options": [
+      "\\(7\\)",
+      "\\(12\\)",
+      "\\(13\\)",
+      "\\(17\\)"
+    ],
+    "correct": "\\(13\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2+25=0\\), có nghiệm \\(r=\\pm5i\\). Vì vậy \\(y=C_1\\cos5x+C_2\\sin5x\\). Từ \\(y(0)=-5\\) suy ra \\(C_1=-5\\). Ta có \\(y'=-5C_1\\sin5x+5C_2\\cos5x\\), nên \\(y'(0)=5C_2=60\\Rightarrow C_2=12\\). Vậy \\(y=-5\\cos5x+12\\sin5x\\), và biên độ là \\(A=\\sqrt{(-5)^2+12^2}=13\\).",
+    "quick": "Điều kiện đầu cho \\(C_1=-5,C_2=12\\). Do đó \\(A=\\sqrt{25+144}=13\\).",
+    "casio": "CASIO: sau khi tìm \\(C_1=-5,C_2=12\\), nhập \\(\\sqrt{(-5)^2+12^2}\\), được 13.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dao động điều hòa"
   }
 ]

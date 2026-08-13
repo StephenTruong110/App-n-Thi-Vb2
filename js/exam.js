@@ -15,34 +15,37 @@
 /* ── CONFIG ── */
 const EXAM_DIST = [
 
-/* I. ĐẠI SỐ TUYẾN TÍNH: 16 — 3 / 5 / 8 */
+  /* I. ĐẠI SỐ TUYẾN TÍNH: 16 — 3 / 5 / 8 */
 
-{ file: 'matran_co_ban',         n: 3, diff: { 1: 1, 2: 1, 3: 1 } },
-{ file: 'dinh_thuc',             n: 5, diff: { 1: 1, 2: 1, 3: 3 } },
-{ file: 'he_pt_tuyen_tinh',      n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-{ file: 'gia_tri_rieng',         n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
-{ file: 'khong_gian_vector_ud',  n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
+  { file: 'matran_co_ban',        n: 3, diff: { 1: 1, 2: 1, 3: 1 } },
+  { file: 'dinh_thuc',            n: 5, diff: { 1: 1, 2: 1, 3: 3 } },
+  { file: 'he_pt_tuyen_tinh',     n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'gia_tri_rieng',        n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
+  { file: 'khong_gian_vector_ud', n: 5, diff: { 1: 1, 2: 2, 3: 2 } },
 
-/* II. GIẢI TÍCH: 26 — 5 / 8 / 13 */
+  /* II. GIẢI TÍCH: 26 — 5 / 8 / 13 */
 
-{ file: 'gioi_han',                    n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
-{ file: 'lientuc_giandoan_khavi',      n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-{ file: 'dao_ham',                     n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
+  { file: 'gioi_han',                  n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+  { file: 'lientuc_giandoan_khavi',    n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'dao_ham',                   n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
 
-{ file: 'daohamrieng_viphan_cuctri',   n: 7, diff: { 1: 1, 2: 2, 3: 4 } },
+  { file: 'daohamrieng_viphan_cuctri', n: 7, diff: { 1: 2, 2: 1, 3: 4 } },
 
-{ file: 'chuoi_so',                    n: 4, diff: { 1: 1, 2: 1, 3: 2 } },
-{ file: 'chuoi_luy_thua',              n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-{ file: 'nguyen_ham_tich_phan_1bien',  n: 1, diff: { 1: 1, 2: 0, 3: 0 } },
-{ file: 'tichphan_kep',                n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
-{ file: 'tichphan_ba',                 n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
-{ file: 'tichphan_duong_loai1',        n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
-{ file: 'tichphan_duong_loai2',        n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
+  { file: 'chuoi_so',                  n: 4, diff: { 1: 1, 2: 1, 3: 2 } },
+  { file: 'chuoi_luy_thua',            n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
 
-/* III. PTVP: 8 — 2 / 2 / 4 */
+  // Đổi sang D2 để các bài ứng dụng tích phân/công bơm nước có thể xuất hiện
+  { file: 'nguyen_ham_tich_phan_1bien', n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
 
-{ file: 'pt_viphan_cap1', n: 6, diff: { 1: 1, 2: 2, 3: 3 } },
-{ file: 'pt_viphan_cap2', n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
+  { file: 'tichphan_kep',              n: 2, diff: { 1: 0, 2: 1, 3: 1 } },
+  { file: 'tichphan_ba',               n: 3, diff: { 1: 0, 2: 1, 3: 2 } },
+  { file: 'tichphan_duong_loai1',      n: 1, diff: { 1: 0, 2: 1, 3: 0 } },
+  { file: 'tichphan_duong_loai2',      n: 1, diff: { 1: 0, 2: 0, 3: 1 } },
+
+  /* III. PTVP: 8 — 2 / 2 / 4 */
+
+  { file: 'pt_viphan_cap1', n: 6, diff: { 1: 1, 2: 2, 3: 3 } },
+  { file: 'pt_viphan_cap2', n: 2, diff: { 1: 1, 2: 0, 3: 1 } },
 
 ];
 

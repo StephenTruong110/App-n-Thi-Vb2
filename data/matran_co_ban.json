@@ -988,5 +988,185 @@
     "casio": "CASIO: Matrix → nhập \\(A\\), \\(X_0\\) → tính \\(AX_0\\), rồi cộng các phần tử.",
     "difficulty": 3,
     "topic": "Ứng dụng ma trận"
+  },
+  {
+    "id": 56,
+    "type": "application_material_requirement",
+    "question": "Một xí nghiệp sản xuất 3 sản phẩm với ma trận định mức nguyên liệu \\(A=\\begin{pmatrix}2&1&3\\\\1&2&2\\\\3&1&1\\end{pmatrix}\\). Nếu kế hoạch sản xuất là \\(X=(10;5;8)^T\\), lượng nguyên liệu loại 2 cần dùng bằng",
+    "matrix": null,
+    "options": [
+      "36",
+      "43",
+      "49",
+      "128"
+    ],
+    "correct": "36",
+    "solution": "Tổng nhu cầu nguyên liệu là \\(AX\\). Thành phần thứ hai bằng \\(1\\cdot10+2\\cdot5+2\\cdot8=10+10+16=36\\).",
+    "quick": "Chỉ lấy hàng 2 của \\(A\\) nhân với véc tơ sản lượng \\(X\\).",
+    "casio": "CASIO: nhập ma trận \\(A\\) và véc tơ cột \\(X\\), tính \\(AX\\); phần tử thứ hai là 36.",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 57,
+    "type": "application_production_change",
+    "question": "Ma trận định mức của 2 loại nguyên liệu cho 3 sản phẩm là \\(A=\\begin{pmatrix}4&2&1\\\\3&1&2\\end{pmatrix}\\). Kế hoạch sản xuất thay đổi một lượng \\(\\Delta X=(2;-1;3)^T\\). Tổng nhu cầu của cả hai loại nguyên liệu thay đổi thêm bao nhiêu đơn vị?",
+    "matrix": null,
+    "options": [
+      "20",
+      "11",
+      "9",
+      "18"
+    ],
+    "correct": "20",
+    "solution": "Ta có \\(A\\Delta X=(4\\cdot2+2\\cdot(-1)+1\\cdot3,\\ 3\\cdot2+1\\cdot(-1)+2\\cdot3)^T=(9,11)^T\\). Tổng nhu cầu tăng thêm là \\(9+11=20\\).",
+    "quick": "Dùng véc tơ thay đổi: \\(\\Delta Y=A\\Delta X\\), rồi cộng hai thành phần.",
+    "casio": "CASIO: nhập \\(A\\) và \\(\\Delta X\\), tính tích được \\((9;11)^T\\), tổng bằng 20.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 58,
+    "type": "application_resource_by_period",
+    "question": "Một cơ sở sản xuất 3 sản phẩm, sử dụng 2 loại nguyên liệu. Ma trận định mức là \\(A=\\begin{pmatrix}2&1&3\\\\1&4&2\\end{pmatrix}\\). Sản lượng trong hai tuần được cho bởi \\(X=\\begin{pmatrix}5&4\\\\3&6\\\\2&1\\end{pmatrix}\\), trong đó mỗi cột ứng với một tuần. Ma trận nhu cầu nguyên liệu trong hai tuần là",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}19&17\\\\21&30\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}19&21\\\\17&30\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}17&19\\\\30&21\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}21&30\\\\19&17\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}19&17\\\\21&30\\end{pmatrix}\\)",
+    "solution": "Nhu cầu nguyên liệu là \\(AX\\). Tính lần lượt theo từng cột sản lượng: tuần 1 được \\((19;21)^T\\), tuần 2 được \\((17;30)^T\\). Vì vậy \\(AX=\\begin{pmatrix}19&17\\\\21&30\\end{pmatrix}\\).",
+    "quick": "Mỗi cột của \\(AX\\) là nhu cầu nguyên liệu của một tuần.",
+    "casio": "CASIO: nhập \\(A\\) và \\(X\\), tính \\(AX\\) để được ma trận \\(2\\times2\\) đã cho.",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 59,
+    "type": "application_resource_cost",
+    "question": "Ma trận định mức của 2 nguồn lực cho 3 sản phẩm là \\(A=\\begin{pmatrix}2&1&3\\\\1&4&2\\end{pmatrix}\\), kế hoạch sản xuất \\(X=(10;5;4)^T\\). Chi phí cho một đơn vị của hai nguồn lực lần lượt là \\(c=(5;2)\\). Tổng chi phí nguồn lực của kế hoạch bằng",
+    "matrix": null,
+    "options": [
+      "261",
+      "185",
+      "76",
+      "299"
+    ],
+    "correct": "261",
+    "solution": "Nhu cầu nguồn lực là \\(AX=(37;38)^T\\). Tổng chi phí bằng \\(c^TAX=5\\cdot37+2\\cdot38=185+76=261\\).",
+    "quick": "Tính nhu cầu trước: \\(AX\\), sau đó lấy chi phí đơn vị nhân với véc tơ nhu cầu.",
+    "casio": "CASIO: tính \\(AX=(37;38)^T\\), rồi nhập \\(5\\times37+2\\times38\\), được 261.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 60,
+    "type": "application_sales_by_store",
+    "question": "Một doanh nghiệp bán 3 sản phẩm tại 2 cửa hàng. Ma trận số lượng bán được là \\(Q=\\begin{pmatrix}10&8\\\\6&7\\\\4&5\\end{pmatrix}\\), mỗi cột ứng với một cửa hàng. Véc tơ giá là \\(p=(20;15;10)^T\\). Doanh thu của hai cửa hàng lần lượt là",
+    "matrix": null,
+    "options": [
+      "\\((330;315)^T\\)",
+      "\\((315;330)^T\\)",
+      "\\((300;345)^T\\)",
+      "\\((330;300)^T\\)"
+    ],
+    "correct": "\\((330;315)^T\\)",
+    "solution": "Doanh thu từng cửa hàng là \\(Q^Tp\\). Cửa hàng 1: \\(10\\cdot20+6\\cdot15+4\\cdot10=330\\). Cửa hàng 2: \\(8\\cdot20+7\\cdot15+5\\cdot10=315\\).",
+    "quick": "Mỗi cột số lượng lấy tích vô hướng với véc tơ giá.",
+    "casio": "CASIO: nhập \\(Q^T\\) và \\(p\\), tính \\(Q^Tp=(330;315)^T\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 61,
+    "type": "application_profit",
+    "question": "Một doanh nghiệp sản xuất 3 sản phẩm. Ma trận nhu cầu 2 nguồn lực là \\(A=\\begin{pmatrix}2&1&1\\\\1&3&2\\end{pmatrix}\\), sản lượng \\(q=(8;6;5)^T\\), chi phí đơn vị nguồn lực \\(c=(4;3)^T\\), và giá bán sản phẩm \\(p=(25;20;18)^T\\). Lợi nhuận bằng",
+    "matrix": null,
+    "options": [
+      "194",
+      "216",
+      "410",
+      "184"
+    ],
+    "correct": "194",
+    "solution": "Nhu cầu nguồn lực là \\(Aq=(27;36)^T\\), nên chi phí bằng \\(c^TAq=4\\cdot27+3\\cdot36=216\\). Doanh thu là \\(p^Tq=25\\cdot8+20\\cdot6+18\\cdot5=410\\). Lợi nhuận bằng \\(410-216=194\\).",
+    "quick": "Lợi nhuận = doanh thu \\(p^Tq\\) trừ chi phí nguồn lực \\(c^TAq\\).",
+    "casio": "CASIO: tính \\(Aq=(27;36)^T\\), chi phí 216 và doanh thu 410; hiệu bằng 194.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 62,
+    "type": "application_multistage_production",
+    "question": "Hai loại nguyên liệu được dùng để tạo 3 bán thành phẩm theo ma trận \\(A=\\begin{pmatrix}1&2&1\\\\3&1&2\\end{pmatrix}\\). Ba bán thành phẩm được dùng để tạo 2 sản phẩm theo ma trận \\(B=\\begin{pmatrix}1&2\\\\2&1\\\\1&1\\end{pmatrix}\\). Nếu kế hoạch sản xuất cuối cùng là \\(X=(4;6)^T\\), lượng nguyên liệu loại 2 cần dùng bằng",
+    "matrix": null,
+    "options": [
+      "82",
+      "54",
+      "68",
+      "96"
+    ],
+    "correct": "82",
+    "solution": "Trước hết \\(BX=(16;14;10)^T\\). Sau đó \\(ABX=(54;82)^T\\). Vì vậy lượng nguyên liệu loại 2 cần dùng là 82.",
+    "quick": "Tính từ phải sang trái: sản phẩm cuối \\(X\\) → bán thành phẩm \\(BX\\) → nguyên liệu \\(ABX\\).",
+    "casio": "CASIO: tính \\(BX\\) rồi nhân tiếp với \\(A\\); phần tử thứ hai của \\(ABX\\) là 82.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận nhiều công đoạn"
+  },
+  {
+    "id": 63,
+    "type": "application_capacity_remaining",
+    "question": "Một nhà máy có ma trận định mức \\(A=\\begin{pmatrix}2&1&3\\\\1&2&1\\end{pmatrix}\\), kế hoạch sản xuất \\(X=(10;6;4)^T\\) và năng lực tối đa của hai nguồn lực là \\(b=(45;30)^T\\). Nếu thực hiện kế hoạch này, lượng năng lực còn dư của hai nguồn lực là",
+    "matrix": null,
+    "options": [
+      "\\((7;4)^T\\)",
+      "\\((38;26)^T\\)",
+      "\\((4;7)^T\\)",
+      "\\((83;56)^T\\)"
+    ],
+    "correct": "\\((7;4)^T\\)",
+    "solution": "Nhu cầu nguồn lực là \\(AX=(38;26)^T\\). Năng lực còn dư bằng \\(b-AX=(45;30)^T-(38;26)^T=(7;4)^T\\).",
+    "quick": "Tính \\(AX\\) rồi lấy năng lực tối đa trừ nhu cầu.",
+    "casio": "CASIO: tính \\(AX=(38;26)^T\\), sau đó lấy \\((45;30)^T-(38;26)^T\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 64,
+    "type": "application_inverse_production_plan",
+    "question": "Hai sản phẩm sử dụng hai loại nguyên liệu theo ma trận định mức \\(A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}\\). Nếu tổng lượng hai nguyên liệu cần dùng lần lượt là \\(18\\) và \\(15\\), kế hoạch sản xuất \\(X\\) thỏa \\(AX=(18;15)^T\\) là",
+    "matrix": null,
+    "options": [
+      "\\((7;4)^T\\)",
+      "\\((4;7)^T\\)",
+      "\\((6;5)^T\\)",
+      "\\((8;2)^T\\)"
+    ],
+    "correct": "\\((7;4)^T\\)",
+    "solution": "Ta có \\(X=A^{-1}b\\), với \\(A^{-1}=\\dfrac13\\begin{pmatrix}2&-1\\\\-1&2\\end{pmatrix}\\). Do đó \\(X=\\dfrac13(21;12)^T=(7;4)^T\\).",
+    "quick": "Đây là bài toán ngược: biết tổng nguyên liệu, tìm sản lượng bằng \\(X=A^{-1}b\\).",
+    "casio": "CASIO: nhập \\(A\\), tính \\(A^{-1}(18;15)^T\\), được \\((7;4)^T\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 65,
+    "type": "application_two_factories",
+    "question": "Hai phân xưởng cùng sản xuất 2 sản phẩm. Ma trận định mức nguồn lực của phân xưởng 1 là \\(A=\\begin{pmatrix}2&1\\\\1&3\\end{pmatrix}\\), của phân xưởng 2 là \\(B=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}\\). Kế hoạch sản xuất tương ứng là \\(X=(5;4)^T\\) và \\(Y=(3;6)^T\\). Tổng nhu cầu hai nguồn lực của cả hai phân xưởng là",
+    "matrix": null,
+    "options": [
+      "\\((29;29)^T\\)",
+      "\\((14;17)^T\\)",
+      "\\((15;12)^T\\)",
+      "\\((27;31)^T\\)"
+    ],
+    "correct": "\\((29;29)^T\\)",
+    "solution": "Phân xưởng 1 cần \\(AX=(14;17)^T\\). Phân xưởng 2 cần \\(BY=(15;12)^T\\). Tổng nhu cầu là \\(AX+BY=(29;29)^T\\).",
+    "quick": "Tính nhu cầu từng phân xưởng rồi cộng hai véc tơ.",
+    "casio": "CASIO: tính \\(AX\\) và \\(BY\\), sau đó cộng hai kết quả để được \\((29;29)^T\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
   }
 ]

@@ -1006,5 +1006,113 @@
     "casio": "CASIO fx-580VNX: Dùng phím ∫ để tính tích phân xác định kiểm tra số. Với diện tích, nhập hàm trên trừ hàm dưới trên khoảng giao điểm.",
     "difficulty": 2,
     "topic": "Tích phân một biến"
+  },
+  {
+    "id": 57,
+    "type": "application_work_conical_tank",
+    "question": "Một bể hình nón tròn xoay đặt đỉnh xuống dưới, cao 4 m và bán kính miệng bể 2 m, chứa đầy nước. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần thiết để bơm toàn bộ nước qua miệng bể bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{156800\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{78400\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)",
+      "\\(39200\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{156800\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) đo từ đỉnh bể lên trên, \\(0\\le y\\le4\\). Theo tam giác đồng dạng, bán kính lát nước ở độ cao \\(y\\) là \\(r(y)=y/2\\), nên diện tích lát là \\(A(y)=\\pi y^2/4\\). Lát nước phải nâng quãng đường \\(4-y\\). Do đó \\(W=9800\\int_0^4\\dfrac{\\pi y^2}{4}(4-y)\\,dy=\\dfrac{156800\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Bể nón: tìm bán kính lát bằng tam giác đồng dạng trước, ở đây \\(r=y/2\\).",
+    "casio": "CASIO: nhập \\(9800\\pi/4\\times\\int_0^4 y^2(4-y)dy\\), được xấp xỉ \\(164200\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 58,
+    "type": "application_work_conical_tank_setup",
+    "question": "Một bể hình nón tròn xoay đặt đỉnh xuống dưới, cao 4 m và bán kính miệng bể 4 m, đang chứa nước đến độ sâu 2 m. Công để bơm toàn bộ lượng nước hiện có qua miệng bể được biểu diễn bởi tích phân nào sau đây? Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\).",
+    "matrix": null,
+    "options": [
+      "\\(9800\\pi\\displaystyle\\int_0^2 y^2(4-y)\\,dy\\)",
+      "\\(9800\\pi\\displaystyle\\int_0^2 y^2(2-y)\\,dy\\)",
+      "\\(9800\\pi\\displaystyle\\int_0^4 y^2(4-y)\\,dy\\)",
+      "\\(9800\\pi\\displaystyle\\int_0^2 (4-y)^2y\\,dy\\)"
+    ],
+    "correct": "\\(9800\\pi\\displaystyle\\int_0^2 y^2(4-y)\\,dy\\)",
+    "solution": "Chọn \\(y\\) từ đỉnh bể. Vì bể có chiều cao và bán kính miệng đều bằng 4 m nên theo đồng dạng \\(r(y)=y\\), diện tích lát nước là \\(A(y)=\\pi y^2\\). Nước chỉ chiếm \\(0\\le y\\le2\\), nhưng mỗi lát phải được nâng đến miệng bể ở độ cao 4 m, nên quãng nâng là \\(4-y\\). Vì vậy \\(W=9800\\pi\\int_0^2y^2(4-y)\\,dy\\).",
+    "quick": "Phân biệt cận nước \\(0\\le y\\le2\\) với độ cao miệng bể 4 m; quãng nâng vẫn là \\(4-y\\).",
+    "casio": "CASIO không cần thiết để chọn biểu thức; chú ý \\(r(y)=y\\) và khoảng nâng \\(4-y\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 59,
+    "type": "application_work_vertical_cylinder",
+    "question": "Một bể hình trụ đứng bán kính 1 m, cao 4 m chứa đầy nước. Nước được bơm qua một ống có đầu ra cao hơn miệng bể 1 m. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần thiết bằng",
+    "matrix": null,
+    "options": [
+      "\\(117600\\pi\\,\\mathrm{J}\\)",
+      "\\(78400\\pi\\,\\mathrm{J}\\)",
+      "\\(98000\\pi\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(117600\\pi\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) đo từ đáy bể, \\(0\\le y\\le4\\). Diện tích mỗi lát nước không đổi là \\(A=\\pi\\). Đầu ống ở độ cao 5 m nên lát ở độ cao \\(y\\) phải nâng \\(5-y\\). Do đó \\(W=9800\\pi\\int_0^4(5-y)\\,dy=117600\\pi\\,\\mathrm{J}\\).",
+    "quick": "Bể trụ đứng có diện tích lát không đổi; chỉ cần xác định đúng độ cao đầu ra là 5 m.",
+    "casio": "CASIO: \\(9800\\pi\\times\\int_0^4(5-y)dy=117600\\pi\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 60,
+    "type": "application_work_horizontal_cylinder",
+    "question": "Một bể hình trụ tròn xoay nằm ngang, dài 4 m, bán kính 1 m, chứa đầy nước. Nước được bơm qua điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm tiết diện tròn. Công cần thiết để bơm hết nước bằng",
+    "matrix": null,
+    "options": [
+      "\\(39200\\pi\\,\\mathrm{J}\\)",
+      "\\(78400\\pi\\,\\mathrm{J}\\)",
+      "\\(19600\\pi\\,\\mathrm{J}\\)",
+      "\\(9800\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(39200\\pi\\,\\mathrm{J}\\)",
+    "solution": "Ở độ cao \\(y\\), với \\(-1\\le y\\le1\\), dây cung của tiết diện tròn có độ dài \\(2\\sqrt{1-y^2}\\). Lát nước dày \\(dy\\) có thể tích \\(dV=4\\cdot2\\sqrt{1-y^2}\\,dy=8\\sqrt{1-y^2}\\,dy\\). Khoảng nâng đến đỉnh bể là \\(1-y\\). Vì vậy \\(W=9800\\int_{-1}^{1}8\\sqrt{1-y^2}(1-y)\\,dy\\). Phần chứa \\(y\\sqrt{1-y^2}\\) là hàm lẻ nên triệt tiêu; còn \\(\\int_{-1}^1\\sqrt{1-y^2}\\,dy=\\pi/2\\). Do đó \\(W=39200\\pi\\,\\mathrm{J}\\).",
+    "quick": "Trụ nằm ngang: lát ngang là một dây cung, độ dài \\(2\\sqrt{R^2-y^2}\\).",
+    "casio": "CASIO: có thể kiểm tra số bằng \\(9800\\times8\\times\\int_{-1}^{1}\\sqrt{1-y^2}(1-y)dy\\), kết quả xấp xỉ \\(123150\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 61,
+    "type": "application_work_spherical_tank",
+    "question": "Một bể hình cầu bán kính 2 m chứa đầy nước. Nước được bơm qua điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm bể. Công cần thiết để bơm hết nước bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(313600\\pi\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Với \\(-2\\le y\\le2\\), lát ngang của hình cầu có bán kính \\(r(y)=\\sqrt{4-y^2}\\), nên diện tích \\(A(y)=\\pi(4-y^2)\\). Khoảng nâng đến đỉnh cầu là \\(2-y\\). Vì vậy \\(W=9800\\pi\\int_{-2}^{2}(4-y^2)(2-y)\\,dy=\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Hình cầu: từ \\(x^2+y^2=R^2\\) suy ra diện tích lát \\(A(y)=\\pi(R^2-y^2)\\).",
+    "casio": "CASIO: nhập \\(9800\\pi\\times\\int_{-2}^{2}(4-y^2)(2-y)dy\\), được xấp xỉ \\(656800\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 62,
+    "type": "application_work_spherical_tank_partial",
+    "question": "Một bể hình cầu bán kính 2 m chỉ chứa nước ở nửa dưới của bể. Nước được bơm qua điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm bể. Công cần thiết để bơm hết lượng nước hiện có bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{431200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{215600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(196000\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{431200\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Nửa dưới của bể ứng với \\(-2\\le y\\le0\\). Diện tích lát ngang vẫn là \\(A(y)=\\pi(4-y^2)\\), còn khoảng nâng đến đỉnh bể là \\(2-y\\). Do đó \\(W=9800\\pi\\int_{-2}^{0}(4-y^2)(2-y)\\,dy=\\dfrac{431200\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Nửa dưới chỉ đổi cận thành \\([-2,0]\\); diện tích lát và khoảng nâng vẫn giữ nguyên.",
+    "casio": "CASIO: nhập \\(9800\\pi\\times\\int_{-2}^{0}(4-y^2)(2-y)dy\\), được xấp xỉ \\(451550\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
   }
 ]
