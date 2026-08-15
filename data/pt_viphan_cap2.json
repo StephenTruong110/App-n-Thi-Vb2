@@ -1204,5 +1204,113 @@
     "casio": "CASIO: sau khi tìm \\(C_1=-5,C_2=12\\), nhập \\(\\sqrt{(-5)^2+12^2}\\), được 13.",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2 – Dao động điều hòa"
+  },
+  {
+    "id": 68,
+    "type": "particular_form_trig_nonresonance",
+    "question": "Đối với phương trình \\(y''-3y'+2y=4\\cos3x-5\\sin3x\\), có thể chọn nghiệm riêng dạng",
+    "matrix": null,
+    "options": [
+      "\\(y_p=A\\cos3x+B\\sin3x\\)",
+      "\\(y_p=x(A\\cos3x+B\\sin3x)\\)",
+      "\\(y_p=A\\cos3x\\)",
+      "\\(y_p=Ax\\cos3x+Bx\\sin3x+C\\)"
+    ],
+    "correct": "\\(y_p=A\\cos3x+B\\sin3x\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2-3r+2=0\\), có nghiệm \\(r=1,2\\), nên \\(\\pm3i\\) không phải nghiệm đặc trưng. Với vế phải là tổ hợp \\(\\cos3x\\) và \\(\\sin3x\\), ta chọn \\(y_p=A\\cos3x+B\\sin3x\\).",
+    "quick": "Không cộng hưởng với \\(\\pm3i\\) nên không nhân thêm \\(x\\).",
+    "casio": "CASIO không cần thiết; chỉ cần xét nghiệm đặc trưng và nhận dạng dạng hệ số bất định.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng sin cos"
+  },
+  {
+    "id": 69,
+    "type": "particular_form_trig_resonance",
+    "question": "Đối với phương trình \\(y''+9y=2\\cos3x-\\sin3x\\), dạng nghiệm riêng thích hợp là",
+    "matrix": null,
+    "options": [
+      "\\(y_p=x(A\\cos3x+B\\sin3x)\\)",
+      "\\(y_p=A\\cos3x+B\\sin3x\\)",
+      "\\(y_p=x^2(A\\cos3x+B\\sin3x)\\)",
+      "\\(y_p=A\\cos x+B\\sin x\\)"
+    ],
+    "correct": "\\(y_p=x(A\\cos3x+B\\sin3x)\\)",
+    "solution": "Phương trình đặc trưng \\(r^2+9=0\\) có nghiệm \\(r=\\pm3i\\). Đây đúng là cặp nghiệm tương ứng với \\(\\cos3x,\\sin3x\\), nên xảy ra cộng hưởng bậc một. Vì vậy phải nhân dạng thử thông thường với \\(x\\): \\(y_p=x(A\\cos3x+B\\sin3x)\\).",
+    "quick": "\\(\\pm3i\\) là nghiệm đặc trưng nên nhân thêm \\(x\\).",
+    "casio": "CASIO không cần thiết; nhận biết cộng hưởng từ phương trình đặc trưng.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng sin cos"
+  },
+  {
+    "id": 70,
+    "type": "particular_form_exp_trig_nonresonance",
+    "question": "Đối với phương trình \\(y''+4y=e^x\\sin2x\\), có thể chọn nghiệm riêng dạng",
+    "matrix": null,
+    "options": [
+      "\\(y_p=e^x(A\\cos2x+B\\sin2x)\\)",
+      "\\(y_p=xe^x(A\\cos2x+B\\sin2x)\\)",
+      "\\(y_p=e^x(A\\cos x+B\\sin x)\\)",
+      "\\(y_p=Ae^x\\sin2x\\)"
+    ],
+    "correct": "\\(y_p=e^x(A\\cos2x+B\\sin2x)\\)",
+    "solution": "Vế phải tương ứng với số phức \\(1+2i\\). Phương trình đặc trưng \\(r^2+4=0\\) có nghiệm \\(\\pm2i\\), nên \\(1+2i\\) không phải nghiệm đặc trưng. Do đó không có cộng hưởng và chọn \\(y_p=e^x(A\\cos2x+B\\sin2x)\\).",
+    "quick": "So sánh \\(a+i\\beta=1+2i\\) với nghiệm đặc trưng \\(\\pm2i\\); không trùng nên không nhân \\(x\\).",
+    "casio": "CASIO không cần thiết; bài chỉ yêu cầu chọn dạng nghiệm riêng.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng sin cos"
+  },
+  {
+    "id": 71,
+    "type": "particular_form_exp_trig_resonance",
+    "question": "Đối với phương trình \\(y''-2y'+5y=e^x\\cos2x\\), dạng nghiệm riêng thích hợp là",
+    "matrix": null,
+    "options": [
+      "\\(y_p=xe^x(A\\cos2x+B\\sin2x)\\)",
+      "\\(y_p=e^x(A\\cos2x+B\\sin2x)\\)",
+      "\\(y_p=x^2e^x(A\\cos2x+B\\sin2x)\\)",
+      "\\(y_p=e^x(A\\cos2x)\\)"
+    ],
+    "correct": "\\(y_p=xe^x(A\\cos2x+B\\sin2x)\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2-2r+5=0\\), có nghiệm \\(r=1\\pm2i\\). Vế phải \\(e^x\\cos2x\\) tương ứng với \\(a+i\\beta=1+2i\\), trùng với nghiệm đặc trưng nên có cộng hưởng bậc một. Vì vậy dạng thử phải nhân thêm \\(x\\): \\(y_p=xe^x(A\\cos2x+B\\sin2x)\\).",
+    "quick": "\\(1\\pm2i\\) là nghiệm đặc trưng và cũng đúng tần số–hệ số mũ của vế phải, nên nhân \\(x\\).",
+    "casio": "CASIO không cần thiết; xét nghiệm đặc trưng để nhận biết cộng hưởng.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng sin cos"
+  },
+  {
+    "id": 72,
+    "type": "particular_form_polynomial_trig",
+    "question": "Đối với phương trình \\(y''-y=(x^2+1)\\cos2x+x\\sin2x\\), có thể chọn nghiệm riêng dạng",
+    "matrix": null,
+    "options": [
+      "\\(y_p=(Ax^2+Bx+C)\\cos2x+(Dx^2+Ex+F)\\sin2x\\)",
+      "\\(y_p=(Ax+B)\\cos2x+(Cx+D)\\sin2x\\)",
+      "\\(y_p=x[(Ax^2+Bx+C)\\cos2x+(Dx^2+Ex+F)\\sin2x]\\)",
+      "\\(y_p=(Ax^2+Bx+C)\\cos2x\\)"
+    ],
+    "correct": "\\(y_p=(Ax^2+Bx+C)\\cos2x+(Dx^2+Ex+F)\\sin2x\\)",
+    "solution": "Bậc lớn nhất của hai đa thức đi kèm \\(\\cos2x\\) và \\(\\sin2x\\) là 2, nên cả hai hệ số thử đều lấy đa thức bậc 2. Phương trình đặc trưng \\(r^2-1=0\\) có nghiệm \\(\\pm1\\), không trùng với \\(\\pm2i\\), nên không nhân thêm \\(x\\).",
+    "quick": "Lấy bậc \\(k=\\max(2,1)=2\\) cho cả phần cos và sin; không cộng hưởng.",
+    "casio": "CASIO không cần thiết; đây là câu nhận dạng dạng nghiệm riêng.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng sin cos"
+  },
+  {
+    "id": 73,
+    "type": "particular_form_exp_polynomial_trig_resonance",
+    "question": "Đối với phương trình \\(y''-2y'+2y=e^x[(x+1)\\cos x+(2x-1)\\sin x]\\), dạng nghiệm riêng thích hợp là",
+    "matrix": null,
+    "options": [
+      "\\(y_p=xe^x[(Ax+B)\\cos x+(Cx+D)\\sin x]\\)",
+      "\\(y_p=e^x[(Ax+B)\\cos x+(Cx+D)\\sin x]\\)",
+      "\\(y_p=x^2e^x[(Ax+B)\\cos x+(Cx+D)\\sin x]\\)",
+      "\\(y_p=xe^x(A\\cos x+B\\sin x)\\)"
+    ],
+    "correct": "\\(y_p=xe^x[(Ax+B)\\cos x+(Cx+D)\\sin x]\\)",
+    "solution": "Hai đa thức ở vế phải đều bậc 1 nên dạng thử cơ bản là \\(e^x[(Ax+B)\\cos x+(Cx+D)\\sin x]\\). Phương trình đặc trưng \\(r^2-2r+2=0\\) có nghiệm \\(r=1\\pm i\\), đúng với \\(a\\pm i\\beta=1\\pm i\\), nên cộng hưởng bậc một và phải nhân thêm \\(x\\).",
+    "quick": "Bậc đa thức là 1 và \\(1\\pm i\\) trùng nghiệm đặc trưng, nên nhân toàn bộ dạng thử với \\(x\\).",
+    "casio": "CASIO không cần thiết; xác định bậc đa thức và kiểm tra cộng hưởng.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng sin cos"
   }
 ]

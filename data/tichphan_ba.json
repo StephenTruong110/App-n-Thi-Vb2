@@ -1510,5 +1510,23 @@
     "casio": "CASIO không cần thiết; câu hỏi kiểm tra cận tích phân và Jacobian của tọa độ trụ.",
     "difficulty": 3,
     "topic": "Tích phân ba – Tọa độ trụ"
+  },
+  {
+    "id": 85,
+    "type": "volume_paraboloid_downward",
+    "question": "Tính thể tích khối giới hạn bởi \\(z=4-x^2-y^2\\) và mặt phẳng \\(z=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(8\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(32\\pi\\)"
+    ],
+    "correct": "\\(8\\pi\\)",
+    "solution": "Hai mặt cắt nhau khi \\(4-x^2-y^2=0\\), tức \\(x^2+y^2=4\\). Trong tọa độ trụ, \\(0\\le r\\le2\\), \\(0\\le\\theta\\le2\\pi\\), và \\(0\\le z\\le4-r^2\\). Do đó \\(V=\\int_0^{2\\pi}\\int_0^2\\int_0^{4-r^2} r\\,dz\\,dr\\,d\\theta=2\\pi\\int_0^2(4-r^2)r\\,dr=8\\pi\\).",
+    "quick": "Đổi sang trụ: miền chiếu là đĩa \\(r\\le2\\), chiều cao \\(4-r^2\\).",
+    "casio": "CASIO: tính \\(2\\pi\\int_0^2(4-r^2)r\\,dr\\), được \\(8\\pi\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba – Thể tích"
   }
 ]

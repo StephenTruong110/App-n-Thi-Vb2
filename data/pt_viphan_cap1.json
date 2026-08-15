@@ -1564,5 +1564,22 @@
     "casio": "CASIO: nhập \\(10\\ln7/\\ln2\\), được khoảng \\(28{,}1\\).",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
+  },{
+    "id": 88,
+    "type": "application_mixing_variable_volume",
+    "question": "Một chất tan được khuấy đều trong dung dịch. Một bể ban đầu chứa 100 lít nước có 2 kg chất tan. Nước muối chứa \\(0{,}05\\) kg chất tan trên mỗi lít được bơm vào bể với tốc độ 3 lít/phút, đồng thời dung dịch chảy ra ngoài với tốc độ 2 lít/phút. Tính lượng chất tan trong bể sau 10 phút.",
+    "matrix": null,
+    "options": [
+      "\\(2{,}85\\) kg",
+      "\\(4{,}12\\) kg",
+      "\\(3{,}02\\) kg",
+      "\\(3{,}36\\) kg"
+    ],
+    "correct": "\\(3{,}02\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng chất tan trong bể, tính bằng kg. Vì lưu lượng vào là 3 lít/phút và lưu lượng ra là 2 lít/phút nên thể tích tại thời điểm \\(t\\) là \\(V(t)=100+t\\) lít. Tốc độ chất tan vào là \\(3\\cdot0{,}05=0{,}15\\) kg/phút, còn tốc độ chất tan ra là \\(2\\dfrac{S}{100+t}\\). Do đó \\(S'+\\dfrac{2}{100+t}S=0{,}15\\), với \\(S(0)=2\\). Nhân tử tích phân là \\((100+t)^2\\), nên \\(((100+t)^2S)'=0{,}15(100+t)^2\\). Suy ra \\(S(t)=0{,}05(100+t)+\\dfrac{C}{(100+t)^2}\\). Từ \\(S(0)=2\\) có \\(C=-30000\\). Vì vậy \\(S(10)=5{,}5-\\dfrac{30000}{110^2}\\approx3{,}0207\\) kg, tức khoảng \\(3{,}02\\) kg.",
+    "quick": "Thể tích tăng: \\(V(t)=100+t\\). Lập \\(S'=0{,}15-\\dfrac{2S}{100+t}\\), rồi giải phương trình tuyến tính cấp 1.",
+    "casio": "CASIO: sau khi có công thức \\(S(t)=0{,}05(100+t)-\\dfrac{30000}{(100+t)^2}\\), nhập \\(0{,}05\\times110-30000/110^2\\), được xấp xỉ \\(3{,}0207\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng phương trình vi phân cấp 1"
   }
 ]
