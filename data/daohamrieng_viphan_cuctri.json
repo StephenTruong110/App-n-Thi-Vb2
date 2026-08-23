@@ -2230,5 +2230,23 @@
     "casio": "CASIO có thể thay trực tiếp \\(y=0\\), thu được \\(z=x^2+x^3\\), rồi dùng d/dx tại \\(x=1\\).",
     "difficulty": 3,
     "topic": "Hàm hợp nhiều biến"
+  },
+  {
+    "id": 125,
+    "type": "stationary_point_abscissa",
+    "question": "Cho hàm số \\(u=f(x,y)=2xy+\\dfrac{50}{x}+\\dfrac{10}{y}\\), với \\(x\\gt0,\\ y\\gt0\\). Hoành độ của điểm dừng trên miền \\(x\\gt0,\\ y\\gt0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(x=5\\)",
+      "\\(x=1\\)",
+      "\\(x=2\\)",
+      "\\(x=3\\)"
+    ],
+    "correct": "\\(x=5\\)",
+    "solution": "Điểm dừng thỏa \\(f'_x=f'_y=0\\). Ta có \\(f'_x=2y-\\dfrac{50}{x^2}=0\\Rightarrow y=\\dfrac{25}{x^2}\\), và \\(f'_y=2x-\\dfrac{10}{y^2}=0\\Rightarrow xy^2=5\\). Thế \\(y=25/x^2\\) vào \\(xy^2=5\\): \\(x\\cdot\\dfrac{625}{x^4}=5\\Rightarrow x^3=125\\Rightarrow x=5\\). Vì \\(x\\gt0\\), đây là hoành độ cần tìm.",
+    "quick": "Giải hệ \\(f'_x=0,\\ f'_y=0\\): \\(y=25/x^2\\), \\(xy^2=5\\Rightarrow x^3=125\\Rightarrow x=5\\).",
+    "casio": "CASIO: sau khi biến đổi về \\(x^3=125\\), tính \\(\\sqrt[3]{125}=5\\).",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
   }
 ]

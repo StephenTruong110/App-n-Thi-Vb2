@@ -1528,5 +1528,41 @@
     "casio": "CASIO: tính \\(2\\pi\\int_0^2(4-r^2)r\\,dr\\), được \\(8\\pi\\).",
     "difficulty": 2,
     "topic": "Tích phân ba – Thể tích"
+  },
+  {
+    "id": 86,
+    "type": "triple_integral_cylindrical_volume_setup",
+    "question": "Thể tích của vật thể \\(V\\) giới hạn bởi các mặt \\(z=\\sqrt{x^2+y^2}\\) và \\(z=2-x^2-y^2\\) được cho bởi công thức nào sau đây trong tọa độ trụ?",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^1\\int_{2-r^2}^{r} r\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{\\pi}\\int_0^1\\int_r^{2-r^2} dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^1\\int_r^{2-r^2} dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^1\\int_r^{2-r^2} r\\,dz\\,dr\\,d\\theta\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^1\\int_r^{2-r^2} r\\,dz\\,dr\\,d\\theta\\)",
+    "solution": "Trong tọa độ trụ, \\(z=\\sqrt{x^2+y^2}\\) trở thành \\(z=r\\), còn \\(z=2-x^2-y^2\\) trở thành \\(z=2-r^2\\). Hai mặt cắt nhau khi \\(r=2-r^2\\), tức \\(r^2+r-2=0\\), nên \\(r=1\\). Miền quay đủ một vòng nên \\(0\\le\\theta\\le2\\pi\\). Với \\(0\\le r\\le1\\), mặt dưới là \\(z=r\\), mặt trên là \\(z=2-r^2\\), và \\(dV=r\\,dz\\,dr\\,d\\theta\\). Vì vậy thể tích là \\(\\int_0^{2\\pi}\\int_0^1\\int_r^{2-r^2} r\\,dz\\,dr\\,d\\theta\\).",
+    "quick": "Đổi sang trụ: \\(z=r\\), \\(z=2-r^2\\); giao nhau tại \\(r=1\\), nhớ Jacobian \\(r\\).",
+    "casio": "CASIO không cần thiết ở bước lập tích phân; chỉ cần giải \\(r=2-r^2\\) để được \\(r=1\\) và nhớ hệ số Jacobian \\(r\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba – Tọa độ trụ"
+  },
+  {
+    "id": 87,
+    "type": "triple_integral_cylindrical_first_octant_setup",
+    "question": "Cho \\(I=\\iiint_V\\sqrt{x^2+y^2}\\,dV\\), với \\(V\\) là vật thể nằm trong góc phần tám thứ nhất \\(x\\ge0,\\ y\\ge0,\\ z\\ge0\\) và giới hạn bởi các mặt \\(z=x^2+y^2\\) và \\(z=4\\). Công thức đúng của \\(I\\) trong tọa độ trụ là",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{4} r\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{4} r^2\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{\\pi/2}\\int_0^2\\int_{r^2}^{4} r^2\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{\\pi/2}\\int_0^2\\int_{4}^{r^2} r^2\\,dz\\,dr\\,d\\theta\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^{\\pi/2}\\int_0^2\\int_{r^2}^{4} r^2\\,dz\\,dr\\,d\\theta\\)",
+    "solution": "Ta có \\(\\sqrt{x^2+y^2}=r\\) và \\(dV=r\\,dz\\,dr\\,d\\theta\\), nên tích phân có nhân tử \\(r^2\\). Vì vật thể nằm trong góc phần tám thứ nhất nên trên mặt phẳng \\(Oxy\\), góc chạy \\(0\\le\\theta\\le\\pi/2\\). Hai mặt \\(z=r^2\\) và \\(z=4\\) cắt nhau tại \\(r=2\\), nên \\(0\\le r\\le2\\). Với mỗi \\((r,\\theta)\\), ta có \\(r^2\\le z\\le4\\). Do đó \\(I=\\int_0^{\\pi/2}\\int_0^2\\int_{r^2}^{4}r^2\\,dz\\,dr\\,d\\theta\\).",
+    "quick": "Góc phần tám thứ nhất cho \\(0\\le\\theta\\le\\pi/2\\); integrand \\(r\\) nhân Jacobian \\(r\\) thành \\(r^2\\).",
+    "casio": "CASIO không cần thiết để chọn công thức; cần nhớ \\(r\\le2\\), \\(r^2\\le z\\le4\\), và integrand sau đổi biến là \\(r^2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba – Tọa độ trụ"
   }
 ]

@@ -1564,7 +1564,8 @@
     "casio": "CASIO: nhập \\(10\\ln7/\\ln2\\), được khoảng \\(28{,}1\\).",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
-  },{
+  },
+  {
     "id": 88,
     "type": "application_mixing_variable_volume",
     "question": "Một chất tan được khuấy đều trong dung dịch. Một bể ban đầu chứa 100 lít nước có 2 kg chất tan. Nước muối chứa \\(0{,}05\\) kg chất tan trên mỗi lít được bơm vào bể với tốc độ 3 lít/phút, đồng thời dung dịch chảy ra ngoài với tốc độ 2 lít/phút. Tính lượng chất tan trong bể sau 10 phút.",
@@ -1581,5 +1582,95 @@
     "casio": "CASIO: sau khi có công thức \\(S(t)=0{,}05(100+t)-\\dfrac{30000}{(100+t)^2}\\), nhập \\(0{,}05\\times110-30000/110^2\\), được xấp xỉ \\(3{,}0207\\).",
     "difficulty": 3,
     "topic": "Ứng dụng phương trình vi phân cấp 1"
+  },
+  {
+    "id": 89,
+    "type": "linear_first_order_variant",
+    "question": "Cho phương trình vi phân \\(y'+2xy=4x\\). Nghiệm tổng quát của phương trình là",
+    "matrix": null,
+    "options": [
+      "\\(y=2+Ce^{-x^2}\\)",
+      "\\(y=2+Ce^{x^2}\\)",
+      "\\(y=2+Ce^{-x^2/2}\\)",
+      "\\(y=1+Ce^{-x^2}\\)"
+    ],
+    "correct": "\\(y=2+Ce^{-x^2}\\)",
+    "solution": "Đây là phương trình tuyến tính \\(y'+2xy=4x\\). Nhân tử tích phân là \\(\\mu=e^{\\int2x\\,dx}=e^{x^2}\\). Khi đó \\((ye^{x^2})'=4xe^{x^2}\\). Tích phân được \\(ye^{x^2}=2e^{x^2}+C\\), nên \\(y=2+Ce^{-x^2}\\).",
+    "quick": "Nhân \\(e^{x^2}\\): \\((ye^{x^2})'=4xe^{x^2}\\).",
+    "casio": "CASIO: có thể kiểm tra từng đáp án bằng đạo hàm số; với \\(y=2+Ce^{-x^2}\\), thay vào cho \\(y'+2xy=4x\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 90,
+    "type": "separable_arctan_variant",
+    "question": "Cho phương trình vi phân \\(y'=y^2+1\\). Nghiệm tổng quát của phương trình là",
+    "matrix": null,
+    "options": [
+      "\\(\\arctan y-x=C\\)",
+      "\\(\\arctan y+x=C\\)",
+      "\\(\\arcsin y-x=C\\)",
+      "\\(\\arccos y-x=C\\)"
+    ],
+    "correct": "\\(\\arctan y-x=C\\)",
+    "solution": "Tách biến: \\(\\dfrac{dy}{1+y^2}=dx\\). Lấy tích phân được \\(\\arctan y=x+C\\), hay tương đương \\(\\arctan y-x=C\\).",
+    "quick": "Nhớ \\(\\int\\dfrac{dy}{1+y^2}=\\arctan y\\).",
+    "casio": "CASIO không cần thiết; nhận dạng nguyên hàm chuẩn \\(1/(1+y^2)\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 91,
+    "type": "linear_first_order_ivp_variant",
+    "question": "Cho phương trình vi phân \\(y'=\\dfrac{-x+2y}{x}\\), với \\(x\\gt0\\), thỏa mãn \\(y(1)=2\\). Nghiệm của bài toán là",
+    "matrix": null,
+    "options": [
+      "\\(y=x^4(x+1)\\)",
+      "\\(y=x^2(x+1)\\)",
+      "\\(y=x(x+1)\\)",
+      "\\(y=x^3(x+1)\\)"
+    ],
+    "correct": "\\(y=x(x+1)\\)",
+    "solution": "Viết lại \\(y'-\\dfrac2x y=-1\\). Nhân tử tích phân là \\(\\mu=e^{\\int-2/x\\,dx}=x^{-2}\\). Khi đó \\((yx^{-2})'=-x^{-2}\\). Tích phân: \\(yx^{-2}=x^{-1}+C\\), nên \\(y=x+Cx^2\\). Từ \\(y(1)=2\\) suy ra \\(C=1\\). Vậy \\(y=x+x^2=x(x+1)\\).",
+    "quick": "Đưa về tuyến tính: \\(y'-2y/x=-1\\), nhân \\(x^{-2}\\).",
+    "casio": "CASIO: kiểm tra đáp án \\(y=x(x+1)\\) bằng cách tính \\(y'\\) và thay \\(x=1\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 92,
+    "type": "linear_first_order_power_variant",
+    "question": "Cho phương trình vi phân \\(y'-\\dfrac4x y=4x^7\\), với \\(x\\gt0\\). Nghiệm tổng quát của phương trình là",
+    "matrix": null,
+    "options": [
+      "\\(y=Cx^4+x^7\\)",
+      "\\(y=Cx^4+x^8\\)",
+      "\\(y=Cx^3+x^8\\)",
+      "\\(y=Cx^3+x^7\\)"
+    ],
+    "correct": "\\(y=Cx^4+x^8\\)",
+    "solution": "Nhân tử tích phân là \\(\\mu=e^{\\int-4/x\\,dx}=x^{-4}\\). Khi đó \\((x^{-4}y)'=4x^3\\). Tích phân được \\(x^{-4}y=x^4+C\\), suy ra \\(y=x^8+Cx^4\\).",
+    "quick": "Nhân \\(x^{-4}\\) để có \\((x^{-4}y)'=4x^3\\).",
+    "casio": "CASIO: lấy đạo hàm của \\(y=Cx^4+x^8\\) rồi thay vào vế trái để kiểm tra được \\(4x^7\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 93,
+    "type": "bernoulli_cubic_variant",
+    "question": "Cho phương trình vi phân \\(y'+xy=x^3y^3\\). Nghiệm của phương trình gồm",
+    "matrix": null,
+    "options": [
+      "\\(y=0\\) hoặc \\(y=\\pm\\dfrac1{\\sqrt{Ce^{x^2}+x^2+1}}\\)",
+      "\\(y=0\\) hoặc \\(y=\\pm\\sqrt{Ce^{x^2}+x^2+1}\\)",
+      "\\(y=0\\) hoặc \\(y=\\pm\\dfrac1{Ce^{x^2}+x^2+1}\\)",
+      "\\(y=0\\) hoặc \\(y=\\pm\\dfrac1{\\sqrt{Ce^{-x^2}+x^2+1}}\\)"
+    ],
+    "correct": "\\(y=0\\) hoặc \\(y=\\pm\\dfrac1{\\sqrt{Ce^{x^2}+x^2+1}}\\)",
+    "solution": "Ngoài nghiệm \\(y\\equiv0\\), xét \\(y\\ne0\\). Đây là Bernoulli với số mũ 3. Đặt \\(z=y^{-2}\\), khi đó \\(z'=-2y^{-3}y'\\). Nhân phương trình với \\(-2y^{-3}\\) được \\(z'-2xz=-2x^3\\). Nhân tử tích phân là \\(e^{-x^2}\\), nên \\((ze^{-x^2})'=-2x^3e^{-x^2}\\). Tích phân cho \\(ze^{-x^2}=(x^2+1)e^{-x^2}+C\\), do đó \\(z=x^2+1+Ce^{x^2}\\). Vì \\(z=y^{-2}\\), suy ra \\(y=\\pm1/\\sqrt{Ce^{x^2}+x^2+1}\\).",
+    "quick": "Đặt \\(z=y^{-2}\\) → \\(z'-2xz=-2x^3\\), rồi giải tuyến tính.",
+    "casio": "CASIO không thuận tiện để giải trực tiếp; có thể kiểm tra nghiệm bằng đạo hàm số với một giá trị cụ thể của \\(C\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
   }
 ]

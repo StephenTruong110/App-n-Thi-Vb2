@@ -1258,5 +1258,41 @@
     "casio": "CASIO: tính \\(2\\pi\\int_1^2(2+r^2)r\\,dr\\), được \\(27\\pi/2\\).",
     "difficulty": 3,
     "topic": "Tích phân đường loại 2 – Định lý Green"
+  },
+  {
+    "id": 71,
+    "type": "green_theorem_circle_polar_setup",
+    "question": "Cho tích phân đường \\(I=\\oint_C (x^2-y)\\,dx+2x\\,dy\\), với \\(C\\) là đường tròn \\(x^2+y^2=2y\\) đi theo chiều ngược kim đồng hồ. Kết luận nào sau đây là đúng khi tính \\(I\\)?",
+    "matrix": null,
+    "options": [
+      "\\(I=3\\displaystyle\\int_0^{\\pi}\\int_0^{2\\sin\\theta}r\\,dr\\,d\\theta\\)",
+      "\\(I=3\\displaystyle\\int_0^{2\\pi}\\int_0^2r\\,dr\\,d\\theta\\)",
+      "\\(I=\\displaystyle\\int_0^{\\pi}\\int_0^{2\\sin\\theta}2r^2\\cos\\theta\\,dr\\,d\\theta\\)",
+      "\\(I=3\\displaystyle\\int_0^{2\\pi}\\int_0^{2\\sin\\theta}r\\,dr\\,d\\theta\\)"
+    ],
+    "correct": "\\(I=3\\displaystyle\\int_0^{\\pi}\\int_0^{2\\sin\\theta}r\\,dr\\,d\\theta\\)",
+    "solution": "Đặt \\(P=x^2-y\\), \\(Q=2x\\). Theo định lý Green với chiều ngược kim đồng hồ, \\(I=\\iint_D(Q'_x-P'_y)\\,dA\\). Ta có \\(Q'_x=2\\), \\(P'_y=-1\\), nên \\(Q'_x-P'_y=3\\). Đường tròn \\(x^2+y^2=2y\\) viết trong tọa độ cực thành \\(r^2=2r\\sin\\theta\\), tức \\(r=2\\sin\\theta\\), với \\(0\\le\\theta\\le\\pi\\). Vì \\(dA=r\\,dr\\,d\\theta\\), suy ra \\(I=3\\int_0^{\\pi}\\int_0^{2\\sin\\theta}r\\,dr\\,d\\theta\\).",
+    "quick": "Green cho hệ số \\(3\\); đường tròn có phương trình cực \\(r=2\\sin\\theta\\), \\(0\\le\\theta\\le\\pi\\).",
+    "casio": "CASIO: sau khi lập đúng tích phân, có thể tính \\(3\\int_0^{\\pi}2\\sin^2\\theta\\,d\\theta=3\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 72,
+    "type": "green_theorem_parabolic_region_setup",
+    "question": "Cho tích phân đường \\(I=\\oint_C (x-2y)\\,dx+xy\\,dy\\), với \\(C\\) là biên của miền \\(D\\) giới hạn bởi \\(y=x^2\\) và \\(y=2x\\), đi theo chiều ngược kim đồng hồ. Công thức nào sau đây là đúng khi tính \\(I\\)?",
+    "matrix": null,
+    "options": [
+      "\\(I=\\displaystyle\\iint_D(y+2)\\,dA=\\int_0^2\\int_{x^2}^{2x}(y+2)\\,dy\\,dx\\)",
+      "\\(I=\\displaystyle\\iint_D(y+2)\\,dA=\\int_0^2\\int_{2x}^{x^2}(y+2)\\,dy\\,dx\\)",
+      "\\(I=\\displaystyle\\iint_D(1-x)\\,dA=\\int_0^2\\int_{x^2}^{2x}(1-x)\\,dy\\,dx\\)",
+      "\\(I=\\displaystyle\\iint_D(1-x)\\,dA=\\int_0^2\\int_{2x}^{x^2}(1-x)\\,dy\\,dx\\)"
+    ],
+    "correct": "\\(I=\\displaystyle\\iint_D(y+2)\\,dA=\\int_0^2\\int_{x^2}^{2x}(y+2)\\,dy\\,dx\\)",
+    "solution": "Đặt \\(P=x-2y\\), \\(Q=xy\\). Theo Green, \\(Q'_x-P'_y=y-(-2)=y+2\\). Hai đường \\(y=x^2\\) và \\(y=2x\\) cắt nhau khi \\(x^2=2x\\), tức \\(x=0,2\\). Trên \\([0,2]\\), ta có \\(x^2\\le2x\\). Vì vậy \\(D=\\{(x,y):0\\le x\\le2,\\ x^2\\le y\\le2x\\}\\), nên \\(I=\\int_0^2\\int_{x^2}^{2x}(y+2)\\,dy\\,dx\\).",
+    "quick": "Green: \\(Q'_x-P'_y=y+2\\); miền có \\(0\\le x\\le2\\), \\(x^2\\le y\\le2x\\).",
+    "casio": "CASIO: sau khi lập đúng tích phân, tính theo \\(y\\) trước rồi theo \\(x\\); giá trị kiểm tra là \\(24/5\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
   }
 ]

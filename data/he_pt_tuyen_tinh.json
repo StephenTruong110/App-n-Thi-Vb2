@@ -1402,5 +1402,23 @@
     "casio": "CASIO: khai triển định thức theo \\(m\\) bằng tay; sau đó giải phương trình \\(4-7m=0\\).",
     "difficulty": 3,
     "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 90,
+    "type": "double_integral_area_setup_sideways_parabola",
+    "question": "Công thức tính diện tích \\(S\\) của miền phẳng giới hạn bởi các đường \\(y=2-x\\) và \\(x=y^2\\) là",
+    "matrix": null,
+    "options": [
+      "\\(S=\\displaystyle\\int_{-2}^{1}\\int_0^{2-y}dx\\,dy\\)",
+      "\\(S=\\displaystyle\\int_0^4\\int_{-\\sqrt{x}}^{\\sqrt{x}}dy\\,dx\\)",
+      "\\(S=\\displaystyle\\int_0^4\\int_{-\\sqrt{x}}^{2-x}dy\\,dx\\)",
+      "\\(S=\\displaystyle\\int_{-2}^{1}\\int_{y^2}^{2-y}dx\\,dy\\)"
+    ],
+    "correct": "\\(S=\\displaystyle\\int_{-2}^{1}\\int_{y^2}^{2-y}dx\\,dy\\)",
+    "solution": "Viết đường thẳng dưới dạng \\(x=2-y\\). Giao điểm với \\(x=y^2\\) thỏa \\(y^2=2-y\\), tức \\(y^2+y-2=0\\), nên \\(y=-2\\) hoặc \\(y=1\\). Với \\(-2\\le y\\le1\\), biên trái là \\(x=y^2\\) và biên phải là \\(x=2-y\\). Vì vậy \\(S=\\int_{-2}^{1}\\int_{y^2}^{2-y}1\\,dx\\,dy\\).",
+    "quick": "Đổi đường thẳng thành \\(x=2-y\\); giải \\(y^2=2-y\\) được \\(y=-2,1\\), rồi lấy \\(x\\) từ \\(y^2\\) đến \\(2-y\\).",
+    "casio": "CASIO: có thể kiểm tra diện tích bằng \\(\\int_{-2}^{1}(2-y-y^2)dy\\), kết quả \\(9/2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
   }
 ]
