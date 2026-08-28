@@ -1618,5 +1618,275 @@
     "casio": "CASIO: có thể kiểm tra diện tích bằng \\(\\int_{-2}^{1}(2-y-y^2)dy\\), kết quả \\(9/2\\).",
     "difficulty": 3,
     "topic": "Tích phân kép"
+  },
+  {
+    "id": 91,
+    "type": "double_integral_parabola_line_yaxis",
+    "question": "Tính \\(I=\\iint_D(2x+3y)\\,dA\\), với \\(D\\) là miền giới hạn bởi \\(y=x^2\\), \\(x+y=2\\) và trục tung.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{121}{30}\\)",
+      "\\(\\dfrac{61}{15}\\)",
+      "\\(\\dfrac{91}{30}\\)",
+      "\\(\\dfrac{25}{6}\\)"
+    ],
+    "correct": "\\(\\dfrac{121}{30}\\)",
+    "solution": "Hai đường \\(y=x^2\\) và \\(y=2-x\\) cắt nhau tại \\(x=1\\) trong miền bên phải trục tung. Do đó \\(0\\le x\\le1\\), \\(x^2\\le y\\le2-x\\). Suy ra \\(I=\\int_0^1\\int_{x^2}^{2-x}(2x+3y)\\,dy\\,dx=\\dfrac{121}{30}\\).",
+    "quick": "Miền: \\(0\\le x\\le1\\), \\(x^2\\le y\\le2-x\\).",
+    "casio": "CASIO: tính tích phân trong theo \\(y\\), rồi tích phân ngoài trên \\([0,1]\\); kết quả \\(121/30\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 92,
+    "type": "double_integral_between_parabola_line",
+    "question": "Tính \\(I=\\iint_D(1+2xy)\\,dA\\), với \\(D\\) là miền giới hạn bởi \\(y=1-x^2\\) và \\(y=x-5\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1625}{12}\\)",
+      "\\(\\dfrac{625}{12}\\)",
+      "\\(\\dfrac{875}{12}\\)",
+      "\\(\\dfrac{1625}{6}\\)"
+    ],
+    "correct": "\\(\\dfrac{1625}{12}\\)",
+    "solution": "Giao điểm thỏa \\(1-x^2=x-5\\Rightarrow x=-3,2\\). Trên \\([-3,2]\\), parabol nằm trên đường thẳng nên \\(x-5\\le y\\le1-x^2\\). Do đó \\(I=\\int_{-3}^{2}\\int_{x-5}^{1-x^2}(1+2xy)\\,dy\\,dx=\\dfrac{1625}{12}\\).",
+    "quick": "Giải giao điểm được \\(x=-3,2\\), rồi lấy trên trừ dưới.",
+    "casio": "CASIO: sau khi tích phân theo \\(y\\), tính tích phân một biến trên \\([-3,2]\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 93,
+    "type": "double_integral_parabola_line",
+    "question": "Tính \\(I=\\iint_D(x-y)\\,dA\\), với \\(D\\) là miền giới hạn bởi \\(y=2-x^2\\) và \\(y=2x-1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{64}{15}\\)",
+      "\\(-\\dfrac{64}{15}\\)",
+      "\\(\\dfrac{32}{15}\\)",
+      "\\(\\dfrac{16}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{64}{15}\\)",
+    "solution": "Hai đường cắt nhau khi \\(2-x^2=2x-1\\), tức \\(x=-3,1\\). Trên đoạn này, \\(2-x^2\\) là biên trên và \\(2x-1\\) là biên dưới. Vậy \\(I=\\int_{-3}^{1}\\int_{2x-1}^{2-x^2}(x-y)\\,dy\\,dx=\\dfrac{64}{15}\\).",
+    "quick": "Cận: \\(-3\\le x\\le1\\), \\(2x-1\\le y\\le2-x^2\\).",
+    "casio": "CASIO: tích phân theo \\(y\\) trước, sau đó theo \\(x\\) trên \\([-3,1]\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 94,
+    "type": "double_integral_triangle_line",
+    "question": "Tính \\(I=\\iint_D(2x+3y^2)\\,dA\\), với \\(D\\) là miền giới hạn bởi \\(y=-2x+4\\), \\(x=1\\) và trục hoành.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{14}{3}\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(\\dfrac{10}{3}\\)",
+      "\\(7\\)"
+    ],
+    "correct": "\\(\\dfrac{14}{3}\\)",
+    "solution": "Miền tam giác được mô tả bởi \\(1\\le x\\le2\\), \\(0\\le y\\le4-2x\\). Do đó \\(I=\\int_1^2\\int_0^{4-2x}(2x+3y^2)\\,dy\\,dx=\\dfrac{14}{3}\\).",
+    "quick": "Đường \\(y=-2x+4\\) cắt trục hoành tại \\(x=2\\).",
+    "casio": "CASIO: tính lần lượt \\(\\int_1^2\\int_0^{4-2x}(2x+3y^2)dy\\,dx\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 95,
+    "type": "double_integral_trapezoid",
+    "question": "Tính \\(I=\\iint_D(x+2y-3)\\,dA\\), với \\(D\\) là miền giới hạn bởi \\(y=0\\), \\(y=2x\\), \\(x=1\\), \\(x=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(\\dfrac{9}{2}\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Miền có \\(1\\le x\\le2\\), \\(0\\le y\\le2x\\). Vì vậy \\(I=\\int_1^2\\int_0^{2x}(x+2y-3)\\,dy\\,dx=5\\).",
+    "quick": "Cận đọc trực tiếp: \\(x:1\\to2\\), \\(y:0\\to2x\\).",
+    "casio": "CASIO: tính tích phân trong theo \\(y\\), sau đó tích phân ngoài từ 1 đến 2.",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 96,
+    "type": "double_integral_triangle_parallel",
+    "question": "Tính \\(I=\\iint_D4x(y-1)\\,dA\\), với \\(D\\) là miền giới hạn bởi \\(y=2x+1\\), \\(y=1\\) và \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(\\dfrac{8}{3}\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Hai đường \\(y=2x+1\\) và \\(y=1\\) cắt nhau tại \\(x=0\\). Do đó \\(0\\le x\\le1\\), \\(1\\le y\\le2x+1\\). Suy ra \\(I=\\int_0^1\\int_1^{2x+1}4x(y-1)\\,dy\\,dx=2\\).",
+    "quick": "Miền tam giác: \\(0\\le x\\le1\\), \\(1\\le y\\le2x+1\\).",
+    "casio": "CASIO: tích phân theo \\(y\\) trước rồi theo \\(x\\) trên \\([0,1]\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 97,
+    "type": "double_integral_shifted_triangle_rational",
+    "question": "Tính \\(I=\\iint_D\\dfrac{1}{(x+y)^3}\\,dA\\), với \\(D=\\{(x,y):x\\ge1,\\ y\\ge1,\\ x+y\\le3\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{36}\\)",
+      "\\(\\dfrac{1}{18}\\)",
+      "\\(\\dfrac{1}{24}\\)",
+      "\\(\\dfrac{1}{12}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{36}\\)",
+    "solution": "Miền tam giác có \\(1\\le x\\le2\\), \\(1\\le y\\le3-x\\). Do đó \\(I=\\int_1^2\\int_1^{3-x}(x+y)^{-3}\\,dy\\,dx=\\dfrac{1}{36}\\).",
+    "quick": "Lập cận tam giác dịch: \\(x:1\\to2\\), \\(y:1\\to3-x\\).",
+    "casio": "CASIO: tính lần lượt hai tích phân; kết quả \\(0{,}027777\\ldots=1/36\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 98,
+    "type": "double_integral_quarter_disk_rational",
+    "question": "Tính \\(I=\\iint_D\\dfrac{y}{x^2+1}\\,dA\\), với \\(D=\\{(x,y):x\\ge0,\\ y\\ge0,\\ x^2+y^2\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi-2}{4}\\)",
+      "\\(\\dfrac{\\pi-2}{2}\\)",
+      "\\(\\dfrac{4-\\pi}{4}\\)",
+      "\\(\\dfrac{\\pi}{8}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi-2}{4}\\)",
+    "solution": "Dùng cận Descartes: \\(0\\le x\\le1\\), \\(0\\le y\\le\\sqrt{1-x^2}\\). Khi tích phân theo \\(y\\), ta được \\(I=\\dfrac12\\int_0^1\\dfrac{1-x^2}{1+x^2}dx=\\dfrac12\\int_0^1\\left(-1+\\dfrac{2}{1+x^2}\\right)dx=\\dfrac{\\pi-2}{4}\\).",
+    "quick": "Tích phân theo \\(y\\) trước để còn \\((1-x^2)/(2(1+x^2))\\).",
+    "casio": "CASIO: tính \\(0{,}5\\int_0^1(1-x^2)/(1+x^2)dx\\), được xấp xỉ \\(0{,}2854\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 99,
+    "type": "double_integral_between_mutual_parabolas",
+    "question": "Tính \\(I=\\iint_D x^2(y-x)\\,dA\\), với \\(D\\) là miền giới hạn bởi \\(y=x^2\\) và \\(x=y^2\\) trong góc phần tư thứ nhất.",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{1}{504}\\)",
+      "\\(\\dfrac{1}{504}\\)",
+      "\\(-\\dfrac{1}{252}\\)",
+      "\\(\\dfrac{1}{280}\\)"
+    ],
+    "correct": "\\(-\\dfrac{1}{504}\\)",
+    "solution": "Hai đường gặp nhau tại \\((0,0)\\) và \\((1,1)\\). Với \\(0\\le x\\le1\\), miền có \\(x^2\\le y\\le\\sqrt{x}\\). Vì vậy \\(I=\\int_0^1\\int_{x^2}^{\\sqrt{x}}x^2(y-x)\\,dy\\,dx=-\\dfrac{1}{504}\\).",
+    "quick": "Miền giữa hai parabol: \\(0\\le x\\le1\\), \\(x^2\\le y\\le\\sqrt{x}\\).",
+    "casio": "CASIO: tích phân theo \\(y\\) trước rồi theo \\(x\\); giá trị xấp xỉ \\(-0{,}00198413\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép"
+  },
+  {
+    "id": 100,
+    "type": "double_integral_triangle_rational_symmetric",
+    "question": "Tính \\(I=\\iint_D\\dfrac{xy}{x^2+y^2}\\,dA\\), với \\(D=\\{(x,y):x\\ge0,\\ y\\ge0,\\ x+y\\le1\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi-2}{8}\\)",
+      "\\(\\dfrac{\\pi-2}{4}\\)",
+      "\\(\\dfrac{4-\\pi}{8}\\)",
+      "\\(\\dfrac18\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi-2}{8}\\)",
+    "solution": "Đổi sang cực: \\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\), với \\(0\\le\\theta\\le\\pi/2\\) và \\(0\\le r\\le1/(\\cos\\theta+\\sin\\theta)\\). Khi đó \\(xy/(x^2+y^2)=\\sin\\theta\\cos\\theta\\) và \\(dA=r\\,dr\\,d\\theta\\). Tính tích phân được \\(I=\\dfrac{\\pi}{8}-\\dfrac14=\\dfrac{\\pi-2}{8}\\).",
+    "quick": "Trong cực, cạnh \\(x+y=1\\) cho \\(r=1/(\\cos\\theta+\\sin\\theta)\\).",
+    "casio": "CASIO: sau khi tích phân theo \\(r\\), tính tích phân một biến theo \\(\\theta\\) trên \\([0,\\pi/2]\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép – Tọa độ cực"
+  },
+  {
+    "id": 101,
+    "type": "double_integral_polar_quarter_disk",
+    "question": "Tính \\(I=\\iint_D y(x^2+y^2)\\,dA\\), với \\(D\\) là phần của đĩa \\(x^2+y^2\\le4\\) nằm trong góc phần tư thứ nhất.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{32}{5}\\)",
+      "\\(\\dfrac{16}{5}\\)",
+      "\\(\\dfrac{32}{3}\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(\\dfrac{32}{5}\\)",
+    "solution": "Trong tọa độ cực, \\(y=r\\sin\\theta\\), \\(x^2+y^2=r^2\\), \\(dA=r\\,dr\\,d\\theta\\). Miền có \\(0\\le r\\le2\\), \\(0\\le\\theta\\le\\pi/2\\). Do đó \\(I=\\int_0^{\\pi/2}\\int_0^2r^4\\sin\\theta\\,dr\\,d\\theta=\\dfrac{32}{5}\\).",
+    "quick": "Integrand sau đổi biến là \\(r^4\\sin\\theta\\).",
+    "casio": "CASIO: tách thành \\(\\int_0^2r^4dr\\cdot\\int_0^{\\pi/2}\\sin\\theta d\\theta\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Tọa độ cực"
+  },
+  {
+    "id": 102,
+    "type": "double_integral_polar_upper_semicircle",
+    "question": "Tính \\(I=\\iint_D y\\sqrt{x^2+y^2}\\,dA\\), với \\(D\\) là nửa trên của đĩa \\(x^2+y^2\\le9\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{81}{2}\\)",
+      "\\(\\dfrac{27}{2}\\)",
+      "\\(27\\)",
+      "\\(\\dfrac{81\\pi}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{81}{2}\\)",
+    "solution": "Trong cực, \\(y=r\\sin\\theta\\), \\(\\sqrt{x^2+y^2}=r\\), \\(dA=r\\,dr\\,d\\theta\\). Nửa trên có \\(0\\le\\theta\\le\\pi\\), \\(0\\le r\\le3\\). Vậy \\(I=\\int_0^\\pi\\int_0^3r^3\\sin\\theta\\,dr\\,d\\theta=\\dfrac{81}{2}\\).",
+    "quick": "Nửa trên: \\(0\\le\\theta\\le\\pi\\); integrand thành \\(r^3\\sin\\theta\\).",
+    "casio": "CASIO: tách tích phân theo \\(r\\) và \\(\\theta\\), được \\(81/4\\times2=81/2\\).",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Tọa độ cực"
+  },
+  {
+    "id": 103,
+    "type": "double_integral_polar_shifted_circle",
+    "question": "Tính \\(I=\\iint_D(x^2+y^2+1)\\,dA\\), với \\(D\\) là miền bên trong đường tròn \\(x^2+y^2-x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{11\\pi}{32}\\)",
+      "\\(\\dfrac{5\\pi}{16}\\)",
+      "\\(\\dfrac{3\\pi}{8}\\)",
+      "\\(\\dfrac{11\\pi}{16}\\)"
+    ],
+    "correct": "\\(\\dfrac{11\\pi}{32}\\)",
+    "solution": "Trong tọa độ cực, đường tròn có phương trình \\(r^2-r\\cos\\theta=0\\), nên \\(0\\le r\\le\\cos\\theta\\), \\(-\\pi/2\\le\\theta\\le\\pi/2\\). Do đó \\(I=\\int_{-\\pi/2}^{\\pi/2}\\int_0^{\\cos\\theta}(r^2+1)r\\,dr\\,d\\theta=\\dfrac{11\\pi}{32}\\).",
+    "quick": "Đường tròn \\(x^2+y^2=x\\) trở thành \\(r=\\cos\\theta\\).",
+    "casio": "CASIO: sau khi tích phân theo \\(r\\), tính tích phân theo \\(\\theta\\) trên \\([-\\pi/2,\\pi/2]\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép – Tọa độ cực"
+  },
+  {
+    "id": 104,
+    "type": "double_integral_polar_half_shifted_circle",
+    "question": "Tính \\(I=\\iint_D(x+2y+1)\\,dA\\), với \\(D=\\{(x,y):x^2+y^2\\le2y,\\ x\\ge0\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac23+\\dfrac{3\\pi}{2}\\)",
+      "\\(\\dfrac23+\\pi\\)",
+      "\\(\\dfrac43+\\dfrac{3\\pi}{2}\\)",
+      "\\(\\dfrac{3\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac23+\\dfrac{3\\pi}{2}\\)",
+    "solution": "Trong cực, \\(x^2+y^2\\le2y\\) cho \\(0\\le r\\le2\\sin\\theta\\). Điều kiện \\(x\\ge0\\) chọn nửa phải của đĩa, nên \\(0\\le\\theta\\le\\pi/2\\). Integrand trở thành \\(r\\cos\\theta+2r\\sin\\theta+1\\), rồi nhân Jacobian \\(r\\). Do đó \\(I=\\int_0^{\\pi/2}\\int_0^{2\\sin\\theta}(r\\cos\\theta+2r\\sin\\theta+1)r\\,dr\\,d\\theta=\\dfrac23+\\dfrac{3\\pi}{2}\\).",
+    "quick": "Miền: \\(0\\le\\theta\\le\\pi/2\\), \\(0\\le r\\le2\\sin\\theta\\).",
+    "casio": "CASIO: tính tích phân theo \\(r\\) trước rồi theo \\(\\theta\\); kết quả xấp xỉ \\(5{,}3791\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép – Tọa độ cực"
+  },
+  {
+    "id": 105,
+    "type": "double_integral_polar_annular_shifted_circle",
+    "question": "Tính \\(I=\\iint_D(y+1)\\,dA\\), với \\(D=\\{(x,y):1\\le x^2+y^2\\le2x\\}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi}{3}+\\dfrac{\\sqrt3}{2}\\)",
+      "\\(\\dfrac{2\\pi}{3}+\\dfrac{\\sqrt3}{2}\\)",
+      "\\(\\dfrac{\\pi}{3}+\\sqrt3\\)",
+      "\\(\\dfrac{\\pi}{6}+\\dfrac{\\sqrt3}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi}{3}+\\dfrac{\\sqrt3}{2}\\)",
+    "solution": "Trong cực, \\(1\\le r^2\\le2r\\cos\\theta\\) cho \\(1\\le r\\le2\\cos\\theta\\). Miền tồn tại khi \\(2\\cos\\theta\\ge1\\), tức \\(-\\pi/3\\le\\theta\\le\\pi/3\\). Khi đó \\(y+1=r\\sin\\theta+1\\), nên \\(I=\\int_{-\\pi/3}^{\\pi/3}\\int_1^{2\\cos\\theta}(r\\sin\\theta+1)r\\,dr\\,d\\theta\\). Phần chứa \\(\\sin\\theta\\) triệt tiêu do đối xứng, còn lại \\(I=\\dfrac{\\pi}{3}+\\dfrac{\\sqrt3}{2}\\).",
+    "quick": "Cận cực: \\(-\\pi/3\\le\\theta\\le\\pi/3\\), \\(1\\le r\\le2\\cos\\theta\\); phần lẻ theo \\(\\theta\\) triệt tiêu.",
+    "casio": "CASIO: tính tích phân còn lại sau khi bỏ phần lẻ; kết quả xấp xỉ \\(1{,}9132\\).",
+    "difficulty": 3,
+    "topic": "Tích phân kép – Tọa độ cực"
   }
 ]

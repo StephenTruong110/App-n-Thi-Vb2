@@ -1006,5 +1006,221 @@
     "casio": "CASIO có thể thay các \\(h\\) rất nhỏ để thấy thương sai phân tiến về 0; lời giải chính xác dùng kẹp.",
     "difficulty": 3,
     "topic": "Khả vi"
+  },
+  {
+    "id": 57,
+    "type": "continuity_parameter_piecewise_exponential",
+    "question": "Tìm \\(m\\) để hàm số \\(f(x)=\\begin{cases}e^x+2x+4,&x\\le0\\\\2m^2+mx-4,&x\\gt0\\end{cases}\\) liên tục trên \\(\\mathbb R\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=\\pm\\dfrac{3\\sqrt2}{2}\\)",
+      "\\(m=\\pm2\\)",
+      "\\(m=\\pm1\\)",
+      "Không tồn tại \\(m\\in\\mathbb R\\)"
+    ],
+    "correct": "\\(m=\\pm\\dfrac{3\\sqrt2}{2}\\)",
+    "solution": "Hai nhánh đều liên tục trên miền của chúng, nên chỉ cần xét tại \\(x=0\\). Ta có \\(f(0)=e^0+4=5\\), còn \\(\\lim_{x\\to0^+}f(x)=2m^2-4\\). Điều kiện liên tục: \\(2m^2-4=5\\Rightarrow m^2=9/2\\Rightarrow m=\\pm3\\sqrt2/2\\).",
+    "quick": "Ghép tại \\(0\\): \\(5=2m^2-4\\Rightarrow m=\\pm3\\sqrt2/2\\).",
+    "casio": "CASIO: giải \\(2m^2-9=0\\), được \\(m=\\pm3\\sqrt2/2\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 58,
+    "type": "continuity_parameter_piecewise_polynomial",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}x^4-\\sin(2x)+4,&x\\ge0\\\\2x+mx+m^2,&x\\lt0\\end{cases}\\) liên tục trên \\(\\mathbb R\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=\\pm2\\)",
+      "\\(m=\\pm1\\)",
+      "\\(m=2\\)",
+      "Không tồn tại \\(m\\in\\mathbb R\\)"
+    ],
+    "correct": "\\(m=\\pm2\\)",
+    "solution": "Chỉ cần xét tại \\(x=0\\). Nhánh phải cho \\(f(0)=4\\). Giới hạn trái bằng \\(m^2\\). Điều kiện liên tục là \\(m^2=4\\), do đó \\(m=\\pm2\\).",
+    "quick": "Tại \\(0\\): nhánh phải bằng 4, nhánh trái tiến tới \\(m^2\\).",
+    "casio": "CASIO: giải \\(m^2=4\\), được \\(m=\\pm2\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 59,
+    "type": "continuity_parameter_piecewise_trig",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}\\cos2x+9x+8,&x\\ge0\\\\9m^2+4x,&x\\lt0\\end{cases}\\) liên tục trên \\(\\mathbb R\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=\\pm1\\)",
+      "\\(m=1\\)",
+      "\\(m=\\pm3\\)",
+      "Không tồn tại \\(m\\in\\mathbb R\\)"
+    ],
+    "correct": "\\(m=\\pm1\\)",
+    "solution": "Tại \\(x=0\\), nhánh phải có giá trị \\(1+8=9\\). Giới hạn trái là \\(9m^2\\). Liên tục khi \\(9m^2=9\\Rightarrow m^2=1\\Rightarrow m=\\pm1\\).",
+    "quick": "Ghép tại \\(0\\): \\(9m^2=9\\).",
+    "casio": "CASIO: giải \\(m^2=1\\), được \\(m=\\pm1\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 60,
+    "type": "continuity_parameter_piecewise_at_one",
+    "question": "Tìm \\(m\\) để \\(f(x)=\\begin{cases}3x^2-2x+\\sin(x-1),&x\\ge1\\\\m^2x^2+3mx+3,&x\\lt1\\end{cases}\\) liên tục trên \\(\\mathbb R\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=-1\\) hoặc \\(m=-2\\)",
+      "\\(m=1\\) hoặc \\(m=2\\)",
+      "\\(m=-1\\)",
+      "Không tồn tại \\(m\\in\\mathbb R\\)"
+    ],
+    "correct": "\\(m=-1\\) hoặc \\(m=-2\\)",
+    "solution": "Xét tại \\(x=1\\). Nhánh phải cho \\(f(1)=3-2+\\sin0=1\\). Giới hạn trái bằng \\(m^2+3m+3\\). Điều kiện liên tục: \\(m^2+3m+3=1\\Rightarrow m^2+3m+2=0\\Rightarrow (m+1)(m+2)=0\\).",
+    "quick": "Ghép tại \\(1\\): \\(m^2+3m+3=1\\Rightarrow m=-1,-2\\).",
+    "casio": "CASIO: giải \\(m^2+3m+2=0\\), được \\(-1,-2\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 61,
+    "type": "continuity_parameter_no_real_solution",
+    "question": "Tìm \\(m\\in\\mathbb R\\) để \\(f(x)=\\begin{cases}e^{2(x-1)}-x^2+2,&x\\ge1\\\\4x+2m^2,&x\\lt1\\end{cases}\\) liên tục trên \\(\\mathbb R\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(m\\in\\mathbb R\\)",
+      "\\(m=0\\)",
+      "\\(m=\\pm1\\)",
+      "\\(m=\\pm\\sqrt2\\)"
+    ],
+    "correct": "Không tồn tại \\(m\\in\\mathbb R\\)",
+    "solution": "Tại \\(x=1\\), nhánh phải cho \\(f(1)=e^0-1+2=2\\). Giới hạn trái bằng \\(4+2m^2\\). Liên tục đòi hỏi \\(4+2m^2=2\\Rightarrow m^2=-1\\), không có nghiệm thực.",
+    "quick": "Điều kiện ghép cho \\(m^2=-1\\), nên không có \\(m\\) thực.",
+    "casio": "CASIO: phương trình \\(m^2=-1\\) không có nghiệm thực.",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 62,
+    "type": "continuity_parameter_limit_exp_trig",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{e^{ax}-e^{-x}}{\\sin3x},&0\\lt x\\le\\dfrac{\\pi}{2}\\\\a,&x=0\\end{cases}\\). Tìm \\(a\\) để \\(f\\) liên tục tại \\(x=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=\\dfrac12\\)",
+      "\\(a=1\\)",
+      "\\(a=\\dfrac13\\)",
+      "\\(a=2\\)"
+    ],
+    "correct": "\\(a=\\dfrac12\\)",
+    "solution": "Khi \\(x\\to0^+\\), ta có \\(e^{ax}-e^{-x}\\sim(a+1)x\\) và \\(\\sin3x\\sim3x\\). Do đó \\(\\lim_{x\\to0^+}f(x)=(a+1)/3\\). Muốn liên tục tại 0 cần \\((a+1)/3=a\\), suy ra \\(a=1/2\\).",
+    "quick": "Dùng tương đương: tử \\(\\sim(a+1)x\\), mẫu \\(\\sim3x\\).",
+    "casio": "CASIO không cần thiết; giải \\((a+1)/3=a\\) được \\(a=1/2\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 63,
+    "type": "continuity_piecewise_interval_all_parameters",
+    "question": "Cho \\(f(x)=\\begin{cases}2x+a,&0\\le x\\lt1\\\\ax^2+2,&1\\le x\\le2\\end{cases}\\). Với giá trị nào của \\(a\\), hàm số liên tục trên \\([0,2]\\)?",
+    "matrix": null,
+    "options": [
+      "Mọi \\(a\\in\\mathbb R\\)",
+      "Chỉ \\(a=0\\)",
+      "Chỉ \\(a=1\\)",
+      "Không tồn tại \\(a\\in\\mathbb R\\)"
+    ],
+    "correct": "Mọi \\(a\\in\\mathbb R\\)",
+    "solution": "Hai nhánh đều liên tục. Chỉ cần kiểm tra tại \\(x=1\\): giới hạn trái bằng \\(2+a\\), còn giá trị nhánh phải tại 1 là \\(a+2\\). Hai biểu thức luôn bằng nhau với mọi \\(a\\).",
+    "quick": "Tại điểm ghép \\(1\\), hai phía đều bằng \\(a+2\\).",
+    "casio": "Không cần CASIO; điều kiện liên tục tại \\(1\\) đúng với mọi \\(a\\).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 64,
+    "type": "continuity_parameter_removable",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{1+x}{1+x^3},&x\\ne-1\\\\a,&x=-1\\end{cases}\\). Tìm \\(a\\) để \\(f\\) liên tục tại \\(x=-1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=\\dfrac13\\)",
+      "\\(a=1\\)",
+      "\\(a=-\\dfrac13\\)",
+      "\\(a=3\\)"
+    ],
+    "correct": "\\(a=\\dfrac13\\)",
+    "solution": "Ta có \\(1+x^3=(1+x)(x^2-x+1)\\). Với \\(x\\ne-1\\), \\(f(x)=1/(x^2-x+1)\\). Vì vậy \\(\\lim_{x\\to-1}f(x)=1/(1+1+1)=1/3\\). Muốn liên tục cần \\(a=1/3\\).",
+    "quick": "Rút gọn \\((1+x)/(1+x^3)=1/(x^2-x+1)\\), rồi thay \\(x=-1\\).",
+    "casio": "CASIO: thay giá trị gần \\(-1\\) để kiểm tra giới hạn xấp xỉ \\(0{,}3333\\); kết quả chính xác là \\(1/3\\).",
+    "difficulty": 2,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 65,
+    "type": "continuity_parameter_cube_root",
+    "question": "Cho \\(f(x)=\\begin{cases}\\dfrac{\\sqrt[3]{3x+2}-2}{x-2},&x\\gt2\\\\ax+\\dfrac14,&x\\le2\\end{cases}\\). Tìm \\(a\\) để \\(f\\) liên tục tại \\(x=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=0\\)",
+      "\\(a=\\dfrac18\\)",
+      "\\(a=\\dfrac14\\)",
+      "\\(a=-\\dfrac18\\)"
+    ],
+    "correct": "\\(a=0\\)",
+    "solution": "Giới hạn phải là đạo hàm của \\(g(x)=\\sqrt[3]{3x+2}\\) tại \\(x=2\\): \\(g'(x)=(3x+2)^{-2/3}\\), nên \\(g'(2)=8^{-2/3}=1/4\\). Mặt khác \\(f(2)=2a+1/4\\). Điều kiện liên tục: \\(2a+1/4=1/4\\Rightarrow a=0\\).",
+    "quick": "Phân thức là thương sai phân của \\(g(x)=\\sqrt[3]{3x+2}\\) tại 2, nên giới hạn bằng \\(g'(2)=1/4\\).",
+    "casio": "CASIO: kiểm tra phân thức tại \\(x=2{,}000001\\) cho giá trị gần \\(1/4\\); suy ra \\(2a+1/4=1/4\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 66,
+    "type": "differentiability_parameter_no_solution",
+    "question": "Cho \\(f(x)=\\begin{cases}e^{ax}+2x+1,&x\\le0\\\\ax+b,&x\\gt0\\end{cases}\\). Với giá trị nào của \\(a,b\\), hàm số khả vi tại \\(x=0\\)?",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\((a,b)\\in\\mathbb R^2\\)",
+      "\\((a,b)=(0,2)\\)",
+      "\\((a,b)=(1,2)\\)",
+      "\\((a,b)=(-2,2)\\)"
+    ],
+    "correct": "Không tồn tại \\((a,b)\\in\\mathbb R^2\\)",
+    "solution": "Khả vi trước hết phải liên tục. Tại 0, nhánh trái cho \\(f(0)=e^0+1=2\\), nên cần \\(b=2\\). Đạo hàm trái tại 0 là \\(ae^{a\\cdot0}+2=a+2\\), còn đạo hàm phải là \\(a\\). Điều kiện \\(a+2=a\\) là vô lý. Vậy không có cặp \\((a,b)\\) nào.",
+    "quick": "Liên tục cho \\(b=2\\), nhưng đạo hàm hai phía đòi \\(a+2=a\\), vô nghiệm.",
+    "casio": "Không cần CASIO; điều kiện đạo hàm dẫn đến mâu thuẫn \\(2=0\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 67,
+    "type": "differentiability_parameter_at_one",
+    "question": "Cho \\(f(x)=\\begin{cases}x^3-2x^2+3,&x\\le1\\\\2ax+b,&x\\gt1\\end{cases}\\). Tìm \\((a,b)\\) để \\(f\\) khả vi tại \\(x=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(a=-\\dfrac12,\\ b=3\\)",
+      "\\(a=\\dfrac12,\\ b=1\\)",
+      "\\(a=-1,\\ b=4\\)",
+      "\\(a=1,\\ b=0\\)"
+    ],
+    "correct": "\\(a=-\\dfrac12,\\ b=3\\)",
+    "solution": "Liên tục tại 1: nhánh trái bằng \\(1-2+3=2\\), nên \\(2a+b=2\\). Đạo hàm trái là \\(3x^2-4x\\), tại 1 bằng \\(-1\\); đạo hàm phải là \\(2a\\). Do đó \\(2a=-1\\Rightarrow a=-1/2\\). Thế vào \\(2a+b=2\\) được \\(b=3\\).",
+    "quick": "Đạo hàm cho \\(2a=-1\\Rightarrow a=-1/2\\); liên tục cho \\(b=3\\).",
+    "casio": "CASIO: giải hệ \\(2a+b=2\\), \\(2a=-1\\) được \\((-1/2,3)\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 68,
+    "type": "differentiability_three_piece_parameters",
+    "question": "Cho \\(f(x)=\\begin{cases}4x,&x\\le0\\\\ax^2+bx+c,&0\\lt x\\lt1\\\\3-2x,&x\\ge1\\end{cases}\\). Tìm \\((a,b,c)\\) để \\(f\\) khả vi trên \\(\\mathbb R\\).",
+    "matrix": null,
+    "options": [
+      "\\((a,b,c)=(-3,4,0)\\)",
+      "\\((a,b,c)=(3,4,0)\\)",
+      "\\((a,b,c)=(-3,-4,0)\\)",
+      "\\((a,b,c)=(-2,4,1)\\)"
+    ],
+    "correct": "\\((a,b,c)=(-3,4,0)\\)",
+    "solution": "Tại \\(x=0\\), liên tục cho \\(c=0\\), còn đạo hàm trái bằng 4 nên \\(b=4\\). Tại \\(x=1\\), liên tục cho \\(a+b+c=1\\), suy ra \\(a+4=1\\Rightarrow a=-3\\). Kiểm tra đạo hàm tại 1: nhánh giữa cho \\(2a+b=-6+4=-2\\), đúng bằng đạo hàm của \\(3-2x\\). Vậy \\((a,b,c)=(-3,4,0)\\).",
+    "quick": "Tại 0: \\(c=0,b=4\\). Tại 1: liên tục cho \\(a=-3\\); đạo hàm cũng khớp \\(-2\\).",
+    "casio": "CASIO: giải lần lượt \\(c=0\\), \\(b=4\\), \\(a+b+c=1\\); sau đó kiểm tra \\(2a+b=-2\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn & Liên tục"
   }
 ]

@@ -1564,5 +1564,77 @@
     "casio": "CASIO không cần thiết để chọn công thức; cần nhớ \\(r\\le2\\), \\(r^2\\le z\\le4\\), và integrand sau đổi biến là \\(r^2\\).",
     "difficulty": 3,
     "topic": "Tích phân ba – Tọa độ trụ"
+  },
+  {
+    "id": 88,
+    "type": "triple_integral_cylinder_symmetry",
+    "question": "Tính \\(I=\\iiint_V z(y+2)\\,dV\\), với \\(V\\) là vật thể giới hạn bởi mặt trụ \\(x^2+y^2=4\\) và các mặt phẳng \\(z=0\\), \\(z=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(16\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(32\\pi\\)",
+      "\\(12\\pi\\)"
+    ],
+    "correct": "\\(16\\pi\\)",
+    "solution": "Miền \\(V\\) là hình trụ \\(x^2+y^2\\le4\\), \\(0\\le z\\le2\\), đối xứng qua mặt phẳng \\(y=0\\). Tách \\(I=\\iiint_V zy\\,dV+2\\iiint_V z\\,dV\\). Tích phân thứ nhất bằng 0 do hàm \\(zy\\) lẻ theo \\(y\\) trên miền đối xứng. Diện tích đáy là \\(4\\pi\\), nên \\(I=2\\cdot4\\pi\\int_0^2z\\,dz=16\\pi\\).",
+    "quick": "Dùng đối xứng: \\(\\iiint_V zy\\,dV=0\\); còn lại \\(2\\iiint_Vz\\,dV=16\\pi\\).",
+    "casio": "CASIO: sau khi dùng đối xứng, tính \\(8\\pi\\int_0^2z\\,dz=16\\pi\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 89,
+    "type": "triple_integral_sphere_z2_general",
+    "question": "Tính \\(I=\\iiint_V z^2\\,dV\\), với \\(V=\\{(x,y,z):x^2+y^2+z^2\\le R^2\\}\\), \\(R\\gt0\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4\\pi R^5}{15}\\)",
+      "\\(\\dfrac{4\\pi R^5}{5}\\)",
+      "\\(\\dfrac{4\\pi R^3}{15}\\)",
+      "\\(\\dfrac{\\pi R^5}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4\\pi R^5}{15}\\)",
+    "solution": "Do khối cầu đối xứng theo ba biến, \\(\\iiint_Vx^2\\,dV=\\iiint_Vy^2\\,dV=\\iiint_Vz^2\\,dV\\). Vì vậy \\(3I=\\iiint_V(x^2+y^2+z^2)\\,dV\\). Trong tọa độ cầu, vế phải bằng \\(\\int_0^{2\\pi}\\int_0^\\pi\\int_0^R\\rho^2\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta=\\dfrac{4\\pi R^5}{5}\\). Suy ra \\(I=\\dfrac{4\\pi R^5}{15}\\).",
+    "quick": "Đối xứng cầu: \\(3I=\\iiint_V\\rho^2dV=4\\pi R^5/5\\).",
+    "casio": "CASIO: tính \\(4\\pi R^5/5\\) rồi chia 3; kết quả \\(4\\pi R^5/15\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba – Tọa độ cầu"
+  },
+  {
+    "id": 90,
+    "type": "triple_integral_paraboloid_first_octant",
+    "question": "Tính \\(I=\\iiint_V xyz\\,dV\\), với \\(V\\) là vật thể giới hạn bởi các mặt \\(x^2+y^2=4z\\), \\(z=1\\) và nằm trong góc phần tám thứ nhất.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac12\\)",
+      "\\(1\\)",
+      "\\(\\dfrac14\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac12\\)",
+    "solution": "Trong tọa độ trụ, \\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\). Góc phần tám thứ nhất cho \\(0\\le\\theta\\le\\pi/2\\). Mặt paraboloid là \\(z=r^2/4\\), còn mặt trên là \\(z=1\\); hai mặt cắt nhau tại \\(r=2\\). Vì \\(xyz\\,dV=(r\\cos\\theta)(r\\sin\\theta)z\\,r\\,dz\\,dr\\,d\\theta\\), ta có \\(I=\\int_0^{\\pi/2}\\int_0^2\\int_{r^2/4}^{1}r^3\\sin\\theta\\cos\\theta\\,z\\,dz\\,dr\\,d\\theta=\\dfrac12\\).",
+    "quick": "Cận trụ: \\(0\\le\\theta\\le\\pi/2\\), \\(0\\le r\\le2\\), \\(r^2/4\\le z\\le1\\).",
+    "casio": "CASIO: tính lần lượt tích phân theo \\(z\\), \\(r\\), rồi \\(\\theta\\); kết quả \\(1/2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba – Tọa độ trụ"
+  },
+  {
+    "id": 91,
+    "type": "triple_integral_shifted_half_disk_cylinder",
+    "question": "Tính \\(I=\\iiint_V z\\sqrt{x^2+y^2}\\,dV\\), với \\(V\\) là vật thể giới hạn bởi \\(y=\\sqrt{2x-x^2}\\), \\(y=0\\), \\(z=0\\), \\(z=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac89\\)",
+      "\\(\\dfrac49\\)",
+      "\\(\\dfrac23\\)",
+      "\\(\\dfrac{16}{9}\\)"
+    ],
+    "correct": "\\(\\dfrac89\\)",
+    "solution": "Trên mặt phẳng \\(Oxy\\), phương trình \\(y=\\sqrt{2x-x^2}\\) tương đương \\(x^2+y^2=2x\\) với \\(y\\ge0\\). Trong tọa độ cực, miền đáy là \\(0\\le\\theta\\le\\pi/2\\), \\(0\\le r\\le2\\cos\\theta\\). Ngoài ra \\(0\\le z\\le1\\). Vì \\(\\sqrt{x^2+y^2}=r\\) và \\(dV=r\\,dz\\,dr\\,d\\theta\\), ta có \\(I=\\int_0^{\\pi/2}\\int_0^{2\\cos\\theta}\\int_0^1zr^2\\,dz\\,dr\\,d\\theta=\\dfrac89\\).",
+    "quick": "Đáy là nửa trên của đĩa \\((x-1)^2+y^2\\le1\\): trong cực \\(0\\le r\\le2\\cos\\theta\\), \\(0\\le\\theta\\le\\pi/2\\).",
+    "casio": "CASIO: tích phân theo \\(z\\) cho hệ số \\(1/2\\), rồi tính \\(\\frac12\\int_0^{\\pi/2}\\int_0^{2\\cos\\theta}r^2dr\\,d\\theta=8/9\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba – Tọa độ trụ"
   }
 ]

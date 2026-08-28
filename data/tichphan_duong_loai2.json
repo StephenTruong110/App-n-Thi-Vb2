@@ -1294,5 +1294,239 @@
     "casio": "CASIO: sau khi lập đúng tích phân, tính theo \\(y\\) trước rồi theo \\(x\\); giá trị kiểm tra là \\(24/5\\).",
     "difficulty": 3,
     "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 73,
+    "type": "line_integral_type2_parabola_parametric",
+    "question": "Tính \\(I=\\int_L(3x+2y)\\,dx+(x-2y)\\,dy\\), với \\(L\\) là cung parabol \\(y=x^2+3x-4\\) từ \\(A(0,-4)\\) đến \\(B(1,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{46}{3}\\)",
+      "\\(\\dfrac{32}{3}\\)",
+      "\\(\\dfrac{52}{3}\\)",
+      "\\(14\\)"
+    ],
+    "correct": "\\(\\dfrac{46}{3}\\)",
+    "solution": "Đặt \\(x=t\\), \\(y=t^2+3t-4\\), \\(0\\le t\\le1\\). Khi đó \\(dx=dt\\), \\(dy=(2t+3)dt\\). Suy ra tích phân trở thành \\(I=\\int_0^1[-4t^3-14t^2+10t+16]dt=\\dfrac{46}{3}\\).",
+    "quick": "Tham số hóa trực tiếp theo \\(x=t\\), rồi thay \\(dy=(2t+3)dt\\).",
+    "casio": "CASIO: sau khi rút về một biến, tính \\(\\int_0^1(-4t^3-14t^2+10t+16)dt\\), được \\(46/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 2"
+  },
+  {
+    "id": 74,
+    "type": "line_integral_type2_polyline_exact",
+    "question": "Tính \\(I=\\int_{ABC}(2x+y)\\,dx+(x+y)\\,dy\\), trong đó \\(ABC\\) là đường gấp khúc với \\(A(-2,0)\\), \\(B(0,2)\\), \\(C(2,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(4\\)",
+      "\\(-4\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Ta có \\(P=2x+y\\), \\(Q=x+y\\) và \\(P'_y=Q'_x=1\\), nên trường là trường thế. Một thế hàm là \\(U=x^2+xy+\\dfrac{y^2}{2}\\). Do đó \\(I=U(C)-U(A)=4-4=0\\).",
+    "quick": "Nhận ra \\(P'_y=Q'_x\\), nên không cần tách hai đoạn; chỉ tính hiệu thế tại \\(C\\) và \\(A\\).",
+    "casio": "CASIO không cần thiết; kiểm tra \\(U(A)=U(C)=4\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 2"
+  },
+  {
+    "id": 75,
+    "type": "line_integral_type2_sideways_parabola",
+    "question": "Tính \\(I=\\int_L(x+y)\\,dx+(x-y^2)\\,dy\\), với \\(L\\) là cung parabol \\(x=y^2-1\\) từ \\(A(-1,0)\\) đến \\(B(3,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{22}{3}\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(\\dfrac{28}{3}\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(\\dfrac{22}{3}\\)",
+    "solution": "Đặt \\(y=t\\), \\(x=t^2-1\\), \\(0\\le t\\le2\\). Khi đó \\(dx=2t\\,dt\\), \\(dy=dt\\), và \\(x-y^2=-1\\). Do đó \\(I=\\int_0^2[(t^2+t-1)2t-1]dt=\\dfrac{22}{3}\\).",
+    "quick": "Vì parabol cho dưới dạng \\(x=x(y)\\), đặt \\(y=t\\); khi đó \\(x-y^2=-1\\) rút gọn rất nhanh.",
+    "casio": "CASIO: tính \\(\\int_0^2(2t^3+2t^2-2t-1)dt\\), được \\(22/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 2"
+  },
+  {
+    "id": 76,
+    "type": "line_integral_type2_polyline",
+    "question": "Tính \\(I=\\int_{ABC}(x-y)^2\\,dx+(x+y)^2\\,dy\\), trong đó \\(ABC\\) là đường gấp khúc với \\(A(0,0)\\), \\(B(2,2)\\), \\(C(4,0)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{32}{3}\\)",
+      "\\(\\dfrac{32}{3}\\)",
+      "\\(-\\dfrac{16}{3}\\)",
+      "\\(-8\\)"
+    ],
+    "correct": "\\(-\\dfrac{32}{3}\\)",
+    "solution": "Tách theo hai đoạn. Trên \\(AB\\), đặt \\(x=t,y=t\\), \\(0\\le t\\le2\\), được \\(I_{AB}=\\int_0^2(2t)^2dt=32/3\\). Trên \\(BC\\), đặt \\(x=2+t,y=2-t\\), \\(0\\le t\\le2\\), nên \\(dx=dt,dy=-dt\\), \\(x-y=2t\\), \\(x+y=4\\). Do đó \\(I_{BC}=\\int_0^2(4t^2-16)dt=-64/3\\). Cộng lại \\(I=-32/3\\).",
+    "quick": "Đường gấp khúc phải tách \\(AB\\) và \\(BC\\); chú ý trên \\(BC\\) thì \\(dy=-dt\\).",
+    "casio": "CASIO: tính riêng \\(32/3\\) và \\(-64/3\\), rồi cộng được \\(-32/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 2"
+  },
+  {
+    "id": 77,
+    "type": "green_theorem_parabola_axis_clockwise",
+    "question": "Cho \\(L\\) là biên kín của miền nằm giữa parabol \\(y=2x-x^2\\) và trục \\(Ox\\), định hướng theo chiều kim đồng hồ. Tính \\(I=\\oint_L y\\,dx-(y+x^2)\\,dy\\).",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(-4\\)",
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Đặt \\(P=y\\), \\(Q=-(y+x^2)\\). Khi đó \\(Q'_x-P'_y=-2x-1\\). Nếu định hướng dương thì Green cho \\(\\iint_D(-2x-1)dA\\); nhưng \\(L\\) đi theo chiều kim đồng hồ nên đổi dấu. Miền có \\(0\\le x\\le2\\), \\(0\\le y\\le2x-x^2\\). Vì vậy \\(I=\\int_0^2\\int_0^{2x-x^2}(2x+1)dy\\,dx=4\\).",
+    "quick": "Chiều kim đồng hồ phải đổi dấu của Green; miền dưới parabol có \\(x\\) từ 0 đến 2.",
+    "casio": "CASIO: tính \\(\\int_0^2(2x+1)(2x-x^2)dx\\), được 4.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 78,
+    "type": "green_theorem_ellipse_zero",
+    "question": "Tính \\(I=\\oint_L(x+y)\\,dx+(x-y)\\,dy\\), với \\(L\\) là elip \\(\\dfrac{x^2}{4}+\\dfrac{y^2}{9}=1\\) định hướng ngược chiều kim đồng hồ.",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(6\\pi\\)",
+      "\\(12\\pi\\)",
+      "\\(-6\\pi\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Ta có \\(P=x+y\\), \\(Q=x-y\\). Khi đó \\(Q'_x-P'_y=1-1=0\\). Theo Green, \\(I=\\iint_D0\\,dA=0\\), không phụ thuộc diện tích elip.",
+    "quick": "Green cho ngay \\(Q'_x-P'_y=0\\), nên tích phân trên mọi đường kín bằng 0.",
+    "casio": "CASIO không cần thiết; chỉ cần tính hai đạo hàm riêng đều bằng 1.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 79,
+    "type": "green_theorem_two_parabolas",
+    "question": "Tính \\(I=\\oint_L(2xy-x^2)\\,dx+(x+y^2)\\,dy\\), với \\(L\\) là đường kín gồm hai cung \\(y=x^2\\) và \\(x=y^2\\) trong góc phần tư thứ nhất, định hướng dương.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{30}\\)",
+      "\\(-\\dfrac{1}{30}\\)",
+      "\\(\\dfrac{1}{15}\\)",
+      "\\(\\dfrac{1}{6}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{30}\\)",
+    "solution": "Đặt \\(P=2xy-x^2\\), \\(Q=x+y^2\\). Theo Green, \\(Q'_x-P'_y=1-2x\\). Hai parabol cắt nhau tại \\((0,0)\\) và \\((1,1)\\). Trong góc phần tư thứ nhất, miền được mô tả bởi \\(0\\le x\\le1\\), \\(x^2\\le y\\le\\sqrt{x}\\). Do đó \\(I=\\int_0^1\\int_{x^2}^{\\sqrt{x}}(1-2x)dy\\,dx=\\dfrac{1}{30}\\).",
+    "quick": "Green rồi dùng miền giữa \\(y=x^2\\) và \\(y=\\sqrt{x}\\) trên \\([0,1]\\).",
+    "casio": "CASIO: tính \\(\\int_0^1(1-2x)(\\sqrt{x}-x^2)dx\\), được \\(1/30\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 80,
+    "type": "green_theorem_triangle_zero",
+    "question": "Tính \\(I=\\oint_L(2xy+x^2)\\,dx+(3y^2+2xy)\\,dy\\), trong đó \\(L\\) là biên của miền giới hạn bởi \\(y=0\\), \\(y=2x\\), \\(x=2\\), định hướng dương.",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(8\\)",
+      "\\(-8\\)",
+      "\\(16\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Đặt \\(P=2xy+x^2\\), \\(Q=3y^2+2xy\\). Theo Green, \\(Q'_x-P'_y=2y-2x\\). Miền tam giác có \\(0\\le x\\le2\\), \\(0\\le y\\le2x\\). Do đó \\(I=\\int_0^2\\int_0^{2x}(2y-2x)\\,dy\\,dx=0\\).",
+    "quick": "Green cho \\(2(y-x)\\); tích phân trên tam giác \\(0\\le y\\le2x\\), \\(0\\le x\\le2\\) bằng 0.",
+    "casio": "CASIO: tích phân theo \\(y\\) trước; biểu thức trong triệt tiêu về 0 với mọi \\(x\\), nên kết quả là 0.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 81,
+    "type": "green_theorem_unit_disk_symmetry",
+    "question": "Tính \\(I=\\oint_C(y+xe^x+\\sin x)\\,dx+(x^2+x+3y\\cos y)\\,dy\\), với \\(C\\) là đường tròn \\(x^2+y^2=1\\), định hướng dương.",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(2\\pi\\)",
+      "\\(-2\\pi\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Đặt \\(P=y+xe^x+\\sin x\\), \\(Q=x^2+x+3y\\cos y\\). Ta có \\(Q'_x=2x+1\\), \\(P'_y=1\\), nên \\(Q'_x-P'_y=2x\\). Theo Green, \\(I=\\iint_D2x\\,dA\\), với \\(D\\) là đĩa đơn vị. Miền \\(D\\) đối xứng qua trục \\(Oy\\), còn \\(2x\\) là hàm lẻ theo \\(x\\), nên tích phân bằng 0.",
+    "quick": "Green → \\(2x\\); tích phân hàm lẻ theo \\(x\\) trên đĩa đối xứng bằng 0.",
+    "casio": "Không cần CASIO; dùng tính đối xứng của đĩa đơn vị.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 82,
+    "type": "green_theorem_triangle_shifted",
+    "question": "Tính \\(I=\\oint_L(x-2xy+x^2)\\,dx+(x^2+2y^2+2e^y)\\,dy\\), trong đó \\(L\\) là biên tam giác có các đỉnh \\(A(0,-2)\\), \\(B(2,2)\\), \\(C(0,2)\\), định hướng dương.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{32}{3}\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(\\dfrac{64}{3}\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(\\dfrac{32}{3}\\)",
+    "solution": "Đặt \\(P=x-2xy+x^2\\), \\(Q=x^2+2y^2+2e^y\\). Khi đó \\(Q'_x-P'_y=2x-(-2x)=4x\\). Tam giác được mô tả bởi \\(0\\le x\\le2\\), \\(2x-2\\le y\\le2\\). Theo Green, \\(I=\\int_0^2\\int_{2x-2}^{2}4x\\,dy\\,dx=\\dfrac{32}{3}\\).",
+    "quick": "Green cho \\(4x\\); cạnh \\(AB\\) có phương trình \\(y=2x-2\\).",
+    "casio": "CASIO: tính \\(\\int_0^2 4x[2-(2x-2)]dx\\), được \\(32/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 83,
+    "type": "green_theorem_triangle_xy",
+    "question": "Tính \\(I=\\oint_L(x^2+xy^2+2x\\sin x)\\,dx+(3y^2+2x^2y+4)\\,dy\\), trong đó \\(L\\) là biên của miền giới hạn bởi \\(x=0\\), \\(y=0\\), \\(y=2-x\\), định hướng dương.",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(2\\)",
+      "\\(-\\dfrac{4}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "Đặt \\(P=x^2+xy^2+2x\\sin x\\), \\(Q=3y^2+2x^2y+4\\). Ta có \\(Q'_x=4xy\\), \\(P'_y=2xy\\), nên \\(Q'_x-P'_y=2xy\\). Miền tam giác có \\(0\\le x\\le2\\), \\(0\\le y\\le2-x\\). Do đó \\(I=\\int_0^2\\int_0^{2-x}2xy\\,dy\\,dx=\\dfrac{4}{3}\\).",
+    "quick": "Green rút biểu thức dài còn \\(2xy\\), rồi tích phân trên tam giác \\(x+y\\le2\\).",
+    "casio": "CASIO: tích phân theo \\(y\\) cho \\(x(2-x)^2\\), rồi tính từ 0 đến 2, được \\(4/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 84,
+    "type": "green_theorem_circle_odd_constant",
+    "question": "Tính \\(I=\\oint_L(y^3+2y+x^2e^x)\\,dx+(x^2+y^2+3xy^2)\\,dy\\), với \\(L\\) là đường tròn \\(x^2+y^2=4\\), định hướng dương.",
+    "matrix": null,
+    "options": [
+      "\\(-8\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(-4\\pi\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(-8\\pi\\)",
+    "solution": "Đặt \\(P=y^3+2y+x^2e^x\\), \\(Q=x^2+y^2+3xy^2\\). Ta có \\(Q'_x=2x+3y^2\\), \\(P'_y=3y^2+2\\), nên \\(Q'_x-P'_y=2x-2\\). Theo Green, \\(I=\\iint_D(2x-2)\\,dA\\), với \\(D\\) là đĩa bán kính 2. Phần \\(2x\\) triệt tiêu do đối xứng, còn \\(-2\\iint_DdA=-2\\cdot4\\pi=-8\\pi\\).",
+    "quick": "Green → \\(2x-2\\); phần \\(2x\\) lẻ trên đĩa bằng 0, còn \\(-2\\times4\\pi\\).",
+    "casio": "Không cần CASIO; diện tích đĩa bán kính 2 là \\(4\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 85,
+    "type": "green_theorem_triangle_linear_integrand",
+    "question": "Tính \\(I=\\oint_L(2xy+x^2+\\cos x)\\,dx+(3x^2+3y^2+2xy)\\,dy\\), trong đó \\(L\\) là biên của miền giới hạn bởi \\(y=0\\), \\(y=2x\\), \\(x=2\\), định hướng dương.",
+    "matrix": null,
+    "options": [
+      "\\(32\\)",
+      "\\(16\\)",
+      "\\(24\\)",
+      "\\(40\\)"
+    ],
+    "correct": "\\(32\\)",
+    "solution": "Đặt \\(P=2xy+x^2+\\cos x\\), \\(Q=3x^2+3y^2+2xy\\). Khi đó \\(Q'_x=6x+2y\\), \\(P'_y=2x\\), nên \\(Q'_x-P'_y=4x+2y\\). Miền có \\(0\\le x\\le2\\), \\(0\\le y\\le2x\\). Theo Green, \\(I=\\int_0^2\\int_0^{2x}(4x+2y)\\,dy\\,dx=32\\).",
+    "quick": "Green → \\(4x+2y\\); cận tam giác \\(0\\le y\\le2x\\), \\(0\\le x\\le2\\).",
+    "casio": "CASIO: tích phân theo \\(y\\) được \\(12x^2\\), rồi \\(\\int_0^2 12x^2dx=32\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
   }
 ]

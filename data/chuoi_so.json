@@ -1618,5 +1618,455 @@
     "casio": "CASIO: sau khi nhận dạng công thức, nhập \\(5\\div(1-0{,}8)^2\\), được 125.",
     "difficulty": 3,
     "topic": "Chuỗi số – Ứng dụng chuỗi lũy thừa hình học"
+  },
+  {
+    "id": 91,
+    "type": "comparison_equivalent",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{n(n+1)^2}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^3}\\)",
+      "Phân kỳ vì \\(u_n\\sim\\dfrac{1}{n}\\)",
+      "Phân kỳ vì \\(u_n\\not\\to0\\)",
+      "Hội tụ có điều kiện"
+    ],
+    "correct": "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^3}\\)",
+    "solution": "Ta có \\(\\lim_{n\\to\\infty}\\dfrac{1/[n(n+1)^2]}{1/n^3}=\\lim_{n\\to\\infty}\\dfrac{n^2}{(n+1)^2}=1\\). Vì \\(\\sum1/n^3\\) hội tụ, chuỗi đã cho hội tụ theo tiêu chuẩn so sánh giới hạn.",
+    "quick": "Giữ bậc trội: \\(n(n+1)^2\\sim n^3\\).",
+    "casio": "CASIO: tính \\(n^2/(n+1)^2\\) tại \\(n\\) lớn, giá trị tiến gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 92,
+    "type": "dalembert_exponential_radical",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}\\dfrac{1}{2^n\\sqrt{n^2-2}}\\). Theo tiêu chuẩn D'Alembert, giới hạn \\(D\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac12\\), chuỗi hội tụ",
+      "\\(1\\), chưa kết luận",
+      "\\(2\\), chuỗi phân kỳ",
+      "\\(0\\), chuỗi hội tụ"
+    ],
+    "correct": "\\(\\dfrac12\\), chuỗi hội tụ",
+    "solution": "Với \\(u_n=1/[2^n\\sqrt{n^2-2}]\\), ta có \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac12\\sqrt{\\dfrac{n^2-2}{(n+1)^2-2}}\\to\\dfrac12\\). Vì \\(D=1/2\\lt1\\), chuỗi hội tụ.",
+    "quick": "Lũy thừa \\(2^n\\) quyết định tỉ số; phần căn có tỉ số tiến về 1.",
+    "casio": "CASIO: tính \\(0.5\\sqrt{(n^2-2)/((n+1)^2-2)}\\) với \\(n\\) lớn, được gần 0,5.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 93,
+    "type": "dalembert_geometric_polynomial",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{3^n}{5^n(n+3)^3}\\). Theo D'Alembert, kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(D=\\dfrac35\\lt1\\)",
+      "Phân kỳ vì \\(D=\\dfrac53\\gt1\\)",
+      "Chưa kết luận vì \\(D=1\\)",
+      "Hội tụ vì \\(D=0\\)"
+    ],
+    "correct": "Hội tụ vì \\(D=\\dfrac35\\lt1\\)",
+    "solution": "Ta có \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac35\\left(\\dfrac{n+3}{n+4}\\right)^3\\to\\dfrac35\\). Vì \\(3/5\\lt1\\), chuỗi hội tụ.",
+    "quick": "Phần đa thức cho tỉ số tiến về 1; còn lại \\(3/5\\).",
+    "casio": "CASIO: tính \\((3/5)((n+3)/(n+4))^3\\) tại \\(n\\) lớn.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 94,
+    "type": "comparison_harmonic_divergence",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n+2}{2n^2+1}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(u_n\\sim\\dfrac{1}{2n}\\)",
+      "Hội tụ vì \\(u_n\\sim\\dfrac{1}{2n^2}\\)",
+      "Hội tụ tuyệt đối",
+      "Phân kỳ vì \\(u_n\\not\\to0\\)"
+    ],
+    "correct": "Phân kỳ vì \\(u_n\\sim\\dfrac{1}{2n}\\)",
+    "solution": "So sánh với \\(1/n\\): \\(\\lim_{n\\to\\infty}\\dfrac{(n+2)/(2n^2+1)}{1/n}=\\lim\\dfrac{n(n+2)}{2n^2+1}=1/2\\). Đây là số dương hữu hạn, nên chuỗi cùng tính chất với chuỗi điều hòa \\(\\sum1/n\\), do đó phân kỳ.",
+    "quick": "Bậc tử 1, bậc mẫu 2 nên \\(u_n\\sim1/(2n)\\).",
+    "casio": "CASIO: tính \\(n(n+2)/(2n^2+1)\\) tại \\(n\\) lớn, được gần 0,5.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 95,
+    "type": "comparison_p_series",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{2n+1}{n^2(n+2)^2}\\). Chuỗi có cùng tính hội tụ với",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\sum\\dfrac{1}{n^3}\\), nên hội tụ",
+      "\\(\\displaystyle\\sum\\dfrac{1}{n}\\), nên phân kỳ",
+      "\\(\\displaystyle\\sum\\dfrac{1}{n^2}\\), nên hội tụ",
+      "Chuỗi điều hòa đan dấu"
+    ],
+    "correct": "\\(\\displaystyle\\sum\\dfrac{1}{n^3}\\), nên hội tụ",
+    "solution": "Ta có \\(\\dfrac{2n+1}{n^2(n+2)^2}\\sim\\dfrac{2n}{n^4}=\\dfrac{2}{n^3}\\). Chính xác, \\(\\lim_{n\\to\\infty}\\dfrac{u_n}{1/n^3}=2\\). Vì \\(\\sum1/n^3\\) hội tụ, chuỗi đã cho hội tụ.",
+    "quick": "Bậc trội: tử bậc 1, mẫu bậc 4 → giống \\(1/n^3\\).",
+    "casio": "CASIO: tính \\(n^3(2n+1)/[n^2(n+2)^2]\\) tại \\(n\\) lớn, tiến gần 2.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 96,
+    "type": "dalembert_odd_exponential",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{(2n-1)2^{2n-1}}\\). Theo tiêu chuẩn D'Alembert, kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(D=\\dfrac14\\lt1\\)",
+      "Phân kỳ vì \\(D=4\\gt1\\)",
+      "Chưa kết luận được vì \\(D=1\\)",
+      "Phân kỳ vì số hạng không tiến về 0"
+    ],
+    "correct": "Hội tụ vì \\(D=\\dfrac14\\lt1\\)",
+    "solution": "Đặt \\(u_n=1/[(2n-1)2^{2n-1}]\\). Khi đó \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{2n-1}{2n+1}\\cdot\\dfrac{1}{4}\\to\\dfrac14\\). Vì \\(D=1/4\\lt1\\), chuỗi hội tụ.",
+    "quick": "Mỗi bước tăng \\(n\\) làm lũy thừa ở mẫu tăng thêm \\(2^2=4\\); phần \\((2n-1)/(2n+1)\\to1\\).",
+    "casio": "CASIO: tính \\(((2n-1)/(2n+1))/4\\) với \\(n\\) lớn, được gần \\(0{,}25\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 97,
+    "type": "dalembert_factorial_power",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{3^n n!}{n^n}\\). Theo tiêu chuẩn D'Alembert, kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(D=\\dfrac3e\\gt1\\)",
+      "Hội tụ vì \\(D=\\dfrac1e\\lt1\\)",
+      "Hội tụ vì \\(D=\\dfrac{e}{3}\\lt1\\)",
+      "Chưa kết luận vì \\(D=1\\)"
+    ],
+    "correct": "Phân kỳ vì \\(D=\\dfrac3e\\gt1\\)",
+    "solution": "Ta có \\(\\dfrac{u_{n+1}}{u_n}=3\\left(\\dfrac{n}{n+1}\\right)^n=\\dfrac{3}{(1+1/n)^n}\\to\\dfrac3e\\). Vì \\(3/e\\gt1\\), chuỗi phân kỳ.",
+    "quick": "So với bài \\(n!/n^n\\): chỉ thêm hệ số \\(3^n\\), nên giới hạn tỉ số được nhân 3.",
+    "casio": "CASIO: tính \\(3/(1+1/n)^n\\) với \\(n\\) lớn, được gần \\(1{,}10364\\gt1\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 98,
+    "type": "cauchy_root_exponential_limit",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac1{5^n}\\left(1+\\dfrac1n\\right)^{n^2}\\). Theo tiêu chuẩn Cauchy, giới hạn \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac e5\\), chuỗi hội tụ",
+      "\\(\\dfrac5e\\), chuỗi phân kỳ",
+      "\\(1\\), chưa kết luận",
+      "\\(\\dfrac15\\), chuỗi hội tụ"
+    ],
+    "correct": "\\(\\dfrac e5\\), chuỗi hội tụ",
+    "solution": "Ta có \\(\\sqrt[n]{u_n}=\\dfrac15\\left(1+\\dfrac1n\\right)^n\\to\\dfrac e5\\). Vì \\(e/5\\lt1\\), chuỗi hội tụ theo tiêu chuẩn Cauchy.",
+    "quick": "Căn bậc \\(n\\) biến số mũ \\(n^2\\) thành \\(n\\), rồi dùng \\((1+1/n)^n\\to e\\).",
+    "casio": "CASIO: tính \\((1+1/n)^n/5\\) với \\(n\\) lớn, được gần \\(0{,}543656\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 99,
+    "type": "cauchy_root_exponential_limit",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac1{9^n}\\left(1-\\dfrac2n\\right)^{n^2}\\). Theo tiêu chuẩn Cauchy, giới hạn \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{e^{-2}}9\\), chuỗi hội tụ",
+      "\\(\\dfrac{e^2}{9}\\), chuỗi hội tụ",
+      "\\(\\dfrac19\\), chuỗi hội tụ",
+      "\\(\\dfrac9{e^2}\\), chuỗi phân kỳ"
+    ],
+    "correct": "\\(\\dfrac{e^{-2}}9\\), chuỗi hội tụ",
+    "solution": "Từ một chỉ số đủ lớn các số hạng dương và \\(\\sqrt[n]{u_n}=\\dfrac19\\left(1-\\dfrac2n\\right)^n\\to\\dfrac{e^{-2}}9\\). Vì \\(e^{-2}/9\\lt1\\), chuỗi hội tụ theo tiêu chuẩn Cauchy.",
+    "quick": "Dùng giới hạn chuẩn \\((1-2/n)^n\\to e^{-2}\\).",
+    "casio": "CASIO: tính \\((1-2/n)^n/9\\) với \\(n\\) lớn, được gần \\(0{,}015037\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 100,
+    "type": "alternating_series_conditional",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^{n+1}\\dfrac{2n+1}{n(n+1)}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Chuỗi bán hội tụ",
+      "Chuỗi hội tụ tuyệt đối",
+      "Chuỗi phân kỳ vì số hạng không tiến về 0",
+      "Chuỗi phân kỳ theo Leibniz"
+    ],
+    "correct": "Chuỗi bán hội tụ",
+    "solution": "Đặt \\(a_n=(2n+1)/[n(n+1)]=1/n+1/(n+1)\\). Ta có \\(a_n\\to0\\) và \\(a_n\\) giảm, nên chuỗi đan dấu hội tụ theo Leibniz. Nhưng \\(a_n\\sim2/n\\), do đó \\(\\sum a_n\\) phân kỳ. Vì vậy chuỗi chỉ hội tụ có điều kiện, tức bán hội tụ.",
+    "quick": "Leibniz cho hội tụ, nhưng trị tuyệt đối tương đương \\(2/n\\) nên phân kỳ.",
+    "casio": "CASIO có thể kiểm tra \\(a_n\\) giảm và tiến về 0; phần hội tụ tuyệt đối phải so sánh với \\(1/n\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 101,
+    "type": "comparison_p_series",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{(2n-1)(2n+1)}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(u_n\\sim\\dfrac{1}{4n^2}\\)",
+      "Phân kỳ vì \\(u_n\\sim\\dfrac{1}{2n}\\)",
+      "Phân kỳ vì \\(u_n\\not\\to0\\)",
+      "Hội tụ có điều kiện"
+    ],
+    "correct": "Hội tụ vì \\(u_n\\sim\\dfrac{1}{4n^2}\\)",
+    "solution": "Ta có \\((2n-1)(2n+1)=4n^2-1\\), nên \\(u_n=1/(4n^2-1)\\sim1/(4n^2)\\). Vì \\(\\sum1/n^2\\) hội tụ, chuỗi đã cho hội tụ theo tiêu chuẩn so sánh giới hạn.",
+    "quick": "Mẫu bậc 2: \\(u_n\\sim1/(4n^2)\\), nên hội tụ như chuỗi \\(p=2\\).",
+    "casio": "CASIO: tính \\(4n^2/(4n^2-1)\\) tại \\(n\\) lớn, được gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 102,
+    "type": "comparison_p_series",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{n^2+n}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^2}\\)",
+      "Phân kỳ vì \\(u_n\\sim\\dfrac{1}{n}\\)",
+      "Phân kỳ vì \\(u_n\\not\\to0\\)",
+      "Hội tụ có điều kiện"
+    ],
+    "correct": "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^2}\\)",
+    "solution": "Ta có \\(u_n=1/[n(n+1)]\\) và \\(\\lim_{n\\to\\infty}\\dfrac{u_n}{1/n^2}=\\lim\\dfrac{n}{n+1}=1\\). Vì \\(\\sum1/n^2\\) hội tụ, chuỗi đã cho hội tụ.",
+    "quick": "\\(n^2+n\\sim n^2\\), nên chuỗi cùng tính chất với \\(\\sum1/n^2\\).",
+    "casio": "CASIO: tính \\(n/(n+1)\\) với \\(n\\) lớn, được gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 103,
+    "type": "comparison_equivalent_rational",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n+3}{n^3+2n+2}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^2}\\)",
+      "Phân kỳ vì \\(u_n\\sim\\dfrac{1}{n}\\)",
+      "Phân kỳ vì \\(u_n\\not\\to0\\)",
+      "Hội tụ có điều kiện"
+    ],
+    "correct": "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^2}\\)",
+    "solution": "Ta có \\(\\lim_{n\\to\\infty}\\dfrac{(n+3)/(n^3+2n+2)}{1/n^2}=1\\). Vì \\(\\sum1/n^2\\) hội tụ nên chuỗi đã cho hội tụ theo tiêu chuẩn so sánh giới hạn.",
+    "quick": "Bậc tử 1, bậc mẫu 3 nên \\(u_n\\sim1/n^2\\).",
+    "casio": "CASIO: tính \\(n^2(n+3)/(n^3+2n+2)\\) với \\(n\\) lớn, được gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 104,
+    "type": "p_series_shifted",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{\\sqrt[3]{n+2}}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì tương đương \\(\\displaystyle\\sum\\dfrac{1}{n^{1/3}}\\)",
+      "Hội tụ vì là chuỗi \\(p\\) với \\(p=3\\)",
+      "Hội tụ tuyệt đối",
+      "Phân kỳ vì số hạng không tiến về 0"
+    ],
+    "correct": "Phân kỳ vì tương đương \\(\\displaystyle\\sum\\dfrac{1}{n^{1/3}}\\)",
+    "solution": "Ta có \\(1/\\sqrt[3]{n+2}\\sim1/n^{1/3}\\). Chuỗi Riemann \\(\\sum1/n^p\\) với \\(p=1/3\\le1\\) phân kỳ, nên chuỗi đã cho phân kỳ.",
+    "quick": "Dịch \\(n\\) thành \\(n+2\\) không đổi tính chất; \\(p=1/3\\le1\\).",
+    "casio": "Không cần CASIO; nhận dạng chuỗi Riemann với số mũ \\(1/3\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 105,
+    "type": "comparison_radical_product",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{\\sqrt{(n+1)(n^2+1)}}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^{3/2}}\\)",
+      "Phân kỳ vì \\(u_n\\sim\\dfrac{1}{n}\\)",
+      "Hội tụ vì \\(u_n\\sim\\dfrac{1}{\\sqrt n}\\)",
+      "Phân kỳ vì \\(u_n\\not\\to0\\)"
+    ],
+    "correct": "Hội tụ vì \\(u_n\\sim\\dfrac{1}{n^{3/2}}\\)",
+    "solution": "Vì \\((n+1)(n^2+1)\\sim n^3\\), nên \\(u_n\\sim1/n^{3/2}\\). Chuỗi Riemann với \\(p=3/2\\gt1\\) hội tụ, do đó chuỗi đã cho hội tụ.",
+    "quick": "Trong căn có bậc \\(3\\), nên sau lấy căn mẫu có bậc \\(3/2\\).",
+    "casio": "CASIO: tính \\(n^{3/2}/\\sqrt{(n+1)(n^2+1)}\\) với \\(n\\) lớn, được gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 106,
+    "type": "dalembert_n_over_2n",
+    "question": "Dùng tiêu chuẩn D'Alembert xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n}{2^n}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(D=\\dfrac12\\lt1\\)",
+      "Phân kỳ vì \\(D=2\\gt1\\)",
+      "Chưa kết luận vì \\(D=1\\)",
+      "Phân kỳ vì \\(u_n\\not\\to0\\)"
+    ],
+    "correct": "Hội tụ vì \\(D=\\dfrac12\\lt1\\)",
+    "solution": "Với \\(u_n=n/2^n\\), \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{n+1}{2n}\\to1/2\\). Vì \\(D=1/2\\lt1\\), chuỗi hội tụ.",
+    "quick": "Đa thức \\(n\\) không thắng được \\(2^n\\); tỉ số tiến tới \\(1/2\\).",
+    "casio": "CASIO: tính \\((n+1)/(2n)\\) tại \\(n\\) lớn, được gần 0,5.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 107,
+    "type": "dalembert_power_n_to_n",
+    "question": "Dùng tiêu chuẩn D'Alembert xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{2^{n-1}}{n^n}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(D=0\\)",
+      "Phân kỳ vì \\(D=2\\)",
+      "Chưa kết luận vì \\(D=1\\)",
+      "Hội tụ vì \\(D=\\dfrac12\\)"
+    ],
+    "correct": "Hội tụ vì \\(D=0\\)",
+    "solution": "Ta có \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{2^n}{(n+1)^{n+1}}\\cdot\\dfrac{n^n}{2^{n-1}}=\\dfrac{2}{n+1}\\left(\\dfrac{n}{n+1}\\right)^n\\to0\\). Vì \\(D=0\\lt1\\), chuỗi hội tụ.",
+    "quick": "Tỉ số có thêm hệ số \\(2/(n+1)\\to0\\), nên toàn bộ giới hạn bằng 0.",
+    "casio": "CASIO: tính \\(2/(n+1)\\cdot(n/(n+1))^n\\) với \\(n\\) lớn.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 108,
+    "type": "dalembert_factorial_over_power_plus_one",
+    "question": "Dùng tiêu chuẩn D'Alembert xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n!}{2^n+1}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(D=+\\infty\\)",
+      "Hội tụ vì \\(D=0\\)",
+      "Hội tụ vì \\(D=\\dfrac12\\)",
+      "Chưa kết luận vì \\(D=1\\)"
+    ],
+    "correct": "Phân kỳ vì \\(D=+\\infty\\)",
+    "solution": "Ta có \\(\\dfrac{u_{n+1}}{u_n}=(n+1)\\dfrac{2^n+1}{2^{n+1}+1}\\sim\\dfrac{n+1}{2}\\to+\\infty\\). Vì \\(D\\gt1\\), chuỗi phân kỳ.",
+    "quick": "Giai thừa ở tử tăng nhanh hơn \\(2^n\\); tỉ số xấp xỉ \\((n+1)/2\\).",
+    "casio": "CASIO: tính \\((n+1)(2^n+1)/(2^{n+1}+1)\\) cho vài \\(n\\) lớn để thấy tăng vượt 1.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 109,
+    "type": "dalembert_factorial_n_power",
+    "question": "Dùng tiêu chuẩn D'Alembert xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{4^n n!}{n^n}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(D=\\dfrac4e\\gt1\\)",
+      "Hội tụ vì \\(D=\\dfrac e4\\lt1\\)",
+      "Hội tụ vì \\(D=\\dfrac1e\\lt1\\)",
+      "Chưa kết luận vì \\(D=1\\)"
+    ],
+    "correct": "Phân kỳ vì \\(D=\\dfrac4e\\gt1\\)",
+    "solution": "Ta có \\(\\dfrac{u_{n+1}}{u_n}=4\\left(\\dfrac{n}{n+1}\\right)^n=\\dfrac{4}{(1+1/n)^n}\\to4/e\\). Vì \\(4/e\\gt1\\), chuỗi phân kỳ.",
+    "quick": "Dùng giới hạn \\((1+1/n)^n\\to e\\), nên \\(D=4/e\\).",
+    "casio": "CASIO: tính \\(4/(1+1/n)^n\\) với \\(n\\) lớn, được gần 1,4715.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 110,
+    "type": "dalembert_geometric_over_n",
+    "question": "Dùng tiêu chuẩn D'Alembert xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{3^n}{n2^n}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Phân kỳ vì \\(D=\\dfrac32\\gt1\\)",
+      "Hội tụ vì \\(D=\\dfrac23\\lt1\\)",
+      "Chưa kết luận vì \\(D=1\\)",
+      "Hội tụ vì \\(D=0\\)"
+    ],
+    "correct": "Phân kỳ vì \\(D=\\dfrac32\\gt1\\)",
+    "solution": "Với \\(u_n=3^n/(n2^n)\\), ta có \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac32\\dfrac{n}{n+1}\\to3/2\\). Vì \\(D=3/2\\gt1\\), chuỗi phân kỳ.",
+    "quick": "Thực chất \\(u_n=(3/2)^n/n\\); D'Alembert cho \\(3/2\\).",
+    "casio": "CASIO: tính \\((3/2)n/(n+1)\\) tại \\(n\\) lớn, được gần 1,5.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 111,
+    "type": "cauchy_arcsin_power",
+    "question": "Dùng tiêu chuẩn Cauchy xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\arcsin\\dfrac1n\\right)^n\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(C=0\\)",
+      "Phân kỳ vì \\(C=+\\infty\\)",
+      "Chưa kết luận vì \\(C=1\\)",
+      "Hội tụ vì \\(C=\\dfrac12\\)"
+    ],
+    "correct": "Hội tụ vì \\(C=0\\)",
+    "solution": "Với \\(u_n=(\\arcsin(1/n))^n\\), ta có \\(\\sqrt[n]{u_n}=\\arcsin(1/n)\\to0\\). Vì \\(C=0\\lt1\\), chuỗi hội tụ.",
+    "quick": "Căn bậc \\(n\\) triệt tiêu số mũ \\(n\\), còn \\(\\arcsin(1/n)\\to0\\).",
+    "casio": "CASIO: tính \\(\\arcsin(1/n)\\) với \\(n\\) lớn ở chế độ radian.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 112,
+    "type": "cauchy_exp_n2",
+    "question": "Dùng tiêu chuẩn Cauchy xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac1{3^n}\\left(\\dfrac{n+1}{n}\\right)^{n^2}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì \\(C=\\dfrac e3\\lt1\\)",
+      "Phân kỳ vì \\(C=\\dfrac3e\\gt1\\)",
+      "Chưa kết luận vì \\(C=1\\)",
+      "Hội tụ vì \\(C=\\dfrac13\\)"
+    ],
+    "correct": "Hội tụ vì \\(C=\\dfrac e3\\lt1\\)",
+    "solution": "Ta có \\(\\sqrt[n]{u_n}=\\dfrac13\\left(1+\\dfrac1n\\right)^n\\to e/3\\). Vì \\(e/3\\approx0{,}9061\\lt1\\), chuỗi hội tụ theo tiêu chuẩn Cauchy.",
+    "quick": "Căn bậc \\(n\\) biến \\(n^2\\) thành \\(n\\); dùng \\((1+1/n)^n\\to e\\).",
+    "casio": "CASIO: tính \\((1+1/n)^n/3\\) với \\(n\\) lớn, được gần 0,9061.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 113,
+    "type": "alternating_absolute_p2_shift",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{n^2+2}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Hội tụ có điều kiện",
+      "Phân kỳ",
+      "Không kết luận được"
+    ],
+    "correct": "Hội tụ tuyệt đối",
+    "solution": "Xét trị tuyệt đối: \\(\\sum1/(n^2+2)\\). Ta có \\(1/(n^2+2)\\sim1/n^2\\), mà \\(\\sum1/n^2\\) hội tụ. Vì vậy chuỗi ban đầu hội tụ tuyệt đối.",
+    "quick": "Trị tuyệt đối đã hội tụ như chuỗi \\(p=2\\), nên không cần Leibniz.",
+    "casio": "CASIO không cần thiết; so sánh với \\(1/n^2\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 114,
+    "type": "alternating_absolute_p32",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^n}{n\\sqrt{n+1}}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Hội tụ có điều kiện",
+      "Phân kỳ",
+      "Không kết luận được"
+    ],
+    "correct": "Hội tụ tuyệt đối",
+    "solution": "Chuỗi trị tuyệt đối có số hạng \\(1/[n\\sqrt{n+1}]\\sim1/n^{3/2}\\). Vì chuỗi Riemann \\(\\sum1/n^{3/2}\\) hội tụ nên chuỗi ban đầu hội tụ tuyệt đối.",
+    "quick": "\\(n\\sqrt{n+1}\\sim n^{3/2}\\), nên trị tuyệt đối hội tụ.",
+    "casio": "CASIO: có thể kiểm tra tỉ số với \\(1/n^{3/2}\\) tại \\(n\\) lớn, giá trị tiến gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 115,
+    "type": "alternating_absolute_p2_radical",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{n\\sqrt{n^2+1}}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Hội tụ có điều kiện",
+      "Phân kỳ",
+      "Không kết luận được"
+    ],
+    "correct": "Hội tụ tuyệt đối",
+    "solution": "Chuỗi trị tuyệt đối có số hạng \\(1/[n\\sqrt{n^2+1}]\\sim1/n^2\\). Vì \\(\\sum1/n^2\\) hội tụ nên chuỗi ban đầu hội tụ tuyệt đối.",
+    "quick": "\\(\\sqrt{n^2+1}\\sim n\\), nên trị tuyệt đối tương đương \\(1/n^2\\).",
+    "casio": "CASIO: tính \\(n/\\sqrt{n^2+1}\\) với \\(n\\) lớn, được gần 1.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
   }
 ]
