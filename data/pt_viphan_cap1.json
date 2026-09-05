@@ -1672,5 +1672,401 @@
     "casio": "CASIO không thuận tiện để giải trực tiếp; có thể kiểm tra nghiệm bằng đạo hàm số với một giá trị cụ thể của \\(C\\).",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 94,
+    "type": "separable_parameter_circle_family",
+    "question": "Tìm \\(m\\) để phương trình \\((m+1)x\\,dx+y\\,dy=0\\) có họ nghiệm là các đường tròn tâm tại gốc tọa độ.",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m=-1\\)",
+      "\\(m=2\\)"
+    ],
+    "correct": "\\(m=0\\)",
+    "solution": "Lấy tích phân được \\(\\dfrac{m+1}{2}x^2+\\dfrac12y^2=C\\). Để các đường mức là đường tròn tâm gốc, hệ số của \\(x^2\\) và \\(y^2\\) phải bằng nhau, nên \\(m+1=1\\), suy ra \\(m=0\\).",
+    "quick": "Sau tích phân, so hệ số của \\(x^2\\) và \\(y^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình phân ly biến số"
+  },
+  {
+    "id": 95,
+    "type": "ode_classification_separable_bernoulli",
+    "question": "Phương trình \\(xy'=y(1-y)\\), với \\(x\\ne0\\), thuộc loại nào sau đây?",
+    "matrix": null,
+    "options": [
+      "Vừa là phương trình phân ly biến số vừa là Bernoulli",
+      "Chỉ là phương trình Bernoulli",
+      "Phương trình vi phân toàn phần",
+      "Phương trình tuyến tính cấp 1"
+    ],
+    "correct": "Vừa là phương trình phân ly biến số vừa là Bernoulli",
+    "solution": "Ta có \\(y'=\\dfrac1x y(1-y)\\), nên có thể tách biến. Đồng thời viết thành \\(y'-\\dfrac1x y=-\\dfrac1x y^2\\), đây là phương trình Bernoulli với số mũ \\(n=2\\).",
+    "quick": "Một phương trình có thể đồng thời thuộc nhiều lớp.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phân loại phương trình vi phân cấp 1"
+  },
+  {
+    "id": 96,
+    "type": "homogeneous_substitution_concept",
+    "question": "Phép đổi biến \\(y=ux\\) trong phương trình vi phân đẳng cấp cấp 1 thường đưa phương trình về dạng nào?",
+    "matrix": null,
+    "options": [
+      "Phương trình phân ly biến số theo \\(u,x\\)",
+      "Phương trình tuyến tính theo \\(u\\)",
+      "Phương trình vi phân toàn phần",
+      "Phương trình Bernoulli theo \\(u\\)"
+    ],
+    "correct": "Phương trình phân ly biến số theo \\(u,x\\)",
+    "solution": "Với \\(y=ux\\) thì \\(y'=u+xu'\\). Vì vế phải của phương trình đẳng cấp chỉ phụ thuộc vào \\(y/x=u\\), sau thay biến ta thu được phương trình có thể phân ly giữa \\(u\\) và \\(x\\).",
+    "quick": "Nhớ công thức \\(y'=u+xu'\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Phương trình đẳng cấp cấp 1"
+  },
+  {
+    "id": 97,
+    "type": "homogeneous_substitution_transform",
+    "question": "Cho phương trình \\((x+y)dx+xdy=0\\). Đặt \\(y=ux\\). Phương trình sau biến đổi là",
+    "matrix": null,
+    "options": [
+      "\\((1+2u)dx+xdu=0\\)",
+      "\\((1+u)dx+xdu=0\\)",
+      "\\(u\\,dx+xdu=0\\)",
+      "\\((1-u)dx+xdu=0\\)"
+    ],
+    "correct": "\\((1+2u)dx+xdu=0\\)",
+    "solution": "Vì \\(y=ux\\) nên \\(dy=u\\,dx+x\\,du\\). Thay vào: \\((x+ux)dx+x(u\\,dx+x\\,du)=0\\). Chia cho \\(x\\ne0\\) được \\((1+2u)dx+xdu=0\\).",
+    "quick": "Khi thay \\(dy\\), đừng quên cả hai hạng \\(u\\,dx+x\\,du\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình đẳng cấp cấp 1"
+  },
+  {
+    "id": 98,
+    "type": "homogeneous_rhs_property",
+    "question": "Vế phải \\(f(x,y)\\) của phương trình đẳng cấp cấp 1 \\(y'=f(x,y)\\) thỏa tính chất nào với mọi \\(k\\ne0\\)?",
+    "matrix": null,
+    "options": [
+      "\\(f(kx,ky)=k f(x,y)\\)",
+      "\\(f(x+k,y+k)=f(x,y)\\)",
+      "\\(f(kx,ky)=f(x,y)\\)",
+      "\\(f(kx,ky)=k^2 f(x,y)\\)"
+    ],
+    "correct": "\\(f(kx,ky)=f(x,y)\\)",
+    "solution": "Đối với phương trình đẳng cấp cấp 1 dạng \\(y'=F(y/x)\\), vế phải là hàm thuần nhất bậc 0, nên \\(f(kx,ky)=f(x,y)\\).",
+    "quick": "Đẳng cấp cấp 1 ở dạng \\(y'=f(x,y)\\) dùng hàm thuần nhất bậc 0.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình đẳng cấp cấp 1"
+  },
+  {
+    "id": 99,
+    "type": "linear_first_order_integrating_factor_formula",
+    "question": "Thừa số tích phân của phương trình tuyến tính cấp 1 \\(y'+P(x)y=Q(x)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\mu(x)=e^{\\int P(x)dx}\\)",
+      "\\(\\mu(x)=e^{-\\int P(x)dx}\\)",
+      "\\(\\mu(x)=\\int P(x)dx\\)",
+      "\\(\\mu(x)=e^{\\int Q(x)dx}\\)"
+    ],
+    "correct": "\\(\\mu(x)=e^{\\int P(x)dx}\\)",
+    "solution": "Nhân phương trình với \\(\\mu=e^{\\int P(x)dx}\\) thì vế trái trở thành \\((\\mu y)'\\). Đây là thừa số tích phân chuẩn của phương trình tuyến tính cấp 1.",
+    "quick": "Nhớ dấu dương: \\(\\mu=e^{\\int Pdx}\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Phương trình tuyến tính cấp 1"
+  },
+  {
+    "id": 100,
+    "type": "linear_first_order_limit_parameter",
+    "question": "Tìm \\(m\\) để phương trình \\(y'+my=1\\) có một nghiệm thỏa \\(\\displaystyle\\lim_{x\\to+\\infty}y(x)=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=\\dfrac12\\)",
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=-\\dfrac12\\)"
+    ],
+    "correct": "\\(m=\\dfrac12\\)",
+    "solution": "Với \\(m\\gt0\\), nghiệm có dạng \\(y=1/m+Ce^{-mx}\\), nên giới hạn khi \\(x\\to+\\infty\\) là \\(1/m\\). Điều kiện \\(1/m=2\\) cho \\(m=1/2\\). Các giá trị còn lại không cho giới hạn bằng 2.",
+    "quick": "Giới hạn ổn định của \\(y'+my=1\\) là \\(1/m\\) khi \\(m\\gt0\\).",
+    "casio": "Giải \\(1/m=2\\).",
+    "difficulty": 2,
+    "topic": "Phương trình tuyến tính cấp 1"
+  },
+  {
+    "id": 101,
+    "type": "linear_first_order_identify_nonlinear",
+    "question": "Phương trình nào sau đây không phải là phương trình vi phân tuyến tính cấp 1?",
+    "matrix": null,
+    "options": [
+      "\\(y'+x^2y=\\sin x\\)",
+      "\\(y'+\\dfrac{y}{x}=\\ln x\\)",
+      "\\(y'+xy^2=x\\)",
+      "\\(xy'+2y=e^x\\)"
+    ],
+    "correct": "\\(y'+xy^2=x\\)",
+    "solution": "Phương trình tuyến tính cấp 1 chỉ chứa \\(y\\) và \\(y'\\) ở lũy thừa 1. Phương án \\(y'+xy^2=x\\) chứa \\(y^2\\), nên không tuyến tính.",
+    "quick": "Nhìn ngay số mũ của \\(y\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Phương trình tuyến tính cấp 1"
+  },
+  {
+    "id": 102,
+    "type": "linear_particular_form_polynomial",
+    "question": "Đối với phương trình \\(y'-y=x\\), có thể chọn một nghiệm riêng dạng nào?",
+    "matrix": null,
+    "options": [
+      "\\(y_p=Axe^x\\)",
+      "\\(y_p=Ax^2+B\\)",
+      "\\(y_p=Ax+B\\)",
+      "\\(y_p=Ae^x\\)"
+    ],
+    "correct": "\\(y_p=Ax+B\\)",
+    "solution": "Vế phải là đa thức bậc 1 và \\(0\\) không phải nghiệm của phương trình đặc trưng \\(r-1=0\\). Vì vậy chọn nghiệm riêng là một đa thức cùng bậc: \\(y_p=Ax+B\\).",
+    "quick": "Đa thức bậc 1, không cộng hưởng với nghiệm \\(r=1\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình tuyến tính cấp 1"
+  },
+  {
+    "id": 103,
+    "type": "bernoulli_substitution_formula",
+    "question": "Phương trình Bernoulli \\(y'+P(x)y=Q(x)y^n\\), với \\(n\\ne0,1\\), được tuyến tính hóa bằng phép đổi biến",
+    "matrix": null,
+    "options": [
+      "\\(z=y^n\\)",
+      "\\(z=y^{n-1}\\)",
+      "\\(z=y^{1+n}\\)",
+      "\\(z=y^{1-n}\\)"
+    ],
+    "correct": "\\(z=y^{1-n}\\)",
+    "solution": "Đặt \\(z=y^{1-n}\\). Khi đó \\(z'=(1-n)y^{-n}y'\\), giúp biến phương trình Bernoulli thành phương trình tuyến tính theo \\(z\\).",
+    "quick": "Bernoulli: số mũ đổi biến là \\(1-n\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Phương trình Bernoulli"
+  },
+  {
+    "id": 104,
+    "type": "bernoulli_transformed_linear_formula",
+    "question": "Với phép đổi biến \\(z=y^{1-n}\\), phương trình \\(y'+P(x)y=Q(x)y^n\\) trở thành",
+    "matrix": null,
+    "options": [
+      "\\(z'+(1-n)P(x)z=(1-n)Q(x)\\)",
+      "\\(z'+P(x)z=Q(x)\\)",
+      "\\(z'+(n-1)P(x)z=(n-1)Q(x)\\)",
+      "\\(z'+nP(x)z=nQ(x)\\)"
+    ],
+    "correct": "\\(z'+(1-n)P(x)z=(1-n)Q(x)\\)",
+    "solution": "Nhân phương trình Bernoulli với \\((1-n)y^{-n}\\). Vì \\(z'=(1-n)y^{-n}y'\\) và \\(z=y^{1-n}\\), ta được \\(z'+(1-n)P(x)z=(1-n)Q(x)\\).",
+    "quick": "Sau đổi biến, cả hệ số \\(P\\) và vế phải đều nhân với \\(1-n\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình Bernoulli"
+  },
+  {
+    "id": 105,
+    "type": "bernoulli_linear_direct_parameter_n",
+    "question": "Tìm \\(n\\) để phương trình \\(y'+xy=xy^n\\) trở thành phương trình tuyến tính trực tiếp mà không cần đổi biến phi tuyến.",
+    "matrix": null,
+    "options": [
+      "\\(n=2\\)",
+      "\\(n=-1\\)",
+      "\\(n=\\dfrac12\\)",
+      "\\(n=0\\) hoặc \\(n=1\\)"
+    ],
+    "correct": "\\(n=0\\) hoặc \\(n=1\\)",
+    "solution": "Nếu \\(n=0\\), phương trình là \\(y'+xy=x\\), tuyến tính. Nếu \\(n=1\\), chuyển vế được \\(y'=0\\), cũng tuyến tính. Các số mũ khác tạo Bernoulli phi tuyến.",
+    "quick": "Bernoulli trở thành tuyến tính trực tiếp tại hai trường hợp biên \\(n=0,1\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình Bernoulli"
+  },
+  {
+    "id": 106,
+    "type": "exact_equation_condition_formula",
+    "question": "Trên miền đơn liên, điều kiện để \\(M(x,y)dx+N(x,y)dy=0\\) là phương trình vi phân toàn phần là",
+    "matrix": null,
+    "options": [
+      "\\(M_x=N_y\\)",
+      "\\(M_y=N_x\\)",
+      "\\(M_y=-N_x\\)",
+      "\\(M_x+N_y=0\\)"
+    ],
+    "correct": "\\(M_y=N_x\\)",
+    "solution": "Nếu tồn tại hàm thế \\(F\\) sao cho \\(F_x=M\\), \\(F_y=N\\), thì theo định lý Schwarz phải có \\(M_y=F_{xy}=F_{yx}=N_x\\). Trên miền đơn liên, đây là điều kiện chuẩn để phương trình là toàn phần.",
+    "quick": "Toàn phần: đạo hàm chéo phải bằng nhau.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân toàn phần"
+  },
+  {
+    "id": 107,
+    "type": "exact_equation_parameter_a",
+    "question": "Tìm \\(a\\) để \\((axy+y^2)dx+(x^2+2xy)dy=0\\) là phương trình vi phân toàn phần.",
+    "matrix": null,
+    "options": [
+      "\\(a=2\\)",
+      "\\(a=1\\)",
+      "\\(a=-2\\)",
+      "\\(a=0\\)"
+    ],
+    "correct": "\\(a=2\\)",
+    "solution": "Đặt \\(M=axy+y^2\\), \\(N=x^2+2xy\\). Khi đó \\(M_y=ax+2y\\), \\(N_x=2x+2y\\). Điều kiện \\(M_y=N_x\\) cho \\(a=2\\).",
+    "quick": "So sánh hệ số của \\(x\\) trong \\(M_y\\) và \\(N_x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân toàn phần"
+  },
+  {
+    "id": 108,
+    "type": "exact_equation_potential_function",
+    "question": "Hàm tiềm năng của phương trình \\(2xy\\,dx+(x^2-1)dy=0\\) có thể chọn là",
+    "matrix": null,
+    "options": [
+      "\\(F=xy^2-x\\)",
+      "\\(F=x^2y+y\\)",
+      "\\(F=x^2y-y\\)",
+      "\\(F=x^2-y^2\\)"
+    ],
+    "correct": "\\(F=x^2y-y\\)",
+    "solution": "Từ \\(F_x=2xy\\), tích phân theo \\(x\\) được \\(F=x^2y+g(y)\\). Lấy \\(F_y=x^2+g'(y)=x^2-1\\), suy ra \\(g'(y)=-1\\), nên \\(g(y)=-y\\).",
+    "quick": "Tích phân \\(M\\) theo \\(x\\), rồi dùng \\(N\\) để tìm hàm còn thiếu.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân toàn phần"
+  },
+  {
+    "id": 109,
+    "type": "exact_equation_parameter_b",
+    "question": "Tìm \\(b\\) để \\((x^3+bxy)dx+(x^2+y^2)dy=0\\) là phương trình vi phân toàn phần.",
+    "matrix": null,
+    "options": [
+      "\\(b=2\\)",
+      "\\(b=1\\)",
+      "\\(b=3\\)",
+      "\\(b=0\\)"
+    ],
+    "correct": "\\(b=2\\)",
+    "solution": "Đặt \\(M=x^3+bxy\\), \\(N=x^2+y^2\\). Ta có \\(M_y=bx\\), \\(N_x=2x\\). Điều kiện toàn phần \\(M_y=N_x\\) cho \\(b=2\\).",
+    "quick": "Đạo hàm chéo: \\(bx=2x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân toàn phần"
+  },
+  {
+    "id": 110,
+    "type": "exact_equation_path_independence",
+    "question": "Tích phân đường của một vi phân toàn phần giữa hai điểm cố định có tính chất nào?",
+    "matrix": null,
+    "options": [
+      "Không phụ thuộc vào đường đi nối hai điểm",
+      "Phụ thuộc vào đường đi nối hai điểm",
+      "Luôn bằng 0",
+      "Chỉ phụ thuộc vào tọa độ \\(x\\)"
+    ],
+    "correct": "Không phụ thuộc vào đường đi nối hai điểm",
+    "solution": "Nếu \\(Mdx+Ndy=dF\\), tích phân từ điểm đầu đến điểm cuối bằng \\(F(B)-F(A)\\), nên chỉ phụ thuộc hai đầu mút và không phụ thuộc đường đi.",
+    "quick": "Vi phân toàn phần là trường thế.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân toàn phần"
+  },
+  {
+    "id": 111,
+    "type": "exact_equation_trig_solution",
+    "question": "Nghiệm tổng quát của \\((\\cos x+y)dx+(x-\\sin y)dy=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\sin x+xy+\\cos y=C\\)",
+      "\\(\\sin x+xy-\\cos y=C\\)",
+      "\\(\\cos x+xy-\\sin y=C\\)",
+      "\\(\\sin x-xy+\\cos y=C\\)"
+    ],
+    "correct": "\\(\\sin x+xy+\\cos y=C\\)",
+    "solution": "Tích phân \\(M=\\cos x+y\\) theo \\(x\\): \\(F=\\sin x+xy+g(y)\\). Khi đó \\(F_y=x+g'(y)=x-\\sin y\\), nên \\(g'(y)=-\\sin y\\), suy ra \\(g(y)=\\cos y\\).",
+    "quick": "Tích phân theo \\(x\\), rồi bổ sung hàm của \\(y\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân toàn phần"
+  },
+  {
+    "id": 112,
+    "type": "homogeneous_nonlinear_ivp_exp_ratio",
+    "question": "Giải bài toán Cauchy \\(y'=\\dfrac{y}{x}+e^{y/x}\\), \\(y(1)=0\\), với \\(x\\gt0\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=-x\\ln(1-\\ln x)\\)",
+      "\\(y=x\\ln x\\)",
+      "\\(y=xe^x\\)",
+      "\\(y=-x\\ln(1+\\ln x)\\)"
+    ],
+    "correct": "\\(y=-x\\ln(1-\\ln x)\\)",
+    "solution": "Đặt \\(u=y/x\\), nên \\(y'=u+xu'\\). Phương trình trở thành \\(xu'=e^u\\), hay \\(e^{-u}du=dx/x\\). Tích phân được \\(-e^{-u}=\\ln x+C\\). Điều kiện \\(u(1)=0\\) cho \\(C=-1\\), nên \\(e^{-u}=1-\\ln x\\), tức \\(u=-\\ln(1-\\ln x)\\). Suy ra \\(y=-x\\ln(1-\\ln x)\\).",
+    "quick": "Đặt \\(u=y/x\\), sau đó phương trình trở thành phân ly biến số.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình đẳng cấp cấp 1"
+  },
+  {
+    "id": 113,
+    "type": "homogeneous_ivp_implicit",
+    "question": "Giải bài toán Cauchy \\(y'=\\dfrac{x+y}{x-y}\\), \\(y(1)=0\\). Biểu thức nghiệm ẩn đúng là",
+    "matrix": null,
+    "options": [
+      "\\(x^2+y^2=1\\)",
+      "\\(y=x\\ln x\\)",
+      "\\(\\arctan\\left(\\dfrac{y}{x}\\right)-\\dfrac12\\ln(x^2+y^2)=0\\)",
+      "\\(\\arctan\\left(\\dfrac{y}{x}\\right)+\\ln x=0\\)"
+    ],
+    "correct": "\\(\\arctan\\left(\\dfrac{y}{x}\\right)-\\dfrac12\\ln(x^2+y^2)=0\\)",
+    "solution": "Đặt \\(u=y/x\\), khi đó \\(u+xu'=(1+u)/(1-u)\\), nên \\(\\dfrac{1-u}{1+u^2}du=dx/x\\). Tích phân: \\(\\arctan u-\\dfrac12\\ln(1+u^2)=\\ln x+C\\). Thay \\(u=y/x\\) và rút gọn được \\(\\arctan(y/x)-\\dfrac12\\ln(x^2+y^2)=C\\). Điều kiện \\((1,0)\\) cho \\(C=0\\).",
+    "quick": "Đặt \\(u=y/x\\); sau tích phân, các hạng \\(\\ln x\\) triệt tiêu.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình đẳng cấp cấp 1"
+  },
+  {
+    "id": 114,
+    "type": "linear_first_order_trig_ivp",
+    "question": "Giải bài toán Cauchy \\(y'+y\\cot x=5e^{\\cos x}\\), \\(y(\\pi/2)=-4\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac{1-5e^{\\cos x}}{\\sin x}\\)",
+      "\\(y=\\dfrac{e^{\\cos x}-5}{\\sin x}\\)",
+      "\\(y=\\dfrac{-5e^{\\cos x}}{\\sin x}\\)",
+      "\\(y=\\dfrac{1-5e^{\\cos x}}{\\cos x}\\)"
+    ],
+    "correct": "\\(y=\\dfrac{1-5e^{\\cos x}}{\\sin x}\\)",
+    "solution": "Thừa số tích phân là \\(\\mu=e^{\\int\\cot xdx}=\\sin x\\). Do đó \\((y\\sin x)'=5e^{\\cos x}\\sin x\\), suy ra \\(y\\sin x=-5e^{\\cos x}+C\\). Từ \\(y(\\pi/2)=-4\\) được \\(C=1\\).",
+    "quick": "Nhân với \\(\\sin x\\), rồi đặt \\(u=\\cos x\\) khi tích phân.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình tuyến tính cấp 1"
+  },
+  {
+    "id": 115,
+    "type": "bernoulli_trig_ivp",
+    "question": "Giải bài toán Cauchy \\(y'-y\\tan x=y^2\\sec x\\), \\(y(0)=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(y=\\dfrac1{\\cos x(1-x)}\\)",
+      "\\(y=\\dfrac1{\\cos x-x\\sin x}\\)",
+      "\\(y=\\dfrac1{\\cos x-\\sin x}\\)",
+      "\\(y=\\dfrac1{1-x\\cos x}\\)"
+    ],
+    "correct": "\\(y=\\dfrac1{\\cos x-\\sin x}\\)",
+    "solution": "Đặt \\(z=1/y\\). Từ phương trình suy ra \\(z'+z\\tan x=-\\sec x\\). Thừa số tích phân là \\(\\sec x\\), nên \\((z\\sec x)'=-\\sec^2x\\). Do đó \\(z\\sec x=-\\tan x+C\\), hay \\(z=C\\cos x-\\sin x\\). Điều kiện \\(y(0)=1\\) cho \\(C=1\\).",
+    "quick": "Bernoulli với \\(n=2\\): đặt \\(z=1/y\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình Bernoulli"
   }
 ]

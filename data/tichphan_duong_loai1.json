@@ -916,5 +916,95 @@
     "casio": "CASIO: sau khi rút gọn căn thành \\(y^2+1\\), tính \\(\\int_0^1(y^2+1)dy\\), được \\(4/3\\).",
     "difficulty": 3,
     "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 52,
+    "type": "line_integral_type1_formula_parametric",
+    "question": "Cho đường cong \\(C\\): \\(x=x(t),\\ y=y(t)\\), \\(a\\le t\\le b\\). Công thức đúng để tính \\(\\displaystyle\\int_C f(x,y)\\,ds\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\)",
+      "\\(\\displaystyle\\int_a^b f(x(t),y(t))\\bigl(x'(t)+y'(t)\\bigr)\\,dt\\)",
+      "\\(\\displaystyle\\int_a^b f(x(t),y(t))\\sqrt{x'(t)+y'(t)}\\,dt\\)",
+      "\\(\\displaystyle\\int_a^b f(x(t),y(t))\\,dt\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_a^b f(x(t),y(t))\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\)",
+    "solution": "Với tham số \\(x=x(t),\\ y=y(t)\\), ta có \\(ds=\\sqrt{(x'(t))^2+(y'(t))^2}\\,dt\\). Thay trực tiếp vào tích phân đường loại 1 được công thức đã chọn.",
+    "quick": "Nhớ \\(ds=\\sqrt{x'^2+y'^2}\\,dt\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân đường loại 1"
+  },
+  {
+    "id": 53,
+    "type": "line_integral_type1_circle_y2",
+    "question": "Tính \\(\\displaystyle I=\\int_C y^2\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\pi\\)",
+    "solution": "Đặt \\(x=\\cos t,\\ y=\\sin t\\), \\(0\\le t\\le2\\pi\\). Khi đó \\(ds=dt\\), nên \\(I=\\int_0^{2\\pi}\\sin^2t\\,dt=\\pi\\).",
+    "quick": "Trên đường tròn đơn vị, \\(ds=dt\\) và trung bình của \\(\\sin^2t\\) trên một chu kỳ là \\(1/2\\).",
+    "casio": "Có thể kiểm tra \\(\\int_0^{2\\pi}\\sin^2t\\,dt=\\pi\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1"
+  },
+  {
+    "id": 54,
+    "type": "line_integral_type1_circle_symmetry",
+    "question": "Tính \\(\\displaystyle I=\\int_C x\\,ds\\), với \\(C\\) là đường tròn \\(x^2+y^2=9\\).",
+    "matrix": null,
+    "options": [
+      "\\(18\\pi\\)",
+      "\\(9\\pi\\)",
+      "\\(0\\)",
+      "\\(3\\pi\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Đường tròn đối xứng qua trục \\(Oy\\), còn hàm \\(x\\) đổi dấu qua phép đối xứng đó trong khi \\(ds\\) không đổi, nên các phần tích phân triệt tiêu nhau. Do đó \\(I=0\\).",
+    "quick": "Hàm \\(x\\) lẻ theo đối xứng qua \\(Oy\\) trên toàn đường tròn.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1"
+  },
+  {
+    "id": 55,
+    "type": "line_integral_type1_mass_formula",
+    "question": "Một dây mảnh chiếm đường cong \\(C\\) và có mật độ khối lượng dài \\(\\rho(x,y)\\). Khối lượng của dây được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,ds\\)",
+      "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,dx\\)",
+      "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,dy\\)",
+      "\\(\\displaystyle M=\\iint_C\\rho(x,y)\\,dxdy\\)"
+    ],
+    "correct": "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,ds\\)",
+    "solution": "Mỗi phần tử cung có độ dài \\(ds\\) và khối lượng vi phân \\(dM=\\rho(x,y)ds\\). Vì vậy \\(M=\\int_C\\rho(x,y)ds\\).",
+    "quick": "Mật độ theo chiều dài phải nhân với phần tử độ dài \\(ds\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân đường loại 1"
+  },
+  {
+    "id": 56,
+    "type": "line_integral_type1_line_y2x",
+    "question": "Tính \\(\\displaystyle I=\\int_C y\\,ds\\), với \\(C\\) là đoạn thẳng \\(y=2x\\), \\(0\\le x\\le1\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\sqrt5\\)",
+      "\\(2\\sqrt5\\)",
+      "\\(\\dfrac{\\sqrt5}{2}\\)",
+      "\\(\\dfrac{2\\sqrt5}{3}\\)"
+    ],
+    "correct": "\\(\\sqrt5\\)",
+    "solution": "Vì \\(y=2x\\) nên \\(ds=\\sqrt{1+(y')^2}\\,dx=\\sqrt5\\,dx\\). Do đó \\(I=\\int_0^1 2x\\sqrt5\\,dx=\\sqrt5\\).",
+    "quick": "Tính \\(ds=\\sqrt5\\,dx\\), rồi tích phân \\(2x\\sqrt5\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1"
   }
 ]

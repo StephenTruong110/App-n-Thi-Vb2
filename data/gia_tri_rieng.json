@@ -1132,5 +1132,113 @@
     "casio": "CASIO: Matrix → nhập \\(A\\) và vector cột \\(v\\); tính \\(Av\\) rồi so với \\(3v\\).",
     "difficulty": 2,
     "topic": "Trị riêng & vector riêng"
+  },
+  {
+    "id": 64,
+    "type": "eigenvector_relation_concept",
+    "question": "Cho ma trận vuông cấp 3 \\(A\\) thỏa \\(Av=3v\\) với \\(v\\ne0\\). Khẳng định nào sau đây sai?",
+    "matrix": null,
+    "options": [
+      "\\(v\\) là véc tơ riêng của \\(A\\)",
+      "\\(3\\) là một trị riêng của \\(A\\)",
+      "\\(\\det(A-3I)=0\\)",
+      "\\(A\\) không khả nghịch"
+    ],
+    "correct": "\\(A\\) không khả nghịch",
+    "solution": "Từ \\(Av=3v\\) với \\(v\\ne0\\), suy ra \\(v\\) là véc tơ riêng và \\(3\\) là trị riêng, nên \\(\\det(A-3I)=0\\). Tuy nhiên điều này không suy ra \\(0\\) là trị riêng của \\(A\\), vì vậy \\(A\\) vẫn có thể khả nghịch. Mệnh đề sai là \\(A\\) không khả nghịch.",
+    "quick": "Có trị riêng 3 không đồng nghĩa với có trị riêng 0.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Giá trị riêng – Véc tơ riêng"
+  },
+  {
+    "id": 65,
+    "type": "real_eigenvalue_parameter",
+    "question": "Tìm \\(m\\) để ma trận \\(A=\\begin{pmatrix}0&m\\\\1&0\\end{pmatrix}\\) có trị riêng thực.",
+    "matrix": null,
+    "options": [
+      "\\(m\\ge0\\)",
+      "\\(m\\lt0\\)",
+      "\\(m=-1\\)",
+      "Không tồn tại \\(m\\)"
+    ],
+    "correct": "\\(m\\ge0\\)",
+    "solution": "Phương trình đặc trưng là \\(\\det(A-\\lambda I)=\\lambda^2-m=0\\). Trị riêng là \\(\\lambda=\\pm\\sqrt m\\), nên có trị riêng thực khi và chỉ khi \\(m\\ge0\\).",
+    "quick": "\\(\\lambda^2=m\\): cần \\(m\\ge0\\).",
+    "casio": "Không cần CASIO; xét điều kiện căn bậc hai thực.",
+    "difficulty": 2,
+    "topic": "Giá trị riêng"
+  },
+  {
+    "id": 66,
+    "type": "rank_from_eigenvalues",
+    "question": "Cho ma trận \\(A\\) cấp 4 có các trị riêng là \\(0,1,2,3\\). Hạng của \\(A\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(4\\)",
+      "\\(2\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Trị riêng 0 có bội đại số bằng 1, nên số chiều không gian nghiệm của \\(Ax=0\\) bằng 1. Theo định lý hạng - số chiều hạt nhân, \\(\\operatorname{rank}(A)=4-1=3\\).",
+    "quick": "Một trị riêng 0 đơn → nullity bằng 1 → rank bằng 3.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Giá trị riêng"
+  },
+  {
+    "id": 67,
+    "type": "idempotent_eigenvalues",
+    "question": "Cho ma trận vuông \\(A\\) thỏa \\(A^2=A\\). Trị riêng của \\(A\\) chỉ có thể là",
+    "matrix": null,
+    "options": [
+      "\\(1\\) hoặc \\(-1\\)",
+      "\\(0\\) hoặc \\(1\\)",
+      "\\(0\\) hoặc \\(-1\\)",
+      "Mọi số thực"
+    ],
+    "correct": "\\(0\\) hoặc \\(1\\)",
+    "solution": "Nếu \\(Av=\\lambda v\\) với \\(v\\ne0\\), thì \\(A^2v=\\lambda^2v\\). Mà \\(A^2=A\\), nên \\(\\lambda^2v=\\lambda v\\), tức \\(\\lambda(\\lambda-1)=0\\). Do đó \\(\\lambda=0\\) hoặc \\(\\lambda=1\\).",
+    "quick": "Thay véc tơ riêng vào \\(A^2=A\\): \\(\\lambda^2=\\lambda\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Giá trị riêng"
+  },
+  {
+    "id": 68,
+    "type": "opposite_sign_eigenvalues_parameter",
+    "question": "Tìm \\(m\\) để ma trận \\(A=\\begin{pmatrix}1&2\\\\2&m\\end{pmatrix}\\) có hai trị riêng trái dấu.",
+    "matrix": null,
+    "options": [
+      "\\(m=4\\)",
+      "\\(m\\gt4\\)",
+      "\\(m\\lt4\\)",
+      "Không tồn tại \\(m\\)"
+    ],
+    "correct": "\\(m\\lt4\\)",
+    "solution": "Vì \\(A\\) là ma trận đối xứng nên hai trị riêng đều thực. Hai trị riêng trái dấu khi tích của chúng âm. Tích các trị riêng bằng \\(\\det A=m-4\\). Do đó cần \\(m-4\\lt0\\), tức \\(m\\lt4\\).",
+    "quick": "Đối xứng → trị riêng thực; trái dấu khi \\(\\det A\\lt0\\).",
+    "casio": "CASIO: tính \\(\\det A=m-4\\), rồi giải \\(m-4\\lt0\\).",
+    "difficulty": 3,
+    "topic": "Giá trị riêng"
+  },
+  {
+    "id": 69,
+    "type": "eigenvalue_parameter_symmetric_block",
+    "question": "Tìm \\(m\\) để ma trận \\(A=\\begin{pmatrix}0&m&0\\\\m&0&0\\\\0&0&1\\end{pmatrix}\\) có trị riêng \\(\\lambda=-2\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(m\\)",
+      "\\(m=2\\)",
+      "\\(m=-2\\)",
+      "\\(m=2\\) hoặc \\(m=-2\\)"
+    ],
+    "correct": "\\(m=2\\) hoặc \\(m=-2\\)",
+    "solution": "Khối \\(\\begin{pmatrix}0&m\\\\m&0\\end{pmatrix}\\) có các trị riêng \\(m\\) và \\(-m\\), còn trị riêng thứ ba là 1. Để \\(-2\\) là trị riêng cần \\(m=-2\\) hoặc \\(-m=-2\\), tức \\(m=2\\).",
+    "quick": "Các trị riêng là \\(m,-m,1\\).",
+    "casio": "Không cần CASIO; đọc trị riêng của khối đối xứng 2×2.",
+    "difficulty": 2,
+    "topic": "Giá trị riêng"
   }
 ]

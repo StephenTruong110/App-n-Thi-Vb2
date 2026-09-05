@@ -1307,5 +1307,95 @@
     "casio": "CASIO: với \\(m=7\\), nhập ma trận và dùng RREF hoặc kiểm tra các định thức con cấp 3 đều bằng 0.",
     "difficulty": 3,
     "topic": "Định thức & hạng"
+  },
+  {
+    "id": 64,
+    "type": "structured_determinant_dependent_columns",
+    "question": "Tính \\(D=\\begin{vmatrix}1&a&b+c\\\\1&b&c+a\\\\1&c&a+b\\end{vmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(a+b+c\\)",
+      "\\(abc\\)",
+      "\\(1\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Đặt \\(S=a+b+c\\). Khi đó cột 3 bằng \\(S\\) lần cột 1 trừ cột 2, vì \\((b+c,c+a,a+b)^T=S(1,1,1)^T-(a,b,c)^T\\). Ba cột phụ thuộc tuyến tính nên định thức bằng 0.",
+    "quick": "Nhận ra \\(C_3=(a+b+c)C_1-C_2\\).",
+    "casio": "Không cần CASIO; dùng tính phụ thuộc tuyến tính của các cột.",
+    "difficulty": 3,
+    "topic": "Định thức"
+  },
+  {
+    "id": 65,
+    "type": "skew_symmetric_odd_determinant",
+    "question": "Cho \\(A\\) là ma trận phản đối xứng cấp 3, tức \\(A^T=-A\\). Giá trị \\(\\det(A)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(-1\\)",
+      "\\(0\\)",
+      "Không xác định được"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Ta có \\(\\det(A)=\\det(A^T)=\\det(-A)=(-1)^3\\det(A)=-\\det(A)\\). Suy ra \\(2\\det(A)=0\\), nên \\(\\det(A)=0\\).",
+    "quick": "Ma trận phản đối xứng cấp lẻ luôn có định thức bằng 0.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Định thức"
+  },
+  {
+    "id": 66,
+    "type": "vandermonde_determinant",
+    "question": "Tính định thức Vandermonde \\(D=\\begin{vmatrix}1&1&1\\\\1&2&3\\\\1&4&9\\end{vmatrix}\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(6\\)",
+      "\\(12\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Đây là định thức Vandermonde ứng với \\(x_1=1,x_2=2,x_3=3\\). Do đó \\(D=(x_2-x_1)(x_3-x_1)(x_3-x_2)=(2-1)(3-1)(3-2)=2\\).",
+    "quick": "Vandermonde: \\(\\prod_{i\\lt j}(x_j-x_i)\\).",
+    "casio": "CASIO: Matrix → nhập ma trận 3×3 → det, kết quả 2.",
+    "difficulty": 2,
+    "topic": "Định thức"
+  },
+  {
+    "id": 67,
+    "type": "det_application_leontief",
+    "question": "Cho ma trận Leontief \\(I-A=\\begin{pmatrix}0.6&-0.2\\\\-0.3&0.7\\end{pmatrix}\\). Tính \\(\\det(I-A)\\).",
+    "matrix": null,
+    "options": [
+      "\\(0.36\\)",
+      "\\(0.42\\)",
+      "\\(0.06\\)",
+      "\\(0.48\\)"
+    ],
+    "correct": "\\(0.36\\)",
+    "solution": "\\(\\det(I-A)=0.6\\cdot0.7-(-0.2)(-0.3)=0.42-0.06=0.36\\).",
+    "quick": "Định thức 2×2: \\(ad-bc\\).",
+    "casio": "CASIO: \\(0.6\\times0.7-0.2\\times0.3=0.36\\).",
+    "difficulty": 2,
+    "topic": "Định thức – Ứng dụng"
+  },
+  {
+    "id": 68,
+    "type": "det_application_is_lm",
+    "question": "Trong mô hình IS-LM, hệ \\(\\begin{cases}aY+br=Y_0\\\\cY-dr=M_0\\end{cases}\\), với \\(a,b,c,d\\gt0\\), có ma trận hệ số \\(\\begin{pmatrix}a&b\\\\c&-d\\end{pmatrix}\\). Định thức của ma trận hệ số bằng",
+    "matrix": null,
+    "options": [
+      "\\(ad+bc\\)",
+      "\\(-(ad+bc)\\)",
+      "\\(ad-bc\\)",
+      "\\(bc-ad\\)"
+    ],
+    "correct": "\\(-(ad+bc)\\)",
+    "solution": "Định thức của ma trận hệ số là \\(a(-d)-bc=-ad-bc=-(ad+bc)\\).",
+    "quick": "Áp dụng \\(\\det\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}=ad-bc\\), chú ý phần tử cuối là \\(-d\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Định thức – Ứng dụng"
   }
 ]

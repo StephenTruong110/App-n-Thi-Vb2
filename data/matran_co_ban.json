@@ -1168,5 +1168,113 @@
     "casio": "CASIO: tính \\(AX\\) và \\(BY\\), sau đó cộng hai kết quả để được \\((29;29)^T\\).",
     "difficulty": 3,
     "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 66,
+    "type": "trace_square_triangular_parameter",
+    "question": "Cho \\(A=\\begin{pmatrix}1&2&1\\\\0&m&1\\\\0&0&2\\end{pmatrix}\\). Tìm \\(m\\) để \\(\\operatorname{tr}(A^2)=14\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\)",
+      "\\(m=3\\)",
+      "\\(m=-3\\) hoặc \\(m=3\\)",
+      "\\(m=2\\)"
+    ],
+    "correct": "\\(m=-3\\) hoặc \\(m=3\\)",
+    "solution": "Vì \\(A\\) là ma trận tam giác trên nên \\(A^2\\) cũng tam giác trên và các phần tử đường chéo là \\(1,m^2,4\\). Do đó \\(\\operatorname{tr}(A^2)=1+m^2+4=m^2+5\\). Điều kiện \\(m^2+5=14\\) cho \\(m^2=9\\), suy ra \\(m=\\pm3\\).",
+    "quick": "Ma trận tam giác: đường chéo của \\(A^2\\) là bình phương đường chéo của \\(A\\).",
+    "casio": "CASIO: giải \\(m^2+5=14\\), được \\(m=\\pm3\\).",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 67,
+    "type": "trace_identity_allones",
+    "question": "Cho ma trận đơn vị \\(I_4\\) và ma trận \\(J_4\\) có tất cả các phần tử đều bằng \\(1\\). Tính \\(\\operatorname{tr}(3I_4+2J_4)\\).",
+    "matrix": null,
+    "options": [
+      "\\(12\\)",
+      "\\(14\\)",
+      "\\(18\\)",
+      "\\(20\\)"
+    ],
+    "correct": "\\(20\\)",
+    "solution": "Ta có \\(\\operatorname{tr}(3I_4+2J_4)=3\\operatorname{tr}(I_4)+2\\operatorname{tr}(J_4)\\). Vì \\(\\operatorname{tr}(I_4)=4\\) và đường chéo của \\(J_4\\) gồm bốn số 1 nên \\(\\operatorname{tr}(J_4)=4\\). Do đó giá trị bằng \\(3\\cdot4+2\\cdot4=20\\).",
+    "quick": "\\(\\operatorname{tr}(I_4)=\\operatorname{tr}(J_4)=4\\).",
+    "casio": "Không cần CASIO; dùng tính tuyến tính của vết.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 68,
+    "type": "rank_transpose_property",
+    "question": "Cho ma trận \\(A\\) cỡ \\(3\\times4\\) có \\(\\operatorname{rank}(A)=3\\). Khẳng định nào sau đây đúng?",
+    "matrix": null,
+    "options": [
+      "\\(A\\) có ít nhất một hàng bằng 0",
+      "\\(\\operatorname{rank}(A^T)=3\\)",
+      "\\(\\det(A)\\ne0\\)",
+      "Bốn cột của \\(A\\) độc lập tuyến tính"
+    ],
+    "correct": "\\(\\operatorname{rank}(A^T)=3\\)",
+    "solution": "Hạng của một ma trận luôn bằng hạng của ma trận chuyển vị, nên \\(\\operatorname{rank}(A^T)=\\operatorname{rank}(A)=3\\). Ma trận \\(A\\) không vuông nên \\(\\det(A)\\) không xác định, và bốn cột của \\(A\\) trong \\(\\mathbb R^3\\) không thể đồng thời độc lập tuyến tính.",
+    "quick": "Tính chất cơ bản: \\(\\operatorname{rank}(A^T)=\\operatorname{rank}(A)\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Ma trận cơ bản"
+  },
+  {
+    "id": 69,
+    "type": "inverse_from_matrix_polynomial",
+    "question": "Cho ma trận vuông \\(A\\) thỏa mãn \\(A^2+2A+I=O\\). Khẳng định nào sau đây đúng?",
+    "matrix": null,
+    "options": [
+      "\\(A\\) khả nghịch và \\(A^{-1}=-A-2I\\)",
+      "\\(A\\) không khả nghịch",
+      "\\(A^{-1}=A+2I\\)",
+      "\\(A^{-1}=I-A\\)"
+    ],
+    "correct": "\\(A\\) khả nghịch và \\(A^{-1}=-A-2I\\)",
+    "solution": "Từ \\(A^2+2A+I=O\\) suy ra \\(A(A+2I)=-I\\). Vì vậy \\(A[-(A+2I)]=I\\), nên \\(A\\) khả nghịch và \\(A^{-1}=-A-2I\\).",
+    "quick": "Đưa về \\(A(A+2I)=-I\\), rồi nhận ra ma trận nghịch đảo.",
+    "casio": "Không cần CASIO; đây là biến đổi đại số ma trận.",
+    "difficulty": 3,
+    "topic": "Ma trận nghịch đảo"
+  },
+  {
+    "id": 70,
+    "type": "trace_inverse_diagonal_parameter",
+    "question": "Cho \\(A=\\operatorname{diag}(1,2,3,m)\\). Tìm \\(m\\) để \\(A^{-1}\\) tồn tại và \\(\\operatorname{tr}(A^{-1})=\\dfrac{11}{6}\\).",
+    "matrix": null,
+    "options": [
+      "Không tồn tại \\(m\\)",
+      "\\(m=1\\)",
+      "\\(m=6\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "Không tồn tại \\(m\\)",
+    "solution": "Muốn \\(A^{-1}\\) tồn tại phải có \\(m\\ne0\\). Khi đó \\(A^{-1}=\\operatorname{diag}(1,1/2,1/3,1/m)\\), nên \\(\\operatorname{tr}(A^{-1})=1+1/2+1/3+1/m=11/6+1/m\\). Điều kiện bằng \\(11/6\\) đòi hỏi \\(1/m=0\\), điều này không thể xảy ra với \\(m\\) hữu hạn.",
+    "quick": "Ba số đầu đã có tổng \\(11/6\\), nên phải có \\(1/m=0\\): vô nghiệm.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Ma trận nghịch đảo"
+  },
+  {
+    "id": 71,
+    "type": "application_leontief_matrix",
+    "question": "Trong mô hình Leontief mở, ma trận hệ số chi phí đầu vào là \\(A=\\begin{pmatrix}0.2&0.3\\\\0.4&0.1\\end{pmatrix}\\). Ma trận Leontief \\(L=I-A\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0.2&0.3\\\\0.4&0.1\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}-0.8&0.3\\\\0.4&-0.9\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}0.8&-0.3\\\\-0.4&0.9\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}0.8&-0.3\\\\-0.4&0.9\\end{pmatrix}\\)",
+    "solution": "Lấy ma trận đơn vị trừ từng phần tử tương ứng của \\(A\\): \\(I-A=\\begin{pmatrix}1-0.2&-0.3\\\\-0.4&1-0.1\\end{pmatrix}=\\begin{pmatrix}0.8&-0.3\\\\-0.4&0.9\\end{pmatrix}\\).",
+    "quick": "Đường chéo lấy \\(1-a_{ii}\\), ngoài đường chéo đổi dấu.",
+    "casio": "CASIO: có thể dùng Matrix để nhập \\(I_2-A\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận"
   }
 ]

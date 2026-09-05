@@ -1888,5 +1888,77 @@
     "casio": "CASIO: tính tích phân còn lại sau khi bỏ phần lẻ; kết quả xấp xỉ \\(1{,}9132\\).",
     "difficulty": 3,
     "topic": "Tích phân kép – Tọa độ cực"
+  },
+  {
+    "id": 106,
+    "type": "lamina_centroid_x_formula",
+    "question": "Bản phẳng đồng chất chiếm miền \\(D\\) có diện tích \\(S\\). Hoành độ trọng tâm \\(\\bar x\\) được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(\\bar x=\\iint_D x\\,dxdy\\)",
+      "\\(\\bar x=\\dfrac1S\\iint_D y\\,dxdy\\)",
+      "\\(\\bar x=\\dfrac1S\\iint_D x\\,dxdy\\)",
+      "\\(\\bar x=S\\iint_Dx\\,dxdy\\)"
+    ],
+    "correct": "\\(\\bar x=\\dfrac1S\\iint_D x\\,dxdy\\)",
+    "solution": "Với mật độ không đổi, khối lượng tỉ lệ với diện tích và công thức trọng tâm rút gọn thành \\(\\bar x=(1/S)\\iint_Dx\\,dA\\).",
+    "quick": "Hoành độ trọng tâm dùng nhân tử \\(x\\), rồi chia diện tích.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân kép – Ứng dụng"
+  },
+  {
+    "id": 107,
+    "type": "lamina_inertia_x_formula",
+    "question": "Momen quán tính đối với trục \\(Ox\\) của bản phẳng đồng chất có mật độ \\(\\rho=1\\) chiếm miền \\(D\\) là",
+    "matrix": null,
+    "options": [
+      "\\(I_x=\\iint_Dx^2\\,dxdy\\)",
+      "\\(I_x=\\iint_Dy^2\\,dxdy\\)",
+      "\\(I_x=\\iint_D(x^2+y^2)\\,dxdy\\)",
+      "\\(I_x=\\iint_Dy\\,dxdy\\)"
+    ],
+    "correct": "\\(I_x=\\iint_Dy^2\\,dxdy\\)",
+    "solution": "Khoảng cách từ điểm \\((x,y)\\) đến trục \\(Ox\\) là \\(|y|\\). Bình phương khoảng cách là \\(y^2\\), nên \\(I_x=\\iint_Dy^2\\rho\\,dA\\); với \\(\\rho=1\\) được công thức trên.",
+    "quick": "Momen quanh \\(Ox\\) dùng bình phương khoảng cách đến \\(Ox\\), tức \\(y^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân kép – Ứng dụng"
+  },
+  {
+    "id": 108,
+    "type": "lamina_polar_moment_disk",
+    "question": "Bản phẳng tròn đồng chất bán kính \\(R\\), tâm tại gốc tọa độ và mật độ \\(\\rho=1\\). Momen quán tính cực \\(I_O=\\iint_D(x^2+y^2)\\,dA\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi R^4}{2}\\)",
+      "\\(\\pi R^4\\)",
+      "\\(\\dfrac{\\pi R^4}{4}\\)",
+      "\\(2\\pi R^4\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi R^4}{2}\\)",
+    "solution": "Trong tọa độ cực, \\(x^2+y^2=r^2\\) và \\(dA=r\\,dr\\,d\\varphi\\). Do đó \\(I_O=\\int_0^{2\\pi}\\int_0^Rr^3\\,dr\\,d\\varphi=\\pi R^4/2\\).",
+    "quick": "Tích phân theo \\(r\\) là \\(\\int_0^Rr^3dr=R^4/4\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Ứng dụng"
+  },
+  {
+    "id": 109,
+    "type": "lamina_mass_radial_disk",
+    "question": "Bản phẳng chiếm đĩa \\(x^2+y^2\\le4\\) có mật độ \\(\\rho(x,y)=\\sqrt{x^2+y^2}\\). Khối lượng của bản phẳng bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{8\\pi}{3}\\)",
+      "\\(16\\pi\\)",
+      "\\(\\dfrac{32\\pi}{3}\\)",
+      "\\(\\dfrac{16\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{16\\pi}{3}\\)",
+    "solution": "Trong tọa độ cực, \\(\\rho=r\\) và \\(dA=r\\,dr\\,d\\varphi\\). Vì \\(0\\le r\\le2\\), \\(0\\le\\varphi\\le2\\pi\\), nên \\(M=\\int_0^{2\\pi}\\int_0^2r^2\\,dr\\,d\\varphi=16\\pi/3\\).",
+    "quick": "Mật độ cho một thừa số \\(r\\), Jacobian cho thêm một thừa số \\(r\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Ứng dụng"
   }
 ]

@@ -1636,5 +1636,131 @@
     "casio": "CASIO: tích phân theo \\(z\\) cho hệ số \\(1/2\\), rồi tính \\(\\frac12\\int_0^{\\pi/2}\\int_0^{2\\cos\\theta}r^2dr\\,d\\theta=8/9\\).",
     "difficulty": 3,
     "topic": "Tích phân ba – Tọa độ trụ"
+  },
+  {
+    "id": 92,
+    "type": "spherical_bounds_full_ball",
+    "question": "Với quy ước \\(x=\\rho\\sin\\theta\\cos\\varphi\\), \\(y=\\rho\\sin\\theta\\sin\\varphi\\), \\(z=\\rho\\cos\\theta\\), khối cầu \\(x^2+y^2+z^2\\le4\\) có cận chuẩn là",
+    "matrix": null,
+    "options": [
+      "\\(0\\le\\rho\\le2,\\ 0\\le\\theta\\le\\pi,\\ 0\\le\\varphi\\le2\\pi\\)",
+      "\\(0\\le\\rho\\le4,\\ 0\\le\\theta\\le\\pi,\\ 0\\le\\varphi\\le2\\pi\\)",
+      "\\(0\\le\\rho\\le2,\\ 0\\le\\theta\\le2\\pi,\\ 0\\le\\varphi\\le\\pi\\)",
+      "\\(0\\le\\rho\\le2,\\ 0\\le\\theta\\le\\dfrac\\pi2,\\ 0\\le\\varphi\\le2\\pi\\)"
+    ],
+    "correct": "\\(0\\le\\rho\\le2,\\ 0\\le\\theta\\le\\pi,\\ 0\\le\\varphi\\le2\\pi\\)",
+    "solution": "Khối cầu bán kính 2 cho \\(0\\le\\rho\\le2\\). Góc cực \\(\\theta\\) quét từ trục \\(Oz\\) xuống toàn bộ mặt cầu nên \\(0\\le\\theta\\le\\pi\\), còn góc phương vị \\(\\varphi\\) chạy đủ vòng \\(0\\le\\varphi\\le2\\pi\\).",
+    "quick": "Toàn cầu: \\(\\theta\\) chạy \\(0\\) đến \\(\\pi\\), \\(\\varphi\\) chạy \\(0\\) đến \\(2\\pi\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân ba – Tọa độ cầu"
+  },
+  {
+    "id": 93,
+    "type": "spherical_upper_hemisphere_theta",
+    "question": "Với quy ước góc cực \\(\\theta\\) đo từ trục \\(Oz\\) dương, nửa khối cầu \\(x^2+y^2+z^2\\le1\\), \\(z\\ge0\\) có cận của \\(\\theta\\) là",
+    "matrix": null,
+    "options": [
+      "\\(0\\le\\theta\\le2\\pi\\)",
+      "\\(0\\le\\theta\\le\\pi\\)",
+      "\\(0\\le\\theta\\le\\dfrac\\pi2\\)",
+      "\\(-\\dfrac\\pi2\\le\\theta\\le\\dfrac\\pi2\\)"
+    ],
+    "correct": "\\(0\\le\\theta\\le\\dfrac\\pi2\\)",
+    "solution": "Vì \\(z=\\rho\\cos\\theta\\ge0\\) và \\(0\\le\\theta\\le\\pi\\), ta cần \\(\\cos\\theta\\ge0\\), tức \\(0\\le\\theta\\le\\pi/2\\).",
+    "quick": "Nửa cầu phía trên tương ứng góc cực từ \\(0\\) đến \\(\\pi/2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân ba – Tọa độ cầu"
+  },
+  {
+    "id": 94,
+    "type": "triple_mass_formula",
+    "question": "Vật thể chiếm miền \\(V\\) có khối lượng riêng \\(\\rho(x,y,z)\\). Khối lượng của vật thể được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(M=\\iiint_V\\rho(x,y,z)\\,dV\\)",
+      "\\(M=\\iiint_V1\\,dV\\)",
+      "\\(M=\\dfrac1V\\iiint_V\\rho(x,y,z)\\,dV\\)",
+      "\\(M=\\iint_V\\rho(x,y,z)\\,dxdy\\)"
+    ],
+    "correct": "\\(M=\\iiint_V\\rho(x,y,z)\\,dV\\)",
+    "solution": "Khối lượng vi phân là \\(dm=\\rho(x,y,z)dV\\). Cộng trên toàn miền không gian \\(V\\) cho \\(M=\\iiint_V\\rho\\,dV\\).",
+    "quick": "Khối lượng = tích phân của mật độ theo thể tích.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 95,
+    "type": "triple_centroid_y_formula",
+    "question": "Vật thể đồng chất có khối lượng \\(M\\) chiếm miền \\(V\\). Tung độ trọng tâm \\(\\bar y\\) được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(\\bar y=\\iiint_Vy\\,dV\\)",
+      "\\(\\bar y=\\dfrac1M\\iiint_Vy\\,dV\\)",
+      "\\(\\bar y=\\dfrac1M\\iiint_Vx\\,dV\\)",
+      "\\(\\bar y=\\dfrac1M\\iiint_Vz\\,dV\\)"
+    ],
+    "correct": "\\(\\bar y=\\dfrac1M\\iiint_Vy\\,dV\\)",
+    "solution": "Với mật độ bằng 1, moment bậc nhất theo mặt phẳng \\(Oxz\\) là \\(\\iiint_V y\\,dV\\). Chia cho khối lượng \\(M\\) ta được tung độ trọng tâm.",
+    "quick": "Tọa độ nào thì tích phân nhân đúng tọa độ đó rồi chia cho khối lượng.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 96,
+    "type": "triple_inertia_z_formula",
+    "question": "Momen quán tính của vật thể \\(V\\) đối với trục \\(Oz\\), với khối lượng riêng \\(\\rho(x,y,z)\\), là",
+    "matrix": null,
+    "options": [
+      "\\(I_z=\\iiint_V z^2\\rho(x,y,z)\\,dV\\)",
+      "\\(I_z=\\iiint_V(x^2+y^2)\\rho(x,y,z)\\,dV\\)",
+      "\\(I_z=\\iiint_V(x^2+z^2)\\rho(x,y,z)\\,dV\\)",
+      "\\(I_z=\\iiint_V(x+y)\\rho(x,y,z)\\,dV\\)"
+    ],
+    "correct": "\\(I_z=\\iiint_V(x^2+y^2)\\rho(x,y,z)\\,dV\\)",
+    "solution": "Khoảng cách bình phương từ \\((x,y,z)\\) đến trục \\(Oz\\) là \\(x^2+y^2\\). Vì vậy \\(I_z=\\iiint_V(x^2+y^2)\\rho\\,dV\\).",
+    "quick": "Quanh \\(Oz\\) thì bỏ tọa độ \\(z\\): khoảng cách bình phương là \\(x^2+y^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 97,
+    "type": "triple_mass_unit_cube_density_x",
+    "question": "Khối lập phương đơn vị \\(0\\le x,y,z\\le1\\) có khối lượng riêng \\(\\rho(x,y,z)=x\\). Khối lượng của vật thể bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac13\\)",
+      "\\(\\dfrac14\\)"
+    ],
+    "correct": "\\(\\dfrac12\\)",
+    "solution": "\\(M=\\int_0^1\\int_0^1\\int_0^1 x\\,dz\\,dy\\,dx=\\int_0^1x\\,dx=1/2\\).",
+    "quick": "Hai tích phân theo \\(y,z\\) đều cho hệ số 1.",
+    "casio": "Tính \\(\\int_0^1x\\,dx\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 98,
+    "type": "triple_centroid_unit_cube",
+    "question": "Vật thể đồng chất \\(\\rho=1\\) là khối lập phương đơn vị \\([0,1]\\times[0,1]\\times[0,1]\\). Tọa độ trọng tâm là",
+    "matrix": null,
+    "options": [
+      "\\((1,1,1)\\)",
+      "\\((0,0,0)\\)",
+      "\\((\\dfrac12,\\dfrac12,\\dfrac12)\\)",
+      "\\((\\dfrac13,\\dfrac13,\\dfrac13)\\)"
+    ],
+    "correct": "\\((\\dfrac12,\\dfrac12,\\dfrac12)\\)",
+    "solution": "Do đối xứng, mỗi tọa độ trọng tâm nằm ở trung điểm của đoạn \\([0,1]\\). Vì vậy \\((\\bar x,\\bar y,\\bar z)=(1/2,1/2,1/2)\\).",
+    "quick": "Trọng tâm của khối hộp đồng chất nằm tại tâm hình học.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân ba – Ứng dụng"
   }
 ]

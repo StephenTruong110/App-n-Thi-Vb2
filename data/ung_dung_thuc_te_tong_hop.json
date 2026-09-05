@@ -1,0 +1,3098 @@
+[
+  {
+    "id": 1,
+    "type": "economic_materials",
+    "question": "Một hãng dùng 3 loại vật liệu để sản xuất 4 sản phẩm. Ma trận định mức \\(A=\\begin{pmatrix}4&2&1&4\\\\5&4&2&1\\\\6&5&3&2\\end{pmatrix}\\) và kế hoạch \\(X=\\begin{pmatrix}3\\\\2\\\\5\\\\6\\end{pmatrix}\\). Tổng số đơn vị vật liệu cần dùng là",
+    "matrix": null,
+    "options": [
+      "55",
+      "139",
+      "145",
+      "130"
+    ],
+    "correct": "139",
+    "solution": "\\(AX=(45,39,55)^T\\). Tổng ba loại vật liệu là \\(45+39+55=139\\).",
+    "quick": "Tính \\(AX\\), rồi cộng các phần tử của véc tơ kết quả.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 2,
+    "type": "economic_cost",
+    "question": "Hai sản phẩm cần nguyên liệu theo ma trận \\(A=\\begin{pmatrix}2&1\\\\3&4\\end{pmatrix}\\) (hàng là hai loại nguyên liệu). Kế hoạch sản xuất là \\(x=(5;2)^T\\). Tổng lượng nguyên liệu từng loại là",
+    "matrix": null,
+    "options": [
+      "\\((12;23)^T\\)",
+      "\\((7;7)^T\\)",
+      "\\((13;22)^T\\)",
+      "\\((10;8)^T\\)"
+    ],
+    "correct": "\\((12;23)^T\\)",
+    "solution": "\\(Ax=(2\\cdot5+1\\cdot2,3\\cdot5+4\\cdot2)^T=(12,23)^T\\).",
+    "quick": "Ma trận định mức nhân véc tơ sản lượng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 3,
+    "type": "economic_revenue",
+    "question": "Một doanh nghiệp bán hai mặt hàng với véc tơ giá \\(p=(10;15)\\) và véc tơ số lượng \\(q=(20;12)^T\\). Doanh thu là",
+    "matrix": null,
+    "options": [
+      "320",
+      "380",
+      "400",
+      "500"
+    ],
+    "correct": "380",
+    "solution": "\\(pq=10\\cdot20+15\\cdot12=200+180=380\\).",
+    "quick": "Giá nhân số lượng rồi cộng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 4,
+    "type": "economic_total_cost",
+    "question": "Ma trận chi phí đơn vị của 2 nguồn lực cho 3 sản phẩm là \\(C=\\begin{pmatrix}2&3&1\\\\4&1&2\\end{pmatrix}\\), sản lượng \\(x=(10;5;8)^T\\). Tổng chi phí hai nguồn lực lần lượt là",
+    "matrix": null,
+    "options": [
+      "\\((43;61)^T\\)",
+      "\\((35;45)^T\\)",
+      "\\((61;43)^T\\)",
+      "\\((33;56)^T\\)"
+    ],
+    "correct": "\\((43;61)^T\\)",
+    "solution": "\\(Cx=(20+15+8,40+5+16)^T=(43,61)^T\\).",
+    "quick": "Mỗi hàng là một loại chi phí.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 5,
+    "type": "economic_plan",
+    "question": "Ma trận định mức \\(A\\) có cỡ \\(3\\times4\\) và véc tơ kế hoạch sản xuất \\(x\\) có cỡ \\(4\\times1\\). Ý nghĩa của \\(Ax\\) là",
+    "matrix": null,
+    "options": [
+      "Véc tơ tổng nhu cầu của 3 nguồn lực",
+      "Véc tơ giá của 4 sản phẩm",
+      "Ma trận lợi nhuận \\(4\\times3\\)",
+      "Một số vô hướng"
+    ],
+    "correct": "Véc tơ tổng nhu cầu của 3 nguồn lực",
+    "solution": "\\(Ax\\) có cỡ \\(3\\times1\\); mỗi phần tử là tổng nhu cầu của một nguồn lực cho toàn bộ kế hoạch sản xuất.",
+    "quick": "Hàng nguồn lực × cột sản lượng.",
+    "casio": "CASIO không cần thiết; đây là câu nhận dạng hoặc tính chất ma trận.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 6,
+    "type": "economic_multistage_matrix",
+    "question": "Ma trận nguyên liệu cho ba bán thành phẩm là \\(A=\\begin{pmatrix}1&2&0\\\\0&1&3\\end{pmatrix}\\); ma trận bán thành phẩm cho hai sản phẩm là \\(B=\\begin{pmatrix}1&0\\\\2&1\\\\0&1\\end{pmatrix}\\). Với kế hoạch \\(x=(10;5)^T\\), tổng lượng hai loại nguyên liệu cần dùng là",
+    "matrix": null,
+    "options": [
+      "100",
+      "90",
+      "110",
+      "80"
+    ],
+    "correct": "100",
+    "solution": "\\(Bx=(10,25,5)^T\\), rồi \\(ABx=(60,40)^T\\). Tổng lượng nguyên liệu bằng 100.",
+    "quick": "Tính từ phải sang trái: kế hoạch → bán thành phẩm → nguyên liệu.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận nhiều công đoạn"
+  },
+  {
+    "id": 7,
+    "type": "economic_profit_matrix",
+    "question": "Ma trận nhu cầu hai nguồn lực cho hai sản phẩm là \\(A=\\begin{pmatrix}1&2\\\\3&1\\end{pmatrix}\\), véc tơ sản lượng \\(q=(10;20)^T\\), véc tơ chi phí nguồn lực \\(c=(2;3)\\) và véc tơ giá bán \\(p=(20;15)\\). Lợi nhuận bằng",
+    "matrix": null,
+    "options": [
+      "250",
+      "200",
+      "300",
+      "150"
+    ],
+    "correct": "250",
+    "solution": "\\(Aq=(50,50)^T\\). Chi phí \\(c(Aq)=2\\cdot50+3\\cdot50=250\\). Doanh thu \\(pq=20\\cdot10+15\\cdot20=500\\). Lợi nhuận \\(500-250=250\\).",
+    "quick": "Lợi nhuận = tích giá–sản lượng trừ tích chi phí–nhu cầu nguồn lực.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 8,
+    "type": "markov_two_steps",
+    "question": "Ma trận chuyển trạng thái \\(P=\\begin{pmatrix}0.8&0.3\\\\0.2&0.7\\end{pmatrix}\\) và trạng thái ban đầu \\(x_0=(100;0)^T\\). Số phần tử ở trạng thái 2 sau hai bước là",
+    "matrix": null,
+    "options": [
+      "30",
+      "20",
+      "40",
+      "25"
+    ],
+    "correct": "30",
+    "solution": "\\(x_1=Px_0=(80,20)^T\\); \\(x_2=Px_1=(70,30)^T\\). Vậy trạng thái 2 có 30 phần tử.",
+    "quick": "Tính \\(x_2=P^2x_0\\) hoặc nhân liên tiếp hai lần.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo các ma trận cần dùng → nhập dữ liệu → thực hiện phép toán theo lời giải.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận Markov"
+  },
+  {
+    "id": 9,
+    "type": "matrix_material_change",
+    "question": "Ma trận định mức \\(A=\\begin{pmatrix}4&2&1&4\\\\5&4&2&1\\\\6&5&3&2\\end{pmatrix}\\). Nếu tăng sản phẩm 1 thêm 2 đơn vị và giảm sản phẩm 4 đi 1 đơn vị, tổng vật liệu cần tăng thêm là",
+    "matrix": null,
+    "options": [
+      "23",
+      "15",
+      "30",
+      "7"
+    ],
+    "correct": "23",
+    "solution": "Vector thay đổi sản lượng là \\(\\Delta X=(2,0,0,-1)^T\\). Khi đó \\(A\\Delta X=(4,9,10)^T\\). Tổng tăng thêm là \\(4+9+10=23\\).",
+    "quick": "Lấy cột 1 nhân 2 rồi trừ cột 4.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận"
+  },
+  {
+    "id": 10,
+    "type": "production_k",
+    "question": "Ma trận định mức có hàng vật liệu 1 là \\((4,2,1,4)\\). Nếu sản phẩm 1,2,3 đều bằng \\(k\\), sản phẩm 4 bằng 10 và tổng vật liệu loại 1 là 110, tìm \\(k\\).",
+    "matrix": null,
+    "options": [
+      "10",
+      "15",
+      "12",
+      "8"
+    ],
+    "correct": "10",
+    "solution": "Vật liệu loại 1 cần dùng là \\(4k+2k+k+4\\cdot10=7k+40\\). Điều kiện \\(7k+40=110\\) cho \\(k=10\\).",
+    "quick": "Lấy hàng 1 nhân vector sản lượng.",
+    "casio": "CASIO fx-580VNX: MENU → Matrix → khai báo MatA, MatB hoặc vector cột → dùng phép nhân/cộng/trừ ma trận để kiểm tra kết quả. Với ma trận đường chéo, nên tính nhanh trực tiếp trên đường chéo.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận"
+  },
+  {
+    "id": 11,
+    "type": "matrix_application_official",
+    "question": "Một xí nghiệp có ma trận định mức \\(A=\\begin{pmatrix}2&1&3\\\\3&2&1\\\\1&4&2\\end{pmatrix}\\) và kế hoạch sản xuất \\(X_0=(10,5,8)^T\\). Tổng số đơn vị nguyên liệu của tất cả các loại cần dùng là",
+    "matrix": null,
+    "options": [
+      "143",
+      "135",
+      "150",
+      "128"
+    ],
+    "correct": "143",
+    "solution": "Tính \\(Y=AX_0=(49,48,46)^T\\). Tổng nguyên liệu là \\(49+48+46=143\\).",
+    "quick": "Nhân ma trận định mức với vector sản lượng rồi cộng ba thành phần.",
+    "casio": "CASIO: Matrix → nhập \\(A\\), \\(X_0\\) → tính \\(AX_0\\), rồi cộng các phần tử.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận"
+  },
+  {
+    "id": 12,
+    "type": "application_material_requirement",
+    "question": "Một xí nghiệp sản xuất 3 sản phẩm với ma trận định mức nguyên liệu \\(A=\\begin{pmatrix}2&1&3\\\\1&2&2\\\\3&1&1\\end{pmatrix}\\). Nếu kế hoạch sản xuất là \\(X=(10;5;8)^T\\), lượng nguyên liệu loại 2 cần dùng bằng",
+    "matrix": null,
+    "options": [
+      "36",
+      "43",
+      "49",
+      "128"
+    ],
+    "correct": "36",
+    "solution": "Tổng nhu cầu nguyên liệu là \\(AX\\). Thành phần thứ hai bằng \\(1\\cdot10+2\\cdot5+2\\cdot8=10+10+16=36\\).",
+    "quick": "Chỉ lấy hàng 2 của \\(A\\) nhân với véc tơ sản lượng \\(X\\).",
+    "casio": "CASIO: nhập ma trận \\(A\\) và véc tơ cột \\(X\\), tính \\(AX\\); phần tử thứ hai là 36.",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 13,
+    "type": "application_production_change",
+    "question": "Ma trận định mức của 2 loại nguyên liệu cho 3 sản phẩm là \\(A=\\begin{pmatrix}4&2&1\\\\3&1&2\\end{pmatrix}\\). Kế hoạch sản xuất thay đổi một lượng \\(\\Delta X=(2;-1;3)^T\\). Tổng nhu cầu của cả hai loại nguyên liệu thay đổi thêm bao nhiêu đơn vị?",
+    "matrix": null,
+    "options": [
+      "20",
+      "11",
+      "9",
+      "18"
+    ],
+    "correct": "20",
+    "solution": "Ta có \\(A\\Delta X=(4\\cdot2+2\\cdot(-1)+1\\cdot3,\\ 3\\cdot2+1\\cdot(-1)+2\\cdot3)^T=(9,11)^T\\). Tổng nhu cầu tăng thêm là \\(9+11=20\\).",
+    "quick": "Dùng véc tơ thay đổi: \\(\\Delta Y=A\\Delta X\\), rồi cộng hai thành phần.",
+    "casio": "CASIO: nhập \\(A\\) và \\(\\Delta X\\), tính tích được \\((9;11)^T\\), tổng bằng 20.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 14,
+    "type": "application_resource_by_period",
+    "question": "Một cơ sở sản xuất 3 sản phẩm, sử dụng 2 loại nguyên liệu. Ma trận định mức là \\(A=\\begin{pmatrix}2&1&3\\\\1&4&2\\end{pmatrix}\\). Sản lượng trong hai tuần được cho bởi \\(X=\\begin{pmatrix}5&4\\\\3&6\\\\2&1\\end{pmatrix}\\), trong đó mỗi cột ứng với một tuần. Ma trận nhu cầu nguyên liệu trong hai tuần là",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{pmatrix}19&17\\\\21&30\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}19&21\\\\17&30\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}17&19\\\\30&21\\end{pmatrix}\\)",
+      "\\(\\begin{pmatrix}21&30\\\\19&17\\end{pmatrix}\\)"
+    ],
+    "correct": "\\(\\begin{pmatrix}19&17\\\\21&30\\end{pmatrix}\\)",
+    "solution": "Nhu cầu nguyên liệu là \\(AX\\). Tính lần lượt theo từng cột sản lượng: tuần 1 được \\((19;21)^T\\), tuần 2 được \\((17;30)^T\\). Vì vậy \\(AX=\\begin{pmatrix}19&17\\\\21&30\\end{pmatrix}\\).",
+    "quick": "Mỗi cột của \\(AX\\) là nhu cầu nguyên liệu của một tuần.",
+    "casio": "CASIO: nhập \\(A\\) và \\(X\\), tính \\(AX\\) để được ma trận \\(2\\times2\\) đã cho.",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 15,
+    "type": "application_resource_cost",
+    "question": "Ma trận định mức của 2 nguồn lực cho 3 sản phẩm là \\(A=\\begin{pmatrix}2&1&3\\\\1&4&2\\end{pmatrix}\\), kế hoạch sản xuất \\(X=(10;5;4)^T\\). Chi phí cho một đơn vị của hai nguồn lực lần lượt là \\(c=(5;2)\\). Tổng chi phí nguồn lực của kế hoạch bằng",
+    "matrix": null,
+    "options": [
+      "261",
+      "185",
+      "76",
+      "299"
+    ],
+    "correct": "261",
+    "solution": "Nhu cầu nguồn lực là \\(AX=(37;38)^T\\). Tổng chi phí bằng \\(c^TAX=5\\cdot37+2\\cdot38=185+76=261\\).",
+    "quick": "Tính nhu cầu trước: \\(AX\\), sau đó lấy chi phí đơn vị nhân với véc tơ nhu cầu.",
+    "casio": "CASIO: tính \\(AX=(37;38)^T\\), rồi nhập \\(5\\times37+2\\times38\\), được 261.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 16,
+    "type": "application_sales_by_store",
+    "question": "Một doanh nghiệp bán 3 sản phẩm tại 2 cửa hàng. Ma trận số lượng bán được là \\(Q=\\begin{pmatrix}10&8\\\\6&7\\\\4&5\\end{pmatrix}\\), mỗi cột ứng với một cửa hàng. Véc tơ giá là \\(p=(20;15;10)^T\\). Doanh thu của hai cửa hàng lần lượt là",
+    "matrix": null,
+    "options": [
+      "\\((330;315)^T\\)",
+      "\\((315;330)^T\\)",
+      "\\((300;345)^T\\)",
+      "\\((330;300)^T\\)"
+    ],
+    "correct": "\\((330;315)^T\\)",
+    "solution": "Doanh thu từng cửa hàng là \\(Q^Tp\\). Cửa hàng 1: \\(10\\cdot20+6\\cdot15+4\\cdot10=330\\). Cửa hàng 2: \\(8\\cdot20+7\\cdot15+5\\cdot10=315\\).",
+    "quick": "Mỗi cột số lượng lấy tích vô hướng với véc tơ giá.",
+    "casio": "CASIO: nhập \\(Q^T\\) và \\(p\\), tính \\(Q^Tp=(330;315)^T\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 17,
+    "type": "application_profit",
+    "question": "Một doanh nghiệp sản xuất 3 sản phẩm. Ma trận nhu cầu 2 nguồn lực là \\(A=\\begin{pmatrix}2&1&1\\\\1&3&2\\end{pmatrix}\\), sản lượng \\(q=(8;6;5)^T\\), chi phí đơn vị nguồn lực \\(c=(4;3)^T\\), và giá bán sản phẩm \\(p=(25;20;18)^T\\). Lợi nhuận bằng",
+    "matrix": null,
+    "options": [
+      "194",
+      "216",
+      "410",
+      "184"
+    ],
+    "correct": "194",
+    "solution": "Nhu cầu nguồn lực là \\(Aq=(27;36)^T\\), nên chi phí bằng \\(c^TAq=4\\cdot27+3\\cdot36=216\\). Doanh thu là \\(p^Tq=25\\cdot8+20\\cdot6+18\\cdot5=410\\). Lợi nhuận bằng \\(410-216=194\\).",
+    "quick": "Lợi nhuận = doanh thu \\(p^Tq\\) trừ chi phí nguồn lực \\(c^TAq\\).",
+    "casio": "CASIO: tính \\(Aq=(27;36)^T\\), chi phí 216 và doanh thu 410; hiệu bằng 194.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong kinh tế"
+  },
+  {
+    "id": 18,
+    "type": "application_multistage_production",
+    "question": "Hai loại nguyên liệu được dùng để tạo 3 bán thành phẩm theo ma trận \\(A=\\begin{pmatrix}1&2&1\\\\3&1&2\\end{pmatrix}\\). Ba bán thành phẩm được dùng để tạo 2 sản phẩm theo ma trận \\(B=\\begin{pmatrix}1&2\\\\2&1\\\\1&1\\end{pmatrix}\\). Nếu kế hoạch sản xuất cuối cùng là \\(X=(4;6)^T\\), lượng nguyên liệu loại 2 cần dùng bằng",
+    "matrix": null,
+    "options": [
+      "82",
+      "54",
+      "68",
+      "96"
+    ],
+    "correct": "82",
+    "solution": "Trước hết \\(BX=(16;14;10)^T\\). Sau đó \\(ABX=(54;82)^T\\). Vì vậy lượng nguyên liệu loại 2 cần dùng là 82.",
+    "quick": "Tính từ phải sang trái: sản phẩm cuối \\(X\\) → bán thành phẩm \\(BX\\) → nguyên liệu \\(ABX\\).",
+    "casio": "CASIO: tính \\(BX\\) rồi nhân tiếp với \\(A\\); phần tử thứ hai của \\(ABX\\) là 82.",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận nhiều công đoạn"
+  },
+  {
+    "id": 19,
+    "type": "application_capacity_remaining",
+    "question": "Một nhà máy có ma trận định mức \\(A=\\begin{pmatrix}2&1&3\\\\1&2&1\\end{pmatrix}\\), kế hoạch sản xuất \\(X=(10;6;4)^T\\) và năng lực tối đa của hai nguồn lực là \\(b=(45;30)^T\\). Nếu thực hiện kế hoạch này, lượng năng lực còn dư của hai nguồn lực là",
+    "matrix": null,
+    "options": [
+      "\\((7;4)^T\\)",
+      "\\((38;26)^T\\)",
+      "\\((4;7)^T\\)",
+      "\\((83;56)^T\\)"
+    ],
+    "correct": "\\((7;4)^T\\)",
+    "solution": "Nhu cầu nguồn lực là \\(AX=(38;26)^T\\). Năng lực còn dư bằng \\(b-AX=(45;30)^T-(38;26)^T=(7;4)^T\\).",
+    "quick": "Tính \\(AX\\) rồi lấy năng lực tối đa trừ nhu cầu.",
+    "casio": "CASIO: tính \\(AX=(38;26)^T\\), sau đó lấy \\((45;30)^T-(38;26)^T\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 20,
+    "type": "application_inverse_production_plan",
+    "question": "Hai sản phẩm sử dụng hai loại nguyên liệu theo ma trận định mức \\(A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}\\). Nếu tổng lượng hai nguyên liệu cần dùng lần lượt là \\(18\\) và \\(15\\), kế hoạch sản xuất \\(X\\) thỏa \\(AX=(18;15)^T\\) là",
+    "matrix": null,
+    "options": [
+      "\\((7;4)^T\\)",
+      "\\((4;7)^T\\)",
+      "\\((6;5)^T\\)",
+      "\\((8;2)^T\\)"
+    ],
+    "correct": "\\((7;4)^T\\)",
+    "solution": "Ta có \\(X=A^{-1}b\\), với \\(A^{-1}=\\dfrac13\\begin{pmatrix}2&-1\\\\-1&2\\end{pmatrix}\\). Do đó \\(X=\\dfrac13(21;12)^T=(7;4)^T\\).",
+    "quick": "Đây là bài toán ngược: biết tổng nguyên liệu, tìm sản lượng bằng \\(X=A^{-1}b\\).",
+    "casio": "CASIO: nhập \\(A\\), tính \\(A^{-1}(18;15)^T\\), được \\((7;4)^T\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 21,
+    "type": "application_two_factories",
+    "question": "Hai phân xưởng cùng sản xuất 2 sản phẩm. Ma trận định mức nguồn lực của phân xưởng 1 là \\(A=\\begin{pmatrix}2&1\\\\1&3\\end{pmatrix}\\), của phân xưởng 2 là \\(B=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}\\). Kế hoạch sản xuất tương ứng là \\(X=(5;4)^T\\) và \\(Y=(3;6)^T\\). Tổng nhu cầu hai nguồn lực của cả hai phân xưởng là",
+    "matrix": null,
+    "options": [
+      "\\((29;29)^T\\)",
+      "\\((14;17)^T\\)",
+      "\\((15;12)^T\\)",
+      "\\((27;31)^T\\)"
+    ],
+    "correct": "\\((29;29)^T\\)",
+    "solution": "Phân xưởng 1 cần \\(AX=(14;17)^T\\). Phân xưởng 2 cần \\(BY=(15;12)^T\\). Tổng nhu cầu là \\(AX+BY=(29;29)^T\\).",
+    "quick": "Tính nhu cầu từng phân xưởng rồi cộng hai véc tơ.",
+    "casio": "CASIO: tính \\(AX\\) và \\(BY\\), sau đó cộng hai kết quả để được \\((29;29)^T\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận trong sản xuất"
+  },
+  {
+    "id": 22,
+    "type": "economic_equilibrium",
+    "question": "Ba thị trường có cung và cầu: \\(s_1=-38+p_1-p_2+2p_3\\), \\(s_2=-73-p_1+2p_2+p_3\\), \\(s_3=-59+p_1+2p_2+3p_3\\); \\(d_1=70-p_1+p_2\\), \\(d_2=127-p_2-2p_3\\), \\(d_3=200+p_2-p_3\\). Khi cân bằng \\(s_i=d_i\\), giá trị \\(p_1+p_2+p_3\\) bằng",
+    "matrix": null,
+    "options": [
+      "112",
+      "110",
+      "114",
+      "100"
+    ],
+    "correct": "112",
+    "solution": "Các điều kiện cân bằng cho hệ \\(\\begin{cases}p_1-p_2+p_3=54\\\\-p_1+3p_2+3p_3=200\\\\p_1+p_2+4p_3=259\\end{cases}\\). Giải hệ được \\((p_1,p_2,p_3)=(34,29,49)\\), nên \\(p_1+p_2+p_3=112\\).",
+    "quick": "Đặt \\(s_i=d_i\\), rút gọn thành hệ ba ẩn rồi giải; kết quả \\((34,29,49)\\).",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 23,
+    "type": "economic_supply_demand",
+    "question": "Hai hàng hóa có điều kiện cân bằng \\(\\begin{cases}2p_1-p_2=30\\\\-p_1+3p_2=40\\end{cases}\\). Tổng hai mức giá cân bằng bằng",
+    "matrix": null,
+    "options": [
+      "48",
+      "50",
+      "52",
+      "60"
+    ],
+    "correct": "48",
+    "solution": "Giải hệ được \\(p_1=26\\), \\(p_2=22\\), tổng bằng 48.",
+    "quick": "Giải hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 24,
+    "type": "economic_production",
+    "question": "Một xưởng sản xuất hai sản phẩm \\(x,y\\). Mỗi đơn vị \\(x\\) dùng 2 giờ máy và 1 giờ lao động; mỗi đơn vị \\(y\\) dùng 1 giờ máy và 3 giờ lao động. Nếu dùng hết 100 giờ máy và 90 giờ lao động thì \\((x,y)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\((42,16)\\)",
+      "\\((40,20)\\)",
+      "\\((30,30)\\)",
+      "\\((50,0)\\)"
+    ],
+    "correct": "\\((42,16)\\)",
+    "solution": "Giải \\(2x+y=100\\), \\(x+3y=90\\) được \\(x=42\\), \\(y=16\\).",
+    "quick": "Lập hệ từ từng nguồn lực.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 25,
+    "type": "economic_mixture",
+    "question": "Trộn hai loại nguyên liệu A và B để được 100 kg hỗn hợp. A chứa 20% chất X, B chứa 50% chất X. Muốn hỗn hợp chứa 38 kg chất X thì lượng A, B là",
+    "matrix": null,
+    "options": [
+      "\\((40,60)\\)",
+      "\\((60,40)\\)",
+      "\\((50,50)\\)",
+      "\\((30,70)\\)"
+    ],
+    "correct": "\\((40,60)\\)",
+    "solution": "Lập hệ \\(A+B=100\\), \\(0.2A+0.5B=38\\). Giải được \\(A=40,B=60\\).",
+    "quick": "Một phương trình tổng khối lượng, một phương trình thành phần.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 26,
+    "type": "economic_investment",
+    "question": "Đầu tư tổng cộng 200 triệu vào hai kênh lãi suất 6% và 9%. Muốn tiền lãi một năm là 15 triệu thì số tiền đầu tư lần lượt là",
+    "matrix": null,
+    "options": [
+      "100 và 100",
+      "120 và 80",
+      "150 và 50",
+      "80 và 120"
+    ],
+    "correct": "100 và 100",
+    "solution": "Gọi \\(x,y\\) là số triệu: \\(x+y=200\\), \\(0.06x+0.09y=15\\). Giải được \\(x=y=100\\).",
+    "quick": "Tổng vốn và tổng lãi tạo hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 27,
+    "type": "economic_sales",
+    "question": "Một cửa hàng bán 30 sản phẩm gồm loại A giá 20 nghìn và loại B giá 35 nghìn, thu 750 nghìn. Số sản phẩm A, B lần lượt là",
+    "matrix": null,
+    "options": [
+      "20 và 10",
+      "18 và 12",
+      "15 và 15",
+      "10 và 20"
+    ],
+    "correct": "20 và 10",
+    "solution": "Hệ \\(x+y=30\\), \\(20x+35y=750\\) cho \\(y=10,x=20\\).",
+    "quick": "Tổng số và tổng doanh thu.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 28,
+    "type": "economic_resource",
+    "question": "Ba sản phẩm \\(x,y,z\\) dùng hết ba nguồn lực theo hệ \\(\\begin{cases}x+y+z=60\\\\2x+y+3z=100\\\\x+2y+z=90\\end{cases}\\). Tổng \\(x+2z\\) bằng",
+    "matrix": null,
+    "options": [
+      "40",
+      "50",
+      "60",
+      "70"
+    ],
+    "correct": "40",
+    "solution": "Giải hệ được \\((x,y,z)=(20,30,10)\\), nên \\(x+2z=40\\).",
+    "quick": "Giải hệ 3 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 29,
+    "type": "economic_cost_allocation",
+    "question": "Tổng chi phí 120 triệu gồm chi phí nguyên liệu \\(x\\), nhân công \\(y\\), vận chuyển \\(z\\). Biết \\(x=2y\\) và \\(z=y/2\\). Chi phí nhân công bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\frac{240}{7}\\) triệu",
+      "30 triệu",
+      "36 triệu",
+      "40 triệu"
+    ],
+    "correct": "\\(\\frac{240}{7}\\) triệu",
+    "solution": "Ta có \\(2y+y+y/2=120\\), tức \\(3.5y=120\\), suy ra \\(y=240/7\\approx34.29\\) triệu.",
+    "quick": "Thay các quan hệ vào phương trình tổng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 30,
+    "type": "economic_transport",
+    "question": "Hai kho A, B cung cấp tổng 80 tấn hàng. Kho A nhiều hơn kho B 20 tấn. Lượng hàng ở A và B là",
+    "matrix": null,
+    "options": [
+      "50 và 30",
+      "40 và 40",
+      "60 và 20",
+      "45 và 35"
+    ],
+    "correct": "50 và 30",
+    "solution": "Giải hệ \\(A+B=80\\), \\(A-B=20\\) được \\(A=50,B=30\\).",
+    "quick": "Tổng và hiệu.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 31,
+    "type": "economic_leontief",
+    "question": "Mô hình Leontief hai ngành thỏa \\(x=0.2x+0.1y+70\\), \\(y=0.3x+0.2y+50\\). Tổng sản lượng \\(x+y\\) bằng",
+    "matrix": null,
+    "options": [
+      "175",
+      "180",
+      "200",
+      "225"
+    ],
+    "correct": "200",
+    "solution": "Hệ tương đương \\(0.8x-0.1y=70\\), \\(-0.3x+0.8y=50\\). Giải được \\(x=100,y=100\\), tổng 200.",
+    "quick": "Chuyển các phần sản lượng trung gian sang vế trái.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 32,
+    "type": "economic_break_even",
+    "question": "Doanh thu và chi phí của hai sản phẩm được mô tả bởi hệ \\(\\begin{cases}3x+2y=120\\\\x+4y=100\\end{cases}\\). Tổng \\(x+y\\) bằng",
+    "matrix": null,
+    "options": [
+      "46",
+      "44",
+      "48",
+      "50"
+    ],
+    "correct": "46",
+    "solution": "Giải hệ được \\(x=28,y=18\\), nên tổng bằng 46.",
+    "quick": "Giải hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 33,
+    "type": "economic_wages",
+    "question": "Tổng tiền lương của 10 lao động bậc 1 và 6 lao động bậc 2 là 76 triệu. Lương một người bậc 2 cao hơn bậc 1 là 2 triệu. Mức lương bậc 1 là",
+    "matrix": null,
+    "options": [
+      "4 triệu",
+      "5 triệu",
+      "6 triệu",
+      "3 triệu"
+    ],
+    "correct": "4 triệu",
+    "solution": "Gọi lương bậc 1 là \\(x\\), bậc 2 là \\(y\\). Hệ \\(10x+6y=76\\), \\(y-x=2\\) cho \\(x=4,y=6\\).",
+    "quick": "Thế \\(y=x+2\\) vào tổng quỹ lương.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 34,
+    "type": "economic_price",
+    "question": "Hai mức giá \\(p_1,p_2\\) thỏa điều kiện cân bằng \\(\\begin{cases}3p_1-p_2=40\\\\-p_1+2p_2=10\\end{cases}\\). Giá \\(p_1\\) bằng",
+    "matrix": null,
+    "options": [
+      "18",
+      "20",
+      "22",
+      "25"
+    ],
+    "correct": "18",
+    "solution": "Từ phương trình hai \\(p_1=2p_2-10\\). Thế vào phương trình một được \\(5p_2=70\\), nên \\(p_2=14,p_1=18\\).",
+    "quick": "Giải hệ 2 ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 35,
+    "type": "economic_three_products",
+    "question": "Ba sản phẩm \\(x,y,z\\) thỏa \\(\\begin{cases}x+y+z=80\\\\2x+y+z=110\\\\x+2y+3z=150\\end{cases}\\). Số lượng sản phẩm \\(z\\) bằng",
+    "matrix": null,
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "correct": "20",
+    "solution": "Trừ phương trình một khỏi phương trình hai được \\(x=30\\). Khi đó \\(y+z=50\\) và từ phương trình ba có \\(2y+3z=120\\). Suy ra \\(z=20,y=30\\).",
+    "quick": "Khử từng ẩn bằng phép trừ hai phương trình.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 36,
+    "type": "economic_purchase",
+    "question": "Một đơn vị mua 20 thiết bị gồm ba loại \\(x,y,z\\) có giá lần lượt 5, 10 và 20 triệu đồng, tổng chi 220 triệu đồng. Biết số thiết bị loại \\(x\\) nhiều hơn loại \\(z\\) là 2. Số lượng \\((x,y,z)\\) là",
+    "matrix": null,
+    "options": [
+      "\\((8,6,6)\\)",
+      "\\((6,8,6)\\)",
+      "\\((8,8,4)\\)",
+      "\\((10,4,6)\\)"
+    ],
+    "correct": "\\((8,6,6)\\)",
+    "solution": "Lập hệ \\(x+y+z=20\\), \\(5x+10y+20z=220\\), \\(x-z=2\\). Giải được \\((x,y,z)=(8,6,6)\\).",
+    "quick": "Chia phương trình tiền cho 5 trước khi giải.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong kinh tế"
+  },
+  {
+    "id": 37,
+    "type": "economic_three_product_plan",
+    "question": "Một xưởng sản xuất ba sản phẩm \\(x,y,z\\) thỏa \\(\\begin{cases}x+y+z=100\\\\2x+y+3z=190\\\\x+3y+2z=210\\end{cases}\\). Số sản phẩm loại \\(z\\) là",
+    "matrix": null,
+    "options": [
+      "30",
+      "20",
+      "40",
+      "25"
+    ],
+    "correct": "30",
+    "solution": "Giải hệ được \\((x,y,z)=(30,40,30)\\).",
+    "quick": "Dùng phương trình đầu để khử một ẩn, sau đó giải hệ hai ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong sản xuất"
+  },
+  {
+    "id": 38,
+    "type": "economic_tax_equilibrium",
+    "question": "Hai mức giá cân bằng thỏa \\(2p_1-p_2=30+t\\) và \\(-p_1+3p_2=40\\). Thuế \\(t\\) bằng bao nhiêu để \\(p_1=2p_2\\)?",
+    "matrix": null,
+    "options": [
+      "90",
+      "60",
+      "30",
+      "120"
+    ],
+    "correct": "90",
+    "solution": "Thay \\(p_1=2p_2\\) vào phương trình hai được \\(p_2=40\\), \\(p_1=80\\). Phương trình một cho \\(160-40=30+t\\), nên \\(t=90\\).",
+    "quick": "Dùng điều kiện giá trước để giảm hệ còn một ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Cân bằng thị trường có tham số"
+  },
+  {
+    "id": 39,
+    "type": "economic_three_investments",
+    "question": "Đầu tư 200 triệu đồng vào ba kênh có lãi suất 5%, 8%, 10%. Tổng lãi một năm là 13,4 triệu và số tiền ở kênh 5% nhiều hơn kênh 8% là 20 triệu. Số tiền ở kênh 10% là",
+    "matrix": null,
+    "options": [
+      "20 triệu",
+      "40 triệu",
+      "60 triệu",
+      "80 triệu"
+    ],
+    "correct": "20 triệu",
+    "solution": "Gọi số tiền là \\(x,y,z\\). Hệ: \\(x+y+z=200\\), \\(0.05x+0.08y+0.10z=13.4\\), \\(x-y=20\\). Giải được \\((100,80,20)\\).",
+    "quick": "Đổi phần trăm thành hệ số thập phân và giải hệ ba ẩn.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong tài chính"
+  },
+  {
+    "id": 40,
+    "type": "economic_mixture_three",
+    "question": "Trộn 100 kg ba nguyên liệu A, B, C chứa lần lượt 10%, 20%, 40% chất dinh dưỡng. Hỗn hợp cần 26 kg chất dinh dưỡng và lượng C gấp đôi lượng A. Khối lượng nguyên liệu B là",
+    "matrix": null,
+    "options": [
+      "40 kg",
+      "20 kg",
+      "60 kg",
+      "30 kg"
+    ],
+    "correct": "40 kg",
+    "solution": "Gọi khối lượng là \\(x,y,z\\). Có \\(x+y+z=100\\), \\(0.1x+0.2y+0.4z=26\\), \\(z=2x\\). Giải được \\((20,40,40)\\).",
+    "quick": "Dùng \\(z=2x\\) và phương trình tổng để thay vào phương trình dinh dưỡng.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Bài toán phối trộn"
+  },
+  {
+    "id": 41,
+    "type": "economic_transport_cost",
+    "question": "Ba kho A, B, C có tổng 120 tấn hàng; kho A gấp đôi kho B, kho C nhiều hơn kho B 20 tấn. Chi phí vận chuyển mỗi tấn từ A, B, C lần lượt là 2, 3, 5 đơn vị. Tổng chi phí là",
+    "matrix": null,
+    "options": [
+      "400",
+      "360",
+      "420",
+      "380"
+    ],
+    "correct": "400",
+    "solution": "Gọi lượng hàng là \\(x,y,z\\). Từ \\(x=2y\\), \\(z=y+20\\), \\(x+y+z=120\\) được \\((50,25,45)\\). Chi phí \\(2\\cdot50+3\\cdot25+5\\cdot45=400\\).",
+    "quick": "Giải lượng hàng trước, sau đó tính tích vô hướng với véc tơ chi phí.",
+    "casio": "CASIO fx-580VNX: MENU → Equation/Func → Simultaneous → chọn số ẩn → nhập hệ số và vế phải → EXE.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính trong vận tải"
+  },
+  {
+    "id": 42,
+    "type": "linear_approximation_from_value_derivative",
+    "question": "Cho hàm số \\(f(x)\\). Biết \\(f(7)=13{,}5\\) và \\(f'(7)=10{,}5\\). Sử dụng công thức xấp xỉ tuyến tính, tính gần đúng \\(f(6{,}9)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-1{,}05\\)",
+      "\\(14{,}55\\)",
+      "\\(12{,}45\\)",
+      "\\(85{,}95\\)"
+    ],
+    "correct": "\\(12{,}45\\)",
+    "solution": "Dùng xấp xỉ tuyến tính tại \\(a=7\\): \\(f(x)\\approx f(a)+f'(a)(x-a)\\). Với \\(x=6{,}9\\), ta có \\(x-a=-0{,}1\\). Do đó \\(f(6{,}9)\\approx13{,}5+10{,}5(-0{,}1)=13{,}5-1{,}05=12{,}45\\).",
+    "quick": "\\(f(a+h)\\approx f(a)+f'(a)h\\), ở đây \\(h=-0{,}1\\).",
+    "casio": "CASIO: nhập \\(13{,}5+10{,}5\\times(6{,}9-7)\\), được \\(12{,}45\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Xấp xỉ tuyến tính"
+  },
+  {
+    "id": 43,
+    "type": "linear_approximation_from_value_derivative",
+    "question": "Cho hàm số \\(f(x)\\). Biết \\(f(8)=11{,}5\\) và \\(f'(8)=1{,}5\\). Sử dụng công thức xấp xỉ tuyến tính, tính gần đúng \\(f(8{,}1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-0{,}5\\)",
+      "\\(0{,}15\\)",
+      "\\(11{,}65\\)",
+      "\\(11{,}35\\)"
+    ],
+    "correct": "\\(11{,}65\\)",
+    "solution": "Dùng xấp xỉ tuyến tính tại \\(a=8\\): \\(f(x)\\approx f(a)+f'(a)(x-a)\\). Với \\(x=8{,}1\\), ta có \\(x-a=0{,}1\\). Vì vậy \\(f(8{,}1)\\approx11{,}5+1{,}5(0{,}1)=11{,}65\\).",
+    "quick": "Ở đây \\(h=0{,}1\\), nên cộng thêm \\(f'(8)h=0{,}15\\).",
+    "casio": "CASIO: nhập \\(11{,}5+1{,}5\\times(8{,}1-8)\\), được \\(11{,}65\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Xấp xỉ tuyến tính"
+  },
+  {
+    "id": 44,
+    "type": "linear_approximation_application_tank",
+    "question": "Một người đang tháo nước từ đáy của một bể hình trụ. \\(V(t)\\), tính bằng lít, là thể tích nước còn lại trong bể sau \\(t\\) phút. Biết \\(V(33)=76646{,}25\\) lít và \\(V'(33)=-5677{,}5\\) lít/phút. Dùng xấp xỉ tuyến tính để ước tính \\(V(33{,}5)\\).",
+    "matrix": null,
+    "options": [
+      "\\(70968{,}75\\) lít",
+      "\\(73507{,}5\\) lít",
+      "\\(73807{,}5\\) lít",
+      "\\(75807{,}5\\) lít"
+    ],
+    "correct": "\\(73807{,}5\\) lít",
+    "solution": "Xấp xỉ tuyến tính tại \\(t_0=33\\): \\(V(t)\\approx V(33)+V'(33)(t-33)\\). Với \\(t=33{,}5\\), \\(\\Delta t=0{,}5\\). Do đó \\(V(33{,}5)\\approx76646{,}25-5677{,}5\\cdot0{,}5=76646{,}25-2838{,}75=73807{,}5\\) lít.",
+    "quick": "\\(V(33{,}5)\\approx V(33)+V'(33)\\cdot0{,}5\\). Vì \\(V'(33)\\lt0\\), thể tích phải giảm.",
+    "casio": "CASIO: nhập \\(76646{,}25-5677{,}5\\times0{,}5\\), được \\(73807{,}5\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Xấp xỉ tuyến tính"
+  },
+  {
+    "id": 45,
+    "type": "application_marginal_cost_minimum",
+    "question": "Cho hàm chi phí \\(C(x)=\\dfrac13x^3-5x^2+28x+100\\) (triệu đồng). Chi phí biên \\(C'(x)\\) đạt giá trị nhỏ nhất tại mức sản lượng",
+    "matrix": null,
+    "options": [
+      "\\(x=3\\)",
+      "\\(x=5\\)",
+      "\\(x=28\\)",
+      "\\(x=10\\)"
+    ],
+    "correct": "\\(x=5\\)",
+    "solution": "Chi phí biên là \\(C'(x)=x^2-10x+28\\), một parabol mở lên. Giá trị nhỏ nhất đạt tại đỉnh \\(x=10/2=5\\).",
+    "quick": "Tối thiểu hóa \\(C'(x)\\), không phải \\(C(x)\\).",
+    "casio": "Hoàn thành bình phương: \\(C'(x)=(x-5)^2+3\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 46,
+    "type": "application_projectile_max_height",
+    "question": "Một vật được phóng thẳng đứng với \\(s(t)=19{,}6t-4{,}9t^2\\) (m). Độ cao cực đại của vật là",
+    "matrix": null,
+    "options": [
+      "\\(19{,}6\\) m",
+      "\\(9{,}8\\) m",
+      "\\(39{,}2\\) m",
+      "\\(14{,}7\\) m"
+    ],
+    "correct": "\\(19{,}6\\) m",
+    "solution": "\\(s'(t)=19{,}6-9{,}8t\\). Điểm cực đại thỏa \\(s'(t)=0\\Rightarrow t=2\\) s. Khi đó \\(s(2)=39{,}2-19{,}6=19{,}6\\) m.",
+    "quick": "Tìm thời điểm vận tốc bằng 0, rồi thế vào \\(s(t)\\).",
+    "casio": "Giải \\(19{,}6-9{,}8t=0\\), sau đó tính \\(s(2)\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 47,
+    "type": "application_rectangle_min_cost",
+    "question": "Một mảnh đất hình chữ nhật có diện tích \\(200\\,\\text{m}^2\\). Chi phí lưới rào là 100.000 đồng/mét. Chi phí làm hàng rào nhỏ nhất gần bằng",
+    "matrix": null,
+    "options": [
+      "4.000.000 đồng",
+      "5.656.000 đồng",
+      "8.000.000 đồng",
+      "2.828.000 đồng"
+    ],
+    "correct": "5.656.000 đồng",
+    "solution": "Với diện tích cố định, hình chữ nhật có chu vi nhỏ nhất khi là hình vuông. Cạnh bằng \\(\\sqrt{200}=10\\sqrt2\\) m, nên chu vi tối thiểu là \\(40\\sqrt2\\approx56{,}568\\) m. Chi phí xấp xỉ \\(56{,}568\\times100.000=5.656.800\\) đồng, gần nhất 5.656.000 đồng.",
+    "quick": "Diện tích cố định → chu vi nhỏ nhất khi hình vuông.",
+    "casio": "Tính \\(40\\sqrt2\\times100000\\approx5.656.854\\) đồng.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 48,
+    "type": "application_revenue_maximum",
+    "question": "Cho hàm cầu \\(p(q)=100-2q\\). Mức sản lượng \\(q\\) để doanh thu \\(R(q)=p(q)q\\) đạt cực đại là",
+    "matrix": null,
+    "options": [
+      "\\(q=50\\)",
+      "\\(q=100\\)",
+      "\\(q=25\\)",
+      "\\(q=20\\)"
+    ],
+    "correct": "\\(q=25\\)",
+    "solution": "\\(R(q)=100q-2q^2\\), nên \\(R'(q)=100-4q\\). Điều kiện \\(R'(q)=0\\) cho \\(q=25\\); do \\(R''(q)=-4\\lt0\\), đây là cực đại.",
+    "quick": "Doanh thu là giá nhân lượng: \\(R=q(100-2q)\\).",
+    "casio": "Giải \\(100-4q=0\\), được \\(q=25\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 49,
+    "type": "application_radioactive_rate",
+    "question": "Sự phân rã tuân theo \\(N(t)=N_0e^{-kt}\\), \\(k\\gt0\\). Tại thời điểm \\(N(t)=N_0/2\\), giá trị \\(N'(t)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{kN_0}{2}\\)",
+      "\\(-kN_0\\)",
+      "\\(-\\dfrac{N_0}{2}\\)",
+      "\\(-2kN_0\\)"
+    ],
+    "correct": "\\(-\\dfrac{kN_0}{2}\\)",
+    "solution": "Ta có \\(N'(t)=-kN_0e^{-kt}=-kN(t)\\). Tại thời điểm \\(N(t)=N_0/2\\), suy ra \\(N'(t)=-kN_0/2\\).",
+    "quick": "Luôn có \\(N'=-kN\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 50,
+    "type": "application_cylinder_min_surface",
+    "question": "Một lon hình trụ kín có thể tích \\(V=250\\pi\\,\\text{cm}^3\\). Chiều cao \\(h\\) để diện tích toàn phần nhỏ nhất là",
+    "matrix": null,
+    "options": [
+      "\\(5\\) cm",
+      "\\(10\\) cm",
+      "\\(15\\) cm",
+      "\\(20\\) cm"
+    ],
+    "correct": "\\(10\\) cm",
+    "solution": "Điều kiện thể tích: \\(\\pi r^2h=250\\pi\\Rightarrow h=250/r^2\\). Diện tích toàn phần \\(S=2\\pi r^2+2\\pi rh=2\\pi r^2+500\\pi/r\\). Cho \\(S'(r)=4\\pi r-500\\pi/r^2=0\\Rightarrow r^3=125\\Rightarrow r=5\\). Khi đó \\(h=250/25=10\\) cm.",
+    "quick": "Với lon trụ kín tối ưu, \\(h=2r\\); ở đây \\(r=5\\).",
+    "casio": "Giải \\(4r-500/r^2=0\\), được \\(r=5\\), rồi tính \\(h=10\\).",
+    "difficulty": 3,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 51,
+    "type": "application_profit_maximum",
+    "question": "Hàm lợi nhuận là \\(L(x)=-2x^2+120x-1000\\) (USD). Số sản phẩm cần sản xuất để lợi nhuận tối đa là",
+    "matrix": null,
+    "options": [
+      "\\(60\\)",
+      "\\(120\\)",
+      "\\(30\\)",
+      "\\(80\\)"
+    ],
+    "correct": "\\(30\\)",
+    "solution": "\\(L'(x)=-4x+120\\). Cho \\(L'(x)=0\\) được \\(x=30\\). Vì \\(L''(x)=-4\\lt0\\), đây là điểm cực đại.",
+    "quick": "Đỉnh của parabol lợi nhuận nằm tại \\(x=30\\).",
+    "casio": "Giải \\(-4x+120=0\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 52,
+    "type": "application_price_elasticity",
+    "question": "Độ co giãn của cầu theo giá được cho bởi \\(E_p=\\dfrac{p}{Q}\\dfrac{dQ}{dp}\\). Với \\(Q=\\dfrac{100}{p^2}\\), \\(p\\gt0\\), giá trị \\(E_p\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(-0{,}5\\)",
+      "\\(-2\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(-2\\)",
+    "solution": "\\(Q=100p^{-2}\\Rightarrow dQ/dp=-200p^{-3}\\). Do đó \\(E_p=\\dfrac{p}{100p^{-2}}(-200p^{-3})=-2\\).",
+    "quick": "Với \\(Q=Cp^{-2}\\), độ co giãn theo định nghĩa đã cho là hằng số \\(-2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 53,
+    "type": "cobb_douglas_budget",
+    "question": "Tối đa hóa \\(Q(L,K)=LK\\) với ràng buộc ngân sách \\(2L+4K=80\\). Phương án tối ưu là",
+    "matrix": null,
+    "options": [
+      "\\((L,K)=(20,10)\\)",
+      "\\((10,15)\\)",
+      "\\((30,5)\\)",
+      "\\((15,12)\\)"
+    ],
+    "correct": "\\((L,K)=(20,10)\\)",
+    "solution": "Với \\(Q=LK\\), điều kiện tối ưu nội bộ cho \\(MP_L/w=MP_K/r\\): \\(K/2=L/4\\), nên \\(L=2K\\). Thay vào \\(2L+4K=80\\) được \\(K=10,L=20\\).",
+    "quick": "Với Cobb-Douglas \\(LK\\), chi tiêu tối ưu chia đều cho hai yếu tố.",
+    "casio": "CASIO fx-580VNX: Không cho đạo hàm riêng ký hiệu trực tiếp. Cố định biến còn lại rồi dùng SHIFT → d/dx để kiểm tra tại điểm; với hệ điểm dừng có thể dùng Equation/Simul để giải hệ tuyến tính.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 54,
+    "type": "extremum_application_profit_two_markets",
+    "question": "Một công ty bán một thiết bị công nghiệp ở thị trường trong nước và nước ngoài. Nếu số thiết bị bán ở thị trường trong nước là \\(x\\) và ở thị trường nước ngoài là \\(y\\), lợi nhuận được ước tính bởi \\(P(x,y)=50x+40y-\\dfrac{x^2}{5}-\\dfrac{y^2}{10}+\\dfrac{xy}{10}\\) (USD). Lợi nhuận cao nhất đạt được khi \\((x,y)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\((200,300)\\)",
+      "\\((200,500)\\)",
+      "\\((300,400)\\)",
+      "\\((300,500)\\)"
+    ],
+    "correct": "\\((200,300)\\)",
+    "solution": "Điểm cực trị thỏa \\(P'_x=50-\\dfrac{2x}{5}+\\dfrac{y}{10}=0\\) và \\(P'_y=40-\\dfrac{y}{5}+\\dfrac{x}{10}=0\\). Nhân 10 được hệ \\(500-4x+y=0\\), \\(400-2y+x=0\\). Giải ra \\(x=200,\\ y=300\\). Hessian có \\(P''_{xx}=-2/5\\), \\(P''_{yy}=-1/5\\), \\(P''_{xy}=1/10\\), nên \\(\\Delta=P''_{xx}P''_{yy}-(P''_{xy})^2=7/100\\gt0\\) và \\(P''_{xx}\\lt0\\). Do đó đây là điểm cực đại.",
+    "quick": "Giải hệ \\(P'_x=P'_y=0\\) được \\((200,300)\\); Hessian âm xác định nên là cực đại.",
+    "casio": "CASIO: giải hệ tuyến tính \\(-4x+y=-500\\), \\(x-2y=-400\\) để được \\(x=200,y=300\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 55,
+    "type": "extremum_application_cost_automation_labor",
+    "question": "Một nhà sản xuất ô tô ước tính tổng chi phí hằng năm cho nhân công và thiết bị tự động hóa bởi \\(C(x,y)=2x^2+3y^2+4xy-31x-38y+137\\), trong đó \\(x\\) và \\(y\\) được tính theo triệu đô la. Giá trị \\((x,y)\\) để tổng chi phí thấp nhất là",
+    "matrix": null,
+    "options": [
+      "\\((0{,}8,3{,}5)\\)",
+      "\\((4{,}25,2{,}5)\\)",
+      "\\((0{,}8,2{,}5)\\)",
+      "\\((4{,}25,3{,}5)\\)"
+    ],
+    "correct": "\\((4{,}25,3{,}5)\\)",
+    "solution": "Điểm cực trị thỏa \\(C'_x=4x+4y-31=0\\) và \\(C'_y=4x+6y-38=0\\). Lấy phương trình thứ hai trừ phương trình thứ nhất được \\(2y=7\\Rightarrow y=7/2=3{,}5\\). Thế lại: \\(4x+14=31\\Rightarrow x=17/4=4{,}25\\). Hessian là \\(\\begin{pmatrix}4&4\\\\4&6\\end{pmatrix}\\), có \\(\\Delta=4\\cdot6-4^2=8\\gt0\\) và \\(C''_{xx}=4\\gt0\\), nên đây là điểm cực tiểu.",
+    "quick": "Giải \\(4x+4y=31\\), \\(4x+6y=38\\) được \\((4{,}25,3{,}5)\\); Hessian dương xác định.",
+    "casio": "CASIO: giải hệ \\(4x+4y=31\\), \\(4x+6y=38\\), được \\(x=4{,}25,y=3{,}5\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 56,
+    "type": "application_marginal_cost_two_products",
+    "question": "Cho hàm tổng chi phí \\(C(x,y)=2x^2+xy+y^2+100\\). Chi phí biên đối với sản phẩm \\(x\\) tại \\((x,y)=(10,5)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(25\\)",
+      "\\(40\\)",
+      "\\(50\\)",
+      "\\(45\\)"
+    ],
+    "correct": "\\(45\\)",
+    "solution": "Chi phí biên theo \\(x\\) là \\(C_x=4x+y\\). Tại \\((10,5)\\), \\(C_x=40+5=45\\).",
+    "quick": "Chi phí biên của sản phẩm \\(x\\) chính là đạo hàm riêng \\(C_x\\).",
+    "casio": "Thế trực tiếp \\(x=10,y=5\\) vào \\(4x+y\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng – Ứng dụng"
+  },
+  {
+    "id": 57,
+    "type": "application_profit_max_two_products",
+    "question": "Cho lợi nhuận \\(\\pi(x,y)=-x^2-2y^2+2xy+10x+4y-15\\). Sản lượng \\((x,y)\\) để lợi nhuận tối đa là",
+    "matrix": null,
+    "options": [
+      "\\((12,7)\\)",
+      "\\((10,5)\\)",
+      "\\((8,3)\\)",
+      "\\((14,9)\\)"
+    ],
+    "correct": "\\((12,7)\\)",
+    "solution": "\\(\\pi_x=-2x+2y+10=0\\), \\(\\pi_y=2x-4y+4=0\\). Giải hệ được \\((x,y)=(12,7)\\). Hessian \\(\\begin{pmatrix}-2&2\\\\2&-4\\end{pmatrix}\\) có định thức 4 dương và phần tử đầu âm, nên âm xác định; đây là cực đại.",
+    "quick": "Giải hệ \\(\\pi_x=\\pi_y=0\\), rồi kiểm tra Hessian âm xác định.",
+    "casio": "CASIO: giải hệ \\(-2x+2y=-10\\), \\(2x-4y=-4\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 58,
+    "type": "application_cost_min_lk_constraint",
+    "question": "Một doanh nghiệp có hàm sản xuất \\(Q=LK\\), giá lao động \\(w=2\\), giá vốn \\(r=8\\). Chi phí tối thiểu để sản xuất \\(Q=100\\) là",
+    "matrix": null,
+    "options": [
+      "\\(80\\)",
+      "\\(40\\)",
+      "\\(100\\)",
+      "\\(160\\)"
+    ],
+    "correct": "\\(80\\)",
+    "solution": "Ràng buộc \\(LK=100\\) cho \\(L=100/K\\). Chi phí \\(C=2L+8K=200/K+8K\\). \\(C'(K)=-200/K^2+8=0\\Rightarrow K=5\\), suy ra \\(L=20\\). Chi phí nhỏ nhất là \\(2\\cdot20+8\\cdot5=80\\).",
+    "quick": "Dùng ràng buộc loại một biến rồi tối ưu hàm chi phí một biến.",
+    "casio": "Giải \\(-200/K^2+8=0\\), lấy nghiệm dương \\(K=5\\).",
+    "difficulty": 3,
+    "topic": "Cực trị có điều kiện – Ứng dụng"
+  },
+  {
+    "id": 59,
+    "type": "application_open_box_min_surface",
+    "question": "Một hộp chữ nhật không nắp có thể tích \\(4\\,\\text{m}^3\\). Kích thước \\((x,y,z)\\) để diện tích vật liệu nhỏ nhất là",
+    "matrix": null,
+    "options": [
+      "\\((1,1,4)\\)",
+      "\\((2,2,1)\\)",
+      "\\((4,1,1)\\)",
+      "\\((2,1,2)\\)"
+    ],
+    "correct": "\\((2,2,1)\\)",
+    "solution": "Với \\(xyz=4\\), \\(z=4/(xy)\\). Diện tích không nắp là \\(S=xy+2xz+2yz=xy+8/x+8/y\\). Điều kiện \\(S_x=S_y=0\\) cho \\(x=y=2\\), khi đó \\(z=1\\).",
+    "quick": "Do tính đối xứng của đáy, nghiệm tối ưu có \\(x=y\\); sau đó dùng \\(xyz=4\\).",
+    "casio": "Có thể giải hệ \\(y-8/x^2=0\\), \\(x-8/y^2=0\\).",
+    "difficulty": 3,
+    "topic": "Cực trị có điều kiện – Ứng dụng"
+  },
+  {
+    "id": 60,
+    "type": "application_cobb_douglas_utility_budget",
+    "question": "Cho hàm ích lợi \\(U(x,y)=x^{0.5}y^{0.5}\\), thu nhập \\(I=100\\), giá \\(P_x=2\\), \\(P_y=5\\). Kết hợp tiêu dùng tối ưu là",
+    "matrix": null,
+    "options": [
+      "\\((20,12)\\)",
+      "\\((30,8)\\)",
+      "\\((25,10)\\)",
+      "\\((50,0)\\)"
+    ],
+    "correct": "\\((25,10)\\)",
+    "solution": "Vì hai số mũ bằng nhau, người tiêu dùng dành một nửa thu nhập cho mỗi hàng hóa. Do đó chi cho \\(x\\) là 50 nên \\(x=50/2=25\\); chi cho \\(y\\) là 50 nên \\(y=50/5=10\\).",
+    "quick": "Cobb-Douglas số mũ \\(0.5,0.5\\): chia đều ngân sách cho hai hàng hóa.",
+    "casio": "Kiểm tra ràng buộc: \\(2\\cdot25+5\\cdot10=100\\).",
+    "difficulty": 3,
+    "topic": "Cực trị có điều kiện – Ứng dụng"
+  },
+  {
+    "id": 61,
+    "type": "application_mpl_diminishing",
+    "question": "Cho hàm sản xuất \\(Q=50L^{3/4}K^{1/4}\\). Nếu vốn \\(K\\) cố định, năng suất biên của lao động \\(MPL=\\partial Q/\\partial L\\) sẽ",
+    "matrix": null,
+    "options": [
+      "Tăng khi \\(L\\) tăng",
+      "Giảm khi \\(L\\) tăng",
+      "Không đổi",
+      "Bằng 0"
+    ],
+    "correct": "Giảm khi \\(L\\) tăng",
+    "solution": "\\(MPL=\\dfrac{75}{2}L^{-1/4}K^{1/4}\\). Khi \\(K\\) cố định, thừa số \\(L^{-1/4}\\) giảm khi \\(L\\) tăng, nên năng suất biên lao động giảm.",
+    "quick": "Số mũ của \\(L\\) trong MPL là \\(-1/4\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Đạo hàm riêng – Ứng dụng"
+  },
+  {
+    "id": 62,
+    "type": "application_price_discrimination_two_markets",
+    "question": "Doanh nghiệp bán trên hai thị trường với \\(q_1=24-p_1\\), \\(q_2=24-2p_2\\), chi phí \\(C=6(q_1+q_2)\\). Cặp giá tối đa hóa lợi nhuận là",
+    "matrix": null,
+    "options": [
+      "\\((p_1,p_2)=(15,9)\\)",
+      "\\((12,12)\\)",
+      "\\((18,6)\\)",
+      "\\((10,8)\\)"
+    ],
+    "correct": "\\((p_1,p_2)=(15,9)\\)",
+    "solution": "Lợi nhuận \\(\\pi=(p_1-6)(24-p_1)+(p_2-6)(24-2p_2)\\). Điều kiện \\(\\pi_{p_1}=0\\) cho \\(p_1=15\\); \\(\\pi_{p_2}=0\\) cho \\(p_2=9\\). Các hệ số bậc hai âm nên đây là cực đại.",
+    "quick": "Hai thị trường tách biệt nên tối ưu từng phần lợi nhuận theo từng giá.",
+    "casio": "Giải hai phương trình đạo hàm bậc nhất độc lập.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 63,
+    "type": "application_cost_elasticity_partial",
+    "question": "Cho \\(C(x,y)=ax^2+by^2\\), với \\(a,b\\gt0\\). Nếu tăng \\(x\\) khoảng 1% và giữ nguyên \\(y\\), phần trăm thay đổi xấp xỉ của chi phí là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{ax}{ax+by}\\%\\)",
+      "\\(2a\\%\\)",
+      "\\(\\dfrac{a}{b}\\%\\)",
+      "\\(\\dfrac{2ax^2}{ax^2+by^2}\\%\\)"
+    ],
+    "correct": "\\(\\dfrac{2ax^2}{ax^2+by^2}\\%\\)",
+    "solution": "Độ co giãn riêng của \\(C\\) theo \\(x\\) là \\(E_x=\\dfrac{x}{C}C_x\\). Vì \\(C_x=2ax\\), ta có \\(E_x=\\dfrac{2ax^2}{ax^2+by^2}\\). Khi \\(x\\) tăng 1%, chi phí thay đổi xấp xỉ \\(E_x\\%\\).",
+    "quick": "Dùng độ co giãn riêng \\(E_x=(x/C)C_x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Đạo hàm riêng – Ứng dụng"
+  },
+  {
+    "id": 64,
+    "type": "application_marginal_cost_y",
+    "question": "Cho \\(C(x,y)=x^2+y^2+xy+10\\). Tại \\((x,y)=(3,4)\\), chi phí biên đối với sản phẩm \\(y\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(11\\)",
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(11\\)",
+    "solution": "Chi phí biên theo \\(y\\) là \\(C_y=2y+x\\). Tại \\((3,4)\\), \\(C_y=8+3=11\\).",
+    "quick": "Lấy đạo hàm riêng theo đúng sản phẩm \\(y\\).",
+    "casio": "Thế \\(x=3,y=4\\) vào \\(2y+x\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng – Ứng dụng"
+  },
+  {
+    "id": 65,
+    "type": "geometric_series_application",
+    "question": "Chi phí bảo trì trong năm đầu là 18 triệu đồng. Từ năm thứ hai, chi phí mỗi năm bằng 90% chi phí của năm trước. Tổng chi phí bảo trì trong dài hạn là",
+    "matrix": null,
+    "options": [
+      "90 triệu đồng",
+      "120 triệu đồng",
+      "162 triệu đồng",
+      "180 triệu đồng"
+    ],
+    "correct": "180 triệu đồng",
+    "solution": "Chi phí qua các năm tạo thành cấp số nhân vô hạn với số hạng đầu \\(a_1=18\\) và công bội \\(q=0{,}9\\). Vì \\(|q|\\lt1\\), tổng dài hạn là \\(S=\\dfrac{18}{1-0{,}9}=180\\) triệu đồng.",
+    "quick": "Cấp số nhân vô hạn: \\(S=\\dfrac{a_1}{1-q}=\\dfrac{18}{0{,}1}=180\\).",
+    "casio": "CASIO: nhập \\(18\\div(1-0{,}9)\\), được 180.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Ứng dụng cấp số nhân"
+  },
+  {
+    "id": 66,
+    "type": "arithmetico_geometric_series_application",
+    "question": "Chi phí khắc phục sự cố trong năm thứ \\(n\\) được dự báo là \\(5n(0{,}8)^{n-1}\\) triệu đồng. Tổng chi phí khắc phục trong dài hạn là",
+    "matrix": null,
+    "options": [
+      "100 triệu đồng",
+      "125 triệu đồng",
+      "150 triệu đồng",
+      "175 triệu đồng"
+    ],
+    "correct": "125 triệu đồng",
+    "solution": "Ta cần tính \\(S=5\\sum_{n=1}^{\\infty}n(0{,}8)^{n-1}\\). Với \\(|r|\\lt1\\), có \\(\\sum_{n=1}^{\\infty}nr^{n-1}=\\dfrac{1}{(1-r)^2}\\). Do đó \\(S=\\dfrac{5}{(1-0{,}8)^2}=\\dfrac{5}{0{,}04}=125\\) triệu đồng.",
+    "quick": "Nhớ \\(\\sum nr^{n-1}=1/(1-r)^2\\). Thay \\(r=0{,}8\\): \\(S=5/0{,}2^2=125\\).",
+    "casio": "CASIO: sau khi nhận dạng công thức, nhập \\(5\\div(1-0{,}8)^2\\), được 125.",
+    "difficulty": 3,
+    "topic": "Chuỗi số – Ứng dụng chuỗi lũy thừa hình học"
+  },
+  {
+    "id": 67,
+    "type": "application_work_official",
+    "question": "Một bể hình hộp chữ nhật dài 2 m, rộng 1,5 m, cao 3 m chứa đầy nước. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần để bơm toàn bộ nước qua mặt trên của bể bằng",
+    "matrix": null,
+    "options": [
+      "\\(132{,}3\\,\\mathrm{kJ}\\)",
+      "\\(122{,}3\\,\\mathrm{kJ}\\)",
+      "\\(130\\,\\mathrm{kJ}\\)",
+      "\\(139\\,\\mathrm{kJ}\\)"
+    ],
+    "correct": "\\(132{,}3\\,\\mathrm{kJ}\\)",
+    "solution": "Chọn y đo từ đáy. Lát nước dày dy có thể tích \\(3dy\\), trọng lượng \\(1000\\cdot9.8\\cdot3dy\\), phải nâng quãng đường \\(3-y\\). Vì vậy \\(W=29400\\int_0^3(3-y)dy=132300\\,J=132.3\\,kJ\\).",
+    "quick": "Diện tích đáy 3 m²; khoảng nâng của lớp ở độ cao y là 3-y.",
+    "casio": "CASIO: 1000×9.8×3×(9/2)=132300 J.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến"
+  },
+  {
+    "id": 68,
+    "type": "application_work",
+    "question": "Một lò xo tuân theo định luật Hooke với hằng số \\(k=100\\,\\mathrm{N/m}\\). Công để kéo lò xo từ vị trí cân bằng đến độ giãn 0,2 m là",
+    "matrix": null,
+    "options": [
+      "\\(2\\,\\mathrm{J}\\)",
+      "\\(20\\,\\mathrm{J}\\)",
+      "\\(4\\,\\mathrm{J}\\)",
+      "\\(10\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(2\\,\\mathrm{J}\\)",
+    "solution": "\\(W=\\int_0^{0.2}kx\\,dx=\\frac12k(0.2)^2=2\\,J\\).",
+    "quick": "Công lò xo = 1/2 kx².",
+    "casio": "CASIO: 0.5×100×0.2²=2.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến"
+  },
+  {
+    "id": 69,
+    "type": "application_work",
+    "question": "Một bể hình hộp chữ nhật dài 3 m, rộng 2 m, cao 4 m chứa đầy nước. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\) và \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần thiết để bơm toàn bộ nước qua mặt trên của bể bằng",
+    "matrix": null,
+    "options": [
+      "\\(470{,}4\\,\\mathrm{kJ}\\)",
+      "\\(235{,}2\\,\\mathrm{kJ}\\)",
+      "\\(588\\,\\mathrm{kJ}\\)",
+      "\\(392\\,\\mathrm{kJ}\\)"
+    ],
+    "correct": "\\(470{,}4\\,\\mathrm{kJ}\\)",
+    "solution": "Diện tích đáy là \\(3\\cdot2=6\\,\\mathrm{m^2}\\). Chọn \\(y\\) đo từ đáy, lớp nước ở độ cao \\(y\\) phải nâng quãng đường \\(4-y\\). Do đó \\(W=1000\\cdot9{,}8\\cdot6\\int_0^4(4-y)\\,dy=470400\\,\\mathrm{J}=470{,}4\\,\\mathrm{kJ}\\).",
+    "quick": "Công bằng trọng lượng riêng nhân diện tích đáy nhân \\(\\int_0^H(H-y)dy\\).",
+    "casio": "Tính \\(1000\\times9{,}8\\times6\\times8=470400\\) J.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến"
+  },
+  {
+    "id": 70,
+    "type": "application_work",
+    "question": "Một bể hình hộp chữ nhật dài 2 m, rộng 1,5 m, cao 3 m đang chứa nước đến độ sâu 2 m. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\) và \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần thiết để bơm toàn bộ lượng nước hiện có qua mặt trên của bể bằng",
+    "matrix": null,
+    "options": [
+      "\\(117{,}6\\,\\mathrm{kJ}\\)",
+      "\\(88{,}2\\,\\mathrm{kJ}\\)",
+      "\\(132{,}3\\,\\mathrm{kJ}\\)",
+      "\\(58{,}8\\,\\mathrm{kJ}\\)"
+    ],
+    "correct": "\\(117{,}6\\,\\mathrm{kJ}\\)",
+    "solution": "Diện tích đáy là \\(3\\,\\mathrm{m^2}\\). Nước chỉ chiếm từ \\(y=0\\) đến \\(y=2\\), còn mỗi lớp phải được nâng đến độ cao 3 m. Vì vậy \\(W=1000\\cdot9{,}8\\cdot3\\int_0^2(3-y)\\,dy=117600\\,\\mathrm{J}=117{,}6\\,\\mathrm{kJ}\\).",
+    "quick": "Cận tích phân theo độ sâu nước là \\(0\\le y\\le2\\), nhưng quãng nâng vẫn là \\(3-y\\).",
+    "casio": "Tính \\(1000\\times9{,}8\\times3\\times4=117600\\) J.",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến"
+  },
+  {
+    "id": 71,
+    "type": "application_work_conical_tank",
+    "question": "Một bể hình nón tròn xoay đặt đỉnh xuống dưới, cao 4 m và bán kính miệng bể 2 m, chứa đầy nước. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần thiết để bơm toàn bộ nước qua miệng bể bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{156800\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{78400\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)",
+      "\\(39200\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{156800\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) đo từ đỉnh bể lên trên, \\(0\\le y\\le4\\). Theo tam giác đồng dạng, bán kính lát nước ở độ cao \\(y\\) là \\(r(y)=y/2\\), nên diện tích lát là \\(A(y)=\\pi y^2/4\\). Lát nước phải nâng quãng đường \\(4-y\\). Do đó \\(W=9800\\int_0^4\\dfrac{\\pi y^2}{4}(4-y)\\,dy=\\dfrac{156800\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Bể nón: tìm bán kính lát bằng tam giác đồng dạng trước, ở đây \\(r=y/2\\).",
+    "casio": "CASIO: nhập \\(9800\\pi/4\\times\\int_0^4 y^2(4-y)dy\\), được xấp xỉ \\(164200\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 72,
+    "type": "application_work_conical_tank_setup",
+    "question": "Một bể hình nón tròn xoay đặt đỉnh xuống dưới, cao 4 m và bán kính miệng bể 4 m, đang chứa nước đến độ sâu 2 m. Công để bơm toàn bộ lượng nước hiện có qua miệng bể được biểu diễn bởi tích phân nào sau đây? Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\).",
+    "matrix": null,
+    "options": [
+      "\\(9800\\pi\\displaystyle\\int_0^2 y^2(4-y)\\,dy\\)",
+      "\\(9800\\pi\\displaystyle\\int_0^2 y^2(2-y)\\,dy\\)",
+      "\\(9800\\pi\\displaystyle\\int_0^4 y^2(4-y)\\,dy\\)",
+      "\\(9800\\pi\\displaystyle\\int_0^2 (4-y)^2y\\,dy\\)"
+    ],
+    "correct": "\\(9800\\pi\\displaystyle\\int_0^2 y^2(4-y)\\,dy\\)",
+    "solution": "Chọn \\(y\\) từ đỉnh bể. Vì bể có chiều cao và bán kính miệng đều bằng 4 m nên theo đồng dạng \\(r(y)=y\\), diện tích lát nước là \\(A(y)=\\pi y^2\\). Nước chỉ chiếm \\(0\\le y\\le2\\), nhưng mỗi lát phải được nâng đến miệng bể ở độ cao 4 m, nên quãng nâng là \\(4-y\\). Vì vậy \\(W=9800\\pi\\int_0^2y^2(4-y)\\,dy\\).",
+    "quick": "Phân biệt cận nước \\(0\\le y\\le2\\) với độ cao miệng bể 4 m; quãng nâng vẫn là \\(4-y\\).",
+    "casio": "CASIO không cần thiết để chọn biểu thức; chú ý \\(r(y)=y\\) và khoảng nâng \\(4-y\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 73,
+    "type": "application_work_vertical_cylinder",
+    "question": "Một bể hình trụ đứng bán kính 1 m, cao 4 m chứa đầy nước. Nước được bơm qua một ống có đầu ra cao hơn miệng bể 1 m. Biết \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công cần thiết bằng",
+    "matrix": null,
+    "options": [
+      "\\(117600\\pi\\,\\mathrm{J}\\)",
+      "\\(78400\\pi\\,\\mathrm{J}\\)",
+      "\\(98000\\pi\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(117600\\pi\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) đo từ đáy bể, \\(0\\le y\\le4\\). Diện tích mỗi lát nước không đổi là \\(A=\\pi\\). Đầu ống ở độ cao 5 m nên lát ở độ cao \\(y\\) phải nâng \\(5-y\\). Do đó \\(W=9800\\pi\\int_0^4(5-y)\\,dy=117600\\pi\\,\\mathrm{J}\\).",
+    "quick": "Bể trụ đứng có diện tích lát không đổi; chỉ cần xác định đúng độ cao đầu ra là 5 m.",
+    "casio": "CASIO: \\(9800\\pi\\times\\int_0^4(5-y)dy=117600\\pi\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 74,
+    "type": "application_work_horizontal_cylinder",
+    "question": "Một bể hình trụ tròn xoay nằm ngang, dài 4 m, bán kính 1 m, chứa đầy nước. Nước được bơm qua điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm tiết diện tròn. Công cần thiết để bơm hết nước bằng",
+    "matrix": null,
+    "options": [
+      "\\(39200\\pi\\,\\mathrm{J}\\)",
+      "\\(78400\\pi\\,\\mathrm{J}\\)",
+      "\\(19600\\pi\\,\\mathrm{J}\\)",
+      "\\(9800\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(39200\\pi\\,\\mathrm{J}\\)",
+    "solution": "Ở độ cao \\(y\\), với \\(-1\\le y\\le1\\), dây cung của tiết diện tròn có độ dài \\(2\\sqrt{1-y^2}\\). Lát nước dày \\(dy\\) có thể tích \\(dV=4\\cdot2\\sqrt{1-y^2}\\,dy=8\\sqrt{1-y^2}\\,dy\\). Khoảng nâng đến đỉnh bể là \\(1-y\\). Vì vậy \\(W=9800\\int_{-1}^{1}8\\sqrt{1-y^2}(1-y)\\,dy\\). Phần chứa \\(y\\sqrt{1-y^2}\\) là hàm lẻ nên triệt tiêu; còn \\(\\int_{-1}^1\\sqrt{1-y^2}\\,dy=\\pi/2\\). Do đó \\(W=39200\\pi\\,\\mathrm{J}\\).",
+    "quick": "Trụ nằm ngang: lát ngang là một dây cung, độ dài \\(2\\sqrt{R^2-y^2}\\).",
+    "casio": "CASIO: có thể kiểm tra số bằng \\(9800\\times8\\times\\int_{-1}^{1}\\sqrt{1-y^2}(1-y)dy\\), kết quả xấp xỉ \\(123150\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 75,
+    "type": "application_work_spherical_tank",
+    "question": "Một bể hình cầu bán kính 2 m chứa đầy nước. Nước được bơm qua điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm bể. Công cần thiết để bơm hết nước bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(313600\\pi\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Với \\(-2\\le y\\le2\\), lát ngang của hình cầu có bán kính \\(r(y)=\\sqrt{4-y^2}\\), nên diện tích \\(A(y)=\\pi(4-y^2)\\). Khoảng nâng đến đỉnh cầu là \\(2-y\\). Vì vậy \\(W=9800\\pi\\int_{-2}^{2}(4-y^2)(2-y)\\,dy=\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Hình cầu: từ \\(x^2+y^2=R^2\\) suy ra diện tích lát \\(A(y)=\\pi(R^2-y^2)\\).",
+    "casio": "CASIO: nhập \\(9800\\pi\\times\\int_{-2}^{2}(4-y^2)(2-y)dy\\), được xấp xỉ \\(656800\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 76,
+    "type": "application_work_spherical_tank_partial",
+    "question": "Một bể hình cầu bán kính 2 m chỉ chứa nước ở nửa dưới của bể. Nước được bơm qua điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm bể. Công cần thiết để bơm hết lượng nước hiện có bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{431200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{215600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(196000\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{431200\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Nửa dưới của bể ứng với \\(-2\\le y\\le0\\). Diện tích lát ngang vẫn là \\(A(y)=\\pi(4-y^2)\\), còn khoảng nâng đến đỉnh bể là \\(2-y\\). Do đó \\(W=9800\\pi\\int_{-2}^{0}(4-y^2)(2-y)\\,dy=\\dfrac{431200\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Nửa dưới chỉ đổi cận thành \\([-2,0]\\); diện tích lát và khoảng nâng vẫn giữ nguyên.",
+    "casio": "CASIO: nhập \\(9800\\pi\\times\\int_{-2}^{0}(4-y^2)(2-y)dy\\), được xấp xỉ \\(451550\\,\\mathrm{J}\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 77,
+    "type": "double_integral_lamina_mass_official",
+    "question": "Một bản mỏng chiếm miền hình chữ nhật \\(D=\\{(x,y):0\\le x\\le2,\\ 0\\le y\\le1\\}\\) và có mật độ \\(\\rho(x,y)=1+x+2y\\). Khối lượng của bản mỏng bằng",
+    "matrix": null,
+    "options": [
+      "4",
+      "5",
+      "7",
+      "6"
+    ],
+    "correct": "6",
+    "solution": "Khối lượng là \\(M=\\iint_D\\rho(x,y)\\,dA\\). Do đó \\(M=\\int_0^2\\int_0^1(1+x+2y)\\,dy\\,dx=\\int_0^2(x+2)\\,dx=6\\).",
+    "quick": "Khối lượng bản mỏng: \\(M=\\iint_D\\rho\\,dA\\). Tích phân trên hình chữ nhật cho ngay \\(6\\).",
+    "casio": "CASIO: tính tích phân trong theo \\(y\\) trước được \\(x+2\\), rồi nhập \\(\\int_0^2(x+2)\\,dx\\) để kiểm tra, được 6.",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Khối lượng bản mỏng"
+  },
+  {
+    "id": 78,
+    "type": "lamina_centroid_x_formula",
+    "question": "Bản phẳng đồng chất chiếm miền \\(D\\) có diện tích \\(S\\). Hoành độ trọng tâm \\(\\bar x\\) được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(\\bar x=\\iint_D x\\,dxdy\\)",
+      "\\(\\bar x=\\dfrac1S\\iint_D y\\,dxdy\\)",
+      "\\(\\bar x=\\dfrac1S\\iint_D x\\,dxdy\\)",
+      "\\(\\bar x=S\\iint_Dx\\,dxdy\\)"
+    ],
+    "correct": "\\(\\bar x=\\dfrac1S\\iint_D x\\,dxdy\\)",
+    "solution": "Với mật độ không đổi, khối lượng tỉ lệ với diện tích và công thức trọng tâm rút gọn thành \\(\\bar x=(1/S)\\iint_Dx\\,dA\\).",
+    "quick": "Hoành độ trọng tâm dùng nhân tử \\(x\\), rồi chia diện tích.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân kép – Ứng dụng"
+  },
+  {
+    "id": 79,
+    "type": "lamina_inertia_x_formula",
+    "question": "Momen quán tính đối với trục \\(Ox\\) của bản phẳng đồng chất có mật độ \\(\\rho=1\\) chiếm miền \\(D\\) là",
+    "matrix": null,
+    "options": [
+      "\\(I_x=\\iint_Dx^2\\,dxdy\\)",
+      "\\(I_x=\\iint_Dy^2\\,dxdy\\)",
+      "\\(I_x=\\iint_D(x^2+y^2)\\,dxdy\\)",
+      "\\(I_x=\\iint_Dy\\,dxdy\\)"
+    ],
+    "correct": "\\(I_x=\\iint_Dy^2\\,dxdy\\)",
+    "solution": "Khoảng cách từ điểm \\((x,y)\\) đến trục \\(Ox\\) là \\(|y|\\). Bình phương khoảng cách là \\(y^2\\), nên \\(I_x=\\iint_Dy^2\\rho\\,dA\\); với \\(\\rho=1\\) được công thức trên.",
+    "quick": "Momen quanh \\(Ox\\) dùng bình phương khoảng cách đến \\(Ox\\), tức \\(y^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân kép – Ứng dụng"
+  },
+  {
+    "id": 80,
+    "type": "lamina_polar_moment_disk",
+    "question": "Bản phẳng tròn đồng chất bán kính \\(R\\), tâm tại gốc tọa độ và mật độ \\(\\rho=1\\). Momen quán tính cực \\(I_O=\\iint_D(x^2+y^2)\\,dA\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\pi R^4}{2}\\)",
+      "\\(\\pi R^4\\)",
+      "\\(\\dfrac{\\pi R^4}{4}\\)",
+      "\\(2\\pi R^4\\)"
+    ],
+    "correct": "\\(\\dfrac{\\pi R^4}{2}\\)",
+    "solution": "Trong tọa độ cực, \\(x^2+y^2=r^2\\) và \\(dA=r\\,dr\\,d\\varphi\\). Do đó \\(I_O=\\int_0^{2\\pi}\\int_0^Rr^3\\,dr\\,d\\varphi=\\pi R^4/2\\).",
+    "quick": "Tích phân theo \\(r\\) là \\(\\int_0^Rr^3dr=R^4/4\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Ứng dụng"
+  },
+  {
+    "id": 81,
+    "type": "lamina_mass_radial_disk",
+    "question": "Bản phẳng chiếm đĩa \\(x^2+y^2\\le4\\) có mật độ \\(\\rho(x,y)=\\sqrt{x^2+y^2}\\). Khối lượng của bản phẳng bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{8\\pi}{3}\\)",
+      "\\(16\\pi\\)",
+      "\\(\\dfrac{32\\pi}{3}\\)",
+      "\\(\\dfrac{16\\pi}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{16\\pi}{3}\\)",
+    "solution": "Trong tọa độ cực, \\(\\rho=r\\) và \\(dA=r\\,dr\\,d\\varphi\\). Vì \\(0\\le r\\le2\\), \\(0\\le\\varphi\\le2\\pi\\), nên \\(M=\\int_0^{2\\pi}\\int_0^2r^2\\,dr\\,d\\varphi=16\\pi/3\\).",
+    "quick": "Mật độ cho một thừa số \\(r\\), Jacobian cho thêm một thừa số \\(r\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân kép – Ứng dụng"
+  },
+  {
+    "id": 82,
+    "type": "triple_integral",
+    "question": "Khối lượng của khối hộp \\([0,1]\\times[0,2]\\times[0,3]\\) có mật độ \\(\\rho(x,y,z)=x+y+z\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(18\\)",
+      "\\(12\\)",
+      "\\(9\\)",
+      "\\(6\\)"
+    ],
+    "correct": "\\(18\\)",
+    "solution": "Khối lượng \\(M=\\iiint(x+y+z)dV\\). Các phần lần lượt: \\((1/2)\\cdot2\\cdot3=3\\), \\(1\\cdot(2^2/2)\\cdot3=6\\), \\(1\\cdot2\\cdot(3^2/2)=9\\). Tổng 18.",
+    "quick": "Tách thành ba tích phân trên hình hộp.",
+    "casio": "CASIO: Tính 3+6+9.",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 83,
+    "type": "triple_integral_mass_cylindrical",
+    "question": "Khối trụ \\(x^2+y^2\\le1,\\ 0\\le z\\le2\\) có mật độ \\(\\rho(x,y,z)=2+z\\). Khối lượng bằng",
+    "matrix": null,
+    "options": [
+      "\\(6\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(8\\pi\\)"
+    ],
+    "correct": "\\(6\\pi\\)",
+    "solution": "Khối lượng \\(M=\\iiint_V(2+z)dV\\). Trong tọa độ trụ: \\(M=\\int_0^{2\\pi}\\int_0^1\\int_0^2(2+z)r\\,dz\\,dr\\,d\\theta\\). Tính được \\(2\\pi\\cdot\\dfrac12\\cdot[2z+z^2/2]_0^2=6\\pi\\).",
+    "quick": "Tách theo \\(r,\\theta,z\\): \\(2\\pi\\cdot1/2\\cdot6=6\\pi\\).",
+    "casio": "CASIO fx-580VNX: Tích phân ba tính từ trong ra ngoài. Với hình hộp có thể tách tích phân. Với tọa độ trụ dùng \\(dV=r\\,dr\\,d\\theta\\,dz\\); với tọa độ cầu dùng \\(dV=\\rho^2\\sin\\varphi\\,d\\rho\\,d\\varphi\\,d\\theta\\).",
+    "difficulty": 3,
+    "topic": "Tích phân ba"
+  },
+  {
+    "id": 84,
+    "type": "triple_integral_cylindrical_mass_official",
+    "question": "Một vật thể chiếm miền nằm phía trên paraboloid \\(z=x^2+y^2\\) và phía dưới mặt nón \\(z=2\\sqrt{x^2+y^2}\\). Mật độ tại điểm \\((x,y,z)\\) bằng \\(\\rho(x,y,z)=z\\). Trong tọa độ trụ, khối lượng của vật thể được biểu diễn bởi tích phân nào sau đây?",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{2r}zr\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{\\pi}\\int_0^2\\int_{r^2}^{2r}z\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{2r}z\\,dz\\,dr\\,d\\theta\\)",
+      "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{2r}^{r^2}zr\\,dz\\,dr\\,d\\theta\\)"
+    ],
+    "correct": "\\(\\displaystyle\\int_0^{2\\pi}\\int_0^2\\int_{r^2}^{2r}zr\\,dz\\,dr\\,d\\theta\\)",
+    "solution": "Trong tọa độ trụ, paraboloid là \\(z=r^2\\), mặt nón là \\(z=2r\\). Giao tuyến thỏa \\(r^2=2r\\), nên \\(0\\le r\\le2\\). Miền quay trọn quanh trục \\(Oz\\), do đó \\(0\\le\\theta\\le2\\pi\\). Vì \\(dV=r\\,dz\\,dr\\,d\\theta\\) và \\(\\rho=z\\), tích phân khối lượng có hạt nhân \\(zr\\).",
+    "quick": "Giao tuyến: \\(r^2=2r\\Rightarrow r=2\\). Tọa độ trụ luôn nhớ Jacobian \\(r\\), nên mật độ \\(z\\) trở thành \\(zr\\).",
+    "casio": "CASIO không cần thiết; câu hỏi kiểm tra cận tích phân và Jacobian của tọa độ trụ.",
+    "difficulty": 3,
+    "topic": "Tích phân ba – Tọa độ trụ"
+  },
+  {
+    "id": 85,
+    "type": "triple_mass_formula",
+    "question": "Vật thể chiếm miền \\(V\\) có khối lượng riêng \\(\\rho(x,y,z)\\). Khối lượng của vật thể được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(M=\\iiint_V\\rho(x,y,z)\\,dV\\)",
+      "\\(M=\\iiint_V1\\,dV\\)",
+      "\\(M=\\dfrac1V\\iiint_V\\rho(x,y,z)\\,dV\\)",
+      "\\(M=\\iint_V\\rho(x,y,z)\\,dxdy\\)"
+    ],
+    "correct": "\\(M=\\iiint_V\\rho(x,y,z)\\,dV\\)",
+    "solution": "Khối lượng vi phân là \\(dm=\\rho(x,y,z)dV\\). Cộng trên toàn miền không gian \\(V\\) cho \\(M=\\iiint_V\\rho\\,dV\\).",
+    "quick": "Khối lượng = tích phân của mật độ theo thể tích.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 86,
+    "type": "triple_centroid_y_formula",
+    "question": "Vật thể đồng chất có khối lượng \\(M\\) chiếm miền \\(V\\). Tung độ trọng tâm \\(\\bar y\\) được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(\\bar y=\\iiint_Vy\\,dV\\)",
+      "\\(\\bar y=\\dfrac1M\\iiint_Vy\\,dV\\)",
+      "\\(\\bar y=\\dfrac1M\\iiint_Vx\\,dV\\)",
+      "\\(\\bar y=\\dfrac1M\\iiint_Vz\\,dV\\)"
+    ],
+    "correct": "\\(\\bar y=\\dfrac1M\\iiint_Vy\\,dV\\)",
+    "solution": "Với mật độ bằng 1, moment bậc nhất theo mặt phẳng \\(Oxz\\) là \\(\\iiint_V y\\,dV\\). Chia cho khối lượng \\(M\\) ta được tung độ trọng tâm.",
+    "quick": "Tọa độ nào thì tích phân nhân đúng tọa độ đó rồi chia cho khối lượng.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 87,
+    "type": "triple_inertia_z_formula",
+    "question": "Momen quán tính của vật thể \\(V\\) đối với trục \\(Oz\\), với khối lượng riêng \\(\\rho(x,y,z)\\), là",
+    "matrix": null,
+    "options": [
+      "\\(I_z=\\iiint_V z^2\\rho(x,y,z)\\,dV\\)",
+      "\\(I_z=\\iiint_V(x^2+y^2)\\rho(x,y,z)\\,dV\\)",
+      "\\(I_z=\\iiint_V(x^2+z^2)\\rho(x,y,z)\\,dV\\)",
+      "\\(I_z=\\iiint_V(x+y)\\rho(x,y,z)\\,dV\\)"
+    ],
+    "correct": "\\(I_z=\\iiint_V(x^2+y^2)\\rho(x,y,z)\\,dV\\)",
+    "solution": "Khoảng cách bình phương từ \\((x,y,z)\\) đến trục \\(Oz\\) là \\(x^2+y^2\\). Vì vậy \\(I_z=\\iiint_V(x^2+y^2)\\rho\\,dV\\).",
+    "quick": "Quanh \\(Oz\\) thì bỏ tọa độ \\(z\\): khoảng cách bình phương là \\(x^2+y^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 88,
+    "type": "triple_mass_unit_cube_density_x",
+    "question": "Khối lập phương đơn vị \\(0\\le x,y,z\\le1\\) có khối lượng riêng \\(\\rho(x,y,z)=x\\). Khối lượng của vật thể bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac13\\)",
+      "\\(\\dfrac14\\)"
+    ],
+    "correct": "\\(\\dfrac12\\)",
+    "solution": "\\(M=\\int_0^1\\int_0^1\\int_0^1 x\\,dz\\,dy\\,dx=\\int_0^1x\\,dx=1/2\\).",
+    "quick": "Hai tích phân theo \\(y,z\\) đều cho hệ số 1.",
+    "casio": "Tính \\(\\int_0^1x\\,dx\\).",
+    "difficulty": 2,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 89,
+    "type": "triple_centroid_unit_cube",
+    "question": "Vật thể đồng chất \\(\\rho=1\\) là khối lập phương đơn vị \\([0,1]\\times[0,1]\\times[0,1]\\). Tọa độ trọng tâm là",
+    "matrix": null,
+    "options": [
+      "\\((1,1,1)\\)",
+      "\\((0,0,0)\\)",
+      "\\((\\dfrac12,\\dfrac12,\\dfrac12)\\)",
+      "\\((\\dfrac13,\\dfrac13,\\dfrac13)\\)"
+    ],
+    "correct": "\\((\\dfrac12,\\dfrac12,\\dfrac12)\\)",
+    "solution": "Do đối xứng, mỗi tọa độ trọng tâm nằm ở trung điểm của đoạn \\([0,1]\\). Vì vậy \\((\\bar x,\\bar y,\\bar z)=(1/2,1/2,1/2)\\).",
+    "quick": "Trọng tâm của khối hộp đồng chất nằm tại tâm hình học.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân ba – Ứng dụng"
+  },
+  {
+    "id": 90,
+    "type": "arc_length_graph_application",
+    "question": "Tính độ dài cung của đồ thị \\(y=\\dfrac{2}{3}x^{3/2}\\) trên đoạn \\(0\\le x\\le3\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{14}{3}\\)",
+      "\\(\\dfrac{8}{3}\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(\\dfrac{14}{3}\\)",
+    "solution": "Với \\(y=\\dfrac{2}{3}x^{3/2}\\), ta có \\(y'=\\sqrt{x}\\). Độ dài cung là \\(L=\\int_0^3\\sqrt{1+(y')^2}\\,dx=\\int_0^3\\sqrt{1+x}\\,dx=\\dfrac{2}{3}\\left[(1+x)^{3/2}\\right]_0^3=\\dfrac{14}{3}\\).",
+    "quick": "Dùng \\(L=\\int_a^b\\sqrt{1+(y')^2}\\,dx\\); ở đây \\(y'=\\sqrt{x}\\).",
+    "casio": "CASIO: nhập \\(\\int_0^3\\sqrt{1+x}\\,dx\\), được xấp xỉ \\(4{,}6667\\), tức \\(14/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 91,
+    "type": "arc_length_parametric_application",
+    "question": "Cho đường cong \\(C\\) có phương trình tham số \\(x=t-\\dfrac{t^3}{3},\\ y=t^2\\), với \\(0\\le t\\le1\\). Độ dài của \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "Ta có \\(x'=1-t^2\\), \\(y'=2t\\). Do đó \\((x')^2+(y')^2=(1-t^2)^2+4t^2=(1+t^2)^2\\). Vì \\(0\\le t\\le1\\), \\(ds=(1+t^2)dt\\). Suy ra \\(L=\\int_0^1(1+t^2)dt=\\dfrac{4}{3}\\).",
+    "quick": "Nhận ra \\((1-t^2)^2+4t^2=(1+t^2)^2\\).",
+    "casio": "CASIO: sau khi rút gọn tốc độ thành \\(1+t^2\\), tính \\(\\int_0^1(1+t^2)dt\\), được \\(4/3\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 92,
+    "type": "arc_length_parametric_application",
+    "question": "Cho đường cong \\(C\\): \\(x=t^2,\\ y=\\dfrac{2}{3}t^3\\), \\(0\\le t\\le1\\). Độ dài của \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2}{3}(2\\sqrt2-1)\\)",
+      "\\(\\dfrac{2}{3}(\\sqrt2-1)\\)",
+      "\\(\\dfrac{4\\sqrt2}{3}\\)",
+      "\\(2\\sqrt2-1\\)"
+    ],
+    "correct": "\\(\\dfrac{2}{3}(2\\sqrt2-1)\\)",
+    "solution": "Ta có \\(x'=2t\\), \\(y'=2t^2\\). Với \\(t\\ge0\\), \\(ds=\\sqrt{4t^2+4t^4}\\,dt=2t\\sqrt{1+t^2}\\,dt\\). Vì vậy \\(L=\\int_0^1 2t\\sqrt{1+t^2}\\,dt=\\dfrac{2}{3}\\left[(1+t^2)^{3/2}\\right]_0^1=\\dfrac{2}{3}(2\\sqrt2-1)\\).",
+    "quick": "Đặt \\(u=1+t^2\\) sau khi có \\(ds=2t\\sqrt{1+t^2}\\,dt\\).",
+    "casio": "CASIO: tính \\(\\int_0^1 2t\\sqrt{1+t^2}\\,dt\\) để kiểm tra giá trị số.",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 93,
+    "type": "arc_length_cycloid_application",
+    "question": "Cho đường cong \\(C\\): \\(x=t-\\sin t,\\ y=1-\\cos t\\), \\(0\\le t\\le\\pi\\). Độ dài của \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(2\\pi\\)",
+      "\\(\\pi\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Ta có \\(x'=1-\\cos t\\), \\(y'=\\sin t\\). Do đó \\((x')^2+(y')^2=(1-\\cos t)^2+\\sin^2t=2-2\\cos t=4\\sin^2(t/2)\\). Trên \\([0,\\pi]\\), \\(\\sin(t/2)\\ge0\\), nên \\(ds=2\\sin(t/2)dt\\). Vậy \\(L=\\int_0^\\pi2\\sin(t/2)dt=4\\).",
+    "quick": "Dùng \\(2-2\\cos t=4\\sin^2(t/2)\\).",
+    "casio": "CASIO: tính \\(\\int_0^\\pi2\\sin(t/2)dt\\) ở chế độ RAD, được 4.",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 94,
+    "type": "arc_length_astroid_application",
+    "question": "Cho cung đường cong \\(C\\): \\(x=\\cos^3t,\\ y=\\sin^3t\\), \\(0\\le t\\le\\dfrac{\\pi}{2}\\). Độ dài của cung \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{3}{2}\\)",
+      "\\(3\\)",
+      "\\(\\dfrac{\\pi}{2}\\)",
+      "\\(\\dfrac{3\\pi}{2}\\)"
+    ],
+    "correct": "\\(\\dfrac{3}{2}\\)",
+    "solution": "Ta có \\(x'=-3\\cos^2t\\sin t\\), \\(y'=3\\sin^2t\\cos t\\). Suy ra \\((x')^2+(y')^2=9\\sin^2t\\cos^2t(\\cos^2t+\\sin^2t)=9\\sin^2t\\cos^2t\\). Trên \\([0,\\pi/2]\\), \\(ds=3\\sin t\\cos t\\,dt\\). Vậy \\(L=3\\int_0^{\\pi/2}\\sin t\\cos t\\,dt=\\dfrac{3}{2}\\).",
+    "quick": "Tách \\(9\\sin^2t\\cos^2t(\\sin^2t+\\cos^2t)\\).",
+    "casio": "CASIO: ở chế độ RAD, tính \\(3\\int_0^{\\pi/2}\\sin t\\cos t\\,dt\\), được \\(1{,}5\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 95,
+    "type": "arc_length_x_as_function_of_y",
+    "question": "Cho đường cong \\(C\\) có phương trình \\(x=\\dfrac{1}{3}(y^2+2)^{3/2}\\), với \\(0\\le y\\le1\\). Độ dài của cung \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{3}\\)",
+      "\\(\\dfrac{5}{3}\\)",
+      "\\(\\sqrt2\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(\\dfrac{4}{3}\\)",
+    "solution": "Với \\(x=x(y)\\), độ dài cung là \\(L=\\int_0^1\\sqrt{1+(dx/dy)^2}\\,dy\\). Ta có \\(\\dfrac{dx}{dy}=y\\sqrt{y^2+2}\\). Vì vậy \\(1+(dx/dy)^2=1+y^2(y^2+2)=(y^2+1)^2\\). Trên \\([0,1]\\), suy ra \\(L=\\int_0^1(y^2+1)\\,dy=\\dfrac{4}{3}\\).",
+    "quick": "Theo \\(y\\): \\(L=\\int\\sqrt{1+(dx/dy)^2}\\,dy\\). Nhận ra \\(1+y^2(y^2+2)=(y^2+1)^2\\).",
+    "casio": "CASIO: sau khi rút gọn căn thành \\(y^2+1\\), tính \\(\\int_0^1(y^2+1)dy\\), được \\(4/3\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 1 – Độ dài cung"
+  },
+  {
+    "id": 96,
+    "type": "line_integral_type1_mass_formula",
+    "question": "Một dây mảnh chiếm đường cong \\(C\\) và có mật độ khối lượng dài \\(\\rho(x,y)\\). Khối lượng của dây được tính bởi",
+    "matrix": null,
+    "options": [
+      "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,ds\\)",
+      "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,dx\\)",
+      "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,dy\\)",
+      "\\(\\displaystyle M=\\iint_C\\rho(x,y)\\,dxdy\\)"
+    ],
+    "correct": "\\(\\displaystyle M=\\int_C\\rho(x,y)\\,ds\\)",
+    "solution": "Mỗi phần tử cung có độ dài \\(ds\\) và khối lượng vi phân \\(dM=\\rho(x,y)ds\\). Vì vậy \\(M=\\int_C\\rho(x,y)ds\\).",
+    "quick": "Mật độ theo chiều dài phải nhân với phần tử độ dài \\(ds\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Tích phân đường loại 1"
+  },
+  {
+    "id": 97,
+    "type": "line_work",
+    "question": "Tính công \\(W\\) của trường vectơ \\(\\mathbf{F}=(y-x)\\mathbf{i}+x\\mathbf{j}\\) dọc theo cung \\(x^2+y^2=1\\) từ \\((1;0)\\) đến \\((0;1)\\) (ngược chiều kim đồng hồ).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{1}{2}+\\dfrac{\\pi}{4}\\)",
+      "\\(-\\dfrac{1}{2}\\)",
+      "\\(\\dfrac{\\pi}{4}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{2}\\)",
+    "solution": "\\(W=\\int_C(y-x)dx+x\\,dy\\).\n\nTham số: \\(x=\\cos t, y=\\sin t\\), \\(t\\in[0,\\pi/2]\\). \\(dx=-\\sin t\\,dt\\), \\(dy=\\cos t\\,dt\\).\n\n\\(W=\\int_0^{\\pi/2}[(\\sin t-\\cos t)(-\\sin t)+\\cos t\\cdot\\cos t]dt\\)\n\\(=\\int_0^{\\pi/2}[-\\sin^2t+\\sin t\\cos t+\\cos^2t]dt\\)\n\\(=\\int_0^{\\pi/2}[\\cos2t+\\dfrac{\\sin2t}{2}]dt\\)\n\\(=\\left[\\dfrac{\\sin2t}{2}-\\dfrac{\\cos2t}{4}\\right]_0^{\\pi/2}=\\left(0+\\dfrac14\\right)-\\left(0-\\dfrac14\\right)=\\dfrac12.\\)\n\nVậy đáp án đúng là \\(\\dfrac12\\).",
+    "quick": "Tham số hóa cung tròn đơn vị: \\(x=\\cos t, y=\\sin t\\), \\(t:0\\to\\pi/2\\). Tính ra \\(W=\\dfrac12\\).",
+    "casio": "CASIO: Thay x=cost, y=sint, dx=-sindt, dy=cosdt vào ∫Mdx+Ndy.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 98,
+    "type": "line_work",
+    "question": "Tính công \\(W=\\int_C\\mathbf{F}\\cdot d\\mathbf{r}\\) với \\(\\mathbf{F}=(y,x)\\) dọc đoạn thẳng từ \\((0,0)\\) đến \\((1,1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac{1}{2}\\)",
+      "\\(2\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "\\(W=\\int_C y\\,dx+x\\,dy\\).\n\nTham số: \\(x=t, y=t\\), \\(t\\in[0,1]\\). \\(dx=dt, dy=dt\\).\n\n\\(W=\\int_0^1[t\\cdot dt+t\\cdot dt]=\\int_0^1 2t\\,dt=[t^2]_0^1=1\\).\n\nKiểm tra nhanh: \\(Mdx+Ndy=ydx+xdy=d(xy)\\) → thế vị \\(U=xy\\). \\(W=U(1,1)-U(0,0)=1-0=1\\).",
+    "quick": "F=(y,x): kiểm tra M_y=1=N_x=1 → toàn phần! \\(W=U(1,1)-U(0,0)=xy|_{(0,0)}^{(1,1)}=\\mathbf{1}\\).",
+    "casio": "CASIO: Thế vị U=xy (vì dU=ydx+xdy). W=U(đến)-U(từ)=1-0=1.",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 99,
+    "type": "line_work_official",
+    "question": "Một chất điểm đi đúng một vòng ngược chiều kim đồng hồ trên đường tròn bán kính 1 m dưới lực tiếp tuyến cùng chiều, độ lớn không đổi 1 N. Công của lực bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\pi\\) J",
+      "\\(\\pi\\) J",
+      "\\(4\\pi\\) J",
+      "\\(2\\) J"
+    ],
+    "correct": "\\(2\\pi\\) J",
+    "solution": "Lực luôn cùng hướng chuyển động nên \\(W=\\int_C|F|ds=1\\cdot\\text{độ dài đường tròn}=2\\pi\\) J.",
+    "quick": "Công = lực × quãng đường khi lực cùng hướng.",
+    "casio": "CASIO: Tính chu vi \\(2\\pi R\\) với R=1.",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 100,
+    "type": "line_work_variant",
+    "question": "Một chất điểm đi đúng một vòng trên đường tròn bán kính 2 m. Lực luôn tiếp tuyến, cùng chiều chuyển động và có độ lớn không đổi 3 N. Công của lực bằng",
+    "matrix": null,
+    "options": [
+      "\\(12\\pi\\,\\mathrm{J}\\)",
+      "\\(6\\pi\\,\\mathrm{J}\\)",
+      "\\(4\\pi\\,\\mathrm{J}\\)",
+      "\\(24\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(12\\pi\\,\\mathrm{J}\\)",
+    "solution": "Lực luôn cùng hướng chuyển động nên \\(W=F\\cdot s=3\\cdot(2\\pi\\cdot2)=12\\pi\\,\\mathrm{J}\\).",
+    "quick": "Công bằng độ lớn lực nhân chu vi đường tròn.",
+    "casio": "CASIO: Tính \\(3\\times2\\pi\\times2=12\\pi\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 101,
+    "type": "line_work",
+    "question": "Tính công \\(W=\\int_C\\mathbf F\\cdot d\\mathbf r\\), với \\(\\mathbf F=(2x,2y)\\), dọc theo đường bất kỳ từ \\((0,0)\\) đến \\((1,2)\\).",
+    "matrix": null,
+    "options": [
+      "\\(5\\)",
+      "\\(3\\)",
+      "\\(10\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "\\(\\mathbf F=(2x,2y)\\) có thế hàm \\(U=x^2+y^2\\). Tích phân không phụ thuộc đường đi. Vậy \\(W=U(1,2)-U(0,0)=1^2+2^2=5\\).",
+    "quick": "Thế hàm \\(U=x^2+y^2\\). Công bằng \\(U(B)-U(A)=5\\).",
+    "casio": "CASIO fx-580VNX: Kiểm tra trường thế bằng \\(P'_y=Q'_x\\). Nếu có thế hàm \\(U\\), tích phân từ A đến B bằng \\(U(B)-U(A)\\).",
+    "difficulty": 2,
+    "topic": "Tích phân đường – Định lý Green"
+  },
+  {
+    "id": 102,
+    "type": "line_integral_type2_conservative_work",
+    "question": "Một chất điểm chuyển động theo đoạn thẳng từ \\(O(0,0)\\) đến \\(A(1,2)\\) dưới tác dụng của trường lực \\(\\mathbf F(x,y)=(2x+y,\\ x+2y)\\). Công của lực bằng",
+    "matrix": null,
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": "7",
+    "solution": "Đặt \\(P=2x+y\\), \\(Q=x+2y\\). Ta có \\(P_y=1=Q_x\\), nên trường lực là trường thế. Một thế hàm là \\(U=x^2+xy+y^2\\). Do đó công bằng \\(U(1,2)-U(0,0)=1+2+4=7\\).",
+    "quick": "Nhận ra trường thế với \\(U=x^2+xy+y^2\\); chỉ cần lấy \\(U(A)-U(O)\\).",
+    "casio": "CASIO không cần thiết; thay \\((1,2)\\) vào \\(x^2+xy+y^2\\) được 7.",
+    "difficulty": 2,
+    "topic": "Tích phân đường loại 2 – Công của trường lực"
+  },
+  {
+    "id": 103,
+    "type": "green_theorem_annulus_work",
+    "question": "Một chất điểm chuyển động một vòng theo biên \\(C\\), định hướng dương, của miền vành khăn \\(D=\\{(x,y):1\\le x^2+y^2\\le4\\}\\) dưới tác dụng của trường lực \\(\\mathbf F(x,y)=(-y(1+x^2),\\ x(1+y^2))\\). Công của lực bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{27\\pi}{2}\\)",
+      "\\(9\\pi\\)",
+      "\\(12\\pi\\)",
+      "\\(15\\pi\\)"
+    ],
+    "correct": "\\(\\dfrac{27\\pi}{2}\\)",
+    "solution": "Đặt \\(P=-y(1+x^2)\\), \\(Q=x(1+y^2)\\). Khi đó \\(Q_x=1+y^2\\), \\(P_y=-(1+x^2)\\), nên \\(Q_x-P_y=2+x^2+y^2=2+r^2\\). Theo định lý Green, với biên định hướng dương, \\(W=\\iint_D(2+r^2)\\,dA=\\int_0^{2\\pi}\\int_1^2(2+r^2)r\\,dr\\,d\\theta=\\dfrac{27\\pi}{2}\\).",
+    "quick": "Green trên vành khăn: \\(Q_x-P_y=2+r^2\\), rồi tích phân với \\(1\\le r\\le2\\).",
+    "casio": "CASIO: tính \\(2\\pi\\int_1^2(2+r^2)r\\,dr\\), được \\(27\\pi/2\\).",
+    "difficulty": 3,
+    "topic": "Tích phân đường loại 2 – Định lý Green"
+  },
+  {
+    "id": 104,
+    "type": "application_growth",
+    "question": "Mô hình tăng trưởng dân số Malthus: \\(\\frac{dP}{dt} = kP\\), với \\(P(0)=P_0\\). Nghiệm là?",
+    "matrix": null,
+    "options": [
+      "\\(P = P_0 e^{kt}\\)",
+      "\\(P = P_0 e^{-kt}\\)",
+      "\\(P = P_0 + kt\\)",
+      "\\(P = P_0 t^k\\)"
+    ],
+    "correct": "\\(P = P_0 e^{kt}\\)",
+    "solution": "Tách biến: \\(\\frac{dP}{P} = k dt \\Rightarrow \\ln P = kt + C \\Rightarrow P = Ce^{kt}\\). \\(P(0)=P_0 \\Rightarrow C=P_0\\).",
+    "quick": "PT tăng trưởng mũ cơ bản",
+    "casio": "CASIO: Mô hình tăng trưởng N'=kN → N=N₀·eᵏᵗ. Tìm k từ dữ kiện: k=ln(N₁/N₀)/t. Dùng CASIO tính ln và e^x.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 105,
+    "type": "application_decay",
+    "question": "Chu kỳ bán rã của một chất phóng xạ là \\(T\\). Phương trình \\(\\frac{dm}{dt} = -\\lambda m\\). Hằng số \\(\\lambda\\) liên hệ với \\(T\\) bởi?",
+    "matrix": null,
+    "options": [
+      "\\(\\lambda = \\frac{\\ln 2}{T}\\)",
+      "\\(\\lambda = T \\ln 2\\)",
+      "\\(\\lambda = \\frac{T}{\\ln 2}\\)",
+      "\\(\\lambda = \\frac{1}{T}\\)"
+    ],
+    "correct": "\\(\\lambda = \\frac{\\ln 2}{T}\\)",
+    "solution": "Nghiệm: \\(m(t) = m_0 e^{-\\lambda t}\\). Khi \\(t=T\\): \\(m(T) = m_0/2 \\Rightarrow e^{-\\lambda T} = 1/2 \\Rightarrow -\\lambda T = -\\ln 2 \\Rightarrow \\lambda = \\frac{\\ln 2}{T}\\).",
+    "quick": "Công thức liên hệ giữa hằng số rã và chu kỳ bán rã",
+    "casio": "CASIO: Phân rã N'=-kN → N=N₀·e⁻ᵏᵗ. Tìm k từ chu kỳ bán rã: k=ln2/T. Tính bằng CASIO: ln2/T.",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 106,
+    "type": "application_newton",
+    "question": "Định luật làm mát Newton: \\(\\dfrac{dT}{dt}=k(T-T_m)\\). Nếu \\(T_m\\) là nhiệt độ môi trường và \\(k\\lt0\\), thì nghiệm tổng quát là?",
+    "matrix": null,
+    "options": [
+      "\\(T = T_m + Ce^{kt}\\)",
+      "\\(T = T_m + Ce^{-kt}\\)",
+      "\\(T = Ce^{kt}\\)",
+      "\\(T = T_m e^{kt}\\)"
+    ],
+    "correct": "\\(T = T_m + Ce^{kt}\\)",
+    "solution": "\\(\\frac{dT}{dt} - kT = -kT_m\\), thừa số \\(\\mu = e^{-kt}\\). \\((Te^{-kt})' = -kT_m e^{-kt} \\Rightarrow Te^{-kt} = T_m e^{-kt} + C \\Rightarrow T = T_m + Ce^{kt}\\).",
+    "quick": "PT tuyến tính cấp 1 với hằng số",
+    "casio": "Với quy ước \\(k\\lt0\\), dùng \\(T(t)=T_m+(T_0-T_m)e^{kt}\\). Từ một dữ kiện nhiệt độ, lấy logarit để tìm \\(k\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 107,
+    "type": "application_mixing",
+    "question": "Bể chứa 100L nước muối 1g/L. Nước muối 2g/L chảy vào với tốc độ 5L/phút, đồng thời hỗn hợp chảy ra 5L/phút. Lượng muối S(t) sau t phút thỏa PT nào?",
+    "matrix": null,
+    "options": [
+      "\\(S'=10-\\dfrac{S}{20}\\)",
+      "\\(S'=10+\\dfrac{S}{20}\\)",
+      "\\(S'=5-\\dfrac{S}{100}\\)",
+      "\\(S'=2-\\dfrac{S}{20}\\)"
+    ],
+    "correct": "\\(S'=10-\\dfrac{S}{20}\\)",
+    "solution": "Tốc độ muối vào là \\(5\\cdot2=10\\) g/phút. Vì thể tích luôn bằng \\(100\\) lít, nồng độ trong bể là \\(S/100\\) g/lít và tốc độ muối ra là \\(5S/100=S/20\\) g/phút. Do đó \\[S'=10-\\frac{S}{20},\\qquad S(0)=100\\text{ g}.\\]",
+    "quick": "\\(S'=\\text{tốc độ vào}-\\text{tốc độ ra}=10-\\dfrac{S}{20}\\).",
+    "casio": "CASIO: Kiểm tra đơn vị và thay một giá trị S để so sánh các phương án.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 108,
+    "type": "application_population",
+    "question": "Dân số tăng tỉ lệ với chính nó. Năm 2000 có 1000 người, năm 2010 có 1500 người. Dự báo năm 2020 có bao nhiêu người?",
+    "matrix": null,
+    "options": [
+      "\\(2250\\)",
+      "\\(2000\\)",
+      "\\(3000\\)",
+      "\\(2500\\)"
+    ],
+    "correct": "\\(2250\\)",
+    "solution": "\\(P'=kP\\) → \\(P(t)=P_0e^{kt}\\).\n\n\\(P(10)=1000e^{10k}=1500\\) → \\(e^{10k}=1.5\\).\n\n\\(P(20)=1000e^{20k}=1000(e^{10k})^2=1000\\times1.5^2=2250\\).",
+    "quick": "Sau mỗi 10 năm nhân 1.5. Năm 2020 = 1000×1.5² = 2250.",
+    "casio": "CASIO: k=ln(1.5)/10. P(20)=1000e^(20k)=1000×(1.5)²=2250.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 109,
+    "type": "application_decay",
+    "question": "Chất phóng xạ phân rã theo \\(N'=-kN\\). Sau 10 năm còn 80%. Sau bao nhiêu năm còn 50%?",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{10\\ln2}{\\ln(5/4)}\\)",
+      "\\(\\dfrac{10\\ln2}{\\ln(4/5)}\\)",
+      "\\(\\dfrac{\\ln2}{10\\ln(5/4)}\\)",
+      "\\(\\dfrac{10\\ln(5/4)}{\\ln2}\\)"
+    ],
+    "correct": "\\(\\dfrac{10\\ln2}{\\ln(5/4)}\\)",
+    "solution": "\\(N(t)=N_0e^{-kt}\\). Từ \\(N(10)=0.8N_0\\): \\(e^{-10k}=0.8\\), nên \\(k=\\ln(5/4)/10\\). Thời gian bán rã \\(T\\) thỏa \\(e^{-kT}=1/2\\), do đó \\(T=\\ln2/k=10\\ln2/\\ln(5/4)\\).",
+    "quick": "Tìm \\(k\\) từ 80%, sau đó dùng \\(T_{1/2}=\\ln2/k\\).",
+    "casio": "CASIO: Nhập \\(10\\ln2/\\ln(1.25)\\) để được xấp xỉ 31,1 năm.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 110,
+    "type": "application_mixing_official",
+    "question": "Một bể có 1000 lít nước muối nồng độ \\(0{,}02\\) kg/lít. Nước muối nồng độ \\(0{,}01\\) kg/lít chảy vào và hỗn hợp chảy ra cùng tốc độ 10 lít/phút. Sau 40 phút, lượng muối trong bể xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(16{,}7\\) kg",
+      "\\(15{,}7\\) kg",
+      "\\(20{,}0\\) kg",
+      "\\(10{,}0\\) kg"
+    ],
+    "correct": "\\(16{,}7\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng muối (kg). Khi đó \\(S'=0{,}1-0{,}01S\\), \\(S(0)=20\\). Nghiệm là \\(S=10+10e^{-0{,}01t}\\). Tại \\(t=40\\): \\(S(40)=10+10e^{-0{,}4}\\approx16{,}7\\) kg.",
+    "quick": "Lượng cân bằng là 10 kg; nghiệm tiến dần về 10 theo hàm mũ.",
+    "casio": "CASIO: Nhập \\(10+10e^{-0.4}\\) được khoảng 16,703.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 111,
+    "type": "application_newton",
+    "question": "Một vật ở \\(100^\\circ C\\) được đặt trong phòng \\(20^\\circ C\\). Sau 10 phút vật còn \\(60^\\circ C\\). Theo định luật Newton, sau 20 phút nhiệt độ vật bằng",
+    "matrix": null,
+    "options": [
+      "\\(40^\\circ C\\)",
+      "\\(30^\\circ C\\)",
+      "\\(50^\\circ C\\)",
+      "\\(20^\\circ C\\)"
+    ],
+    "correct": "\\(40^\\circ C\\)",
+    "solution": "\\(T-20=(100-20)e^{-kt}=80e^{-kt}\\). Tại 10 phút: \\(40=80e^{-10k}\\Rightarrow e^{-10k}=1/2\\). Sau 20 phút: \\(T-20=80(1/2)^2=20\\), nên \\(T=40^\\circ C\\).",
+    "quick": "Hiệu nhiệt độ giảm một nửa sau mỗi 10 phút.",
+    "casio": "CASIO: Tính \\(20+80(0.5)^2=40\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 112,
+    "type": "application_mixing",
+    "question": "Một bể 200 lít chứa 4 kg muối. Nước tinh khiết chảy vào và hỗn hợp chảy ra cùng tốc độ 5 lít/phút. Lượng muối sau \\(t\\) phút là",
+    "matrix": null,
+    "options": [
+      "\\(S(t)=4e^{-t/40}\\)",
+      "\\(S(t)=4e^{-40t}\\)",
+      "\\(S(t)=4-5t\\)",
+      "\\(S(t)=4e^{-t/200}\\)"
+    ],
+    "correct": "\\(S(t)=4e^{-t/40}\\)",
+    "solution": "Không có muối vào. Tốc độ muối ra là \\(5\\cdot S/200=S/40\\), nên \\(S'=-S/40\\), \\(S(0)=4\\). Do đó \\(S=4e^{-t/40}\\).",
+    "quick": "Hệ số rút = lưu lượng/thể tích = 5/200=1/40.",
+    "casio": "CASIO: Kiểm tra S(0)=4 và tốc độ giảm ban đầu -0,1 kg/phút.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 113,
+    "type": "application_mixing_official",
+    "question": "Một bể chứa 150 lít dung dịch đường nồng độ \\(0{,}4\\) kg/lít. Dung dịch nồng độ \\(0{,}8\\) kg/lít chảy vào với tốc độ 3 lít/phút và hỗn hợp chảy ra với tốc độ 5 lít/phút. Lượng đường sau 50 phút gần nhất là",
+    "matrix": null,
+    "options": [
+      "\\(36{,}15\\) kg",
+      "\\(28{,}80\\) kg",
+      "\\(42{,}30\\) kg",
+      "\\(35{,}40\\) kg"
+    ],
+    "correct": "\\(36{,}15\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng đường, thể tích \\(V(t)=150-2t\\). Khi đó \\(S'=2{,}4-5S/(150-2t)\\), \\(S(0)=60\\). Giải phương trình tuyến tính được \\(S(t)=0{,}8(150-2t)-60((150-2t)/150)^{5/2}\\). Tại \\(t=50\\): \\(S(50)\\approx36{,}15\\) kg.",
+    "quick": "Lập phương trình 'vào trừ ra', nhớ thể tích giảm \\(2\\) lít mỗi phút.",
+    "casio": "CASIO: sau khi có công thức, nhập \\(0.8\\cdot50-60(1/3)^{5/2}\\) để được xấp xỉ \\(36.15\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng phương trình vi phân cấp 1"
+  },
+  {
+    "id": 114,
+    "type": "application_mixing_official",
+    "question": "Một phòng kín thể tích \\(100\\,m^3\\) ban đầu có nồng độ CO là \\(0{,}05\\%\\). Không khí sạch vào và hỗn hợp ra cùng tốc độ \\(2\\,m^3\\)/phút. Sau 30 phút, lượng CO còn lại gần nhất là",
+    "matrix": null,
+    "options": [
+      "\\(0{,}03\\,m^3\\)",
+      "\\(0{,}05\\,m^3\\)",
+      "\\(0{,}01\\,m^3\\)",
+      "\\(0{,}04\\,m^3\\)"
+    ],
+    "correct": "\\(0{,}03\\,m^3\\)",
+    "solution": "Ban đầu lượng CO là \\(S(0)=100\\cdot0{,}0005=0{,}05\\,m^3\\). Vì khí vào sạch, \\(S'=-2S/100=-S/50\\). Do đó \\(S(t)=0{,}05e^{-t/50}\\). Tại 30 phút: \\(S(30)\\approx0{,}0274\\,m^3\\), làm tròn được \\(0{,}03\\,m^3\\).",
+    "quick": "Thể tích không đổi, chỉ có chất ô nhiễm đi ra: \\(S'=-S/50\\).",
+    "casio": "CASIO: nhập \\(0.05e^{-30/50}\\) được khoảng \\(0.02744\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng phương trình vi phân cấp 1"
+  },
+  {
+    "id": 115,
+    "type": "application_mixing_model",
+    "question": "Một bể chứa \\(300\\) lít dung dịch có \\(6\\) kg muối. Dung dịch muối nồng độ \\(0{,}03\\) kg/lít chảy vào với tốc độ \\(4\\) lít/phút và hỗn hợp chảy ra cùng tốc độ. Nếu \\(S(t)\\) là lượng muối trong bể, phương trình vi phân đúng là",
+    "matrix": null,
+    "options": [
+      "\\(S'=0{,}12-\\dfrac{S}{75}\\)",
+      "\\(S'=0{,}03-\\dfrac{S}{75}\\)",
+      "\\(S'=0{,}12-\\dfrac{S}{300}\\)",
+      "\\(S'=4-\\dfrac{S}{75}\\)"
+    ],
+    "correct": "\\(S'=0{,}12-\\dfrac{S}{75}\\)",
+    "solution": "Tốc độ muối vào là \\(4\\cdot0{,}03=0{,}12\\) kg/phút. Thể tích luôn bằng \\(300\\) lít nên nồng độ trong bể là \\(S/300\\), tốc độ muối ra là \\(4S/300=S/75\\). Do đó \\[S'=0{,}12-\\frac{S}{75},\\qquad S(0)=6.\\]",
+    "quick": "Vào = lưu lượng nhân nồng độ \\(=0{,}12\\); ra = \\(4S/300=S/75\\).",
+    "casio": "CASIO không cần thiết ở bước lập mô hình; kiểm tra riêng tốc độ vào \\(4\\times0{,}03=0{,}12\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 116,
+    "type": "application_mixing_decay",
+    "question": "Một bể \\(200\\) lít chứa \\(10\\) kg muối. Nước tinh khiết chảy vào và hỗn hợp chảy ra cùng tốc độ \\(5\\) lít/phút. Sau \\(20\\) phút, lượng muối trong bể xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(6{,}07\\) kg",
+      "\\(7{,}79\\) kg",
+      "\\(3{,}68\\) kg",
+      "\\(8{,}82\\) kg"
+    ],
+    "correct": "\\(6{,}07\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng muối. Không có muối vào, còn tốc độ muối ra là \\(5S/200=S/40\\), nên \\(S'=-S/40\\), \\(S(0)=10\\). Suy ra \\(S(t)=10e^{-t/40}\\). Do đó \\(S(20)=10e^{-1/2}\\approx6{,}07\\) kg.",
+    "quick": "Nước tinh khiết vào nên \\(S(t)=S_0e^{-qt/V}=10e^{-t/40}\\).",
+    "casio": "CASIO: nhập \\(10\\times e^{-20/40}\\) để được xấp xỉ \\(6{,}07\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 117,
+    "type": "application_newton_constant",
+    "question": "Một vật ở \\(100^\\circ C\\) được đặt trong phòng \\(20^\\circ C\\). Sau \\(10\\) phút vật còn \\(60^\\circ C\\). Với mô hình \\(T'=-k(T-20)\\), \\(k\\) dương, giá trị của \\(k\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{\\ln2}{10}\\)",
+      "\\(\\dfrac{\\ln2}{20}\\)",
+      "\\(\\dfrac{\\ln4}{10}\\)",
+      "\\(\\dfrac{1}{10}\\)"
+    ],
+    "correct": "\\(\\dfrac{\\ln2}{10}\\)",
+    "solution": "Nghiệm có dạng \\(T-20=80e^{-kt}\\). Tại \\(t=10\\): \\(60-20=80e^{-10k}\\), nên \\(e^{-10k}=1/2\\). Suy ra \\(10k=\\ln2\\), tức \\(k=\\dfrac{\\ln2}{10}\\).",
+    "quick": "Độ chênh nhiệt giảm từ \\(80\\) xuống \\(40\\) sau 10 phút, nên hệ số suy giảm là \\(1/2\\).",
+    "casio": "CASIO: nhập \\(\\ln2/10\\) nếu cần giá trị thập phân.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 118,
+    "type": "application_newton_time",
+    "question": "Một cốc cà phê ở \\(90^\\circ C\\) đặt trong phòng \\(20^\\circ C\\). Sau \\(10\\) phút cà phê còn \\(55^\\circ C\\). Theo định luật làm lạnh Newton, sau khoảng bao lâu kể từ lúc bắt đầu thì cà phê còn \\(30^\\circ C\\)?",
+    "matrix": null,
+    "options": [
+      "\\(28{,}1\\) phút",
+      "\\(20\\) phút",
+      "\\(35\\) phút",
+      "\\(40{,}0\\) phút"
+    ],
+    "correct": "\\(28{,}1\\) phút",
+    "solution": "Ta có \\(T-20=70e^{-kt}\\). Sau 10 phút: \\(35=70e^{-10k}\\), nên \\(e^{-10k}=1/2\\). Khi \\(T=30\\), ta cần \\(10=70(1/2)^{t/10}\\), hay \\((1/2)^{t/10}=1/7\\). Do đó \\(t=10\\log_2 7=10\\dfrac{\\ln7}{\\ln2}\\approx28{,}1\\) phút.",
+    "quick": "Mỗi 10 phút độ chênh với môi trường giảm một nửa; giải \\(70(1/2)^{t/10}=10\\).",
+    "casio": "CASIO: nhập \\(10\\ln7/\\ln2\\), được khoảng \\(28{,}1\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 1"
+  },
+  {
+    "id": 119,
+    "type": "application_mixing_variable_volume",
+    "question": "Một chất tan được khuấy đều trong dung dịch. Một bể ban đầu chứa 100 lít nước có 2 kg chất tan. Nước muối chứa \\(0{,}05\\) kg chất tan trên mỗi lít được bơm vào bể với tốc độ 3 lít/phút, đồng thời dung dịch chảy ra ngoài với tốc độ 2 lít/phút. Tính lượng chất tan trong bể sau 10 phút.",
+    "matrix": null,
+    "options": [
+      "\\(2{,}85\\) kg",
+      "\\(4{,}12\\) kg",
+      "\\(3{,}02\\) kg",
+      "\\(3{,}36\\) kg"
+    ],
+    "correct": "\\(3{,}02\\) kg",
+    "solution": "Gọi \\(S(t)\\) là lượng chất tan trong bể, tính bằng kg. Vì lưu lượng vào là 3 lít/phút và lưu lượng ra là 2 lít/phút nên thể tích tại thời điểm \\(t\\) là \\(V(t)=100+t\\) lít. Tốc độ chất tan vào là \\(3\\cdot0{,}05=0{,}15\\) kg/phút, còn tốc độ chất tan ra là \\(2\\dfrac{S}{100+t}\\). Do đó \\(S'+\\dfrac{2}{100+t}S=0{,}15\\), với \\(S(0)=2\\). Nhân tử tích phân là \\((100+t)^2\\), nên \\(((100+t)^2S)'=0{,}15(100+t)^2\\). Suy ra \\(S(t)=0{,}05(100+t)+\\dfrac{C}{(100+t)^2}\\). Từ \\(S(0)=2\\) có \\(C=-30000\\). Vì vậy \\(S(10)=5{,}5-\\dfrac{30000}{110^2}\\approx3{,}0207\\) kg, tức khoảng \\(3{,}02\\) kg.",
+    "quick": "Thể tích tăng: \\(V(t)=100+t\\). Lập \\(S'=0{,}15-\\dfrac{2S}{100+t}\\), rồi giải phương trình tuyến tính cấp 1.",
+    "casio": "CASIO: sau khi có công thức \\(S(t)=0{,}05(100+t)-\\dfrac{30000}{(100+t)^2}\\), nhập \\(0{,}05\\times110-30000/110^2\\), được xấp xỉ \\(3{,}0207\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng phương trình vi phân cấp 1"
+  },
+  {
+    "id": 120,
+    "type": "application_oscillation",
+    "question": "Phương trình \\(y'' + 4y = 0\\) mô tả dao động điều hòa với tần số góc?",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(\\pi\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "\\(y'' + \\omega^2 y = 0\\) → \\(\\omega^2=4 \\Rightarrow \\omega=2\\). Tần số góc là 2.",
+    "quick": "\\(\\omega = \\sqrt{4}=2\\)",
+    "casio": "CASIO: Dao động điều hòa y''+ω²y=0 → y=Acos(ωt)+Bsin(ωt). ω=√(k/m). Tìm A,B từ y(0),y'(0). Dùng [MODE][5][1] giải hệ A,B.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 121,
+    "type": "application_oscillation",
+    "question": "Phương trình \\(y''+2y'+5y=0\\) mô tả dao động tắt dần. Tần số góc tắt dần \\(\\omega_d\\) bằng?",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(1\\)",
+      "\\(\\sqrt{5}\\)",
+      "\\(\\sqrt{3}\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "Phương trình đặc trưng \\(r^2+2r+5=0\\) có nghiệm \\(r=-1\\pm2i\\). Vì nghiệm có dạng \\(e^{-x}(C_1\\cos2x+C_2\\sin2x)\\), tần số góc tắt dần là \\(\\omega_d=2\\). Tần số riêng không tắt dần tương ứng là \\(\\omega_0=\\sqrt5\\).",
+    "quick": "Phần ảo của nghiệm đặc trưng là \\(2\\), nên \\(\\omega_d=2\\); không nhầm với \\(\\omega_0=\\sqrt5\\).",
+    "casio": "Giải \\(r^2+2r+5=0\\) được \\(r=-1\\pm2i\\). Phần ảo \\(2\\) chính là \\(\\omega_d\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 122,
+    "type": "application_oscillation",
+    "question": "Con lắc đơn nhỏ dao động tự do: \\(y''+\\omega^2y=0\\). Tần số góc \\(\\omega=3\\). Nghiệm tổng quát là?",
+    "matrix": null,
+    "options": [
+      "\\(C_1\\cos3t+C_2\\sin3t\\)",
+      "\\(C_1e^{3t}+C_2e^{-3t}\\)",
+      "\\((C_1+C_2t)e^{3t}\\)",
+      "\\(C_1\\cos t+C_2\\sin t\\)"
+    ],
+    "correct": "\\(C_1\\cos3t+C_2\\sin3t\\)",
+    "solution": "Phương trình đặc trưng \\(k^2+9=0\\) có nghiệm \\(k=\\pm3i\\). Vì vậy \\[y=C_1\\cos3t+C_2\\sin3t.\\] Chu kỳ dao động là \\(2\\pi/3\\).",
+    "quick": "\\(\\omega=3\\Rightarrow y=C_1\\cos3t+C_2\\sin3t\\).",
+    "casio": "CASIO: k²+9=0 → k=±3i. Phần thực α=0, phần ảo β=3 → e^0(C₁cos3t+C₂sin3t).",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 123,
+    "type": "homogeneous_ivp_amplitude_application",
+    "question": "Một con lắc lò xo dao động tự do theo phương trình vi phân \\(y''+16y=0\\). Nếu \\(y(0)=0\\) và \\(y'(0)=12\\), biên độ dao động của con lắc bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)",
+      "\\(12\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2+16=0\\), có nghiệm \\(r=\\pm4i\\). Do đó \\(y=C_1\\cos4x+C_2\\sin4x\\). Từ \\(y(0)=0\\) suy ra \\(C_1=0\\). Ta có \\(y'=-4C_1\\sin4x+4C_2\\cos4x\\), nên \\(y'(0)=4C_2=12\\Rightarrow C_2=3\\). Vậy \\(y=3\\sin4x\\), nên biên độ dao động là \\(A=3\\).",
+    "quick": "Giải được \\(y=C_1\\cos4x+C_2\\sin4x\\). Điều kiện đầu cho \\(C_1=0,C_2=3\\), nên \\(A=3\\).",
+    "casio": "CASIO không cần thiết; giải phương trình đặc trưng và hệ điều kiện đầu. Sau khi có \\(C_1=0,C_2=3\\), tính \\(A=\\sqrt{C_1^2+C_2^2}=3\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dao động điều hòa"
+  },
+  {
+    "id": 124,
+    "type": "homogeneous_ivp_amplitude_application",
+    "question": "Một vật dao động tự do theo phương trình vi phân \\(y''+16y=0\\). Biết vị trí ban đầu \\(y(0)=3\\) và vận tốc ban đầu \\(y'(0)=16\\). Biên độ dao động của vật bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(5\\)",
+      "\\(7\\)",
+      "\\(\\sqrt{17}\\)"
+    ],
+    "correct": "\\(5\\)",
+    "solution": "Phương trình đặc trưng \\(r^2+16=0\\) cho nghiệm \\(r=\\pm4i\\), nên \\(y=C_1\\cos4x+C_2\\sin4x\\). Từ \\(y(0)=3\\) có \\(C_1=3\\). Mặt khác \\(y'(0)=4C_2=16\\), nên \\(C_2=4\\). Do đó \\(y=3\\cos4x+4\\sin4x\\). Viết dưới dạng \\(y=A\\cos(4x-\\varphi)\\) thì \\(A=\\sqrt{C_1^2+C_2^2}=\\sqrt{3^2+4^2}=5\\).",
+    "quick": "Tìm được \\(C_1=3,C_2=4\\). Biên độ \\(A=\\sqrt{3^2+4^2}=5\\).",
+    "casio": "CASIO: sau khi tìm \\(C_1=3,C_2=4\\), nhập \\(\\sqrt{3^2+4^2}\\), được 5.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dao động điều hòa"
+  },
+  {
+    "id": 125,
+    "type": "homogeneous_ivp_amplitude_application",
+    "question": "Một con lắc dao động tự do theo phương trình vi phân \\(y''+25y=0\\). Biết \\(y(0)=-5\\) và \\(y'(0)=60\\). Biên độ dao động của con lắc bằng",
+    "matrix": null,
+    "options": [
+      "\\(7\\)",
+      "\\(12\\)",
+      "\\(13\\)",
+      "\\(17\\)"
+    ],
+    "correct": "\\(13\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2+25=0\\), có nghiệm \\(r=\\pm5i\\). Vì vậy \\(y=C_1\\cos5x+C_2\\sin5x\\). Từ \\(y(0)=-5\\) suy ra \\(C_1=-5\\). Ta có \\(y'=-5C_1\\sin5x+5C_2\\cos5x\\), nên \\(y'(0)=5C_2=60\\Rightarrow C_2=12\\). Vậy \\(y=-5\\cos5x+12\\sin5x\\), và biên độ là \\(A=\\sqrt{(-5)^2+12^2}=13\\).",
+    "quick": "Điều kiện đầu cho \\(C_1=-5,C_2=12\\). Do đó \\(A=\\sqrt{25+144}=13\\).",
+    "casio": "CASIO: sau khi tìm \\(C_1=-5,C_2=12\\), nhập \\(\\sqrt{(-5)^2+12^2}\\), được 13.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dao động điều hòa"
+  },
+  {
+    "id": 126,
+    "type": "ch8_matrix_material_requirement",
+    "question": "Một xưởng dùng 3 loại nguyên liệu để chế tạo 4 loại chi tiết. Ma trận định mức là \\(A=\\begin{pmatrix}4&2&1&4\\\\5&4&2&1\\\\6&5&3&2\\end{pmatrix}\\) và đơn đặt hàng là \\(X=(3;2;5;6)^T\\). Số đơn vị nguyên liệu loại 1 cần dùng là",
+    "matrix": null,
+    "options": [
+      "\\(45\\)",
+      "\\(51\\)",
+      "\\(55\\)",
+      "\\(30\\)"
+    ],
+    "correct": "\\(45\\)",
+    "solution": "Nhu cầu nguyên liệu là \\(AX\\). Hàng 1 cho \\(4\\cdot3+2\\cdot2+1\\cdot5+4\\cdot6=45\\).",
+    "quick": "Lấy hàng 1 của \\(A\\) nhân với \\(X\\).",
+    "casio": "CASIO: tính tích vô hướng \\((4,2,1,4)\\cdot(3,2,5,6)\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận – Sản xuất"
+  },
+  {
+    "id": 127,
+    "type": "ch8_matrix_nutrition",
+    "question": "Một trang trại có ma trận hàm lượng dinh dưỡng \\(A=\\begin{pmatrix}3&1&2\\\\2&4&1\\\\1&2&5\\end{pmatrix}\\) và lượng ba loại thức ăn \\(X=(10;15;8)^T\\). Tổng số đơn vị chất dinh dưỡng loại 2 được cung cấp là",
+    "matrix": null,
+    "options": [
+      "\\(88\\)",
+      "\\(61\\)",
+      "\\(80\\)",
+      "\\(70\\)"
+    ],
+    "correct": "\\(88\\)",
+    "solution": "Hàng 2 của \\(A\\) là \\((2,4,1)\\). Do đó \\(2\\cdot10+4\\cdot15+1\\cdot8=88\\).",
+    "quick": "Hàng 2 nhân véc tơ lượng thức ăn.",
+    "casio": "CASIO: \\(2\\times10+4\\times15+8=88\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận – Dinh dưỡng"
+  },
+  {
+    "id": 128,
+    "type": "ch8_matrix_cloth",
+    "question": "Một nhà máy may có ma trận tiêu hao \\(A=\\begin{pmatrix}2&1&3&1\\\\1&4&2&2\\\\3&2&1&5\\end{pmatrix}\\) và kế hoạch \\(X=(10;20;15;5)^T\\). Tổng lượng vải loại 3 cần dùng là",
+    "matrix": null,
+    "options": [
+      "\\(110\\)",
+      "\\(105\\)",
+      "\\(130\\)",
+      "\\(100\\)"
+    ],
+    "correct": "\\(110\\)",
+    "solution": "Hàng 3 của \\(A\\) là \\((3,2,1,5)\\). Tích với \\(X\\) bằng \\(30+40+15+25=110\\).",
+    "quick": "Hàng 3 của ma trận định mức nhân kế hoạch sản xuất.",
+    "casio": "CASIO: \\(3\\times10+2\\times20+15+5\\times5\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận – Sản xuất"
+  },
+  {
+    "id": 129,
+    "type": "ch8_matrix_component_cost",
+    "question": "Một cơ sở lắp ráp 3 dòng máy dùng hai loại linh kiện theo ma trận \\(A=\\begin{pmatrix}1&2&3\\\\2&1&2\\end{pmatrix}\\). Giá mỗi linh kiện là \\(P=(100,150)\\) USD. Nếu \\(C=PA\\), chi phí linh kiện cho một máy dòng thứ 3 là",
+    "matrix": null,
+    "options": [
+      "\\(400\\) USD",
+      "\\(600\\) USD",
+      "\\(350\\) USD",
+      "\\(500\\) USD"
+    ],
+    "correct": "\\(600\\) USD",
+    "solution": "Cột 3 của \\(A\\) là \\((3;2)\\). Chi phí là \\(100\\cdot3+150\\cdot2=600\\) USD.",
+    "quick": "Giá hàng nhân cột định mức của dòng máy.",
+    "casio": "CASIO: \\(100\\times3+150\\times2=600\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận – Chi phí"
+  },
+  {
+    "id": 130,
+    "type": "ch8_matrix_store_revenue",
+    "question": "Ba chi nhánh bán bánh mì và nước ngọt với ma trận số lượng \\(S=\\begin{pmatrix}40&50&30\\\\60&40&50\\end{pmatrix}\\). Giá bán lần lượt là 15 và 10 nghìn đồng. Chi nhánh có doanh thu cao nhất là",
+    "matrix": null,
+    "options": [
+      "Chi nhánh 1",
+      "Chi nhánh 2",
+      "Chi nhánh 3",
+      "Chi nhánh 1 và 2 bằng nhau"
+    ],
+    "correct": "Chi nhánh 1",
+    "solution": "Doanh thu ba chi nhánh lần lượt là \\(15\\cdot40+10\\cdot60=1200\\), \\(1150\\), \\(950\\) nghìn đồng. Lớn nhất là chi nhánh 1.",
+    "quick": "Nhân véc tơ giá \\((15,10)\\) với từng cột của \\(S\\).",
+    "casio": "CASIO: tính lần lượt ba doanh thu.",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận – Doanh thu"
+  },
+  {
+    "id": 131,
+    "type": "ch8_matrix_labor_contract",
+    "question": "Ba nhóm thợ có số giờ làm cho ba hợp đồng theo ma trận \\(A=\\begin{pmatrix}10&20&15\\\\5&8&6\\\\4&5&5\\end{pmatrix}\\). Tiền lương theo giờ của ba nhóm là \\(C=(15,20,10)\\) USD. Tổng chi phí trả lương cho hợp đồng 2 là",
+    "matrix": null,
+    "options": [
+      "\\(510\\) USD",
+      "\\(330\\) USD",
+      "\\(610\\) USD",
+      "\\(450\\) USD"
+    ],
+    "correct": "\\(510\\) USD",
+    "solution": "Cột 2 của \\(A\\) là \\((20;8;5)\\). Chi phí bằng \\(15\\cdot20+20\\cdot8+10\\cdot5=510\\) USD.",
+    "quick": "Véc tơ lương nhân cột 2 của ma trận giờ công.",
+    "casio": "CASIO: \\(15\\times20+20\\times8+10\\times5\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận – Lao động"
+  },
+  {
+    "id": 132,
+    "type": "market_equilibrium_two_goods",
+    "question": "Hai hàng hóa có cung và cầu \\(s_1=-10+2p_1+p_2,\\ d_1=60-p_1\\) và \\(s_2=-5+p_1+2p_2,\\ d_2=45-p_2\\). Ở trạng thái cân bằng đồng thời, \\((p_1,p_2)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\((20,10)\\)",
+      "\\((10,20)\\)",
+      "\\((15,15)\\)",
+      "\\((25,5)\\)"
+    ],
+    "correct": "\\((20,10)\\)",
+    "solution": "Điều kiện \\(s_i=d_i\\) cho hệ \\(3p_1+p_2=70\\), \\(p_1+3p_2=50\\). Giải được \\(p_1=20,p_2=10\\).",
+    "quick": "Đặt cung bằng cầu cho từng hàng hóa rồi giải hệ.",
+    "casio": "CASIO: giải hệ \\(3p_1+p_2=70\\), \\(p_1+3p_2=50\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính – Cân bằng thị trường"
+  },
+  {
+    "id": 133,
+    "type": "market_equilibrium_three_prices",
+    "question": "Ba mức giá cân bằng \\(p_1,p_2,p_3\\) thỏa \\(p_1+p_2=30\\), \\(p_2+p_3=50\\), \\(p_1+p_3=40\\). Tổng \\(p_1+p_2+p_3\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(50\\)",
+      "\\(60\\)",
+      "\\(55\\)",
+      "\\(45\\)"
+    ],
+    "correct": "\\(60\\)",
+    "solution": "Cộng ba phương trình được \\(2(p_1+p_2+p_3)=120\\), nên tổng bằng 60.",
+    "quick": "Cộng cả ba phương trình để tránh giải riêng từng giá.",
+    "casio": "CASIO: không cần giải hệ đầy đủ.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính – Cân bằng thị trường"
+  },
+  {
+    "id": 134,
+    "type": "market_equilibrium_quantity",
+    "question": "Một mặt hàng có hàm cung \\(s=-20+3p\\) và hàm cầu \\(d=100-2p\\). Lượng cân bằng của thị trường là",
+    "matrix": null,
+    "options": [
+      "\\(52\\)",
+      "\\(40\\)",
+      "\\(60\\)",
+      "\\(48\\)"
+    ],
+    "correct": "\\(52\\)",
+    "solution": "Cân bằng khi \\(-20+3p=100-2p\\), suy ra \\(p=24\\). Khi đó \\(q=s=d=-20+72=52\\).",
+    "quick": "Tìm giá cân bằng trước, sau đó thế lại vào cung hoặc cầu.",
+    "casio": "CASIO: giải \\(5p=120\\), rồi tính \\(-20+3p\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính – Cân bằng thị trường"
+  },
+  {
+    "id": 135,
+    "type": "ch8_mixing_pure_initial",
+    "question": "Một bể chứa 500 lít nước tinh khiết. Nước muối nồng độ \\(0{,}03\\) kg/lít vào với tốc độ 5 lít/phút và dung dịch ra cùng tốc độ. Lượng muối sau 50 phút gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(5{,}9\\) kg",
+      "\\(6{,}2\\) kg",
+      "\\(4{,}8\\) kg",
+      "\\(7{,}1\\) kg"
+    ],
+    "correct": "\\(5{,}9\\) kg",
+    "solution": "Phương trình là \\(S'=0{,}15-0{,}01S\\), \\(S(0)=0\\). Do đó \\(S=15(1-e^{-0{,}01t})\\). Tại \\(t=50\\), \\(S\\approx5{,}9\\) kg.",
+    "quick": "Nghiệm tiến dần tới lượng cân bằng \\(Vc_{in}=15\\) kg.",
+    "casio": "CASIO: \\(15(1-e^{-0{,}5})\\approx5{,}9\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng PTVP cấp 1 – Pha trộn"
+  },
+  {
+    "id": 136,
+    "type": "ch8_mixing_half_time",
+    "question": "Một bể 200 lít chứa 10 kg muối. Nước tinh khiết vào với tốc độ 4 lít/phút và hỗn hợp ra cùng tốc độ. Sau bao lâu lượng muối còn 5 kg?",
+    "matrix": null,
+    "options": [
+      "\\(34{,}7\\) phút",
+      "\\(28{,}5\\) phút",
+      "\\(42{,}1\\) phút",
+      "\\(50{,}0\\) phút"
+    ],
+    "correct": "\\(34{,}7\\) phút",
+    "solution": "Ta có \\(S'=-\\dfrac4{200}S=-0{,}02S\\), nên \\(S=10e^{-0{,}02t}\\). Đặt \\(S=5\\) cho \\(e^{-0{,}02t}=1/2\\), suy ra \\(t=50\\ln2\\approx34{,}7\\) phút.",
+    "quick": "Nước tinh khiết vào → mô hình phân rã mũ.",
+    "casio": "CASIO: \\(50\\ln2\\approx34{,}7\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng PTVP cấp 1 – Pha trộn"
+  },
+  {
+    "id": 137,
+    "type": "ch8_mixing_long_run",
+    "question": "Bể 400 lít ban đầu chứa nước sạch. Nước muối nồng độ \\(0{,}04\\) kg/lít vào với tốc độ 8 lít/phút và hỗn hợp ra cùng tốc độ. Khi \\(t\\to+\\infty\\), lượng muối trong bể tiến tới",
+    "matrix": null,
+    "options": [
+      "\\(16\\) kg",
+      "\\(32\\) kg",
+      "\\(8\\) kg",
+      "\\(20\\) kg"
+    ],
+    "correct": "\\(16\\) kg",
+    "solution": "Ở trạng thái lâu dài, nồng độ trong bể tiến tới nồng độ dòng vào \\(0{,}04\\) kg/lít. Vì thể tích là 400 lít, lượng muối giới hạn là \\(400\\cdot0{,}04=16\\) kg.",
+    "quick": "Thể tích không đổi và cùng lưu lượng vào-ra → nồng độ cuối bằng nồng độ dòng vào.",
+    "casio": "CASIO: \\(400\\times0{,}04=16\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng PTVP cấp 1 – Pha trộn"
+  },
+  {
+    "id": 138,
+    "type": "ch8_mixing_pollutant_half",
+    "question": "Một hồ 2000 \\(\\mathrm{m}^3\\) chứa 100 kg chất ô nhiễm. Nước sạch vào và nước hồ ra đều với tốc độ 50 \\(\\mathrm{m}^3\\)/giờ. Thời gian để lượng chất ô nhiễm giảm còn một nửa gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(27{,}7\\) giờ",
+      "\\(40{,}0\\) giờ",
+      "\\(32{,}5\\) giờ",
+      "\\(15{,}4\\) giờ"
+    ],
+    "correct": "\\(27{,}7\\) giờ",
+    "solution": "Mô hình \\(S'=-(50/2000)S=-S/40\\), nên \\(S=100e^{-t/40}\\). Đặt \\(S=50\\), được \\(t=40\\ln2\\approx27{,}7\\) giờ.",
+    "quick": "Thời gian bán rã của mô hình rửa sạch là \\((V/q)\\ln2\\).",
+    "casio": "CASIO: \\(40\\ln2\\approx27{,}7\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng PTVP cấp 1 – Pha trộn"
+  },
+  {
+    "id": 139,
+    "type": "ch8_pump_square_pyramid",
+    "question": "Một hố nước hình chóp đáy vuông lật ngược, đỉnh ở dưới, cạnh miệng 4 m và sâu 3 m, chứa đầy nước. Cho \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\). Công bơm hết nước lên miệng hố là",
+    "matrix": null,
+    "options": [
+      "\\(117{,}6\\) kJ",
+      "\\(235{,}2\\) kJ",
+      "\\(156{,}8\\) kJ",
+      "\\(352{,}8\\) kJ"
+    ],
+    "correct": "\\(117{,}6\\) kJ",
+    "solution": "Gọi \\(y\\) là độ cao từ đỉnh, \\(0\\le y\\le3\\). Cạnh lát cắt là \\(4y/3\\), nên diện tích \\(A(y)=16y^2/9\\), quãng nâng \\(3-y\\). Do đó \\(W=9800\\int_0^3\\dfrac{16y^2}{9}(3-y)dy=117600\\) J.",
+    "quick": "Dùng đồng dạng để tìm cạnh lát cắt theo \\(y\\).",
+    "casio": "CASIO: tính \\(9800\\int_0^3(16y^2/9)(3-y)dy\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 140,
+    "type": "ch8_pump_sphere_underground",
+    "question": "Một bể hình cầu bán kính 3 m nằm hoàn toàn dưới đất, đỉnh bể đúng tại mặt đất và bể chứa đầy nước. Với \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\), công bơm hết nước lên mặt đất xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(3325{,}8\\) kJ",
+      "\\(1662{,}9\\) kJ",
+      "\\(2217{,}2\\) kJ",
+      "\\(1108{,}6\\) kJ"
+    ],
+    "correct": "\\(3325{,}8\\) kJ",
+    "solution": "Đặt tâm cầu tại \\(y=0\\), mặt đất ở \\(y=3\\). Lát ngang có diện tích \\(\\pi(9-y^2)\\), quãng nâng \\(3-y\\). \\(W=9800\\pi\\int_{-3}^{3}(9-y^2)(3-y)dy=1058400\\pi\\) J \\(\\approx3325{,}8\\) kJ.",
+    "quick": "Lát cầu: \\(A(y)=\\pi(R^2-y^2)\\); quãng nâng tới đỉnh là \\(R-y\\).",
+    "casio": "CASIO: tính tích phân rồi chia 1000 để đổi sang kJ.",
+    "difficulty": 3,
+    "topic": "Ứng dụng tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 141,
+    "type": "ch8_pump_paraboloid",
+    "question": "Một hầm nước là paraboloid tròn xoay tạo bởi \\(y=x^2\\), \\(0\\le y\\le4\\), quay quanh trục \\(Oy\\), chứa đầy nước. Bơm nước lên miệng tại \\(y=4\\). Với \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\), công xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(328{,}4\\) kJ",
+      "\\(164{,}2\\) kJ",
+      "\\(246{,}3\\) kJ",
+      "\\(492{,}6\\) kJ"
+    ],
+    "correct": "\\(328{,}4\\) kJ",
+    "solution": "Ở độ cao \\(y\\), bán kính lát cắt \\(r=\\sqrt y\\), diện tích \\(A=\\pi y\\), quãng nâng \\(4-y\\). Vì vậy \\(W=9800\\pi\\int_0^4y(4-y)dy=\\dfrac{313600\\pi}{3}\\) J \\(\\approx328{,}4\\) kJ.",
+    "quick": "Từ \\(y=x^2\\) suy ra \\(r^2=y\\), nên diện tích lát là \\(\\pi y\\).",
+    "casio": "CASIO: \\(9800\\pi\\int_0^4y(4-y)dy/1000\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 142,
+    "type": "ch8_pump_triangular_pyramid",
+    "question": "Một bể hình chóp tam giác đều có cạnh miệng 3 m, chiều cao 4 m, đỉnh hướng xuống và chứa đầy nước. Với \\(\\rho=1000\\,\\mathrm{kg/m^3}\\), \\(g=9{,}8\\,\\mathrm{m/s^2}\\), công bơm hết nước qua miệng bể xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(50{,}92\\) kJ",
+      "\\(101{,}84\\) kJ",
+      "\\(76{,}38\\) kJ",
+      "\\(25{,}46\\) kJ"
+    ],
+    "correct": "\\(50{,}92\\) kJ",
+    "solution": "Diện tích tam giác miệng là \\(A_0=9\\sqrt3/4\\). Ở độ cao \\(y\\) từ đỉnh, diện tích lát là \\(A(y)=A_0(y/4)^2\\), quãng nâng \\(4-y\\). Do đó \\(W=9800\\int_0^4A(y)(4-y)dy=29400\\sqrt3\\) J \\(\\approx50{,}92\\) kJ.",
+    "quick": "Diện tích lát của hình chóp tỉ lệ với bình phương tỉ số chiều cao.",
+    "casio": "CASIO: tính \\(29400\\sqrt3/1000\\approx50{,}92\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 143,
+    "type": "ch8_profit_one_variable",
+    "question": "Một công ty có tổng chi phí \\(C(x)=0{,}05x^2+20x+5000\\) và giá bán \\(p(x)=100-0{,}15x\\). Mức sản xuất để lợi nhuận tối đa là",
+    "matrix": null,
+    "options": [
+      "\\(200\\) sản phẩm",
+      "\\(150\\) sản phẩm",
+      "\\(250\\) sản phẩm",
+      "\\(300\\) sản phẩm"
+    ],
+    "correct": "\\(200\\) sản phẩm",
+    "solution": "Doanh thu \\(R=xp=100x-0{,}15x^2\\). Lợi nhuận \\(L=R-C=-0{,}2x^2+80x-5000\\), đạt cực đại tại \\(x=-80/(2\\cdot-0{,}2)=200\\).",
+    "quick": "Lập lợi nhuận \\(R-C\\) rồi tìm đỉnh parabol.",
+    "casio": "CASIO: giải \\(L'(x)=-0{,}4x+80=0\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng đạo hàm – Tối ưu lợi nhuận"
+  },
+  {
+    "id": 144,
+    "type": "ch8_cobb_douglas_budget",
+    "question": "Hàm sản xuất là \\(Q=10K^{0.6}L^{0.4}\\). Giá một đơn vị vốn là 30 USD, lao động là 20 USD và ngân sách là 6000 USD. Phân bổ tối ưu để tối đa hóa \\(Q\\) là",
+    "matrix": null,
+    "options": [
+      "\\(K=120,L=120\\)",
+      "\\(K=100,L=150\\)",
+      "\\(K=150,L=75\\)",
+      "\\(K=80,L=180\\)"
+    ],
+    "correct": "\\(K=120,L=120\\)",
+    "solution": "Với Cobb-Douglas có tổng số mũ bằng 1, phần ngân sách dành cho vốn là 60%: \\(30K=0{,}6\\cdot6000=3600\\), nên \\(K=120\\). Phần lao động là 40%: \\(20L=2400\\), nên \\(L=120\\).",
+    "quick": "Tỷ trọng chi tiêu tối ưu bằng các số mũ Cobb-Douglas.",
+    "casio": "CASIO: \\(3600/30=120\\), \\(2400/20=120\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng cực trị có điều kiện – Cobb-Douglas"
+  },
+  {
+    "id": 145,
+    "type": "ch8_price_elasticity",
+    "question": "Hàm cầu là \\(Q(p)=500-2p^2\\). Độ co giãn theo giá \\(E_p=\\dfrac{p}{Q}\\dfrac{dQ}{dp}\\). Tại \\(p=10\\), \\(E_p\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-1{,}33\\)",
+      "\\(-0{,}75\\)",
+      "\\(-2{,}00\\)",
+      "\\(-0{,}50\\)"
+    ],
+    "correct": "\\(-1{,}33\\)",
+    "solution": "Tại \\(p=10\\), \\(Q=300\\), \\(Q'=-4p=-40\\). Do đó \\(E_p=(10/300)(-40)=-4/3\\approx-1{,}33\\).",
+    "quick": "Tính \\(Q\\) và \\(Q'\\) tại đúng mức giá rồi thế công thức.",
+    "casio": "CASIO: \\(10\\div300\\times(-40)=-1{,}3333\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng đạo hàm – Độ co giãn"
+  },
+  {
+    "id": 146,
+    "type": "ch8_inventory_cost_min",
+    "question": "Chi phí quản lý kho là \\(C(x)=0{,}4x+\\dfrac{10000}{x}+500\\), \\(x\\gt0\\). Giá trị \\(x\\) làm chi phí nhỏ nhất gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(158\\)",
+      "\\(200\\)",
+      "\\(125\\)",
+      "\\(180\\)"
+    ],
+    "correct": "\\(158\\)",
+    "solution": "Ta có \\(C'(x)=0{,}4-10000/x^2\\). Cho \\(C'=0\\) được \\(x^2=25000\\), nên \\(x\\approx158{,}11\\). Đây là điểm cực tiểu.",
+    "quick": "Dạng \\(ax+b/x\\): nghiệm tối ưu \\(x=\\sqrt{b/a}\\).",
+    "casio": "CASIO: \\(\\sqrt{10000/0{,}4}\\approx158{,}11\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng đạo hàm – Tối ưu chi phí"
+  },
+  {
+    "id": 147,
+    "type": "ch8_average_cost_min",
+    "question": "Chi phí trung bình là \\(\\overline C(x)=2x+50+\\dfrac{1800}{x}\\), \\(x\\gt0\\). Mức sản lượng làm chi phí trung bình nhỏ nhất là",
+    "matrix": null,
+    "options": [
+      "\\(30\\)",
+      "\\(25\\)",
+      "\\(40\\)",
+      "\\(35\\)"
+    ],
+    "correct": "\\(30\\)",
+    "solution": "\\(\\overline C'(x)=2-1800/x^2=0\\Rightarrow x^2=900\\Rightarrow x=30\\). Vì \\(x\\gt0\\) và đạo hàm đổi dấu từ âm sang dương, đây là cực tiểu.",
+    "quick": "Dạng \\(ax+b/x\\) cho \\(x=\\sqrt{b/a}\\).",
+    "casio": "CASIO: \\(\\sqrt{1800/2}=30\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng đạo hàm – Chi phí trung bình"
+  },
+  {
+    "id": 148,
+    "type": "ch8_open_box_square",
+    "question": "Một hộp kim loại không nắp có đáy vuông cạnh \\(x\\), chiều cao \\(h\\) và thể tích \\(32\\,\\mathrm{m}^3\\). Để diện tích vật liệu nhỏ nhất, cạnh đáy \\(x\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\) m",
+      "\\(2\\) m",
+      "\\(3\\) m",
+      "\\(5\\) m"
+    ],
+    "correct": "\\(4\\) m",
+    "solution": "Từ \\(x^2h=32\\) suy ra \\(h=32/x^2\\). Diện tích là \\(S=x^2+4xh=x^2+128/x\\). \\(S'=2x-128/x^2=0\\Rightarrow x^3=64\\Rightarrow x=4\\).",
+    "quick": "Khử \\(h\\) bằng ràng buộc thể tích rồi tối ưu hàm một biến.",
+    "casio": "CASIO: giải \\(x^3=64\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng đạo hàm – Tối ưu hình học"
+  },
+  {
+    "id": 149,
+    "type": "ch8_marginal_revenue_integral",
+    "question": "Doanh thu biên của một doanh nghiệp là \\(MR(q)=200-0{,}4q\\). Tổng doanh thu tăng thêm khi sản lượng tăng từ \\(q=100\\) lên \\(q=200\\) là",
+    "matrix": null,
+    "options": [
+      "\\(14000\\)",
+      "\\(16000\\)",
+      "\\(12000\\)",
+      "\\(15000\\)"
+    ],
+    "correct": "\\(14000\\)",
+    "solution": "Độ tăng doanh thu là \\(\\int_{100}^{200}(200-0{,}4q)dq=[200q-0{,}2q^2]_{100}^{200}=14000\\).",
+    "quick": "Doanh thu biên là đạo hàm của doanh thu, nên tích phân MR cho độ tăng doanh thu.",
+    "casio": "CASIO: tính \\(\\int_{100}^{200}(200-0{,}4x)dx\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Doanh thu biên"
+  },
+  {
+    "id": 150,
+    "type": "ch8_ship_speed_cost",
+    "question": "Chi phí nhiên liệu của tàu chạy với vận tốc \\(v\\) km/h là \\(C(v)=0{,}2v^3+500\\) USD/giờ. Vận tốc làm chi phí trên mỗi km nhỏ nhất gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(10{,}8\\) km/h",
+      "\\(13{,}6\\) km/h",
+      "\\(15{,}2\\) km/h",
+      "\\(8{,}5\\) km/h"
+    ],
+    "correct": "\\(10{,}8\\) km/h",
+    "solution": "Chi phí mỗi km là \\(F(v)=C(v)/v=0{,}2v^2+500/v\\). \\(F'(v)=0{,}4v-500/v^2=0\\Rightarrow v^3=1250\\), nên \\(v\\approx10{,}77\\) km/h.",
+    "quick": "Tối ưu chi phí trên một đơn vị quãng đường, không phải chi phí mỗi giờ.",
+    "casio": "CASIO: \\(\\sqrt[3]{1250}\\approx10{,}77\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng đạo hàm – Tối ưu kỹ thuật"
+  },
+  {
+    "id": 151,
+    "type": "ch8_consumer_surplus",
+    "question": "Hàm cầu là \\(p=100-0{,}5q\\). Tại mức giá cân bằng \\(p_0=60\\), thặng dư người tiêu dùng là",
+    "matrix": null,
+    "options": [
+      "\\(1600\\)",
+      "\\(1200\\)",
+      "\\(2000\\)",
+      "\\(1800\\)"
+    ],
+    "correct": "\\(1600\\)",
+    "solution": "Giá \\(60\\) cho \\(q_0=80\\). Do đó \\(CS=\\int_0^{80}[(100-0{,}5q)-60]dq=1600\\).",
+    "quick": "CS là diện tích giữa đường cầu và đường giá từ 0 đến lượng cân bằng.",
+    "casio": "CASIO: \\(\\int_0^{80}(40-0{,}5x)dx=1600\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Thặng dư tiêu dùng"
+  },
+  {
+    "id": 152,
+    "type": "ch8_average_temperature",
+    "question": "Nhiệt độ một lò trong 12 giờ được mô hình bởi \\(T(t)=300+80t-5t^2\\) (°C), \\(0\\le t\\le12\\). Nhiệt độ trung bình là",
+    "matrix": null,
+    "options": [
+      "\\(540^\\circ\\mathrm C\\)",
+      "\\(620^\\circ\\mathrm C\\)",
+      "\\(480^\\circ\\mathrm C\\)",
+      "\\(500^\\circ\\mathrm C\\)"
+    ],
+    "correct": "\\(540^\\circ\\mathrm C\\)",
+    "solution": "Giá trị trung bình là \\(\\overline T=\\dfrac1{12}\\int_0^{12}(300+80t-5t^2)dt=540\\).",
+    "quick": "Giá trị trung bình trên \\([a,b]\\): \\(\\frac1{b-a}\\int_a^b f\\).",
+    "casio": "CASIO: tính tích phân rồi chia 12.",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Giá trị trung bình"
+  },
+  {
+    "id": 153,
+    "type": "ch8_area_parabolic_blade",
+    "question": "Một cánh gạt có miền phẳng giới hạn bởi \\(y=4-x^2\\) và \\(y=0\\). Diện tích của cánh gạt là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{32}{3}\\)",
+      "\\(\\dfrac{16}{3}\\)",
+      "\\(8\\)",
+      "\\(\\dfrac{64}{3}\\)"
+    ],
+    "correct": "\\(\\dfrac{32}{3}\\)",
+    "solution": "Hai giao điểm với trục hoành là \\(x=\\pm2\\). Diện tích \\(S=\\int_{-2}^{2}(4-x^2)dx=32/3\\).",
+    "quick": "Miền đối xứng: có thể tính \\(2\\int_0^2(4-x^2)dx\\).",
+    "casio": "CASIO: tích phân từ \\(-2\\) đến 2.",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Diện tích"
+  },
+  {
+    "id": 154,
+    "type": "ch8_volume_rotation_sqrtx",
+    "question": "Một chi tiết tròn xoay được tạo khi quay miền giới hạn bởi \\(y=\\sqrt x\\), trục \\(Ox\\), \\(x=0\\) và \\(x=4\\) quanh trục \\(Ox\\). Thể tích bằng",
+    "matrix": null,
+    "options": [
+      "\\(8\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(12\\pi\\)"
+    ],
+    "correct": "\\(8\\pi\\)",
+    "solution": "Dùng phương pháp đĩa: \\(V=\\pi\\int_0^4y^2dx=\\pi\\int_0^4x\\,dx=8\\pi\\).",
+    "quick": "Khi quay quanh \\(Ox\\), bán kính đĩa là \\(y\\), nên dùng \\(\\pi y^2\\).",
+    "casio": "CASIO: \\(\\pi\\int_0^4x dx=8\\pi\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Thể tích tròn xoay"
+  },
+  {
+    "id": 155,
+    "type": "ch8_oil_leak_integral",
+    "question": "Tốc độ rò rỉ dầu là \\(r(t)=100e^{-0{,}05t}\\) lít/giờ. Tổng lượng dầu rò rỉ trong 24 giờ đầu xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(1398\\) lít",
+      "\\(1500\\) lít",
+      "\\(1200\\) lít",
+      "\\(1650\\) lít"
+    ],
+    "correct": "\\(1398\\) lít",
+    "solution": "Tổng lượng dầu là \\(\\int_0^{24}100e^{-0{,}05t}dt=2000(1-e^{-1{,}2})\\approx1397{,}6\\) lít.",
+    "quick": "Tổng lượng = tích phân của tốc độ theo thời gian.",
+    "casio": "CASIO: \\(2000(1-e^{-1{,}2})\\approx1397{,}6\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Tích lũy"
+  },
+  {
+    "id": 156,
+    "type": "ch8_dam_cross_section",
+    "question": "Mặt cắt ngang của một đập được giới hạn bởi \\(y=0{,}1x^2\\) và \\(y=10\\). Diện tích mặt cắt là",
+    "matrix": null,
+    "options": [
+      "\\(133{,}33\\,\\mathrm{m}^2\\)",
+      "\\(100\\,\\mathrm{m}^2\\)",
+      "\\(150\\,\\mathrm{m}^2\\)",
+      "\\(166{,}67\\,\\mathrm{m}^2\\)"
+    ],
+    "correct": "\\(133{,}33\\,\\mathrm{m}^2\\)",
+    "solution": "Giao điểm thỏa \\(0{,}1x^2=10\\Rightarrow x=\\pm10\\). Diện tích là \\(\\int_{-10}^{10}(10-0{,}1x^2)dx=400/3\\approx133{,}33\\).",
+    "quick": "Tìm giao điểm trước rồi lấy đường trên trừ đường dưới.",
+    "casio": "CASIO: tích phân \\(10-0{,}1x^2\\) từ \\(-10\\) đến 10.",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Diện tích"
+  },
+  {
+    "id": 157,
+    "type": "ch8_newton_cooling_time",
+    "question": "Một chi tiết kim loại nguội trong môi trường \\(20^\\circ\\mathrm C\\). Ban đầu chi tiết ở \\(100^\\circ\\mathrm C\\), sau 10 phút còn \\(60^\\circ\\mathrm C\\). Theo luật Newton, sau bao lâu kể từ lúc bắt đầu nhiệt độ còn \\(30^\\circ\\mathrm C\\)?",
+    "matrix": null,
+    "options": [
+      "\\(30\\) phút",
+      "\\(25\\) phút",
+      "\\(35\\) phút",
+      "\\(40\\) phút"
+    ],
+    "correct": "\\(30\\) phút",
+    "solution": "Ta có \\(T-20=80e^{-kt}\\). Từ \\(T(10)=60\\) suy ra \\(e^{-10k}=1/2\\). Muốn \\(T=30\\) cần \\(e^{-kt}=1/8=(1/2)^3\\), nên \\(t=30\\) phút.",
+    "quick": "So sánh phần chênh nhiệt với môi trường.",
+    "casio": "CASIO: không cần tìm \\(k\\) riêng; nhận ra ba lần chu kỳ 10 phút.",
+    "difficulty": 3,
+    "topic": "Ứng dụng PTVP cấp 1 – Newton"
+  },
+  {
+    "id": 158,
+    "type": "ch8_bacteria_growth",
+    "question": "Vi khuẩn tăng theo \\(N'=kN\\). Ban đầu có 1000 vi khuẩn, sau 3 giờ có 4000. Số vi khuẩn sau 5 giờ xấp xỉ bằng",
+    "matrix": null,
+    "options": [
+      "\\(10079\\)",
+      "\\(8000\\)",
+      "\\(12500\\)",
+      "\\(16000\\)"
+    ],
+    "correct": "\\(10079\\)",
+    "solution": "Nghiệm \\(N=1000e^{kt}\\). Từ \\(N(3)=4000\\) có \\(e^{3k}=4\\). Do đó \\(N(5)=1000\\cdot4^{5/3}\\approx10079\\).",
+    "quick": "Dùng tỉ số tăng trưởng: \\(N(t)=1000\\cdot4^{t/3}\\).",
+    "casio": "CASIO: \\(1000\\times4^{5/3}\\approx10079\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng PTVP cấp 1 – Tăng trưởng"
+  },
+  {
+    "id": 159,
+    "type": "ch8_radioactive_half_life",
+    "question": "Một chất phóng xạ có khối lượng ban đầu 100 g và chu kỳ bán rã 50 năm. Khối lượng còn lại sau 120 năm gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(18{,}9\\) g",
+      "\\(22{,}5\\) g",
+      "\\(15{,}2\\) g",
+      "\\(25{,}0\\) g"
+    ],
+    "correct": "\\(18{,}9\\) g",
+    "solution": "Mô hình bán rã: \\(m(t)=100\\cdot2^{-t/50}\\). Với \\(t=120\\), \\(m\\approx100\\cdot2^{-2{,}4}=18{,}95\\) g.",
+    "quick": "Dùng trực tiếp công thức theo chu kỳ bán rã.",
+    "casio": "CASIO: \\(100\\times2^{-120/50}\\approx18{,}95\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng PTVP cấp 1 – Phân rã"
+  },
+  {
+    "id": 160,
+    "type": "ch8_logistic_capacity",
+    "question": "Quần thể thỏa \\(P'=0{,}04P\\left(1-\\dfrac{P}{5000}\\right)\\) và \\(P(0)=1000\\). Khi \\(t\\to+\\infty\\), \\(P(t)\\) tiến tới",
+    "matrix": null,
+    "options": [
+      "\\(5000\\)",
+      "\\(10000\\)",
+      "\\(2500\\)",
+      "\\(4000\\)"
+    ],
+    "correct": "\\(5000\\)",
+    "solution": "Trong mô hình Logistic \\(P'=rP(1-P/K)\\), tham số \\(K\\) là sức chứa. Với dữ kiện này \\(K=5000\\), nên nghiệm dương tiến tới 5000.",
+    "quick": "Nhìn trực tiếp sức chứa \\(K\\) trong mô hình Logistic.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Ứng dụng PTVP cấp 1 – Logistic"
+  },
+  {
+    "id": 161,
+    "type": "ch8_rc_discharge",
+    "question": "Một tụ điện có \\(C=10^{-4}\\) F, điện trở \\(R=1000\\,\\Omega\\), điện áp đầu \\(V(0)=12\\) V và thỏa \\(V'+\\dfrac1{RC}V=0\\). Điện áp sau \\(0{,}2\\) giây gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(1{,}62\\) V",
+      "\\(2{,}45\\) V",
+      "\\(0{,}81\\) V",
+      "\\(3{,}26\\) V"
+    ],
+    "correct": "\\(1{,}62\\) V",
+    "solution": "Ta có \\(RC=0{,}1\\) giây và \\(V(t)=12e^{-t/(RC)}\\). Vì vậy \\(V(0{,}2)=12e^{-2}\\approx1{,}62\\) V.",
+    "quick": "Tụ phóng điện: \\(V=V_0e^{-t/(RC)}\\).",
+    "casio": "CASIO: \\(12e^{-2}\\approx1{,}62\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng PTVP cấp 1 – Mạch RC"
+  },
+  {
+    "id": 162,
+    "type": "ch8_learning_curve",
+    "question": "Tỷ lệ thành thạo \\(p(t)\\) thỏa \\(p'=0{,}1(100-p)\\), \\(p(0)=20\\). Sau 10 ngày, tỷ lệ thành thạo gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(70{,}6\\%\\)",
+      "\\(65{,}2\\%\\)",
+      "\\(75{,}8\\%\\)",
+      "\\(80{,}0\\%\\)"
+    ],
+    "correct": "\\(70{,}6\\%\\)",
+    "solution": "Đặt \\(u=100-p\\), ta có \\(u'=-0{,}1u\\), \\(u(0)=80\\). Suy ra \\(p=100-80e^{-0{,}1t}\\). Tại \\(t=10\\), \\(p\\approx70{,}6\\%\\).",
+    "quick": "Khoảng cách tới mức 100% giảm theo hàm mũ.",
+    "casio": "CASIO: \\(100-80e^{-1}\\approx70{,}6\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng PTVP cấp 1 – Mô hình học tập"
+  },
+  {
+    "id": 163,
+    "type": "ch8_terminal_velocity",
+    "question": "Một vật khối lượng 2 kg rơi trong không khí với lực cản tuyến tính \\(0{,}4v\\). Phương trình là \\(2v'=2g-0{,}4v\\), \\(g=9{,}8\\). Vận tốc giới hạn bằng",
+    "matrix": null,
+    "options": [
+      "\\(49\\) m/s",
+      "\\(39{,}2\\) m/s",
+      "\\(24{,}5\\) m/s",
+      "\\(58{,}8\\) m/s"
+    ],
+    "correct": "\\(49\\) m/s",
+    "solution": "Ở vận tốc giới hạn, \\(v'=0\\). Vì vậy \\(2\\cdot9{,}8-0{,}4v=0\\Rightarrow v=49\\) m/s.",
+    "quick": "Vận tốc giới hạn được tìm bằng cách đặt gia tốc bằng 0.",
+    "casio": "CASIO: \\(19{,}6/0{,}4=49\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng PTVP cấp 1 – Cơ học"
+  },
+  {
+    "id": 164,
+    "type": "ch8_present_value_continuous",
+    "question": "Một dòng tiền tạo thu nhập liên tục 50 triệu đồng/năm trong 5 năm. Với lãi suất ghép liên tục 8%/năm, giá trị hiện tại \\(PV=\\int_0^5 50e^{-0{,}08t}dt\\) gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(206{,}0\\) triệu đồng",
+      "\\(250{,}0\\) triệu đồng",
+      "\\(185{,}5\\) triệu đồng",
+      "\\(220{,}8\\) triệu đồng"
+    ],
+    "correct": "\\(206{,}0\\) triệu đồng",
+    "solution": "\\(PV=\\dfrac{50}{0{,}08}(1-e^{-0{,}4})\\approx206{,}0\\) triệu đồng.",
+    "quick": "Tích phân dòng tiền đã chiết khấu liên tục.",
+    "casio": "CASIO: \\(50(1-e^{-0{,}4})/0{,}08\\approx206{,}0\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng tích phân một biến – Tài chính"
+  },
+  {
+    "id": 165,
+    "type": "ch8_rl_circuit",
+    "question": "Mạch nối tiếp \\(R,L\\) có \\(R=10\\,\\Omega\\), \\(L=2\\) H, nguồn một chiều \\(E=50\\) V và \\(i(0)=0\\). Dòng điện thỏa \\(2i'+10i=50\\). Giá trị \\(i(0{,}4)\\) gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(4{,}32\\) A",
+      "\\(3{,}85\\) A",
+      "\\(5{,}00\\) A",
+      "\\(2{,}71\\) A"
+    ],
+    "correct": "\\(4{,}32\\) A",
+    "solution": "Nghiệm là \\(i(t)=E/R\\,(1-e^{-Rt/L})=5(1-e^{-5t})\\). Tại \\(t=0{,}4\\), \\(i=5(1-e^{-2})\\approx4{,}32\\) A.",
+    "quick": "Mạch RL với nguồn DC: giá trị giới hạn là \\(E/R\\).",
+    "casio": "CASIO: \\(5(1-e^{-2})\\approx4{,}32\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng PTVP cấp 1 – Mạch RL"
+  },
+  {
+    "id": 166,
+    "type": "ch8_atmospheric_pressure",
+    "question": "Áp suất khí quyển theo độ cao \\(h\\) km thỏa \\(P'=-0{,}13P\\), \\(P(0)=101{,}3\\) kPa. Áp suất ở độ cao 5 km gần bằng",
+    "matrix": null,
+    "options": [
+      "\\(52{,}9\\) kPa",
+      "\\(60{,}5\\) kPa",
+      "\\(45{,}2\\) kPa",
+      "\\(70{,}1\\) kPa"
+    ],
+    "correct": "\\(52{,}9\\) kPa",
+    "solution": "Nghiệm \\(P(h)=101{,}3e^{-0{,}13h}\\). Tại \\(h=5\\), \\(P\\approx101{,}3e^{-0{,}65}=52{,}9\\) kPa.",
+    "quick": "Mô hình phân rã mũ theo độ cao.",
+    "casio": "CASIO: \\(101{,}3e^{-0{,}65}\\approx52{,}9\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng PTVP cấp 1 – Áp suất"
+  },
+  {
+    "id": 167,
+    "type": "ch8_markov_stationary",
+    "question": "Ma trận chuyển trạng thái \\(P=\\begin{pmatrix}0{,}8&0{,}2\\\\0{,}1&0{,}9\\end{pmatrix}\\). Trạng thái cân bằng hàng \\((x_A,x_B)\\) thỏa \\((x_A,x_B)P=(x_A,x_B)\\) và \\(x_A+x_B=1\\). Trạng thái cân bằng là",
+    "matrix": null,
+    "options": [
+      "\\((0{,}33;0{,}67)\\)",
+      "\\((0{,}50;0{,}50)\\)",
+      "\\((0{,}40;0{,}60)\\)",
+      "\\((0{,}25;0{,}75)\\)"
+    ],
+    "correct": "\\((0{,}33;0{,}67)\\)",
+    "solution": "Từ phương trình trạng thái, \\(0{,}2x_A=0{,}1x_B\\), nên \\(x_B=2x_A\\). Kết hợp \\(x_A+x_B=1\\) cho \\(x_A=1/3, x_B=2/3\\).",
+    "quick": "Ở cân bằng, dòng chuyển từ A sang B bằng dòng từ B sang A.",
+    "casio": "CASIO: giải hệ \\(x_B=2x_A\\), \\(x_A+x_B=1\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận – Markov"
+  },
+  {
+    "id": 168,
+    "type": "ch8_truss_linear_system",
+    "question": "Lực trong một giàn thỏa hệ \\(F_1-F_3=50\\), \\(F_2-F_3=20\\), \\(F_1+F_2=70\\) (kN). Giá trị \\(F_3\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\) kN",
+      "\\(10\\) kN",
+      "\\(20\\) kN",
+      "\\(15\\) kN"
+    ],
+    "correct": "\\(0\\) kN",
+    "solution": "Từ hai phương trình đầu, \\(F_1=50+F_3\\), \\(F_2=20+F_3\\). Thế vào phương trình ba: \\(70+2F_3=70\\Rightarrow F_3=0\\).",
+    "quick": "Biểu diễn \\(F_1,F_2\\) theo \\(F_3\\), rồi thế vào phương trình cuối.",
+    "casio": "CASIO: giải hệ ba ẩn.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính – Cơ học"
+  },
+  {
+    "id": 169,
+    "type": "ch8_leontief_intermediate_cost",
+    "question": "Ma trận hệ số kỹ thuật Leontief của 3 ngành là \\(A=\\begin{pmatrix}0{,}1&0{,}2&0{,}2\\\\0{,}3&0{,}1&0{,}1\\\\0{,}2&0{,}2&0{,}2\\end{pmatrix}\\). Tổng đầu vào trung gian mà ngành 2 cần từ cả ba ngành để sản xuất 100 đơn vị là",
+    "matrix": null,
+    "options": [
+      "\\(50\\) đơn vị",
+      "\\(40\\) đơn vị",
+      "\\(60\\) đơn vị",
+      "\\(30\\) đơn vị"
+    ],
+    "correct": "\\(50\\) đơn vị",
+    "solution": "Cột 2 cho đầu vào của ngành 2: \\(0{,}2+0{,}1+0{,}2=0{,}5\\) đơn vị đầu vào trên một đơn vị sản lượng. Với 100 đơn vị, tổng là 50.",
+    "quick": "Cộng các phần tử của cột ngành 2 rồi nhân sản lượng.",
+    "casio": "CASIO: \\((0{,}2+0{,}1+0{,}2)\\times100=50\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng ma trận – Leontief"
+  },
+  {
+    "id": 170,
+    "type": "ch8_chemical_balance",
+    "question": "Cân bằng phản ứng \\(a\\,\\mathrm{FeS_2}+b\\,\\mathrm{O_2}\\to c\\,\\mathrm{Fe_2O_3}+d\\,\\mathrm{SO_2}\\). Bộ hệ số nguyên dương tối giản \\((a,b,c,d)\\) là",
+    "matrix": null,
+    "options": [
+      "\\((4,11,2,8)\\)",
+      "\\((2,7,1,4)\\)",
+      "\\((4,10,2,6)\\)",
+      "\\((2,5,1,2)\\)"
+    ],
+    "correct": "\\((4,11,2,8)\\)",
+    "solution": "Bảo toàn Fe: \\(a=2c\\); S: \\(2a=d\\); O: \\(2b=3c+2d\\). Chọn \\(c=2\\) nhỏ nhất để nguyên, được \\(a=4,d=8,b=11\\).",
+    "quick": "Lập hệ tuyến tính theo số nguyên tử của từng nguyên tố.",
+    "casio": "CASIO: có thể giải hệ tỉ lệ rồi quy về bộ nguyên tối giản.",
+    "difficulty": 3,
+    "topic": "Ứng dụng hệ tuyến tính – Hóa học"
+  },
+  {
+    "id": 171,
+    "type": "ch8_factory_linear_system",
+    "question": "Một xưởng có sản lượng \\(x_1,x_2,x_3\\) thỏa \\(x_1+2x_2+x_3=100\\), \\(2x_1+x_2+3x_3=150\\), \\(x_1+x_2+x_3=80\\). Số sản phẩm loại 2 là",
+    "matrix": null,
+    "options": [
+      "\\(20\\)",
+      "\\(30\\)",
+      "\\(15\\)",
+      "\\(25\\)"
+    ],
+    "correct": "\\(20\\)",
+    "solution": "Lấy phương trình đầu trừ phương trình ba được \\(x_2=20\\).",
+    "quick": "Không cần giải cả hệ: trừ hai phương trình có nhiều hệ số giống nhau.",
+    "casio": "CASIO: giải hệ cho \\((x_1,x_2,x_3)=(50,20,10)\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ tuyến tính – Sản xuất"
+  },
+  {
+    "id": 172,
+    "type": "ch8_trade_equilibrium",
+    "question": "Ma trận trao đổi giữa ba quốc gia là \\(S=\\begin{pmatrix}0{,}5&0{,}2&0{,}3\\\\0{,}2&0{,}6&0{,}2\\\\0{,}3&0{,}2&0{,}5\\end{pmatrix}\\). Véc tơ thu nhập cân bằng \\(p\\) thỏa \\(Sp=p\\). Nếu \\(p_3=100\\), giá trị \\(p_1\\) là",
+    "matrix": null,
+    "options": [
+      "\\(100\\)",
+      "\\(120\\)",
+      "\\(80\\)",
+      "\\(90\\)"
+    ],
+    "correct": "\\(100\\)",
+    "solution": "Ma trận đối xứng và mỗi hàng có tổng bằng 1, nên \\((1,1,1)^T\\) là véc tơ riêng ứng với trị riêng 1. Với trạng thái cân bằng dương của mô hình này, các thành phần bằng nhau. Do \\(p_3=100\\), suy ra \\(p_1=100\\).",
+    "quick": "Nhận ra \\(S(1,1,1)^T=(1,1,1)^T\\).",
+    "casio": "CASIO: kiểm tra \\(S(100,100,100)^T=(100,100,100)^T\\).",
+    "difficulty": 3,
+    "topic": "Ứng dụng ma trận – Cân bằng trao đổi"
+  }
+]

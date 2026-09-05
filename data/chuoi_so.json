@@ -2068,5 +2068,527 @@
     "casio": "CASIO: tính \\(n/\\sqrt{n^2+1}\\) với \\(n\\) lớn, được gần 1.",
     "difficulty": 2,
     "topic": "Chuỗi số"
+  },
+  {
+    "id": 116,
+    "type": "nth_term_test_exp_limit",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(1+\\dfrac{2}{n}\\right)^n\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì số hạng tổng quát tiến về \\(e^2\\)",
+      "Phân kỳ vì số hạng tổng quát tiến về \\(e^2\\ne0\\)",
+      "Hội tụ theo tiêu chuẩn Cauchy",
+      "Bán hội tụ"
+    ],
+    "correct": "Phân kỳ vì số hạng tổng quát tiến về \\(e^2\\ne0\\)",
+    "solution": "Số hạng tổng quát là \\(a_n=(1+2/n)^n\\). Ta có \\(a_n\\to e^2\\ne0\\). Điều kiện cần để \\(\\sum a_n\\) hội tụ là \\(a_n\\to0\\), nên chuỗi phân kỳ.",
+    "quick": "Kiểm tra điều kiện cần trước: \\((1+2/n)^n\\to e^2\\ne0\\).",
+    "casio": "Có thể thử \\((1+2/n)^n\\) với \\(n\\) lớn; giá trị tiến gần \\(e^2\\).",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 117,
+    "type": "nth_term_test_parameter_rational",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n^2+m}{3n^2+1}\\), với \\(m\\) là tham số thực. Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ khi \\(m=0\\)",
+      "Hội tụ khi \\(m\\lt0\\)",
+      "Phân kỳ với mọi \\(m\\)",
+      "Hội tụ với mọi \\(m\\)"
+    ],
+    "correct": "Phân kỳ với mọi \\(m\\)",
+    "solution": "Với mọi \\(m\\) cố định, \\(\\displaystyle\\lim_{n\\to\\infty}\\dfrac{n^2+m}{3n^2+1}=\\dfrac13\\ne0\\). Vì số hạng tổng quát không tiến về 0 nên chuỗi phân kỳ với mọi \\(m\\).",
+    "quick": "Chia tử và mẫu cho \\(n^2\\): giới hạn luôn bằng \\(1/3\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 118,
+    "type": "dalembert_parameter_factorial",
+    "question": "Cho \\(a\\gt0\\). Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{a^n}{n!}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ với mọi \\(a\\gt0\\)",
+      "Chỉ hội tụ khi \\(a\\lt1\\)",
+      "Phân kỳ khi \\(a\\gt1\\)",
+      "Phân kỳ với mọi \\(a\\gt0\\)"
+    ],
+    "correct": "Hội tụ với mọi \\(a\\gt0\\)",
+    "solution": "Với \\(u_n=a^n/n!\\), ta có \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{a}{n+1}\\to0\\lt1\\). Theo tiêu chuẩn D'Alembert, chuỗi hội tụ với mọi \\(a\\gt0\\).",
+    "quick": "Tỷ số chỉ còn \\(a/(n+1)\\to0\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 119,
+    "type": "dalembert_central_binomial_divergence",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(2n)!}{(n!)^2}\\). Theo tiêu chuẩn D'Alembert, kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(D=2\\), chuỗi phân kỳ",
+      "\\(D=4\\), chuỗi phân kỳ",
+      "\\(D=1\\), chưa kết luận được",
+      "\\(D=\\dfrac12\\), chuỗi hội tụ"
+    ],
+    "correct": "\\(D=4\\), chuỗi phân kỳ",
+    "solution": "Đặt \\(u_n=(2n)!/(n!)^2\\). Khi đó \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(2n+2)(2n+1)}{(n+1)^2}\\to4\\gt1\\). Do đó chuỗi phân kỳ.",
+    "quick": "Rút gọn giai thừa trước khi lấy giới hạn tỷ số.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 120,
+    "type": "dalembert_parameter_central_binomial_inverse",
+    "question": "Cho \\(\\alpha\\gt0\\). Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(n!)^2}{(2n)!}\\alpha^n\\). Chuỗi hội tụ khi",
+    "matrix": null,
+    "options": [
+      "\\(\\alpha\\lt4\\)",
+      "\\(\\alpha\\lt2\\)",
+      "\\(\\alpha\\gt4\\)",
+      "Với mọi \\(\\alpha\\gt0\\)"
+    ],
+    "correct": "\\(\\alpha\\lt4\\)",
+    "solution": "Với \\(u_n=\\alpha^n(n!)^2/(2n)!\\), \\(\\dfrac{u_{n+1}}{u_n}=\\alpha\\dfrac{(n+1)^2}{(2n+2)(2n+1)}\\to\\alpha/4\\). D'Alembert cho hội tụ khi \\(\\alpha/4\\lt1\\), tức \\(\\alpha\\lt4\\). Khi \\(\\alpha=4\\), số hạng tổng quát không tiến về 0, nên không được lấy dấu bằng.",
+    "quick": "Giới hạn tỷ số là \\(\\alpha/4\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 121,
+    "type": "dalembert_multinomial_factorial",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(3n)!}{n!(2n)!}\\). Giá trị giới hạn D'Alembert \\(D\\) là",
+    "matrix": null,
+    "options": [
+      "\\(3\\)",
+      "\\(\\dfrac{27}{4}\\lt1\\)",
+      "\\(\\dfrac{27}{4}\\gt1\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(\\dfrac{27}{4}\\gt1\\)",
+    "solution": "Với \\(u_n=(3n)!/[n!(2n)!]\\), ta có \\(\\dfrac{u_{n+1}}{u_n}=\\dfrac{(3n+3)(3n+2)(3n+1)}{(n+1)(2n+2)(2n+1)}\\to\\dfrac{27}{4}\\gt1\\). Vì vậy chuỗi phân kỳ.",
+    "quick": "Lấy hệ số bậc cao nhất sau khi rút gọn tỷ số.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 122,
+    "type": "cauchy_parameter_linear_fraction_power",
+    "question": "Cho \\(a\\gt0\\). Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\dfrac{an+1}{2n+5}\\right)^n\\). Chuỗi hội tụ khi",
+    "matrix": null,
+    "options": [
+      "\\(a\\lt2\\)",
+      "\\(a\\gt2\\)",
+      "\\(a=2\\)",
+      "Với mọi \\(a\\gt0\\)"
+    ],
+    "correct": "\\(a\\lt2\\)",
+    "solution": "Theo tiêu chuẩn Cauchy, \\(C=\\lim\\sqrt[n]{u_n}=\\lim\\dfrac{an+1}{2n+5}=a/2\\). Do đó chuỗi hội tụ khi \\(a/2\\lt1\\), tức \\(a\\lt2\\). Với \\(a=2\\), \\(u_n=((2n+1)/(2n+5))^n\\to e^{-2}\\ne0\\), nên chuỗi vẫn phân kỳ.",
+    "quick": "Căn bậc \\(n\\) triệt tiêu số mũ \\(n\\), còn giới hạn \\(a/2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 123,
+    "type": "cauchy_exp_n2_basic",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(1-\\dfrac1n\\right)^{n^2}\\). Theo tiêu chuẩn Cauchy, kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "\\(C=e\\), chuỗi phân kỳ",
+      "\\(C=1\\), chưa kết luận được",
+      "\\(C=\\dfrac1e\\lt1\\), chuỗi hội tụ",
+      "\\(C=0\\), chuỗi hội tụ"
+    ],
+    "correct": "\\(C=\\dfrac1e\\lt1\\), chuỗi hội tụ",
+    "solution": "Ta có \\(\\sqrt[n]{u_n}=(1-1/n)^n\\to e^{-1}=1/e\\lt1\\). Vì vậy chuỗi hội tụ theo tiêu chuẩn Cauchy.",
+    "quick": "Sau khi lấy căn bậc \\(n\\), còn giới hạn quen thuộc \\((1-1/n)^n\\to e^{-1}\\).",
+    "casio": "Có thể thử \\((1-1/n)^n\\) với \\(n\\) lớn, kết quả gần \\(1/e\\).",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 124,
+    "type": "cauchy_exp_n_nplus1",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}\\left(\\dfrac{n-1}{n+1}\\right)^{n(n+1)}\\). Theo tiêu chuẩn Cauchy, giới hạn \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(e\\)",
+      "\\(e^2\\)",
+      "\\(e^{-2}\\lt1\\)"
+    ],
+    "correct": "\\(e^{-2}\\lt1\\)",
+    "solution": "Ta có \\(\\sqrt[n]{u_n}=\\left(\\dfrac{n-1}{n+1}\\right)^{n+1}=\\left(1-\\dfrac{2}{n+1}\\right)^{n+1}\\to e^{-2}\\lt1\\). Vì vậy chuỗi hội tụ.",
+    "quick": "Đưa về giới hạn \\((1-2/(n+1))^{n+1}\\to e^{-2}\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 125,
+    "type": "cauchy_parameter_kn_over_nplus1",
+    "question": "Cho \\(k\\gt0\\). Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\dfrac{kn}{n+1}\\right)^n\\). Chuỗi hội tụ khi",
+    "matrix": null,
+    "options": [
+      "\\(k\\lt1\\)",
+      "\\(k\\gt1\\)",
+      "\\(k=1\\)",
+      "Với mọi \\(k\\gt0\\)"
+    ],
+    "correct": "\\(k\\lt1\\)",
+    "solution": "Theo Cauchy, \\(C=\\lim\\sqrt[n]{u_n}=\\lim kn/(n+1)=k\\). Vì vậy hội tụ khi \\(k\\lt1\\). Với \\(k=1\\), \\((n/(n+1))^n\\to e^{-1}\\ne0\\), nên chuỗi phân kỳ.",
+    "quick": "Giới hạn căn bậc \\(n\\) chính là \\(k\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 126,
+    "type": "cauchy_squared_linear_fraction",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\dfrac{n}{3n-1}\\right)^{2n}\\). Theo tiêu chuẩn Cauchy, giá trị \\(C\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac13\\)",
+      "\\(\\dfrac16\\)",
+      "\\(\\dfrac19\\lt1\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(\\dfrac19\\lt1\\)",
+    "solution": "\\(\\sqrt[n]{u_n}=\\left(\\dfrac{n}{3n-1}\\right)^2\\to(1/3)^2=1/9\\lt1\\). Vì vậy chuỗi hội tụ.",
+    "quick": "Lấy căn bậc \\(n\\) làm số mũ \\(2n\\) còn lại số mũ 2.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 127,
+    "type": "comparison_parameter_power_rational",
+    "question": "Cho \\(a\\gt0\\). Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n^a}{n^3+1}\\). Chuỗi hội tụ khi",
+    "matrix": null,
+    "options": [
+      "\\(a\\lt2\\)",
+      "\\(a\\gt2\\)",
+      "\\(a\\ge2\\)",
+      "\\(a\\lt3\\)"
+    ],
+    "correct": "\\(a\\lt2\\)",
+    "solution": "Khi \\(n\\to\\infty\\), \\(\\dfrac{n^a}{n^3+1}\\sim\\dfrac1{n^{3-a}}\\). Chuỗi p hội tụ khi \\(3-a\\gt1\\), tương đương \\(a\\lt2\\).",
+    "quick": "So sánh tương đương với \\(1/n^{3-a}\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 128,
+    "type": "comparison_parameter_radical_difference",
+    "question": "Tìm điều kiện của \\(\\alpha\\) để chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{\\sqrt{n+1}-\\sqrt n}{n^\\alpha}\\) hội tụ.",
+    "matrix": null,
+    "options": [
+      "\\(\\alpha\\gt\\dfrac12\\)",
+      "\\(\\alpha\\gt1\\)",
+      "\\(\\alpha\\gt0\\)",
+      "\\(\\alpha\\lt\\dfrac12\\)"
+    ],
+    "correct": "\\(\\alpha\\gt\\dfrac12\\)",
+    "solution": "Rational hóa: \\(\\sqrt{n+1}-\\sqrt n=\\dfrac1{\\sqrt{n+1}+\\sqrt n}\\sim\\dfrac1{2\\sqrt n}\\). Vì vậy số hạng tương đương \\(\\dfrac1{2n^{\\alpha+1/2}}\\). Chuỗi hội tụ khi \\(\\alpha+1/2\\gt1\\), tức \\(\\alpha\\gt1/2\\).",
+    "quick": "Rational hóa hiệu hai căn rồi đưa về p-chuỗi.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 129,
+    "type": "comparison_integer_parameter_degree",
+    "question": "Cho \\(m\\) là số nguyên. Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{n^2+1}{n^m+5}\\). Chuỗi hội tụ khi và chỉ khi",
+    "matrix": null,
+    "options": [
+      "\\(m\\ge3\\)",
+      "\\(m\\gt2\\)",
+      "\\(m\\gt3\\)",
+      "\\(m\\lt3\\)"
+    ],
+    "correct": "\\(m\\gt3\\)",
+    "solution": "Khi \\(n\\to\\infty\\), \\(\\dfrac{n^2+1}{n^m+5}\\sim\\dfrac1{n^{m-2}}\\). Chuỗi p hội tụ khi \\(m-2\\gt1\\), tức \\(m\\gt3\\).",
+    "quick": "Lấy bậc lớn nhất ở tử và mẫu: số hạng giống \\(1/n^{m-2}\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 130,
+    "type": "comparison_geometric_exponential_fraction",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{3^n+1}{4^n-2}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ vì số hạng tương đương \\((3/4)^n\\)",
+      "Phân kỳ",
+      "Bán hội tụ",
+      "Không thể so sánh"
+    ],
+    "correct": "Hội tụ vì số hạng tương đương \\((3/4)^n\\)",
+    "solution": "Ta có \\(\\dfrac{3^n+1}{4^n-2}\\sim(3/4)^n\\). Chuỗi hình học \\(\\sum(3/4)^n\\) hội tụ vì công bội \\(3/4\\lt1\\), nên chuỗi đã cho hội tụ.",
+    "quick": "Chia tử và mẫu cho \\(4^n\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 131,
+    "type": "alternating_p_parameter_classification",
+    "question": "Cho \\(p\\gt0\\). Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{n^p}\\). Khẳng định đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối khi \\(p\\gt1\\), bán hội tụ khi \\(0\\lt p\\le1\\)",
+      "Hội tụ tuyệt đối với mọi \\(p\\gt0\\)",
+      "Bán hội tụ khi \\(p\\gt1\\)",
+      "Phân kỳ với mọi \\(p\\gt0\\)"
+    ],
+    "correct": "Hội tụ tuyệt đối khi \\(p\\gt1\\), bán hội tụ khi \\(0\\lt p\\le1\\)",
+    "solution": "Chuỗi đan dấu hội tụ theo Leibniz với mọi \\(p\\gt0\\). Chuỗi trị tuyệt đối là p-chuỗi \\(\\sum1/n^p\\), hội tụ khi và chỉ khi \\(p\\gt1\\). Vì vậy \\(p\\gt1\\) cho hội tụ tuyệt đối, còn \\(0\\lt p\\le1\\) cho bán hội tụ.",
+    "quick": "Tách hai câu hỏi: Leibniz cho chuỗi gốc; p-chuỗi cho trị tuyệt đối.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 132,
+    "type": "alternating_log_conditional",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=2}^{\\infty}\\dfrac{(-1)^n}{n\\ln n}\\). Chuỗi này",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Bán hội tụ",
+      "Phân kỳ",
+      "Không xác định"
+    ],
+    "correct": "Bán hội tụ",
+    "solution": "Dãy \\(b_n=1/(n\\ln n)\\) giảm và tiến về 0, nên chuỗi đan dấu hội tụ theo Leibniz. Tuy nhiên chuỗi trị tuyệt đối \\(\\sum1/(n\\ln n)\\) phân kỳ. Vì vậy chuỗi bán hội tụ.",
+    "quick": "Leibniz hội tụ, nhưng chuỗi trị tuyệt đối là chuỗi logarithm biên và phân kỳ.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 133,
+    "type": "alternating_term_test_exponential_growth",
+    "question": "Xét chuỗi \\(\\displaystyle\\sum_{n=1}^{\\infty}(-1)^n\\dfrac{3^n}{2^n}\\). Kết luận đúng là",
+    "matrix": null,
+    "options": [
+      "Hội tụ tuyệt đối",
+      "Bán hội tụ",
+      "Hội tụ theo Leibniz",
+      "Phân kỳ"
+    ],
+    "correct": "Phân kỳ",
+    "solution": "Số hạng tổng quát có độ lớn \\((3/2)^n\\), không tiến về 0 mà tăng vô hạn. Do đó điều kiện cần không thỏa mãn và chuỗi phân kỳ.",
+    "quick": "Có dấu \\((-1)^n\\) không đủ; trước hết phải kiểm tra số hạng có tiến về 0 hay không.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số"
+  },
+  {
+    "id": 134,
+    "type": "series_sum_geometric_from_n1",
+    "question": "Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{2^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac32\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Đây là chuỗi hình học với số hạng đầu \\(u_1=1/2\\) và công bội \\(q=1/2\\). Do \\(|q|\\lt1\\), \\(S=\\dfrac{u_1}{1-q}=\\dfrac{1/2}{1-1/2}=1\\).",
+    "quick": "Chuỗi bắt đầu từ \\(n=1\\): \\(S=(1/2)/(1-1/2)=1\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 135,
+    "type": "series_sum_geometric_two_thirds",
+    "question": "Tính tổng \\(S=\\displaystyle\\sum_{n=0}^{\\infty}\\left(\\dfrac23\\right)^n\\).",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(\\dfrac32\\)",
+      "\\(3\\)",
+      "\\(\\dfrac13\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Đây là chuỗi hình học có số hạng đầu 1 và công bội \\(q=2/3\\). Vì \\(|q|\\lt1\\), \\(S=\\dfrac{1}{1-2/3}=3\\).",
+    "quick": "\\(\\sum_{n=0}^{\\infty}q^n=1/(1-q)\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 136,
+    "type": "series_sum_scaled_geometric",
+    "question": "Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{5}{3^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac13\\)",
+      "\\(\\dfrac32\\)",
+      "\\(2\\)",
+      "\\(\\dfrac52\\)"
+    ],
+    "correct": "\\(\\dfrac52\\)",
+    "solution": "Ta có \\(S=5\\sum_{n=1}^{\\infty}(1/3)^n=5\\cdot\\dfrac{1/3}{1-1/3}=5/2\\).",
+    "quick": "Tách hệ số 5 ra ngoài rồi dùng tổng cấp số nhân bắt đầu từ \\(n=1\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 137,
+    "type": "series_sum_general_geometric",
+    "question": "Cho \\(|r|\\lt1\\). Tổng của chuỗi hình học \\(\\displaystyle\\sum_{n=0}^{\\infty}a r^n\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{a}{1-r}\\)",
+      "\\(\\dfrac{a}{1+r}\\)",
+      "\\(\\dfrac{ar}{1-r}\\)",
+      "\\(\\dfrac{a}{r-1}\\)"
+    ],
+    "correct": "\\(\\dfrac{a}{1-r}\\)",
+    "solution": "Chuỗi có số hạng đầu \\(a\\) và công bội \\(r\\). Với \\(|r|\\lt1\\), tổng chuỗi hình học là \\(S=a/(1-r)\\).",
+    "quick": "Công thức chuẩn: \\(a+ar+ar^2+\\cdots=a/(1-r)\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 138,
+    "type": "series_sum_alternating_log",
+    "question": "Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{(-1)^{n-1}}{n2^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\ln2\\)",
+      "\\(\\ln\\left(\\dfrac32\\right)\\)",
+      "\\(\\ln3\\)",
+      "\\(\\dfrac12\\ln2\\)"
+    ],
+    "correct": "\\(\\ln\\left(\\dfrac32\\right)\\)",
+    "solution": "Dùng khai triển \\(\\ln(1+x)=\\sum_{n=1}^{\\infty}(-1)^{n-1}x^n/n\\) với \\(|x|\\le1\\), \\(x\\ne-1\\). Thế \\(x=1/2\\), ta được \\(S=\\ln(1+1/2)=\\ln(3/2)\\).",
+    "quick": "Nhận dạng chuỗi Taylor của \\(\\ln(1+x)\\) tại \\(x=1/2\\).",
+    "casio": "Có thể tính gần đúng \\(\\ln(1.5)\\approx0.4055\\) để đối chiếu.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 139,
+    "type": "series_sum_telescoping_parameter_a",
+    "question": "Cho \\(a\\gt0\\). Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{(n+a)(n+a+1)}\\).",
+    "matrix": null,
+    "options": [
+      "\\(a\\)",
+      "\\(a+1\\)",
+      "\\(\\dfrac1a\\)",
+      "\\(\\dfrac{1}{a+1}\\)"
+    ],
+    "correct": "\\(\\dfrac{1}{a+1}\\)",
+    "solution": "Ta có \\(\\dfrac{1}{(n+a)(n+a+1)}=\\dfrac{1}{n+a}-\\dfrac{1}{n+a+1}\\). Tổng riêng triệt tiêu liên tiếp và tiến tới \\(1/(a+1)\\).",
+    "quick": "Tách thành hiệu hai phân thức liên tiếp để telescope.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 140,
+    "type": "series_sum_telescoping_n_nplus2",
+    "question": "Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{1}{n(n+2)}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac34\\)",
+      "\\(1\\)",
+      "\\(\\dfrac12\\)",
+      "\\(\\dfrac23\\)"
+    ],
+    "correct": "\\(\\dfrac34\\)",
+    "solution": "Ta có \\(\\dfrac1{n(n+2)}=\\dfrac12\\left(\\dfrac1n-\\dfrac1{n+2}\\right)\\). Vì vậy \\(S_N=\\dfrac12\\left(1+\\dfrac12-\\dfrac1{N+1}-\\dfrac1{N+2}\\right)\\). Cho \\(N\\to\\infty\\), được \\(S=3/4\\).",
+    "quick": "Telescope sau khi tách \\(1/[n(n+2)]\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 141,
+    "type": "series_sum_geometric_parameter_k",
+    "question": "Cho \\(k\\gt0\\). Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\left(\\dfrac{1}{k+1}\\right)^n\\).",
+    "matrix": null,
+    "options": [
+      "\\(k\\)",
+      "\\(k+1\\)",
+      "\\(\\dfrac1k\\)",
+      "\\(\\dfrac{1}{k+1}\\)"
+    ],
+    "correct": "\\(\\dfrac1k\\)",
+    "solution": "Chuỗi hình học có công bội \\(q=1/(k+1)\\), với \\(0\\lt q\\lt1\\). Vì bắt đầu từ \\(n=1\\), \\(S=\\dfrac{q}{1-q}=\\dfrac{1/(k+1)}{k/(k+1)}=1/k\\).",
+    "quick": "Chuỗi bắt đầu từ \\(n=1\\), nên tổng là \\(q/(1-q)\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 142,
+    "type": "series_sum_telescoping_square_difference",
+    "question": "Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{2n+1}{n^2(n+1)^2}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac12\\)",
+      "\\(2\\)",
+      "\\(\\dfrac32\\)",
+      "\\(1\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Nhận thấy \\(\\dfrac{2n+1}{n^2(n+1)^2}=\\dfrac1{n^2}-\\dfrac1{(n+1)^2}\\). Do đó chuỗi telescope: \\(S_N=1-1/(N+1)^2\\to1\\).",
+    "quick": "Tử \\(2n+1=(n+1)^2-n^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 143,
+    "type": "series_sum_difference_geometric",
+    "question": "Tính tổng \\(S=\\displaystyle\\sum_{n=1}^{\\infty}\\dfrac{4^n-1}{5^n}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac34\\)",
+      "\\(\\dfrac{15}{4}\\)",
+      "\\(4\\)",
+      "\\(\\dfrac54\\)"
+    ],
+    "correct": "\\(\\dfrac{15}{4}\\)",
+    "solution": "Ta có \\(S=\\sum(4/5)^n-\\sum(1/5)^n\\), đều bắt đầu từ \\(n=1\\). Tổng thứ nhất là 4, tổng thứ hai là \\(1/4\\). Vì vậy \\(S=4-1/4=15/4\\).",
+    "quick": "Tách thành hai chuỗi hình học.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Tính tổng"
+  },
+  {
+    "id": 144,
+    "type": "series_partial_sum_log_telescoping",
+    "question": "Cho \\(\\displaystyle\\sum_{n=1}^{\\infty}\\ln\\left(1+\\dfrac1n\\right)\\). Tổng \\(N\\) số hạng đầu \\(S_N\\) và tính chất của chuỗi là",
+    "matrix": null,
+    "options": [
+      "\\(S_N=\\ln N\\), chuỗi hội tụ",
+      "\\(S_N=\\ln(N+1)\\), tổng chuỗi bằng 1",
+      "\\(S_N=\\ln(N+1)\\), tổng chuỗi bằng 0",
+      "\\(S_N=\\ln(N+1)\\), chuỗi phân kỳ tới \\(+\\infty\\)"
+    ],
+    "correct": "\\(S_N=\\ln(N+1)\\), chuỗi phân kỳ tới \\(+\\infty\\)",
+    "solution": "Vì \\(\\ln(1+1/n)=\\ln((n+1)/n)=\\ln(n+1)-\\ln n\\), nên \\(S_N=\\ln(N+1)-\\ln1=\\ln(N+1)\\). Khi \\(N\\to\\infty\\), \\(S_N\\to+\\infty\\), nên chuỗi phân kỳ.",
+    "quick": "Biến log của thương thành hiệu hai log để telescope.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Chuỗi số – Tính tổng"
   }
 ]

@@ -1404,21 +1404,165 @@
     "topic": "Hệ phương trình tuyến tính"
   },
   {
-    "id": 90,
-    "type": "double_integral_area_setup_sideways_parabola",
-    "question": "Công thức tính diện tích \\(S\\) của miền phẳng giới hạn bởi các đường \\(y=2-x\\) và \\(x=y^2\\) là",
+    "id": 79,
+    "type": "system_solution_count_concrete",
+    "question": "Hệ phương trình tuyến tính \\(\\begin{cases}x-2y+3z=4\\\\-4x+y+2z=-2\\\\y-2z=-2\\end{cases}\\) có bao nhiêu nghiệm?",
     "matrix": null,
     "options": [
-      "\\(S=\\displaystyle\\int_{-2}^{1}\\int_0^{2-y}dx\\,dy\\)",
-      "\\(S=\\displaystyle\\int_0^4\\int_{-\\sqrt{x}}^{\\sqrt{x}}dy\\,dx\\)",
-      "\\(S=\\displaystyle\\int_0^4\\int_{-\\sqrt{x}}^{2-x}dy\\,dx\\)",
-      "\\(S=\\displaystyle\\int_{-2}^{1}\\int_{y^2}^{2-y}dx\\,dy\\)"
+      "Vô nghiệm",
+      "Một nghiệm",
+      "Hai nghiệm",
+      "Vô số nghiệm"
     ],
-    "correct": "\\(S=\\displaystyle\\int_{-2}^{1}\\int_{y^2}^{2-y}dx\\,dy\\)",
-    "solution": "Viết đường thẳng dưới dạng \\(x=2-y\\). Giao điểm với \\(x=y^2\\) thỏa \\(y^2=2-y\\), tức \\(y^2+y-2=0\\), nên \\(y=-2\\) hoặc \\(y=1\\). Với \\(-2\\le y\\le1\\), biên trái là \\(x=y^2\\) và biên phải là \\(x=2-y\\). Vì vậy \\(S=\\int_{-2}^{1}\\int_{y^2}^{2-y}1\\,dx\\,dy\\).",
-    "quick": "Đổi đường thẳng thành \\(x=2-y\\); giải \\(y^2=2-y\\) được \\(y=-2,1\\), rồi lấy \\(x\\) từ \\(y^2\\) đến \\(2-y\\).",
-    "casio": "CASIO: có thể kiểm tra diện tích bằng \\(\\int_{-2}^{1}(2-y-y^2)dy\\), kết quả \\(9/2\\).",
+    "correct": "Vô số nghiệm",
+    "solution": "Ma trận hệ số có định thức bằng 0. Khử Gauss cho thấy \\(\\operatorname{rank}(A)=\\operatorname{rank}(A|b)=2\\lt3\\), nên hệ có một ẩn tự do và do đó có vô số nghiệm. Cụ thể có thể đặt \\(z=t\\), khi đó \\(y=2t-2\\) và \\(x=t\\).",
+    "quick": "Hai hạng bằng nhau và nhỏ hơn số ẩn: \\(r(A)=r(A|b)=2\\lt3\\Rightarrow\\) vô số nghiệm.",
+    "casio": "CASIO: có thể dùng Equation/Func để kiểm tra một số nghiệm sau khi đặt một ẩn tự do; để kết luận số nghiệm nên khử Gauss hoặc xét hạng.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 80,
+    "type": "system_candidate_solution",
+    "question": "Cho hệ phương trình tuyến tính \\(\\begin{cases}2x-2y+z=1\\\\3x+y-2z=3\\end{cases}\\). Bộ số nào sau đây có thể là một nghiệm của hệ phương trình trên?",
+    "matrix": null,
+    "options": [
+      "\\((x,y,z)=\\left(\\dfrac12,\\dfrac12,-1\\right)\\)",
+      "\\((x,y,z)=\\left(-\\dfrac12,-\\dfrac12,1\\right)\\)",
+      "\\((x,y,z)=\\left(\\dfrac12,-\\dfrac12,-1\\right)\\)",
+      "\\((x,y,z)=\\left(\\dfrac12,-\\dfrac12,1\\right)\\)"
+    ],
+    "correct": "\\((x,y,z)=\\left(\\dfrac12,-\\dfrac12,-1\\right)\\)",
+    "solution": "Thay từng phương án vào hai phương trình. Với \\((x,y,z)=(1/2,-1/2,-1)\\): \\(2x-2y+z=1+1-1=1\\) và \\(3x+y-2z=3/2-1/2+2=3\\). Vì thỏa cả hai phương trình nên đây là một nghiệm.",
+    "quick": "Không cần giải hệ; thế trực tiếp từng bộ vào hai phương trình.",
+    "casio": "CASIO: dùng CALC thay từng bộ \\((x,y,z)\\) vào hai vế; phương án đúng phải thỏa đồng thời cả hai phương trình.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 81,
+    "type": "general_solution_variant",
+    "question": "Cho hệ phương trình tuyến tính \\(\\begin{cases}x+y-2z=-1\\\\x-y=3\\end{cases}\\). Công thức nghiệm tổng quát của hệ là",
+    "matrix": null,
+    "options": [
+      "\\((x,y,z)=(t+1,t-2,-t),\\ t\\in\\mathbb R\\)",
+      "\\((x,y,z)=(t+1,t+2,t),\\ t\\in\\mathbb R\\)",
+      "\\((x,y,z)=(-t+1,t-2,t),\\ t\\in\\mathbb R\\)",
+      "\\((x,y,z)=(t+1,t-2,t),\\ t\\in\\mathbb R\\)"
+    ],
+    "correct": "\\((x,y,z)=(t+1,t-2,t),\\ t\\in\\mathbb R\\)",
+    "solution": "Từ \\(x-y=3\\) suy ra \\(x=y+3\\). Thế vào phương trình đầu: \\(2y+3-2z=-1\\), nên \\(y-z=-2\\), tức \\(y=z-2\\). Đặt \\(z=t\\), ta được \\(y=t-2\\) và \\(x=t+1\\).",
+    "quick": "Đặt ẩn tự do \\(z=t\\), rồi thế ngược: \\(y=t-2,\\ x=t+1\\).",
+    "casio": "CASIO không cần thiết; khử hai phương trình rồi đặt một ẩn tự do.",
+    "difficulty": 2,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 82,
+    "type": "parameter_infinite_two_parameters",
+    "question": "Tìm các tham số \\(a,b\\) để hệ \\(\\begin{cases}(b+1)x+4y=a^2\\\\x+ay=2\\end{cases}\\) có vô số nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\((a,b)=(-2,1)\\)",
+      "\\((a,b)=(2,-1)\\)",
+      "\\((a,b)=(2,1)\\)",
+      "\\((a,b)=(-2,-1)\\)"
+    ],
+    "correct": "\\((a,b)=(2,1)\\)",
+    "solution": "Để hệ hai phương trình hai ẩn có vô số nghiệm, hai phương trình phải tỉ lệ. Gọi phương trình đầu bằng \\(k\\) lần phương trình hai. Khi đó \\(b+1=k\\), \\(4=ka\\), \\(a^2=2k\\). Từ \\(k=a^2/2\\) và \\(ka=4\\) suy ra \\(a^3=8\\), nên \\(a=2\\). Khi đó \\(k=2\\), nên \\(b+1=2\\Rightarrow b=1\\).",
+    "quick": "Vô số nghiệm \\(\\Rightarrow\\) các bộ hệ số và vế phải cùng tỉ lệ.",
+    "casio": "CASIO: sau khi suy ra \\(a^3=8\\), giải được \\(a=2\\), rồi thế lại để tìm \\(b=1\\).",
     "difficulty": 3,
-    "topic": "Tích phân kép"
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 83,
+    "type": "parameter_none_two_parameters_4vars",
+    "question": "Tìm các tham số \\(a,b\\) để hệ \\(\\begin{cases}x-ay+(b+1)z+2t=3\\\\2x+(b-1)y+az+4t=1\\end{cases}\\) vô nghiệm.",
+    "matrix": null,
+    "options": [
+      "\\(a=\\dfrac45,\\ b=-\\dfrac35\\)",
+      "\\(a=-\\dfrac45,\\ b=-\\dfrac35\\)",
+      "\\(a=-\\dfrac45,\\ b=\\dfrac35\\)",
+      "\\(a=\\dfrac45,\\ b=\\dfrac35\\)"
+    ],
+    "correct": "\\(a=\\dfrac45,\\ b=-\\dfrac35\\)",
+    "solution": "Vì hệ có 4 ẩn và chỉ 2 phương trình, hệ chỉ vô nghiệm khi hai vế trái tỉ lệ nhưng vế phải không cùng tỉ lệ. Do hệ số của \\(x\\) và \\(t\\) ở phương trình hai gấp 2 lần phương trình một, cần \\(b-1=-2a\\) và \\(a=2(b+1)\\). Giải hệ này được \\(a=4/5,\\ b=-3/5\\). Khi đó vế trái phương trình hai đúng bằng 2 lần vế trái phương trình một, nhưng vế phải là \\(1\\ne2\\cdot3\\), nên hệ vô nghiệm.",
+    "quick": "Ép hàng hệ số thứ hai bằng \\(2\\) lần hàng thứ nhất, rồi kiểm tra vế phải không tỉ lệ.",
+    "casio": "CASIO: giải hệ \\(b-1=-2a\\), \\(a=2(b+1)\\) được \\((a,b)=(4/5,-3/5)\\).",
+    "difficulty": 3,
+    "topic": "Biện luận hệ tham số"
+  },
+  {
+    "id": 84,
+    "type": "parameter_unique_3vars_variant",
+    "question": "Tìm điều kiện của tham số \\(a\\) để hệ \\(\\begin{cases}x+y+2z=4\\\\-3x+y+3z=1\\\\ax-2z=0\\end{cases}\\) có nghiệm duy nhất.",
+    "matrix": null,
+    "options": [
+      "\\(a\\ne17\\)",
+      "\\(a\\ne8\\)",
+      "\\(a\\ne18\\)",
+      "\\(a\\ne7\\)"
+    ],
+    "correct": "\\(a\\ne8\\)",
+    "solution": "Ma trận hệ số là \\(A=\\begin{pmatrix}1&1&2\\\\-3&1&3\\\\a&0&-2\\end{pmatrix}\\). Ta có \\(\\det A=a-8\\). Hệ vuông có nghiệm duy nhất khi \\(\\det A\\ne0\\), do đó \\(a\\ne8\\).",
+    "quick": "Hệ 3 phương trình 3 ẩn có nghiệm duy nhất khi \\(\\det A\\ne0\\); ở đây \\(\\det A=a-8\\).",
+    "casio": "CASIO không tính định thức chứa tham số trực tiếp; khai triển định thức theo \\(a\\), rồi giải \\(a-8\\ne0\\).",
+    "difficulty": 3,
+    "topic": "Hệ phương trình tuyến tính"
+  },
+  {
+    "id": 85,
+    "type": "economic_supply_demand_single_market",
+    "question": "Trong mô hình cung - cầu đơn giản, hàm cầu \\(Q_d=10-P\\) và hàm cung \\(Q_s=2+P\\). Giá cân bằng \\(P^*\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(4\\)",
+      "\\(6\\)",
+      "\\(8\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(4\\)",
+    "solution": "Tại cân bằng, \\(Q_d=Q_s\\). Do đó \\(10-P=2+P\\Rightarrow2P=8\\Rightarrow P^*=4\\).",
+    "quick": "Cân bằng thị trường: đặt cung bằng cầu.",
+    "casio": "CASIO: giải \\(10-P=2+P\\), được \\(P=4\\).",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ phương trình tuyến tính"
+  },
+  {
+    "id": 86,
+    "type": "economic_supply_demand_formula",
+    "question": "Cho mô hình \\(Q_d=a-bP\\), \\(Q_s=-c+dP\\), với \\(a,b,c,d\\gt0\\). Giá cân bằng \\(P^*\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{a-c}{b+d}\\)",
+      "\\(\\dfrac{a+c}{b+d}\\)",
+      "\\(\\dfrac{a+c}{b-d}\\)",
+      "\\(\\dfrac{b+d}{a+c}\\)"
+    ],
+    "correct": "\\(\\dfrac{a+c}{b+d}\\)",
+    "solution": "Điều kiện cân bằng là \\(a-bP=-c+dP\\). Chuyển vế được \\(a+c=(b+d)P\\), nên \\(P^*=(a+c)/(b+d)\\).",
+    "quick": "Đặt \\(Q_d=Q_s\\), gom hằng số sang một phía và hệ số của \\(P\\) sang phía kia.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ phương trình tuyến tính"
+  },
+  {
+    "id": 87,
+    "type": "economic_two_market_system_setup",
+    "question": "Cho mô hình cân bằng hai hàng hóa: \\(Q_{d1}=10-2P_1+P_2\\), \\(Q_{s1}=-2+P_1\\), \\(Q_{d2}=15+P_1-2P_2\\), \\(Q_{s2}=-1+P_2\\). Hệ phương trình xác định \\((P_1,P_2)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\begin{cases}2P_1-P_2=10\\\\-P_1+2P_2=15\\end{cases}\\)",
+      "\\(\\begin{cases}3P_1+P_2=12\\\\P_1+3P_2=16\\end{cases}\\)",
+      "\\(\\begin{cases}3P_1-P_2=12\\\\-P_1+3P_2=16\\end{cases}\\)",
+      "\\(\\begin{cases}P_1-P_2=8\\\\-P_1+P_2=14\\end{cases}\\)"
+    ],
+    "correct": "\\(\\begin{cases}3P_1-P_2=12\\\\-P_1+3P_2=16\\end{cases}\\)",
+    "solution": "Cân bằng từng thị trường: \\(Q_{d1}=Q_{s1}\\Rightarrow10-2P_1+P_2=-2+P_1\\Rightarrow3P_1-P_2=12\\). Tương tự, \\(15+P_1-2P_2=-1+P_2\\Rightarrow-P_1+3P_2=16\\).",
+    "quick": "Lập hai phương trình bằng cách đặt cầu bằng cung cho từng hàng hóa.",
+    "casio": "Sau khi lập hệ, có thể dùng Equation/Simultaneous để giải nếu cần.",
+    "difficulty": 2,
+    "topic": "Ứng dụng hệ phương trình tuyến tính"
   }
 ]

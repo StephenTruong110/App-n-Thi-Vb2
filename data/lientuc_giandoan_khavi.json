@@ -1222,5 +1222,185 @@
     "casio": "CASIO: giải lần lượt \\(c=0\\), \\(b=4\\), \\(a+b+c=1\\); sau đó kiểm tra \\(2a+b=-2\\).",
     "difficulty": 3,
     "topic": "Giới hạn & Liên tục"
+  },
+  {
+    "id": 69,
+    "type": "discontinuity_jump_logistic",
+    "question": "Xác định loại điểm gián đoạn \\(x=0\\) của hàm \\(f(x)=\\dfrac{1}{1+e^{1/x}}\\), \\(x\\ne0\\).",
+    "matrix": null,
+    "options": [
+      "Gián đoạn bỏ được",
+      "Gián đoạn vô cực",
+      "Gián đoạn bước nhảy (loại 1)",
+      "Hàm liên tục tại \\(x=0\\)"
+    ],
+    "correct": "Gián đoạn bước nhảy (loại 1)",
+    "solution": "Khi \\(x\\to0^-\\), \\(1/x\\to-\\infty\\), nên \\(e^{1/x}\\to0\\) và \\(f(x)\\to1\\). Khi \\(x\\to0^+\\), \\(e^{1/x}\\to+\\infty\\), nên \\(f(x)\\to0\\). Hai giới hạn một phía hữu hạn nhưng khác nhau, nên \\(x=0\\) là điểm gián đoạn bước nhảy.",
+    "quick": "Trái → 1, phải → 0.",
+    "casio": "Thử \\(x=-0{,}01\\) và \\(x=0{,}01\\) để quan sát hai giới hạn một phía.",
+    "difficulty": 2,
+    "topic": "Gián đoạn"
+  },
+  {
+    "id": 70,
+    "type": "discontinuity_removable_trig",
+    "question": "Cho \\(f(x)=\\dfrac{\\tan x}{x}\\) với \\(x\\ne0\\). Khẳng định đúng về \\(x=0\\) là",
+    "matrix": null,
+    "options": [
+      "Gián đoạn loại 2",
+      "Gián đoạn bước nhảy",
+      "Gián đoạn bỏ được",
+      "Hàm đã liên tục tại \\(x=0\\)"
+    ],
+    "correct": "Gián đoạn bỏ được",
+    "solution": "Hàm chưa được xác định tại \\(x=0\\), nhưng \\(\\lim_{x\\to0}\\tan x/x=1\\) tồn tại hữu hạn. Vì vậy đây là gián đoạn bỏ được; có thể bổ sung \\(f(0)=1\\) để hàm liên tục.",
+    "quick": "Giới hạn tồn tại hữu hạn nhưng hàm chưa xác định tại điểm đó → bỏ được.",
+    "casio": "Không cần CASIO; dùng giới hạn đáng nhớ \\(\\tan x/x\\to1\\).",
+    "difficulty": 1,
+    "topic": "Gián đoạn"
+  },
+  {
+    "id": 71,
+    "type": "continuity_no_extension_arctan",
+    "question": "Cho \\(f(x)=\\arctan\\left(\\dfrac1x\\right)\\) với \\(x\\ne0\\). Có thể bổ sung giá trị \\(f(0)\\) nào để hàm liên tục tại \\(0\\)?",
+    "matrix": null,
+    "options": [
+      "\\(f(0)=0\\)",
+      "\\(f(0)=\\dfrac\\pi2\\)",
+      "\\(f(0)=-\\dfrac\\pi2\\)",
+      "Không thể bổ sung"
+    ],
+    "correct": "Không thể bổ sung",
+    "solution": "Ta có \\(\\lim_{x\\to0^-}f(x)=-\\pi/2\\) và \\(\\lim_{x\\to0^+}f(x)=\\pi/2\\). Hai giới hạn một phía khác nhau, nên giới hạn hai phía không tồn tại. Không thể chọn một giá trị \\(f(0)\\) để làm hàm liên tục.",
+    "quick": "Hai giới hạn một phía là \\(-\\pi/2\\) và \\(\\pi/2\\).",
+    "casio": "Thử \\(x=\\pm10^{-4}\\) ở chế độ radian.",
+    "difficulty": 2,
+    "topic": "Liên tục"
+  },
+  {
+    "id": 72,
+    "type": "continuity_concept_false_statement",
+    "question": "Khẳng định nào sau đây sai?",
+    "matrix": null,
+    "options": [
+      "Nếu \\(f\\) liên tục trên \\([a,b]\\) và \\(f(a)f(b)\\lt0\\) thì \\(f(x)=0\\) có ít nhất một nghiệm trong \\((a,b)\\)",
+      "Hàm \\(y=|x|\\) liên tục trên \\(\\mathbb R\\)",
+      "Nếu \\(f\\) gián đoạn tại \\(x_0\\) thì \\(f(x_0)\\) chắc chắn không xác định",
+      "Hàm đa thức liên tục trên \\(\\mathbb R\\)"
+    ],
+    "correct": "Nếu \\(f\\) gián đoạn tại \\(x_0\\) thì \\(f(x_0)\\) chắc chắn không xác định",
+    "solution": "Một hàm có thể được xác định tại \\(x_0\\) nhưng vẫn gián đoạn tại đó, chẳng hạn hàm có giá trị tại điểm khác với giới hạn. Vì vậy mệnh đề thứ ba sai; các mệnh đề còn lại là các tính chất đúng.",
+    "quick": "Gián đoạn không đồng nghĩa với 'không xác định'.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Liên tục"
+  },
+  {
+    "id": 73,
+    "type": "removable_discontinuity_parameter",
+    "question": "Cho \\(f(x)=\\dfrac{x^2-mx+2}{x-1}\\). Tìm \\(m\\) để \\(x=1\\) là điểm gián đoạn bỏ được.",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\)",
+      "\\(m=2\\)",
+      "\\(m=3\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=3\\)",
+    "solution": "Để gián đoạn tại \\(x=1\\) là bỏ được, tử cũng phải bằng 0 tại \\(x=1\\). Ta có \\(1-m+2=0\\Rightarrow m=3\\). Khi đó tử là \\((x-1)(x-2)\\), nên sau rút gọn giới hạn tại 1 tồn tại hữu hạn.",
+    "quick": "Điểm làm mẫu bằng 0 phải đồng thời làm tử bằng 0.",
+    "casio": "Thế \\(x=1\\) vào tử: \\(3-m=0\\).",
+    "difficulty": 2,
+    "topic": "Gián đoạn"
+  },
+  {
+    "id": 74,
+    "type": "one_sided_derivatives_absolute",
+    "question": "Đạo hàm trái và đạo hàm phải của \\(f(x)=|x^2-1|\\) tại \\(x=1\\) lần lượt là",
+    "matrix": null,
+    "options": [
+      "\\(-2,\\ 2\\)",
+      "\\(2,\\ -2\\)",
+      "\\(0,\\ 0\\)",
+      "Không tồn tại cả hai đạo hàm một phía"
+    ],
+    "correct": "\\(-2,\\ 2\\)",
+    "solution": "Gần \\(x=1\\), nếu \\(x\\lt1\\) thì \\(f(x)=1-x^2\\), nên \\(f'_-(1)=-2\\). Nếu \\(x\\gt1\\) thì \\(f(x)=x^2-1\\), nên \\(f'_+(1)=2\\).",
+    "quick": "Phá dấu giá trị tuyệt đối ở hai phía của 1.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Khả vi"
+  },
+  {
+    "id": 75,
+    "type": "differentiability_x_sqrt_absx",
+    "question": "Khẳng định đúng về tính khả vi của \\(f(x)=x\\sqrt{|x|}\\) tại \\(x=0\\) là",
+    "matrix": null,
+    "options": [
+      "Không khả vi tại \\(0\\)",
+      "Khả vi và \\(f'(0)=0\\)",
+      "Khả vi và \\(f'(0)=1\\)",
+      "Gián đoạn tại \\(0\\)"
+    ],
+    "correct": "Khả vi và \\(f'(0)=0\\)",
+    "solution": "Ta có \\(f(0)=0\\). Theo định nghĩa, \\(f'(0)=\\lim_{h\\to0}\\dfrac{h\\sqrt{|h|}}{h}=\\lim_{h\\to0}\\sqrt{|h|}=0\\). Vì vậy hàm khả vi tại 0 và đạo hàm bằng 0.",
+    "quick": "Rút \\(h\\): thương sai phân còn \\(\\sqrt{|h|}\\to0\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Khả vi"
+  },
+  {
+    "id": 76,
+    "type": "derivative_from_continuity_factor",
+    "question": "Cho \\(f(x)=(x-a)g(x)\\), trong đó \\(g\\) liên tục tại \\(x=a\\). Giá trị \\(f'(a)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(g'(a)\\)",
+      "\\(g(a)\\)",
+      "Không tính được nếu chưa biết \\(g'(a)\\)"
+    ],
+    "correct": "\\(g(a)\\)",
+    "solution": "Vì \\(f(a)=0\\), nên \\(f'(a)=\\lim_{x\\to a}\\dfrac{(x-a)g(x)}{x-a}=\\lim_{x\\to a}g(x)=g(a)\\), dùng tính liên tục của \\(g\\) tại \\(a\\).",
+    "quick": "Dùng trực tiếp định nghĩa đạo hàm; không cần \\(g'(a)\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Khả vi"
+  },
+  {
+    "id": 77,
+    "type": "differentiability_absolute_kink",
+    "question": "Cho \\(f(x)=|x-2|(x+1)\\). Khẳng định đúng tại \\(x=2\\) là",
+    "matrix": null,
+    "options": [
+      "Khả vi và \\(f'(2)=3\\)",
+      "Không liên tục",
+      "Không khả vi",
+      "Khả vi và \\(f'(2)=0\\)"
+    ],
+    "correct": "Không khả vi",
+    "solution": "Hàm liên tục tại 2. Với \\(x\\gt2\\), \\(f(x)=(x-2)(x+1)\\) nên đạo hàm phải tại 2 bằng 3. Với \\(x\\lt2\\), \\(f(x)=(2-x)(x+1)\\) nên đạo hàm trái tại 2 bằng -3. Hai đạo hàm một phía khác nhau nên hàm không khả vi.",
+    "quick": "Dấu \\(|x-2|\\) tạo góc nhọn; hai hệ số góc là \\(-3\\) và \\(3\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Khả vi"
+  },
+  {
+    "id": 78,
+    "type": "symmetric_difference_quotient",
+    "question": "Cho \\(f\\) khả vi tại \\(x_0\\). Tính \\(\\displaystyle\\lim_{h\\to0}\\dfrac{f(x_0+h)-f(x_0-h)}{2h}\\).",
+    "matrix": null,
+    "options": [
+      "\\(f'(x_0)\\)",
+      "\\(2f'(x_0)\\)",
+      "\\(0\\)",
+      "Không tồn tại"
+    ],
+    "correct": "\\(f'(x_0)\\)",
+    "solution": "Viết thương thành \\(\\dfrac12\\left[\\dfrac{f(x_0+h)-f(x_0)}h+\\dfrac{f(x_0)-f(x_0-h)}h\\right]\\). Khi \\(h\\to0\\), cả hai biểu thức trong ngoặc đều tiến tới \\(f'(x_0)\\). Do đó giới hạn bằng \\(f'(x_0)\\).",
+    "quick": "Tách thành trung bình của đạo hàm từ phải và từ trái.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Khả vi"
   }
 ]

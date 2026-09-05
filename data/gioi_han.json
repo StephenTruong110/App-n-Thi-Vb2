@@ -1168,5 +1168,131 @@
     "casio": "CASIO: thử \\(m=4\\), thay \\(x\\) gần 1 để thấy thương gần 5.",
     "difficulty": 2,
     "topic": "Giới hạn có tham số"
+  },
+  {
+    "id": 66,
+    "type": "limit_infinity_form_trig",
+    "question": "Tính \\(L=\\displaystyle\\lim_{x\\to0}(1+2\\sin x)^{\\cot x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(e\\)",
+      "\\(e^2\\)",
+      "\\(1\\)",
+      "\\(\\sqrt e\\)"
+    ],
+    "correct": "\\(e^2\\)",
+    "solution": "Đặt \\(L=\\lim(1+2\\sin x)^{\\cot x}\\). Khi đó \\(\\ln L=\\lim\\cot x\\,\\ln(1+2\\sin x)\\). Vì \\(\\ln(1+u)\\sim u\\), \\(\\sin x\\sim x\\) và \\(\\cot x\\sim1/x\\), nên \\(\\ln L=2\\). Do đó \\(L=e^2\\).",
+    "quick": "Dạng \\(1^\\infty\\): lấy log, dùng \\(\\ln(1+u)\\sim u\\), \\(\\sin x\\sim x\\).",
+    "casio": "Có thể thử giá trị \\(x\\) rất nhỏ ở chế độ radian để thấy kết quả tiến gần \\(e^2\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn"
+  },
+  {
+    "id": 67,
+    "type": "limit_parameter_radical_infinity",
+    "question": "Tìm \\(m\\) để \\(\\displaystyle\\lim_{x\\to+\\infty}\\left(\\sqrt{4x^2+mx+1}-2x\\right)=3\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=3\\)",
+      "\\(m=12\\)",
+      "\\(m=6\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=12\\)",
+    "solution": "Rational hóa: \\(\\sqrt{4x^2+mx+1}-2x=\\dfrac{mx+1}{\\sqrt{4x^2+mx+1}+2x}\\). Chia tử và mẫu cho \\(x\\), giới hạn bằng \\(m/(2+2)=m/4\\). Điều kiện \\(m/4=3\\) cho \\(m=12\\).",
+    "quick": "Sau rational hóa, giới hạn bằng \\(m/4\\).",
+    "casio": "Kiểm tra với \\(m=12\\) và \\(x\\) lớn, biểu thức tiến gần 3.",
+    "difficulty": 3,
+    "topic": "Giới hạn"
+  },
+  {
+    "id": 68,
+    "type": "limit_log_cos",
+    "question": "Tính \\(L=\\displaystyle\\lim_{x\\to0}\\dfrac{\\ln(\\cos x)}{x^2}\\).",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(-\\dfrac12\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(-\\dfrac12\\)",
+    "solution": "Khi \\(x\\to0\\), \\(\\cos x=1-x^2/2+o(x^2)\\), nên \\(\\ln(\\cos x)=\\ln(1-x^2/2+o(x^2))=-x^2/2+o(x^2)\\). Do đó \\(L=-1/2\\).",
+    "quick": "Nhớ \\(\\ln(\\cos x)\\sim-x^2/2\\).",
+    "casio": "Thử \\(x=10^{-4}\\) ở chế độ radian để thấy tỉ số gần \\(-0{,}5\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn"
+  },
+  {
+    "id": 69,
+    "type": "limit_inverse_trig_difference",
+    "question": "Tính \\(L=\\displaystyle\\lim_{x\\to0}\\dfrac{\\arcsin(3x)-\\tan x}{2x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Dùng các tương đương \\(\\arcsin(3x)\\sim3x\\) và \\(\\tan x\\sim x\\). Tử số tương đương \\(2x\\), do đó \\(L=1\\).",
+    "quick": "\\(\\arcsin u\\sim u\\), \\(\\tan x\\sim x\\).",
+    "casio": "Thử \\(x\\) nhỏ ở chế độ radian, kết quả tiến gần 1.",
+    "difficulty": 2,
+    "topic": "Giới hạn"
+  },
+  {
+    "id": 70,
+    "type": "limit_difference_singular_rational",
+    "question": "Tính \\(L=\\displaystyle\\lim_{x\\to1}\\left(\\dfrac{1}{1-x}-\\dfrac{3}{1-x^3}\\right)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(-2\\)"
+    ],
+    "correct": "\\(-1\\)",
+    "solution": "Vì \\(1-x^3=(1-x)(1+x+x^2)\\), ta có \\(L=\\lim\\dfrac{1+x+x^2-3}{(1-x)(1+x+x^2)}\\). Tử số \\(x+x^2-2=(x-1)(x+2)\\), nên \\(L=\\lim -\\dfrac{x+2}{1+x+x^2}=-1\\).",
+    "quick": "Phân tích \\(1-x^3\\), rút gọn nhân tử \\(x-1\\).",
+    "casio": "Thử các giá trị gần 1 từ hai phía, kết quả tiến gần \\(-1\\).",
+    "difficulty": 3,
+    "topic": "Giới hạn"
+  },
+  {
+    "id": 71,
+    "type": "limit_trig_product_second_order",
+    "question": "Tính \\(L=\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos x\\cos2x}{x^2}\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac32\\)",
+      "\\(\\dfrac52\\)",
+      "\\(2\\)",
+      "\\(\\dfrac12\\)"
+    ],
+    "correct": "\\(\\dfrac52\\)",
+    "solution": "Khai triển \\(\\cos x=1-x^2/2+o(x^2)\\), \\(\\cos2x=1-2x^2+o(x^2)\\). Suy ra \\(\\cos x\\cos2x=1-(5/2)x^2+o(x^2)\\). Vì vậy tử số bằng \\((5/2)x^2+o(x^2)\\), nên \\(L=5/2\\).",
+    "quick": "Hệ số bậc hai: \\(1/2+2=5/2\\).",
+    "casio": "Thử \\(x\\) nhỏ ở chế độ radian, tỉ số tiến gần 2,5.",
+    "difficulty": 3,
+    "topic": "Giới hạn"
+  },
+  {
+    "id": 72,
+    "type": "limit_zero_power_zero",
+    "question": "Tính \\(L=\\displaystyle\\lim_{x\\to0^+}x^{\\sin x}\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(0\\)",
+      "\\(e\\)",
+      "\\(+\\infty\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Viết \\(x^{\\sin x}=e^{\\sin x\\ln x}\\). Khi \\(x\\to0^+\\), \\(\\sin x\\ln x\\sim x\\ln x\\to0\\). Do đó \\(L=e^0=1\\).",
+    "quick": "Đưa về mũ: \\(x^{\\sin x}=e^{\\sin x\\ln x}\\), và \\(x\\ln x\\to0\\).",
+    "casio": "Thử \\(x=10^{-3},10^{-4}\\), giá trị tiến gần 1.",
+    "difficulty": 3,
+    "topic": "Giới hạn"
   }
 ]

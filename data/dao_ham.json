@@ -1096,5 +1096,473 @@
     "casio": "CASIO fx-580VNX: Dùng SHIFT → d/dx để kiểm tra đạo hàm tại một điểm cụ thể. Với cực trị, dùng đạo hàm để tìm điểm tới hạn rồi thử giá trị bằng CALC.",
     "difficulty": 3,
     "topic": "Đạo hàm"
+  },
+  {
+    "id": 62,
+    "type": "linear_approximation_from_value_derivative",
+    "question": "Cho hàm số \\(f(x)\\). Biết \\(f(7)=13{,}5\\) và \\(f'(7)=10{,}5\\). Sử dụng công thức xấp xỉ tuyến tính, tính gần đúng \\(f(6{,}9)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-1{,}05\\)",
+      "\\(14{,}55\\)",
+      "\\(12{,}45\\)",
+      "\\(85{,}95\\)"
+    ],
+    "correct": "\\(12{,}45\\)",
+    "solution": "Dùng xấp xỉ tuyến tính tại \\(a=7\\): \\(f(x)\\approx f(a)+f'(a)(x-a)\\). Với \\(x=6{,}9\\), ta có \\(x-a=-0{,}1\\). Do đó \\(f(6{,}9)\\approx13{,}5+10{,}5(-0{,}1)=13{,}5-1{,}05=12{,}45\\).",
+    "quick": "\\(f(a+h)\\approx f(a)+f'(a)h\\), ở đây \\(h=-0{,}1\\).",
+    "casio": "CASIO: nhập \\(13{,}5+10{,}5\\times(6{,}9-7)\\), được \\(12{,}45\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Xấp xỉ tuyến tính"
+  },
+  {
+    "id": 63,
+    "type": "linear_approximation_from_value_derivative",
+    "question": "Cho hàm số \\(f(x)\\). Biết \\(f(8)=11{,}5\\) và \\(f'(8)=1{,}5\\). Sử dụng công thức xấp xỉ tuyến tính, tính gần đúng \\(f(8{,}1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(-0{,}5\\)",
+      "\\(0{,}15\\)",
+      "\\(11{,}65\\)",
+      "\\(11{,}35\\)"
+    ],
+    "correct": "\\(11{,}65\\)",
+    "solution": "Dùng xấp xỉ tuyến tính tại \\(a=8\\): \\(f(x)\\approx f(a)+f'(a)(x-a)\\). Với \\(x=8{,}1\\), ta có \\(x-a=0{,}1\\). Vì vậy \\(f(8{,}1)\\approx11{,}5+1{,}5(0{,}1)=11{,}65\\).",
+    "quick": "Ở đây \\(h=0{,}1\\), nên cộng thêm \\(f'(8)h=0{,}15\\).",
+    "casio": "CASIO: nhập \\(11{,}5+1{,}5\\times(8{,}1-8)\\), được \\(11{,}65\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Xấp xỉ tuyến tính"
+  },
+  {
+    "id": 64,
+    "type": "linear_approximation_application_tank",
+    "question": "Một người đang tháo nước từ đáy của một bể hình trụ. \\(V(t)\\), tính bằng lít, là thể tích nước còn lại trong bể sau \\(t\\) phút. Biết \\(V(33)=76646{,}25\\) lít và \\(V'(33)=-5677{,}5\\) lít/phút. Dùng xấp xỉ tuyến tính để ước tính \\(V(33{,}5)\\).",
+    "matrix": null,
+    "options": [
+      "\\(70968{,}75\\) lít",
+      "\\(73507{,}5\\) lít",
+      "\\(73807{,}5\\) lít",
+      "\\(75807{,}5\\) lít"
+    ],
+    "correct": "\\(73807{,}5\\) lít",
+    "solution": "Xấp xỉ tuyến tính tại \\(t_0=33\\): \\(V(t)\\approx V(33)+V'(33)(t-33)\\). Với \\(t=33{,}5\\), \\(\\Delta t=0{,}5\\). Do đó \\(V(33{,}5)\\approx76646{,}25-5677{,}5\\cdot0{,}5=76646{,}25-2838{,}75=73807{,}5\\) lít.",
+    "quick": "\\(V(33{,}5)\\approx V(33)+V'(33)\\cdot0{,}5\\). Vì \\(V'(33)\\lt0\\), thể tích phải giảm.",
+    "casio": "CASIO: nhập \\(76646{,}25-5677{,}5\\times0{,}5\\), được \\(73807{,}5\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Xấp xỉ tuyến tính"
+  },
+  {
+    "id": 65,
+    "type": "implicit_derivative_parameter",
+    "question": "Hàm \\(y=f(x)\\) được xác định ẩn bởi \\(x^2+y^2-2mxy=1\\). Đạo hàm \\(y'\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{my-x}{y-mx}\\)",
+      "\\(\\dfrac{x-my}{my-y}\\)",
+      "\\(\\dfrac{mx-y}{x-my}\\)",
+      "\\(\\dfrac{x+y}{x-y}\\)"
+    ],
+    "correct": "\\(\\dfrac{my-x}{y-mx}\\)",
+    "solution": "Lấy đạo hàm theo \\(x\\): \\(2x+2yy'-2m(y+xy')=0\\). Gom các hạng chứa \\(y'\\): \\(y'(y-mx)=my-x\\). Vì vậy \\(y'=(my-x)/(y-mx)\\).",
+    "quick": "Đạo hàm ẩn và gom tất cả hạng chứa \\(y'\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 66,
+    "type": "derivative_arctan_mobius",
+    "question": "Với \\(x\\ne1\\), đạo hàm của \\(y=\\arctan\\left(\\dfrac{1+x}{1-x}\\right)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac1{1+x^2}\\)",
+      "\\(-\\dfrac1{1+x^2}\\)",
+      "\\(\\dfrac2{1+x^2}\\)",
+      "\\(\\dfrac1{1-x^2}\\)"
+    ],
+    "correct": "\\(\\dfrac1{1+x^2}\\)",
+    "solution": "Đặt \\(u=(1+x)/(1-x)\\), khi đó \\(u'=2/(1-x)^2\\). Vì \\(y'=u'/(1+u^2)\\), ta được \\(y'=\\dfrac{2}{(1-x)^2+(1+x)^2}=1/(1+x^2)\\).",
+    "quick": "Dùng đạo hàm arctan và rút gọn tổng hai bình phương.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 67,
+    "type": "derivative_log_ratio_parameter",
+    "question": "Với \\(a\\ne0\\), đạo hàm của \\(y=\\ln\\left|\\dfrac{x-a}{x+a}\\right|\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{2a}{x^2-a^2}\\)",
+      "\\(-\\dfrac{2a}{x^2-a^2}\\)",
+      "\\(\\dfrac{a}{x^2-a^2}\\)",
+      "\\(\\dfrac1{x^2-a^2}\\)"
+    ],
+    "correct": "\\(\\dfrac{2a}{x^2-a^2}\\)",
+    "solution": "Ta có \\(y=\\ln|x-a|-\\ln|x+a|\\). Do đó \\(y'=1/(x-a)-1/(x+a)=2a/(x^2-a^2)\\).",
+    "quick": "Tách log của thương thành hiệu hai log.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 68,
+    "type": "logarithmic_differentiation_x_lnx",
+    "question": "Với \\(x\\gt0\\), đạo hàm của \\(y=x^{\\ln x}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(2x^{\\ln x-1}\\ln x\\)",
+      "\\(x^{\\ln x}\\ln x\\)",
+      "\\(\\dfrac{2\\ln x}{x}\\)",
+      "\\(2x^{\\ln x}\\ln x\\)"
+    ],
+    "correct": "\\(2x^{\\ln x-1}\\ln x\\)",
+    "solution": "Viết \\(y=e^{(\\ln x)^2}\\). Khi đó \\(y'=e^{(\\ln x)^2}\\cdot2\\ln x/x=2x^{\\ln x-1}\\ln x\\).",
+    "quick": "Đưa \\(x^{\\ln x}\\) về \\(e^{(\\ln x)^2}\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 69,
+    "type": "second_derivative_gaussian",
+    "question": "Đạo hàm cấp hai của \\(y=e^{-x^2}\\) là",
+    "matrix": null,
+    "options": [
+      "\\((4x^2-2)e^{-x^2}\\)",
+      "\\((2-4x^2)e^{-x^2}\\)",
+      "\\(4x^2e^{-x^2}\\)",
+      "\\(-2e^{-x^2}\\)"
+    ],
+    "correct": "\\((4x^2-2)e^{-x^2}\\)",
+    "solution": "\\(y'=-2xe^{-x^2}\\). Lấy đạo hàm lần nữa: \\(y''=-2e^{-x^2}+4x^2e^{-x^2}=(4x^2-2)e^{-x^2}\\).",
+    "quick": "Dùng quy tắc tích cho \\(-2xe^{-x^2}\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 70,
+    "type": "second_derivative_harmonic_identity",
+    "question": "Cho \\(y=A\\cos(\\omega x+\\varphi)+B\\sin(\\omega x+\\varphi)\\). Khẳng định nào đúng?",
+    "matrix": null,
+    "options": [
+      "\\(y''+\\omega y=0\\)",
+      "\\(y''+\\omega^2y=0\\)",
+      "\\(y''-\\omega^2y=0\\)",
+      "\\(y''+y=0\\)"
+    ],
+    "correct": "\\(y''+\\omega^2y=0\\)",
+    "solution": "Lấy đạo hàm hai lần, mỗi thành phần \\(\\cos(\\omega x+\\varphi)\\) và \\(\\sin(\\omega x+\\varphi)\\) đều sinh hệ số \\(-\\omega^2\\). Vì vậy \\(y''=-\\omega^2y\\), hay \\(y''+\\omega^2y=0\\).",
+    "quick": "Sin/cos tần số \\(\\omega\\) luôn có đạo hàm cấp hai bằng \\(-\\omega^2\\) lần chính nó.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 71,
+    "type": "second_derivative_arcsin",
+    "question": "Đạo hàm cấp hai của \\(y=\\arcsin x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{x}{(1-x^2)^{3/2}}\\)",
+      "\\(\\dfrac1{(1-x^2)^{3/2}}\\)",
+      "\\(-\\dfrac{x}{(1-x^2)^{3/2}}\\)",
+      "\\(-\\dfrac1{(1-x^2)^{3/2}}\\)"
+    ],
+    "correct": "\\(\\dfrac{x}{(1-x^2)^{3/2}}\\)",
+    "solution": "\\(y'=(1-x^2)^{-1/2}\\). Do đó \\(y''=(-1/2)(1-x^2)^{-3/2}(-2x)=x/(1-x^2)^{3/2}\\).",
+    "quick": "Đạo hàm \\((1-x^2)^{-1/2}\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm"
+  },
+  {
+    "id": 72,
+    "type": "onevar_extremum_parameter_minimum",
+    "question": "Tìm \\(m\\) để hàm \\(y=x^3-3mx^2+3(m^2-1)x+1\\) đạt cực tiểu tại \\(x=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\)",
+      "\\(m=3\\)",
+      "\\(m=1\\) hoặc \\(m=3\\)",
+      "\\(m=2\\)"
+    ],
+    "correct": "\\(m=1\\)",
+    "solution": "Điều kiện \\(y'(2)=0\\) cho \\(3(m-1)(m-3)=0\\), nên \\(m=1\\) hoặc \\(m=3\\). Ta có \\(y''(x)=6x-6m\\), nên \\(y''(2)=12-6m\\). Với \\(m=1\\), \\(y''(2)=6\\gt0\\) nên là cực tiểu; với \\(m=3\\), \\(y''(2)=-6\\lt0\\) nên là cực đại. Vậy \\(m=1\\).",
+    "quick": "Phải kiểm tra cả \\(y'(2)=0\\) và dấu \\(y''(2)\\).",
+    "casio": "Giải \\((m-1)(m-3)=0\\), rồi thử \\(12-6m\\).",
+    "difficulty": 3,
+    "topic": "Đạo hàm – Cực trị"
+  },
+  {
+    "id": 73,
+    "type": "onevar_extremum_value_parameter",
+    "question": "Cho \\(y=x^3-3x^2+m\\). Tìm \\(m\\) để giá trị cực đại của hàm số bằng \\(5\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=5\\)",
+      "\\(m=1\\)",
+      "\\(m=9\\)"
+    ],
+    "correct": "\\(m=5\\)",
+    "solution": "\\(y'=3x(x-2)\\), nên các điểm dừng là \\(0\\) và \\(2\\). Vì \\(y''(0)=-6\\lt0\\), \\(x=0\\) là điểm cực đại. Giá trị cực đại là \\(y(0)=m\\). Yêu cầu \\(m=5\\).",
+    "quick": "Cực đại tại \\(x=0\\), nên giá trị cực đại chính là \\(m\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Cực trị"
+  },
+  {
+    "id": 74,
+    "type": "monotonic_parameter_quadratic_derivative",
+    "question": "Tìm \\(m\\) để hàm \\(y=\\dfrac{x^3}{3}-(m-1)x^2+(m-1)x+1\\) đồng biến trên \\(\\mathbb R\\).",
+    "matrix": null,
+    "options": [
+      "\\(1\\le m\\le2\\)",
+      "\\(m\\le1\\) hoặc \\(m\\ge2\\)",
+      "\\(1\\lt m\\lt2\\)",
+      "\\(m=1\\)"
+    ],
+    "correct": "\\(1\\le m\\le2\\)",
+    "solution": "\\(y'=x^2-2(m-1)x+(m-1)\\). Để hàm đồng biến trên \\(\\mathbb R\\), cần \\(y'\\ge0\\) với mọi \\(x\\). Vì hệ số đầu dương, điều này tương đương discriminant không dương: \\(\\Delta=4(m-1)(m-2)\\le0\\). Suy ra \\(1\\le m\\le2\\).",
+    "quick": "Tam thức bậc hai hệ số đầu dương không âm với mọi \\(x\\) khi \\(\\Delta\\le0\\).",
+    "casio": "Giải bất phương trình \\((m-1)(m-2)\\le0\\).",
+    "difficulty": 3,
+    "topic": "Đạo hàm – Đơn điệu"
+  },
+  {
+    "id": 75,
+    "type": "horizontal_asymptote_parameter",
+    "question": "Tìm \\(m\\) để đồ thị \\(y=\\dfrac{mx+2}{x-1}\\) có tiệm cận ngang \\(y=2\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=1\\)",
+      "\\(m=-2\\)",
+      "\\(m=0\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Tử và mẫu cùng bậc 1 nên tiệm cận ngang là tỉ số hệ số của \\(x\\), tức \\(y=m\\). Muốn tiệm cận ngang là \\(y=2\\) thì \\(m=2\\).",
+    "quick": "Phân thức cùng bậc: tiệm cận ngang = tỉ số hệ số dẫn đầu.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Đạo hàm – Tiệm cận"
+  },
+  {
+    "id": 76,
+    "type": "vertical_asymptote_parameter_two_roots",
+    "question": "Tìm \\(m\\) để đồ thị \\(y=\\dfrac{x-1}{x^2-2mx+4}\\) có đúng hai đường tiệm cận đứng.",
+    "matrix": null,
+    "options": [
+      "\\(m\\in(-2,2)\\)",
+      "\\(m\\in(-\\infty,-2)\\cup(2,+\\infty)\\setminus\\{5/2\\}\\)",
+      "\\(m\\in(-\\infty,-2)\\cup(2,+\\infty)\\)",
+      "\\(m=\\pm2\\)"
+    ],
+    "correct": "\\(m\\in(-\\infty,-2)\\cup(2,+\\infty)\\setminus\\{5/2\\}\\)",
+    "solution": "Mẫu phải có hai nghiệm thực phân biệt: \\(\\Delta=4(m^2-4)\\gt0\\), tức \\(|m|\\gt2\\). Tuy nhiên nếu \\(x=1\\) là nghiệm của mẫu thì nhân tử \\(x-1\\) bị khử và chỉ còn một tiệm cận đứng. Điều đó xảy ra khi \\(1-2m+4=0\\Rightarrow m=5/2\\). Vậy loại \\(5/2\\).",
+    "quick": "Hai nghiệm mẫu phân biệt, đồng thời không được triệt tiêu với tử.",
+    "casio": "Giải \\(m^2-4\\gt0\\), rồi kiểm tra riêng \\(x=1\\) có làm mẫu bằng 0 hay không.",
+    "difficulty": 3,
+    "topic": "Đạo hàm – Tiệm cận"
+  },
+  {
+    "id": 77,
+    "type": "count_asymptotes_radical_rational",
+    "question": "Đồ thị \\(y=\\dfrac{\\sqrt{x^2+1}}{x-1}\\) có tất cả bao nhiêu đường tiệm cận đứng và ngang?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Tại \\(x=1\\), mẫu bằng 0 còn tử khác 0 nên có một tiệm cận đứng \\(x=1\\). Khi \\(x\\to+\\infty\\), \\(\\sqrt{x^2+1}/(x-1)\\to1\\), cho tiệm cận ngang \\(y=1\\). Khi \\(x\\to-\\infty\\), \\(\\sqrt{x^2+1}\\sim -x\\), nên giới hạn bằng \\(-1\\), cho tiệm cận ngang \\(y=-1\\). Tổng cộng 3 đường.",
+    "quick": "Một đứng tại \\(x=1\\), hai ngang khác nhau ở \\(\\pm\\infty\\).",
+    "casio": "Có thể kiểm tra giới hạn số với \\(x\\) rất lớn dương và âm.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Tiệm cận"
+  },
+  {
+    "id": 78,
+    "type": "count_asymptotes_exponential_fraction",
+    "question": "Đồ thị \\(y=\\dfrac{e^x}{e^x-1}\\) có bao nhiêu đường tiệm cận đứng và ngang?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(3\\)",
+    "solution": "Mẫu bằng 0 tại \\(x=0\\), nên có tiệm cận đứng \\(x=0\\). Khi \\(x\\to+\\infty\\), chia tử mẫu cho \\(e^x\\) được giới hạn 1, nên có \\(y=1\\). Khi \\(x\\to-\\infty\\), \\(e^x\\to0\\), nên giới hạn 0, có \\(y=0\\). Tổng cộng 3 đường.",
+    "quick": "Đứng \\(x=0\\); ngang \\(y=1\\) và \\(y=0\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Tiệm cận"
+  },
+  {
+    "id": 79,
+    "type": "vertical_asymptote_absolute_rational",
+    "question": "Đồ thị \\(y=\\dfrac{x^2-1}{|x|-1}\\) có bao nhiêu đường tiệm cận đứng?",
+    "matrix": null,
+    "options": [
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "Tại \\(x=1\\), với \\(x\\gt0\\), biểu thức rút gọn thành \\(x+1\\), nên giới hạn bằng 2. Tại \\(x=-1\\), với \\(x\\lt0\\), \\(|x|-1=-x-1\\) và biểu thức rút gọn thành \\(1-x\\), nên giới hạn cũng bằng 2. Hai điểm đều là gián đoạn bỏ được, không phải tiệm cận đứng.",
+    "quick": "Kiểm tra giới hạn tại \\(x=\\pm1\\), không chỉ nhìn mẫu bằng 0.",
+    "casio": "Thử các giá trị gần \\(1\\) và \\(-1\\); hàm tiến gần 2.",
+    "difficulty": 3,
+    "topic": "Đạo hàm – Tiệm cận"
+  },
+  {
+    "id": 80,
+    "type": "application_marginal_cost_minimum",
+    "question": "Cho hàm chi phí \\(C(x)=\\dfrac13x^3-5x^2+28x+100\\) (triệu đồng). Chi phí biên \\(C'(x)\\) đạt giá trị nhỏ nhất tại mức sản lượng",
+    "matrix": null,
+    "options": [
+      "\\(x=3\\)",
+      "\\(x=5\\)",
+      "\\(x=28\\)",
+      "\\(x=10\\)"
+    ],
+    "correct": "\\(x=5\\)",
+    "solution": "Chi phí biên là \\(C'(x)=x^2-10x+28\\), một parabol mở lên. Giá trị nhỏ nhất đạt tại đỉnh \\(x=10/2=5\\).",
+    "quick": "Tối thiểu hóa \\(C'(x)\\), không phải \\(C(x)\\).",
+    "casio": "Hoàn thành bình phương: \\(C'(x)=(x-5)^2+3\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 81,
+    "type": "application_projectile_max_height",
+    "question": "Một vật được phóng thẳng đứng với \\(s(t)=19{,}6t-4{,}9t^2\\) (m). Độ cao cực đại của vật là",
+    "matrix": null,
+    "options": [
+      "\\(19{,}6\\) m",
+      "\\(9{,}8\\) m",
+      "\\(39{,}2\\) m",
+      "\\(14{,}7\\) m"
+    ],
+    "correct": "\\(19{,}6\\) m",
+    "solution": "\\(s'(t)=19{,}6-9{,}8t\\). Điểm cực đại thỏa \\(s'(t)=0\\Rightarrow t=2\\) s. Khi đó \\(s(2)=39{,}2-19{,}6=19{,}6\\) m.",
+    "quick": "Tìm thời điểm vận tốc bằng 0, rồi thế vào \\(s(t)\\).",
+    "casio": "Giải \\(19{,}6-9{,}8t=0\\), sau đó tính \\(s(2)\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 82,
+    "type": "application_rectangle_min_cost",
+    "question": "Một mảnh đất hình chữ nhật có diện tích \\(200\\,\\text{m}^2\\). Chi phí lưới rào là 100.000 đồng/mét. Chi phí làm hàng rào nhỏ nhất gần bằng",
+    "matrix": null,
+    "options": [
+      "4.000.000 đồng",
+      "5.656.000 đồng",
+      "8.000.000 đồng",
+      "2.828.000 đồng"
+    ],
+    "correct": "5.656.000 đồng",
+    "solution": "Với diện tích cố định, hình chữ nhật có chu vi nhỏ nhất khi là hình vuông. Cạnh bằng \\(\\sqrt{200}=10\\sqrt2\\) m, nên chu vi tối thiểu là \\(40\\sqrt2\\approx56{,}568\\) m. Chi phí xấp xỉ \\(56{,}568\\times100.000=5.656.800\\) đồng, gần nhất 5.656.000 đồng.",
+    "quick": "Diện tích cố định → chu vi nhỏ nhất khi hình vuông.",
+    "casio": "Tính \\(40\\sqrt2\\times100000\\approx5.656.854\\) đồng.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 83,
+    "type": "application_revenue_maximum",
+    "question": "Cho hàm cầu \\(p(q)=100-2q\\). Mức sản lượng \\(q\\) để doanh thu \\(R(q)=p(q)q\\) đạt cực đại là",
+    "matrix": null,
+    "options": [
+      "\\(q=50\\)",
+      "\\(q=100\\)",
+      "\\(q=25\\)",
+      "\\(q=20\\)"
+    ],
+    "correct": "\\(q=25\\)",
+    "solution": "\\(R(q)=100q-2q^2\\), nên \\(R'(q)=100-4q\\). Điều kiện \\(R'(q)=0\\) cho \\(q=25\\); do \\(R''(q)=-4\\lt0\\), đây là cực đại.",
+    "quick": "Doanh thu là giá nhân lượng: \\(R=q(100-2q)\\).",
+    "casio": "Giải \\(100-4q=0\\), được \\(q=25\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 84,
+    "type": "application_radioactive_rate",
+    "question": "Sự phân rã tuân theo \\(N(t)=N_0e^{-kt}\\), \\(k\\gt0\\). Tại thời điểm \\(N(t)=N_0/2\\), giá trị \\(N'(t)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-\\dfrac{kN_0}{2}\\)",
+      "\\(-kN_0\\)",
+      "\\(-\\dfrac{N_0}{2}\\)",
+      "\\(-2kN_0\\)"
+    ],
+    "correct": "\\(-\\dfrac{kN_0}{2}\\)",
+    "solution": "Ta có \\(N'(t)=-kN_0e^{-kt}=-kN(t)\\). Tại thời điểm \\(N(t)=N_0/2\\), suy ra \\(N'(t)=-kN_0/2\\).",
+    "quick": "Luôn có \\(N'=-kN\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 85,
+    "type": "application_cylinder_min_surface",
+    "question": "Một lon hình trụ kín có thể tích \\(V=250\\pi\\,\\text{cm}^3\\). Chiều cao \\(h\\) để diện tích toàn phần nhỏ nhất là",
+    "matrix": null,
+    "options": [
+      "\\(5\\) cm",
+      "\\(10\\) cm",
+      "\\(15\\) cm",
+      "\\(20\\) cm"
+    ],
+    "correct": "\\(10\\) cm",
+    "solution": "Điều kiện thể tích: \\(\\pi r^2h=250\\pi\\Rightarrow h=250/r^2\\). Diện tích toàn phần \\(S=2\\pi r^2+2\\pi rh=2\\pi r^2+500\\pi/r\\). Cho \\(S'(r)=4\\pi r-500\\pi/r^2=0\\Rightarrow r^3=125\\Rightarrow r=5\\). Khi đó \\(h=250/25=10\\) cm.",
+    "quick": "Với lon trụ kín tối ưu, \\(h=2r\\); ở đây \\(r=5\\).",
+    "casio": "Giải \\(4r-500/r^2=0\\), được \\(r=5\\), rồi tính \\(h=10\\).",
+    "difficulty": 3,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 86,
+    "type": "application_profit_maximum",
+    "question": "Hàm lợi nhuận là \\(L(x)=-2x^2+120x-1000\\) (USD). Số sản phẩm cần sản xuất để lợi nhuận tối đa là",
+    "matrix": null,
+    "options": [
+      "\\(60\\)",
+      "\\(120\\)",
+      "\\(30\\)",
+      "\\(80\\)"
+    ],
+    "correct": "\\(30\\)",
+    "solution": "\\(L'(x)=-4x+120\\). Cho \\(L'(x)=0\\) được \\(x=30\\). Vì \\(L''(x)=-4\\lt0\\), đây là điểm cực đại.",
+    "quick": "Đỉnh của parabol lợi nhuận nằm tại \\(x=30\\).",
+    "casio": "Giải \\(-4x+120=0\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
+  },
+  {
+    "id": 87,
+    "type": "application_price_elasticity",
+    "question": "Độ co giãn của cầu theo giá được cho bởi \\(E_p=\\dfrac{p}{Q}\\dfrac{dQ}{dp}\\). Với \\(Q=\\dfrac{100}{p^2}\\), \\(p\\gt0\\), giá trị \\(E_p\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(-1\\)",
+      "\\(-0{,}5\\)",
+      "\\(-2\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(-2\\)",
+    "solution": "\\(Q=100p^{-2}\\Rightarrow dQ/dp=-200p^{-3}\\). Do đó \\(E_p=\\dfrac{p}{100p^{-2}}(-200p^{-3})=-2\\).",
+    "quick": "Với \\(Q=Cp^{-2}\\), độ co giãn theo định nghĩa đã cho là hằng số \\(-2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm – Ứng dụng"
   }
 ]

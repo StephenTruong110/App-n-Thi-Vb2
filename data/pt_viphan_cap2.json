@@ -1366,5 +1366,293 @@
     "casio": "CASIO: kiểm tra \\(y_p=x\\sin x\\) bằng đạo hàm số và kiểm tra điều kiện đầu của \\(2\\cos x-\\sin x+x\\sin x\\).",
     "difficulty": 3,
     "topic": "Phương trình vi phân cấp 2"
+  },
+  {
+    "id": 77,
+    "type": "homogeneous_oscillatory_parameter",
+    "question": "Tìm \\(m\\) để phương trình \\(y''-2my'+9y=0\\) có nghiệm dao động dạng \\(e^{\\alpha x}(C_1\\cos\\beta x+C_2\\sin\\beta x)\\), với \\(\\beta\\ne0\\).",
+    "matrix": null,
+    "options": [
+      "\\(m\\gt3\\) hoặc \\(m\\lt-3\\)",
+      "\\(m=3\\)",
+      "\\(m=0\\)",
+      "\\(-3\\lt m\\lt3\\)"
+    ],
+    "correct": "\\(-3\\lt m\\lt3\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2-2mr+9=0\\). Nghiệm phức xuất hiện khi \\(\\Delta=4m^2-36\\lt0\\), tức \\(m^2\\lt9\\), hay \\(-3\\lt m\\lt3\\).",
+    "quick": "Có dao động khi phương trình đặc trưng có hai nghiệm phức liên hợp.",
+    "casio": "Giải \\(m^2-9\\lt0\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Thuần nhất"
+  },
+  {
+    "id": 78,
+    "type": "homogeneous_positive_b_general_form",
+    "question": "Cho \\(b\\gt0\\). Nghiệm tổng quát của \\(y''+by=0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(C_1e^{\\sqrt b x}+C_2e^{-\\sqrt b x}\\)",
+      "\\((C_1+C_2x)e^{\\sqrt b x}\\)",
+      "\\(C_1\\cos(\\sqrt b\\,x)+C_2\\sin(\\sqrt b\\,x)\\)",
+      "\\(C_1\\cos(bx)+C_2\\sin(bx)\\)"
+    ],
+    "correct": "\\(C_1\\cos(\\sqrt b\\,x)+C_2\\sin(\\sqrt b\\,x)\\)",
+    "solution": "Phương trình đặc trưng \\(r^2+b=0\\) có nghiệm \\(r=\\pm i\\sqrt b\\). Do đó nghiệm tổng quát là \\(C_1\\cos(\\sqrt b\\,x)+C_2\\sin(\\sqrt b\\,x)\\).",
+    "quick": "Tần số góc là \\(\\sqrt b\\), không phải \\(b\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Thuần nhất"
+  },
+  {
+    "id": 79,
+    "type": "homogeneous_repeated_root_parameter",
+    "question": "Tìm \\(a\\) để phương trình \\(y''+ay'+4y=0\\) có nghiệm kép.",
+    "matrix": null,
+    "options": [
+      "\\(a=4\\)",
+      "\\(a=2\\)",
+      "\\(a=\\pm2\\)",
+      "\\(a=\\pm4\\)"
+    ],
+    "correct": "\\(a=\\pm4\\)",
+    "solution": "Phương trình đặc trưng là \\(r^2+ar+4=0\\). Có nghiệm kép khi \\(\\Delta=a^2-16=0\\), nên \\(a=\\pm4\\).",
+    "quick": "Nghiệm kép khi \\(\\Delta=0\\).",
+    "casio": "Giải \\(a^2=16\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Thuần nhất"
+  },
+  {
+    "id": 80,
+    "type": "homogeneous_known_exponential_parameter",
+    "question": "Tìm \\(k\\) để \\(y=e^{3x}\\) là nghiệm của \\(y''-5y'+ky=0\\).",
+    "matrix": null,
+    "options": [
+      "\\(k=0\\)",
+      "\\(k=-6\\)",
+      "\\(k=6\\)",
+      "\\(k=15\\)"
+    ],
+    "correct": "\\(k=6\\)",
+    "solution": "Với \\(y=e^{3x}\\), ta có \\(y'=3e^{3x}\\), \\(y''=9e^{3x}\\). Thay vào phương trình: \\((9-15+k)e^{3x}=0\\), nên \\(k=6\\).",
+    "quick": "Thay trực tiếp \\(r=3\\) vào đa thức đặc trưng \\(r^2-5r+k\\).",
+    "casio": "Tính \\(9-15+k=0\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Thuần nhất"
+  },
+  {
+    "id": 81,
+    "type": "particular_form_exp_poly_nonresonance_generic",
+    "question": "Với phương trình hệ số hằng \\(y''+ay'+by=e^{\\alpha x}P_n(x)\\), nếu \\(\\alpha\\) không là nghiệm của phương trình đặc trưng, có thể chọn nghiệm riêng dạng",
+    "matrix": null,
+    "options": [
+      "\\(y_p=xe^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=x^2e^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=Q_n(x)\\)",
+      "\\(y_p=e^{\\alpha x}Q_n(x)\\)"
+    ],
+    "correct": "\\(y_p=e^{\\alpha x}Q_n(x)\\)",
+    "solution": "Khi \\(\\alpha\\) không trùng nghiệm đặc trưng, không có cộng hưởng. Phương pháp hệ số bất định cho dạng thử \\(y_p=e^{\\alpha x}Q_n(x)\\), với \\(Q_n\\) là đa thức cùng bậc với \\(P_n\\).",
+    "quick": "Không cộng hưởng → không nhân thêm \\(x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng"
+  },
+  {
+    "id": 82,
+    "type": "particular_form_exp_poly_simple_resonance_generic",
+    "question": "Với phương trình hệ số hằng \\(y''+ay'+by=e^{\\alpha x}P_n(x)\\), nếu \\(\\alpha\\) là nghiệm đơn của phương trình đặc trưng, dạng nghiệm riêng thích hợp là",
+    "matrix": null,
+    "options": [
+      "\\(y_p=xe^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=e^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=x^2e^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=xQ_n(x)\\)"
+    ],
+    "correct": "\\(y_p=xe^{\\alpha x}Q_n(x)\\)",
+    "solution": "Khi \\(\\alpha\\) là nghiệm đặc trưng bội 1, dạng thử thông thường bị trùng nghiệm thuần nhất nên phải nhân thêm một lần \\(x\\): \\(y_p=xe^{\\alpha x}Q_n(x)\\).",
+    "quick": "Cộng hưởng bội 1 → nhân \\(x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng"
+  },
+  {
+    "id": 83,
+    "type": "particular_form_exp_poly_double_resonance_generic",
+    "question": "Với phương trình hệ số hằng \\(y''+ay'+by=e^{\\alpha x}P_n(x)\\), nếu \\(\\alpha\\) là nghiệm kép của phương trình đặc trưng, dạng nghiệm riêng thích hợp là",
+    "matrix": null,
+    "options": [
+      "\\(y_p=xe^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=x^2e^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=e^{\\alpha x}Q_n(x)\\)",
+      "\\(y_p=x^2Q_n(x)\\)"
+    ],
+    "correct": "\\(y_p=x^2e^{\\alpha x}Q_n(x)\\)",
+    "solution": "Nếu \\(\\alpha\\) là nghiệm đặc trưng bội 2, phải nhân dạng thử với \\(x^2\\) để loại trùng với nghiệm thuần nhất.",
+    "quick": "Cộng hưởng bội 2 → nhân \\(x^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng"
+  },
+  {
+    "id": 84,
+    "type": "particular_form_exp_poly_simple_resonance",
+    "question": "Đối với \\(y''-5y'+6y=(x+1)e^{2x}\\), dạng nghiệm riêng phù hợp là",
+    "matrix": null,
+    "options": [
+      "\\((Ax+B)e^{2x}\\)",
+      "\\(x^2(Ax+B)e^{2x}\\)",
+      "\\(x(Ax+B)e^{2x}\\)",
+      "\\(Axe^{2x}\\)"
+    ],
+    "correct": "\\(x(Ax+B)e^{2x}\\)",
+    "solution": "Phương trình đặc trưng \\(r^2-5r+6=(r-2)(r-3)\\) có \\(r=2\\) là nghiệm đơn. Vế phải là \\(e^{2x}\\) nhân đa thức bậc 1, nên dạng thử phải nhân thêm \\(x\\): \\(y_p=x(Ax+B)e^{2x}\\).",
+    "quick": "\\(\\alpha=2\\) trùng nghiệm đơn → nhân \\(x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng"
+  },
+  {
+    "id": 85,
+    "type": "particular_form_exp_double_resonance_parameter",
+    "question": "Tìm \\(m\\) để phương trình \\(y''-4y'+4y=e^{mx}\\) có thể chọn nghiệm riêng dạng \\(y_p=Ax^2e^{mx}\\).",
+    "matrix": null,
+    "options": [
+      "\\(m=2\\)",
+      "\\(m=0\\)",
+      "\\(m=-2\\)",
+      "\\(m=4\\)"
+    ],
+    "correct": "\\(m=2\\)",
+    "solution": "Phương trình đặc trưng là \\((r-2)^2=0\\). Dạng \\(x^2e^{mx}\\) xuất hiện khi \\(m\\) là nghiệm kép của phương trình đặc trưng, nên \\(m=2\\).",
+    "quick": "Nhìn số mũ của \\(x\\): \\(x^2\\) báo hiệu cộng hưởng bội 2.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng"
+  },
+  {
+    "id": 86,
+    "type": "particular_solution_exp_simple_resonance",
+    "question": "Một nghiệm riêng của phương trình \\(y''-y'=e^x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(e^x\\)",
+      "\\(xe^x\\)",
+      "\\(\\dfrac12xe^x\\)",
+      "\\(x^2e^x\\)"
+    ],
+    "correct": "\\(xe^x\\)",
+    "solution": "Vì \\(r=1\\) là nghiệm đơn của \\(r^2-r=0\\), đặt \\(y_p=Axe^x\\). Khi đó \\(y_p''-y_p'=Ae^x\\). So với vế phải \\(e^x\\), được \\(A=1\\).",
+    "quick": "Cộng hưởng đơn tại \\(\\alpha=1\\), nên dùng \\(Axe^x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Dạng nghiệm riêng"
+  },
+  {
+    "id": 87,
+    "type": "particular_trig_nonresonance_value",
+    "question": "Tìm một nghiệm riêng của \\(y''+y=\\cos2x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac13\\cos2x\\)",
+      "\\(-\\dfrac13\\cos2x\\)",
+      "\\(-\\dfrac15\\cos2x\\)",
+      "\\(\\cos2x\\)"
+    ],
+    "correct": "\\(-\\dfrac13\\cos2x\\)",
+    "solution": "Đặt \\(y_p=A\\cos2x\\). Khi đó \\(y_p''+y_p=(-4A+A)\\cos2x=-3A\\cos2x\\). Suy ra \\(-3A=1\\), nên \\(A=-1/3\\).",
+    "quick": "Không cộng hưởng vì tần số tự nhiên là 1, còn vế phải có tần số 2.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Sin cos"
+  },
+  {
+    "id": 88,
+    "type": "particular_trig_resonance_value",
+    "question": "Tìm một nghiệm riêng của \\(y''+4y=\\sin2x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac14x\\sin2x\\)",
+      "\\(-\\dfrac14x\\cos2x\\)",
+      "\\(-\\dfrac12x\\cos2x\\)",
+      "\\(x\\sin2x\\)"
+    ],
+    "correct": "\\(-\\dfrac14x\\cos2x\\)",
+    "solution": "Do \\(\\pm2i\\) là nghiệm đặc trưng nên xảy ra cộng hưởng. Chọn \\(y_p=Ax\\cos2x\\). Khi đó \\(y_p''+4y_p=-4A\\sin2x\\). Suy ra \\(A=-1/4\\).",
+    "quick": "Cộng hưởng tần số 2 → nhân thêm \\(x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Sin cos"
+  },
+  {
+    "id": 89,
+    "type": "particular_form_mixed_trig_resonance",
+    "question": "Đối với \\(y''+9y=\\cos3x+\\sin2x\\), dạng nghiệm riêng phù hợp là",
+    "matrix": null,
+    "options": [
+      "\\(A\\cos3x+B\\sin3x+C\\cos2x+D\\sin2x\\)",
+      "\\(x(A\\cos3x+B\\sin3x)+C\\cos2x+D\\sin2x\\)",
+      "\\(x(A\\cos3x+B\\sin3x+C\\cos2x+D\\sin2x)\\)",
+      "\\(xA\\cos3x+B\\sin2x\\)"
+    ],
+    "correct": "\\(x(A\\cos3x+B\\sin3x)+C\\cos2x+D\\sin2x\\)",
+    "solution": "Phần \\(\\cos3x\\) cộng hưởng với nghiệm đặc trưng \\(r=\\pm3i\\), nên nhóm tần số 3 phải nhân thêm \\(x\\). Phần \\(\\sin2x\\) không cộng hưởng nên giữ dạng thông thường.",
+    "quick": "Chỉ nhân \\(x\\) cho nhóm tần số bị cộng hưởng.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Sin cos"
+  },
+  {
+    "id": 90,
+    "type": "resonance_physical_concept",
+    "question": "Phương trình \\(y''+\\omega_0^2y=F_0\\cos(\\omega_0x)\\), với \\(\\omega_0\\ne0\\), mô tả hiện tượng nào?",
+    "matrix": null,
+    "options": [
+      "Cộng hưởng",
+      "Dao động điều hòa biên độ hữu hạn không cộng hưởng",
+      "Dao động tắt dần",
+      "Dao động không tuần hoàn"
+    ],
+    "correct": "Cộng hưởng",
+    "solution": "Tần số cưỡng bức đúng bằng tần số riêng \\(\\omega_0\\) của hệ, nên nghiệm riêng xuất hiện nhân tử \\(x\\); đây là trường hợp cộng hưởng.",
+    "quick": "Tần số ngoại lực = tần số riêng → cộng hưởng.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Phương trình vi phân cấp 2 – Dao động"
+  },
+  {
+    "id": 91,
+    "type": "resonance_parameter_trig",
+    "question": "Tìm \\(a\\) để phương trình \\(y''+ay=\\cos2x\\) xảy ra cộng hưởng.",
+    "matrix": null,
+    "options": [
+      "\\(a=2\\)",
+      "\\(a=16\\)",
+      "\\(a=4\\)",
+      "\\(a=-4\\)"
+    ],
+    "correct": "\\(a=4\\)",
+    "solution": "Tần số của vế phải là 2. Phương trình thuần nhất có tần số riêng \\(\\sqrt a\\) khi \\(a\\gt0\\). Cộng hưởng khi \\(\\sqrt a=2\\), nên \\(a=4\\).",
+    "quick": "Cộng hưởng khi \\(a=\\beta^2\\) với vế phải \\(\\cos\\beta x\\).",
+    "casio": "Tính \\(2^2=4\\).",
+    "difficulty": 2,
+    "topic": "Phương trình vi phân cấp 2 – Sin cos"
+  },
+  {
+    "id": 92,
+    "type": "particular_trig_nonresonance_coefficients",
+    "question": "Tìm một nghiệm riêng của \\(y''+4y'+3y=10\\cos x\\).",
+    "matrix": null,
+    "options": [
+      "\\(\\cos x+2\\sin x\\)",
+      "\\(2\\cos x+\\sin x\\)",
+      "\\(\\cos x-2\\sin x\\)",
+      "\\(\\sin x-2\\cos x\\)"
+    ],
+    "correct": "\\(\\cos x+2\\sin x\\)",
+    "solution": "Đặt \\(y_p=A\\cos x+B\\sin x\\). Thay vào phương trình được hệ \\(2A+4B=10\\), \\(-4A+2B=0\\). Giải ra \\(A=1\\), \\(B=2\\).",
+    "quick": "Dạng \\(A\\cos x+B\\sin x\\), rồi so hệ số cos và sin.",
+    "casio": "CASIO: giải hệ \\(2A+4B=10\\), \\(-4A+2B=0\\).",
+    "difficulty": 3,
+    "topic": "Phương trình vi phân cấp 2 – Sin cos"
   }
 ]

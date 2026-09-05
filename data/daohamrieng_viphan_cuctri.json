@@ -2248,5 +2248,617 @@
     "casio": "CASIO: sau khi biến đổi về \\(x^3=125\\), tính \\(\\sqrt[3]{125}=5\\).",
     "difficulty": 2,
     "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 126,
+    "type": "extremum_application_profit_two_markets",
+    "question": "Một công ty bán một thiết bị công nghiệp ở thị trường trong nước và nước ngoài. Nếu số thiết bị bán ở thị trường trong nước là \\(x\\) và ở thị trường nước ngoài là \\(y\\), lợi nhuận được ước tính bởi \\(P(x,y)=50x+40y-\\dfrac{x^2}{5}-\\dfrac{y^2}{10}+\\dfrac{xy}{10}\\) (USD). Lợi nhuận cao nhất đạt được khi \\((x,y)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\((200,300)\\)",
+      "\\((200,500)\\)",
+      "\\((300,400)\\)",
+      "\\((300,500)\\)"
+    ],
+    "correct": "\\((200,300)\\)",
+    "solution": "Điểm cực trị thỏa \\(P'_x=50-\\dfrac{2x}{5}+\\dfrac{y}{10}=0\\) và \\(P'_y=40-\\dfrac{y}{5}+\\dfrac{x}{10}=0\\). Nhân 10 được hệ \\(500-4x+y=0\\), \\(400-2y+x=0\\). Giải ra \\(x=200,\\ y=300\\). Hessian có \\(P''_{xx}=-2/5\\), \\(P''_{yy}=-1/5\\), \\(P''_{xy}=1/10\\), nên \\(\\Delta=P''_{xx}P''_{yy}-(P''_{xy})^2=7/100\\gt0\\) và \\(P''_{xx}\\lt0\\). Do đó đây là điểm cực đại.",
+    "quick": "Giải hệ \\(P'_x=P'_y=0\\) được \\((200,300)\\); Hessian âm xác định nên là cực đại.",
+    "casio": "CASIO: giải hệ tuyến tính \\(-4x+y=-500\\), \\(x-2y=-400\\) để được \\(x=200,y=300\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 127,
+    "type": "extremum_application_cost_automation_labor",
+    "question": "Một nhà sản xuất ô tô ước tính tổng chi phí hằng năm cho nhân công và thiết bị tự động hóa bởi \\(C(x,y)=2x^2+3y^2+4xy-31x-38y+137\\), trong đó \\(x\\) và \\(y\\) được tính theo triệu đô la. Giá trị \\((x,y)\\) để tổng chi phí thấp nhất là",
+    "matrix": null,
+    "options": [
+      "\\((0{,}8,3{,}5)\\)",
+      "\\((4{,}25,2{,}5)\\)",
+      "\\((0{,}8,2{,}5)\\)",
+      "\\((4{,}25,3{,}5)\\)"
+    ],
+    "correct": "\\((4{,}25,3{,}5)\\)",
+    "solution": "Điểm cực trị thỏa \\(C'_x=4x+4y-31=0\\) và \\(C'_y=4x+6y-38=0\\). Lấy phương trình thứ hai trừ phương trình thứ nhất được \\(2y=7\\Rightarrow y=7/2=3{,}5\\). Thế lại: \\(4x+14=31\\Rightarrow x=17/4=4{,}25\\). Hessian là \\(\\begin{pmatrix}4&4\\\\4&6\\end{pmatrix}\\), có \\(\\Delta=4\\cdot6-4^2=8\\gt0\\) và \\(C''_{xx}=4\\gt0\\), nên đây là điểm cực tiểu.",
+    "quick": "Giải \\(4x+4y=31\\), \\(4x+6y=38\\) được \\((4{,}25,3{,}5)\\); Hessian dương xác định.",
+    "casio": "CASIO: giải hệ \\(4x+4y=31\\), \\(4x+6y=38\\), được \\(x=4{,}25,y=3{,}5\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 128,
+    "type": "total_differential_arctan_ratio",
+    "question": "Cho \\(z=\\arctan\\left(\\dfrac{y}{x}\\right)\\). Vi phân toàn phần tại điểm \\((1,1)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(dz=-\\dfrac12dx+\\dfrac12dy\\)",
+      "\\(dz=\\dfrac12dx-\\dfrac12dy\\)",
+      "\\(dz=\\dfrac12dx+\\dfrac12dy\\)",
+      "\\(dz=-dx+dy\\)"
+    ],
+    "correct": "\\(dz=-\\dfrac12dx+\\dfrac12dy\\)",
+    "solution": "Ta có \\(z_x=-\\dfrac{y}{x^2+y^2}\\), \\(z_y=\\dfrac{x}{x^2+y^2}\\). Tại \\((1,1)\\), \\(z_x=-1/2\\), \\(z_y=1/2\\). Do đó \\(dz=z_xdx+z_ydy=-\\dfrac12dx+\\dfrac12dy\\).",
+    "quick": "Với \\(z=\\arctan(y/x)\\): \\(z_x=-y/(x^2+y^2)\\), \\(z_y=x/(x^2+y^2)\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Vi phân toàn phần"
+  },
+  {
+    "id": 129,
+    "type": "euler_log_quadratic_identity",
+    "question": "Cho \\(z=\\ln(x^2+my^2)\\), với \\(m\\gt0\\). Giá trị của \\(xz_x+yz_y\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(m\\)",
+      "\\(x+y\\)",
+      "\\(2\\)"
+    ],
+    "correct": "\\(2\\)",
+    "solution": "\\(z_x=\\dfrac{2x}{x^2+my^2}\\), \\(z_y=\\dfrac{2my}{x^2+my^2}\\). Vì vậy \\(xz_x+yz_y=\\dfrac{2x^2+2my^2}{x^2+my^2}=2\\).",
+    "quick": "Nhân từng đạo hàm riêng với biến tương ứng rồi cộng, tử đúng bằng 2 lần mẫu.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng"
+  },
+  {
+    "id": 130,
+    "type": "total_differential_rational_two_vars",
+    "question": "Tìm vi phân toàn phần của \\(z=\\dfrac{x+y}{x-y}\\), với \\(x\\ne y\\).",
+    "matrix": null,
+    "options": [
+      "\\(dz=\\dfrac{2(-y\\,dx+x\\,dy)}{(x-y)^2}\\)",
+      "\\(dz=\\dfrac{2(y\\,dx+x\\,dy)}{(x-y)^2}\\)",
+      "\\(dz=\\dfrac{dx+dy}{x-y}\\)",
+      "\\(dz=\\dfrac{2(x\\,dx+y\\,dy)}{(x-y)^2}\\)"
+    ],
+    "correct": "\\(dz=\\dfrac{2(-y\\,dx+x\\,dy)}{(x-y)^2}\\)",
+    "solution": "Theo quy tắc thương, \\(z_x=-\\dfrac{2y}{(x-y)^2}\\), \\(z_y=\\dfrac{2x}{(x-y)^2}\\). Do đó \\(dz=z_xdx+z_ydy=\\dfrac{2(-y\\,dx+x\\,dy)}{(x-y)^2}\\).",
+    "quick": "Tính riêng \\(z_x,z_y\\) rồi ghép \\(dz=z_xdx+z_ydy\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Vi phân toàn phần"
+  },
+  {
+    "id": 131,
+    "type": "schwarz_theorem_concept",
+    "question": "Cho \\(z=f(x,y)\\) có các đạo hàm riêng cấp hai liên tục. Theo định lý Schwarz, khẳng định nào đúng?",
+    "matrix": null,
+    "options": [
+      "\\(z_{xy}=-z_{yx}\\)",
+      "\\(z_{xx}=z_{yy}\\)",
+      "\\(z_{xy}=z_{yx}\\)",
+      "\\(z_{xy}z_{yx}=1\\)"
+    ],
+    "correct": "\\(z_{xy}=z_{yx}\\)",
+    "solution": "Nếu các đạo hàm riêng cấp hai liên tục trong một lân cận thì hai đạo hàm riêng hỗn hợp bằng nhau: \\(z_{xy}=z_{yx}\\).",
+    "quick": "Định lý Schwarz: đổi thứ tự lấy đạo hàm hỗn hợp khi đủ điều kiện liên tục.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Đạo hàm riêng cấp hai"
+  },
+  {
+    "id": 132,
+    "type": "second_total_differential_exp_xy",
+    "question": "Cho \\(z=e^{x+y}\\). Vi phân toàn phần cấp hai tại \\((0,0)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(d^2z=dx^2+dy^2\\)",
+      "\\(d^2z=dx^2+2dxdy+dy^2\\)",
+      "\\(d^2z=dx^2-2dxdy+dy^2\\)",
+      "\\(d^2z=2dxdy\\)"
+    ],
+    "correct": "\\(d^2z=dx^2+2dxdy+dy^2\\)",
+    "solution": "Ta có \\(z_{xx}=z_{xy}=z_{yy}=e^{x+y}\\), nên tại \\((0,0)\\) cả ba đều bằng 1. Vì \\(d^2z=z_{xx}dx^2+2z_{xy}dxdy+z_{yy}dy^2\\), suy ra \\(d^2z=dx^2+2dxdy+dy^2\\).",
+    "quick": "Nhớ hệ số 2 trước hạng \\(z_{xy}dxdy\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Vi phân cấp hai"
+  },
+  {
+    "id": 133,
+    "type": "laplacian_log_radial",
+    "question": "Cho \\(z=\\ln(x^2+y^2)\\), với \\((x,y)\\ne(0,0)\\). Giá trị \\(z_{xx}+z_{yy}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{4}{x^2+y^2}\\)",
+      "\\(0\\)",
+      "\\(\\dfrac{2}{x^2+y^2}\\)",
+      "\\(-\\dfrac{4}{(x^2+y^2)^2}\\)"
+    ],
+    "correct": "\\(0\\)",
+    "solution": "\\(z_x=\\dfrac{2x}{x^2+y^2}\\), nên \\(z_{xx}=\\dfrac{2(y^2-x^2)}{(x^2+y^2)^2}\\). Tương tự, \\(z_{yy}=\\dfrac{2(x^2-y^2)}{(x^2+y^2)^2}\\). Cộng lại được 0.",
+    "quick": "Hai đạo hàm cấp hai triệt tiêu nhau.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Đạo hàm riêng cấp hai"
+  },
+  {
+    "id": 134,
+    "type": "stationary_points_count_quartic",
+    "question": "Hàm số \\(z=x^4+y^4-2x^2-2y^2\\) có bao nhiêu điểm dừng?",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(9\\)",
+      "\\(4\\)",
+      "\\(5\\)"
+    ],
+    "correct": "\\(9\\)",
+    "solution": "\\(z_x=4x(x^2-1)=0\\Rightarrow x\\in\\{-1,0,1\\}\\). Tương tự \\(y\\in\\{-1,0,1\\}\\). Có \\(3\\times3=9\\) cặp \\((x,y)\\), nên có 9 điểm dừng.",
+    "quick": "Mỗi biến có 3 giá trị dừng độc lập: \\(-1,0,1\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 135,
+    "type": "hessian_maximum_criterion_alt_delta",
+    "question": "Tại điểm dừng \\(M_0\\), đặt \\(A=z_{xx}(M_0)\\), \\(B=z_{xy}(M_0)\\), \\(C=z_{yy}(M_0)\\) và \\(\\Delta=B^2-AC\\). Điều kiện đủ để hàm đạt cực đại tại \\(M_0\\) là",
+    "matrix": null,
+    "options": [
+      "\\(\\Delta\\lt0\\) và \\(A\\lt0\\)",
+      "\\(\\Delta\\lt0\\) và \\(A\\gt0\\)",
+      "\\(\\Delta\\gt0\\) và \\(A\\lt0\\)",
+      "\\(\\Delta=0\\) và \\(A\\lt0\\)"
+    ],
+    "correct": "\\(\\Delta\\lt0\\) và \\(A\\lt0\\)",
+    "solution": "Tiêu chuẩn quen thuộc dùng \\(D=AC-B^2\\). Cực đại khi \\(D\\gt0\\) và \\(A\\lt0\\). Ở đây \\(\\Delta=B^2-AC=-D\\), nên điều kiện tương đương là \\(\\Delta\\lt0\\) và \\(A\\lt0\\).",
+    "quick": "Chú ý đề dùng \\(\\Delta=B^2-AC\\), ngược dấu với \\(D=AC-B^2\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 136,
+    "type": "degenerate_hessian_true_min",
+    "question": "Hàm số \\(z=x^4+y^4\\) tại \\((0,0)\\) có tính chất nào sau đây?",
+    "matrix": null,
+    "options": [
+      "Đạt cực tiểu tại \\((0,0)\\)",
+      "Đạt cực đại tại \\((0,0)\\)",
+      "Không đạt cực trị vì định thức Hessian bằng 0",
+      "\\((0,0)\\) là điểm yên ngựa"
+    ],
+    "correct": "Đạt cực tiểu tại \\((0,0)\\)",
+    "solution": "Với mọi \\((x,y)\\), ta có \\(x^4+y^4\\ge0\\), và bằng 0 chỉ tại \\((0,0)\\). Vì vậy \\((0,0)\\) là điểm cực tiểu, dù tiêu chuẩn Hessian tại đây cho trường hợp suy biến.",
+    "quick": "Hessian bằng 0 không có nghĩa là chắc chắn không có cực trị; xét trực tiếp dấu của hàm.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 137,
+    "type": "quadratic_no_extremum_parameter",
+    "question": "Cho \\(z=x^2+y^2-kxy\\). Điều kiện để hàm không có cực trị tại điểm dừng \\((0,0)\\) là",
+    "matrix": null,
+    "options": [
+      "\\(-2\\lt k\\lt2\\)",
+      "\\(k\\gt2\\) hoặc \\(k\\lt-2\\)",
+      "\\(k=0\\)",
+      "\\(k=2\\)"
+    ],
+    "correct": "\\(k\\gt2\\) hoặc \\(k\\lt-2\\)",
+    "solution": "Hessian là \\(\\begin{pmatrix}2&-k\\\\-k&2\\end{pmatrix}\\), có định thức \\(D=4-k^2\\). Khi \\(|k|\\gt2\\), \\(D\\lt0\\), nên \\((0,0)\\) là điểm yên ngựa và không có cực trị. Với \\(|k|=2\\), hàm là một bình phương và vẫn có cực tiểu không nghiêm ngặt.",
+    "quick": "Không cực trị khi Hessian bất định: \\(4-k^2\\lt0\\).",
+    "casio": "Giải \\(4-k^2\\lt0\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 138,
+    "type": "cubic_extremum_parameter_min_point",
+    "question": "Cho \\(z=x^3+y^3-3axy\\), với \\(a\\gt0\\). Hàm số đạt cực tiểu tại điểm nào?",
+    "matrix": null,
+    "options": [
+      "\\((0,0)\\)",
+      "\\((a,a)\\)",
+      "\\((-a,-a)\\)",
+      "\\((a,-a)\\)"
+    ],
+    "correct": "\\((a,a)\\)",
+    "solution": "Điểm dừng thỏa \\(x^2=ay\\), \\(y^2=ax\\), cho \\((0,0)\\) và \\((a,a)\\). Tại \\((a,a)\\), Hessian có \\(z_{xx}=z_{yy}=6a\\), \\(z_{xy}=-3a\\), nên \\(D=27a^2\\gt0\\) và \\(z_{xx}\\gt0\\). Vì vậy đây là điểm cực tiểu.",
+    "quick": "Hai điểm dừng là \\((0,0)\\), \\((a,a)\\); Hessian tại \\((a,a)\\) dương xác định.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 139,
+    "type": "cubic_origin_saddle",
+    "question": "Với \\(z=x^3+y^3-3axy\\), \\(a\\gt0\\), điểm dừng \\((0,0)\\) là",
+    "matrix": null,
+    "options": [
+      "Điểm cực đại",
+      "Điểm cực tiểu",
+      "Điểm yên ngựa",
+      "Điểm uốn"
+    ],
+    "correct": "Điểm yên ngựa",
+    "solution": "Tại \\((0,0)\\), \\(z_{xx}=z_{yy}=0\\), \\(z_{xy}=-3a\\). Do đó \\(D=z_{xx}z_{yy}-z_{xy}^2=-9a^2\\lt0\\). Suy ra \\((0,0)\\) là điểm yên ngựa.",
+    "quick": "Định thức Hessian âm nên là yên ngựa.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 140,
+    "type": "infinite_stationary_points_parameter",
+    "question": "Cho \\(z=x^2+y^2+2xy+mx\\). Tìm \\(m\\) để hàm số có vô số điểm dừng.",
+    "matrix": null,
+    "options": [
+      "\\(m=1\\)",
+      "\\(m=0\\)",
+      "\\(m\\ne0\\)",
+      "Không tồn tại \\(m\\)"
+    ],
+    "correct": "\\(m=0\\)",
+    "solution": "\\(z_x=2x+2y+m\\), \\(z_y=2x+2y\\). Muốn hệ \\(z_x=z_y=0\\) có nghiệm thì trừ hai phương trình được \\(m=0\\). Khi \\(m=0\\), điều kiện còn lại là \\(x+y=0\\), tạo thành vô số điểm dừng.",
+    "quick": "Hai phương trình chỉ tương thích khi \\(m=0\\), khi đó cả một đường thẳng là điểm dừng.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 141,
+    "type": "exp_quadratic_min_value",
+    "question": "Giá trị cực tiểu của \\(z=e^{x^2+y^2-2x}\\) là",
+    "matrix": null,
+    "options": [
+      "\\(1\\)",
+      "\\(\\dfrac1e\\)",
+      "\\(e\\)",
+      "\\(0\\)"
+    ],
+    "correct": "\\(\\dfrac1e\\)",
+    "solution": "Ta có \\(x^2+y^2-2x=(x-1)^2+y^2-1\\ge-1\\), dấu bằng khi \\((x,y)=(1,0)\\). Vì hàm mũ tăng, giá trị nhỏ nhất là \\(e^{-1}=1/e\\).",
+    "quick": "Hoàn thành bình phương trong số mũ.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến"
+  },
+  {
+    "id": 142,
+    "type": "implicit_partial_xyz_exp",
+    "question": "Hàm ẩn \\(z=z(x,y)\\) được xác định bởi \\(xyz+e^z=m\\). Đạo hàm riêng \\(z_y\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{xz}{xy+e^z}\\)",
+      "\\(-\\dfrac{yz}{xy+e^z}\\)",
+      "\\(-\\dfrac{xy}{xz+e^z}\\)",
+      "\\(-\\dfrac{xz}{xy+e^z}\\)"
+    ],
+    "correct": "\\(-\\dfrac{xz}{xy+e^z}\\)",
+    "solution": "Lấy đạo hàm theo \\(y\\): \\(xz+(xy+e^z)z_y=0\\). Suy ra \\(z_y=-xz/(xy+e^z)\\).",
+    "quick": "Đạo hàm \\(xyz\\) theo \\(y\\) gồm \\(xz+xy z_y\\); \\(e^z\\) cho \\(e^z z_y\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Hàm ẩn nhiều biến"
+  },
+  {
+    "id": 143,
+    "type": "implicit_function_theorem_failure",
+    "question": "Phương trình \\(x+y+z-e^z=0\\) đi qua điểm \\((1,0,0)\\). Đạo hàm riêng \\(z_x\\) tại điểm này có thể xác định bằng công thức hàm ẩn thông thường hay không?",
+    "matrix": null,
+    "options": [
+      "\\(z_x=0\\)",
+      "Không xác định vì \\(F_z(1,0,0)=0\\)",
+      "\\(z_x=1\\)",
+      "\\(z_x=-1\\)"
+    ],
+    "correct": "Không xác định vì \\(F_z(1,0,0)=0\\)",
+    "solution": "Đặt \\(F=x+y+z-e^z\\). Công thức \\(z_x=-F_x/F_z\\) cần \\(F_z\\ne0\\). Nhưng \\(F_z=1-e^z\\), nên tại \\((1,0,0)\\), \\(F_z=0\\). Vì vậy công thức hàm ẩn không xác định đạo hàm tại điểm này.",
+    "quick": "Kiểm tra mẫu \\(F_z\\) trước khi áp dụng \\(z_x=-F_x/F_z\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Hàm ẩn nhiều biến"
+  },
+  {
+    "id": 144,
+    "type": "chain_rule_uv_xy",
+    "question": "Cho \\(z=f(u,v)\\), \\(u=x^2+y^2\\), \\(v=xy\\). Công thức đúng của \\(z_x\\) là",
+    "matrix": null,
+    "options": [
+      "\\(z_x=2x f_u+y f_v\\)",
+      "\\(z_x=2y f_u+x f_v\\)",
+      "\\(z_x=f_u+f_v\\)",
+      "\\(z_x=2x f_u+x f_v\\)"
+    ],
+    "correct": "\\(z_x=2x f_u+y f_v\\)",
+    "solution": "Theo quy tắc chuỗi, \\(z_x=f_u u_x+f_v v_x\\). Vì \\(u_x=2x\\), \\(v_x=y\\), nên \\(z_x=2x f_u+y f_v\\).",
+    "quick": "Quy tắc chuỗi: đạo hàm theo đường đi qua từng biến trung gian.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Hàm hợp nhiều biến"
+  },
+  {
+    "id": 145,
+    "type": "chain_rule_mixed_linear_uv",
+    "question": "Cho \\(z=f(u,v)\\), \\(u=ax\\), \\(v=by\\), với \\(a,b\\ne0\\). Đạo hàm hỗn hợp \\(z_{xy}\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(a f_{uv}\\)",
+      "\\(ab f_{uv}\\)",
+      "\\(b f_{uv}\\)",
+      "\\((a+b)f_{uv}\\)"
+    ],
+    "correct": "\\(ab f_{uv}\\)",
+    "solution": "Trước hết \\(z_x=a f_u\\). Lấy tiếp theo \\(y\\): \\(z_{xy}=a(f_{uu}u_y+f_{uv}v_y)=a(0+b f_{uv})=ab f_{uv}\\).",
+    "quick": "\\(u\\) chỉ phụ thuộc \\(x\\), \\(v\\) chỉ phụ thuộc \\(y\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Hàm hợp nhiều biến"
+  },
+  {
+    "id": 146,
+    "type": "chain_rule_power_uv_point",
+    "question": "Cho \\(z=u^v\\), \\(u=x+y\\), \\(v=x-y\\). Giá trị \\(z_x\\) tại \\((x,y)=(1,0)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(2\\)",
+      "\\(0\\)",
+      "\\(1\\)",
+      "\\(e\\)"
+    ],
+    "correct": "\\(1\\)",
+    "solution": "Viết \\(z=e^{v\\ln u}\\). Khi đó \\(z_x=z\\left(v_x\\ln u+v\\,u_x/u\\right)\\). Tại \\((1,0)\\), \\(u=v=z=1\\), \\(u_x=v_x=1\\), nên \\(z_x=1(0+1)=1\\).",
+    "quick": "Logarit hóa \\(u^v\\), rồi áp dụng quy tắc chuỗi.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Hàm hợp nhiều biến"
+  },
+  {
+    "id": 147,
+    "type": "homogeneous_ratio_chain_identity",
+    "question": "Cho \\(z=f\\left(\\dfrac{y}{x}\\right)\\), với \\(x\\ne0\\). Khẳng định nào đúng?",
+    "matrix": null,
+    "options": [
+      "\\(xz_x+yz_y=0\\)",
+      "\\(xz_x-yz_y=0\\)",
+      "\\(z_x+z_y=0\\)",
+      "\\(xz_y+yz_x=1\\)"
+    ],
+    "correct": "\\(xz_x+yz_y=0\\)",
+    "solution": "Đặt \\(u=y/x\\). Khi đó \\(z_x=f'(u)(-y/x^2)\\), \\(z_y=f'(u)/x\\). Vì vậy \\(xz_x+yz_y=-yf'(u)/x+yf'(u)/x=0\\).",
+    "quick": "Hàm chỉ phụ thuộc tỉ số \\(y/x\\) nên là hàm thuần nhất bậc 0.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Hàm hợp nhiều biến"
+  },
+  {
+    "id": 148,
+    "type": "three_variable_shifted_square_min",
+    "question": "Tìm cực trị của \\(w=(x-1)^2+(y-2)^2+(z+3)^2+5\\).",
+    "matrix": null,
+    "options": [
+      "Cực đại tại \\((1,2,-3)\\), giá trị 5",
+      "Cực tiểu tại \\((1,2,-3)\\), giá trị 5",
+      "Cực tiểu tại \\((-1,-2,3)\\), giá trị 5",
+      "Không có cực trị"
+    ],
+    "correct": "Cực tiểu tại \\((1,2,-3)\\), giá trị 5",
+    "solution": "Ba bình phương đều không âm và đồng thời bằng 0 tại \\((1,2,-3)\\). Vì vậy \\(w\\ge5\\), và giá trị nhỏ nhất bằng 5 tại điểm đó.",
+    "quick": "Dạng tổng các bình phương cộng hằng số.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến ba ẩn"
+  },
+  {
+    "id": 149,
+    "type": "three_variable_infinite_stationary_line",
+    "question": "Cho \\(w=x^2+y^2+z^2-2xy-4z\\). Tập các điểm dừng là",
+    "matrix": null,
+    "options": [
+      "Chỉ \\((0,0,2)\\)",
+      "Chỉ \\((1,1,2)\\)",
+      "Không có điểm dừng",
+      "\\((t,t,2)\\), với \\(t\\in\\mathbb R\\)"
+    ],
+    "correct": "\\((t,t,2)\\), với \\(t\\in\\mathbb R\\)",
+    "solution": "\\(w_x=2x-2y\\), \\(w_y=2y-2x\\), \\(w_z=2z-4\\). Hệ bằng 0 cho \\(x=y\\), \\(z=2\\), còn giá trị chung của \\(x,y\\) tùy ý. Do đó điểm dừng có dạng \\((t,t,2)\\).",
+    "quick": "Hai phương trình đầu chỉ cho \\(x=y\\), không cố định giá trị của chúng.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến ba ẩn"
+  },
+  {
+    "id": 150,
+    "type": "three_variable_stationary_parameter",
+    "question": "Cho \\(w=x^2+y^2+z^2+k(x+y+z)\\). Tìm \\(k\\) để điểm dừng là \\((-1,-1,-1)\\).",
+    "matrix": null,
+    "options": [
+      "\\(k=2\\)",
+      "\\(k=-2\\)",
+      "\\(k=1\\)",
+      "\\(k=0\\)"
+    ],
+    "correct": "\\(k=2\\)",
+    "solution": "\\(w_x=2x+k\\), tương tự cho \\(y,z\\). Tại \\((-1,-1,-1)\\), điều kiện điểm dừng là \\(-2+k=0\\), nên \\(k=2\\).",
+    "quick": "Mỗi phương trình gradient đều là \\(2(-1)+k=0\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Cực trị hàm nhiều biến ba ẩn"
+  },
+  {
+    "id": 151,
+    "type": "application_marginal_cost_two_products",
+    "question": "Cho hàm tổng chi phí \\(C(x,y)=2x^2+xy+y^2+100\\). Chi phí biên đối với sản phẩm \\(x\\) tại \\((x,y)=(10,5)\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(25\\)",
+      "\\(40\\)",
+      "\\(50\\)",
+      "\\(45\\)"
+    ],
+    "correct": "\\(45\\)",
+    "solution": "Chi phí biên theo \\(x\\) là \\(C_x=4x+y\\). Tại \\((10,5)\\), \\(C_x=40+5=45\\).",
+    "quick": "Chi phí biên của sản phẩm \\(x\\) chính là đạo hàm riêng \\(C_x\\).",
+    "casio": "Thế trực tiếp \\(x=10,y=5\\) vào \\(4x+y\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng – Ứng dụng"
+  },
+  {
+    "id": 152,
+    "type": "application_profit_max_two_products",
+    "question": "Cho lợi nhuận \\(\\pi(x,y)=-x^2-2y^2+2xy+10x+4y-15\\). Sản lượng \\((x,y)\\) để lợi nhuận tối đa là",
+    "matrix": null,
+    "options": [
+      "\\((12,7)\\)",
+      "\\((10,5)\\)",
+      "\\((8,3)\\)",
+      "\\((14,9)\\)"
+    ],
+    "correct": "\\((12,7)\\)",
+    "solution": "\\(\\pi_x=-2x+2y+10=0\\), \\(\\pi_y=2x-4y+4=0\\). Giải hệ được \\((x,y)=(12,7)\\). Hessian \\(\\begin{pmatrix}-2&2\\\\2&-4\\end{pmatrix}\\) có định thức 4 dương và phần tử đầu âm, nên âm xác định; đây là cực đại.",
+    "quick": "Giải hệ \\(\\pi_x=\\pi_y=0\\), rồi kiểm tra Hessian âm xác định.",
+    "casio": "CASIO: giải hệ \\(-2x+2y=-10\\), \\(2x-4y=-4\\).",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 153,
+    "type": "application_cost_min_lk_constraint",
+    "question": "Một doanh nghiệp có hàm sản xuất \\(Q=LK\\), giá lao động \\(w=2\\), giá vốn \\(r=8\\). Chi phí tối thiểu để sản xuất \\(Q=100\\) là",
+    "matrix": null,
+    "options": [
+      "\\(80\\)",
+      "\\(40\\)",
+      "\\(100\\)",
+      "\\(160\\)"
+    ],
+    "correct": "\\(80\\)",
+    "solution": "Ràng buộc \\(LK=100\\) cho \\(L=100/K\\). Chi phí \\(C=2L+8K=200/K+8K\\). \\(C'(K)=-200/K^2+8=0\\Rightarrow K=5\\), suy ra \\(L=20\\). Chi phí nhỏ nhất là \\(2\\cdot20+8\\cdot5=80\\).",
+    "quick": "Dùng ràng buộc loại một biến rồi tối ưu hàm chi phí một biến.",
+    "casio": "Giải \\(-200/K^2+8=0\\), lấy nghiệm dương \\(K=5\\).",
+    "difficulty": 3,
+    "topic": "Cực trị có điều kiện – Ứng dụng"
+  },
+  {
+    "id": 154,
+    "type": "application_open_box_min_surface",
+    "question": "Một hộp chữ nhật không nắp có thể tích \\(4\\,\\text{m}^3\\). Kích thước \\((x,y,z)\\) để diện tích vật liệu nhỏ nhất là",
+    "matrix": null,
+    "options": [
+      "\\((1,1,4)\\)",
+      "\\((2,2,1)\\)",
+      "\\((4,1,1)\\)",
+      "\\((2,1,2)\\)"
+    ],
+    "correct": "\\((2,2,1)\\)",
+    "solution": "Với \\(xyz=4\\), \\(z=4/(xy)\\). Diện tích không nắp là \\(S=xy+2xz+2yz=xy+8/x+8/y\\). Điều kiện \\(S_x=S_y=0\\) cho \\(x=y=2\\), khi đó \\(z=1\\).",
+    "quick": "Do tính đối xứng của đáy, nghiệm tối ưu có \\(x=y\\); sau đó dùng \\(xyz=4\\).",
+    "casio": "Có thể giải hệ \\(y-8/x^2=0\\), \\(x-8/y^2=0\\).",
+    "difficulty": 3,
+    "topic": "Cực trị có điều kiện – Ứng dụng"
+  },
+  {
+    "id": 155,
+    "type": "application_cobb_douglas_utility_budget",
+    "question": "Cho hàm ích lợi \\(U(x,y)=x^{0.5}y^{0.5}\\), thu nhập \\(I=100\\), giá \\(P_x=2\\), \\(P_y=5\\). Kết hợp tiêu dùng tối ưu là",
+    "matrix": null,
+    "options": [
+      "\\((20,12)\\)",
+      "\\((30,8)\\)",
+      "\\((25,10)\\)",
+      "\\((50,0)\\)"
+    ],
+    "correct": "\\((25,10)\\)",
+    "solution": "Vì hai số mũ bằng nhau, người tiêu dùng dành một nửa thu nhập cho mỗi hàng hóa. Do đó chi cho \\(x\\) là 50 nên \\(x=50/2=25\\); chi cho \\(y\\) là 50 nên \\(y=50/5=10\\).",
+    "quick": "Cobb-Douglas số mũ \\(0.5,0.5\\): chia đều ngân sách cho hai hàng hóa.",
+    "casio": "Kiểm tra ràng buộc: \\(2\\cdot25+5\\cdot10=100\\).",
+    "difficulty": 3,
+    "topic": "Cực trị có điều kiện – Ứng dụng"
+  },
+  {
+    "id": 156,
+    "type": "application_mpl_diminishing",
+    "question": "Cho hàm sản xuất \\(Q=50L^{3/4}K^{1/4}\\). Nếu vốn \\(K\\) cố định, năng suất biên của lao động \\(MPL=\\partial Q/\\partial L\\) sẽ",
+    "matrix": null,
+    "options": [
+      "Tăng khi \\(L\\) tăng",
+      "Giảm khi \\(L\\) tăng",
+      "Không đổi",
+      "Bằng 0"
+    ],
+    "correct": "Giảm khi \\(L\\) tăng",
+    "solution": "\\(MPL=\\dfrac{75}{2}L^{-1/4}K^{1/4}\\). Khi \\(K\\) cố định, thừa số \\(L^{-1/4}\\) giảm khi \\(L\\) tăng, nên năng suất biên lao động giảm.",
+    "quick": "Số mũ của \\(L\\) trong MPL là \\(-1/4\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Đạo hàm riêng – Ứng dụng"
+  },
+  {
+    "id": 157,
+    "type": "application_price_discrimination_two_markets",
+    "question": "Doanh nghiệp bán trên hai thị trường với \\(q_1=24-p_1\\), \\(q_2=24-2p_2\\), chi phí \\(C=6(q_1+q_2)\\). Cặp giá tối đa hóa lợi nhuận là",
+    "matrix": null,
+    "options": [
+      "\\((p_1,p_2)=(15,9)\\)",
+      "\\((12,12)\\)",
+      "\\((18,6)\\)",
+      "\\((10,8)\\)"
+    ],
+    "correct": "\\((p_1,p_2)=(15,9)\\)",
+    "solution": "Lợi nhuận \\(\\pi=(p_1-6)(24-p_1)+(p_2-6)(24-2p_2)\\). Điều kiện \\(\\pi_{p_1}=0\\) cho \\(p_1=15\\); \\(\\pi_{p_2}=0\\) cho \\(p_2=9\\). Các hệ số bậc hai âm nên đây là cực đại.",
+    "quick": "Hai thị trường tách biệt nên tối ưu từng phần lợi nhuận theo từng giá.",
+    "casio": "Giải hai phương trình đạo hàm bậc nhất độc lập.",
+    "difficulty": 3,
+    "topic": "Cực trị hàm nhiều biến – Ứng dụng"
+  },
+  {
+    "id": 158,
+    "type": "application_cost_elasticity_partial",
+    "question": "Cho \\(C(x,y)=ax^2+by^2\\), với \\(a,b\\gt0\\). Nếu tăng \\(x\\) khoảng 1% và giữ nguyên \\(y\\), phần trăm thay đổi xấp xỉ của chi phí là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{ax}{ax+by}\\%\\)",
+      "\\(2a\\%\\)",
+      "\\(\\dfrac{a}{b}\\%\\)",
+      "\\(\\dfrac{2ax^2}{ax^2+by^2}\\%\\)"
+    ],
+    "correct": "\\(\\dfrac{2ax^2}{ax^2+by^2}\\%\\)",
+    "solution": "Độ co giãn riêng của \\(C\\) theo \\(x\\) là \\(E_x=\\dfrac{x}{C}C_x\\). Vì \\(C_x=2ax\\), ta có \\(E_x=\\dfrac{2ax^2}{ax^2+by^2}\\). Khi \\(x\\) tăng 1%, chi phí thay đổi xấp xỉ \\(E_x\\%\\).",
+    "quick": "Dùng độ co giãn riêng \\(E_x=(x/C)C_x\\).",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Đạo hàm riêng – Ứng dụng"
+  },
+  {
+    "id": 159,
+    "type": "application_marginal_cost_y",
+    "question": "Cho \\(C(x,y)=x^2+y^2+xy+10\\). Tại \\((x,y)=(3,4)\\), chi phí biên đối với sản phẩm \\(y\\) bằng",
+    "matrix": null,
+    "options": [
+      "\\(11\\)",
+      "\\(10\\)",
+      "\\(12\\)",
+      "\\(8\\)"
+    ],
+    "correct": "\\(11\\)",
+    "solution": "Chi phí biên theo \\(y\\) là \\(C_y=2y+x\\). Tại \\((3,4)\\), \\(C_y=8+3=11\\).",
+    "quick": "Lấy đạo hàm riêng theo đúng sản phẩm \\(y\\).",
+    "casio": "Thế \\(x=3,y=4\\) vào \\(2y+x\\).",
+    "difficulty": 2,
+    "topic": "Đạo hàm riêng – Ứng dụng"
   }
 ]

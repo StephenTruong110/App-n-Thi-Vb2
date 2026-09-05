@@ -2014,5 +2014,59 @@
     "casio": "CASIO không cần thiết; quan sát quan hệ tỉ lệ.",
     "difficulty": 1,
     "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 113,
+    "type": "dimension_dependence_r4",
+    "question": "Khẳng định nào sau đây đúng về một hệ gồm 5 véc tơ bất kỳ trong \\(\\mathbb R^4\\)?",
+    "matrix": null,
+    "options": [
+      "Luôn độc lập tuyến tính",
+      "Luôn tạo thành một cơ sở của \\(\\mathbb R^4\\)",
+      "Luôn phụ thuộc tuyến tính",
+      "Có thể độc lập tuyến tính hoặc phụ thuộc tuyến tính"
+    ],
+    "correct": "Luôn phụ thuộc tuyến tính",
+    "solution": "Không gian \\(\\mathbb R^4\\) có số chiều 4, nên mọi hệ chứa nhiều hơn 4 véc tơ đều phụ thuộc tuyến tính. Vì hệ có 5 véc tơ nên chắc chắn phụ thuộc tuyến tính.",
+    "quick": "Trong không gian \\(n\\) chiều, hơn \\(n\\) véc tơ luôn phụ thuộc tuyến tính.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 2,
+    "topic": "Không gian véc tơ"
+  },
+  {
+    "id": 114,
+    "type": "linear_independence_transform_pair_sums",
+    "question": "Cho \\(u,v,w\\) là ba véc tơ độc lập tuyến tính trong \\(\\mathbb R^3\\). Xét \\(S=\\{u+v,\\ v+w,\\ w+u\\}\\). Khẳng định đúng là",
+    "matrix": null,
+    "options": [
+      "\\(S\\) luôn độc lập tuyến tính",
+      "\\(S\\) luôn phụ thuộc tuyến tính",
+      "\\(S\\) không thể sinh ra \\(\\mathbb R^3\\)",
+      "Hạng của \\(S\\) bằng 2"
+    ],
+    "correct": "\\(S\\) luôn độc lập tuyến tính",
+    "solution": "Giả sử \\(\\alpha(u+v)+\\beta(v+w)+\\gamma(w+u)=0\\). Khi đó \\((\\alpha+\\gamma)u+(\\alpha+\\beta)v+(\\beta+\\gamma)w=0\\). Vì \\(u,v,w\\) độc lập tuyến tính nên \\(\\alpha+\\gamma=\\alpha+\\beta=\\beta+\\gamma=0\\). Suy ra \\(\\alpha=\\beta=\\gamma=0\\). Do đó \\(S\\) độc lập tuyến tính.",
+    "quick": "Ma trận biến đổi từ \\((u,v,w)\\) sang ba véc tơ mới có định thức 2 khác 0.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 3,
+    "topic": "Độc lập tuyến tính"
+  },
+  {
+    "id": 115,
+    "type": "linear_dependence_zero_vector",
+    "question": "Khẳng định nào sau đây luôn đúng?",
+    "matrix": null,
+    "options": [
+      "Bổ sung một véc tơ bất kỳ vào hệ độc lập tuyến tính vẫn luôn độc lập",
+      "Bỏ một véc tơ bất kỳ khỏi hệ phụ thuộc tuyến tính luôn được hệ độc lập",
+      "Hệ chứa véc tơ không luôn phụ thuộc tuyến tính",
+      "Hai véc tơ bất kỳ luôn độc lập tuyến tính"
+    ],
+    "correct": "Hệ chứa véc tơ không luôn phụ thuộc tuyến tính",
+    "solution": "Nếu một hệ chứa véc tơ không \\(0\\), ta có một tổ hợp tuyến tính bằng véc tơ không với hệ số của véc tơ không khác 0 và các hệ số còn lại bằng 0. Vì tồn tại quan hệ tuyến tính không tầm thường nên hệ phụ thuộc tuyến tính.",
+    "quick": "Chỉ cần có véc tơ không trong hệ thì hệ phụ thuộc tuyến tính.",
+    "casio": "Không cần CASIO.",
+    "difficulty": 1,
+    "topic": "Độc lập tuyến tính"
   }
 ]
