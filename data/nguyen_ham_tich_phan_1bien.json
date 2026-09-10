@@ -1114,5 +1114,329 @@
     "casio": "CASIO: nhập \\(9800\\pi\\times\\int_{-2}^{0}(4-y^2)(2-y)dy\\), được xấp xỉ \\(451550\\,\\mathrm{J}\\).",
     "difficulty": 3,
     "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 63,
+    "type": "application_work_rectangular_tank_outlet_above",
+    "question": "Một bể hình hộp chữ nhật dài 4 m, rộng 2 m, cao 3 m chứa nước đến độ sâu 2,5 m. Nước được bơm qua một ống có đầu ra cao hơn miệng bể 1 m. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết để bơm hết nước là",
+    "matrix": null,
+    "options": [
+      "\\(539000\\,\\mathrm{J}\\)",
+      "\\(490000\\,\\mathrm{J}\\)",
+      "\\(588000\\,\\mathrm{J}\\)",
+      "\\(343000\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(539000\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) tính từ đáy bể. Mỗi lớp nước có diện tích \\(A=4\\cdot2=8\\,\\mathrm{m^2}\\), thể tích \\(8\\,dy\\), trọng lượng \\(9800\\cdot8\\,dy\\). Đầu ra ở độ cao 4 m nên lớp tại độ cao \\(y\\) được nâng quãng đường \\(4-y\\). Do đó \\(W=9800\\cdot8\\int_0^{2,5}(4-y)dy=539000\\,\\mathrm{J}\\).",
+    "quick": "Bể hộp: diện tích lát cắt không đổi. Khoảng nâng = độ cao đầu ra trừ \\(y\\).",
+    "casio": "Tính \\(9800\\times8\\times\\int_0^{2.5}(4-x)dx\\), được \\(539000\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 64,
+    "type": "application_work_conical_tank_partial_outlet_above",
+    "question": "Một bể hình nón tròn xoay đặt đỉnh xuống dưới, cao 6 m, bán kính miệng 3 m, chứa nước đến độ sâu 4 m. Nước được bơm qua một ống có đầu ra cao hơn miệng bể 1 m. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{784000\\pi}{3}\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Lấy \\(y\\) từ đỉnh bể. Do tam giác đồng dạng, \\(r/y=3/6\\), nên \\(r=y/2\\). Diện tích lớp nước là \\(A(y)=\\pi y^2/4\\). Đầu ra ở độ cao 7 m nên khoảng nâng là \\(7-y\\). Vì nước sâu 4 m, \\(W=9800\\int_0^4\\dfrac{\\pi y^2}{4}(7-y)dy=\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Nón: tìm \\(r(y)\\) bằng tam giác đồng dạng trước, rồi dùng \\(A=\\pi r^2\\).",
+    "casio": "Tính \\(2450\\pi\\int_0^4 x^2(7-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 65,
+    "type": "application_work_vertical_cylinder_partial_outlet_above",
+    "question": "Một bể hình trụ đứng bán kính 1 m, cao 6 m, chứa nước đến độ sâu 3 m. Nước được bơm qua đầu ống cao hơn miệng bể 2 m. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết để bơm hết nước là",
+    "matrix": null,
+    "options": [
+      "\\(191100\\pi\\,\\mathrm{J}\\)",
+      "\\(147000\\pi\\,\\mathrm{J}\\)",
+      "\\(220500\\pi\\,\\mathrm{J}\\)",
+      "\\(88200\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(191100\\pi\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) từ đáy. Diện tích lát cắt là \\(\\pi\\). Đầu ra ở độ cao \\(6+2=8\\) m nên khoảng nâng là \\(8-y\\). Nước chiếm \\(0\\le y\\le3\\). Do đó \\(W=9800\\pi\\int_0^3(8-y)dy=191100\\pi\\,\\mathrm{J}\\).",
+    "quick": "Trụ đứng: \\(A=\\pi R^2\\) không đổi; chú ý đầu ra cao 8 m tính từ đáy.",
+    "casio": "Tính \\(9800\\pi\\int_0^3(8-x)dx\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 66,
+    "type": "application_work_horizontal_cylinder_half_full",
+    "question": "Một bể hình trụ tròn xoay nằm ngang dài 3 m, bán kính 2 m, chỉ chứa nước ở nửa dưới. Nước được bơm qua điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm tiết diện tròn. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết bằng",
+    "matrix": null,
+    "options": [
+      "\\(117600\\pi+156800\\,\\mathrm{J}\\)",
+      "\\(117600\\pi-156800\\,\\mathrm{J}\\)",
+      "\\(235200\\pi\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(117600\\pi+156800\\,\\mathrm{J}\\)",
+    "solution": "Với lớp nước tại độ cao \\(y\\), \\(-2\\le y\\le0\\), chiều rộng dây cung là \\(2\\sqrt{4-y^2}\\). Thể tích lớp là \\(3\\cdot2\\sqrt{4-y^2}\\,dy\\), khoảng nâng lên đỉnh là \\(2-y\\). Vì vậy \\(W=9800\\cdot3\\int_{-2}^0 2\\sqrt{4-y^2}(2-y)dy=117600\\pi+156800\\,\\mathrm{J}\\).",
+    "quick": "Trụ ngang: lát cắt ngang theo \\(y\\) là dây cung \\(2\\sqrt{R^2-y^2}\\), rồi nhân chiều dài bể.",
+    "casio": "CASIO có thể kiểm tra tích phân số \\(58800\\int_{-2}^{0}\\sqrt{4-x^2}(2-x)dx\\) sau khi lưu ý hệ số 2 trong dây cung; kết quả tương đương biểu thức đáp án.",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 67,
+    "type": "application_work_spring_between_extensions",
+    "question": "Một lò xo tuân theo định luật Hooke với hằng số \\(k=120\\,\\mathrm{N/m}\\). Công cần thiết để kéo lò xo từ độ giãn 0,10 m đến độ giãn 0,25 m là",
+    "matrix": null,
+    "options": [
+      "\\(3,15\\,\\mathrm{J}\\)",
+      "\\(3,75\\,\\mathrm{J}\\)",
+      "\\(1,80\\,\\mathrm{J}\\)",
+      "\\(7,50\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(3,15\\,\\mathrm{J}\\)",
+    "solution": "Theo định luật Hooke, \\(F(x)=kx=120x\\). Công từ \\(x=0,10\\) đến \\(x=0,25\\) là \\(W=\\int_{0,10}^{0,25}120x\\,dx=60(0,25^2-0,10^2)=3,15\\,\\mathrm{J}\\).",
+    "quick": "Kéo từ \\(a\\) đến \\(b\\): \\(W=\\dfrac{k}{2}(b^2-a^2)\\).",
+    "casio": "Tính \\(60(0.25^2-0.10^2)\\), được \\(3.15\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công lò xo"
+  },
+  {
+    "id": 68,
+    "type": "application_work_spring_find_k_from_force",
+    "question": "Một lực 30 N làm lò xo giãn 0,15 m so với vị trí cân bằng. Công cần thiết để kéo lò xo từ vị trí cân bằng đến độ giãn 0,25 m là",
+    "matrix": null,
+    "options": [
+      "\\(6,25\\,\\mathrm{J}\\)",
+      "\\(3,75\\,\\mathrm{J}\\)",
+      "\\(7,50\\,\\mathrm{J}\\)",
+      "\\(12,5\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(6,25\\,\\mathrm{J}\\)",
+    "solution": "Từ \\(F=kx\\), ta có \\(k=30/0,15=200\\,\\mathrm{N/m}\\). Công cần thiết là \\(W=\\int_0^{0,25}200x\\,dx=100(0,25)^2=6,25\\,\\mathrm{J}\\).",
+    "quick": "Đầu tiên tìm \\(k=F/x\\), sau đó dùng \\(W=kx^2/2\\).",
+    "casio": "Tính \\(30/0.15=200\\), rồi \\(200\\times0.25^2/2=6.25\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công lò xo"
+  },
+  {
+    "id": 69,
+    "type": "application_work_spring_compression_interval",
+    "question": "Một lò xo có hằng số \\(k=80\\,\\mathrm{N/m}\\). Công cần thiết để nén lò xo từ độ nén 0,05 m đến độ nén 0,20 m là",
+    "matrix": null,
+    "options": [
+      "\\(1,5\\,\\mathrm{J}\\)",
+      "\\(1,6\\,\\mathrm{J}\\)",
+      "\\(0,75\\,\\mathrm{J}\\)",
+      "\\(3\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(1,5\\,\\mathrm{J}\\)",
+    "solution": "Độ lớn lực Hooke là \\(F(x)=80x\\). Công để tăng độ nén từ 0,05 m đến 0,20 m là \\(W=\\int_{0,05}^{0,20}80x\\,dx=40(0,20^2-0,05^2)=1,5\\,\\mathrm{J}\\).",
+    "quick": "Nén hay kéo đều dùng độ biến dạng \\(x\\) trong \\(F=kx\\).",
+    "casio": "Tính \\(40(0.20^2-0.05^2)\\), được \\(1.5\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công lò xo"
+  },
+  {
+    "id": 70,
+    "type": "application_work_spring_force_to_work_interval",
+    "question": "Một lực 20 N làm lò xo giãn 0,05 m. Công cần thiết để kéo lò xo từ độ giãn 0,10 m đến độ giãn 0,30 m là",
+    "matrix": null,
+    "options": [
+      "\\(16\\,\\mathrm{J}\\)",
+      "\\(8\\,\\mathrm{J}\\)",
+      "\\(20\\,\\mathrm{J}\\)",
+      "\\(32\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(16\\,\\mathrm{J}\\)",
+    "solution": "Hằng số lò xo là \\(k=20/0,05=400\\,\\mathrm{N/m}\\). Vì vậy \\(W=\\int_{0,10}^{0,30}400x\\,dx=200(0,30^2-0,10^2)=16\\,\\mathrm{J}\\).",
+    "quick": "Tìm \\(k\\) trước; sau đó lấy hiệu hai thế năng đàn hồi.",
+    "casio": "Tính \\(20/0.05=400\\), rồi \\(200(0.30^2-0.10^2)=16\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công lò xo"
+  },
+  {
+    "id": 71,
+    "type": "application_work_rope_pull_all_mass_density",
+    "question": "Một sợi dây dài 10 m, đồng chất, có khối lượng riêng theo chiều dài \\(2\\,\\mathrm{kg/m}\\), được thả thẳng đứng từ mép một tòa nhà. Lấy \\(g=9,8\\,\\mathrm{m/s^2}\\). Công cần thiết để kéo toàn bộ dây lên mép tòa nhà là",
+    "matrix": null,
+    "options": [
+      "\\(980\\,\\mathrm{J}\\)",
+      "\\(1960\\,\\mathrm{J}\\)",
+      "\\(490\\,\\mathrm{J}\\)",
+      "\\(784\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(980\\,\\mathrm{J}\\)",
+    "solution": "Gọi \\(x\\) là khoảng cách của một phần tử dây tới mép tòa nhà. Phần tử dài \\(dx\\) có trọng lượng \\(2\\cdot9,8\\,dx=19,6\\,dx\\) và phải nâng quãng đường \\(x\\). Do đó \\(W=\\int_0^{10}19,6x\\,dx=980\\,\\mathrm{J}\\).",
+    "quick": "Mỗi đoạn nhỏ ở độ sâu \\(x\\) phải đi lên đúng \\(x\\) mét.",
+    "casio": "Tính \\(19.6\\int_0^{10}x\\,dx=980\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công kéo dây"
+  },
+  {
+    "id": 72,
+    "type": "application_work_rope_pull_partial",
+    "question": "Một sợi dây dài 8 m treo thẳng đứng qua mép một mái nhà và có trọng lượng riêng theo chiều dài \\(5\\,\\mathrm{N/m}\\). Công cần thiết để kéo 4 m dây lên mái, sao cho còn 4 m dây treo xuống, là",
+    "matrix": null,
+    "options": [
+      "\\(120\\,\\mathrm{J}\\)",
+      "\\(160\\,\\mathrm{J}\\)",
+      "\\(80\\,\\mathrm{J}\\)",
+      "\\(240\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(120\\,\\mathrm{J}\\)",
+    "solution": "Sau khi đã kéo lên một đoạn \\(x\\), chiều dài còn treo là \\(8-x\\), nên lực cần thắng là \\(F(x)=5(8-x)\\). Kéo tổng cộng 4 m nên \\(W=\\int_0^4 5(8-x)dx=120\\,\\mathrm{J}\\).",
+    "quick": "Cách 2: lực giảm dần vì chiều dài dây đang treo giảm từ 8 m xuống 4 m.",
+    "casio": "Tính \\(\\int_0^4 5(8-x)dx\\), được \\(120\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công kéo dây"
+  },
+  {
+    "id": 73,
+    "type": "application_work_chain_partial_initial_platform",
+    "question": "Một sợi xích đồng chất dài 10 m có trọng lượng riêng theo chiều dài \\(4\\,\\mathrm{N/m}\\). Ban đầu 2 m xích nằm trên mép phẳng và 8 m còn lại treo thẳng đứng. Bỏ qua ma sát. Công cần thiết để kéo hết phần xích đang treo lên mặt phẳng là",
+    "matrix": null,
+    "options": [
+      "\\(128\\,\\mathrm{J}\\)",
+      "\\(160\\,\\mathrm{J}\\)",
+      "\\(320\\,\\mathrm{J}\\)",
+      "\\(64\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(128\\,\\mathrm{J}\\)",
+    "solution": "Chỉ 8 m xích treo cần được nâng. Một phần tử ở độ sâu \\(x\\), \\(0\\le x\\le8\\), có trọng lượng \\(4\\,dx\\) và được nâng quãng đường \\(x\\). Do đó \\(W=\\int_0^8 4x\\,dx=128\\,\\mathrm{J}\\).",
+    "quick": "Phần 2 m đã nằm trên mặt phẳng không phải nâng lên nên không góp vào công chống trọng lực.",
+    "casio": "Tính \\(4\\int_0^8x\\,dx=128\\).",
+    "difficulty": 2,
+    "topic": "Nguyên hàm & Tích phân một biến – Công kéo dây"
+  },
+  {
+    "id": 74,
+    "type": "application_work_rope_variable_weight_density",
+    "question": "Một sợi dây dài 4 m treo thẳng đứng. Tại điểm cách đầu trên \\(x\\) mét, trọng lượng riêng theo chiều dài của dây là \\(w(x)=2+x\\,\\mathrm{N/m}\\). Công cần thiết để kéo toàn bộ dây lên đầu trên là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{112}{3}\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{88}{3}\\,\\mathrm{J}\\)",
+      "\\(56\\,\\mathrm{J}\\)",
+      "\\(32\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{112}{3}\\,\\mathrm{J}\\)",
+    "solution": "Đoạn dây nhỏ tại độ sâu \\(x\\) có trọng lượng \\((2+x)dx\\) và phải nâng quãng đường \\(x\\). Vì vậy \\(dW=x(2+x)dx\\). Suy ra \\(W=\\int_0^4x(2+x)dx=\\left[x^2+x^3/3\\right]_0^4=112/3\\,\\mathrm{J}\\).",
+    "quick": "Mật độ thay đổi nên không thể lấy trọng lượng toàn dây nhân một khoảng cách trung bình một cách máy móc.",
+    "casio": "Tính \\(\\int_0^4x(2+x)dx\\), được \\(112/3\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công kéo dây"
+  },
+  {
+    "id": 75,
+    "type": "application_work_paraboloid_full",
+    "question": "Một bể có dạng paraboloid tròn xoay đặt đỉnh xuống dưới, cao 4 m và bán kính miệng 2 m, chứa đầy nước. Nước được bơm lên đúng miệng bể. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(313600\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) tính từ đỉnh bể. Tiết diện sinh bởi parabol thỏa \\(r^2=y\\), vì tại \\(y=4\\) thì \\(r=2\\). Do đó diện tích lớp nước là \\(A(y)=\\pi y\\). Lớp ở độ cao \\(y\\) phải nâng quãng đường \\(4-y\\). Vì vậy \\(W=9800\\pi\\int_0^4 y(4-y)dy=\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Paraboloid: tìm quan hệ \\(r^2\\) theo \\(y\\), rồi dùng \\(A=\\pi r^2\\).",
+    "casio": "Tính \\(9800\\pi\\int_0^4 x(4-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 76,
+    "type": "application_work_parabolic_trough_full",
+    "question": "Một máng nước dài 6 m có tiết diện đầu là miền giới hạn bởi parabol \\(y=x^2\\), đáy tại \\(y=0\\), miệng tại \\(y=4\\). Máng chứa đầy nước và nước được bơm lên điểm cao hơn miệng máng 1 m. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(1630720\\,\\mathrm{J}\\)",
+      "\\(1176000\\,\\mathrm{J}\\)",
+      "\\(1568000\\,\\mathrm{J}\\)",
+      "\\(1960000\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(1630720\\,\\mathrm{J}\\)",
+    "solution": "Ở độ cao \\(y\\), parabol \\(y=x^2\\) cho \\(x=\\pm\\sqrt y\\), nên chiều rộng lớp nước là \\(2\\sqrt y\\). Thể tích lớp mỏng là \\(6\\cdot2\\sqrt y\\,dy=12\\sqrt y\\,dy\\). Đầu ra ở độ cao 5 m nên khoảng nâng là \\(5-y\\). Do đó \\(W=9800\\int_0^4 12\\sqrt y(5-y)dy=1630720\\,\\mathrm{J}\\).",
+    "quick": "Máng parabol: chiều rộng lớp nước tại cao độ \\(y\\) là \\(2\\sqrt y\\).",
+    "casio": "Tính \\(117600\\int_0^4\\sqrt{x}(5-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 77,
+    "type": "application_work_inverted_square_pyramid_full",
+    "question": "Một bể hình chóp tứ giác đều đặt đỉnh xuống dưới, cao 6 m, cạnh miệng bể dài 4 m, chứa đầy nước. Nước được bơm lên đúng miệng bể. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(470400\\,\\mathrm{J}\\)",
+      "\\(940800\\,\\mathrm{J}\\)",
+      "\\(313600\\,\\mathrm{J}\\)",
+      "\\(627200\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(470400\\,\\mathrm{J}\\)",
+    "solution": "Gọi \\(y\\) là độ cao tính từ đỉnh chóp. Do đồng dạng, cạnh tiết diện vuông tại độ cao \\(y\\) là \\(s(y)=\\dfrac{4}{6}y=\\dfrac{2y}{3}\\). Vì vậy \\(A(y)=s^2=\\dfrac{4y^2}{9}\\). Khoảng nâng là \\(6-y\\). Suy ra \\(W=9800\\int_0^6\\dfrac{4y^2}{9}(6-y)dy=470400\\,\\mathrm{J}\\).",
+    "quick": "Hình chóp ngược: cạnh lát cắt tăng tuyến tính theo \\(y\\), nên diện tích tăng theo \\(y^2\\).",
+    "casio": "Tính \\(\\dfrac{39200}{9}\\int_0^6x^2(6-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 78,
+    "type": "application_work_inverted_square_pyramid_partial",
+    "question": "Một bể hình chóp tứ giác đều đặt đỉnh xuống dưới, cao 5 m, cạnh miệng 6 m, chứa nước đến độ sâu 3 m tính từ đỉnh. Nước được bơm qua đầu ống cao hơn miệng bể 1 m. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(476280\\,\\mathrm{J}\\)",
+      "\\(529200\\,\\mathrm{J}\\)",
+      "\\(352800\\,\\mathrm{J}\\)",
+      "\\(588000\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(476280\\,\\mathrm{J}\\)",
+    "solution": "Lấy \\(y\\) từ đỉnh. Do đồng dạng, cạnh tiết diện là \\(s(y)=\\dfrac65y\\), nên \\(A(y)=\\dfrac{36}{25}y^2\\). Nước chỉ chiếm \\(0\\le y\\le3\\), còn đầu ra ở độ cao 6 m, nên khoảng nâng là \\(6-y\\). Do đó \\(W=9800\\int_0^3\\dfrac{36}{25}y^2(6-y)dy=476280\\,\\mathrm{J}\\).",
+    "quick": "Phân biệt độ cao toàn bể 5 m, độ sâu nước 3 m và độ cao đầu ra 6 m.",
+    "casio": "Tính \\(14112\\int_0^3x^2(6-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 79,
+    "type": "application_work_spherical_tank_full",
+    "question": "Một bể hình cầu bán kính 2 m chứa đầy nước. Nước được bơm lên điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm cầu. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(313600\\pi\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(627200\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Mặt cầu có phương trình \\(x^2+y^2=4\\), nên tại độ cao \\(y\\), bán kính lát cắt thỏa \\(r^2=4-y^2\\). Diện tích lớp nước là \\(A(y)=\\pi(4-y^2)\\), với \\(-2\\le y\\le2\\). Khoảng nâng lên đỉnh là \\(2-y\\). Vì vậy \\(W=9800\\pi\\int_{-2}^{2}(4-y^2)(2-y)dy=\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Hình cầu: \\(r^2=R^2-y^2\\), rồi khoảng nâng = cao độ đầu ra trừ \\(y\\).",
+    "casio": "Tính \\(9800\\pi\\int_{-2}^{2}(4-x^2)(2-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 80,
+    "type": "application_work_spherical_tank_half_full_outlet_above",
+    "question": "Một bể hình cầu bán kính 3 m chỉ chứa nước ở nửa dưới. Nước được bơm qua một ống có đầu ra cao hơn đỉnh bể 1 m. Chọn tâm cầu làm gốc tọa độ và trục \\(y\\) thẳng đứng. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(904050\\pi\\,\\mathrm{J}\\)",
+      "\\(661500\\pi\\,\\mathrm{J}\\)",
+      "\\(441000\\pi\\,\\mathrm{J}\\)",
+      "\\(1102500\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(904050\\pi\\,\\mathrm{J}\\)",
+    "solution": "Nửa dưới tương ứng \\(-3\\le y\\le0\\). Diện tích lớp nước là \\(A(y)=\\pi(9-y^2)\\). Đỉnh cầu ở \\(y=3\\), đầu ra cao hơn 1 m nên ở \\(y=4\\). Vì vậy khoảng nâng của lớp tại \\(y\\) là \\(4-y\\). Suy ra \\(W=9800\\pi\\int_{-3}^{0}(9-y^2)(4-y)dy=904050\\pi\\,\\mathrm{J}\\).",
+    "quick": "Với bể cầu, nên đặt gốc tại tâm để lát cắt có dạng \\(\\pi(R^2-y^2)\\).",
+    "casio": "Tính \\(9800\\pi\\int_{-3}^{0}(9-x^2)(4-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
   }
 ]
