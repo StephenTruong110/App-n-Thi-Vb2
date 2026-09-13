@@ -3094,5 +3094,113 @@
     "casio": "CASIO: kiểm tra \\(S(100,100,100)^T=(100,100,100)^T\\).",
     "difficulty": 3,
     "topic": "Ứng dụng ma trận – Cân bằng trao đổi"
+  },
+  {
+    "id": 173,
+    "type": "application_work_paraboloid_full",
+    "question": "Một bể có dạng paraboloid tròn xoay đặt đỉnh xuống dưới, cao 4 m và bán kính miệng 2 m, chứa đầy nước. Nước được bơm lên đúng miệng bể. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(156800\\pi\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(313600\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Chọn \\(y\\) tính từ đỉnh bể. Tiết diện sinh bởi parabol thỏa \\(r^2=y\\), vì tại \\(y=4\\) thì \\(r=2\\). Do đó diện tích lớp nước là \\(A(y)=\\pi y\\). Lớp ở độ cao \\(y\\) phải nâng quãng đường \\(4-y\\). Vì vậy \\(W=9800\\pi\\int_0^4 y(4-y)dy=\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Paraboloid: tìm quan hệ \\(r^2\\) theo \\(y\\), rồi dùng \\(A=\\pi r^2\\).",
+    "casio": "Tính \\(9800\\pi\\int_0^4 x(4-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 174,
+    "type": "application_work_parabolic_trough_full",
+    "question": "Một máng nước dài 6 m có tiết diện đầu là miền giới hạn bởi parabol \\(y=x^2\\), đáy tại \\(y=0\\), miệng tại \\(y=4\\). Máng chứa đầy nước và nước được bơm lên điểm cao hơn miệng máng 1 m. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(1630720\\,\\mathrm{J}\\)",
+      "\\(1176000\\,\\mathrm{J}\\)",
+      "\\(1568000\\,\\mathrm{J}\\)",
+      "\\(1960000\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(1630720\\,\\mathrm{J}\\)",
+    "solution": "Ở độ cao \\(y\\), parabol \\(y=x^2\\) cho \\(x=\\pm\\sqrt y\\), nên chiều rộng lớp nước là \\(2\\sqrt y\\). Thể tích lớp mỏng là \\(6\\cdot2\\sqrt y\\,dy=12\\sqrt y\\,dy\\). Đầu ra ở độ cao 5 m nên khoảng nâng là \\(5-y\\). Do đó \\(W=9800\\int_0^4 12\\sqrt y(5-y)dy=1630720\\,\\mathrm{J}\\).",
+    "quick": "Máng parabol: chiều rộng lớp nước tại cao độ \\(y\\) là \\(2\\sqrt y\\).",
+    "casio": "Tính \\(117600\\int_0^4\\sqrt{x}(5-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 175,
+    "type": "application_work_inverted_square_pyramid_full",
+    "question": "Một bể hình chóp tứ giác đều đặt đỉnh xuống dưới, cao 6 m, cạnh miệng bể dài 4 m, chứa đầy nước. Nước được bơm lên đúng miệng bể. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(470400\\,\\mathrm{J}\\)",
+      "\\(940800\\,\\mathrm{J}\\)",
+      "\\(313600\\,\\mathrm{J}\\)",
+      "\\(627200\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(470400\\,\\mathrm{J}\\)",
+    "solution": "Gọi \\(y\\) là độ cao tính từ đỉnh chóp. Do đồng dạng, cạnh tiết diện vuông tại độ cao \\(y\\) là \\(s(y)=\\dfrac{4}{6}y=\\dfrac{2y}{3}\\). Vì vậy \\(A(y)=s^2=\\dfrac{4y^2}{9}\\). Khoảng nâng là \\(6-y\\). Suy ra \\(W=9800\\int_0^6\\dfrac{4y^2}{9}(6-y)dy=470400\\,\\mathrm{J}\\).",
+    "quick": "Hình chóp ngược: cạnh lát cắt tăng tuyến tính theo \\(y\\), nên diện tích tăng theo \\(y^2\\).",
+    "casio": "Tính \\(\\dfrac{39200}{9}\\int_0^6x^2(6-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 176,
+    "type": "application_work_inverted_square_pyramid_partial",
+    "question": "Một bể hình chóp tứ giác đều đặt đỉnh xuống dưới, cao 5 m, cạnh miệng 6 m, chứa nước đến độ sâu 3 m tính từ đỉnh. Nước được bơm qua đầu ống cao hơn miệng bể 1 m. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(476280\\,\\mathrm{J}\\)",
+      "\\(529200\\,\\mathrm{J}\\)",
+      "\\(352800\\,\\mathrm{J}\\)",
+      "\\(588000\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(476280\\,\\mathrm{J}\\)",
+    "solution": "Lấy \\(y\\) từ đỉnh. Do đồng dạng, cạnh tiết diện là \\(s(y)=\\dfrac65y\\), nên \\(A(y)=\\dfrac{36}{25}y^2\\). Nước chỉ chiếm \\(0\\le y\\le3\\), còn đầu ra ở độ cao 6 m, nên khoảng nâng là \\(6-y\\). Do đó \\(W=9800\\int_0^3\\dfrac{36}{25}y^2(6-y)dy=476280\\,\\mathrm{J}\\).",
+    "quick": "Phân biệt độ cao toàn bể 5 m, độ sâu nước 3 m và độ cao đầu ra 6 m.",
+    "casio": "Tính \\(14112\\int_0^3x^2(6-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 177,
+    "type": "application_work_spherical_tank_full",
+    "question": "Một bể hình cầu bán kính 2 m chứa đầy nước. Nước được bơm lên điểm cao nhất của bể. Chọn trục \\(y\\) thẳng đứng qua tâm cầu. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(313600\\pi\\,\\mathrm{J}\\)",
+      "\\(\\dfrac{313600\\pi}{3}\\,\\mathrm{J}\\)",
+      "\\(627200\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\)",
+    "solution": "Mặt cầu có phương trình \\(x^2+y^2=4\\), nên tại độ cao \\(y\\), bán kính lát cắt thỏa \\(r^2=4-y^2\\). Diện tích lớp nước là \\(A(y)=\\pi(4-y^2)\\), với \\(-2\\le y\\le2\\). Khoảng nâng lên đỉnh là \\(2-y\\). Vì vậy \\(W=9800\\pi\\int_{-2}^{2}(4-y^2)(2-y)dy=\\dfrac{627200\\pi}{3}\\,\\mathrm{J}\\).",
+    "quick": "Hình cầu: \\(r^2=R^2-y^2\\), rồi khoảng nâng = cao độ đầu ra trừ \\(y\\).",
+    "casio": "Tính \\(9800\\pi\\int_{-2}^{2}(4-x^2)(2-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
+  },
+  {
+    "id": 178,
+    "type": "application_work_spherical_tank_half_full_outlet_above",
+    "question": "Một bể hình cầu bán kính 3 m chỉ chứa nước ở nửa dưới. Nước được bơm qua một ống có đầu ra cao hơn đỉnh bể 1 m. Chọn tâm cầu làm gốc tọa độ và trục \\(y\\) thẳng đứng. Biết trọng lượng riêng của nước là \\(9800\\,\\mathrm{N/m^3}\\). Công cần thiết là",
+    "matrix": null,
+    "options": [
+      "\\(904050\\pi\\,\\mathrm{J}\\)",
+      "\\(661500\\pi\\,\\mathrm{J}\\)",
+      "\\(441000\\pi\\,\\mathrm{J}\\)",
+      "\\(1102500\\pi\\,\\mathrm{J}\\)"
+    ],
+    "correct": "\\(904050\\pi\\,\\mathrm{J}\\)",
+    "solution": "Nửa dưới tương ứng \\(-3\\le y\\le0\\). Diện tích lớp nước là \\(A(y)=\\pi(9-y^2)\\). Đỉnh cầu ở \\(y=3\\), đầu ra cao hơn 1 m nên ở \\(y=4\\). Vì vậy khoảng nâng của lớp tại \\(y\\) là \\(4-y\\). Suy ra \\(W=9800\\pi\\int_{-3}^{0}(9-y^2)(4-y)dy=904050\\pi\\,\\mathrm{J}\\).",
+    "quick": "Với bể cầu, nên đặt gốc tại tâm để lát cắt có dạng \\(\\pi(R^2-y^2)\\).",
+    "casio": "Tính \\(9800\\pi\\int_{-3}^{0}(9-x^2)(4-x)dx\\).",
+    "difficulty": 3,
+    "topic": "Nguyên hàm & Tích phân một biến – Công bơm nước"
   }
 ]

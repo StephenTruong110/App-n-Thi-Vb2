@@ -1,0 +1,506 @@
+Hãy ghi nhớ toàn bộ quy chuẩn dưới đây làm QUY TRÌNH MẶC ĐỊNH khi tôi yêu cầu tạo đề luyện tập Toán cao cấp VB2CA.
+
+Từ sau tin nhắn này, khi tôi chỉ nói ví dụ:
+
+“Tạo mã đề 09”
+“Tạo mã đề 10”
+“Làm mã đề tiếp theo”
+
+thì bạn phải tự thực hiện toàn bộ workflow dưới đây, KHÔNG hỏi lại nếu Library đã có đủ dữ liệu.
+
+==================================================
+I. NGUỒN DỮ LIỆU
+==================================================
+
+1. Ngân hàng câu hỏi phải lấy từ DATA MỚI NHẤT hiện có trong Library tại thời điểm tạo đề.
+
+2. Không được dựa mù quáng vào file đã dùng ở lần trước.
+Mỗi lần tạo đề phải tự kiểm tra Library để xác định đúng phiên bản mới nhất.
+
+3. Các nguồn chuẩn cần ưu tiên đối chiếu:
+
+- Đề minh họa chính thức
+- Đề 6
+- Đề 8
+- ngân hàng data mới nhất trong Library
+
+Trong đó:
+
+ĐỀ MINH HỌA CHÍNH THỨC là chuẩn ưu tiên cao nhất về:
+- cấu trúc đề
+- phạm vi kiến thức
+- cách đặt câu
+- thuật ngữ
+- ký hiệu toán
+- hình thức trình bày PDF
+
+Đề 6 và Đề 8 dùng để bổ sung:
+- dạng câu hỏi
+- mức độ khó
+- độ đa dạng
+- phong cách ra đề thực tế
+
+4. Không tự ý đưa các dạng nằm ngoài phạm vi kỳ thi chỉ để làm đề khó hơn.
+
+5. Tuyệt đối KHÔNG có:
+- ánh xạ tuyến tính
+- tích phân suy rộng
+
+==================================================
+II. MỤC TIÊU CỦA ĐỀ
+==================================================
+
+Ưu tiên theo thứ tự:
+
+1. Chính xác toán học
+2. Sát kỳ thi thật
+3. Đa dạng dạng bài
+4. Phân bố độ khó hợp lý
+5. Văn phong giống đề thi tiếng Việt thật
+6. Hình thức PDF giống Đề minh họa chính thức
+
+Không ưu tiên câu “lạ”, mẹo quá khó hoặc học thuật vượt quá đề mẫu.
+
+==================================================
+III. CẤU TRÚC ĐỀ
+==================================================
+
+Tạo đúng 50 câu theo cấu trúc kỳ thi/Đề minh họa đang áp dụng.
+
+Nếu Đề minh họa hiện tại có:
+- phần trắc nghiệm 4 phương án A, B, C, D
+- các cụm câu dùng chung dữ kiện
+- phần trả lời ngắn ở cuối
+
+thì phải bám cấu trúc đó.
+
+Không tự thay đổi số câu hoặc cấu trúc nếu tôi không yêu cầu.
+
+==================================================
+IV. KIỂM TRA TOÁN
+==================================================
+
+Trước khi xuất đề, phải tự kiểm tra toán TỪNG CÂU.
+
+Kiểm tra:
+
+- dữ kiện có đủ không
+- câu hỏi có một nghĩa rõ ràng không
+- đáp án đúng có thực sự đúng không
+- các phương án nhiễu có hợp lý không
+- không có 2 phương án cùng đúng
+- không có phương án bị trùng nguyên văn
+- số liệu không gây lỗi ngoài ý muốn
+- các điều kiện xác định phải đầy đủ
+- giới hạn, chuỗi, tích phân, phương trình vi phân phải được kiểm chứng
+- bài ma trận phải kiểm tra phép tính chính xác
+- câu ứng dụng phải kiểm tra đơn vị và kết quả làm tròn
+
+Độ chính xác quan trọng hơn tốc độ.
+
+==================================================
+V. XÁO ĐÁP ÁN
+==================================================
+
+Đây là yêu cầu bắt buộc.
+
+Sau khi xác định đáp án đúng của từng câu, phải xáo vị trí các phương án A/B/C/D.
+
+Không được xảy ra tình trạng như:
+- phần lớn đáp án đều A
+- nhiều câu liên tiếp cùng đáp án một cách bất thường
+- đáp án đúng giữ nguyên vị trí của ngân hàng gốc
+
+Phân bố A/B/C/D trong toàn bộ phần trắc nghiệm phải tương đối đều.
+
+Ví dụ nếu có 45 câu trắc nghiệm thì có thể hướng đến khoảng:
+A: 11–12
+B: 11–12
+C: 11–12
+D: 11–12
+
+Không cần ép tuyệt đối bằng nhau nếu việc ép làm hỏng câu hỏi, nhưng không được lệch mạnh.
+
+Sau khi xáo phải kiểm tra lại rằng:
+- correct vẫn trỏ đúng phương án
+- lời giải vẫn tương ứng với đáp án mới
+- không bị tráo nhầm đáp án.
+
+==================================================
+VI. VĂN PHONG TIẾNG VIỆT
+==================================================
+
+Câu hỏi phải đọc giống đề thi Toán cao cấp tiếng Việt thật.
+
+Không viết theo kiểu dịch máy từ tiếng Anh.
+
+Ưu tiên các cách viết như:
+
+“Ma trận A khả nghịch khi và chỉ khi:”
+
+“Giá trị riêng lớn nhất của ma trận A bằng:”
+
+“Có bao nhiêu giá trị nguyên của m để ma trận A khả nghịch?”
+
+“Giá trị của tích phân bằng:”
+
+“Miền hội tụ của chuỗi lũy thừa là:”
+
+“Nghiệm tổng quát của phương trình vi phân là:”
+
+Không viết kiểu:
+
+“Điều kiện invertible của A là...”
+
+hoặc các câu mang văn phong sinh tự động.
+
+==================================================
+VII. THUẬT NGỮ VÀ KÝ HIỆU
+==================================================
+
+HẠN CHẾ TỐI ĐA các từ viết tắt hoặc ký hiệu tiếng Anh không cần thiết.
+
+Không nên dùng:
+
+diag
+gcd
+ker
+Im
+rank
+adj
+
+nếu có cách viết tiếng Việt tự nhiên hơn.
+
+Ví dụ:
+
+KHÔNG viết:
+
+A = diag(2,3,4)
+
+MÀ viết trực tiếp ma trận:
+
+A =
+( 2 0 0
+  0 3 0
+  0 0 4 )
+
+KHÔNG viết:
+
+gcd(a,b)=1
+
+MÀ viết:
+
+“a và b là hai số nguyên dương nguyên tố cùng nhau”
+
+hoặc:
+
+“ƯCLN(a,b)=1”.
+
+Ưu tiên:
+
+“hạng của ma trận A”
+
+thay vì lạm dụng rank(A).
+
+Ưu tiên:
+
+“ma trận phụ hợp của A”
+
+nếu adj(A) làm câu khó đọc.
+
+Dùng thuật ngữ quen thuộc:
+
+- ma trận đơn vị cấp 3
+- định thức của A
+- ma trận nghịch đảo A^{-1}
+- ma trận chuyển vị A^T
+- vectơ riêng
+- giá trị riêng
+- độc lập tuyến tính
+- phụ thuộc tuyến tính
+- hệ phương trình tuyến tính
+- điểm dừng
+- cực đại
+- cực tiểu
+- chuỗi hội tụ
+- chuỗi phân kỳ
+- bán kính hội tụ
+- phương trình vi phân
+
+Các ký hiệu chuẩn sau vẫn dùng bình thường:
+
+det A
+A^{-1}
+A^T
+I_n
+lambda
+sum
+integral
+double integral
+triple integral
+
+Không tự phát minh ký hiệu mới nếu Đề minh họa không sử dụng.
+
+==================================================
+VIII. ĐẠO HÀM RIÊNG
+==================================================
+
+Đây là quy tắc bắt buộc và phải thống nhất toàn bộ đề.
+
+Đạo hàm riêng cấp 1 dùng:
+
+f'_x
+f'_y
+f'_z
+
+Ví dụ:
+
+“Giá trị của f'_y(1;2) bằng:”
+
+Đạo hàm riêng cấp 2 dùng:
+
+f''_{xx}
+f''_{yy}
+f''_{xy}
+f''_{yx}
+
+Ví dụ:
+
+“Giá trị của f''_{xy}(1;2) bằng:”
+
+KHÔNG được trộn trong cùng đề:
+
+f'_x
+
+với
+
+f_x
+
+nếu đều có nghĩa đạo hàm riêng cấp 1.
+
+KHÔNG dùng f_xy nếu thực chất muốn nói đạo hàm riêng cấp hai mà đề đang theo ký hiệu f''_{xy}.
+
+Mục tiêu là nhìn vào phải phân biệt ngay:
+
+cấp 1 → dấu '
+cấp 2 → dấu ''
+
+Trước khi xuất PDF phải kiểm tra:
+
+- dấu ' còn tồn tại
+- dấu '' còn tồn tại
+- chỉ số x, y, z, xx, yy, xy, yx đặt đúng
+- không biến f''_{xy} thành f_{xy}
+- không mất dấu phẩy trên khi render.
+
+==================================================
+IX. QUY CHUẨN PDF ĐỀ
+==================================================
+
+PDF phải mô phỏng HÌNH THỨC của FILE ĐỀ MINH HỌA CHÍNH THỨC càng sát càng tốt.
+
+Trước khi tạo PDF:
+
+BẮT BUỘC phải đọc/render các trang của Đề minh họa chính thức để quan sát trực tiếp.
+
+Không chỉ dựa vào text extraction.
+
+Phải quan sát:
+
+- khổ giấy
+- lề trang
+- font chữ
+- cỡ chữ
+- độ đậm
+- cách viết “Câu 1.”
+- khoảng cách dòng
+- khoảng cách giữa các câu
+- khoảng cách giữa câu hỏi và 4 phương án
+- khoảng cách trước/sau tiêu đề
+- cách xuống dòng
+- mật độ chữ trên trang
+- vị trí số trang
+- cách trình bày công thức
+- cách trình bày ma trận
+- cách trình bày phân số
+- cách trình bày tích phân
+- bố cục các phương án A/B/C/D.
+
+Sau đó điều chỉnh đề luyện tập để có cảm giác gần Đề minh họa nhất.
+
+Không tự ý:
+- làm chữ quá to
+- làm chữ quá nhỏ
+- dãn dòng quá rộng
+- nén dòng quá sát
+- ép đề xuống đúng một số trang cố định.
+
+Ưu tiên:
+
+“nhìn giống một đề thi thật”
+
+hơn là:
+
+“bắt buộc đúng 4 trang/5 trang”.
+
+Nếu font chính xác của đề minh họa không xác định được thì:
+
+- chọn font Unicode có hình dáng gần nhất
+- hỗ trợ tiếng Việt đầy đủ
+- dùng thống nhất toàn đề.
+
+Công thức toán phải có kích thước cân đối với chữ.
+
+Không để:
+- phân số quá lớn
+- tích phân cao bất thường
+- ma trận phá dòng
+- công thức nhảy kích thước so với văn bản.
+
+==================================================
+X. PDF ĐÁP ÁN
+==================================================
+
+Tạo riêng:
+
+1. PDF ĐỀ
+2. PDF ĐÁP ÁN
+
+Không gộp chung trừ khi tôi yêu cầu.
+
+PDF đáp án phải:
+- ghi rõ mã đề
+- có bảng đáp án trắc nghiệm rõ ràng
+- có đáp án câu trả lời ngắn
+- có giải thích/ngắn gọn cho các câu cần thiết nếu format đang áp dụng yêu cầu đó
+- đáp án phải hoàn toàn khớp với PDF đề sau khi xáo.
+
+==================================================
+XI. KIỂM TRA TRƯỚC KHI XUẤT PDF
+==================================================
+
+Trước khi gửi file cuối cùng, phải quét toàn bộ 50 câu để tìm:
+
+diag
+gcd
+ker
+Im
+ánh xạ tuyến tính
+đẳng cấu
+tích phân suy rộng
+rank
+adj
+các từ viết tắt tiếng Anh bất thường
+
+Nếu xuất hiện thì phải xem xét và viết lại bằng cách quen thuộc hơn, trừ khi đó thực sự là ký hiệu chuẩn được Đề minh họa sử dụng.
+
+Đồng thời kiểm tra:
+
+- đạo hàm riêng cấp 1 dùng '
+- đạo hàm riêng cấp 2 dùng ''
+- chỉ số x/y/z/xy/xx/yy đúng vị trí
+- không mất dấu '
+- không mất dấu ''
+- không có ký tự Unicode lỗi
+- không có ô vuông đen
+- không có ký tự thay thế
+- không bị mất dấu tiếng Việt
+- không có công thức đè lên chữ
+- không có ma trận tràn lề
+- không có câu bị cắt giữa hai trang theo cách khó đọc.
+
+==================================================
+XII. KIỂM TRA TRỰC QUAN PDF
+==================================================
+
+Sau khi tạo PDF, phải render lại PDF đầu ra thành hình ảnh và tự quan sát trước khi gửi.
+
+Kiểm tra trực quan từng trang:
+
+- chữ có dễ đọc không
+- mật độ giống đề minh họa chưa
+- phương án A/B/C/D có thẳng hàng hợp lý không
+- ma trận có đúng không
+- phân số có đúng không
+- căn có đúng không
+- dấu tổng có đúng không
+- tích phân có đúng không
+- dấu phẩy trên của đạo hàm có còn không
+- footer/page number có ổn không
+- không có trang gần như trắng vì lỗi ngắt trang
+- không có công thức bị phóng lớn bất thường.
+
+Nếu phát hiện lỗi thì phải sửa và render lại trước khi gửi.
+
+==================================================
+XIII. NGUYÊN TẮC KHI TÔI GỌI MÃ ĐỀ
+==================================================
+
+Khi tôi nói:
+
+“Tạo mã đề XX”
+
+bạn phải tự:
+
+1. kiểm tra Library
+2. xác định ngân hàng data mới nhất
+3. đọc Đề minh họa chính thức
+4. render Đề minh họa để lấy chuẩn trình bày
+5. đối chiếu Đề 6 và Đề 8
+6. chọn 50 câu
+7. loại ánh xạ tuyến tính
+8. loại tích phân suy rộng
+9. kiểm tra toán
+10. chuẩn hóa tiếng Việt
+11. chuẩn hóa đạo hàm riêng
+12. xáo đáp án
+13. kiểm tra phân bố A/B/C/D
+14. quét từ/ký hiệu cấm
+15. tạo PDF đề
+16. tạo PDF đáp án
+17. render lại PDF
+18. kiểm tra trực quan
+19. sửa lỗi nếu có
+20. gửi cho tôi 2 file cuối.
+
+KHÔNG hỏi lại những câu như:
+
+“Bạn muốn bao nhiêu câu?”
+“Bạn muốn dùng đề nào?”
+“Bạn muốn font gì?”
+“Bạn muốn bao nhiêu trang?”
+“Bạn có muốn xáo đáp án không?”
+
+vì các quy tắc đó đã được xác định trong prompt này.
+
+Chỉ hỏi lại nếu thực sự thiếu dữ liệu thiết yếu mà Library không thể cung cấp.
+
+==================================================
+XIV. BÁO CÁO KHI HOÀN THÀNH
+==================================================
+
+Khi gửi đề, báo ngắn gọn:
+
+- mã đề
+- nguồn ngân hàng data đã sử dụng
+- số câu
+- số câu trắc nghiệm / trả lời ngắn
+- phân bố đáp án A/B/C/D
+- xác nhận không có ánh xạ tuyến tính
+- xác nhận không có tích phân suy rộng
+- xác nhận đã kiểm tra đạo hàm riêng
+- xác nhận đã render và kiểm tra trực quan PDF
+- link PDF đề
+- link PDF đáp án.
+
+Không cần kể dài dòng toàn bộ quá trình nếu không có lỗi.
+
+==================================================
+XV. GHI NHỚ
+==================================================
+
+Hãy lưu toàn bộ quy chuẩn này vào Memory như quy chuẩn mặc định của tôi cho việc tạo đề luyện tập Toán cao cấp VB2CA.
+
+Sau khi ghi nhớ, chỉ cần xác nhận ngắn gọn rằng đã ghi nhớ.
+
+TỪ SAU ĐÓ, khi tôi gọi một mã đề, hãy tự làm toàn bộ quy trình mà không yêu cầu tôi nhắc lại các quy tắc trên.
